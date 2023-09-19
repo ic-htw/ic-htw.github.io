@@ -2,14 +2,32 @@
 layout: default
 title: "DmDb - Material"
 ---
-# DmDb Material
+# ADBKT Überblick
 
-## Folien
-- Einführung ([link](/lv/dmdb/assets/info.pdf "pdf"))
-- ipynb ([link](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/dmdb/assets/intro-pg.ipynb "ipynb"))
 
-## Videos
-Bla bla bla.
+## Warum ADBKT?
+- Wollen sie wissen, was SQL so alles kann?
+- Wollen sie verstehen, was Multi Version Concurrency Controlbedeutet?
+- Haben sie schon einmal die Begriffe NoSQL, Replikation,Sharding gehört und wollen verstehen, was sich dahinter verbirgt?
+- Wollen sie verstehen, wie Graphdatenbanksysteme ticken undsehen, wie damit kürzesteste Pfade und zentrale Punkte inGraphen ermittelt werden können?
+- Wollen sie lernen, wie Datenbanksysteme die Verarbeitung vonGeodaten unterstützen?
+- Wollen sie lernen, wie JSON innerhalb von Datenbanksystemenverarbeitet werden kann?
 
-## Probeklausur
-Bla bla bla.
+Dann könnte diese Lehrveranstaltung für sie von Interesse sein.
+
+## Lernziele
+- Verständnis grundlegender Datenbankkonzepte
+- Verständnis von Datenbanktechnologien anhand ausgewählter Beispielsysteme
+- Praktische Nutzung von Datenbankfunktionalität auf Grundlage von Fallbeispielen
+
+## Math
+- This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
+## Mermaid
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
