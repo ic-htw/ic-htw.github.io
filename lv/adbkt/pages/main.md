@@ -20,14 +20,3 @@ Dann könnte diese Lehrveranstaltung für sie von Interesse sein.
 - Verständnis von Datenbanktechnologien anhand ausgewählter Beispielsysteme
 - Praktische Nutzung von Datenbankfunktionalität auf Grundlage von Fallbeispielen
 
-## Math
-- This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
-
-## Mermaid
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
