@@ -1,75 +1,93 @@
 toc:
-  - title: Datenmodellierung und Datenbanksysteme
-    short: DmDb
-    levels: 1
-    links:
-      - page: Material
-        url: /lv/dmdb/pages/material.html
-      - page: Plan
-        url: /thing2.html
-      - page: Prüfung
-        url: /thing3.html
-      - page: Übung
-        url: /thing3.html
-      - page: Share
-        url: /thing3.html
-  - title: Datenbanktechnologien
-    short: DbTech
-    levels: 1
-    links:
-      - page: Material
-        url: /lv/dmdb/pages/material.html
-      - page: Plan
-        url: /thing2.html
-      - page: Prüfung
-        url: /thing3.html
-      - page: Übung
-        url: /thing3.html
-      - page: Share
-        url: /thing3.html
-  - title: Ausgewählte Datenbankkonzepte/-techniken
-    short: ADBKT
-    levels: 1
-    links:
-      - page: Überblick
-        url: /lv/adbkt/pages/main.html
-  - title: Projekt Business Intelligence
-    short: PBI
-    levels: 1
-    links:
-      - page: Überblick
-        url: /widget1.html
-
-  - title: Data Management and Business Performance Management
-    short: DataMan
-    levels: 1
-    links:
-      - page: Material
-        url: /lv/dmdb/pages/material.html
-      - page: Plan
-        url: /thing2.html
-      - page: Prüfung
-        url: /thing3.html
-      - page: Übung
-        url: /thing3.html
-      - page: Share
-        url: /thing3.html
-  - title: Links
-    short: LINKS
+  - title: Lehrveranstaltungen
+    short: Lehrveranstaltungen
     levels: 2
     subs:
+      - title: Datenmodellierung und Datenbanksysteme
+        short: DmDb
+        levels: 1
+        links:
+          - page: Material
+            url: /lv/dmdb/pages/material.html
+          - page: Plan
+            url: /lv/dmdb/pages/plan.html
+          - page: Prüfung
+            url: /thing3.html
+          - page: Übung
+            url: /thing3.html
+          - page: Share
+            url: /thing3.html
+      - title: Datenbanktechnologien
+        short: DbTech
+        levels: 1
+        links:
+          - page: Material
+            url: /lv/dmdb/pages/material.html
+          - page: Plan
+            url: /thing2.html
+          - page: Prüfung
+            url: /thing3.html
+          - page: Übung
+            url: /thing3.html
+          - page: Share
+            url: /thing3.html
+      - title: Ausgewählte Datenbankkonzepte/-techniken
+        short: ADBKT
+        levels: 1
+        links:
+          - page: Überblick
+            url: /lv/adbkt/pages/main.html
+      - title: Projekt Business Intelligence
+        short: PBI
+        levels: 1
+        links:
+          - page: Überblick
+            url: /widget1.html
+    
+      - title: Data Management and Business Performance Management
+        short: DataMan
+        levels: 1
+        links:
+          - page: Material
+            url: /lv/dmdb/pages/material.html
+          - page: Plan
+            url: /lv/dmdb/pages/plan.html
+          - page: Prüfung
+            url: /thing3.html
+          - page: Übung
+            url: /thing3.html
+          - page: Share
+            url: /thing3.html
+  - title: Links
+    short: Links
+    levels: 2
+    subs:
+      - title: Allgemeines
+        short: Allgemeines
+        links:
+          - page: Temp
+            url: /links/allgemeines/temp.html
+          - page: Services
+            url: /links/allgemeines/services.html
       - title: Datenbanksysteme
         short: DBS
         links:
           - page: Cassandra
-            url: #
+            url: /links/dbs/cassandra.html
           - page: DuckDB
-            url: #
+            url: /links/dbs/duckdb.html
       - title: Programmierung
         short: PROG
         links:
           - page: JavaScript, CSS, HTML
-            url: #
+            url: /links/prog/js-css-html.html
           - page: Python
+            url: /links/prog/python.html
+      - title: Aaa
+        short: Aaa
+        links:
+          - page: Aaa
+            url: #
+          - page: Aaa
             url: #
  

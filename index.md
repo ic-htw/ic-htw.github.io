@@ -2,7 +2,7 @@
 layout: default
 title: "Prof. Dr. Ingo Claßen"
 ---
-<h1 class="w3-text-teal">Homepage Prof. Dr. Ingo Claßen</h1>
+<p class="w3-text-teal w3-xxlarge">Homepage Prof. Dr. Ingo Claßen</p>
 
 <div>
 </div>
@@ -10,7 +10,7 @@ title: "Prof. Dr. Ingo Claßen"
   {% if site.data.nav.toc[0] %}
     <ul class="w3-ul w3-large">
       {% for item in site.data.nav.toc %}
-        <li class="w3-padding-small">{{ item.title }}</li>
+        <li class="w3-padding-small w3-light-grey">{{ item.title }}</li>
         {% if item.levels == 1 %}
           <ul class="w3-ul w3-small">
             {% for link in item.links %}

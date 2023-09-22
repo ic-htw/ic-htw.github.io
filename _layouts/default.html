@@ -18,8 +18,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
 }
 </style>
+
 </head>
-<body>
+<body onload="sr_fill()">
 
   <!-- Navbar -->
 <div class="w3-top">
@@ -44,11 +45,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
+    <div id="ct" class="w3-twothird w3-container">
       {{ content }}
     </div>
-    <div class="w3-third w3-container">
-      {% include sidebar-right.md %}
+    <div id="sr" class="w3-third w3-container">
     </div>
   </div>
 
@@ -79,6 +79,22 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+
+// Fill Right Sidebar 
+function sr_fill() {
+  const children = Object.entries(document.getElementById("ct").children);
+  const headers = children.filter(a => a[1].nodeName[0]==="H").map(a => [a[1].textContent, a[1].id])
+  const sr = document.getElementById('sr');
+  headers.forEach(h => {
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+    a.href = "#" + h[1];
+    a.innerText = h[0];
+    p.appendChild(a);
+    sr.appendChild(p);
+  });
+}
+
 </script>
 
 </body>
