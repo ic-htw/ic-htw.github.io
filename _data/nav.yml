@@ -1,6 +1,8 @@
 toc:
-  - title: Datenmodellierung und Datenbanksysteme (DmDb)
-    subfolderitems:
+  - title: Datenmodellierung und Datenbanksysteme
+    short: DmDb
+    levels: 1
+    links:
       - page: Material
         url: /lv/dmdb/pages/material.html
       - page: Plan
@@ -11,8 +13,10 @@ toc:
         url: /thing3.html
       - page: Share
         url: /thing3.html
-  - title: Datenbanktechnologien (DbTech)
-    subfolderitems:
+  - title: Datenbanktechnologien
+    short: DbTech
+    levels: 1
+    links:
       - page: Material
         url: /lv/dmdb/pages/material.html
       - page: Plan
@@ -23,16 +27,23 @@ toc:
         url: /thing3.html
       - page: Share
         url: /thing3.html
-  - title: Ausgewählte Datenbankkonzepte/-techniken (ADBKT)
-    subfolderitems:
+  - title: Ausgewählte Datenbankkonzepte/-techniken
+    short: ADBKT
+    levels: 1
+    links:
       - page: Überblick
         url: /lv/adbkt/pages/main.html
-  - title: Projekt Business Intelligence (PBI)
-    subfolderitems:
+  - title: Projekt Business Intelligence
+    short: PBI
+    levels: 1
+    links:
       - page: Überblick
         url: /widget1.html
-  - title: Data Management and Business Performance Management (DataMan)
-    subfolderitems:
+
+  - title: Data Management and Business Performance Management
+    short: DataMan
+    levels: 1
+    links:
       - page: Material
         url: /lv/dmdb/pages/material.html
       - page: Plan
@@ -43,3 +54,22 @@ toc:
         url: /thing3.html
       - page: Share
         url: /thing3.html
+  - title: Links
+    short: LINKS
+    levels: 2
+    subs:
+      - title: Datenbanksysteme
+        short: DBS
+        links:
+          - page: Cassandra
+            url: #
+          - page: DuckDB
+            url: #
+      - title: Programmierung
+        short: PROG
+        links:
+          - page: JavaScript, CSS, HTML
+            url: #
+          - page: Python
+            url: #
+ 
