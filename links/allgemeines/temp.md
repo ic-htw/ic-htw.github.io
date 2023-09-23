@@ -8,7 +8,7 @@ title: Temporär
 [(link)](bbb)
 
 -->
-<p class="w3-text-teal w3-xxlarge">{{title}}</p>
+<p class="w3-text-teal w3-xxlarge">{{page.title}}</p>
 
 # Noch lesen
 
