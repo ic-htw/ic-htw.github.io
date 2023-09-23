@@ -26,8 +26,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="/" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1 w3-right">Top</a>
+    <a class="w3-bar-item w3-button w3-theme-l1 w3-right" href="/" >Home</a>
+    <a class="w3-bar-item w3-button w3-theme-l1 w3-right" href="#" >Top</a>
+    <a class="w3-bar-item w3-button w3-theme-l1 w3-right" href="javascript:void(0)" onclick="openSrr()" >Nav</a>
   </div>
 </div>
 
@@ -44,18 +45,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
-
   <div class="w3-row w3-padding-32">
-    <div id="ct" class="w3-twothird w3-container">
+    <div id="ct" class="w3-container">
       {{ content }}
     </div>
+    <!--
     <div id="sr" class="w3-third w3-container">
+    -->
     </div>
   </div>
-
-
-<!-- END MAIN -->
 </div>
+
+<div id="srr" class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:block;right:0;" id="rightMenu">
+  <button onclick="closeSrr()" class="w3-bar-item w3-button w3-large w3-teal">Close</button>
+</div>
+
 
 <script>
 // Get the Sidebar
@@ -92,9 +96,19 @@ function sr_fill() {
     a.href = "#" + h[1];
     a.innerText = h[0];
     p.appendChild(a);
-    sr.appendChild(p);
+    // sr.appendChild(p);
+    srr.appendChild(p);
   });
 }
+
+function openSrr() {
+  document.getElementById("srr").style.display = "block";
+}
+
+function closeSrr() {
+  document.getElementById("srr").style.display = "none";
+}
+
 
 </script>
 
