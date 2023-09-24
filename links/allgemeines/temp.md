@@ -119,8 +119,6 @@ title: Temporär
 - Reduce AML Investigation Costs with TigerGraph
 [(link)](https://www.tigergraph.com/blog/reduce-aml-investigation-costs-with-tigergraph/)
 
-- GPT-4’s SQL Mastery
-[(link)](https://medium.com/querymind/gpt-4s-sql-mastery-2cd1f3dea543)
 
 - ClickHouse: A Blazingly Fast DBMS with Full SQL Join Support
 [(link)](https://medium.com/clickhousedb/clickhouse-a-blazingly-fast-dbms-with-full-sql-join-support-3eb3b38c59c5)
