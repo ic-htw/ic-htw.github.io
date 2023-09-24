@@ -19,19 +19,9 @@ title: Temporär
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)
 
-- dbt-duckdb
-[(link)](https://github.com/duckdb/dbt-duckdb)
-
-- Why I wrote a SQL engine in (only) Python
-[(link)](https://github.com/marsupialtail/quokka/blob/master/blog/why.md)
-[(link)](https://news.ycombinator.com/item?id=37415494)
-
 - SQLPage
 [(link)](https://sql.ophir.dev/)
 [(link)](https://www.postgresql.org/about/news/announcing-sqlpage-build-dynamic-web-applications-in-sql-2672/)
-
-- How RocksDB works
-[(link)](https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/)
 
 - How Modern SQL Databases Are Changing Web Development: Part 1
 [(link)](https://blog.whimslab.io/how-modern-sql-databases-are-changing-web-development-4d1f15b0daea)
@@ -44,8 +34,6 @@ title: Temporär
 - How I Built a Data Lakehouse With Delta Lake Architecture
 [(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
 
-- Building an IoT Data Pipeline for Energy Consumption Monitoring on the Edge with DuckDB and Malloy
-[(link)](https://medium.com/hiflylabs/building-an-iot-data-pipeline-for-energy-consumption-monitoring-on-the-edge-with-duckdb-and-malloy-1c66ba266f2f)
 
 - Vector Databases 
 [(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)

@@ -2,11 +2,7 @@
 layout: default
 title: Python
 ---
-
-# Allgemein
-- Cheat Sheet
-[(link)](https://github.com/gto76/python-cheatsheet)
-
+# Home
 - The Python Standard Library
 [(link)](https://docs.python.org/3/library/index.html)
 
@@ -21,6 +17,11 @@ title: Python
 
 - Python Docs
 [(link)](https://docs.python.org/3/)
+
+
+# Allgemein
+- Cheat Sheet
+[(link)](https://github.com/gto76/python-cheatsheet)
 
 - An A-Z of useful Python tricks
 [(link)](https://medium.freecodecamp.org/an-a-z-of-useful-python-tricks-b467524ee747)
