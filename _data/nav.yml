@@ -31,12 +31,15 @@ toc:
             url: /thing3.html
           - page: Share
             url: /thing3.html
+
       - title: Ausgewählte Datenbankkonzepte/-techniken
         short: ADBKT
         levels: 1
         links:
           - page: Überblick
             url: /lv/adbkt/pages/main.html
+          - page: Technische Infrastruktur
+            url: /lv/adbkt/pages/infrastructure.html
       - title: Projekt Business Intelligence
         short: PBI
         levels: 1

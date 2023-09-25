@@ -48,24 +48,25 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: Python DB-Intro  (link)
 - P1: ER-Diagramm aus Datenbankschema erzeugen (link)
 
-### 16.10.23
+### 16.10.23 (Abgabe P1)
 - P1: Statuscheck
 - VL: Window-Funktionen in SQL (pdf)
 - P2: Retail Sales (link)
 - VL: Nebenläufigkeit (pdf)
 - P3: Nebenläufigkeit (link)
 
-### 23.10.23
+### 23.10.23 (Abgabe P2/P3)
 - P2/P3: Statuscheck
 - VL: NoSQL (pdf)
 - Ü: Cassandra Replikation
 - VL: Cassandra (link)
 - P4: TourDelight (link)
+
 ### 30.10.23
 - P4: Abstimmung
 - VL: DynamoDB (link)
 
-### 06.11.23
+### 06.11.23 (Abgabe P4)
 - P4: Statuscheck
 - VL: Cypher (link)
 - Ü: Cypher-Abfragen (link)
@@ -73,14 +74,14 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: GDS (link)
 - P5: Zugriffskontrolle mit Graphdatenbanken (link)
 
-### 13.11.23
+### 13.11.23 (Abgabe P5)
 - P5: Statuscheck
 - VL: Geo-Datenverarbeitung (pdf)
 - Ü: Geo-Abfragen (link)
 - Ü: Visualisierung Geodaten in Python (link)
 - P6: Fahrplan-Erstellung
 
-### 20.11.23
+### 20.11.23 (Abgabe P6)
 - P6: Statuscheck
 - Vorlesung Dokumentenorientierte DB-Systeme (pdf)
 - Vorlesung JSON-Datenverarbeitung (pdf)
@@ -92,7 +93,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - VL: Instacart
 - Ü: Closeness Centrality in SAP Hana
 
-### 27.11.23
+### 27.11.23 (Abgabe P7)
 - P7: Statuscheck
 - VL: Rekursive Abfragen (pdf)
 - Ü: Rekursive Abfrage - Summierung in einer Hierarchie (link)
