@@ -65,10 +65,22 @@ toc:
       - title: Allgemeines
         short: Allgemeines
         links:
-          - page: Temp
+          - page: Noch lesen
             url: /links/allgemeines/temp.html
+          - page: Posts
+            url: /links/allgemeines/blogs-sites posts.html
+          - page: Blogs, Sites
+            url: /links/allgemeines/blogs-sites.html
+          - page: Courses, Videos, Slides, Books
+            url: /links/allgemeines/courses-videos-slides-books.html
+          - page: Linux
+            url: /links/allgemeines/linux.html
+          - page: Sonstiges
+            url: /links/allgemeines/misc.html
           - page: Services
             url: /links/allgemeines/services.html
+          - page: Werkzeuge
+            url: /links/allgemeines/tools.html
       - title: Datenbanksysteme
         short: DBS
         links:
