@@ -41,8 +41,8 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 
 ### 09.10.23
 - Einführung
-- VL: Historischer Überblick [(pdf)](/lv/adbkt/assets/hist/hist.pdf)
-- Ü: Fallbeispiele [(link)](/lv/adbkt/pages/ex/pres.html)
+- VL: Historischer Überblick [(pdf)](/lv/adbkt/a/hist/hist.pdf)
+- Ü: Fallbeispiele [(link)](/lv/adbkt/p/ex/pres.html)
 - Ü: Benutzung DBeaver [(link)](#)
 - Ü: Python Container anlegen [(link)](#)
 - Ü: Python DB-Intro  [(link)](#)

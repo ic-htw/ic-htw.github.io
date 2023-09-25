@@ -12,6 +12,6 @@ title: "Python-Container"
 - In der Navigationsleiste links auf "Stacks" klicken
 - Auf Button "Add stack" klicken
 - Name "py" vergeben- 
-- Skript "Docker Compose - Python" in Web Editor kopieren (siehe ([link](/lv/adbkt/pages/#docker-compose---python)))
+- Skript "Docker Compose - Python" in Web Editor kopieren (siehe ([link](/lv/adbkt/p/#docker-compose---python)))
 - Auf "Deploy the stack" klicken
 
