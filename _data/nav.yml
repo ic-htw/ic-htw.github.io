@@ -37,9 +37,9 @@ toc:
         levels: 1
         links:
           - page: Überblick
-            url: /lv/adbkt/pages/main.html
+            url: /lv/adbkt/p/main.html
           - page: Technische Infrastruktur
-            url: /lv/adbkt/pages/infrastructure.html
+            url: /lv/adbkt/p/infra.html
       - title: Projekt Business Intelligence
         short: PBI
         levels: 1
