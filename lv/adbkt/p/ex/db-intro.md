@@ -15,6 +15,6 @@ title: ADBKT
 - Token einfügen und damit einloggen
 - Download [pg.py](/lv/adbkt/a/ipynb/pg.py) und speichern unter "cred_pg.py"
 - Creditials anpassen (wie bei DBeaver)
-- Download [into-pg.ipynb](/lv/adbkt/a/ipynb/intro-pg.ipynb)
-- Upload "cred_pg.py" und "into-pg.ipynb"
+- Download [intro-pg.ipynb](/lv/adbkt/a/ipynb/intro-pg.ipynb)
+- Upload "cred_pg.py" und "intro-pg.ipynb"
 
