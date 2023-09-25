@@ -5,7 +5,7 @@ title: "Übungen"
 
 # Übungen
 
-- Präsentation von Fallbeispielen [(link)](/lv/adbkt/pages/uebungen/praes.html)
+- Präsentation von Fallbeispielen [(link)](/lv/adbkt/p/ex/pres.html)
 - Python-Container anlegen [(link)](#)
 - Python DB-Intro [(link)](#)
 - P1: x Punkte - ER-Diagramm aus Datenbankschema erzeugen [(link)](#)
