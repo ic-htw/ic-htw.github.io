@@ -5,7 +5,7 @@ title: "DmDb - Material"
 # DmDb Material
 
 ## Folien
-- Einführung ([link](/lv/dmdb/assets/info.pdf "pdf"))
+- Einführung [(pdf)](/lv/dmdb/assets/info.pdf)
 
 ## Videos
 Bla bla bla.

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "DmDb - Material"
+title: "ADBKT"
 ---
-# ADBKT Überblick
+# Ausgewählte Datenbankkonzepte/-techniken (ADBKT)
 
 
 ## Warum ADBKT?
@@ -20,3 +20,80 @@ Dann könnte diese Lehrveranstaltung für sie von Interesse sein.
 - Verständnis von Datenbanktechnologien anhand ausgewählter Beispielsysteme
 - Praktische Nutzung von Datenbankfunktionalität auf Grundlage von Fallbeispielen
 
+## Aspekte die im Modul behandelt werden
+- Datenbank-Abfrage-Sprachen (SQL, JSON Path Language, Cypher)
+- Nebenläufigkeit als Teil der Transaktionsverabeitung
+- NoSQL-Datenbanksysteme
+- Graph-Datenverarbeitung
+- Geo-Datenverarbeitung
+- JSON-Datenverarbeitung
+
+Die Veranstaltung hat einen technologischen Charakter verbunden mit Entwicklungstätigkeiten,
+d.h. Abfragen und Programmierung sind wesentliche Bestandteile.
+Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
+
+## Prüfung
+- Bearbeitung von Übungsaufgaben
+- Präsentation von Arbeitsergebnissen
+- Keine Klausur
+
+## Terminplan
+
+### 09.10.23
+- Einführung
+- VL: Historischer Überblick [(pdf)](/lv/adbkt/assets/history/history.pdf)
+- Ü: Fallbeispiele (link)
+- Ü: Benutzung DBeaver (link)
+- Ü: Python Container anlegen (link)
+- Ü: Python DB-Intro  (link)
+- P1: ER-Diagramm aus Datenbankschema erzeugen (link)
+
+### 16.10.23
+- P1: Statuscheck
+- VL: Window-Funktionen in SQL (pdf)
+- P2: Retail Sales (link)
+- VL: Nebenläufigkeit (pdf)
+- P3: Nebenläufigkeit (link)
+
+### 23.10.23
+- P2/P3: Statuscheck
+- VL: NoSQL (pdf)
+- Ü: Cassandra Replikation
+- VL: Cassandra (link)
+- P4: TourDelight (link)
+### 30.10.23
+- P4: Abstimmung
+- VL: DynamoDB (link)
+
+### 06.11.23
+- P4: Statuscheck
+- VL: Cypher (link)
+- Ü: Cypher-Abfragen (link)
+- VL: GDS (pdf)
+- Ü: GDS (link)
+- P5: Zugriffskontrolle mit Graphdatenbanken (link)
+
+### 13.11.23
+- P5: Statuscheck
+- VL: Geo-Datenverarbeitung (pdf)
+- Ü: Geo-Abfragen (link)
+- Ü: Visualisierung Geodaten in Python (link)
+- P6: Fahrplan-Erstellung
+
+### 20.11.23
+- P6: Statuscheck
+- Vorlesung Dokumentenorientierte DB-Systeme (pdf)
+- Vorlesung JSON-Datenverarbeitung (pdf)
+- P7: Graph-QL (link)
+- VL: SAP Hana
+- Ü: Hana, BTP Account
+- VL: Instacart
+- Ü DAT260
+- VL: Instacart
+- Ü: Closeness Centrality in SAP Hana
+
+### 27.11.23
+- P7: Statuscheck
+- VL: Rekursive Abfragen (pdf)
+- Ü: Rekursive Abfrage - Summierung in einer Hierarchie (link)
+- VL: Verteilte Transaktionen - 2 Phase Commit Protocol (pdf)
