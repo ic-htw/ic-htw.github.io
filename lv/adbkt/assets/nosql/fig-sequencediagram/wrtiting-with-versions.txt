@@ -1,0 +1,11 @@
+actor "userA" as ua
+database "node" as n
+actor "userB" as ub
+
+entryspacing 0.5
+ua->n:( x=a, _ )
+n-->ua:( {x=a }, v1 )
+
+ub->n:( x=b, _ )
+n-->ub:( {x=a, x=b }, v2 )
+

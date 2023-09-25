@@ -1,0 +1,40 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+AddElementTag("v1", $bgColor="white", $fontColor="black", $borderColor="black")
+
+SetPropertyHeader("key","value")
+AddProperty("key001", "100")
+AddProperty("key107", "900")
+AddProperty("key213", "300")
+Component(s1, "Segment 1", $tags="v1")
+
+AddProperty("key107", "999")
+AddProperty("key213", "303")
+AddProperty("key312", "750")
+Component(s2, "Segment 2", $tags="v1")
+
+AddProperty("key050", "600")
+AddProperty("key213", "333")
+AddProperty("key402", "800")
+Component(s3, "Segment 3", $tags="v1")
+
+Component(mp, "Merging Process", $tags="v1")
+
+AddProperty("key001", "100")
+AddProperty("key050", "600")
+AddProperty("key107", "999")
+AddProperty("key213", "333")
+AddProperty("key312", "750")
+AddProperty("key402", "800")
+Component(s4, "Merged Segment", $tags="v1")
+
+Rel_D(s1,mp," ")
+Rel_D(s2,mp," ")
+Rel_D(s3,mp," ")
+
+Rel_D(mp,s4," ")
+
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,15 @@
+actor user1
+database leader
+database follower1
+database follower2
+actor user2
+
+entryspacing 0.5
+user1->leader: change
+user1<--leader: ok
+leader->follower1: replicate
+leader->(7)follower2: replicate
+space -9
+user2->follower1: read change - (<color:#green>current version</color>)
+user2->follower2: read change - (<color:#red>older version</color>)
+space 2

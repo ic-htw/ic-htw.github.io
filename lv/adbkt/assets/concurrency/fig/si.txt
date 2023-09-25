@@ -1,0 +1,35 @@
+entryspacing 0.2
+
+control "T1" as t1
+database "Konto" as a
+control "T2" as t2
+control "T" as t#red
+control "T3" as t3
+
+activate t2
+t2->a:**update**(kid=100)
+space 0.3
+rbox over a:kid=100/v3
+deactivate t2
+space 1
+
+activate t
+space 1
+
+activate t3
+space 0.3
+t3->a:**update**(kid=200)
+space 1
+space 0.3
+activate t1
+rbox over a:kid=200/v7
+t1->a:**insert**(kid=300)
+space 0.3
+deactivate t3
+
+space 1
+rbox over a:kid=300/v1
+t<-a: **select** sum(betrag)
+deactivate t1
+rbox right of t:kid=100/v3\nkid=200/v6
+space 1

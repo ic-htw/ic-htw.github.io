@@ -1,0 +1,11 @@
+flowchart LR
+   
+   c(client)--read x -->n1((nodeA))
+   n1-- contact first replica-->n2((nodeB))
+   n1-- contact second replica-->n3((nodeC))
+   n1-- contact third replica-->n4((nodeD))
+   n2-. get x_v2.->n1
+   n3-. get x_v1.->n1
+   n4-. get x_v2.->n1
+   n1-. get x_v2.->c
+   n1==repair x_v2==>n3

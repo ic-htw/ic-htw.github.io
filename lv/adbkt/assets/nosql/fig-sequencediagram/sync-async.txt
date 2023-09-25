@@ -1,0 +1,15 @@
+actor user
+database leader
+database follower1
+database follower2
+
+entryspacing 0.5
+user->leader: change
+leader->follower1: replicate - <color:#blue>sync</color>
+leader->(10)follower2: replicate - <color:#red>async</color>
+space -8
+leader<--follower1: ok
+user<--leader: ok
+space 2
+leader<--follower2: ok
+

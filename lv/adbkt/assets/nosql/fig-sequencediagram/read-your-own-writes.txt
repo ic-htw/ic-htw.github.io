@@ -1,0 +1,9 @@
+actor user
+database leader
+database follower1
+
+entryspacing 0.5
+user->leader: change
+leader->(7)follower1: replicate
+space -6
+user->follower1: read - <color:#red>stale</color>

@@ -1,0 +1,20 @@
+control T1
+control T2
+database "pid:gehalt" as werte
+
+entryspacing 0.2
+
+activate T2
+box right of werte:100: 40.000
+rbox right of T2:**select** gehalt **into** //v_gehalt//\n**from** personal **where** pid=100
+
+activate T1
+rbox left of T1:**update** personal **set** gehalt=gehalt + 500\n**where** pid=100
+deactivate T1
+box right of werte:100: 40.500
+
+rbox right of T2:**select** gehalt **into** //v_gehalt//\n**from** personal **where** pid=100
+
+
+
+

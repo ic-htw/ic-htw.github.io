@@ -1,0 +1,12 @@
+flowchart LR  
+   n1((nodeA))-->n2((nodeB))
+   n2-.->n1
+   n1-->n3((nodeC))
+   n3-.->n1
+   n4-->n3
+   n3-.->n4((nodeD))
+   n2-->n5((nodeE))
+   n5-.->n2
+   n3-->n2
+   n2-.->n3
+

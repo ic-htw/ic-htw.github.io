@@ -1,0 +1,29 @@
+actor "userA" as ua
+database "node1" as n1
+database "node2" as n2
+database "node3" as n3
+actor "userB" as ub
+actor "reader" as r
+
+entryspacing 0.5
+box left of ua:set x=100
+ua->n1:
+ua->n2:
+n2-->ua:ok
+ua->(3)n3:
+
+space -8
+box right of ub:set x=200
+ub->n3:
+space 1
+ub->n2:
+n3-->ub: ok
+space 1
+ub-xn1:
+
+r->n1:
+n1-->r:x=100
+r->n2:
+n2-->r:x=200
+r->n3:
+n3-->r:x=100

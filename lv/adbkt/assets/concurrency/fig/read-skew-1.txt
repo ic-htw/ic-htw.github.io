@@ -1,0 +1,24 @@
+control T1
+control T2
+database "kid: betrag" as werte
+
+entryspacing 0.2
+
+box right of werte:100: 3.000\n200: 2.000
+
+activate T1
+rbox left of T1:**update** konto\n  **set** betrag=betrag - 500\n**where** kid=100
+box right of werte:100, 1: 2.500\n100, 2: 2.000
+
+activate T2
+
+rbox right of T2:**select** sum(betrag) **into** //v_summe//\n**from** konto\n\n//v_summe// liefert 4.500
+
+deactivate T2
+
+rbox left of T1:**update** konto\n  **set** betrag=betrag + 500\n**where** kid=200
+deactivate T1
+box right of werte:100, 1: 2.500\n100, 2: 2.500
+
+
+

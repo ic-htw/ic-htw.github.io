@@ -1,0 +1,37 @@
+control "T1" as t1
+database "Konto" as a
+control "T3" as t3
+
+control "T2" as t2
+
+entryspacing 0.2
+
+activate t2
+rbox right of t2:**select** betrag\n**from** konto **where** kid=10
+t2<-a:0
+rbox right of t2:**select** betrag\n**from** konto **where** kid=20
+t2<-a:0
+
+activate t1
+
+rbox left of t1:**update** konto **set** betrag=200 \n**where** kid=20
+t1->a:200
+space 1
+deactivate t1
+
+space 1
+activate t3
+note over t2:Diese Transaktion will 100 abheben.\nDa beide Konten leer sind, wird eine\nGebühr von 10% fällig.
+rbox right of t3:**select** betrag\n**from** konto **where** kid=10
+t3<-a:0
+
+
+rbox right of t3:**select** betrag\n**from** konto **where** kid=20
+t3<-a:20
+note right of t3:Diese Transaktion stellt fest, dass\nbeide Konten zusammen den Abhebe-\nbetrag decken. Eine Gebühr entfällt. \nDas steht in Widerspruch zu T2.
+deactivate t3
+
+
+
+rbox right of t2:**update** konto **set** betrag=-110\n**where** kid=10
+t2->a:-110

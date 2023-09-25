@@ -1,0 +1,20 @@
+control "T1" as t1
+database "Konto" as a
+control "T2" as t2
+
+entryspacing 0.2
+activate t1
+rbox left of t1:**select** betrag **into** v_betrag1\n**from** konto **where** kid=100
+t1<-a:80
+rbox left of t1:**select** betrag **into** v_betrag2\n**from** konto **where** kid=200
+t1<-a:50
+activate t2
+rbox right of t2:**select** betrag **into** v_betrag\n**from** konto **where** kid=200
+t2<-a:50
+
+rbox left of t1://v_betrag1 + v_betrag2 = 130\nAbheben von 90 ist ok//\n**update** konto **set** betrag=-10\n**where** kid=100
+t1->a:-10
+space 1
+deactivate t1
+rbox right of t2://Abheben von 50//\n**update** konto **set** betrag=0\n**where** kid=200
+t2->a:0

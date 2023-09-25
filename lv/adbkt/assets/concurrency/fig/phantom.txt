@@ -1,0 +1,24 @@
+control T1
+control T2
+database "pid:gehalt" as werte
+
+entryspacing 0.2
+
+box right of werte:100: 40.000\n200: 38.000
+activate T2
+rbox right of T2:**select** sum(gehalt)\n**from** personal\n\nliefert 78.000
+
+activate T1
+rbox left of T1:**insert** **into** personal(pid, gehalt)\nvalues (300, 42.000)
+deactivate T1
+
+
+
+box right of werte:100: 40.500\n200: 38.300\n900: 42.000
+
+rbox right of T2:**select** sum(gehalt)\n**from** personal\n\nliefert 120.000
+deactivate T2
+
+
+
+

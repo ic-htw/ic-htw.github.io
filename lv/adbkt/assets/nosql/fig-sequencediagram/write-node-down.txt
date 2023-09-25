@@ -1,0 +1,32 @@
+actor "user 1" as u1
+database "replica 1" as r1
+database "replica 2" as r2
+database "replica 3" as r3
+actor "user 2" as u2
+
+entryspacing 0.5
+activate r3 #red
+box left of u1: change V
+space -3
+u1->r1: 
+r1-->u1: ok
+space -2.4
+u1->(4)r2: 
+space -1
+r2-->u1: ok
+space -5
+u1-x(6)r3: 
+space 1
+deactivate r3
+
+u2->r1: read
+space -1
+u2->(2)r2: read
+space -3
+u2->(2)r3: read
+r1-->u2: new version of V
+r2-->u2: new version of V
+r3-->u2: old version of V
+
+u2->r3: write new Version of V\n(read repair)
+
