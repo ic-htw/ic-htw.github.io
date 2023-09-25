@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Präsentationen"
+title: {{site.data.links.pres.ts}}
 ---
 
-# Präsentation von Fallbeispielen
+# {{ site.data.links.pres.tl }}
 
 
 ## Aufgabe
