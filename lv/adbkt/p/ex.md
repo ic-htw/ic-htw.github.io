@@ -22,4 +22,4 @@ title: "Übungen"
 - P6: x Punkte - Fahrverbindung [(link)](#)
 - P7: x Punkte - GraphQL [(link)](#)
 - Rekursive Abfrage - Summierung in einer Hierarchie [(link)](#)
-- Hana Closeness Centrality [(link)(#)]
+- Hana Closeness Centrality [(link)](#)
