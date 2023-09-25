@@ -43,9 +43,9 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Einführung
 - VL: Historischer Überblick [(pdf)](/lv/adbkt/a/hist/hist.pdf)
 - Ü: Fallbeispiele [(link)](/lv/adbkt/p/ex/pres.html)
-- Ü: Benutzung DBeaver [(link)](#)
-- Ü: Python Container anlegen [(link)](#)
-- Ü: Python DB-Intro  [(link)](#)
+- Ü: Benutzung DBeaver [(link)](/lv/adbkt/p/infra.html#dbeaver)
+- Ü: Python Container anlegen [(link)](/lv/adbkt/p/ex/py-cont.html)
+- Ü: Python DB-Intro [(link)](#)
 - P1: ER-Diagramm aus Datenbankschema erzeugen [(link)](#)
 
 ### 16.10.23 (Abgabe P1)
