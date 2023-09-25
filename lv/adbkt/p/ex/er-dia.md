@@ -8,7 +8,7 @@ title: ADBKT
 Entwickeln Sie eine Python-Funktion, die ein ER-Diagramm aus einem Datenbankschema einer Postgres-Datenbank erzeugt:
 
 - Signatur der Python-Funktion: er_diagram(schema)
-- Schema ist der Name des Parameters, verwenden Sie "umobility" als Beispiel:
+- Schema ist der Name des Parameters, verwenden Sie "umobility" als Beispiel:<br>
 ![Modell UBahn](/lv/adbkt/a/shed/bubahn-modell.png)
 
 - Die Funktion muss auf die Metadaten von Postgres zugreifen, siehe:
