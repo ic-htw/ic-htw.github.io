@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Cypher"
+title: ADBKT
 ---
 
 # Cypher-Abfragen

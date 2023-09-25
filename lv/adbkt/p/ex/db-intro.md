@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "DB-Intro"
+title: ADBKT
 ---
 
 # Python DB-Intro

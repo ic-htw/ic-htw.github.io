@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Rec SQL"
+title: ADBKT
 ---
 
 # Rekursive Abfrage - Summierung in einer Hierarchie

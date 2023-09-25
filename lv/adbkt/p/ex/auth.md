@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Übungen"
+title: ADBKT
 ---
 
-# Zugriffskontrolle mit Graphdatenbanken (P5: x Punkte)
+# Zugriffskontrolle mit Graphdatenbanken - P5: x Punkte

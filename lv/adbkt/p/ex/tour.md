@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Übungen"
+title: ADBKT
 ---
 
 # TourDelight (P4: x Punkte)

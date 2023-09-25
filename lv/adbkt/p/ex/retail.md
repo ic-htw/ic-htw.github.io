@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Übungen"
+title: ADBKT
 ---
 
 # Retail Sales (P2: x Punkte)

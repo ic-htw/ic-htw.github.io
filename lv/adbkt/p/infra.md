@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "ADBKT"
+title: ADBKT
 ---
 # Technische Infrastruktur
 

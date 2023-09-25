@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Übungen"
+title: ADBKT
 ---
 
 # Cassandra Replikation

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Nebenläufigkeit"
+title: ADBKT
 ---
 
-# Nebenläufigkeit (P3: x Punkte)
+# Nebenläufigkeit - P3: x Punkte

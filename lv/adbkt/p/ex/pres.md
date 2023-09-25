@@ -1,9 +1,9 @@
 ---
 layout: default
-title: {{site.data.links.pres.ts}}
+title: ADBKT
 ---
 
-# {{ site.data.links.pres.tl }}
+# Präsentation von Fallbeispielen 
 
 
 ## Aufgabe

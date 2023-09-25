@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Übungen"
+title: ADBKT
 ---
 
-# ER-Diagramm aus Datenbankschema erzeugen (P1: x Punkte)
+# ER-Diagramm aus Datenbankschema erzeugen - P1: x Punkte

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Hana CC"
+title: ADBKT
 ---
 
 # Hana Closeness Centrality 
