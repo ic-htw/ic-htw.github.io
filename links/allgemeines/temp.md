@@ -9,6 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
+- Updating a 50 terabyte PostgreSQL database
+[(link)](https://medium.com/adyen/updating-a-50-terabyte-postgresql-database-f64384b799e7)
 
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
@@ -25,11 +27,6 @@ title: Temporär
 
 - How Modern SQL Databases Are Changing Web Development: Part 1
 [(link)](https://blog.whimslab.io/how-modern-sql-databases-are-changing-web-development-4d1f15b0daea)
-
-
-- How I Built a Data Lakehouse With Delta Lake Architecture
-[(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
-
                           
 - How I Built a Data Lakehouse With Delta Lake Architecture
 [(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
