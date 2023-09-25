@@ -6,7 +6,8 @@ title: ADBKT
 # Cassandra
 
 - Architektur
-  - Datenmodell [(link)](https://www.oreilly.com/api/v2/epubs/9781491933657/files/assets/ctdg_0405.pnghttps://cassandra.apache.org/doc/4.1/cassandra/architecture/dynamo.html#dataset-partitioning-consistent-hashing)
+  - Datenmodell [(link)](https://www.oreilly.com/api/v2/epubs/9781491933657/files/assets/ctdg_0405.png)
+  - Partitionierung [(link)](https://cassandra.apache.org/doc/4.1/cassandra/architecture/dynamo.html#dataset-partitioning-consistent-hashing)
   - Replikation [(link)](https://cassandra.apache.org/doc/4.1/cassandra/architecture/dynamo.html#multi-master-replication-versioned-data-and-tunable-consistency)
   - Konsistenz [(link)](https://cassandra.apache.org/doc/4.1/cassandra/architecture/dynamo.html#tunable-consistency)
 - Cassandra Query Language
