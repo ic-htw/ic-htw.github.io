@@ -26,7 +26,7 @@ Entwickeln Sie eine Python-Funktion, die ein ER-Diagramm aus einem Datenbanksche
   - Not Null Constraints
   - Die Fremdschlüssel sollen als 1:n-Beziehungen visualisiert werden
 
-Code
-- Download [er-diagramm.ipynb](/lv/adbkt/a/ipynb/er-diagramm.ipynb)
-- Upload
+- Code
+  - Download [er-diagramm.ipynb](/lv/adbkt/a/ipynb/er-diagramm.ipynb)
+  - Upload
 
