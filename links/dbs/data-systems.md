@@ -195,6 +195,8 @@ title: Data Systems
 # prometheus
 - home
 [(link)](https://prometheus.io/)
+- PromQL Cheat Sheet
+- [(link)](https://promlabs.com/promql-cheat-sheet/)
 - docker
 [(link)](https://hub.docker.com/r/prom/prometheus)
 - How we reduced our Prometheus infrastructure footprint by a third
