@@ -9,6 +9,10 @@ title: Temporär
 
 -->
 # Noch lesen
+
+- Memgraph vs. TigerGraph
+[(link)](https://medium.com/memgraph/memgraph-vs-tigergraph-a209145f1069)
+
 - Updating a 50 terabyte PostgreSQL database
 [(link)](https://medium.com/adyen/updating-a-50-terabyte-postgresql-database-f64384b799e7)
 
