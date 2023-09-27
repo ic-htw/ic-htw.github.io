@@ -1,3 +1,7 @@
 url: ""
 baseurl: ""
 title: ""
+
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
