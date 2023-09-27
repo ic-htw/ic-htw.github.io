@@ -163,6 +163,8 @@ title: Tools
 [(link)](https://github.com/tmux/tmux/wiki)
 
 # vscode
+- doc [(link)](https://code.visualstudio.com/docs)
+- remote [(link)](https://code.visualstudio.com/docs/remote/remote-overview)
 - Use regular expressions in Visual Studio
 [(link)](https://learn.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2022)
 - java
