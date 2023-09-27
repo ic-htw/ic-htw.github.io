@@ -99,6 +99,8 @@ title: Tools
 [(link)](https://docs.github.com/pages)
 - jekyll
 [(link)](https://jekyllrb.com/)
+- kramdown
+[(link)](https://kramdown.gettalong.org/index.html)
 - navigation
 [(link)](https://jekyllrb.com/tutorials/navigation/#scenario-4-three-level-navigation-list)
 - minima
