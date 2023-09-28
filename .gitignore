@@ -4,6 +4,9 @@ _site
 .jekyll-metadata
 vendor
 
+Gemfile.lock
+
+
 # VSCode
 .vscode
 .history/
