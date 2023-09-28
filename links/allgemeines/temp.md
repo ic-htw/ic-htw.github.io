@@ -10,6 +10,21 @@ title: Temporär
 -->
 # Noch lesen
 
+- Extracting Text from PDF Files with Python: A Comprehensive Guide
+[(link)](https://towardsdatascience.com/extracting-text-from-pdf-files-with-python-a-comprehensive-guide-9fc4003d517)
+
+- Choose Postgres queue technology
+[(link)](https://adriano.fyi/posts/2023-09-24-choose-postgres-queue-technology/)
+
+- JSON Updates in Postgres 16
+[(link)](https://www.crunchydata.com/blog/json-updates-postgres-16)
+
+- Slides: The Major Features of Postgres 16
+[(link)](https://momjian.us/main/writings/pgsql/features.pdf)
+
+- Evolution of Logical Replication 
+[(link)](https://amitkapila16.blogspot.com/2023/09/evolution-of-logical-replication.html)
+
 - Memgraph vs. TigerGraph
 [(link)](https://medium.com/memgraph/memgraph-vs-tigergraph-a209145f1069)
 
