@@ -7,8 +7,8 @@ title: ADBKT
 
 ## Graphprojektion
 - Legen sie folgende Graph-Projektion an
-  ```
-  MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]->(hb:Haltestelle)
+  ```cypher
+  MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-  (hb:Haltestelle)
   WITH gds.graph.project(
       'bubahn',
       ha,
