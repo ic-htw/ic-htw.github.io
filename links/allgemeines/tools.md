@@ -97,6 +97,18 @@ title: Tools
 [(link)](https://github.github.com/gfm/)
 - GitHub Pages-Dokumentation
 [(link)](https://docs.github.com/pages)
+
+# google
+- Getting Started with Google APIs in Python
+[(link)](https://towardsdatascience.com/getting-started-with-google-apis-in-python-7f07b5d8b806)
+
+# grafana
+- doc
+[(link)](https://grafana.com/docs/grafana/latest/)
+- docker
+[(link)](https://hub.docker.com/r/grafana/grafana)
+
+# jekyll
 - jekyll
 [(link)](https://jekyllrb.com/)
 - kramdown
@@ -109,16 +121,6 @@ title: Tools
 [(link)](https://github.com/pages-themes/leap-day)
 - cayman
 [(link)](https://github.com/pages-themes/cayman)
-
-# google
-- Getting Started with Google APIs in Python
-[(link)](https://towardsdatascience.com/getting-started-with-google-apis-in-python-7f07b5d8b806)
-
-# grafana
-- doc
-[(link)](https://grafana.com/docs/grafana/latest/)
-- docker
-[(link)](https://hub.docker.com/r/grafana/grafana)
 
 # jupyter notebooks
 - ipython-sql
