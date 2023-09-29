@@ -113,6 +113,8 @@ title: Tools
 [(link)](https://jekyllrb.com/)
 - kramdown
 [(link)](https://kramdown.gettalong.org/index.html)
+- rouge
+[(link)](https://github.com/rouge-ruby/rouge)
 - navigation
 [(link)](https://jekyllrb.com/tutorials/navigation/#scenario-4-three-level-navigation-list)
 - minima
