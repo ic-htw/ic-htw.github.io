@@ -10,6 +10,18 @@ title: Temporär
 -->
 # Noch lesen
 
+- How to Maximize Database Concurrency
+[(link)](https://scylladb.medium.com/how-to-maximize-database-concurrency-417adbb00a09)
+
+- Oracle Database 23c: The Next Long Term Support 
+[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release#_msocom_1)
+
+- Using JSON Relational Duality Views with Micronaut Framework
+[(link)](https://blogs.oracle.com/database/post/json-relational-duality-views-with-micronaut-framework)
+
+- JSON-Relational Duality Developer's Guide
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/jsnvu/overview-json-relational-duality-views.html#GUID-CE7227BF-B4AF-4024-A578-ED52795F4525)
+
 - Extracting Text from PDF Files with Python: A Comprehensive Guide
 [(link)](https://towardsdatascience.com/extracting-text-from-pdf-files-with-python-a-comprehensive-guide-9fc4003d517)
 
