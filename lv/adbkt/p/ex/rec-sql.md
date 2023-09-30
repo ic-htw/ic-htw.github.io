@@ -9,7 +9,7 @@ title: ADBKT
 Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Blättern bis zur Wurzel aufsummiert.
 
 ## Tabelle
-  ```
+  ```sql
   create table tree0 (
     id integer not null primary key,
     p integer,
@@ -18,7 +18,7 @@ Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Bl
   ```
 
 ## Beispieldaten
-  ```
+  ```sql
   insert into tree0 values (11, null, null);
   insert into tree0 values (12, 11, null);
   insert into tree0 values (13, 11, null);
