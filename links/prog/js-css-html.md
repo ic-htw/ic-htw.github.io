@@ -15,6 +15,17 @@ title: JavaScript / CSS / HTML
 - JS Complete / learn
 [(link)](https://jscomplete.com/learn)
 
+# HTML / CSS
+- self html
+[(link)](https://wiki.selfhtml.org/)
+- w3schools
+[(link)](https://www.w3schools.com/)
+- W3.CSS Tutorial
+[(link)](https://www.w3schools.com/w3css/default.asp)
+- W3.JS
+[(link)](https://www.w3schools.com/w3js/)
+
+
 # JointJS
 - home
 [(link)](https://www.jointjs.com/opensource)
@@ -64,16 +75,6 @@ title: JavaScript / CSS / HTML
 [(link)](https://leafletjs.com/)
 - leaflet examples
 [(link)](https://github.com/Lapizistik/leaflet-examples)
-
-# HTML / CSS
-- self html
-[(link)](https://wiki.selfhtml.org/)
-- w3schools
-[(link)](https://www.w3schools.com/)
-- W3.CSS Tutorial
-[(link)](https://www.w3schools.com/w3css/default.asp)
-- W3.JS
-[(link)](https://www.w3schools.com/w3js/" 
 
 # Posts (js/node)
 - LearnVue
