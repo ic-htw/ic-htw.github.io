@@ -222,9 +222,8 @@ title: Python
 [(link)](https://auth0.com/blog/protocol-types-in-python/)
 
 # Artikel
-    
-
-
+- Extracting Text from PDF Files with Python: A Comprehensive Guide
+[(link)](https://towardsdatascience.com/extracting-text-from-pdf-files-with-python-a-comprehensive-guide-9fc4003d517)
 
 - FastAPI, SQLAlchemy, and Parallel Queries Walk Into a Bar…
 [(link)](https://medium.com/@lironbenyeda/fastapi-sqlalchemy-and-parallel-queries-walk-into-a-bar-86dfe40aa878)
