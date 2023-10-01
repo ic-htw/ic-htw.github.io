@@ -88,9 +88,18 @@ title: DynamoDB
 [(pdf)](https://d1.awsstatic.com/events/Summits/reinvent2022/DAT320_Deploy-modern-and-effective-data-models-with-Amazon-DynamoDB.pdf)
 [(video)](https://youtu.be/SC-YAPgJpms?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
 
+- Migrating to Amazon DynamoDB from an RDBMS  - aws summit 2022
+[(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/amer-sf-summit-2022/Migrating_to_Amazon_DynamoDB_from_an_RDBMS_DAT308.pdf)
+
 - Data modeling with DynamoDB re:invent 2021
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2021/Data_modeling_with_Amazon_DynamoDB_DAT316-R1.pdf)
 [(video)](https://youtu.be/yNOVamgIXGQ?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
+
+- Build for scale with Amazon DynamoDB developer features aws summit 2021
+[(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/augustsummitonline/Build_for_scale_with_Amazon_DynamoDB_developer_features_DAT201.pdf)
+
+- Build for scale, performance with feature-packed Amazon DynamoDB aws summit 2021
+[(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/Build_for_better_scale_and_performance_with_Amazon_DynamoDB_DAT201.pdf)
 
 - Amazon DynamoDB: Under the hood of a hyperscale database -re:invent 2019
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Amazon_DynamoDB_Under_the_hood_of_a_hyperscale_database_DAT325.pdf)
@@ -100,10 +109,3 @@ title: DynamoDB
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Scale_fearlessly_with_Amazon_DynamoDB_adaptive_capacity_DAT304.pdf)
 [(video)](https://youtu.be/zUsJK5pe_A0?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
 
-- Migrating to Amazon DynamoDB from an RDBMS  - aws summit 2022
-[(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/amer-sf-summit-2022/Migrating_to_Amazon_DynamoDB_from_an_RDBMS_DAT308.pdf)
-[(link)]()
-
-
-[(link)]()
-[(link)]()
