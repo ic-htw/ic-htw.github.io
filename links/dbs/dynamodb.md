@@ -61,12 +61,6 @@ title: DynamoDB
 
 
 # posts
-- Amazon DynamoDB: Under the hood of a hyperscale database
-[(link)](https://d1.awsstatic.com/events/reinvent/2019/Amazon_DynamoDB_Under_the_hood_of_a_hyperscale_database_DAT325.pdf)
-- Scale fearlessly with Amazon DynamoDB adaptive capacity
-[(link)](https://d1.awsstatic.com/events/reinvent/2019/Scale_fearlessly_with_Amazon_DynamoDB_adaptive_capacity_DAT304.pdf)
-- Data modeling with DynamoDB
-[(link)](https://d1.awsstatic.com/events/reinvent/2021/Data_modeling_with_Amazon_DynamoDB_DAT316-R1.pdf)
 - dynamodbguide - what-is-dynamo-db
 [(link)](https://www.dynamodbguide.com/what-is-dynamo-db)
 - Key Takeaways from the DynamoDB Paper
@@ -85,3 +79,31 @@ title: DynamoDB
 [(link)](https://www.allthingsdistributed.com/2017/10/a-decade-of-dynamo.html)
 - Why Amazon DynamoDB Isn’t for Everyone
 [(link)](https://acloudguru.com/blog/engineering/why-amazon-dynamodb-isnt-for-everyone-and-how-to-decide-when-it-s-for-you)
+
+# aws videos and slides
+- AWS Events Content
+[(link)](https://aws.amazon.com/de/events/events-content/?awsf.filter-series=*all&awsf.filter-session-type=*all&awsf.filter-level=*all&awsf.filter-topic=*all&awsf.filter-industry=*all&awsf.filter-language=language%23english)
+
+- Deploy modern and effective data models with Amazon DynamoDB - re:invent 2022
+[(pdf)](https://d1.awsstatic.com/events/Summits/reinvent2022/DAT320_Deploy-modern-and-effective-data-models-with-Amazon-DynamoDB.pdf)
+[(video)](https://youtu.be/SC-YAPgJpms?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
+
+- Data modeling with DynamoDB re:invent 2021
+[(pdf)](https://d1.awsstatic.com/events/reinvent/2021/Data_modeling_with_Amazon_DynamoDB_DAT316-R1.pdf)
+[(video)](https://youtu.be/yNOVamgIXGQ?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
+
+- Amazon DynamoDB: Under the hood of a hyperscale database -re:invent 2019
+[(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Amazon_DynamoDB_Under_the_hood_of_a_hyperscale_database_DAT325.pdf)
+[(video)](https://youtu.be/yvBR71D0nAQ?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
+
+- Scale fearlessly with Amazon DynamoDB adaptive capacity re:invent 2019
+[(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Scale_fearlessly_with_Amazon_DynamoDB_adaptive_capacity_DAT304.pdf)
+[(video)](https://youtu.be/zUsJK5pe_A0?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
+
+- Migrating to Amazon DynamoDB from an RDBMS  - aws summit 2022
+[(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/amer-sf-summit-2022/Migrating_to_Amazon_DynamoDB_from_an_RDBMS_DAT308.pdf)
+[(link)]()
+
+
+[(link)]()
+[(link)]()
