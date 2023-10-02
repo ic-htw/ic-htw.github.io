@@ -48,6 +48,19 @@ title: DynamoDB
 
 
 # amazon blog posts
+- Handle traffic spikes with Amazon DynamoDB provisioned capacity
+[(link)](https://aws.amazon.com/de/blogs/database/handle-traffic-spikes-with-amazon-dynamodb-provisioned-capacity/)
+
+- Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 1: Loading)
+[(link)](https://aws.amazon.com/de/blogs/database/part-1-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/)
+
+- Build aggregations for Amazon DynamoDB tables using Amazon DynamoDB Streams
+[(link)](https://aws.amazon.com/de/blogs/database/build-aggregations-for-amazon-dynamodb-tables-using-amazon-dynamodb-streams/)
+
+- Model hierarchical automotive component data using Amazon DynamoDB
+[(link)](https://aws.amazon.com/de/blogs/database/model-hierarchical-automotive-component-data-using-amazon-dynamodb/)
+
+
 - Data modelling for an internet-scale online transactional system using Amazon DynamoDB
 [(link)](https://aws.amazon.com/de/blogs/database/data-modelling-for-an-internet-scale-online-transactional-system-using-amazon-dynamodb/)
 - How Amazon DynamoDB adaptive capacity accommodates uneven data access patterns
