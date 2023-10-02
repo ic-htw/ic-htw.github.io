@@ -5,7 +5,7 @@ title: DynamoDB
 
 # official
 - home
-[(link)](https://aws.amazon.com/de/pm/dynamodb/)
+[(link)](https://aws.amazon.com/pm/dynamodb/?nc1=h_ls)
 - doc
 [(link)](https://docs.aws.amazon.com/dynamodb/?pg=dynamodbt&amp;sec=hs)
 - blog
@@ -81,8 +81,15 @@ title: DynamoDB
 [(link)](https://acloudguru.com/blog/engineering/why-amazon-dynamodb-isnt-for-everyone-and-how-to-decide-when-it-s-for-you)
 
 # aws videos and slides
-- AWS Events Content
-[(link)](https://aws.amazon.com/de/events/events-content/?awsf.filter-series=*all&awsf.filter-session-type=*all&awsf.filter-level=*all&awsf.filter-topic=*all&awsf.filter-industry=*all&awsf.filter-language=language%23english)
+- Cost Optimization Techniques and Tools for Existing DynamoDB Workloads - 2022
+[(video)](https://pages.awscloud.com/Cost-Optimization-Techniques-and-Tools-for-Existing-DynamoDB-Workloads_2022_0317-DAT_OD.html)
+
+- Deep-dive into the NoSQL, serverless scaling of Amazon DynamoDB - 2022
+[(video)](https://pages.awscloud.com/Deep-dive-into-the-NoSQL-serverless-scaling-of-Amazon-DynamoDB-_2022_0801-DAT_OD.html)
+
+- Building High-Performance Geospatial Applications with Amazon DynamoDB and Amazon ElastiCache - 2022
+[(video)](https://pages.awscloud.com/Building-High-Performance-Geospatial-Applications-with-Amazon-DynamoDB-and-Amazon-ElastiCache_s30e01-DAT_OD.html)
+
 
 - Deploy modern and effective data models with Amazon DynamoDB - re:invent 2022
 [(pdf)](https://d1.awsstatic.com/events/Summits/reinvent2022/DAT320_Deploy-modern-and-effective-data-models-with-Amazon-DynamoDB.pdf)
@@ -90,6 +97,18 @@ title: DynamoDB
 
 - Migrating to Amazon DynamoDB from an RDBMS  - aws summit 2022
 [(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/amer-sf-summit-2022/Migrating_to_Amazon_DynamoDB_from_an_RDBMS_DAT308.pdf)
+
+- What's New with Amazon DynamoDB - 2021
+[(video)](https://pages.awscloud.com/Whats-New-with-Amazon-DynamoDB_2021_0615-DAT_OD.html)
+
+- Deep Dive on Multi-Region Architectures with Amazon DynamoDB - 2021
+[(video)](https://pages.awscloud.com/Deep-Dive-on-Multi-Region-Architectures-with-Amazon-DynamoDB_2021_0427-DAT_OD.html)
+
+- Building Modern Applications with Amazon DynamoDB and Amazon Keyspaces - 2021
+[(video)](https://pages.awscloud.com/Building-Modern-Applications-with-Amazon-DynamoDB-and-Amazon-Keyspaces_2021_0402-DAT_OD.html)
+
+Deep Dive on Amazon DynamoDB Key Features to Drive Business Impact - 2021
+[(video)](https://pages.awscloud.com/Deep-Dive-on-Amazon-DynamoDB-Key-Features-to-Drive-Business-Impact_2021_0328-DAT_OD.html)
 
 - Data modeling with DynamoDB re:invent 2021
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2021/Data_modeling_with_Amazon_DynamoDB_DAT316-R1.pdf)
