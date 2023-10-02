@@ -107,7 +107,7 @@ title: DynamoDB
 - Building Modern Applications with Amazon DynamoDB and Amazon Keyspaces - 2021
 [(video)](https://pages.awscloud.com/Building-Modern-Applications-with-Amazon-DynamoDB-and-Amazon-Keyspaces_2021_0402-DAT_OD.html)
 
-Deep Dive on Amazon DynamoDB Key Features to Drive Business Impact - 2021
+- Deep Dive on Amazon DynamoDB Key Features to Drive Business Impact - 2021
 [(video)](https://pages.awscloud.com/Deep-Dive-on-Amazon-DynamoDB-Key-Features-to-Drive-Business-Impact_2021_0328-DAT_OD.html)
 
 - Data modeling with DynamoDB re:invent 2021
