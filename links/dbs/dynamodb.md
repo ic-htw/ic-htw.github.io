@@ -46,21 +46,20 @@ title: DynamoDB
 - Python Code Example
 [(link)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html)
 
+# guides
+- dynamodbguide - what-is-dynamo-db
+[(link)](https://www.dynamodbguide.com/what-is-dynamo-db)
+
 
 # amazon blog posts
 - Handle traffic spikes with Amazon DynamoDB provisioned capacity
 [(link)](https://aws.amazon.com/de/blogs/database/handle-traffic-spikes-with-amazon-dynamodb-provisioned-capacity/)
-
 - Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 1: Loading)
 [(link)](https://aws.amazon.com/de/blogs/database/part-1-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/)
-
 - Build aggregations for Amazon DynamoDB tables using Amazon DynamoDB Streams
 [(link)](https://aws.amazon.com/de/blogs/database/build-aggregations-for-amazon-dynamodb-tables-using-amazon-dynamodb-streams/)
-
 - Model hierarchical automotive component data using Amazon DynamoDB
 [(link)](https://aws.amazon.com/de/blogs/database/model-hierarchical-automotive-component-data-using-amazon-dynamodb/)
-
-
 - Data modelling for an internet-scale online transactional system using Amazon DynamoDB
 [(link)](https://aws.amazon.com/de/blogs/database/data-modelling-for-an-internet-scale-online-transactional-system-using-amazon-dynamodb/)
 - How Amazon DynamoDB adaptive capacity accommodates uneven data access patterns
@@ -74,69 +73,45 @@ title: DynamoDB
 
 
 # posts
-- dynamodbguide - what-is-dynamo-db
-[(link)](https://www.dynamodbguide.com/what-is-dynamo-db)
-- Key Takeaways from the DynamoDB Paper
-[(link)](https://www.alexdebrie.com/posts/dynamodb-paper/)
-- Understanding Eventual Consistency in DynamoDB
-[(link)](https://www.alexdebrie.com/posts/dynamodb-eventual-consistency/)
-- Beware of dilution of DynamoDB throughput due to excessive scaling
-[(link)](https://hackernoon.com/beware-of-dilution-of-dynamodb-throughput-due-to-excessive-scaling-4df51063edae)
+- Posts Alex DeBrie
+[(link)](https://www.alexdebrie.com/posts/tags/dynamo-db)
 - ISO Better Scaling, Instacart Drops Postgres for Amazon DynamoDB
 [(link)](https://thenewstack.io/iso-better-scaling-instacart-drops-postgres-for-amazon-dynamodb/)
 - What I’ve Learned From Using AWS DynamoDB in Production for More Than 3 Years
 [(link)](https://awstip.com/what-ive-learned-from-using-aws-dynamodb-in-production-for-more-than-3-years-49a077886b5c)
-- Modernization of the database: DynamoDB to Fauna
-[(link)](https://faunadb.medium.com/modernization-of-the-database-dynamodb-to-fauna-660ae16d4dc1)
 - A Decade of Dynamo: Powering the next wave of high-performance, internet-scale applications
 [(link)](https://www.allthingsdistributed.com/2017/10/a-decade-of-dynamo.html)
-- Why Amazon DynamoDB Isn’t for Everyone
-[(link)](https://acloudguru.com/blog/engineering/why-amazon-dynamodb-isnt-for-everyone-and-how-to-decide-when-it-s-for-you)
 
 # aws videos and slides
 - Cost Optimization Techniques and Tools for Existing DynamoDB Workloads - 2022
 [(video)](https://pages.awscloud.com/Cost-Optimization-Techniques-and-Tools-for-Existing-DynamoDB-Workloads_2022_0317-DAT_OD.html)
-
 - Deep-dive into the NoSQL, serverless scaling of Amazon DynamoDB - 2022
 [(video)](https://pages.awscloud.com/Deep-dive-into-the-NoSQL-serverless-scaling-of-Amazon-DynamoDB-_2022_0801-DAT_OD.html)
-
 - Building High-Performance Geospatial Applications with Amazon DynamoDB and Amazon ElastiCache - 2022
 [(video)](https://pages.awscloud.com/Building-High-Performance-Geospatial-Applications-with-Amazon-DynamoDB-and-Amazon-ElastiCache_s30e01-DAT_OD.html)
-
-
 - Deploy modern and effective data models with Amazon DynamoDB - re:invent 2022
 [(pdf)](https://d1.awsstatic.com/events/Summits/reinvent2022/DAT320_Deploy-modern-and-effective-data-models-with-Amazon-DynamoDB.pdf)
 [(video)](https://youtu.be/SC-YAPgJpms?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
-
 - Migrating to Amazon DynamoDB from an RDBMS  - aws summit 2022
 [(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/amer-sf-summit-2022/Migrating_to_Amazon_DynamoDB_from_an_RDBMS_DAT308.pdf)
-
 - What's New with Amazon DynamoDB - 2021
 [(video)](https://pages.awscloud.com/Whats-New-with-Amazon-DynamoDB_2021_0615-DAT_OD.html)
-
 - Deep Dive on Multi-Region Architectures with Amazon DynamoDB - 2021
 [(video)](https://pages.awscloud.com/Deep-Dive-on-Multi-Region-Architectures-with-Amazon-DynamoDB_2021_0427-DAT_OD.html)
-
 - Building Modern Applications with Amazon DynamoDB and Amazon Keyspaces - 2021
 [(video)](https://pages.awscloud.com/Building-Modern-Applications-with-Amazon-DynamoDB-and-Amazon-Keyspaces_2021_0402-DAT_OD.html)
-
 - Deep Dive on Amazon DynamoDB Key Features to Drive Business Impact - 2021
 [(video)](https://pages.awscloud.com/Deep-Dive-on-Amazon-DynamoDB-Key-Features-to-Drive-Business-Impact_2021_0328-DAT_OD.html)
-
 - Data modeling with DynamoDB re:invent 2021
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2021/Data_modeling_with_Amazon_DynamoDB_DAT316-R1.pdf)
 [(video)](https://youtu.be/yNOVamgIXGQ?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
-
 - Build for scale with Amazon DynamoDB developer features aws summit 2021
 [(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/augustsummitonline/Build_for_scale_with_Amazon_DynamoDB_developer_features_DAT201.pdf)
-
 - Build for scale, performance with feature-packed Amazon DynamoDB aws summit 2021
 [(pdf)](https://d1.awsstatic.com/events/Summits/amer2021/maysummitonline/Build_for_better_scale_and_performance_with_Amazon_DynamoDB_DAT201.pdf)
-
 - Amazon DynamoDB: Under the hood of a hyperscale database -re:invent 2019
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Amazon_DynamoDB_Under_the_hood_of_a_hyperscale_database_DAT325.pdf)
 [(video)](https://youtu.be/yvBR71D0nAQ?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
-
 - Scale fearlessly with Amazon DynamoDB adaptive capacity re:invent 2019
 [(pdf)](https://d1.awsstatic.com/events/reinvent/2019/Scale_fearlessly_with_Amazon_DynamoDB_adaptive_capacity_DAT304.pdf)
 [(video)](https://youtu.be/zUsJK5pe_A0?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn)
