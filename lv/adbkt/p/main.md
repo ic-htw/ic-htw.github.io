@@ -51,23 +51,26 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 ### 16.10.23 (Abgabe P1)
 - P1: Statuscheck
 - VL: Window-Funktionen in SQL [(pdf)](/lv/adbkt/a/sql/window.pdf)
-- P2: Retail Sales [(link)](/lv/adbkt/p/ex/retail.html)
+- Ü: Retail Sales [(link)](/lv/adbkt/p/ex/retail.html)
 - VL: Nebenläufigkeit [(pdf)](/lv/adbkt/a/concur/concur.pdf)
-- P3: Nebenläufigkeit [(link)](/lv/adbkt/p/ex/concur.html)
+- VL: Verteilte Transaktionen - 2 Phase Commit Protocol [(pdf)](/lv/adbkt/a/concur/2pc.pdf)
+- P2: Nebenläufigkeit [(link)](/lv/adbkt/p/ex/concur.html)
 
-### 23.10.23 (Abgabe P2/P3)
-- P2/P3: Statuscheck
+### 23.10.23 (Abgabe P2)
+- P2: Päsentation
 - VL: NoSQL [(pdf)](/lv/adbkt/a/nosql/nosql.pdf)
 - Ü: Cassandra Replikation [(link)](/lv/adbkt/p/ex/cas-repl.html)
 - VL: Cassandra [(link)](/lv/adbkt/p/pr/cas.html)
-- P4: TourDelight [(link)](/lv/adbkt/p/ex/tour.html)
+- P3: TourDelight [(link)](/lv/adbkt/p/ex/tour.html)
 
-### 30.10.23
-- P4: Abstimmung
+### 30.10.23 (per Zoom)
+- P3: Abstimmung allgemein
+- P3: Abstimmung: individuell per Gruppe
+
+### 06.11.23 
+- P3: Statuscheck
 - VL: DynamoDB [(link)](/lv/adbkt/p/pr/dynamo.html)
-
-### 06.11.23 (Abgabe P4)
-- P4: Statuscheck
+- Ü: DynamoDB [(link)](/lv/adbkt/p/ex/dynamo.html)
 - Ü: Neo4j-Container [(link)](/lv/adbkt/p/ex/neo4j-cont.html)
 - VL: Cypher [(link)](/lv/adbkt/p/pr/cypher.html)
 - Ü: Cypher-Abfragen [(link)](/lv/adbkt/p/ex/cypher.html)
@@ -75,7 +78,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: GDS [(link)](/lv/adbkt/p/ex/gds.html)
 - P5: Zugriffskontrolle mit Graphdatenbanken [(link)](/lv/adbkt/p/ex/auth.html)
 
-### 13.11.23 (Abgabe P5)
+### 13.11.23 (Abgabe P3)
 - P5: Statuscheck
 - VL: Geo-Datenverarbeitung [(pdf)](/lv/adbkt/a/geo/geo.pdf)
 - Ü: Geo-Abfragen [(link)](/lv/adbkt/p/ex/geo-sql.html)
@@ -98,5 +101,4 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - P7: Statuscheck
 - VL: Rekursive Abfragen [(pdf)](/lv/adbkt/a/sql/rec.pdf)
 - Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/ex/rec-sql.html)
-- VL: Verteilte Transaktionen - 2 Phase Commit Protocol [(pdf)](/lv/adbkt/a/concur/2pc.pdf)
 
