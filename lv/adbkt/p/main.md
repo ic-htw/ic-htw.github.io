@@ -46,7 +46,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: Benutzung DBeaver [(link)](/lv/adbkt/p/infra.html#dbeaver)
 - Ü: Python-Container [(link)](/lv/adbkt/p/ex/py-cont.html)
 - Ü: Python DB-Intro [(link)](/lv/adbkt/p/ex/db-intro.html)
-- P1: ER-Diagramm [(link)](/lv/adbkt/p/ex/er-dia.html)
+- P1: ER-Diagramm: 10 Punkte [(link)](/lv/adbkt/p/ex/er-dia.html)
 
 ### 16.10.23 (Abgabe P1)
 - P1: Statuscheck
@@ -56,14 +56,14 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/ex/rec-sql.html)
 - VL: Nebenläufigkeit [(pdf)](/lv/adbkt/a/concur/concur.pdf)
 - VL: Verteilte Transaktionen - 2 Phase Commit Protocol [(pdf)](/lv/adbkt/a/concur/2pc.pdf)
-- P2: Nebenläufigkeit [(link)](/lv/adbkt/p/ex/concur.html)
+- P2: Nebenläufigkeit: 10 Punkte [(link)](/lv/adbkt/p/ex/concur.html)
 
 ### 23.10.23 (Abgabe P2)
 - P2: Päsentation
 - VL: NoSQL [(pdf)](/lv/adbkt/a/nosql/nosql.pdf)
 - Ü: Cassandra Replikation [(link)](/lv/adbkt/p/ex/cas-repl.html)
 - VL: Cassandra [(link)](/lv/adbkt/p/pr/cas.html)
-- P3: TourDelight [(link)](/lv/adbkt/p/ex/tour.html)
+- P3: TourDelight: 30 Punkte [(link)](/lv/adbkt/p/ex/tour.html)
 
 ### 30.10.23 (per Zoom)
 - P3: Abstimmung allgemein
@@ -76,20 +76,20 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: Cypher-Abfragen [(link)](/lv/adbkt/p/ex/cypher.html)
 - VL: GDS [(pdf)](/lv/adbkt/a/graph/gds.pdf)
 - Ü: GDS [(link)](/lv/adbkt/p/ex/gds.html)
-- P4: Zugriffskontrolle mit Graphdatenbanken [(link)](/lv/adbkt/p/ex/auth.html)
+- P4: Zugriffskontrolle mit Graphdatenbanken: 15 Punkte [(link)](/lv/adbkt/p/ex/auth.html)
 
 ### 13.11.23 (Abgabe P4)
 - P4: Statuscheck
 - VL: Geo-Datenverarbeitung [(pdf)](/lv/adbkt/a/geo/geo.pdf)
 - Ü: Geo-Abfragen [(link)](/lv/adbkt/p/ex/geo-sql.html)
 - Ü: Visualisierung Geodaten [(link)](/lv/adbkt/p/ex/geo-viz.html)
-- P5: Fahrverbindung [(link)](/lv/adbkt/p/ex/sched.html)
+- P5: Fahrverbindung: 15 Punkte [(link)](/lv/adbkt/p/ex/sched.html)
 
 ### 20.11.23 (Abgabe P5)
 - P5: Statuscheck
 - Vorlesung Dokumentenorientierte DB-Systeme [(pdf)](/lv/adbkt/a/nosql/doc-db.pdf)
 - Vorlesung JSON-Datenverarbeitung [(pdf)](/lv/adbkt/a/json/json-pg.pdf)
-- P6: Graph-QL [(link)](/lv/adbkt/p/ex/graphql.html)
+- P6: Graph-QL: 20 Punkte [(link)](/lv/adbkt/p/ex/graphql.html)
 - VL: DynamoDB [(link)](/lv/adbkt/p/pr/dynamo.html)
 - Ü: DynamoDB [(link)](/lv/adbkt/p/ex/dynamo.html)
 
