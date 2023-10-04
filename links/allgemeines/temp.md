@@ -9,6 +9,9 @@ title: Temporär
 
 -->
 # Noch lesen
+- How to Get Started With the Neo4j Graph Data Science Python Client
+[(link)](https://medium.com/neo4j/how-to-get-started-with-the-neo4j-graph-data-science-python-client-56209d9b0d0d)
+
 - A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm
 [(link)](https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d)
 
@@ -20,9 +23,6 @@ title: Temporär
 
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
-
-- C++ Bootcamp
-[(link)](https://github.com/cmu-db/15445-bootcamp)
 
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)
