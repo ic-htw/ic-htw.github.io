@@ -9,17 +9,17 @@ title: Temporär
 
 -->
 # Noch lesen
+- Load Balancer vs. Reverse Proxy vs. API Gateway
+[(link)](https://medium.com/geekculture/load-balancer-vs-reverse-proxy-vs-api-gateway-e9ec5809180c)
+
+- Implementing the Netflix Media Database
+[(link)](https://netflixtechblog.com/implementing-the-netflix-media-database-53b5a840b42a)
+
 - How to Get Started With the Neo4j Graph Data Science Python Client
 [(link)](https://medium.com/neo4j/how-to-get-started-with-the-neo4j-graph-data-science-python-client-56209d9b0d0d)
 
 - A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm
 [(link)](https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d)
-
-- Memgraph vs. TigerGraph
-[(link)](https://medium.com/memgraph/memgraph-vs-tigergraph-a209145f1069)
-
-- Updating a 50 terabyte PostgreSQL database
-[(link)](https://medium.com/adyen/updating-a-50-terabyte-postgresql-database-f64384b799e7)
 
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
@@ -36,7 +36,6 @@ title: Temporär
                           
 - How I Built a Data Lakehouse With Delta Lake Architecture
 [(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
-
 
 - Vector Databases 
 [(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
@@ -65,9 +64,6 @@ title: Temporär
 - How to build a Streaming SQL Engine
 [(link)](https://blog.epsio.io/how-to-create-a-streaming-sql-engine-96e23994e0dd)
         
-- Nine ways to shoot yourself in the foot with PostgreSQL
-[(link)](https://philbooth.me/blog/nine-ways-to-shoot-yourself-in-the-foot-with-postgresql?utm_source=pocket_saves)
-
 - How Amazon RDS replication works and why the FAA’s database problem won’t happen in AWS
 [(link)](https://ottertune.com/blog/why-the-faas-database-problem-wont-happen-in-aws)
 
