@@ -56,7 +56,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/ex/rec-sql.html)
 - VL: Nebenläufigkeit [(pdf)](/lv/adbkt/a/concur/concur.pdf)
 - VL: Verteilte Transaktionen - 2 Phase Commit Protocol [(pdf)](/lv/adbkt/a/concur/2pc.pdf)
-- P2: Nebenläufigkeit: 10 Punkte [(link)](/lv/adbkt/p/ex/concur.html)
+- P2: SQL mit ChatGPT: 10 Punkte [(link)](/lv/adbkt/p/ex/sql-chatgpt.html)
 
 ### 23.10.23 (Abgabe P2)
 - P2: Päsentation
