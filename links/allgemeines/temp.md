@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Timeseries Databases Performance 
+[(link)](https://medium.com/@ev_kozloski/timeseries-databases-performance-testing-7-alternatives-56a3415e6e9e)
+
+- ETL on Azure with Python, DuckDB, and Container Instance
+[(link)](https://medium.com/@mariusz_kujawski/etl-on-azure-with-python-duckdb-and-container-instance-def9b591e45f)
+
 - Load Balancer vs. Reverse Proxy vs. API Gateway
 [(link)](https://medium.com/geekculture/load-balancer-vs-reverse-proxy-vs-api-gateway-e9ec5809180c)
 
@@ -31,9 +37,6 @@ title: Temporär
 [(link)](https://sql.ophir.dev/)
 [(link)](https://www.postgresql.org/about/news/announcing-sqlpage-build-dynamic-web-applications-in-sql-2672/)
 
-- How Modern SQL Databases Are Changing Web Development: Part 1
-[(link)](https://blog.whimslab.io/how-modern-sql-databases-are-changing-web-development-4d1f15b0daea)
-                          
 - How I Built a Data Lakehouse With Delta Lake Architecture
 [(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
 
@@ -64,9 +67,6 @@ title: Temporär
 - How to build a Streaming SQL Engine
 [(link)](https://blog.epsio.io/how-to-create-a-streaming-sql-engine-96e23994e0dd)
         
-- How Amazon RDS replication works and why the FAA’s database problem won’t happen in AWS
-[(link)](https://ottertune.com/blog/why-the-faas-database-problem-wont-happen-in-aws)
-
 - What happens when Amazon rolls back from serverless?
 [(link)](https://betterprogramming.pub/what-happens-when-amazon-rolls-back-from-serverless-20ca38b88420)
         
@@ -88,12 +88,6 @@ title: Temporär
 - pgexporter is a Prometheus exporter for PostgreSQL
 [(link)](https://github.com/pgexporter/pgexporter/tree/main)
         
-- When to Consider Postgres Partitioning
-[(link)](https://www.timescale.com/blog/when-to-consider-postgres-partitioning/)
-
-- Monitoring PostgreSQL replication
-[(link)](https://www.cybertec-postgresql.com/en/monitoring-postgresql-replication/)
-
 - pgJQ: Use jq in Postgres
 [(link)](https://github.com/Florents-Tselai/pgJQ)
 
