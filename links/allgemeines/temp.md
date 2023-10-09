@@ -9,6 +9,9 @@ title: Temporär
 
 -->
 # Noch lesen
+- Data Access API over Data Lake Tables Without the Complexity
+[(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)
+
 - Timeseries Databases Performance 
 [(link)](https://medium.com/@ev_kozloski/timeseries-databases-performance-testing-7-alternatives-56a3415e6e9e)
 
