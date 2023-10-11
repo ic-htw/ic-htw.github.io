@@ -9,8 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
-- Scaling Time Series Data Storage — Part I
-[(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
+- Time Series Data Modeling
+[(link)](https://www.datastax.com/learn/data-modeling-by-example/time-series-model)
 
 - PostgreSQL: Automated Partitions using pgPartman
 [(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
