@@ -9,6 +9,9 @@ title: Temporär
 
 -->
 # Noch lesen
+- How to set up a PostgreSQL cluster using pg_cirrus on AWS
+[(link)](https://stormatics.tech/blogs/setting-up-pg_cirrus-on-aws-ec2-instances)
+
 - Time Series Data Modeling
 [(link)](https://www.datastax.com/learn/data-modeling-by-example/time-series-model)
 
