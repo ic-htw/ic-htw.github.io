@@ -9,6 +9,21 @@ title: Temporär
 
 -->
 # Noch lesen
+- Scaling Time Series Data Storage — Part I
+[(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
+
+- PostgreSQL: Automated Partitions using pgPartman
+[(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
+
+- DynamoDB: Data Modeling
+[(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
+
+- Manage Bloated Postgres Database
+[(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
+
+- Data Import Decisions: Why Choose Kettle for Neo4j Data Import?
+[(link)](https://jennifer-reif.medium.com/data-import-decisions-why-choose-kettle-for-neo4j-data-import-1bd91ab85300)
+
 - Data Access API over Data Lake Tables Without the Complexity
 [(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)
 
