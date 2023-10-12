@@ -15,9 +15,6 @@ title: Temporär
 - Run AWS on Your Laptop. Introduction to LocalStack
 [(link)](https://awstip.com/run-aws-on-your-laptop-introduction-to-localstack-7269c19dedae)
 
-- Nice to meet you, mondayDB architecture
-[(link)](https://medium.com/@liranbrimer/nice-to-meet-you-mondaydb-architecture-6d201b41e660)
-
 - How to set up a PostgreSQL cluster using pg_cirrus on AWS
 [(link)](https://stormatics.tech/blogs/setting-up-pg_cirrus-on-aws-ec2-instances)
 
