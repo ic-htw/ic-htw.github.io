@@ -12,12 +12,6 @@ title: Temporär
 - How Cypher changed in Neo4j v5
 [(link)](https://towardsdatascience.com/how-cypher-changed-in-neo4j-v5-d0f10cbb60bf)
 
-- Run AWS on Your Laptop. Introduction to LocalStack
-[(link)](https://awstip.com/run-aws-on-your-laptop-introduction-to-localstack-7269c19dedae)
-
-- How to set up a PostgreSQL cluster using pg_cirrus on AWS
-[(link)](https://stormatics.tech/blogs/setting-up-pg_cirrus-on-aws-ec2-instances)
-
 - Time Series Data Modeling
 [(link)](https://www.datastax.com/learn/data-modeling-by-example/time-series-model)
 
