@@ -9,6 +9,9 @@ title: Temporär
 
 -->
 # Noch lesen
+- Data engineering at Meta: High-Level Overview of the internal tech stack
+[(link)](https://medium.com/@AnalyticsAtMeta/data-engineering-at-meta-high-level-overview-of-the-internal-tech-stack-a200460a44fe)
+
 - How Cypher changed in Neo4j v5
 [(link)](https://towardsdatascience.com/how-cypher-changed-in-neo4j-v5-d0f10cbb60bf)
 
