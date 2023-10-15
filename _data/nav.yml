@@ -136,6 +136,8 @@ toc:
             url: /links/prog/languages.html
           - page: Python
             url: /links/prog/python.html
+          - page: Rust
+            url: /links/prog/rust.html
           - page: SAP
             url: /links/prog/sap.html
       - title: Aaa
