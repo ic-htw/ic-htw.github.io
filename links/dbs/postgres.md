@@ -110,6 +110,10 @@ title: Temporär
 
 
 ## misc
+- PostgreSQL: Automated Partitions using pgPartman
+[(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
+- Explaining The Postgres Meme
+[(link)](https://avestura.dev/blog/explaining-the-postgres-meme)
 - Top 10 Postgres Management Tasks
 [(link)](https://www.crunchydata.com/blog/top-10-postgres-management-tasks)
 - PostgreSQL: A Reusable SQL Library of Domains
