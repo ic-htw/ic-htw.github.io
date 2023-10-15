@@ -9,26 +9,32 @@ title: Temporär
 
 -->
 # Noch lesen
-- Data engineering at Meta: High-Level Overview of the internal tech stack
-[(link)](https://medium.com/@AnalyticsAtMeta/data-engineering-at-meta-high-level-overview-of-the-internal-tech-stack-a200460a44fe)
+- Graph Visualization of Panama Papers Data In Neo4j
+[(link)](https://medium.com/neo4j/graph-visualization-of-panama-papers-data-in-neo4j-9c08ca17039c)
 
-- How Cypher changed in Neo4j v5
-[(link)](https://towardsdatascience.com/how-cypher-changed-in-neo4j-v5-d0f10cbb60bf)
+- Explore OpenAI vector embedding with Neo4j, LangChain, and Wikipedia
+[(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
 
-- Time Series Data Modeling
-[(link)](https://www.datastax.com/learn/data-modeling-by-example/time-series-model)
+- How to use Cypher Aggregations in Neo4j Graph Data Science library
+[(link)](https://towardsdatascience.com/how-to-use-cypher-aggregations-in-neo4j-graph-data-science-library-5d8c40c2670c)
 
-- PostgreSQL: Automated Partitions using pgPartman
-[(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
+- Comparing Databases: A Technical Guide
+[(link)](https://starrocks.medium.com/technical-comparisons-to-other-databases-6a3efba36744)
+
+- Vector Databases: A Beginner’s Guide!
+[(link)](https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0)
+
+- Building a Large-scale Distributed Storage System Based on Raft
+[(link)](https://pingcap.medium.com/building-a-large-scale-distributed-storage-system-based-on-raft-2a4078cde119)
+
+- Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
+[(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
 
 - DynamoDB: Data Modeling
 [(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
 
 - Manage Bloated Postgres Database
 [(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
-
-- Data Import Decisions: Why Choose Kettle for Neo4j Data Import?
-[(link)](https://jennifer-reif.medium.com/data-import-decisions-why-choose-kettle-for-neo4j-data-import-1bd91ab85300)
 
 - Data Access API over Data Lake Tables Without the Complexity
 [(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)
@@ -66,9 +72,6 @@ title: Temporär
 
 - Vector Databases 
 [(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
-
-- Learn Rust by Building a Linked List
-[(link)](https://betterprogramming.pub/learning-rust-building-a-linked-list-102bcb08f93b)
 
 - Sharding Pinterest: How we scaled our MySQL fleet
 [(link)](https://medium.com/pinterest-engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f)
@@ -115,9 +118,6 @@ title: Temporär
 - pgJQ: Use jq in Postgres
 [(link)](https://github.com/Florents-Tselai/pgJQ)
 
-- Explaining The Postgres Meme
-[(link)](https://avestura.dev/blog/explaining-the-postgres-meme)
- 
 - Analyzing the Evolution of Life on Earth with Neo4j
 [(link)](https://towardsdatascience.com/analyzing-the-evolution-of-life-on-earth-with-neo4j-7daeeb1e032d)
 
@@ -135,7 +135,6 @@ title: Temporär
 
 - Reduce AML Investigation Costs with TigerGraph
 [(link)](https://www.tigergraph.com/blog/reduce-aml-investigation-costs-with-tigergraph/)
-
 
 - ClickHouse: A Blazingly Fast DBMS with Full SQL Join Support
 [(link)](https://medium.com/clickhousedb/clickhouse-a-blazingly-fast-dbms-with-full-sql-join-support-3eb3b38c59c5)
