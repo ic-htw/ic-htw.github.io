@@ -50,7 +50,11 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 
 ### 16.10.23 (Abgabe P1)
 - P1: Statuscheck
-- VL: Window-Funktionen in SQL [(pdf)](/lv/adbkt/a/sql/window.pdf)
+- VL: Window-Funktionen in SQL 
+[(pdf)](/lv/adbkt/a/sql/window.pdf) 
+[(data)](/lv/adbkt/a/sql/windowfunc-table.sql)
+[(sql)](/lv/adbkt/a/sql/windowfunc.sql)
+
 - Ü: Retail Sales [(link)](/lv/adbkt/p/ex/retail.html)
 - VL: Rekursive Abfragen [(pdf)](/lv/adbkt/a/sql/rec.pdf)
 - Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/ex/rec-sql.html)
