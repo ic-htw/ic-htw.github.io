@@ -9,6 +9,21 @@ title: Temporär
 
 -->
 # Noch lesen
+- After N years I’m finally using Tmux in such an elegant way
+[(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
+
+- Spotting a Graph-Shaped Problem
+[(link)](https://medium.com/geekculture/spotting-a-graph-shaped-problem-b1f126bf8c03)
+
+- Unleashing the Full Power of PostgreSQL
+[(link)](https://blog.stackademic.com/unleashing-the-full-power-of-postgresql-a-definitive-guide-to-supercharge-performance-a8ce725725ac)
+
+- Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
+[(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
+
+- Transforming Data Engineering: A Deep Dive into dbt with DuckDB
+[(link)](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2)
+
 - Graph Visualization of Panama Papers Data In Neo4j
 [(link)](https://medium.com/neo4j/graph-visualization-of-panama-papers-data-in-neo4j-9c08ca17039c)
 
