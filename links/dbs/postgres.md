@@ -110,6 +110,8 @@ title: Temporär
 
 
 ## misc
+- Auto-vacuum tuning in PostgreSQL
+[(link)](https://medium.com/helpshift-engineering/auto-vacuum-tuning-in-postgresql-3408f8b62ad8)
 - PostgreSQL: Automated Partitions using pgPartman
 [(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
 - Explaining The Postgres Meme
