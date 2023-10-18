@@ -15,9 +15,6 @@ title: Temporär
 - Spotting a Graph-Shaped Problem
 [(link)](https://medium.com/geekculture/spotting-a-graph-shaped-problem-b1f126bf8c03)
 
-- Unleashing the Full Power of PostgreSQL
-[(link)](https://blog.stackademic.com/unleashing-the-full-power-of-postgresql-a-definitive-guide-to-supercharge-performance-a8ce725725ac)
-
 - Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
 [(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
 
