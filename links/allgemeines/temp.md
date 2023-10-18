@@ -9,6 +9,15 @@ title: Temporär
 
 -->
 # Noch lesen
+- Rust: The Next Big Thing in Data Science
+[(link)](https://towardsdatascience.com/rust-the-next-big-thing-in-data-science-319a03305883)
+
+- Auto-vacuum tuning in PostgreSQL
+[(link)](https://medium.com/helpshift-engineering/auto-vacuum-tuning-in-postgresql-3408f8b62ad8)
+
+- A Data Scientist’s Perspective: Rust vs Python
+[(link)](https://medium.com/codex/a-data-scientists-perspective-rust-vs-python-a0213ebfa82a)
+
 - After N years I’m finally using Tmux in such an elegant way
 [(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
 
