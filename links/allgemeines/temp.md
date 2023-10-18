@@ -9,9 +9,6 @@ title: Temporär
 
 -->
 # Noch lesen
-- Auto-vacuum tuning in PostgreSQL
-[(link)](https://medium.com/helpshift-engineering/auto-vacuum-tuning-in-postgresql-3408f8b62ad8)
-
 - After N years I’m finally using Tmux in such an elegant way
 [(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
 
