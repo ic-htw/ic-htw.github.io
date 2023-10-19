@@ -110,6 +110,10 @@ title: Temporär
 
 
 ## misc
+- Unleashing the Full Power of PostgreSQL
+[(link)](https://blog.stackademic.com/unleashing-the-full-power-of-postgresql-a-definitive-guide-to-supercharge-performance-a8ce725725ac)
+- Auto-vacuum tuning in PostgreSQL
+[(link)](https://medium.com/helpshift-engineering/auto-vacuum-tuning-in-postgresql-3408f8b62ad8)
 - PostgreSQL: Automated Partitions using pgPartman
 [(link)](https://singhalkarun.medium.com/postgresql-automated-partitions-using-pgpartman-d3fc6c277467)
 - Explaining The Postgres Meme
