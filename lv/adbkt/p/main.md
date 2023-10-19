@@ -73,7 +73,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - VL: Cassandra [(link)](/lv/adbkt/p/pr/cas.html)
 - P3: TourDelight: 30 Punkte [(link)](/lv/adbkt/p/ex/tour.html)
 
-### 30.10.23 (per Zoom)
+### 30.10.23 (ab 13:00 per Zoom)
 - P3: Abstimmung allgemein
 - P3: Abstimmung: individuell per Gruppe
 
