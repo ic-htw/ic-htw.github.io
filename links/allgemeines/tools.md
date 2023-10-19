@@ -186,6 +186,8 @@ title: Tools
 [(link)](https://code.visualstudio.com/docs/sourcecontrol/overview)
 - wsl
 [(link)](https://code.visualstudio.com/docs/remote/wsl)
+- SQLTools
+[(link)](https://vscode-sqltools.mteixeira.dev/en/home)
 
 # wsl
 - home
