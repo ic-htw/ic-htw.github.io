@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- PostgreSQL 16: What’s New and Notable features 2/2
+[(link)](https://blog.fourninecloud.com/welcome-to-postgresql-16-developers-and-administrators-part-2-2-51932b01e113)
+
+- How to measure performance of PostgreSQL Database Server(s)?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-performance-of-postgresql-database-server-s-b27e2e5130aa)
+
 - After N years I’m finally using Tmux in such an elegant way
 [(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
 
