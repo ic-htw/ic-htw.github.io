@@ -37,6 +37,11 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Präsentation von Arbeitsergebnissen
 - Keine Klausur
 
+## Share
+- Seite zum interaktiven Code-Sharing
+- Zu Nutzung während der Lehrveranstaltung
+- [Link](https://github.com/ic-htw/ic-htw.github.io/blob/master/share.md)
+
 ## Terminplan
 
 ### 09.10.23
