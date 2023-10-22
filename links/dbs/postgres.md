@@ -110,6 +110,8 @@ title: Temporär
 
 
 ## misc
+- How to measure performance of PostgreSQL Database Server(s)?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-performance-of-postgresql-database-server-s-b27e2e5130aa)
 - Unleashing the Full Power of PostgreSQL
 [(link)](https://blog.stackademic.com/unleashing-the-full-power-of-postgresql-a-definitive-guide-to-supercharge-performance-a8ce725725ac)
 - Auto-vacuum tuning in PostgreSQL
