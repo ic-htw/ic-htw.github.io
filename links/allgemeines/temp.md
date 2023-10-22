@@ -9,23 +9,29 @@ title: Temporär
 
 -->
 # Noch lesen
-- PostgreSQL 16: What’s New and Notable features 2/2
-[(link)](https://blog.fourninecloud.com/welcome-to-postgresql-16-developers-and-administrators-part-2-2-51932b01e113)
+- Making Hard Things Easy
+[(link)](https://jvns.ca/blog/2023/10/06/new-talk--making-hard-things-easy/)
 
-- How to measure performance of PostgreSQL Database Server(s)?
-[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-performance-of-postgresql-database-server-s-b27e2e5130aa)
+- Better Together: OpenAI Embeddings API With PostgreSQL pgvector Extension
+[(link)](https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2)
 
-- After N years I’m finally using Tmux in such an elegant way
-[(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
+- Grab’s Database Architecture to Handle Millions of Orders — DynamoDB System Design
+[(link)](https://levelup.gitconnected.com/grabs-database-architecture-to-handle-millions-of-orders-system-design-2c21571d86b4)
 
-- Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
-[(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
+- Bring Your Own Algorithm to Anomaly Detection
+[(link)](https://medium.com/pinterest-engineering/bring-your-own-algorithm-to-anomaly-detection-bdc0eef3fa79)
 
-- Transforming Data Engineering: A Deep Dive into dbt with DuckDB
-[(link)](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2)
+- Hot Take - Apache Hudi, Delta Lake, Apache Iceberg are Divergent
+[(link)](https://medium.com/@kywe665/hot-take-apache-hudi-delta-lake-apache-iceberg-are-divergent-7ca6a43d39fc)
 
-- Graph Visualization of Panama Papers Data In Neo4j
-[(link)](https://medium.com/neo4j/graph-visualization-of-panama-papers-data-in-neo4j-9c08ca17039c)
+- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
+[(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
+
+- Vector Databases - a list…
+[(link)](https://koalabs.medium.com/vector-databases-a-list-43733545feea)
+
+- High-compression Metrics Storage with Postgres Hyperloglog
+[(link)](https://www.crunchydata.com/blog/high-compression-metrics-storage-with-postgres-hyperloglog)
 
 - Explore OpenAI vector embedding with Neo4j, LangChain, and Wikipedia
 [(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
