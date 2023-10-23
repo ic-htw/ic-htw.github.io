@@ -19,6 +19,8 @@ title: DynamoDB
 
 
 # single table design
+- Grab’s Database Architecture to Handle Millions of Orders — DynamoDB System Design
+[(link)](https://levelup.gitconnected.com/grabs-database-architecture-to-handle-millions-of-orders-system-design-2c21571d86b4)
 - Data Modeling for DynamoDB Single Table Design
 [(link)](https://www.sensedeep.com/blog/posts/2021/dynamodb-singletable-design.html)
 - Creating a single-table design with Amazon DynamoDB
