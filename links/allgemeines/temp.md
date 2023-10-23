@@ -9,20 +9,20 @@ title: Temporär
 
 -->
 # Noch lesen
+- Neural Graph Databases
+[(link)](https://towardsdatascience.com/neural-graph-databases-cc35c9e1d04f)
+
+- Troubleshooting PostgreSQL High CPU Usage
+[(link)](https://medium.com/@adamf_64691/troubleshooting-postgresql-high-cpu-usage-fc9dbdb35eb6)
+
+- Troubleshooting PostgreSQL High CPU Usage — Part 2
+[(link)](https://medium.com/@adamf_64691/troubleshooting-postgresql-high-cpu-usage-part-2-8a1173739339)
+
+- Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
+[(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
+
 - Making Hard Things Easy
 [(link)](https://jvns.ca/blog/2023/10/06/new-talk--making-hard-things-easy/)
-
-- Better Together: OpenAI Embeddings API With PostgreSQL pgvector Extension
-[(link)](https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2)
-
-- Grab’s Database Architecture to Handle Millions of Orders — DynamoDB System Design
-[(link)](https://levelup.gitconnected.com/grabs-database-architecture-to-handle-millions-of-orders-system-design-2c21571d86b4)
-
-- Bring Your Own Algorithm to Anomaly Detection
-[(link)](https://medium.com/pinterest-engineering/bring-your-own-algorithm-to-anomaly-detection-bdc0eef3fa79)
-
-- Hot Take - Apache Hudi, Delta Lake, Apache Iceberg are Divergent
-[(link)](https://medium.com/@kywe665/hot-take-apache-hudi-delta-lake-apache-iceberg-are-divergent-7ca6a43d39fc)
 
 - Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
 [(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
