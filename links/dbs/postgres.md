@@ -110,6 +110,8 @@ title: Temporär
 
 
 ## misc
+- Better Together: OpenAI Embeddings API With PostgreSQL pgvector Extension
+[(link)](https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2)
 - How to measure performance of PostgreSQL Database Server(s)?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-measure-performance-of-postgresql-database-server-s-b27e2e5130aa)
 - Unleashing the Full Power of PostgreSQL
