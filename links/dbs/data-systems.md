@@ -52,6 +52,10 @@ title: Data Systems
 [(link)](https://medium.com/@lirui.fudan/how-bilibili-builds-olap-data-lakehouse-with-apache-iceberg-9f3408e53f9)
 - PyIceberg 0.4.0
 [(link)](https://tabular.medium.com/pyiceberg-0-4-0-71a1be07df7f)
+- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
+[(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
+- Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
+[(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
 
 # clickhouse
 - home
