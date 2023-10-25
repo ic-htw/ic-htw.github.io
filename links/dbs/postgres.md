@@ -110,6 +110,10 @@ title: Temporär
 
 
 ## misc
+- Troubleshooting PostgreSQL High CPU Usage — Part 2
+[(link)](https://medium.com/@adamf_64691/troubleshooting-postgresql-high-cpu-usage-part-2-8a1173739339)
+- High-compression Metrics Storage with Postgres Hyperloglog
+[(link)](https://www.crunchydata.com/blog/high-compression-metrics-storage-with-postgres-hyperloglog)
 - Better Together: OpenAI Embeddings API With PostgreSQL pgvector Extension
 [(link)](https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2)
 - How to measure performance of PostgreSQL Database Server(s)?
