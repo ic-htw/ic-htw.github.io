@@ -12,14 +12,8 @@ title: Temporär
 - SQL cookbook for dbt: Transforming Big Data with Incremental Models
 [(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
 
-- Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
-[(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
-
 - Making Hard Things Easy
 [(link)](https://jvns.ca/blog/2023/10/06/new-talk--making-hard-things-easy/)
-
-- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
-[(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
 
 - Explore OpenAI vector embedding with Neo4j, LangChain, and Wikipedia
 [(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
