@@ -9,6 +9,18 @@ title: Temporär
 
 -->
 # Noch lesen
+- How Quora Scaled MySQL to 100K+ QPS - Design Distributed Databases
+[(link)](https://levelup.gitconnected.com/how-quora-scaled-mysql-to-100k-qps-distributed-databases-e6cecee30ca3)
+
+- Citus Technical Documentation - Design of Distributed Postgres
+[(link)](https://github.com/citusdata/citus/tree/main/src/backend/distributed#citus-technical-documentation)
+
+- PgBouncer 
+[(link)](https://www.pgbouncer.org/)
+
+- Prepared Statements in Transaction Mode for PgBouncer
+[(link)](https://www.crunchydata.com/blog/prepared-statements-in-transaction-mode-for-pgbouncer)
+
 - SQL cookbook for dbt: Transforming Big Data with Incremental Models
 [(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
 
