@@ -9,17 +9,17 @@ title: Temporär
 
 -->
 # Noch lesen
-- How Quora Scaled MySQL to 100K+ QPS - Design Distributed Databases
-[(link)](https://levelup.gitconnected.com/how-quora-scaled-mysql-to-100k-qps-distributed-databases-e6cecee30ca3)
+- Distributed SQL for OLAP and OLTP: Trino Meets YugabyteDB
+[(link)](https://medium.com/@magda7817/distributed-sql-for-olap-and-oltp-trino-meets-yugabytedb-bda4f765642c)
+
+- To dbt or not to dbt
+[(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
+
+- Gartner’s AI Hype Cycle is Way Passed its Due Date
+[(link)](https://olivermolander.medium.com/gartners-ai-hype-cycle-way-passed-its-due-date-and-are-we-entering-a-classical-ml-winter-7c09041c72c4)
 
 - Citus Technical Documentation - Design of Distributed Postgres
 [(link)](https://github.com/citusdata/citus/tree/main/src/backend/distributed#citus-technical-documentation)
-
-- PgBouncer 
-[(link)](https://www.pgbouncer.org/)
-
-- Prepared Statements in Transaction Mode for PgBouncer
-[(link)](https://www.crunchydata.com/blog/prepared-statements-in-transaction-mode-for-pgbouncer)
 
 - SQL cookbook for dbt: Transforming Big Data with Incremental Models
 [(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
