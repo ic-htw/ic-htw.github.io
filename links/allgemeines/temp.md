@@ -9,15 +9,6 @@ title: Temporär
 
 -->
 # Noch lesen
-- Use ChatGPT to Query Your Neo4j Database
-[(link)](https://towardsdatascience.com/use-chatgpt-to-query-your-neo4j-database-78680a05ec2)
-
-- Uber System Design 
-[(link)](https://medium.com/@karan99/system-design-uber-33593137a4fe)
-
-- Managing PostgreSQL backup and replication for very large databases
-[(link)](https://medium.com/leboncoin-tech-blog/managing-postgresql-backup-and-replication-for-very-large-databases-61fb36e815a0)
-
 - Database Spotlight: A Deep Dive into a Timeseries Database
 [(link)](https://medium.com/@anjanban212/database-spotlight-a-deep-dive-into-a-timeseries-database-cd34800c7e23)
 
