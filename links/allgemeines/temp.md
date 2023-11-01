@@ -9,9 +9,6 @@ title: Temporär
 
 -->
 # Noch lesen
-- Database Spotlight: A Deep Dive into a Timeseries Database
-[(link)](https://medium.com/@anjanban212/database-spotlight-a-deep-dive-into-a-timeseries-database-cd34800c7e23)
-
 - Did you forget to allocate Huge Pages on your PostgreSQL server?
 [(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
 
