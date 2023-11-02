@@ -9,32 +9,32 @@ title: Temporär
 
 -->
 # Noch lesen
-- After N years I’m finally using Tmux in such an elegant way
-[(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
+- Did you forget to allocate Huge Pages on your PostgreSQL server?
+[(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
 
-- Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
-[(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
+- Understanding Join Strategies in PostgreSQL
+[(link)](https://blog.stackademic.com/understanding-join-strategies-in-postgresql-b02e734b1732)
 
-- Transforming Data Engineering: A Deep Dive into dbt with DuckDB
-[(link)](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2)
+- What happened with APOC in Neo4j v5: Core and Extended edition
+[(link)](https://towardsdatascience.com/what-happened-with-apoc-in-neo4j-v5-core-and-extended-edition-23994cdf0a2c)
 
-- Graph Visualization of Panama Papers Data In Neo4j
-[(link)](https://medium.com/neo4j/graph-visualization-of-panama-papers-data-in-neo4j-9c08ca17039c)
+- Optimise PostgreSQL queries with work_mem
+[(link)](https://medium.com/@shaileshkumarmishra/optimise-postgresql-queries-with-work-mem-f16c9de06bd4)
+
+- Distributed SQL for OLAP and OLTP: Trino Meets YugabyteDB
+[(link)](https://medium.com/@magda7817/distributed-sql-for-olap-and-oltp-trino-meets-yugabytedb-bda4f765642c)
+
+- To dbt or not to dbt
+[(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
+
+- SQL cookbook for dbt: Transforming Big Data with Incremental Models
+[(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
+
+- Making Hard Things Easy
+[(link)](https://jvns.ca/blog/2023/10/06/new-talk--making-hard-things-easy/)
 
 - Explore OpenAI vector embedding with Neo4j, LangChain, and Wikipedia
 [(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
-
-- How to use Cypher Aggregations in Neo4j Graph Data Science library
-[(link)](https://towardsdatascience.com/how-to-use-cypher-aggregations-in-neo4j-graph-data-science-library-5d8c40c2670c)
-
-- Comparing Databases: A Technical Guide
-[(link)](https://starrocks.medium.com/technical-comparisons-to-other-databases-6a3efba36744)
-
-- Vector Databases: A Beginner’s Guide!
-[(link)](https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0)
-
-- Building a Large-scale Distributed Storage System Based on Raft
-[(link)](https://pingcap.medium.com/building-a-large-scale-distributed-storage-system-based-on-raft-2a4078cde119)
 
 - Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
 [(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
@@ -65,9 +65,6 @@ title: Temporär
 
 - A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm
 [(link)](https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d)
-
-- A New Frontier
-[(link)](https://voltrondata.com/codex/a-new-frontier)
 
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)

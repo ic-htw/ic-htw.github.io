@@ -35,9 +35,10 @@ title: Neo4j
 [(link)](https://github.com/yWorks/yfiles-jupyter-graphs)
 
 # posts
+- How to use Cypher Aggregations in Neo4j Graph Data Science library
+[(link)](https://towardsdatascience.com/how-to-use-cypher-aggregations-in-neo4j-graph-data-science-library-5d8c40c2670c)
 - How Cypher changed in Neo4j v5
 [(link)](https://towardsdatascience.com/how-cypher-changed-in-neo4j-v5-d0f10cbb60bf)
-
 - Data Import Decisions: Why Choose Kettle for Neo4j Data Import?
 [(link)](https://jennifer-reif.medium.com/data-import-decisions-why-choose-kettle-for-neo4j-data-import-1bd91ab85300)
 

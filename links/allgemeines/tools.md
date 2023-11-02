@@ -174,6 +174,9 @@ title: Tools
 [(link)](https://tmuxcheatsheet.com/)
 - wiki
 [(link)](https://github.com/tmux/tmux/wiki)
+- After N years I’m finally using Tmux in such an elegant way
+[(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
+
 
 # vscode
 - doc [(link)](https://code.visualstudio.com/docs)
@@ -186,6 +189,8 @@ title: Tools
 [(link)](https://code.visualstudio.com/docs/sourcecontrol/overview)
 - wsl
 [(link)](https://code.visualstudio.com/docs/remote/wsl)
+- SQLTools
+[(link)](https://vscode-sqltools.mteixeira.dev/en/home)
 
 # wsl
 - home

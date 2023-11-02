@@ -110,6 +110,16 @@ title: Temporär
 
 
 ## misc
+- Managing PostgreSQL backup and replication for very large databases
+[(link)](https://medium.com/leboncoin-tech-blog/managing-postgresql-backup-and-replication-for-very-large-databases-61fb36e815a0)
+- Troubleshooting PostgreSQL High CPU Usage — Part 2
+[(link)](https://medium.com/@adamf_64691/troubleshooting-postgresql-high-cpu-usage-part-2-8a1173739339)
+- High-compression Metrics Storage with Postgres Hyperloglog
+[(link)](https://www.crunchydata.com/blog/high-compression-metrics-storage-with-postgres-hyperloglog)
+- Better Together: OpenAI Embeddings API With PostgreSQL pgvector Extension
+[(link)](https://medium.com/@magda7817/better-together-openai-embeddings-api-with-postgresql-pgvector-extension-7a34645bdac2)
+- How to measure performance of PostgreSQL Database Server(s)?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-performance-of-postgresql-database-server-s-b27e2e5130aa)
 - Unleashing the Full Power of PostgreSQL
 [(link)](https://blog.stackademic.com/unleashing-the-full-power-of-postgresql-a-definitive-guide-to-supercharge-performance-a8ce725725ac)
 - Auto-vacuum tuning in PostgreSQL

@@ -52,6 +52,10 @@ title: Data Systems
 [(link)](https://medium.com/@lirui.fudan/how-bilibili-builds-olap-data-lakehouse-with-apache-iceberg-9f3408e53f9)
 - PyIceberg 0.4.0
 [(link)](https://tabular.medium.com/pyiceberg-0-4-0-71a1be07df7f)
+- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
+[(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
+- Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
+[(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
 
 # clickhouse
 - home
@@ -78,6 +82,16 @@ title: Data Systems
 # dbt
 - dbt-duckdb
 [(link)](https://github.com/duckdb/dbt-duckdb)
+- Transforming Data Engineering: A Deep Dive into dbt with DuckDB
+[(link)](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2)
+- Four Reasons that make DBT a great time saver for Data Engineers
+[(link)](https://medium.com/@montadhar/four-reasons-that-make-dbt-a-great-time-saver-for-data-engineers-4c4ceb721522)
+- A Modern Data Warehousing Tool: dbt & Introduction to Analytics Engineering
+[(link)](https://medium.com/codex/a-modern-data-warehousing-tool-dbt-introduction-to-analytics-engineering-d4245d868e3c)
+- dbt cheat sheet: 17 dbt Commands You Should Start Using Today
+[(link)](https://medium.com/indiciumtech/17-dbt-commands-you-should-start-using-today-581998dbf8f0)
+- dbt modeling at scale
+[(link)](https://medium.com/checkout-com-techblog/dbt-modeling-at-scale-2614202bb5d0)
 
 
 

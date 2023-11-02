@@ -52,6 +52,10 @@ title: Abfragesprachen
 [(link)](https://www.alibabacloud.com/blog/postgresql-graph-search-practices---10-billion-scale-graph-with-millisecond-response_595039)
 
 # chatgpt
+- Use ChatGPT to Query Your Neo4j Database
+[(link)](https://towardsdatascience.com/use-chatgpt-to-query-your-neo4j-database-78680a05ec2)
+- Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
+[(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
 - Exploring Data Modelling with ChatGPT
 [(link)](https://blog.gopenai.com/exploring-data-modelling-with-chatgpt-8b3659b2222c)
 - What Are ChatGPT Plugins? The Next Phase of Conversational AI Is Here
