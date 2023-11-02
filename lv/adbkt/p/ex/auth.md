@@ -38,6 +38,8 @@ title: ADBKT
   [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/neo4j-auth.ipynb)
 - Legen Sie mittels "setAuth" geeignete Beziehungen in der Graphdatenbank an
 - Nutzen sie Cypher-Abfragen zur Lösung des Problems
+- Nur die tabellarischen Ausgaben sind in ihrer Lösung notwendig, nicht die Graphiken
+- Die Graphiken dienen lediglich zur Illustration
 
 
 
