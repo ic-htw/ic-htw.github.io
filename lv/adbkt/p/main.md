@@ -99,7 +99,7 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - Vorlesung JSON-Datenverarbeitung [(pdf)](/lv/adbkt/a/json/json-pg.pdf)
 - P6: Graph-QL: 20 Punkte [(link)](/lv/adbkt/p/ex/graphql.html)
 - VL: DynamoDB [(link)](/lv/adbkt/p/pr/dynamo.html)
-- Ü: DynamoDB [(link)](/lv/adbkt/p/ex/dynamo.html)
+- Ü: DynamoDB [(link)](/lv/adbkt/p/ex/dynamodb.html)
 
 ### 27.11.23 (Abgabe P6 bis zum 03.12.23)
 - P6 Statuscheck
