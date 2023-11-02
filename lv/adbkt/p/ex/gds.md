@@ -8,12 +8,12 @@ title: ADBKT
 ## Graphprojektion
 - Legen sie folgende Graph-Projektion an
   ```cypher
-  MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-  (hb:Haltestelle)
+  MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-(hb:Haltestelle)
   WITH gds.graph.project(
       'bubahn',
       ha,
       hb,
-      {relationshipProperties: s {.laengeInMeter}},
+      {relationshipProperties: s{.laengeInMeter}},
       {undirectedRelationshipTypes: ['*']}) AS g
   RETURN
     g.graphName AS graph, g.nodeCount AS nodes, g.relationshipCount AS rels
