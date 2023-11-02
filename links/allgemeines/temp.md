@@ -9,6 +9,19 @@ title: Temporär
 
 -->
 # Noch lesen
+- AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
+[(link)](https://github.com/thinknimble/embeddings-search-demo)
+
+- Understand Explain Plans in PostgreSQL 
+[(link)](https://stormatics.tech/alis-planet-postgresql/understand-explain-plans-in-postgresql)
+
+- RocksDB in TiKV
+[(link)](https://pingcap.medium.com/rocksdb-in-tikv-34ece9bb4dc)
+
+- Introducing Nile, Serverless Postgres for modern SaaS
+[(link)](https://www.thenile.dev/blog/introducing-nile)
+[(link)](https://news.ycombinator.com/item?id=38014812)
+
 - Did you forget to allocate Huge Pages on your PostgreSQL server?
 [(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
 
