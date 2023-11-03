@@ -103,9 +103,8 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 
 ### 27.11.23 (Abgabe P6 bis zum 03.12.23)
 - P6 Statuscheck
-- VL: SAP Hana
-- Ü: Hana, BTP Account
-- VL: Instacart
-- Ü DAT260
-- VL: Instacart
+- VL: SAP Hana  [(link)](/lv/adbkt/a/hana/hana.pdf)
+- VL: Instacart [(link)](/lv/adbkt/a/insta/insta.pdf)
+- Ü: Hana, BTP Account [(link)](/lv/adbkt/p/ex/hana-btp-account.html)
+- Ü: Hana, DAT260 [(link)](/lv/adbkt/p/ex/hana-dat260.html)
 - Ü: Closeness Centrality in SAP Hana [(link)](/lv/adbkt/p/ex/hana-cc.html)
