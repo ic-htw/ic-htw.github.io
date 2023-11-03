@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Redis — Beyond caching
+[(link)](https://blog.devgenius.io/redis-beyond-caching-1237058033d)
+
+- Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
+[(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
+
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 
