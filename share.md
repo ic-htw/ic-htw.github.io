@@ -12,6 +12,20 @@
 
 # ADBKT
 
+## 06.11.23
+MATCH
+  (ha:Haltestelle)<-[aa:ProjAbA]-(a:Abschnitt)-[ab:ProjAbB]->(hb:Haltestelle),
+  (a)-[iul:InUL]->(ul:Unterlinie)-[il:InL]->(l:Linie)
+WITH 
+  l.bez as bez, 
+  ul.ulid AS ulid, 
+  a.nr AS nr, 
+  '+' + ha.bez as bez_a, 
+  a.haelt + hb.bez as bez_b
+ORDER BY bez, ulid, nr
+WITH bez as Linie, ulid as Unterlinie, head(collect(bez_a)) + collect(bez_b) AS Verlauf
+return Linie, Unterlinie, Verlauf;
+
 ## 16.10.23
 
 5
