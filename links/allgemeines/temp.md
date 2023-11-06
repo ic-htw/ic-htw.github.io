@@ -9,6 +9,15 @@ title: Temporär
 
 -->
 # Noch lesen
+- Navigating the Minefield of RocksDB Configuration Options
+[(link)](https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9)
+
+- PostgreSQL Trigger-Based Audit Log
+[(link)](https://medium.com/israeli-tech-radar/postgresql-trigger-based-audit-log-fd9d9d5e412c)
+
+- A Deep Dive into TiKV
+[(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
+
 - Redis — Beyond caching
 [(link)](https://blog.devgenius.io/redis-beyond-caching-1237058033d)
 
