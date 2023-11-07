@@ -9,6 +9,15 @@ title: Temporär
 
 -->
 # Noch lesen
+- Goku: Building a scalable and high performant time series database system
+[(link)](https://medium.com/pinterest-engineering/goku-building-a-scalable-and-high-performant-time-series-database-system-a8ff5758a181)
+
+- AWS and GCP Horror Stories. Bad Reasons Good Companies Died.
+[(link)](https://medium.com/exobase/aws-and-gcp-horror-stories-bad-reasons-good-companies-died-e849e2796933)
+
+- MySQL High Availability
+[(link)](https://blog.flipkart.tech/mysql-high-availability-5f71838f19e1)
+
 - Navigating the Minefield of RocksDB Configuration Options
 [(link)](https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9)
 
