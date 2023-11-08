@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Introducing Dynamic PostgreSQL
+[(link)](https://www.timescale.com/blog/introducing-dynamic-postgresql/)
+
+- Tips for Row Level Security (RLS) in Postgres and Supabase
+[(link)](https://maxlynch.com/2023/11/04/tips-for-row-level-security-rls-in-postgres-and-supabase/)
+
 - MySQL High Availability
 [(link)](https://blog.flipkart.tech/mysql-high-availability-5f71838f19e1)
 
