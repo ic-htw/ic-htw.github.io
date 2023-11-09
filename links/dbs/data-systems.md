@@ -174,6 +174,11 @@ title: Data Systems
 - Relational to NoSQL at Enterprise Scale: Lessons from Amazon
 [(link)](https://www.mongodb.com/blog/post/relational-nosql-enterprise-scale-lessons-amazon)
 
+# mysql
+- MySQL High Availability
+[(link)](https://blog.flipkart.tech/mysql-high-availability-5f71838f19e1)
+
+
 # neon
 - home
 [(link)](https://neon.tech/)
@@ -279,6 +284,16 @@ title: Data Systems
 [(link)](https://docs.timescale.com/)
 - blog
 [(link)](https://www.timescale.com/blog/)
+
+# velox
+- home
+[(link)](https://velox-lib.io/)
+- doc
+[(link)](https://facebookincubator.github.io/velox/)
+- blog
+[(link)](https://velox-lib.io/blog/)
+- git
+[(link)](https://github.com/facebookincubator/velox)
 
 # umbradb
 - home
