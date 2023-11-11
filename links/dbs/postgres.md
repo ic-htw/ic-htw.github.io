@@ -110,6 +110,8 @@ title: Temporär
 
 
 ## misc
+- PostgreSQL Trigger-Based Audit Log
+[(link)](https://medium.com/israeli-tech-radar/postgresql-trigger-based-audit-log-fd9d9d5e412c)
 - Managing PostgreSQL backup and replication for very large databases
 [(link)](https://medium.com/leboncoin-tech-blog/managing-postgresql-backup-and-replication-for-very-large-databases-61fb36e815a0)
 - Troubleshooting PostgreSQL High CPU Usage — Part 2

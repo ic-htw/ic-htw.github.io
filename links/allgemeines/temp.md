@@ -9,20 +9,35 @@ title: Temporär
 
 -->
 # Noch lesen
-- Navigating the Minefield of RocksDB Configuration Options
-[(link)](https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9)
+- Learning DynamoDB the hard way
+[(link)](https://awstip.com/learning-dynamodb-the-hard-way-28371baa4ce7)
 
-- PostgreSQL Trigger-Based Audit Log
-[(link)](https://medium.com/israeli-tech-radar/postgresql-trigger-based-audit-log-fd9d9d5e412c)
+- DynamoDB: Data Modeling
+[(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
+
+- Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
+[(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
 
 - A Deep Dive into TiKV
 [(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
 
+- Do you know what you are measuring with pgbench?
+[(link)](https://franckpachot.medium.com/do-you-know-what-you-are-measuring-with-pgbench-d8692a33e3d6)
+
+- Data Sharing Issues in a Microservice Architecture
+[(link)](https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5)
+
+- Why SQL is beating NoSQL, and what this means for the future of data
+[(link)](https://medium.com/timescale/why-sql-beating-nosql-what-this-means-for-future-of-data-time-series-database-348b777b847a)
+
+- Deep Dive into Apache Parquet: Efficient Data Storage for Analytics
+[(link)](https://learncsdesigns.medium.com/understanding-apache-parquet-d722645cfe74)
+
+- ChatGPT As OCR For PDFs: Your New ETL Tool for Data Analysis
+[(link)](https://pub.towardsai.net/chatgpt-as-an-ocr-for-pdfs-your-etl-engine-for-data-analysis-e083e0e7568f)
+
 - Redis — Beyond caching
 [(link)](https://blog.devgenius.io/redis-beyond-caching-1237058033d)
-
-- Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
-[(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
 
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
@@ -66,9 +81,6 @@ title: Temporär
 
 - Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
 [(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
-
-- DynamoDB: Data Modeling
-[(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
 
 - Manage Bloated Postgres Database
 [(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)

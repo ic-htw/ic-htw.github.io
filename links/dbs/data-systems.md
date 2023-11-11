@@ -248,6 +248,9 @@ title: Data Systems
 [(link)](https://dev.to/thegroo/simple-rocksdb-with-java-crash-course-20o7)
 - Try using RocksDB in Java
 [(link)](https://linuxtut.com/en/0fb2ecdb281587a34a44/)
+- Navigating the Minefield of RocksDB Configuration Options
+[(link)](https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9)
+
 
 # rockset
 - doc
