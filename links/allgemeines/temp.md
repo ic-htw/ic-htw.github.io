@@ -9,11 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
-- Learning DynamoDB the hard way
-[(link)](https://awstip.com/learning-dynamodb-the-hard-way-28371baa4ce7)
-
-- DynamoDB: Data Modeling
-[(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
+- Why we replaced Pinecone with PGVector
+[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 
 - Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
 [(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
@@ -21,6 +18,11 @@ title: Temporär
 - A Deep Dive into TiKV
 [(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
 
+- How to measure the performance of PostgreSQL Database Server(s)?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-the-performance-of-postgresql-database-server-s-067965a9b851)
+
+- Basic PostgreSQL Configuration on Linux
+[(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
 - Do you know what you are measuring with pgbench?
 [(link)](https://franckpachot.medium.com/do-you-know-what-you-are-measuring-with-pgbench-d8692a33e3d6)
 

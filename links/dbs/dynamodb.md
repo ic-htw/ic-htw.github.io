@@ -77,6 +77,10 @@ title: DynamoDB
 # posts
 - Posts Alex DeBrie
 [(link)](https://www.alexdebrie.com/posts/tags/dynamo-db)
+- Learning DynamoDB the hard way
+[(link)](https://awstip.com/learning-dynamodb-the-hard-way-28371baa4ce7)
+- DynamoDB: Data Modeling
+[(link)](https://medium.com/expedia-group-tech/dynamodb-data-modeling-c4b02729ac08)
 - ISO Better Scaling, Instacart Drops Postgres for Amazon DynamoDB
 [(link)](https://thenewstack.io/iso-better-scaling-instacart-drops-postgres-for-amazon-dynamodb/)
 - What I’ve Learned From Using AWS DynamoDB in Production for More Than 3 Years
