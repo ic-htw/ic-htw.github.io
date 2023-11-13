@@ -9,35 +9,11 @@ title: Temporär
 
 -->
 # Noch lesen
-- How did Uber solve data consistency problem?
-[(link)](https://medium.com/@dmosyan/how-did-uber-solve-data-consistency-problem-dcdd39bd3ed6)
-
-- Open Lakehouse — A journey
-[(link)](https://medium.com/geekculture/open-lakehouse-a-journey-9c9dd59914d4)
-
-- Separation of Storage and Compute — Cut Costs and Enhances Efficiency
-[(link)](https://starrocks.medium.com/separation-of-storage-and-compute-cut-costs-and-enhances-efficiency-dc9c42c735e5)
-
-- Using PgBouncer to improve performance and reduce the load on PostgreSQL
-[(link)](https://medium.com/@dmitry.romanoff/using-pgbouncer-to-improve-performance-and-reduce-the-load-on-postgresql-b54b78deb425)
-
-- Deep Dive into Apache Parquet: Efficient Data Storage for Analytics
-[(link)](https://learncsdesigns.medium.com/understanding-apache-parquet-d722645cfe74)
-
-- ChatGPT As OCR For PDFs: Your New ETL Tool for Data Analysis
-[(link)](https://pub.towardsai.net/chatgpt-as-an-ocr-for-pdfs-your-etl-engine-for-data-analysis-e083e0e7568f)
-
-- Redis — Beyond caching
-[(link)](https://blog.devgenius.io/redis-beyond-caching-1237058033d)
-
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 
 - Understand Explain Plans in PostgreSQL 
 [(link)](https://stormatics.tech/alis-planet-postgresql/understand-explain-plans-in-postgresql)
-
-- RocksDB in TiKV
-[(link)](https://pingcap.medium.com/rocksdb-in-tikv-34ece9bb4dc)
 
 - Introducing Nile, Serverless Postgres for modern SaaS
 [(link)](https://www.thenile.dev/blog/introducing-nile)

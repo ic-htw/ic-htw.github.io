@@ -285,6 +285,9 @@ title: Data Systems
 # tikv
 - A Deep Dive into TiKV
 [(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
+- RocksDB in TiKV
+[(link)](https://pingcap.medium.com/rocksdb-in-tikv-34ece9bb4dc)
+
 
 # timescaledb
 - doc
