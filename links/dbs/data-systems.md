@@ -282,6 +282,10 @@ title: Data Systems
 - Get Started with Docker
 [(link)](https://docs.tigergraph.com/tigergraph-server/current/getting-started/docker)
 
+# tikv
+- A Deep Dive into TiKV
+[(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
+
 # timescaledb
 - doc
 [(link)](https://docs.timescale.com/)

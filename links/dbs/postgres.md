@@ -110,6 +110,12 @@ title: Temporär
 
 
 ## misc
+- How to measure the performance of PostgreSQL Database Server(s)?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-the-performance-of-postgresql-database-server-s-067965a9b851)
+- Basic PostgreSQL Configuration on Linux
+[(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
+- Do you know what you are measuring with pgbench?
+[(link)](https://franckpachot.medium.com/do-you-know-what-you-are-measuring-with-pgbench-d8692a33e3d6)
 - PostgreSQL Trigger-Based Audit Log
 [(link)](https://medium.com/israeli-tech-radar/postgresql-trigger-based-audit-log-fd9d9d5e412c)
 - Managing PostgreSQL backup and replication for very large databases

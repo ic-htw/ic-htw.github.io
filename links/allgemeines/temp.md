@@ -9,28 +9,17 @@ title: Temporär
 
 -->
 # Noch lesen
-- Why we replaced Pinecone with PGVector
-[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
+- How did Uber solve data consistency problem?
+[(link)](https://medium.com/@dmosyan/how-did-uber-solve-data-consistency-problem-dcdd39bd3ed6)
 
-- Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
-[(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
+- Open Lakehouse — A journey
+[(link)](https://medium.com/geekculture/open-lakehouse-a-journey-9c9dd59914d4)
 
-- A Deep Dive into TiKV
-[(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
+- Separation of Storage and Compute — Cut Costs and Enhances Efficiency
+[(link)](https://starrocks.medium.com/separation-of-storage-and-compute-cut-costs-and-enhances-efficiency-dc9c42c735e5)
 
-- How to measure the performance of PostgreSQL Database Server(s)?
-[(link)](https://medium.com/@dmitry.romanoff/how-to-measure-the-performance-of-postgresql-database-server-s-067965a9b851)
-
-- Basic PostgreSQL Configuration on Linux
-[(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
-- Do you know what you are measuring with pgbench?
-[(link)](https://franckpachot.medium.com/do-you-know-what-you-are-measuring-with-pgbench-d8692a33e3d6)
-
-- Data Sharing Issues in a Microservice Architecture
-[(link)](https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5)
-
-- Why SQL is beating NoSQL, and what this means for the future of data
-[(link)](https://medium.com/timescale/why-sql-beating-nosql-what-this-means-for-future-of-data-time-series-database-348b777b847a)
+- Using PgBouncer to improve performance and reduce the load on PostgreSQL
+[(link)](https://medium.com/@dmitry.romanoff/using-pgbouncer-to-improve-performance-and-reduce-the-load-on-postgresql-b54b78deb425)
 
 - Deep Dive into Apache Parquet: Efficient Data Storage for Analytics
 [(link)](https://learncsdesigns.medium.com/understanding-apache-parquet-d722645cfe74)

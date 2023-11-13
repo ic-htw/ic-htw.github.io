@@ -75,6 +75,8 @@ title: DynamoDB
 
 
 # posts
+- Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
+[(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
 - Posts Alex DeBrie
 [(link)](https://www.alexdebrie.com/posts/tags/dynamo-db)
 - Learning DynamoDB the hard way
