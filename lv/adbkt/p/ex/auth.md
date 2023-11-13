@@ -88,7 +88,7 @@ title: ADBKT
 
 
 ## Beispiel 5
-#### `setAuth("g2", "u2", "D")`
+#### `setAuth("g2", "u12", "D")`
 
 - Admin a2 wird Zugriff auf u12 verboten
 - D hat immer Vorrang<br>
