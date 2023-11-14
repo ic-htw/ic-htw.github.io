@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Scaling Time Series Data Storage — Part II
+[(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-ii-d67939655586)
+
+- PostgreSQL DB Indexes Maintenance Script
+[(link)](https://medium.com/@dmitry.romanoff/postgresql-db-indexes-maintenance-script-460c645e9f28)
+
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 
