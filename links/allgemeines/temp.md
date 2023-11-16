@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Using Polars Plugins for a 14x Speed Boost with Rust
+[(link)](https://towardsdatascience.com/using-polars-plugins-for-a-14x-speed-boost-with-rust-ce80bcc13d94)
+
+- Top 8 PostgreSQL Extensions You Should Know About 
+[(link)](https://www.timescale.com/blog/top-8-postgresql-extensions/)
+
 - Scaling Time Series Data Storage — Part II
 [(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-ii-d67939655586)
 
