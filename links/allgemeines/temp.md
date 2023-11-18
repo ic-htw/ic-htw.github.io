@@ -9,6 +9,18 @@ title: Temporär
 
 -->
 # Noch lesen
+- The Significance of Bloom Filters in Parquet: A Deep Dive
+[(link)](https://medium.com/@diehardankush/the-significance-of-bloom-filters-in-parquet-a-deep-dive-c93a74e0ebcd)
+
+- The Power of Database Indexing Algorithms: B-Tree vs. Hash Indexing
+[(link)](https://dip-mazumder.medium.com/the-power-of-database-indexing-algorithms-b-tree-vs-hash-indexing-6e3a4112a81)
+
+- DynamoDB: Guidelines for faster reads and writes
+[(link)](https://medium.com/expedia-group-tech/dynamodb-guidelines-for-faster-reads-and-writes-3b172b4c2120)
+
+- GCP- AlloyDB for PostgreSQL — new feature; adaptive autovacuum
+[(link)](https://blog.fourninecloud.com/gcp-alloydb-for-postgresql-new-feature-adaptive-autovacuum-9c8e7efeeb6b)
+
 - Using Polars Plugins for a 14x Speed Boost with Rust
 [(link)](https://towardsdatascience.com/using-polars-plugins-for-a-14x-speed-boost-with-rust-ce80bcc13d94)
 
