@@ -9,6 +9,18 @@ title: Temporär
 
 -->
 # Noch lesen
+- MongoDB vs ScyllaDB: Architecture Comparison
+[(link)](https://scylladb.medium.com/mongodb-vs-scylladb-architecture-comparison-03cca33b6f26)
+
+- How to determine unused index in PostgreSQL?
+[(link)](https://medium.com/@anasanjaria/how-to-determine-unused-index-in-postgresql-6af846686a3)
+
+- Setting up a FastAPI App with Async SQLALchemy 2.0 & Pydantic V2
+[(link)](https://medium.com/@tclaitken/setting-up-a-fastapi-app-with-async-sqlalchemy-2-0-pydantic-v2-e6c540be4308)
+
+- Twitchverse: A network analysis of Twitch universe using Neo4j Graph Data Science
+[(link)](https://towardsdatascience.com/twitchverse-a-network-analysis-of-twitch-universe-using-neo4j-graph-data-science-d7218b4453ff)
+
 - The Significance of Bloom Filters in Parquet: A Deep Dive
 [(link)](https://medium.com/@diehardankush/the-significance-of-bloom-filters-in-parquet-a-deep-dive-c93a74e0ebcd)
 
