@@ -9,6 +9,9 @@ title: Temporär
 
 -->
 # Noch lesen
+- A Modern Geospatial Workflow: PyEnv, Poetry, DuckDB, and JuPySQL
+[(link)](https://medium.com/@jake.gearon_34983/a-modern-geospatial-workflow-pyenv-poetry-duckdb-and-jupysql-7e7d355655f5)
+
 - MongoDB vs ScyllaDB: Architecture Comparison
 [(link)](https://scylladb.medium.com/mongodb-vs-scylladb-architecture-comparison-03cca33b6f26)
 
