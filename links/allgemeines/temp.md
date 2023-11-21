@@ -9,6 +9,24 @@ title: Temporär
 
 -->
 # Noch lesen
+- Loading Parquet in PostgreSQL via DuckDB: Testing queries and exploring the Core
+[(link)](https://medium.com/@ahuarte/loading-parquet-in-postgresql-via-duckdb-testing-queries-and-exploring-the-core-1d667ae67dc2)
+
+- PostgreSQL with increased connection’s
+[(link)](https://medium.com/@pawanpg0963/postgresql-with-increased-connections-3a09f7cb6a9a)
+
+- Transaction management in PostgreSQL and what is different from Oracle
+[(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
+
+- Ditch SQL — Let Vanna Handle It!
+[(link)](https://levelup.gitconnected.com/ditch-sql-let-vanna-handle-it-f14289d0a32f)
+
+- Vanna.ai
+[(link)](https://vanna.ai/)
+
+- What the Heck is LanceDB?
+[(link)](https://progrockrec.medium.com/what-the-heck-is-lancedb-12ae38ab248d)
+
 - A Modern Geospatial Workflow: PyEnv, Poetry, DuckDB, and JuPySQL
 [(link)](https://medium.com/@jake.gearon_34983/a-modern-geospatial-workflow-pyenv-poetry-duckdb-and-jupysql-7e7d355655f5)
 
