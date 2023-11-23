@@ -9,6 +9,24 @@ title: Temporär
 
 -->
 # Noch lesen
+- Exploring a Postgres query plan
+[(link)](https://notes.eatonphil.com/2023-11-19-exploring-a-postgres-query-plan.html)
+
+- momjian blog
+[(link)](https://momjian.us/main/blogs/pgblog.html)
+
+- Experiencing WAL REDO in PostgreSQL 
+[(link)](https://www.highgo.ca/2023/11/18/experiencing-wal-redo-in-postgresql/)
+
+- What the heck is GlareDB?
+[(link)](https://progrockrec.medium.com/what-the-heck-is-glaredb-dc401b2bd846)
+
+- Easiest way to load TPC-DS data into PostgreSQL
+[(link)](https://atwong.medium.com/easiest-way-to-load-tpc-ds-data-into-postgresql-1ebd83871a07)
+
+- Incremental Processing using Netflix Maestro and Apache Iceberg
+[(link)](https://netflixtechblog.com/incremental-processing-using-netflix-maestro-and-apache-iceberg-b8ba072ddeeb)
+
 - Loading Parquet in PostgreSQL via DuckDB: Testing queries and exploring the Core
 [(link)](https://medium.com/@ahuarte/loading-parquet-in-postgresql-via-duckdb-testing-queries-and-exploring-the-core-1d667ae67dc2)
 
