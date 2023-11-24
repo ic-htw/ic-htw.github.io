@@ -106,5 +106,5 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 - VL: SAP Hana  [(pdf)](/lv/adbkt/a/hana/hana.pdf)
 - VL: Instacart [(pdf)](/lv/adbkt/a/insta/insta.pdf)
 - Ü: Hana, BTP Account [(link)](/lv/adbkt/p/ex/hana-btp-account.html)
-- VL: Hana Graph [(link)](/lv/adbkt/p/pr/hana-graph.html)
+- Ü: Hana Graph [(link)](/lv/adbkt/p/ex/hana-graph.html)
 - Ü: Closeness Centrality in SAP Hana [(link)](/lv/adbkt/p/ex/hana-cc.html)
