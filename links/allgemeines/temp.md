@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Storing Time Series in RocksDB: A Cookbook
+[(link)](https://itnext.io/storing-time-series-in-rocksdb-a-cookbook-e873fcb117e4)
+
+- How RocksDB works
+[(link)](https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/)
+
 - Exploring a Postgres query plan
 [(link)](https://notes.eatonphil.com/2023-11-19-exploring-a-postgres-query-plan.html)
 
