@@ -114,11 +114,6 @@ from func_shortest_segment_path(10291, 10303, true) sp
 order by sp.pos;
 ```
 
-## xxx
-``` sql
-xxx
-```
-
 ## Verwaltungscode
 ``` sql
 drop type tt_segment_path;
@@ -127,8 +122,9 @@ drop function func_shortest_segment_path;
 
 ```
 
+<!--
 ## xxx
 ``` sql
 xxx
 ```
-
+-->
