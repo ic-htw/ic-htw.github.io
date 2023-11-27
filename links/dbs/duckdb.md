@@ -14,9 +14,10 @@ title: DuckDB
 [(link)](https://github.com/cwida/duckdb-pgq)
 
 # posts
+- Loading Parquet in PostgreSQL via DuckDB: Testing queries and exploring the Core
+[(link)](https://medium.com/@ahuarte/loading-parquet-in-postgresql-via-duckdb-testing-queries-and-exploring-the-core-1d667ae67dc2)
 - Building an IoT Data Pipeline for Energy Consumption Monitoring on the Edge with DuckDB and Malloy
-[(link)](https://medium.com/hiflylabs/building-an-iot-data-pipeline-for-energy-consumption-monitoring-on-the-edge-with-duckdb-and-malloy-1c66ba266f2f)
-        
+[(link)](https://medium.com/hiflylabs/building-an-iot-data-pipeline-for-energy-consumption-monitoring-on-the-edge-with-duckdb-and-malloy-1c66ba266f2f)    
 - Performance Explorations of GeoParquet (and DuckDB)
 [(link)](https://cloudnativegeo.org/blog/2023/08/performance-explorations-of-geoparquet-and-duckdb/)
 - Vector similarity search with duckdb

@@ -9,56 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
-- Storing Time Series in RocksDB: A Cookbook
-[(link)](https://itnext.io/storing-time-series-in-rocksdb-a-cookbook-e873fcb117e4)
-
-- How RocksDB works
-[(link)](https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/)
-
-- Exploring a Postgres query plan
-[(link)](https://notes.eatonphil.com/2023-11-19-exploring-a-postgres-query-plan.html)
-
-- momjian blog
-[(link)](https://momjian.us/main/blogs/pgblog.html)
-
-- Experiencing WAL REDO in PostgreSQL 
-[(link)](https://www.highgo.ca/2023/11/18/experiencing-wal-redo-in-postgresql/)
-
-- What the heck is GlareDB?
-[(link)](https://progrockrec.medium.com/what-the-heck-is-glaredb-dc401b2bd846)
-
-- Easiest way to load TPC-DS data into PostgreSQL
-[(link)](https://atwong.medium.com/easiest-way-to-load-tpc-ds-data-into-postgresql-1ebd83871a07)
-
-- Incremental Processing using Netflix Maestro and Apache Iceberg
-[(link)](https://netflixtechblog.com/incremental-processing-using-netflix-maestro-and-apache-iceberg-b8ba072ddeeb)
-
-- Loading Parquet in PostgreSQL via DuckDB: Testing queries and exploring the Core
-[(link)](https://medium.com/@ahuarte/loading-parquet-in-postgresql-via-duckdb-testing-queries-and-exploring-the-core-1d667ae67dc2)
-
-- PostgreSQL with increased connection’s
-[(link)](https://medium.com/@pawanpg0963/postgresql-with-increased-connections-3a09f7cb6a9a)
-
-- Transaction management in PostgreSQL and what is different from Oracle
-[(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
-
-- Ditch SQL — Let Vanna Handle It!
-[(link)](https://levelup.gitconnected.com/ditch-sql-let-vanna-handle-it-f14289d0a32f)
-
-- Vanna.ai
-[(link)](https://vanna.ai/)
-
 - What the Heck is LanceDB?
 [(link)](https://progrockrec.medium.com/what-the-heck-is-lancedb-12ae38ab248d)
-
-- A Modern Geospatial Workflow: PyEnv, Poetry, DuckDB, and JuPySQL
-[(link)](https://medium.com/@jake.gearon_34983/a-modern-geospatial-workflow-pyenv-poetry-duckdb-and-jupysql-7e7d355655f5)
-
-- MongoDB vs ScyllaDB: Architecture Comparison
-[(link)](https://scylladb.medium.com/mongodb-vs-scylladb-architecture-comparison-03cca33b6f26)
-
-- How to determine unused index in PostgreSQL?
-[(link)](https://medium.com/@anasanjaria/how-to-determine-unused-index-in-postgresql-6af846686a3)
 
 - Setting up a FastAPI App with Async SQLALchemy 2.0 & Pydantic V2
 [(link)](https://medium.com/@tclaitken/setting-up-a-fastapi-app-with-async-sqlalchemy-2-0-pydantic-v2-e6c540be4308)
@@ -87,14 +39,8 @@ title: Temporär
 - Scaling Time Series Data Storage — Part II
 [(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-ii-d67939655586)
 
-- PostgreSQL DB Indexes Maintenance Script
-[(link)](https://medium.com/@dmitry.romanoff/postgresql-db-indexes-maintenance-script-460c645e9f28)
-
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
-
-- Understand Explain Plans in PostgreSQL 
-[(link)](https://stormatics.tech/alis-planet-postgresql/understand-explain-plans-in-postgresql)
 
 - Introducing Nile, Serverless Postgres for modern SaaS
 [(link)](https://www.thenile.dev/blog/introducing-nile)
@@ -129,9 +75,6 @@ title: Temporär
 
 - Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
 [(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
-
-- Manage Bloated Postgres Database
-[(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
 
 - Data Access API over Data Lake Tables Without the Complexity
 [(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)

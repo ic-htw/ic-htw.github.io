@@ -126,6 +126,12 @@ title: Data Systems
 - home
 [(link)](https://hyper-db.de/)
 
+# glaredb
+- GlareDB [(link)](https://glaredb.com/)
+- What the heck is GlareDB?
+[(link)](https://progrockrec.medium.com/what-the-heck-is-glaredb-dc401b2bd846)
+
+
 # ibis
 - home
 [(link)](https://ibis-project.org/)
@@ -250,6 +256,10 @@ title: Data Systems
 [(link)](https://linuxtut.com/en/0fb2ecdb281587a34a44/)
 - Navigating the Minefield of RocksDB Configuration Options
 [(link)](https://betterprogramming.pub/navigating-the-minefield-of-rocksdb-configuration-options-246af1e1d3f9)
+- Storing Time Series in RocksDB: A Cookbook
+[(link)](https://itnext.io/storing-time-series-in-rocksdb-a-cookbook-e873fcb117e4)
+- How RocksDB works
+[(link)](https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/)
 
 
 # rockset
@@ -294,6 +304,13 @@ title: Data Systems
 [(link)](https://docs.timescale.com/)
 - blog
 [(link)](https://www.timescale.com/blog/)
+
+# vannaAI
+- Vanna.ai
+[(link)](https://vanna.ai/)
+- Ditch SQL — Let Vanna Handle It!
+[(link)](https://levelup.gitconnected.com/ditch-sql-let-vanna-handle-it-f14289d0a32f)
+
 
 # velox
 - home

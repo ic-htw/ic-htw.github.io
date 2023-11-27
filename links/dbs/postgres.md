@@ -36,6 +36,12 @@ title: Temporär
 [(link)](https://www.cybertec-postgresql.com/en/find-and-fix-a-missing-postgresql-index/)
 - Postgres BRIN Index — Large Data Performance With Minimal Storage
 [(link)](https://medium.com/geekculture/postgres-brin-index-large-data-performance-with-minimal-storage-4db6b9f64ca4)
+- How to determine unused index in PostgreSQL?
+[(link)](https://medium.com/@anasanjaria/how-to-determine-unused-index-in-postgresql-6af846686a3)
+- PostgreSQL DB Indexes Maintenance Script
+[(link)](https://medium.com/@dmitry.romanoff/postgresql-db-indexes-maintenance-script-460c645e9f28)
+
+
 
 
 ## json
@@ -110,6 +116,20 @@ title: Temporär
 
 
 ## misc
+- Manage Bloated Postgres Database
+[(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
+- Understand Explain Plans in PostgreSQL 
+[(link)](https://stormatics.tech/alis-planet-postgresql/understand-explain-plans-in-postgresql)
+- Transaction management in PostgreSQL and what is different from Oracle
+[(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
+- Easiest way to load TPC-DS data into PostgreSQL
+[(link)](https://atwong.medium.com/easiest-way-to-load-tpc-ds-data-into-postgresql-1ebd83871a07)
+- Exploring a Postgres query plan
+[(link)](https://notes.eatonphil.com/2023-11-19-exploring-a-postgres-query-plan.html)
+- momjian blog
+[(link)](https://momjian.us/main/blogs/pgblog.html)
+- Experiencing WAL REDO in PostgreSQL 
+[(link)](https://www.highgo.ca/2023/11/18/experiencing-wal-redo-in-postgresql/)
 - How to measure the performance of PostgreSQL Database Server(s)?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-measure-the-performance-of-postgresql-database-server-s-067965a9b851)
 - Basic PostgreSQL Configuration on Linux
