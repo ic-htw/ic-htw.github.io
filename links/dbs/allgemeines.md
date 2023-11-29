@@ -25,6 +25,9 @@ title: Allgemeines
 [(link)](https://koalabs.medium.com/vector-databases-a-list-43733545feea)
 - Why we replaced Pinecone with PGVector
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
+- AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
+[(link)](https://github.com/thinknimble/embeddings-search-demo)
+
 
 
 

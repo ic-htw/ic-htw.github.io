@@ -160,6 +160,10 @@ title: Data Systems
 - git
 [(link)](https://github.com/kuzudb/kuzu)
 
+# lancedb
+- What the Heck is LanceDB?
+[(link)](https://progrockrec.medium.com/what-the-heck-is-lancedb-12ae38ab248d)
+
 # leveldb
 - doc
 [(link)](https://github.com/google/leveldb)
@@ -215,6 +219,12 @@ title: Data Systems
 - Exploring the TPC-DS Benchmark Queries with Malloy
 [(link)](https://carlineng.com/?postid=malloy-tpcds#blog)
 
+# niledb
+- Introducing Nile, Serverless Postgres for modern SaaS
+[(link)](https://www.thenile.dev/blog/introducing-nile)
+[(link)](https://news.ycombinator.com/item?id=38014812)
+
+
 # polars
 - user guide
 [(link)](https://pola-rs.github.io/polars-book/user-guide/index.html)
@@ -224,6 +234,8 @@ title: Data Systems
 [(link)](https://github.com/andygrove/arrow-datafusion-python/tree/sql-on-polars)
 - Add examples showing how to execute SQL with Polars and Pandas
 [(link)](https://github.com/apache/arrow-datafusion-python/pull/190)
+- Using Polars Plugins for a 14x Speed Boost with Rust
+[(link)](https://towardsdatascience.com/using-polars-plugins-for-a-14x-speed-boost-with-rust-ce80bcc13d94)
 
 # prometheus
 - home

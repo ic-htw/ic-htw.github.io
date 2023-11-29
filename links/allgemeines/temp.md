@@ -9,45 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
-- What the Heck is LanceDB?
-[(link)](https://progrockrec.medium.com/what-the-heck-is-lancedb-12ae38ab248d)
-
-- Setting up a FastAPI App with Async SQLALchemy 2.0 & Pydantic V2
-[(link)](https://medium.com/@tclaitken/setting-up-a-fastapi-app-with-async-sqlalchemy-2-0-pydantic-v2-e6c540be4308)
-
-- Twitchverse: A network analysis of Twitch universe using Neo4j Graph Data Science
-[(link)](https://towardsdatascience.com/twitchverse-a-network-analysis-of-twitch-universe-using-neo4j-graph-data-science-d7218b4453ff)
-
-- The Significance of Bloom Filters in Parquet: A Deep Dive
-[(link)](https://medium.com/@diehardankush/the-significance-of-bloom-filters-in-parquet-a-deep-dive-c93a74e0ebcd)
-
-- The Power of Database Indexing Algorithms: B-Tree vs. Hash Indexing
-[(link)](https://dip-mazumder.medium.com/the-power-of-database-indexing-algorithms-b-tree-vs-hash-indexing-6e3a4112a81)
-
-- DynamoDB: Guidelines for faster reads and writes
-[(link)](https://medium.com/expedia-group-tech/dynamodb-guidelines-for-faster-reads-and-writes-3b172b4c2120)
-
-- GCP- AlloyDB for PostgreSQL — new feature; adaptive autovacuum
-[(link)](https://blog.fourninecloud.com/gcp-alloydb-for-postgresql-new-feature-adaptive-autovacuum-9c8e7efeeb6b)
-
-- Using Polars Plugins for a 14x Speed Boost with Rust
-[(link)](https://towardsdatascience.com/using-polars-plugins-for-a-14x-speed-boost-with-rust-ce80bcc13d94)
-
-- Top 8 PostgreSQL Extensions You Should Know About 
-[(link)](https://www.timescale.com/blog/top-8-postgresql-extensions/)
-
-- Scaling Time Series Data Storage — Part II
-[(link)](https://netflixtechblog.com/scaling-time-series-data-storage-part-ii-d67939655586)
-
-- AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
-[(link)](https://github.com/thinknimble/embeddings-search-demo)
-
-- Introducing Nile, Serverless Postgres for modern SaaS
-[(link)](https://www.thenile.dev/blog/introducing-nile)
-[(link)](https://news.ycombinator.com/item?id=38014812)
-
-- Did you forget to allocate Huge Pages on your PostgreSQL server?
-[(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
+- GraphQL is Finally Boring
+[(link)](https://javascript.plainenglish.io/graphql-is-finally-boring-681d3328b31c)
 
 - Understanding Join Strategies in PostgreSQL
 [(link)](https://blog.stackademic.com/understanding-join-strategies-in-postgresql-b02e734b1732)

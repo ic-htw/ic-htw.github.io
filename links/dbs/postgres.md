@@ -116,6 +116,8 @@ title: Temporär
 
 
 ## misc
+- Did you forget to allocate Huge Pages on your PostgreSQL server?
+[(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
 - Manage Bloated Postgres Database
 [(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
 - Understand Explain Plans in PostgreSQL 
