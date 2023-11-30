@@ -9,32 +9,11 @@ title: Temporär
 
 -->
 # Noch lesen
-- GraphQL is Finally Boring
-[(link)](https://javascript.plainenglish.io/graphql-is-finally-boring-681d3328b31c)
+- Oracle Database 23c: The Next Long Term Support Release
+[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release)
 
-- Understanding Join Strategies in PostgreSQL
-[(link)](https://blog.stackademic.com/understanding-join-strategies-in-postgresql-b02e734b1732)
-
-- What happened with APOC in Neo4j v5: Core and Extended edition
-[(link)](https://towardsdatascience.com/what-happened-with-apoc-in-neo4j-v5-core-and-extended-edition-23994cdf0a2c)
-
-- Optimise PostgreSQL queries with work_mem
-[(link)](https://medium.com/@shaileshkumarmishra/optimise-postgresql-queries-with-work-mem-f16c9de06bd4)
-
-- Distributed SQL for OLAP and OLTP: Trino Meets YugabyteDB
-[(link)](https://medium.com/@magda7817/distributed-sql-for-olap-and-oltp-trino-meets-yugabytedb-bda4f765642c)
-
-- To dbt or not to dbt
-[(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
-
-- SQL cookbook for dbt: Transforming Big Data with Incremental Models
-[(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
-
-- Making Hard Things Easy
-[(link)](https://jvns.ca/blog/2023/10/06/new-talk--making-hard-things-easy/)
-
-- Explore OpenAI vector embedding with Neo4j, LangChain, and Wikipedia
-[(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
+- SQLAlchemy vs. Raw SQL Queries in Python: A Comparative Example
+[(link)](https://python.plainenglish.io/sqlalchemy-vs-raw-sql-queries-in-python-a-comparative-example-b7a838ebef82)
 
 - Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
 [(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
@@ -42,23 +21,11 @@ title: Temporär
 - Data Access API over Data Lake Tables Without the Complexity
 [(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)
 
-- Timeseries Databases Performance 
-[(link)](https://medium.com/@ev_kozloski/timeseries-databases-performance-testing-7-alternatives-56a3415e6e9e)
-
 - ETL on Azure with Python, DuckDB, and Container Instance
 [(link)](https://medium.com/@mariusz_kujawski/etl-on-azure-with-python-duckdb-and-container-instance-def9b591e45f)
 
 - Load Balancer vs. Reverse Proxy vs. API Gateway
 [(link)](https://medium.com/geekculture/load-balancer-vs-reverse-proxy-vs-api-gateway-e9ec5809180c)
-
-- Implementing the Netflix Media Database
-[(link)](https://netflixtechblog.com/implementing-the-netflix-media-database-53b5a840b42a)
-
-- How to Get Started With the Neo4j Graph Data Science Python Client
-[(link)](https://medium.com/neo4j/how-to-get-started-with-the-neo4j-graph-data-science-python-client-56209d9b0d0d)
-
-- A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm
-[(link)](https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d)
 
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)

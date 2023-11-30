@@ -92,6 +92,11 @@ title: Data Systems
 [(link)](https://medium.com/indiciumtech/17-dbt-commands-you-should-start-using-today-581998dbf8f0)
 - dbt modeling at scale
 [(link)](https://medium.com/checkout-com-techblog/dbt-modeling-at-scale-2614202bb5d0)
+- To dbt or not to dbt
+[(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
+- SQL cookbook for dbt: Transforming Big Data with Incremental Models
+[(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
+
 
 
 
