@@ -38,6 +38,9 @@ title: Temporär
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html#Oracle%C2%AE-Database)
 - Database Sample Schemas
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/comsc/index.html#Oracle%C2%AE-Database)
+- Oracle Database 23c: The Next Long Term Support Release
+[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release)
+
 
 # ml
 - Oracle Machine Learning for SQL Release 23

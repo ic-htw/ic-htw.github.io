@@ -9,23 +9,8 @@ title: Temporär
 
 -->
 # Noch lesen
-- Oracle Database 23c: The Next Long Term Support Release
-[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release)
-
-- SQLAlchemy vs. Raw SQL Queries in Python: A Comparative Example
-[(link)](https://python.plainenglish.io/sqlalchemy-vs-raw-sql-queries-in-python-a-comparative-example-b7a838ebef82)
-
-- Building a Streamlit app on a Lakehouse using Apache Iceberg & DuckDB
-[(link)](https://dipankar-tnt.medium.com/building-a-streamlit-app-on-a-lakehouse-using-apache-iceberg-duckdb-b7bb1752445e)
-
-- Data Access API over Data Lake Tables Without the Complexity
-[(link)](https://towardsdatascience.com/data-access-api-over-data-lake-tables-without-the-complexity-4deb68ee88b3)
-
-- ETL on Azure with Python, DuckDB, and Container Instance
-[(link)](https://medium.com/@mariusz_kujawski/etl-on-azure-with-python-duckdb-and-container-instance-def9b591e45f)
-
-- Load Balancer vs. Reverse Proxy vs. API Gateway
-[(link)](https://medium.com/geekculture/load-balancer-vs-reverse-proxy-vs-api-gateway-e9ec5809180c)
+- Pgbench Load Test
+[(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
 
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)
