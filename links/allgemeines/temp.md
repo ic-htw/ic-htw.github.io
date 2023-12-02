@@ -9,8 +9,14 @@ title: Temporär
 
 -->
 # Noch lesen
-- Pgbench Load Test
-[(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
+- Create a Delta Table in S3 using Rust
+[(link)](https://blog.det.life/create-a-delta-table-in-s3-using-rust-a1f1fbf5d6d9)
+
+- ScyllaDB vs. DynamoDB Benchmark: Comparing Price Performance Across Workloads
+[(link)](https://scylladb.medium.com/scylladb-vs-dynamodb-benchmark-comparing-price-performance-across-workloads-93de8d568f5e)
+
+- Top Rust Libraries
+[(link)](https://serokell.medium.com/top-rust-libraries-eaca032a7b72)
 
 - Running Windowing Queries in Stream Processing
 [(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)

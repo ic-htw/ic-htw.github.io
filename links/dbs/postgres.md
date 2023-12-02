@@ -116,6 +116,8 @@ title: Temporär
 
 
 ## misc
+- Pgbench Load Test
+[(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
 - Did you forget to allocate Huge Pages on your PostgreSQL server?
 [(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
 - Manage Bloated Postgres Database
