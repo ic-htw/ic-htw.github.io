@@ -9,6 +9,21 @@ title: Temporär
 
 -->
 # Noch lesen
+- How To Build Analytics With Apache Arrow?
+[(link)](https://medium.com/gooddata-developers/how-to-build-analytics-with-apache-arrow-a773bb8eec3c)
+
+- openCypher Transpiler
+[(link)](https://github.com/microsoft/openCypherTranspiler)
+
+- dbt Incremental Cookbook
+[(link)](https://medium.com/@aaronbannin/dbt-incremental-cookbook-d70331ef879a)
+
+- Process Hundreds of GB of Data in the Cloud with Polars
+[(link)](https://medium.com/coiled-hq/process-hundreds-of-gb-of-data-in-the-cloud-with-polars-6162532b3cfd)
+
+- Serverless at Scale: Lessons From 200 Million Lambda Invocations
+[(link)](https://medium.com/@j.spiliot/serverless-at-scale-lessons-from-200-million-lambda-invocations-e3a8ad16ffb9)
+
 - Create a Delta Table in S3 using Rust
 [(link)](https://blog.det.life/create-a-delta-table-in-s3-using-rust-a1f1fbf5d6d9)
 
