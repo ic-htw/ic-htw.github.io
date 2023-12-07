@@ -9,52 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
-- How To Build Analytics With Apache Arrow?
-[(link)](https://medium.com/gooddata-developers/how-to-build-analytics-with-apache-arrow-a773bb8eec3c)
-
-- openCypher Transpiler
-[(link)](https://github.com/microsoft/openCypherTranspiler)
-
-- dbt Incremental Cookbook
-[(link)](https://medium.com/@aaronbannin/dbt-incremental-cookbook-d70331ef879a)
-
-- Process Hundreds of GB of Data in the Cloud with Polars
-[(link)](https://medium.com/coiled-hq/process-hundreds-of-gb-of-data-in-the-cloud-with-polars-6162532b3cfd)
-
-- Serverless at Scale: Lessons From 200 Million Lambda Invocations
-[(link)](https://medium.com/@j.spiliot/serverless-at-scale-lessons-from-200-million-lambda-invocations-e3a8ad16ffb9)
-
 - Create a Delta Table in S3 using Rust
 [(link)](https://blog.det.life/create-a-delta-table-in-s3-using-rust-a1f1fbf5d6d9)
-
-- ScyllaDB vs. DynamoDB Benchmark: Comparing Price Performance Across Workloads
-[(link)](https://scylladb.medium.com/scylladb-vs-dynamodb-benchmark-comparing-price-performance-across-workloads-93de8d568f5e)
-
-- Top Rust Libraries
-[(link)](https://serokell.medium.com/top-rust-libraries-eaca032a7b72)
-
-- Running Windowing Queries in Stream Processing
-[(link)](https://synnada.medium.com/running-windowing-queries-in-stream-processing-93068d3a5)
-
-- SQLPage
-[(link)](https://sql.ophir.dev/)
-[(link)](https://www.postgresql.org/about/news/announcing-sqlpage-build-dynamic-web-applications-in-sql-2672/)
 
 - How I Built a Data Lakehouse With Delta Lake Architecture
 [(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
 
-- Vector Databases 
-[(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
-
-- Sharding Pinterest: How we scaled our MySQL fleet
-[(link)](https://medium.com/pinterest-engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f)
-
-- Head-to-head comparison of 3 dbt SQL engines
-[(link)](https://medium.com/datamindedbe/head-to-head-comparison-of-dbt-sql-engines-497d71535881)
-        
-- How Discord save billions of messages
-[(link)](https://medium.com/@siddharth.sabron/how-discord-save-billions-of-messages-bb9227b5cdd)
-        
 - NoSQL Summer Blockbusters: Rust, Kafka, Media Streaming &amp; Social Media &amp; More
 [(link)](https://scylladb.medium.com/nosql-summer-blockbusters-rust-kafka-media-streaming-social-media-more-b0074fccb9)
         
@@ -72,9 +32,6 @@ title: Temporär
         
 - ScyllaDB’s Path to Strong Consistency
 [(link)](https://scylladb.medium.com/scylladbs-path-to-strong-consistency-a-new-milestone-3f9f7a18bae7)
-        
-- DuckDB + Dbt + great expectations
-[(link)](https://pran-kohli-1990.medium.com/duckdb-dbt-great-expectations-awesome-data-pipelines-8b459ccd7afc)
         
 - Demystifying the Parquet File Format
 [(link)](https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705)

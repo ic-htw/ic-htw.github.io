@@ -22,21 +22,21 @@ Ausgewählte Datenbankkonzepte/-techniken
 
 <!--
 ====================================================
-Datenmodellierung und Datenbanksysteme
+Data Management and Business Performance Management
 ==================================================== 
 -->  
 <button 
-  onclick="accordion('{{'DMDB' | append: include.mode}}')"
+  onclick="accordion('{{'DataMan' | append: include.mode}}')"
   class="w3-button w3-block w3-left-align w3-light-grey">
 {% if include.mode == "short" %}
-DMDB
+DataMan
 {% else %}
-Datenmodellierung und Datenbanksysteme
+Data Management and Business Performance Management
 {% endif %}
 </button>
 
-<div id={{"DMDB" | append: include.mode}} class="w3-hide w3-padding">
-    <a  href="/lv/dmdb/p/material.html">Material</a> <br>
+<div id={{"DataMan" | append: include.mode}} class="w3-hide w3-padding">
+    <a  href="xxx">xxx</a> <br>
 </div> 
 
 
@@ -61,6 +61,26 @@ Datenbanktechnologien
 
 <!--
 ====================================================
+Datenmodellierung und Datenbanksysteme
+==================================================== 
+-->  
+<button 
+  onclick="accordion('{{'DMDB' | append: include.mode}}')"
+  class="w3-button w3-block w3-left-align w3-light-grey">
+{% if include.mode == "short" %}
+DMDB
+{% else %}
+Datenmodellierung und Datenbanksysteme
+{% endif %}
+</button>
+
+<div id={{"DMDB" | append: include.mode}} class="w3-hide w3-padding">
+    <a  href="/lv/dmdb/p/material.html">Material</a> <br>
+</div> 
+
+
+<!--
+====================================================
 Projekt Business Intelligence
 ==================================================== 
 -->  
@@ -75,25 +95,6 @@ Projekt Business Intelligence
 </button>
 
 <div id={{"PBI" | append: include.mode}} class="w3-hide w3-padding">
-    <a  href="xxx">xxx</a> <br>
-</div> 
-
-<!--
-====================================================
-Data Management and Business Performance Management
-==================================================== 
--->  
-<button 
-  onclick="accordion('{{'DataMan' | append: include.mode}}')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
-{% if include.mode == "short" %}
-DataMan
-{% else %}
-Data Management and Business Performance Management
-{% endif %}
-</button>
-
-<div id={{"DataMan" | append: include.mode}} class="w3-hide w3-padding">
     <a  href="xxx">xxx</a> <br>
 </div> 
 

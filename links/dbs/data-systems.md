@@ -96,6 +96,15 @@ title: Data Systems
 [(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
 - SQL cookbook for dbt: Transforming Big Data with Incremental Models
 [(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
+- dbt Incremental Cookbook
+[(link)](https://medium.com/@aaronbannin/dbt-incremental-cookbook-d70331ef879a)
+- Head-to-head comparison of 3 dbt SQL engines
+[(link)](https://medium.com/datamindedbe/head-to-head-comparison-of-dbt-sql-engines-497d71535881)
+- DuckDB + Dbt + great expectations
+[(link)](https://pran-kohli-1990.medium.com/duckdb-dbt-great-expectations-awesome-data-pipelines-8b459ccd7afc)
+        
+        
+
 
 
 
@@ -192,6 +201,9 @@ title: Data Systems
 # mysql
 - MySQL High Availability
 [(link)](https://blog.flipkart.tech/mysql-high-availability-5f71838f19e1)
+- Sharding Pinterest: How we scaled our MySQL fleet
+[(link)](https://medium.com/pinterest-engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f)
+
 
 
 # neon
@@ -241,6 +253,9 @@ title: Data Systems
 [(link)](https://github.com/apache/arrow-datafusion-python/pull/190)
 - Using Polars Plugins for a 14x Speed Boost with Rust
 [(link)](https://towardsdatascience.com/using-polars-plugins-for-a-14x-speed-boost-with-rust-ce80bcc13d94)
+- Process Hundreds of GB of Data in the Cloud with Polars
+[(link)](https://medium.com/coiled-hq/process-hundreds-of-gb-of-data-in-the-cloud-with-polars-6162532b3cfd)
+
 
 # prometheus
 - home

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Temporär
+title: Oracle
 ---
 
 # Oracle Database 21c

@@ -14,6 +14,10 @@ title: Allgemeines
 [(link)](https://pingcap.medium.com/building-a-large-scale-distributed-storage-system-based-on-raft-2a4078cde119)
 - Data Sharing Issues in a Microservice Architecture
 [(link)](https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5)
+- SQLPage
+[(link)](https://sql.ophir.dev/)
+[(link)](https://www.postgresql.org/about/news/announcing-sqlpage-build-dynamic-web-applications-in-sql-2672/)
+
 
 
 
@@ -27,6 +31,9 @@ title: Allgemeines
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
+- Vector Databases 
+[(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
+
 
 # langchain
 - Neo4j x LangChain: Deep dive into the new Vector index implementation
