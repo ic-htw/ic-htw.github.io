@@ -13,6 +13,12 @@ title: Oracle
 - PL/SQL Language Reference
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/21/lnpls/index.html)
 
+# Sql Developer
+- Oracle SQL Developer Doc
+[(link)](https://docs.oracle.com/en/database/oracle/sql-developer/)
+- Oracle SQL Developer Data Modeler Doc
+[(link)](https://docs.oracle.com/en/database/oracle/sql-developer-data-modeler/index.html)
+
 # Development
 - JDBC Drivers
 [(link)](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
