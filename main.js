@@ -1,11 +1,9 @@
 function init() {
-    // w3.hide(".ic-nav-item")
     navitemsHandle();
     sr_fill();
 }
 
 function navitemToggle(id) {
-    // w3.toggleShow(`#${id}`)
     console.log(id);
     if (isNavitemIsOff(id)) {
         console.log("was off");
