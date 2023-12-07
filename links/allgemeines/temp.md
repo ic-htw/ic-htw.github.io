@@ -9,6 +9,24 @@ title: Temporär
 
 -->
 # Noch lesen
+- Advanced Data Structures Series— Skip List
+[(link)](https://medium.com/@remisharoon/advanced-data-structures-series-skip-list-3819ea2f7fa0)
+
+- LevelDB Data Structures Serials I: Skip List
+[(link)](https://qtmuniao.medium.com/leveldb-data-structures-serials-i-skip-list-67db102500d3)
+
+- Slowly Changing Dimension (SCD) Management in dbt
+[(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
+
+- Migrating a Postgres database to DynamoDB with Redpanda
+[(link)](https://redpanda-data.medium.com/migrating-a-postgres-database-to-dynamodb-with-redpanda-34da77450925)
+
+- Predicate Pushdown in Parquet: Enhancing Efficiency and Performance
+[(link)](https://medium.com/@diehardankush/predicate-pushdown-in-parquet-enhancing-efficiency-and-performance-5becb0b992de)
+
+- Data lake Table formats : Apache Iceberg vs Apache Hudi vs Delta lake
+[(link)](https://shashwat-pandey.medium.com/data-lake-table-formats-apache-iceberg-vs-apache-hudi-vs-delta-lake-10b67a1d587)
+
 - Create a Delta Table in S3 using Rust
 [(link)](https://blog.det.life/create-a-delta-table-in-s3-using-rust-a1f1fbf5d6d9)
 
