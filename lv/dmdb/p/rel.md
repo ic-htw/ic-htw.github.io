@@ -5,6 +5,7 @@ head1: "Datenmodellierung und Datenbanksysteme"
 head2: "Relationenmodell"
 ---
 ## Tabelle = Tabellenstruktur + Tabelleninhalt
+![Bild](/lv/dmdb/a/rel-mod.png)
 
 ### Tabellenstruktur
 - Tabellenname (grün)
