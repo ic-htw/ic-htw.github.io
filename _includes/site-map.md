@@ -95,7 +95,13 @@ Datenmodellierung und Datenbanksysteme
 </button>
 
 <div class="DMDB w3-padding">
-    <a  href="/lv/dmdb/p/intro.html">Intro</a> <br>
+    <a  href="/lv/dmdb/p/intro.html">Überblick</a> <br>
+    <a  href="/lv/dmdb/p/plan.html">Plan</a> <br>
+    SQL<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-join.html">Verbund</a> <br>
     <a  href="/lv/dmdb/p/material.html">Material</a> <br>
 </div> 
 

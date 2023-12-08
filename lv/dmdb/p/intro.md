@@ -1,12 +1,24 @@
 ---
 layout: default
-title: "DmDb - Intro"
+title: "DmDb"
+head1: "Datenmodellierung und Datenbanksysteme"
+head2: "Überblick"
 ---
-# Datenmodellierung und Datenbanksysteme
-## Inhalt
-- Bla1
-- Bla2
+## Lerninhalte
+- Relationenmodell
+- Entity-Relationship-Modell
+- SQL
+- Normalisierung
+- Datenbanksysteme als Teil betrieblicher Informationssysteme
 
-## Zeitplan
-- bla
+## Leistungsnachweise
+- Bewertete Übungsaufgaben (30%)
+  - Lösungen werden in Kleingruppen erarbeitet
+  - Übungsblätter und Abgabetermine stehen auf der Web-Seite
+- Klausur (70%)
+  - Alle Unterlagen erlaubt
+
+## Literatur
+- Faeskorn-Woyke, Bertelsmeier, Riemer, Bauer: Datenbanksysteme, Pearson Verlag
+- Kudraß: Taschenbuch Datenbanken, Hanser Verlag
 
