@@ -9,6 +9,15 @@ title: Temporär
 
 -->
 # Noch lesen
+- AWS re:Invent 2023 — Key Findings
+[(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)
+
+- Choosing the Right Git Branching Strategy: A Comparative Analysis
+[(link)](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
+
+- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
+[(link)](https://medium.com/p/47b7f65691c7)
+
 - Advanced Data Structures Series— Skip List
 [(link)](https://medium.com/@remisharoon/advanced-data-structures-series-skip-list-3819ea2f7fa0)
 

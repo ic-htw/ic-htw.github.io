@@ -24,6 +24,16 @@ title: JavaScript / CSS / HTML
 [(link)](https://www.w3schools.com/w3css/default.asp)
 - W3.JS
 [(link)](https://www.w3schools.com/w3js/)
+- highlight.js
+[(home)](https://highlightjs.org/)
+[(doc)](https://highlightjs.readthedocs.io/en/latest/index.html)
+[(git)](https://github.com/highlightjs/highlight.js#getting-started)
+- highlightjs-copy
+[(link)](https://github.com/arronhunt/highlightjs-copy)
+- mathjax.js
+[(link)](https://www.mathjax.org/)
+
+
 
 
 # JointJS

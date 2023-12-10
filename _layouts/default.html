@@ -4,12 +4,25 @@
 <title>{{ page.title }}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!--
+  <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"/>
+  <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+-->
+
 <link rel="stylesheet" href="/assets/css/main.css">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="/main.js"></script>
 
 </head>
@@ -60,6 +73,17 @@
 
 
 <script>
+// syntax highlighting
+hljs.highlightAll();
+
+// hljs.addPlugin(
+//     new CopyButtonPlugin({
+//       callback: (text, el) => console.log("Copied to clipboard", text),
+//     })
+//     );
+// hljs.initLineNumbersOnLoad();
+
+
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
