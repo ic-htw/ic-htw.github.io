@@ -1,0 +1,97 @@
+---
+layout: default
+title: "DmDb"
+head1: "Datenmodellierung und Datenbanksysteme"
+head2: "Relationenmodell"
+---
+
+<hr>
+
+<h1> Tabelle = Tabellenstruktur + Tabelleninhalt</h1>
+<img src="/lv/dmdb/a/relmod/tab1.png" style="width:600px;">
+
+<h2>Tabellenstruktur</h2>
+<ul>
+  <li>Tabellenname (grün)</li>
+  <li>Spaltennamen (braun)</li>
+  <li>Primärschlüssel (unterstrichen, pink)</li>
+  <li>Datentypen: Zahl, Zeichenkette, Datum</li>
+</ul>
+
+<h2>Tabelleninhalt</h2>
+<ul>
+  <li>Datensätze (Zeilen in grau)</li>
+</ul>
+
+
+<hr>
+
+<h1>Strukturdarstellung / SQL-Anweisung</h1>
+<img src="/lv/dmdb/a/relmod/tab2.png" style="width:200px;">
+<img src="/lv/dmdb/a/relmod/tab3.png" style="width:400px;">
+
+<hr>
+
+<h1>Fremdschlüssel</h1>
+<img src="/lv/dmdb/a/relmod/tab4.png" style="width:200px;">
+<img src="/lv/dmdb/a/relmod/tab5.png" style="width:400px;">
+
+- SG enthält Zeiger auf Studiengang-Datensätze
+- Student 1 und 2 studieren WI
+- Studentin 3 studiert AI
+
+<hr>
+<h1>Datentypen (beispielhaft)</h1>
+
+| Typname | Wertebereich | Beispiele |
+|:-|:-|:-|
+|integer | ganze Zahlen | -100, 200 |
+| decimal(5,3) &nbsp; &nbsp;| Festkommazahlen | 10,156 |
+| float | Gleitkommazahlen | 10,154789 |
+| varchar(10) | Zeichenketten variabler Länge &nbsp; &nbsp;| 'Hallo' |
+| date | Datum | 1.1.2007 14:30:12 |
+
+<hr>
+<h1>Integritätsbedingungen</h1>
+<ul>
+  <li>Primärschlüssel / Unique Constraint</li>
+  <ul>
+    <li>Eindeutigkeit der Spaltenwerte</li>
+    <li>Identifikation von Datensätzen</li>
+  </ul>
+  <li>Fremdschlüssel</li>
+  <ul>
+    <li>Beziehungen zwischen Tabellen</li>
+    <li>Referenzielle Integrität, Zielwert muss existieren</li>
+  </ul>
+  <li>Check-Constraint</li>
+  <ul>
+    <li>Einschränkungen einer Spalte</li>
+    <li>Anzahl Plätze in einer Veranstaltung darf nicht negativ sein</li>
+  </ul>
+  <li>Not-Null-Constraint</li>
+  <ul>
+    <li>Spalte muss Werte enthalten</li>
+  </ul>
+</ul>
+
+<hr>
+<h1>Gründe für Nullwerte</h1>
+<ul>
+  <li>Information wird nicht bereit gestellt</li>
+  <ul>
+    <li>Private Telefonnummer</li>
+  </ul>
+  <li>Information noch nicht vorhanden</li>
+  <ul>
+    <li>Exmatrikulationsdatum existiert erst nach Exmatrikulation</li>
+  </ul>
+  <li>Spalte macht für Datensatz keinen Sinn</li>
+  <ul>
+    <li>Personentabelle mit Daten von Studies und Profs</li>
+    <li>Spalte MatrNr macht nur für Studies Sinn</li>
+  </ul>
+</ul>
+
+
+<hr>
