@@ -32,6 +32,10 @@ title: JavaScript / CSS / HTML
 [(link)](https://github.com/arronhunt/highlightjs-copy)
 - mathjax.js
 [(link)](https://www.mathjax.org/)
+- marker.js
+[(link)](https://markerjs.com/)
+- Diagrams: A New Web App for Visualizing Your Ideas
+[(link)](https://blog.ailon.org/diagrams-a-new-web-app-for-visualizing-your-ideas-488dd3719449)
 
 
 

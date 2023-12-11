@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Monitor FastAPI with OpenTelemetry
+[(link)](https://uptrace.medium.com/monitor-fastapi-with-opentelemetry-3e32cb1b6fd8)
+
+- Multi-Tenancy Approach in PostgreSQL
+[(link)](https://abdulrahmanka.medium.com/multi-tenancy-approach-in-postgresql-be5005697494)
+
 - AWS re:Invent 2023 — Key Findings
 [(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)
 
