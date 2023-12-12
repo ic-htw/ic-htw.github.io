@@ -9,6 +9,21 @@ title: Temporär
 
 -->
 # Noch lesen
+- Top 5 Redis Use Cases in Distributed Systems
+[(link)](https://medium.com/@maheshsaini.sec/top-5-redis-use-cases-in-distributed-systems-6aadc73121c6)
+
+- Three dbt Macros I Use Every Day
+[(link)](https://noahlk.medium.com/three-dbt-macros-i-use-every-day-2966b3ad9b26)
+
+- GraphQL for Data Products
+[(link)](https://medium.com/data-mesh-learning/graphql-for-data-products-d6d92407a885)
+
+- MLOps for recommenders - Deploying Recommender System in Production
+[(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
+
+- PostgreSQL Functions: Unlocking the Power of User-Defined Functions
+[(link)](https://blog.devgenius.io/postgresql-functions-unlocking-the-power-of-user-defined-functions-6c67dd4cb5b9)
+
 - Monitor FastAPI with OpenTelemetry
 [(link)](https://uptrace.medium.com/monitor-fastapi-with-opentelemetry-3e32cb1b6fd8)
 
