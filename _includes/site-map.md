@@ -25,7 +25,7 @@ Ausgewählte Datenbankkonzepte/-techniken
 -->  
 <button 
   onclick="navitemToggle('ADBKT')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 ADBKT
 {% else %}
@@ -47,7 +47,7 @@ Data Management and Business Performance Management
 -->  
 <button 
   onclick="navitemToggle('DataMan')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 DataMan
 {% else %}
@@ -67,7 +67,7 @@ Datenbanktechnologien
 -->  
 <button 
   onclick="navitemToggle('DbTech')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 DbTech
 {% else %}
@@ -86,7 +86,7 @@ Datenmodellierung und Datenbanksysteme
 -->  
 <button 
   onclick="navitemToggle('DMDB')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 DMDB
 {% else %}
@@ -114,7 +114,7 @@ Projekt Business Intelligence
 -->  
 <button 
   onclick="navitemToggle('PBI')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 PBI
 {% else %}
@@ -146,7 +146,7 @@ Allgemeines
 -->  
 <button 
   onclick="navitemToggle('Allgemeines')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 Allgemeines
 {% else %}
@@ -173,7 +173,7 @@ Datenbanksysteme
 -->  
 <button 
   onclick="navitemToggle('DBS')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 DBS
 {% else %}
@@ -204,7 +204,7 @@ Maschinelles Lernen
 -->  
 <button 
   onclick="navitemToggle('ML')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 ML
 {% else %}
@@ -225,7 +225,7 @@ Programmierung
 -->  
 <button 
   onclick="navitemToggle('PROG')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 PROG
 {% else %}
@@ -248,7 +248,7 @@ xxx
 ==================================================== 
 <button 
   onclick="navitemToggle('{{'xxx' | append: include.mode}}')"
-  class="w3-button w3-block w3-left-align w3-light-grey">
+  class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
 xxx
 {% else %}
