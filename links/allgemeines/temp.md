@@ -9,20 +9,11 @@ title: Temporär
 
 -->
 # Noch lesen
-- Top 5 Redis Use Cases in Distributed Systems
-[(link)](https://medium.com/@maheshsaini.sec/top-5-redis-use-cases-in-distributed-systems-6aadc73121c6)
-
-- Three dbt Macros I Use Every Day
-[(link)](https://noahlk.medium.com/three-dbt-macros-i-use-every-day-2966b3ad9b26)
-
-- GraphQL for Data Products
-[(link)](https://medium.com/data-mesh-learning/graphql-for-data-products-d6d92407a885)
+- What is a Feature Store in ML, and do I need one for my model?
+[(link)](https://medium.com/infer-qwak/what-is-a-feature-store-in-ml-and-do-i-need-one-for-my-model-ba2682b628b0)
 
 - MLOps for recommenders - Deploying Recommender System in Production
 [(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
-
-- PostgreSQL Functions: Unlocking the Power of User-Defined Functions
-[(link)](https://blog.devgenius.io/postgresql-functions-unlocking-the-power-of-user-defined-functions-6c67dd4cb5b9)
 
 - Monitor FastAPI with OpenTelemetry
 [(link)](https://uptrace.medium.com/monitor-fastapi-with-opentelemetry-3e32cb1b6fd8)
@@ -44,9 +35,6 @@ title: Temporär
 
 - LevelDB Data Structures Serials I: Skip List
 [(link)](https://qtmuniao.medium.com/leveldb-data-structures-serials-i-skip-list-67db102500d3)
-
-- Slowly Changing Dimension (SCD) Management in dbt
-[(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
 
 - Migrating a Postgres database to DynamoDB with Redpanda
 [(link)](https://redpanda-data.medium.com/migrating-a-postgres-database-to-dynamodb-with-redpanda-34da77450925)
