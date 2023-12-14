@@ -106,6 +106,8 @@ title: Data Systems
 [(link)](https://noahlk.medium.com/three-dbt-macros-i-use-every-day-2966b3ad9b26)
 - Slowly Changing Dimension (SCD) Management in dbt
 [(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
+- 3 Reasons Why Working With Data Build Tool (dbt) Is Not “Just Doing SQL”
+[(link)](https://medium.com/@lgsoliveira/3-reasons-why-working-with-data-build-tool-dbt-is-not-just-doing-sql-5b8d9c40a591)
 
 
 
