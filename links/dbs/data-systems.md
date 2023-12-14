@@ -102,9 +102,10 @@ title: Data Systems
 [(link)](https://medium.com/datamindedbe/head-to-head-comparison-of-dbt-sql-engines-497d71535881)
 - DuckDB + Dbt + great expectations
 [(link)](https://pran-kohli-1990.medium.com/duckdb-dbt-great-expectations-awesome-data-pipelines-8b459ccd7afc)
-        
-        
-
+- Three dbt Macros I Use Every Day
+[(link)](https://noahlk.medium.com/three-dbt-macros-i-use-every-day-2966b3ad9b26)
+- Slowly Changing Dimension (SCD) Management in dbt
+[(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
 
 
 

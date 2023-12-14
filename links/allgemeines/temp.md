@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- What is a Feature Store in ML, and do I need one for my model?
+[(link)](https://medium.com/infer-qwak/what-is-a-feature-store-in-ml-and-do-i-need-one-for-my-model-ba2682b628b0)
+
+- MLOps for recommenders - Deploying Recommender System in Production
+[(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
+
 - Monitor FastAPI with OpenTelemetry
 [(link)](https://uptrace.medium.com/monitor-fastapi-with-opentelemetry-3e32cb1b6fd8)
 
@@ -29,9 +35,6 @@ title: Temporär
 
 - LevelDB Data Structures Serials I: Skip List
 [(link)](https://qtmuniao.medium.com/leveldb-data-structures-serials-i-skip-list-67db102500d3)
-
-- Slowly Changing Dimension (SCD) Management in dbt
-[(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
 
 - Migrating a Postgres database to DynamoDB with Redpanda
 [(link)](https://redpanda-data.medium.com/migrating-a-postgres-database-to-dynamodb-with-redpanda-34da77450925)
