@@ -9,17 +9,38 @@ title: Temporär
 
 -->
 # Noch lesen
-- What is a Feature Store in ML, and do I need one for my model?
-[(link)](https://medium.com/infer-qwak/what-is-a-feature-store-in-ml-and-do-i-need-one-for-my-model-ba2682b628b0)
+- Core RAG Architecture with AlloyDB AI
+[(link)](https://medium.com/google-cloud/core-rag-architecture-with-alloydb-ai-7c7388f33ff1)
+
+- Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT!
+[(link)](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
+
+- OneTable: Interoperability for Apache Hudi, Iceberg & Delta Lake
+[(link)](https://dipankar-tnt.medium.com/onetable-interoperability-for-apache-hudi-iceberg-delta-lake-bb8b27dd288d)
+
+- Building Your Own Text-to-SQL: Steps And Requirements
+[(link)](https://medium.com/querymind/building-your-own-text-to-sql-steps-and-requirements-ab276826c882)
+
+- McKinsey are wrong that GenAI is The Silver Bullet
+[(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)
+
+- 5 Reasons Why to Write Your Semantic Layer in YAML
+[(link)](https://medium.com/gooddata-developers/5-reasons-why-to-write-your-semantic-layer-in-yaml-f6abfaebc888)
+
+- Amazon Q is simply Outstanding!!!
+[(link)](https://medium.com/@TechStoryLines/amazon-q-is-simply-outstanding-b0246283d087)
+
+- What Is LangChain?
+[(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
+
+- Generative AI with SQL — First Impressions
+[(link)](https://medium.com/learning-sql/generative-ai-with-sql-first-impressions-3d26c5f17ae3)
+
+- Learning SQL - Medium.com
+[(link)](https://medium.com/learning-sql)
 
 - MLOps for recommenders - Deploying Recommender System in Production
 [(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
-
-- Monitor FastAPI with OpenTelemetry
-[(link)](https://uptrace.medium.com/monitor-fastapi-with-opentelemetry-3e32cb1b6fd8)
-
-- Multi-Tenancy Approach in PostgreSQL
-[(link)](https://abdulrahmanka.medium.com/multi-tenancy-approach-in-postgresql-be5005697494)
 
 - AWS re:Invent 2023 — Key Findings
 [(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)
