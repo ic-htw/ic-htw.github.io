@@ -6,3 +6,79 @@ title: Misc
 - Uber System Design 
 [(link)](https://medium.com/@karan99/system-design-uber-33593137a4fe)
 
+ # Allgemein
+[(link)](http://Count.co)
+[(link)](https://count.co/)
+- The Building Blocks of a Modern Data Platform
+[(link)](https://towardsdatascience.com/the-building-blocks-of-a-modern-data-platform-92e46061165)
+
+
+# Apache Superset
+- Apache Superset: A hidden gem in the heaps of BI tools? — Part I.
+[(link)](https://medium.com/codex/apache-superset-a-hidden-gem-in-the-heaps-of-bi-tools-part-i-1994c4430a35)
+- Apache Superset Review: Features, Architecture &amp; Installation‍
+[(link)](https://medium.com/censius/apache-superset-review-features-architecture-installation-ba422f76261d)
+- Apache Superset — A Swiss Army Knife for Analyzing Data
+[(link)](https://medium.com/@haripranav98/apache-superset-a-swiss-army-knife-for-analyzing-data-a1a327d11cdc)
+
+# Data Studio
+- How I design dashboards in Data Studio — Part 1: Data hierarchy and telling your story
+[(link)](https://datastudio.medium.com/how-i-design-dashboards-in-data-studio-part-1-data-hierarchy-and-telling-your-story-7fc6061017f)
+
+# dbt
+- Self-service Business Intelligence, Powered by dbt
+[(link)](https://medium.com/modern-business-intelligence/self-service-business-intelligence-powered-by-dbt-3b7e24a92e27)
+- Data Build Tool (DBT): SQL on Steroids
+[(link)](https://tech.bolt.com/data-build-tool-dbt-sql-on-steroids-f4e4622e3ce8)
+- One Year of dbt
+[(link)](https://tech.devoted.com/one-year-of-dbt-b2e8474841ca)
+- Why DBT will one day be bigger than Spark
+[(link)](https://medium.com/datamindedbe/why-dbt-will-one-day-be-bigger-than-spark-2225cadbdad0)
+
+# Visualization
+- Dashboards Close Million Dollar Deals
+[(link)](https://medium.com/data-studio/dashboards-close-million-dollar-deals-1dd3e1763068)
+- Archive for the Data Visualization Weekly
+[(link)](https://www.anychart.com/blog/category/data-visualization-weekly/)
+- Customer Analytics and Cohort analysis
+[(link)](https://medium.com/@designbynattapong/customer-analytics-and-cohort-analysis-2fbbbba79783)
+- Chart.js + Next.js = Beautiful, Data-Driven Dashboards. How to create them fast and efficiently.
+[(link)](https://towardsdev.com/chart-js-next-js-beautiful-data-driven-dashboards-how-to-create-them-fast-and-efficiently-a59e313a3153)
+- Beyond Tableau and Power BI — have you wondered what else is out there?
+[(link)](https://medium.com/@yvette110/beyond-tableau-and-power-bi-have-you-wondered-what-else-is-out-there-123080b0ee89)
+- What is a Marketing Dashboard?
+[(link)](https://hurree.medium.com/what-is-a-marketing-dashboard-3-examples-ac101ad54153)
+- How to Turn Ugly Charts That Make No Sense Into Simple, Clean Visual Stories
+[(link)](https://slideteam.medium.com/how-to-turn-ugly-charts-that-make-no-sense-into-simple-clean-visual-stories-2d17490d78d2)
+- How to Create Cool Real-time Data Visualizations in Minutes not Months
+[(link)](https://blog.sopherapps.com/how-to-create-cool-real-time-data-visualizations-in-minutes-not-months-62667dd912ec)
+- Keep your graphs and charts honest by avoiding these common data visualization pitfalls.
+[(link)](https://betterhumans.pub/keep-your-graphs-and-charts-honest-by-avoiding-these-common-data-visualization-pitfalls-6d2d717a3f0)
+- looker
+[(link)](https://looker.com/medium.com/df-foundation/the-death-of-data-analytics-tools-%EF%B8%8F-ae28c7fbda53)
+- Best Practices für Dashboard Design
+[(link)](https://www.bi-scout.com/dashboard-design-best-practices)
+[(link)](http://duelingdata.blogspot.com/2019/01/5-types-of-dashboards.html)
+- Procurement Key Performance Indicators and Metrics
+[(link)](https://www.datapine.com/kpi-examples-and-templates/procurement)
+- Strategic, Analytical, Operational And Tactical Dashboards
+[(link)](https://www.datapine.com/blog/strategic-operational-analytical-tactical-dashboards/)
+- Fünf Dashboard Konzepte für Berichtsadressaten
+[(link)](https://verovis.com/fuenf-dashboard-konzepte-fuer-berichtsadressaten/)
+[(link)](https://zebrabi.com/infographic-choose-right-chart/)
+- How To Choose The Right Chart Type For Your Data
+[(link)](https://www.fusioncharts.com/blog/choose-right-chart-type-data/)
+- 1×1 der Visualisierung: Diagrammtypen
+[(link)](https://linearis.at/blog/2016/08/16/1x1-der-visualisierung-diagrammtypen/)
+- Top 50 matplotlib Visualizations
+[(link)](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/)
+- Data visualization - Material Design
+[(link)](https://material.io/design/communication/data-visualization.html)
+- Fundamentals of Data Visualization
+[(link)](https://serialmentor.com/dataviz/)
+- Visualizing Outliers
+[(link)](https://flowingdata.com/2018/03/07/visualizing-outliers/)
+- Visualizing the Uncertainty in Data
+[(link)](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/)
+- Data Visualization A practical introduction
+[(link)](https://socviz.co/)
