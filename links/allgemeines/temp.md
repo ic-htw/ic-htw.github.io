@@ -9,6 +9,12 @@ title: Temporär
 
 -->
 # Noch lesen
+- Apache Arrow Flight as a Data Catalog
+[(link)](https://wasit7.medium.com/apache-arrow-flight-as-a-data-catalog-3f193e0cad8a)
+
+- How Data Should Be Stored In Single Table for DynamoDB
+[(link)](https://aws.plainenglish.io/how-data-should-be-stored-in-single-table-for-dynamodb-fd991ea3b1a7)
+
 - Core RAG Architecture with AlloyDB AI
 [(link)](https://medium.com/google-cloud/core-rag-architecture-with-alloydb-ai-7c7388f33ff1)
 

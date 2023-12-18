@@ -108,6 +108,18 @@ title: Data Systems
 [(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
 - 3 Reasons Why Working With Data Build Tool (dbt) Is Not “Just Doing SQL”
 [(link)](https://medium.com/@lgsoliveira/3-reasons-why-working-with-data-build-tool-dbt-is-not-just-doing-sql-5b8d9c40a591)
+- Self-service Business Intelligence, Powered by dbt
+[(link)](https://medium.com/modern-business-intelligence/self-service-business-intelligence-powered-by-dbt-3b7e24a92e27)
+- Data Build Tool (DBT): SQL on Steroids
+[(link)](https://tech.bolt.com/data-build-tool-dbt-sql-on-steroids-f4e4622e3ce8)
+- One Year of dbt
+[(link)](https://tech.devoted.com/one-year-of-dbt-b2e8474841ca)
+- Why DBT will one day be bigger than Spark
+[(link)](https://medium.com/datamindedbe/why-dbt-will-one-day-be-bigger-than-spark-2225cadbdad0)
+- 5 Strong Reasons Why Data Build Tool (dbt) Got So Much Hype
+[(link)](https://levelup.gitconnected.com/5-strong-reasons-why-data-build-tool-dbt-got-so-much-hype-9030dda48b74)
+
+
 
 
 

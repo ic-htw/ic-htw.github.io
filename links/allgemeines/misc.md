@@ -3,38 +3,6 @@ layout: default
 title: Misc
 ---
 
-- Uber System Design 
-[(link)](https://medium.com/@karan99/system-design-uber-33593137a4fe)
-
- # Allgemein
-[(link)](http://Count.co)
-[(link)](https://count.co/)
-- The Building Blocks of a Modern Data Platform
-[(link)](https://towardsdatascience.com/the-building-blocks-of-a-modern-data-platform-92e46061165)
-
-
-# Apache Superset
-- Apache Superset: A hidden gem in the heaps of BI tools? — Part I.
-[(link)](https://medium.com/codex/apache-superset-a-hidden-gem-in-the-heaps-of-bi-tools-part-i-1994c4430a35)
-- Apache Superset Review: Features, Architecture &amp; Installation‍
-[(link)](https://medium.com/censius/apache-superset-review-features-architecture-installation-ba422f76261d)
-- Apache Superset — A Swiss Army Knife for Analyzing Data
-[(link)](https://medium.com/@haripranav98/apache-superset-a-swiss-army-knife-for-analyzing-data-a1a327d11cdc)
-
-# Data Studio
-- How I design dashboards in Data Studio — Part 1: Data hierarchy and telling your story
-[(link)](https://datastudio.medium.com/how-i-design-dashboards-in-data-studio-part-1-data-hierarchy-and-telling-your-story-7fc6061017f)
-
-# dbt
-- Self-service Business Intelligence, Powered by dbt
-[(link)](https://medium.com/modern-business-intelligence/self-service-business-intelligence-powered-by-dbt-3b7e24a92e27)
-- Data Build Tool (DBT): SQL on Steroids
-[(link)](https://tech.bolt.com/data-build-tool-dbt-sql-on-steroids-f4e4622e3ce8)
-- One Year of dbt
-[(link)](https://tech.devoted.com/one-year-of-dbt-b2e8474841ca)
-- Why DBT will one day be bigger than Spark
-[(link)](https://medium.com/datamindedbe/why-dbt-will-one-day-be-bigger-than-spark-2225cadbdad0)
-
 # Visualization
 - Dashboards Close Million Dollar Deals
 [(link)](https://medium.com/data-studio/dashboards-close-million-dollar-deals-1dd3e1763068)
