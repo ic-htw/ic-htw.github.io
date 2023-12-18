@@ -4,6 +4,16 @@ title: Allgemeines
 ---
 
 # aaa
+- db-engines
+[(link)](https://db-engines.com/de/)
+- NoSQL - Website
+[(link)](https://hostingdata.co.uk/nosql-database/)
+- The evolution of DBMS popularity in the DB-Engines Ranking, 2013-2022
+[(link)](https://db-engines.com/en/blog_post/96)
+- Genalogie von Datenbanksystemen
+[(link)](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/projekte/RDBMSGenealogy/RDBMS_Genealogy_V6.jpg)
+- Database of Databases
+[(link)](https://dbdb.io/)
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
 - Comparing Databases: A Technical Guide
