@@ -80,6 +80,18 @@ title: Data Systems
 [(link)](https://www.heise.de/hintergrund/Eine-Einfuehrung-in-die-Azure-Cosmos-DB-4446403.html)
 
 # dbt
+- doc
+[(link)](https://docs.getdbt.com/)
+- git
+[(link)](https://github.com/dbt-labs/dbt)
+- dbt — There is data at the end of the tunnel
+[(link)](https://adrianomedeirossantos.medium.com/dbt-there-is-data-at-the-end-of-the-tunnel-4173734ae109)
+- Moderne Data Pipelines mit dem data build tool (dbt) – Teil 1: Einführung
+[(link)](https://blog.viadee.de/data-build-tool-einf%C3%BChrung)
+- What Is data build tool (dbt) and How Is It Different?
+[(link)](https://aptitive.com/blog/what-is-dbt/)
+- DBT: A new way to transform data and build pipelines at The Telegraph
+[(link)](https://medium.com/the-telegraph-engineering/dbt-a-new-way-to-handle-data-transformation-at-the-telegraph-868ce3964eb4)
 - dbt-duckdb
 [(link)](https://github.com/duckdb/dbt-duckdb)
 - Transforming Data Engineering: A Deep Dive into dbt with DuckDB
