@@ -3,6 +3,13 @@ layout: default
 title: Data Sets
 ---
 
+- IBM Transactions for Anti Money Laundering
+[(link)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)
+
+- Offshore Leaks Database by ICIJ Graph Example
+[(link)](https://github.com/ICIJ/offshoreleaks-data-packages)
+
+
 # GTFS
 - Home
 [(link)](https://gtfs.org/)

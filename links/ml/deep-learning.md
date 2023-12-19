@@ -3,6 +3,9 @@ layout: default
 title: Temporär
 ---
 
+- Deep Learning Tuning Playbook
+[(link)](https://github.com/google-research/tuning_playbook)
+
 
 # CNN
 - Convolutional Neural Networks (CNNs / ConvNets)
