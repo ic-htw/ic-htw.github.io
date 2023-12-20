@@ -3,6 +3,8 @@ layout: default
 title: Postgres
 ---
 
+# {{page.title}}
+
 ## official
 - home
 [(link)](https://www.postgresql.org/)

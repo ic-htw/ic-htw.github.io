@@ -3,6 +3,8 @@ layout: default
 title: Temporär
 ---
 
+# {{page.title}}
+
 - Deep Learning Tuning Playbook
 [(link)](https://github.com/google-research/tuning_playbook)
 

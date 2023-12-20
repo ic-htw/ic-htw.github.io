@@ -2,6 +2,7 @@
 layout: default
 title: Oracle
 ---
+# {{page.title}}
 
 # Oracle Database 21c
 - Home

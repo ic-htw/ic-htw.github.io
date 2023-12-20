@@ -2,6 +2,7 @@
 layout: default
 title: Rust
 ---
+# {{page.title}}
 
 # posts
 - The Rust Programming Language

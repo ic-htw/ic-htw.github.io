@@ -2,6 +2,7 @@
 layout: default
 title: Blogs / Sites
 ---
+# {{page.title}}
 
 # Blogs
 - AWS Database Blog

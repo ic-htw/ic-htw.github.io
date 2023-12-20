@@ -2,6 +2,7 @@
 layout: default
 title: Blogs-Sites Posts
 ---
+# {{page.title}}
 
 # begriffs on database
 - User-defined Order in SQL

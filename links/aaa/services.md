@@ -2,6 +2,7 @@
 layout: default
 title: Misc
 ---
+# {{page.title}}
 
 # github
 - ic-htw

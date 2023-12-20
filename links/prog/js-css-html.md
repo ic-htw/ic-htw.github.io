@@ -2,6 +2,7 @@
 layout: default
 title: JavaScript / CSS / HTML
 ---
+# {{page.title}}
 
 # JavaScript References / Tutorials / Sites
 - reference - mozilla

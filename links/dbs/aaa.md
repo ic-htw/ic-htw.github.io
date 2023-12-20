@@ -2,6 +2,7 @@
 layout: default
 title: Allgemeines
 ---
+# {{page.title}}
 
 # aaa
 - db-engines

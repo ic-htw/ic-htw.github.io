@@ -3,7 +3,8 @@ layout: default
 title: customer analytics
 ---
 
-                           
+# {{page.title}}
+                          
         
 - How To Predict Customer Lifetime Value using Machine Learning in Python
 [(link)](https://blog.devgenius.io/how-to-predict-customer-lifetime-value-using-machine-learning-in-python-4066344d0ab0)

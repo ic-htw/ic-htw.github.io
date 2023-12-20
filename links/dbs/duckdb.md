@@ -2,6 +2,7 @@
 layout: default
 title: DuckDB
 ---
+# {{page.title}}
 
 # home
 - docs

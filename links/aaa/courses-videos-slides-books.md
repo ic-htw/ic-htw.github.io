@@ -2,6 +2,7 @@
 layout: default
 title: Kurse, Videos, Folien, Bücher
 ---
+# {{page.title}}
 
 # Courses
 - Time Series - Kaggle

@@ -2,6 +2,8 @@
 layout: default
 title: LSM
 ---
+# {{page.title}}
+
 
 - LSM-based Storage Techniques: A Survey
 [(link)](https://arxiv.org/abs/1812.07527)

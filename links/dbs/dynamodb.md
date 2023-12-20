@@ -2,6 +2,7 @@
 layout: default
 title: DynamoDB
 ---
+# {{page.title}}
 
 # official
 - home

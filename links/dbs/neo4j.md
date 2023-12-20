@@ -2,6 +2,8 @@
 layout: default
 title: Neo4j
 ---
+# {{page.title}}
+
 # official
 - home
 [(link)](https://neo4j.com/)

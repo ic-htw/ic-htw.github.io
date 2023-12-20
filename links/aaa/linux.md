@@ -2,6 +2,7 @@
 layout: default
 title: Linux
 ---
+# {{page.title}}
 
 - apt man page
 [(link)](https://manpages.ubuntu.com/manpages/jammy/en/man8/apt.8.html)

@@ -3,6 +3,8 @@ layout: default
 title: Cassandra
 ---
 
+# {{page.title}}
+
 # official
 - home
 [(link)](https://cassandra.apache.org/_/index.html)

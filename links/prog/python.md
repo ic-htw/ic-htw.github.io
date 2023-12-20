@@ -2,6 +2,9 @@
 layout: default
 title: Python
 ---
+
+# {{page.title}}
+
 # Home
 - The Python Standard Library
 [(link)](https://docs.python.org/3/library/index.html)

@@ -141,28 +141,28 @@ Projekt Business Intelligence
 
 <!--
 ====================================================
-Allgemeines
+AAA
 ==================================================== 
 -->  
 <button 
-  onclick="navitemToggle('Allgemeines')"
+  onclick="navitemToggle('AAA')"
   class="w3-button w3-left-align w3-padding-small w3-block">
 {% if include.mode == "short" %}
-Allgemeines
+AAA
 {% else %}
-Allgemeines
+AAA
 {% endif %}
 </button>
 
-<div class="Allgemeines w3-padding">
-    <a  href="/links/allgemeines/temp.html">Noch lesen</a> <br>
-    <a  href="/links/allgemeines/posts.html">Posts</a> <br>
-    <a  href="/links/allgemeines/blogs-sites.html">Blogs, Sites</a> <br>
-    <a  href="/links/allgemeines/courses-videos-slides-books.html">Courses, Videos, Slides, Books</a> <br>
-    <a  href="/links/allgemeines/linux.html">Linux</a> <br>
-    <a  href="/links/allgemeines/misc.html">Sonstiges</a> <br>
-    <a  href="/links/allgemeines/services.html">Services</a> <br>
-    <a  href="/links/allgemeines/tools.html">Werkzeuge</a> <br>
+<div class="AAA w3-padding">
+    <a  href="/links/aaa/aaa.html">aaa</a> <br>
+    <a  href="/links/aaa/noch_lesen.html">Noch lesen</a> <br>
+    <a  href="/links/aaa/posts.html">Posts</a> <br>
+    <a  href="/links/aaa/blogs-sites.html">Blogs, Sites</a> <br>
+    <a  href="/links/aaa/courses-videos-slides-books.html">Courses, Videos, Slides, Books</a> <br>
+    <a  href="/links/aaa/linux.html">Linux</a> <br>
+    <a  href="/links/aaa/services.html">Services</a> <br>
+    <a  href="/links/aaa/tools.html">Werkzeuge</a> <br>
 </div> 
 
 
@@ -182,8 +182,8 @@ Datenbanksysteme
 </button>
 
 <div class="DBS w3-padding">
+    <a  href="/links/dbs/aaa.html">aaa</a> <br>
     <a  href="/links/dbs/languages.html">Abfragesprachen</a> <br>
-    <a  href="/links/dbs/allgemeines.html">Allgemeines</a> <br>
     <a  href="/links/dbs/cassandra.html">Cassandra</a> <br>
     <a  href="/links/dbs/data-sets.html">Data Sets</a> <br>
     <a  href="/links/dbs/data-systems.html">Data Systems</a> <br>
@@ -195,6 +195,7 @@ Datenbanksysteme
     <a  href="/links/dbs/oracle.html">Oracle</a> <br>
     <a  href="/links/dbs/postgis.html">Postgis</a> <br>
     <a  href="/links/dbs/postgres.html">Postgres</a> <br>
+    <a  href="/links/dbs/visualization.html">Visualization</a> <br>
 </div> 
 
 <!--
@@ -213,6 +214,7 @@ Maschinelles Lernen
 </button>
 
 <div class="ML w3-padding">
+    <a  href="/links/ml/aaa.html">aaa</a> <br>
     <a  href="/links/ml/customer-analytics.html">Kundenanalyse</a> <br>
     <a  href="/links/ml/deep-learning.html">Deep Learning</a> <br>
     <a  href="/links/ml/recommendation.html">Empfehlungssysteme</a> <br>

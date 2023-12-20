@@ -3,6 +3,8 @@ layout: default
 title: Temporär
 ---
 
+# {{page.title}}
+
 - FastAPI
 [(link)](https://fastapi.tiangolo.com/)
 

@@ -3,6 +3,8 @@ layout: default
 title: Abfragesprachen
 ---
 
+# {{page.title}}
+
 
 # general
 - SQL Cheat-Sheet for Data Science
