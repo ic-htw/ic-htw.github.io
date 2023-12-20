@@ -162,7 +162,7 @@ AAA
     <a  href="/links/aaa/courses-videos-slides-books.html">Courses, Videos, Slides, Books</a> <br>
     <a  href="/links/aaa/linux.html">Linux</a> <br>
     <a  href="/links/aaa/services.html">Services</a> <br>
-    <a  href="/links/aaa/tools.html">Werkzeuge</a> <br>
+    <a  href="/links/aaa/tools.html">Tools</a> <br>
 </div> 
 
 
@@ -190,11 +190,13 @@ Datenbanksysteme
     <a  href="/links/dbs/duckdb.html">DuckDB</a> <br>
     <a  href="/links/dbs/dynamodb.html">DynamoDB</a> <br>
     <a  href="/links/dbs/hana.html">Hana</a> <br>
+    <a  href="/links/dbs/llm_analytics.html">LLM Analytics</a> <br>
     <a  href="/links/dbs/lsm.html">LSM</a> <br>
     <a  href="/links/dbs/neo4j.html">Neo4j</a> <br>
     <a  href="/links/dbs/oracle.html">Oracle</a> <br>
     <a  href="/links/dbs/postgis.html">Postgis</a> <br>
     <a  href="/links/dbs/postgres.html">Postgres</a> <br>
+    <a  href="/links/dbs/vector_databases.html">Vector Databases</a> <br>
     <a  href="/links/dbs/visualization.html">Visualization</a> <br>
 </div> 
 
@@ -215,9 +217,16 @@ Maschinelles Lernen
 
 <div class="ML w3-padding">
     <a  href="/links/ml/aaa.html">aaa</a> <br>
-    <a  href="/links/ml/customer-analytics.html">Kundenanalyse</a> <br>
+    <a  href="/links/ml/anomaly_detection.html">Anomaly Detection</a> <br>
+    <a  href="/links/ml/decision_trees.html">Decision Trees</a> <br>
     <a  href="/links/ml/deep-learning.html">Deep Learning</a> <br>
     <a  href="/links/ml/recommendation.html">Empfehlungssysteme</a> <br>
+    <a  href="/links/ml/interpretation.html">Interpretation of ML Models</a> <br>
+    <a  href="/links/ml/customer-analytics.html">Kundenanalyse</a> <br>
+    <a  href="/links/ml/lineare_algebra.html">Linear Algebra</a> <br>
+    <a  href="/links/ml/nlp.html">NLP</a> <br>
+    <a  href="/links/ml/timeseries.html">Timeseries</a> <br>
+    <a  href="/links/ml/large_language_models.html">Large Language Models</a> <br>
 </div> 
 
 <!--

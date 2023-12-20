@@ -4,6 +4,24 @@ title: Tools
 ---
 # {{page.title}}
 
+## aaa
+- gdrive download -python
+[(link)](https://github.com/matthuisman/gdrivedl)
+- gdrive download - wget
+[(link)](https://www.matthuisman.nz/2019/01/download-google-drive-files-wget-curl.html)
+- Powershell
+[(link)](https://docs.microsoft.com/de-de/powershell/scripting/overview?view=powershell-7.2)
+- CatBoost
+[(link)](https://catboost.ai/)
+- Sythetic Data Vault
+[(link)](https://sdv.dev/)
+- Google Dataset Search
+[(link)](https://datasetsearch.research.google.com/)
+- bitlocker
+[(link)](https://it-learner.de/auch-unter-linux-laesst-sich-auf-einen-mit-bitlocker-verschluesselten-datentraeger-zugreifen/)
+
+
+
 # aws
 - Run AWS on Your Laptop. Introduction to LocalStack
 [(link)](https://awstip.com/run-aws-on-your-laptop-introduction-to-localstack-7269c19dedae)
@@ -29,7 +47,19 @@ title: Tools
 ```
 
 
-# colab
+## Colab
+- Home
+[(link)](https://colab.research.google.com/notebooks/intro.ipynb)
+- 10 tricks for a better Google Colab experience
+[(link)](https://towardsdatascience.com/10-tips-for-a-better-google-colab-experience-33f8fe721b82)
+- Configuring Google Colab Like A Pro
+[(link)](https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573)
+- How to Deal with Files in Google Colab
+[(link)](https://neptune.ai/blog/google-colab-dealing-with-files)
+- Download kaggle data in Google Colab
+[(link)](https://www.kaggle.com/general/74235)
+- Run Kaggle Kernel on Google Colab
+[(link)](https://medium.com/@erdemalpkaya/run-kaggle-kernel-on-google-colab-1a71803460a9)
 - How to use Google Colab with GitHub via Google Drive
 [(link)](https://medium.com/analytics-vidhya/how-to-use-google-colab-with-github-via-google-drive-68efb23a42d)
 
@@ -163,6 +193,31 @@ title: Tools
 - doc
 [(link)](https://docs.portainer.io/)
 
+## NVIDIA
+- Driver Download (sudo ./NVIDEA-Linux...)
+[(link)](https://www.nvidia.com/Download/index.aspx?lang=en-us)
+- GPU Monitor
+[(link)](https://github.com/msalvaris/gpu_monitor)
+- NVidia TOP
+[(link)](https://github.com/Syllo/nvtop)
+- RAPIDS - Open GPU Data Science
+[(link)](http://rapids.ai/)
+- Install NVIDIA Graphics Driver via apt-get
+[(link)](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07)
+- CUDA Toolkit
+[(link)](https://developer.nvidia.com/cuda-toolkit)
+- CUDA Installation Guide for Linux
+[(link)](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4VZnqTJ2A)
+- CUDA Toolkit Download / Docs
+[(link)](https://developer.nvidia.com/cuda-downloads)
+[(link)](https://developer.nvidia.com/cudnn)
+- Docker 1
+[(link)](https://github.com/NVIDIA/nvidia-docker)
+- Docker 2
+[(link)](https://devblogs.nvidia.com/nvidia-docker-gpu-server-application-deployment-made-easy/)
+- Docker Images
+[(link)](https://hub.docker.com/r/nvidia/cuda/)
+
 # schemaSpy
 - git
 [(link)](https://github.com/schemaspy/schemaspy)
@@ -171,6 +226,31 @@ title: Tools
 - Datenbankanalyse mit SchemaSpy
 [(link)](https://www.jentsch.io/datenbank-analyse-mit-schemaspy/)
 
+## Slack
+- home
+[(link)](https://slack.com/intl/de-de/)
+- apps
+[(link)](https://api.slack.com/apps)
+- api
+[(link)](https://api.slack.com/)
+- python-slackclient - doc
+[(link)](https://python-slackclient.readthedocs.io/en/latest/)
+- python-slackclient - git
+[(link)](https://github.com/slackapi/python-slackclient)
+- python and slack
+[(link)](https://towardsdatascience.com/python-and-slack-a-natural-match-60b136883d4d)
+- slacker - python api
+[(link)](https://github.com/os/slacker)
+- pythOnBoarding Bot
+[(link)](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
+
+# TexLife
+- home
+[(link)](https://www.tug.org/texlive/)
+- guide
+[(link)](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html)
+
+
 # tmux
 - cheat sheet
 [(link)](https://tmuxcheatsheet.com/)
@@ -178,6 +258,20 @@ title: Tools
 [(link)](https://github.com/tmux/tmux/wiki)
 - After N years I’m finally using Tmux in such an elegant way
 [(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
+
+## Trumania
+- git
+[(link)](https://github.com/RealImpactAnalytics/trumania)
+- doc
+[(link)](https://realimpactanalytics.github.io/trumania/index.html)
+- datacamp
+[(link)](https://www.datacamp.com/community/tutorials/generate-data-trumania)
+
+# Video / Screencasting
+- shotcut
+[(link)](https://shotcut.org/)
+- obs
+[(link)](https://obsproject.com/de)
 
 
 # vscode
