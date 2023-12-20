@@ -155,12 +155,12 @@ AAA
 </button>
 
 <div class="AAA w3-padding">
-    <a  href="/links/aaa/aaa.html">aaa</a> <br>
     <a  href="/links/aaa/noch_lesen.html">Noch lesen</a> <br>
-    <a  href="/links/aaa/posts.html">Posts</a> <br>
+    <a  href="/links/aaa/aaa.html">aaa</a> <br>
     <a  href="/links/aaa/blogs-sites.html">Blogs, Sites</a> <br>
     <a  href="/links/aaa/courses-videos-slides-books.html">Courses, Videos, Slides, Books</a> <br>
     <a  href="/links/aaa/linux.html">Linux</a> <br>
+    <a  href="/links/aaa/posts.html">Posts</a> <br>
     <a  href="/links/aaa/services.html">Services</a> <br>
     <a  href="/links/aaa/tools.html">Tools</a> <br>
 </div> 
@@ -245,7 +245,7 @@ Programmierung
 </button>
 
 <div class="PROG w3-padding">
-    <a  href="/links/prog/allgemeines.html">Allgemeines</a> <br>
+    <a  href="/links/prog/aaa.html">Aaa</a> <br>
     <a  href="/links/prog/js-css-html.html">JavaScript, CSS, HTML</a> <br>
     <a  href="/links/prog/languages.html">Programmiersprachen</a> <br>
     <a  href="/links/prog/python.html">Python</a> <br>

@@ -10,6 +10,24 @@ title: Noch lesen
 -->
 # {{page.title}}
 
+- Transaction Isolation in Postgres, explained
+[(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
+
+- PostGIS Day 2023 Summary
+[(link)](https://www.crunchydata.com/blog/postgis-day-2023-summary)
+
+- Data Science is Getting Ducky
+[(link)](http://blog.cleverelephant.ca/2023/12/duck.html)
+
+- Ibis + DuckDB geospatial: a match made on Earth
+[(link)](https://ibis-project.org/posts/ibis-duckdb-geospatial/)
+
+- What if an SQL Statement Returned a Database?
+[(link)](https://arxiv.org/abs/2312.00638)
+
+- Apache Cassandra 5.0 Features: Unified Compaction Strategy
+[(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Unified-Compaction-Strategy.html)
+
 - Database Connections in FastAPI: Leveraging Dependency Injection and Best Practices
 [(link)](https://blog.stackademic.com/database-connections-in-fastapi-leveraging-dependency-injection-and-best-practices-765861cf4d31)
 
