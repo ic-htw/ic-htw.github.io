@@ -9,23 +9,14 @@ title: Temporär
 
 -->
 # Noch lesen
-- The Ultimate Guide to Vector Database Landscape — 2024 and Beyond
-[(link)](https://medium.com/madhukarkumar/the-ultimate-guide-to-vector-databases-2024-and-beyond-16dfb15bef12)
+- Database Connections in FastAPI: Leveraging Dependency Injection and Best Practices
+[(link)](https://blog.stackademic.com/database-connections-in-fastapi-leveraging-dependency-injection-and-best-practices-765861cf4d31)
 
-- Automating data analytics with ChatGPT
-[(link)](https://medium.com/data-science-at-microsoft/automating-data-analytics-with-chatgpt-827a51eaa2c)
+- SW/HW Co-optimization Strategy for Large Language Models (LLMs)
+[(link)](https://towardsdatascience.com/sw-hw-co-optimization-strategy-for-large-language-models-llms-855f20a14629)
 
-- Last Mile Data Processing with Ray
-[(link)](https://medium.com/pinterest-engineering/last-mile-data-processing-with-ray-629affbf34ff)
-
-- Branches & Tags: Comparing Iceberg, Hudi, and Delta Lake Tables
-[(link)](https://progrockrec.medium.com/branches-tags-comparing-iceberg-hudi-and-delta-lake-tables-d768dde9e3d3)
-
-- Designing One Big Table (OBT)
-[(link)](https://leo-godin.medium.com/designing-one-big-table-obt-c1dd797d60ac)
-
-- Apache Arrow Flight as a Data Catalog
-[(link)](https://wasit7.medium.com/apache-arrow-flight-as-a-data-catalog-3f193e0cad8a)
+- Supabase: Build in a Weekend, Scale to Millions
+[(link)](https://fadamakis.com/supabase-is-0b46c55d9162)
 
 - How Data Should Be Stored In Single Table for DynamoDB
 [(link)](https://aws.plainenglish.io/how-data-should-be-stored-in-single-table-for-dynamodb-fd991ea3b1a7)

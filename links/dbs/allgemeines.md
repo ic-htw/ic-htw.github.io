@@ -43,6 +43,9 @@ title: Allgemeines
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 - Vector Databases 
 [(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
+- The Ultimate Guide to Vector Database Landscape — 2024 and Beyond
+[(link)](https://medium.com/madhukarkumar/the-ultimate-guide-to-vector-databases-2024-and-beyond-16dfb15bef12)
+
 
 
 # langchain

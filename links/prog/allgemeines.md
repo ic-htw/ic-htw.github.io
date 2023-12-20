@@ -3,6 +3,10 @@ layout: default
 title: Temporär
 ---
 
+- FastAPI
+[(link)](https://fastapi.tiangolo.com/)
+
+
 - the algorithms
 [(link)](https://github.com/TheAlgorithms)
 
