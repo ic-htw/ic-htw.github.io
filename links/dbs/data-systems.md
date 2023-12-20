@@ -31,6 +31,10 @@ title: Data Systems
 - Supercharge Your Data Pipelines with Advanced Apache Arrow
 [(link)](https://blog.det.life/supercharge-your-data-pipelines-with-advanced-apache-arrow-116f8033ceb3)
 
+- Apache Arrow Flight as a Data Catalog
+[(link)](https://wasit7.medium.com/apache-arrow-flight-as-a-data-catalog-3f193e0cad8a)
+
+
 # apache doris
 - home
 [(link)](https://doris.apache.org/)
@@ -340,6 +344,14 @@ title: Data Systems
 # sqlite
 - SQLite compiled to JavaScript
 [(link)](https://github.com/sql-js/sql.js)
+
+# supabase
+- Home
+[(link)](https://supabase.com/)
+-Doc
+[(link)](https://supabase.com/docs)
+- Blog
+[(link)](https://supabase.com/blog)
 
 # terminusdb
 - home
