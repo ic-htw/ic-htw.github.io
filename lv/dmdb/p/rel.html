@@ -4,9 +4,8 @@ title: "DmDb"
 head1: "Datenmodellierung und Datenbanksysteme"
 head2: "Relationenmodell"
 ---
-
-<hr>
-
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=1 %}
 <h1> Tabelle = Tabellenstruktur + Tabelleninhalt</h1>
 <img src="/lv/dmdb/a/relmod/tab1.png" style="width:600px;">
 
@@ -22,36 +21,68 @@ head2: "Relationenmodell"
 <ul>
   <li>Datensätze (Zeilen in grau)</li>
 </ul>
+{% include padding.html %}
 
-
-<hr>
-
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=2 %}
 <h1>Strukturdarstellung / SQL-Anweisung</h1>
 <img src="/lv/dmdb/a/relmod/tab2.png" style="width:200px;">
 <img src="/lv/dmdb/a/relmod/tab3.png" style="width:400px;">
+{% include padding.html %}
 
-<hr>
 
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=3 %}
 <h1>Fremdschlüssel</h1>
-<img src="/lv/dmdb/a/relmod/tab4.png" style="width:200px;">
-<img src="/lv/dmdb/a/relmod/tab5.png" style="width:400px;">
+<img src="/lv/dmdb/a/relmod/tab4.png" style="width:600px;">
+<img src="/lv/dmdb/a/relmod/tab5.png" style="width:600px;">
 
-- SG enthält Zeiger auf Studiengang-Datensätze
-- Student 1 und 2 studieren WI
-- Studentin 3 studiert AI
+<ul>
+  <li>SG enthält Zeiger auf Studiengang-Datensätze</li>
+  <li>Student 1 und 2 studieren WI</li>
+  <li>Studentin 3 studiert AI</li>
+</ul>
+{% include padding.html %}
 
-<hr>
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=4 %}
 <h1>Datentypen (beispielhaft)</h1>
+<table class="w3-table-all">
+  <tr>
+    <th>Typname</th>
+    <th>Wertebereich</th>
+    <th>Beispiele</th>
+  </tr>
+  <tr>
+    <td>integer</td>
+    <td>ganze Zahlen</td>
+    <td>-100, 200</td>
+  </tr>
+  <tr>
+    <td>decimal(5,3)</td>
+    <td>Festkommazahlen</td>
+    <td>10,156</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>Gleitkommazahlen</td>
+    <td>10,154789</td>
+  </tr>
+  <tr>
+    <td>varchar(10)</td>
+    <td>Zeichenketten variabler Länge</td>
+    <td>'Hallo'</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>Datum</td>
+    <td>1.1.2007 14:30:12</td>
+  </tr>
+</table>
+{% include padding.html %}
 
-| Typname | Wertebereich | Beispiele |
-|:-|:-|:-|
-|integer | ganze Zahlen | -100, 200 |
-| decimal(5,3) &nbsp; &nbsp;| Festkommazahlen | 10,156 |
-| float | Gleitkommazahlen | 10,154789 |
-| varchar(10) | Zeichenketten variabler Länge &nbsp; &nbsp;| 'Hallo' |
-| date | Datum | 1.1.2007 14:30:12 |
-
-<hr>
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=5 %}
 <h1>Integritätsbedingungen</h1>
 <ul>
   <li>Primärschlüssel / Unique Constraint</li>
@@ -74,8 +105,10 @@ head2: "Relationenmodell"
     <li>Spalte muss Werte enthalten</li>
   </ul>
 </ul>
+{% include padding.html %}
 
-<hr>
+<!-- ---------------------------------------------------------------------- -->
+{% include padding-id.html id=6 %}
 <h1>Gründe für Nullwerte</h1>
 <ul>
   <li>Information wird nicht bereit gestellt</li>
@@ -92,6 +125,4 @@ head2: "Relationenmodell"
     <li>Spalte MatrNr macht nur für Studies Sinn</li>
   </ul>
 </ul>
-
-
-<hr>
+{% include pagination.html n=6 %}

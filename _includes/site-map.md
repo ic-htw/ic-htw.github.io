@@ -7,12 +7,12 @@ Collapse / Expand
 <div class="w3-bar"> 
   <button 
     onclick="setAllNavitemsOn()"
-    class="w3-button w3-aqua">
+    class="w3-button w3-theme">
   +
   </button>
   <button 
     onclick="setAllNavitemsOff()"
-    class="w3-button w3-aqua">
+    class="w3-button w3-theme">
   -
   </button>
 </div>
