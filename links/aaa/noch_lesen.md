@@ -10,6 +10,9 @@ title: Noch lesen
 -->
 # {{page.title}}
 
+- DoorDash’s Write-Heavy Scalable Inventory Platform — System Design
+[(link)](https://interviewnoodle.com/doordashs-write-heavy-scalable-inventory-platform-system-design-61c1a5c71641)
+
 - Transaction Isolation in Postgres, explained
 [(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 
