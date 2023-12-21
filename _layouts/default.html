@@ -36,6 +36,8 @@
     <a class="w3-bar-item w3-button w3-theme w3-right" href="/" >Home</a>
     <a class="w3-bar-item w3-button w3-theme w3-right" href="#" >Top</a>
     <a class="w3-bar-item w3-button w3-theme w3-right" href="javascript:void(0)" onclick="openSrr()" >Nav</a>
+    <a class="w3-bar-item  w3-theme w3-left" style="margin-left:250px">
+      {{page.head2}} - {{page.head1}}</a>
   </div>
 </div>
 
@@ -54,12 +56,14 @@
 <div class="w3-main" style="margin-left:250px">
   <div class="w3-row w3-padding-32">
     <div id="ct" class="w3-container">
+      <!--
       {% if page.head1 %}
-      <div class="w3-text-teal w3-xxlarge">{{page.head1}}</div>
+      <div class="w3-theme-l5 w3-xxlarge">{{page.head1}}</div>
       {% endif %}
       {% if page.head2 %}
-      <div class="w3-text-cyan w3-xxlarge">{{page.head2}}</div>
+      <div class="w3-theme-l5 w3-xxlarge">{{page.head2}}</div>
       {% endif %}
+      -->
       {{ content }}
     </div>
     <!--

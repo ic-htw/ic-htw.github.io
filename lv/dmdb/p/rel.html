@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "DmDb"
-head1: "Datenmodellierung und Datenbanksysteme"
+head1: "DmDb"
 head2: "Relationenmodell"
 ---
 <!-- ---------------------------------------------------------------------- -->
@@ -9,26 +9,32 @@ head2: "Relationenmodell"
 <h1> Tabelle = Tabellenstruktur + Tabelleninhalt</h1>
 <img src="/lv/dmdb/a/relmod/tab1.png" style="width:600px;">
 
-<h2>Tabellenstruktur</h2>
-<ul class="w3-large">
-  <li>Tabellenname (grün)</li>
-  <li>Spaltennamen (braun)</li>
-  <li>Primärschlüssel (unterstrichen, pink)</li>
-  <li>Datentypen: Zahl, Zeichenkette, Datum</li>
-</ul>
+<div class="w3-row">
+  <div class="w3-col s6">
+    <h2>Tabellenstruktur</h2>
+    <ul class="w3-large">
+      <li>Tabellenname (grün)</li>
+      <li>Spaltennamen (braun)</li>
+      <li>Primärschlüssel (unterstrichen, pink)</li>
+      <li>Datentypen: Zahl, Zeichenkette, Datum</li>
+    </ul>
+  </div>
 
-<h2>Tabelleninhalt</h2>
-<ul class="w3-large">
-  <li>Datensätze (Zeilen in grau)</li>
-</ul>
-{% include padding.html %}
+  <div class="w3-col s6">
+    <h2>Tabelleninhalt</h2>
+    <ul class="w3-large">
+      <li>Datensätze (Zeilen in grau)</li>
+    </ul>
+  </div>
+</div>
+{% include padding.html n=6 %}
 
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=2 %}
 <h1>Strukturdarstellung / SQL-Anweisung</h1>
 <img src="/lv/dmdb/a/relmod/tab2.png" style="width:200px;">
 <img src="/lv/dmdb/a/relmod/tab3.png" style="width:400px;">
-{% include padding.html %}
+{% include padding.html n=6 %}
 
 
 <!-- ---------------------------------------------------------------------- -->
@@ -42,7 +48,7 @@ head2: "Relationenmodell"
   <li>Student 1 und 2 studieren WI</li>
   <li>Studentin 3 studiert AI</li>
 </ul>
-{% include padding.html %}
+{% include padding.html n=6 %}
 
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=4 %}
@@ -79,7 +85,7 @@ head2: "Relationenmodell"
     <td>1.1.2007 14:30:12</td>
   </tr>
 </table>
-{% include padding.html %}
+{% include padding.html n=6 %}
 
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=5 %}
@@ -105,7 +111,7 @@ head2: "Relationenmodell"
     <li>Spalte muss Werte enthalten</li>
   </ul>
 </ul>
-{% include padding.html %}
+{% include padding.html n=6 %}
 
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=6 %}
