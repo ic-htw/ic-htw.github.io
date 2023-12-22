@@ -11,6 +11,11 @@ head2: "Noch lesen"
 
 # {{page.title}}
 -->
+- Ducktales — Part 2: Pandas vs DuckDB — large dataset processing comparison
+[(link)](https://diptimanrc.medium.com/ducktales-part-2-pandas-vs-duckdb-large-dataset-processing-comparison-70a605097b1e)
+
+- Hugging Face Open-Sources a New ML Framework which written in Rust
+[(link)](https://blog.gopenai.com/python-is-out-of-favor-hugging-face-open-sources-a-new-ml-framework-which-written-in-rust-ee667831a0d0)
 
 - DoorDash’s Write-Heavy Scalable Inventory Platform — System Design
 [(link)](https://interviewnoodle.com/doordashs-write-heavy-scalable-inventory-platform-system-design-61c1a5c71641)
