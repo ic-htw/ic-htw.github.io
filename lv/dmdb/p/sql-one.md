@@ -1,8 +1,6 @@
 ---
 layout: default
-title: "DmDb"
-head1: "Datenmodellierung und Datenbanksysteme"
-head2: "Abfragen auf einer Tabelle"
+title: "Abfragen auf einer Tabelle"
 ---
 # Inhalt
 - Bla1

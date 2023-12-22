@@ -1,8 +1,7 @@
 ---
 layout: default
-title: "Prof. Dr. Ingo Claßen"
-head1: "Homepage Prof. Dr. Ingo Claßen"
-head2: "Site Map"
+title: "Site Map"
+n: 0
 ---
 
 <div>

@@ -153,6 +153,8 @@ head2: "Tools"
 [(link)](https://jekyllrb.com/)
 - sass
 [(link)](https://sass-lang.com/)
+- Liquid
+[(link)](https://shopify.github.io/liquid/)
 - kramdown
 [(link)](https://kramdown.gettalong.org/index.html)
 - rouge

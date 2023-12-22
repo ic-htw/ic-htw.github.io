@@ -1,25 +1,5 @@
 <!--
 ====================================================
-Collapse / Expand
-==================================================== 
---> 
-{% if include.mode == "short" %}
-<div class="w3-bar"> 
-  <button 
-    onclick="setAllNavitemsOn()"
-    class="w3-button w3-theme">
-  +
-  </button>
-  <button 
-    onclick="setAllNavitemsOff()"
-    class="w3-button w3-theme">
-  -
-  </button>
-</div>
-{% endif %}
-
-<!--
-====================================================
 Ausgewählte Datenbankkonzepte/-techniken
 ==================================================== 
 -->  
