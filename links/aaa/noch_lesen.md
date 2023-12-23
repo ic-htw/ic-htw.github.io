@@ -11,6 +11,18 @@ head2: "Noch lesen"
 
 # {{page.title}}
 -->
+- Vector Databases: A Hands-On Tutorial!
+[(link)](https://levelup.gitconnected.com/vector-databases-a-hands-on-tutorial-8d41445ea253)
+
+- DynamoDB: When to Move Out
+[(link)](https://scylladb.medium.com/dynamodb-when-to-move-out-f900f23ad8a1)
+
+- Polars dataframe’s plugins and extensibility: getting started
+[(link)](https://medium.com/datamindedbe/polars-dataframes-plugins-and-extensibility-getting-started-9371d8b3f093)
+
+- Multimodal RAG pipeline with LlamaIndex and Neo4j
+[(link)](https://blog.llamaindex.ai/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
+
 - Ducktales — Part 2: Pandas vs DuckDB — large dataset processing comparison
 [(link)](https://diptimanrc.medium.com/ducktales-part-2-pandas-vs-duckdb-large-dataset-processing-comparison-70a605097b1e)
 
