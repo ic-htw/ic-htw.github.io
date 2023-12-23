@@ -1,7 +1,32 @@
 function init() {
     navitemsHandle();
+    slideModeSetOn();
     sr_fill();
 }
+
+function slideModeSetOn() {
+    localStorage.setItem('slidemode', 1);
+    slidemodeHandle();
+}
+
+function slideModeSetOff() {
+    localStorage.setItem('slidemode', 0);
+    slidemodeHandle();
+}
+
+function slidemodeIsOn() {
+    const slidemode = localStorage.getItem('slidemode');
+    return slidemode == 1;
+}
+
+function slidemodeHandle() {
+    if (slidemodeIsOn()) {
+        w3.show(".ic-gap");
+    } else {
+        w3.hide(".ic-gap");
+    }
+}
+
 
 function navitemToggle(id) {
     console.log(id);
@@ -51,7 +76,7 @@ function setAllNavitemsOn() {
     setNavitemOn('DBS');
     setNavitemOn('ML');
     setNavitemOn('PROG');
-   navitemsHandle();
+    navitemsHandle();
 }
 
 function navitemsHandle() {
