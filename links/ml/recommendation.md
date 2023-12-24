@@ -1,10 +1,8 @@
 ---
 layout: default
 title: recommendation
+is_slide: 0
 ---
-
-# {{page.title}}
-                         
 # graph based       
 - How to build a recommendation system in a graph database using a latent factor model
 [(link)](https://towardsdatascience.com/how-to-build-a-recommendation-system-in-a-graph-database-using-a-latent-factor-model-fa2d142f874)

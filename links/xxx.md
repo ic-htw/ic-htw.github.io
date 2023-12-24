@@ -1,4 +1,5 @@
 ---
 layout: default
-title: Temporär
+title: xxx
+is_slide: 0
 ---

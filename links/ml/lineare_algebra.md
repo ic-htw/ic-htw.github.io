@@ -1,11 +1,8 @@
 ---
 layout: default
 title: Linear Algebra
+is_slide: 0
 ---
-
-# {{page.title}}
-
-
 - Intuitive Math - Linear Algebra
 [(link)](https://intuitive-math.club/)
 - Essential Math for Data Science: Matrices as Linear Transformations

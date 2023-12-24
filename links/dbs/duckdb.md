@@ -1,9 +1,8 @@
 ---
 layout: default
 title: DuckDB
+is_slide: 0
 ---
-# {{page.title}}
-
 # home
 - docs
 [(link)](https://duckdb.org/docs/)

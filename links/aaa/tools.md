@@ -4,7 +4,7 @@ title: Tools
 is_slide: 0
 ---
 
-## aaa
+# aaa
 - gdrive download -python
 [(link)](https://github.com/matthuisman/gdrivedl)
 - gdrive download - wget
@@ -47,7 +47,7 @@ is_slide: 0
 ```
 
 
-## Colab
+# Colab
 - Home
 [(link)](https://colab.research.google.com/notebooks/intro.ipynb)
 - 10 tricks for a better Google Colab experience
@@ -195,7 +195,7 @@ is_slide: 0
 - doc
 [(link)](https://docs.portainer.io/)
 
-## NVIDIA
+# NVIDIA
 - Driver Download (sudo ./NVIDEA-Linux...)
 [(link)](https://www.nvidia.com/Download/index.aspx?lang=en-us)
 - GPU Monitor
@@ -228,7 +228,7 @@ is_slide: 0
 - Datenbankanalyse mit SchemaSpy
 [(link)](https://www.jentsch.io/datenbank-analyse-mit-schemaspy/)
 
-## Slack
+# Slack
 - home
 [(link)](https://slack.com/intl/de-de/)
 - apps
@@ -261,7 +261,7 @@ is_slide: 0
 - After N years I’m finally using Tmux in such an elegant way
 [(link)](https://medium.com/code-art/after-n-years-im-finally-using-tmux-in-such-an-elegant-way-8d2492d964db)
 
-## Trumania
+# Trumania
 - git
 [(link)](https://github.com/RealImpactAnalytics/trumania)
 - doc

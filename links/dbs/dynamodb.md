@@ -1,9 +1,8 @@
 ---
 layout: default
 title: DynamoDB
+is_slide: 0
 ---
-# {{page.title}}
-
 # official
 - home
 [(link)](https://aws.amazon.com/pm/dynamodb/?nc1=h_ls)

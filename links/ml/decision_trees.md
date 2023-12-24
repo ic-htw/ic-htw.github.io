@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Decision Trees
+is_slide: 0
 ---
-
-# {{page.title}}
-
 - Understanding Random Forest
 [(link)](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
 - AUTOXGBOOST + Optuna

@@ -1,11 +1,8 @@
 ---
 layout: default
 title: Data Systems
+is_slide: 0
 ---
-
-# {{page.title}}
-
-
 # airbyte
 - home
 [(link)](https://airbyte.com/)

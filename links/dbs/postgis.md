@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Postgis
+is_slide: 0
 ---
-# {{page.title}}
-
-                          
 # official        
 - home
 [(link)](https://postgis.net/)

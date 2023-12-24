@@ -1,11 +1,9 @@
 ---
 layout: default
 title: aaa
+is_slide: 0
 ---
-
-# {{page.title}}
-
-## aaa
+# aaa
 - Frustration: One Year With R
 [(link)](https://github.com/ReeceGoding/Frustration-One-Year-With-R)
 - Precision &amp; Recall
@@ -243,7 +241,7 @@ title: aaa
 [(link)](https://www.cantorsparadise.com/bayes-unbound-f0b464683e7c)
 
 
-## CRF
+# CRF
 - Performing Sequence Labelling using CRF in Python
 [(link)](http://www.albertauyeung.com/post/python-sequence-labelling-with-crf/)
 - sklearn-crfsuite
@@ -259,7 +257,7 @@ title: aaa
 - Introduction to Conditional Random Fields
 [(link)](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
 
-## explained.ai
+# explained.ai
 - home
 [(link)](https://explained.ai/)
 - The Mechanics of Machine Learning
@@ -267,7 +265,7 @@ title: aaa
 - rent.csv
 [(link)](https://github.com/parrt/random-forest-importances/blob/master/notebooks/data/rent.csv)
 
-## Information Extraction
+# Information Extraction
 - Twenty-five years of information extraction
 [(link)](https://www.cambridge.org/core/journals/natural-language-engineering/article/twentyfive-years-of-information-extraction/0E5BB0D6AE906BB3C25037E2D74CA8F3/share/5ce1ad8430e190e282cc234c79c320c49906a7e2)
 

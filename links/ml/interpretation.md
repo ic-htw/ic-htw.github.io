@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Interpretation of ML Models
+is_slide: 0
 ---
-
-# {{page.title}}
-
 - Shapash: Making ML Models Understandable by Everyone
 [(link)](https://pub.towardsai.net/shapash-making-ml-models-understandable-by-everyone-8f96ad469eb3)
 - Explainable AI Cheat Sheet

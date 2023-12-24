@@ -1,11 +1,8 @@
 ---
 layout: default
 title: Abfragesprachen
+is_slide: 0
 ---
-
-# {{page.title}}
-
-
 # general
 - SQL Cheat-Sheet for Data Science
 [(link)](https://medium.com/analytics-vidhya/sql-cheat-sheet-for-data-science-cf3005c0fb28)

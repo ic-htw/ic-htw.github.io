@@ -1,11 +1,8 @@
 ---
 layout: default
 title: Large Language Models
+is_slide: 0
 ---
-
-# {{page.title}}
-
-
 # langchain
 - Neo4j x LangChain: Deep dive into the new Vector index implementation
 [(link)](https://bratanic-tomaz.medium.com/neo4j-x-langchain-deep-dive-into-the-new-vector-index-implementation-3bd79601cd2)

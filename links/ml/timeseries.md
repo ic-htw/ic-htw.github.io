@@ -1,11 +1,8 @@
 ---
 layout: default
 title: aaa
+is_slide: 0
 ---
-
-# {{page.title}}
-
-        
 - Forecasting: Principles and Practice (book)
 [(link)](https://otexts.org/fpp2/)
 - Time series forecasting with Facebook Prophet

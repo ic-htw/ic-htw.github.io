@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Temporär
+is_slide: 0
 ---
-
-# {{page.title}}
 
 # c++
 - quick guide

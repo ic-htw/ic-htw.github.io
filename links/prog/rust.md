@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Rust
+is_slide: 0
 ---
-# {{page.title}}
-
 # posts
 - The Rust Programming Language
 [(link)](https://doc.rust-lang.org/book/title-page.html)

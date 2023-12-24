@@ -1,11 +1,8 @@
 ---
 layout: default
 title: Vector Databases
+is_slide: 0
 ---
-
-# {{page.title}}
-
-
 - Vector Databases: A Beginner’s Guide!
 [(link)](https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0)
 - Vector Databases - a list…

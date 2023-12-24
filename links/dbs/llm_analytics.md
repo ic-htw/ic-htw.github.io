@@ -1,10 +1,8 @@
 ---
 layout: default
 title: LLM Analytics
+is_slide: 0
 ---
-
-# {{page.title}}
-
 # text to sql
 - Introducing NSQL: Open-source SQL Copilot Foundation Models
 [(link)](https://www.numbersstation.ai/post/introducing-nsql-open-source-sql-copilot-foundation-models)

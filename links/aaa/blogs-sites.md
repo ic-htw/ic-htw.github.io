@@ -3,8 +3,6 @@ layout: default
 title: Blogs / Sites
 is_slide: 0
 ---
-# {{page.title}}
-
 # Blogs
 - AWS Database Blog
 [(link)](https://aws.amazon.com/de/blogs/database/)

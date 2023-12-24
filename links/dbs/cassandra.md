@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Cassandra
+is_slide: 0
 ---
-
-# {{page.title}}
-
 # official
 - home
 [(link)](https://cassandra.apache.org/_/index.html)

@@ -3,8 +3,6 @@ layout: default
 title: Misc
 is_slide: 0
 ---
-# {{page.title}}
-
 # github
 - ic-htw
 [(link)](https://github.com/ic-htw)

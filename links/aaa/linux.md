@@ -3,8 +3,6 @@ layout: default
 title: Linux
 is_slide: 0
 ---
-# {{page.title}}
-
 - apt man page
 [(link)](https://manpages.ubuntu.com/manpages/jammy/en/man8/apt.8.html)
 - apt-get man page

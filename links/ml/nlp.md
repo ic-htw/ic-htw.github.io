@@ -1,11 +1,9 @@
 ---
 layout: default
 title: NLP
+is_slide: 0
 ---
-
-# {{page.title}}
-
-## Hugging Face
+# Hugging Face
 - Home
 [(link)](https://huggingface.co/)
 - Transformers
@@ -46,7 +44,7 @@ title: NLP
 - Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT
 [(link)](https://medium.com/huggingface/distilbert-8cf3380435b5)
 
-## Attention, Transformer, Bert
+# Attention, Transformer, Bert
 - What Have Language Models Learned?
 [(link)](https://pair.withgoogle.com/explorables/fill-in-the-blank/)
 - Simple Transformers
@@ -184,7 +182,7 @@ title: NLP
 - spaCy meets PyTorch-Transformers: Fine-tune BERT, XLNet and GPT-2
 [(link)](https://explosion.ai/blog/spacy-pytorch-transformers)
 
-## Misc
+# Misc
 - Ultimate Guide To Text Similarity With Python - NewsCatcher
 [(link)](https://newscatcherapi.com/blog/ultimate-guide-to-text-similarity-with-python)
 - Unsupervised Text Summarization using Sentence Embeddings
@@ -232,7 +230,7 @@ title: NLP
 [(link)](https://thegradient.pub/understanding-evaluation-metrics-for-language-models/)
 
 
-## NER
+# NER
 - Named Entity Recognition — Clinical Data Extraction
 [(link)](https://vishal-aiml164.medium.com/named-entity-recognition-clinical-data-extraction-9b089d91b27b)
 - Training a spaCy NER Pipeline with Prodigy
@@ -266,7 +264,7 @@ title: NLP
 [(link)](https://github.com/ZhixiuYe/HSCRF-pytorch)
 [(link)](https://arxiv.org/abs/1805.03838)
 
-## Other
+# Other
 - link
 - Haystack — Neural Question Answering At Scale
 [(link)](https://github.com/deepset-ai/haystack)
@@ -316,7 +314,7 @@ title: NLP
 - Joey NMT
 [(link)](https://github.com/joeynmt/joeynmt)
 
-## Spacy
+# Spacy
 - How to Fine-Tune BERT Transformer with spaCy 3
 [(link)](https://walidamamou.medium.com/how-to-fine-tune-bert-transformer-with-spacy-3-6a90bfe57647)
 

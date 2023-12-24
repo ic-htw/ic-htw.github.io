@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Python
+is_slide: 0
 ---
-
-# {{page.title}}
-
 # Home
 - The Python Standard Library
 [(link)](https://docs.python.org/3/library/index.html)

@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Aaa
+is_slide: 0
 ---
-
-# {{page.title}}
-
 - FastAPI
 [(link)](https://fastapi.tiangolo.com/)
 

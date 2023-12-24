@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Oracle
+is_slide: 0
 ---
-# {{page.title}}
-
 # Oracle Database 21c
 - Home
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/21/)

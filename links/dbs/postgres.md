@@ -1,11 +1,9 @@
 ---
 layout: default
 title: Postgres
+is_slide: 0
 ---
-
-# {{page.title}}
-
-## official
+# official
 - home
 [(link)](https://www.postgresql.org/)
 - apt install
@@ -27,7 +25,7 @@ title: Postgres
 - pgHero
 [(link)](https://github.com/ankane/pghero)
 
-## index
+# index
 - Index Types in PostgreSQL
 [(link)](https://www.red-gate.com/simple-talk/databases/postgresql/index-types-in-postgresql-learning-postgresql-with-grant/)
 - How Postgres Chooses Which Index To Use For A Query
@@ -46,7 +44,7 @@ title: Postgres
 
 
 
-## json
+# json
 - Forget SQL vs NoSQL — Get the Best of Both Worlds with JSON in PostgreSQL
 [(link)](https://databasedive.com/forget-sql-vs-nosql-get-the-best-of-both-worlds-with-json-in-postgresql-aee30ba0542c)
 - Using JSONB in PostgreSQL
@@ -63,7 +61,7 @@ title: Postgres
 [(link)](https://ftisiot.net/postgresqljson/main/)
 
 
-## graph
+# graph
 - A Graph Extension for PostgreSQL
 [(link)](https://age.apache.org/)
 - Postgres: The Graph Database You Didn't Know You Had
@@ -76,7 +74,7 @@ title: Postgres
 [(link)](https://blog.yugabyte.com/using-postgresql-recursive-cte-part-1-employee-hierarchy/)
 
 
-## ml
+# ml
 - PostgresML
 [(link)](https://postgresml.org/)
 [(link)](https://github.com/postgresml/postgresml)
@@ -86,7 +84,7 @@ title: Postgres
 [(link)](https://supabase.com/blog/openai-embeddings-postgres-vector)
 
 
-## extensions / tools
+# extensions / tools
 - PGXN: PostgreSQL Extension Network
 [(link)](https://pgxn.org/)
 - pgxn client
@@ -117,7 +115,7 @@ title: Postgres
 [(link)](https://postgresml.org/blog/making-postgres-30-percent-faster-in-production)
 
 
-## misc
+# misc
 - Pgbench Load Test
 [(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
 - Did you forget to allocate Huge Pages on your PostgreSQL server?

@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Hana
+is_slide: 0
 ---
-# {{page.title}}
-
-                           
 # BTP       
 - SAP Login
 [(link)](https://www.sap.com)

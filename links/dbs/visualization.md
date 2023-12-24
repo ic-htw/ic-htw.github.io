@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Visualization
+is_slide: 0
 ---
-
-# {{page.title}}
 - Dashboards Close Million Dollar Deals
 [(link)](https://medium.com/data-studio/dashboards-close-million-dollar-deals-1dd3e1763068)
 - Archive for the Data Visualization Weekly

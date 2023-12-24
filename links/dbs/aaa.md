@@ -1,9 +1,8 @@
 ---
 layout: default
 title: aaa
+is_slide: 0
 ---
-# {{page.title}}
-
 - db-engines
 [(link)](https://db-engines.com/de/)
 - NoSQL - Website

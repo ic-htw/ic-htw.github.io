@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Data Sets
+is_slide: 0
 ---
-# {{page.title}}
-
 - IBM Transactions for Anti Money Laundering
 [(link)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)
 

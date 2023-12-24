@@ -1,11 +1,8 @@
 ---
 layout: default
 title: customer analytics
+is_slide: 0
 ---
-
-# {{page.title}}
-                          
-        
 - How To Predict Customer Lifetime Value using Machine Learning in Python
 [(link)](https://blog.devgenius.io/how-to-predict-customer-lifetime-value-using-machine-learning-in-python-4066344d0ab0)
 - How To Predict Customer Churn Risk using Machine Learning in Python

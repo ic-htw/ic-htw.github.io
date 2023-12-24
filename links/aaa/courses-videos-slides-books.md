@@ -3,8 +3,6 @@ layout: default
 title: Kurse, Videos, Folien, Bücher
 is_slide: 0
 ---
-# {{page.title}}
-
 # Courses
 - Time Series - Kaggle
 [(link)](https://www.kaggle.com/learn/time-series)

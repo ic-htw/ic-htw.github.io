@@ -3,9 +3,7 @@ layout: default
 title: Posts
 is_slide: 0
 ---
-# {{page.title}}
-
-## begriffs on database
+# begriffs on database
 - User-defined Order in SQL
 [(link)](https://begriffs.com/posts/2018-03-20-user-defined-order.html)
 - SQL Keys in Depth
@@ -24,7 +22,7 @@ is_slide: 0
 [(link)](https://postgrest.org/en/stable/releases/v9.0.0.html)
 
 
-## Daniel Abadi DBMS Musings
+# Daniel Abadi DBMS Musings
 - A tour through hybrid column/row-oriented DBMS schemes
 [(link)](http://dbmsmusings.blogspot.com/2009/09/tour-through-hybrid-columnrow-oriented.html)
 - Distinguishing Two Major Types of Column-Stores
@@ -59,7 +57,7 @@ is_slide: 0
 [(link)](http://dbmsmusings.blogspot.com/2019/10/introducing-slog-cheating-low-latency.html)
 
 
-## Timilearning
+# Timilearning
 - Timilearning - Spanner
 [(link)](https://timilearning.com/posts/mit-6.824/lecture-13-spanner/)
 - Cloud Replicated DB, Aurora

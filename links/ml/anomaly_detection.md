@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Anomaly Detection
+is_slide: 0
 ---
-
-# {{page.title}}
-
 - Anomaly Detection
 [(link)](https://lolithasherley7.medium.com/anomaly-detection-c9b62ee740f6)
 - Scalable time series forecasting and anomaly detection

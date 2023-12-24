@@ -1,10 +1,8 @@
 ---
 layout: default
 title: LSM
+is_slide: 0
 ---
-# {{page.title}}
-
-
 - LSM-based Storage Techniques: A Survey
 [(link)](https://arxiv.org/abs/1812.07527)
 - Constructing and Analyzing the LSM Compaction Design Space
