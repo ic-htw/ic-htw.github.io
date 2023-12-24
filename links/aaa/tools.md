@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Tools
-head1: "Aaa"
-head2: "Tools"
+is_slide: 0
 ---
 
 ## aaa

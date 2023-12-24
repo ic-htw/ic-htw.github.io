@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Posts
+is_slide: 0
 ---
 # {{page.title}}
 

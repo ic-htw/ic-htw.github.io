@@ -1,6 +1,7 @@
 ---
 layout: default
 title: AAA
+is_slide: 0
 ---
 
 # {{page.title}}

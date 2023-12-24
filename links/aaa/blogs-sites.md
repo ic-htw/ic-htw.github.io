@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blogs / Sites
+is_slide: 0
 ---
 # {{page.title}}
 

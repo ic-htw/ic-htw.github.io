@@ -1,7 +1,34 @@
 function init() {
     navitemsHandle();
     slideModeSetOn();
-    sr_fill();
+    fillSecondSidebar();
+}
+
+function toggleSidebar(sbId, ovlId) {
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    if (sb.style.display === 'block') {
+        sb.style.display = 'none';
+        ovl.style.display = "none";
+    } else {
+        sb.style.display = 'block';
+        ovl.style.display = "block";
+    }
+}
+
+function openSidebar(sbId, ovlId) {
+    w3.hide("sb1");
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    sb.style.display = "block";
+    ovl.style.display = "block";
+}
+
+function closeSidebar(sbId, ovlId) {
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    sb.style.display = "none";
+    ovl.style.display = "none";
 }
 
 function slideModeSetOn() {
@@ -90,51 +117,18 @@ function navitemsHandle() {
     }
 }
 
-// Fill Right Sidebar 
-function sr_fill() {
+function fillSecondSidebar() {
     const children = Object.entries(document.getElementById("ct").children);
     const headers = children.filter(a => a[1].nodeName[0] === "H").map(a => [a[1].textContent, a[1].id])
-    const sr = document.getElementById('sr');
+    const sb2cont = document.getElementById('sb2cont');
     headers.forEach(h => {
         const p = document.createElement("p");
         const a = document.createElement("a");
         a.href = "#" + h[1];
         a.innerText = h[0];
         p.appendChild(a);
-        // sr.appendChild(p);
-        srr.appendChild(p);
+        sb2cont.appendChild(p);
     });
 }
 
-function openSrr() {
-    document.getElementById("srr").style.display = "block";
-}
-
-function closeSrr() {
-    document.getElementById("srr").style.display = "none";
-}
-
-// Scrap  -----------------------------------------
-function navitem_toggle1(id) {
-    // w3.toggleShow(`#${id}`)
-    const x = document.getElementById(id);
-    if (x.className.indexOf("ic-on") == -1) {
-        x.className = x.className.replace(" ic-off", "");
-        x.className += " ic-on";
-    } else {
-        x.className = x.className.replace(" ic-on", "");
-        x.className += " ic-off";
-    }
-    w3.show(".ic-on")
-    w3.hide(".ic-off")
-}
-
-function accordion1(id) {
-    const x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
 

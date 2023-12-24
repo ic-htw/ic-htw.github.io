@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Noch lesen
-head1: "Aaa"
-head2: "Noch lesen"
+is_slide: 0
 ---
 
 <!-- 

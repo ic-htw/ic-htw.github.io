@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Kurse, Videos, Folien, Bücher
+is_slide: 0
 ---
 # {{page.title}}
 

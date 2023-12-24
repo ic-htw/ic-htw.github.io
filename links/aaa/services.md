@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Misc
+is_slide: 0
 ---
 # {{page.title}}
 
