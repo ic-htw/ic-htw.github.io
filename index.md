@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Site Map"
+is_slide: 0
 n: 0
 ---
 
