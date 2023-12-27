@@ -28,14 +28,15 @@ n: 7
                     <th>Sortierung</th>
                     <td>Reihenfolge</td>
                 </tr>
-            </table>
+            </table> 
+            <div class=" w3-padding-64"></div>
+            <pre><code class="language-sql w3-large w3-left w3-left-align">select ausgabespalten
+from tabelle
+where bedingung
+order by spaltennamen</code></pre>
         </div>
     </div>
 </div>
-<pre><code class="language-sql w3-large">select ausgabespalten
-        from tabelle
-        where bedingung
-        order by spaltennamen</code></pre>
 <div class="ic-gap"></div>
 
 <!--
@@ -85,8 +86,8 @@ from mitarbeiter;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m7">
         <pre><code class="language-sql w3-large">select
-name, vorname,
-extract(year from eintrittsdatum) as eintrittsjahr
+  name, vorname,
+  extract(year from eintrittsdatum) as eintrittsjahr
 from mitarbeiter
 where oeid=14;</code></pre>
     </div>
@@ -97,9 +98,10 @@ where oeid=14;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m7">
         <pre><code class="language-sql w3-large">select
-name, vorname,
-extract(year from current_date) -
-extract(year from eintrittsdatum) as beschaeftigungsjahre
+  name, vorname,
+  extract(year from current_date) -
+    extract(year from eintrittsdatum) 
+    as beschaeftigungsjahre
 from mitarbeiter
 where oeid=14;</code></pre>
     </div>
@@ -115,15 +117,15 @@ where oeid=14;</code></pre>
 {% include padding-id.html id=4 %}
 <h1>Zusammengesetzte Bedingung</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m6">
+    <div class="w3-col m7">
         <pre><code class="language-sql w3-large">select
-name, vorname, gehalt
+  name, vorname, gehalt
 from mitarbeiter
 where
-gehalt < 35000 and eintrittsdatum between '01.01.2010' and '31.12.2020' ;</code>
-        </pre>
+  gehalt < 35000 and 
+  eintrittsdatum between '01.01.2010' and '31.12.2020';</code></pre>
     </div>
-    <div class="w3-col m6">
+    <div class="w3-col m5">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-05.png">
     </div>
 </div>
@@ -137,10 +139,10 @@ gehalt < 35000 and eintrittsdatum between '01.01.2010' and '31.12.2020' ;</code>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, vorname, gehalt, bonus
+  name, vorname, gehalt, bonus
 from mitarbeiter
 where
-bonus=null;</code></pre>
+  bonus=null;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-06.png">
@@ -149,10 +151,10 @@ bonus=null;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, vorname, gehalt, bonus
+  name, vorname, gehalt, bonus
 from mitarbeiter
 where
-bonus is null;</code></pre>
+  bonus is null;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-07.png">
@@ -161,10 +163,10 @@ bonus is null;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, vorname, gehalt, bonus
+  name, vorname, gehalt, bonus
 from mitarbeiter
 where
-not bonus is null;</code></pre>
+  not bonus is null;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-08.png">
@@ -180,11 +182,9 @@ not bonus is null;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, gehalt, bonus,
-gehalt + bonus as gesamt
+  name, gehalt, bonus, gehalt + bonus as gesamt
 from mitarbeiter
-where
-oeid=17;</code></pre>
+where oeid=17;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-09.png">
@@ -193,15 +193,14 @@ oeid=17;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, gehalt, bonus,
-gehalt +
-case
-when bonus is null then 0
-else bonus
-end as gesamt
+  name, gehalt, bonus,
+  gehalt +
+  case
+    when bonus is null then 0
+    else bonus
+  end as gesamt
 from mitarbeiter
-where
-oeid=17;</code></pre>
+where oeid=17;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-10.png">
@@ -217,12 +216,12 @@ oeid=17;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql w3-large">select
-name, oeid,
-case
-when gehalt>100000 then 'hoch'
-when gehalt>35000 then 'mittel'
-else 'niedrig'
-end as gesamt
+  name, oeid,
+  case
+    when gehalt>100000 then 'hoch'
+    when gehalt>35000 then 'mittel'
+    else 'niedrig'
+  end as gesamt
 from mitarbeiter;</code></pre>
     </div>
     <div class="w3-col m6">
