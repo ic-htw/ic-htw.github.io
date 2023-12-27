@@ -2,6 +2,16 @@ function init() {
     navitemsHandle();
     slideModeSetOn();
     fillSecondSidebar();
+    window.location.href = "#1"
+}
+
+function activateButton(btn) {
+    const icActive = document.getElementsByClassName("ic-active");
+    if (icActive.length > 0) { 
+        icActive[0].className = icActive[0].className.replace(" ic-active", "");
+    }
+    btn.className += " ic-active";
+    console.log(btn.className)
 }
 
 function toggleSidebar(sbId, ovlId) {

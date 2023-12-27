@@ -71,8 +71,11 @@
     <a class="w3-bar-item w3-button w3-theme w3-left" href="/">Home</a>
     {% if page.is_slide == 1 %}
     {% for i in (1..page.n) reversed %}
-    <a href="#{{i}}" class="w3-button w3-bar-item w3-right">{{i}}</a>
+    <a id="btn-{{i}}" href="#{{i}}" class="w3-button w3-bar-item w3-right" onclick="activateButton(this)">{{i}}</a>
     {% endfor %}
+    <script>
+      activateButton(document.getElementById("btn-1"))
+    </script>
     {% endif %} 
   </div>
 
