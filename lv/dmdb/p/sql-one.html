@@ -2,6 +2,231 @@
 layout: default
 title: "Abfragen auf einer Tabelle"
 is_slide: 1
-n: 11
+n: 7
 ---
-<h1>Inhalt</h1>
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Querystruktur</h1>
+<div class="w3-center">
+    <div class="w3-row">
+        <div class="w3-col m6">
+            <img class="w3-image" src="/lv/dmdb/a/sql-one/fig-querystrutur.png">
+        </div>
+        <div class="w3-col m6  w3-padding-48">
+            <table class="w3-table w3-bordered w3-border w3-left">
+                <tr>
+                    <th>Selektion</th>
+                    <td>Spalten</td>
+                </tr>
+                <tr>
+                    <th>Filterung</th>
+                    <td>Zeilen</td>
+                </tr>
+                <tr>
+                    <th>Sortierung</th>
+                    <td>Reihenfolge</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<pre><code class="language-sql w3-large">select ausgabespalten
+        from tabelle
+        where bedingung
+        order by spaltennamen</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Selektion, Filterung, Sortierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select name, vorname, gehalt
+from mitarbeiter
+where oeid=14
+order by gehalt;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-01.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select name, vorname, gehalt
+from mitarbeiter
+where oeid=14
+order by gehalt desc;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-02.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select *
+from mitarbeiter;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-padding-24">Ausgabe der gesamten Tabelle,
+            d.h. alle Zeilen und alle Spalten</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Berechnete Spalten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql w3-large">select
+name, vorname,
+extract(year from eintrittsdatum) as eintrittsjahr
+from mitarbeiter
+where oeid=14;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-03.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql w3-large">select
+name, vorname,
+extract(year from current_date) -
+extract(year from eintrittsdatum) as beschaeftigungsjahre
+from mitarbeiter
+where oeid=14;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-04.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Zusammengesetzte Bedingung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, vorname, gehalt
+from mitarbeiter
+where
+gehalt < 35000 and eintrittsdatum between '01.01.2010' and '31.12.2020' ;</code>
+        </pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-05.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Nullwerte in Bedingungen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, vorname, gehalt, bonus
+from mitarbeiter
+where
+bonus=null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-06.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, vorname, gehalt, bonus
+from mitarbeiter
+where
+bonus is null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-07.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, vorname, gehalt, bonus
+from mitarbeiter
+where
+not bonus is null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-08.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Rechnen mit Nullwerten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, gehalt, bonus,
+gehalt + bonus as gesamt
+from mitarbeiter
+where
+oeid=17;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-09.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, gehalt, bonus,
+gehalt +
+case
+when bonus is null then 0
+else bonus
+end as gesamt
+from mitarbeiter
+where
+oeid=17;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Detailreduktion in der Ausgabe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql w3-large">select
+name, oeid,
+case
+when gehalt>100000 then 'hoch'
+when gehalt>35000 then 'mittel'
+else 'niedrig'
+end as gesamt
+from mitarbeiter;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-11.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
