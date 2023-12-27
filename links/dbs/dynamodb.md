@@ -75,6 +75,8 @@ is_slide: 0
 
 
 # posts
+- DynamoDB: When to Move Out
+[(link)](https://scylladb.medium.com/dynamodb-when-to-move-out-f900f23ad8a1)
 - Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design
 [(link)](https://levelup.gitconnected.com/real-time-data-aggregation-using-dynamodb-streams-deliveroos-system-design-e0ebaaa2c4c8)
 - Posts Alex DeBrie

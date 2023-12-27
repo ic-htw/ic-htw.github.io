@@ -3,6 +3,12 @@ layout: default
 title: LLM Analytics
 is_slide: 0
 ---
+
+#  Llama
+- Multimodal RAG pipeline with LlamaIndex and Neo4j
+[(link)](https://blog.llamaindex.ai/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
+
+
 # text to sql
 - Introducing NSQL: Open-source SQL Copilot Foundation Models
 [(link)](https://www.numbersstation.ai/post/introducing-nsql-open-source-sql-copilot-foundation-models)

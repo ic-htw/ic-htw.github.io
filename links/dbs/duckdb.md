@@ -14,6 +14,10 @@ is_slide: 0
 [(link)](https://github.com/cwida/duckdb-pgq)
 
 # posts
+- Progression of DuckDB Performance
+[(link)](https://pdeyhim.medium.com/progression-of-duckdb-performance-649b83e02b17)
+- Ducktales — Part 2: Pandas vs DuckDB — large dataset processing comparison
+[(link)](https://diptimanrc.medium.com/ducktales-part-2-pandas-vs-duckdb-large-dataset-processing-comparison-70a605097b1e)
 - Loading Parquet in PostgreSQL via DuckDB: Testing queries and exploring the Core
 [(link)](https://medium.com/@ahuarte/loading-parquet-in-postgresql-via-duckdb-testing-queries-and-exploring-the-core-1d667ae67dc2)
 - Building an IoT Data Pipeline for Energy Consumption Monitoring on the Edge with DuckDB and Malloy

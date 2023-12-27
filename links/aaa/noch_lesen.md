@@ -10,23 +10,23 @@ is_slide: 0
 
 # {{page.title}}
 -->
-- Vector Databases: A Hands-On Tutorial!
-[(link)](https://levelup.gitconnected.com/vector-databases-a-hands-on-tutorial-8d41445ea253)
+- Cheshire-Cat plugin SQL
+[(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
 
-- DynamoDB: When to Move Out
-[(link)](https://scylladb.medium.com/dynamodb-when-to-move-out-f900f23ad8a1)
+- The Two Best Tools for Plotting Interactive Network Graphs
+[(link)](https://medium.com/@bl3e967/the-two-best-tools-for-plotting-interactive-network-graphs-8d352aa894d4)
 
-- Polars dataframe’s plugins and extensibility: getting started
-[(link)](https://medium.com/datamindedbe/polars-dataframes-plugins-and-extensibility-getting-started-9371d8b3f093)
+- Delivering billions of real-time updates cost-effectively: Our journey
+[(link)](https://medium.com/@Games24x7Tech/delivering-billions-of-real-time-updates-cost-effectively-our-journey-fe3bf06af1bc)
 
-- Multimodal RAG pipeline with LlamaIndex and Neo4j
-[(link)](https://blog.llamaindex.ai/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
+- Build your own RAG with Mistral-7B and LangChain
+[(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
 
-- Ducktales — Part 2: Pandas vs DuckDB — large dataset processing comparison
-[(link)](https://diptimanrc.medium.com/ducktales-part-2-pandas-vs-duckdb-large-dataset-processing-comparison-70a605097b1e)
+- Can LLMs Replace Data Analysts? Building An LLM-Powered Analyst
+[(link)](bbb)
 
-- Hugging Face Open-Sources a New ML Framework which written in Rust
-[(link)](https://blog.gopenai.com/python-is-out-of-favor-hugging-face-open-sources-a-new-ml-framework-which-written-in-rust-ee667831a0d0)
+- Can LLMs Replace Data Analysts? Getting Answers Using SQL
+[(link)](https://towardsdatascience.com/can-llms-replace-data-analysts-getting-answers-using-sql-8cf7da132259)
 
 - DoorDash’s Write-Heavy Scalable Inventory Platform — System Design
 [(link)](https://interviewnoodle.com/doordashs-write-heavy-scalable-inventory-platform-system-design-61c1a5c71641)
