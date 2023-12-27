@@ -104,6 +104,13 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-join.html">Verbund</a> <br>
+    Datenmodelle - relational<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/unternehmen.html">Unternehmen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/playlist.html">Playlist</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/foodmart.html">Foodmart</a> <br>
     <a  href="/lv/dmdb/p/material.html">Material</a> <br>
 </div> 
 
