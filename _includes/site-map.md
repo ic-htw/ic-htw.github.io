@@ -104,6 +104,12 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-join.html">Verbund</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-grp-agg.html">Gruppierungen / Aggregationen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-sub.html">Unterabfragen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-case.html">Fallbeipiele</a> <br>
     Datenmodelle - relational<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/unternehmen.html">Unternehmen</a> <br>

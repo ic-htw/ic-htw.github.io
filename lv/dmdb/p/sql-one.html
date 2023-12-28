@@ -57,7 +57,7 @@ order by gehalt;</code></pre>
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select name, vorname, gehalt
+        <pre><code class="language-sql">select name, vorname, gehalt
 from mitarbeiter
 where oeid=14
 order by gehalt desc;</code></pre>
@@ -68,7 +68,7 @@ order by gehalt desc;</code></pre>
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select *
+        <pre><code class="language-sql">select *
 from mitarbeiter;</code></pre>
     </div>
     <div class="w3-col m6">
@@ -85,7 +85,7 @@ from mitarbeiter;</code></pre>
 <h1>Berechnete Spalten</h1>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname,
   extract(year from eintrittsdatum) as eintrittsjahr
 from mitarbeiter
@@ -97,7 +97,7 @@ where oeid=14;</code></pre>
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname,
   extract(year from current_date) -
     extract(year from eintrittsdatum) 
@@ -118,7 +118,7 @@ where oeid=14;</code></pre>
 <h1>Zusammengesetzte Bedingung</h1>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname, gehalt
 from mitarbeiter
 where
@@ -138,7 +138,7 @@ where
 <h1>Nullwerte in Bedingungen</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname, gehalt, bonus
 from mitarbeiter
 where
@@ -150,7 +150,7 @@ where
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname, gehalt, bonus
 from mitarbeiter
 where
@@ -162,7 +162,7 @@ where
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, vorname, gehalt, bonus
 from mitarbeiter
 where
@@ -181,7 +181,7 @@ where
 <h1>Rechnen mit Nullwerten</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, gehalt, bonus, gehalt + bonus as gesamt
 from mitarbeiter
 where oeid=17;</code></pre>
@@ -192,7 +192,7 @@ where oeid=17;</code></pre>
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, gehalt, bonus,
   gehalt +
   case
@@ -215,7 +215,7 @@ where oeid=17;</code></pre>
 <h1>Detailreduktion in der Ausgabe</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-large">select
+        <pre><code class="language-sql">select
   name, oeid,
   case
     when gehalt>100000 then 'hoch'
