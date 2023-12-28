@@ -2,7 +2,8 @@ function init() {
     navitemsHandle();
     slideModeSetOn();
     fillSecondSidebar();
-    window.location.href = "#1"
+    deactivateButton();
+    // window.location.href = "#1"
 }
 
 function activateButton(btn) {
@@ -11,7 +12,14 @@ function activateButton(btn) {
         icActive[0].className = icActive[0].className.replace(" ic-active", "");
     }
     btn.className += " ic-active";
-    console.log(btn.className)
+    // console.log(btn.textContent)
+}
+
+function deactivateButton() {
+    const icActive = document.getElementsByClassName("ic-active");
+    if (icActive.length > 0) { 
+        icActive[0].className = icActive[0].className.replace(" ic-active", "");
+    }
 }
 
 function toggleSidebar(sbId, ovlId) {
