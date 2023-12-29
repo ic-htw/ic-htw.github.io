@@ -2,13 +2,13 @@
 layout: default
 title: "Verbund"
 is_slide: 1
-n: 11
+n: 13
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Informationen aus mehrerem Tabellen - Berichte </h1>
+<h1>Informationen aus mehreren Tabellen - Berichte </h1>
 <div class="w3-center">
     <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-01.png">
 </div>
@@ -19,9 +19,7 @@ n: 11
 -->
 {% include padding-id.html id=2 %}
 <h1>Kartesisches Produkt</h1>
-<div class="w3-center">
     <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-02.png">
-</div>
 <div class="ic-gap"></div>
 
 <!--
@@ -40,9 +38,8 @@ n: 11
 {% include padding-id.html id=4 %}
 <h1>Filterung auf kartesischem Produkt</h1>
 <pre><code class="language-sql">select *
-        from mitarbeiter
-        cross join orgeinheit
-        where mitarbeiter.oeid=orgeinheit.oeid;</code></pre>
+from mitarbeiter cross join orgeinheit
+where mitarbeiter.oeid=orgeinheit.oeid;</code></pre>
 <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-04.png">
 <div class="ic-gap"></div>
 
@@ -53,24 +50,24 @@ n: 11
 {% include padding-id.html id=5 %}
 <h1>Verbund (Inner Join)</h1>
 <pre><code class="language-sql">select
-        orgeinheit.bezeichnung as orgeinheit,
-        mitarbeiter.mid, mitarbeiter.name as mitarbeiter, mitarbeiter.eintrittsdatum, mitarbeiter.gehalt
-        from mitarbeiter
-        inner join orgeinheit on orgeinheit.oeid=mitarbeiter.oeid;</code></pre>
+  orgeinheit.bezeichnung as orgeinheit,
+  mitarbeiter.mid, mitarbeiter.name as mitarbeiter, mitarbeiter.eintrittsdatum, mitarbeiter.gehalt
+from mitarbeiter
+     inner join orgeinheit on orgeinheit.oeid=mitarbeiter.oeid;</code></pre>
 <div class="w3-row-padding">
-    <div class="w3-col m6">
+    <div class="w3-col m7">
         <p><b>Abkürzung für Tabellennamen:</b><br>
             mitarbeiter m<br>
             orgeinheit oe<br>
             <b>inner join</b> kann abgekürzt werden zu <b>join</b>
         </p>
         <pre><code class="language-sql">select
-                oe.bezeichnung as orgeinheit,
-                m.mid, m.name as mitarbeiter, m.eintrittsdatum, m.gehalt
-                from mitarbeiter m
-                join orgeinheit oe on oe.oeid=m.oeid;</code></pre>
+  oe.bezeichnung as orgeinheit,
+  m.mid, m.name as mitarbeiter, m.eintrittsdatum, m.gehalt
+from mitarbeiter m
+     join orgeinheit oe on oe.oeid=m.oeid;</code></pre>
     </div>
-    <div class="w3-col m6">
+    <div class="w3-col m5">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-05.png">
     </div>
 </div>
@@ -95,21 +92,21 @@ n: 11
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">select p.titel, m.name
-            from projekt p
-            join maproj mp on mp.pid=p.pid
-            join mitarbeiter m on m.mid=mp.mid;</code></pre>
+from projekt p
+     join maproj mp on mp.pid=p.pid
+     join mitarbeiter m on m.mid=mp.mid;</code></pre>
         <p>Andere Reihenfolge der Tabellen<br>
-           gleiches Ergebnis
+            gleiches Ergebnis
         </p>
         <pre><code class="language-sql">select p.titel, m.name
-            from mitarbeiter m
-            join maproj mp on mp.mid=m.mid
-            join projekt p on p.pid=mp.pid;</code></pre>
+from mitarbeiter m
+     join maproj mp on mp.mid=m.mid
+     join projekt p on p.pid=mp.pid;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-08.png">
         <p>Verbund beliebig vieler Tabellen möglich</p>
-     </div>
+    </div>
 </div>
 <div class="ic-gap"></div>
 
@@ -120,19 +117,19 @@ n: 11
 {% include padding-id.html id=8 %}
 <h1>Reflexiver Verbund</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m6">
+    <div class="w3-col m7">
         <pre><code class="language-sql">select
-            ober.bezeichnung as obereinheit,
-            unter.bezeichnung as untereinheit
-            from orgeinheit ober
-            join orgeinheit unter on unter.obereinheit=ober.oeid;</code></pre>
+  ober.bezeichnung as obereinheit,
+  unter.bezeichnung as untereinheit
+from orgeinheit ober
+     join orgeinheit unter on unter.obereinheit=ober.oeid;</code></pre>
         <p>Zweifache Verwendung derselben Tabelle:<br>
             unterschiedliche Aliasnamen notwendig
         </p>
     </div>
-    <div class="w3-col m6">
+    <div class="w3-col m5">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-09.png">
-     </div>
+    </div>
 </div>
 <div class="ic-gap"></div>
 
@@ -145,19 +142,18 @@ n: 11
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">select
-            m.name as mitarbeiter,
-            oe.bezeichnung as leitet
-            from mitarbeiter m
-            join orgeinheit oe
-            on oe.leitung=m.mid;</code></pre>
+  m.name as mitarbeiter,
+  oe.bezeichnung as leitet
+from mitarbeiter m
+     join orgeinheit oe on oe.leitung=m.mid;</code></pre>
         <p>Wie ermittelt man alle Personen ohne Leitungsfunktion?<br>
-           Geht mit dem Inner Join nicht<br>
-           Lösung: Outer Join
+            Geht mit dem Inner Join nicht<br>
+            Lösung: Outer Join
         </p>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-10.png">
-     </div>
+    </div>
 </div>
 <div class="ic-gap"></div>
 
@@ -168,11 +164,42 @@ n: 11
 {% include padding-id.html id=10 %}
 <h1>Äußerer Verbund (Outer Join)</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m6">
+    <div class="w3-col m7">&nbsp;</div>
+    <div class="w3-col m5">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-13.png">
     </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-14.png">
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select * from R inner join S on B=D;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14a.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select * from R left outer join S on B=D;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14b.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select * from R right outer join S on B=D;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14c.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select * from R full outer join S on B=D;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14d.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -182,12 +209,66 @@ n: 11
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>Leitung und Nicht-Leitung</h1>
+<h1>Leitung und Nicht-Leitung - Outer Join</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  m.name as mitarbeiter,
+  oe.bezeichnung as leitet
+from mitarbeiter m
+     left join orgeinheit oe on oe.leitung=m.mid;</code></pre>
+        <p>Alle Personen ohne Leitungsfunktion:<br>
+            Haben Nullwerte in Spalte <code>leitet</code>
+        </p>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-11.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 <!--
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>Leitung und Nicht-Leitung - Filterung nach Nullwerten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select
+  m.name as mitarbeiter,
+  oe.bezeichnung as leitet
+from mitarbeiter m left join orgeinheit oe on oe.leitung=m.mid
+where oe.oeid is null;</code></pre>
+        <p>Allgemeines Vorgehen:<br>
+            Filtern nicht verbundener Datensätze über Nulls bei Outer Joins
+        </p>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-12.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Leitung und Nicht-Leitung - Mengenoperationen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <p>Werden angewendet auf<br> Ergebnistabellen gleicher Struktur:<br>
+            Union [all]<br>
+            intersect<br>
+            minus
+        </p>
+    </div>
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select name
+from mitarbeiter
+minus
+select name
+from mitarbeiter
+     join orgeinheit on leitung=mid;</code></pre>
+    </div>
+</div>
 <div class="ic-gap"></div>
