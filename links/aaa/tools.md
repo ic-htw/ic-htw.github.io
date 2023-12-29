@@ -136,6 +136,8 @@ is_slide: 0
 [(link)](https://github.github.com/gfm/)
 - GitHub Pages-Dokumentation
 [(link)](https://docs.github.com/pages)
+- GH Pages Dependency versions
+[(link)](https://pages.github.com/versions/)
 
 # google
 - Getting Started with Google APIs in Python

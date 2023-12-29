@@ -7,9 +7,16 @@ is_slide: 0
 <!-- 
 - aaa
 [(link)](bbb)
-
-# {{page.title}}
 -->
+- Benchmarking LanceDB
+[(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)
+
+- Seamless Data Analytics Workflow: From Dockerized JupyterLab and MinIO to Insights with Spark SQL
+[(link)](https://towardsdatascience.com/seamless-data-analytics-workflow-from-dockerized-jupyterlab-and-minio-to-insights-with-spark-sql-3c5556a18ce6)
+
+- Video Recommendations at Joyn
+[(link)](https://medium.com/tech-p7s1/video-recommendations-at-joyn-two-tower-or-not-to-tower-that-was-never-a-question-6c6f182ade7c)
+
 - Cheshire-Cat plugin SQL
 [(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
 
