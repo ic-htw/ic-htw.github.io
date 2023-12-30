@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Reading Postgres Execution Plans doesn’t have to be so complicated
+[(link)](https://medium.com/@adamf_64691/reading-postgres-execution-plans-doesnt-have-to-be-so-complicated-7c274ce178b7)
+
+- How Shopify broke its Black Friday record (System Design case study)
+[(link)](https://learningdaily.dev/how-shopify-broke-its-black-friday-record-system-design-case-study-f45f25bbc451)
+
 - Benchmarking LanceDB
 [(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)
 
