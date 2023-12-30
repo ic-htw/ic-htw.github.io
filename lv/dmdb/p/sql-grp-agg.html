@@ -10,6 +10,22 @@ n: 13
 -->
 {% include padding-id.html id=1 %}
 <h1>Aggregationsfunktionen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-mitarbeiter.png">
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select 
+            sum(gehalt), 
+            round(avg(gehalt)), 
+            min(gehalt), 
+            max(gehalt), 
+            count(*), 
+            count(bonus)
+          from mitarbeiter;</code></pre>
+    </div>
+</div>
+<img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-02.png">
 <div class="ic-gap"></div>
 
 
@@ -18,6 +34,25 @@ n: 13
 -->
 {% include padding-id.html id=2 %}
 <h1>Gruppierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-mitarbeiter.png">
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select oeid,
+            sum(gehalt), 
+            round(avg(gehalt)), 
+            min(gehalt), 
+            max(gehalt), 
+            count(*), 
+            count(bonus)
+          from mitarbeiter
+          group by oeid
+          order by oeid;
+          </code></pre>
+    </div>
+</div>
+<img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-03.png">
 <div class="ic-gap"></div>
 
 
@@ -26,6 +61,20 @@ n: 13
 -->
 {% include padding-id.html id=3 %}
 <h1>Konzept Gruppierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Gruppierungskriterium</li>
+            <li>Partitionierung der Detaildaten in Gruppen</li>
+            <li>Anwendung von Aggregationsfunktionen pro Gruppe</li>
+            <li>Ein Datensatz pro Gruppe in der Ausgabe</li>
+        </ul>
+        
+            </div>
+    <div class="w3-col m7">
+        <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-01.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -34,6 +83,52 @@ n: 13
 -->
 {% include padding-id.html id=4 %}
 <h1>Aggregationsebenen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m4">
+        <pre><code class="language-sql">select oeid,
+              sum(gehalt)
+            from mitarbeiter
+            group by oeid
+            order by oeid;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <ul class="w3-large">
+            <li>Alle Ausgabespalten auf einer Aggregationsstufe</li>
+            <ul>
+                <li>oeid: kommt aus dem group by</li>
+                <li>gehalt: Aggregationsfunktion angewendet auf Spalte</li>
+            </ul>
+        </ul>
+        
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-04.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m4">
+        <pre><code class="language-sql">select oeid, name,
+            sum(gehalt)
+          from mitarbeiter
+          group by oeid
+          order by oeid;
+          </code></pre>
+    </div>
+    <div class="w3-col m4">
+        <ul class="w3-large">
+            <li>Ausgabespalten auf verschiedenen Aggregationsstufen</li>
+            <ul>
+                <li>oeid: aggregiert </li>
+                <li>name: auf Deteilebene (nicht erlaubt)</li>
+                <li>gehalt: aggregiert</li>
+            </ul>
+        </ul>
+        
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/fig-01.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
