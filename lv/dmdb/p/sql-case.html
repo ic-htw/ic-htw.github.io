@@ -2,5 +2,365 @@
 layout: default
 title: "Fallbeipiele"
 is_slide: 1
-n: 7
+n: 12
 ---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Datenumfänge</h1>
+<!-- Row -->
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">select 'customer' as "table", count(*) as anzahl from customer
+                union
+                select 'sales' as "table", count(*) as anzahl from sales
+                union
+                select 'store' as "table", count(*) as anzahl from store
+                union
+                select 'product' as "table", count(*) as anzahl from product
+                union
+                select 'timebyday' as "table", count(*) as anzahl from timebyday
+                order by anzahl;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Umsatz pro Jahr und Land</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/dm-foodmart/diagram.png">
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select country, tyear, sum(unitsales)
+                from sales s
+                join timebyday tbd on tbd.timeid=s.timeid
+                join customer c on c.customerid=s.customerid
+                group by country, tyear;</code></pre>
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-20.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/fig-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Analyse Produkthierarchie 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m3">
+        <pre><code class="language-sql">select family, count(*)
+                from product
+                group by family
+                order by family;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <pre><code class="language-sql">select department, count(*)
+                from product
+                group by department
+                order by department;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <pre><code class="language-sql">select family, department, count(*)
+                from product
+                group by family, department
+                order by family, department;</code></pre>
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-30.png">
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-40.png">
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-50.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Analyse Produkthierarchie 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">select department
+                from
+                (select family, department
+                from product
+                group by family, department)
+                group by department
+                having count(*)>1;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-60.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Kundenanalyse</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">select education,
+                case
+                when yearlyincome in ('$10K - $30K', '$30K - $50K', '$50K - $70K') then 'L1'
+                else 'L2'
+                end as annual_income, count(*)
+                from customer
+                group by
+                education,
+                case
+                when yearlyincome in ('$10K - $30K', '$30K - $50K', '$50K - $70K') then 'L1'
+                else 'L2'
+                end
+                order by
+                education,
+                annual_income;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-70.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Top 3 aus 2014 - Vergleich mit 2015
+</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">with p3top as (
+                select productid, sum(unitsales) as sales2014
+                from sales s join timebyday t on s.timeid=t.timeid
+                where tyear=2014
+                group by productid
+                order by sum(unitsales) desc fetch first 3 rows only
+                )
+                select
+                s.productid, sales2014, sum(unitsales) as sales2015,
+                sum(unitsales) - sales2014 as diff
+                from sales s join timebyday t on s.timeid=t.timeid
+                join p3top on s.productid=p3top.productid
+                where tyear=2015
+                group by s.productid, sales2014;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-80.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Analytische Funktionen</h1>
+<table class="w3-table-all">
+    <tr>
+        <td><code class="language-sql">sum(valcol) over()</code></td>
+        <td>Gesamtsumme</td>
+    </tr>
+    <tr>
+        <td><code class="language-sql">sum(valcol) over(partion by groupcol)</code></td>
+        <td>Teilsumme pro Gruppe</td>
+    </tr>
+    <tr>
+        <td><code class="language-sql">sum(valcol) over(order by ordercol)</code></td>
+        <td>Kumulierte Summe</td>
+    </tr>
+    <tr>
+        <td><code class="language-sql">sum(valcol) over(partion by groupcol order by ordercol)</code></td>
+        <td>Kumulierte Summe pro Gruppe</td>
+    </tr>
+    <tr>
+        <td><code class="language-sql">rank() over(order by ordercol)</code></td>
+        <td>Rangbildung (für Top-N-Analysen)</td>
+    </tr>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Prozentualer Anteil</h1>
+<pre><code class="language-sql">with
+    basecube as (
+      select 
+        family, tyear, tmonthnumber, 
+        sum(unitsales) as unitsales
+      from sales s
+           join timebyday tbd on tbd.timeid=s.timeid
+           join product p on p.productid=s.productid
+      group by tyear, tmonthnumber, family
+  )
+  select 
+    tyear, tmonthnumber, family, 
+    unitsales,
+    sum(unitsales) over(partition by tyear, tmonthnumber) as total_month,
+    round(unitsales/sum(unitsales) over(partition by tyear, tmonthnumber), 3) * 100 as percent_of_month,  
+    sum(unitsales) over() as total,
+    round(unitsales/sum(unitsales) over(), 3) * 100 as percent_of_total
+  from basecube
+  order by tyear, tmonthnumber, family;</code></pre>
+<img class="w3-image" src="/lv/dmdb/a/sql-case/tab-90.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Kumulative Summe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">with
+            basecube as (
+              select 
+                tyear, tmonthnumber, 
+                sum(unitsales) as unitsales
+              from sales s
+                   join timebyday tbd on tbd.timeid=s.timeid
+                   join product p on p.productid=s.productid
+              group by tyear, tmonthnumber
+          )
+          select 
+            tmonthnumber, unitsales,
+            sum(unitsales) over(order by tmonthnumber) as cumulative
+          from basecube
+          where tyear=2014
+          order by tmonthnumber;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Kumulative Summe pro Gruppe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">with
+            basecube as (
+              select 
+                family, tyear, tmonthnumber, 
+                sum(unitsales) as unitsales
+              from sales s
+                   join timebyday tbd on tbd.timeid=s.timeid
+                   join product p on p.productid=s.productid
+              group by family, tyear, tmonthnumber
+          )
+          select 
+            family, tmonthnumber, unitsales,
+            sum(unitsales) over(partition by family order by tmonthnumber) as cumulative
+          from basecube
+          where tyear=2014
+          order by family, tmonthnumber;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-110.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Top 10 Produkte</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            basecube as (
+              select 
+                pname, 
+                sum(unitsales) as unitsales
+              from sales s
+                   join product p on p.productid=s.productid
+              group by pname
+          )
+          select 
+            rank() over(order by unitsales desc) as ranklevel,
+            pname, 
+            unitsales
+          from basecube
+          order by ranklevel
+          fetch first 10 rows only;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-120.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>ABC-Analyse</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            basecube as (
+              select 
+                category, 
+                sum(unitsales) as unitsales
+              from sales s
+                   join product p on p.productid=s.productid
+              group by category
+            ),
+            revenues as (
+              select
+                category, 
+                unitsales,
+                sum(unitsales) over(order by unitsales desc) as cum_revenue,
+                sum(unitsales) over() as total_revenue
+              from basecube
+            )
+          select 
+            category, unitsales, cum_revenue, total_revenue,
+            case 
+              when cum_revenue < 0.5 * total_revenue then 'A'
+              when cum_revenue < 0.7 * total_revenue then 'B'
+              else 'C'
+            end as cat    
+          from revenues
+          order by unitsales desc;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-130.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
