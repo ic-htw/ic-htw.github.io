@@ -2,5 +2,447 @@
 layout: default
 title: "Unterabfragen"
 is_slide: 1
-n: 7
+n: 15
 ---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Durchschnittsgehalt als Bedingung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+                round(avg(gehalt))
+                from mitarbeiter;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-10.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select name
+                from mitarbeiter
+                where gehalt > 67333
+                order by name;/code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-20.png">
+    </div>
+</div>
+<p class="w3-large">Problem: Manuelle Ermittlung des Durchschnittswertes und Eintragung in die zweite Abfrage
+    Kombination zweier Aggregierungsstufen:</p>
+<ul class="w3-large">
+    <li>Mittelwert aggregiert</li>
+    <li>Ausgabe der Namen auf Detailebene</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Lösung mit Unterabfrage</h1>
+<p class="w3-large">Lösung: Unterabfragen
+    (Schachtelung von Abfragen)<br>
+    Übergeordnete Abfrage
+    (Hauptabfrage)<br>
+    Unterabfrage
+</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select name
+                from mitarbeiter
+                where gehalt >= (
+                select
+                round(avg(gehalt))
+                from mitarbeiter
+                )
+                order by name;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Konzeptproblem</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select name
+                from mitarbeiter
+                where gehalt >= (
+                select
+                round(avg(gehalt))
+                from mitarbeiter
+                )
+                order by name;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large">Gehalt ist eine Zahl<br>
+            das Ergebnis einer Abfrage ist eine Tabelle
+        </p>
+    </div>
+</div>
+<p class="w3-large">Der Vergleichsoperator <br>
+    >= <br>
+    erfordert linke und rechte Seite mit kompatiblen Typ<br><br>
+    Ist in diesem Fall gegeben:<br>
+    Abfrage liefert Ergebnis mit einer Zeile und eine Spalte
+</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Datenzellen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large">Tabelle</p>
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/fig-10.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large">Tabelle, eine Zeile, eine Spalte</p>
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/fig-20.png">
+        <p class="w3-large">Kann als Wert interpretiert werden</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Berechnung mit Detail- und aggregierten Werten</h1>
+<!-- Row -->
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select
+                name,
+                gehalt,
+                (select round(avg(gehalt)) from mitarbeiter) as dgehalt,
+                gehalt - (select round(avg(gehalt)) from mitarbeiter) as diff
+                from mitarbeiter
+                order by gehalt - (select round(avg(gehalt)) from mitarbeiter) desc;</code></pre>
+        <p class="w3-large">Unterabfragen ermöglichen die Kombination
+            von Detail- und aggregierten Werten in einer Abfrage
+        </p>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-30.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Common Table Expression (CTE)</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large">Mehrfach verwendete Unterabfragen herausziehen und mit with definieren</p>
+        <pre><code class="language-sql">with
+                dg as (select round(avg(gehalt)) as dgehalt from mitarbeiter)
+                select
+                name,
+                gehalt,
+                dgehalt,
+                gehalt - dgehalt as diff
+                from mitarbeiter cross join dg
+                order by gehalt - dgehalt desc;
+            </code></pre>
+        <p class="w3-large">Jeder Mitarbeiter-Datensatz soll um den Wert "dgehalt" ergänzt werden -> cross join
+        </p>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-30.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Unterabfrage mit Werteliste</h1>
+<p class="w3-large">Alle Mitarbeiter, die in Abteilungen arbeiten,
+    die direkt von Meier (109) geleitet werden</p>
+<div class="w3-row-padding">
+    <div class="w3-col m4">
+        <pre><code class="language-sql">select oeid, name
+                from mitarbeiter
+                where oeid in (
+                select oeid
+                from orgeinheit
+                where leitung=109
+                );</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large">Unterabfrage liefert:<br>
+            15<br>
+            17
+        </p>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-40.png">
+    </div>
+</div>
+<p class="w3-large">Hinter dem Schlüsselwort in muss eine Liste von Werten kommen<br>
+    Für eine Unterabfrage bedeutet das: mehrere Zeilen aber nur eine Spalte</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Unterabfrage mit Verbund</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select oeid, name
+                from mitarbeiter
+                where oeid in (
+                select oe.oeid
+                from orgeinheit oe
+                join mitarbeiter m on m.mid=oe.leitung
+                where name='Meier'
+                );</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large">Hier dieselbe Abfrage mit Verwendung des Namens 'Meier'<br><br>
+            Erfordert einen Join in der Unterabfrage mit der Mitarbeitertabelle<br><br>
+            Wichtig: Der Join muss über die Leitungsbeziehung erfolgen</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Korrelierte Unterabfrage</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large">Durchschnitt pro Orgeinheit</p>
+        <pre><code class="language-sql">select
+                oeid,
+                name,
+                (select round(avg(gehalt))
+                from mitarbeiter dg
+                where dg.oeid=m.oeid) as dgehalt_abt
+                from mitarbeiter m
+                order by oeid, mid;</code></pre>
+        <ul class="w3-large">
+            <li>Unterschiedliche Werte
+                der Durchschnittsgehälter für Orgeinheiten</li>
+            <li>Bezug von der Unterabfrage auf die Hauptabfrage</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-50.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Unterabfragen im From-Teil</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+                m.oeid,
+                name,
+                gehalt,
+                dgehalt_abt,
+                gehalt - dgehalt_abt as diff
+                from mitarbeiter m
+                join
+                (select oeid, round(avg(gehalt)) as dgehalt_abt
+                from mitarbeiter
+                group by oeid) dabt
+                on m.oeid=dabt.oeid;</code></pre>
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-60.png">
+        <p class="w3-large">Kann als Ergebnis eine
+            "echte" Tabelle abliefern
+        </p>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-70.png">
+
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Mit CTE</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+                dabt as (
+                select oeid, round(avg(gehalt)) as dgehalt_abt
+                from mitarbeiter
+                group by oeid)
+                select
+                m.oeid,
+                name,
+                gehalt,
+                dgehalt_abt,
+                gehalt - dgehalt_abt as diff
+                from mitarbeiter m
+                join dabt on m.oeid=dabt.oeid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-70.png">
+
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Positionen für Unterabfragen</h1>
+<table class="w3-table-all">
+    <tr>
+        <th><code>select</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+    <tr>
+        <th><code>from</code></th>
+        <td>(select …) - keine Einschränkungen</th>
+    </tr>
+    <tr>
+        <th><code>where</code></th>
+        <td>(select …)
+            <ul>
+                <li>eine Zeile, eine Spalte</li>
+                <li>mehrere Zeilen, eine Spalte (in-Prädikat)</li>
+            </ul>
+    </tr>
+    <tr>
+        <th><code>group by</code></th>
+        <td>nicht zulässig</th>
+    </tr>
+    <tr>
+        <th><code>having</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+    <tr>
+        <th><code>order by</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+</table>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>All</h1>
+<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+                dg as (
+                select oeid, avg(gehalt) as dgehalt
+                from mitarbeiter
+                group by oeid
+                )
+                select oeid
+                from dg
+                where dgehalt >= all (select dgehalt from dg);</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-80.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-90.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Exists</h1>
+<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            dg as (
+              select oeid, avg(gehalt) as dgehalt
+              from mitarbeiter
+              group by oeid
+            )
+          select oeid
+          from dg dg1
+          where not exists (
+             select dgehalt 
+             from dg dg2 
+             where dg2.dgehalt > dg1.dgehalt
+          );</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-80.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-90.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Some</h1>
+<p class="w3-large">Abteilungen mit dem nicht-kleinsten Durchschnittsgehältern</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            dg as (
+              select oeid, avg(gehalt) as dgehalt
+              from mitarbeiter
+              group by oeid
+            )
+          select oeid
+          from dg
+          where dgehalt > some (select dgehalt from dg);</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-100.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-110.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
