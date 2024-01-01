@@ -264,6 +264,30 @@ n: 15
 -->
 {% include padding-id.html id=10 %}
 <h1>Unterabfragen im From-Teil</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+                m.oeid,
+                name,
+                gehalt,
+                dgehalt_abt,
+                gehalt - dgehalt_abt as diff
+                from mitarbeiter m
+                join
+                (select oeid, round(avg(gehalt)) as dgehalt_abt
+                from mitarbeiter
+                group by oeid) dabt
+                on m.oeid=dabt.oeid;</code></pre>
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-60.png">
+        <p class="w3-large">Kann als Ergebnis eine
+            "echte" Tabelle abliefern
+        </p>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-70.png">
+
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -272,6 +296,27 @@ n: 15
 -->
 {% include padding-id.html id=11 %}
 <h1>Mit CTE</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+                dabt as (
+                select oeid, round(avg(gehalt)) as dgehalt_abt
+                from mitarbeiter
+                group by oeid)
+                select
+                m.oeid,
+                name,
+                gehalt,
+                dgehalt_abt,
+                gehalt - dgehalt_abt as diff
+                from mitarbeiter m
+                join dabt on m.oeid=dabt.oeid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-70.png">
+
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -280,6 +325,37 @@ n: 15
 -->
 {% include padding-id.html id=12 %}
 <h1>Positionen für Unterabfragen</h1>
+<table class="w3-table-all">
+    <tr>
+        <th><code>select</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+    <tr>
+        <th><code>from</code></th>
+        <td>(select …) - keine Einschränkungen</th>
+    </tr>
+    <tr>
+        <th><code>where</code></th>
+        <td>(select …)
+            <ul>
+                <li>eine Zeile, eine Spalte</li>
+                <li>mehrere Zeilen, eine Spalte (in-Prädikat)</li>
+            </ul>
+    </tr>
+    <tr>
+        <th><code>group by</code></th>
+        <td>nicht zulässig</th>
+    </tr>
+    <tr>
+        <th><code>having</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+    <tr>
+        <th><code>order by</code></th>
+        <td>(select …) - eine Zeile, eine Spalte</th>
+    </tr>
+</table>
+
 <div class="ic-gap"></div>
 
 
@@ -288,6 +364,26 @@ n: 15
 -->
 {% include padding-id.html id=13 %}
 <h1>All</h1>
+<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+                dg as (
+                select oeid, avg(gehalt) as dgehalt
+                from mitarbeiter
+                group by oeid
+                )
+                select oeid
+                from dg
+                where dgehalt >= all (select dgehalt from dg);</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-80.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-90.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -295,7 +391,31 @@ n: 15
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>Some</h1>
+<h1>Exists</h1>
+<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            dg as (
+              select oeid, avg(gehalt) as dgehalt
+              from mitarbeiter
+              group by oeid
+            )
+          select oeid
+          from dg dg1
+          where not exists (
+             select dgehalt 
+             from dg dg2 
+             where dg2.dgehalt > dg1.dgehalt
+          );</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-80.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-90.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -303,5 +423,26 @@ n: 15
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>Exists</h1>
+<h1>Some</h1>
+<p class="w3-large">Abteilungen mit dem nicht-kleinsten Durchschnittsgehältern</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">with
+            dg as (
+              select oeid, avg(gehalt) as dgehalt
+              from mitarbeiter
+              group by oeid
+            )
+          select oeid
+          from dg
+          where dgehalt > some (select dgehalt from dg);</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-100.png">
+    </div>
+    <div class="w3-col m3">
+        <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-110.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
+

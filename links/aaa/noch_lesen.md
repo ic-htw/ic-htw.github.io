@@ -8,6 +8,27 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Stop Using localStorage
+[(link)](https://medium.com/@julienetienne/stop-using-localstorage-64a6d6805da8)
+
+- 10 Types of Databases Every Software Engineers Should Know
+[(link)](https://medium.com/@xsronhou/10-types-of-databases-every-software-engineers-should-know-c0f05ed0ec90)
+
+- Build an on-premise Data Lakehouse
+[(link)](https://blog.devgenius.io/build-an-on-premise-data-lakehouse-06fe8b5e9ac1)
+
+- Moving from DynamoDB to tiered storage with MySQL+S3
+[(link)](https://zendesk.engineering/moving-from-dynamodb-to-tiered-storage-with-mysql-s3-cb3dc9bf813a)
+
+- Why I regret about migrating to Neo4j
+[(link)](https://medium.com/@ilyalisov/why-i-regret-about-migrating-to-neo4j-9201089ca8e1)
+
+- Why Dremio is a must for Apache Iceberg Data Lakehouses
+[(link)](https://alexmercedcoder.medium.com/why-dremio-is-a-must-for-apache-iceberg-data-lakehouses-9baf2d1aef6e)
+
+- Is Storing Null Values in Postgres Something to Worry About?
+[(link)](https://kumaran-kugesh.medium.com/is-storing-null-values-in-postgres-something-to-worry-about-217b9630d694)
+
 - Reading Postgres Execution Plans doesn’t have to be so complicated
 [(link)](https://medium.com/@adamf_64691/reading-postgres-execution-plans-doesnt-have-to-be-so-complicated-7c274ce178b7)
 
