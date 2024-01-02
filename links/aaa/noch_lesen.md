@@ -8,32 +8,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Stop Using localStorage
-[(link)](https://medium.com/@julienetienne/stop-using-localstorage-64a6d6805da8)
+- DBT in a Nutshell
+[(link)](https://blog.devgenius.io/dbt-data-build-tool-in-a-nutshell-29028bc4e164)
 
-- 10 Types of Databases Every Software Engineers Should Know
-[(link)](https://medium.com/@xsronhou/10-types-of-databases-every-software-engineers-should-know-c0f05ed0ec90)
+- Revolutionizing RAG with Enhanced PDF Structure Recognition
+[(link)](https://medium.com/@chatdocai/revolutionizing-rag-with-enhanced-pdf-structure-recognition-22227af87442)
 
-- Build an on-premise Data Lakehouse
-[(link)](https://blog.devgenius.io/build-an-on-premise-data-lakehouse-06fe8b5e9ac1)
+- Design a Real-Time Leaderboard system for millions of users
+[(link)](https://medium.com/@mayilb77/design-a-real-time-leaderboard-system-for-millions-of-users-08b96b4b64ce)
 
-- Moving from DynamoDB to tiered storage with MySQL+S3
-[(link)](https://zendesk.engineering/moving-from-dynamodb-to-tiered-storage-with-mysql-s3-cb3dc9bf813a)
+- Web Storage API
+[(link)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
-- Why I regret about migrating to Neo4j
-[(link)](https://medium.com/@ilyalisov/why-i-regret-about-migrating-to-neo4j-9201089ca8e1)
-
-- Why Dremio is a must for Apache Iceberg Data Lakehouses
-[(link)](https://alexmercedcoder.medium.com/why-dremio-is-a-must-for-apache-iceberg-data-lakehouses-9baf2d1aef6e)
-
-- Is Storing Null Values in Postgres Something to Worry About?
-[(link)](https://kumaran-kugesh.medium.com/is-storing-null-values-in-postgres-something-to-worry-about-217b9630d694)
-
-- Reading Postgres Execution Plans doesn’t have to be so complicated
-[(link)](https://medium.com/@adamf_64691/reading-postgres-execution-plans-doesnt-have-to-be-so-complicated-7c274ce178b7)
-
-- How Shopify broke its Black Friday record (System Design case study)
-[(link)](https://learningdaily.dev/how-shopify-broke-its-black-friday-record-system-design-case-study-f45f25bbc451)
+- IndexedDB API
+[(link)](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 
 - Benchmarking LanceDB
 [(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)

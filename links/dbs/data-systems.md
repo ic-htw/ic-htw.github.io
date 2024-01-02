@@ -37,28 +37,6 @@ is_slide: 0
 - home
 [(link)](https://doris.apache.org/)
 
-# apache iceberg
-- home
-[(link)](https://iceberg.apache.org/)
-- doc
-[(link)](https://iceberg.apache.org/docs/latest/)
-- blog
-[(link)](https://iceberg.apache.org/blogs/)
-- Getting started with Apache Iceberg
-[(link)](https://medium.com/snowflake/getting-started-with-apache-iceberg-80f338921a31)
-- Apache Iceberg Crash Course for AWS users: Amazon S3, Athena &amp; AWS Glue - Iceberg
-[(link)](https://aws.plainenglish.io/apache-iceberg-crash-course-for-aws-users-amazon-s3-athena-aws-glue-%EF%B8%8F-iceberg-6541487a5cd8)
-- Boost Your Cloud Data Applications with DuckDB and Iceberg API
-[(link)](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3)
-- How Bilibili Builds OLAP Data Lakehouse with Apache Iceberg
-[(link)](https://medium.com/@lirui.fudan/how-bilibili-builds-olap-data-lakehouse-with-apache-iceberg-9f3408e53f9)
-- PyIceberg 0.4.0
-[(link)](https://tabular.medium.com/pyiceberg-0-4-0-71a1be07df7f)
-- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
-[(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
-- Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
-[(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
-
 # clickhouse
 - home
 [(link)](https://clickhouse.com/)
@@ -80,61 +58,6 @@ is_slide: 0
 [(link)](https://learn.microsoft.com/de-DE/azure/cosmos-db/)
 - Eine Einführung in die Azure Cosmos DB 
 [(link)](https://www.heise.de/hintergrund/Eine-Einfuehrung-in-die-Azure-Cosmos-DB-4446403.html)
-
-# dbt
-- doc
-[(link)](https://docs.getdbt.com/)
-- git
-[(link)](https://github.com/dbt-labs/dbt)
-- dbt — There is data at the end of the tunnel
-[(link)](https://adrianomedeirossantos.medium.com/dbt-there-is-data-at-the-end-of-the-tunnel-4173734ae109)
-- Moderne Data Pipelines mit dem data build tool (dbt) – Teil 1: Einführung
-[(link)](https://blog.viadee.de/data-build-tool-einf%C3%BChrung)
-- What Is data build tool (dbt) and How Is It Different?
-[(link)](https://aptitive.com/blog/what-is-dbt/)
-- DBT: A new way to transform data and build pipelines at The Telegraph
-[(link)](https://medium.com/the-telegraph-engineering/dbt-a-new-way-to-handle-data-transformation-at-the-telegraph-868ce3964eb4)
-- dbt-duckdb
-[(link)](https://github.com/duckdb/dbt-duckdb)
-- Transforming Data Engineering: A Deep Dive into dbt with DuckDB
-[(link)](https://blog.det.life/transforming-data-engineering-a-deep-dive-into-dbt-with-duckdb-ddd3a0c1e0c2)
-- Four Reasons that make DBT a great time saver for Data Engineers
-[(link)](https://medium.com/@montadhar/four-reasons-that-make-dbt-a-great-time-saver-for-data-engineers-4c4ceb721522)
-- A Modern Data Warehousing Tool: dbt & Introduction to Analytics Engineering
-[(link)](https://medium.com/codex/a-modern-data-warehousing-tool-dbt-introduction-to-analytics-engineering-d4245d868e3c)
-- dbt cheat sheet: 17 dbt Commands You Should Start Using Today
-[(link)](https://medium.com/indiciumtech/17-dbt-commands-you-should-start-using-today-581998dbf8f0)
-- dbt modeling at scale
-[(link)](https://medium.com/checkout-com-techblog/dbt-modeling-at-scale-2614202bb5d0)
-- To dbt or not to dbt
-[(link)](https://medium.com/intercom-rad/to-dbt-or-not-to-dbt-4e2d04f27d3a)
-- SQL cookbook for dbt: Transforming Big Data with Incremental Models
-[(link)](https://blog.det.life/sql-cookbook-for-dbt-transforming-big-data-with-incremental-models-48a91d1f5b56)
-- dbt Incremental Cookbook
-[(link)](https://medium.com/@aaronbannin/dbt-incremental-cookbook-d70331ef879a)
-- Head-to-head comparison of 3 dbt SQL engines
-[(link)](https://medium.com/datamindedbe/head-to-head-comparison-of-dbt-sql-engines-497d71535881)
-- DuckDB + Dbt + great expectations
-[(link)](https://pran-kohli-1990.medium.com/duckdb-dbt-great-expectations-awesome-data-pipelines-8b459ccd7afc)
-- Three dbt Macros I Use Every Day
-[(link)](https://noahlk.medium.com/three-dbt-macros-i-use-every-day-2966b3ad9b26)
-- Slowly Changing Dimension (SCD) Management in dbt
-[(link)](https://medium.com/@seckindinc/slowly-changing-dimension-scd-management-in-dbt-878cbcb9513a)
-- 3 Reasons Why Working With Data Build Tool (dbt) Is Not “Just Doing SQL”
-[(link)](https://medium.com/@lgsoliveira/3-reasons-why-working-with-data-build-tool-dbt-is-not-just-doing-sql-5b8d9c40a591)
-- Self-service Business Intelligence, Powered by dbt
-[(link)](https://medium.com/modern-business-intelligence/self-service-business-intelligence-powered-by-dbt-3b7e24a92e27)
-- Data Build Tool (DBT): SQL on Steroids
-[(link)](https://tech.bolt.com/data-build-tool-dbt-sql-on-steroids-f4e4622e3ce8)
-- One Year of dbt
-[(link)](https://tech.devoted.com/one-year-of-dbt-b2e8474841ca)
-- Why DBT will one day be bigger than Spark
-[(link)](https://medium.com/datamindedbe/why-dbt-will-one-day-be-bigger-than-spark-2225cadbdad0)
-- 5 Strong Reasons Why Data Build Tool (dbt) Got So Much Hype
-[(link)](https://levelup.gitconnected.com/5-strong-reasons-why-data-build-tool-dbt-got-so-much-hype-9030dda48b74)
-
-
-
 
 
 

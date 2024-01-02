@@ -46,8 +46,11 @@ title: JavaScript / CSS / HTML
 - cdnjs
 [(link)](https://cdnjs.com/)
 
-
-
+# Storage in Browser
+- Web Storage API
+[(link)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+- IndexedDB API
+[(link)](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 
 
 # JointJS

@@ -75,6 +75,8 @@ is_slide: 0
 
 
 # posts
+- Moving from DynamoDB to tiered storage with MySQL+S3
+[(link)](https://zendesk.engineering/moving-from-dynamodb-to-tiered-storage-with-mysql-s3-cb3dc9bf813a)
 - DynamoDB: When to Move Out
 [(link)](https://scylladb.medium.com/dynamodb-when-to-move-out-f900f23ad8a1)
 - Real-Time Data Aggregation Using DynamoDB Streams — Deliveroo’s System Design

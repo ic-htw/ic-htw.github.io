@@ -64,6 +64,14 @@ is_slide: 0
 [(link)](https://medium.com/analytics-vidhya/how-to-use-google-colab-with-github-via-google-drive-68efb23a42d)
 
 # diagram drawer
+- yEd Live
+[(link)](https://www.yworks.com/yed-live/)
+- DiagramGPT
+[(link)](https://www.eraser.io/diagramgpt)
+-  Draw.io
+[(link)](https://app.diagrams.net/)
+- ChatUML
+[(link)](https://chatuml.com/edit/new)
 - plantuml (live)
 [(link)](https://www.plantuml.com/plantuml/uml)
 [(link)](https://plantuml.com/de/)
@@ -76,8 +84,6 @@ is_slide: 0
 - sequence diagrams (live)
 [(link)](https://sequencediagram.org/)
 [(link)](https://sequencediagram.org/instructions.html)
-- diagrams.net (live)
-[(link)](https://app.diagrams.net/)
 - text-to-diagram
 [(link)](https://text-to-diagram.com/)
 - d2
@@ -148,6 +154,17 @@ is_slide: 0
 [(link)](https://grafana.com/docs/grafana/latest/)
 - docker
 [(link)](https://hub.docker.com/r/grafana/grafana)
+
+# ImageMagick
+- Home
+[(link)](https://imagemagick.org/index.php)
+- Resize or Scaling
+[(link)](https://imagemagick.org/Usage/resize/)
+- Examples of ImageMagick Usage
+[(link)](https://imagemagick.org/Usage/)
+- Anatomy of the Command-line
+[(link)](https://imagemagick.org/script/command-line-processing.php)
+
 
 # jekyll
 - jekyll
