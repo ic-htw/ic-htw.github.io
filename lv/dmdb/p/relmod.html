@@ -2,7 +2,7 @@
 layout: default
 title: "Relationenmodell"
 is_slide: 1
-n: 12
+n: 16
 ---
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=1 %}
@@ -315,4 +315,50 @@ ALTER TABLE ucla.studiengang
   ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid )
     ON DELETE CASCADE;
 </code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Datenmanipulation (DML-Befehle)</h1>
+<ul class="w3-large">
+  <li>Einfügen (INSERT)</li>
+  <li>Ändern (UPDATE)</li>
+  <li>Löschen (DELETE)</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>INSERT</h1>
+
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-10.png">
+<pre><code class="language-sql">INSERT INTO STUDENT(SID, MATRNR, NAME, VORNAME, IMMADATUM, SG)
+  VALUES (4, '505790', 'Al-Hasan', 'Mohammed', '01.10.2023', 1)</code></pre>
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-20.png">
+<div class="ic-gap"></div>
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>UPDATE</h1>
+
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-20.png">
+<pre><code class="language-sql">UPDATE STUDENT SET VORNAME='Mohamed' where SID=4</code></pre>
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-30.png">
+<div class="ic-gap"></div>
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>DELETE</h1>
+
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-30.png">
+<pre><code class="language-sql">DELETE FROM STUDENT WHERE SID=4</code></pre>
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-10.png">
 <div class="ic-gap"></div>
