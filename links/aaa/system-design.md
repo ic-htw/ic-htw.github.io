@@ -1,0 +1,12 @@
+---
+layout: default
+title: System Design
+is_slide: 0
+---
+
+- Design a Real-Time Leaderboard system for millions of users
+[(link)](https://medium.com/@mayilb77/design-a-real-time-leaderboard-system-for-millions-of-users-08b96b4b64ce)
+
+- Seamless Data Analytics Workflow: From Dockerized JupyterLab and MinIO to Insights with Spark SQL
+[(link)](https://towardsdatascience.com/seamless-data-analytics-workflow-from-dockerized-jupyterlab-and-minio-to-insights-with-spark-sql-3c5556a18ce6)
+

@@ -8,35 +8,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- DBT in a Nutshell
-[(link)](https://blog.devgenius.io/dbt-data-build-tool-in-a-nutshell-29028bc4e164)
+- Apache Iceberg, Git-Like Catalog Versioning and Data Lakehouse Management
+[(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
+
+- Discover ReBAC, the next-generation authorization model compatible with DDD
+[(link)](https://medium.com/@tpierrain/discover-rebac-the-next-generation-authorization-model-compatible-with-ddd-0d115cea6f2c)
+
+- Vectors are the new JSON in PostgreSQL
+[(link)](https://jkatz05.com/post/postgres/vectors-json-postgresql/)
 
 - Revolutionizing RAG with Enhanced PDF Structure Recognition
 [(link)](https://medium.com/@chatdocai/revolutionizing-rag-with-enhanced-pdf-structure-recognition-22227af87442)
-
-- Design a Real-Time Leaderboard system for millions of users
-[(link)](https://medium.com/@mayilb77/design-a-real-time-leaderboard-system-for-millions-of-users-08b96b4b64ce)
-
-- Web Storage API
-[(link)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
-
-- IndexedDB API
-[(link)](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
-
-- Benchmarking LanceDB
-[(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)
-
-- Seamless Data Analytics Workflow: From Dockerized JupyterLab and MinIO to Insights with Spark SQL
-[(link)](https://towardsdatascience.com/seamless-data-analytics-workflow-from-dockerized-jupyterlab-and-minio-to-insights-with-spark-sql-3c5556a18ce6)
-
-- Video Recommendations at Joyn
-[(link)](https://medium.com/tech-p7s1/video-recommendations-at-joyn-two-tower-or-not-to-tower-that-was-never-a-question-6c6f182ade7c)
-
-- Cheshire-Cat plugin SQL
-[(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
-
-- The Two Best Tools for Plotting Interactive Network Graphs
-[(link)](https://medium.com/@bl3e967/the-two-best-tools-for-plotting-interactive-network-graphs-8d352aa894d4)
 
 - Delivering billions of real-time updates cost-effectively: Our journey
 [(link)](https://medium.com/@Games24x7Tech/delivering-billions-of-real-time-updates-cost-effectively-our-journey-fe3bf06af1bc)

@@ -16,6 +16,8 @@ is_slide: 0
 [(link)](https://playground.memgraph.com/lesson/movielens-recommendation-systems-1)
 
 # other
+- Video Recommendations at Joyn
+[(link)](https://medium.com/tech-p7s1/video-recommendations-at-joyn-two-tower-or-not-to-tower-that-was-never-a-question-6c6f182ade7c)
 - Building a Recommender System Using Embeddings
 [(link)](https://drop.engineering/building-a-recommender-system-using-embeddings-de5a30e655aa)
 - eXtreme Deep Factorization Machine(xDeepFM)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Misc
+title: Services
 is_slide: 0
 ---
 # github

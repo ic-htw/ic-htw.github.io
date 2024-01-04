@@ -3,6 +3,10 @@ layout: default
 title: LLM Analytics
 is_slide: 0
 ---
+# aaa
+- Cheshire-Cat plugin SQL
+[(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
+
 
 #  Llama
 - Multimodal RAG pipeline with LlamaIndex and Neo4j
