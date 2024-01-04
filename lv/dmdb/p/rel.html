@@ -2,7 +2,7 @@
 layout: default
 title: "Relationenmodell"
 is_slide: 1
-n: 6
+n: 12
 ---
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=1 %}
@@ -14,16 +14,15 @@ n: 6
     <h2>Tabellenstruktur</h2>
     <ul class="w3-large">
       <li>Tabellenname (grün)</li>
-      <li>Spaltennamen (blau)</li>
+      <li>Spaltennamen (blaugrau)</li>
       <li>Primärschlüssel (unterstrichen)</li>
-      <li>Datentypen: Zahl, Zeichenkette, Datum</li>
     </ul>
   </div>
 
   <div class="w3-col m6">
     <h2>Tabelleninhalt</h2>
     <ul class="w3-large">
-      <li>Datensätze (grau)</li>
+      <li>Datensätze (hellgrau)</li>
     </ul>
   </div>
 </div>
@@ -69,13 +68,19 @@ n: 6
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=3 %}
 <h1>Fremdschlüssel</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-02.png"><br>
+<img class="w3-image" src="/lv/dmdb/a/relmod/tab-02.png">
 <img class="w3-image" src="/lv/dmdb/a/relmod/tab-03.png">
 
 <ul class="w3-large">
   <li>Spalte SG enthält Zeiger auf Studiengang-Datensätze</li>
-  <li>Studierende 1 und 2 studieren WI</li>
-  <li>Studierende 3 studiert AI</li>
+  <li>Fremd- und Primärschlüssel müssen gleichen Datentyp haben</li>
+  <li>Fremdschlüssel müssen nicht eindeutig sein</li>
+  <li>Werte in der Fremdschlüsselspalte müssen in der Zieltabelle als Primärschlüssel existieren</li>
+  <li>Repräsentieren eine 1-zu-n-Beziehung</li>
+  <ul class="w3-large">
+    <li>Studierende 1 und 2 studieren WI</li>
+    <li>Studierende 3 studiert AI</li>
+  </ul>
 </ul>
 <div class="ic-gap"></div>
 
@@ -128,12 +133,186 @@ n: 6
 <!-- ---------------------------------------------------------------------- -->
 {% include padding-id.html id=6 %}
 <h1>Strukturdarstellung</h1>
-<h2>Allgeine Darstellungsform</h2>
-<img class="w3-image" src="/lv/dmdb/a/relmod/dia-02.png">
-<h2>Darstellungsform des sqldevloper</h2>
-<img class="w3-image" src="/lv/dmdb/a/relmod/dia-01.png">
+<ul class="w3-large">
+  <li>Struktureller Überblick über Tabellen und Beziehungen</li>
+  <li>Keine Tabelleninhalte</li>
+  <li>Keine Detailinformationen</li>
+  <li>Kompakt und übersichtlich</li>
+</ul>
+<img class="w3-image" src="/lv/dmdb/a/relmod/stud-sg.png">
+<ul class="w3-large">
+  <li>Pfeil gibt Quelle und Ziel des Fremdschlüssels an</li>
+  <li>Quell- und Zielspalte stehen beim Pfeil</li>
+  <li>Kann weggelassen werden, falls gleiche Namen</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Werkzeugdarstellung</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <p class="w3-large">Kompakte Form (ohne Datentypen)</p>
+    <img class="w3-image" src="/lv/dmdb/a/relmod/00-100.png">
+    <p class="w3-large">Darstellung mit Datentypen</p>
+    <img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png">
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>Werkzeug: <b>sqldeveloper</b></li>
+      <li>Andere Werkzeuge liefern andere Darstellungen</li>
+      <li>Fremdschlüssel in Krähenfuß-Notation</li>
+      <li>Krähenfuß auf der N-Seite</li>
+      <li>Pfeilspitze auf 1-Seite</li>
+      <li>Primärschlüssel: P</li>
+      <li>Fremdschlüssel: F</li>
+      <li>Not Null: Sternchen (rot)</li>
+    </ul>
+  </div>
+</div>
+
+
 <div class="ic-gap"></div>
 
 
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Code-Erzeugung</h1>
+<img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png">
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  sid INTEGER NOT NULL,
+  matrnr VARCHAR2(10) NOT NULL,
+  name VARCHAR2(200) NOT NULL,
+  vorname VARCHAR2(200) NOT NULL,
+  immadatum DATE NOT NULL,
+  exmadatum DATE,
+  sg INTEGER NOT NULL
+);
+
+ALTER TABLE ucla.student 
+  ADD CONSTRAINT pk_student PRIMARY KEY ( sid );</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+  sgid INTEGER NOT NULL,
+  name VARCHAR2(200) NOT NULL,
+  standort VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE ucla.studiengang 
+  ADD CONSTRAINT pk_studiengang 
+  PRIMARY KEY ( sgid );</code></pre>
+  </div>
+</div>
+<div class="ic-gap"></div>
 
 
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Fremdschlüsselvariant 1</h1>
+<img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png">
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER NOT NULL
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid );
+</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Fremdschlüsselvariant 2</h1>
+<img class="w3-image" src="/lv/dmdb/a/relmod/02-100.png">
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid );
+</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Fremdschlüsselvariant 3</h1>
+<img class="w3-image" src="/lv/dmdb/a/relmod/03-100.png">
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER NOT NULL
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid )
+    ON DELETE CASCADE;
+</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Fremdschlüsselvariant 4</h1>
+<img class="w3-image" src="/lv/dmdb/a/relmod/04-100.png">
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid )
+    ON DELETE CASCADE;
+</code></pre>
+<div class="ic-gap"></div>
