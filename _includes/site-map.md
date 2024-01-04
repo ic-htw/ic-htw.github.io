@@ -102,7 +102,7 @@ Datenmodellierung und Datenbanksysteme
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/plan.html">Plan</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/dmdb/p/rel.html">Relationenmodell</a> <br>
+    <a  href="/lv/dmdb/p/relmod.html">Relationenmodell</a> <br>
     SQL<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
@@ -116,11 +116,11 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/sql-case.html">Fallbeipiele</a> <br>
     Datenmodelle - relational<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a  href="/lv/dmdb/p/unternehmen.html">Unternehmen</a> <br>
+        <a  href="/lv/dmdb/p/dm-unternehmen.html">Unternehmen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a  href="/lv/dmdb/p/playlist.html">Playlist</a> <br>
+        <a  href="/lv/dmdb/p/dm-playlist.html">Playlist</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a  href="/lv/dmdb/p/foodmart.html">Foodmart</a> <br>
+        <a  href="/lv/dmdb/p/dm-foodmart.html">Foodmart</a> <br>
     <a  href="/lv/dmdb/p/material.html">Material</a> <br>
 </div> 
 
