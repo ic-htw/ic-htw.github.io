@@ -121,6 +121,8 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/dm-playlist.html">Playlist</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/dm-foodmart.html">Foodmart</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/dm-gm.html">Gartenmöbel</a> <br>
     Arbeitsblätter<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/ab-01.html">Arbeitsblatt 1</a> <br>
