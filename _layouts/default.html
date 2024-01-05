@@ -70,7 +70,7 @@
     <a class="w3-bar-item w3-button w3-theme w3-left" href="#">Top</a>
     <a class="w3-bar-item w3-button w3-theme w3-left" href="/">Home</a>
     {% if page.is_slide == 1 %}
-    {% for i in (1..page.n) reversed %}
+    {% for i in (0..page.n) reversed %}
     <a id="btn-{{i}}" href="#{{i}}" class="w3-button w3-bar-item w3-right" onclick="activateButton(this)">{{i}}</a>
     {% endfor %}
     <script>
