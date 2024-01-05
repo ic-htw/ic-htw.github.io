@@ -2,13 +2,14 @@ function init() {
     navitemsHandle();
     slideModeSetOn();
     fillSecondSidebar();
+    fillToc();
     deactivateButton();
     // window.location.href = "#1"
 }
 
 function activateButton(btn) {
     const icActive = document.getElementsByClassName("ic-active");
-    if (icActive.length > 0) { 
+    if (icActive.length > 0) {
         icActive[0].className = icActive[0].className.replace(" ic-active", "");
     }
     btn.className += " ic-active";
@@ -17,7 +18,7 @@ function activateButton(btn) {
 
 function deactivateButton() {
     const icActive = document.getElementsByClassName("ic-active");
-    if (icActive.length > 0) { 
+    if (icActive.length > 0) {
         icActive[0].className = icActive[0].className.replace(" ic-active", "");
     }
 }
@@ -76,10 +77,8 @@ function slidemodeHandle() {
 function navitemToggle(id) {
     console.log(id);
     if (isNavitemIsOff(id)) {
-        console.log("was off");
         setNavitemOn(id);
     } else {
-        console.log("was on");
         setNavitemOff(id);
     }
     navitemsHandle();
@@ -136,7 +135,7 @@ function navitemsHandle() {
 }
 
 function fillSecondSidebar() {
-    const children = Object.entries(document.getElementById("ct").children);
+    const children = Object.entries(document.getElementById("ct").childNodes);
     const headers = children.filter(a => a[1].nodeName[0] === "H").map(a => [a[1].textContent, a[1].id])
     const sb2cont = document.getElementById('sb2cont');
     headers.forEach(h => {
@@ -148,5 +147,29 @@ function fillSecondSidebar() {
         sb2cont.appendChild(p);
     });
 }
+
+function fillToc() {
+    const children = Object.entries(document.getElementById("ct").childNodes);
+    const headers = children.filter(x => x[1].tagName === "H1").map(a => a[1].textContent);
+    console.log(headers)
+    const tocCont = document.getElementById('toc');
+    let i = 1;
+    headers.forEach(h => {
+        // const p = document.createElement("p");
+        // const a = document.createElement("a");
+        // a.href = "#" + i;
+        // a.innerText = h;
+        // p.appendChild(a);
+        const btn = document.createElement("button");
+        btn.textContent = h;
+        btn.addEventListener('click', () => {
+            console.log("#" + i)
+            window.location.href = "#" + i;
+        });
+        tocCont.appendChild(btn);
+        i = i + 1;
+    });
+}
+
 
 
