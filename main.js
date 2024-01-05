@@ -151,25 +151,29 @@ function fillSecondSidebar() {
 function fillToc() {
     const children = Object.entries(document.getElementById("ct").childNodes);
     const headers = children.filter(x => x[1].tagName === "H1").map(a => a[1].textContent);
-    console.log(headers)
     const tocCont = document.getElementById('toc');
     let i = 1;
     headers.forEach(h => {
-        // const p = document.createElement("p");
-        // const a = document.createElement("a");
-        // a.href = "#" + i;
-        // a.innerText = h;
-        // p.appendChild(a);
         const btn = document.createElement("button");
+        const br = document.createElement("br");
         btn.textContent = h;
-        btn.addEventListener('click', () => {
-            console.log("#" + i)
-            window.location.href = "#" + i;
-        });
+        btn.classList.add("w3-button")
+        btn.addEventListener('click', makeClickCallback(i));
         tocCont.appendChild(btn);
+        tocCont.appendChild(br);
         i = i + 1;
     });
 }
 
+function clickTocBtn(i) {
+    console.log(`#${i}`)
+    window.location.href = `#${i}`;
+    const slideBtn = document.getElementById(`btn-${i}`);
+    activateButton(slideBtn);
+}
 
-
+function makeClickCallback(i) {
+    return function () {
+        clickTocBtn(i);
+    };
+}
