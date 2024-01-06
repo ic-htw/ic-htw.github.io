@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building Pinterest’s new wide column database using RocksDB
+[(link)](https://medium.com/pinterest-engineering/building-pinterests-new-wide-column-database-using-rocksdb-f5277ee4e3d2)
+
+- Gen AI Frameworks and Tools Every AI/ML Engineer Should Know!
+[(link)](https://levelup.gitconnected.com/gen-ai-frameworks-and-tools-every-ai-ml-engineer-should-know-1f0ce36f1452)
+
+- Databases in 2023: A Year in Review
+[(link)](https://ottertune.com/blog/2023-databases-retrospective)
+
 - Apache Iceberg, Git-Like Catalog Versioning and Data Lakehouse Management
 [(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
 

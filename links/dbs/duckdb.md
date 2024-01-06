@@ -8,12 +8,16 @@ is_slide: 0
 [(link)](https://duckdb.org/docs/)
 - blog
 [(link)](https://duckdb.org/news/)
+- Awesome DuckDB
+[(link)](https://github.com/davidgasquez/awesome-duckdb)
 
 # graph
 - duckdb-pgq - git
 [(link)](https://github.com/cwida/duckdb-pgq)
 
 # posts
+- The One Billion Row Challenge in SQL with DuckDB
+[(link)](https://rmoff.net/2024/01/03/1%EF%B8%8F%E2%83%A3%EF%B8%8F-1brc-in-sql-with-duckdb/)
 - Progression of DuckDB Performance
 [(link)](https://pdeyhim.medium.com/progression-of-duckdb-performance-649b83e02b17)
 - Ducktales — Part 2: Pandas vs DuckDB — large dataset processing comparison
