@@ -101,8 +101,11 @@ Datenmodellierung und Datenbanksysteme
     <a  href="/lv/dmdb/p/intro.html">Überblick</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/plan.html">Plan</a> <br>
+    Rel<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/relmod.html">Relationenmodell</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/dmdb/p/rel-excel.html">Excel / Rel </a> <br>
     SQL<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
