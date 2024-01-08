@@ -2,7 +2,8 @@
 layout: default
 title: "Abfragen auf einer Tabelle"
 is_slide: 1
-n: 16
+n: 18
+hide: 1
 ---
 <!--
     00 ******************************************************************
@@ -272,7 +273,7 @@ FETCH FIRST 3 ROWS ONLY;</code></pre>
         <pre><code class="language-sql">SELECT * FROM dual;</code></pre>
     </div>
     <div class="w3-col m6">
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/tab-13.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -296,35 +297,22 @@ FETCH FIRST 3 ROWS ONLY;</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>UNION [ALL]</h1>
-<div class="w3-row-padding">
+<h1>UNION 1</h1>
+T01
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
     <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT 10 from dual
+        <pre><code class="language-sql">SELECT id, name, Vorname
+FROM t01
 UNION
-SELECT 20 from dual
-UNION
-SELECT 30 from dual
-UNION
-SELECT 30 from dual
-;</code></pre>
+SELECT id, nachname as name, rufname as vorname
+FROM t02;</code></pre>
     </div>
     <div class="w3-col m6">
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    </div>
-</div>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT 10 from dual
-UNION
-SELECT 20 from dual
-UNION
-SELECT 30 from dual
-UNION ALL
-SELECT 30 from dual
-;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/set-30.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -334,7 +322,36 @@ SELECT 30 from dual
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>UNION 2</h1>
+T01
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+UNION
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/set-40.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+UNION ALL
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/set-50.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -342,7 +359,24 @@ SELECT 30 from dual
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1>INTERSECT</h1>
+T01
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+INTERSECT
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/set-60.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -350,7 +384,24 @@ SELECT 30 from dual
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>xxx</h1>
+<h1>MINUS</h1>
+T01
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+MINUS
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/set-70.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -358,7 +409,34 @@ SELECT 30 from dual
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Ausgewählte Datumsfunktionen</h1>
+T10
+<img class="w3-image" src="/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT * FROM t10 
+where ende = to_date('2023/01/17', 'YYYY/MM/DD');</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/dat-20.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT ende - beginn AS anzahl_tage  FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-one/dat-30.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT ende, ende + 2  FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-one/dat-40.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -366,7 +444,27 @@ SELECT 30 from dual
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1>Ausgewählte Zeichenkettenfunktionen</h1>
+T10
+<img class="w3-image" src="/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT aufgabe || 'a' as a
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/str-10.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT substr(aufgabe, 2, 3) as a
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-one/str-20.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -374,7 +472,27 @@ SELECT 30 from dual
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1>Länge ermitteln / Formatierung</h1>
+T10
+<img class="w3-image" src="/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT length(aufgabe) as l
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/lv/dmdb/a/sql-one/str-30.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT to_char(substr(aufgabe, 9, 1), '000') as n
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-one/str-40.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -382,7 +500,27 @@ SELECT 30 from dual
     18 ******************************************************************
 -->
 {% include padding-id.html id=18 %}
-<h1>xxx</h1>
+<h1>Playlist - Transformation Stückedauer</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-one/pl-10.png">
+    </div>
+    <div class="w3-col m6">
+{% if page.hide == 0 %}
+            <pre><code class="language-sql">SELECT 
+  sid,
+  titel,
+  dauerinsek,
+  to_char(trunc(dauerinsek/60), '999') 
+    || ':' ||
+    to_char(mod(dauerinsek, 60), 'FM09') 
+      as dauer
+FROM stueck;</code></pre>
+{% else %} 
+             <pre><code class="language-sql">SELECT ...</code></pre>
+{% endif %} 
+</div>
+</div>
 <div class="ic-gap"></div>
 
 
