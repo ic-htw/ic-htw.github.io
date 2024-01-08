@@ -1,5 +1,5 @@
-- How to Build Internal Analytics Without Relying on Senior Engineers
-[(link)](https://medium.com/gooddata-developers/how-to-build-internal-analytics-without-relying-on-senior-engineers-b2d5032be2bc)
+- How to Build Internal Analytics Without Relying ON Senior Engineers
+[(link)](https://medium.com/gooddata-developers/how-to-build-internal-analytics-without-relying-ON-senior-engineers-b2d5032be2bc)
 
 
 - Google Charts
