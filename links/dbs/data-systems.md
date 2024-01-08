@@ -40,6 +40,9 @@ is_slide: 0
 # clickhouse
 - home
 [(link)](https://clickhouse.com/)
+- ClickHouse: A Blazingly Fast DBMS with Full SQL Join Support
+[(link)](https://medium.com/clickhousedb/clickhouse-a-blazingly-fast-dbms-with-full-sql-join-support-3eb3b38c59c5)
+
 
 # cockroachdb
 - docs
@@ -261,6 +264,9 @@ is_slide: 0
 [(link)](https://docs.scylladb.com/stable/)
 - blog
 [(link)](https://www.scylladb.com/blog/)
+- ScyllaDB’s Path to Strong Consistency
+[(link)](https://scylladb.medium.com/scylladbs-path-to-strong-consistency-a-new-milestone-3f9f7a18bae7)
+        
 
 # sqlite
 - SQLite compiled to JavaScript

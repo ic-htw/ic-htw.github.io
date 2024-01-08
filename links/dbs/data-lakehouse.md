@@ -9,6 +9,12 @@ is_slide: 0
 [(link)](https://blog.devgenius.io/build-an-on-premise-data-lakehouse-06fe8b5e9ac1)
 - Why Dremio is a must for Apache Iceberg Data Lakehouses
 [(link)](https://alexmercedcoder.medium.com/why-dremio-is-a-must-for-apache-iceberg-data-lakehouses-9baf2d1aef6e)
+- Delta, Hudi, Iceberg — A Benchmark Compilation
+[(link)](https://medium.com/@kywe665/delta-hudi-iceberg-a-benchmark-compilation-a5630c69cffc)
+- Data lake Table formats : Apache Iceberg vs Apache Hudi vs Delta lake
+[(link)](https://shashwat-pandey.medium.com/data-lake-table-formats-apache-iceberg-vs-apache-hudi-vs-delta-lake-10b67a1d587)
+
+
 
 
 # apache iceberg

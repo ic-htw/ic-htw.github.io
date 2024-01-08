@@ -59,6 +59,9 @@ is_slide: 0
 [(link)](https://www.cloudbees.com/blog/unleash-the-power-of-storing-json-in-postgres)
 - How to JSON in PostgreSQL
 [(link)](https://ftisiot.net/postgresqljson/main/)
+- pgJQ: Use jq in Postgres
+[(link)](https://github.com/Florents-Tselai/pgJQ)
+
 
 
 # graph
@@ -116,7 +119,11 @@ is_slide: 0
 
 
 # misc
-- Pgbench Load Test
+- temBoard - PostgreSQL Remote Control
+[(link)](https://github.com/dalibo/temboard)    
+- pgexporter is a Prometheus exporter for PostgreSQL
+[(link)](https://github.com/pgexporter/pgexporter/tree/main)
+        - Pgbench Load Test
 [(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
 - Did you forget to allocate Huge Pages on your PostgreSQL server?
 [(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)

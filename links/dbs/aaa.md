@@ -26,6 +26,9 @@ is_slide: 0
 - SQLPage
 [(link)](https://sql.ophir.dev/)
 [(link)](https://www.postgresql.org/about/news/announcing-sqlpage-build-dynamic-web-applications-in-sql-2672/)
+- Databases in 2023: A Year in Review
+[(link)](https://ottertune.com/blog/2023-databases-retrospective)
+
 
 
 

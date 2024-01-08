@@ -132,6 +132,11 @@ is_slide: 0
 [(link)](https://education.github.com/git-cheat-sheet-education.pdf)
 - Git, from zero to hero
 [(link)](https://mateusclira.medium.com/git-from-zero-to-hero-509a7e75b4c0)
+- GitArchitecture — a better way to capture Architectural decisions
+[(link)](https://kylegenebrown.medium.com/gitarchitecture-a-better-way-to-capture-architectural-decisions-b3574a3d604)
+- Choosing the Right Git Branching Strategy: A Comparative Analysis
+[(link)](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
+
 
 # github
 - Get started with GitHub
@@ -308,6 +313,9 @@ is_slide: 0
 [(link)](https://code.visualstudio.com/docs/remote/wsl)
 - SQLTools
 [(link)](https://vscode-sqltools.mteixeira.dev/en/home)
+- The Ultimate VS Code Setup for Python
+[(link)](https://medium.com/@ordinaryindustries/the-ultimate-vs-code-setup-for-python-538026b34d94)
+ 
 
 # wsl
 - home

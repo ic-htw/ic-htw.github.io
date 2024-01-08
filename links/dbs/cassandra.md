@@ -29,7 +29,9 @@ is_slide: 0
 
 
 # posts
-- Time Series Data Modeling
+- Open-sourcing a 10x reduction in Apache Cassandra tail latency
+[(link)](https://instagram-engineering.com/open-sourcing-a-10x-reduction-in-apache-cassandra-tail-latency-d64f86b43589)
+        - Time Series Data Modeling
 [(link)](https://www.datastax.com/learn/data-modeling-by-example/time-series-model)
 - A Comprehensive Guide to Apache Cassandra Architecture
 [(link)](https://www.instaclustr.com/blog/cassandra-architecture/)

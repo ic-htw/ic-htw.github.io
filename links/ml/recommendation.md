@@ -16,6 +16,8 @@ is_slide: 0
 [(link)](https://playground.memgraph.com/lesson/movielens-recommendation-systems-1)
 
 # other
+- MLOps for recommenders - Deploying Recommender System in Production
+[(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
 - Video Recommendations at Joyn
 [(link)](https://medium.com/tech-p7s1/video-recommendations-at-joyn-two-tower-or-not-to-tower-that-was-never-a-question-6c6f182ade7c)
 - Building a Recommender System Using Embeddings

@@ -26,6 +26,8 @@ is_slide: 0
 [(link)](https://neo4j.com/docs/operations-manual/current/docker/)
 
 # python
+- Neo4j Python 4.0 driver
+[(link)](https://medium.com/neo4j/neo4j-python-4-0-driver-the-latest-driver-for-the-next-gen-database-a5be6ecd481f)
 - Neo4j Bolt driver for Python - pip install neo4j
 [(link)](https://github.com/neo4j/neo4j-python-driver)
 - Neo4j Graph Data Science Client - pip install graphdatascience
@@ -36,9 +38,10 @@ is_slide: 0
 [(link)](https://github.com/yWorks/yfiles-jupyter-graphs)
 
 # posts
+- Analyzing the Evolution of Life on Earth with Neo4j
+[(link)](https://towardsdatascience.com/analyzing-the-evolution-of-life-on-earth-with-neo4j-7daeeb1e032d)
 - A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm
 [(link)](https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d)
-
 - How to use Cypher Aggregations in Neo4j Graph Data Science library
 [(link)](https://towardsdatascience.com/how-to-use-cypher-aggregations-in-neo4j-graph-data-science-library-5d8c40c2670c)
 - How Cypher changed in Neo4j v5
