@@ -20,9 +20,9 @@ n: 15
 <h1>Durchschnittsgehalt als Bedingung</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select
+        <pre><code class="language-sql">SELECT
                 round(avg(gehalt))
-                from mitarbeiter;</code></pre>
+                FROM mitarbeiter;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-10.png">
@@ -30,10 +30,10 @@ n: 15
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select name
-                from mitarbeiter
-                where gehalt > 67333
-                order by name;/code></pre>
+        <pre><code class="language-sql">SELECT name
+                FROM mitarbeiter
+                WHERE gehalt > 67333
+                ORDER BY name;/code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-20.png">
@@ -61,14 +61,14 @@ n: 15
 </p>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select name
-                from mitarbeiter
-                where gehalt >= (
-                select
+        <pre><code class="language-sql">SELECT name
+                FROM mitarbeiter
+                WHERE gehalt >= (
+                SELECT
                 round(avg(gehalt))
-                from mitarbeiter
+                FROM mitarbeiter
                 )
-                order by name;</code></pre>
+                ORDER BY name;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-10.png">
@@ -84,14 +84,14 @@ n: 15
 <h1>Konzeptproblem</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select name
-                from mitarbeiter
-                where gehalt >= (
-                select
+        <pre><code class="language-sql">SELECT name
+                FROM mitarbeiter
+                WHERE gehalt >= (
+                SELECT
                 round(avg(gehalt))
-                from mitarbeiter
+                FROM mitarbeiter
                 )
-                order by name;</code></pre>
+                ORDER BY name;</code></pre>
     </div>
     <div class="w3-col m6">
         <p class="w3-large">Gehalt ist eine Zahl<br>
@@ -135,13 +135,13 @@ n: 15
 <!-- Row -->
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql">select
+        <pre><code class="language-sql">SELECT
                 name,
                 gehalt,
-                (select round(avg(gehalt)) from mitarbeiter) as dgehalt,
-                gehalt - (select round(avg(gehalt)) from mitarbeiter) as diff
-                from mitarbeiter
-                order by gehalt - (select round(avg(gehalt)) from mitarbeiter) desc;</code></pre>
+                (SELECT round(avg(gehalt)) FROM mitarbeiter) AS dgehalt,
+                gehalt - (SELECT round(avg(gehalt)) FROM mitarbeiter) AS diff
+                FROM mitarbeiter
+                ORDER BY gehalt - (SELECT round(avg(gehalt)) FROM mitarbeiter) desc;</code></pre>
         <p class="w3-large">Unterabfragen ermöglichen die Kombination
             von Detail- und aggregierten Werten in einer Abfrage
         </p>
@@ -162,14 +162,14 @@ n: 15
     <div class="w3-col m7">
         <p class="w3-large">Mehrfach verwendete Unterabfragen herausziehen und mit with definieren</p>
         <pre><code class="language-sql">with
-                dg as (select round(avg(gehalt)) as dgehalt from mitarbeiter)
-                select
+                dg AS (SELECT round(avg(gehalt)) AS dgehalt FROM mitarbeiter)
+                SELECT
                 name,
                 gehalt,
                 dgehalt,
-                gehalt - dgehalt as diff
-                from mitarbeiter cross join dg
-                order by gehalt - dgehalt desc;
+                gehalt - dgehalt AS diff
+                FROM mitarbeiter cross join dg
+                ORDER BY gehalt - dgehalt desc;
             </code></pre>
         <p class="w3-large">Jeder Mitarbeiter-Datensatz soll um den Wert "dgehalt" ergänzt werden -> cross join
         </p>
@@ -190,12 +190,12 @@ n: 15
     die direkt von Meier (109) geleitet werden</p>
 <div class="w3-row-padding">
     <div class="w3-col m4">
-        <pre><code class="language-sql">select oeid, name
-                from mitarbeiter
-                where oeid in (
-                select oeid
-                from orgeinheit
-                where leitung=109
+        <pre><code class="language-sql">SELECT oeid, name
+                FROM mitarbeiter
+                WHERE oeid in (
+                SELECT oeid
+                FROM orgeinheit
+                WHERE leitung=109
                 );</code></pre>
     </div>
     <div class="w3-col m4">
@@ -221,13 +221,13 @@ n: 15
 <h1>Unterabfrage mit Verbund</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select oeid, name
-                from mitarbeiter
-                where oeid in (
-                select oe.oeid
-                from orgeinheit oe
-                join mitarbeiter m on m.mid=oe.leitung
-                where name='Meier'
+        <pre><code class="language-sql">SELECT oeid, name
+                FROM mitarbeiter
+                WHERE oeid in (
+                SELECT oe.oeid
+                FROM orgeinheit oe
+                join mitarbeiter m ON m.mid=oe.leitung
+                WHERE name='Meier'
                 );</code></pre>
     </div>
     <div class="w3-col m6">
@@ -246,14 +246,14 @@ n: 15
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <p class="w3-large">Durchschnitt pro Orgeinheit</p>
-        <pre><code class="language-sql">select
+        <pre><code class="language-sql">SELECT
                 oeid,
                 name,
-                (select round(avg(gehalt))
-                from mitarbeiter dg
-                where dg.oeid=m.oeid) as dgehalt_abt
-                from mitarbeiter m
-                order by oeid, mid;</code></pre>
+                (SELECT round(avg(gehalt))
+                FROM mitarbeiter dg
+                WHERE dg.oeid=m.oeid) AS dgehalt_abt
+                FROM mitarbeiter m
+                ORDER BY oeid, mid;</code></pre>
         <ul class="w3-large">
             <li>Unterschiedliche Werte
                 der Durchschnittsgehälter für Orgeinheiten</li>
@@ -274,18 +274,18 @@ n: 15
 <h1>Unterabfragen im From-Teil</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select
+        <pre><code class="language-sql">SELECT
                 m.oeid,
                 name,
                 gehalt,
                 dgehalt_abt,
-                gehalt - dgehalt_abt as diff
-                from mitarbeiter m
+                gehalt - dgehalt_abt AS diff
+                FROM mitarbeiter m
                 join
-                (select oeid, round(avg(gehalt)) as dgehalt_abt
-                from mitarbeiter
+                (SELECT oeid, round(avg(gehalt)) AS dgehalt_abt
+                FROM mitarbeiter
                 group by oeid) dabt
-                on m.oeid=dabt.oeid;</code></pre>
+                ON m.oeid=dabt.oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-60.png">
         <p class="w3-large">Kann als Ergebnis eine
             "echte" Tabelle abliefern
@@ -307,18 +307,18 @@ n: 15
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">with
-                dabt as (
-                select oeid, round(avg(gehalt)) as dgehalt_abt
-                from mitarbeiter
+                dabt AS (
+                SELECT oeid, round(avg(gehalt)) AS dgehalt_abt
+                FROM mitarbeiter
                 group by oeid)
-                select
+                SELECT
                 m.oeid,
                 name,
                 gehalt,
                 dgehalt_abt,
-                gehalt - dgehalt_abt as diff
-                from mitarbeiter m
-                join dabt on m.oeid=dabt.oeid;</code></pre>
+                gehalt - dgehalt_abt AS diff
+                FROM mitarbeiter m
+                join dabt ON m.oeid=dabt.oeid;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-70.png">
@@ -335,16 +335,16 @@ n: 15
 <h1>Positionen für Unterabfragen</h1>
 <table class="w3-table-all">
     <tr>
-        <th><code>select</code></th>
-        <td>(select …) - eine Zeile, eine Spalte</th>
+        <th><code>SELECT</code></th>
+        <td>(SELECT …) - eine Zeile, eine Spalte</th>
     </tr>
     <tr>
-        <th><code>from</code></th>
-        <td>(select …) - keine Einschränkungen</th>
+        <th><code>FROM</code></th>
+        <td>(SELECT …) - keine Einschränkungen</th>
     </tr>
     <tr>
-        <th><code>where</code></th>
-        <td>(select …)
+        <th><code>WHERE</code></th>
+        <td>(SELECT …)
             <ul>
                 <li>eine Zeile, eine Spalte</li>
                 <li>mehrere Zeilen, eine Spalte (in-Prädikat)</li>
@@ -356,11 +356,11 @@ n: 15
     </tr>
     <tr>
         <th><code>having</code></th>
-        <td>(select …) - eine Zeile, eine Spalte</th>
+        <td>(SELECT …) - eine Zeile, eine Spalte</th>
     </tr>
     <tr>
-        <th><code>order by</code></th>
-        <td>(select …) - eine Zeile, eine Spalte</th>
+        <th><code>ORDER BY</code></th>
+        <td>(SELECT …) - eine Zeile, eine Spalte</th>
     </tr>
 </table>
 
@@ -376,14 +376,14 @@ n: 15
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">with
-                dg as (
-                select oeid, avg(gehalt) as dgehalt
-                from mitarbeiter
+                dg AS (
+                SELECT oeid, avg(gehalt) AS dgehalt
+                FROM mitarbeiter
                 group by oeid
                 )
-                select oeid
-                from dg
-                where dgehalt >= all (select dgehalt from dg);</code></pre>
+                SELECT oeid
+                FROM dg
+                WHERE dgehalt >= all (SELECT dgehalt FROM dg);</code></pre>
     </div>
     <div class="w3-col m3">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-80.png">
@@ -404,17 +404,17 @@ n: 15
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">with
-            dg as (
-              select oeid, avg(gehalt) as dgehalt
-              from mitarbeiter
+            dg AS (
+              SELECT oeid, avg(gehalt) AS dgehalt
+              FROM mitarbeiter
               group by oeid
             )
-          select oeid
-          from dg dg1
-          where not exists (
-             select dgehalt 
-             from dg dg2 
-             where dg2.dgehalt > dg1.dgehalt
+          SELECT oeid
+          FROM dg dg1
+          WHERE not exists (
+             SELECT dgehalt 
+             FROM dg dg2 
+             WHERE dg2.dgehalt > dg1.dgehalt
           );</code></pre>
     </div>
     <div class="w3-col m3">
@@ -436,14 +436,14 @@ n: 15
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="language-sql">with
-            dg as (
-              select oeid, avg(gehalt) as dgehalt
-              from mitarbeiter
+            dg AS (
+              SELECT oeid, avg(gehalt) AS dgehalt
+              FROM mitarbeiter
               group by oeid
             )
-          select oeid
-          from dg
-          where dgehalt > some (select dgehalt from dg);</code></pre>
+          SELECT oeid
+          FROM dg
+          WHERE dgehalt > some (SELECT dgehalt FROM dg);</code></pre>
     </div>
     <div class="w3-col m3">
         <img class="w3-image" src="/lv/dmdb/a/sql-sub/tab-100.png">

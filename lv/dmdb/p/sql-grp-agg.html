@@ -23,14 +23,14 @@ n: 13
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-mitarbeiter.png">
     </div>
     <div class="w3-col m6">
-        <pre><code class="language-sql">select
+        <pre><code class="language-sql">SELECT
   sum(gehalt),
   round(avg(gehalt)),
   min(gehalt),
   max(gehalt),
   count(*),
   count(bonus)
-from mitarbeiter;</code></pre>
+FROM mitarbeiter;</code></pre>
     </div>
 </div>
 <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-02.png">
@@ -47,16 +47,16 @@ from mitarbeiter;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-mitarbeiter.png">
     </div>
     <div class="w3-col m6">
-        <pre><code class="language-sql">select oeid,
+        <pre><code class="language-sql">SELECT oeid,
   sum(gehalt),
   round(avg(gehalt)),
   min(gehalt),
   max(gehalt),
   count(*),
   count(bonus)
-from mitarbeiter
+FROM mitarbeiter
 group by oeid
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
     </div>
 </div>
 <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-03.png">
@@ -92,10 +92,10 @@ order by oeid;</code></pre>
 <h1>Aggregationsebenen</h1>
 <div class="w3-row-padding">
     <div class="w3-col m4">
-        <pre><code class="language-sql">select oeid, sum(gehalt)
-from mitarbeiter
+        <pre><code class="language-sql">SELECT oeid, sum(gehalt)
+FROM mitarbeiter
 group by oeid
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
     </div>
     <div class="w3-col m4">
         <ul class="w3-large">
@@ -113,10 +113,10 @@ order by oeid;</code></pre>
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m4">
-        <pre><code class="language-sql">select oeid, name, sum(gehalt)
-from mitarbeiter
+        <pre><code class="language-sql">SELECT oeid, name, sum(gehalt)
+FROM mitarbeiter
 group by oeid
-order by oeid;
+ORDER BY oeid;
             </code></pre>
     </div>
     <div class="w3-col m4">
@@ -148,13 +148,13 @@ order by oeid;
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-orgeinheit.png">
     </div>
     <div class="w3-col m5">
-        <pre><code class="language-sql">select oe.bezeichnung,
+        <pre><code class="language-sql">SELECT oe.bezeichnung,
   sum(gehalt),
   count(*)
-from mitarbeiter m
-     join orgeinheit oe on oe.oeid=m.oeid
+FROM mitarbeiter m
+     join orgeinheit oe ON oe.oeid=m.oeid
 group by oe.bezeichnung
-order by oe.bezeichnung;</code></pre>
+ORDER BY oe.bezeichnung;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-041.png">
     </div>
 </div>
@@ -171,13 +171,13 @@ order by oe.bezeichnung;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/tab-mitarbeiter.png">
     </div>
     <div class="w3-col m6">
-        <pre><code class="language-sql">select
-  extract(year from eintrittsdatum) as eintrittsjahr,
+        <pre><code class="language-sql">SELECT
+  extract(year FROM eintrittsdatum) AS eintrittsjahr,
   sum(gehalt),
   count(*)
-from mitarbeiter
-group by extract(year from eintrittsdatum)
-order by extract(year from eintrittsdatum);</code></pre>
+FROM mitarbeiter
+group by extract(year FROM eintrittsdatum)
+ORDER BY extract(year FROM eintrittsdatum);</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-05.png">
     </div>
 </div>
@@ -194,18 +194,18 @@ order by extract(year from eintrittsdatum);</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/qry-mitarbeiter-02.png">
     </div>
     <div class="w3-col m7">
-        <pre><code class="language-sql">select
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end as eintritt,
+        <pre><code class="language-sql">SELECT
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END AS eintritt,
   sum(gehalt), count(*)
-from mitarbeiter
+FROM mitarbeiter
 group by
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end;</code></pre>
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-06.png">
     </div>
 </div>
@@ -222,20 +222,20 @@ group by
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/qry-mitarbeiter-02.png">
     </div>
     <div class="w3-col m7">
-        <pre><code class="language-sql">select oeid,
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end as eintritt,
+        <pre><code class="language-sql">SELECT oeid,
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END AS eintritt,
   sum(gehalt), count(*)
-from mitarbeiter
+FROM mitarbeiter
 group by
   oeid,
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end
-order by oeid;</code></pre>
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-07.png">
     </div>
 </div>
@@ -249,37 +249,37 @@ order by oeid;</code></pre>
 <h1>Änderung der Anzahl der Gruppen</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-small"> select
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end as eintritt,
+        <pre><code class="language-sql w3-small"> SELECT
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END AS eintritt,
   sum(gehalt), count(*)
-  from mitarbeiter
+  FROM mitarbeiter
 group by
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end;</code></pre>
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-06.png"><br>
         <b>Bei Gruppierung nach mehreren Spalten erhöht sich die Anzahl der Gruppen entsprechend der Kombinationen</b>
     </div>
     <div class="w3-col m6">
-        <pre><code class="language-sql w3-small">select
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end as eintritt,
+        <pre><code class="language-sql w3-small">SELECT
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END AS eintritt,
   oeid,
   sum(gehalt), count(*)
-from mitarbeiter
+FROM mitarbeiter
 group by
-  case
-    when eintrittsdatum >= '01.01.2010' then '2010 (ab)'
-    when eintrittsdatum >= '01.01.2000' then '2009 (bis)'
-  end,
+  CASE
+    WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
+    WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
+  END,
   oeid
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-07.png">
     </div>
 </div>
@@ -298,17 +298,17 @@ order by oeid;</code></pre>
     </div>
     <div class="w3-col m7">
         <b>Geht so nicht, Bezeichnung ist auf Detailebene</b><br>
-        <pre><code class="language-sql">select oe.oeid, oe.bezeichnung, sum(gehalt)
-from mitarbeiter m
-     join orgeinheit oe on oe.oeid=m.oeid
+        <pre><code class="language-sql">SELECT oe.oeid, oe.bezeichnung, sum(gehalt)
+FROM mitarbeiter m
+     join orgeinheit oe ON oe.oeid=m.oeid
 group by oe.oeid
-order by oe.oeid;</code></pre>
+ORDER BY oe.oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/fig-01.png"><br>
-        <pre><code class="language-sql">select oe.oeid, oe.bezeichnung, sum(gehalt)
-from mitarbeiter m
-     join orgeinheit oe on oe.oeid=m.oeid
+        <pre><code class="language-sql">SELECT oe.oeid, oe.bezeichnung, sum(gehalt)
+FROM mitarbeiter m
+     join orgeinheit oe ON oe.oeid=m.oeid
 group by oe.oeid, oe.bezeichnung
-order by oe.oeid;</code></pre>
+ORDER BY oe.oeid;</code></pre>
 <b>Jetzt geht es (Bezeichnung in group by übernehmen), es entstehen auch keine neuen Kombinationen, da oe.bezeichnung von oe.oeid abhängt</b><br>
 <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-09.png">
     </div>
@@ -323,18 +323,18 @@ order by oe.oeid;</code></pre>
 <h1>Bedingungen auf Gruppenebene</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <pre><code class="language-sql">select oeid, sum(gehalt), count(*)
-from mitarbeiter
+        <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
+FROM mitarbeiter
 group by oeid
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-10.png">
     </div>
     <div class="w3-col m6">
-        <pre><code class="language-sql">select oeid, sum(gehalt), count(*)
-from mitarbeiter
+        <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
+FROM mitarbeiter
 group by oeid
 having count(*) > 1
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-11.png">
     </div>
 </div>
@@ -351,20 +351,20 @@ order by oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/dm-unternehmen/qry-mitarbeiter-01.png">
     </div>
     <div class="w3-col m4">
-        <pre><code class="language-sql">select oeid, sum(gehalt), count(*)
-from mitarbeiter
+        <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
+FROM mitarbeiter
 group by oeid
 having count(*) > 1
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-11.png">
     </div>
     <div class="w3-col m4">
-        <pre><code class="language-sql">select oeid, sum(gehalt), count(*)
-from mitarbeiter
-where bonus is null
+        <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
+FROM mitarbeiter
+WHERE bonus is null
 group by oeid
 having count(*) > 1
-order by oeid;</code></pre>
+ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-12.png">
     </div>
 </div>
@@ -376,10 +376,10 @@ order by oeid;</code></pre>
 -->
 {% include padding-id.html id=13 %}
 <h1>Aufbau Query mit Gruppierung</h1>
-<pre><code class="language-sql w3-xlarge">select
-from
-where
+<pre><code class="language-sql w3-xlarge">SELECT
+FROM
+WHERE
 group by
 having
-order by</code></pre>
+ORDER BY</code></pre>
 <div class="ic-gap"></div>
