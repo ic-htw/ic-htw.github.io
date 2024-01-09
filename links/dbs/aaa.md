@@ -3,6 +3,7 @@ layout: default
 title: aaa
 is_slide: 0
 ---
+# systems overview
 - db-engines
 [(link)](https://db-engines.com/de/)
 - NoSQL - Website
@@ -13,6 +14,12 @@ is_slide: 0
 [(link)](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/projekte/RDBMSGenealogy/RDBMS_Genealogy_V6.jpg)
 - Database of Databases
 [(link)](https://dbdb.io/)
+
+# general doc about dbs
+- Getting started with database development 
+[(link)](https://www.reddit.com/r/databasedevelopment/comments/unj8d1/getting_started_with_database_development/)
+
+# zzz
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
 - Comparing Databases: A Technical Guide

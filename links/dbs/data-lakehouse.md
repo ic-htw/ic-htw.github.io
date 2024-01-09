@@ -39,3 +39,7 @@ is_slide: 0
 - Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
 [(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
 
+# delta lake
+- Delta Lake RS
+[(link)](https://github.com/delta-io/delta-rs)
+

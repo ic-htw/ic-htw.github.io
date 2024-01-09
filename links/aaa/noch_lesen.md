@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Can PostgreSQL with its JSONB column type replace MongoDB?
+[(link)](https://medium.com/@yurexus/can-postgresql-with-its-jsonb-column-type-replace-mongodb-30dc7feffaf3)
+
+- StarRocks: A Unified OLAP Database for Blazing-Fast Analytics
+[(link)](https://www.starrocks.io/blog/introduction_to_starrocks)
+
+- An Overview of Distributed PostgreSQL Architectures
+[(link)](https://www.crunchydata.com/blog/an-overview-of-distributed-postgresql-architectures)
+
 - Generating data 100x faster with Rust — Part I
 [(link)](https://itnext.io/generating-data-100x-faster-with-rust-part-i-713182122d53)
 

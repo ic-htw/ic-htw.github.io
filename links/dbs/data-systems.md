@@ -28,9 +28,11 @@ is_slide: 0
 [(link)](https://arrow.apache.org/blog/2023/04/11/our-journey-at-f5-with-apache-arrow-part-1/)
 - Supercharge Your Data Pipelines with Advanced Apache Arrow
 [(link)](https://blog.det.life/supercharge-your-data-pipelines-with-advanced-apache-arrow-116f8033ceb3)
-
 - Apache Arrow Flight as a Data Catalog
 [(link)](https://wasit7.medium.com/apache-arrow-flight-as-a-data-catalog-3f193e0cad8a)
+- optd - Apache Arrow Datafusion
+[(link)](https://github.com/cmu-db/optd)
+
 
 
 # apache doris
@@ -271,6 +273,17 @@ is_slide: 0
 # sqlite
 - SQLite compiled to JavaScript
 [(link)](https://github.com/sql-js/sql.js)
+
+# starrocks
+- Home
+[(link)](https://www.starrocks.io/)
+- Blog
+[(link)](https://www.starrocks.io/blog)
+- git
+[(link)](https://github.com/StarRocks/starrocks)
+- StarRocks Engineering
+[(link)](https://starrocks.medium.com/)
+
 
 # supabase
 - Home
