@@ -2,7 +2,8 @@
 layout: default
 title: "Verbund"
 is_slide: 1
-n: 13
+n: 20
+hide: 0
 ---
 <!--
     00 ******************************************************************
@@ -263,21 +264,81 @@ WHERE oe.oeid is null;</code></pre>
 -->
 {% include padding-id.html id=13 %}
 <h1>Leitung und Nicht-Leitung - Mengenoperationen</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m5">
-        <p>Werden angewendet auf<br> Ergebnistabellen gleicher Struktur:<br>
-            Union [all]<br>
-            intersect<br>
-            minus
-        </p>
-    </div>
-    <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT name
+
+<pre><code class="language-sql">SELECT name
 FROM mitarbeiter
 minus
 SELECT name
 FROM mitarbeiter
      join orgeinheit ON leitung=mid;</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Verbundbeispiele auf Playlist</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <img class="w3-image" src="/lv/dmdb/a/">
+    </div>
+    <div class="w3-col m6">
+         {% if page.hide == 0 %}
+        <pre><code class="language-sql"></code></pre>
+        {% else %} 
+         <pre><code class="language-sql">SELECT ...</code></pre>
+        {% endif %} 
     </div>
 </div>
 <div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
