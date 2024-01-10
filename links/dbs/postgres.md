@@ -61,6 +61,9 @@ is_slide: 0
 [(link)](https://ftisiot.net/postgresqljson/main/)
 - pgJQ: Use jq in Postgres
 [(link)](https://github.com/Florents-Tselai/pgJQ)
+- Can PostgreSQL with its JSONB column type replace MongoDB?
+[(link)](https://medium.com/@yurexus/can-postgresql-with-its-jsonb-column-type-replace-mongodb-30dc7feffaf3)
+
 
 
 

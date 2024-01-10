@@ -16,3 +16,9 @@ is_slide: 0
 - Data Engineering End-to-End Project — Spark, Kafka, Airflow, Docker, Cassandra, Python
 [(link)](https://medium.com/@dogukannulu/data-engineering-end-to-end-project-1-7a7be2a3671)
 
+- An Overview of Distributed PostgreSQL Architectures
+[(link)](https://www.crunchydata.com/blog/an-overview-of-distributed-postgresql-architectures)
+
+- Delivering billions of real-time updates cost-effectively: Our journey
+[(link)](https://medium.com/@Games24x7Tech/delivering-billions-of-real-time-updates-cost-effectively-our-journey-fe3bf06af1bc)
+

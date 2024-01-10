@@ -3,7 +3,7 @@ layout: default
 title: Abfragesprachen
 is_slide: 0
 ---
-# general
+# sql
 - SQL Cheat-Sheet for Data Science
 [(link)](https://medium.com/analytics-vidhya/sql-cheat-sheet-for-data-science-cf3005c0fb28)
 - Use The Index, Luke
@@ -12,6 +12,9 @@ is_slide: 0
 [(link)](https://modern-sql.com/)
 - SQL Style Guide
 [(link)](https://www.sqlstyle.guide/)
+- Learning SQL - Medium.com
+[(link)](https://medium.com/learning-sql)
+
 
 # window functions
 - SQL Window Functions: Ranking
@@ -43,6 +46,8 @@ is_slide: 0
 
 
 # other
+- What if an SQL Statement Returned a Database?
+[(link)](https://arxiv.org/abs/2312.00638)
 - A Gentle(-ish) Introduction to Worst-Case Optimal Joins
 [(link)](https://justinjaffray.com/a-gentle-ish-introduction-to-worst-case-optimal-joins/?utm_source=pocket_reader)
 - Some opinionated thoughts on SQL databases

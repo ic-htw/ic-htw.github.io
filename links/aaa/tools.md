@@ -209,6 +209,14 @@ is_slide: 0
 - tutorials
 [(link)](https://llvm.org/docs/tutorial/index.html)
 
+# looker
+- Looker Studio
+[(link)](https://cloud.google.com/looker-studio?hl=de)
+[(link)](https://lookerstudio.google.com/navigation/reporting)
+- Datenanalyse mit Looker Studio
+[(link)](https://www.121watt.de/digital-analytics/datenanalyse-mit-looker-studio/)
+
+
 # pip
 - commands
 [(link)](https://pip.pypa.io/en/stable/cli/index.html)
@@ -320,3 +328,7 @@ is_slide: 0
 # wsl
 - home
 [(link)](https://learn.microsoft.com/de-de/windows/wsl/)
+
+# youtube
+- YouTube Transscript Generator
+[(link)](https://kome.ai/tools/youtube-transcript-generator)

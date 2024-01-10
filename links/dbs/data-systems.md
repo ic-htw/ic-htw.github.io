@@ -283,6 +283,8 @@ is_slide: 0
 [(link)](https://github.com/StarRocks/starrocks)
 - StarRocks Engineering
 [(link)](https://starrocks.medium.com/)
+- StarRocks: A Unified OLAP Database for Blazing-Fast Analytics
+[(link)](https://www.starrocks.io/blog/introduction_to_starrocks)
 
 
 # supabase

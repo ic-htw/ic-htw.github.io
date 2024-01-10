@@ -8,35 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Can PostgreSQL with its JSONB column type replace MongoDB?
-[(link)](https://medium.com/@yurexus/can-postgresql-with-its-jsonb-column-type-replace-mongodb-30dc7feffaf3)
+- Distributed SQL Database Internals
+[(link1)](https://medium.com/@shenli3514/distributed-sql-database-internals-1-9c88790b83b)
+[(link2)](https://medium.com/@shenli3514/distributed-sql-database-internals-2-design-a-distributed-sql-database-90e3b7bbd8cf)
+[(link3)](https://medium.com/@shenli3514/distributed-sql-database-internals-3-distributed-storage-engine-bdc49c26242e)
 
-- StarRocks: A Unified OLAP Database for Blazing-Fast Analytics
-[(link)](https://www.starrocks.io/blog/introduction_to_starrocks)
-
-- An Overview of Distributed PostgreSQL Architectures
-[(link)](https://www.crunchydata.com/blog/an-overview-of-distributed-postgresql-architectures)
-
-- Generating data 100x faster with Rust — Part I
-[(link)](https://itnext.io/generating-data-100x-faster-with-rust-part-i-713182122d53)
-
-- Gen AI Frameworks and Tools Every AI/ML Engineer Should Know!
-[(link)](https://levelup.gitconnected.com/gen-ai-frameworks-and-tools-every-ai-ml-engineer-should-know-1f0ce36f1452)
-
-- Apache Iceberg, Git-Like Catalog Versioning and Data Lakehouse Management
-[(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
-
-- Discover ReBAC, the next-generation authorization model compatible with DDD
-[(link)](https://medium.com/@tpierrain/discover-rebac-the-next-generation-authorization-model-compatible-with-ddd-0d115cea6f2c)
-
-- Vectors are the new JSON in PostgreSQL
-[(link)](https://jkatz05.com/post/postgres/vectors-json-postgresql/)
-
-- Revolutionizing RAG with Enhanced PDF Structure Recognition
-[(link)](https://medium.com/@chatdocai/revolutionizing-rag-with-enhanced-pdf-structure-recognition-22227af87442)
-
-- Delivering billions of real-time updates cost-effectively: Our journey
-[(link)](https://medium.com/@Games24x7Tech/delivering-billions-of-real-time-updates-cost-effectively-our-journey-fe3bf06af1bc)
 
 - Build your own RAG with Mistral-7B and LangChain
 [(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
@@ -47,35 +23,17 @@ is_slide: 0
 - Can LLMs Replace Data Analysts? Getting Answers Using SQL
 [(link)](https://towardsdatascience.com/can-llms-replace-data-analysts-getting-answers-using-sql-8cf7da132259)
 
-- DoorDash’s Write-Heavy Scalable Inventory Platform — System Design
-[(link)](https://interviewnoodle.com/doordashs-write-heavy-scalable-inventory-platform-system-design-61c1a5c71641)
-
 - Transaction Isolation in Postgres, explained
 [(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 
-- PostGIS Day 2023 Summary
-[(link)](https://www.crunchydata.com/blog/postgis-day-2023-summary)
-
-- Data Science is Getting Ducky
-[(link)](http://blog.cleverelephant.ca/2023/12/duck.html)
-
 - Ibis + DuckDB geospatial: a match made on Earth
 [(link)](https://ibis-project.org/posts/ibis-duckdb-geospatial/)
-
-- What if an SQL Statement Returned a Database?
-[(link)](https://arxiv.org/abs/2312.00638)
 
 - Apache Cassandra 5.0 Features: Unified Compaction Strategy
 [(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Unified-Compaction-Strategy.html)
 
 - Database Connections in FastAPI: Leveraging Dependency Injection and Best Practices
 [(link)](https://blog.stackademic.com/database-connections-in-fastapi-leveraging-dependency-injection-and-best-practices-765861cf4d31)
-
-- SW/HW Co-optimization Strategy for Large Language Models (LLMs)
-[(link)](https://towardsdatascience.com/sw-hw-co-optimization-strategy-for-large-language-models-llms-855f20a14629)
-
-- Supabase: Build in a Weekend, Scale to Millions
-[(link)](https://fadamakis.com/supabase-is-0b46c55d9162)
 
 - How Data Should Be Stored In Single Table for DynamoDB
 [(link)](https://aws.plainenglish.io/how-data-should-be-stored-in-single-table-for-dynamodb-fd991ea3b1a7)
@@ -106,9 +64,6 @@ is_slide: 0
 
 - Generative AI with SQL — First Impressions
 [(link)](https://medium.com/learning-sql/generative-ai-with-sql-first-impressions-3d26c5f17ae3)
-
-- Learning SQL - Medium.com
-[(link)](https://medium.com/learning-sql)
 
 - AWS re:Invent 2023 — Key Findings
 [(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)

@@ -12,5 +12,8 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/rust-the-next-big-thing-in-data-science-319a03305883)
 - Top Rust Libraries
 [(link)](https://serokell.medium.com/top-rust-libraries-eaca032a7b72)
+- Generating data 100x faster with Rust — Part I
+[(link)](https://itnext.io/generating-data-100x-faster-with-rust-part-i-713182122d53)
+
 
 

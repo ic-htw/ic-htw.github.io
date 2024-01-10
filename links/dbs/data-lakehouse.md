@@ -38,6 +38,9 @@ is_slide: 0
 [(link)](https://dipankar-tnt.medium.com/building-a-plotly-dashboard-on-a-lakehouse-using-apache-iceberg-arrow-47b7f65691c7)
 - Apache Hudi vs Delta Lake vs Apache Iceberg - Lakehouse Feature Comparison
 [(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
+- Apache Iceberg, Git-Like Catalog Versioning and Data Lakehouse Management
+[(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
+
 
 # delta lake
 - Delta Lake RS
