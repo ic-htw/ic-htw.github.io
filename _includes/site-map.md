@@ -1,3 +1,7 @@
+{% if include.mode != "short" %}
+<p class="w3-large w3-theme">Prof. Dr. Ingo Claßen - HTW Berlin</p>
+{% endif %}
+
 <!--
 ====================================================
 Collapse / Expand
