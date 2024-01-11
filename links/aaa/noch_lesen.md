@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- gptsql
+[(link)](https://github.com/tatari-tv/gptsql)
+
+- Introducing prometheus_fdw: Seamless Monitoring in Postgres
+[(link)](https://tembo.io/blog/monitoring-with-prometheus-fdw/)
+
 - Distributed SQL Database Internals
 [(link1)](https://medium.com/@shenli3514/distributed-sql-database-internals-1-9c88790b83b)
 [(link2)](https://medium.com/@shenli3514/distributed-sql-database-internals-2-design-a-distributed-sql-database-90e3b7bbd8cf)
