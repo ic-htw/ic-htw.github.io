@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building a Database From Scratch in Rust — Part 1
+[(link)](https://medium.com/@paolorechia/building-a-database-from-scratch-in-rust-part-1-6dfef2223673)
+
 - gptsql
 [(link)](https://github.com/tatari-tv/gptsql)
 

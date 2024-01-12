@@ -81,7 +81,10 @@ Datenbanktechnologien
 </button>
 
 <div class="DbTech w3-padding">
-    <a  href="xxx">xxx</a> <br>
+    <a href="/lv/dbtech/p/material.html">Material</a> <br>
+    <a href="/lv/dbtech/p/plan.html">Plan</a> <br>
+    <a href="/lv/dbtech/p/pruefung.html">Prüfung</a> <br>
+    <a href="/lv/dbtech/p/uebung.html">Übung</a> <br>
 </div> 
 
 <!--
@@ -160,7 +163,7 @@ Projekt Business Intelligence
 </button>
 
 <div class="PBI w3-padding">
-    <a  href="xxx">xxx</a> <br>
+    <a  href="/lv/pbi/main.html">Projektdurchführung</a> <br>
 </div> 
 
 
