@@ -1,0 +1,74 @@
+Allgemeines:
+- es müssen nur die DB-Methoden implementiert werden, die auch verwendet werden
+- wird z.B. die Methode update() nicht verwendet, kann die Implementierung leer bleiben
+
+Eine möglich Umsetzung mittels Row Data Gateway
+
+--------------------------------------------------------------------------------
+Row Data Gateway: Fahrzeug 
+--------------------------------------------------------------------------------
+Fahrzeug
+- getAchszahl()
+- getMautsatzProKM()
+- getFahrzeugGeraetId()
+- getMautkategorieId()
+
+FahrzeugFinder
+- Fahrzeug findByKennzeichen(kennzeichen)
+  - Liefert null wenn es kein Fahrzeug mit dem Kennzeichen in Tabelle Fahrzeug gibt
+
+
+--------------------------------------------------------------------------------
+Row Data Gateway: Buchung 
+--------------------------------------------------------------------------------
+Buchung
+- getAchszahl()
+- changeStatusToClosed()
+- update()
+  
+BuchungFinder
+- findByKennzeichenMautAbschnitt(kennzeichen, mautAbschnitt)
+  - AlreadyCruisedException wenn Doppelbefahrung
+  - null falls keine offene Buchung für den Mautabschnitt
+
+
+--------------------------------------------------------------------------------
+Row Data Gateway: Mauterhebung 
+--------------------------------------------------------------------------------
+Mauterhebung
+- insert()
+
+--------------------------------------------------------------------------------
+Row Data Gateway: Mautabschnitt 
+--------------------------------------------------------------------------------
+Mautabschnitt
+- Integer getLaengeInMeter()
+
+MautabschnittFinder
+- Mautabschnitt findById(id)
+
+
+--------------------------------------------------------------------------------
+Neue Serviceklasse: MauterServiceDaoImpl
+--------------------------------------------------------------------------------
+float berechneMaut(int mautAbschnitt, int achszahl, String kennzeichen)
+    ...
+    mautabschnitt = mautabschnittFinder.findById(mautAbschnitt)
+	
+    fahrzeug = fahrzeugFinder.findByKennzeichen(kennzeichen)
+    if fahrzeug != null
+      prüfe Achszahl
+      berechneKosten
+	  
+      mauterhebung = new Mauterhebung(...)
+      mauterhebung.insert()
+    else 
+      buchung = buchungFinder.findByKennzeichenMautAbschnitt(kennzeichen, mautAbschnitt)
+      if buchung != null	
+        prüfe Achszahl		
+        buchung.changeStatusToClosed()
+        buchung.update()
+      else
+        throw UnkownVehicleException
+	
+
