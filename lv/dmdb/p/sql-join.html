@@ -3,7 +3,7 @@ layout: default
 title: "Verbund"
 is_slide: 1
 n: 20
-hide: 0
+hide: 1
 ---
 <!--
     00 ******************************************************************
@@ -19,9 +19,7 @@ hide: 0
 -->
 {% include padding-id.html id=1 %}
 <h1>Informationen aus mehreren Tabellen - Berichte </h1>
-<div class="w3-center">
-    <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-01.png">
-</div>
+    <img class="w3-image" src="/lv/dmdb/a/sql-join/dia-20.png">
 <div class="ic-gap"></div>
 
 <!--
@@ -277,15 +275,17 @@ FROM mitarbeiter
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>Verbundbeispiele auf Playlist</h1>
+<h1>Verbund Playlist, Stueck</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <p class="w3-large">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-        <img class="w3-image" src="/lv/dmdb/a/">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/pl-10.png">
     </div>
     <div class="w3-col m6">
          {% if page.hide == 0 %}
-        <pre><code class="language-sql"></code></pre>
+        <pre><code class="language-sql">SELECT name AS playlist, titel
+FROM playlist pl
+     JOIN stueck s ON s.plid=pl.plid
+ORDER BY playlist, titel;</code></pre>
         {% else %} 
          <pre><code class="language-sql">SELECT ...</code></pre>
         {% endif %} 
@@ -298,7 +298,26 @@ FROM mitarbeiter
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Verbund Playlist, Genre, Stueck</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/pl-20.png">
+    </div>
+    <div class="w3-col m6">
+         {% if page.hide == 0 %}
+        <pre><code class="language-sql">SELECT 
+  name AS playlist, 
+  bezeichnung AS genre, 
+  titel
+FROM playlist pl
+     JOIN stueck s ON s.plid=pl.plid
+     JOIN genre g ON g.gid=s.gid
+ORDER BY playlist, genre, titel;</code></pre>
+        {% else %} 
+         <pre><code class="language-sql">SELECT ...</code></pre>
+        {% endif %} 
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -306,7 +325,23 @@ FROM mitarbeiter
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1>Genre ohne Stücke</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/pl-30.png">
+    </div>
+    <div class="w3-col m6">
+         {% if page.hide == 0 %}
+        <pre><code class="language-sql">SELECT bezeichnung AS genre
+FROM stueck s 
+     RIGHT JOIN genre g ON g.gid=s.gid
+WHERE sid IS NULL
+ORDER BY genre;</code></pre>
+        {% else %} 
+         <pre><code class="language-sql">SELECT ...</code></pre>
+        {% endif %} 
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -314,7 +349,32 @@ FROM mitarbeiter
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1>Projektkosten pro Mitarbeiter</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large">Kostenansatz:</p>
+        <ul class="w3-large">
+            <li>40 Stunden pro Woche</li>
+            <li>Projekt dauert genau ein Jahr</li>
+            <li>Nur Arbeitskosten, keine Materialkosten</li>
+            <li>Nur Gehalt betrachten, nicht Bonus</li>
+        </ul>
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/u-10.png">
+    </div>
+    <div class="w3-col m6">
+         {% if page.hide == 0 %}
+        <pre><code class="language-sql">SELECT 
+  titel, name, 
+  stdprowoche/40*gehalt AS kosten
+FROM mitarbeiter m
+     JOIN maproj mp ON m.mid=mp.mid
+     JOIN projekt p ON p.pid=mp.pid
+ORDER BY titel, name;</code></pre>
+        {% else %} 
+         <pre><code class="language-sql">SELECT ...</code></pre>
+        {% endif %} 
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -322,7 +382,27 @@ FROM mitarbeiter
     18 ******************************************************************
 -->
 {% include padding-id.html id=18 %}
-<h1>xxx</h1>
+<h1>Wer verdient mehr als sein/ihr Boss</h1>
+<img class="w3-image" src="/lv/dmdb/a/sql-join/dia-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/sql-join/u-20.png">
+    </div>
+    <div class="w3-col m6">
+         {% if page.hide == 0 %}
+        <pre><code class="language-sql">SELECT 
+  m.name AS mname, m.gehalt AS mgehalt,
+  b.name AS bname, b.gehalt AS bgehalt
+FROM mitarbeiter m
+     JOIN orgeinheit oe ON oe.oeid=m.oeid
+     JOIN mitarbeiter b ON b.mid=oe.leitung
+WHERE m.gehalt>b.gehalt
+ORDER BY mname;</code></pre>
+        {% else %} 
+         <pre><code class="language-sql">SELECT ...</code></pre>
+        {% endif %} 
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 

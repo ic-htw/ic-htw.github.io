@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building a Database From Scratch in Rust — Part 1
+[(link)](https://medium.com/@paolorechia/building-a-database-from-scratch-in-rust-part-1-6dfef2223673)
+
 - Python Backend Project Advanced Setup (FastAPI Example)
 [(link)](https://python.plainenglish.io/python-backend-project-advanced-setup-fastapi-example-7b7e73a52aec)
 
