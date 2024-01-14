@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Python Backend Project Advanced Setup (FastAPI Example)
+[(link)](https://python.plainenglish.io/python-backend-project-advanced-setup-fastapi-example-7b7e73a52aec)
+
 - gptsql
 [(link)](https://github.com/tatari-tv/gptsql)
 
