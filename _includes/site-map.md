@@ -22,6 +22,13 @@ Collapse / Expand
   </button>
 </div>
 
+<!--
+****************************************************
+Lehrveranstaltungen
+**************************************************** 
+-->  
+<p class="w3-large w3-theme">Lehre</p>
+
 
 <!--
 ====================================================
@@ -171,10 +178,39 @@ Projekt Business Intelligence
 
 
 
+<!--
+****************************************************
+Sonstiges
+**************************************************** 
+-->  
+<p class="w3-large w3-theme">Sonstiges</p>
+<button 
+  onclick="navitemToggle('Sonstiges')"
+  class="w3-button w3-left-align w3-padding-small w3-block">
+{% if include.mode == "short" %}
+Sonstiges
+{% else %}
+Sonstiges
+{% endif %}
+</button>
+
+<div class="Sonstiges w3-padding">
+    <a  href="/sonstiges/p/pruefmod.html">Prüfungsmodalitäten</a> <br>
+    <a  href="/sonstiges/p/plagiate.html">Plagiate in Übungen</a> <br>
+    <a  href="/sonstiges/p/lit.html">Literaturhinweise</a> <br>
+</div> 
 
 
 
 
+
+
+<!--
+****************************************************
+Links
+**************************************************** 
+-->  
+<p class="w3-large w3-theme">Links</p>
 
 
 

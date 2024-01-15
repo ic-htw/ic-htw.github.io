@@ -103,6 +103,7 @@ function setAllNavitemsOff() {
     setNavitemOff('DbTech');
     setNavitemOff('DMDB');
     setNavitemOff('PBI');
+    setNavitemOff('Sonstiges');
     setNavitemOff('AAA');
     setNavitemOff('DBS');
     setNavitemOff('ML');
@@ -116,6 +117,7 @@ function setAllNavitemsOn() {
     setNavitemOn('DbTech');
     setNavitemOn('DMDB');
     setNavitemOn('PBI');
+    setNavitemOn('Sonstiges');
     setNavitemOn('AAA');
     setNavitemOn('DBS');
     setNavitemOn('ML');
