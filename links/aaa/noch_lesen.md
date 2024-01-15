@@ -8,14 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Building a Database From Scratch in Rust — Part 1
-[(link)](https://medium.com/@paolorechia/building-a-database-from-scratch-in-rust-part-1-6dfef2223673)
+- PostgreSQL as a Vector Database: Getting Started and Scaling
+[(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
 
 - Python Backend Project Advanced Setup (FastAPI Example)
 [(link)](https://python.plainenglish.io/python-backend-project-advanced-setup-fastapi-example-7b7e73a52aec)
-
-- gptsql
-[(link)](https://github.com/tatari-tv/gptsql)
 
 - Introducing prometheus_fdw: Seamless Monitoring in Postgres
 [(link)](https://tembo.io/blog/monitoring-with-prometheus-fdw/)
@@ -24,7 +21,7 @@ is_slide: 0
 [(link1)](https://medium.com/@shenli3514/distributed-sql-database-internals-1-9c88790b83b)
 [(link2)](https://medium.com/@shenli3514/distributed-sql-database-internals-2-design-a-distributed-sql-database-90e3b7bbd8cf)
 [(link3)](https://medium.com/@shenli3514/distributed-sql-database-internals-3-distributed-storage-engine-bdc49c26242e)
-
+[(link4)](https://medium.com/@shenli3514/distributed-sql-database-internals-4-sql-engine-c01400908e9e)
 
 - Build your own RAG with Mistral-7B and LangChain
 [(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
@@ -34,9 +31,6 @@ is_slide: 0
 
 - Can LLMs Replace Data Analysts? Getting Answers Using SQL
 [(link)](https://towardsdatascience.com/can-llms-replace-data-analysts-getting-answers-using-sql-8cf7da132259)
-
-- Transaction Isolation in Postgres, explained
-[(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 
 - Ibis + DuckDB geospatial: a match made on Earth
 [(link)](https://ibis-project.org/posts/ibis-duckdb-geospatial/)
@@ -58,9 +52,6 @@ is_slide: 0
 
 - OneTable: Interoperability for Apache Hudi, Iceberg & Delta Lake
 [(link)](https://dipankar-tnt.medium.com/onetable-interoperability-for-apache-hudi-iceberg-delta-lake-bb8b27dd288d)
-
-- Building Your Own Text-to-SQL: Steps And Requirements
-[(link)](https://medium.com/querymind/building-your-own-text-to-sql-steps-and-requirements-ab276826c882)
 
 - McKinsey are wrong that GenAI is The Silver Bullet
 [(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)

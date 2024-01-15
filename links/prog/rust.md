@@ -14,6 +14,9 @@ is_slide: 0
 [(link)](https://serokell.medium.com/top-rust-libraries-eaca032a7b72)
 - Generating data 100x faster with Rust — Part I
 [(link)](https://itnext.io/generating-data-100x-faster-with-rust-part-i-713182122d53)
+- Building a Database From Scratch in Rust — Part 1
+[(link)](https://medium.com/@paolorechia/building-a-database-from-scratch-in-rust-part-1-6dfef2223673)
+
 
 
 

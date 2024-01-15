@@ -122,6 +122,8 @@ is_slide: 0
 
 
 # misc
+- Transaction Isolation in Postgres, explained
+[(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 - temBoard - PostgreSQL Remote Control
 [(link)](https://github.com/dalibo/temboard)    
 - pgexporter is a Prometheus exporter for PostgreSQL

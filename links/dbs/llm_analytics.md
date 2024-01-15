@@ -6,6 +6,14 @@ is_slide: 0
 # aaa
 - Cheshire-Cat plugin SQL
 [(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
+- Building Your Own Text-to-SQL: Steps And Requirements
+[(link)](https://medium.com/querymind/building-your-own-text-to-sql-steps-and-requirements-ab276826c882)
+
+
+# ChatGPT
+- gptsql
+[(link)](https://github.com/tatari-tv/gptsql)
+
 
 
 #  Llama
