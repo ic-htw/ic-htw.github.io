@@ -73,7 +73,7 @@ Data Management and Business Performance Management
     <a  href="/lv/dataman/p/ex-classroom.html">Classroom Exercises</a> <br>
     <a  href="/lv/dataman/p/ex-rated.html">Rated Exercises</a> <br>
     <a  href="/lv/dataman/p/software.html">Software</a> <br>
-    <a  href="/lv/dataman/p/sql-pattern.html">SQL Paterns</a> <br>
+    <a  href="/lv/dataman/p/sql-pattern.html">SQL Patterns</a> <br>
     <a  href="/lv/dataman/p/grading.html">Grading</a> <br>
 </div> 
 
