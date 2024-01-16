@@ -91,7 +91,8 @@ Datenbanktechnologien
     <a href="/lv/dbtech/p/material.html">Material</a> <br>
     <a href="/lv/dbtech/p/plan.html">Plan</a> <br>
     <a href="/lv/dbtech/p/pruefung.html">Prüfung</a> <br>
-    <a href="/lv/dbtech/p/uebung.html">Übung</a> <br>
+    <a href="/lv/dbtech/p/ue-org.html">Übung - Org</a> <br>
+    <a href="/lv/dbtech/p/ue-ex.html">Übung - Aufgaben</a> <br>
 </div> 
 
 <!--
@@ -197,7 +198,8 @@ Sonstiges
 <div class="Sonstiges w3-padding">
     <a  href="/sonstiges/p/pruefmod.html">Prüfungsmodalitäten</a> <br>
     <a  href="/sonstiges/p/plagiate.html">Plagiate in Übungen</a> <br>
-    <a  href="/sonstiges/p/lit.html">Literaturhinweise</a> <br>
+    <a  href="/sonstiges/p/sqldeveloper.html">SQL-Developer</a> <br>
+    <a  href="/sonstiges/p/ressourcen.html">Ressourcen</a> <br>
 </div> 
 
 
