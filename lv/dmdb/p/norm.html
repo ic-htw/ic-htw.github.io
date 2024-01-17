@@ -1,0 +1,151 @@
+---
+layout: default
+title: "Normalformen"
+is_slide: 1
+n: 11
+---
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Anomalien</h1>
+<img class="w3-image" src="/lv/dmdb/a/norm/d-10.png">
+<p class="w3-large ic-neg15">Update-Anomalie</p>
+<pre><code class="language-sql  ic-neg15">UPDATE Mitarbeiter SET AbtBez='Finanz' WHERE MNR=12</code></pre>
+
+<p class="w3-large ic-neg15">Insert-Anomalie</p>
+<pre><code class="language-sql ic-neg15">INSERT INTO Mitarbeiter VALUES (15, Krause, 27, 'Beschaffung')</code></pre>
+
+<p class="w3-large ic-neg15">Delete-Anomalie</p>
+<pre><code class="language-sql">DELETE FROM Mitarbeiter WHERE MNR=13</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Funktionale Abhängigkeit</h1>
+<ul class="w3-large">
+  <li>Eine Spalte B ist funktional von einer Spalte A abhängig (A &rarr; B),<br>
+    wenn die Werte von A die Werte von B festlegen</li>
+  <li>A wird auch Determinante genannt</li>
+</ul>
+<img class="w3-image w3-margin-left" src="/lv/dmdb/a/norm/d-20.png">
+<ul class="w3-large">
+  <li>MNR &rarr; Name, Tätigkeit, Gehalt</li>
+  <li>Tätigkeit &rarr; Gehalt?</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>2. Normalform (2. NF)</h1>
+<ul class="w3-large">
+  <li>Die 2. NF liegt vor</li>
+  <ul>
+    <li>wenn alle Nichtschlüsselspalten</li>
+    <li>vom gesamten Schlüssel abhängen</li>
+  </ul>
+  <li>Sobald eine einzige Nichtschlüsselspalte</li>
+  <ul>
+    <li>von einem Teil des Schlüssels </li>
+    <li>funktional abhängig ist</li>
+  </ul>
+  ist die zweite Normalform verletzt
+</ul>
+<p class="w3-large ic-neg3">Die folgende Tabelle verletzt die 2. NF</p>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <img class="w3-image" src="/lv/dmdb/a/norm/d-30.png">
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>MNR &rarr; Name</li>
+      <li>PNR &rarr; Projektname</li>
+      <li>MNR und PNR sind Teile des Schlüssels</li>
+  </ul>      
+  </div>
+</div>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>3. Normalform (3. NF)</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Wiederholungsgruppen</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>1. Normalform (1. NF)</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Normalisierung</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Auflösung von Wiederholungsgruppen</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Extraktion von Determinanten und abhängigen Spalten (1)</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Extraktion von Determinanten und abhängigen Spalten (2)</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
