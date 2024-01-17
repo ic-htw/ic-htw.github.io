@@ -68,7 +68,13 @@ Data Management and Business Performance Management
 </button>
 
 <div class="DataMan w3-padding">
-    <a  href="xxx">xxx</a> <br>
+    <a  href="/lv/dataman/p/teach-mat.html">Teaching Material</a> <br>
+    <a  href="/lv/dataman/p/schedule.html">Schedule</a> <br>
+    <a  href="/lv/dataman/p/ex-classroom.html">Classroom Exercises</a> <br>
+    <a  href="/lv/dataman/p/ex-rated.html">Rated Exercises</a> <br>
+    <a  href="/lv/dataman/p/software.html">Software</a> <br>
+    <a  href="/lv/dataman/p/sql-pattern.html">SQL Patterns</a> <br>
+    <a  href="/lv/dataman/p/grading.html">Grading</a> <br>
 </div> 
 
 
@@ -196,6 +202,7 @@ Sonstiges
 </button>
 
 <div class="Sonstiges w3-padding">
+    <a  href="/sonstiges/p/abschluss.html">Abschlussarbeiten</a> <br>
     <a  href="/sonstiges/p/pruefmod.html">Prüfungsmodalitäten</a> <br>
     <a  href="/sonstiges/p/plagiate.html">Plagiate in Übungen</a> <br>
     <a  href="/sonstiges/p/sqldeveloper.html">SQL-Developer</a> <br>
