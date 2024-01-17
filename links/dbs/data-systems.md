@@ -226,6 +226,17 @@ is_slide: 0
 - JMX Exporter
 [(link)](https://github.com/prometheus/jmx_exporter)
 
+# redis
+- home
+[(link)](https://redis.io/)
+- doc
+[(link)](https://redis.io/docs/)
+- Setting Up a Production-Ready Redis Cluster
+[(link)](https://medium.com/@keylearn/setting-up-a-production-ready-redis-cluster-5f234d3c3be8)
+- Introduction to the in-memory datastore Redis
+[(link)](https://medium.com/featurepreneur/introduction-to-the-in-memory-datastore-redis-e1ba0a3d3f20)
+
+
 # risingwave
 - home
 [(link)](https://www.risingwave.com/)
