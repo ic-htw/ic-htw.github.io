@@ -5,6 +5,8 @@ is_slide: 0
 ---
 
 # aaa
+- Comprehensive Guide to Getting Started with dbt (Data Build Tool)
+[(link)](https://medium.com/@karim.faiz/comprehensive-guide-to-getting-started-with-dbt-data-build-tool-f0355203865e)
 - doc
 [(link)](https://docs.getdbt.com/)
 - git
