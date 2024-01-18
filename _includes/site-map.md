@@ -27,7 +27,7 @@ Collapse / Expand
 Lehrveranstaltungen
 **************************************************** 
 -->  
-<p class="w3-large w3-theme">Lehre</p>
+<p class="w3-large w3-theme ic-neg3">Lehre</p>
 
 
 <!--
@@ -37,7 +37,7 @@ Ausgewählte Datenbankkonzepte/-techniken
 -->  
 <button 
   onclick="navitemToggle('ADBKT')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 ADBKT
 {% else %}
@@ -59,7 +59,7 @@ Data Management and Business Performance Management
 -->  
 <button 
   onclick="navitemToggle('DataMan')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 DataMan
 {% else %}
@@ -85,7 +85,7 @@ Datenbanktechnologien
 -->  
 <button 
   onclick="navitemToggle('DbTech')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 DbTech
 {% else %}
@@ -108,7 +108,7 @@ Datenmodellierung und Datenbanksysteme
 -->  
 <button 
   onclick="navitemToggle('DMDB')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 DMDB
 {% else %}
@@ -127,6 +127,8 @@ Datenmodellierung und Datenbanksysteme
     <a  href="/lv/dmdb/p/relmod.html">Relationenmodell</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/rel-excel.html">Excel / Rel </a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/dmdb/p/norm.html">Normalformen</a> <br>
     SQL<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
@@ -168,7 +170,7 @@ Projekt Business Intelligence
 -->  
 <button 
   onclick="navitemToggle('PBI')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 PBI
 {% else %}
@@ -190,10 +192,10 @@ Projekt Business Intelligence
 Sonstiges
 **************************************************** 
 -->  
-<p class="w3-large w3-theme">Sonstiges</p>
+<p class="w3-large w3-theme ic-neg3">Sonstiges</p>
 <button 
   onclick="navitemToggle('Sonstiges')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 Sonstiges
 {% else %}
@@ -219,7 +221,7 @@ Sonstiges
 Links
 **************************************************** 
 -->  
-<p class="w3-large w3-theme">Links</p>
+<p class="w3-large w3-theme ic-neg3">Links</p>
 
 
 
@@ -231,7 +233,7 @@ AAA
 -->  
 <button 
   onclick="navitemToggle('AAA')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 AAA
 {% else %}
@@ -259,7 +261,7 @@ Datenbanksysteme
 -->  
 <button 
   onclick="navitemToggle('DBS')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 DBS
 {% else %}
@@ -293,7 +295,7 @@ Maschinelles Lernen
 -->  
 <button 
   onclick="navitemToggle('ML')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 ML
 {% else %}
@@ -322,7 +324,7 @@ Programmierung
 -->  
 <button 
   onclick="navitemToggle('PROG')"
-  class="w3-button w3-left-align w3-padding-small w3-block">
+  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
 {% if include.mode == "short" %}
 PROG
 {% else %}
