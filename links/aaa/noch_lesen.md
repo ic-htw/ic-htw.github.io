@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- System Design Cheatsheets: ScyllaDB
+[(link)](https://medium.com/@sanilkhurana7/system-design-cheatsheets-scylladb-5f59ccbd194d)
+
+- High-Level System Architecture of Booking.com
+[(link)](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
+
+- Comprehensive Guide to Getting Started with dbt (Data Build Tool)
+[(link)](https://medium.com/@karim.faiz/comprehensive-guide-to-getting-started-with-dbt-data-build-tool-f0355203865e)
+
 - PostgreSQL as a Vector Database: Getting Started and Scaling
 [(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
 

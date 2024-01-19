@@ -20,6 +20,8 @@ is_slide: 0
 [(link)](https://www.reddit.com/r/databasedevelopment/comments/unj8d1/getting_started_with_database_development/)
 
 # zzz
+- Leaderless Replication In Distributed System
+[(link)](https://medium.com/the-developers-diary/leaderless-replication-unveiled-5f6910dd9825)
 - A New Frontier
 [(link)](https://voltrondata.com/codex/a-new-frontier)
 - Comparing Databases: A Technical Guide

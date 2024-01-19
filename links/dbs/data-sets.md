@@ -3,9 +3,12 @@ layout: default
 title: Data Sets
 is_slide: 0
 ---
+- Tableau Beispieldaten
+[(link)](https://public.tableau.com/app/learn/sample-data)
+- selva86 datasets
+[(link)](https://github.com/selva86/datasets)
 - dunnhumby Source files: Real-world data to put your theory into practice
 [(link)](https://www.dunnhumby.com/source-files/)
-
 - IBM Transactions for Anti Money Laundering
 [(link)](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)
 
