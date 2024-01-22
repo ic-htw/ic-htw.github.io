@@ -8,29 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- System Design Cheatsheets: ScyllaDB
-[(link)](https://medium.com/@sanilkhurana7/system-design-cheatsheets-scylladb-5f59ccbd194d)
-
-- High-Level System Architecture of Booking.com
-[(link)](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
-
-- Comprehensive Guide to Getting Started with dbt (Data Build Tool)
-[(link)](https://medium.com/@karim.faiz/comprehensive-guide-to-getting-started-with-dbt-data-build-tool-f0355203865e)
+- Understanding Database Partitioning in Distributed Systems : Key-Value Data
+[(link)](https://medium.com/the-developers-diary/understanding-database-partitioning-in-distributed-systems-1e015c7e487f)
 
 - PostgreSQL as a Vector Database: Getting Started and Scaling
 [(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
-
-- Python Backend Project Advanced Setup (FastAPI Example)
-[(link)](https://python.plainenglish.io/python-backend-project-advanced-setup-fastapi-example-7b7e73a52aec)
-
-- Introducing prometheus_fdw: Seamless Monitoring in Postgres
-[(link)](https://tembo.io/blog/monitoring-with-prometheus-fdw/)
-
-- Distributed SQL Database Internals
-[(link1)](https://medium.com/@shenli3514/distributed-sql-database-internals-1-9c88790b83b)
-[(link2)](https://medium.com/@shenli3514/distributed-sql-database-internals-2-design-a-distributed-sql-database-90e3b7bbd8cf)
-[(link3)](https://medium.com/@shenli3514/distributed-sql-database-internals-3-distributed-storage-engine-bdc49c26242e)
-[(link4)](https://medium.com/@shenli3514/distributed-sql-database-internals-4-sql-engine-c01400908e9e)
 
 - Build your own RAG with Mistral-7B and LangChain
 [(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
@@ -41,26 +23,11 @@ is_slide: 0
 - Can LLMs Replace Data Analysts? Getting Answers Using SQL
 [(link)](https://towardsdatascience.com/can-llms-replace-data-analysts-getting-answers-using-sql-8cf7da132259)
 
-- Ibis + DuckDB geospatial: a match made on Earth
-[(link)](https://ibis-project.org/posts/ibis-duckdb-geospatial/)
-
-- Apache Cassandra 5.0 Features: Unified Compaction Strategy
-[(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Unified-Compaction-Strategy.html)
-
-- Database Connections in FastAPI: Leveraging Dependency Injection and Best Practices
-[(link)](https://blog.stackademic.com/database-connections-in-fastapi-leveraging-dependency-injection-and-best-practices-765861cf4d31)
-
-- How Data Should Be Stored In Single Table for DynamoDB
-[(link)](https://aws.plainenglish.io/how-data-should-be-stored-in-single-table-for-dynamodb-fd991ea3b1a7)
-
 - Core RAG Architecture with AlloyDB AI
 [(link)](https://medium.com/google-cloud/core-rag-architecture-with-alloydb-ai-7c7388f33ff1)
 
 - Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT!
 [(link)](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-
-- OneTable: Interoperability for Apache Hudi, Iceberg & Delta Lake
-[(link)](https://dipankar-tnt.medium.com/onetable-interoperability-for-apache-hudi-iceberg-delta-lake-bb8b27dd288d)
 
 - McKinsey are wrong that GenAI is The Silver Bullet
 [(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)

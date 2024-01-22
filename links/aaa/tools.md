@@ -252,6 +252,15 @@ is_slide: 0
 - Docker Images
 [(link)](https://hub.docker.com/r/nvidia/cuda/)
 
+# PowerShell
+- PowerShell Doku
+[(link)](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4)
+- Microsoft.PowerShell.Management 
+[(link)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-7.4)
+
+
+
+
 # schemaSpy
 - git
 [(link)](https://github.com/schemaspy/schemaspy)

@@ -22,3 +22,6 @@ is_slide: 0
 - Delivering billions of real-time updates cost-effectively: Our journey
 [(link)](https://medium.com/@Games24x7Tech/delivering-billions-of-real-time-updates-cost-effectively-our-journey-fe3bf06af1bc)
 
+- High-Level System Architecture of Booking.com
+[(link)](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
+

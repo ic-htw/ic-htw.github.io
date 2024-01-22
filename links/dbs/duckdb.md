@@ -15,6 +15,14 @@ is_slide: 0
 - duckdb-pgq - git
 [(link)](https://github.com/cwida/duckdb-pgq)
 
+# spatial
+- DuckDB - Spatial Relationships
+[(link)](https://geog-414.gishub.org/book/duckdb/07_spatial_relationships.html)
+- DuckDB Spatial Extension
+[(link)](https://github.com/duckdblabs/duckdb_spatial)
+- Geospatial DuckDB
+[(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
+
 # posts
 - The One Billion Row Challenge in SQL with DuckDB
 [(link)](https://rmoff.net/2024/01/03/1%EF%B8%8F%E2%83%A3%EF%B8%8F-1brc-in-sql-with-duckdb/)
@@ -36,14 +44,10 @@ is_slide: 0
 [(link)](https://medium.com/apache-airflow/how-to-best-use-duckdb-with-apache-airflow-63a079160d5d)
 - How Fast is DuckDB Really?
 [(link)](https://betterprogramming.pub/how-fast-is-duckdb-really-d5018ce0f0af)
-- DuckDB Spatial Extension
-[(link)](https://github.com/duckdblabs/duckdb_spatial)
 - Using DuckDB with Polars
 [(link)](https://towardsdatascience.com/using-duckdb-with-polars-e15a865e48a3)
 - Use dbt and Duckdb instead of Spark in data pipelines
 [(link)](https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5)
-- Geospatial DuckDB
-[(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 - Yahoo Scanner and Volatility + SMA Aliases
 [(link)](https://github.com/pdet/Scrooge-McDuck/pull/5)
 - Using DuckDB in AWS Lambda

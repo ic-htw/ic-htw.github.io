@@ -29,6 +29,8 @@ is_slide: 0
 
 
 # posts
+- Apache Cassandra 5.0 Features: Unified Compaction Strategy
+[(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Unified-Compaction-Strategy.html)
 - Open-sourcing a 10x reduction in Apache Cassandra tail latency
 [(link)](https://instagram-engineering.com/open-sourcing-a-10x-reduction-in-apache-cassandra-tail-latency-d64f86b43589)
         - Time Series Data Modeling

@@ -316,11 +316,17 @@ is_slide: 0
 - Get Started with Docker
 [(link)](https://docs.tigergraph.com/tigergraph-server/current/getting-started/docker)
 
-# tikv
+# tidb, tikv
 - A Deep Dive into TiKV
 [(link)](https://pingcap.medium.com/a-deep-dive-into-tikv-b27989993d19)
 - RocksDB in TiKV
 [(link)](https://pingcap.medium.com/rocksdb-in-tikv-34ece9bb4dc)
+- Distributed SQL Database Internals
+[(link1)](https://medium.com/@shenli3514/distributed-sql-database-internals-1-9c88790b83b)
+[(link2)](https://medium.com/@shenli3514/distributed-sql-database-internals-2-design-a-distributed-sql-database-90e3b7bbd8cf)
+[(link3)](https://medium.com/@shenli3514/distributed-sql-database-internals-3-distributed-storage-engine-bdc49c26242e)
+[(link4)](https://medium.com/@shenli3514/distributed-sql-database-internals-4-sql-engine-c01400908e9e)
+
 
 
 # timescaledb
