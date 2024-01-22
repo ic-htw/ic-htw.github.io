@@ -255,6 +255,8 @@ is_slide: 0
 # PowerShell
 - PowerShell Doku
 [(link)](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4)
+- Microsoft.PowerShell.Core
+[(link)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/?view=powershell-7.4)
 - Microsoft.PowerShell.Management 
 [(link)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-7.4)
 
