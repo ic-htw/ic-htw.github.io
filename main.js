@@ -1,10 +1,38 @@
 function init() {
     navitemsHandle();
-    slideModeSetOn();
     fillSecondSidebar();
     fillToc();
     deactivateButton();
-    // window.location.href = "#1"
+    document.onkeyup = function (e) {
+        if (e.key == "ArrowRight") {
+            slideNo = keyUpSlide(slideNo, "r");
+        }
+        if (e.key == "ArrowLeft") {
+            slideNo = keyUpSlide(slideNo, "l");
+        }
+    }
+}
+
+function keyUpSlide(i, dir) {
+    if (slidemodeIsOn()) {
+        if (dir == "r") {
+            i = i + 1;
+        }
+        else {
+            i = i - 1;
+        }
+        // console.log(i);
+        let btn = document.getElementById("btn-" + i);
+        if (btn == null) {
+            btn = document.getElementById("btn-0");
+            i = 0;
+        }
+        window.location.href = "#" + i;
+        activateButton(btn);
+        return i;
+    } else {
+        return -1;
+    }
 }
 
 function activateButton(btn) {
