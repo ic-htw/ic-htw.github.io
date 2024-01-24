@@ -22,4 +22,6 @@ is_slide: 0
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
-- Vector Databases 
+- PostgreSQL as a Vector Database: Getting Started and Scaling
+[(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
+

@@ -8,27 +8,6 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Understanding Database Partitioning in Distributed Systems : Key-Value Data
-[(link)](https://medium.com/the-developers-diary/understanding-database-partitioning-in-distributed-systems-1e015c7e487f)
-
-- PostgreSQL as a Vector Database: Getting Started and Scaling
-[(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
-
-- Build your own RAG with Mistral-7B and LangChain
-[(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
-
-- Can LLMs Replace Data Analysts? Building An LLM-Powered Analyst
-[(link)](bbb)
-
-- Can LLMs Replace Data Analysts? Getting Answers Using SQL
-[(link)](https://towardsdatascience.com/can-llms-replace-data-analysts-getting-answers-using-sql-8cf7da132259)
-
-- Core RAG Architecture with AlloyDB AI
-[(link)](https://medium.com/google-cloud/core-rag-architecture-with-alloydb-ai-7c7388f33ff1)
-
-- Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT!
-[(link)](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-
 - McKinsey are wrong that GenAI is The Silver Bullet
 [(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)
 
@@ -37,12 +16,6 @@ is_slide: 0
 
 - Amazon Q is simply Outstanding!!!
 [(link)](https://medium.com/@TechStoryLines/amazon-q-is-simply-outstanding-b0246283d087)
-
-- What Is LangChain?
-[(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
-
-- Generative AI with SQL — First Impressions
-[(link)](https://medium.com/learning-sql/generative-ai-with-sql-first-impressions-3d26c5f17ae3)
 
 - AWS re:Invent 2023 — Key Findings
 [(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)
@@ -71,29 +44,3 @@ is_slide: 0
 - NoSQL Summer Blockbusters: Rust, Kafka, Media Streaming &amp; Social Media &amp; More
 [(link)](https://scylladb.medium.com/nosql-summer-blockbusters-rust-kafka-media-streaming-social-media-more-b0074fccb9)
         
-- Apache Parquet: How to be a hero with the open-source columnar data format
-[(link)](https://blog.openbridge.com/how-to-be-a-hero-with-powerful-parquet-google-and-amazon-f2ae0f35ee04)
-        
-- Benchmarking Cassandra Scalability on AWS — Over a million writes per second
-[(link)](https://netflixtechblog.com/benchmarking-cassandra-scalability-on-aws-over-a-million-writes-per-second-39f45f066c9e)
-        
-- How to build a Streaming SQL Engine
-[(link)](https://blog.epsio.io/how-to-create-a-streaming-sql-engine-96e23994e0dd)
-        
-- What happens when Amazon rolls back from serverless?
-[(link)](https://betterprogramming.pub/what-happens-when-amazon-rolls-back-from-serverless-20ca38b88420)
-        
-- Demystifying the Parquet File Format
-[(link)](https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705)
-        
-- Mastering Connection Pooling in Python: Optimizing Database Connections
-[(link)](https://python.plainenglish.io/mastering-connection-pooling-in-python-optimizing-database-connections-72d66ec2bfcb)
-
-- Reduce AML Investigation Costs with TigerGraph
-[(link)](https://www.tigergraph.com/blog/reduce-aml-investigation-costs-with-tigergraph/)
-
-- Polars is all you need: SQL chapter
-[(link)](https://wolliq.medium.com/polars-is-all-you-need-sql-chapter-2e4385dd75c2)
-
-
-
