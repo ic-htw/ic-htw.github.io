@@ -145,6 +145,8 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/viz-types.html">Diagrammtypen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/viz-amounts.html">Beträge</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/viz-dist.html">Verteilungen</a> <br>
     Datenmodelle - relational<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/dm-unternehmen.html">Unternehmen</a> <br>
