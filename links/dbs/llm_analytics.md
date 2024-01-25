@@ -42,6 +42,8 @@ is_slide: 0
 
 
 # text to sql
+- SQL Assistant: Text-to-SQL Application in Streamlit
+[(link)](https://medium.com/@romina.elena.mendez/sql-assistant-text-to-sql-application-in-streamlit-b54f65d06b97)
 - Introducing NSQL: Open-source SQL Copilot Foundation Models
 [(link)](https://www.numbersstation.ai/post/introducing-nsql-open-source-sql-copilot-foundation-models)
 - NSQL git

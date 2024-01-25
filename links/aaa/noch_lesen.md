@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to avoid performance bottlenecks when using JSONB in PostgreSQL
+[(link)](https://medium.com/@adamf_64691/how-to-avoid-performance-bottlenecks-when-using-jsonb-in-postgresql-649282b6a7c6)
+
+- How Cloudflare Achieved 55 Million Requests per Second with Just 15 PostgreSQL Clusters!
+[(link)](https://devangtomar.medium.com/how-cloudflare-achieved-55-million-requests-per-second-with-just-15-postgresql-clusters-2d8a28ffd100)
+
+- Why Postgres RDS didn’t work for us
+[(link)](https://medium.com/@mkremer_75412/why-postgres-rds-didnt-work-for-us-and-why-it-won-t-work-for-you-if-you-re-implementing-a-big-6c4fff5a8644)
+
 - McKinsey are wrong that GenAI is The Silver Bullet
 [(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)
 
