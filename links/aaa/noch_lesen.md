@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
+[(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
+
 - How to avoid performance bottlenecks when using JSONB in PostgreSQL
 [(link)](https://medium.com/@adamf_64691/how-to-avoid-performance-bottlenecks-when-using-jsonb-in-postgresql-649282b6a7c6)
 

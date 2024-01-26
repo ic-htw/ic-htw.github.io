@@ -191,6 +191,17 @@ is_slide: 0
 - cayman
 [(link)](https://github.com/pages-themes/cayman)
 
+# jmeter
+- home
+[(link)](https://jmeter.apache.org/)
+- doc
+[(link)](https://jmeter.apache.org/usermanual/index.html)
+- JDBC
+[(link)](https://jmeter.apache.org/usermanual/build-db-test-plan.html)
+- wiki
+[(link)](https://cwiki.apache.org/confluence/display/JMETER/Home)
+
+
 # jupyter notebooks
 - ipython-sql
 [(link)](https://github.com/catherinedevlin/ipython-sql)
