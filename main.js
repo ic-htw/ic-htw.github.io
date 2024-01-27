@@ -188,6 +188,7 @@ function fillToc() {
         const br = document.createElement("br");
         btn.textContent = h;
         btn.classList.add("w3-button")
+        btn.classList.add("w3-padding-small")
         btn.addEventListener('click', makeClickCallback(i));
         tocCont.appendChild(btn);
         tocCont.appendChild(br);
