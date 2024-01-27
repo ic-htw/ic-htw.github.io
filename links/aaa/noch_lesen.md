@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introducing DuckDB-NSQL-7B, A LLM for DuckDB SQL
+[(link)](https://motherduck.com/blog/duckdb-text2sql-llm/)
+
+- Tokyo Walking Tour Guide
+[(link)](https://tech.marksblogg.com/tokyo-walking-tour-guide.html)
+
+- Apache Cassandra 5.0 Features: Storage Attached Indexes
+[(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Storage-Attached-Indexes.html)
+
 - Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
 [(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
 

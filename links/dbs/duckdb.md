@@ -24,6 +24,10 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Unlocking the power of DuckDB for geospatial analysis
+[(link)](https://medium.com/@ageospatial/unlocking-the-power-of-duckdb-for-geospatial-analysis-dcc77877f2fc)
+- SQL for Google Sheets with DuckDB
+[(link)](https://www.arecadata.com/sql-for-google-sheets-with-duckdb/)
 - The One Billion Row Challenge in SQL with DuckDB
 [(link)](https://rmoff.net/2024/01/03/1%EF%B8%8F%E2%83%A3%EF%B8%8F-1brc-in-sql-with-duckdb/)
 - Progression of DuckDB Performance

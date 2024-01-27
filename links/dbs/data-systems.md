@@ -198,6 +198,15 @@ is_slide: 0
 [(link)](https://www.thenile.dev/blog/introducing-nile)
 [(link)](https://news.ycombinator.com/item?id=38014812)
 
+# paradeDB
+- home
+[(link)](https://www.paradedb.com/)
+- doc
+[(link)](https://docs.paradedb.com)
+- blog
+[(link)](https://docs.paradedb.com/blog)
+
+
 
 # polars
 - user guide
