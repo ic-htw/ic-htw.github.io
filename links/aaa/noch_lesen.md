@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
+[(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
+
+- Python — 3 Ways to Work with Databases (SQL, ORM, Query Builder)
+[(link)](https://blog.stackademic.com/python-3-ways-to-work-with-databases-sql-orm-query-builder-e2a2d3cbe437)
+
+- Indexing Unboxed: Beyond the Basics in Database Design
+[(link)](https://medium.com/the-developers-diary/indexing-unboxed-beyond-the-basics-in-database-design-cd0dd1fdbdfb)
+
 - Introducing DuckDB-NSQL-7B, A LLM for DuckDB SQL
 [(link)](https://motherduck.com/blog/duckdb-text2sql-llm/)
 
