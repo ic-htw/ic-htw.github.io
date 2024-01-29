@@ -2,7 +2,7 @@
 layout: default
 title: "Visualisierung von Proportionen"
 is_slide: 1
-n: 13
+n: 16
 ---
 <!--
     00 ******************************************************************
@@ -19,9 +19,10 @@ n: 13
 <h1>Attribution</h1>
 <p class="w3-large">Die folgenden Folien basieren auf</p>
 <ul class="w3-large">
-  <li>Fundamentals of Data Visualization (<a  href="https://clauswilke.com/dataviz/index.html">link</a>)<br>
-  und folgen damit der</li>
-  <li>Attribution-NonCommercial-NoDerivatives 4.0 International Lizenz (<a  href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">link</a>) </li>
+    <li>Fundamentals of Data Visualization (<a href="https://clauswilke.com/dataviz/index.html">link</a>)<br>
+        und folgen damit der</li>
+    <li>Attribution-NonCommercial-NoDerivatives 4.0 International Lizenz (<a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">link</a>) </li>
 </ul>
 <div class="ic-gap"></div>
 
@@ -175,3 +176,67 @@ n: 13
 <img class="w3-image" src="/lv/dmdb/a/viz/10-proportions/120-30.png">
 <div class="ic-gap"></div>
 
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Mosaic Plots - Brücken</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Material: Holz, Eisen, Stahl</li>
+            <li>Epoche: Craft, Emerging, Mature, Modern</li>
+        </ul>
+        <img class="w3-image" src="/lv/dmdb/a/viz/11-nested-proportions/30-30.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Geschachtelte Proportionen</p>
+        <ul class="w3-large">
+            <li>Nach Epoche</li>
+            <li>Innerhalb Epoche nach Material</li>
+        </ul>
+        <p class="w3-large ic-neg15">Ähnlichkeit zu Stacked Bar Charts</p>
+        <ul class="w3-large">
+            <li>Aber: Bars unterschiedlich breit</li>
+            <li>X-Achse proportional zu Epoche</li>
+            <li>Y-Achse proportional zu Material</li>
+            <li>Fläche proportional zu Anzahl Brücken</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Treemaps 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/viz/11-nested-proportions/40-30.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg10">Rekursive Schachtelung</p>
+        <ul class="w3-large">
+            <li>Erst nach Material</li>
+            <li>Innerhalb Material nach Epoche</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Treemaps 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/viz/11-nested-proportions/50-30.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg10">Gut geeignet bei natürlicher Schachtelung</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
