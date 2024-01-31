@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LanceDB + Polars
+[(link)](https://blog.lancedb.com/lancedb-polars-2d5eb32a8aa3)
+
+- Fastest Methods to Bulk Insert a Pandas Dataframe into PostgreSQL
+[(link)](https://medium.com/@askintamanli/fastest-methods-to-bulk-insert-a-pandas-dataframe-into-postgresql-2aa2ab6d2b24)
+
 - I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
 [(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
 
