@@ -1,0 +1,307 @@
+---
+layout: default
+title: "ER-Modelle 1"
+is_slide: 1
+n: 15
+---
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Entity-Relationship-Modellierung</h1>
+<ul class="w3-large">
+  <li>Datenmodellierungstechnik, basierend auf</li>
+  <ul>
+    <li>Klassifikation von Objekten</li>
+    <li>Klassifikation von Beziehungen zwischen Objekten</li>
+  </ul>
+  <li>Wurde Mitte der 70er Jahre entwickelt</li>
+  <ul>
+    <li>Verschiedene Variationen</li>
+    <li>Werkzeugunterstützung</li>
+  </ul>
+  <li>Starker Bezug zum relationalen Datenmodell</li>
+  <ul>
+    <li>Abstraktere Beschreibung von relationalen Strukturen</li>
+    <li>Transformation in das relationale Modell</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Klassifizierung von Objekten</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m4">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d10-200.png">
+  </div>
+  <div class="w3-col m8">
+    <ul class="w3-large">
+      <li>Entitätstypen klassifizieren Objekte</li>
+      <li>Beinhalten Attribute, die die Objekte beschreiben</li>
+      <ul>
+        <li>Haben Datentypen</li>
+        <li>Können Objekte identifizieren</li>
+        <li>Können optional oder notwendig sein</li>
+      </ul>
+    </ul>
+    <ul class="w3-large">
+      <li>Haben einen intensionalen und extensionalen Charakter</li>
+      <ul>
+        <li><b>Intensional:</b> Struktur, d.h.die intendierte Form der Informationen</li>
+        <li><b>Extensional:</b> Menge der Objekte zu einem Zeitpunkt, Datenbankzustand</li>
+      </ul>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Entitätstyp und Extension</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d10-150.png">
+  </div>
+  <div class="w3-col m6">
+    <ul class="w3-large">
+      <li>Entitätstyp</li>
+      <li>Objekttyp</li>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d20-100.png">
+  </div>
+  <div class="w3-col m6">
+    <ul class="w3-large">
+      <li>Entität</li>
+      <li>Objekt</li>
+      <li>Instanz</li>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Klassifikation von Beziehungen</h1>
+<img class="w3-image" src="/lv/dmdb/a/er1/d30-150.png">
+<ul class="w3-large">
+  <li>Beziehungstypen klassifizieren Beziehungen</li>
+  <li>Graphische Darstellung von Kardinalitäten</li>
+  <ul>
+    <li>Kardinalität 1: Linienende als ein Strich</li>
+    <li>Kardinalität N: Linienende mit drei Strichen (Krähenfuß)</li>
+  </ul>
+  <li>Graphische Darstellung von Optionalitäten</li>
+  <ul>
+    <li>Optional: Gestrichelte Linie</li>
+    <li>Obligatorisch: Durchgezogene Linie</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Beziehungstyp und Extension</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d30-150.png">
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>Beziehungstyp</li>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d40-100.png">
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>Beziehungen</li>
+      <li>Instanzen</li>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Interaktion Beziehungstypen</h1>
+<p class="w3-large">Graphikdatei öffnnen</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Kardinalitäten und Optionalitäten</h1>
+<img class="w3-image" src="/lv/dmdb/a/er1/d50-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>ER-Modell Hochschule</h1>
+<p class="w3-large">Siehe (<a href="/lv/dmdb/p/ab-01.html">link</a>)</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Diskussion Semester</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m7">
+      <ul class="w3-large">
+          <li>Ist nicht nur Bezeichnung</li>
+          <li>Hat Attribute</li>
+          <li>Sollte daher Entitätstyp sein</li>
+      </ul>
+  </div>
+  <div class="w3-col m5">
+    <img class="w3-image" src="/lv/dmdb/a/er1/d60-150.png">
+</div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Module - erster Ansatz</h1>
+<ul class="w3-large">
+  <li>In einem Semester können viele Module angeboten werden</li>
+  <li>Ein Modul kann in vielen Semestern angeboten werden</li>
+  <li>Ein Modul kann von vielen  Studierenden belegt werden</li>
+  <li>Studierende können viele Module belegen</li>
+</ul>
+<img class="w3-image" src="/lv/dmdb/a/er1/d70-150.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Problem des Ansatzes</h1>
+<ul class="w3-large">
+  <li>Nicht erkennbar, wer in welchem Semester welches Modul belegt hat</li>
+  <li>Verbundoperation würde immer Studierende in allen Semestern liefern</li>
+</ul>
+<img class="w3-image" src="/lv/dmdb/a/er1/d80-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Auflösung des Problems</h1>
+<ul class="w3-large">
+  <li>Unterscheidung zwischen Modul und Kurs</li>
+  <li>Kurs ist die konkrete Durchführung eines Moduls</li>
+  <li>Module haben Informationen unabhängig von der Durchführung</li>
+  <li>Differenzierung notwendig, um Redundanzen und Inkosistenzen zu vermeiden</li>
+</ul>
+<img class="w3-image" src="/lv/dmdb/a/er1/d90-150.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Semesterzuordnung von Kursen</h1>
+<img class="w3-image" src="/lv/dmdb/a/er1/d100-80.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>

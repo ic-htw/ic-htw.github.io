@@ -129,6 +129,9 @@ Datenmodellierung und Datenbanksysteme
     <a  href="/lv/dmdb/p/rel-excel.html">Excel / Rel </a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/norm.html">Normalformen</a> <br>
+    ER<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/er1.html">ER-Modelle 1</a> <br>
     SQL<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
