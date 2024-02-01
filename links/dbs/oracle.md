@@ -20,6 +20,8 @@ is_slide: 0
 [(link)](https://docs.oracle.com/en/database/oracle/sql-developer-data-modeler/index.html)
 
 # Development
+- PL/SQL Tutorial
+[(link)](https://www.tutorialspoint.com/plsql/index.htm)
 - JDBC Drivers
 [(link)](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 - SQL Developer
