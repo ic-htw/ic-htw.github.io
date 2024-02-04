@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why I stopped using SCD in my data modeling
+[(link)](https://medium.com/@ldlwbru0218/why-i-stopped-using-scd-in-my-data-modeling-059886ddb035)
+
+- Build a Chatbot for your SQL database in 20 lines of Python using Streamlit and Vanna
+[(link)](https://blog.stackademic.com/build-a-chatbot-for-your-sql-database-in-20-lines-of-python-5fbd47d43649)
+
 - LanceDB + Polars
 [(link)](https://blog.lancedb.com/lancedb-polars-2d5eb32a8aa3)
 
