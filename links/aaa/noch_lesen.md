@@ -8,6 +8,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Migrating from Postgres to ScyllaDB, with 349X Faster Query Processing
+[(link)](https://scylladb.medium.com/migrating-from-postgres-to-scylladb-with-349x-faster-query-processing-c277fe18801b)
+
+- Understanding Database Partitioning in Distributed Systems : Rebalancing Partitions
+[(link)](https://medium.com/the-developers-diary/understanding-database-partitioning-in-distributed-systems-rebalancing-partitions-fa7fee542fd3)
+
+- An AI application that can chat with with very large SQL databases.
+[(link)](https://systemdesigner.medium.com/an-ai-application-that-can-chat-with-with-very-large-sql-databases-acd730fcfa26)
+
+- Using DuckDB-WASM for in-browser Data Engineering
+[(link)](https://tobilg.com/using-duckdb-wasm-for-in-browser-data-engineering)
+
+- Databases Are Falling Apart: Database Disassembly and Its Implications
+[(link)](https://materializedview.io/p/databases-are-falling-apart)
+
 - Why I stopped using SCD in my data modeling
 [(link)](https://medium.com/@ldlwbru0218/why-i-stopped-using-scd-in-my-data-modeling-059886ddb035)
 
