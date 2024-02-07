@@ -4,6 +4,10 @@ title: LLM Analytics
 is_slide: 0
 ---
 # aaa
+- Build a Chatbot for your SQL database in 20 lines of Python using Streamlit and Vanna
+[(link)](https://blog.stackademic.com/build-a-chatbot-for-your-sql-database-in-20-lines-of-python-5fbd47d43649)
+- An AI application that can chat with with very large SQL databases.
+[(link)](https://systemdesigner.medium.com/an-ai-application-that-can-chat-with-with-very-large-sql-databases-acd730fcfa26)
 - Cheshire-Cat plugin SQL
 [(link)](https://medium.com/mad-chatter-tea-party/cheshire-cat-ai-plugin-aichatsql-12994a8f576b)
 - Building Your Own Text-to-SQL: Steps And Requirements

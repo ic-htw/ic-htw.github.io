@@ -32,4 +32,7 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/rust-the-next-big-thing-in-data-science-319a03305883)
 - Prompt Engineering ChatGPT: Insanely Fast Python Dashboards
 [(link)](https://medium.com/data-and-beyond/prompt-engineering-chatgpt-insanely-fast-python-dashboards-cda8ce3f7464)
+- Tokyo Walking Tour Guide
+[(link)](https://tech.marksblogg.com/tokyo-walking-tour-guide.html)
+
 

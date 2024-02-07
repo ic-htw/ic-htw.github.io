@@ -24,6 +24,10 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Introducing DuckDB-NSQL-7B, A LLM for DuckDB SQL
+[(link)](https://motherduck.com/blog/duckdb-text2sql-llm/)
+- Using DuckDB-WASM for in-browser Data Engineering
+[(link)](https://tobilg.com/using-duckdb-wasm-for-in-browser-data-engineering)
 - Unlocking the power of DuckDB for geospatial analysis
 [(link)](https://medium.com/@ageospatial/unlocking-the-power-of-duckdb-for-geospatial-analysis-dcc77877f2fc)
 - SQL for Google Sheets with DuckDB
