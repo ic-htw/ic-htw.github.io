@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How concurrency handled in Postgres
+[(link)](https://blog.stackademic.com/how-concurrency-handled-in-postgres-beb4be1e13dd)
+
 - I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
 [(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
 

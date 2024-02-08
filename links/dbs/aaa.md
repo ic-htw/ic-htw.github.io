@@ -19,6 +19,12 @@ is_slide: 0
 - Getting started with database development 
 [(link)](https://www.reddit.com/r/databasedevelopment/comments/unj8d1/getting_started_with_database_development/)
 
+# data-diff
+- data-diff
+[(link)](https://github.com/datafold/data-diff)
+
+
+
 # zzz
 - Leaderless Replication In Distributed System
 [(link)](https://medium.com/the-developers-diary/leaderless-replication-unveiled-5f6910dd9825)
