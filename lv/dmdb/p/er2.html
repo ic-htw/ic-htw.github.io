@@ -2,7 +2,7 @@
 layout: default
 title: "ER-Modelle 2"
 is_slide: 1
-n: 20
+n: 17
 ---
 <!--
     00 ******************************************************************
@@ -199,7 +199,15 @@ WHERE RID=1;</code></pre>
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Existenzabhängigkeit</h1>
+<img class="w3-image" src="/lv/dmdb/a/er2/d100-130.png">
+ <pre><code class="language-sql">DELETE FROM Gebaeude 
+WHERE GID=1;</code></pre>
+<ul class="w3-large">
+    <li>Raum kann nicht verschoben werden (Nichttransferierbarkeit)</li>
+    <li>D.h., Raum muss gelöscht werden, damit Gebäude gelöscht werden kann</li>
+    <li>D.h., Räume hängen von der Existenz von Gebäuden ab </li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -207,7 +215,22 @@ WHERE RID=1;</code></pre>
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Problem zweistelliger Beziehungstypen 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Personen können mehrere Adressen haben</li>
+            <li>Einer Adresse können mehrere Personen zugeordnet werden</li>
+            <li>Personen können mehrere Adressarten haben</li>
+            <li>Einer Adressart können mehrere Personen zugeordnet sein</li>
+            <li>Eine Adresse kann mehrere Adressarten haben</li>
+            <li>Einer Adressart können mehrere Adressen zugeordnet sein</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er2/d120-130.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -215,7 +238,9 @@ WHERE RID=1;</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1>Problem zweistelliger Beziehungstypen 2</h1>
+<img class="w3-image" src="/lv/dmdb/a/er2/d130-80.png">
+<p class="w3-large">Nicht möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
 <div class="ic-gap"></div>
 
 
@@ -223,7 +248,21 @@ WHERE RID=1;</code></pre>
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>Assoziationstypen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er2/d140-130.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Personenadresse hat Doppelnatur</li>
+            <li>Wird daher Assoziationstyp genannt</li>
+            <li>Ist Entitätstyp</li>
+            <li>Ist aber auch Beziehungstyp: verbindet Entitätstypen</li>
+            <li>Dreistelliger Beziehungstyp</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -231,7 +270,9 @@ WHERE RID=1;</code></pre>
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1>Auflösung Problem</h1>
+<img class="w3-image" src="/lv/dmdb/a/er2/d150-80.png">
+<p class="w3-large">Nun möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
 <div class="ic-gap"></div>
 
 
@@ -239,7 +280,14 @@ WHERE RID=1;</code></pre>
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>xxx</h1>
+<h1>Zweistellige Beziehungstypen mit Attributen</h1>
+<img class="w3-image" src="/lv/dmdb/a/er2/d60-130.png">
+<ul class="w3-large">
+    <li>Note verbindet Studierende mit Modulen</li>
+    <li>Ist Assoziationstyp</li>
+    <li>Als Beziehungstyp ist er zweistellig, hat aber ein Attribut, den Notenwert</li>
+    <li>Kann daher nicht als N-zu-M-Beziehungstyp modelliert werden</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -247,7 +295,19 @@ WHERE RID=1;</code></pre>
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Note als dreistelliger Beziehungstyp</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er2/d160-130.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Notenwert ist dynamische Domäne</li>
+            <li>Note hat nur Beziehungstypen</li>
+            <li>Aus zweistellig ist dreistellig geworden</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -255,7 +315,8 @@ WHERE RID=1;</code></pre>
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1>Beispiel Handelsunternehmen</h1>
+<img class="w3-image" src="/lv/dmdb/a/er2/d170-130.png">
 <div class="ic-gap"></div>
 
 
@@ -263,31 +324,7 @@ WHERE RID=1;</code></pre>
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1>Assoziationstypen in HVS</h1>
+<img class="w3-image" src="/lv/dmdb/a/er1/d110-130.png">
 <div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
 
