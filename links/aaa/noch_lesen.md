@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The Future of Data Visualization: 2024 and Beyond
+[(link)](https://medium.com/@mokkup/the-future-of-data-visualization-2024-and-beyond-3173a8e60494)
+
 - How concurrency handled in Postgres
 [(link)](https://blog.stackademic.com/how-concurrency-handled-in-postgres-beb4be1e13dd)
 
