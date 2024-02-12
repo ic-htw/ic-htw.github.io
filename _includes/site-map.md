@@ -134,6 +134,8 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/er1.html">ER-Modelle 1</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/er2.html">ER-Modelle 2</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/er3.html">ER-Modelle 3</a> <br>
     SQL<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-one.html">Abfragen auf einer Tabelle</a> <br>
