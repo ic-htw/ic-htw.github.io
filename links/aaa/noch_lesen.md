@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- One Trillion Row Challenge
+[(link)](https://medium.com/coiled-hq/one-trillion-row-challenge-5bfd4c3b8aef)
+
 - The Future of Data Visualization: 2024 and Beyond
 [(link)](https://medium.com/@mokkup/the-future-of-data-visualization-2024-and-beyond-3173a8e60494)
 
