@@ -2,7 +2,7 @@
 layout: default
 title: "ER-Modelle 3"
 is_slide: 1
-n: 20
+n: 18
 ---
 <!--
     00 ******************************************************************
@@ -116,7 +116,7 @@ n: 20
         <ul class="w3-large">
             <li>Beziehungstyp geht auf Obertyp</li>
             <li>Instanzen der Untertypen können an diesem Beziehungstyp teilnehmen</li>
-            <li>StudentIn und Lehrperson kann Adresse haben</li>
+            <li>StudentIn und Lehrperson können Adresse haben</li>
         </ul>
     </div>
 </div>
@@ -214,8 +214,15 @@ n: 20
 -->
 {% include padding-id.html id=12 %}
 <h1>Generalisierung - Fehlerbeispiel</h1>
-<img class="w3-image" src="/lv/dmdb/a/er3/d120a-130.png"><br>
-<img class="w3-image" src="/lv/dmdb/a/er3/d130-130.png">
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/dmdb/a/er3/d120a-130.png"><br>
+        <img class="w3-image" src="/lv/dmdb/a/er3/d130-130.png">
+    </div>
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">Verletzung Substitutionsprinzip</p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -223,7 +230,39 @@ n: 20
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1 class="ic-neg15">Verletzung Substitutionsprinzip</h1>
+<div>
+    <div class="w3-col m6">
+        <pre><code class="language-java">public class Quadrat {
+  protected int breite;
+  public Quadrat(int breite) {
+    this.breite = breite;
+  }	
+  public int flaeche() {
+    return breite * breite;
+  }
+}
+public class Rechteck extends Quadrat {
+  private int laenge;
+  public Rechteck(int breite, int laenge) {
+    super(breite);
+    this.laenge = laenge;
+}</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-java">public class Main {
+  public static void main(String[] args) {
+    Quadrat q = new Quadrat(5);
+    System.out.println(q.flaeche());
+    // liefert 25
+		
+    Rechteck r = new Rechteck(5, 6);
+    System.out.println(r.flaeche());
+    // liefert ebenfalls 25 statt 30
+  }
+}</code></pre>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -231,7 +270,20 @@ n: 20
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>xxx</h1>
+<h1 class="ic-neg10">Übersetzungstrategien ER nach Rel</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er3/d010-130.png">
+        <ul class="w3-large">
+            <li>Eine Tabelle pro Entitätstyp</li>
+            <li>Eine Tabelle für die gesamte Hierarchie</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er3/d030-130.png"><br><hr class="ic-hr">
+        <img class="w3-image" src="/lv/dmdb/a/er3/d140-130.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -239,7 +291,26 @@ n: 20
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Bewertung Übersetzungstrategien</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Eine Tabelle pro Entitätstyp</li>
+            <ul>
+                <li>Not-NULL-Constraints für Untertypen bleiben erhalten</li>
+                <li>Verbund erforderlich</li>
+            </ul>
+            <li>Eine Tabelle für die gesamte Hierarchie</li>
+            <ul>
+                <li>Keine Not-NULL-Constraints in Untertypen</li>
+                <li>Kein Verbund erforderlich</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/dmdb/a/er3/d150-100.png">
+    </div>
+        </div>
 <div class="ic-gap"></div>
 
 
@@ -247,7 +318,8 @@ n: 20
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1 class="ic-neg10">Bibliothek - Nutzer</h1>
+<img class="w3-image" src="/lv/dmdb/a/er3/d160-130.png">
 <div class="ic-gap"></div>
 
 
@@ -255,7 +327,8 @@ n: 20
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1 class="ic-neg10">Bibliothek - Medien</h1>
+<img class="w3-image" src="/lv/dmdb/a/er3/d170-130.png">
 <div class="ic-gap"></div>
 
 
@@ -263,21 +336,8 @@ n: 20
     18 ******************************************************************
 -->
 {% include padding-id.html id=18 %}
-<h1>xxx</h1>
+<h1 class="ic-neg10">Bibliothek - Ausleihe</h1>
+<img class="w3-image" src="/lv/dmdb/a/er3/d180-130.png">
 <div class="ic-gap"></div>
 
 
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>

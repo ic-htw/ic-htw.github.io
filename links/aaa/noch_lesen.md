@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
+[(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
+
 - One Trillion Row Challenge
 [(link)](https://medium.com/coiled-hq/one-trillion-row-challenge-5bfd4c3b8aef)
 
