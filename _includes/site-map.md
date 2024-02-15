@@ -164,6 +164,12 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/viz-proportions.html">Proportionen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/viz-assoc.html">Assoziationen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/viz-timeseries.html">Zeitreihen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/viz-sonstiges.html">Sonstiges</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/viz-p-ink.html">Proportional Ink</a> <br>
     Datenmodelle - relational<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/dm-unternehmen.html">Unternehmen</a> <br>
