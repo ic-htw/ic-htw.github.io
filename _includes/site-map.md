@@ -148,6 +148,8 @@ Datenmodellierung und Datenbanksysteme
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-sub.html">Unterabfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+        <a  href="/lv/dmdb/p/sql-window.html">Fenster-Funktionen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/sql-case.html">Fallbeipiele</a> <br>
     Visualisierungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;

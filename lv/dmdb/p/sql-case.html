@@ -33,7 +33,7 @@ n: 12
                 ORDER BY anzahl;</code></pre>
     </div>
     <div class="w3-col m4">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-10.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-10.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -54,8 +54,8 @@ n: 12
                 join timebyday tbd ON tbd.timeid=s.timeid
                 join customer c ON c.customerid=s.customerid
                 group by country, tyear;</code></pre>
-        <img class="w3-image" src="/lv/dmdb/a/sql-CASE/tab-20.png">
-        <img class="w3-image" src="/lv/dmdb/a/sql-CASE/fig-10.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-20.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/fig-10.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -88,13 +88,13 @@ n: 12
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m3">
-        <img class="w3-image" src="/lv/dmdb/a/sql-CASE/tab-30.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-30.png">
     </div>
     <div class="w3-col m4">
-        <img class="w3-image" src="/lv/dmdb/a/sql-CASE/tab-40.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-40.png">
     </div>
     <div class="w3-col m5">
-        <img class="w3-image" src="/lv/dmdb/a/sql-CASE/tab-50.png">
+        <img class="w3-image" src="/lv/dmdb/a/sql-case/tab-50.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -116,7 +116,7 @@ n: 12
                 having count(*)>1;</code></pre>
     </div>
     <div class="w3-col m4">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-60.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-60.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -130,14 +130,14 @@ n: 12
 <div class="w3-row-padding">
     <div class="w3-col m8">
         <pre><code class="language-sql">SELECT education,
-                CASE
+                case
                 WHEN yearlyincome in ('$10K - $30K', '$30K - $50K', '$50K - $70K') THEN 'L1'
                 ELSE 'L2'
                 END AS annual_income, count(*)
                 FROM customer
                 group by
                 education,
-                CASE
+                case
                 WHEN yearlyincome in ('$10K - $30K', '$30K - $50K', '$50K - $70K') THEN 'L1'
                 ELSE 'L2'
                 END
@@ -146,7 +146,7 @@ n: 12
                 annual_income;</code></pre>
     </div>
     <div class="w3-col m4">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-70.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-70.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -176,7 +176,7 @@ n: 12
                 group by s.productid, sales2014;</code></pre>
     </div>
     <div class="w3-col m4">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-80.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-80.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -236,7 +236,7 @@ n: 12
     round(unitsales/sum(unitsales) over(), 3) * 100 AS percent_of_total
   FROM basecube
   ORDER BY tyear, tmonthnumber, family;</code></pre>
-<img class="w3-image" src="/lv/dmdb/a/sql-CASE/tab-90.png">
+<img class="w3-image" src="/lv/dmdb/a/sql-case/tab-90.png">
 <div class="ic-gap"></div>
 
 
@@ -265,7 +265,7 @@ n: 12
           ORDER BY tmonthnumber;</code></pre>
     </div>
     <div class="w3-col m5">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-100.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-100.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -296,7 +296,7 @@ n: 12
           ORDER BY family, tmonthnumber;</code></pre>
     </div>
     <div class="w3-col m5">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-110.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-110.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -327,7 +327,7 @@ n: 12
           fetch first 10 rows only;</code></pre>
     </div>
     <div class="w3-col m6">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-120.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-120.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -359,7 +359,7 @@ n: 12
             )
           SELECT 
             category, unitsales, cum_revenue, total_revenue,
-            CASE 
+            case 
               WHEN cum_revenue < 0.5 * total_revenue THEN 'A'
               WHEN cum_revenue < 0.7 * total_revenue THEN 'B'
               ELSE 'C'
@@ -368,7 +368,7 @@ n: 12
           ORDER BY unitsales desc;</code></pre>
     </div>
     <div class="w3-col m6">
-        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-CASE/tab-130.png">
+        <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-case/tab-130.png">
     </div>
 </div>
 <div class="ic-gap"></div>
