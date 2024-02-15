@@ -322,6 +322,7 @@ is_slide: 0
 # tigergraph
 - home
 [(link)](https://www.tigergraph.com/)
+
 - Get Started with Docker
 [(link)](https://docs.tigergraph.com/tigergraph-server/current/getting-started/docker)
 

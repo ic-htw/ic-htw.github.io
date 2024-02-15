@@ -122,6 +122,8 @@ is_slide: 0
 
 
 # misc
+- Connecting to Postgres With psql and .pg_service.conf 
+[(link)](https://www.timescale.com/blog/connecting-to-postgres-with-psql-and-pg_service-conf/)
 - Transaction Isolation in Postgres, explained
 [(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 - temBoard - PostgreSQL Remote Control

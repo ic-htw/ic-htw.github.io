@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Random Geography Generation with PostGIS: Fluviation
+[(link)](https://di.nmfay.com/random-geography-fluviation)
+
+- What’s new in the Postgres 16 query planner / optimizer 
+[(link)](https://www.citusdata.com/blog/2024/02/08/whats-new-in-postgres-16-query-planner-optimizer/)
+
+- pg_analytics: Transforming Postgres into a Fast OLAP Database
+[(link)](https://blog.paradedb.com/pages/introducing_analytics)
+
 - Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
 [(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
 
@@ -19,9 +28,6 @@ is_slide: 0
 
 - How concurrency handled in Postgres
 [(link)](https://blog.stackademic.com/how-concurrency-handled-in-postgres-beb4be1e13dd)
-
-- I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
-[(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
 
 - Apache Cassandra 5.0 Features: Storage Attached Indexes
 [(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Storage-Attached-Indexes.html)

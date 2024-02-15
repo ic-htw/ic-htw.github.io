@@ -26,6 +26,10 @@ is_slide: 0
 
 
 # zzz
+- I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
+[(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
+- I spent another 6 hours understanding the design principles of Snowflake. Here’s what I found
+[(link)](https://medium.com/@vutrinh274/i-spent-another-6-hours-understanding-the-design-principles-of-snowflake-heres-what-i-found-dea9fd74ae96)
 - Leaderless Replication In Distributed System
 [(link)](https://medium.com/the-developers-diary/leaderless-replication-unveiled-5f6910dd9825)
 - A New Frontier
