@@ -8,44 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Random Geography Generation with PostGIS: Fluviation
-[(link)](https://di.nmfay.com/random-geography-fluviation)
-
-- What’s new in the Postgres 16 query planner / optimizer 
-[(link)](https://www.citusdata.com/blog/2024/02/08/whats-new-in-postgres-16-query-planner-optimizer/)
-
-- pg_analytics: Transforming Postgres into a Fast OLAP Database
-[(link)](https://blog.paradedb.com/pages/introducing_analytics)
-
-- Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
-[(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
-
-- One Trillion Row Challenge
-[(link)](https://medium.com/coiled-hq/one-trillion-row-challenge-5bfd4c3b8aef)
-
-- The Future of Data Visualization: 2024 and Beyond
-[(link)](https://medium.com/@mokkup/the-future-of-data-visualization-2024-and-beyond-3173a8e60494)
-
-- How concurrency handled in Postgres
-[(link)](https://blog.stackademic.com/how-concurrency-handled-in-postgres-beb4be1e13dd)
-
-- Apache Cassandra 5.0 Features: Storage Attached Indexes
-[(link)](https://cassandra.apache.org/_/blog/Apache-Cassandra-5.0-Features-Storage-Attached-Indexes.html)
-
 - Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
 [(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
 
 - How Cloudflare Achieved 55 Million Requests per Second with Just 15 PostgreSQL Clusters!
 [(link)](https://devangtomar.medium.com/how-cloudflare-achieved-55-million-requests-per-second-with-just-15-postgresql-clusters-2d8a28ffd100)
-
-- Why Postgres RDS didn’t work for us
-[(link)](https://medium.com/@mkremer_75412/why-postgres-rds-didnt-work-for-us-and-why-it-won-t-work-for-you-if-you-re-implementing-a-big-6c4fff5a8644)
-
-- McKinsey are wrong that GenAI is The Silver Bullet
-[(link)](https://blog.metamirror.io/mckinsey-are-wrong-that-genai-is-the-silver-bullet-fa79b4fe8ed7)
-
-- 5 Reasons Why to Write Your Semantic Layer in YAML
-[(link)](https://medium.com/gooddata-developers/5-reasons-why-to-write-your-semantic-layer-in-yaml-f6abfaebc888)
 
 - Amazon Q is simply Outstanding!!!
 [(link)](https://medium.com/@TechStoryLines/amazon-q-is-simply-outstanding-b0246283d087)

@@ -48,6 +48,8 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/uber-h3-for-data-analysis-with-python-1e54acdcc908)
 
 # posts
+- Random Geography Generation with PostGIS: Fluviation
+[(link)](https://di.nmfay.com/random-geography-fluviation)
 - PostGIS Day 2022
 [(link)](https://www.crunchydata.com/blog/postgis-day-2022)
 - Introduction to PostGIS

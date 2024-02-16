@@ -122,6 +122,10 @@ is_slide: 0
 
 
 # misc
+- Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
+[(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
+- What’s new in the Postgres 16 query planner / optimizer 
+[(link)](https://www.citusdata.com/blog/2024/02/08/whats-new-in-postgres-16-query-planner-optimizer/)
 - Connecting to Postgres With psql and .pg_service.conf 
 [(link)](https://www.timescale.com/blog/connecting-to-postgres-with-psql-and-pg_service-conf/)
 - Transaction Isolation in Postgres, explained

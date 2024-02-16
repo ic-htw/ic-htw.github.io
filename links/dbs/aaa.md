@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- One Trillion Row Challenge
+[(link)](https://medium.com/coiled-hq/one-trillion-row-challenge-5bfd4c3b8aef)
 - I spent 6 hours understanding the design principles of BigQuery. Here’s what I found
 [(link)](https://medium.com/@vutrinh274/i-spent-6-hours-understanding-the-design-principles-of-bigquery-heres-what-i-found-6050cb7880fa)
 - I spent another 6 hours understanding the design principles of Snowflake. Here’s what I found

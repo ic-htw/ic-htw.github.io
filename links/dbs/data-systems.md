@@ -205,6 +205,8 @@ is_slide: 0
 [(link)](https://docs.paradedb.com)
 - blog
 [(link)](https://docs.paradedb.com/blog)
+- pg_analytics: Transforming Postgres into a Fast OLAP Database
+[(link)](https://blog.paradedb.com/pages/introducing_analytics)
 
 
 
