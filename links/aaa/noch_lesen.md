@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to use pgTAP to automate unit testing in postgres
+[(link)](https://medium.com/capital-one-tech/how-to-use-pgtap-to-automate-unit-testing-in-postgres-2202a7a0acc0)
+
+- What’s the Difference Between localhost and 127.0.0.1?
+[(link)](https://blog.stackademic.com/whats-the-difference-between-localhost-and-127-0-0-1-4102ba05d494)
+
 - Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
 [(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
 
