@@ -26,6 +26,10 @@ is_slide: 0
 
 
 # zzz
+- Advanced Data Structures Series— Skip List
+[(link)](https://medium.com/@remisharoon/advanced-data-structures-series-skip-list-3819ea2f7fa0)
+- LevelDB Data Structures Serials I: Skip List
+[(link)](https://qtmuniao.medium.com/leveldb-data-structures-serials-i-skip-list-67db102500d3)
 - One Trillion Row Challenge
 [(link)](https://medium.com/coiled-hq/one-trillion-row-challenge-5bfd4c3b8aef)
 - I spent 6 hours understanding the design principles of BigQuery. Here’s what I found

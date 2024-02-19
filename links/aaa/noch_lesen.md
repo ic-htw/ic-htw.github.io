@@ -8,35 +8,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- How to use pgTAP to automate unit testing in postgres
-[(link)](https://medium.com/capital-one-tech/how-to-use-pgtap-to-automate-unit-testing-in-postgres-2202a7a0acc0)
+- CodeLlama 70B
+[(link)](https://llama-2.ai/codellama-70b/)
 
-- What’s the Difference Between localhost and 127.0.0.1?
-[(link)](https://blog.stackademic.com/whats-the-difference-between-localhost-and-127-0-0-1-4102ba05d494)
+- Open-sourcing SQLCoder-70B, the state of the art in text to SQL generation
+[(link)](https://defog.ai/blog/open-sourcing-sqlcoder-70b/)
 
-- Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
-[(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
+- Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
+[(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
 
-- How Cloudflare Achieved 55 Million Requests per Second with Just 15 PostgreSQL Clusters!
-[(link)](https://devangtomar.medium.com/how-cloudflare-achieved-55-million-requests-per-second-with-just-15-postgresql-clusters-2d8a28ffd100)
+- Advanced RAG Techniques: an Illustrated Overview
+[(link)](https://pub.towardsai.net/advanced-rag-techniques-an-illustrated-overview-04d193d8fec6)
 
-- Amazon Q is simply Outstanding!!!
-[(link)](https://medium.com/@TechStoryLines/amazon-q-is-simply-outstanding-b0246283d087)
-
-- AWS re:Invent 2023 — Key Findings
-[(link)](https://sanjmo.medium.com/aws-re-invent-2023-key-findings-f6be5a4b503f)
-
-- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
-[(link)](https://medium.com/p/47b7f65691c7)
-
-- Advanced Data Structures Series— Skip List
-[(link)](https://medium.com/@remisharoon/advanced-data-structures-series-skip-list-3819ea2f7fa0)
-
-- LevelDB Data Structures Serials I: Skip List
-[(link)](https://qtmuniao.medium.com/leveldb-data-structures-serials-i-skip-list-67db102500d3)
-
-- Migrating a Postgres database to DynamoDB with Redpanda
-[(link)](https://redpanda-data.medium.com/migrating-a-postgres-database-to-dynamodb-with-redpanda-34da77450925)
+- How to populate a table with one million records in a PostgreSQL database?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-populate-a-table-with-one-million-records-in-a-postgresql-database-d68b73e8c2a9)
 
 - Predicate Pushdown in Parquet: Enhancing Efficiency and Performance
 [(link)](https://medium.com/@diehardankush/predicate-pushdown-in-parquet-enhancing-efficiency-and-performance-5becb0b992de)

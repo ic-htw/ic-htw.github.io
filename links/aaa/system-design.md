@@ -25,3 +25,9 @@ is_slide: 0
 - High-Level System Architecture of Booking.com
 [(link)](https://medium.com/@sahintalha1/high-level-system-architecture-of-booking-com-06c199003d94)
 
+- Asynchronous Magic: PyNest and SQLAlchemy 2.0 Drive a 25% Improvement in Python Apps Performance
+[(link)](https://medium.com/@itay2803/asynchronous-magic-pynest-and-sqlalchemy-2-0-drive-a-25-improvement-in-python-apps-performance-9e2724e9f198)
+
+- Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
+[(link)](https://medium.com/p/47b7f65691c7)
+
