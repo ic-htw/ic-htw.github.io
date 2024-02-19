@@ -189,8 +189,6 @@ Datenmodellierung und Datenbanksysteme
         <a  href="/lv/dmdb/p/ab-03.html">Arbeitsblatt 3</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <a  href="/lv/dmdb/p/ab-04.html">Arbeitsblatt 4</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <a  href="/lv/dmdb/p/ab-05.html">Arbeitsblatt 5</a> <br>
 </div> 
 
 
