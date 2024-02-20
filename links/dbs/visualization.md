@@ -3,6 +3,8 @@ layout: default
 title: Visualization
 is_slide: 0
 ---
+- Top 10 Power BI Dashboard Examples in 2024
+[(link)](https://medium.com/@mokkup/top-10-power-bi-dashboard-examples-in-2024-b7035637ae33)
 - Dashboards Close Million Dollar Deals
 [(link)](https://medium.com/data-studio/dashboards-close-million-dollar-deals-1dd3e1763068)
 - Archive for the Data Visualization Weekly
