@@ -46,9 +46,12 @@ Ausgewählte Datenbankkonzepte/-techniken
 </button>
 
 <div class="ADBKT w3-padding">
-  <a  href="/lv/adbkt/p/main.html">Überblick</a> <br>
-  <a  href="/lv/adbkt/p/infra.html">Technische Infrastruktur</a> <br>
-  <a  href="/lv/adbkt/p/res.html">Ressourcen</a> <br>
+    <a  href="/lv/adbkt/p/main.html">Überblick</a> <br>
+    <a  href="/lv/adbkt/p/infra.html">Technische Infrastruktur</a> <br>
+    <a  href="/lv/adbkt/p/res.html">Ressourcen</a> <br>
+    Prüfungsleistungen<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/ex/auth.html">P4</a> <br>
 </div> 
 
 
