@@ -47,11 +47,11 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 ### 09.10.23
 - Einführung
 - VL: Historischer Überblick [(pdf)](/lv/adbkt/a/hist/hist.pdf)
-- Ü: Fallbeispiele [(link)](/lv/adbkt/p/ex/pres.html)
+- Ü: Fallbeispiele [(link)](/lv/adbkt/p/pres.html)
 - Ü: Benutzung DBeaver [(link)](/lv/adbkt/p/infra.html#dbeaver)
-- Ü: Python-Container [(link)](/lv/adbkt/p/ex/py-cont.html)
-- Ü: Python DB-Intro [(link)](/lv/adbkt/p/ex/db-intro.html)
-- P1: ER-Diagramm: 10 Punkte [(link)](/lv/adbkt/p/ex/er-dia.html)
+- Ü: Python-Container [(link)](/lv/adbkt/p/py-cont.html)
+- Ü: Python DB-Intro [(link)](/lv/adbkt/p/db-intro.html)
+- P1: ER-Diagramm: 10 Punkte [(link)](/lv/adbkt/p/er-dia.html)
 
 ### 16.10.23 (Abgabe P1)
 - P1: Statuscheck
@@ -59,19 +59,19 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 [(pdf)](/lv/adbkt/a/sql/window.pdf) 
 [(data)](/lv/adbkt/a/sql/windowfunc-table.sql)
 [(sql)](/lv/adbkt/a/sql/windowfunc.sql)
-- Ü: Retail Sales [(link)](/lv/adbkt/p/ex/retail.html)
+- Ü: Retail Sales [(link)](/lv/adbkt/p/retail.html)
 - VL: Rekursive Abfragen [(pdf)](/lv/adbkt/a/sql/rec.pdf)
-- Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/ex/rec-sql.html)
+- Ü: Rekursive Abfrage [(link)](/lv/adbkt/p/rec-sql.html)
 - VL: Nebenläufigkeit [(pdf)](/lv/adbkt/a/concur/concur.pdf)
 - VL: Verteilte Transaktionen - 2 Phase Commit Protocol [(pdf)](/lv/adbkt/a/concur/2pc.pdf)
-- P2: SQL mit ChatGPT: 10 Punkte [(link)](/lv/adbkt/p/ex/sql-chatgpt.html)
+- P2: SQL mit ChatGPT: 10 Punkte [(link)](/lv/adbkt/p/sql-chatgpt.html)
 
 ### 23.10.23 (Abgabe P2)
 - P2: Päsentation
 - VL: NoSQL [(pdf)](/lv/adbkt/a/nosql/nosql.pdf)
-- Ü: Cassandra Replikation [(link)](/lv/adbkt/p/ex/cas-repl.html)
-- VL: Cassandra [(link)](/lv/adbkt/p/pr/cas.html)
-- P3: TourDelight: 30 Punkte [(link)](/lv/adbkt/p/ex/tour.html)
+- Ü: Cassandra Replikation [(link)](/lv/adbkt/p/cas-repl.html)
+- VL: Cassandra [(link)](/lv/adbkt/p/cas.html)
+- P3: TourDelight: 30 Punkte [(link)](/lv/adbkt/p/tour.html)
 
 ### 30.10.23 (ab 13:00 per Zoom)
 - P3: Abstimmung allgemein
@@ -79,32 +79,32 @@ Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 
 ### 06.11.23 (Abgabe P3)
 - P3: Statuscheck
-- Ü: Neo4j-Container [(link)](/lv/adbkt/p/ex/neo4j-cont.html)
-- VL: Cypher [(link)](/lv/adbkt/p/pr/cypher.html)
-- Ü: Cypher-Abfragen [(link)](/lv/adbkt/p/ex/cypher.html)
+- Ü: Neo4j-Container [(link)](/lv/adbkt/p/neo4j-cont.html)
+- VL: Cypher [(link)](/lv/adbkt/p/cypher.html)
+- Ü: Cypher-Abfragen [(link)](/lv/adbkt/p/cypher.html)
 - VL: GDS [(pdf)](/lv/adbkt/a/graph/gds.pdf)
-- Ü: GDS [(link)](/lv/adbkt/p/ex/gds.html)
-- P4: Zugriffskontrolle mit Graphdatenbanken: 15 Punkte [(link)](/lv/adbkt/p/ex/auth.html)
+- Ü: GDS [(link)](/lv/adbkt/p/gds.html)
+- P4: Zugriffskontrolle mit Graphdatenbanken: 15 Punkte [(link)](/lv/adbkt/p/auth.html)
 
 ### 13.11.23 (Abgabe P4)
 - P4: Statuscheck
 - VL: Geo-Datenverarbeitung [(pdf)](/lv/adbkt/a/geo/geo.pdf)
-- Ü: Geo-Abfragen [(link)](/lv/adbkt/p/ex/geo-sql.html)
-- Ü: Visualisierung Geodaten [(link)](/lv/adbkt/p/ex/geo-viz.html)
-- P5: Fahrverbindung: 15 Punkte [(link)](/lv/adbkt/p/ex/sched.html)
+- Ü: Geo-Abfragen [(link)](/lv/adbkt/p/geo-sql.html)
+- Ü: Visualisierung Geodaten [(link)](/lv/adbkt/p/geo-viz.html)
+- P5: Fahrverbindung: 15 Punkte [(link)](/lv/adbkt/p/sched.html)
 
 ### 20.11.23 (Abgabe P5)
 - P5: Statuscheck
 - Vorlesung Dokumentenorientierte DB-Systeme [(pdf)](/lv/adbkt/a/nosql/doc-db.pdf)
 - Vorlesung JSON-Datenverarbeitung [(pdf)](/lv/adbkt/a/json/json-pg.pdf)
-- P6: Graph-QL: 20 Punkte [(link)](/lv/adbkt/p/ex/graphql.html)
-- VL: DynamoDB [(link)](/lv/adbkt/p/pr/dynamo.html)
-- Ü: DynamoDB [(link)](/lv/adbkt/p/ex/dynamodb.html)
+- P6: Graph-QL: 20 Punkte [(link)](/lv/adbkt/p/graphql.html)
+- VL: DynamoDB [(link)](/lv/adbkt/p/dynamo.html)
+- Ü: DynamoDB [(link)](/lv/adbkt/p/dynamodb.html)
 
 ### 27.11.23 (Abgabe P6 bis zum 03.12.23)
 - P6 Statuscheck
 - VL: SAP Hana  [(pdf)](/lv/adbkt/a/hana/hana.pdf)
 - VL: Instacart [(pdf)](/lv/adbkt/a/insta/insta.pdf)
-- Ü: Hana, BTP Account [(link)](/lv/adbkt/p/ex/hana-btp-account.html)
-- Ü: Hana Graph [(link)](/lv/adbkt/p/ex/hana-graph.html)
-- Ü: Closeness Centrality in SAP Hana [(link)](/lv/adbkt/p/ex/hana-cc.html)
+- Ü: Hana, BTP Account [(link)](/lv/adbkt/p/hana-btp-account.html)
+- Ü: Hana Graph [(link)](/lv/adbkt/p/hana-graph.html)
+- Ü: Closeness Centrality in SAP Hana [(link)](/lv/adbkt/p/hana-cc.html)

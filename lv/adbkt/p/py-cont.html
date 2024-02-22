@@ -1,0 +1,31 @@
+---
+layout: default
+title: Python-Container erstellen
+is_slide: 0
+---
+
+<h1>Python-Container erstellen</h1>
+
+<ul class="w3-large">
+  <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
+  <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
+  <li><code>https://xxx.f4.htw-berlin.de:9443/</code></li>
+  <li>Environment "local" auswählen</li>
+  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+  <li>Auf Button "Add stack" klicken</li>
+  <li>Name für Container vergeben</li>
+  <li>Folgendes Skript in Web Editor kopieren - dann auf "Deploy the stack" klicken</li>
+</ul>
+
+<pre><code class="language-yaml">services:
+  py:
+    container_name: py
+    image:  iclassen/py
+    ports:
+      - 8888:8888
+    volumes:
+      - data:/opt/dev
+
+volumes:
+  data:
+</code></pre>

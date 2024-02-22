@@ -1,6 +1,7 @@
 ---
 layout: default
-title: ADBKT
+title: Präsentation von Fallbeispielen
+is_slide: 0
 ---
 
 # Präsentation von Fallbeispielen 
