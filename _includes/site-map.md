@@ -59,17 +59,17 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/py-cont.html">Python-Container</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P1</a> <br>
+    <a  href="/lv/adbkt/p/tour-delight.html">P1</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P2</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P2</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P3</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P3</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P4</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P4</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P5</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P5</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/ex/auth.html">P6</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P6</a> <br>
 </div> 
 
 

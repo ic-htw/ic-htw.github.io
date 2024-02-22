@@ -1,24 +1,26 @@
 ---
 layout: default
 title:  Historischer Überblick
-is_slide: 1
-n: 1
+is_slide: 0
 ---
 
-<!--
-    00 ******************************************************************
--->
-{% include padding-id.html id=0 %}
-<p class="w3-xlarge">{{ page.title }}</p>
-<div id="toc"></div>
-<div class="ic-gap"></div>
+<h1>xxx</h1>
+<img class="w3-image" src="/lv/adbkt/a/tourdelight/d10-100.png">
 
-<!--
-    01 ******************************************************************
--->
-{% include padding-id.html id=1 %}
-<h1> Historischer Überblick</h1>
-Folien als PDF (<a href="/lv/adbkt/a/hist/hist.pdf">pdf</a>)
-<div class="ic-gap"></div>
-
-
+<pre><code class="language-yaml">services:
+  cas:
+    container_name: cas
+    image: cassandra:latest
+    ports:
+      - 7000:7000
+      - 7001:7001
+      - 7070:7070
+      - 7199:7199 
+      - 9042:9042
+      - 9160:9160
+    environment:
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+</code></pre>
+  
