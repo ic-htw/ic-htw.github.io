@@ -8,6 +8,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
+[(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
+
+- SQL query optimization: a comprehensive developer's guide
+[(link)](https://aiven.io/developer/sql-query-optimization-guide)
+
+- A story of a spectacular success - Intro to AWS RDS database migration series
+[(link)](https://www.smily.com/engineering/a-story-of-a-spectacular-success-intro-to-aws-rds-database-migration-series)
+
+- Last Updated Columns With Postgres
+[(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
+
+- Deciphering PostgreSQL Encryption: A Beginner’s Guide 
+[(link)](https://www.highgo.ca/2024/02/13/deciphering-postgresql-encryption-a-beginners-guide/)
+
+- Amazon Aurora vs. RDS: Understanding the Difference 
+[(link)](https://www.timescale.com/blog/amazon-aurora-vs-rds-understanding-the-difference/)
+
 - CodeLlama 70B
 [(link)](https://llama-2.ai/codellama-70b/)
 
