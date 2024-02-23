@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What’s new with Looker 2024?
+[(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
+
 - 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
 [(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
 
