@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Zero-downtime PostgreSQL migrations
+[(link)](https://uptrace.medium.com/zero-downtime-postgresql-migrations-c955f65248bf)
+
+- Crosstab() in PostgreSQL
+[(link)](https://medium.com/@deepika87k/crosstab-in-postgresql-a5bf563f5d22)
+
+- PyNeoInstance: A User-Friendly Python Library for Neo4j
+[(link)](https://medium.com/neo4j/pyneoinstance-a-user-friendly-python-library-for-neo4j-dbefa3117bb2)
+
 - What’s new with Looker 2024?
 [(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
 
