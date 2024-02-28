@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The State of the Database Landscape
+[(link)](https://www.red-gate.com/solutions/entrypage/state-of-database-landscape-2024/multiple-database-platforms)
+
+- 11 Lessons to learn when using NULLs in PostgreSQL
+[(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
+
+- Load StackOverflow's StackExchange data in PostgreSQL
+[(link)](https://dev.to/ftisiot/load-stackoverflows-stackexchange-data-in-postgresqlr-40ip)
+
+- Understand Indexes in pgvector 
+[(link)](https://stormatics.tech/blogs/understanding-indexes-in-pgvector)
+
 - How to check if the PostgreSQL tables of the same structure have identical data using aggregated hash and md5?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-if-the-postgresql-tables-of-the-same-structure-have-identical-data-using-aggregated-8f60b9dd0af8)
 
