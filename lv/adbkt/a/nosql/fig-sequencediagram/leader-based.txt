@@ -1,9 +1,0 @@
-actor user
-database leader
-database follower1
-database follower2
-
-entryspacing 0.5
-user->leader: change
-leader->follower1: replicate
-leader->follower2: replicate

@@ -1,7 +1,0 @@
-flowchart LR
-   
-   n1((nodeA))-- check and repair y-->n2((nodeB))
-   n1-->n3((nodeC))
-   n1-->n4((nodeD))
-   n1-- check and repair y-->n5((nodeE))
-

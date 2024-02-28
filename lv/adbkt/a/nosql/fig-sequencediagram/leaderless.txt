@@ -1,9 +1,0 @@
-actor user
-database replica1
-database replica2
-database replica3
-
-entryspacing 0.5
-user->replica1: change
-user->replica2: change
-user->replica3: change
