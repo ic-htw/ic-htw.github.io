@@ -1,0 +1,101 @@
+---
+layout: default
+title: Datenmodelle NOSQL
+is_slide: 1
+n: 5
+---
+
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Key Value Store</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m7">
+      <img class="w3-image" src="/lv/adbkt/a/dm-nosql/d10-100.png">
+  </div>
+  <div class="w3-col m5">
+      <ul class="w3-large">
+          <li>Bekannter Vertreter: Redis</li>
+          <li>Nur Schlüssel-Wert-Paare</li>
+          <li>Keine Abfragesprache</li>
+          <li>Werte sind "Black Box"</li>
+          <li>Strukturierte Datentypen möglich</li>
+          <li>Geringer Fokus auf Konsistenz</li>
+      </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Wide Column Store</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m7">
+      <img class="w3-image" src="/lv/adbkt/a/dm-nosql/d20-100.png">
+  </div>
+  <div class="w3-col m5">
+      <ul class="w3-large">
+          <li>Bekannter Vertreter: Cassandra</li>
+          <li>Keine Joins, keine Aggregation</li>
+          <li>Partitionierung / Replikation</li>
+          <li>Schnelles Schreiben, LSM Tree</li>
+          <li>Verschiedene Konistenzmodelle</li>
+      </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Document Database</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m7">
+      <img class="w3-image" src="/lv/adbkt/a/dm-nosql/d30-100.png">
+  </div>
+  <div class="w3-col m5">
+      <ul class="w3-large">
+          <li>Bekannter Vertreter: MongoDB</li>
+          <li>Fokus auf JSON</li>
+          <li>Ansonsten ähnlich zu Wide Column Stores</li>
+      </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Graph Database</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m7">
+      <img class="w3-image" src="/lv/adbkt/a/dm-nosql/d40-100.png">
+  </div>
+  <div class="w3-col m5">
+      <ul class="w3-large">
+          <li>Bekannter Vertreter: neo4j</li>
+          <li>Knoten, Kanten, Property Graph</li>
+          <li>Spezielle Abfragesprache, z.B. Cypher</li>
+          <li>Graphalgorithmen, Shortest Path</li>
+      </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+

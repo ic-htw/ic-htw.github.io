@@ -47,16 +47,27 @@ Ausgewählte Datenbankkonzepte/-techniken
 
 <div class="ADBKT w3-padding">
     <a  href="/lv/adbkt/p/main.html">Überblick</a> <br>
+    <a  href="/lv/adbkt/p/plan.html">Plan</a> <br>
     <a  href="/lv/adbkt/p/infra.html">Technische Infrastruktur</a> <br>
     <a  href="/lv/adbkt/p/res.html">Ressourcen</a> <br>
     Vorlesung<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/history.html">Historischer Überblick</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/dm-nosql.html">Datenmodelle NOSQL</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/cas.html">Überblick Cassandra</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/consistency.html">Konsistenz</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/repl-part.html">Replikation / Partitionierung</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/lsm.html">Log Structured Merge Trees</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/py-cont.html">Python-Container</a> <br>
+    <a  href="/lv/adbkt/p/py-cont.html">Python-Container erstellen</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/tour-delight.html">P1</a> <br>

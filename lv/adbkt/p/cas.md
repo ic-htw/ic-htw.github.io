@@ -1,9 +1,10 @@
 ---
 layout: default
-title: ADBKT
+title: Überblick Cassandra
+is_slide: 0
 ---
 
-# Cassandra
+# Überblick Cassandra
 
 - Architektur
   - Datenmodell [(link)](https://www.oreilly.com/api/v2/epubs/9781491933657/files/assets/ctdg_0405.png)
