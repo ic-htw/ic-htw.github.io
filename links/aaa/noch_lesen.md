@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Plot(ly)ing Geo Data From DuckDB
+[(link)](https://code.likeagirl.io/plot-ly-ing-geo-data-from-duckdb-4d3f039ed87f)
+
 - The State of the Database Landscape
 [(link)](https://www.red-gate.com/solutions/entrypage/state-of-database-landscape-2024/multiple-database-platforms)
 
