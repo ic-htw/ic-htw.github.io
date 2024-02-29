@@ -58,9 +58,9 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cas.html">Überblick Cassandra</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/consistency.html">Konsistenz</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/repl-part.html">Replikation / Partitionierung</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/consistency.html">Konsistenz</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/lsm.html">Log Structured Merge Trees</a> <br>
     Übungen<br>

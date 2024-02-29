@@ -2,7 +2,7 @@
 layout: default
 title: Log Structured Merge Trees
 is_slide: 1
-n: 10
+n: 3
 ---
 
 <!--
@@ -17,7 +17,21 @@ n: 10
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>xxx</h1>
+<h1>Struktur</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/adbkt/a/lsm/d110-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Schreib-optimierte Speicherstrukturen</li>
+            <li>Memtable im Haupspeicher</li>
+            <li>Schlüssel-Wert-Paare</li>
+            <li>Bloom-Filter für Prüfung, ob Schlüssel vorhanden</li>
+            <li>Transaktionsprotokoll für Datensicherheit</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -25,7 +39,18 @@ n: 10
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>xxx</h1>
+<h1>Speicherformat</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/adbkt/a/lsm/d100-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Dateiblöcke komprimiert</li>
+            <li>Sparse Index</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -33,143 +58,17 @@ n: 10
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>xxx</h1>
+<h1>Kompaktifizierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/adbkt/a/lsm/d120-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Segmente entsprechen SSTables</li>
+            <li>Löschung von Daten durch Tombstone-Einträge</li>
+            <li>Verschiedene Kompaktifizierungsstrategien</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
-
-
-<!--
-    04 ******************************************************************
--->
-{% include padding-id.html id=4 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    05 ******************************************************************
--->
-{% include padding-id.html id=5 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
