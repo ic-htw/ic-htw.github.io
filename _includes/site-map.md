@@ -54,9 +54,9 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/history.html">Historischer Überblick</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/dm-nosql.html">Datenmodelle NOSQL</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cas.html">Überblick Cassandra</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/nosql.html">NoSQL</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/repl-part.html">Replikation / Partitionierung</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -68,6 +68,8 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/py-cont.html">Python-Container erstellen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/cas-repl.html">Cassandra Replikation</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/tour-delight.html">P1</a> <br>
