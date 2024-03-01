@@ -131,6 +131,26 @@ n: 14
 -->
 {% include padding-id.html id=5 %}
 <h1>Quoren</h1>
+<p class="w3-large ic-neg15">
+    Mechanismus zur Konsistenzsteuerung
+</p>
+<ul class="w3-large">
+    <li>Replikationsfaktor n</li>
+    <ul>
+        <li>Anzahl der Kopien von Datenelementen: n</li>
+    </ul>
+    <li>Read Quorum r </li>
+    <ul>
+        <li>Lies r Replikate</li>
+    </ul>
+    <li>Write Quorum w</li>
+    <ul>
+        <li>Schreibe r Replikate, melde erst dann erfolgreiches Schreiben</li>
+    </ul>
+    <li>r + w > n: starke Konsistenz</li>
+    <li>r + w <= n: schwache Konsistenz</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 

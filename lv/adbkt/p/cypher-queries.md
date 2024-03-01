@@ -1,6 +1,7 @@
 ---
 layout: default
-title: ADBKT
+title: Cypher-Abfragen
+is_slide: 0
 ---
 
 # Cypher-Abfragen
