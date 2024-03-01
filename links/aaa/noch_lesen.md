@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- FastUI
+[(link)](https://github.com/pydantic/FastUI)
+
+- Duck DB brings the excitement back to data warehouses (almost)
+[(link)](https://medium.com/@hugolu87/duck-db-brings-the-excitement-back-to-data-warehouses-almost-9555371dd1dd)
+
 - Plot(ly)ing Geo Data From DuckDB
 [(link)](https://code.likeagirl.io/plot-ly-ing-geo-data-from-duckdb-4d3f039ed87f)
 
