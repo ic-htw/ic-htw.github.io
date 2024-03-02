@@ -17,6 +17,13 @@ is_slide: 0
 - Why we replaced Pinecone with PGVector
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 
+# bbb
+- Slides ChatGPT engl
+[(link)](https://chat.openai.com/share/5c457042-91cd-47e1-8e00-d5af7fdf39ef)
+- Slides ChatGPT deutsch
+[(link)](https://chat.openai.com/share/bd673913-8844-4e19-995a-1c4a6849d8bd)
+
+
 # Faiss
 - Faiss: A library for efficient similarity search
 [(link)](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
