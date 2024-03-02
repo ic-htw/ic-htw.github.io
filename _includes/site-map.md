@@ -63,13 +63,19 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/consistency.html">Konsistenz</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/lsm.html">Log Structured Merge Trees</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/cypher.html">Cypher</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/py-cont.html">Python-Container erstellen</a> <br>
+    <a  href="/lv/adbkt/p/py-cont.html">Python-Container</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cas-repl.html">Cassandra Replikation</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/neo4j-cont.html">Neo4j-Container</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/cypher-queries.html">Cypher-Abfragen</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/tour-delight.html">P1</a> <br>
