@@ -6,11 +6,16 @@ is_slide: 0
 # aaa
 - Vector Databases: A Beginner’s Guide!
 [(link)](https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0)
+- Vector database, a gentle introduction (+ hands-on)
+[(link)](https://medium.com/data-reply-it-datatech/vector-database-a-gentle-introduction-hands-on-5a3edc92baf3)
 - Vector Databases - a list…
 [(link)](https://koalabs.medium.com/vector-databases-a-list-43733545feea)
+- Vector Databases (are All The Rage)
 [(link)](https://medium.com/google-cloud/vector-databases-are-all-the-rage-872c888fa348)
 - The Ultimate Guide to Vector Database Landscape — 2024 and Beyond
 [(link)](https://medium.com/madhukarkumar/the-ultimate-guide-to-vector-databases-2024-and-beyond-16dfb15bef12)
+- Why we replaced Pinecone with PGVector
+[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 
 # Faiss
 - Faiss: A library for efficient similarity search
@@ -27,8 +32,14 @@ is_slide: 0
 
 
 # pgvector
-- Why we replaced Pinecone with PGVector
-[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
+- pgvector
+[(link)](https://github.com/pgvector/pgvector)
+- PostgreSQL as a Vector Database: Create, Store, and Query OpenAI Embeddings With pgvector
+[(link)](https://www.timescale.com/blog/postgresql-as-a-vector-database-create-store-and-query-openai-embeddings-with-pgvector/)
+- Unleashing the power of vector embeddings with PostgreSQL
+[(link)](https://tembo.io/blog/pgvector-and-embedding-solutions-with-postgres)
+- Use pgvector and Hugging Face to Build an Optimized FAQ Search with Sentence Similarity
+[(link)](https://www.koyeb.com/tutorials/use-pgvector-and-hugging-face-to-build-an-optimized-faq-search-with-sentence-similarity)
 - AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 - PostgreSQL as a Vector Database: Getting Started and Scaling
