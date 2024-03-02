@@ -12,6 +12,15 @@ is_slide: 0
 - The Ultimate Guide to Vector Database Landscape — 2024 and Beyond
 [(link)](https://medium.com/madhukarkumar/the-ultimate-guide-to-vector-databases-2024-and-beyond-16dfb15bef12)
 
+# Faiss
+- Faiss: A library for efficient similarity search
+[(link)](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
+
+- Faiss Wiki
+[(link)](https://github.com/facebookresearch/faiss/wiki)
+
+
+
 # lancdb
 - Benchmarking LanceDB
 [(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)

@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Real-time data streaming in Jupyter
+[(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
+
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
 
