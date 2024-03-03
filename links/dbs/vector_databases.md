@@ -16,6 +16,11 @@ is_slide: 0
 [(link)](https://medium.com/madhukarkumar/the-ultimate-guide-to-vector-databases-2024-and-beyond-16dfb15bef12)
 - Why we replaced Pinecone with PGVector
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
+- Vector databases (1): What makes each one different?
+[(link)](http://thedataquarry.com/posts/vector-db-1/)
+- Vector databases (2): Understanding their internals
+[(link)](http://thedataquarry.com/posts/vector-db-2/)
+
 
 # bbb
 - Slides ChatGPT engl
@@ -23,19 +28,85 @@ is_slide: 0
 - Slides ChatGPT deutsch
 [(link)](https://chat.openai.com/share/bd673913-8844-4e19-995a-1c4a6849d8bd)
 
+# chroma
+- home
+[(link)](https://www.trychroma.com/)
+- doc
+[(link)](https://docs.trychroma.com/)
+- blog
+[(link)](https://www.trychroma.com/blog)
+- docker
+[(link)](https://hub.docker.com/r/chromadb/chroma)
+
+
+
+
+# Embeddings
+- Vector Embeddings 101: The New Building Blocks for Generative AI
+[(link)](https://vectordatabase.substack.com/p/vector-embeddings-101-the-new-building)
+- Meet AI’s multitool: Vector embeddings
+[(link)](https://cloud.google.com/blog/topics/developers-practitioners/meet-ais-multitool-vector-embeddings?hl=en)
+- New and improved embedding model
+[(link)](https://openai.com/blog/new-and-improved-embedding-model)
+- openai - embeddings
+[(link)](https://platform.openai.com/docs/guides/embeddings)
+- Jurafski-Buch Kap 6
+[(link)](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
+- Jurafski-Buch Kap 6 - Folien
+[(link)](https://web.stanford.edu/~jurafsky/slp3/slides/vectorsemantics2024.pdf)
+- A Guide on Word Embeddings in NLP
+[(link)](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp)
+- The Beginner’s Guide to Text Embeddings
+[(link)](https://www.deepset.ai/blog/the-beginners-guide-to-text-embeddings)
 
 # Faiss
 - Faiss: A library for efficient similarity search
 [(link)](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
-
 - Faiss Wiki
 [(link)](https://github.com/facebookresearch/faiss/wiki)
+- Faiss: The Missing Manual
+[(link)](https://www.pinecone.io/learn/series/faiss/)
 
 
+
+
+# Indexes
+- Vector Indexing: Roadmaps to Search
+[(link)](https://vectordatabase.substack.com/p/vector-indexing-roadmaps-to-search)
+- Vector databases (3): Not all indexes are created equal
+[(link)](http://thedataquarry.com/posts/vector-db-3/)
+- Nearest Neighbor Indexes: What Are ivfflat Indexes in pgvector and How Do They Work 
+[(link)](https://www.timescale.com/blog/nearest-neighbor-indexes-what-are-ivfflat-indexes-in-pgvector-and-how-do-they-work/)
 
 # lancdb
+- home
+[(link)](https://lancedb.com/)
+- blog
+[(link)](https://blog.lancedb.com/)
 - Benchmarking LanceDB
 [(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)
+- kein direkter docker link
+
+
+# Metrics
+- Distance Metrics in Vector Search
+[(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
+- 9 Distance Measures in Data Science
+[(link)](https://www.maartengrootendorst.com/blog/distances/)
+
+
+# milvus
+- home
+[(link)](https://milvus.io/)
+- doc
+[(link)](https://milvus.io/docs)
+- blog
+[(link)](https://milvus.io/blog)
+- docker
+[(link)](https://hub.docker.com/r/milvusdb/milvus)
+
+
+
 
 
 # pgvector
@@ -51,4 +122,39 @@ is_slide: 0
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 - PostgreSQL as a Vector Database: Getting Started and Scaling
 [(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
+
+
+# pinecone
+- home
+[(link)](https://www.pinecone.io/)
+- doc
+[(link)](https://docs.pinecone.io/)
+- kein direkter docker link
+- How to Chat With Your Data Using OpenAI, Pinecone, Airbyte and Langchain: A Guide
+[(link)](https://hackernoon.com/how-to-chat-with-your-data-using-openai-pinecone-airbyte-and-langchain-a-guide)
+
+
+# qdrant
+- home
+[(link)](https://qdrant.tech/)
+- doc
+[(link)](https://qdrant.tech/documentation/)
+- blog
+[(link)](https://qdrant.tech/blog/)
+- docker
+[(link)](https://hub.docker.com/r/qdrant/qdrant)
+
+
+
+
+# weaviate
+- home
+[(link)](https://weaviate.io/)
+- doc
+[(link)](https://weaviate.io/developers/weaviate)
+- blog
+[(link)](https://weaviate.io/blog)
+- docker
+[(link)](https://hub.docker.com/r/semitechnologies/weaviate)
+
 
