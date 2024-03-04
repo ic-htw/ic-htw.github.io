@@ -77,6 +77,17 @@ is_slide: 0
 [(link)](http://thedataquarry.com/posts/vector-db-3/)
 - Nearest Neighbor Indexes: What Are ivfflat Indexes in pgvector and How Do They Work 
 [(link)](https://www.timescale.com/blog/nearest-neighbor-indexes-what-are-ivfflat-indexes-in-pgvector-and-how-do-they-work/)
+- Choosing the Right Vector Index For Your Project
+[(link)](https://thesequence.substack.com/p/guest-post-choosing-the-right-vector)
+- Scalar Quantization and Product Quantization
+[(link)](https://zilliz.com/learn/scalar-quantization-and-product-quantization)
+- Approximate Nearest Neighbor (ANN) Indexes
+[(link)](https://lancedb.github.io/lancedb/ann_indexes/)
+- Vamana vs. HNSW - Exploring ANN algorithms Part 1
+[(link)](https://weaviate.io/blog/ann-algorithms-vamana-vs-hnsw)
+- HNSW+PQ - Exploring ANN algorithms Part 2.1
+[(link)](https://weaviate.io/blog/ann-algorithms-hnsw-pq)
+
 
 # lancdb
 - home
