@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Implementing a Distributed State Machine in Rust
+[(link)](https://www.linkedin.com/pulse/implementing-distributed-state-machine-rust-luis-soares-m-sc--50yrf)
+
+- PostgreSQL Vs Supabase
+[(link)](https://medium.com/@shariq.ahmed525/postgresql-vs-supabase-df10e2795180)
+
+- Real-time data streaming in Jupyter
+[(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
+
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
 

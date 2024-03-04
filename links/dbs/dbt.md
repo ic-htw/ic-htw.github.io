@@ -13,6 +13,8 @@ is_slide: 0
 [(link)](https://github.com/dbt-labs/dbt)
 
 # bbb
+- dbt + RisingWave
+[(link)](https://towardsdev.com/why-dbt-is-so-popular-8f957c945106)
 - Why I stopped using SCD in my data modeling
 [(link)](https://medium.com/@ldlwbru0218/why-i-stopped-using-scd-in-my-data-modeling-059886ddb035)
 - dbt — There is data at the end of the tunnel
