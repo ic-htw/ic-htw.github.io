@@ -4,6 +4,8 @@ title: LLM Analytics
 is_slide: 0
 ---
 # aaa
+- SQLCoder-70B
+[(link)](https://defog.ai/blog/open-sourcing-sqlcoder-70b/)
 - An AI application that can chat with with very large SQL databases.
 [(link)](https://systemdesigner.medium.com/an-ai-application-that-can-chat-with-with-very-large-sql-databases-acd730fcfa26)
 - Cheshire-Cat plugin SQL
