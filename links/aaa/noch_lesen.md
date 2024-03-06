@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Understanding the Fundamentals of PostgreSQL Architecture
+[(link)](https://instaclustr.medium.com/understanding-the-fundamentals-of-postgresql-architecture-98ce3672376f)
+
 - Implementing a Distributed State Machine in Rust
 [(link)](https://www.linkedin.com/pulse/implementing-distributed-state-machine-rust-luis-soares-m-sc--50yrf)
 
