@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Comparing Postgres Managed Services: AWS, Azure, GCP and Supabase
+[(link)](https://blog.peerdb.io/comparing-postgres-managed-services-aws-azure-gcp-and-supabase)
+
 - Understanding the Fundamentals of PostgreSQL Architecture
 [(link)](https://instaclustr.medium.com/understanding-the-fundamentals-of-postgresql-architecture-98ce3672376f)
 
@@ -37,9 +40,6 @@ is_slide: 0
 
 - Load StackOverflow's StackExchange data in PostgreSQL
 [(link)](https://dev.to/ftisiot/load-stackoverflows-stackexchange-data-in-postgresqlr-40ip)
-
-- Understand Indexes in pgvector 
-[(link)](https://stormatics.tech/blogs/understanding-indexes-in-pgvector)
 
 - How to check if the PostgreSQL tables of the same structure have identical data using aggregated hash and md5?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-if-the-postgresql-tables-of-the-same-structure-have-identical-data-using-aggregated-8f60b9dd0af8)
