@@ -69,6 +69,12 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/a/graph/gds.pdf">Graph-Data-Science</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/a/geo/geo.pdf">Geo-Datenverarbeitung</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/vectordb.html">Vektordatenbanken</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/concur/concur.pdf">Nebenläufigkeit</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/concur/2pc.pdf">Verteilte Transaktionen</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
@@ -86,6 +92,8 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-viz.html">Visualisierung Geodaten</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/concur.html">Nebenläufigkeit</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/tour-delight.html">P1</a> (x Punkte)<br>
@@ -96,7 +104,7 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/sched.html">P4</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P5</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/vectordb-case.html">P5</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/graphql.html">P6</a> (x Punkte)<br>
 </div> 
