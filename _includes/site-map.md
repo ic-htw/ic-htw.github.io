@@ -98,7 +98,7 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/auth.html">P5</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P6</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/graphql.html">P6</a> (x Punkte)<br>
 </div> 
 
 
