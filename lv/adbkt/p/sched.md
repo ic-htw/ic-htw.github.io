@@ -28,12 +28,17 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
   - Berechnen sie auch Umsteigepunkte
 - Zum Testen können sie folgende Beispiele verwenden
   - Eberbacher Str. 1 nach Meierottostraße 10<br>
-    `fahrverbindung([52.473176, 13.313740], [52.4969134,13.327166], "2021-04-01","11:00:00")'
+    `fahrverbindung([52.473176, 13.313740], [52.4969134,13.327166], "2021-04-01","11:00:00")`
   - Eberbacher Str. 1 nach Ballenstedter Str. 6<br>
     `fahrverbindung([52.473176, 13.313740], [52.494833,13.3038814], "2021-04-01","11:00:00")`
   - Eberbacher Str. 1 nach Elsastraße 2<br>
     `fahrverbindung([52.473176, 13.313740], [52.4752505,13.3308319], "2021-04-01","11:00:00")`
 - Im Folgenden finden sie diverse Information, die beim Testen helfen
+
+## Code
+- Python 
+[(link)](/lv/adbkt/a/ipynb/shed.ipynb) 
+[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/shed.ipynb)
 
 
 ## Datenmodell Postgres
@@ -45,7 +50,7 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
 
 
 ## Datenmodell Neo4j
-Graphprojektion "bubahn" siehe [(link)](/lv/adbkt/p/ex/gds.html)
+Graphprojektion "bubahn" siehe [(link)](/lv/adbkt/p/gds.html)
 
 ## Relevanter Netzausschnitt für die Beispiele
 > ![Bild](/lv/adbkt/a/shed/netzausschnitt.png)

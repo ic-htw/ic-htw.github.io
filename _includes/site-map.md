@@ -65,30 +65,40 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/lsm.html">Log Structured Merge Trees</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cypher.html">Cypher</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/graph/gds.pdf">Graph-Data-Science</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/geo/geo.pdf">Geo-Datenverarbeitung</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/py-cont.html">Python-Container</a> <br>
+    <a  href="/lv/adbkt/p/py-cont.html">Python-Container esrtellen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cas-repl.html">Cassandra Replikation</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/neo4j-cont.html">Neo4j-Container</a> <br>
+    <a  href="/lv/adbkt/p/neo4j-cont.html">Neo4j-Container erstellen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cypher-queries.html">Cypher-Abfragen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/gds.html">Graph-Data-Science</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/geo-viz.html">Visualisierung Geodaten</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/tour-delight.html">P1</a> <br>
+    <a  href="/lv/adbkt/p/tour-delight.html">P1</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P2</a> <br>
+    <a  href="/lv/adbkt/p/nosql-sys.html">P2</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P3</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P3</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P4</a> <br>
+    <a  href="/lv/adbkt/p/sched.html">P4</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P5</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P5</a> (x Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P6</a> <br>
+    <a  href="/lv/adbkt/p/auth.html">P6</a> (x Punkte)<br>
 </div> 
 
 
