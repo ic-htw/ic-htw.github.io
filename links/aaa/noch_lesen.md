@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Vector Data Store Evaluation Criteria
+[(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
+
+- How To Improve Your LLM Accuracy and Performance With PGVector and PostgreSQL: Introduction to Embeddings and the Role of PGVector
+[(link)](https://instaclustr.medium.com/how-to-improve-your-llm-accuracy-and-performance-with-pgvector-and-postgresql-introduction-to-4491844535d8)
+
+- Visualize your RAG Data — Evaluate your Retrieval-Augmented Generation System with Ragas
+[(link)](https://towardsdatascience.com/visualize-your-rag-data-evaluate-your-retrieval-augmented-generation-system-with-ragas-fc2486308557)
+
+- How DuckDB can be up to 1000x more efficient than BigQuery?
+[(link)](https://medium.com/@kayrnt/how-duckdb-can-be-up-to-1000x-more-efficient-than-bigquery-36bab2405259)
+
 - Comparing Postgres Managed Services: AWS, Azure, GCP and Supabase
 [(link)](https://blog.peerdb.io/comparing-postgres-managed-services-aws-azure-gcp-and-supabase)
 

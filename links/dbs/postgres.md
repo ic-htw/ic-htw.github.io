@@ -122,6 +122,8 @@ is_slide: 0
 
 
 # misc
+- How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?
+[(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
 - Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
 [(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
 - What’s new in the Postgres 16 query planner / optimizer 
