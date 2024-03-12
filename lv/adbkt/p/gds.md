@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ADBKT
+title: Graph Data Science
 ---
 
 # Neo4j Graph Data Science

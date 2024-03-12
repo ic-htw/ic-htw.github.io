@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Integrating Vector Databases with LLMs: A Hands-On Guide
+[(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
+
 - Vector Data Store Evaluation Criteria
 [(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
 

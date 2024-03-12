@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ADBKT
+title: Zugriffskontrolle
 ---
 
 # Zugriffskontrolle mit Graphdatenbanken
