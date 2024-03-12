@@ -49,6 +49,25 @@ is_slide: 0
 [(link)](https://hub.docker.com/r/chromadb/chroma)
 
 
+# Curse of Dimensionality
+- What Is the Curse of Dimensionality?
+[(link)](https://builtin.com/data-science/curse-dimensionality)
+- Curse of Dimensionality — A “Curse” to Machine Learning
+[(link)](https://towardsdatascience.com/curse-of-dimensionality-a-curse-to-machine-learning-c122ee33bfeb)
+ Curse of Dimensionality - Notebook
+[(link)](https://www.kaggle.com/code/residentmario/curse-of-dimensionality)
+- What is the Curse of Dimensionality? Simplest Explanation!
+[(link)](https://www.mltut.com/what-is-the-curse-of-dimensionality-simplest-explanation/)
+- Curse of Dimensionality
+[(link)](https://pub.towardsai.net/curse-of-dimensionality-4335c09ed688)
+- Curse of Dimensionality - notebook
+[(link)](https://github.com/mravanba/comp551-notebooks/blob/master/CurseOfDimensionality.ipynb)
+- The Curse of Dimensionality – Illustrated With Matplotlib
+[(link)](https://naysan.ca/2020/02/25/the-curse-of-dimensionality-illustrated-with-matplotlib/)
+- The Curse of Dimensionality (part 1)
+[(link)](https://m0nads.wordpress.com/2017/08/04/the-curse-of-dimensionality/)
+- Top 40 Curse of Dimensionality Interview Questions
+[(link)](https://github.com/Devinterview-io/curse-of-dimensionality-interview-questions)
 
 
 # Embeddings
@@ -117,6 +136,21 @@ is_slide: 0
 [(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
 - 9 Distance Measures in Data Science
 [(link)](https://www.maartengrootendorst.com/blog/distances/)
+- Euclidean vs. Cosine Distance
+[(link)](https://cmry.github.io/notes/euclidean-v-cosine)
+- Cosine Similarity Vs Euclidean Distance
+[(link)](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
+- When to use Cosine Similarity over Euclidean Similarity?
+[(link)](https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/)
+- Understanding Distance Metrics in Vector Embeddings: Cosine Similarity, Euclidean Distance, and Dot Product
+[(link)](https://www.linkedin.com/pulse/understanding-distance-metrics-vector-embeddings-cosine-bilal-shaikh-qunwf)
+- Understanding Vector Similarity for Machine Learning
+[(link)](https://medium.com/advanced-deep-learning/understanding-vector-similarity-b9c10f7506de)
+- How the dot product measures similarity
+[(link)](https://tivadardanka.com/blog/how-the-dot-product-measures-similarity)
+- Similarity Measures: Check Your Understanding
+[(link)](https://developers.google.com/machine-learning/clustering/similarity/check-your-understanding)
+
 
 
 # milvus

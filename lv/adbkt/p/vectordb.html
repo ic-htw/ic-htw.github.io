@@ -23,7 +23,7 @@ n: 20
     <li>Effiziente Suche nächstgelegener Nachbarn</li>
     <li>Distanzmaße</li>
     <li>Index-Strukturen</li>
-    <li>Auch in hochdimensionalen Vektoräumen</li>
+    <li>Auch in hochdimensionalen Vektorräumen</li>
     <li>Anwendung in Zusammenhang mit </li>
     <ul>
         <li>Semantischen Vektoreinbettungen (Embeddings) </li>
@@ -39,21 +39,31 @@ n: 20
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Vektoreinbettungen</h1>
-<ul class="w3-large">
-    <li>Vektor = Zahlenfeld fester Länge</li>
-    <ul>
-        <li>Zweidimensional: (3, 5): Vektor der in der Ebene</li>
-        <li>Dreidimensional: (3, 5, 1): Vektor im Raum</li>
-        <li>1536-dimensional: (1.7, 2.9, 0.9, ..., 3.4, 4,7): OpenAI-Texteinbettung</li>
-    </ul>
-    <li>Einbettungen: Umwandlung von Datenobjekten in Vektoren</li>
-    <ul>
-        <li>Texte, Bilder, Audio, Video</li>
-        <li>Erfassung der Bedeutung der Objekte</li>
-        <li>Ähnlichkeiten von Wörtern, Bildern usw.</li>
-    </ul>
-</ul>
+<h1>Vektoreinbettungen 1</h1>
+
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Vektor = Zahlenfeld fester Länge</li>
+            <ul>
+                <li>Zweidimensional: (3, 5): Vektor der in der Ebene</li>
+                <li>Dreidimensional: (3, 5, 1): Vektor im Raum</li>
+                <li>1536-dimensional: (1.7, 2.9, 0.9, ..., 3.4, 4,7): OpenAI-Texteinbettung</li>
+            </ul>
+            <li>Einbettungen: Umwandlung von Datenobjekten in Vektoren</li>
+            <ul>
+                <li>Texte, Bilder, Audio, Video</li>
+                <li>Erfassung der Bedeutung der Objekte</li>
+                <li>Ähnlichkeiten von Wörtern, Bildern usw.</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="w3-col m6 w3-center">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d120-100.png"><br>
+        (<a href="https://partee.io/2022/08/11/vector-embeddings">Quelle</a>)
+    </div>
+</div>
+
 <div class="ic-gap"></div>
 
 
@@ -61,7 +71,21 @@ n: 20
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Distanzmaße</h1>
+<h1>Vektoreinbettungen 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Mathematische Repräsentation von Datenobjekten</li>
+            <li>Komprimierte, einheitliche Darstellung</li>
+            <li>Bewahren Beziehungen in den Daten</li>
+            <li>Ergebnis tiefer neuronaler Netze (Deep Learning)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6 w3-center">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d100-100.png"><br>
+        (<a href="https://arize.com/blog-course/embeddings-meaning-examples-and-how-to-compute">Quelle</a>)
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -69,7 +93,8 @@ n: 20
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>Sentence Transformers</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d130-100.png">
 <div class="ic-gap"></div>
 
 
@@ -77,7 +102,9 @@ n: 20
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Vektoreinbettungen - Beispiel 1</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d140-100.png"><br>
+(<a href="https://partee.io/2022/08/11/vector-embeddings/">Quelle</a>)
 <div class="ic-gap"></div>
 
 
@@ -85,7 +112,8 @@ n: 20
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>xxx</h1>
+<h1>Vektoreinbettungen - Beispiel 2</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d150-100.png">
 <div class="ic-gap"></div>
 
 
@@ -93,7 +121,15 @@ n: 20
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>xxx</h1>
+<h1>Vektoreinbettungen - Beispiel 3</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d160-100.png">
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d170-100.png">
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -101,7 +137,9 @@ n: 20
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>xxx</h1>
+<h1>Retrieval Augmented Generation</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d200-100.png"><br>
+(<a href="https://gradientflow.substack.com/p/best-practices-in-retrieval-augmented">Quelle</a>)
 <div class="ic-gap"></div>
 
 
@@ -109,7 +147,9 @@ n: 20
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Distanzmaße</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d300-100.png"><br>
+(<a href="https://weaviate.io/blog/distance-metrics-in-vector-search">Quelle</a>)
 <div class="ic-gap"></div>
 
 
@@ -117,7 +157,43 @@ n: 20
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Cosinus-Ähnlichkeit versus Euklidische Distanz</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Cosinus-Ähnlichkeit</th>
+        <th>Euklidische Distanz</th>
+    </tr>
+    <tr>
+        <td>Winkel zwischen Vektoren</td>
+        <td>Abstand zwischen Vektoren</td>
+    </tr>
+    <tr>
+        <td>Unabhängigkeit von Größe der Vektoren</td>
+        <td>Abhängigkeit von Größe der Vektoren</td>
+    </tr>
+    <tr>
+        <td>Auch geeignet für hochdimensionale Räume</td>
+        <td>Schlecht geeignet für hochdimensionale Räume</td>
+    </tr>
+    <tr>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+    </tr>
+    <tr>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+    </tr>
+    <tr>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+    </tr>
+    <tr>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+        <td>xxxxxxxxxxxxxxxxxx</td>
+    </tr>
+</table>
+(<a href="https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/">Quelle</a>)
+
 <div class="ic-gap"></div>
 
 
@@ -199,5 +275,3 @@ n: 20
 {% include padding-id.html id=20 %}
 <h1>xxx</h1>
 <div class="ic-gap"></div>
-
-
