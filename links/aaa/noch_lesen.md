@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Speed up PostgreSQL pgvector queries with indexes
+[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
+
+- Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS
+[(link)](https://www.dbos.dev/blog/announcing-dbos)
+
+- New startup from Postgres creator puts the database at heart of software stack
+[(link)](https://techcrunch.com/2024/03/12/new-startup-from-postgres-creator-puts-the-database-at-heart-of-software-stack)
+
+- How to use PostgreSQL for (military) geoanalytics tasks
+[(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
+
 - LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
 [(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
 
