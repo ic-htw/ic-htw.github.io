@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
+[(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
+
 - Integrating Vector Databases with LLMs: A Hands-On Guide
 [(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
 
