@@ -138,6 +138,8 @@ is_slide: 0
 
 
 # Metrics
+- Similarity Metrics in Vector Databases
+[(link)](https://www.wwwinsights.com/ai/similarity-metrics-vector-databases/)
 - Distance Metrics in Vector Search
 [(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
 - 9 Distance Measures in Data Science
