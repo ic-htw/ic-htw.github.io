@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Web Scraping With 5 Different Methods: All You Need to Know
+[(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
+
+- Explained: Tokens and Embeddings in LLMs
+[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
+
 - Speed up PostgreSQL pgvector queries with indexes
 [(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
 

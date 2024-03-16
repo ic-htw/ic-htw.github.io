@@ -31,3 +31,6 @@ is_slide: 0
 - Building a Plotly Dashboard on a Lakehouse using Apache Iceberg & Arrow
 [(link)](https://medium.com/p/47b7f65691c7)
 
+- End-to-End Data Engineering System on Real Data with Kafka, Spark, Airflow, Postgres, and Docker
+[(link)](https://towardsdatascience.com/end-to-end-data-engineering-system-on-real-data-with-kafka-spark-airflow-postgres-and-docker-a70e18df4090)
+
