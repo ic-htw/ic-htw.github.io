@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Postgres is eating the database world
+[(link)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
 
