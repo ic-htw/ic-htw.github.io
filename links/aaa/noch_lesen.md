@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LangChain SQL Agent for Massive Documents Interaction
+[(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
+
 - Postgres is eating the database world
 [(link)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
 
