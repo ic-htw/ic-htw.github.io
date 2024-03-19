@@ -8,6 +8,33 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LangChain SQL Agent for Massive Documents Interaction
+[(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
+
+- Postgres is eating the database world
+[(link)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+
+- Web Scraping With 5 Different Methods: All You Need to Know
+[(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
+
+- Explained: Tokens and Embeddings in LLMs
+[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
+
+- Speed up PostgreSQL pgvector queries with indexes
+[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
+
+- Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS
+[(link)](https://www.dbos.dev/blog/announcing-dbos)
+
+- New startup from Postgres creator puts the database at heart of software stack
+[(link)](https://techcrunch.com/2024/03/12/new-startup-from-postgres-creator-puts-the-database-at-heart-of-software-stack)
+
+- How to use PostgreSQL for (military) geoanalytics tasks
+[(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
+
+- LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
+[(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
+
 - Integrating Vector Databases with LLMs: A Hands-On Guide
 [(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
 

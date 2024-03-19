@@ -19,6 +19,12 @@ is_slide: 0
 - Vector databases (2): Understanding their internals
 [(link)](http://thedataquarry.com/posts/vector-db-2/)
 
+- zilliz Learning Series
+[(link)](https://zilliz.com/learn)
+- Vector search - fzliu git
+[(link)](https://github.com/fzliu/vector-search)
+
+
 - Slides ChatGPT engl
 [(link)](https://chat.openai.com/share/5c457042-91cd-47e1-8e00-d5af7fdf39ef)
 - Slides ChatGPT deutsch
@@ -132,6 +138,8 @@ is_slide: 0
 
 
 # Metrics
+- Similarity Metrics in Vector Databases
+[(link)](https://www.wwwinsights.com/ai/similarity-metrics-vector-databases/)
 - Distance Metrics in Vector Search
 [(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
 - 9 Distance Measures in Data Science
