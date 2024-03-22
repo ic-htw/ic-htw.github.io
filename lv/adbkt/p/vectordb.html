@@ -148,8 +148,8 @@ n: 20
 -->
 {% include padding-id.html id=9 %}
 <h1>Distanzmaße</h1>
-<img class="w3-image" src="/lv/adbkt/a/vectordb/d300-100.png"><br>
-(<a href="https://weaviate.io/blog/distance-metrics-in-vector-search">Quelle</a>)
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d310-100.png"><br>
+(<a href="https://www.maartengrootendorst.com/blog/distances">Quelle</a>)
 <div class="ic-gap"></div>
 
 
@@ -157,43 +157,8 @@ n: 20
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>Cosinus-Ähnlichkeit versus Euklidische Distanz</h1>
-<table class="w3-table-all">
-    <tr>
-        <th>Cosinus-Ähnlichkeit</th>
-        <th>Euklidische Distanz</th>
-    </tr>
-    <tr>
-        <td>Winkel zwischen Vektoren</td>
-        <td>Abstand zwischen Vektoren</td>
-    </tr>
-    <tr>
-        <td>Unabhängigkeit von Größe der Vektoren</td>
-        <td>Abhängigkeit von Größe der Vektoren</td>
-    </tr>
-    <tr>
-        <td>Auch geeignet für hochdimensionale Räume</td>
-        <td>Schlecht geeignet für hochdimensionale Räume</td>
-    </tr>
-    <tr>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-    </tr>
-    <tr>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-    </tr>
-    <tr>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-    </tr>
-    <tr>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-        <td>xxxxxxxxxxxxxxxxxx</td>
-    </tr>
-</table>
-(<a href="https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/">Quelle</a>)
-
+<h1>Gängige Distanzmaße in Vektordatenbanken</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d320-100.png"><br>
 <div class="ic-gap"></div>
 
 
@@ -201,7 +166,24 @@ n: 20
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1 class="ic-neg15">Verteilung im n-dimensionalen Raum 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">Ein-dimensional</p>
+        <img class="w3-image ic-pos25" src="/lv/adbkt/a/vectordb/d350-100.png"><br>
+        <p class="w3-large ic-neg15">Zwei-dimensional</p>
+        <img class="w3-image ic-pos25" src="/lv/adbkt/a/vectordb/d360-100.png"><br>
+        <p class="w3-large ic-neg15">Drei-dimensional</p>
+        <img class="w3-image ic-pos25" src="/lv/adbkt/a/vectordb/d370-100.png"><br>
+    </div>
+    <div class="w3-col m5 ic-neg15">
+        <ul class="w3-large ic-neg15">
+            <li>Verteilung von 50 Datenpunkten</li>
+            <li>Seitenlänge eines Teilwürfels: 0.2 Einheiten</li>
+            <li>Füllgrad der Teilwürfel nimmt drastisch ab</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -209,7 +191,23 @@ n: 20
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>Verteilung im n-dimensionalen Raum 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d380-100.png"><br>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d390-100.png"><br>
+    </div>
+</div>
+<p class="w3-large ic-neg15">Verhalten der Verteilung bei 20% Seitenlänge</p>
+<ul class="w3-large">
+    <li>Ein-dimensional: ca. 20% Datenpunkte</li>
+    <li>Zwei-dimensional: ca. 4% Datenpunkte</li>
+    <li>Drei-dimensional: viele leere Teilwürfel</li>
+    <li>n>10-dimensional: sehr dünn besiedelter Datenraum</li>
+</ul>
+<p class="w3-large">784-dimensional: für 20% der Datenpunkte ist über 99,9% Seitenlänge erforderlich</p>
 <div class="ic-gap"></div>
 
 
@@ -217,7 +215,23 @@ n: 20
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1 class="ic-neg15">Distanzen im n-dimensinalen Raum</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <img class="w3-image ic-pos20" src="/lv/adbkt/a/vectordb/d400-100.png"><br>
+        <img class="w3-image" src="/lv/adbkt/a/vectordb/d410-100.png"><br>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large ic-neg15">Je mehr Dimensionen, desto</p>
+        <ul class="w3-large">
+            <li>größer die Abstände</li>
+            <li>ähnlicher die Abstände</li>
+        </ul>
+        <p class="w3-large">
+            Fluch der Dimensionalität<br>
+            Euklidische Distanz verliert an Bedeutung</p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -225,7 +239,27 @@ n: 20
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>xxx</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Cosinus-Ähnlichkeit</th>
+        <th>Euklidische Distanz</th>
+        <th>Inneres Prdukt</th>
+    </tr>
+    <tr>
+        <td>Winkel zwischen Vektoren</td>
+        <td>Abstand zwischen Vektoren</td>
+        <td>Winkel und Abstand zwischen Vektoren</td>
+    </tr>
+    <tr>
+        <td>Unabhängigkeit von Größe der Vektoren</td>
+        <td>Abhängigkeit von Größe der Vektoren</td>
+        <td>Abhängigkeit von Größe der Vektoren</td>
+    </tr>
+</table>
+(<a href="https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/">Quelle</a>)
+<p class="w3-large">Eignung und Einsatzbereiche der jeweiligen Metrik: Untersuchung im Klassenraum</p>
+
+
 <div class="ic-gap"></div>
 
 
@@ -274,4 +308,6 @@ n: 20
 -->
 {% include padding-id.html id=20 %}
 <h1>xxx</h1>
+<h1>Cosinus-Ähnlichkeit versus Euklidische Distanz</h1>
 <div class="ic-gap"></div>
+
