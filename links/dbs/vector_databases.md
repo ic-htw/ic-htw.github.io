@@ -18,6 +18,9 @@ is_slide: 0
 [(link)](http://thedataquarry.com/posts/vector-db-1/)
 - Vector databases (2): Understanding their internals
 [(link)](http://thedataquarry.com/posts/vector-db-2/)
+- Vector Data Store Evaluation Criteria
+[(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
+
 
 - zilliz Learning Series
 [(link)](https://zilliz.com/learn)
@@ -31,6 +34,22 @@ is_slide: 0
 [(link)](https://chat.openai.com/share/bd673913-8844-4e19-995a-1c4a6849d8bd)
 
 # aaa2 - projects
+- SQL queries + pgvector: Retrieval Augmented Generation in PostgreSQL
+[(link)](https://medium.com/@rubenszimbres/sql-queries-pgvector-retrieval-augmented-generation-for-postgresql-1b7b4337ae48)
+- Distributed queries for pgvector
+[(link)](https://jkatz05.com/post/postgres/distributed-pgvector/)
+- How To Improve Your LLM Accuracy and Performance With PGVector and PostgreSQL: Introduction to Embeddings and the Role of PGVector
+[(link)](https://instaclustr.medium.com/how-to-improve-your-llm-accuracy-and-performance-with-pgvector-and-postgresql-introduction-to-4491844535d8)
+- LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
+[(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
+- Integrating Vector Databases with LLMs: A Hands-On Guide
+[(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
+- Speed up PostgreSQL pgvector queries with indexes
+[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
+- LangChain SQL Agent for Massive Documents Interaction
+[(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
+
+
 - Build a question-answer bot natively using Postgres extensions
 [(link)](https://tembo.io/blog/tembo-rag-stack)
 - PostgreSQL as a Vector Database: Create, Store, and Query OpenAI Embeddings With pgvector
@@ -77,6 +96,8 @@ is_slide: 0
 
 
 # Embeddings
+- Explained: Tokens and Embeddings in LLMs
+[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
 - Vector Embeddings 101: The New Building Blocks for Generative AI
 [(link)](https://vectordatabase.substack.com/p/vector-embeddings-101-the-new-building)
 - Meet AI’s multitool: Vector embeddings

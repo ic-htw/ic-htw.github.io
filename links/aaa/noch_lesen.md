@@ -8,44 +8,25 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- LangChain SQL Agent for Massive Documents Interaction
-[(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
+- When Postgres is not enough: performance evaluation of PostgreSQL vs. Distributed DBMSs
+[(link)](https://blog.ydb.tech/when-postgres-is-not-enough-performance-evaluation-of-postgresql-vs-distributed-dbmss-23bf39db2d31)
 
-- Postgres is eating the database world
-[(link)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+- pgweb
+[(link)](https://sosedoff.github.io/pgweb/)
+
+- Python — Building Simple API with FastAPI and PostgreSQL
+[(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
+
+- An Introduction to the Seaborn Objects System
+[(link)](https://anaconda.cloud/seaborn-objects-system)
+- How Figma’s databases team lived to tell the scale
+[(link)](https://www.figma.com/blog/how-figmas-databases-team-lived-to-tell-the-scale/)
 
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
 
-- Explained: Tokens and Embeddings in LLMs
-[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
-
-- Speed up PostgreSQL pgvector queries with indexes
-[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
-
-- Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS
-[(link)](https://www.dbos.dev/blog/announcing-dbos)
-
-- New startup from Postgres creator puts the database at heart of software stack
-[(link)](https://techcrunch.com/2024/03/12/new-startup-from-postgres-creator-puts-the-database-at-heart-of-software-stack)
-
 - How to use PostgreSQL for (military) geoanalytics tasks
 [(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
-
-- LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
-[(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
-
-- Integrating Vector Databases with LLMs: A Hands-On Guide
-[(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
-
-- Vector Data Store Evaluation Criteria
-[(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
-
-- How To Improve Your LLM Accuracy and Performance With PGVector and PostgreSQL: Introduction to Embeddings and the Role of PGVector
-[(link)](https://instaclustr.medium.com/how-to-improve-your-llm-accuracy-and-performance-with-pgvector-and-postgresql-introduction-to-4491844535d8)
-
-- Visualize your RAG Data — Evaluate your Retrieval-Augmented Generation System with Ragas
-[(link)](https://towardsdatascience.com/visualize-your-rag-data-evaluate-your-retrieval-augmented-generation-system-with-ragas-fc2486308557)
 
 - How DuckDB can be up to 1000x more efficient than BigQuery?
 [(link)](https://medium.com/@kayrnt/how-duckdb-can-be-up-to-1000x-more-efficient-than-bigquery-36bab2405259)

@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS
+[(link)](https://www.dbos.dev/blog/announcing-dbos)
 - Advanced Data Structures Series— Skip List
 [(link)](https://medium.com/@remisharoon/advanced-data-structures-series-skip-list-3819ea2f7fa0)
 - LevelDB Data Structures Serials I: Skip List
