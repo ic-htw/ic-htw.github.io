@@ -127,6 +127,8 @@ is_slide: 0
 
 
 # Indexes
+- Similarity Search - Efimov
+[(link)](https://medium.com/@slavahead/list/similarity-search-598d963ad35e)
 - Vector Indexing: Roadmaps to Search
 [(link)](https://vectordatabase.substack.com/p/vector-indexing-roadmaps-to-search)
 - Vector databases (3): Not all indexes are created equal
@@ -145,6 +147,8 @@ is_slide: 0
 [(link)](https://weaviate.io/blog/ann-algorithms-hnsw-pq)
 - Understand Indexes in pgvector 
 [(link)](https://stormatics.tech/blogs/understanding-indexes-in-pgvector)
+- Understanding Hierarchical Navigable Small Worlds (HNSW)
+[(link)](https://www.datastax.com/de/guides/hierarchical-navigable-small-worlds)
 
 
 
@@ -208,6 +212,10 @@ is_slide: 0
 [(link)](https://www.pinecone.io/)
 - doc
 [(link)](https://docs.pinecone.io/)
+- learn
+[(link)](https://www.pinecone.io/learn/)
+- blog
+[(link)](https://www.pinecone.io/blog/)
 - kein direkter docker link
 - How to Chat With Your Data Using OpenAI, Pinecone, Airbyte and Langchain: A Guide
 [(link)](https://hackernoon.com/how-to-chat-with-your-data-using-openai-pinecone-airbyte-and-langchain-a-guide)
