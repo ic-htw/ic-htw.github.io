@@ -11,6 +11,13 @@ is_slide: 0
 - Awesome DuckDB
 [(link)](https://github.com/davidgasquez/awesome-duckdb)
 
+# WASM Workbench
+- SQL Workbench
+[(link)](https://sql-workbench.com/)
+- Using DuckDB-WASM for in-browser Data Engineering
+[(link)](https://tobilg.com/using-duckdb-wasm-for-in-browser-data-engineering)
+
+
 # graph
 - duckdb-pgq - git
 [(link)](https://github.com/cwida/duckdb-pgq)
