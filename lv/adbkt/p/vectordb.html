@@ -239,6 +239,7 @@ n: 20
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
+<h1>Vergleich der Ähnlichkeitsmaße</h1>
 <table class="w3-table-all">
     <tr>
         <th>Cosinus-Ähnlichkeit</th>
@@ -267,23 +268,58 @@ n: 20
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Suchstrategien in Vektordatenbanken</h1>
+<p class="w3-large ic-neg15">Lineare Suche</p>
+<ul class="w3-large">
+    <li>Berechne Distanz des Query-Vektors zu allen Vektoren in der DB</li>
+    <li>Liefere Vektor mit geringstem Abstand</li>
+    <li>Liefert genaue Ergebnisse</li>
+    <li>Zu langsam bei großen Datemengen</li>
+</ul>
+<p class="w3-large ic-neg15">Inverted File Index</p>
+<ul class="w3-large">
+    <li>Partitionierung des Datenraums auf Basis von Clustering, z.B 256 Cluster</li>
+    <li>256 Zentroide </li>
+    <li>Berechne Distanz des Query-Vektors zu allen Zentroiden</li>
+    <li>Lineare Suche in der Partition des gefundenen Zentroiden</li>
+    <li>Liefert Näherungswerte</li>
+    <li>Drastische Reduktion der Suchvorgänge</li>
+</ul>
+<p class="w3-large ic-neg15">Quantitisierung</p>
+<ul class="w3-large">
+    <li>Reduzierung der Genauigkeit der Vektoren</li>
+    <li>Spart Speicherplatz, z.B. 8-fach bei float64 zu int8 </li>
+    <li>Schnellere Abstandsberechnungen auf int8 als auf float64</li>
+    <li>Skalare Quantitisierung</li>
+    <li>Produkt-Quantitisierung</li>
+</ul>
+<p class="w3-large ic-neg15">Hierarchical Navigable Small Worlds (HNSW)</p>
+<ul class="w3-large">
+    <li>Umwandlung der Vektoren in einen Graph</li>
+    <li>Abstände zwischen Vektoren als Kanten</li>
+    <li>Multi-Ebenen-Graph</li>
+    <li>Hierarchische Suche im Graphen</li>
+</ul>
 <div class="ic-gap"></div>
-
 
 <!--
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1>Lineare Suche</h1>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/vectordb-index.ipynb">Code</a>)
 <div class="ic-gap"></div>
+
 
 
 <!--
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1>Inverted File Index</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d500-100.png"><br>
+(<a href="https://mathworld.wolfram.com/VoronoiDiagram.html">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/vectordb-index.ipynb">Code</a>)
 <div class="ic-gap"></div>
 
 
@@ -291,7 +327,16 @@ n: 20
     18 ******************************************************************
 -->
 {% include padding-id.html id=18 %}
-<h1>xxx</h1>
+<h1>Quantitisierung</h1>
+<h2>Skalare Quantitisierung</h2>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d510-100.png"><br>
+(<a href="https://www.quora.com/What-does-quantisation-mean">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/vectordb-index.ipynb">Code</a>)
+
+<h2>Produkt-Quantitisierung</h2>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d520-100.png"><br>
+(<a href="https://zilliz.com/learn/scalar-quantization-and-product-quantization">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/vectordb-index.ipynb">Code</a>)
 <div class="ic-gap"></div>
 
 
@@ -299,8 +344,12 @@ n: 20
     19 ******************************************************************
 -->
 {% include padding-id.html id=19 %}
-<h1>xxx</h1>
+<h1>Hierarchical Navigable Small Worlds (HNSW)</h1>
+<img class="w3-image" src="/lv/adbkt/a/vectordb/d530-100.png"><br>
+(<a href="https://www.pinecone.io/learn/series/faiss/hnsw">Quelle</a>)<br>
+(<a href="https://zilliz.com/learn/hierarchical-navigable-small-worlds-HNSW">Code</a>)
 <div class="ic-gap"></div>
+
 
 
 <!--
