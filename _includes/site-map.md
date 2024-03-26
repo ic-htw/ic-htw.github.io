@@ -79,7 +79,7 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/py-cont.html">Python-Container esrtellen</a> <br>
+    <a  href="/lv/adbkt/p/py-cont.html">Python-Container erstellen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/cas-repl.html">Cassandra Replikation</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -96,17 +96,17 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/concur.html">Nebenläufigkeit</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/tour-delight.html">P1</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/tour-delight.html">P1</a> (15 Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/nosql-sys.html">P2</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/nosql-sys.html">P2</a> (10 Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/auth.html">P3</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/auth.html">P3</a> (20 Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/sched.html">P4</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/sched.html">P4</a> (20 Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/vectordb-case.html">P5</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/vectordb-case.html">P5</a> (15 Punkte)<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/graphql.html">P6</a> (x Punkte)<br>
+    <a  href="/lv/adbkt/p/graphql.html">P6</a> (20 Punkte)<br>
 </div> 
 
 
