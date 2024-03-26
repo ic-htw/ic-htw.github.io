@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- MySQL vs Postgres in 2024
+[(link)](https://medium.com/dbconvert/mysql-vs-postgres-in-2024-ba44cc07234a)
+
 - When Postgres is not enough: performance evaluation of PostgreSQL vs. Distributed DBMSs
 [(link)](https://blog.ydb.tech/when-postgres-is-not-enough-performance-evaluation-of-postgresql-vs-distributed-dbmss-23bf39db2d31)
 
