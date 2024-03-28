@@ -8,6 +8,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- postgres - Checking Your Privileges
+[(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
+
+- Inside PostGIS: Calculating Distance
+[(link)](https://www.crunchydata.com/blog/inside-postgis-calculating-distance)
+
+- MobilityDB
+[(link)](https://mobilitydb.com/)
+
+- PuppyGraph 
+[(link)](https://www.puppygraph.com/)
+
+- What the Heck is PuppyGraph?
+[(link)](https://hackernoon.com/what-the-heck-is-puppygraph)
+
+- Motherduck - PuppyGraph
+[(link)](https://motherduck.com/blog/duckdb-puppygraph-graph-model-on-motherduck/)
+
 - MySQL vs Postgres in 2024
 [(link)](https://medium.com/dbconvert/mysql-vs-postgres-in-2024-ba44cc07234a)
 
