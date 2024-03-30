@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Key-Value Databases are Sufficient Infrastructure for Semantic Search at Scale with NeuralDB
+[(link)](https://medium.com/thirdai-blog/key-value-databases-are-sufficient-infrastructure-for-semantic-search-at-scale-with-neuraldb-b7eea4b9b4db)
+
 - postgres - Checking Your Privileges
 [(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
 
