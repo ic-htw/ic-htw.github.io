@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to use Mixtral -8x7B for Text-to-SQL
+[(link)](https://medium.com/dataherald/how-to-use-mixtral-8x7b-for-text-to-sql-9ae8bb52a3c3)
+
 - Key-Value Databases are Sufficient Infrastructure for Semantic Search at Scale with NeuralDB
 [(link)](https://medium.com/thirdai-blog/key-value-databases-are-sufficient-infrastructure-for-semantic-search-at-scale-with-neuraldb-b7eea4b9b4db)
 
