@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- System Design: Bloom Filter
+[(link)](https://towardsdatascience.com/system-design-bloom-filter-a2e19dcd4810)
+
+- Why Has Figma Reinvented the Wheel With PostgreSQL?
+[(link)](https://medium.com/@magda7817/why-has-figma-reinveted-the-wheel-with-postgresql-3a1cb2e9297c)
+
+- How I Built This Data Platform in One Week
+[(link)](https://medium.datadriveninvestor.com/how-i-built-this-data-platform-in-one-week-13b457d7c323)
+
 - How to use Mixtral -8x7B for Text-to-SQL
 [(link)](https://medium.com/dataherald/how-to-use-mixtral-8x7b-for-text-to-sql-9ae8bb52a3c3)
 
