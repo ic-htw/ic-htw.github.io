@@ -17,7 +17,6 @@ is_slide: 0
 
 ## Fallbeispiele
 
-1. Lush Cosmetics Inventory System [(link)](https://www.cockroachlabs.com/customers/1.ush-global-inventory-with-cockroachdb/)
 1. Scoutbee Supply Chain Insight [(link)](https://neo4j.com/case-studies/scoutbee/)
 1. Ant Money Embedded Finance [(link)](https://www.singlestore.com/customers/antmoney/)
 1. Zurich Insurance Fraud Investigations [(link)](https://neo4j.com/case-studies/zurich-insurance/)
