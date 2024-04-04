@@ -17,14 +17,14 @@ is_slide: 0
 
 ## Fallbeispiele
 
-1. Scoutbee Supply Chain Insight [(link)](https://neo4j.com/case-studies/scoutbee/)
-1. Zurich Insurance Fraud Investigations [(link)](https://neo4j.com/case-studies/zurich-insurance/)
-1. FI Neobank Platform [(link)](https://www.cockroachlabs.com/customers/building-a-scalable-neobank-platform-from-scratch-on-cockroachdb/)
-1. Trading Strategy Algorithmic Trading [(link)](https://www.timescale.com/case-studies/trading-strategy)
-1. Streak Realtime Customer Relationship Management [(link)](https://www.pingcap.com/case-study/streak-find-out-why-streak-built-its-realtime-crm-using-tidb/)
-1. Rapidsop Customer Journey Automation [(link)](https://www.cockroachlabs.com/customers/rapidops/)
-1. Jane Eldercare [(link)](https://www.timescale.com/case-studies/jane)
 1. FlightAware Flight Tracking [(link)](https://www.timescale.com/case-studies/flight-aware)
+1. FI Neobank Platform [(link)](https://www.cockroachlabs.com/customers/building-a-scalable-neobank-platform-from-scratch-on-cockroachdb/)
+1. Scoutbee Supply Chain Insight [(link)](https://neo4j.com/case-studies/scoutbee/)
+1. Streak Realtime Customer Relationship Management [(link)](https://www.pingcap.com/case-study/streak-find-out-why-streak-built-its-realtime-crm-using-tidb/)
 1. Kunlun Gaming Applications [(link)](https://www.pingcap.com/case-study/empowering-your-gaming-application-with-a-scale-out-newsql-database/)
+1. Rapidsop Customer Journey Automation [(link)](https://www.cockroachlabs.com/customers/rapidops/)
+1. Trading Strategy Algorithmic Trading [(link)](https://www.timescale.com/case-studies/trading-strategy)
+1. Zurich Insurance Fraud Investigations [(link)](https://neo4j.com/case-studies/zurich-insurance/)
+1. Jane Eldercare [(link)](https://www.timescale.com/case-studies/jane)
 1. Life Betting [(link)](https://www.cockroachlabs.com/blog/live-betting-on-acid/)
 

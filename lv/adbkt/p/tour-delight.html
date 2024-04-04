@@ -45,10 +45,17 @@ beschrieben.
       - HEAP_NEWSIZE=1024M
       - MAX_HEAP_SIZE=1024M
 </code></pre>
+<p class="w3-large">
+  Legen sie einen Keyspace tourdelight an:
+</p>
+<pre><code class="language-sql">create keyspace tourdelight with replication = {
+  'class': 'SimpleStrategy', 'replication_factor' : 1
+};</code></pre>
   
 <h1>Zugriff per Python</h1>
 <p class="w3-large">
-  Realisieren sie in Python Funktionalität zum Zugriff auf die Daten. Implementieren sie mindestens ein Beispiel, bei dem wegen der Denormalisierung Maßnahmen zur Konsistenzhaltung der Daten umgesetzt werden müssen.
+  Realisieren sie beispielhaft in Python Funktionalität zum Zugriff auf die Daten. Implementieren sie mindestens ein Beispiel, bei dem wegen der Denormalisierung Maßnahmen zur Konsistenzhaltung der Daten umgesetzt werden müssen.
+  Informationen zum Python-Treiber finden sie <a href="https://pypi.org/project/cassandra-driver">hier</a>. Er ist bereits im Container installiert.
 </p>
  
 <h1>Präsentation</h1>

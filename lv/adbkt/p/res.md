@@ -15,6 +15,9 @@ title: ADBKT
 - Cassandra Dokumentation [(link)](https://cassandra.apache.org/doc/latest/)
 - A Comprehensive Guide to Apache Cassandra Architecture [(link)](https://www.instaclustr.com/blog/cassandra-architecture/)
 - Apache Cassandra Architecture From The Ground-Up [(link)](https://www.simplilearn.com/tutorials/big-data-tutorial/cassandra-architecture)
+- Python Driver
+[(link)](https://pypi.org/project/cassandra-driver/)
+
 
 ## Neo4j
 - Neo4j Dokumentation [(link)](https://neo4j.com/docs/)

@@ -48,7 +48,6 @@ Ausgewählte Datenbankkonzepte/-techniken
 <div class="ADBKT w3-padding">
     <a  href="/lv/adbkt/p/main.html">Überblick</a> <br>
     <a  href="/lv/adbkt/p/plan.html">Plan</a> <br>
-    <a  href="/lv/adbkt/p/infra.html">Technische Infrastruktur</a> <br>
     <a  href="/lv/adbkt/p/res.html">Ressourcen</a> <br>
     Vorlesung<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,6 +74,8 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/a/concur/concur.pdf">Nebenläufigkeit</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/a/concur/2pc.pdf">Verteilte Transaktionen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/json/json-pg.pdf">JSON in Postgres</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
@@ -88,6 +89,8 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/cypher-queries.html">Cypher-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/gds.html">Graph-Data-Science</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/dbeaver.html">Konfiguration DBeaver</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -180,6 +183,8 @@ Datenmodellierung und Datenbanksysteme
     <a  href="/lv/dmdb/p/intro.html">Überblick</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/plan.html">Plan</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/dmdb/p/share.html">Share</a> <br>
     Rel<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/relmod.html">Relationenmodell</a> <br>
