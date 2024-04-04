@@ -4,6 +4,8 @@ title: LLM Analytics
 is_slide: 0
 ---
 # aaa
+- How to use Mixtral -8x7B for Text-to-SQL
+[(link)](https://medium.com/dataherald/how-to-use-mixtral-8x7b-for-text-to-sql-9ae8bb52a3c3)
 - SQLCoder-70B
 [(link)](https://defog.ai/blog/open-sourcing-sqlcoder-70b/)
 - An AI application that can chat with with very large SQL databases.

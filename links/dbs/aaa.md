@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- System Design: Bloom Filter
+[(link)](https://towardsdatascience.com/system-design-bloom-filter-a2e19dcd4810)
 - Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS
 [(link)](https://www.dbos.dev/blog/announcing-dbos)
 - Advanced Data Structures Series— Skip List

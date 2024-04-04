@@ -8,47 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- System Design: Bloom Filter
-[(link)](https://towardsdatascience.com/system-design-bloom-filter-a2e19dcd4810)
+- Real-Time Twitch Chat Sentiment Analysis with Apache Flink
+[(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
 
-- Why Has Figma Reinvented the Wheel With PostgreSQL?
-[(link)](https://medium.com/@magda7817/why-has-figma-reinveted-the-wheel-with-postgresql-3a1cb2e9297c)
-
-- How I Built This Data Platform in One Week
-[(link)](https://medium.datadriveninvestor.com/how-i-built-this-data-platform-in-one-week-13b457d7c323)
-
-- How to use Mixtral -8x7B for Text-to-SQL
-[(link)](https://medium.com/dataherald/how-to-use-mixtral-8x7b-for-text-to-sql-9ae8bb52a3c3)
-
-- Key-Value Databases are Sufficient Infrastructure for Semantic Search at Scale with NeuralDB
-[(link)](https://medium.com/thirdai-blog/key-value-databases-are-sufficient-infrastructure-for-semantic-search-at-scale-with-neuraldb-b7eea4b9b4db)
-
-- postgres - Checking Your Privileges
-[(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
-
-- Inside PostGIS: Calculating Distance
-[(link)](https://www.crunchydata.com/blog/inside-postgis-calculating-distance)
-
-- MobilityDB
-[(link)](https://mobilitydb.com/)
-
-- PuppyGraph 
-[(link)](https://www.puppygraph.com/)
-
-- What the Heck is PuppyGraph?
-[(link)](https://hackernoon.com/what-the-heck-is-puppygraph)
-
-- Motherduck - PuppyGraph
-[(link)](https://motherduck.com/blog/duckdb-puppygraph-graph-model-on-motherduck/)
-
-- MySQL vs Postgres in 2024
-[(link)](https://medium.com/dbconvert/mysql-vs-postgres-in-2024-ba44cc07234a)
-
-- When Postgres is not enough: performance evaluation of PostgreSQL vs. Distributed DBMSs
-[(link)](https://blog.ydb.tech/when-postgres-is-not-enough-performance-evaluation-of-postgresql-vs-distributed-dbmss-23bf39db2d31)
-
-- pgweb
-[(link)](https://sosedoff.github.io/pgweb/)
+- Building a Managed Postgres Service in Rust: Part 1 
+[(link)](https://tembo.io/blog/managed-postgres-rust)
 
 - Python — Building Simple API with FastAPI and PostgreSQL
 [(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)

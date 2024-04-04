@@ -119,9 +119,14 @@ is_slide: 0
 [(link)](https://postgrest.org/en/stable/releases/v9.0.0.html)
 - PgCat Prepared Statements
 [(link)](https://postgresml.org/blog/making-postgres-30-percent-faster-in-production)
+- pgweb
+[(link)](https://sosedoff.github.io/pgweb/)
+
 
 
 # misc
+- postgres - Checking Your Privileges
+[(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
 - How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?
 [(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
 - Introduction to CDC (Change Data Capture): PostgreSQL to Kafka

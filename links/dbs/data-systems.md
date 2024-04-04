@@ -237,6 +237,14 @@ is_slide: 0
 - JMX Exporter
 [(link)](https://github.com/prometheus/jmx_exporter)
 
+# puppygraph
+- home
+[(link)](https://www.puppygraph.com)
+- Motherduck - PuppyGraph
+[(link)](https://motherduck.com/blog/duckdb-puppygraph-graph-model-on-motherduck/)
+
+
+
 # redis
 - home
 [(link)](https://redis.io/)
