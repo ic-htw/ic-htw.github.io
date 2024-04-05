@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- DuckDB Meets Apache Arrow
+[(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
+
+- How we built Text-to-SQL at Pinterest
+[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
+
+- Simplifying RAG with PostgreSQL and PGVector
+[(link)](https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293)
+
 - Real-Time Twitch Chat Sentiment Analysis with Apache Flink
 [(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
 
