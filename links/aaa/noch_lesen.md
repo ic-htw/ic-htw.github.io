@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Vector Database vs. Indexing- Path to Efficient Data Handling
+[(link)](https://akash-mathur.medium.com/vector-database-vs-indexing-path-to-efficient-data-handling-382cc1207491)
+
+- What Is a Streaming Database?
+[(link)](https://towardsdev.com/what-is-a-streaming-database-667b4501550e)
+
+- Monolithic vs. Distributed SQL
+[(link)](https://franckpachot.medium.com/monolithic-vs-distributed-sql-f07af959e1a4)
+
 - DuckDB Meets Apache Arrow
 [(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
 
