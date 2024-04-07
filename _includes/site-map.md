@@ -131,6 +131,7 @@ Data Management and Business Performance Management
 <div class="DataMan w3-padding">
     <a  href="/lv/dataman/p/teach-mat.html">Teaching Material</a> <br>
     <a  href="/lv/dataman/p/schedule.html">Schedule</a> <br>
+    <a  href="/lv/dataman/p/pres.html">Presentations</a> <br>
     <a  href="/lv/dataman/p/ex-classroom.html">Classroom Exercises</a> <br>
     <a  href="/lv/dataman/p/ex-rated.html">Rated Exercises</a> <br>
     <a  href="/lv/dataman/p/software.html">Software</a> <br>
