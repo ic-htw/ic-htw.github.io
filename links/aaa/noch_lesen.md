@@ -8,6 +8,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Forget `pip install`, Use uv Instead
+[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
+
+- Vector Embeddings Explained for Developers!
+[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
+
+- Vector Database vs. Indexing- Path to Efficient Data Handling
+[(link)](https://akash-mathur.medium.com/vector-database-vs-indexing-path-to-efficient-data-handling-382cc1207491)
+
+- What Is a Streaming Database?
+[(link)](https://towardsdev.com/what-is-a-streaming-database-667b4501550e)
+
+- Monolithic vs. Distributed SQL
+[(link)](https://franckpachot.medium.com/monolithic-vs-distributed-sql-f07af959e1a4)
+
+- DuckDB Meets Apache Arrow
+[(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
+
+- How we built Text-to-SQL at Pinterest
+[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
+
+- Simplifying RAG with PostgreSQL and PGVector
+[(link)](https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293)
+
 - Real-Time Twitch Chat Sentiment Analysis with Apache Flink
 [(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
 
