@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Forget `pip install`, Use uv Instead
+[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
+
+- Vector Embeddings Explained for Developers!
+[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
+
 - Vector Database vs. Indexing- Path to Efficient Data Handling
 [(link)](https://akash-mathur.medium.com/vector-database-vs-indexing-path-to-efficient-data-handling-382cc1207491)
 
