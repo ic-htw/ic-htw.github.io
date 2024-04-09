@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- A New Coefficient of Correlation
+[(link)](https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310)
+
 - Optimize Vector Databases, Enhance RAG-Driven Generative AI
 [(link)](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c)
 
