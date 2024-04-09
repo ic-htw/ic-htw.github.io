@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Optimize Vector Databases, Enhance RAG-Driven Generative AI
+[(link)](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c)
+
+- Full Stack FastAPI Template
+[(link)](https://fastapi.tiangolo.com/project-generation/)
+
 - Forget `pip install`, Use uv Instead
 [(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
 
