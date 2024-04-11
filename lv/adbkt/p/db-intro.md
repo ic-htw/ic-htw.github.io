@@ -1,20 +1,13 @@
 ---
 layout: default
-title: ADBKT
+title: Python DB-Intro
 ---
 
 # Python DB-Intro
 
-## Portainer
-- In der Navigationsleiste links auf "Containers" klicken
-- In Container "py" auf das Symbol für "Logs" klicken
-- Token herauskopieren
-
-## Jupyter Notebook
-- http://xxx.f4.htw-berlin.de:8888/
-- Token einfügen und damit einloggen
 - Download [pg.py](/lv/adbkt/a/ipynb/pg.py) und speichern unter "cred_pg.py"
 - Creditials anpassen (wie bei DBeaver)
-- Download [intro-pg.ipynb](/lv/adbkt/a/ipynb/intro-pg.ipynb)
+- Download [intro-pg.ipynb](/lv/adbkt/a/ipynb/intro-pg.ipynb) 
+  ([render](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/intro-pg.ipynb))
 - Upload "cred_pg.py" und "intro-pg.ipynb"
 

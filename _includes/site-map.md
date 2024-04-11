@@ -71,11 +71,21 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/vectordb.html">Vektordatenbanken</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/dynamo.html">DynamoDB</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/a/concur/concur.pdf">Nebenläufigkeit</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/a/concur/2pc.pdf">Verteilte Transaktionen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/a/json/json-pg.pdf">JSON in Postgres</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/window-sql.html">Window-Funktionen in SQL</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/sql/rec.pdf">Rekursive Abfragen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/hana/hana.pdf">SAP Hana</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/a/insta/insta.pdf">Instacart</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>
@@ -92,11 +102,27 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/dbeaver.html">Konfiguration DBeaver</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/db-intro.html">Python DB-Intro</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-viz.html">Visualisierung Geodaten</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/dynamodb.html">DynamoDB</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/concur.html">Nebenläufigkeit</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/retail.html">Retail Sales</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/rec-sql.html">Rekursive Abfrage</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/sql-chatgpt.html">SQL mit ChatGPT</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/hana-btp-account.html">Hana, BTP Account</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/hana-graph.html">Hana Graph</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/hana-cc.html">Closeness Centrality in SAP Hana</a> <br>
     Prüfungsleistungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/tour-delight.html">P1</a> (15 Punkte)<br>

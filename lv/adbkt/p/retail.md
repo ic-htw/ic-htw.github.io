@@ -9,5 +9,4 @@ title: ADBKT
 - Download 
 [(ipynb)](/lv/adbkt/a/ipynb/retail-sales.ipynb)
 [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/retail-sales.ipynb)
-- Upload
-- Bearbeitung der Aufgaben
+- Upload in Python-Container
