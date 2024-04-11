@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- DuckDB Meets Apache Arrow
+[(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
 - Introducing DuckDB-NSQL-7B, A LLM for DuckDB SQL
 [(link)](https://motherduck.com/blog/duckdb-text2sql-llm/)
 - Using DuckDB-WASM for in-browser Data Engineering

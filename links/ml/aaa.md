@@ -4,6 +4,8 @@ title: aaa
 is_slide: 0
 ---
 # aaa
+- A New Coefficient of Correlation
+[(link)](https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310)
 - Frustration: One Year With R
 [(link)](https://github.com/ReeceGoding/Frustration-One-Year-With-R)
 - Precision &amp; Recall

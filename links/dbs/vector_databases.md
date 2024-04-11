@@ -20,6 +20,9 @@ is_slide: 0
 [(link)](http://thedataquarry.com/posts/vector-db-2/)
 - Vector Data Store Evaluation Criteria
 [(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
+- Optimize Vector Databases, Enhance RAG-Driven Generative AI
+[(link)](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c)
+
 
 
 - zilliz Learning Series
@@ -96,6 +99,8 @@ is_slide: 0
 
 
 # Embeddings
+- Vector Embeddings Explained for Developers!
+[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
 - Explained: Tokens and Embeddings in LLMs
 [(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
 - Vector Embeddings 101: The New Building Blocks for Generative AI

@@ -21,6 +21,9 @@ is_slide: 0
 
 
 # Allgemein
+- Forget `pip install`, Use uv Instead
+[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
+
 - Cheat Sheet
 [(link)](https://github.com/gto76/python-cheatsheet)
 

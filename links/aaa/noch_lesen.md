@@ -8,32 +8,35 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- A New Coefficient of Correlation
-[(link)](https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310)
+- My fun journey of managing a large table of PostgreSQL
+[(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
 
-- Optimize Vector Databases, Enhance RAG-Driven Generative AI
-[(link)](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c)
+- Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
+[(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 
-- Full Stack FastAPI Template
-[(link)](https://fastapi.tiangolo.com/project-generation/)
+- Open-DocLLM
+[(link)](https://github.com/enoch3712/Open-DocLLM)
 
-- Forget `pip install`, Use uv Instead
-[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
+- Why did Databricks build the Photon engine?
+[(link)](https://medium.com/@vutrinh274/why-did-databricks-build-the-photon-engine-90546429a31c)
 
-- Vector Embeddings Explained for Developers!
-[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
+- PostgreSQL as Vector database: Create LLM Apps with pgvector
+[(link)](https://medium.com/tessell-dbaas/postgresql-as-vector-database-create-llm-apps-with-pgvector-64677de48fc2)
 
-- Vector Database vs. Indexing- Path to Efficient Data Handling
-[(link)](https://akash-mathur.medium.com/vector-database-vs-indexing-path-to-efficient-data-handling-382cc1207491)
+- A Very Gentle Introduction to Large Language Models without the Hype
+[(link)](https://mark-riedl.medium.com/a-very-gentle-introduction-to-large-language-models-without-the-hype-5f67941fa59e)
 
-- What Is a Streaming Database?
-[(link)](https://towardsdev.com/what-is-a-streaming-database-667b4501550e)
+- RAG Vs VectorDB
+[(link)](https://medium.com/@bijit211987/rag-vs-vectordb-2c8cb3e0ee52)
 
-- Monolithic vs. Distributed SQL
-[(link)](https://franckpachot.medium.com/monolithic-vs-distributed-sql-f07af959e1a4)
+- Mastering Asynchronous Programming in Python: A Comprehensive Guide
+[(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
 
-- DuckDB Meets Apache Arrow
-[(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
+- PostgreSQL Stories: A simple query with a big problem
+[(link)](https://render.com/blog/postgresql-simple-query-big-problem)
+
+- Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
+[(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
 
 - How we built Text-to-SQL at Pinterest
 [(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
@@ -50,8 +53,6 @@ is_slide: 0
 - Python — Building Simple API with FastAPI and PostgreSQL
 [(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
 
-- An Introduction to the Seaborn Objects System
-[(link)](https://anaconda.cloud/seaborn-objects-system)
 - How Figma’s databases team lived to tell the scale
 [(link)](https://www.figma.com/blog/how-figmas-databases-team-lived-to-tell-the-scale/)
 
@@ -60,12 +61,6 @@ is_slide: 0
 
 - How to use PostgreSQL for (military) geoanalytics tasks
 [(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
-
-- How DuckDB can be up to 1000x more efficient than BigQuery?
-[(link)](https://medium.com/@kayrnt/how-duckdb-can-be-up-to-1000x-more-efficient-than-bigquery-36bab2405259)
-
-- Comparing Postgres Managed Services: AWS, Azure, GCP and Supabase
-[(link)](https://blog.peerdb.io/comparing-postgres-managed-services-aws-azure-gcp-and-supabase)
 
 - Understanding the Fundamentals of PostgreSQL Architecture
 [(link)](https://instaclustr.medium.com/understanding-the-fundamentals-of-postgresql-architecture-98ce3672376f)
