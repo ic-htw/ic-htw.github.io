@@ -2,7 +2,7 @@
 layout: default
 title: "Verbund"
 is_slide: 1
-n: 20
+n: 18
 hide: 1
 ---
 <!--
@@ -35,7 +35,7 @@ hide: 1
 -->
 {% include padding-id.html id=3 %}
 <h1>Kartesisches Produkt auf Tabellen</h1>
-<pre><code class="language-sql">SELECT * FROM mitarbeiter cross join orgeinheit; 18 x 7 = 126 Datensätze</code></pre>
+<pre><code class="language-sql">SELECT * FROM mitarbeiter CROSS JOIN orgeinheit; 18 x 7 = 126 Datensätze</code></pre>
 <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-03.png">
 <div class="ic-gap"></div>
 
@@ -46,7 +46,7 @@ hide: 1
 {% include padding-id.html id=4 %}
 <h1>Filterung auf kartesischem Produkt</h1>
 <pre><code class="language-sql">SELECT *
-FROM mitarbeiter cross join orgeinheit
+FROM mitarbeiter CROSS JOIN orgeinheit
 WHERE mitarbeiter.oeid=orgeinheit.oeid;</code></pre>
 <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-04.png">
 <div class="ic-gap"></div>
@@ -61,7 +61,7 @@ WHERE mitarbeiter.oeid=orgeinheit.oeid;</code></pre>
   orgeinheit.bezeichnung AS orgeinheit,
   mitarbeiter.mid, mitarbeiter.name AS mitarbeiter, mitarbeiter.eintrittsdatum, mitarbeiter.gehalt
 FROM mitarbeiter
-     inner join orgeinheit ON orgeinheit.oeid=mitarbeiter.oeid;</code></pre>
+     INNER JOIN orgeinheit ON orgeinheit.oeid=mitarbeiter.oeid;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m7">
         <p><b>Abkürzung für Tabellennamen:</b><br>
@@ -73,7 +73,7 @@ FROM mitarbeiter
   oe.bezeichnung AS orgeinheit,
   m.mid, m.name AS mitarbeiter, m.eintrittsdatum, m.gehalt
 FROM mitarbeiter m
-     join orgeinheit oe ON oe.oeid=m.oeid;</code></pre>
+     JOIN orgeinheit oe ON oe.oeid=m.oeid;</code></pre>
     </div>
     <div class="w3-col m5">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-05.png">
@@ -87,7 +87,9 @@ FROM mitarbeiter m
 -->
 {% include padding-id.html id=6 %}
 <h1>Effekte des Verbunds</h1>
-<pre><code class="language-sql">SELECT * FROM R join S ON B=D;</code></pre>
+<p class="w3-large">Interaktiv ausführen</p>
+
+<pre><code class="language-sql">SELECT * FROM R JOIN S ON B=D;</code></pre>
 <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-07.png">
 <div class="ic-gap"></div>
 
@@ -101,15 +103,15 @@ FROM mitarbeiter m
     <div class="w3-col m6">
         <pre><code class="language-sql">SELECT p.titel, m.name
 FROM projekt p
-     join maproj mp ON mp.pid=p.pid
-     join mitarbeiter m ON m.mid=mp.mid;</code></pre>
+     JOIN maproj mp ON mp.pid=p.pid
+     JOIN mitarbeiter m ON m.mid=mp.mid;</code></pre>
         <p>Andere Reihenfolge der Tabellen<br>
             gleiches Ergebnis
         </p>
         <pre><code class="language-sql">SELECT p.titel, m.name
 FROM mitarbeiter m
-     join maproj mp ON mp.mid=m.mid
-     join projekt p ON p.pid=mp.pid;</code></pre>
+     JOIN maproj mp ON mp.mid=m.mid
+     JOIN projekt p ON p.pid=mp.pid;</code></pre>
     </div>
     <div class="w3-col m6">
         <img class="w3-image" src="/lv/dmdb/a/sql-join/fig-08.png">
@@ -130,7 +132,7 @@ FROM mitarbeiter m
   ober.bezeichnung AS obereinheit,
   unter.bezeichnung AS untereinheit
 FROM orgeinheit ober
-     join orgeinheit unter ON unter.obereinheit=ober.oeid;</code></pre>
+     JOIN orgeinheit unter ON unter.obereinheit=ober.oeid;</code></pre>
         <p>Zweifache Verwendung derselben Tabelle:<br>
             unterschiedliche Aliasnamen notwendig
         </p>
@@ -153,7 +155,7 @@ FROM orgeinheit ober
   m.name AS mitarbeiter,
   oe.bezeichnung AS leitet
 FROM mitarbeiter m
-     join orgeinheit oe ON oe.leitung=m.mid;</code></pre>
+     JOIN orgeinheit oe ON oe.leitung=m.mid;</code></pre>
         <p>Wie ermittelt man alle Personen ohne Leitungsfunktion?<br>
             Geht mit dem Inner Join nicht<br>
             Lösung: Outer Join
@@ -180,7 +182,7 @@ FROM mitarbeiter m
 
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT * FROM R inner join S ON B=D;</code></pre>
+        <pre><code class="language-sql">SELECT * FROM R inner JOIN S ON B=D;</code></pre>
     </div>
     <div class="w3-col m5">
         <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14a.png">
@@ -188,7 +190,7 @@ FROM mitarbeiter m
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT * FROM R left outer join S ON B=D;</code></pre>
+        <pre><code class="language-sql">SELECT * FROM R LEFT  outer JOIN S ON B=D;</code></pre>
     </div>
     <div class="w3-col m5">
         <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14b.png">
@@ -196,7 +198,7 @@ FROM mitarbeiter m
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT * FROM R right outer join S ON B=D;</code></pre>
+        <pre><code class="language-sql">SELECT * FROM R right outer JOIN S ON B=D;</code></pre>
     </div>
     <div class="w3-col m5">
         <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14c.png">
@@ -204,7 +206,7 @@ FROM mitarbeiter m
 </div>
 <div class="w3-row-padding">
     <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT * FROM R full outer join S ON B=D;</code></pre>
+        <pre><code class="language-sql">SELECT * FROM R full outer JOIN S ON B=D;</code></pre>
     </div>
     <div class="w3-col m5">
         <img class="w3-image w3-padding-16" src="/lv/dmdb/a/sql-join/fig-14d.png">
@@ -224,7 +226,7 @@ FROM mitarbeiter m
   m.name AS mitarbeiter,
   oe.bezeichnung AS leitet
 FROM mitarbeiter m
-     left join orgeinheit oe ON oe.leitung=m.mid;</code></pre>
+     LEFT JOIN orgeinheit oe ON oe.leitung=m.mid;</code></pre>
         <p>Alle Personen ohne Leitungsfunktion:<br>
             Haben Nullwerte in Spalte <code>leitet</code>
         </p>
@@ -245,8 +247,8 @@ FROM mitarbeiter m
         <pre><code class="language-sql">SELECT
   m.name AS mitarbeiter,
   oe.bezeichnung AS leitet
-FROM mitarbeiter m left join orgeinheit oe ON oe.leitung=m.mid
-WHERE oe.oeid is null;</code></pre>
+FROM mitarbeiter m LEFT  JOIN orgeinheit oe ON oe.leitung=m.mid
+WHERE oe.oeid IS NULL;</code></pre>
         <p>Allgemeines Vorgehen:<br>
             Filtern nicht verbundener Datensätze über Nulls bei Outer Joins
         </p>
@@ -265,10 +267,10 @@ WHERE oe.oeid is null;</code></pre>
 
 <pre><code class="language-sql">SELECT name
 FROM mitarbeiter
-minus
+MINUS
 SELECT name
 FROM mitarbeiter
-     join orgeinheit ON leitung=mid;</code></pre>
+     JOIN orgeinheit ON leitung=mid;</code></pre>
 <div class="ic-gap"></div>
 
 <!--
@@ -404,21 +406,4 @@ ORDER BY mname;</code></pre>
     </div>
 </div>
 <div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
 
