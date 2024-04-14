@@ -31,10 +31,10 @@ is_slide: 0
 [(link)](https://github.com/fzliu/vector-search)
 
 
-- Slides ChatGPT engl
-[(link)](https://chat.openai.com/share/5c457042-91cd-47e1-8e00-d5af7fdf39ef)
-- Slides ChatGPT deutsch
-[(link)](https://chat.openai.com/share/bd673913-8844-4e19-995a-1c4a6849d8bd)
+- Experimenting with Vector Databases: Chromadb, Pinecone, Weaviate and Pgvector
+[(link)](https://coinsbench.com/experimenting-with-vector-databases-chromadb-pinecone-weaviate-and-pgvector-0f35c0356540)
+
+
 
 # aaa2 - projects
 - SQL queries + pgvector: Retrieval Augmented Generation in PostgreSQL

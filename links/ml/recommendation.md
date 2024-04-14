@@ -16,6 +16,8 @@ is_slide: 0
 [(link)](https://playground.memgraph.com/lesson/movielens-recommendation-systems-1)
 
 # other
+- Multi-objective Ranking in Large-Scale E-commerce Recommender Systems
+[(link)](https://subirverma.medium.com/multi-objective-ranking-in-large-scale-e-commerce-recommender-systems-9bab88bc00a8)
 - MLOps for recommenders - Deploying Recommender System in Production
 [(link)](https://ai.plainenglish.io/mlops-for-recommenders-deploying-recommender-system-in-production-8452d90d5b87)
 - Video Recommendations at Joyn
