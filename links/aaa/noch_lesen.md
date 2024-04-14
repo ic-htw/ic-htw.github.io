@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Connecting AI to Decisions with the Palantir Ontology
+[(link)](https://blog.palantir.com/connecting-ai-to-decisions-with-the-palantir-ontology-c73f7b0a1a72)
+
+- The Way We Are Building Event-Driven Applications is Misguided. This is Why I Created Infinitic.
+[(link)](https://gillesbarbier.medium.com/the-way-we-are-building-event-driven-applications-is-misguided-7f7c5f1a9061)
+
 - Code Generation using Retrieval Augmented Generation + LangChain
 [(link)](https://medium.com/@rubenszimbres/code-generation-using-retrieval-augmented-generation-langchain-861e3c1a1a53)
 
