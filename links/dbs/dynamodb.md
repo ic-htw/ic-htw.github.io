@@ -19,8 +19,6 @@ is_slide: 0
 
 
 # single table design
-- Grab’s Database Architecture to Handle Millions of Orders — DynamoDB System Design
-[(link)](https://levelup.gitconnected.com/grabs-database-architecture-to-handle-millions-of-orders-system-design-2c21571d86b4)
 - Data Modeling for DynamoDB Single Table Design
 [(link)](https://www.sensedeep.com/blog/posts/2021/dynamodb-singletable-design.html)
 - Creating a single-table design with Amazon DynamoDB
@@ -54,6 +52,22 @@ is_slide: 0
 
 
 # amazon blog posts
+- Common financial services use cases for Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/common-financial-services-use-cases-for-amazon-dynamodb/)
+- Unlocking performance, scalability, and cost-efficiency of Zomato’s Billing Platform by switching from TiDB to DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/unlocking-performance-scalability-and-cost-efficiency-of-zomatos-billing-platform-by-switching-from-tidb-to-dynamodb/)
+- Know before you go: Amazon DynamoDB sessions at AWS re:Invent 2023
+[(link)](https://aws.amazon.com/blogs/database/know-before-you-go-amazon-dynamodb-sessions-at-aws-reinvent-2023/)
+- How Zalando migrated their shopping carts to Amazon DynamoDB from Apache Cassandra
+[(link)](https://aws.amazon.com/blogs/database/how-zalando-migrated-their-shopping-carts-to-amazon-dynamodb-from-apache-cassandra/)
+- Implement auto-increment with Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/implement-auto-increment-with-amazon-dynamodb/)
+- Handle traffic spikes with Amazon DynamoDB provisioned capacity
+[(link)](https://aws.amazon.com/de/blogs/database/handle-traffic-spikes-with-amazon-dynamodb-provisioned-capacity/)
+- Build aggregations for Amazon DynamoDB tables using Amazon DynamoDB Streams
+[(link)](https://aws.amazon.com/blogs/database/build-aggregations-for-amazon-dynamodb-tables-using-amazon-dynamodb-streams/)
+- Model hierarchical automotive component data using Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/model-hierarchical-automotive-component-data-using-amazon-dynamodb/)
 - Handle traffic spikes with Amazon DynamoDB provisioned capacity
 [(link)](https://aws.amazon.com/de/blogs/database/handle-traffic-spikes-with-amazon-dynamodb-provisioned-capacity/)
 - Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 1: Loading)
