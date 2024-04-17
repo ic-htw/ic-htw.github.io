@@ -19,8 +19,6 @@ is_slide: 0
 
 
 # single table design
-- Grab’s Database Architecture to Handle Millions of Orders — DynamoDB System Design
-[(link)](https://levelup.gitconnected.com/grabs-database-architecture-to-handle-millions-of-orders-system-design-2c21571d86b4)
 - Data Modeling for DynamoDB Single Table Design
 [(link)](https://www.sensedeep.com/blog/posts/2021/dynamodb-singletable-design.html)
 - Creating a single-table design with Amazon DynamoDB
@@ -54,14 +52,53 @@ is_slide: 0
 
 
 # amazon blog posts
+- Common financial services use cases for Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/common-financial-services-use-cases-for-amazon-dynamodb/)
+- Unlocking performance, scalability, and cost-efficiency of Zomato’s Billing Platform by switching from TiDB to DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/unlocking-performance-scalability-and-cost-efficiency-of-zomatos-billing-platform-by-switching-from-tidb-to-dynamodb/)
+- Know before you go: Amazon DynamoDB sessions at AWS re:Invent 2023
+[(link)](https://aws.amazon.com/blogs/database/know-before-you-go-amazon-dynamodb-sessions-at-aws-reinvent-2023/)
+- How Zalando migrated their shopping carts to Amazon DynamoDB from Apache Cassandra
+[(link)](https://aws.amazon.com/blogs/database/how-zalando-migrated-their-shopping-carts-to-amazon-dynamodb-from-apache-cassandra/)
+- Implement auto-increment with Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/implement-auto-increment-with-amazon-dynamodb/)
 - Handle traffic spikes with Amazon DynamoDB provisioned capacity
 [(link)](https://aws.amazon.com/de/blogs/database/handle-traffic-spikes-with-amazon-dynamodb-provisioned-capacity/)
+- Build aggregations for Amazon DynamoDB tables using Amazon DynamoDB Streams
+[(link)](https://aws.amazon.com/blogs/database/build-aggregations-for-amazon-dynamodb-tables-using-amazon-dynamodb-streams/)
+- Model hierarchical automotive component data using Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/model-hierarchical-automotive-component-data-using-amazon-dynamodb/)
+
+
+- How Amazon Finance Technologies built an event-driven and scalable remittance service using Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/how-amazon-finance-technologies-built-an-event-driven-and-scalable-remittance-service-using-amazon-dynamodb/)
+- Working with date and timestamp data types in Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/working-with-date-and-timestamp-data-types-in-amazon-dynamodb/)
+- Cost-effective bulk processing with Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/cost-effective-bulk-processing-with-amazon-dynamodb/)
+- How Twilio modernized its Messaging Postflight service data store with Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/how-twilio-modernized-its-messaging-postflight-service-data-store-with-amazon-dynamodb/)
+- How Deliveroo migrated their Dispatcher service to Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/how-deliveroo-migrated-their-dispatcher-service-to-amazon-dynamodb/)
+- Motivations for migration to Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/motivations-for-migration-to-amazon-dynamodb/)
+- A framework for Amazon DynamoDB Transactions
+[(link)](https://aws.amazon.com/blogs/database/a-framework-for-amazon-dynamodb-transactions/)
+- Working with JSON data in Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/working-with-json-data-in-amazon-dynamodb/)
+- Optimize costs by scheduling provisioned capacity for Amazon DynamoDB
+[(link)](https://aws.amazon.com/blogs/database/optimize-costs-by-scheduling-provisioned-capacity-for-amazon-dynamodb/)
+- Use Amazon DynamoDB global tables in DynamoDB Shell
+[(link)](https://aws.amazon.com/blogs/database/use-amazon-dynamodb-global-tables-in-dynamodb-shell/)
+- Understanding Amazon DynamoDB latency
+[(link)](https://aws.amazon.com/blogs/database/understanding-amazon-dynamodb-latency/)
+
+
+
 - Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 1: Loading)
 [(link)](https://aws.amazon.com/de/blogs/database/part-1-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/)
 - Build aggregations for Amazon DynamoDB tables using Amazon DynamoDB Streams
 [(link)](https://aws.amazon.com/de/blogs/database/build-aggregations-for-amazon-dynamodb-tables-using-amazon-dynamodb-streams/)
-- Model hierarchical automotive component data using Amazon DynamoDB
-[(link)](https://aws.amazon.com/de/blogs/database/model-hierarchical-automotive-component-data-using-amazon-dynamodb/)
 - Data modelling for an internet-scale online transactional system using Amazon DynamoDB
 [(link)](https://aws.amazon.com/de/blogs/database/data-modelling-for-an-internet-scale-online-transactional-system-using-amazon-dynamodb/)
 - How Amazon DynamoDB adaptive capacity accommodates uneven data access patterns
