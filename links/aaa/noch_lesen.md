@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- PostgreSQL Multi-Active Replication - Part 1: An Introduction
+[(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
+
+- PostgreSQL Architecture
+[(link)](https://medium.com/agedb/postgresql-architecture-59d6242d91d8)
+
 - Connecting AI to Decisions with the Palantir Ontology
 [(link)](https://blog.palantir.com/connecting-ai-to-decisions-with-the-palantir-ontology-c73f7b0a1a72)
 
