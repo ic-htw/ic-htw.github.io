@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Transforming Text Classification with Semantic Search Techniques — Faiss
+[(link)](https://medium.com/walmartglobaltech/transforming-text-classification-with-semantic-search-techniques-faiss-c413f133d0e2)
+
+- Extract Structured Data from Unstructured Text using LLMs
+[(link)](https://medium.com/@ingridwickstevens/extract-structured-data-from-unstructured-text-using-llms-71502addf52b)
+
+- Peek into Query Hash (query_id) in PostgreSQL
+[(link)](https://virender-cse.medium.com/query-hash-in-postgresql-4522e91b5623)
+
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
 
