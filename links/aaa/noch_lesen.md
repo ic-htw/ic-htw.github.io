@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Analyze Structured Data (extracted from Unstructured Text) using LLM Agents
+[(link)](https://medium.com/@ingridwickstevens/analyze-structured-data-extracted-from-unstructured-text-using-llm-agents-4ea4eaf3ae78)
+
+- When to use GraphQL, gRPC, and REST?
+[(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
+
+- Database in Kubernetes: Is that a good idea?
+[(link)](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
+
+- dbt + Airflow
+[(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
+
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
 
