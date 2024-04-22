@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Scaling Horizontally on PostgreSQL: Citus’s Impact on Database Architecture
+[(link)](https://demirhuseyinn-94.medium.com/scaling-horizontally-on-postgresql-cituss-impact-on-database-architecture-295329c72c62)
+
 - Analyze Structured Data (extracted from Unstructured Text) using LLM Agents
 [(link)](https://medium.com/@ingridwickstevens/analyze-structured-data-extracted-from-unstructured-text-using-llm-agents-4ea4eaf3ae78)
 
