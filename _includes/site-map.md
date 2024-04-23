@@ -95,15 +95,15 @@ Ausgewählte Datenbankkonzepte/-techniken
     <a  href="/lv/adbkt/p/cas-repl.html">Cassandra Replikation</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/neo4j-cont.html">Neo4j-Container erstellen</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/cypher-queries.html">Cypher-Abfragen</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/gds.html">Graph-Data-Science</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/dbeaver.html">Konfiguration DBeaver</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/db-intro.html">Python DB-Intro</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/cypher-queries.html">Cypher-Abfragen</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/gds.html">Graph-Data-Science</a> <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-viz.html">Visualisierung Geodaten</a> <br>

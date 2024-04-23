@@ -55,7 +55,7 @@ FROM mitarbeiter;</code></pre>
   count(*),
   count(bonus)
 FROM mitarbeiter
-group by oeid
+GROUP BY oeid
 ORDER BY oeid;</code></pre>
     </div>
 </div>
@@ -94,14 +94,14 @@ ORDER BY oeid;</code></pre>
     <div class="w3-col m4">
         <pre><code class="language-sql">SELECT oeid, sum(gehalt)
 FROM mitarbeiter
-group by oeid
+GROUP BY oeid
 ORDER BY oeid;</code></pre>
     </div>
     <div class="w3-col m4">
         <ul class="w3-large">
             <li>Alle Ausgabespalten auf einer Aggregationsstufe</li>
             <ul>
-                <li>oeid: kommt aus dem group by</li>
+                <li>oeid: kommt aus dem GROUP BY</li>
                 <li>gehalt: Aggregationsfunktion angewendet auf Spalte</li>
             </ul>
         </ul>
@@ -115,7 +115,7 @@ ORDER BY oeid;</code></pre>
     <div class="w3-col m4">
         <pre><code class="language-sql">SELECT oeid, name, sum(gehalt)
 FROM mitarbeiter
-group by oeid
+GROUP BY oeid
 ORDER BY oeid;
             </code></pre>
     </div>
@@ -153,7 +153,7 @@ ORDER BY oeid;
   count(*)
 FROM mitarbeiter m
      join orgeinheit oe ON oe.oeid=m.oeid
-group by oe.bezeichnung
+GROUP BY oe.bezeichnung
 ORDER BY oe.bezeichnung;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-041.png">
     </div>
@@ -176,8 +176,8 @@ ORDER BY oe.bezeichnung;</code></pre>
   sum(gehalt),
   count(*)
 FROM mitarbeiter
-group by extract(year FROM eintrittsdatum)
-ORDER BY extract(year FROM eintrittsdatum);</code></pre>
+GROUP BY extract(year from eintrittsdatum)
+ORDER BY extract(year from eintrittsdatum);</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-05.png">
     </div>
 </div>
@@ -201,7 +201,7 @@ ORDER BY extract(year FROM eintrittsdatum);</code></pre>
   END AS eintritt,
   sum(gehalt), count(*)
 FROM mitarbeiter
-group by
+GROUP BY
   CASE
     WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
     WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
@@ -229,7 +229,7 @@ group by
   END AS eintritt,
   sum(gehalt), count(*)
 FROM mitarbeiter
-group by
+GROUP BY
   oeid,
   CASE
     WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
@@ -256,7 +256,7 @@ ORDER BY oeid;</code></pre>
   END AS eintritt,
   sum(gehalt), count(*)
   FROM mitarbeiter
-group by
+GROUP BY
   CASE
     WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
     WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
@@ -273,7 +273,7 @@ group by
   oeid,
   sum(gehalt), count(*)
 FROM mitarbeiter
-group by
+GROUP BY
   CASE
     WHEN eintrittsdatum >= '01.01.2010' THEN '2010 (ab)'
     WHEN eintrittsdatum >= '01.01.2000' THEN '2009 (bis)'
@@ -301,15 +301,15 @@ ORDER BY oeid;</code></pre>
         <pre><code class="language-sql">SELECT oe.oeid, oe.bezeichnung, sum(gehalt)
 FROM mitarbeiter m
      join orgeinheit oe ON oe.oeid=m.oeid
-group by oe.oeid
+GROUP BY oe.oeid
 ORDER BY oe.oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/fig-01.png"><br>
         <pre><code class="language-sql">SELECT oe.oeid, oe.bezeichnung, sum(gehalt)
 FROM mitarbeiter m
      join orgeinheit oe ON oe.oeid=m.oeid
-group by oe.oeid, oe.bezeichnung
+GROUP BY oe.oeid, oe.bezeichnung
 ORDER BY oe.oeid;</code></pre>
-<b>Jetzt geht es (Bezeichnung in group by übernehmen), es entstehen auch keine neuen Kombinationen, da oe.bezeichnung von oe.oeid abhängt</b><br>
+<b>Jetzt geht es (Bezeichnung in GROUP BY übernehmen), es entstehen auch keine neuen Kombinationen, da oe.bezeichnung von oe.oeid abhängt</b><br>
 <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-09.png">
     </div>
 </div>
@@ -325,15 +325,15 @@ ORDER BY oe.oeid;</code></pre>
     <div class="w3-col m6">
         <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
 FROM mitarbeiter
-group by oeid
+GROUP BY oeid
 ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-10.png">
     </div>
     <div class="w3-col m6">
         <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
 FROM mitarbeiter
-group by oeid
-having count(*) > 1
+GROUP BY oeid
+HAVING count(*) > 1
 ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-11.png">
     </div>
@@ -353,8 +353,8 @@ ORDER BY oeid;</code></pre>
     <div class="w3-col m4">
         <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
 FROM mitarbeiter
-group by oeid
-having count(*) > 1
+GROUP BY oeid
+HAVING count(*) > 1
 ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-11.png">
     </div>
@@ -362,8 +362,8 @@ ORDER BY oeid;</code></pre>
         <pre><code class="language-sql">SELECT oeid, sum(gehalt), count(*)
 FROM mitarbeiter
 WHERE bonus is null
-group by oeid
-having count(*) > 1
+GROUP BY oeid
+HAVING count(*) > 1
 ORDER BY oeid;</code></pre>
         <img class="w3-image" src="/lv/dmdb/a/sql-grp-agg/tab-12.png">
     </div>
@@ -379,7 +379,7 @@ ORDER BY oeid;</code></pre>
 <pre><code class="language-sql w3-xlarge">SELECT
 FROM
 WHERE
-group by
-having
+GROUP BY
+HAVING
 ORDER BY</code></pre>
 <div class="ic-gap"></div>

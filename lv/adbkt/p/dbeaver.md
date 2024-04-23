@@ -3,7 +3,7 @@ layout: default
 title: DBeaver
 ---
 
-# DBeaver
+# Konfiguration DBeaver
 - Download [(link)](https://dbeaver.io/download/)
 - Verbindungskonfiguration: wird in der Vorlesung mitgeteilt
   - aaa.f4.htw-berlin.de
