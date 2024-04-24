@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Do we need the Lakehouse architecture?
+[(link)](https://medium.com/@vutrinh274/do-we-need-the-lakehouse-architecture-f1a43bd2713d)
+
 - Scaling Horizontally on PostgreSQL: Citus’s Impact on Database Architecture
 [(link)](https://demirhuseyinn-94.medium.com/scaling-horizontally-on-postgresql-cituss-impact-on-database-architecture-295329c72c62)
 
