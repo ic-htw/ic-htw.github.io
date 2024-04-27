@@ -8,6 +8,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Solving Latency Spikes & Locking in a Distributed PostgreSQL Query
+[(link)](https://medium.com/safetycultureengineering/solving-latency-spikes-locking-in-a-distributed-postgresql-query-91991764e1de)
+
+- PostgreSQL. Aggregate first, join later
+[(link)](https://medium.com/@dmitry.romanoff/postgresql-aggregate-first-join-later-d3598ac03011)
+
+- DynamoDB (Part 1)
+[(link)](https://pages.awscloud.com/rs/112-TZM-766/images/DMWQ1D4S1T1%20Building%20modern_%20high%20performance%20applications%20at%20any%20scale%20with%20Amazon%20DynamoDB%20Part%201%20and%202%20(1).pdf)
+
+- Retrieval Augmented Generation(RAG) — Chatbot for database with LlamaIndex (Text2SQL)
+[(link)](https://abvijaykumar.medium.com/retrieval-augmented-generation-rag-with-llamaindex-on-a-database-text2sql-f4276943b256)
+
+- SQLCoder-2–7b: How to Reliably Query Data in Natural Language, on Consumer Hardware
+[(link)](https://medium.com/use-ai/sqlcoder-2-7b-how-to-reliably-query-data-in-natural-language-on-consumer-hardware-cb352a3cf3ab)
+
+- Different Isolation levels and anomalies in Postgres
+[(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
+
+- Which Vector Database Should You Use? 
+[(link)](https://medium.com/the-ai-forum/which-vector-database-should-you-use-choosing-the-best-one-for-your-needs-5108ec7ba133)
+
+- Fine-Tuning Mistral 7B for Named Entity Recognition (NER)
+[(link)](https://medium.com/ubiai-nlp/fine-tuning-mistral-7b-for-named-entity-recognition-ner-bbb96af918d3)
+
 - Do we need the Lakehouse architecture?
 [(link)](https://medium.com/@vutrinh274/do-we-need-the-lakehouse-architecture-f1a43bd2713d)
 
