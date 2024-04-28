@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Geospatial Vector Search: Building an AI-Powered Geo-Aware News Search
+[(link)](https://levelup.gitconnected.com/geospatial-vector-search-building-an-ai-powered-geo-aware-news-search-6cbda8919465)
+
+- Chat with your SQL Database using Llama 3
+[(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-llama-3-4d4c496e12e8)
+
 - Solving Latency Spikes & Locking in a Distributed PostgreSQL Query
 [(link)](https://medium.com/safetycultureengineering/solving-latency-spikes-locking-in-a-distributed-postgresql-query-91991764e1de)
 
