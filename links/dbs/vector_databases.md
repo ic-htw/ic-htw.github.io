@@ -37,6 +37,8 @@ is_slide: 0
 
 
 # aaa2 - projects
+- Geospatial Vector Search: Building an AI-Powered Geo-Aware News Search
+[(link)](https://levelup.gitconnected.com/geospatial-vector-search-building-an-ai-powered-geo-aware-news-search-6cbda8919465)
 - SQL queries + pgvector: Retrieval Augmented Generation in PostgreSQL
 [(link)](https://medium.com/@rubenszimbres/sql-queries-pgvector-retrieval-augmented-generation-for-postgresql-1b7b4337ae48)
 - Distributed queries for pgvector

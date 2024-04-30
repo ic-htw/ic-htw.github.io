@@ -132,6 +132,11 @@ is_slide: 0
 [(link)](https://www.allthingsdistributed.com/2017/10/a-decade-of-dynamo.html)
 
 # aws videos and slides
+- DynamoDB (Part 1)
+[(pdf)](https://pages.awscloud.com/rs/112-TZM-766/images/DMWQ1D4S1T1%20Building%20modern_%20high%20performance%20applications%20at%20any%20scale%20with%20Amazon%20DynamoDB%20Part%201%20and%202%20(1).pdf)
+[(video1)](https://youtu.be/ummOosOW4lE)
+[(video2)](https://youtu.be/0iGR8GnIItQ)
+
 - Cost Optimization Techniques and Tools for Existing DynamoDB Workloads - 2022
 [(video)](https://pages.awscloud.com/Cost-Optimization-Techniques-and-Tools-for-Existing-DynamoDB-Workloads_2022_0317-DAT_OD.html)
 - Deep-dive into the NoSQL, serverless scaling of Amazon DynamoDB - 2022

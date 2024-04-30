@@ -8,20 +8,14 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Geospatial Vector Search: Building an AI-Powered Geo-Aware News Search
-[(link)](https://levelup.gitconnected.com/geospatial-vector-search-building-an-ai-powered-geo-aware-news-search-6cbda8919465)
+- Build End-to-End RAG Pipeline with Monitoring and Evaluation using Langchain, Azure AI Search, OpenAI, Langfuse, Nemo-gaurdrails, ragas
+[(link)](https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a)
 
-- Chat with your SQL Database using Llama 3
-[(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-llama-3-4d4c496e12e8)
-
-- Solving Latency Spikes & Locking in a Distributed PostgreSQL Query
-[(link)](https://medium.com/safetycultureengineering/solving-latency-spikes-locking-in-a-distributed-postgresql-query-91991764e1de)
+- Detecting fraud in real time using Redpanda and Pinecone
+[(link)](https://redpanda-data.medium.com/detecting-fraud-in-real-time-using-redpanda-and-pinecone-b0f4d5f3fa1a)
 
 - PostgreSQL. Aggregate first, join later
 [(link)](https://medium.com/@dmitry.romanoff/postgresql-aggregate-first-join-later-d3598ac03011)
-
-- DynamoDB (Part 1)
-[(link)](https://pages.awscloud.com/rs/112-TZM-766/images/DMWQ1D4S1T1%20Building%20modern_%20high%20performance%20applications%20at%20any%20scale%20with%20Amazon%20DynamoDB%20Part%201%20and%202%20(1).pdf)
 
 - Retrieval Augmented Generation(RAG) — Chatbot for database with LlamaIndex (Text2SQL)
 [(link)](https://abvijaykumar.medium.com/retrieval-augmented-generation-rag-with-llamaindex-on-a-database-text2sql-f4276943b256)

@@ -34,6 +34,8 @@ is_slide: 0
 [(link)](bbb)
 - Build a Chatbot for your SQL database in 20 lines of Python using Streamlit and Vanna
 [(link)](https://blog.stackademic.com/build-a-chatbot-for-your-sql-database-in-20-lines-of-python-5fbd47d43649)
+- Chat with your SQL Database using Llama 3
+[(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-llama-3-4d4c496e12e8)
 
 
 
