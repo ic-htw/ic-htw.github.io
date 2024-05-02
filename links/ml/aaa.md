@@ -259,6 +259,49 @@ is_slide: 0
 - Introduction to Conditional Random Fields
 [(link)](http://blog.echen.me/2012/01/03/introduction-to-conditional-random-fields/)
 
+# Curse of Dimensionality
+- What Is the Curse of Dimensionality?
+[(link)](https://builtin.com/data-science/curse-dimensionality)
+- Curse of Dimensionality — A “Curse” to Machine Learning
+[(link)](https://towardsdatascience.com/curse-of-dimensionality-a-curse-to-machine-learning-c122ee33bfeb)
+ Curse of Dimensionality - Notebook
+[(link)](https://www.kaggle.com/code/residentmario/curse-of-dimensionality)
+- What is the Curse of Dimensionality? Simplest Explanation!
+[(link)](https://www.mltut.com/what-is-the-curse-of-dimensionality-simplest-explanation/)
+- Curse of Dimensionality
+[(link)](https://pub.towardsai.net/curse-of-dimensionality-4335c09ed688)
+- Curse of Dimensionality - notebook
+[(link)](https://github.com/mravanba/comp551-notebooks/blob/master/CurseOfDimensionality.ipynb)
+- The Curse of Dimensionality – Illustrated With Matplotlib
+[(link)](https://naysan.ca/2020/02/25/the-curse-of-dimensionality-illustrated-with-matplotlib/)
+- The Curse of Dimensionality (part 1)
+[(link)](https://m0nads.wordpress.com/2017/08/04/the-curse-of-dimensionality/)
+- Top 40 Curse of Dimensionality Interview Questions
+[(link)](https://github.com/Devinterview-io/curse-of-dimensionality-interview-questions)
+
+
+# Embeddings
+- Vector Embeddings Explained for Developers!
+[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
+- Explained: Tokens and Embeddings in LLMs
+[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
+- Vector Embeddings 101: The New Building Blocks for Generative AI
+[(link)](https://vectordatabase.substack.com/p/vector-embeddings-101-the-new-building)
+- Meet AI’s multitool: Vector embeddings
+[(link)](https://cloud.google.com/blog/topics/developers-practitioners/meet-ais-multitool-vector-embeddings?hl=en)
+- New and improved embedding model
+[(link)](https://openai.com/blog/new-and-improved-embedding-model)
+- openai - embeddings
+[(link)](https://platform.openai.com/docs/guides/embeddings)
+- Jurafski-Buch Kap 6
+[(link)](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
+- Jurafski-Buch Kap 6 - Folien
+[(link)](https://web.stanford.edu/~jurafsky/slp3/slides/vectorsemantics2024.pdf)
+- A Guide on Word Embeddings in NLP
+[(link)](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp)
+- The Beginner’s Guide to Text Embeddings
+[(link)](https://www.deepset.ai/blog/the-beginners-guide-to-text-embeddings)
+
 # explained.ai
 - home
 [(link)](https://explained.ai/)
@@ -270,4 +313,27 @@ is_slide: 0
 # Information Extraction
 - Twenty-five years of information extraction
 [(link)](https://www.cambridge.org/core/journals/natural-language-engineering/article/twentyfive-years-of-information-extraction/0E5BB0D6AE906BB3C25037E2D74CA8F3/share/5ce1ad8430e190e282cc234c79c320c49906a7e2)
+
+# Metrics
+- Similarity Metrics in Vector Databases
+[(link)](https://www.wwwinsights.com/ai/similarity-metrics-vector-databases/)
+- Distance Metrics in Vector Search
+[(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
+- 9 Distance Measures in Data Science
+[(link)](https://www.maartengrootendorst.com/blog/distances/)
+- Euclidean vs. Cosine Distance
+[(link)](https://cmry.github.io/notes/euclidean-v-cosine)
+- Cosine Similarity Vs Euclidean Distance
+[(link)](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
+- When to use Cosine Similarity over Euclidean Similarity?
+[(link)](https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/)
+- Understanding Distance Metrics in Vector Embeddings: Cosine Similarity, Euclidean Distance, and Dot Product
+[(link)](https://www.linkedin.com/pulse/understanding-distance-metrics-vector-embeddings-cosine-bilal-shaikh-qunwf)
+- Understanding Vector Similarity for Machine Learning
+[(link)](https://medium.com/advanced-deep-learning/understanding-vector-similarity-b9c10f7506de)
+- How the dot product measures similarity
+[(link)](https://tivadardanka.com/blog/how-the-dot-product-measures-similarity)
+- Similarity Measures: Check Your Understanding
+[(link)](https://developers.google.com/machine-learning/clustering/similarity/check-your-understanding)
+
 

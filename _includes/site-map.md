@@ -399,7 +399,6 @@ Datenbanksysteme
     <a  href="/links/dbs/duckdb.html">DuckDB</a> <br>
     <a  href="/links/dbs/dynamodb.html">DynamoDB</a> <br>
     <a  href="/links/dbs/hana.html">Hana</a> <br>
-    <a  href="/links/dbs/llm_analytics.html">LLM Analytics</a> <br>
     <a  href="/links/dbs/lsm.html">LSM</a> <br>
     <a  href="/links/dbs/neo4j.html">Neo4j</a> <br>
     <a  href="/links/dbs/oracle.html">Oracle</a> <br>
@@ -432,10 +431,10 @@ Maschinelles Lernen
     <a  href="/links/ml/recommendation.html">Empfehlungssysteme</a> <br>
     <a  href="/links/ml/interpretation.html">Interpretation of ML Models</a> <br>
     <a  href="/links/ml/customer-analytics.html">Kundenanalyse</a> <br>
+    <a  href="/links/ml/large_language_models.html">Large Language Models</a> <br>
     <a  href="/links/ml/lineare_algebra.html">Linear Algebra</a> <br>
     <a  href="/links/ml/nlp.html">NLP</a> <br>
     <a  href="/links/ml/timeseries.html">Timeseries</a> <br>
-    <a  href="/links/ml/large_language_models.html">Large Language Models</a> <br>
 </div> 
 
 <!--

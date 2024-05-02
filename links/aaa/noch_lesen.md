@@ -8,18 +8,6 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- PG Phriday: Papa's Got a Brand New RAG
-[(link)](https://bonesmoses.org/2024/pg-phriday-brand-new-rag/)
-
-- The 150x pgvector speedup: a year-in-review
-[(link)](https://jkatz05.com/post/postgres/pgvector-performance-150x-speedup/)
-
-- pgvector
-[(link)](https://github.com/pgvector/pgvector/tree/master)
-
-- pg_vectorize
-[(link)](https://github.com/tembo-io/pg_vectorize)
-
 - Crunchy Bridge for Analytics: Your Data Lake in PostgreSQL
 [(link)](https://www.crunchydata.com/blog/crunchy-bridge-for-analytics-your-data-lake-in-postgresql)
 
@@ -35,26 +23,8 @@ is_slide: 0
 - Analysis of World of Warcraft data
 [(link)](https://ibis-project.org/posts/wow-analysis/)
 
-- Using DuckDB + Ibis for RAG
-[(link)](https://ibis-project.org/posts/duckdb-for-rag/)
-
-- DuckDB-NSQL: How to Quack in SQL
-[(link)](https://numbersstation.ai/duckdb-nsql-how-to-quack-in-sql/)
-
-- Build End-to-End RAG Pipeline with Monitoring and Evaluation using Langchain, Azure AI Search, OpenAI, Langfuse, Nemo-gaurdrails, ragas
-[(link)](https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a)
-
-- Detecting fraud in real time using Redpanda and Pinecone
-[(link)](https://redpanda-data.medium.com/detecting-fraud-in-real-time-using-redpanda-and-pinecone-b0f4d5f3fa1a)
-
 - PostgreSQL. Aggregate first, join later
 [(link)](https://medium.com/@dmitry.romanoff/postgresql-aggregate-first-join-later-d3598ac03011)
-
-- Retrieval Augmented Generation(RAG) — Chatbot for database with LlamaIndex (Text2SQL)
-[(link)](https://abvijaykumar.medium.com/retrieval-augmented-generation-rag-with-llamaindex-on-a-database-text2sql-f4276943b256)
-
-- SQLCoder-2–7b: How to Reliably Query Data in Natural Language, on Consumer Hardware
-[(link)](https://medium.com/use-ai/sqlcoder-2-7b-how-to-reliably-query-data-in-natural-language-on-consumer-hardware-cb352a3cf3ab)
 
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
@@ -62,17 +32,11 @@ is_slide: 0
 - Which Vector Database Should You Use? 
 [(link)](https://medium.com/the-ai-forum/which-vector-database-should-you-use-choosing-the-best-one-for-your-needs-5108ec7ba133)
 
-- Fine-Tuning Mistral 7B for Named Entity Recognition (NER)
-[(link)](https://medium.com/ubiai-nlp/fine-tuning-mistral-7b-for-named-entity-recognition-ner-bbb96af918d3)
-
 - Do we need the Lakehouse architecture?
 [(link)](https://medium.com/@vutrinh274/do-we-need-the-lakehouse-architecture-f1a43bd2713d)
 
 - Scaling Horizontally on PostgreSQL: Citus’s Impact on Database Architecture
 [(link)](https://demirhuseyinn-94.medium.com/scaling-horizontally-on-postgresql-cituss-impact-on-database-architecture-295329c72c62)
-
-- Analyze Structured Data (extracted from Unstructured Text) using LLM Agents
-[(link)](https://medium.com/@ingridwickstevens/analyze-structured-data-extracted-from-unstructured-text-using-llm-agents-4ea4eaf3ae78)
 
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
@@ -82,12 +46,6 @@ is_slide: 0
 
 - dbt + Airflow
 [(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
-
-- Transforming Text Classification with Semantic Search Techniques — Faiss
-[(link)](https://medium.com/walmartglobaltech/transforming-text-classification-with-semantic-search-techniques-faiss-c413f133d0e2)
-
-- Extract Structured Data from Unstructured Text using LLMs
-[(link)](https://medium.com/@ingridwickstevens/extract-structured-data-from-unstructured-text-using-llms-71502addf52b)
 
 - Peek into Query Hash (query_id) in PostgreSQL
 [(link)](https://virender-cse.medium.com/query-hash-in-postgresql-4522e91b5623)
@@ -104,29 +62,14 @@ is_slide: 0
 - The Way We Are Building Event-Driven Applications is Misguided. This is Why I Created Infinitic.
 [(link)](https://gillesbarbier.medium.com/the-way-we-are-building-event-driven-applications-is-misguided-7f7c5f1a9061)
 
-- Code Generation using Retrieval Augmented Generation + LangChain
-[(link)](https://medium.com/@rubenszimbres/code-generation-using-retrieval-augmented-generation-langchain-861e3c1a1a53)
-
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
 
 - Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
 [(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 
-- Open-DocLLM
-[(link)](https://github.com/enoch3712/Open-DocLLM)
-
 - Why did Databricks build the Photon engine?
 [(link)](https://medium.com/@vutrinh274/why-did-databricks-build-the-photon-engine-90546429a31c)
-
-- PostgreSQL as Vector database: Create LLM Apps with pgvector
-[(link)](https://medium.com/tessell-dbaas/postgresql-as-vector-database-create-llm-apps-with-pgvector-64677de48fc2)
-
-- A Very Gentle Introduction to Large Language Models without the Hype
-[(link)](https://mark-riedl.medium.com/a-very-gentle-introduction-to-large-language-models-without-the-hype-5f67941fa59e)
-
-- RAG Vs VectorDB
-[(link)](https://medium.com/@bijit211987/rag-vs-vectordb-2c8cb3e0ee52)
 
 - Mastering Asynchronous Programming in Python: A Comprehensive Guide
 [(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
@@ -136,12 +79,6 @@ is_slide: 0
 
 - Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
 [(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
-
-- How we built Text-to-SQL at Pinterest
-[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
-
-- Simplifying RAG with PostgreSQL and PGVector
-[(link)](https://blog.gopenai.com/rag-with-pg-vector-with-sql-alchemy-d08d96bfa293)
 
 - Real-Time Twitch Chat Sentiment Analysis with Apache Flink
 [(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
@@ -215,17 +152,8 @@ is_slide: 0
 - Amazon Aurora vs. RDS: Understanding the Difference 
 [(link)](https://www.timescale.com/blog/amazon-aurora-vs-rds-understanding-the-difference/)
 
-- CodeLlama 70B
-[(link)](https://llama-2.ai/codellama-70b/)
-
-- Open-sourcing SQLCoder-70B, the state of the art in text to SQL generation
-[(link)](https://defog.ai/blog/open-sourcing-sqlcoder-70b/)
-
 - Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
 [(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
-
-- Advanced RAG Techniques: an Illustrated Overview
-[(link)](https://pub.towardsai.net/advanced-rag-techniques-an-illustrated-overview-04d193d8fec6)
 
 - How to populate a table with one million records in a PostgreSQL database?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-populate-a-table-with-one-million-records-in-a-postgresql-database-d68b73e8c2a9)

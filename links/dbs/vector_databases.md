@@ -3,7 +3,7 @@ layout: default
 title: Vector Databases
 is_slide: 0
 ---
-# aaa1 - general
+# aaa
 - Vector Databases: A Beginner’s Guide!
 [(link)](https://medium.com/data-and-beyond/vector-databases-a-beginners-guide-b050cbbe9ca0)
 - Vector database, a gentle introduction (+ hands-on)
@@ -22,51 +22,13 @@ is_slide: 0
 [(link)](https://sanjmo.medium.com/vector-data-store-evaluation-criteria-6d7677ef3b60)
 - Optimize Vector Databases, Enhance RAG-Driven Generative AI
 [(link)](https://medium.com/intel-tech/optimize-vector-databases-enhance-rag-driven-generative-ai-90c10416cb9c)
-
-
-
 - zilliz Learning Series
 [(link)](https://zilliz.com/learn)
 - Vector search - fzliu git
 [(link)](https://github.com/fzliu/vector-search)
-
-
 - Experimenting with Vector Databases: Chromadb, Pinecone, Weaviate and Pgvector
 [(link)](https://coinsbench.com/experimenting-with-vector-databases-chromadb-pinecone-weaviate-and-pgvector-0f35c0356540)
 
-
-
-# aaa2 - projects
-- Geospatial Vector Search: Building an AI-Powered Geo-Aware News Search
-[(link)](https://levelup.gitconnected.com/geospatial-vector-search-building-an-ai-powered-geo-aware-news-search-6cbda8919465)
-- SQL queries + pgvector: Retrieval Augmented Generation in PostgreSQL
-[(link)](https://medium.com/@rubenszimbres/sql-queries-pgvector-retrieval-augmented-generation-for-postgresql-1b7b4337ae48)
-- Distributed queries for pgvector
-[(link)](https://jkatz05.com/post/postgres/distributed-pgvector/)
-- How To Improve Your LLM Accuracy and Performance With PGVector and PostgreSQL: Introduction to Embeddings and the Role of PGVector
-[(link)](https://instaclustr.medium.com/how-to-improve-your-llm-accuracy-and-performance-with-pgvector-and-postgresql-introduction-to-4491844535d8)
-- LLMs Meet SQL: Revolutionizing Data Querying with Natural Language Processing
-[(link)](https://levelup.gitconnected.com/llms-meet-sql-revolutionizing-data-querying-with-natural-language-processing-52487337f043)
-- Integrating Vector Databases with LLMs: A Hands-On Guide
-[(link)](https://mlengineering.medium.com/integrating-vector-databases-with-llms-a-hands-on-guide-82d2463114fb)
-- Speed up PostgreSQL pgvector queries with indexes
-[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
-- LangChain SQL Agent for Massive Documents Interaction
-[(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
-
-
-- Build a question-answer bot natively using Postgres extensions
-[(link)](https://tembo.io/blog/tembo-rag-stack)
-- PostgreSQL as a Vector Database: Create, Store, and Query OpenAI Embeddings With pgvector
-[(link)](https://www.timescale.com/blog/postgresql-as-a-vector-database-create-store-and-query-openai-embeddings-with-pgvector/)
-- Unleashing the power of vector embeddings with PostgreSQL
-[(link)](https://tembo.io/blog/pgvector-and-embedding-solutions-with-postgres)
-- Use pgvector and Hugging Face to Build an Optimized FAQ Search with Sentence Similarity
-[(link)](https://www.koyeb.com/tutorials/use-pgvector-and-hugging-face-to-build-an-optimized-faq-search-with-sentence-similarity)
-- AI-Enabled Search Engine using LLM Embeddings, Django, and pgvector
-[(link)](https://github.com/thinknimble/embeddings-search-demo)
-- Why we replaced Pinecone with PGVector
-[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
 
 # chroma
 - home
@@ -79,49 +41,6 @@ is_slide: 0
 [(link)](https://hub.docker.com/r/chromadb/chroma)
 
 
-# Curse of Dimensionality
-- What Is the Curse of Dimensionality?
-[(link)](https://builtin.com/data-science/curse-dimensionality)
-- Curse of Dimensionality — A “Curse” to Machine Learning
-[(link)](https://towardsdatascience.com/curse-of-dimensionality-a-curse-to-machine-learning-c122ee33bfeb)
- Curse of Dimensionality - Notebook
-[(link)](https://www.kaggle.com/code/residentmario/curse-of-dimensionality)
-- What is the Curse of Dimensionality? Simplest Explanation!
-[(link)](https://www.mltut.com/what-is-the-curse-of-dimensionality-simplest-explanation/)
-- Curse of Dimensionality
-[(link)](https://pub.towardsai.net/curse-of-dimensionality-4335c09ed688)
-- Curse of Dimensionality - notebook
-[(link)](https://github.com/mravanba/comp551-notebooks/blob/master/CurseOfDimensionality.ipynb)
-- The Curse of Dimensionality – Illustrated With Matplotlib
-[(link)](https://naysan.ca/2020/02/25/the-curse-of-dimensionality-illustrated-with-matplotlib/)
-- The Curse of Dimensionality (part 1)
-[(link)](https://m0nads.wordpress.com/2017/08/04/the-curse-of-dimensionality/)
-- Top 40 Curse of Dimensionality Interview Questions
-[(link)](https://github.com/Devinterview-io/curse-of-dimensionality-interview-questions)
-
-
-# Embeddings
-- Vector Embeddings Explained for Developers!
-[(link)](https://levelup.gitconnected.com/vector-embeddings-explained-for-developers-6bd9800d3635)
-- Explained: Tokens and Embeddings in LLMs
-[(link)](https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33)
-- Vector Embeddings 101: The New Building Blocks for Generative AI
-[(link)](https://vectordatabase.substack.com/p/vector-embeddings-101-the-new-building)
-- Meet AI’s multitool: Vector embeddings
-[(link)](https://cloud.google.com/blog/topics/developers-practitioners/meet-ais-multitool-vector-embeddings?hl=en)
-- New and improved embedding model
-[(link)](https://openai.com/blog/new-and-improved-embedding-model)
-- openai - embeddings
-[(link)](https://platform.openai.com/docs/guides/embeddings)
-- Jurafski-Buch Kap 6
-[(link)](https://web.stanford.edu/~jurafsky/slp3/6.pdf)
-- Jurafski-Buch Kap 6 - Folien
-[(link)](https://web.stanford.edu/~jurafsky/slp3/slides/vectorsemantics2024.pdf)
-- A Guide on Word Embeddings in NLP
-[(link)](https://www.turing.com/kb/guide-on-word-embeddings-in-nlp)
-- The Beginner’s Guide to Text Embeddings
-[(link)](https://www.deepset.ai/blog/the-beginners-guide-to-text-embeddings)
-
 # Faiss
 - Faiss: A library for efficient similarity search
 [(link)](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)
@@ -129,9 +48,6 @@ is_slide: 0
 [(link)](https://github.com/facebookresearch/faiss/wiki)
 - Faiss: The Missing Manual
 [(link)](https://www.pinecone.io/learn/series/faiss/)
-
-
-
 
 # Indexes
 - Similarity Search - Efimov
@@ -169,29 +85,6 @@ is_slide: 0
 - kein direkter docker link
 
 
-# Metrics
-- Similarity Metrics in Vector Databases
-[(link)](https://www.wwwinsights.com/ai/similarity-metrics-vector-databases/)
-- Distance Metrics in Vector Search
-[(link)](https://weaviate.io/blog/distance-metrics-in-vector-search)
-- 9 Distance Measures in Data Science
-[(link)](https://www.maartengrootendorst.com/blog/distances/)
-- Euclidean vs. Cosine Distance
-[(link)](https://cmry.github.io/notes/euclidean-v-cosine)
-- Cosine Similarity Vs Euclidean Distance
-[(link)](https://medium.com/@sasi24/cosine-similarity-vs-euclidean-distance-e5d9a9375fc8)
-- When to use Cosine Similarity over Euclidean Similarity?
-[(link)](https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/)
-- Understanding Distance Metrics in Vector Embeddings: Cosine Similarity, Euclidean Distance, and Dot Product
-[(link)](https://www.linkedin.com/pulse/understanding-distance-metrics-vector-embeddings-cosine-bilal-shaikh-qunwf)
-- Understanding Vector Similarity for Machine Learning
-[(link)](https://medium.com/advanced-deep-learning/understanding-vector-similarity-b9c10f7506de)
-- How the dot product measures similarity
-[(link)](https://tivadardanka.com/blog/how-the-dot-product-measures-similarity)
-- Similarity Measures: Check Your Understanding
-[(link)](https://developers.google.com/machine-learning/clustering/similarity/check-your-understanding)
-
-
 
 # milvus
 - home
@@ -212,6 +105,13 @@ is_slide: 0
 [(link)](https://github.com/pgvector/pgvector)
 - PostgreSQL as a Vector Database: Getting Started and Scaling
 [(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
+- The 150x pgvector speedup: a year-in-review
+[(link)](https://jkatz05.com/post/postgres/pgvector-performance-150x-speedup/)
+
+# pg_vectorize
+- pg_vectorize
+[(link)](https://github.com/tembo-io/pg_vectorize)
+
 
 
 # pinecone
