@@ -8,6 +8,39 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- PG Phriday: Papa's Got a Brand New RAG
+[(link)](https://bonesmoses.org/2024/pg-phriday-brand-new-rag/)
+
+- The 150x pgvector speedup: a year-in-review
+[(link)](https://jkatz05.com/post/postgres/pgvector-performance-150x-speedup/)
+
+- pgvector
+[(link)](https://github.com/pgvector/pgvector/tree/master)
+
+- pg_vectorize
+[(link)](https://github.com/tembo-io/pg_vectorize)
+
+- Crunchy Bridge for Analytics: Your Data Lake in PostgreSQL
+[(link)](https://www.crunchydata.com/blog/crunchy-bridge-for-analytics-your-data-lake-in-postgresql)
+
+- The Stream Processing Model Behind Google Cloud Dataflow
+[(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
+
+- Why Stream Processing is a Terrible Market 
+[(link)](https://medium.com/@yingjunwu/why-stream-processing-is-a-terrible-market-yet-we-are-still-investing-in-it-43e66cef7847)
+
+- Spatial Data Management
+[(link)](https://geog-414.gishub.org/)
+
+- Analysis of World of Warcraft data
+[(link)](https://ibis-project.org/posts/wow-analysis/)
+
+- Using DuckDB + Ibis for RAG
+[(link)](https://ibis-project.org/posts/duckdb-for-rag/)
+
+- DuckDB-NSQL: How to Quack in SQL
+[(link)](https://numbersstation.ai/duckdb-nsql-how-to-quack-in-sql/)
+
 - Build End-to-End RAG Pipeline with Monitoring and Evaluation using Langchain, Azure AI Search, OpenAI, Langfuse, Nemo-gaurdrails, ragas
 [(link)](https://medium.com/codex/build-end-to-end-rag-pipeline-with-monitoring-and-evaluation-using-langchain-azure-ai-search-6f190fffab2a)
 
