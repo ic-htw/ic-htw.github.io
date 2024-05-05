@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- My First Billion (of Rows) in DuckDB
+[(link)](https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5)
+
+- Aurora vs. RDS: How to Choose the Right AWS Database for 2024
+[(link)](https://medium.com/dbconvert/aurora-vs-rds-how-to-choose-the-right-aws-database-for-2024-b750241cc20e)
+
+- Benchmarking MongoDB vs ScyllaDB: IoT Sensor Workload Deep Dive
+[(link)](https://scylladb.medium.com/benchmarking-mongodb-vs-scylladb-iot-sensor-workload-deep-dive-863185cb4332)
+
 - Crunchy Bridge for Analytics: Your Data Lake in PostgreSQL
 [(link)](https://www.crunchydata.com/blog/crunchy-bridge-for-analytics-your-data-lake-in-postgresql)
 

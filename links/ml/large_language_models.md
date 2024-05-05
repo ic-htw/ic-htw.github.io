@@ -4,6 +4,12 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Improved RAG with Llama3 and Ollama
+[(link)](https://blog.gopenai.com/improved-rag-with-llama3-and-ollama-c17dc01f66f6)
+
+- Chat with your SQL database using Claude 3
+[(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-claude-3-1e7476e1c1b2)
+
 - PG Phriday: Papa's Got a Brand New RAG
 [(link)](https://bonesmoses.org/2024/pg-phriday-brand-new-rag/)
 
