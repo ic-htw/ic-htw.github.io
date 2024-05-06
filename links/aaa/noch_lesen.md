@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Unlocking the Power of Iceberg within PostgreSQL
+[(link)](https://medium.com/datareply/unlocking-the-power-of-iceberg-within-postgresql-14e8ed2d8ccb)
+
+- Correlation vs. Regression: A Key Difference That Many Analysts Miss
+[(link)](https://medium.com/the-stata-gallery/correlation-vs-regression-a-key-difference-that-many-analysts-miss-3770c9b368d9)
+
+- I spent 5 hours understanding more about the Delta Lake table format
+[(link)](https://medium.com/@vutrinh274/i-spent-5-hours-understanding-more-about-the-delta-lake-table-format-b8516c5091eb)
+
+- PostgreSQL Configuration Chronicles: Memory Related Configurations
+[(link)](https://demirhuseyinn-94.medium.com/postgresql-configuration-chronicles-memory-related-configurations-9e867b98548d)
+
 - My First Billion (of Rows) in DuckDB
 [(link)](https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5)
 

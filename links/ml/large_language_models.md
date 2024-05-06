@@ -4,6 +4,12 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Build an Advanced Reranking-RAG System Using Llama-Index, Llama 3 and Qdrant
+[(link)](https://nayakpplaban.medium.com/build-an-advanced-reranking-rag-system-using-llama-index-llama-3-and-qdrant-a8b8654174bc)
+
+- Top 4 Challenges using RAG with LLMs to Query Database (Text-to-SQL) and how to solve it.
+[(link)](https://blog.getwren.ai/4-key-technical-challenges-using-rag-with-llms-to-query-database-text-to-sql-and-how-to-solve-it-5d5a3d6682e5)
+
 - Improved RAG with Llama3 and Ollama
 [(link)](https://blog.gopenai.com/improved-rag-with-llama3-and-ollama-c17dc01f66f6)
 
