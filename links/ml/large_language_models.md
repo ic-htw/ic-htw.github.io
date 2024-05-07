@@ -4,6 +4,9 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- ChatGPT vs Claude 3 — Which is better for text-to-SQL
+[(link)](https://arslanshahid-1997.medium.com/chatgpt-vs-claude-3-which-is-better-for-text-to-sql-e2eee59ea581)
+
 - Build an Advanced Reranking-RAG System Using Llama-Index, Llama 3 and Qdrant
 [(link)](https://nayakpplaban.medium.com/build-an-advanced-reranking-rag-system-using-llama-index-llama-3-and-qdrant-a8b8654174bc)
 
