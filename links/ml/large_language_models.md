@@ -4,6 +4,9 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- The 4 Advanced RAG Algorithms You Must Know to Implement
+[(link)](https://medium.com/decodingml/the-4-advanced-rag-algorithms-you-must-know-to-implement-5d0c7f1199d2)
+
 - ChatGPT vs Claude 3 — Which is better for text-to-SQL
 [(link)](https://arslanshahid-1997.medium.com/chatgpt-vs-claude-3-which-is-better-for-text-to-sql-e2eee59ea581)
 
