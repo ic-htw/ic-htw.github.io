@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to check a distribution of values that PostgreSQL has collected on some column of a table?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
+
 - Unlocking the Power of Iceberg within PostgreSQL
 [(link)](https://medium.com/datareply/unlocking-the-power-of-iceberg-within-postgresql-14e8ed2d8ccb)
 
