@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What's new in pgvector v0.7.0
+[(link)](https://supabase.com/blog/pgvector-0-7-0)
+
+- Understanding Postgres Database Schemas and the search_path
+[(link)](https://www.dolthub.com/blog/2024-05-07-understanding-postgres-schemas/)
+
 - How to check a distribution of values that PostgreSQL has collected on some column of a table?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
 
