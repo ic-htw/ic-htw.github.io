@@ -170,6 +170,13 @@ is_slide: 0
 - Multimodal RAG pipeline with LlamaIndex and Neo4j
 [(link)](https://blog.llamaindex.ai/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
 
+# ollama
+- git
+[(link)](https://github.com/ollama/ollama)
+- docker
+[(link)](https://hub.docker.com/r/ollama/ollama)
+
+
 # langchain
 - Neo4j x LangChain: Deep dive into the new Vector index implementation
 [(link)](https://bratanic-tomaz.medium.com/neo4j-x-langchain-deep-dive-into-the-new-vector-index-implementation-3bd79601cd2)
