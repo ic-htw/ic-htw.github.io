@@ -106,11 +106,9 @@ Ausgewählte Datenbankkonzepte/-techniken
          &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-sql.html">Geo-Abfragen</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/pgrouting.html">pgRouting</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/geo-viz.html">Visualisierung Geodaten</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/langchain.html">Langchain</a> <br>
+    <a  href="/lv/adbkt/p/pgrouting.html">pgRouting</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/dynamodb.html">DynamoDB</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;

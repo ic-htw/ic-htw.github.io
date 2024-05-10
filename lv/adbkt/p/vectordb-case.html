@@ -18,13 +18,21 @@ is_slide: 0
 </ul>
 
 <p class="w3-large ic-neg15">
-    Lassen sie die Datenbank in einem Docker-Container laufen.
+    Sie sollen die Grundlage einer RAG-Anwendung schaffen, die Fragen zum Studium der Wirtschaftsinformatik beantworten kann. Dazu müssen Informationen von der WI-Website (<a href="https://wirtschaftsinformatik.htw-berlin.de/">link</a>) in der Vektordatenbank gespeichert werden. Diese dienen dazu, Kontext für die Prompts eines Sprachmodells bereitzustellen, in dem zur Frage ähnliche Texte (Fragmente) aus der Website zum Prompt hinzugefügt werden.
+    <br>
+    <b>Arbeitspunkte</b>
 </p>
 <ul class="w3-large">
-  <li>xxxxxxxxxxxxxxxxxx</li>
-  <li>Verwenden sie Langchain (<a href="https://python.langchain.com/v0.1/docs/get_started/introduction">link</a>)</li>
-  <li>xxxxxxxxxxxxxxxxxx</li>
-  <li>xxxxxxxxxxxxxxxxxx</li>
-  <li>xxxxxxxxxxxxxxxxxx</li>
+  <li>Lassen sie die Datenbank in einem Docker-Container laufen.</li>
+  <li>Identifizieren sie die relevanten URLs (HTML und PDF)</li>
+  <li>Extrahieren sie Informationen mittels Langchain (<a href="https://python.langchain.com/v0.1/docs/get_started/introduction">link</a>)</li>
+  <li>Zerlegen sie die Informationen ggfs in Chunks</li>
+  <li>Erzeugen sie Embeddings für die Chunks. Sie finden in der Langchain-Dokumentation Informationen zu frei verfügbaren Embeddings</li>
+  <li>Speichern Sie die Textfragmente mit ihren Embeddings in der Vektordatenbank</li>
+  <li>Überlegen sie sich Fragen (Z.B "Wieviele Semester dauert das Bachelor-Studium?")</li>
+  <li>Lassen sie sich die drei ähnlichsten Texfragmente aus der Datenbank ausgeben</li>
+  <li>Präsentieren sie die von ihnen gewählte Datenbank</li>
+  <li>Präsentieren sie ihre Lösung (optional)</li>
+  <li>Die Anbindung an ein Sprachmodell ist nicht Gegenstand der Aufgabe</li>
+  <li>Die Implementierung ist nicht Gegenstand der Bewertung. Sie dient dazu, die Funktionalität der Vektordatenbank besser zu verstehen und darstellen zu können</li>
 </ul>
-
