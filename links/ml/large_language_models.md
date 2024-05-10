@@ -4,6 +4,9 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- How do you use LangChain to build a Text-to-SQL solution? What are the challenges? How to solve it?
+[(link)](https://blog.getwren.ai/how-do-you-use-langchain-to-build-a-text-to-sql-solution-what-are-the-challenges-how-to-solve-it-b6d9c66aa038)
+
 - The 4 Advanced RAG Algorithms You Must Know to Implement
 [(link)](https://medium.com/decodingml/the-4-advanced-rag-algorithms-you-must-know-to-implement-5d0c7f1199d2)
 
@@ -175,6 +178,9 @@ is_slide: 0
 [(link)](https://github.com/ollama/ollama)
 - docker
 [(link)](https://hub.docker.com/r/ollama/ollama)
+- Self Hosting LLMs using Ollama
+[(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
+
 
 
 # langchain
