@@ -110,6 +110,8 @@ Ausgewählte Datenbankkonzepte/-techniken
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pgrouting.html">pgRouting</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/adbkt/p/langchain.html">Langchain</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/dynamodb.html">DynamoDB</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/concur.html">Nebenläufigkeit</a> <br>
