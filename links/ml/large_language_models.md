@@ -4,6 +4,12 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Architectural Patterns for Text-to-SQL: Leveraging LLMs for Enhanced BigQuery Interactions
+[(link)](https://medium.com/google-cloud/architectural-patterns-for-text-to-sql-leveraging-llms-for-enhanced-bigquery-interactions-59756a749e15)
+
+- 100x Faster — Scaling Your RAG App for Billions of Embeddings
+[(link)](https://levelup.gitconnected.com/100x-faster-scaling-your-rag-app-for-billions-of-embeddings-ded34fccd16a)
+
 - How do you use LangChain to build a Text-to-SQL solution? What are the challenges? How to solve it?
 [(link)](https://blog.getwren.ai/how-do-you-use-langchain-to-build-a-text-to-sql-solution-what-are-the-challenges-how-to-solve-it-b6d9c66aa038)
 
