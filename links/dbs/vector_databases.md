@@ -107,6 +107,19 @@ is_slide: 0
 [(link)](https://medium.com/@magda7817/postgresql-as-a-vector-database-getting-started-and-scaling-eda38677d5ae)
 - The 150x pgvector speedup: a year-in-review
 [(link)](https://jkatz05.com/post/postgres/pgvector-performance-150x-speedup/)
+- What's new in pgvector v0.7.0
+[(link)](https://supabase.com/blog/pgvector-0-7-0)
+- Distributed queries for pgvector
+[(link)](https://jkatz05.com/post/postgres/distributed-pgvector/)
+- Speed up PostgreSQL pgvector queries with indexes
+[(link)](https://www.eversql.com/speed-up-postgresql-pgvector-queries-with-indexes/)
+- PostgreSQL as a Vector Database: Create, Store, and Query OpenAI Embeddings With pgvector
+[(link)](https://www.timescale.com/blog/postgresql-as-a-vector-database-create-store-and-query-openai-embeddings-with-pgvector/)
+- Unleashing the power of vector embeddings with PostgreSQL
+[(link)](https://tembo.io/blog/pgvector-and-embedding-solutions-with-postgres)
+- Why we replaced Pinecone with PGVector
+[(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
+
 
 # pg_vectorize
 - pg_vectorize
@@ -124,9 +137,6 @@ is_slide: 0
 - blog
 [(link)](https://www.pinecone.io/blog/)
 - kein direkter docker link
-- How to Chat With Your Data Using OpenAI, Pinecone, Airbyte and Langchain: A Guide
-[(link)](https://hackernoon.com/how-to-chat-with-your-data-using-openai-pinecone-airbyte-and-langchain-a-guide)
-
 
 # qdrant
 - home
