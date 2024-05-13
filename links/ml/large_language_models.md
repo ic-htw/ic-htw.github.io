@@ -37,6 +37,10 @@ is_slide: 0
 
 
 # langchain
+- home
+[(link)](https://www.langchain.com/)
+- doc
+[(link)](https://python.langchain.com/v0.1/docs/get_started/introduction/)
 - What Is LangChain?
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
 
