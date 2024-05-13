@@ -4,6 +4,8 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Why Vector Search Didn’t Work for Your RAG Solution?
+[(link)](https://medium.com/neo4j/why-vector-search-didnt-work-for-your-rag-solution-d95119a8c42e)
 - 100x Faster — Scaling Your RAG App for Billions of Embeddings
 [(link)](https://levelup.gitconnected.com/100x-faster-scaling-your-rag-app-for-billions-of-embeddings-ded34fccd16a)
 - The 4 Advanced RAG Algorithms You Must Know to Implement
@@ -37,6 +39,24 @@ is_slide: 0
 # langchain
 - What Is LangChain?
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
+
+
+# ollama
+- git
+[(link)](https://github.com/ollama/ollama)
+- docker
+[(link)](https://hub.docker.com/r/ollama/ollama)
+- Self Hosting LLMs using Ollama
+[(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
+
+
+# rag case studies
+- Text2SQL OpenSource : duckdb-nsql-7B with Ollama and LlamaIndex on local setup
+[(link)](https://diptimanrc.medium.com/text2sql-opensource-duckdb-nsql-7b-with-ollama-and-llamaindex-on-local-setup-6f266f78bc4f)
+- How we built Text-to-SQL at Pinterest
+[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
+- What we learned from Pinterest’s Text-to-SQL solution?
+[(link)](https://blog.getwren.ai/what-we-learned-from-pinterests-text-to-sql-solution-840fa5840635)
 - LangChain SQL Agent for Massive Documents Interaction
 [(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
 - Implementing RAG architecture using Llama 2, Vector Store and LangChain
@@ -49,17 +69,6 @@ is_slide: 0
 [(link)](https://medium.com/@therobbrennan/explore-openai-vector-embedding-with-neo4j-6ea2a40693d9)
 - Build your own RAG with Mistral-7B and LangChain
 [(link)](https://medium.com/@thakermadhav/build-your-own-rag-with-mistral-7b-and-langchain-97d0c92fa146)
-
-# ollama
-- git
-[(link)](https://github.com/ollama/ollama)
-- docker
-[(link)](https://hub.docker.com/r/ollama/ollama)
-- Self Hosting LLMs using Ollama
-[(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
-
-
-# rag case studies
 - PG Phriday: Papa's Got a Brand New RAG
 [(link)](https://bonesmoses.org/2024/pg-phriday-brand-new-rag/)
 - Build an Advanced Reranking-RAG System Using Llama-Index, Llama 3 and Qdrant
@@ -144,8 +153,6 @@ is_slide: 0
 [(link)](https://medium.com/learning-sql/generative-ai-with-sql-first-impressions-3d26c5f17ae3)
 - Chat with your SQL database using Claude 3
 [(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-claude-3-1e7476e1c1b2)
-- How we built Text-to-SQL at Pinterest
-[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
 - Open-sourcing SQLCoder-70B, the state of the art in text to SQL generation
 [(link)](https://defog.ai/blog/open-sourcing-sqlcoder-70b/)
 - How to use Mixtral -8x7B for Text-to-SQL

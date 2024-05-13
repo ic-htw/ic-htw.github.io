@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Redis: How to Count the Number of Online Users?
+[(link)](https://blog.stackademic.com/redis-how-to-count-the-number-of-online-users-3d5f88f10956)
+
 - Query Processing in PostgreSQL
 [(link)](https://medium.com/agedb/query-processing-in-postgresql-1309fa93f69f)
 
