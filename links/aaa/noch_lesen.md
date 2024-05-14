@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Using DuckDB JupySQL and Pandas in a notebook
+[(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
+
+- Unlearning Old Habits: From Postgres to NoSQL
+[(link)](https://scylladb.medium.com/unlearning-old-habits-from-postgres-to-nosql-770234db45c6)
+
 - Redis: How to Count the Number of Online Users?
 [(link)](https://blog.stackademic.com/redis-how-to-count-the-number-of-online-users-3d5f88f10956)
 
