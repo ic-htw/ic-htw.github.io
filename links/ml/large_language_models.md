@@ -4,6 +4,8 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- List of Different Ways to Run LLMs Locally
+[(link)](https://medium.com/illumination/list-of-different-ways-to-run-llms-locally-55f7268c55a2)
 - Why Vector Search Didn’t Work for Your RAG Solution?
 [(link)](https://medium.com/neo4j/why-vector-search-didnt-work-for-your-rag-solution-d95119a8c42e)
 - 100x Faster — Scaling Your RAG App for Billions of Embeddings
@@ -55,6 +57,8 @@ is_slide: 0
 
 
 # rag case studies
+- The Future of SQL: Crafting Queries with Large Language Models
+[(link)](https://blog.stackademic.com/the-future-of-sql-crafting-queries-with-large-language-models-3c696f978a8f)
 - Text2SQL OpenSource : duckdb-nsql-7B with Ollama and LlamaIndex on local setup
 [(link)](https://diptimanrc.medium.com/text2sql-opensource-duckdb-nsql-7b-with-ollama-and-llamaindex-on-local-setup-6f266f78bc4f)
 - How we built Text-to-SQL at Pinterest
