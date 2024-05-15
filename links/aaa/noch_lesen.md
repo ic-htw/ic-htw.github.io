@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- DuckDb vs Spark on Iceberg 1 Billion NYC taxi rides
+[(link)](https://medium.com/@HumanDimension2DataEngineering/duckdb-vs-spark-on-iceberg-1-billion-nyc-taxi-rides-84d143399a25)
+
 - Using DuckDB JupySQL and Pandas in a notebook
 [(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
 
