@@ -8,6 +8,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- PostgresML: Open-source Python Library for Training and Deploying ML Models in PostgreSQL via SQL Queries
+[(link)](https://medium.com/pythoneers/postgresml-open-source-python-library-for-training-and-deploying-ml-models-in-postgresql-via-sql-6fea87081ab5)
+
+- Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM
+[(link)](https://blog.gopenai.com/customer-lifetime-value-clv-prediction-with-machine-learning-and-db-querying-with-llm-33d803544da0)
+
+- Surpassing 100K Postgres Connections With Our In-Database Connection Pooling Extension
+[(link)](https://medium.com/@jonah.harris/surpassing-100k-postgres-connections-with-our-in-database-connection-pooling-extension-7084552234ea)
+
+- What’s new with Postgres at Microsoft, 2024 edition
+[(link)](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/what-s-new-with-postgres-at-microsoft-2024-edition/ba-p/4140085)
+
+- I was understanding WASM all wrong!
+[(link)](https://medium.com/@yujiisobe/i-was-understanding-wasm-all-wrong-e4bcab8d077c)
+
 - DuckDb vs Spark on Iceberg 1 Billion NYC taxi rides
 [(link)](https://medium.com/@HumanDimension2DataEngineering/duckdb-vs-spark-on-iceberg-1-billion-nyc-taxi-rides-84d143399a25)
 

@@ -4,6 +4,12 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Large Language Model Course
+[(link)](https://github.com/mlabonne/llm-course)
+- GPT-4o vs. GPT-4 vs. Gemini 1.5 ⭐ — Performance Analysis
+[(link)](https://medium.com/@lars.chr.wiik/gpt-4o-vs-gpt-4-vs-gemini-1-5-performance-analysis-6bd207a2c580)
+- Tabular Data, RAG, & LLMs: Improve Results Through Data Table Prompting
+[(link)](https://medium.com/intel-tech/tabular-data-rag-llms-improve-results-through-data-table-prompting-bcb42678914b)
 - List of Different Ways to Run LLMs Locally
 [(link)](https://medium.com/illumination/list-of-different-ways-to-run-llms-locally-55f7268c55a2)
 - Why Vector Search Didn’t Work for Your RAG Solution?
@@ -57,14 +63,10 @@ is_slide: 0
 
 
 # rag case studies
-- The Future of SQL: Crafting Queries with Large Language Models
-[(link)](https://blog.stackademic.com/the-future-of-sql-crafting-queries-with-large-language-models-3c696f978a8f)
-- Text2SQL OpenSource : duckdb-nsql-7B with Ollama and LlamaIndex on local setup
-[(link)](https://diptimanrc.medium.com/text2sql-opensource-duckdb-nsql-7b-with-ollama-and-llamaindex-on-local-setup-6f266f78bc4f)
-- How we built Text-to-SQL at Pinterest
-[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
-- What we learned from Pinterest’s Text-to-SQL solution?
-[(link)](https://blog.getwren.ai/what-we-learned-from-pinterests-text-to-sql-solution-840fa5840635)
+- Building an Observable arXiv RAG Chatbot with LangChain, Chainlit, and Literal AI
+[(link)](https://towardsdatascience.com/building-an-observable-arxiv-rag-chatbot-with-langchain-chainlit-and-literal-ai-9c345fcd1cd8)
+- Local RAG From Scratch
+[(link)](https://towardsdatascience.com/local-rag-from-scratch-3afc6d3dea08)
 - LangChain SQL Agent for Massive Documents Interaction
 [(link)](https://pub.towardsai.net/langchain-sql-agent-for-massive-documents-interaction-510fc4bc65a4)
 - Implementing RAG architecture using Llama 2, Vector Store and LangChain
@@ -135,6 +137,10 @@ is_slide: 0
 
 
 # text to sql
+- High accuracy text-to-SQL with Langchain
+[(link)](https://medium.com/dataherald/high-accuracy-text-to-sql-with-langchain-840742133b83)
+- How to use OpenAI GPT-4o to query your database?
+[(link)](https://blog.getwren.ai/how-do-you-use-openai-gpt-4o-to-query-your-database-f24be68b0b70)
 - Chat with your databases using LangChain
 [(link)](https://coinsbench.com/chat-with-your-databases-using-langchain-bb7d31ed2e76)
 - Introducing NSQL: Open-source SQL Copilot Foundation Models
@@ -143,6 +149,14 @@ is_slide: 0
 [(link)](https://alexandromtzg.medium.com/introducing-datalang-ask-questions-to-your-database-in-natural-language-11a07ed66270)
 - GPT-4’s SQL Mastery
 [(link)](https://medium.com/querymind/gpt-4s-sql-mastery-2cd1f3dea543)
+- The Future of SQL: Crafting Queries with Large Language Models
+[(link)](https://blog.stackademic.com/the-future-of-sql-crafting-queries-with-large-language-models-3c696f978a8f)
+- Text2SQL OpenSource : duckdb-nsql-7B with Ollama and LlamaIndex on local setup
+[(link)](https://diptimanrc.medium.com/text2sql-opensource-duckdb-nsql-7b-with-ollama-and-llamaindex-on-local-setup-6f266f78bc4f)
+- How we built Text-to-SQL at Pinterest
+[(link)](https://medium.com/pinterest-engineering/how-we-built-text-to-sql-at-pinterest-30bad30dabff)
+- What we learned from Pinterest’s Text-to-SQL solution?
+[(link)](https://blog.getwren.ai/what-we-learned-from-pinterests-text-to-sql-solution-840fa5840635)
 - gptsql
 [(link)](https://github.com/tatari-tv/gptsql)
 - Retrieval Augmented Generation(RAG) — Chatbot for database with LlamaIndex (Text2SQL)
@@ -194,6 +208,8 @@ is_slide: 0
 
 
 # Vanna
+- Chat with your SQL database using GPT 4o via Vanna.ai
+[(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-gpt-4o-via-vanna-ai-b87e3296f8dc)
 - Vanna: The Supercharged Text-to-SQL Tool All Data Analyst Were Looking For
 [(link)](bbb)
 - Build a Chatbot for your SQL database in 20 lines of Python using Streamlit and Vanna

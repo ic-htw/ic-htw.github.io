@@ -22,7 +22,7 @@ is_slide: 0
 [(link)](https://databasearchitects.blogspot.com/)
 - Databricks Engineering
 [(link)](https://databricks.com/blog/category/engineering)
-- deeplearning.ai newsletter
+- The Batch
 [(link)](https://www.deeplearning.ai/thebatch/)
 - DeepMind Research
 [(link)](https://deepmind.com/blog/)
