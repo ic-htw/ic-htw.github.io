@@ -8,8 +8,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- PostgresML: Open-source Python Library for Training and Deploying ML Models in PostgreSQL via SQL Queries
-[(link)](https://medium.com/pythoneers/postgresml-open-source-python-library-for-training-and-deploying-ml-models-in-postgresql-via-sql-6fea87081ab5)
+- Server bootstrap optimization using RocksDB
+[(link)](https://blog.flipkart.tech/server-bootstrap-optimization-using-rocksdb-3378b5af55dc)
 
 - Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM
 [(link)](https://blog.gopenai.com/customer-lifetime-value-clv-prediction-with-machine-learning-and-db-querying-with-llm-33d803544da0)
@@ -20,23 +20,11 @@ is_slide: 0
 - What’s new with Postgres at Microsoft, 2024 edition
 [(link)](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/what-s-new-with-postgres-at-microsoft-2024-edition/ba-p/4140085)
 
-- I was understanding WASM all wrong!
-[(link)](https://medium.com/@yujiisobe/i-was-understanding-wasm-all-wrong-e4bcab8d077c)
-
 - DuckDb vs Spark on Iceberg 1 Billion NYC taxi rides
 [(link)](https://medium.com/@HumanDimension2DataEngineering/duckdb-vs-spark-on-iceberg-1-billion-nyc-taxi-rides-84d143399a25)
 
 - Using DuckDB JupySQL and Pandas in a notebook
 [(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
-
-- Unlearning Old Habits: From Postgres to NoSQL
-[(link)](https://scylladb.medium.com/unlearning-old-habits-from-postgres-to-nosql-770234db45c6)
-
-- Redis: How to Count the Number of Online Users?
-[(link)](https://blog.stackademic.com/redis-how-to-count-the-number-of-online-users-3d5f88f10956)
-
-- Query Processing in PostgreSQL
-[(link)](https://medium.com/agedb/query-processing-in-postgresql-1309fa93f69f)
 
 - Understanding Postgres Database Schemas and the search_path
 [(link)](https://www.dolthub.com/blog/2024-05-07-understanding-postgres-schemas/)
@@ -46,9 +34,6 @@ is_slide: 0
 
 - Unlocking the Power of Iceberg within PostgreSQL
 [(link)](https://medium.com/datareply/unlocking-the-power-of-iceberg-within-postgresql-14e8ed2d8ccb)
-
-- Correlation vs. Regression: A Key Difference That Many Analysts Miss
-[(link)](https://medium.com/the-stata-gallery/correlation-vs-regression-a-key-difference-that-many-analysts-miss-3770c9b368d9)
 
 - I spent 5 hours understanding more about the Delta Lake table format
 [(link)](https://medium.com/@vutrinh274/i-spent-5-hours-understanding-more-about-the-delta-lake-table-format-b8516c5091eb)
@@ -74,9 +59,6 @@ is_slide: 0
 - Why Stream Processing is a Terrible Market 
 [(link)](https://medium.com/@yingjunwu/why-stream-processing-is-a-terrible-market-yet-we-are-still-investing-in-it-43e66cef7847)
 
-- Spatial Data Management
-[(link)](https://geog-414.gishub.org/)
-
 - Analysis of World of Warcraft data
 [(link)](https://ibis-project.org/posts/wow-analysis/)
 
@@ -85,9 +67,6 @@ is_slide: 0
 
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
-
-- Which Vector Database Should You Use? 
-[(link)](https://medium.com/the-ai-forum/which-vector-database-should-you-use-choosing-the-best-one-for-your-needs-5108ec7ba133)
 
 - Do we need the Lakehouse architecture?
 [(link)](https://medium.com/@vutrinh274/do-we-need-the-lakehouse-architecture-f1a43bd2713d)

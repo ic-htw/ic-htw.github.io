@@ -90,6 +90,8 @@ is_slide: 0
 [(link)](https://jobs.zalando.com/tech/blog/)
 
 # Sites
+- Spatial Data Management
+[(link)](https://geog-414.gishub.org/)
 - superfastpython
 [(link)](https://superfastpython.com/)
 - Kai Waehner

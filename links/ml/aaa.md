@@ -4,6 +4,8 @@ title: aaa
 is_slide: 0
 ---
 # aaa
+- Correlation vs. Regression: A Key Difference That Many Analysts Miss
+[(link)](https://medium.com/the-stata-gallery/correlation-vs-regression-a-key-difference-that-many-analysts-miss-3770c9b368d9)
 - A New Coefficient of Correlation
 [(link)](https://towardsdatascience.com/a-new-coefficient-of-correlation-64ae4f260310)
 - Frustration: One Year With R

@@ -28,6 +28,9 @@ is_slide: 0
 [(link)](https://github.com/fzliu/vector-search)
 - Experimenting with Vector Databases: Chromadb, Pinecone, Weaviate and Pgvector
 [(link)](https://coinsbench.com/experimenting-with-vector-databases-chromadb-pinecone-weaviate-and-pgvector-0f35c0356540)
+- Which Vector Database Should You Use? 
+[(link)](https://medium.com/the-ai-forum/which-vector-database-should-you-use-choosing-the-best-one-for-your-needs-5108ec7ba133)
+
 
 
 # chroma
