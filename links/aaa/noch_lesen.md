@@ -8,8 +8,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Server bootstrap optimization using RocksDB
-[(link)](https://blog.flipkart.tech/server-bootstrap-optimization-using-rocksdb-3378b5af55dc)
+- Introducing pg_timeseries: Open-source time-series extension for PostgreSQL
+[(link)](https://tembo.io/blog/pg-timeseries)
 
 - Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM
 [(link)](https://blog.gopenai.com/customer-lifetime-value-clv-prediction-with-machine-learning-and-db-querying-with-llm-33d803544da0)
@@ -17,20 +17,8 @@ is_slide: 0
 - Surpassing 100K Postgres Connections With Our In-Database Connection Pooling Extension
 [(link)](https://medium.com/@jonah.harris/surpassing-100k-postgres-connections-with-our-in-database-connection-pooling-extension-7084552234ea)
 
-- What’s new with Postgres at Microsoft, 2024 edition
-[(link)](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/what-s-new-with-postgres-at-microsoft-2024-edition/ba-p/4140085)
-
 - DuckDb vs Spark on Iceberg 1 Billion NYC taxi rides
 [(link)](https://medium.com/@HumanDimension2DataEngineering/duckdb-vs-spark-on-iceberg-1-billion-nyc-taxi-rides-84d143399a25)
-
-- Using DuckDB JupySQL and Pandas in a notebook
-[(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
-
-- Understanding Postgres Database Schemas and the search_path
-[(link)](https://www.dolthub.com/blog/2024-05-07-understanding-postgres-schemas/)
-
-- How to check a distribution of values that PostgreSQL has collected on some column of a table?
-[(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
 
 - Unlocking the Power of Iceberg within PostgreSQL
 [(link)](https://medium.com/datareply/unlocking-the-power-of-iceberg-within-postgresql-14e8ed2d8ccb)

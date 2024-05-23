@@ -125,6 +125,8 @@ is_slide: 0
 
 
 # misc
+- How to check a distribution of values that PostgreSQL has collected on some column of a table?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
 - postgres - Checking Your Privileges
 [(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
 - How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?

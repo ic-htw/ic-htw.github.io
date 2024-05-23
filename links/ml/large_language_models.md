@@ -4,6 +4,10 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- Generative AI Agents Developer Contest by NVIDIA and LangChain
+[(link)](https://www.nvidia.com/en-us/ai-data-science/generative-ai/developer-contest-with-langchain/)
+- How to fine-tune LLMs on custom datasets at Scale using Qwak and CometML
+[(link)](https://medium.com/decodingml/how-to-fine-tune-llms-on-custom-datasets-at-scale-using-qwak-and-cometml-12216a777c34)
 - LLM Fine Tuning Series - In Context Learning
 [(link)](https://medium.com/walmartglobaltech/llm-fine-tuning-series-561f7ce174eb)
 - Large Language Model Course
@@ -65,6 +69,8 @@ is_slide: 0
 
 
 # rag case studies
+- RAG on Complex PDF using LlamaParse, Langchain and Groq
+[(link)](https://medium.com/the-ai-forum/rag-on-complex-pdf-using-llamaparse-langchain-and-groq-5b132bd1f9f3)
 - Building an Observable arXiv RAG Chatbot with LangChain, Chainlit, and Literal AI
 [(link)](https://towardsdatascience.com/building-an-observable-arxiv-rag-chatbot-with-langchain-chainlit-and-literal-ai-9c345fcd1cd8)
 - Local RAG From Scratch

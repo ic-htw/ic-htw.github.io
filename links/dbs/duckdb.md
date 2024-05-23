@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Using DuckDB JupySQL and Pandas in a notebook
+[(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
 - DuckDB Meets Apache Arrow
 [(link)](https://medium.com/gooddata-developers/duckdb-meets-apache-arrow-169e917a2d8d)
 - Introducing DuckDB-NSQL-7B, A LLM for DuckDB SQL
