@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Python Code Formatter — Black or Ruff?
+[(link)](https://python.plainenglish.io/python-code-formatter-black-or-ruff-b88f8260cf1b)
+
 - Introducing pg_timeseries: Open-source time-series extension for PostgreSQL
 [(link)](https://tembo.io/blog/pg-timeseries)
 

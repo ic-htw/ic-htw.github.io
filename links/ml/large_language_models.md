@@ -69,6 +69,10 @@ is_slide: 0
 
 
 # rag case studies
+- RAG Detective: Retrieval Augmented Generation with website data
+[(link)](https://medium.com/@iankelk/rag-detective-retrieval-augmented-generation-with-website-data-5a748b063040)
+- Implementing Agentic RAG using Langchain
+[(link)](https://medium.com/the-ai-forum/implementing-agentic-rag-using-langchain-b22af7f6a3b5)
 - RAG on Complex PDF using LlamaParse, Langchain and Groq
 [(link)](https://medium.com/the-ai-forum/rag-on-complex-pdf-using-llamaparse-langchain-and-groq-5b132bd1f9f3)
 - Building an Observable arXiv RAG Chatbot with LangChain, Chainlit, and Literal AI
