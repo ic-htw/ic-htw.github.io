@@ -8,41 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Python Code Formatter — Black or Ruff?
-[(link)](https://python.plainenglish.io/python-code-formatter-black-or-ruff-b88f8260cf1b)
+- How Snowflake building the most powerful SQL LLM in the world
+[(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
 
-- Introducing pg_timeseries: Open-source time-series extension for PostgreSQL
-[(link)](https://tembo.io/blog/pg-timeseries)
-
-- Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM
-[(link)](https://blog.gopenai.com/customer-lifetime-value-clv-prediction-with-machine-learning-and-db-querying-with-llm-33d803544da0)
-
-- Surpassing 100K Postgres Connections With Our In-Database Connection Pooling Extension
-[(link)](https://medium.com/@jonah.harris/surpassing-100k-postgres-connections-with-our-in-database-connection-pooling-extension-7084552234ea)
-
-- DuckDb vs Spark on Iceberg 1 Billion NYC taxi rides
-[(link)](https://medium.com/@HumanDimension2DataEngineering/duckdb-vs-spark-on-iceberg-1-billion-nyc-taxi-rides-84d143399a25)
-
-- Unlocking the Power of Iceberg within PostgreSQL
-[(link)](https://medium.com/datareply/unlocking-the-power-of-iceberg-within-postgresql-14e8ed2d8ccb)
-
-- I spent 5 hours understanding more about the Delta Lake table format
-[(link)](https://medium.com/@vutrinh274/i-spent-5-hours-understanding-more-about-the-delta-lake-table-format-b8516c5091eb)
-
-- PostgreSQL Configuration Chronicles: Memory Related Configurations
-[(link)](https://demirhuseyinn-94.medium.com/postgresql-configuration-chronicles-memory-related-configurations-9e867b98548d)
-
-- My First Billion (of Rows) in DuckDB
-[(link)](https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5)
-
-- Aurora vs. RDS: How to Choose the Right AWS Database for 2024
-[(link)](https://medium.com/dbconvert/aurora-vs-rds-how-to-choose-the-right-aws-database-for-2024-b750241cc20e)
-
-- Benchmarking MongoDB vs ScyllaDB: IoT Sensor Workload Deep Dive
-[(link)](https://scylladb.medium.com/benchmarking-mongodb-vs-scylladb-iot-sensor-workload-deep-dive-863185cb4332)
-
-- Crunchy Bridge for Analytics: Your Data Lake in PostgreSQL
-[(link)](https://www.crunchydata.com/blog/crunchy-bridge-for-analytics-your-data-lake-in-postgresql)
+- Mastering Caching in Distributed Applications
+[(link)](https://medium.com/@yt-cloudwaydigital/mastering-caching-in-distributed-applications-e7449f4db399)
 
 - The Stream Processing Model Behind Google Cloud Dataflow
 [(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
