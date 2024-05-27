@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- mPLUG-DocOwl 1.5: A leap forward in OCR-Free document understanding
+[(link)](https://medium.com/@simeon.emanuilov/mplug-docowl-1-5-a-leap-forward-in-ocr-free-document-understanding-255d6605dc67)
+
+- What is Prompt Management for LLM Applications?
+[(link)](https://medium.com/infer-qwak/what-is-prompt-management-for-llm-applications-tools-techniques-and-best-practices-29c6beff3a82)
+
+- RAG/LLM and PDF: Conversion to Markdown Text with PyMuPDF
+[(link)](https://medium.com/@pymupdf/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf-03af00259b5d)
+
+- Semantic Chunking for RAG
+[(link)](https://medium.com/the-ai-forum/semantic-chunking-for-rag-f4733025d5f5)
+
 - How Snowflake building the most powerful SQL LLM in the world
 [(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
 
