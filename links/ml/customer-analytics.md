@@ -3,6 +3,8 @@ layout: default
 title: customer analytics
 is_slide: 0
 ---
+- Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM
+[(link)](https://blog.gopenai.com/customer-lifetime-value-clv-prediction-with-machine-learning-and-db-querying-with-llm-33d803544da0)
 - How To Predict Customer Lifetime Value using Machine Learning in Python
 [(link)](https://blog.devgenius.io/how-to-predict-customer-lifetime-value-using-machine-learning-in-python-4066344d0ab0)
 - How To Predict Customer Churn Risk using Machine Learning in Python

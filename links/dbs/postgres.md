@@ -125,6 +125,8 @@ is_slide: 0
 
 
 # misc
+- PostgreSQL Configuration Chronicles: Memory Related Configurations
+[(link)](https://demirhuseyinn-94.medium.com/postgresql-configuration-chronicles-memory-related-configurations-9e867b98548d)
 - How to check a distribution of values that PostgreSQL has collected on some column of a table?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
 - postgres - Checking Your Privileges

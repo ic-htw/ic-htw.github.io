@@ -45,4 +45,7 @@ is_slide: 0
 # delta lake
 - Delta Lake RS
 [(link)](https://github.com/delta-io/delta-rs)
+- I spent 5 hours understanding more about the Delta Lake table format
+[(link)](https://medium.com/@vutrinh274/i-spent-5-hours-understanding-more-about-the-delta-lake-table-format-b8516c5091eb)
+
 

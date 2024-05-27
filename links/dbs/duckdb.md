@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- My First Billion (of Rows) in DuckDB
+[(link)](https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5)
 - Using DuckDB JupySQL and Pandas in a notebook
 [(link)](https://medium.com/@deepa.account/using-duckdb-jubysql-and-pandas-in-a-notebook-af4ed943d655)
 - DuckDB Meets Apache Arrow
