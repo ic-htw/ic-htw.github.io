@@ -4,6 +4,8 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- What is Prompt Management for LLM Applications?
+[(link)](https://medium.com/infer-qwak/what-is-prompt-management-for-llm-applications-tools-techniques-and-best-practices-29c6beff3a82)
 - Generative AI Agents Developer Contest by NVIDIA and LangChain
 [(link)](https://www.nvidia.com/en-us/ai-data-science/generative-ai/developer-contest-with-langchain/)
 - How to fine-tune LLMs on custom datasets at Scale using Qwak and CometML
