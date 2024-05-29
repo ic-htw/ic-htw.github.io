@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How we design our semantic engine for LLMs
+[(link)](https://blog.getwren.ai/how-we-design-our-semantic-engine-for-llms-84a00e6e3baa)
+
+- How I Built A Beautiful Web App Purely in Python 
+[(link)](https://levelup.gitconnected.com/how-i-built-a-beautiful-web-app-purely-in-python-with-zero-experience-874731df6bc1)
+
+- dbt 1.8 it is just wow
+[(link)](https://medium.astrafy.io/dbt-1-8-it-is-just-wow-5eb77fb273db)
+
 - Advance RAG- Improve RAG performance
 [(link)](https://luv-bansal.medium.com/advance-rag-improve-rag-performance-208ffad5bb6a)
 
