@@ -38,23 +38,14 @@ is_slide: 0
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
 
-- Scaling Horizontally on PostgreSQL: Citus’s Impact on Database Architecture
-[(link)](https://demirhuseyinn-94.medium.com/scaling-horizontally-on-postgresql-cituss-impact-on-database-architecture-295329c72c62)
-
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
 
 - dbt + Airflow
 [(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
 
-- Peek into Query Hash (query_id) in PostgreSQL
-[(link)](https://virender-cse.medium.com/query-hash-in-postgresql-4522e91b5623)
-
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
-
-- PostgreSQL Architecture
-[(link)](https://medium.com/agedb/postgresql-architecture-59d6242d91d8)
 
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
