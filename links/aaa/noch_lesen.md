@@ -95,29 +95,14 @@ is_slide: 0
 - How to use PostgreSQL for (military) geoanalytics tasks
 [(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
 
-- Understanding the Fundamentals of PostgreSQL Architecture
-[(link)](https://instaclustr.medium.com/understanding-the-fundamentals-of-postgresql-architecture-98ce3672376f)
-
-- Implementing a Distributed State Machine in Rust
-[(link)](https://www.linkedin.com/pulse/implementing-distributed-state-machine-rust-luis-soares-m-sc--50yrf)
-
-- PostgreSQL Vs Supabase
-[(link)](https://medium.com/@shariq.ahmed525/postgresql-vs-supabase-df10e2795180)
-
 - Real-time data streaming in Jupyter
 [(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
 
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
 
-- Duck DB brings the excitement back to data warehouses (almost)
-[(link)](https://medium.com/@hugolu87/duck-db-brings-the-excitement-back-to-data-warehouses-almost-9555371dd1dd)
-
 - Plot(ly)ing Geo Data From DuckDB
 [(link)](https://code.likeagirl.io/plot-ly-ing-geo-data-from-duckdb-4d3f039ed87f)
-
-- The State of the Database Landscape
-[(link)](https://www.red-gate.com/solutions/entrypage/state-of-database-landscape-2024/multiple-database-platforms)
 
 - 11 Lessons to learn when using NULLs in PostgreSQL
 [(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
@@ -151,13 +136,4 @@ is_slide: 0
 
 - Predicate Pushdown in Parquet: Enhancing Efficiency and Performance
 [(link)](https://medium.com/@diehardankush/predicate-pushdown-in-parquet-enhancing-efficiency-and-performance-5becb0b992de)
-
-- Create a Delta Table in S3 using Rust
-[(link)](https://blog.det.life/create-a-delta-table-in-s3-using-rust-a1f1fbf5d6d9)
-
-- How I Built a Data Lakehouse With Delta Lake Architecture
-[(link)](https://nickefy.medium.com/how-i-built-a-data-lakehouse-with-delta-lake-architecture-c7cdf0d18ee5)
-
-- NoSQL Summer Blockbusters: Rust, Kafka, Media Streaming &amp; Social Media &amp; More
-[(link)](https://scylladb.medium.com/nosql-summer-blockbusters-rust-kafka-media-streaming-social-media-more-b0074fccb9)
         
