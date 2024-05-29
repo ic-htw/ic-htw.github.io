@@ -32,26 +32,14 @@ is_slide: 0
 - How Snowflake building the most powerful SQL LLM in the world
 [(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
 
-- Mastering Caching in Distributed Applications
-[(link)](https://medium.com/@yt-cloudwaydigital/mastering-caching-in-distributed-applications-e7449f4db399)
-
 - The Stream Processing Model Behind Google Cloud Dataflow
 [(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
 
 - Why Stream Processing is a Terrible Market 
 [(link)](https://medium.com/@yingjunwu/why-stream-processing-is-a-terrible-market-yet-we-are-still-investing-in-it-43e66cef7847)
 
-- Analysis of World of Warcraft data
-[(link)](https://ibis-project.org/posts/wow-analysis/)
-
-- PostgreSQL. Aggregate first, join later
-[(link)](https://medium.com/@dmitry.romanoff/postgresql-aggregate-first-join-later-d3598ac03011)
-
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
-
-- Do we need the Lakehouse architecture?
-[(link)](https://medium.com/@vutrinh274/do-we-need-the-lakehouse-architecture-f1a43bd2713d)
 
 - Scaling Horizontally on PostgreSQL: Citus’s Impact on Database Architecture
 [(link)](https://demirhuseyinn-94.medium.com/scaling-horizontally-on-postgresql-cituss-impact-on-database-architecture-295329c72c62)
@@ -74,12 +62,6 @@ is_slide: 0
 - PostgreSQL Architecture
 [(link)](https://medium.com/agedb/postgresql-architecture-59d6242d91d8)
 
-- Connecting AI to Decisions with the Palantir Ontology
-[(link)](https://blog.palantir.com/connecting-ai-to-decisions-with-the-palantir-ontology-c73f7b0a1a72)
-
-- The Way We Are Building Event-Driven Applications is Misguided. This is Why I Created Infinitic.
-[(link)](https://gillesbarbier.medium.com/the-way-we-are-building-event-driven-applications-is-misguided-7f7c5f1a9061)
-
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
 
@@ -91,9 +73,6 @@ is_slide: 0
 
 - Mastering Asynchronous Programming in Python: A Comprehensive Guide
 [(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
-
-- PostgreSQL Stories: A simple query with a big problem
-[(link)](https://render.com/blog/postgresql-simple-query-big-problem)
 
 - Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
 [(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
@@ -163,12 +142,6 @@ is_slide: 0
 
 - Last Updated Columns With Postgres
 [(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
-
-- Deciphering PostgreSQL Encryption: A Beginner’s Guide 
-[(link)](https://www.highgo.ca/2024/02/13/deciphering-postgresql-encryption-a-beginners-guide/)
-
-- Amazon Aurora vs. RDS: Understanding the Difference 
-[(link)](https://www.timescale.com/blog/amazon-aurora-vs-rds-understanding-the-difference/)
 
 - Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
 [(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
