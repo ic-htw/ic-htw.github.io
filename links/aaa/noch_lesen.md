@@ -35,9 +35,6 @@ is_slide: 0
 - The Stream Processing Model Behind Google Cloud Dataflow
 [(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
 
-- Why Stream Processing is a Terrible Market 
-[(link)](https://medium.com/@yingjunwu/why-stream-processing-is-a-terrible-market-yet-we-are-still-investing-in-it-43e66cef7847)
-
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
 
@@ -46,9 +43,6 @@ is_slide: 0
 
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
-
-- Database in Kubernetes: Is that a good idea?
-[(link)](https://medium.com/@fengruohang/database-in-kubernetes-is-that-a-good-idea-daf5775b5c1f)
 
 - dbt + Airflow
 [(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
@@ -86,9 +80,6 @@ is_slide: 0
 - Python — Building Simple API with FastAPI and PostgreSQL
 [(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
 
-- How Figma’s databases team lived to tell the scale
-[(link)](https://www.figma.com/blog/how-figmas-databases-team-lived-to-tell-the-scale/)
-
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
 
@@ -100,9 +91,6 @@ is_slide: 0
 
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
-
-- Plot(ly)ing Geo Data From DuckDB
-[(link)](https://code.likeagirl.io/plot-ly-ing-geo-data-from-duckdb-4d3f039ed87f)
 
 - 11 Lessons to learn when using NULLs in PostgreSQL
 [(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
@@ -122,18 +110,9 @@ is_slide: 0
 - SQL query optimization: a comprehensive developer's guide
 [(link)](https://aiven.io/developer/sql-query-optimization-guide)
 
-- A story of a spectacular success - Intro to AWS RDS database migration series
-[(link)](https://www.smily.com/engineering/a-story-of-a-spectacular-success-intro-to-aws-rds-database-migration-series)
-
 - Last Updated Columns With Postgres
 [(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
 
 - Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
 [(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
 
-- How to populate a table with one million records in a PostgreSQL database?
-[(link)](https://medium.com/@dmitry.romanoff/how-to-populate-a-table-with-one-million-records-in-a-postgresql-database-d68b73e8c2a9)
-
-- Predicate Pushdown in Parquet: Enhancing Efficiency and Performance
-[(link)](https://medium.com/@diehardankush/predicate-pushdown-in-parquet-enhancing-efficiency-and-performance-5becb0b992de)
-        
