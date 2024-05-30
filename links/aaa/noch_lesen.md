@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Oracle Database 23ai
+[(link)](https://blogs.oracle.com/database/post/oracle-23ai-now-generally-available)
+
+- JSON Relational Duality
+[(link)](https://blogs.oracle.com/database/post/json-relational-duality-app-dev)
+
 - How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
 [(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
 
