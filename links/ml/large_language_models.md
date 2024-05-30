@@ -4,6 +4,8 @@ title: Large Language Models
 is_slide: 0
 ---
 # aaa
+- 6 Real-World Uses of Microsoft’s Newest Phi-3 Vision-Language Model
+[(link)](bbb)
 - What is Prompt Management for LLM Applications?
 [(link)](https://medium.com/infer-qwak/what-is-prompt-management-for-llm-applications-tools-techniques-and-best-practices-29c6beff3a82)
 - Generative AI Agents Developer Contest by NVIDIA and LangChain
@@ -71,6 +73,8 @@ is_slide: 0
 
 
 # rag case studies
+- Advance RAG- Improve RAG performance
+[(link)](https://luv-bansal.medium.com/advance-rag-improve-rag-performance-208ffad5bb6a)
 - RAG Detective: Retrieval Augmented Generation with website data
 [(link)](https://medium.com/@iankelk/rag-detective-retrieval-augmented-generation-with-website-data-5a748b063040)
 - Implementing Agentic RAG using Langchain
@@ -230,4 +234,11 @@ is_slide: 0
 [(link)](https://blog.stackademic.com/build-a-chatbot-for-your-sql-database-in-20-lines-of-python-5fbd47d43649)
 - Chat with your SQL Database using Llama 3
 [(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-llama-3-4d4c496e12e8)
+
+# WrenAI
+- How we design our semantic engine for LLMs
+[(link)](https://blog.getwren.ai/how-we-design-our-semantic-engine-for-llms-84a00e6e3baa)
+- How Snowflake building the most powerful SQL LLM in the world
+[(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
+
 

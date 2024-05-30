@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- The Stream Processing Model Behind Google Cloud Dataflow
+[(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
 - System Design: Bloom Filter
 [(link)](https://towardsdatascience.com/system-design-bloom-filter-a2e19dcd4810)
 - Introducing DBOS Cloud: Transactional Serverless Computing on a Cloud-Native OS

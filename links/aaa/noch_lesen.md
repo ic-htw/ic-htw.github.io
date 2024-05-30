@@ -8,17 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- How we design our semantic engine for LLMs
-[(link)](https://blog.getwren.ai/how-we-design-our-semantic-engine-for-llms-84a00e6e3baa)
+- How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
+[(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
 
 - How I Built A Beautiful Web App Purely in Python 
 [(link)](https://levelup.gitconnected.com/how-i-built-a-beautiful-web-app-purely-in-python-with-zero-experience-874731df6bc1)
-
-- dbt 1.8 it is just wow
-[(link)](https://medium.astrafy.io/dbt-1-8-it-is-just-wow-5eb77fb273db)
-
-- Advance RAG- Improve RAG performance
-[(link)](https://luv-bansal.medium.com/advance-rag-improve-rag-performance-208ffad5bb6a)
 
 - Building Vector Databases with FastAPI and ChromaDB
 [(link)](https://levelup.gitconnected.com/building-vector-databases-with-fastapi-and-chromadb-0a1cd96fab08)
@@ -29,20 +23,8 @@ is_slide: 0
 - RAG/LLM and PDF: Conversion to Markdown Text with PyMuPDF
 [(link)](https://medium.com/@pymupdf/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf-03af00259b5d)
 
-- How Snowflake building the most powerful SQL LLM in the world
-[(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
-
-- The Stream Processing Model Behind Google Cloud Dataflow
-[(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0)
-
-- Different Isolation levels and anomalies in Postgres
-[(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
-
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
-
-- dbt + Airflow
-[(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
 
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
@@ -53,9 +35,6 @@ is_slide: 0
 - Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
 [(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 
-- Why did Databricks build the Photon engine?
-[(link)](https://medium.com/@vutrinh274/why-did-databricks-build-the-photon-engine-90546429a31c)
-
 - Mastering Asynchronous Programming in Python: A Comprehensive Guide
 [(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
 
@@ -64,9 +43,6 @@ is_slide: 0
 
 - Real-Time Twitch Chat Sentiment Analysis with Apache Flink
 [(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
-
-- Building a Managed Postgres Service in Rust: Part 1 
-[(link)](https://tembo.io/blog/managed-postgres-rust)
 
 - Python — Building Simple API with FastAPI and PostgreSQL
 [(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)

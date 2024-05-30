@@ -13,6 +13,10 @@ is_slide: 0
 [(link)](https://github.com/dbt-labs/dbt)
 
 # bbb
+- dbt 1.8 it is just wow
+[(link)](https://medium.astrafy.io/dbt-1-8-it-is-just-wow-5eb77fb273db)
+- dbt + Airflow
+[(link)](https://medium.com/plum-fintech/dbt-airflow-50b2c93f91cc)
 - dbt + RisingWave
 [(link)](https://towardsdev.com/why-dbt-is-so-popular-8f957c945106)
 - Why I stopped using SCD in my data modeling
