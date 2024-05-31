@@ -8,11 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Oracle Database 23ai
-[(link)](https://blogs.oracle.com/database/post/oracle-23ai-now-generally-available)
+- Why Representation Finetuning is the Most Efficient Approach Today?
+[(link)](https://towardsdatascience.com/why-representation-finetuning-is-the-most-efficient-approach-today-d589c2535c77)
 
-- JSON Relational Duality
-[(link)](https://blogs.oracle.com/database/post/json-relational-duality-app-dev)
+- How Chunk Sizes Affect Semantic Retrieval Results
+[(link)](https://medium.com/@lamslide/investigating-chunk-size-on-semantic-results-b465867d8ca1)
 
 - How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
 [(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
@@ -59,9 +59,6 @@ is_slide: 0
 - How to use PostgreSQL for (military) geoanalytics tasks
 [(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
 
-- Real-time data streaming in Jupyter
-[(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
-
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
 
@@ -83,9 +80,4 @@ is_slide: 0
 - SQL query optimization: a comprehensive developer's guide
 [(link)](https://aiven.io/developer/sql-query-optimization-guide)
 
-- Last Updated Columns With Postgres
-[(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
-
-- Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
-[(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
 

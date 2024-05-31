@@ -73,6 +73,8 @@ is_slide: 0
 
 
 # rag case studies
+- Build RAG Application Using a LLM Running on Local Computer with Ollama and Langchain
+[(link)](https://medium.com/rahasak/build-rag-application-using-a-llm-running-on-local-computer-with-ollama-and-langchain-e6513853fda0)
 - Advance RAG- Improve RAG performance
 [(link)](https://luv-bansal.medium.com/advance-rag-improve-rag-performance-208ffad5bb6a)
 - RAG Detective: Retrieval Augmented Generation with website data

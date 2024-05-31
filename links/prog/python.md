@@ -226,6 +226,9 @@ is_slide: 0
 [(link)](https://auth0.com/blog/protocol-types-in-python/)
 
 # Artikel
+- Real-time data streaming in Jupyter
+[(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
+
 - Extracting Text from PDF Files with Python: A Comprehensive Guide
 [(link)](https://towardsdatascience.com/extracting-text-from-pdf-files-with-python-a-comprehensive-guide-9fc4003d517)
 

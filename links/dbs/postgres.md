@@ -125,6 +125,8 @@ is_slide: 0
 
 
 # misc
+- Last Updated Columns With Postgres
+[(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
 - Different Isolation levels and anomalies in Postgres
 [(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
 - PostgreSQL Configuration Chronicles: Memory Related Configurations
