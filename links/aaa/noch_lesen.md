@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Apache Kafka: Architecture, Real-Time CDC, and Python Integration
+[(link)](https://amsayed.medium.com/apache-kafka-architecture-real-time-cdc-and-python-integration-1846f5e49b39)
+
+- Building LLaMA 3 From Scratch with Python
+[(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
+
+- Llama 3-V: Matching GPT4-V with a 100x smaller model and 500 dollars
+[(link)](https://aksh-garg.medium.com/llama-3v-building-an-open-source-gpt-4v-competitor-in-under-500-7dd8f1f6c9ee)
+
 - Why Representation Finetuning is the Most Efficient Approach Today?
 [(link)](https://towardsdatascience.com/why-representation-finetuning-is-the-most-efficient-approach-today-d589c2535c77)
 
