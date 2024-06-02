@@ -39,6 +39,15 @@ is_slide: 0
 - home
 [(link)](https://doris.apache.org/)
 
+# cedarDB
+- home 
+[(link)](https://cedardb.com/)
+- docs
+[(link)](https://cedardb.com/docs/)
+- blog
+[(link)](https://cedardb.com/blog/)
+
+
 # clickhouse
 - home
 [(link)](https://clickhouse.com/)

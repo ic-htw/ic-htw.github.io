@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
+[(link)](https://blog.getwren.ai/how-to-load-huggingface-datasets-into-duckdb-and-query-with-gpt-4o-c2db89519e4d)
+
 - Apache Kafka: Architecture, Real-Time CDC, and Python Integration
 [(link)](https://amsayed.medium.com/apache-kafka-architecture-real-time-cdc-and-python-integration-1846f5e49b39)
 
