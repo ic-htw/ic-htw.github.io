@@ -4,20 +4,66 @@ title: "Arbeitsblatt 4"
 is_slide: 0
 ---
 <h1>Arbeitsblatt 4 (8 Punkte)</h1>
-<h2>Open-Data-Projekt</h2>
-<p class="w3-large">Berlin Open Data
-(<a href="https://daten.berlin.de/">link</a>)</p>
 
+<h2>Open-Data-Projekt - Radzählung</h2>
 <img class="w3-image" src="/lv/dmdb/a/ab4/d010-100.png">
+<p class="w3-large">Radzähldaten in Berlin (<a href="https://daten.berlin.de/datensaetze/radz%C3%A4hldaten-berlin">link</a>)</p>
+    
+    
+<h2>Datengrundlage</h2>
+<p class="w3-large">
+    Die Grundlage für diese Aufgabe bildet eine Excel-Datei mit mehreren Tabellenblätter, die Daten zu Zählstellen und und zu Zählungen von Raddurchfahrten enthalten.
+</p>
+<h3>Hinweisseite</h3>
+<img class="w3-image" src="/lv/dmdb/a/ab4/excel0.png"><br>
 
-<h2>Vorgehensweise</h2>
+<h3 class="ic-neg15">Zählstellen</h3>
+<p class="w3-large">
+    Zu den Zählstellen werden diverse Informationen in Tabellenblatt "Standortdaten" bereitgestellt.
+</p>
+<img class="w3-image" src="/lv/dmdb/a/ab4/excel1.png"><br>
+
+<h3 class="ic-neg15">Zähldaten für Raddurchfahrten an der Zählstelle</h3>
+<p class="w3-large">
+    Die gezählten Raddurchfahrten werden in Tabellenblätter mit der Bezeichnung "Jahresdatei JJJJ" (JJJJ = 2023, 20222, ...) bereitgestellt, wobei jede Zählstelle eine eigene Spalte erhält. Es handelt sich hierbei um eine pivotierte Darstellung.
+</p>
+<p class="w3-large">2018</p>
+<img class="w3-image" src="/lv/dmdb/a/ab4/excel2.png"><br>
+
+<p class="w3-large">2023</p>
+<img class="w3-image" src="/lv/dmdb/a/ab4/excel3.png"><br>
+
+
+<h2>Datenimport (4P)</h2>
+<p class="w3-large ic-neg15">
+    Bla
+</p>
 <ul class="w3-large">
-    <li>Suchen sie sich ein Fallbeispiel heraus, das sie näher analysieren wollen</li>
-    <li>Stimmen sie ihre Auswahl mit mir ab</li>
-    <li>Erstellen sie in Google Colab ein neues Notebook</li>
-    <li>Entwickeln sie mit DuckDB in Python sinnvolle Abfragen und Visualisierungen</li>
-    <li>Sie können ChatGPT in vollem Umfang zur Bearbeitung verwenden.</li>
+    <li>Colab-Datei (<a href="">link</a>)</li>
 </ul>
+<img class="w3-image" src="/lv/dmdb/a/ab4/radzaehlung.png"><br>
+
+<h2>Datenanalyse (4p)</h2>
+<p class="w3-large ic-neg15">
+    Bla
+</p>
+<ul class="w3-large">
+    <li>Colab-Datei (<a href="">link</a>)</li>
+</ul>
+
+<h3>Raddurchfahrten pro Jahr - Summe an allen Erfasungsstellen</h3>
+<img class="w3-image" src="/lv/dmdb/a/ab4/fahrten.png">
+
+<h3>Raddurchfahrten pro Monat - Vergleich 2019/2023</h3>
+<img class="w3-image" src="/lv/dmdb/a/ab4/vergleich.png">
+
+<h3>Prozentuale Verteilung Durchfahrten auf Tageszeiten - pro Tag</h3>
+<img class="w3-image" src="/lv/dmdb/a/ab4/verteilung.png">
+
+<h3>Differenz Raddurchfahrten in Bezug auf Vorjahr</h3>
+<img class="w3-image" src="/lv/dmdb/a/ab4/diff.png">
+
+
 
 <p class="w3-large">
     Technische Details zu Colab, DuckDB und Visualisierungen gibt es in der Übung.
