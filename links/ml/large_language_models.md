@@ -73,6 +73,8 @@ is_slide: 0
 
 
 # rag case studies
+- Adding Context to Retrieval-Augmented Generation with Gemini Function Calling and MongoDB Atlas
+[(link)](https://medium.com/google-cloud/adding-context-to-rag-with-gemini-function-calling-d6e78e705524)
 - A Complete Guide to RAG and LlamaIndex
 [(link)](https://pub.towardsai.net/a-complete-guide-to-rag-and-llamaindex-2e1776655bfa)
 - Build RAG Application Using a LLM Running on Local Computer with Ollama and Langchain

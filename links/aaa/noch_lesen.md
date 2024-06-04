@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I choose between SQL and No-SQL solutions
+[(link)](https://medium.com/@martin.hodges/how-i-choose-between-sql-and-no-sql-solutions-63463b6e65b9)
+
 - How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
 [(link)](https://blog.getwren.ai/how-to-load-huggingface-datasets-into-duckdb-and-query-with-gpt-4o-c2db89519e4d)
 
