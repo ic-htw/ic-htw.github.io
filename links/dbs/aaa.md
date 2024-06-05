@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- Everything you need to know about MapReduce
+[(link)](https://blog.det.life/everything-you-need-to-know-about-mapreduce-aff1c664f3b5)
 - Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy
 [(link)](https://atwong.medium.com/best-open-source-replacements-for-business-intelligence-tools-power-bi-tableau-looker-3857ea58737d)
 - The Stream Processing Model Behind Google Cloud Dataflow

@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- This Open Source Dashboard Solution With 59k Stars on GitHub astonished me — Apache Superset
+[(link)](https://medium.com/@thoren.lederer/this-open-source-dashboard-solution-with-59k-stars-on-github-astonished-me-apache-superset-6f1607405380)
+
+- Use Pandas Dataframe with SQL-Support as a Network Database — Thanks to DuckDB
+[(link)](https://medium.com/@thoren.lederer/use-pandas-dataframe-with-sql-support-as-a-network-database-thanks-to-duckdb-2a46e1f88b66)
+
+- Python Projects with SQL: Strategies for Effective Query Management
+[(link)](https://medium.com/@romina.elena.mendez/python-projects-with-sql-strategies-for-effective-query-management-f79d696b2c66)
+
 - How I choose between SQL and No-SQL solutions
 [(link)](https://medium.com/@martin.hodges/how-i-choose-between-sql-and-no-sql-solutions-63463b6e65b9)
 
