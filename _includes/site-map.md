@@ -408,6 +408,7 @@ Datenbanksysteme
     <a  href="/links/dbs/oracle.html">Oracle</a> <br>
     <a  href="/links/dbs/postgis.html">Postgis</a> <br>
     <a  href="/links/dbs/postgres.html">Postgres</a> <br>
+    <a  href="/links/dbs/stream.html">Stream / Event Processing</a> <br>
     <a  href="/links/dbs/vector_databases.html">Vector Databases</a> <br>
     <a  href="/links/dbs/visualization.html">Visualization</a> <br>
 </div> 

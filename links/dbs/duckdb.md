@@ -31,6 +31,10 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
+[(link)](https://blog.getwren.ai/how-to-load-huggingface-datasets-into-duckdb-and-query-with-gpt-4o-c2db89519e4d)
+- Use Pandas Dataframe with SQL-Support as a Network Database — Thanks to DuckDB
+[(link)](https://medium.com/@thoren.lederer/use-pandas-dataframe-with-sql-support-as-a-network-database-thanks-to-duckdb-2a46e1f88b66)
 - My First Billion (of Rows) in DuckDB
 [(link)](https://towardsdatascience.com/my-first-billion-of-rows-in-duckdb-11873e5edbb5)
 - Using DuckDB JupySQL and Pandas in a notebook

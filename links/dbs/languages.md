@@ -52,6 +52,11 @@ is_slide: 0
 
 
 # other
+- SQL query optimization: a comprehensive developer's guide
+[(link)](https://aiven.io/developer/sql-query-optimization-guide)
+
+- Python Projects with SQL: Strategies for Effective Query Management
+[(link)](https://medium.com/@romina.elena.mendez/python-projects-with-sql-strategies-for-effective-query-management-f79d696b2c66)
 - What if an SQL Statement Returned a Database?
 [(link)](https://arxiv.org/abs/2312.00638)
 - A Gentle(-ish) Introduction to Worst-Case Optimal Joins

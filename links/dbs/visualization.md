@@ -3,6 +3,8 @@ layout: default
 title: Visualization
 is_slide: 0
 ---
+- This Open Source Dashboard Solution With 59k Stars on GitHub astonished me — Apache Superset
+[(link)](https://medium.com/@thoren.lederer/this-open-source-dashboard-solution-with-59k-stars-on-github-astonished-me-apache-superset-6f1607405380)
 - Top 10 Power BI Dashboard Examples in 2024
 [(link)](https://medium.com/@mokkup/top-10-power-bi-dashboard-examples-in-2024-b7035637ae33)
 - Dashboards Close Million Dollar Deals

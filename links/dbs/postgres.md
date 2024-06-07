@@ -125,6 +125,10 @@ is_slide: 0
 
 
 # misc
+- PostgreSQL Multi-Active Replication - Part 1: An Introduction
+[(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
+- How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
+[(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
 - Last Updated Columns With Postgres
 [(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
 - Different Isolation levels and anomalies in Postgres

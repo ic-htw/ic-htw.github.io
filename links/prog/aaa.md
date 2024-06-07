@@ -4,6 +4,12 @@ title: Aaa
 is_slide: 0
 ---
 
+# aaa
+- mPLUG-DocOwl 1.5: A leap forward in OCR-Free document understanding
+[(link)](https://medium.com/@simeon.emanuilov/mplug-docowl-1-5-a-leap-forward-in-ocr-free-document-understanding-255d6605dc67)
+
+
+
 # dijkstra
 - wikipedia
 [(link)](https://de.wikipedia.org/wiki/Dijkstra-Algorithmus)

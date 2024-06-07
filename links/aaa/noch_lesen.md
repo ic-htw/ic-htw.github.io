@@ -8,23 +8,23 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- This Open Source Dashboard Solution With 59k Stars on GitHub astonished me — Apache Superset
-[(link)](https://medium.com/@thoren.lederer/this-open-source-dashboard-solution-with-59k-stars-on-github-astonished-me-apache-superset-6f1607405380)
+- csvbase
+[(link)](https://csvbase.com/)
 
-- Use Pandas Dataframe with SQL-Support as a Network Database — Thanks to DuckDB
-[(link)](https://medium.com/@thoren.lederer/use-pandas-dataframe-with-sql-support-as-a-network-database-thanks-to-duckdb-2a46e1f88b66)
+- fsspec 
+[(link)](https://pypi.org/project/fsspec/)
 
-- Python Projects with SQL: Strategies for Effective Query Management
-[(link)](https://medium.com/@romina.elena.mendez/python-projects-with-sql-strategies-for-effective-query-management-f79d696b2c66)
+- Building an Agent for Data Visualization (Plotly)
+[(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
 
-- How I choose between SQL and No-SQL solutions
-[(link)](https://medium.com/@martin.hodges/how-i-choose-between-sql-and-no-sql-solutions-63463b6e65b9)
+- Top 15 ETL tools in 2023
+[(link)](https://medium.owox.com/top-15-etl-tools-in-2023-1e0a87bb299f)
 
-- How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
-[(link)](https://blog.getwren.ai/how-to-load-huggingface-datasets-into-duckdb-and-query-with-gpt-4o-c2db89519e4d)
+- Text-to-SQL for DuckDB database using Vanna, in 25 lines of code
+[(link)](https://arslanshahid-1997.medium.com/text-to-sql-for-duckdb-database-using-vanna-in-25-lines-of-code-f564d97faafd)
 
-- Apache Kafka: Architecture, Real-Time CDC, and Python Integration
-[(link)](https://amsayed.medium.com/apache-kafka-architecture-real-time-cdc-and-python-integration-1846f5e49b39)
+- Controlling Resource Consumption on a PostgreSQL Server Using Linux cgroup2
+[(link)](https://www.percona.com/blog/controlling-resource-consumption-on-a-postgresql-server-using-linux-cgroup2/)
 
 - Building LLaMA 3 From Scratch with Python
 [(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
@@ -35,29 +35,17 @@ is_slide: 0
 - Why Representation Finetuning is the Most Efficient Approach Today?
 [(link)](https://towardsdatascience.com/why-representation-finetuning-is-the-most-efficient-approach-today-d589c2535c77)
 
-- How Chunk Sizes Affect Semantic Retrieval Results
-[(link)](https://medium.com/@lamslide/investigating-chunk-size-on-semantic-results-b465867d8ca1)
-
-- How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
-[(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
-
 - How I Built A Beautiful Web App Purely in Python 
 [(link)](https://levelup.gitconnected.com/how-i-built-a-beautiful-web-app-purely-in-python-with-zero-experience-874731df6bc1)
 
 - Building Vector Databases with FastAPI and ChromaDB
 [(link)](https://levelup.gitconnected.com/building-vector-databases-with-fastapi-and-chromadb-0a1cd96fab08)
 
-- mPLUG-DocOwl 1.5: A leap forward in OCR-Free document understanding
-[(link)](https://medium.com/@simeon.emanuilov/mplug-docowl-1-5-a-leap-forward-in-ocr-free-document-understanding-255d6605dc67)
-
 - RAG/LLM and PDF: Conversion to Markdown Text with PyMuPDF
 [(link)](https://medium.com/@pymupdf/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf-03af00259b5d)
 
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
-
-- PostgreSQL Multi-Active Replication - Part 1: An Introduction
-[(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
 
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
@@ -100,8 +88,4 @@ is_slide: 0
 
 - 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
 [(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
-
-- SQL query optimization: a comprehensive developer's guide
-[(link)](https://aiven.io/developer/sql-query-optimization-guide)
-
 
