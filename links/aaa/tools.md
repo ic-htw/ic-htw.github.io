@@ -5,6 +5,10 @@ is_slide: 0
 ---
 
 # aaa
+- csvbase
+[(link)](https://csvbase.com/)
+- fsspec 
+[(link)](https://pypi.org/project/fsspec/)
 - gdrive download -python
 [(link)](https://github.com/matthuisman/gdrivedl)
 - gdrive download - wget

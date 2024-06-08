@@ -8,11 +8,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- csvbase
-[(link)](https://csvbase.com/)
-
-- fsspec 
-[(link)](https://pypi.org/project/fsspec/)
+- The Great Migration from MongoDB to PostgreSQL
+[(link)](https://medium.com/@tony.infisical/the-great-migration-from-mongodb-to-postgresql-fa3978bc143b)
 
 - Building an Agent for Data Visualization (Plotly)
 [(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
