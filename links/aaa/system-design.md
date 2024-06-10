@@ -4,6 +4,9 @@ title: System Design
 is_slide: 0
 ---
 
+- Controlling Resource Consumption on a PostgreSQL Server Using Linux cgroup2
+[(link)](https://www.percona.com/blog/controlling-resource-consumption-on-a-postgresql-server-using-linux-cgroup2/)
+
 - How I Built This Data Platform in One Week
 [(link)](https://medium.datadriveninvestor.com/how-i-built-this-data-platform-in-one-week-13b457d7c323)
 

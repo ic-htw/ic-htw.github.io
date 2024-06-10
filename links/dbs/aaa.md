@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- Top 15 ETL tools in 2023
+[(link)](https://medium.owox.com/top-15-etl-tools-in-2023-1e0a87bb299f)
 - Everything you need to know about MapReduce
 [(link)](https://blog.det.life/everything-you-need-to-know-about-mapreduce-aff1c664f3b5)
 - Best Open Source replacements for Business Intelligence Tools Power BI, Tableau, Looker, MicroStrategy

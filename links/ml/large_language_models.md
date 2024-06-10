@@ -3,7 +3,30 @@ layout: default
 title: Large Language Models
 is_slide: 0
 ---
+# paper
+- Benchmarking and Improving Text-to-SQL Generation under Ambiguity
+- Bridging Language and Data - Optimizing Text-to-SQL Generation in Large Language Models
+- C3: Zero-shot Text-to-SQL with ChatGPT
+- Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+- Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
+- Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+- Retrieval-Augmented Generation for Large Language Models - A Survey
+- Retrieval-augmented GPT-3.5-based Text-to-SQL Framework with Sample-aware Prompting and Dynamic Revision Chain
+- Text-to-SQL Empowered by Large Language Models - A Benchmark Evaluation
+- Towards Robustness of Text-to-SQL Models against Synonym Substitution
+
+# benchmarks
+- BIRD Text-to-SQL Benchmark
+[(link)](https://bird-bench.github.io/)
+- Spider Text-to-SQL Benchmark
+[(link)](https://yale-lily.github.io/spider)
+
+
+
 # aaa
+- Building an Agent for Data Visualization (Plotly)
+[(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
+
 - 6 Real-World Uses of Microsoft’s Newest Phi-3 Vision-Language Model
 [(link)](bbb)
 - What is Prompt Management for LLM Applications?
@@ -232,6 +255,8 @@ is_slide: 0
 
 
 # Vanna
+- Text-to-SQL for DuckDB database using Vanna, in 25 lines of code
+[(link)](https://arslanshahid-1997.medium.com/text-to-sql-for-duckdb-database-using-vanna-in-25-lines-of-code-f564d97faafd)
 - Chat with your SQL database using GPT 4o via Vanna.ai
 [(link)](https://arslanshahid-1997.medium.com/chat-with-your-sql-database-using-gpt-4o-via-vanna-ai-b87e3296f8dc)
 - Vanna: The Supercharged Text-to-SQL Tool All Data Analyst Were Looking For

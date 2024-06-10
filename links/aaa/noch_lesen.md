@@ -8,20 +8,29 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- The Great Migration from MongoDB to PostgreSQL
-[(link)](https://medium.com/@tony.infisical/the-great-migration-from-mongodb-to-postgresql-fa3978bc143b)
+- Relational Dataset Repository
+[(link)](https://relational-data.org/)
 
-- Building an Agent for Data Visualization (Plotly)
-[(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
+- Q&A: Cockroach Labs’ Spencer Kimball on Distributing SQL
+[(link)](https://thenewstack.io/qa-cockroach-labs-spencer-kimball-on-distributing-sql/)
 
-- Top 15 ETL tools in 2023
-[(link)](https://medium.owox.com/top-15-etl-tools-in-2023-1e0a87bb299f)
+- New Chunking Method for RAG-Systems
+[(link)](https://medium.datadriveninvestor.com/new-chunking-method-for-rag-systems-2eb3523d0420)
 
-- Text-to-SQL for DuckDB database using Vanna, in 25 lines of code
-[(link)](https://arslanshahid-1997.medium.com/text-to-sql-for-duckdb-database-using-vanna-in-25-lines-of-code-f564d97faafd)
+- DSPy - git
+[(link)](https://github.com/stanfordnlp/dspy)
 
-- Controlling Resource Consumption on a PostgreSQL Server Using Linux cgroup2
-[(link)](https://www.percona.com/blog/controlling-resource-consumption-on-a-postgresql-server-using-linux-cgroup2/)
+- The Best Text Chunking Method?
+[(link)](https://hasanaboulhasan.medium.com/the-best-text-chunking-method-f5faeb243d80)
+
+- Exploring Diverse Techniques for Sentence Similarity
+[(link)](https://medium.com/@aneesha161994/exploring-diverse-techniques-for-sentence-similarity-bc62058c7972)
+
+- Apache NiFi
+[(link)](https://nifi.apache.org/)
+
+- Rebuilding Redis on S3 Express
+[(link)](https://blog.det.life/rebuilding-redis-on-s3-express-e2701c5dcc29)
 
 - Building LLaMA 3 From Scratch with Python
 [(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
