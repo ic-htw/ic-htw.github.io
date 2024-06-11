@@ -8,17 +8,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Relational Dataset Repository
-[(link)](https://relational-data.org/)
-
-- Q&A: Cockroach Labs’ Spencer Kimball on Distributing SQL
-[(link)](https://thenewstack.io/qa-cockroach-labs-spencer-kimball-on-distributing-sql/)
-
 - New Chunking Method for RAG-Systems
 [(link)](https://medium.datadriveninvestor.com/new-chunking-method-for-rag-systems-2eb3523d0420)
-
-- DSPy - git
-[(link)](https://github.com/stanfordnlp/dspy)
 
 - The Best Text Chunking Method?
 [(link)](https://hasanaboulhasan.medium.com/the-best-text-chunking-method-f5faeb243d80)

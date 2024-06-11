@@ -9,6 +9,7 @@ is_slide: 0
 - C3: Zero-shot Text-to-SQL with ChatGPT
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
 - Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
+- DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
 - Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
 - Retrieval-Augmented Generation for Large Language Models - A Survey
 - Retrieval-augmented GPT-3.5-based Text-to-SQL Framework with Sample-aware Prompting and Dynamic Revision Chain
@@ -75,6 +76,13 @@ is_slide: 0
 [(link)](https://medium.com/pcmag-access/what-are-chatgpt-plugins-the-next-phase-of-conversational-ai-is-here-a4c288300aa1)
 - Anomaly Detection in Time Series using ChatGPT
 [(link)](https://medium.com/@sztistvan/anomaly-detection-in-time-series-using-chatgpt-3fc48f958c88)
+
+# dspy
+- DSPy
+[(link)](https://dspy-docs.vercel.app/)
+
+- DSPy - git
+[(link)](https://github.com/stanfordnlp/dspy)
 
 
 # langchain
