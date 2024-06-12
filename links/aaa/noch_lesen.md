@@ -8,38 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- New Chunking Method for RAG-Systems
-[(link)](https://medium.datadriveninvestor.com/new-chunking-method-for-rag-systems-2eb3523d0420)
+- What We Learned from a Year of Building with LLMs (Part I)
+[(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
 
-- The Best Text Chunking Method?
-[(link)](https://hasanaboulhasan.medium.com/the-best-text-chunking-method-f5faeb243d80)
-
-- Exploring Diverse Techniques for Sentence Similarity
-[(link)](https://medium.com/@aneesha161994/exploring-diverse-techniques-for-sentence-similarity-bc62058c7972)
-
-- Apache NiFi
-[(link)](https://nifi.apache.org/)
-
-- Rebuilding Redis on S3 Express
-[(link)](https://blog.det.life/rebuilding-redis-on-s3-express-e2701c5dcc29)
-
-- Building LLaMA 3 From Scratch with Python
-[(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
-
-- Llama 3-V: Matching GPT4-V with a 100x smaller model and 500 dollars
-[(link)](https://aksh-garg.medium.com/llama-3v-building-an-open-source-gpt-4v-competitor-in-under-500-7dd8f1f6c9ee)
-
-- Why Representation Finetuning is the Most Efficient Approach Today?
-[(link)](https://towardsdatascience.com/why-representation-finetuning-is-the-most-efficient-approach-today-d589c2535c77)
-
-- How I Built A Beautiful Web App Purely in Python 
-[(link)](https://levelup.gitconnected.com/how-i-built-a-beautiful-web-app-purely-in-python-with-zero-experience-874731df6bc1)
-
-- Building Vector Databases with FastAPI and ChromaDB
-[(link)](https://levelup.gitconnected.com/building-vector-databases-with-fastapi-and-chromadb-0a1cd96fab08)
-
-- RAG/LLM and PDF: Conversion to Markdown Text with PyMuPDF
-[(link)](https://medium.com/@pymupdf/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf-03af00259b5d)
+- When Should You Use Distributed PostgreSQL for Gen AI Apps?
+[(link)](https://medium.com/@magda7817/when-should-you-use-distributed-postgresql-for-gen-ai-apps-64f2470cf1a1)
 
 - When to use GraphQL, gRPC, and REST?
 [(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)

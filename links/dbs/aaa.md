@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- Rebuilding Redis on S3 Express
+[(link)](https://blog.det.life/rebuilding-redis-on-s3-express-e2701c5dcc29)
 - Relational Dataset Repository
 [(link)](https://relational-data.org/)
 - Top 15 ETL tools in 2023

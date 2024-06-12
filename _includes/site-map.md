@@ -209,7 +209,7 @@ Datenmodellierung und Datenbanksysteme
 </button>
 
 <div class="DMDB w3-padding">
-    Intro<br>
+    Allgemein<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/intro.html">Überblick</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -218,6 +218,8 @@ Datenmodellierung und Datenbanksysteme
     <a  href="https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV">Video</a> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/share.html">Share</a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="/lv/dmdb/a/probeklausur/dmdb-probeklausur.pdf">Probeklausur</a> <br>
     Rel<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/dmdb/p/relmod.html">Relationenmodell</a> <br>

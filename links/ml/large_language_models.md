@@ -4,17 +4,23 @@ title: Large Language Models
 is_slide: 0
 ---
 # paper
+- Automatic Chain of Thought Prompting in Large Language Models
 - Benchmarking and Improving Text-to-SQL Generation under Ambiguity
 - Bridging Language and Data - Optimizing Text-to-SQL Generation in Large Language Models
 - C3: Zero-shot Text-to-SQL with ChatGPT
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
 - Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
+- DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction
 - DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
+- ReAct: Synergizing Reasoning and Acting in Language Models
+- ReFT: Representation Finetuning for Language Models
 - Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
 - Retrieval-Augmented Generation for Large Language Models - A Survey
 - Retrieval-augmented GPT-3.5-based Text-to-SQL Framework with Sample-aware Prompting and Dynamic Revision Chain
 - Text-to-SQL Empowered by Large Language Models - A Benchmark Evaluation
 - Towards Robustness of Text-to-SQL Models against Synonym Substitution
+- Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models
+
 
 # benchmarks
 - BIRD Text-to-SQL Benchmark
@@ -22,9 +28,19 @@ is_slide: 0
 - Spider Text-to-SQL Benchmark
 [(link)](https://yale-lily.github.io/spider)
 
+# chunking
+- New Chunking Method for RAG-Systems
+[(link)](https://medium.datadriveninvestor.com/new-chunking-method-for-rag-systems-2eb3523d0420)
+- The Best Text Chunking Method?
+[(link)](https://hasanaboulhasan.medium.com/the-best-text-chunking-method-f5faeb243d80)
 
 
-# aaa
+
+
+# divers
+- Building LLaMA 3 From Scratch with Python
+[(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
+
 - Building an Agent for Data Visualization (Plotly)
 [(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
 
@@ -104,6 +120,8 @@ is_slide: 0
 
 
 # rag case studies
+- Building Vector Databases with FastAPI and ChromaDB
+[(link)](https://levelup.gitconnected.com/building-vector-databases-with-fastapi-and-chromadb-0a1cd96fab08)
 - Adding Context to Retrieval-Augmented Generation with Gemini Function Calling and MongoDB Atlas
 [(link)](https://medium.com/google-cloud/adding-context-to-rag-with-gemini-function-calling-d6e78e705524)
 - A Complete Guide to RAG and LlamaIndex

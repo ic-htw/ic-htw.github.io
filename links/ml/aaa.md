@@ -4,6 +4,8 @@ title: aaa
 is_slide: 0
 ---
 # aaa
+- Table Transformer (TATR)
+[(link)](https://github.com/microsoft/table-transformer)
 - Correlation vs. Regression: A Key Difference That Many Analysts Miss
 [(link)](https://medium.com/the-stata-gallery/correlation-vs-regression-a-key-difference-that-many-analysts-miss-3770c9b368d9)
 - A New Coefficient of Correlation
