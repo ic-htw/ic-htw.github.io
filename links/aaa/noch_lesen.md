@@ -8,14 +8,23 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Databricks + Tabular
+[(link)](https://www.databricks.com/blog/databricks-tabular)
+
+- How to Get the Most out of Postgres Memory Settings
+[(link)](https://tembo.io/blog/optimizing-memory-usage)
+
+- PostgreSQL and Pgvector
+[(link)](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)
+
+- Making PostgreSQL a Better AI Database
+[(link)](https://www.timescale.com/blog/making-postgresql-a-better-ai-database/)
+
 - What We Learned from a Year of Building with LLMs (Part I)
 [(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
 
 - When Should You Use Distributed PostgreSQL for Gen AI Apps?
 [(link)](https://medium.com/@magda7817/when-should-you-use-distributed-postgresql-for-gen-ai-apps-64f2470cf1a1)
-
-- When to use GraphQL, gRPC, and REST?
-[(link)](https://medium.com/@techworldwithmilan/when-to-use-graphql-grpc-and-rest-9d541c0bcfe0)
 
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)

@@ -4,6 +4,7 @@ title: Large Language Models
 is_slide: 0
 ---
 # paper
+- AnyTool: Self-Reflective, Hierarchical Agents for Large-Scale API Calls
 - Automatic Chain of Thought Prompting in Large Language Models
 - Benchmarking and Improving Text-to-SQL Generation under Ambiguity
 - Bridging Language and Data - Optimizing Text-to-SQL Generation in Large Language Models
@@ -12,6 +13,8 @@ is_slide: 0
 - Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
 - DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction
 - DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
+- Generative Agents: Interactive Simulacra of Human Behavior
+- Judging llm-as-a-judge with mt-bench and chatbot arena
 - ReAct: Synergizing Reasoning and Acting in Language Models
 - ReFT: Representation Finetuning for Language Models
 - Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
@@ -20,6 +23,7 @@ is_slide: 0
 - Text-to-SQL Empowered by Large Language Models - A Benchmark Evaluation
 - Towards Robustness of Text-to-SQL Models against Synonym Substitution
 - Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models
+- Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models
 
 
 # benchmarks
