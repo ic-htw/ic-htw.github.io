@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Build a Generative Search Engine for Your Local Files Using Llama 3
+[(link)](https://towardsdatascience.com/how-to-build-a-generative-search-engine-for-your-local-files-using-llama-3-399551786965)
+
+- MiniCPM-Llama3-V 2.5 review: A game-changing open-source multimodal language model
+[(link)](https://medium.com/@simeon.emanuilov/minicpm-llama3-v-2-5-review-a-game-changing-open-source-multimodal-language-model-109d2e68989f)
+
+- Choosing the right RAG framework for your LLM: LlamaIndex or LangChain
+[(link)](https://generativeai.pub/choosing-the-right-rag-framework-for-your-llm-llamaindex-or-langchain-a89b9ffd7e41)
+
 - Databricks + Tabular
 [(link)](https://www.databricks.com/blog/databricks-tabular)
 
