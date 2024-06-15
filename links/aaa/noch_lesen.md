@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Apache DataFusion 
+[(link)](https://datafusion.apache.org/)
+
+- Using DuckDB for Embeddings and Vector Search
+[(link)](https://blog.brunk.io/posts/similarity-search-with-duckdb/)
+
+- The new wave of Composable Data Systems and the Interface to LLM agents
+[(link)](https://blog.getwren.ai/the-new-wave-of-composable-data-systems-and-the-interface-to-llm-agents-ec8f0a2e7141)
+
+- Ibis Basics
+[(link)](https://github.com/mebauer/ibis-basics)
+
 - How to Build a Generative Search Engine for Your Local Files Using Llama 3
 [(link)](https://towardsdatascience.com/how-to-build-a-generative-search-engine-for-your-local-files-using-llama-3-399551786965)
 

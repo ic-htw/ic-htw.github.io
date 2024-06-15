@@ -21,9 +21,6 @@ is_slide: 0
 
 
 # Allgemein
-- Forget `pip install`, Use uv Instead
-[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
-
 - Cheat Sheet
 [(link)](https://github.com/gto76/python-cheatsheet)
 
@@ -47,6 +44,18 @@ is_slide: 0
 
 - Python f-string Codes
 [(link)](https://ibexorigin.medium.com/have-mercy-on-yourself-and-learn-these-9-everyday-python-f-string-codes-e8104677d7c7)
+
+# astral
+- Announcing Astral, the company behind Ruff
+[(link)](https://astral.sh/blog/announcing-astral-the-company-behind-ruff)
+- uv: Python packaging in Rust
+[(link)](https://astral.sh/blog/uv)
+- Forget `pip install`, Use uv Instead
+[(link)](https://medium.com/bitgrit-data-science-publication/forget-pip-install-use-this-instead-754863c58f1e)
+- Ruff
+[(link)](https://github.com/astral-sh/ruff)
+- Ruff
+[(link)](https://docs.astral.sh/ruff/)
 
 
 
