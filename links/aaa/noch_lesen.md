@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- GLiNER: A Zero-Shot NER that outperforms ChatGPT and traditional NER models
+[(link)](https://netraneupane.medium.com/gliner-zero-shot-ner-outperforming-chatgpt-and-traditional-ner-models-1f4aae0f9eef)
+
+- Understanding the Performance Difference in Adding Columns in PostgreSQL
+[(link)](https://0xhagen.medium.com/understanding-the-performance-difference-in-adding-columns-in-postgresql-d46eaaa3f64a)
+
+- 3 Best Practices For Using AI To Query Your Database
+[(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
+
 - Apache DataFusion 
 [(link)](https://datafusion.apache.org/)
 
