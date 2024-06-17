@@ -37,6 +37,19 @@ is_slide: 0
 - yworks data explorer - pip install yfiles_jupyter_graphs
 [(link)](https://github.com/yWorks/yfiles-jupyter-graphs)
 
+# panama
+- ICIJ Case Study
+[(link)](https://neo4j.com/case-studies/the-international-consortium-of-investigative-journalists-icij/)
+- Analyzing the Panama Papers with Neo4j: Data Models, Queries & More
+[(link)](https://neo4j.com/blog/analyzing-panama-papers-neo4j/)
+- Graph Visualization of Panama Papers Data In Neo4j
+[(link)](https://medium.com/neo4j/graph-visualization-of-panama-papers-data-in-neo4j-9c08ca17039c)
+- Offshore Leaks Database 
+[(link)](https://offshoreleaks.icij.org/pages/database)
+- panama_papers_csv.cypher
+[(link)](https://gist.github.com/amaaradji/f697839cfa58e7ee69001e4a3ba6b2ff)
+
+
 # posts
 - Analyzing the Evolution of Life on Earth with Neo4j
 [(link)](https://towardsdatascience.com/analyzing-the-evolution-of-life-on-earth-with-neo4j-7daeeb1e032d)
