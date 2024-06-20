@@ -42,12 +42,12 @@ is_slide: 0
 
 
 # divers
+- unsloth
+[(link)](https://github.com/unslothai/unsloth)
 - Building LLaMA 3 From Scratch with Python
 [(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
-
 - Building an Agent for Data Visualization (Plotly)
 [(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
-
 - 6 Real-World Uses of Microsoft’s Newest Phi-3 Vision-Language Model
 [(link)](bbb)
 - What is Prompt Management for LLM Applications?
@@ -100,9 +100,11 @@ is_slide: 0
 # dspy
 - DSPy
 [(link)](https://dspy-docs.vercel.app/)
-
 - DSPy - git
 [(link)](https://github.com/stanfordnlp/dspy)
+- Prompt Like a Pro Using DSPy: A guide to build a better local RAG model using DSPy, Qdrant and Ollama
+[(link)](https://medium.com/aimpact-all-things-ai/prompt-like-a-pro-using-dspy-a-guide-to-build-a-better-local-rag-model-using-dspy-qdrant-and-d8011a3942d9)
+
 
 
 # langchain

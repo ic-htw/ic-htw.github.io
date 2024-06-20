@@ -8,11 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Prompt Like a Pro Using DSPy: A guide to build a better local RAG model using DSPy, Qdrant and Ollama
-[(link)](https://medium.com/aimpact-all-things-ai/prompt-like-a-pro-using-dspy-a-guide-to-build-a-better-local-rag-model-using-dspy-qdrant-and-d8011a3942d9)
+- Building an AI Text-to-Video Model from Scratch Using Python
+[(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
 
-- unsloth
-[(link)](https://github.com/unslothai/unsloth)
+- 10 Best Practices for Data Science
+[(link)](https://medium.com/bitgrit-data-science-publication/10-best-practices-for-data-science-21a748a410e4)
 
 - GLiNER: A Zero-Shot NER that outperforms ChatGPT and traditional NER models
 [(link)](https://netraneupane.medium.com/gliner-zero-shot-ner-outperforming-chatgpt-and-traditional-ner-models-1f4aae0f9eef)
