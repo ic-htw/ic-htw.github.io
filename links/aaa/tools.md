@@ -304,6 +304,12 @@ is_slide: 0
 - pythOnBoarding Bot
 [(link)](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
 
+# tableau
+- Parquet to Hyper Tableau: converting massive data for higher performance
+[(link)](https://medium.com/@guilhermenoronha2001/parquet-to-hyper-tableau-converting-massive-data-for-higher-performance-20e0b090eabb)
+- Parquet to Hyper
+[(link)](https://github.com/guilhermenoronha/parquet-to-hyper)
+
 # TexLife
 - home
 [(link)](https://www.tug.org/texlive/)
