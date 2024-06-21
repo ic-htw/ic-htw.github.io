@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Ray Infrastructure at Pinterest
+[(link)](https://medium.com/pinterest-engineering/ray-infrastructure-at-pinterest-0248efe4fd52)
+
+- A Deep Dive into High Performance HTTP Requests for Python Engineers
+[(link)](https://klaviyo.tech/a-deep-dive-into-high-performance-http-requests-for-python-engineers-2546772c50ae)
+
 - Building an AI Text-to-Video Model from Scratch Using Python
 [(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
 
