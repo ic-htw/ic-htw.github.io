@@ -8,6 +8,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How does LinkedIn process 4 Trillion Events every day?
+[(link)](https://medium.com/thedeephub/how-does-linkedin-process-4-trillion-events-every-day-d4500df3527c)
+
+- Spring Boot: How Many Requests Can Spring Boot Handle Simultaneously?
+[(link)](https://medium.com/@haiou-a/spring-boot-how-many-requests-can-spring-boot-handle-simultaneously-a57b41bdba6a)
+
+- A Tutorial on LLM
+[(link)](https://medium.com/@haifengl/a-tutorial-to-llm-f78dd4e82efc)
+
+- Stream Changes from a PostgreSQL Database to a Vector Store
+[(link)](https://ai.gopubby.com/stream-changes-from-a-postgresql-database-to-a-vector-store-83df7adc0bfa)
+
+- Build your own Large Language Model (LLM) From Scratch Using PyTorch
+[(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
+
+- Reliably Processing Trillions of Kafka Messages Per Day
+[(link)](https://medium.com/walmartglobaltech/reliably-processing-trillions-of-kafka-messages-per-day-23494f553ef9)
+
+- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
+[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
+
+- TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
+[(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
+
 - Ray Infrastructure at Pinterest
 [(link)](https://medium.com/pinterest-engineering/ray-infrastructure-at-pinterest-0248efe4fd52)
 
