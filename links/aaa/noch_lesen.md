@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Six Awesome Strategies to Visualize Temporal Changes Effectively
+[(link)](https://www.databrewer.co/blog/visualize-change-with-time)
+
+- Google's New Algorithms Just Made Searching Vector Databases Faster Than Ever
+[(link)](https://bytesurgery.substack.com/p/googles-new-algorithms-just-made)
+
+- SOAR: New algorithms for even faster vector search with ScaNN
+[(link)](https://research.google/blog/soar-new-algorithms-for-even-faster-vector-search-with-scann/)
+
+- Nemotron-4 15B: NVIDIA’s Powerful New Language Model
+[(link)](https://medium.com/@simeon.emanuilov/nemotron-4-15b-nvidias-powerful-new-language-model-73b5e477ad2c)
+
 - How does LinkedIn process 4 Trillion Events every day?
 [(link)](https://medium.com/thedeephub/how-does-linkedin-process-4-trillion-events-every-day-d4500df3527c)
 
