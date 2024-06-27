@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Text Embeddings: Comprehensive Guide
+[(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
+
 - Six Awesome Strategies to Visualize Temporal Changes Effectively
 [(link)](https://www.databrewer.co/blog/visualize-change-with-time)
 
