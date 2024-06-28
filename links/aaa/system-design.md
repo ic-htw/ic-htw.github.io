@@ -40,3 +40,6 @@ is_slide: 0
 - End-to-End Data Engineering System on Real Data with Kafka, Spark, Airflow, Postgres, and Docker
 [(link)](https://towardsdatascience.com/end-to-end-data-engineering-system-on-real-data-with-kafka-spark-airflow-postgres-and-docker-a70e18df4090)
 
+- Ray Infrastructure at Pinterest
+[(link)](https://medium.com/pinterest-engineering/ray-infrastructure-at-pinterest-0248efe4fd52)
+

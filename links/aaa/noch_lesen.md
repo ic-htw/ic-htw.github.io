@@ -8,20 +8,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
+[(link)](https://medium.com/@mauryaanoop3/bridging-the-gap-fine-tuning-phi-3-for-sql-query-generation-with-natural-language-queries-8fbe6a58b1ec)
+
 - Text Embeddings: Comprehensive Guide
 [(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
-
-- Six Awesome Strategies to Visualize Temporal Changes Effectively
-[(link)](https://www.databrewer.co/blog/visualize-change-with-time)
-
-- Google's New Algorithms Just Made Searching Vector Databases Faster Than Ever
-[(link)](https://bytesurgery.substack.com/p/googles-new-algorithms-just-made)
-
-- SOAR: New algorithms for even faster vector search with ScaNN
-[(link)](https://research.google/blog/soar-new-algorithms-for-even-faster-vector-search-with-scann/)
-
-- Nemotron-4 15B: NVIDIA’s Powerful New Language Model
-[(link)](https://medium.com/@simeon.emanuilov/nemotron-4-15b-nvidias-powerful-new-language-model-73b5e477ad2c)
 
 - How does LinkedIn process 4 Trillion Events every day?
 [(link)](https://medium.com/thedeephub/how-does-linkedin-process-4-trillion-events-every-day-d4500df3527c)
@@ -47,17 +38,11 @@ is_slide: 0
 - TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
 [(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
 
-- Ray Infrastructure at Pinterest
-[(link)](https://medium.com/pinterest-engineering/ray-infrastructure-at-pinterest-0248efe4fd52)
-
 - A Deep Dive into High Performance HTTP Requests for Python Engineers
 [(link)](https://klaviyo.tech/a-deep-dive-into-high-performance-http-requests-for-python-engineers-2546772c50ae)
 
 - Building an AI Text-to-Video Model from Scratch Using Python
 [(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
-
-- 10 Best Practices for Data Science
-[(link)](https://medium.com/bitgrit-data-science-publication/10-best-practices-for-data-science-21a748a410e4)
 
 - GLiNER: A Zero-Shot NER that outperforms ChatGPT and traditional NER models
 [(link)](https://netraneupane.medium.com/gliner-zero-shot-ner-outperforming-chatgpt-and-traditional-ner-models-1f4aae0f9eef)
@@ -68,29 +53,17 @@ is_slide: 0
 - 3 Best Practices For Using AI To Query Your Database
 [(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
 
-- Apache DataFusion 
-[(link)](https://datafusion.apache.org/)
-
 - Using DuckDB for Embeddings and Vector Search
 [(link)](https://blog.brunk.io/posts/similarity-search-with-duckdb/)
 
-- The new wave of Composable Data Systems and the Interface to LLM agents
-[(link)](https://blog.getwren.ai/the-new-wave-of-composable-data-systems-and-the-interface-to-llm-agents-ec8f0a2e7141)
-
 - Ibis Basics
 [(link)](https://github.com/mebauer/ibis-basics)
-
-- How to Build a Generative Search Engine for Your Local Files Using Llama 3
-[(link)](https://towardsdatascience.com/how-to-build-a-generative-search-engine-for-your-local-files-using-llama-3-399551786965)
 
 - MiniCPM-Llama3-V 2.5 review: A game-changing open-source multimodal language model
 [(link)](https://medium.com/@simeon.emanuilov/minicpm-llama3-v-2-5-review-a-game-changing-open-source-multimodal-language-model-109d2e68989f)
 
 - Choosing the right RAG framework for your LLM: LlamaIndex or LangChain
 [(link)](https://generativeai.pub/choosing-the-right-rag-framework-for-your-llm-llamaindex-or-langchain-a89b9ffd7e41)
-
-- Databricks + Tabular
-[(link)](https://www.databricks.com/blog/databricks-tabular)
 
 - How to Get the Most out of Postgres Memory Settings
 [(link)](https://tembo.io/blog/optimizing-memory-usage)

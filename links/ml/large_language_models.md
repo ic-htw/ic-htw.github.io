@@ -24,6 +24,7 @@ is_slide: 0
 - Towards Robustness of Text-to-SQL Models against Synonym Substitution
 - Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models
 - Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models
+- VeRA: Vector-based Random Matrix Adaptation
 
 
 # benchmarks
@@ -124,8 +125,15 @@ is_slide: 0
 - Self Hosting LLMs using Ollama
 [(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
 
+# nvidia
+- Nemotron-4 15B: NVIDIA’s Powerful New Language Model
+[(link)](https://medium.com/@simeon.emanuilov/nemotron-4-15b-nvidias-powerful-new-language-model-73b5e477ad2c)
+
+
 
 # rag case studies
+- How to Build a Generative Search Engine for Your Local Files Using Llama 3
+[(link)](https://towardsdatascience.com/how-to-build-a-generative-search-engine-for-your-local-files-using-llama-3-399551786965)
 - Building Vector Databases with FastAPI and ChromaDB
 [(link)](https://levelup.gitconnected.com/building-vector-databases-with-fastapi-and-chromadb-0a1cd96fab08)
 - Adding Context to Retrieval-Augmented Generation with Gemini Function Calling and MongoDB Atlas
@@ -303,5 +311,8 @@ is_slide: 0
 [(link)](https://blog.getwren.ai/how-we-design-our-semantic-engine-for-llms-84a00e6e3baa)
 - How Snowflake building the most powerful SQL LLM in the world
 [(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
+- The new wave of Composable Data Systems and the Interface to LLM agents
+[(link)](https://blog.getwren.ai/the-new-wave-of-composable-data-systems-and-the-interface-to-llm-agents-ec8f0a2e7141)
+
 
 

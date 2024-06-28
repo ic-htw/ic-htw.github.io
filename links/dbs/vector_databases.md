@@ -52,6 +52,14 @@ is_slide: 0
 - Faiss: The Missing Manual
 [(link)](https://www.pinecone.io/learn/series/faiss/)
 
+# google
+- Google's New Algorithms Just Made Searching Vector Databases Faster Than Ever
+[(link)](https://bytesurgery.substack.com/p/googles-new-algorithms-just-made)
+- SOAR: New algorithms for even faster vector search with ScaNN
+[(link)](https://research.google/blog/soar-new-algorithms-for-even-faster-vector-search-with-scann/)
+
+
+
 # Indexes
 - Similarity Search - Efimov
 [(link)](https://medium.com/@slavahead/list/similarity-search-598d963ad35e)

@@ -3,6 +3,8 @@ layout: default
 title: Visualization
 is_slide: 0
 ---
+- Six Awesome Strategies to Visualize Temporal Changes Effectively
+[(link)](https://www.databrewer.co/blog/visualize-change-with-time)
 - This Open Source Dashboard Solution With 59k Stars on GitHub astonished me — Apache Superset
 [(link)](https://medium.com/@thoren.lederer/this-open-source-dashboard-solution-with-59k-stars-on-github-astonished-me-apache-superset-6f1607405380)
 - Top 10 Power BI Dashboard Examples in 2024
