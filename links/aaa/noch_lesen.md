@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Did Google Just Kill Streamlit? 
+[(link)](https://medium.com/google-cloud/did-google-just-kill-streamlit-76f719d9e275)
+
+- How I Dockerized Apache Flink, Kafka, and PostgreSQL for Real-Time Data Streaming 
+[(link)](https://towardsdatascience.com/how-i-dockerized-apache-flink-kafka-and-postgresql-for-real-time-data-streaming-c4ce38598336)
+
 - Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
 [(link)](https://medium.com/@mauryaanoop3/bridging-the-gap-fine-tuning-phi-3-for-sql-query-generation-with-natural-language-queries-8fbe6a58b1ec)
 

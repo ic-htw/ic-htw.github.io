@@ -120,6 +120,8 @@ is_slide: 0
 # ollama
 - git
 [(link)](https://github.com/ollama/ollama)
+- API
+[(link)](https://github.com/ollama/ollama/blob/main/docs/api.md)
 - docker
 [(link)](https://hub.docker.com/r/ollama/ollama)
 - Self Hosting LLMs using Ollama
