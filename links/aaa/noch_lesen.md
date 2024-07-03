@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
+[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
+
+- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction-part 2 
+[(link)](https://medium.com/@enrico.randellini/exploring-the-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-part-2-904f6e1b9b2d)
+
 - Did Google Just Kill Streamlit? 
 [(link)](https://medium.com/google-cloud/did-google-just-kill-streamlit-76f719d9e275)
 
