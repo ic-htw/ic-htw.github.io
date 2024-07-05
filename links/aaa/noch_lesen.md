@@ -8,44 +8,23 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
-[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
+- ChatOllama
+[(link)](https://github.com/sugarforever/chat-ollama)
 
-- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction-part 2 
-[(link)](https://medium.com/@enrico.randellini/exploring-the-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-part-2-904f6e1b9b2d)
+- Psycopg 3.2 released
+[(link)](https://www.psycopg.org/articles/2024/06/30/psycopg-32-released/)
 
-- Did Google Just Kill Streamlit? 
-[(link)](https://medium.com/google-cloud/did-google-just-kill-streamlit-76f719d9e275)
-
-- How I Dockerized Apache Flink, Kafka, and PostgreSQL for Real-Time Data Streaming 
-[(link)](https://towardsdatascience.com/how-i-dockerized-apache-flink-kafka-and-postgresql-for-real-time-data-streaming-c4ce38598336)
-
-- Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
-[(link)](https://medium.com/@mauryaanoop3/bridging-the-gap-fine-tuning-phi-3-for-sql-query-generation-with-natural-language-queries-8fbe6a58b1ec)
+- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
+[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
 
 - Text Embeddings: Comprehensive Guide
 [(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
-
-- How does LinkedIn process 4 Trillion Events every day?
-[(link)](https://medium.com/thedeephub/how-does-linkedin-process-4-trillion-events-every-day-d4500df3527c)
-
-- Spring Boot: How Many Requests Can Spring Boot Handle Simultaneously?
-[(link)](https://medium.com/@haiou-a/spring-boot-how-many-requests-can-spring-boot-handle-simultaneously-a57b41bdba6a)
-
-- A Tutorial on LLM
-[(link)](https://medium.com/@haifengl/a-tutorial-to-llm-f78dd4e82efc)
 
 - Stream Changes from a PostgreSQL Database to a Vector Store
 [(link)](https://ai.gopubby.com/stream-changes-from-a-postgresql-database-to-a-vector-store-83df7adc0bfa)
 
 - Build your own Large Language Model (LLM) From Scratch Using PyTorch
 [(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
-
-- Reliably Processing Trillions of Kafka Messages Per Day
-[(link)](https://medium.com/walmartglobaltech/reliably-processing-trillions-of-kafka-messages-per-day-23494f553ef9)
-
-- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
-[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
 
 - TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
 [(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
@@ -65,20 +44,11 @@ is_slide: 0
 - 3 Best Practices For Using AI To Query Your Database
 [(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
 
-- Using DuckDB for Embeddings and Vector Search
-[(link)](https://blog.brunk.io/posts/similarity-search-with-duckdb/)
-
 - Ibis Basics
 [(link)](https://github.com/mebauer/ibis-basics)
 
 - MiniCPM-Llama3-V 2.5 review: A game-changing open-source multimodal language model
 [(link)](https://medium.com/@simeon.emanuilov/minicpm-llama3-v-2-5-review-a-game-changing-open-source-multimodal-language-model-109d2e68989f)
-
-- Choosing the right RAG framework for your LLM: LlamaIndex or LangChain
-[(link)](https://generativeai.pub/choosing-the-right-rag-framework-for-your-llm-llamaindex-or-langchain-a89b9ffd7e41)
-
-- How to Get the Most out of Postgres Memory Settings
-[(link)](https://tembo.io/blog/optimizing-memory-usage)
 
 - PostgreSQL and Pgvector
 [(link)](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)

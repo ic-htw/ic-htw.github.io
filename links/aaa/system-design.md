@@ -4,6 +4,15 @@ title: System Design
 is_slide: 0
 ---
 
+- Reliably Processing Trillions of Kafka Messages Per Day
+[(link)](https://medium.com/walmartglobaltech/reliably-processing-trillions-of-kafka-messages-per-day-23494f553ef9)
+
+- How does LinkedIn process 4 Trillion Events every day?
+[(link)](https://medium.com/thedeephub/how-does-linkedin-process-4-trillion-events-every-day-d4500df3527c)
+
+- How I Dockerized Apache Flink, Kafka, and PostgreSQL for Real-Time Data Streaming 
+[(link)](https://towardsdatascience.com/how-i-dockerized-apache-flink-kafka-and-postgresql-for-real-time-data-streaming-c4ce38598336)
+
 - Controlling Resource Consumption on a PostgreSQL Server Using Linux cgroup2
 [(link)](https://www.percona.com/blog/controlling-resource-consumption-on-a-postgresql-server-using-linux-cgroup2/)
 

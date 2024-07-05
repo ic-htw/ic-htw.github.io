@@ -125,6 +125,8 @@ is_slide: 0
 
 
 # misc
+- How to Get the Most out of Postgres Memory Settings
+[(link)](https://tembo.io/blog/optimizing-memory-usage)
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
 - How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template

@@ -43,10 +43,10 @@ is_slide: 0
 
 
 # divers
+- A Tutorial on LLM
+[(link)](https://medium.com/@haifengl/a-tutorial-to-llm-f78dd4e82efc)
 - unsloth
 [(link)](https://github.com/unslothai/unsloth)
-- Building LLaMA 3 From Scratch with Python
-[(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
 - Building an Agent for Data Visualization (Plotly)
 [(link)](https://medium.com/firebird-technologies/building-an-agent-for-data-visualization-plotly-39310034c4e9)
 - 6 Real-World Uses of Microsoft’s Newest Phi-3 Vision-Language Model
@@ -106,7 +106,9 @@ is_slide: 0
 - Prompt Like a Pro Using DSPy: A guide to build a better local RAG model using DSPy, Qdrant and Ollama
 [(link)](https://medium.com/aimpact-all-things-ai/prompt-like-a-pro-using-dspy-a-guide-to-build-a-better-local-rag-model-using-dspy-qdrant-and-d8011a3942d9)
 
-
+# llama
+- Building LLaMA 3 From Scratch with Python
+[(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
 
 # langchain
 - home
@@ -115,6 +117,10 @@ is_slide: 0
 [(link)](https://python.langchain.com/v0.1/docs/get_started/introduction/)
 - What Is LangChain?
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
+
+# nvidia
+- Nemotron-4 15B: NVIDIA’s Powerful New Language Model
+[(link)](https://medium.com/@simeon.emanuilov/nemotron-4-15b-nvidias-powerful-new-language-model-73b5e477ad2c)
 
 
 # ollama
@@ -127,9 +133,15 @@ is_slide: 0
 - Self Hosting LLMs using Ollama
 [(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
 
-# nvidia
-- Nemotron-4 15B: NVIDIA’s Powerful New Language Model
-[(link)](https://medium.com/@simeon.emanuilov/nemotron-4-15b-nvidias-powerful-new-language-model-73b5e477ad2c)
+# phi3
+- Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
+[(link)](https://medium.com/@mauryaanoop3/bridging-the-gap-fine-tuning-phi-3-for-sql-query-generation-with-natural-language-queries-8fbe6a58b1ec)
+- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
+[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
+loring the Microsoft Phi3 Vision Language model as OCR for document data extraction-part 2 
+[(link)](https://medium.com/@enrico.randellini/exploring-the-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-part-2-904f6e1b9b2d)
+- Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
+[(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
 
 
 

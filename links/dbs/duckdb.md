@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Using DuckDB for Embeddings and Vector Search
+[(link)](https://blog.brunk.io/posts/similarity-search-with-duckdb/)
 - How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
 [(link)](https://blog.getwren.ai/how-to-load-huggingface-datasets-into-duckdb-and-query-with-gpt-4o-c2db89519e4d)
 - Use Pandas Dataframe with SQL-Support as a Network Database — Thanks to DuckDB
