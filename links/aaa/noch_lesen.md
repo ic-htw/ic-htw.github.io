@@ -8,6 +8,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)
+[(link)](https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca)
+
+- Mastering RAG Chunking Techniques for Enhanced Document Processing
+[(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
+
+- Build a text to SQL chatbot with Claude-Sonnet 3.5.
+[(link)](https://arslanshahid-1997.medium.com/build-a-text-to-sql-chatbot-with-claude-sonnet-3-5-621a5bf9f922)
+
+- How to handle a Million Vector Embeddings in the RAG Applications
+[(link)](https://medium.datadriveninvestor.com/how-to-handle-a-million-embedding-vectors-in-the-rag-application-d10b875a0218)
+
 - ChatOllama
 [(link)](https://github.com/sugarforever/chat-ollama)
 
