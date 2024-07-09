@@ -25,6 +25,8 @@ is_slide: 0
 - Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models
 - Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models
 - VeRA: Vector-based Random Matrix Adaptation
+- LoRA: Low-Rank Adaptation of Large Language Models
+- LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
 
 
 # benchmarks
@@ -105,6 +107,14 @@ is_slide: 0
 [(link)](https://github.com/stanfordnlp/dspy)
 - Prompt Like a Pro Using DSPy: A guide to build a better local RAG model using DSPy, Qdrant and Ollama
 [(link)](https://medium.com/aimpact-all-things-ai/prompt-like-a-pro-using-dspy-a-guide-to-build-a-better-local-rag-model-using-dspy-qdrant-and-d8011a3942d9)
+
+# finetuning
+- LoRA: Low-Rank Adaptation of Large Language Models
+[(link)](https://github.com/microsoft/LoRA)
+- State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods
+[(link)](https://github.com/huggingface/peft)
+
+
 
 # llama
 - Building LLaMA 3 From Scratch with Python
