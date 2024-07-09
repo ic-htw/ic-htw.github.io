@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to use Meta Llama 3 to query MySQL database using Ollama and Wren AI
+[(link)](https://blog.getwren.ai/how-to-use-meta-llama-3-to-query-mysql-database-using-ollama-on-your-machine-2c087b204e41)
+
 - Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)
 [(link)](https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca)
 

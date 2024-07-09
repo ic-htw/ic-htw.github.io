@@ -4,6 +4,8 @@ title: aaa
 is_slide: 0
 ---
 # aaa
+- Linear Algebra Concepts Every Data Scientist Should Know
+[(link)](https://medium.com/bitgrit-data-science-publication/linear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd)
 - Table Transformer (TATR)
 [(link)](https://github.com/microsoft/table-transformer)
 - Correlation vs. Regression: A Key Difference That Many Analysts Miss
