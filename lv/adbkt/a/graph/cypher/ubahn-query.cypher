@@ -25,3 +25,14 @@ MATCH
   -[:N]->(s2:Stop)
   -[:IH]->(h2:Haltestelle)
 RETURN h1.name, s1.abfahrt, h2.name, s2.ankunft;
+
+MATCH 
+  (h1:Haltestelle {name: 'RüdesheimerPlatz'})
+  -[l:L]-+
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+RETURN reduce(acc = 0, x IN l | acc + x.distanz) AS distanz;
+
+MATCH 
+  (h1:Haltestelle {name: 'RüdesheimerPlatz'}),
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+RETURN h1, h2;
