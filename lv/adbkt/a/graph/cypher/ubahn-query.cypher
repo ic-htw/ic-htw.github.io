@@ -26,13 +26,23 @@ MATCH
   -[:IH]->(h2:Haltestelle)
 RETURN h1.name, s1.abfahrt, h2.name, s2.ankunft;
 
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  -[l:L]-+
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+)
+RETURN p;
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  -[l:L]-+
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+)
+RETURN p.segments;
+
 MATCH 
-  (h1:Haltestelle {name: 'RüdesheimerPlatz'})
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
   -[l:L]-+
   (h2:Haltestelle {name: 'Wittenbergplatz'})
 RETURN reduce(acc = 0, x IN l | acc + x.distanz) AS distanz;
 
-MATCH 
-  (h1:Haltestelle {name: 'RüdesheimerPlatz'}),
-  (h2:Haltestelle {name: 'Wittenbergplatz'})
-RETURN h1, h2;

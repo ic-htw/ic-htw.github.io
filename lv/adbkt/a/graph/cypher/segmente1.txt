@@ -1,0 +1,55 @@
+select h1.bez, h2.bez, s.laenge_in_meter, s.laenge_in_meter / 10 as sekunden
+from segment s
+     join haltestelle h1 on h1.hid=s.hid_a 
+     join haltestelle h2 on h2.hid=s.hid_b 
+order by h1.bez, h2.bez
+;
+
+bez                       |bez                       |laenge_in_meter|sekunden|
+--------------------------+--------------------------+---------------+--------+
+Adenauerplatz             |WilmersdorferStr          |            705|      70|
+AugsburgerStr             |SpichernStr               |            609|      60|
+BayerischerPlatz          |BerlinerStr               |            629|      62|
+BayerischerPlatz          |ViktoriaLuisePlatz        |            861|      86|
+BerlinerStr               |BlisseStr                 |            737|      73|
+BerlinerStr               |GüntzelStr                |            550|      55|
+BismarckStr               |RichardWagnerPlatz        |            637|      63|
+BismarckStr               |SophieCharlottePlatz      |            538|      53|
+BlisseStr                 |FehrbellinerPlatz         |            582|      58|
+Breitenbachplatz          |Podbielskiallee           |           1019|     101|
+BülowStr                  |Nollendorfplatz           |            628|      62|
+Bundesplatz               |BerlinerStr               |           1088|     108|
+DeutscheOper              |BismarckStr               |            279|      27|
+EisenacherStr             |BayerischerPlatz          |            689|      68|
+ErnstReuterPlatz          |DeutscheOper              |            894|      89|
+FehrbellinerPlatz         |HeidelbergerPlatz         |           1211|     121|
+FehrbellinerPlatz         |KonstanzerStr             |            481|      48|
+FriedrichWilhelmPlatz     |Bundesplatz               |            660|      66|
+Gleisdreieck              |BülowStr                  |            833|      83|
+Gleisdreieck              |KurfürstenStr             |            777|      77|
+Gneisenaustr              |Mehringdamm               |            555|      55|
+GüntzelStr                |SpichernStr               |            512|      51|
+Hansaplatz                |Turmstr                   |            872|      87|
+HeidelbergerPlatz         |RüdesheimerPlatz          |            796|      79|
+Hohenzollernplatz         |FehrbellinerPlatz         |            763|      76|
+InnsbruckerPlatz          |RathausSchöneberg         |            585|      58|
+Kaiserdamm                |TheodorHeussPlatz         |            592|      59|
+KaiserinAugustaStr        |AltTempelhof              |            606|      60|
+Kleistpark                |EisenacherStr             |            738|      73|
+KonstanzerStr             |Adenauerplatz             |            749|      74|
+Kurfürstendamm            |UhlandStr                 |            370|      37|
+Kurfürstendamm            |ZoologischerGarten        |            362|      36|
+KurfürstenStr             |Nollendorfplatz           |            614|      61|
+Mierendorffplatz          |Jungfernheide             |            624|      62|
+Nollendorfplatz           |Wittenbergplatz           |            813|      81|
+RathausSchöneberg         |BayerischerPlatz          |            604|      60|
+RathausSteglitz           |SchloßStr                 |            705|      70|
+SchloßStr                 |WaltherSchreiberPlatz     |            489|      48|
+SpichernStr               |Hohenzollernplatz         |            541|      54|
+SpichernStr               |Kurfürstendamm            |            801|      80|
+Turmstr                   |BirkenStr                 |            700|      70|
+WaltherSchreiberPlatz     |FriedrichWilhelmPlatz     |            717|      71|
+Wittenbergplatz           |AugsburgerStr             |            429|      42|
+Wittenbergplatz           |Kurfürstendamm            |            779|      77|
+Wittenbergplatz           |ZoologischerGarten        |            857|      85|
+ZoologischerGarten        |ErnstReuterPlatz          |            861|      86|
