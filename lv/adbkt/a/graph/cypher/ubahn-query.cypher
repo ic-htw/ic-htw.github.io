@@ -28,17 +28,41 @@ RETURN h1.name, s1.abfahrt, h2.name, s2.ankunft;
 
 MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
-  -[l:L]-+
+  -[l:L]-*
   (h2:Haltestelle {name: 'Wittenbergplatz'})
 )
-RETURN p;
+RETURN  [n IN nodes(p) | n.name];
 
 MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
-  -[l:L]-+
+  ((ha:Haltestelle)-[l:L]-(hb:Haltestelle))*
   (h2:Haltestelle {name: 'Wittenbergplatz'})
 )
-RETURN p.segments;
+RETURN [n IN nodes(p) | n.name];
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((ha:Haltestelle)-[l:L]-(hb:Haltestelle where hb.name<>'GüntzelStr'))*
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+)
+RETURN [n IN nodes(p) | n.name];
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((ha:Haltestelle)-[l:L]-(hb:Haltestelle))*
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+)
+WITH  collect(p) as pp
+RETURN [n IN nodes(pp[0]) | n.name];
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((ha:Haltestelle)-[l:L]-(hb:Haltestelle))*
+  (h2:Haltestelle {name: 'Wittenbergplatz'})
+)
+WITH  [r IN relationships(p)] as rels
+UNWIND rels as r
+RETURN startnode(r).name as von, endnode(r).name as bis, r.distanz as distanz;
 
 MATCH 
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
