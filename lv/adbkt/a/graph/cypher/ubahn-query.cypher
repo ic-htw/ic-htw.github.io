@@ -1,4 +1,11 @@
+// ------------------------------------------------------------------------------
+// Schema
+// ------------------------------------------------------------------------------
 CALL db.schema.visualization()
+
+// ------------------------------------------------------------------------------
+// Knoten
+// ------------------------------------------------------------------------------
 
 MATCH (h:Haltestelle)<-[inh:InH]-(s1:Stop)-[n:N]->(s2:Stop)
 RETURN h, s1, s2, inh, n;
@@ -13,11 +20,15 @@ RETURN h;
 MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
 RETURN h;
 
-MATCH (h:Haltestelle)
-RETURN count(*) as anzahl;
+// ------------------------------------------------------------------------------
+// Pfade fester Länge
+// ------------------------------------------------------------------------------
+MATCH (h:Haltestelle)<-[inh:InH]-(s1:Stop)-[n:N]->(s2:Stop)
+RETURN h, s1, s2, inh, n;
 
 MATCH (s:Stop)-[:IH]->(h:Haltestelle {name: 'HeidelbergerPlatz'})
 RETURN h.name, s.abfahrt;
+
 
 MATCH 
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
@@ -25,6 +36,52 @@ MATCH
   -[:N]->(s2:Stop)
   -[:IH]->(h2:Haltestelle)
 RETURN h1.name, s1.abfahrt, h2.name, s2.ankunft;
+
+
+// ------------------------------------------------------------------------------
+// Aggregationen
+// ------------------------------------------------------------------------------
+MATCH (h:Haltestelle)
+RETURN count(*) as anzahl;
+
+// ------------------------------------------------------------------------------
+// Pfade variabler Länge
+// ------------------------------------------------------------------------------
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((:Haltestelle)-[:L]->(:Haltestelle)){1,2}
+  (hn:Haltestelle)
+)
+RETURN [n IN nodes(p) | n.name];
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((:Haltestelle)-[:L]->(:Haltestelle))*
+  (hn:Haltestelle)
+)
+WITH p
+ORDER BY length(p)
+WITH [n IN nodes(p) | n.name] as haltestellen
+RETURN haltestellen;
+
+MATCH 
+  p1 = (
+    (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+    ((:Haltestelle)-[:L]->(:Haltestelle))*
+    (hm:Haltestelle)
+  ),
+  p2 = (
+    (hm)
+    ((:Haltestelle)-[:L]->(:Haltestelle))*
+  (hn:Haltestelle)
+)
+WITH p1, p2
+ORDER BY length(p1), length(p2)
+WITH 
+  [n IN nodes(p1) | n.name] as haltestellen1,
+  [n IN nodes(p2) | n.name] as haltestellen2
+RETURN haltestellen1, haltestellen2;
+
 
 MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
