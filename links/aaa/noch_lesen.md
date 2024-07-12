@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Here’s Why You Probably Don’t Need Langchain!
+[(link)](https://levelup.gitconnected.com/chat-with-csv-files-using-googles-gemini-flash-no-langchain-0e8f79d63348)
+
+- Claude 3.5 Sonnet vs. GPT-4o
+[(link)](https://hackernoon.com/de/Claude-35-Sonett-vs.-GPT-4O-%E2%80%93-eine-ehrliche-Bewertung)
+
+- Claude 3.5 Sonnet
+[(link)](https://www.anthropic.com/news/claude-3-5-sonnet)
+
 - How to use Meta Llama 3 to query MySQL database using Ollama and Wren AI
 [(link)](https://blog.getwren.ai/how-to-use-meta-llama-3-to-query-mysql-database-using-ollama-on-your-machine-2c087b204e41)
 
