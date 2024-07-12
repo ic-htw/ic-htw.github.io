@@ -6,7 +6,6 @@ CALL db.schema.visualization()
 // ------------------------------------------------------------------------------
 // Knoten
 // ------------------------------------------------------------------------------
-
 MATCH (h:Haltestelle)<-[inh:InH]-(s1:Stop)-[n:N]->(s2:Stop)
 RETURN h, s1, s2, inh, n;
 
@@ -56,8 +55,18 @@ RETURN [n IN nodes(p) | n.name];
 
 MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
-  ((:Haltestelle)-[:L]->(:Haltestelle))*
+  ((:Haltestelle)-[:L]->(:Haltestelle))+
   (hn:Haltestelle)
+)
+WITH p
+ORDER BY length(p)
+WITH [n IN nodes(p) | n.name] as haltestellen
+RETURN haltestellen;
+
+MATCH p = (
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((:Haltestelle)-[:L]->(:Haltestelle))+
+  (hn:Haltestelle WHERE NOT EXISTS {(hn)-[:L]->(:Haltestelle)})
 )
 WITH p
 ORDER BY length(p)
@@ -82,6 +91,13 @@ WITH
   [n IN nodes(p2) | n.name] as haltestellen2
 RETURN haltestellen1, haltestellen2;
 
+MATCH 
+  (h1:Haltestelle {name: 'HeidelbergerPlatz'})
+  ((ha:Haltestelle)-[:L]->(:Haltestelle))+
+  (hm:Haltestelle)
+  ((hb:Haltestelle)-[:L]->(:Haltestelle))+
+  (hn:Haltestelle)
+RETURN h1.name, [h IN ha | h.name], hm.name, [h IN hb | h.name], hn.name;
 
 MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
