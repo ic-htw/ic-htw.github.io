@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Getting From Denmark Hill to Gatwick Airport With Quantified Path Patterns
+[(link)](https://medium.com/neo4j/getting-from-denmark-hill-to-gatwick-airport-with-quantified-path-patterns-bed38da27ca1)
+
 - Missing Link: Die GPT-fizierung des Studiums
 [(link)](https://www.heise.de/meinung/Missing-Link-Die-GPT-fizierung-des-Studiums-9791173.html?seite=all)
 
