@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Missing Link: Die GPT-fizierung des Studiums
+[(link)](https://www.heise.de/meinung/Missing-Link-Die-GPT-fizierung-des-Studiums-9791173.html?seite=all)
+
+- GPT Fine-tuning
+[(link)](https://platform.openai.com/docs/guides/fine-tuning)
+
 - Here’s Why You Probably Don’t Need Langchain!
 [(link)](https://levelup.gitconnected.com/chat-with-csv-files-using-googles-gemini-flash-no-langchain-0e8f79d63348)
 
