@@ -8,6 +8,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why Your RAG Doesn’t Work
+[(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
+
 - Getting From Denmark Hill to Gatwick Airport With Quantified Path Patterns
 [(link)](https://medium.com/neo4j/getting-from-denmark-hill-to-gatwick-airport-with-quantified-path-patterns-bed38da27ca1)
 
