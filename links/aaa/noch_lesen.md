@@ -8,6 +8,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The new “window.ai” API will blow your mind.
+[(link)](https://javascript.plainenglish.io/the-new-window-ai-api-will-blow-your-mind-3eb8b4704ca0)
+
+- Cost-Effective Text Embedding: Leveraging Ollama Local Models with Azure SQL Databases
+[(link)](https://medium.com/@lawrenceteixeira/cost-effective-text-embedding-leveraging-ollama-local-models-with-azure-sql-databases-2e3c6345f7e4)
+
 - Why Your RAG Doesn’t Work
 [(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
 

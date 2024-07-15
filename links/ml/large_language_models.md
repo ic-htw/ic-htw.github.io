@@ -10,11 +10,14 @@ is_slide: 0
 - Bridging Language and Data - Optimizing Text-to-SQL Generation in Large Language Models
 - C3: Zero-shot Text-to-SQL with ChatGPT
 - Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+- Direct Preference Optimization: Your Language Model is Secretly a Reward Model
 - Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
 - DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction
 - DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
 - Generative Agents: Interactive Simulacra of Human Behavior
 - Judging llm-as-a-judge with mt-bench and chatbot arena
+- LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
+- LoRA: Low-Rank Adaptation of Large Language Models
 - ReAct: Synergizing Reasoning and Acting in Language Models
 - ReFT: Representation Finetuning for Language Models
 - Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
@@ -25,8 +28,7 @@ is_slide: 0
 - Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models
 - Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models
 - VeRA: Vector-based Random Matrix Adaptation
-- LoRA: Low-Rank Adaptation of Large Language Models
-- LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
+
 
 
 # benchmarks
