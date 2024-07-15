@@ -25,6 +25,9 @@ MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
 RETURN h.name as haltestelle
 ORDER BY h.name;
 
+// Folie
+MATCH (h:Haltestelle)
+RETURN count(*);
 
 // ------------------------------------------------------------------------------
 // Pfade fester Länge - L
@@ -209,22 +212,50 @@ ORDER BY distanz;
 // Aufgaben
 // ------------------------------------------------------------------------------
 MATCH 
-  (s:Stop {linie: 'U3'})-[:IH]->(h:Haltestelle)
-RETURN
-  h.name;
-
-MATCH
-  (s1:Stop WHERE NOT EXISTS {(:Stop)-[:N]->(s1)})
-  -[n:N]->+
-  (s2:Stop WHERE NOT EXISTS {(s2)-[:N]->(:Stop)})
+  (s:Stop)-[:IH]->(h:Haltestelle)
 WITH 
-  nodes(p) as stops
-RETURN [];
+  h.name as haltestelle, s.linie as linie
+ORDER 
+  BY haltestelle, linie
+WITH
+  haltestelle , collect(linie) as linien
+WHERE 
+  size(linien) > 1
+RETURN
+  haltestelle, linien;
 
+MATCH (sa:Stop WHERE NOT EXISTS {(:Stop)-[:N]->(sa)})
+MATCH (sa)-[:IH]->(ha:Haltestelle)
 MATCH p = (
-  (h1:Haltestelle WHERE NOT EXISTS {(:Haltestelle)-[:L]->(h1)})
-  ((hx:Haltestelle)-[:L]->(hy:Haltestelle) 
-    where 1=1)+
-  (h2:Haltestelle WHERE NOT EXISTS {(h2)-[:L]->(:Haltestelle)})
+  (sa)
+  ((sx:Stop)-[:N]->(sy:Stop))+
+  (se:Stop WHERE NOT EXISTS {(se)-[:N]->(:Stop)})
 )
-RETURN nodes(p);
+UNWIND nodes(p) as sz
+MATCH (sz)-[:IH]->(hz:Haltestelle)
+RETURN sa.linie as linie, collect(hz.name)
+ORDER BY linie;
+
+MATCH 
+  (ha:Haltestelle {name: 'HeidelbergerPlatz'}),
+  (he:Haltestelle {name: 'BerlinerStr'})
+MATCH 
+  (sa:Stop)-[:IH]->(ha)
+  -[:N]->+
+  (sx:Stop)
+  -[:N]->+
+  (se:Stop)-[:IH]->(he:Haltestelle),
+  //
+  (sx:Stop)-[:IH]->(hx:Haltestelle)
+RETURN ha.name, hx.name, he.name;
+
+
+MATCH 
+  (ha:Haltestelle {name: 'HeidelbergerPlatz'}),
+  (he:Haltestelle {name: 'BerlinerStr'})
+MATCH 
+  (sa:Stop)-[:IH]->(ha)
+MATCH
+  (sa)-[:N]->+(sx:Stop)
+MATCH (sx)-[:IH]->(hx:Haltestelle)
+RETURN ha.name, hx.name, he.name
