@@ -8,6 +8,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Improving Performance for Data Visualization AI Agent
+[(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
+
+- Why I Use Open Weights LLMs Locally
+[(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
+
+- 50+ Open-Source Options for Running LLMs Locally
+[(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
+
 - The new “window.ai” API will blow your mind.
 [(link)](https://javascript.plainenglish.io/the-new-window-ai-api-will-blow-your-mind-3eb8b4704ca0)
 

@@ -18,6 +18,7 @@ is_slide: 0
 - Judging llm-as-a-judge with mt-bench and chatbot arena
 - LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
 - LoRA: Low-Rank Adaptation of Large Language Models
+- QLoRA: Efficient Finetuning of Quantized LLMs
 - ReAct: Synergizing Reasoning and Acting in Language Models
 - ReFT: Representation Finetuning for Language Models
 - Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
