@@ -50,6 +50,31 @@ RETURN h1.name, h2.name, l.distanz
 ORDER BY h1.name, h2.name;
 
 // ------------------------------------------------------------------------------
+// Eindeutigkeit Relationship Matching
+// ------------------------------------------------------------------------------
+MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'})
+RETURN h1.name, h2.name, l.distanz;
+
+MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'}),
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;
+
+MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'})
+MATCH 
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;
+
+
+// ------------------------------------------------------------------------------
 // Pfade fester Länge - S, N
 // ------------------------------------------------------------------------------
 // Folie - Graph + Text
@@ -251,11 +276,55 @@ RETURN ha.name, hx.name, he.name;
 
 
 MATCH 
-  (ha:Haltestelle {name: 'HeidelbergerPlatz'}),
-  (he:Haltestelle {name: 'BerlinerStr'})
+  (ha:Haltestelle {name: 'HeidelbergerPlatz'}), (he:Haltestelle {name: 'BlisseStr'}),
+  (sa:Stop)-[:IH]->(ha), (se:Stop)-[:IH]->(he),
+  (sa)-[:N]->+(sx:Stop),
+  (sx)-[:IH]->(hx:Haltestelle),
+  (sy)-[:IH]->(hx:Haltestelle),
+  (sy)-[:N]->+(se) 
+// WHERE sx.ankunft < sy.abfahrt
+RETURN 
+  ha.name, sa.abfahrt, sa.linie,
+  hx.name, sx.ankunft, sy.abfahrt, sy.linie,
+  he.name, se.ankunft;
+
+// SpichernStr
+// ZoologischerGarten
 MATCH 
-  (sa:Stop)-[:IH]->(ha)
+  (ha:Haltestelle {name: 'HeidelbergerPlatz'}), (he:Haltestelle {name: 'SpichernStr'}),
+  (sa:Stop)-[:IH]->(ha), (se:Stop)-[:IH]->(he),
+  (sa)-[:N]->+(sx:Stop),
+  (sx)-[:IH]->(hx:Haltestelle),
+  (sy)-[:IH]->(hx:Haltestelle),
+  (sy)-[:N]->+(se) 
+RETURN 
+  ha.name, sa.abfahrt, sa.linie,
+  hx.name, sx.ankunft, sy.abfahrt, sy.linie,
+  he.name, se.ankunft;
+
+MATCH 
+  (ha:Haltestelle {name: 'HeidelbergerPlatz'}), (he:Haltestelle {name: 'SpichernStr'}),
+  (sa:Stop)-[:IH]->(ha), (se:Stop)-[:IH]->(he),
+  (sa)-[:N]->+(sx:Stop),
+  (sx)-[:IH]->(hx:Haltestelle)
 MATCH
-  (sa)-[:N]->+(sx:Stop)
-MATCH (sx)-[:IH]->(hx:Haltestelle)
-RETURN ha.name, hx.name, he.name
+  (sy)-[:IH]->(hx:Haltestelle),
+  (sy)-[:N]->+(se) 
+RETURN 
+  ha.name, sa.abfahrt, sa.linie,
+  hx.name, sx.ankunft, sy.abfahrt, sy.linie,
+  he.name, se.ankunft;
+
+
+
+// ------------------------------------------------------------------------------
+// Kürzeste Pfade
+// ------------------------------------------------------------------------------
+MATCH p = SHORTEST 1
+  (ha:Haltestelle {name: 'KonstanzerStr'})
+  -[:L]->+
+  (he:Haltestelle {name: 'SpichernStr'})
+RETURN [n IN nodes(p) | n.name];
+
+
+
