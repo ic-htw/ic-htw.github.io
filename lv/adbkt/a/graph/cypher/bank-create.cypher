@@ -100,18 +100,19 @@ CREATE
 
   (kto02)-[:UEB {betrag: 200}]->(kto09),
 
-  (kto07)-[:UEB {betrag: 1000}]->(kto01),
+  (kto05)-[:UEB {betrag: 1000}]->(kto09),
+
+  (kto07)-[:UEB {betrag: 1000}]->(kto05),
 
   (kto08)-[:UEB {betrag: 250}]->(kto04),
   (kto08)-[:UEB {betrag: 1000}]->(kto07),
 
   (kto09)-[:UEB {betrag: 300}]->(kto03),
   (kto09)-[:UEB {betrag: 1000}]->(kto10),
-
   (kto09)-[:UEB {betrag: 350}]->(kto08),
   (kto09)-[:UEB {betrag: 1000}]->(kto08),
 
-  (kto10)-[:UEB {betrag: 1100}]->(kto01)
+  (kto10)-[:UEB {betrag: 1100}]->(kto05)
 
 /*
   (kto0 )-[:UEB {betrag: 300}]->(kto0),

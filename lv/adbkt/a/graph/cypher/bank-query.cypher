@@ -36,8 +36,45 @@ MATCH
   (uk:Unternehmenskunde)<-[:KTO]-(kto1:Konto)<-[ueb:UEB]-(kto2:Konto)-[:KTO]->(pk:Privatkunde)
 RETURN uk.name as unternehmen, pk.name as person, ueb.betrag as betrag;
 
+MATCH 
+  (k1:Kunde {name: 'Zement GmbH'})<-[:KTO]-(:Konto)
+  -[ueb1:UEB]->(:Konto)
+  -[:KTO]->(k2:Kunde)
+RETURN k1.name, k2.name, ueb1.betrag;
+
+MATCH 
+  (k1:Kunde {name: 'Zement GmbH'})<-[:KTO]-(:Konto)
+  -[ueb1:UEB]->(kto1:Konto)-[ueb2:UEB]->(kto2:Konto)
+  -[:KTO]->(kn:Kunde)
+RETURN k1.name, ueb1.betrag, ueb2.betrag, kn.name;
+
+MATCH 
+  (k1:Kunde {name: 'Zement GmbH'})<-[:KTO]-(:Konto)
+  ((ktox:Konto)-[ueb:UEB]->(ktoy:Konto))+
+  (kton:Konto)-[:KTO]->(kn:Kunde)
+WITH 
+  k1.name as kunde1, 
+  [u IN ueb | u.betrag] as betraege,
+  kn.name as kundeN
+WHERE 
+  all(b IN betraege WHERE b = betraege[0])
+  AND size(betraege) > 1
+RETURN kunde1, betraege, kundeN;
+
 MATCH p = 
-  (zem:Kunde {name: 'Zement GmbH'})
-  ((kx:Kunde)<-[:KTO]-(ktox:Konto)-[ueb:UEB]->(ktoy:Konto)-[:KTO]->(ky:Kunde))+
-  (k:Kunde)
-RETURN zem.name, k.name, ueb;
+  (k1:Kunde {name: 'Zement GmbH'})<-[:KTO]-(:Konto)
+  ((ktox:Konto)-[ueb:UEB]->(ktoy:Konto))+
+  (kton:Konto)-[:KTO]->(kn:Kunde)
+RETURN 
+  nodes(p);
+
+MATCH p = 
+  (ku1:Kunde)<-[:KTO]-(:Konto)
+  ((ktox:Konto)-[ueb:UEB]->(ktoy:Konto))+
+  (kton:Konto)-[:KTO]->(kuN:Kunde)
+WHERE 
+  ku1.name = 'Zement GmbH'
+//  AND kuN.name = 'Zement GmbH'
+RETURN 
+  nodes(p);
+
