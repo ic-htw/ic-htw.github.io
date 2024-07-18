@@ -1,0 +1,66 @@
+home:
+  - t: Lehrveranstaltungen
+    ts: Lehre
+    url: /home/lv/lv.html
+    sub:
+      - t: Datenmodellierung und Datenbanksysteme
+        ts: DMDB
+        url: /home/lv/dmdb/p/dmdb.html
+        sub:
+          - t: Allgemein
+            ts: Allgemein
+            url: #
+            sub:
+              - t: Überblick
+                ts: Überblick
+                url: #
+              - t: Plan
+                ts: Plan
+                url: #
+          - t: Rel
+            ts: Rel
+            url: #
+            sub:
+              - t: Relationenmodell
+                ts: Relationenmodell
+                url: #
+              - t: Excel / Rel
+                ts: Excel / Rel
+                url: #
+          - t: ER
+            ts: ER
+            url: #
+            sub:
+              - t: ER-Modelle 1
+                ts: ER-Modelle 1
+                url: #
+              - t: ER-Modelle 2
+                ts: ER-Modelle 2
+                url: #
+      - t: Datenbanktechnologien
+        ts: DBTECH
+        url: /home/lv/dbtech/p/dbtech.html
+  - t: Links
+    ts: Links
+    url: /home/links/links.html
+    sub:
+      - t: Allgemeines
+        ts: Allgemeines
+        url: /home/links/allgemeines/1-allgemeines.html
+        sub:
+          - t: aaa
+            ts: aaa
+            url: /home/links/allgemeines/aaa.html
+          - t: Blogs/Sites
+            ts: Blogs/Sites
+            url: /home/links/allgemeines/blogs-sites.html
+      - t: Datenbanksysteme
+        ts: DBS
+        url: /home/links/dbs/1-dbs.html
+        sub:
+          - t: aaa
+            ts: aaa
+            url: /home/links/dbs/aaa.html
+          - t: Cassandra
+            ts: Cassandra
+            url: /home/links/dbs/cassandra.html

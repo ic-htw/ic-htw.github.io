@@ -101,6 +101,67 @@ function slidemodeHandle() {
     }
 }
 
+// ----------------------------------------------------------------------------
+// Navigation Hide 
+// ----------------------------------------------------------------------------
+function setNavLevel1() {
+    setNavitemOff('L2');
+    navitemsHandle();
+}
+
+function setNavLevel2() {
+    setNavitemOn('L2');
+    setNavitemOff('L3');
+    navitemsHandle();
+}
+
+function setNavLevel3() {
+    setNavitemOn('L2');
+    setNavitemOn('L3');
+    setNavitemOff('L4');
+    navitemsHandle();
+}
+
+function setNavLevel4() {
+    setNavitemOn('L2');
+    setNavitemOn('L3');
+    setNavitemOn('L4');
+    navitemsHandle();
+}
+
+function setAllNavitemsOff() {
+    setNavitemOff('L2');
+    setNavitemOff('L3');
+    setNavitemOff('L4');
+    setNavitemOff('ADBKT');
+    setNavitemOff('DataMan');
+    setNavitemOff('DbTech');
+    setNavitemOff('DMDB');
+    setNavitemOff('PBI');
+    setNavitemOff('Sonstiges');
+    setNavitemOff('AAA');
+    setNavitemOff('DBS');
+    setNavitemOff('ML');
+    setNavitemOff('PROG');
+    navitemsHandle();
+}
+
+function setAllNavitemsOn() {
+    setNavitemOn('L2');
+    setNavitemOn('L3');
+    setNavitemOn('L4');
+    setNavitemOn('ADBKT');
+    setNavitemOn('DataMan');
+    setNavitemOn('DbTech');
+    setNavitemOn('DMDB');
+    setNavitemOn('PBI');
+    setNavitemOn('Sonstiges');
+    setNavitemOn('AAA');
+    setNavitemOn('DBS');
+    setNavitemOn('ML');
+    setNavitemOn('PROG');
+    navitemsHandle();
+}
 
 function navitemToggle(id) {
     console.log(id);
@@ -125,34 +186,6 @@ function setNavitemOn(id) {
     localStorage.setItem(id, 1);
 }
 
-function setAllNavitemsOff() {
-    setNavitemOff('ADBKT');
-    setNavitemOff('DataMan');
-    setNavitemOff('DbTech');
-    setNavitemOff('DMDB');
-    setNavitemOff('PBI');
-    setNavitemOff('Sonstiges');
-    setNavitemOff('AAA');
-    setNavitemOff('DBS');
-    setNavitemOff('ML');
-    setNavitemOff('PROG');
-    navitemsHandle();
-}
-
-function setAllNavitemsOn() {
-    setNavitemOn('ADBKT');
-    setNavitemOn('DataMan');
-    setNavitemOn('DbTech');
-    setNavitemOn('DMDB');
-    setNavitemOn('PBI');
-    setNavitemOn('Sonstiges');
-    setNavitemOn('AAA');
-    setNavitemOn('DBS');
-    setNavitemOn('ML');
-    setNavitemOn('PROG');
-    navitemsHandle();
-}
-
 function navitemsHandle() {
     for (let i = 0; i < localStorage.length; i++) {
         let id = localStorage.key(i);
@@ -164,6 +197,9 @@ function navitemsHandle() {
     }
 }
 
+// ----------------------------------------------------------------------------
+// Second Sidebar
+// ----------------------------------------------------------------------------
 function fillSecondSidebar() {
     const children = Object.entries(document.getElementById("ct").childNodes);
     const headers = children.filter(a => a[1].nodeName[0] === "H").map(a => [a[1].textContent, a[1].id])

@@ -1,0 +1,25 @@
+<div class="w3-bar"> 
+  <button onclick="setNavLevel1()" class="w3-button w3-theme">1</button>
+  <button onclick="setNavLevel2()" class="w3-button w3-theme">2</button>
+  <button onclick="setNavLevel3()" class="w3-button w3-theme">3</button>
+  <button onclick="setNavLevel4()" class="w3-button w3-theme">4</button>
+</div>
+  
+{% if page.nav == "home" %}
+  {% assign r = site.data.main.home %}
+  {% include nav-loop.html root=r %}
+{% elsif page.nav == "dmdb"%}
+  {% assign r = site.data.main.home[0].sub[0].sub %}
+  {% include nav-loop.html root=r %}
+{% elsif page.nav == "links"%}
+  {% assign r = site.data.main.home[1].sub %}
+  {% include nav-loop.html root=r %}
+{% elsif page.nav == "links-allgemeines"%}
+  {% assign r = site.data.main.home[1].sub[0].sub %}
+  {% include nav-loop.html root=r %}
+{% elsif page.nav == "links-dbs"%}
+  {% assign r = site.data.main.home[1].sub[01].sub %}
+  {% include nav-loop.html root=r %}
+{% else %}
+  Fehler
+{% endif %}

@@ -1,0 +1,88 @@
+---
+pmapx: map-home.html
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/main.js"></script>
+
+</head>
+
+<body onload="init()">
+  <!-- Navbar -->
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-small">
+    <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-small w3-theme" href="javascript:void(0)"
+      onclick="toggleSidebar('sb1', 'ovl1')"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item  w3-button w3-theme w3-left fa fa-angle-double-down" onclick="slideModeSetOn()"></a>
+    <a class="w3-bar-item  w3-button w3-theme w3-left fa fa-angle-double-up" onclick="slideModeSetOff()"></a>
+    <a class="w3-bar-item  w3-theme w3-right">{{page.title}}</a>
+  </div>
+
+  <!-- Sidebars -->
+  <nav id="sb1" class="w3-sidebar w3-bar-block w3-collapse w3-small w3-theme-l5 w3-animate-left">
+    {% include nav.html %}
+  </nav>
+
+  <nav id="sb2" class="w3-sidebar w3-bar-block w3-small w3-theme-l5 w3-animate-right" style="display:none;right:0;">
+    <div id="sb2cont"></div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div id="ovl1" class="w3-overlay w3-hide-large" onclick="closeSidebar('sb1', 'ovl1')"></div>
+  <div id="ovl2" class="w3-overlay w3-hide-large" onclick="closeSidebar('sb2', 'ovl2')"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+    <div class="w3-row w3-padding-32">
+      <div id="ct" class="w3-container">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-bar w3-bottom w3-theme w3-small">
+    {% if page.is_slide == 0 %}
+    <a class="w3-bar-item w3-button w3-left w3-small w3-theme" href="javascript:void(0)"
+      onclick="toggleSidebar('sb2', 'ovl2')"><i class="fa fa-bars"></i></a>
+      <script>
+        slideModeSetOff();
+      </script>
+    {% endif %}
+    <a class="w3-bar-item w3-button w3-theme w3-left" href="#">Top</a>
+    <a class="w3-bar-item w3-button w3-theme w3-left" href="/home/home.html">Home</a>
+    {% if page.is_slide == 1 %}
+    {% for i in (0..page.n) reversed %}
+    <a id="btn-{{i}}" href="#{{i}}" class="w3-button w3-bar-item w3-right" onclick="activateButton(this)">{{i}}</a>
+    {% endfor %}
+    <script>
+      slideModeSetOn();
+    </script>
+    {% endif %}
+  </div>
+
+  <script>
+    let slideNo = -1;
+    hljs.highlightAll();
+  </script>
+
+</body>
+
+</html>
