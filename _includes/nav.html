@@ -11,14 +11,25 @@
 {% elsif page.nav == "dmdb"%}
   {% assign r = site.data.main.home[0].sub[0].sub %}
   {% include nav-loop.html root=r %}
+<!-- Links -->
 {% elsif page.nav == "links"%}
   {% assign r = site.data.main.home[1].sub %}
   {% include nav-loop.html root=r %}
+<!-- Allgemeines -->
 {% elsif page.nav == "links-allgemeines"%}
   {% assign r = site.data.main.home[1].sub[0].sub %}
   {% include nav-loop.html root=r %}
+<!-- DBS -->
 {% elsif page.nav == "links-dbs"%}
-  {% assign r = site.data.main.home[1].sub[01].sub %}
+  {% assign r = site.data.main.home[1].sub[1].sub %}
+  {% include nav-loop.html root=r %}
+<!-- ML -->
+{% elsif page.nav == "links-ml"%}
+  {% assign r = site.data.main.home[1].sub %}
+  {% include nav-loop.html root=r %}
+<!-- PROG -->
+{% elsif page.nav == "links-prog"%}
+  {% assign r = site.data.main.home[1].sub %}
   {% include nav-loop.html root=r %}
 {% else %}
   Fehler

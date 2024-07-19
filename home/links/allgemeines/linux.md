@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default1
+nav: links-allgemeines
 title: Linux
 is_slide: 0
 ---

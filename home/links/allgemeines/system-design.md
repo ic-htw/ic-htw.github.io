@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default1
+nav: links-allgemeines
 title: System Design
 is_slide: 0
 ---

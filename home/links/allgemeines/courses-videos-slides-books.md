@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default1
+nav: links-allgemeines
 title: Kurse, Videos, Folien, Bücher
 is_slide: 0
 ---

@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: default1
+nav: links-allgemeines
 title: Services
 is_slide: 0
 ---

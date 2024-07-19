@@ -1,5 +1,6 @@
 ---
 layout: default1
+nav: links-allgemeines
 title: Blogs / Sites
 is_slide: 0
 ---

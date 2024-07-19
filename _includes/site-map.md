@@ -22,7 +22,7 @@ Collapse / Expand
   </button>
 </div>
 
-<a  href="/home/home.html">Main</a>
+<a  href="/home/home.html">Neu</a>
 
 
 <!--
@@ -354,34 +354,6 @@ Links
 <p class="w3-large w3-theme ic-neg3">Links</p>
 
 
-
-
-<!--
-====================================================
-AAA
-==================================================== 
--->  
-<button 
-  onclick="navitemToggle('AAA')"
-  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
-{% if include.mode == "short" %}
-AAA
-{% else %}
-AAA
-{% endif %}
-</button>
-
-<div class="AAA w3-padding">
-    <a  href="/links/aaa/aaa.html">aaa</a> <br>
-    <a  href="/links/aaa/blogs-sites.html">Blogs, Sites</a> <br>
-    <a  href="/links/aaa/courses-videos-slides-books.html">Courses, Videos, Slides, Books</a> <br>
-    <a  href="/links/aaa/linux.html">Linux</a> <br>
-    <a  href="/links/aaa/noch_lesen.html">Noch lesen</a> <br>
-    <a  href="/links/aaa/posts.html">Posts</a> <br>
-    <a  href="/links/aaa/services.html">Services</a> <br>
-    <a  href="/links/aaa/system-design.html">System Design</a> <br>
-    <a  href="/links/aaa/tools.html">Tools</a> <br>
-</div> 
 
 
 <!--

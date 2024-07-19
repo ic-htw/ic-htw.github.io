@@ -54,6 +54,27 @@ home:
           - t: Blogs/Sites
             ts: Blogs/Sites
             url: /home/links/allgemeines/blogs-sites.html
+          - t: Kurse, Videos, Folien, Bücher
+            ts: Kurse, Videos, Folien, Bücher
+            url: /home/links/allgemeines/courses-videos-slides-books.html
+          - t: Linux
+            ts: Linux
+            url: /home/links/allgemeines/linux.html
+          - t: Noch lesen
+            ts: Noch lesen
+            url: /home/links/allgemeines/noch-lesen.html
+          - t: Posts
+            ts: Posts
+            url: /home/links/allgemeines/posts.html
+          - t: Services
+            ts: Services
+            url: /home/links/allgemeines/services.html
+          - t: System Design
+            ts: System Design
+            url: /home/links/allgemeines/system-design.html
+          - t: Tools
+            ts: Tools
+            url: /home/links/allgemeines/tools.html
       - t: Datenbanksysteme
         ts: DBS
         url: /home/links/dbs/1-dbs.html
