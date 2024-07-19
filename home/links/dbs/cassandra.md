@@ -1,6 +1,6 @@
 ---
 layout: default1
-title: Cassandra
+nav: links-dbs
 is_slide: 0
 ---
 # official

@@ -25,11 +25,11 @@
   {% include nav-loop.html root=r %}
 <!-- ML -->
 {% elsif page.nav == "links-ml"%}
-  {% assign r = site.data.main.home[1].sub %}
+  {% assign r = site.data.main.home[1].sub[2].sub %}
   {% include nav-loop.html root=r %}
 <!-- PROG -->
 {% elsif page.nav == "links-prog"%}
-  {% assign r = site.data.main.home[1].sub %}
+  {% assign r = site.data.main.home[1].sub[3].sub %}
   {% include nav-loop.html root=r %}
 {% else %}
   Fehler
