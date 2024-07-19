@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Using AI to generate data structures for PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/using-ai-to-generate-data-structures/)
+
+- Apache Kafka — Important Designs
+[(link)](https://blog.det.life/apache-kafka-important-designs-2a0e6aa6c5bf)
+
 - Improving Performance for Data Visualization AI Agent
 [(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
 
