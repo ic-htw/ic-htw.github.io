@@ -5,7 +5,7 @@ home:
     sub:
       - t: Datenmodellierung und Datenbanksysteme
         ts: DMDB
-        url: /home/lv/dmdb/p/dmdb.html
+        url: /home/lv/dmdb/dmdb.html
         sub:
           - t: Allgemein
             ts: Allgemein
@@ -39,7 +39,29 @@ home:
                 url: #
       - t: Datenbanktechnologien
         ts: DBTECH
-        url: /home/lv/dbtech/p/dbtech.html
+        url: /home/lv/dbtech/dbtech.html
+        sub:
+          - t: Material
+            ts: Material
+            url: /home/lv/dbtech/p/material.html
+          - t: Plan
+            ts: Plan
+            url: /home/lv/dbtech/p/plan.html
+          - t: Prüfung
+            ts: Prüfung
+            url: /home/lv/dbtech/p/pruefung.html
+          - t: Übung - Organisatorisches
+            ts: Übung - Org
+            url: /home/lv/dbtech/p/ue-org.html
+          - t: Übung - Aufgaben
+            ts: Übung - Aufgaben
+            url: /home/lv/dbtech/p/ue-ex.html
+      - t: Ausgewählte Datenbankkonzepte/-techniken
+        ts: ADBKT
+        url: /home/lv/adbkt/adbkt.html
+      - t: Data Management and Business Performance Management
+        ts: DataMan
+        url: /home/lv/dataman/dataman.html
       - t: Projekt Business Intelligence
         ts: PBI
         url: /home/lv/pbi/pbi.html

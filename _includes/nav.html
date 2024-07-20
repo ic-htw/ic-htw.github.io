@@ -16,9 +16,21 @@
 {% elsif page.nav == "dmdb"%}
   {% assign r = site.data.main.home[0].sub[0].sub %}
   {% include nav-loop.html root=r %}
+<!-- DbTech -->
+{% elsif page.nav == "dbtech"%}
+  {% assign r = site.data.main.home[0].sub[1].sub %}
+  {% include nav-loop.html root=r %}
+<!-- ADBKT -->
+{% elsif page.nav == "adbkt"%}
+  {% assign r = site.data.main.home[0].sub[2].sub %}
+  {% include nav-loop.html root=r %}
+<!-- DataMan -->
+{% elsif page.nav == "dataman"%}
+  {% assign r = site.data.main.home[0].sub[3].sub %}
+  {% include nav-loop.html root=r %}
 <!-- PBI -->
 {% elsif page.nav == "pbi"%}
-  {% assign r = site.data.main.home[0].sub[2].sub %}
+  {% assign r = site.data.main.home[0].sub[4].sub %}
   {% include nav-loop.html root=r %}
 <!-- Sonstiges -->
 {% elsif page.nav == "sonstiges"%}

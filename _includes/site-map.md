@@ -175,29 +175,6 @@ Data Management and Business Performance Management
 
 <!--
 ====================================================
-Datenbanktechnologien
-==================================================== 
--->  
-<button 
-  onclick="navitemToggle('DbTech')"
-  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
-{% if include.mode == "short" %}
-DbTech
-{% else %}
-Datenbanktechnologien
-{% endif %}
-</button>
-
-<div class="DbTech w3-padding">
-    <a href="/lv/dbtech/p/material.html">Material</a> <br>
-    <a href="/lv/dbtech/p/plan.html">Plan</a> <br>
-    <a href="/lv/dbtech/p/pruefung.html">Prüfung</a> <br>
-    <a href="/lv/dbtech/p/ue-org.html">Übung - Org</a> <br>
-    <a href="/lv/dbtech/p/ue-ex.html">Übung - Aufgaben</a> <br>
-</div> 
-
-<!--
-====================================================
 Datenmodellierung und Datenbanksysteme
 ==================================================== 
 -->  
