@@ -8,8 +8,17 @@
 {% if page.nav == "home" %}
   {% assign r = site.data.main.home %}
   {% include nav-loop.html root=r %}
+<!-- Lehre -->
+{% elsif page.nav == "lv"%}
+  {% assign r = site.data.main.home[0].sub %}
+  {% include nav-loop.html root=r %}
+<!-- DMDB -->
 {% elsif page.nav == "dmdb"%}
   {% assign r = site.data.main.home[0].sub[0].sub %}
+  {% include nav-loop.html root=r %}
+<!-- PBI -->
+{% elsif page.nav == "pbi"%}
+  {% assign r = site.data.main.home[0].sub[2].sub %}
   {% include nav-loop.html root=r %}
 <!-- Sonstiges -->
 {% elsif page.nav == "sonstiges"%}

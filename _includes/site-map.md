@@ -293,27 +293,3 @@ Datenmodellierung und Datenbanksysteme
 </div> 
 
 
-<!--
-====================================================
-Projekt Business Intelligence
-==================================================== 
--->  
-<button 
-  onclick="navitemToggle('PBI')"
-  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
-{% if include.mode == "short" %}
-PBI
-{% else %}
-Projekt Business Intelligence
-{% endif %}
-</button>
-
-<div class="PBI w3-padding">
-    <a  href="/lv/pbi/main.html">Projektdurchführung</a> <br>
-</div> 
-
-
-
-
-
-

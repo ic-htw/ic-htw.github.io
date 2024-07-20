@@ -40,6 +40,9 @@ home:
       - t: Datenbanktechnologien
         ts: DBTECH
         url: /home/lv/dbtech/p/dbtech.html
+      - t: Projekt Business Intelligence
+        ts: PBI
+        url: /home/lv/pbi/pbi.html
   - t: Sonstiges
     ts: Sonstiges
     url: /home/sonstiges/sonstiges.html
