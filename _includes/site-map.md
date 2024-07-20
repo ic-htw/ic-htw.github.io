@@ -317,31 +317,3 @@ Projekt Business Intelligence
 
 
 
-<!--
-****************************************************
-Sonstiges
-**************************************************** 
--->  
-<p class="w3-large w3-theme ic-neg3">Sonstiges</p>
-<button 
-  onclick="navitemToggle('Sonstiges')"
-  class="w3-button w3-left-align w3-padding-small w3-block ic-neg10">
-{% if include.mode == "short" %}
-Sonstiges
-{% else %}
-Sonstiges
-{% endif %}
-</button>
-
-<div class="Sonstiges w3-padding">
-    <a  href="/sonstiges/p/abschluss.html">Abschlussarbeiten</a> <br>
-    <a  href="/sonstiges/p/pruefmod.html">Prüfungsmodalitäten</a> <br>
-    <a  href="/sonstiges/p/plagiate.html">Plagiate in Übungen</a> <br>
-    <a  href="/sonstiges/p/sqldeveloper.html">SQL-Developer</a> <br>
-    <a  href="/sonstiges/p/ressourcen.html">Ressourcen</a> <br>
-</div> 
-
-
-
-
-

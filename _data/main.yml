@@ -40,6 +40,26 @@ home:
       - t: Datenbanktechnologien
         ts: DBTECH
         url: /home/lv/dbtech/p/dbtech.html
+  - t: Sonstiges
+    ts: Sonstiges
+    url: /home/sonstiges/sonstiges.html
+    sub:
+      - t: Abschlussarbeiten
+        ts: Abschlussarbeiten
+        url: /home/sonstiges/p/abschluss.html
+      - t: Prüfungsmodalitäten
+        ts: Prüfungsmodalitäten
+        url: /home/sonstiges/p/pruefmod.html
+      - t: Plagiate in Übungen
+        ts: Plagiate in Übungen
+        url: /home/sonstiges/p/plagiate.html
+      - t: SQL-Developer
+        ts: SQL-Developer
+        url: /home/sonstiges/p/sqldeveloper.html
+      - t: Ressourcen
+        ts: Ressourcen
+        url: /home/sonstiges/p/ressourcen.html
+
   - t: Links
     ts: Links
     url: /home/links/links.html
