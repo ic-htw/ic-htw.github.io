@@ -1,9 +1,13 @@
 home:
-  - t: Lehrveranstaltungen
-    ts: Lehre
-    url: /home/lv/lv.html
+  - t: Home
+    ts: Home
+    url: /home/home.html
     sub:
-      - t: Datenmodellierung und Datenbanksysteme
+      - t: Lehrveranstaltungen
+        ts: Lehre
+        url: /home/lv/lv.html
+        sub:
+          - t: Datenmodellierung und Datenbanksysteme
         ts: DMDB
         url: /home/lv/dmdb/dmdb.html
         sub:
@@ -37,7 +41,7 @@ home:
               - t: ER-Modelle 2
                 ts: ER-Modelle 2
                 url: #
-      - t: Datenbanktechnologien
+          - t: Datenbanktechnologien
         ts: DBTECH
         url: /home/lv/dbtech/dbtech.html
         sub:
@@ -56,16 +60,45 @@ home:
           - t: Übung - Aufgaben
             ts: Übung - Aufgaben
             url: /home/lv/dbtech/p/ue-ex.html
-      - t: Ausgewählte Datenbankkonzepte/-techniken
-        ts: ADBKT
-        url: /home/lv/adbkt/adbkt.html
-      - t: Data Management and Business Performance Management
-        ts: DataMan
-        url: /home/lv/dataman/dataman.html
-      - t: Projekt Business Intelligence
-        ts: PBI
-        url: /home/lv/pbi/pbi.html
-  - t: Sonstiges
+          - t: Ausgewählte Datenbankkonzepte/-techniken
+            ts: ADBKT
+            url: /home/lv/adbkt/adbkt.html
+            sub:
+              - t: ADBKT - Allgemeines
+                ts: Allgemeines
+                url: /home/lv/adbkt/allgemeines/allgemeines.html
+                sub:
+                  - t: aaa
+                    ts: aaa
+                    url: #
+              - t: ADBKT - Vorlesungen
+                ts: Vorlesungen
+                url: /home/lv/adbkt/vorlesungen/vorlesungen.html
+                sub:
+                  - t: aaa
+                    ts: aaa
+                    url: #
+              - t: ADBKT - Übungen
+                ts: Übungen
+                url: /home/lv/adbkt/uebungen/uebungen.html
+                sub:
+                  - t: aaa
+                    ts: aaa
+                    url: #
+              - t: ADBKT - Prüfungsleistungen
+                ts: Prüfungsleistungen
+                url: /home/lv/adbkt/pruefungen/pruefungen.html
+                sub:
+                  - t: aaa
+                    ts: aaa
+                    url: #
+          - t: Data Management and Business Performance Management
+            ts: DataMan
+            url: /home/lv/dataman/dataman.html
+          - t: Projekt Business Intelligence
+            ts: PBI
+            url: /home/lv/pbi/pbi.html
+      - t: Sonstiges
     ts: Sonstiges
     url: /home/sonstiges/sonstiges.html
     sub:
@@ -84,8 +117,8 @@ home:
       - t: Ressourcen
         ts: Ressourcen
         url: /home/sonstiges/p/ressourcen.html
-
-  - t: Links
+      
+      - t: Links
     ts: Links
     url: /home/links/links.html
     sub:

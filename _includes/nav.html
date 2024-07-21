@@ -6,37 +6,59 @@
 </div>
   
 {% if page.nav == "home" %}
-  {% assign r = site.data.main.home %}
-  {% include nav-loop.html root=r %}
-<!-- Lehre -->
+  {% assign x = site.data.main.home[0] %}
+
+  <!-- Lehre -->
 {% elsif page.nav == "lv"%}
-  {% assign r = site.data.main.home[0].sub %}
+  {% assign x = site.data.main.home[0].sub[0] %}
   {% include nav-loop.html root=r %}
-<!-- DMDB -->
+
+  <!-- DMDB -->
 {% elsif page.nav == "dmdb"%}
   {% assign r = site.data.main.home[0].sub[0].sub %}
   {% include nav-loop.html root=r %}
-<!-- DbTech -->
+
+  <!-- DbTech -->
 {% elsif page.nav == "dbtech"%}
-  {% assign r = site.data.main.home[0].sub[1].sub %}
-  {% include nav-loop.html root=r %}
-<!-- ADBKT -->
+  {% assign x = site.data.main.home[0].sub[1] %}
+
+  <!-- ADBKT -->
 {% elsif page.nav == "adbkt"%}
+  {% assign x = site.data.main.home[0].sub[2] %}
+  {% include nav-loop.html root=x.sub title=x.ts url=x.url %}
+<!-- ADBKT - Allgemeines -->
+{% elsif page.nav == "adbkt-allgemeines"%}
   {% assign r = site.data.main.home[0].sub[2].sub %}
   {% include nav-loop.html root=r %}
-<!-- DataMan -->
+<!-- ADBKT - Vorlesungen -->
+{% elsif page.nav == "adbkt-vorlesungen"%}
+  {% assign r = site.data.main.home[0].sub[2].sub %}
+  {% include nav-loop.html root=r %}
+<!-- ADBKT - Übungen -->
+{% elsif page.nav == "adbkt-uebungen"%}
+  {% assign r = site.data.main.home[0].sub[2].sub %}
+  {% include nav-loop.html root=r %}
+<!-- ADBKT - Prüfungsleistungen -->
+{% elsif page.nav == "adbkt-pruefungen"%}
+  {% assign r = site.data.main.home[0].sub[2].sub %}
+  {% include nav-loop.html root=r %}
+
+  <!-- DataMan -->
 {% elsif page.nav == "dataman"%}
   {% assign r = site.data.main.home[0].sub[3].sub %}
   {% include nav-loop.html root=r %}
-<!-- PBI -->
+
+  <!-- PBI -->
 {% elsif page.nav == "pbi"%}
   {% assign r = site.data.main.home[0].sub[4].sub %}
   {% include nav-loop.html root=r %}
-<!-- Sonstiges -->
+
+  <!-- Sonstiges -->
 {% elsif page.nav == "sonstiges"%}
   {% assign r = site.data.main.home[1].sub %}
   {% include nav-loop.html root=r %}
-<!-- Links -->
+
+  <!-- Links -->
 {% elsif page.nav == "links"%}
   {% assign r = site.data.main.home[2].sub %}
   {% include nav-loop.html root=r %}
@@ -59,3 +81,5 @@
 {% else %}
   Fehler
 {% endif %}
+
+{% include nav-loop.html root=x.sub title=x.ts url=x.url %}

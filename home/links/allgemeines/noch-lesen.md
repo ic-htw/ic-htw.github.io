@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Wren AI Text-to-SQL: API — the good stuff
+[(link)](https://medium.com/@qdrddr/wrenai-text-to-sql-api-the-good-stuff-e4d57c0c181c)
+
 - Using AI to generate data structures for PostgreSQL
 [(link)](https://www.cybertec-postgresql.com/en/using-ai-to-generate-data-structures/)
 
