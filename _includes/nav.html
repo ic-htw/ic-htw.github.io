@@ -11,73 +11,58 @@
   <!-- Lehre -->
 {% elsif page.nav == "lv"%}
   {% assign x = site.data.main.home[0].sub[0] %}
-  {% include nav-loop.html root=r %}
 
   <!-- DMDB -->
 {% elsif page.nav == "dmdb"%}
-  {% assign r = site.data.main.home[0].sub[0].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[0] %}
 
   <!-- DbTech -->
 {% elsif page.nav == "dbtech"%}
-  {% assign x = site.data.main.home[0].sub[1] %}
+  {% assign x = site.data.main.home[0].sub[0].sub[1] %}
 
   <!-- ADBKT -->
 {% elsif page.nav == "adbkt"%}
-  {% assign x = site.data.main.home[0].sub[2] %}
-  {% include nav-loop.html root=x.sub title=x.ts url=x.url %}
+  {% assign x = site.data.main.home[0].sub[0].sub[2] %}
 <!-- ADBKT - Allgemeines -->
 {% elsif page.nav == "adbkt-allgemeines"%}
-  {% assign r = site.data.main.home[0].sub[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[0] %}
 <!-- ADBKT - Vorlesungen -->
 {% elsif page.nav == "adbkt-vorlesungen"%}
-  {% assign r = site.data.main.home[0].sub[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[1] %}
 <!-- ADBKT - Übungen -->
 {% elsif page.nav == "adbkt-uebungen"%}
-  {% assign r = site.data.main.home[0].sub[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[2] %}
 <!-- ADBKT - Prüfungsleistungen -->
 {% elsif page.nav == "adbkt-pruefungen"%}
-  {% assign r = site.data.main.home[0].sub[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[3] %}
 
   <!-- DataMan -->
 {% elsif page.nav == "dataman"%}
-  {% assign r = site.data.main.home[0].sub[3].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[3] %}
 
   <!-- PBI -->
 {% elsif page.nav == "pbi"%}
-  {% assign r = site.data.main.home[0].sub[4].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[0].sub[4] %}
 
   <!-- Sonstiges -->
 {% elsif page.nav == "sonstiges"%}
-  {% assign r = site.data.main.home[1].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[1] %}
 
   <!-- Links -->
 {% elsif page.nav == "links"%}
-  {% assign r = site.data.main.home[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[2] %}
 <!-- Allgemeines -->
 {% elsif page.nav == "links-allgemeines"%}
-  {% assign r = site.data.main.home[2].sub[0].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[2].sub[0] %}
 <!-- DBS -->
 {% elsif page.nav == "links-dbs"%}
-  {% assign r = site.data.main.home[2].sub[1].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[2].sub[1] %}
 <!-- ML -->
 {% elsif page.nav == "links-ml"%}
-  {% assign r = site.data.main.home[2].sub[2].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[2].sub[2] %}
 <!-- PROG -->
 {% elsif page.nav == "links-prog"%}
-  {% assign r = site.data.main.home[2].sub[3].sub %}
-  {% include nav-loop.html root=r %}
+  {% assign x = site.data.main.home[0].sub[2].sub[3] %}
 {% else %}
   Fehler
 {% endif %}

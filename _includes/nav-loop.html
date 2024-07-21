@@ -1,4 +1,5 @@
-<a href="{{include.url}}">{{include.title}}</a><br>
+<div class="w3-large">{{include.title}}</div>
+<div>
 {% for i in include.root %}
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="{{i.url}}">{{i.ts}}</a><br>
@@ -27,4 +28,4 @@
   {% endfor %}
   </div>
 {% endfor %}
-
+</div>
