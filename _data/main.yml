@@ -66,28 +66,28 @@ home:
             sub:
               - t: ADBKT - Allgemeines
                 ts: ADBKT - Allgemeines
-                url: /home/lv/adbkt/allgemeines/allgemeines.html
+                url: /home/lv/adbkt/allgemeines/1-allgemeines.html
                 sub:
                   - t: aaa
                     ts: aaa
                     url: #
               - t: ADBKT - Vorlesungen
                 ts: ADBKT - Vorlesungen
-                url: /home/lv/adbkt/vorlesungen/vorlesungen.html
+                url: /home/lv/adbkt/vorlesungen/1-vorlesungen.html
                 sub:
                   - t: aaa
                     ts: aaa
                     url: #
               - t: ADBKT - Übungen
                 ts: ADBKT - Übungen
-                url: /home/lv/adbkt/uebungen/uebungen.html
+                url: /home/lv/adbkt/uebungen/1-uebungen.html
                 sub:
                   - t: aaa
                     ts: aaa
                     url: #
               - t: ADBKT - Prüfungsleistungen
                 ts: ADBKT - Prüfungsleistungen
-                url: /home/lv/adbkt/pruefungen/pruefungen.html
+                url: /home/lv/adbkt/pruefungen/1-pruefungen.html
                 sub:
                   - t: aaa
                     ts: aaa
