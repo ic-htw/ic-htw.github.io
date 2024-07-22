@@ -1,6 +1,7 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-pruefungen
+is_slide: 0
 ---
 
 # Fahrverbindung
@@ -37,31 +38,31 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
 
 ## Code
 - Python 
-[(link)](/lv/adbkt/a/ipynb/shed.ipynb) 
-[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/shed.ipynb)
+[(link)](/home/lv/adbkt/a/ipynb/shed.ipynb) 
+[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/shed.ipynb)
 
 
 ## Datenmodell Postgres
-> ![Bild](/lv/adbkt/a/shed/bubahn-modell.png)
+> ![Bild](/home/lv/adbkt/a/shed/bubahn-modell.png)
 
 
 ## Datenauszug aus den Postgres-Daten
-> ![Bild](/lv/adbkt/a/shed/daten.png)
+> ![Bild](/home/lv/adbkt/a/shed/daten.png)
 
 
 ## Datenmodell Neo4j
 Graphprojektion "bubahn" siehe [(link)](/lv/adbkt/p/gds.html)
 
 ## Relevanter Netzausschnitt für die Beispiele
-> ![Bild](/lv/adbkt/a/shed/netzausschnitt.png)
+> ![Bild](/home/lv/adbkt/a/shed/netzausschnitt.png)
 
 ## Beispiel 1
-> ![Bild](/lv/adbkt/a/shed/verbindung1.png)
+> ![Bild](/home/lv/adbkt/a/shed/verbindung1.png)
 
 
 ## Beispiel 2
-> ![Bild](/lv/adbkt/a/shed/verbindung2.png)
+> ![Bild](/home/lv/adbkt/a/shed/verbindung2.png)
 
 
 ## Beispiel 3
-> ![Bild](/lv/adbkt/a/shed/verbindung3.png)
+> ![Bild](/home/lv/adbkt/a/shed/verbindung3.png)

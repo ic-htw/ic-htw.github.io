@@ -1,6 +1,7 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-pruefungen
+is_slide: 0
 ---
 
 # ER-Diagramm aus Datenbankschema erzeugen

@@ -1,6 +1,7 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
 ---
 
 # BTP Account und Hana-Instanz anlegen 

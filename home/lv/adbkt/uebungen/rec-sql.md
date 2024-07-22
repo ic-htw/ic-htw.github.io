@@ -1,6 +1,7 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
 ---
 
 # Rekursive Abfrage - Summierung in einer Hierarchie
@@ -31,11 +32,11 @@ Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Bl
   insert into tree0 values (20, 17, 501);
   insert into tree0 values (21, 17, 502);
   ```
-> ![Bild](/lv/adbkt/a/sql/fig/tabelle.png)
+> ![Bild](/home/lv/adbkt/a/sql/fig/tabelle.png)
 
 ## Baumstruktur
-> ![Bild](/lv/adbkt/a/sql/fig/baum.png)
+> ![Bild](/home/lv/adbkt/a/sql/fig/baum.png)
 
 ## Erwartetes Ergebnis der Abfrage
-> ![Bild](/lv/adbkt/a/sql/fig/ergebnis.png)
+> ![Bild](/home/lv/adbkt/a/sql/fig/ergebnis.png)
 

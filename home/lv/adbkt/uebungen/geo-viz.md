@@ -1,27 +1,28 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
 ---
 
 # Visualisierung Geodaten in Python
 
 ## Shapes und Marker
-> ![Bild](/lv/adbkt/a/geo/fig/viz1.png)
+> ![Bild](/home/lv/adbkt/a/geo/fig/viz1.png)
 
 ## Bounding Box
-> ![Bild](/lv/adbkt/a/geo/fig/viz2.png)
+> ![Bild](/home/lv/adbkt/a/geo/fig/viz2.png)
 
 ## Voronoi-Tesselation
-> ![Bild](/lv/adbkt/a/geo/fig/viz3.png)
+> ![Bild](/home/lv/adbkt/a/geo/fig/viz3.png)
 
 ## Code
 - Geo in Python 
-[(link)](/lv/adbkt/a/ipynb/intro-geo.ipynb) 
-[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/lv/adbkt/a/ipynb/intro-geo.ipynb)
+[(link)](/home/lv/adbkt/a/ipynb/intro-geo.ipynb) 
+[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/intro-geo.ipynb)
 
 ## Gebäude-Shapes
 Schreiben Sie in Python Code, der eine Visualisierung von Gebäude-Shapes erzeugt
-> ![Bild](/lv/adbkt/a/geo/fig/gebaeude.png)
+> ![Bild](/home/lv/adbkt/a/geo/fig/gebaeude.png)
 
 ### Schritt 1: Abfrage an die Datenbank
 #### Vorgehen

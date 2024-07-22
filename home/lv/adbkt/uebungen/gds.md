@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-vorlesungen
+nav: adbkt-uebungen
 is_slide: 0
 ---
 
@@ -22,7 +22,7 @@ is_slide: 0
 
 ## Netz-Zusammenhang
 - Ermitteln Sie den Netz-Zusammenhang im Graphen<br>
-  ![(png)](/lv/adbkt/a/graph/fig/scc.png)
+  ![(png)](/home/lv/adbkt/a/graph/fig/scc.png)
 
 
 
@@ -31,12 +31,12 @@ is_slide: 0
 - Als Beispiel soll die Verbindung zwischen HeidelbergerPlatz und KottbusserTor genommen werden
 - Hier sollen zwei Varianten betrachtet werden:
 - Anzahl Haltestellen<br>
-  ![(png)](/lv/adbkt/a/graph/fig/shortest-path-hops.png)
+  ![(png)](/home/lv/adbkt/a/graph/fig/shortest-path-hops.png)
 - Gesamtlänge der Strecke<br>
-  ![(png)](/lv/adbkt/a/graph/fig/shortest-path-len.png)
+  ![(png)](/home/lv/adbkt/a/graph/fig/shortest-path-len.png)
 
 ## Closeness Centrality
 - Ermitteln sie die Closeness Centrality im Netz in Bezug auf die Länge der Segmente.
 - Berechnen sie für jede Haltestelle die Summe der Längen der kürzesten Pfade zu allen anderen Haltestelle
 - Sortieren sie das Ergebnis aufsteigend nach den Summen<br>
-  ![(png)](/lv/adbkt/a/graph/fig/closeness-centrality.png)
+  ![(png)](/home/lv/adbkt/a/graph/fig/closeness-centrality.png)

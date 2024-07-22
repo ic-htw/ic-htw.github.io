@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Präsentation von Fallbeispielen
+layout: default1
+nav: adbkt-uebungen
 is_slide: 0
 ---
 

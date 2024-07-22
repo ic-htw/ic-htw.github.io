@@ -139,16 +139,88 @@ home:
                 ts: ADBKT - Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
                 sub:
-                  - t: aaa
-                    ts: aaa
-                    url: #
+                  - t: Präsentation von Fallbeispielen
+                    ts: Präsentation von Fallbeispielen
+                    url: /home/lv/adbkt/uebungen/pres.html
+                  - t: Python-Container erstellen
+                    ts: Python-Container erstellen
+                    url: /home/lv/adbkt/uebungen/py-cont.html
+                  - t: Cassandra Replikation
+                    ts: Cassandra Replikation
+                    url: /home/lv/adbkt/uebungen/cas-repl.html
+                  - t: Neo4j-Container erstellen
+                    ts: Neo4j-Container erstellen
+                    url: /home/lv/adbkt/uebungen/neo4j-cont.html
+                  - t: Konfiguration DBeaver
+                    ts: Konfiguration DBeaver
+                    url: /home/lv/adbkt/uebungen/dbeaver.html
+                  - t:  Python DB-Intro
+                    ts:  Python DB-Intro
+                    url: /home/lv/adbkt/uebungen/db-intro.html
+                  - t: Cypher-Abfragen
+                    ts: Cypher-Abfragen
+                    url: /home/lv/adbkt/uebungen/cypher-queries.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/uebungen/gds.html
+                  - t: Geo-Abfragen
+                    ts: Geo-Abfragen
+                    url: /home/lv/adbkt/uebungen/geo-sql.html
+                  - t: Visualisierung Geodaten
+                    ts: Visualisierung Geodaten
+                    url: /home/lv/adbkt/uebungen/geo-viz.html
+                  - t: pgRouting
+                    ts: pgRouting
+                    url: /home/lv/adbkt/uebungen/pgrouting.html
+                  - t:  Langchain
+                    ts:  Langchain
+                    url: /home/lv/adbkt/uebungen/langchain.html
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/uebungen/dynamodb.html
+                  - t: Nebenläufigkeit
+                    ts: Nebenläufigkeit
+                    url: /home/lv/adbkt/uebungen/concur.html
+                  - t:  Retail Sales
+                    ts:  Retail Sales
+                    url: /home/lv/adbkt/uebungen/retail.html
+                  - t: Rekursive Abfrage
+                    ts: Rekursive Abfrage
+                    url: /home/lv/adbkt/uebungen/rec-sql.html
+                  - t:  SQL mit ChatGPT
+                    ts:  SQL mit ChatGPT
+                    url: /home/lv/adbkt/uebungen/sql-chatgpt.html
+                  - t:  Hana, BTP Account
+                    ts:  Hana, BTP Account
+                    url: /home/lv/adbkt/uebungen/hana-btp-account.html
+                  - t: Hana Graph
+                    ts: Hana Graph
+                    url: /home/lv/adbkt/uebungen/hana-graph.html
+                  - t: Closeness Centrality in SAP Hana
+                    ts: Closeness Centrality in SAP Hana
+                    url: /home/lv/adbkt/uebungen/hana-cc.html
               - t: ADBKT - Prüfungsleistungen
                 ts: ADBKT - Prüfungsleistungen
                 url: /home/lv/adbkt/pruefungen/1-pruefungen.html
                 sub:
-                  - t: aaa
-                    ts: aaa
-                    url: #
+                  - t: P1 (15 Punkte)
+                    ts: P1 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/tour-delight.html
+                  - t: P2 (10 Punkte)
+                    ts: P2 (10 Punkte)
+                    url: /home/lv/adbkt/pruefungen/nosql-sys.html
+                  - t: P3 (20 Punkte)
+                    ts: P3 (20 Punkte)
+                    url: /home/lv/adbkt/pruefungen/auth.html
+                  - t: P4 (20 Punkte)
+                    ts: P4 (20 Punkte)
+                    url: /home/lv/adbkt/pruefungen/sched.html
+                  - t: P5 (15 Punkte)
+                    ts: P5 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/vectordb-case.html
+                  - t: P6 (20 Punkte)
+                    ts: P6 (20 Punkte)
+                    url: /home/lv/adbkt/pruefungen/graphql.html
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html

@@ -1,10 +1,11 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
 ---
 
 # Data Download und Import
-- bubahn.tar.gz herunter laden [(link)](/lv/adbkt/a/hana/bubahn.tar.gz)
+- bubahn.tar.gz herunter laden [(link)](/home/lv/adbkt/a/hana/bubahn.tar.gz)
 - Tabellen und Daten über `import catalog objects` in Hana laden
 - SAP HANA Database Graph Reference 
 [(link)](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-graph-reference/sap-hana-cloud-sap-hana-database-graph-reference?locale=en-US)
