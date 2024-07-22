@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Überblick Cassandra
+layout: default1
+nav: adbkt-vorlesungen
 is_slide: 0
 ---
 

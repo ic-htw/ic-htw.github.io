@@ -1,6 +1,7 @@
 ---
-layout: default
-title: ADBKT
+layout: default1
+nav: adbkt-vorlesungen
+is_slide: 0
 ---
 
 # Cypher

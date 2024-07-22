@@ -48,47 +48,6 @@ Ausgewählte Datenbankkonzepte/-techniken
 {% endif %}
 </button>
 
-<div class="ADBKT w3-padding">
-    <a  href="/lv/adbkt/p/main.html">Überblick</a> <br>
-    <a  href="/lv/adbkt/p/plan.html">Plan</a> <br>
-    <a  href="/lv/adbkt/p/res.html">Ressourcen</a> <br>
-    Vorlesung<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/history.html">Historischer Überblick</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/cas.html">Überblick Cassandra</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/nosql.html">NoSQL</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/repl-part.html">Replikation / Partitionierung</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/consistency.html">Konsistenz</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/lsm.html">Log Structured Merge Trees</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/cypher.html">Cypher</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/graph/gds.pdf">Graph-Data-Science</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/geo/geo.pdf">Geo-Datenverarbeitung</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/vectordb.html">Vektordatenbanken</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/dynamo.html">DynamoDB</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/concur/concur.pdf">Nebenläufigkeit</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/concur/2pc.pdf">Verteilte Transaktionen</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/json/json-pg.pdf">JSON in Postgres</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/p/window-sql.html">Window-Funktionen in SQL</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/sql/rec.pdf">Rekursive Abfragen</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/hana/hana.pdf">SAP Hana</a> <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="/lv/adbkt/a/insta/insta.pdf">Instacart</a> <br>
     Übungen<br>
         &nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="/lv/adbkt/p/pres.html">Präsentation von Fallbeispielen</a> <br>

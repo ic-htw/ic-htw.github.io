@@ -68,16 +68,73 @@ home:
                 ts: ADBKT - Allgemeines
                 url: /home/lv/adbkt/allgemeines/1-allgemeines.html
                 sub:
-                  - t: aaa
-                    ts: aaa
-                    url: #
+                  - t: Überblick
+                    ts: Überblick
+                    url: /home/lv/adbkt/allgemeines/ueberblick.html
+                  - t: Plan
+                    ts: Plan
+                    url: /home/lv/adbkt/allgemeines/plan.html
+                  - t: Ressourcen
+                    ts: Ressourcen
+                    url: /home/lv/adbkt/allgemeines/res.html
               - t: ADBKT - Vorlesungen
                 ts: ADBKT - Vorlesungen
                 url: /home/lv/adbkt/vorlesungen/1-vorlesungen.html
                 sub:
-                  - t: aaa
-                    ts: aaa
-                    url: #
+                  - t:  Historischer Überblick
+                    ts:  Historischer Überblick
+                    url: /home/lv/adbkt/vorlesungen/history.html
+                  - t: Überblick Cassandra
+                    ts: Überblick Cassandra
+                    url: /home/lv/adbkt/vorlesungen/cas.html
+                  - t:  NoSQL
+                    ts:  NoSQL
+                    url: /home/lv/adbkt/vorlesungen/nosql.html
+                  - t: Replikation / Partitionierung
+                    ts: Replikation / Partitionierung
+                    url: /home/lv/adbkt/vorlesungen/repl-part.html
+                  - t: Konsistenz
+                    ts: Konsistenz
+                    url: /home/lv/adbkt/vorlesungen/consistency.html
+                  - t: Log Structured Merge Trees
+                    ts: Log Structured Merge Trees
+                    url: /home/lv/adbkt/vorlesungen/lsm.html
+                  - t: Cypher
+                    ts: Cypher
+                    url: /home/lv/adbkt/vorlesungen/cypher.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t:  Geo-Datenverarbeitung
+                    ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/a/geo/geo.pdf
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/vorlesungen/vectordb.html
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/vorlesungen/dynamo.html
+                  - t: Nebenläufigkeit
+                    ts: Nebenläufigkeit
+                    url: /home/lv/adbkt/vorlesungen/concur.html
+                  - t: Verteilte Transaktionen
+                    ts: Verteilte Transaktionen
+                    url: /home/lv/adbkt/a/concur/2pc.pdf
+                  - t:  JSON in Postgres
+                    ts:  JSON in Postgres
+                    url: /home/lv/adbkt/a/json/json-pg.pdf
+                  - t: Window-Funktionen in SQL
+                    ts: Window-Funktionen in SQL
+                    url: /home/lv/adbkt/vorlesungen/window-sql.html
+                  - t: Rekursive Abfragen
+                    ts: Rekursive Abfragen
+                    url: /home/lv/adbkt/a/sql/rec.pdf
+                  - t: SAP Hana
+                    ts: SAP Hana
+                    url: /home/lv/adbkt/a/hana/hana.pdf
+                  - t:  Instacart
+                    ts:  Instacart
+                    url: /home/lv/adbkt/a/insta/insta.pdf
               - t: ADBKT - Übungen
                 ts: ADBKT - Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html

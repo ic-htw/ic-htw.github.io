@@ -5,6 +5,8 @@ is_slide: 0
 ---
 
 # aaa
+- Building a Local Data Lake from scratch with MinIO, Iceberg, Spark, StarRocks, Mage, and Docker
+[(link)](https://blog.det.life/building-a-local-data-lake-from-scratch-with-minio-iceberg-spark-starrocks-mage-and-docker-c12436e6ff9d)
 - Build an on-premise Data Lakehouse
 [(link)](https://blog.devgenius.io/build-an-on-premise-data-lakehouse-06fe8b5e9ac1)
 - Why Dremio is a must for Apache Iceberg Data Lakehouses
