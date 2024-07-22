@@ -5,66 +5,34 @@
   <button onclick="setNavLevel4()" class="w3-button w3-theme">4</button>
 </div>
   
-{% if page.nav == "home" %}
-  {% assign x = site.data.main.home[0] %}
-
-  <!-- Lehre -->
-{% elsif page.nav == "lv"%}
-  {% assign x = site.data.main.home[0].sub[0] %}
-
-  <!-- DMDB -->
-{% elsif page.nav == "dmdb"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[0] %}
-
-  <!-- DbTech -->
-{% elsif page.nav == "dbtech"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[1] %}
-
-  <!-- ADBKT -->
-{% elsif page.nav == "adbkt"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[2] %}
-<!-- ADBKT - Allgemeines -->
-{% elsif page.nav == "adbkt-allgemeines"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[0] %}
-<!-- ADBKT - Vorlesungen -->
-{% elsif page.nav == "adbkt-vorlesungen"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[1] %}
-<!-- ADBKT - Übungen -->
-{% elsif page.nav == "adbkt-uebungen"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[2] %}
-<!-- ADBKT - Prüfungsleistungen -->
-{% elsif page.nav == "adbkt-pruefungen"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[2].sub[3] %}
-
-  <!-- DataMan -->
-{% elsif page.nav == "dataman"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[3] %}
-
-  <!-- PBI -->
-{% elsif page.nav == "pbi"%}
-  {% assign x = site.data.main.home[0].sub[0].sub[4] %}
-
-  <!-- Sonstiges -->
-{% elsif page.nav == "sonstiges"%}
-  {% assign x = site.data.main.home[0].sub[1] %}
-
-  <!-- Links -->
-{% elsif page.nav == "links"%}
-  {% assign x = site.data.main.home[0].sub[2] %}
-<!-- Allgemeines -->
-{% elsif page.nav == "links-allgemeines"%}
-  {% assign x = site.data.main.home[0].sub[2].sub[0] %}
-<!-- DBS -->
-{% elsif page.nav == "links-dbs"%}
-  {% assign x = site.data.main.home[0].sub[2].sub[1] %}
-<!-- ML -->
-{% elsif page.nav == "links-ml"%}
-  {% assign x = site.data.main.home[0].sub[2].sub[2] %}
-<!-- PROG -->
-{% elsif page.nav == "links-prog"%}
-  {% assign x = site.data.main.home[0].sub[2].sub[3] %}
-{% else %}
-  Fehler
-{% endif %}
-
-{% include nav-loop.html root=x.sub title=x.ts url=x.url %}
+<div class="w3-large">{{include.title}}</div>
+<div>
+{% for i in include.root %}
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="{{i.url}}">{{i.ts}}</a><br>
+  <div class="L2">
+  {% for j in i.sub %}
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="{{j.url}}">{{j.ts}}</a><br>
+    <div class="L3">
+    {% for k in j.sub %}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="{{k.url}}">{{k.ts}}</a><br>
+      <div class="L4">
+      {% for l in k.sub %}
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{l.url}}">{{l.ts}}</a><br>
+      {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}
+</div>

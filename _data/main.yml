@@ -1,12 +1,12 @@
-home:
+home: &r
   - t: Home
     ts: Home
     url: /home/home.html
-    sub:
+    sub: &h
       - t: Lehrveranstaltungen
         ts: Lehre
         url: /home/lv/lv.html
-        sub:
+        sub: &lv
           - t: Datenmodellierung und Datenbanksysteme
             ts: DMDB
             url: /home/lv/dmdb/dmdb.html
@@ -63,7 +63,7 @@ home:
           - t: Ausgewählte Datenbankkonzepte/-techniken
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html
-            sub:
+            sub: &adbkt
               - t: ADBKT - Allgemeines
                 ts: ADBKT - Allgemeines
                 url: /home/lv/adbkt/allgemeines/1-allgemeines.html
@@ -230,7 +230,7 @@ home:
       - t: Sonstiges
         ts: Sonstiges
         url: /home/sonstiges/sonstiges.html
-        sub:
+        sub: &sonst
           - t: Abschlussarbeiten
             ts: Abschlussarbeiten
             url: /home/sonstiges/p/abschluss.html
@@ -249,7 +249,7 @@ home:
       - t: Links
         ts: Links
         url: /home/links/links.html
-        sub:
+        sub: &links
           - t: Allgemeines
             ts: Allgemeines
             url: /home/links/allgemeines/1-allgemeines.html
@@ -398,3 +398,10 @@ home:
               - t: SAP
                 ts: SAP
                 url: /home/links/prog/sap.html
+
+r: *r
+h: *h
+lv: *lv
+adbkt: *adbkt
+sonst: *sonst
+links: *links

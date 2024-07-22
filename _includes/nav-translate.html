@@ -1,0 +1,63 @@
+{% if page.nav == "home" %}
+  {% assign x = site.data.main.r[0] %}
+
+  <!-- Lehre -->
+{% elsif page.nav == "lv"%}
+  {% assign x = site.data.main.h[0] %}
+
+  <!-- DMDB -->
+{% elsif page.nav == "dmdb"%}
+  {% assign x = site.data.main.lv[0] %}
+
+  <!-- DbTech -->
+{% elsif page.nav == "dbtech"%}
+{% assign x = site.data.main.lv[1] %}
+
+  <!-- ADBKT -->
+{% elsif page.nav == "adbkt"%}
+{% assign x = site.data.main.lv[2] %}
+<!-- ADBKT - Allgemeines -->
+{% elsif page.nav == "adbkt-allgemeines"%}
+  {% assign x = site.data.main.adbkt[0] %}
+<!-- ADBKT - Vorlesungen -->
+{% elsif page.nav == "adbkt-vorlesungen"%}
+  {% assign x = site.data.main.adbkt[1] %}
+<!-- ADBKT - Übungen -->
+{% elsif page.nav == "adbkt-uebungen"%}
+  {% assign x = site.data.main.adbkt[2] %}
+<!-- ADBKT - Prüfungsleistungen -->
+{% elsif page.nav == "adbkt-pruefungen"%}
+  {% assign x = site.data.main.adbkt[3] %}
+
+  <!-- DataMan -->
+{% elsif page.nav == "dataman"%}
+{% assign x = site.data.main.lv[3] %}
+
+  <!-- PBI -->
+{% elsif page.nav == "pbi"%}
+{% assign x = site.data.main.lv[4] %}
+
+  <!-- Sonstiges -->
+{% elsif page.nav == "sonstiges"%}
+  {% assign x = site.data.main.h[1] %}
+
+  <!-- Links -->
+{% elsif page.nav == "links"%}
+  {% assign x = site.data.main.h[2] %}
+<!-- Allgemeines -->
+{% elsif page.nav == "links-allgemeines"%}
+  {% assign x = site.data.main.links[0] %}
+<!-- DBS -->
+{% elsif page.nav == "links-dbs"%}
+  {% assign x = site.data.main.links[1] %}
+<!-- ML -->
+{% elsif page.nav == "links-ml"%}
+  {% assign x = site.data.main.links[2] %}
+<!-- PROG -->
+{% elsif page.nav == "links-prog"%}
+  {% assign x = site.data.main.links[3] %}
+{% else %}
+  Fehler
+{% endif %}
+
+{% include nav.html root=x.sub title=x.ts url=x.url %}
