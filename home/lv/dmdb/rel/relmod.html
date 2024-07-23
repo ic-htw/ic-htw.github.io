@@ -17,7 +17,7 @@ n: 16
 -->
 {% include padding-id.html id=1 %}
 <h1>Tabelle = Tabellenstruktur + Tabelleninhalt</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-01.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-01.png"
 alt='
 Tabelle mit dem Titel "Student". Sie enthält fünf Spalten und vier 
 Zeilen, einschließlich der Kopfzeile. Von links nach rechts lauten die 
@@ -91,7 +91,7 @@ stehen die Werte: 3, 505789, Phan, Thi Mai Nhi, 01.10.2023.
 -->
 {% include padding-id.html id=3 %}
 <h1>Fremdschlüssel</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-02.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-02.png"
 alt='
 Gleiche Tabelle mit dem Titel "Student", mit einer Änderung. Es gibt 
 sechs Spalten mit den Überschriften "SID", "MATRNR", "NAME", "VORNAME", 
@@ -105,7 +105,7 @@ Phan, VORNAME Thi Mai Nhi, IMMADATUM 01.10.2023, EXMADATUM leer, SG 2.
 Die Zelle für EXMADATUM ist leer und die SG-Zelle ist mit einer 
 orangefarbenen Füllung und der Zahl 2 markiert.
 '>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-03.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-03.png"
 alt='
 Die Abbildung zeigt eine Tabelle mit dem Titel "Studiengang". Die 
 Tabelle besteht aus drei Spalten und drei Zeilen. Die Kopfzeile der 
@@ -193,7 +193,7 @@ und "2" sind blau hinterlegt, während die Zellen mit den Namen "WI" und
   <li>Keine Detailinformationen</li>
   <li>Kompakt und übersichtlich</li>
 </ul>
-<img class="w3-image" src="/lv/dmdb/a/relmod/stud-sg.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/stud-sg.png"
 alt='
 Das Bild zeigt ein einfaches Entity-Relationship-Diagramm (ERD) mit zwei 
 Entitäten. Die linke Entität ist beschriftet mit "STUDENT" und enthält 
@@ -219,7 +219,7 @@ hinweist, dass das Attribut SG in der Entität STUDENT als Fremdschlüssel
 <div class="w3-row-padding">
   <div class="w3-col m8">
     <p class="w3-large">Kompakte Form (ohne Datentypen)</p>
-    <img class="w3-image" src="/lv/dmdb/a/relmod/00-100.png"
+    <img class="w3-image" src="/home/lv/dmdb/a/relmod/00-100.png"
     alt='
     Die Abbildung zeigt ein Entity-Relationship-Diagramm (ERD) mit zwei 
     Entitäten: "STUDENT" und "STUDIENGANG". Zwischen den Entitäten besteht 
@@ -237,7 +237,7 @@ hinweist, dass das Attribut SG in der Entität STUDENT als Fremdschlüssel
     "STUDIENGANG" eingeschrieben ist.
         '>
     <p class="w3-large">Darstellung mit Datentypen</p>
-    <img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png"
+    <img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
     alt='
     Die Abbildung zeigt ein Entity-Relationship-Diagramm mit zwei Entitäten: 
     "STUDENT" und "STUDIENGANG". Die Entität "STUDENT" hat die Attribute 
@@ -274,7 +274,7 @@ hinweist, dass das Attribut SG in der Entität STUDENT als Fremdschlüssel
 -->
 {% include padding-id.html id=8 %}
 <h1>Code-Erzeugung</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
 alt='
 Gleiche Abbildung, nur mit Datentypen. Datentypen: siehe folgender SQL-Code.
 '>
@@ -313,7 +313,7 @@ ALTER TABLE ucla.studiengang
 -->
 {% include padding-id.html id=9 %}
 <h1>Fremdschlüsselvariante 1</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/01-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
 alt='
 Gleiche Abbildungg.
 '>
@@ -342,7 +342,7 @@ Gleiche Abbildungg.
 -->
 {% include padding-id.html id=10 %}
 <h1>Fremdschlüsselvariante 2</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/02-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/02-100.png"
 alt='
 Gleiche Abbildung, aber zwischen "STUDENT" und "STUDIENGANG" besteht 
 eine Beziehung, die durch eine gestrichelte Linie mit einer Raute am 
@@ -374,7 +374,7 @@ STUDENT kann hier einen oder keinen STUDIENGANG haben.
 -->
 {% include padding-id.html id=11 %}
 <h1>Fremdschlüsselvariante 3</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/03-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/03-100.png"
 alt='
 Gleiche Abbildung, aber die Beziehung zwischen STUDENT und STUDIENGANG 
 wird durch eine (1:n)-Assoziation dargestellt, wobei ein STUDIENGANG 
@@ -409,7 +409,7 @@ wird, wenn der dazugehörige Studiengang gelöscht wird.
 -->
 {% include padding-id.html id=12 %}
 <h1>Fremdschlüsselvariante 4</h1>
-<img class="w3-image" src="/lv/dmdb/a/relmod/04-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/04-100.png"
 alt='
 Gleiche Abbildung, aber mit der gestrichelten Beziehungslinie.
 '>
@@ -451,14 +451,14 @@ Gleiche Abbildung, aber mit der gestrichelten Beziehungslinie.
 {% include padding-id.html id=14 %}
 <h1>INSERT</h1>
 
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-10.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-10.png"
 alt='
 Die Tabelle "STUDENT" in der Ansicht des SQL Developers, mit den drei 
 Studierenden May, Özedem und Phan.
 '>
 <pre><code class="language-sql">INSERT INTO STUDENT(SID, MATRNR, NAME, VORNAME, IMMADATUM, SG)
   VALUES (4, '505790', 'Al-Hasan', 'Mohammed', '01.10.2023', 1)</code></pre>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-20.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-20.png"
 alt='
 Die Tabelle nach dem INSERT INTO command. Al-Hasan wurde hinzugefügt mit 
 der "SID" 4, "MATRNR" 505790, "NAME" Al-Hasan, "VORNAME" Mohammed, 
@@ -472,12 +472,12 @@ der "SID" 4, "MATRNR" 505790, "NAME" Al-Hasan, "VORNAME" Mohammed,
 {% include padding-id.html id=15 %}
 <h1>UPDATE</h1>
 
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-20.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-20.png"
 alt='
 Die gleiche Tabelle mit dem neuem Datensatz für Al-Hasan
 '>
 <pre><code class="language-sql">UPDATE STUDENT SET VORNAME='Mohamed' WHERE SID=4</code></pre>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-30.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-30.png"
 alt='
 Die gleiche Tabelle mit dem geänderten Vornamen Mohamed, nun mit einem 
 "m" statt zwei.
@@ -490,12 +490,12 @@ Die gleiche Tabelle mit dem geänderten Vornamen Mohamed, nun mit einem
 {% include padding-id.html id=16 %}
 <h1>DELETE</h1>
 
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-30.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-30.png"
 alt='
 Die gleiche Tabelle wie vorher.
 '>
 <pre><code class="language-sql">DELETE FROM STUDENT WHERE SID=4</code></pre>
-<img class="w3-image" src="/lv/dmdb/a/relmod/tab-10.png"
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-10.png"
 alt='
 Die gleiche Tabelle nach dem DELETE command. Die Zeile mit dem 
 Studierenden Mohamed wurde gelöscht und ist nicht mehr vorhanden.

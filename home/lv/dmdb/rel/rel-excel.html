@@ -17,7 +17,7 @@ n: 6
 -->
 {% include padding-id.html id=1 %}
 <h1>Raumverwaltung in Excel</h1>
-<img class="w3-image" src="/lv/dmdb/a/excel-rel/d10-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/excel-rel/d10-100.png"
 alt='
 Die Abbildung zeigt eine Tabelle in Microsoft Excel mit dem Titel "Raeume.xlsx". Es gibt sechs Spalten mit den Überschriften: "RAUMNR" (Raumnummer), "ANZAHL SITZE", "AUSSTATTUNG", "RAUMART", "GEBAEUDE" und "STANDORT". Die Tabelle enthält folgende Daten: 
 - Zeile 2: Raumnummer A029, 40 Sitzplätze, Ausstattung: Whiteboard, Beamer, Audio, Raumart: Seminarraum, Gebäude: A, Standort: TA. 
@@ -49,7 +49,7 @@ Die Abbildung zeigt eine Tabelle in Microsoft Excel mit dem Titel "Raeume.xlsx".
 -->
 {% include padding-id.html id=3 %}
 <h1>Übergang in relationales Modell</h1>
-<img class="w3-image" src="/lv/dmdb/a/excel-rel/d20-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/excel-rel/d20-100.png"
 alt='
 Die Vorlesungsfolie zeigt eine Datenbankstruktur mit Beispielen für Raumdaten einer Universität. Es gibt drei Tabellen, die jeweils Raumnummer (RAUMNR), Anzahl der Sitzplätze (ANZAHL SITZE), Ausstattung, Raumart, Gebäude und Standort auflisten. Die erste Tabelle enthält sechs Einträge mit verschiedenen Kombinationen dieser Attribute, wie zum Beispiel Raum A029 mit 40 Sitzplätzen, ausgestattet mit Whiteboard, Beamer und Audio, klassifiziert als Seminarraum im Gebäude A am Standort TA. Darunter befinden sich drei miteinander verbundene Entitäts-Beziehungs-Diagramme (ER-Diagramme), die die Beziehungen zwischen den Entitäten Raum, Ausstattungsart, Ausstattung, Raumart und Gebäude darstellen. Jedes Diagramm zeigt Entitäten als Rechtecke und Beziehungen als Rauten. Die Attribute jeder Entität sind als Listenpunkte innerhalb der Rechtecke aufgeführt, wobei Primärschlüssel mit einem vorangestellten "P" und Fremdschlüssel mit einem "F" gekennzeichnet sind. Beispielsweise hat die Entität Raum die Attribute Raumnummer (RID), Raumname (RaumNm), Anzahl der Sitzplätze (AnzahlSitze) und Gebäude-ID (GID), wobei die Raumnummer der Primärschlüssel ist. Die Beziehung Ausstattung verbindet die Entitäten Raum und Ausstattungsart und hat die Attribute Raum-ID (RID), Ausstattungsart-ID (AAID) und Anzahl. Die Beziehung Raumart verbindet Raum und Raumart, und die Beziehung Gebäude verbindet Raum und Gebäude, jeweils mit den entsprechenden IDs als Fremdschlüssel.
 '>
@@ -61,7 +61,7 @@ Die Vorlesungsfolie zeigt eine Datenbankstruktur mit Beispielen für Raumdaten e
 -->
 {% include padding-id.html id=4 %}
 <h1>Relationales Modell</h1>
-<img class="w3-image" src="/lv/dmdb/a/excel-rel/d30-100.png"
+<img class="w3-image" src="/home/lv/dmdb/a/excel-rel/d30-100.png"
 alt='
 Die Abbildung zeigt ein Entity-Relationship-Modell mit vier Entitäten: "Gebäude", "Raum", "Raumart" und "Ausstattungsart", sowie einer Beziehung "Ausstattung". Jede Entität ist als Rechteck dargestellt, mit dem Entitätsnamen oben und den Attributen darunter. Die Attribute sind mit einem Präfix gekennzeichnet, um Primärschlüssel (P), Fremdschlüssel (F) und normale Attribute zu unterscheiden. Die Entität "Gebäude" hat drei Attribute: "GID" (Primärschlüssel), "Bez" und "Standort". Die Entität "Raum" hat vier Attribute: "RID" (Primärschlüssel), "RaumNr", "AnzahlSitze" und "GID" (Fremdschlüssel). Die Entität "Raumart" hat zwei Attribute: "RAID" (Primärschlüssel) und "Bez". Die Entität "Ausstattungsart" hat zwei Attribute: "AAID" (Primärschlüssel) und "Bez". Die Beziehung "Ausstattung" verbindet "Raum" und "Ausstattungsart" und hat zwei Attribute: "RID" (Fremdschlüssel) und "AAID" (Fremdschlüssel), sowie das Attribut "Anzahl". Die Beziehung zwischen "Raum" und "Raumart" wird durch die Fremdschlüssel "RAID" in "Raum" dargestellt. Die Beziehungen sind durch Linien zwischen den Entitäten dargestellt, "Raum" hat Verbindungen zu "Gebäude", "Raumart" und "Ausstattung", "Ausstattung" außerdem zu "Ausstattungsart".
 '>
@@ -72,7 +72,7 @@ Die Abbildung zeigt ein Entity-Relationship-Modell mit vier Entitäten: "Gebäud
 -->
 {% include padding-id.html id=5 %}
 <h1 class="ic-neg10">Daten</h1>
-<img class="w3-image" src="/lv/dmdb/a/excel-rel/d40-120.png"
+<img class="w3-image" src="/home/lv/dmdb/a/excel-rel/d40-120.png"
 alt='
 Die Abbildung zeigt die Excel-Tabelle von Folie 1, die Informationen über Universitätsräume und deren Ausstattung, Belegung und Standort enthält. Die Inhalte der Tabelle wird verglichen mit den Inhalten der Entitäten im Entity-Relationship-Modell, in dem noch die IDs zu den reinen Inhalten aus der Excel-Tabelle hinzukommen.
 '>

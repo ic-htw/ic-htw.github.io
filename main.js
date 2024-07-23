@@ -2,6 +2,7 @@ function init() {
     navitemsHandle();
     fillSecondSidebar();
     fillToc();
+    slidemodeHandle()
     deactivateButton();
     document.onkeyup = function (e) {
         if (e.key == "ArrowRight") {
@@ -51,40 +52,18 @@ function deactivateButton() {
     }
 }
 
-function toggleSidebar(sbId, ovlId) {
-    const sb = document.getElementById(sbId);
-    const ovl = document.getElementById(ovlId);
-    if (sb.style.display === 'block') {
-        sb.style.display = 'none';
-        ovl.style.display = "none";
-    } else {
-        sb.style.display = 'block';
-        ovl.style.display = "block";
-    }
-}
-
-function openSidebar(sbId, ovlId) {
-    w3.hide("sb1");
-    const sb = document.getElementById(sbId);
-    const ovl = document.getElementById(ovlId);
-    sb.style.display = "block";
-    ovl.style.display = "block";
-}
-
-function closeSidebar(sbId, ovlId) {
-    const sb = document.getElementById(sbId);
-    const ovl = document.getElementById(ovlId);
-    sb.style.display = "none";
-    ovl.style.display = "none";
-}
-
+// ----------------------------------------------------------------------------
+// Slidemode
+// ----------------------------------------------------------------------------
 function slideModeSetOn() {
     localStorage.setItem('slidemode', 1);
+    console.log("slideModeSetOn")
     slidemodeHandle();
 }
 
 function slideModeSetOff() {
     localStorage.setItem('slidemode', 0);
+    console.log("slideModeSetOff")
     slidemodeHandle();
 }
 
@@ -94,15 +73,20 @@ function slidemodeIsOn() {
 }
 
 function slidemodeHandle() {
+    console.log("slidemodeHandle")
     if (slidemodeIsOn()) {
+        w3.show("#btn-slidemode-on");
+        w3.hide("#btn-slidemode-off");
         w3.show(".ic-gap");
     } else {
+        w3.show("#btn-slidemode-off");
+        w3.hide("#btn-slidemode-on");
         w3.hide(".ic-gap");
     }
 }
 
 // ----------------------------------------------------------------------------
-// Navigation Hide 
+// Navigation Levels 
 // ----------------------------------------------------------------------------
 function setNavLevel1() {
     setNavitemOff('L2');
@@ -126,40 +110,6 @@ function setNavLevel4() {
     setNavitemOn('L2');
     setNavitemOn('L3');
     setNavitemOn('L4');
-    navitemsHandle();
-}
-
-function setAllNavitemsOff() {
-    setNavitemOff('L2');
-    setNavitemOff('L3');
-    setNavitemOff('L4');
-    setNavitemOff('ADBKT');
-    setNavitemOff('DataMan');
-    setNavitemOff('DbTech');
-    setNavitemOff('DMDB');
-    setNavitemOff('PBI');
-    setNavitemOff('Sonstiges');
-    setNavitemOff('AAA');
-    setNavitemOff('DBS');
-    setNavitemOff('ML');
-    setNavitemOff('PROG');
-    navitemsHandle();
-}
-
-function setAllNavitemsOn() {
-    setNavitemOn('L2');
-    setNavitemOn('L3');
-    setNavitemOn('L4');
-    setNavitemOn('ADBKT');
-    setNavitemOn('DataMan');
-    setNavitemOn('DbTech');
-    setNavitemOn('DMDB');
-    setNavitemOn('PBI');
-    setNavitemOn('Sonstiges');
-    setNavitemOn('AAA');
-    setNavitemOn('DBS');
-    setNavitemOn('ML');
-    setNavitemOn('PROG');
     navitemsHandle();
 }
 
@@ -198,8 +148,36 @@ function navitemsHandle() {
 }
 
 // ----------------------------------------------------------------------------
-// Second Sidebar
+// Sidebars
 // ----------------------------------------------------------------------------
+
+function toggleSidebar(sbId, ovlId) {
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    if (sb.style.display === 'block') {
+        sb.style.display = 'none';
+        ovl.style.display = "none";
+    } else {
+        sb.style.display = 'block';
+        ovl.style.display = "block";
+    }
+}
+
+function openSidebar(sbId, ovlId) {
+    w3.hide("sb1");
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    sb.style.display = "block";
+    ovl.style.display = "block";
+}
+
+function closeSidebar(sbId, ovlId) {
+    const sb = document.getElementById(sbId);
+    const ovl = document.getElementById(ovlId);
+    sb.style.display = "none";
+    ovl.style.display = "none";
+}
+
 function fillSecondSidebar() {
     const children = Object.entries(document.getElementById("ct").childNodes);
     const headers = children.filter(a => a[1].nodeName[0] === "H").map(a => [a[1].textContent, a[1].id])
@@ -214,10 +192,17 @@ function fillSecondSidebar() {
     });
 }
 
+// ----------------------------------------------------------------------------
+// Table of contents for slides
+// ----------------------------------------------------------------------------
 function fillToc() {
+    // executed only for slides
+    const tocCont = document.getElementById('toc');
+    if (tocCont == null) {
+        return
+    }
     const children = Object.entries(document.getElementById("ct").childNodes);
     const headers = children.filter(x => x[1].tagName === "H1").map(a => a[1].textContent);
-    const tocCont = document.getElementById('toc');
     let i = 1;
     headers.forEach(h => {
         const btn = document.createElement("button");

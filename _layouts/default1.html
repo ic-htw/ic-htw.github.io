@@ -1,6 +1,3 @@
----
-pmapx: map-home.html
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,8 +27,8 @@ pmapx: map-home.html
   <div class="w3-bar w3-theme w3-top w3-left-align w3-small">
     <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb1', 'ovl1')"><i class="fa fa-bars"></i></a>
-    <a class="w3-bar-item  w3-button w3-theme w3-left fa fa-angle-double-down" onclick="slideModeSetOn()"></a>
-    <a class="w3-bar-item  w3-button w3-theme w3-left fa fa-angle-double-up" onclick="slideModeSetOff()"></a>
+    <a id="btn-slidemode-off" class="w3-bar-item  w3-button w3-theme w3-left" onclick="slideModeSetOn()">Slidemode: Off</a>
+    <a id="btn-slidemode-on"  class="w3-bar-item  w3-button w3-theme w3-left" onclick="slideModeSetOff()">Slidemode: On</a>
     <a class="w3-bar-item  w3-theme w3-right">{{page.title}}</a>
   </div>
 
@@ -62,9 +59,6 @@ pmapx: map-home.html
     {% if page.is_slide == 0 %}
     <a class="w3-bar-item w3-button w3-left w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb2', 'ovl2')"><i class="fa fa-bars"></i></a>
-      <script>
-        slideModeSetOff();
-      </script>
     {% endif %}
     <a class="w3-bar-item w3-button w3-theme w3-left" href="#">Top</a>
     <a class="w3-bar-item w3-button w3-theme w3-left" href="/index.html">Home</a>
@@ -72,9 +66,6 @@ pmapx: map-home.html
     {% for i in (0..page.n) reversed %}
     <a id="btn-{{i}}" href="#{{i}}" class="w3-button w3-bar-item w3-right" onclick="activateButton(this)">{{i}}</a>
     {% endfor %}
-    <script>
-      slideModeSetOn();
-    </script>
     {% endif %}
   </div>
 
