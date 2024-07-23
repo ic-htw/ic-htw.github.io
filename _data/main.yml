@@ -49,45 +49,105 @@ home: &r
                 sub:
                   - t: ER-Modelle 1
                     ts: ER-Modelle 1
-                    url: #
+                    url: /home/lv/dmdb/er/er1.html
                   - t: ER-Modelle 2
                     ts: ER-Modelle 2
-                    url: #
+                    url: /home/lv/dmdb/er/er2.html
+                  - t: ER-Modelle 3
+                    ts: ER-Modelle 3
+                    url: /home/lv/dmdb/er/er3.html
+                  - t: ER-Modelle 4
+                    ts: ER-Modelle 4
+                    url: /home/lv/dmdb/er/er4.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dmdb/sql/1-sql.html
                 sub:
-                  - t: xx
-                    ts: xx
-                    url: #
+                  - t: Abfragen auf einer Tabelle
+                    ts: Abfragen auf einer Tabelle
+                    url: /home/lv/dmdb/sql/sql-one.html
+                  - t: Verbund
+                    ts: Verbund
+                    url: /home/lv/dmdb/sql/sql-join.html
+                  - t: Gruppierungen / Aggregationen
+                    ts: Gruppierungen / Aggregationen
+                    url: /home/lv/dmdb/sql/sql-grp-agg.html
+                  - t: Unterabfragen
+                    ts: Unterabfragen
+                    url: /home/lv/dmdb/sql/sql-sub.html
+                  - t: Fenster-Funktionen
+                    ts: Fenster-Funktionen
+                    url: /home/lv/dmdb/sql/sql-window.html
+                  - t: Fallbeipiele
+                    ts: Fallbeipiele
+                    url: /home/lv/dmdb/sql/sql-case.html
               - t: Visualisierungen
                 ts: Visualisierungen
                 url: /home/lv/dmdb/viz/1-viz.html
                 sub:
-                  - t: xx
-                    ts: xx
-                    url: #
+                  - t: Diagrammtypen
+                    ts: Diagrammtypen
+                    url: /home/lv/dmdb/viz/viz-types.html
+                  - t: Beträge
+                    ts: Beträge
+                    url: /home/lv/dmdb/viz/viz-amounts.html
+                  - t: Verteilungen
+                    ts: Verteilungen
+                    url: /home/lv/dmdb/viz/viz-dist.html
+                  - t: Viele Verteilungen
+                    ts: Viele Verteilungen
+                    url: /home/lv/dmdb/viz/viz-dist-many.html
+                  - t: Proportionen
+                    ts: Proportionen
+                    url: /home/lv/dmdb/viz/viz-proportions.html
+                  - t: Assoziationen
+                    ts: Assoziationen
+                    url: /home/lv/dmdb/viz/viz-assoc.html
+                  - t: Zeitreihen
+                    ts: Zeitreihen
+                    url: /home/lv/dmdb/viz/viz-timeseries.html
+                  - t: Sonstiges
+                    ts: Sonstiges
+                    url: /home/lv/dmdb/viz/viz-sonstige.html
               - t: Datenmodelle - relational
                 ts: Datenmodelle - relational
                 url: /home/lv/dmdb/dm-rel/1-dm-rel.html
                 sub:
-                  - t: xx
-                    ts: xx
-                    url: #
+                  - t: Unternehmen
+                    ts: Unternehmen
+                    url: /home/lv/dmdb/dm-rel/dm-unternehmen.html
+                  - t: Playlist
+                    ts: Playlist
+                    url: /home/lv/dmdb/dm-rel/dm-playlist.html
+                  - t: Foodmart
+                    ts: Foodmart
+                    url: /home/lv/dmdb/dm-rel/dm-foodmart.html
+                  - t: Gartenmöbel
+                    ts: Gartenmöbel
+                    url: /home/lv/dmdb/dm-rel/dm-gm.html
               - t: Datenmodelle - ER
                 ts: Datenmodelle - ER
                 url: /home/lv/dmdb/dm-er/1-dm-er.html
                 sub:
-                  - t: xx
-                    ts: xx
-                    url: #
+                  - t: Hochschule
+                    ts: Hochschule
+                    url: /home/lv/dmdb/dm-er/er-hochschule.html
               - t: Arbeitsblätter
                 ts: Arbeitsblätter
                 url: /home/lv/dmdb/ab/1-ab.html
                 sub:
-                  - t: xx
-                    ts: xx
-                    url: #
+                  - t: Arbeitsblatt 1
+                    ts: Arbeitsblatt 1
+                    url: /home/lv/dmdb/ab/ab-01.html
+                  - t: Arbeitsblatt 2
+                    ts: Arbeitsblatt 2
+                    url: /home/lv/dmdb/ab/ab-02.html
+                  - t: Arbeitsblatt 3
+                    ts: Arbeitsblatt 3
+                    url: /home/lv/dmdb/ab/ab-03.html
+                  - t: Arbeitsblatt 4
+                    ts: Arbeitsblatt 4
+                    url: /home/lv/dmdb/ab/ab-04.html
           - t: Datenbanktechnologien
             ts: DBTECH
             url: /home/lv/dbtech/dbtech.html
