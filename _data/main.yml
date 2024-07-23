@@ -10,36 +10,83 @@ home: &r
           - t: Datenmodellierung und Datenbanksysteme
             ts: DMDB
             url: /home/lv/dmdb/dmdb.html
-            sub:
-              - t: Allgemein
-                ts: Allgemein
-                url: #
+            sub: &dmdb
+              - t: Allgemeines
+                ts: Allgemeines
+                url: /home/lv/dmdb/allgemeines/1-allgemeines.html
                 sub:
                   - t: Überblick
                     ts: Überblick
-                    url: #
+                    url: /home/lv/dmdb/allgemeines/ueberblick.html
                   - t: Plan
                     ts: Plan
-                    url: #
+                    url: /home/lv/dmdb/allgemeines/plan.html
+                  - t: Video
+                    ts: Video
+                    url: https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV
+                  - t: Share
+                    ts: Share
+                    url: /home/lv/dmdb/allgemeines/share.html
+                  - t: Probeklausur
+                    ts: Probeklausur
+                    url: /home/lv/dmdb/a/probeklausur/dmdb-probeklausur.pdf
               - t: Rel
                 ts: Rel
-                url: #
+                url: /home/lv/dmdb/rel/1-rel.html
                 sub:
                   - t: Relationenmodell
                     ts: Relationenmodell
-                    url: #
+                    url: /home/lv/dmdb/rel/relmod.html
                   - t: Excel / Rel
                     ts: Excel / Rel
-                    url: #
+                    url: /home/lv/dmdb/rel/rel-excel.html
+                  - t: Normalformen
+                    ts: Normalformen
+                    url: /home/lv/dmdb/rel/norm.html
               - t: ER
                 ts: ER
-                url: #
+                url: /home/lv/dmdb/er/1-er.html
                 sub:
                   - t: ER-Modelle 1
                     ts: ER-Modelle 1
                     url: #
                   - t: ER-Modelle 2
                     ts: ER-Modelle 2
+                    url: #
+              - t: SQL
+                ts: SQL
+                url: /home/lv/dmdb/sql/1-sql.html
+                sub:
+                  - t: xx
+                    ts: xx
+                    url: #
+              - t: Visualisierungen
+                ts: Visualisierungen
+                url: /home/lv/dmdb/viz/1-viz.html
+                sub:
+                  - t: xx
+                    ts: xx
+                    url: #
+              - t: Datenmodelle - relational
+                ts: Datenmodelle - relational
+                url: /home/lv/dmdb/dm-rel/1-dm-rel.html
+                sub:
+                  - t: xx
+                    ts: xx
+                    url: #
+              - t: Datenmodelle - ER
+                ts: Datenmodelle - ER
+                url: /home/lv/dmdb/dm-er/1-dm-er.html
+                sub:
+                  - t: xx
+                    ts: xx
+                    url: #
+              - t: Arbeitsblätter
+                ts: Arbeitsblätter
+                url: /home/lv/dmdb/ab/1-ab.html
+                sub:
+                  - t: xx
+                    ts: xx
                     url: #
           - t: Datenbanktechnologien
             ts: DBTECH
@@ -224,6 +271,31 @@ home: &r
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html
+            sub:
+              - t: Teaching Material
+                ts: Teaching Material
+                url: /home/lv/dataman/p/teach-mat.html
+              - t: Schedule
+                ts: Schedule
+                url: /home/lv/dataman/p/schedule.html
+              - t: Presentations
+                ts: Presentations
+                url: /home/lv/dataman/p/pres.html
+              - t: Classroom Exercises
+                ts: Classroom Exercises
+                url: /home/lv/dataman/p/ex-classroom.html
+              - t: Rated Exercises
+                ts: Rated Exercises
+                url: /home/lv/dataman/p/ex-rated.html
+              - t: Software
+                ts: Software
+                url: /home/lv/dataman/p/software.html
+              - t: SQL Patterns
+                ts: SQL Patterns
+                url: /home/lv/dataman/p/sql-patterns.html
+              - t: Grading
+                ts: Grading
+                url: /home/lv/dataman/p/grading.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
@@ -402,6 +474,7 @@ home: &r
 r: *r
 h: *h
 lv: *lv
+dmdb: *dmdb
 adbkt: *adbkt
 sonst: *sonst
 links: *links

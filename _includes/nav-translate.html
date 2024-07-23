@@ -8,6 +8,30 @@
   <!-- DMDB -->
 {% elsif page.nav == "dmdb"%}
   {% assign x = site.data.main.lv[0] %}
+<!-- DMDB - Allgemeines -->
+{% elsif page.nav == "dmdb-allgemeines"%}
+  {% assign x = site.data.main.dmdb[0] %}
+<!-- DMDB - Rel -->
+{% elsif page.nav == "dmdb-rel"%}
+  {% assign x = site.data.main.dmdb[1] %}
+<!-- DMDB - ER -->
+{% elsif page.nav == "dmdb-er"%}
+  {% assign x = site.data.main.dmdb[2] %}
+<!-- DMDB - SQL -->
+{% elsif page.nav == "dmdb-sql"%}
+  {% assign x = site.data.main.dmdb[3] %}
+<!-- DMDB - Viz -->
+{% elsif page.nav == "dmdb-viz"%}
+  {% assign x = site.data.main.dmdb[4] %}
+<!-- DMDB - DM-Rel -->
+{% elsif page.nav == "dmdb-dm-rel"%}
+  {% assign x = site.data.main.dmdb[5] %}
+<!-- DMDB - DM-ER -->
+{% elsif page.nav == "dmdb-dm-er"%}
+  {% assign x = site.data.main.dmdb[6] %}
+<!-- DMDB - AB -->
+{% elsif page.nav == "dmdb-ab"%}
+  {% assign x = site.data.main.dmdb[7] %}
 
   <!-- DbTech -->
 {% elsif page.nav == "dbtech"%}
