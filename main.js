@@ -5,15 +5,13 @@ function init() {
     navitemsHandle();
     fillSecondSidebar();
     fillToc();
-    initSlideNavigation();
     slidemodeHandle();
-    deactivateButton();
     document.onkeyup = function (e) {
         if (e.key == "ArrowRight") {
-            slideNo = keyUpSlide(slideNo, "r");
+            keyUpSlide("r");
         }
         if (e.key == "ArrowLeft") {
-            slideNo = keyUpSlide(slideNo, "l");
+            keyUpSlide("l");
         }
     }
 }
@@ -21,54 +19,77 @@ function init() {
 // ----------------------------------------------------------------------------
 // Slide navigation
 // ----------------------------------------------------------------------------
-const slidesets = ["norm", "relmod"]
-function initSlideNavigation() {
-    slidesets.forEach(s => {
-        const i = localStorage.getItem(s);
-        if (i == null) {
-            localStorage.setItem(s, 0);
-        }
-        console.log(s);
-    })   
+let gvarSlideset;
+let gvarNoOfSlides
+
+function setSlideset(slideset) {
+    // console.log(`slideset: ${slideset}`);
+    gvarSlideset = slideset;
 }
 
-function keyUpSlide(i, dir) {
-    if (slidemodeIsOn()) {
-        if (dir == "r") {
-            i = i + 1;
+function setNoOfSlides(noOfSlides) {
+    // console.log(`noOfSlides: ${noOfSlides}`);
+    gvarNoOfSlides = noOfSlides;
+}
+
+function getSlideNo() {
+    let slideno = localStorage.getItem(gvarSlideset);
+    slideno = (slideno == null) ? 0 : slideno
+    return parseInt(slideno);
+}
+
+function setSlideNo(slideno) {
+    // console.log(`setSlideNo: ${slideno}`);
+    localStorage.setItem(gvarSlideset, slideno);    
+}
+
+function keyUpSlide(dir) {
+    // console.log(`keyUpSlide: ${dir}`);
+    console.log(`slidemodeIsOn: ${slidemodeIsOn()}`);
+    if (!slidemodeIsOn()) {
+        return;
+    }
+
+    const slideno = getSlideNo()
+    if (dir == "r") {
+        if (slideno < gvarNoOfSlides) {
+            setSlideNo(slideno + 1);
+        } else {
+            setSlideNo(0);
         }
-        else {
-            i = i - 1;
-        }
-        // console.log(i);
-        let btn = document.getElementById("btn-" + i);
-        if (btn == null) {
-            btn = document.getElementById("btn-0");
-            i = 0;
-        }
-        window.location.href = "#" + i;
-        activateButton(btn);
-        return i;
     } else {
-        return -1;
+        if (slideno == 0) {
+            setSlideNo(gvarNoOfSlides);
+        } else {
+            setSlideNo(slideno - 1);
+        }
     }
+
+    renderButtonActivation();
 }
 
-function activateButton(btn) {
-    const icActive = document.getElementsByClassName("ic-active");
-    if (icActive.length > 0) {
-        icActive[0].className = icActive[0].className.replace(" ic-active", "");
-    }
+function activateButton(i) {
+    // console.log(`btn: ${i}`);
+    setSlideNo(i)
+    renderButtonActivation();
+}
+
+function renderButtonActivation() {
+    const slideno = getSlideNo()
+
+    // remove all activations
+    const icActive = Array.from(document.getElementsByClassName("ic-active"));
+    icActive.forEach(e => {
+        e.className = e.className.replace(" ic-active", "");
+    });
+
+    const btn = document.getElementById("btn-" + slideno);
     btn.className += " ic-active";
-    // console.log(btn.textContent)
+
+    location.href = `#${slideno}`;
 }
 
-function deactivateButton() {
-    const icActive = document.getElementsByClassName("ic-active");
-    if (icActive.length > 0) {
-        icActive[0].className = icActive[0].className.replace(" ic-active", "");
-    }
-}
+
 
 // ----------------------------------------------------------------------------
 // Slidemode
@@ -223,7 +244,7 @@ function fillToc() {
 }
 
 function clickTocBtn(i) {
-    console.log(`#${i}`)
+    // console.log(`#${i}`)
     window.location.href = `#${i}`;
     const slideBtn = document.getElementById(`btn-${i}`);
     activateButton(slideBtn);

@@ -29,8 +29,8 @@
   <div class="w3-bar w3-theme w3-top w3-left-align w3-small">
     <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb1', 'ovl1')"><i class="fa fa-bars"></i></a>
-    <a class="w3-bar-item w3-button w3-theme w3-left" href="#">Top</a>
-    <a class="w3-bar-item w3-button w3-theme w3-left" href="/index.html">Home</a>
+    <a class="w3-bar-item w3-theme w3-left" href="#">Top</a>
+    <a class="w3-bar-item w3-theme w3-left" href="/index.html">Home</a>
     {% if page.is_slide == 0 %}
     <a class="w3-bar-item w3-button w3-right w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb2', 'ovl2')"><i class="fa fa-bars"></i></a>
@@ -67,9 +67,21 @@
   <div class="w3-bar w3-bottom w3-theme w3-small">
     <div class="w3-bar-item">&nbsp;</div>
     {% if page.is_slide == 1 %}
-    {% for i in (0..page.n) reversed %}
-    <a id="btn-{{i}}" href="#{{i}}" class="w3-button w3-bar-item w3-right" onclick="activateButton(this)">{{i}}</a>
-    {% endfor %}
+      {% for i in (0..page.n) reversed %}
+        <button id="btn-{{i}}" onclick="activateButton('{{i}}')" class="w3-button w3-tiny w3-right">{{i}}</button>
+      {% endfor %}
+      <script>
+        slideModeSetOn();
+        const slideset = "{{page.name}}"
+        const noOfSlides = "{{page.n}}"
+        setSlideset(slideset);
+        setNoOfSlides(noOfSlides);
+        renderButtonActivation();
+      </script>
+    {% else %}
+    <script>
+        slideModeSetOff();
+    </script>
     {% endif %}
   </div>
 
