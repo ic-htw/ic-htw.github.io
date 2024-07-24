@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- No, Data Engineers Don’t NEED dbt.
+[(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
+
 - Wren AI Text-to-SQL: API — the good stuff
 [(link)](https://medium.com/@qdrddr/wrenai-text-to-sql-api-the-good-stuff-e4d57c0c181c)
 
