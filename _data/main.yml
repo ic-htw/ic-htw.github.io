@@ -1,5 +1,5 @@
 home: &r
-  - t: Home
+  - t: Prof. Dr. Ingo Claßen
     ts: Home
     url: /home/home.html
     sub: &h
@@ -30,7 +30,7 @@ home: &r
                   - t: Probeklausur
                     ts: Probeklausur
                     url: /home/lv/dmdb/a/probeklausur/dmdb-probeklausur.pdf
-              - t: Rel
+              - t: Relationenmodell
                 ts: Rel
                 url: /home/lv/dmdb/rel/1-rel.html
                 sub:

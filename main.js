@@ -1,8 +1,12 @@
+// ----------------------------------------------------------------------------
+// Init page
+// ----------------------------------------------------------------------------
 function init() {
     navitemsHandle();
     fillSecondSidebar();
     fillToc();
-    slidemodeHandle()
+    initSlideNavigation();
+    slidemodeHandle();
     deactivateButton();
     document.onkeyup = function (e) {
         if (e.key == "ArrowRight") {
@@ -12,6 +16,20 @@ function init() {
             slideNo = keyUpSlide(slideNo, "l");
         }
     }
+}
+
+// ----------------------------------------------------------------------------
+// Slide navigation
+// ----------------------------------------------------------------------------
+const slidesets = ["norm", "relmod"]
+function initSlideNavigation() {
+    slidesets.forEach(s => {
+        const i = localStorage.getItem(s);
+        if (i == null) {
+            localStorage.setItem(s, 0);
+        }
+        console.log(s);
+    })   
 }
 
 function keyUpSlide(i, dir) {
@@ -57,13 +75,11 @@ function deactivateButton() {
 // ----------------------------------------------------------------------------
 function slideModeSetOn() {
     localStorage.setItem('slidemode', 1);
-    console.log("slideModeSetOn")
     slidemodeHandle();
 }
 
 function slideModeSetOff() {
     localStorage.setItem('slidemode', 0);
-    console.log("slideModeSetOff")
     slidemodeHandle();
 }
 
@@ -73,7 +89,6 @@ function slidemodeIsOn() {
 }
 
 function slidemodeHandle() {
-    console.log("slidemodeHandle")
     if (slidemodeIsOn()) {
         w3.show("#btn-slidemode-on");
         w3.hide("#btn-slidemode-off");
@@ -110,16 +125,6 @@ function setNavLevel4() {
     setNavitemOn('L2');
     setNavitemOn('L3');
     setNavitemOn('L4');
-    navitemsHandle();
-}
-
-function navitemToggle(id) {
-    console.log(id);
-    if (isNavitemIsOff(id)) {
-        setNavitemOn(id);
-    } else {
-        setNavitemOff(id);
-    }
     navitemsHandle();
 }
 

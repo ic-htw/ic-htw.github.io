@@ -3,5 +3,7 @@ layout: default1
 nav: dmdb-ab
 is_slide: 0
 ---
-<h1>{{ site.data.main.dmdb[7].t}}</h1>
+{% include translate.html %}
+<h1>{{ x.t }}</h1>
+{% include nav.html root=x.sub title=x.ts url=x.url %}
 

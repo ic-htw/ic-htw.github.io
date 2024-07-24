@@ -1,16 +1,19 @@
-<div class="w3-bar"> 
+<div class="w3-bar w3-padding-small"> 
   <button onclick="setNavLevel1()" class="w3-button w3-tiny w3-theme">1</button>
   <button onclick="setNavLevel2()" class="w3-button w3-tiny w3-theme">2</button>
   <button onclick="setNavLevel3()" class="w3-button w3-tiny w3-theme">3</button>
   <button onclick="setNavLevel4()" class="w3-button w3-tiny w3-theme">4</button>
-  <!--
-  <button id="btn-slidemode-off" onclick="slideModeSetOn()" class="w3-button w3-tiny">Slides</button>
-  <button id="btn-slidemode-on" onclick="slideModeSetOff()" class="w3-button w3-tiny w3-theme">NoSlides</button>
-  -->
 </div>
   
-<div class="w3-large">{{include.title}}</div>
-<div>
+{% if page.is_slide == 1 %}
+  <div class="w3-padding-small">
+    <button id="btn-slidemode-off" onclick="slideModeSetOn()" class="w3-button w3-tiny w3-theme">Slidemode: off</button>
+    <button id="btn-slidemode-on" onclick="slideModeSetOff()" class="w3-button w3-tiny w3-theme">Slidemode: on</button>
+  </div>
+{% endif %}
+
+<div class="w3-large w3-padding-small">{{include.title}}</div>
+<div class="w3-padding-small">
 {% for i in include.root %}
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="{{i.url}}">{{i.ts}}</a><br>

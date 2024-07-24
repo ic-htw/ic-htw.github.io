@@ -3,8 +3,6 @@ layout: default1
 nav: adbkt-pruefungen
 is_slide: 0
 ---
-<!--
-    <h1>{{site.data.main.home[0].sub[0].sub[2].sub[3].t}}</h1>
--->
-
-<h1>{{ site.data.main.adbkt[3].t}}</h1>
+{% include translate.html %}
+<h1>{{ x.t }}</h1>
+{% include nav.html root=x.sub title=x.ts url=x.url %}

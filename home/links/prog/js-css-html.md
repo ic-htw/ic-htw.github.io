@@ -20,6 +20,8 @@ is_slide: 0
 [(link)](https://wiki.selfhtml.org/)
 - w3schools
 [(link)](https://www.w3schools.com/)
+- W3.CSS Reference
+[(link)](https://www.w3schools.com/w3css/w3css_references.asp)
 - W3.CSS Tutorial
 [(link)](https://www.w3schools.com/w3css/default.asp)
 - W3.JS
