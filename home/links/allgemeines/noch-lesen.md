@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Pinecone vs. Postgres pgvector
+[(link)](https://www.pinecone.io/blog/pinecone-vs-pgvector/)
+
+- Postgres vs. Pinecone
+[(link)](https://lantern.dev/blog/postgres-vs-pinecone)
+
+- Quantization of LLMs with llama.cpp
+[(link)](https://medium.com/@ingridwickstevens/quantization-of-llms-with-llama-cpp-9bbf59deda35)
+
 - No, Data Engineers Don’t NEED dbt.
 [(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
 
