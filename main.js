@@ -2,66 +2,126 @@
 // Init page
 // ----------------------------------------------------------------------------
 function init() {
-    navitemsHandle();
+    navLevelHandle();
     fillSecondSidebar();
     fillToc();
-    slidemodeHandle();
-    document.onkeyup = function (e) {
-        if (e.key == "ArrowRight") {
-            keyUpSlide("r");
-        }
-        if (e.key == "ArrowLeft") {
-            keyUpSlide("l");
+    if (slideIsOn()) {
+        slidemodeHandle();
+        document.onkeyup = function (e) {
+            if (e.key == "ArrowRight") {
+                keyUpSlide("r");
+            }
+            if (e.key == "ArrowLeft") {
+                keyUpSlide("l");
+            }
         }
     }
 }
+
+// ----------------------------------------------------------------------------
+// Local storage
+// ----------------------------------------------------------------------------
+
+// Slides ---------------------------------------------------------------------
+function slideSetOn() {
+    localStorage.setItem("ichp-slide", 1);
+}
+
+function slideSetOff() {
+    localStorage.setItem("ichp-slide", 0);
+}
+
+function slideIsOn() {
+    const slide = localStorage.getItem('ichp-slide');
+    // null is regarded as off
+    return slide == 1;
+}
+
+// Slide mode -----------------------------------------------------------------
+function slideModeSetOn() {
+    localStorage.setItem("slidemode", 1);
+    slidemodeHandle();
+}
+
+function slideModeSetOff() {
+    localStorage.setItem("slidemode", 0);
+    slidemodeHandle();
+}
+
+function slidemodeIsOn() {
+    const slidemode = localStorage.getItem('slidemode');
+    // null is regarded as off
+    return slidemode == 1;
+}
+
+// Navigation levels ----------------------------------------------------------
+function setNavLevel(level) {
+    localStorage.setItem("ichp-nav-level", level);
+    navLevelHandle();
+}
+
+function getNavLevel() {
+    const navLevel = localStorage.getItem("ichp-nav-level");
+    return (navLevel == null) ? 4 : parseInt(navLevel);
+}
+
+// Slide set ------------------------------------------------------------------
+function setSlideset(slideset) {
+    // console.log(`setSlideset: ${slideset}`)
+    localStorage.setItem("ichp-slideset", slideset);
+}
+
+function getSlideset() {
+    const slideset = localStorage.getItem("ichp-slideset");
+    return (slideset == null) ? "none" : slideset;
+    // console.log(`getSlideset: ${slideset}`)
+}
+
+// Slide numbers --------------------------------------------------------------
+function setNoOfSlides(noOfSlides) {
+    localStorage.setItem("ichp-noOfSlides", noOfSlides);
+}
+
+function getNoOfSlides() {
+    const noOfSlides = parseInt(localStorage.getItem("ichp-noOfSlides"));
+    return (noOfSlides == null) ? 0 : parseInt(noOfSlides);
+}
+
+// Current slide numbers ------------------------------------------------------
+function setCurrentSlideNo(slideNo) {
+    const slideset = getSlideset()
+    localStorage.setItem(`ichp-${slideset}-slideno`, slideNo);
+}
+
+function getCurrentSlideNo() {
+    const slideset = getSlideset()
+    const slideNo = localStorage.getItem(`ichp-${slideset}-slideno`);
+    return (slideNo == null) ? 0 : parseInt(slideNo);
+}
+
 
 // ----------------------------------------------------------------------------
 // Slide navigation
 // ----------------------------------------------------------------------------
-let gvarSlideset;
-let gvarNoOfSlides
-
-function setSlideset(slideset) {
-    // console.log(`slideset: ${slideset}`);
-    gvarSlideset = slideset;
-}
-
-function setNoOfSlides(noOfSlides) {
-    // console.log(`noOfSlides: ${noOfSlides}`);
-    gvarNoOfSlides = noOfSlides;
-}
-
-function getSlideNo() {
-    let slideno = localStorage.getItem(gvarSlideset);
-    slideno = (slideno == null) ? 0 : slideno
-    return parseInt(slideno);
-}
-
-function setSlideNo(slideno) {
-    // console.log(`setSlideNo: ${slideno}`);
-    localStorage.setItem(gvarSlideset, slideno);    
-}
-
 function keyUpSlide(dir) {
     // console.log(`keyUpSlide: ${dir}`);
-    console.log(`slidemodeIsOn: ${slidemodeIsOn()}`);
-    if (!slidemodeIsOn()) {
+    if (!slideIsOn()) {
         return;
     }
 
-    const slideno = getSlideNo()
+    const slideNo = getCurrentSlideNo();
+    const noOfSlides = getNoOfSlides()
     if (dir == "r") {
-        if (slideno < gvarNoOfSlides) {
-            setSlideNo(slideno + 1);
+        if (slideNo < noOfSlides) {
+            setCurrentSlideNo(slideNo + 1);
         } else {
-            setSlideNo(0);
+            setCurrentSlideNo(0);
         }
     } else {
-        if (slideno == 0) {
-            setSlideNo(gvarNoOfSlides);
+        if (slideNo == 0) {
+            setCurrentSlideNo(noOfSlides);
         } else {
-            setSlideNo(slideno - 1);
+            setCurrentSlideNo(slideNo - 1);
         }
     }
 
@@ -69,13 +129,13 @@ function keyUpSlide(dir) {
 }
 
 function activateButton(i) {
-    // console.log(`btn: ${i}`);
-    setSlideNo(i)
+    // console.log(`activateButton: ${i}`);
+    setCurrentSlideNo(i)
     renderButtonActivation();
 }
 
 function renderButtonActivation() {
-    const slideno = getSlideNo()
+    const slideNo = getCurrentSlideNo()
 
     // remove all activations
     const icActive = Array.from(document.getElementsByClassName("ic-active"));
@@ -83,32 +143,17 @@ function renderButtonActivation() {
         e.className = e.className.replace(" ic-active", "");
     });
 
-    const btn = document.getElementById("btn-" + slideno);
+    const btn = document.getElementById("btn-" + slideNo);
     btn.className += " ic-active";
 
-    location.href = `#${slideno}`;
+    location.href = `#${slideNo}`;
 }
 
 
 
 // ----------------------------------------------------------------------------
-// Slidemode
+// Slide mode
 // ----------------------------------------------------------------------------
-function slideModeSetOn() {
-    localStorage.setItem('slidemode', 1);
-    slidemodeHandle();
-}
-
-function slideModeSetOff() {
-    localStorage.setItem('slidemode', 0);
-    slidemodeHandle();
-}
-
-function slidemodeIsOn() {
-    const slidemode = localStorage.getItem('slidemode');
-    return slidemode == 1;
-}
-
 function slidemodeHandle() {
     if (slidemodeIsOn()) {
         w3.show("#btn-slidemode-on");
@@ -122,56 +167,15 @@ function slidemodeHandle() {
 }
 
 // ----------------------------------------------------------------------------
-// Navigation Levels 
+// Navigation handling 
 // ----------------------------------------------------------------------------
-function setNavLevel1() {
-    setNavitemOff('L2');
-    navitemsHandle();
+function navLevelHandle() {
+    const navLevels = ["L1", "L2", "L3", "L4"]
+    const navLevel = getNavLevel();
+    navLevels.forEach(l => { w3.show(`.${l}`); });
+    w3.hide(`.${navLevels[navLevel]}`);
 }
 
-function setNavLevel2() {
-    setNavitemOn('L2');
-    setNavitemOff('L3');
-    navitemsHandle();
-}
-
-function setNavLevel3() {
-    setNavitemOn('L2');
-    setNavitemOn('L3');
-    setNavitemOff('L4');
-    navitemsHandle();
-}
-
-function setNavLevel4() {
-    setNavitemOn('L2');
-    setNavitemOn('L3');
-    setNavitemOn('L4');
-    navitemsHandle();
-}
-
-function isNavitemIsOff(id) {
-    const navItem = localStorage.getItem(id);
-    return (navItem == null || navItem == 0);
-}
-
-function setNavitemOff(id) {
-    localStorage.setItem(id, 0);
-}
-
-function setNavitemOn(id) {
-    localStorage.setItem(id, 1);
-}
-
-function navitemsHandle() {
-    for (let i = 0; i < localStorage.length; i++) {
-        let id = localStorage.key(i);
-        if (isNavitemIsOff(id)) {
-            w3.hide(`.${id}`);
-        } else {
-            w3.show(`.${id}`);
-        }
-    }
-}
 
 // ----------------------------------------------------------------------------
 // Sidebars

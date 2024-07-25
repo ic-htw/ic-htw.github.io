@@ -71,7 +71,7 @@
         <button id="btn-{{i}}" onclick="activateButton('{{i}}')" class="w3-button w3-tiny w3-right">{{i}}</button>
       {% endfor %}
       <script>
-        slideModeSetOn();
+        slideSetOn();
         const slideset = "{{page.name}}"
         const noOfSlides = "{{page.n}}"
         setSlideset(slideset);
@@ -80,13 +80,12 @@
       </script>
     {% else %}
     <script>
-        slideModeSetOff();
+        slideSetOff();
     </script>
     {% endif %}
   </div>
 
   <script>
-    let slideNo = -1;
     hljs.highlightAll();
   </script>
 
