@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Customize Generative AI Models for Enterprise Applications with Llama 3.1
+[(link)](https://developer.nvidia.com/blog/customize-generative-ai-models-for-enterprise-applications-with-llama-3-1/)
+
 - Pinecone vs. Postgres pgvector
 [(link)](https://www.pinecone.io/blog/pinecone-vs-pgvector/)
 

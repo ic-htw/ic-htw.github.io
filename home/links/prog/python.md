@@ -60,6 +60,9 @@ is_slide: 0
 
 
 # Libs
+- FireDucks
+[(link)](https://fireducks-dev.github.io/)
+
 - parse
 [(link)](https://pypi.org/project/parse/)
 
