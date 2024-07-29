@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Claude Dev
+[(link)](https://github.com/saoudrizwan/claude-dev)
+
+- Create a SQL Agent using CrewAI and Groq
+[(link)](https://medium.com/the-ai-forum/create-a-sql-agent-using-crewai-and-groq-005895ba31b3)
+
+- What We Still Don’t Understand About Machine Learning
+[(link)](https://hesamsheikh.substack.com/p/what-we-still-dont-understand-about)
+
 - Customize Generative AI Models for Enterprise Applications with Llama 3.1
 [(link)](https://developer.nvidia.com/blog/customize-generative-ai-models-for-enterprise-applications-with-llama-3-1/)
 
