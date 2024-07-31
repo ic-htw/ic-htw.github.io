@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Kafka is dead, long live Kafka
+[(link)](https://medium.com/@warpstream/kafka-is-dead-long-live-kafka-4ef4fdce03e2)
+
+- Real-time Distributed score streaming using gRPC and Redis
+[(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
+
 - Claude Dev
 [(link)](https://github.com/saoudrizwan/claude-dev)
 
