@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The fastest way to copy data between Postgres tables
+[(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
+
 - Kafka is dead, long live Kafka
 [(link)](https://medium.com/@warpstream/kafka-is-dead-long-live-kafka-4ef4fdce03e2)
 

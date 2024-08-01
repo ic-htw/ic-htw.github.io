@@ -84,6 +84,8 @@ is_slide: 0
 - PostgresML
 [(link)](https://postgresml.org/)
 [(link)](https://github.com/postgresml/postgresml)
+- PostgresML Docker
+[(link)](https://github.com/postgresml/postgresml/pkgs/container/postgresml)
 - MADLib
 [(link)](https://madlib.apache.org/)
 - Storing OpenAI embeddings in Postgres with pgvector
@@ -91,6 +93,8 @@ is_slide: 0
 
 
 # extensions / tools
+- pg_statviz
+[(link)](https://github.com/vyruss/pg_statviz)
 - PGXN: PostgreSQL Extension Network
 [(link)](https://pgxn.org/)
 - pgxn client
