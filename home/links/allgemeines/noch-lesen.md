@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Query Hugging Face Datasets from Postgres
+[(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
+
+- Querying 1TB on a laptop with Python dataframes
+[(link)](https://ibis-project.org/posts/1tbc/)
+
+- How Good is Parquet for Wide Tables (Machine Learning Workloads) Really? 
+[(link)](https://www.influxdata.com/blog/how-good-parquet-wide-tables/)
+
 - The fastest way to copy data between Postgres tables
 [(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
 

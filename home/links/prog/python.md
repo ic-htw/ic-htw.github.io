@@ -45,6 +45,9 @@ is_slide: 0
 - Python f-string Codes
 [(link)](https://ibexorigin.medium.com/have-mercy-on-yourself-and-learn-these-9-everyday-python-f-string-codes-e8104677d7c7)
 
+- How to Use Python Data Classes
+[(link)](https://www.dataquest.io/blog/how-to-use-python-data-classes/)
+
 # astral
 - Announcing Astral, the company behind Ruff
 [(link)](https://astral.sh/blog/announcing-astral-the-company-behind-ruff)
