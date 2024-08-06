@@ -9,6 +9,36 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- MySQL 9.0 GA is Here!
+[(link)(https://medium.com/@haiou-a/mysql-9-0-ga-is-here-355b5fda262f)
+
+- Summarizing Recent Wins for Apache Iceberg Table Format
+[(link)(https://medium.com/data-engineering-with-dremio/summarizing-recent-wins-for-apache-iceberg-table-format-7a60f0803d86)
+
+- Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
+[(link)(https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
+
+- Build an Agentic RAG using HuggingFace Transformers Agent
+[(link)(https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
+
+- Hermes: A Text-to-SQL solution at Swiggy
+[(link)(https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
+
+- Postgres concurrency, locks and isolation levels
+[(link)(https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
+
+- Ollama with MySQL+PostgreSQL on AnythingLLM
+[(link)(https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
+
+- Delivering Faster Analytics at Pinterest
+[(link)(https://medium.com/pinterest-engineering/delivering-faster-analytics-at-pinterest-a639cdfad374)
+
+- Semantic Chunking for Enhanced RAG Applications!
+[(link)(https://levelup.gitconnected.com/semantic-chunking-for-enhanced-rag-applications-b6bc92942af0)
+
+- Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
+[(link)(https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
+
 - Query Hugging Face Datasets from Postgres
 [(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
 
