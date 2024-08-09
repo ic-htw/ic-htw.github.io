@@ -10,49 +10,49 @@ is_slide: 0
 [(link)](bbb)
 -->
 - This New Python Web Framework Changes Everything…
-[(link)(https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
+[(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
 
 - How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
-[(link)(https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
+[(link)](https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
 
 - Google Search vs Perplexity vs SearchGPT
-[(link)(https://generativeai.pub/google-search-vs-perplexity-vs-searchgpt-6b65eb3941e4)
+[(link)](https://generativeai.pub/google-search-vs-perplexity-vs-searchgpt-6b65eb3941e4)
 
 - Text Extraction: Comparing DONUT and Amazon Textract in Insurance Field
-[(link)(https://heka-ai.medium.com/text-extraction-comparing-donut-and-amazon-textract-in-insurance-field-69c092a513fc)
+[(link)](https://heka-ai.medium.com/text-extraction-comparing-donut-and-amazon-textract-in-insurance-field-69c092a513fc)
 
 - Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
-[(link)(https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
+[(link)](https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
 
 - MySQL 9.0 GA is Here!
-[(link)(https://medium.com/@haiou-a/mysql-9-0-ga-is-here-355b5fda262f)
+[(link)](https://medium.com/@haiou-a/mysql-9-0-ga-is-here-355b5fda262f)
 
 - Summarizing Recent Wins for Apache Iceberg Table Format
-[(link)(https://medium.com/data-engineering-with-dremio/summarizing-recent-wins-for-apache-iceberg-table-format-7a60f0803d86)
+[(link)](https://medium.com/data-engineering-with-dremio/summarizing-recent-wins-for-apache-iceberg-table-format-7a60f0803d86)
 
 - Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
-[(link)(https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
+[(link)](https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
 
 - Build an Agentic RAG using HuggingFace Transformers Agent
-[(link)(https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
+[(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
 
 - Hermes: A Text-to-SQL solution at Swiggy
-[(link)(https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
+[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
 
 - Postgres concurrency, locks and isolation levels
-[(link)(https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
+[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
 
 - Ollama with MySQL+PostgreSQL on AnythingLLM
-[(link)(https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
+[(link)](https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
 
 - Delivering Faster Analytics at Pinterest
-[(link)(https://medium.com/pinterest-engineering/delivering-faster-analytics-at-pinterest-a639cdfad374)
+[(link)](https://medium.com/pinterest-engineering/delivering-faster-analytics-at-pinterest-a639cdfad374)
 
 - Semantic Chunking for Enhanced RAG Applications!
-[(link)(https://levelup.gitconnected.com/semantic-chunking-for-enhanced-rag-applications-b6bc92942af0)
+[(link)](https://levelup.gitconnected.com/semantic-chunking-for-enhanced-rag-applications-b6bc92942af0)
 
 - Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
-[(link)(https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
+[(link)](https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
 
 - Query Hugging Face Datasets from Postgres
 [(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
