@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- This New Python Web Framework Changes Everything…
+[(link)(https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
+
+- How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
+[(link)(https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
+
+- Google Search vs Perplexity vs SearchGPT
+[(link)(https://generativeai.pub/google-search-vs-perplexity-vs-searchgpt-6b65eb3941e4)
+
+- Text Extraction: Comparing DONUT and Amazon Textract in Insurance Field
+[(link)(https://heka-ai.medium.com/text-extraction-comparing-donut-and-amazon-textract-in-insurance-field-69c092a513fc)
+
+- Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
+[(link)(https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
+
 - MySQL 9.0 GA is Here!
 [(link)(https://medium.com/@haiou-a/mysql-9-0-ga-is-here-355b5fda262f)
 
