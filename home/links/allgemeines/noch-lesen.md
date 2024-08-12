@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
+[(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
+
+- Ollama: The Ultimate Tool for Running Language Models Locally
+[(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
+
+- FastHTML
+[(link)](https://www.fastht.ml/)
+
+- Hermes: A Text-to-SQL solution at Swiggy
+[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
+
 - This New Python Web Framework Changes Everything…
 [(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
 
