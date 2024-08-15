@@ -9,59 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
-[(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
-
-- Ollama: The Ultimate Tool for Running Language Models Locally
-[(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
-
-- FastHTML
-[(link)](https://www.fastht.ml/)
-
-- Hermes: A Text-to-SQL solution at Swiggy
-[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
-
-- This New Python Web Framework Changes Everything…
-[(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
-
-- How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
-[(link)](https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
-
-- Google Search vs Perplexity vs SearchGPT
-[(link)](https://generativeai.pub/google-search-vs-perplexity-vs-searchgpt-6b65eb3941e4)
-
-- Text Extraction: Comparing DONUT and Amazon Textract in Insurance Field
-[(link)](https://heka-ai.medium.com/text-extraction-comparing-donut-and-amazon-textract-in-insurance-field-69c092a513fc)
-
-- Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
-[(link)](https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
-
-- MySQL 9.0 GA is Here!
-[(link)](https://medium.com/@haiou-a/mysql-9-0-ga-is-here-355b5fda262f)
-
-- Summarizing Recent Wins for Apache Iceberg Table Format
-[(link)](https://medium.com/data-engineering-with-dremio/summarizing-recent-wins-for-apache-iceberg-table-format-7a60f0803d86)
-
-- Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
-[(link)](https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
-
-- Build an Agentic RAG using HuggingFace Transformers Agent
-[(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
-
-- Hermes: A Text-to-SQL solution at Swiggy
-[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
-
 - Postgres concurrency, locks and isolation levels
 [(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
 
 - Ollama with MySQL+PostgreSQL on AnythingLLM
 [(link)](https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
-
-- Delivering Faster Analytics at Pinterest
-[(link)](https://medium.com/pinterest-engineering/delivering-faster-analytics-at-pinterest-a639cdfad374)
-
-- Semantic Chunking for Enhanced RAG Applications!
-[(link)](https://levelup.gitconnected.com/semantic-chunking-for-enhanced-rag-applications-b6bc92942af0)
 
 - Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
 [(link)](https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
@@ -77,9 +29,6 @@ is_slide: 0
 
 - The fastest way to copy data between Postgres tables
 [(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
-
-- Kafka is dead, long live Kafka
-[(link)](https://medium.com/@warpstream/kafka-is-dead-long-live-kafka-4ef4fdce03e2)
 
 - Real-time Distributed score streaming using gRPC and Redis
 [(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
@@ -137,9 +86,6 @@ is_slide: 0
 
 - Getting From Denmark Hill to Gatwick Airport With Quantified Path Patterns
 [(link)](https://medium.com/neo4j/getting-from-denmark-hill-to-gatwick-airport-with-quantified-path-patterns-bed38da27ca1)
-
-- Missing Link: Die GPT-fizierung des Studiums
-[(link)](https://www.heise.de/meinung/Missing-Link-Die-GPT-fizierung-des-Studiums-9791173.html?seite=all)
 
 - GPT Fine-tuning
 [(link)](https://platform.openai.com/docs/guides/fine-tuning)
@@ -263,4 +209,38 @@ is_slide: 0
 
 - 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
 [(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
+
+- Bereits gelesen --------------------------------
+
+- Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
+[(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
+
+- Ollama: The Ultimate Tool for Running Language Models Locally
+[(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
+
+- FastHTML
+[(link)](https://www.fastht.ml/)
+
+- Hermes: A Text-to-SQL solution at Swiggy
+[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
+
+- This New Python Web Framework Changes Everything…
+[(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
+
+- How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
+[(link)](https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
+
+- Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
+[(link)](https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
+
+- Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
+[(link)](https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
+
+- Build an Agentic RAG using HuggingFace Transformers Agent
+[(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
+
+- Hermes: A Text-to-SQL solution at Swiggy
+[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
+
+
 
