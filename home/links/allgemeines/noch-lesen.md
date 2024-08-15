@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What is “Page” in postgres?
+[(link)](https://sud-gajula.medium.com/what-is-page-in-postgres-15ed42c4e434)
+
+- I spent 4 hours learning Apache Iceberg. Here’s what I found.
+[(link)](https://blog.det.life/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84)
+
+- The Llama 3 Herd of Models
+[(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
+
+- Don’t Let Docker Ruin Your MySQL!
+[(link)](https://medium.com/@haiou-a/dont-let-docker-ruin-your-mysql-f36e842a4ce0)
+
 - Postgres concurrency, locks and isolation levels
 [(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
 
