@@ -9,38 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- What is “Page” in postgres?
-[(link)](https://sud-gajula.medium.com/what-is-page-in-postgres-15ed42c4e434)
+- Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide
+[(link)](https://medium.com/@mauryaanoop3/building-a-sql-agent-using-crewai-and-ollama-a-comprehensive-guide-1ad089610056)
 
 - I spent 4 hours learning Apache Iceberg. Here’s what I found.
 [(link)](https://blog.det.life/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84)
-
-- The Llama 3 Herd of Models
-[(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
-
-- Don’t Let Docker Ruin Your MySQL!
-[(link)](https://medium.com/@haiou-a/dont-let-docker-ruin-your-mysql-f36e842a4ce0)
-
-- Postgres concurrency, locks and isolation levels
-[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
 
 - Ollama with MySQL+PostgreSQL on AnythingLLM
 [(link)](https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
 
 - Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
 [(link)](https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
-
-- Query Hugging Face Datasets from Postgres
-[(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
-
-- Querying 1TB on a laptop with Python dataframes
-[(link)](https://ibis-project.org/posts/1tbc/)
-
-- How Good is Parquet for Wide Tables (Machine Learning Workloads) Really? 
-[(link)](https://www.influxdata.com/blog/how-good-parquet-wide-tables/)
-
-- The fastest way to copy data between Postgres tables
-[(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
 
 - Real-time Distributed score streaming using gRPC and Redis
 [(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
