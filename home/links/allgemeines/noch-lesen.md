@@ -203,6 +203,22 @@ is_slide: 0
 
 - Bereits gelesen --------------------------------
 
+- The Llama 3 Herd of Models
+[(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
+
+- Postgres concurrency, locks and isolation levels
+[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
+
+- Query Hugging Face Datasets from Postgres
+[(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
+
+- Querying 1TB on a laptop with Python dataframes
+[(link)](https://ibis-project.org/posts/1tbc/)
+
+- The fastest way to copy data between Postgres tables
+[(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
+
+
 - Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
 [(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
 
