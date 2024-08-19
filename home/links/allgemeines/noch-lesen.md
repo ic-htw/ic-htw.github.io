@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Calculate : How much GPU Memory you need to serve any LLM ?
+[(link)](https://ksingh7.medium.com/calculate-how-much-gpu-memory-you-need-to-serve-any-llm-67301a844f21)
+
 - Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide
 [(link)](https://medium.com/@mauryaanoop3/building-a-sql-agent-using-crewai-and-ollama-a-comprehensive-guide-1ad089610056)
 
