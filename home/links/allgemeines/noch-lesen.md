@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Retrieving information from SQL databases with the help of LLMs
+[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
+
+- When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
+[(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
+
 - Calculate : How much GPU Memory you need to serve any LLM ?
 [(link)](https://ksingh7.medium.com/calculate-how-much-gpu-memory-you-need-to-serve-any-llm-67301a844f21)
 
