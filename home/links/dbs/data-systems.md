@@ -121,6 +121,12 @@ is_slide: 0
 [(link)](https://ibis-project.org/)
 - What is Ibis and how does it help data engineering?
 [(link)](https://medium.com/@martin.jurado.p/what-is-ibis-and-how-does-it-help-data-engineering-7a73b1268228)
+- Querying 1TB on a laptop with Python dataframes
+[(link)](https://ibis-project.org/posts/1tbc/)
+- Ibis Basics
+[(link)](https://github.com/mebauer/ibis-basics)
+
+
 
 # influxdb
 - docs - cloud

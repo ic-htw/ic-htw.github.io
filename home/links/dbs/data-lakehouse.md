@@ -42,6 +42,9 @@ is_slide: 0
 [(link)](https://www.onehouse.ai/blog/apache-hudi-vs-delta-lake-vs-apache-iceberg-lakehouse-feature-comparison)
 - Apache Iceberg, Git-Like Catalog Versioning and Data Lakehouse Management
 [(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
+- I spent 4 hours learning Apache Iceberg. Here’s what I found.
+[(link)](https://blog.det.life/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84)
+
 
 
 # delta lake

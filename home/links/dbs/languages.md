@@ -31,6 +31,9 @@ is_slide: 0
 # cypher
 - openCypher
 [(link)](https://opencypher.org/)
+- Getting From Denmark Hill to Gatwick Airport With Quantified Path Patterns
+[(link)](https://medium.com/neo4j/getting-from-denmark-hill-to-gatwick-airport-with-quantified-path-patterns-bed38da27ca1)
+
 
 # gql
 - GQL Standard

@@ -48,18 +48,6 @@ is_slide: 0
 - When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
 [(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
 
-- Calculate : How much GPU Memory you need to serve any LLM ?
-[(link)](https://ksingh7.medium.com/calculate-how-much-gpu-memory-you-need-to-serve-any-llm-67301a844f21)
-
-- Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide
-[(link)](https://medium.com/@mauryaanoop3/building-a-sql-agent-using-crewai-and-ollama-a-comprehensive-guide-1ad089610056)
-
-- I spent 4 hours learning Apache Iceberg. Here’s what I found.
-[(link)](https://blog.det.life/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84)
-
-- Ollama with MySQL+PostgreSQL on AnythingLLM
-[(link)](https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
-
 - Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
 [(link)](https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
 
@@ -68,12 +56,6 @@ is_slide: 0
 
 - Claude Dev
 [(link)](https://github.com/saoudrizwan/claude-dev)
-
-- Create a SQL Agent using CrewAI and Groq
-[(link)](https://medium.com/the-ai-forum/create-a-sql-agent-using-crewai-and-groq-005895ba31b3)
-
-- What We Still Don’t Understand About Machine Learning
-[(link)](https://hesamsheikh.substack.com/p/what-we-still-dont-understand-about)
 
 - Customize Generative AI Models for Enterprise Applications with Llama 3.1
 [(link)](https://developer.nvidia.com/blog/customize-generative-ai-models-for-enterprise-applications-with-llama-3-1/)
@@ -89,12 +71,6 @@ is_slide: 0
 
 - No, Data Engineers Don’t NEED dbt.
 [(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
-
-- Wren AI Text-to-SQL: API — the good stuff
-[(link)](https://medium.com/@qdrddr/wrenai-text-to-sql-api-the-good-stuff-e4d57c0c181c)
-
-- Using AI to generate data structures for PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/using-ai-to-generate-data-structures/)
 
 - Apache Kafka — Important Designs
 [(link)](https://blog.det.life/apache-kafka-important-designs-2a0e6aa6c5bf)
@@ -117,23 +93,14 @@ is_slide: 0
 - Why Your RAG Doesn’t Work
 [(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
 
-- Getting From Denmark Hill to Gatwick Airport With Quantified Path Patterns
-[(link)](https://medium.com/neo4j/getting-from-denmark-hill-to-gatwick-airport-with-quantified-path-patterns-bed38da27ca1)
-
 - GPT Fine-tuning
 [(link)](https://platform.openai.com/docs/guides/fine-tuning)
-
-- Here’s Why You Probably Don’t Need Langchain!
-[(link)](https://levelup.gitconnected.com/chat-with-csv-files-using-googles-gemini-flash-no-langchain-0e8f79d63348)
 
 - Claude 3.5 Sonnet vs. GPT-4o
 [(link)](https://hackernoon.com/de/Claude-35-Sonett-vs.-GPT-4O-%E2%80%93-eine-ehrliche-Bewertung)
 
 - Claude 3.5 Sonnet
 [(link)](https://www.anthropic.com/news/claude-3-5-sonnet)
-
-- How to use Meta Llama 3 to query MySQL database using Ollama and Wren AI
-[(link)](https://blog.getwren.ai/how-to-use-meta-llama-3-to-query-mysql-database-using-ollama-on-your-machine-2c087b204e41)
 
 - Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)
 [(link)](https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca)
@@ -168,23 +135,14 @@ is_slide: 0
 - TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
 [(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
 
-- A Deep Dive into High Performance HTTP Requests for Python Engineers
-[(link)](https://klaviyo.tech/a-deep-dive-into-high-performance-http-requests-for-python-engineers-2546772c50ae)
-
 - Building an AI Text-to-Video Model from Scratch Using Python
 [(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
 
 - GLiNER: A Zero-Shot NER that outperforms ChatGPT and traditional NER models
 [(link)](https://netraneupane.medium.com/gliner-zero-shot-ner-outperforming-chatgpt-and-traditional-ner-models-1f4aae0f9eef)
 
-- Understanding the Performance Difference in Adding Columns in PostgreSQL
-[(link)](https://0xhagen.medium.com/understanding-the-performance-difference-in-adding-columns-in-postgresql-d46eaaa3f64a)
-
 - 3 Best Practices For Using AI To Query Your Database
 [(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
-
-- Ibis Basics
-[(link)](https://github.com/mebauer/ibis-basics)
 
 - MiniCPM-Llama3-V 2.5 review: A game-changing open-source multimodal language model
 [(link)](https://medium.com/@simeon.emanuilov/minicpm-llama3-v-2-5-review-a-game-changing-open-source-multimodal-language-model-109d2e68989f)
@@ -201,23 +159,12 @@ is_slide: 0
 - When Should You Use Distributed PostgreSQL for Gen AI Apps?
 [(link)](https://medium.com/@magda7817/when-should-you-use-distributed-postgresql-for-gen-ai-apps-64f2470cf1a1)
 
-- My fun journey of managing a large table of PostgreSQL
-[(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
-
-- Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
-[(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
-
-- Mastering Asynchronous Programming in Python: A Comprehensive Guide
-[(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
 
 - Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
 [(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
 
 - Real-Time Twitch Chat Sentiment Analysis with Apache Flink
 [(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
-
-- Python — Building Simple API with FastAPI and PostgreSQL
-[(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
 
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
@@ -228,68 +175,13 @@ is_slide: 0
 - FastUI
 [(link)](https://github.com/pydantic/FastUI)
 
-- 11 Lessons to learn when using NULLs in PostgreSQL
-[(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
-
 - Load StackOverflow's StackExchange data in PostgreSQL
 [(link)](https://dev.to/ftisiot/load-stackoverflows-stackexchange-data-in-postgresqlr-40ip)
-
-- How to check if the PostgreSQL tables of the same structure have identical data using aggregated hash and md5?
-[(link)](https://medium.com/@dmitry.romanoff/how-to-check-if-the-postgresql-tables-of-the-same-structure-have-identical-data-using-aggregated-8f60b9dd0af8)
 
 - What’s new with Looker 2024?
 [(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
 
 - 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
 [(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
-
-- Bereits gelesen --------------------------------
-
-- The Llama 3 Herd of Models
-[(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
-
-- Postgres concurrency, locks and isolation levels
-[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
-
-- Query Hugging Face Datasets from Postgres
-[(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
-
-- Querying 1TB on a laptop with Python dataframes
-[(link)](https://ibis-project.org/posts/1tbc/)
-
-- The fastest way to copy data between Postgres tables
-[(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
-
-
-- Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
-[(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
-
-- Ollama: The Ultimate Tool for Running Language Models Locally
-[(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
-
-- FastHTML
-[(link)](https://www.fastht.ml/)
-
-- Hermes: A Text-to-SQL solution at Swiggy
-[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
-
-- This New Python Web Framework Changes Everything…
-[(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
-
-- How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
-[(link)](https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
-
-- Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
-[(link)](https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
-
-- Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
-[(link)](https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
-
-- Build an Agentic RAG using HuggingFace Transformers Agent
-[(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
-
-- Hermes: A Text-to-SQL solution at Swiggy
-[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
-
 
 

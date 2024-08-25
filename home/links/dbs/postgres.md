@@ -129,6 +129,22 @@ is_slide: 0
 
 
 # misc
+- How to check if the PostgreSQL tables of the same structure have identical data using aggregated hash and md5?
+[(link)](https://medium.com/@dmitry.romanoff/how-to-check-if-the-postgresql-tables-of-the-same-structure-have-identical-data-using-aggregated-8f60b9dd0af8)
+- 11 Lessons to learn when using NULLs in PostgreSQL
+[(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
+- My fun journey of managing a large table of PostgreSQL
+[(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
+- Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
+[(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
+- Understanding the Performance Difference in Adding Columns in PostgreSQL
+[(link)](https://0xhagen.medium.com/understanding-the-performance-difference-in-adding-columns-in-postgresql-d46eaaa3f64a)
+- The fastest way to copy data between Postgres tables
+[(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
+- Postgres concurrency, locks and isolation levels
+[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
+- Query Hugging Face Datasets from Postgres
+[(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
 - How to Get the Most out of Postgres Memory Settings
 [(link)](https://tembo.io/blog/optimizing-memory-usage)
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction

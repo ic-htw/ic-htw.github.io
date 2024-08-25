@@ -48,6 +48,8 @@ is_slide: 0
 
 
 # divers
+- Calculate : How much GPU Memory you need to serve any LLM ?
+[(link)](https://ksingh7.medium.com/calculate-how-much-gpu-memory-you-need-to-serve-any-llm-67301a844f21)
 - A Tutorial on LLM
 [(link)](https://medium.com/@haifengl/a-tutorial-to-llm-f78dd4e82efc)
 - unsloth
@@ -122,6 +124,17 @@ is_slide: 0
 # llama
 - Building LLaMA 3 From Scratch with Python
 [(link)](https://levelup.gitconnected.com/building-llama-3-from-scratch-with-python-e0cf4dbbc306)
+- Crazy Challenge: Run Llama 405B on a 8GB VRAM GPU
+[(link)](https://ai.gopubby.com/crazy-challenge-run-llama-405b-on-a-8gb-vram-gpu-ab5a280a3889)
+- How to Run Llama 3.1 405B on Home Devices? Build AI Cluster!
+[(link)](https://b4rtaz.medium.com/how-to-run-llama-3-405b-on-home-devices-build-ai-cluster-ad0d5ad3473b)
+- Fine-Tuning CodeLlama for Advanced Text-to-SQL Queries with PEFT and Accelerate
+[(link)](https://medium.com/@vi.ai_/fine-tuning-codellama-for-advanced-text-to-sql-queries-with-peft-and-accelerate-281550460f5a)
+- The Llama 3 Herd of Models
+[(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
+
+
+
 
 # langchain
 - home
@@ -145,6 +158,8 @@ is_slide: 0
 [(link)](https://hub.docker.com/r/ollama/ollama)
 - Self Hosting LLMs using Ollama
 [(link)](https://www.avni.sh/posts/homelab/self-hosting-ollama/)
+- Ollama: The Ultimate Tool for Running Language Models Locally
+[(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
 
 # phi3
 - Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
@@ -159,6 +174,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag case studies
+- Build an Agentic RAG using HuggingFace Transformers Agent
+[(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
+- Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.
+[(link)](https://blog.getwren.ai/using-rag-architecture-to-query-databases-and-export-to-google-sheets-and-visualize-in-looker-3427944a0f9b)
 - How to Build a Generative Search Engine for Your Local Files Using Llama 3
 [(link)](https://towardsdatascience.com/how-to-build-a-generative-search-engine-for-your-local-files-using-llama-3-399551786965)
 - Building Vector Databases with FastAPI and ChromaDB
@@ -251,6 +270,14 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # text to sql
+- Create a SQL Agent using CrewAI and Groq
+[(link)](https://medium.com/the-ai-forum/create-a-sql-agent-using-crewai-and-groq-005895ba31b3)
+- Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide
+[(link)](https://medium.com/@mauryaanoop3/building-a-sql-agent-using-crewai-and-ollama-a-comprehensive-guide-1ad089610056)
+- Ollama with MySQL+PostgreSQL on AnythingLLM
+[(link)](https://medium.com/free-or-open-source-software/ollama-with-mysql-postgresql-on-anythingllm-8e8ff0b309b5)
+- Hermes: A Text-to-SQL solution at Swiggy
+[(link)](https://bytes.swiggy.com/hermes-a-text-to-sql-solution-at-swiggy-81573fb4fb6e)
 - High accuracy text-to-SQL with Langchain
 [(link)](https://medium.com/dataherald/high-accuracy-text-to-sql-with-langchain-840742133b83)
 - How to use OpenAI GPT-4o to query your database?
@@ -340,6 +367,12 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 [(link)](https://blog.getwren.ai/what-we-learned-from-snowflake-copilot-building-the-most-powerful-sql-llm-in-the-world-52f82d661bc1)
 - The new wave of Composable Data Systems and the Interface to LLM agents
 [(link)](https://blog.getwren.ai/the-new-wave-of-composable-data-systems-and-the-interface-to-llm-agents-ec8f0a2e7141)
+- Wren AI Text-to-SQL: API — the good stuff
+[(link)](https://medium.com/@qdrddr/wrenai-text-to-sql-api-the-good-stuff-e4d57c0c181c)
+- How to use Meta Llama 3 to query MySQL database using Ollama and Wren AI
+[(link)](https://blog.getwren.ai/how-to-use-meta-llama-3-to-query-mysql-database-using-ollama-on-your-machine-2c087b204e41)
+
+
 
 
 

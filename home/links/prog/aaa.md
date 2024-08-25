@@ -27,6 +27,9 @@ is_slide: 0
 [(link)](https://blog.stackademic.com/database-connections-in-fastapi-leveraging-dependency-injection-and-best-practices-765861cf4d31)
 - Full Stack FastAPI Template
 [(link)](https://fastapi.tiangolo.com/project-generation/)
+- Python — Building Simple API with FastAPI and PostgreSQL
+[(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
+
 
 
 

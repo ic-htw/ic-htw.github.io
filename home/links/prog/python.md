@@ -60,6 +60,12 @@ is_slide: 0
 - Ruff
 [(link)](https://docs.astral.sh/ruff/)
 
+# FastHTML
+- FastHTML
+[(link)](https://www.fastht.ml/)
+- This New Python Web Framework Changes Everything…
+[(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
+
 
 
 # Libs
@@ -241,6 +247,12 @@ is_slide: 0
 [(link)](https://auth0.com/blog/protocol-types-in-python/)
 
 # Artikel
+- Mastering Asynchronous Programming in Python: A Comprehensive Guide
+[(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
+
+- A Deep Dive into High Performance HTTP Requests for Python Engineers
+[(link)](https://klaviyo.tech/a-deep-dive-into-high-performance-http-requests-for-python-engineers-2546772c50ae)
+
 - Real-time data streaming in Jupyter
 [(link)](https://python.plainenglish.io/real-time-data-streaming-in-jupyter-81372dfaa790)
 
