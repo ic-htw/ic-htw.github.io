@@ -9,6 +9,39 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 4 SQLAlchemy Features For Data Engineering
+[(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
+
+- Understanding the Future of Apache Iceberg Catalogs
+[(link)](https://alexmercedcoder.medium.com/understanding-the-future-of-apache-iceberg-catalogs-9d87ad8bdc00)
+
+- Fine-Tuning LLAMA 3 Model for Relation Extraction Using UBIAI Data
+[(link)](https://medium.com/ubiai-nlp/fine-tuning-llama-3-model-for-relation-extraction-using-ubiai-data-1fd1946a62e0)
+
+- Splicing Duck and Elephant DNA
+[(link)](https://motherduck.com/blog/pg_duckdb-postgresql-extension-for-duckdb-motherduck/)
+
+- How Postgres stores data on disk – this one's a page turner 
+[(link)](https://drew.silcock.dev/blog/how-postgres-stores-data-on-disk/)
+
+- Advanced RAG for Database without exposing DB Data: Text to SQL
+[(link)](https://blog.gopenai.com/advanced-rag-for-database-without-exposing-db-data-text-to-sql-a0e71f00e010)
+
+- From Basics to Advanced: Exploring LangGraph
+[(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
+
+- Understanding the Future of Apache Iceberg Catalogs
+[(link)](https://medium.com/data-engineering-with-dremio/understanding-the-future-of-apache-iceberg-catalogs-ff2a2878fbc0)
+
+- Query SQL Database Using Natural Language with Llama 3 and LangChain
+[(link)](https://blog.devgenius.io/query-sql-database-using-natural-language-with-llama-3-and-langchain-a310e6d7dc14)
+
+- DuckDB & PyArrow: Lightweight and Speed Data Analysis
+[(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
+
+- LLM Monitoring and Observability: Tools, Tips and Best Practices
+[(link)](https://mlengineering.medium.com/llm-monitoring-and-observability-tools-tips-and-best-practices-98ea16f533a7)
+
 - Retrieving information from SQL databases with the help of LLMs
 [(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
 
