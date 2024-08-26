@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
+[(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
+
+- How to Containerize Your Local LLM
+[(link)](https://medium.com/intel-tech/how-to-containerize-your-local-llm-436182cd179a)
+
 - 4 SQLAlchemy Features For Data Engineering
 [(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
 
