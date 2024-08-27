@@ -349,6 +349,8 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # Vanna
+- Vanna git
+[(link)](https://github.com/vanna-ai/vanna)
 - Text-to-SQL for DuckDB database using Vanna, in 25 lines of code
 [(link)](https://arslanshahid-1997.medium.com/text-to-sql-for-duckdb-database-using-vanna-in-25-lines-of-code-f564d97faafd)
 - Chat with your SQL database using GPT 4o via Vanna.ai
