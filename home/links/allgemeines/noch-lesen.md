@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Graph RAG — A Conceptual Introduction
+[(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
+
+- Liger Kernel: Efficient Triton Kernels for LLM Training
+[(link)](https://github.com/linkedin/Liger-Kernel)
+
+- High-Precision RAG for Table Heavy Documents
+[(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
+
 - Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
 [(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
 
