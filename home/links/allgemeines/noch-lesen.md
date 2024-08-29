@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Understanding pgvector's HNSW Index Storage in Postgres
+[(link)](https://lantern.dev/blog/pgvector-storage)
+
+- Build a Fully Local RAG App With PostgreSQL, Mistral, and Ollama 
+[(link)](https://www.timescale.com/blog/build-a-fully-local-rag-app-with-postgresql-mistral-and-ollama/)
+
 - Graph RAG — A Conceptual Introduction
 [(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
 
