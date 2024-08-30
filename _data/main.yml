@@ -167,6 +167,9 @@ home: &r
               - t: Übung - Aufgaben
                 ts: Übung - Aufgaben
                 url: /home/lv/dbtech/p/ue-ex.html
+              - t: Übung - DbTech mit VS Code
+                ts: Übung - DbTech mit VS Code
+                url: /home/lv/dbtech/p/ide-vscode.html
           - t: Ausgewählte Datenbankkonzepte/-techniken
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html
