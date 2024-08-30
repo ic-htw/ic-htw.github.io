@@ -3,7 +3,8 @@ layout: default1
 nav: dbtech
 is_slide: 0
 ---
-<h1>{{site.data.main.home[0].sub[1].sub[3].t}}</h1>
+{% include translate.html %}
+<h1>{{ x.sub[3].t }}</h1>
 <h2>Hinweise zu Plagiaten in Übungen</h2>
 {% include plagiate.html %}
 

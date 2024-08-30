@@ -151,7 +151,7 @@ home: &r
           - t: Datenbanktechnologien
             ts: DBTECH
             url: /home/lv/dbtech/dbtech.html
-            sub:
+            sub: &dbtech
               - t: Material
                 ts: Material
                 url: /home/lv/dbtech/p/material.html
@@ -538,6 +538,7 @@ r: *r
 h: *h
 lv: *lv
 dmdb: *dmdb
+dbtech: *dbtech
 adbkt: *adbkt
 sonst: *sonst
 links: *links

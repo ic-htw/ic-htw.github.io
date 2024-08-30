@@ -3,7 +3,8 @@ layout: default1
 nav: dbtech
 is_slide: 0
 ---
-<h1>{{site.data.main.home[0].sub[1].sub[0].t}}</h1>
+{% include translate.html %}
+<h1>{{ x.sub[0].t }}</h1>
 <h2>Folien</h2>
 <ul class="w3-large">
     <li>Einführung (<a  href="/home/lv/dbtech/a/slides/folien-vl-01-intro.pdf">pdf</a>)</li>
