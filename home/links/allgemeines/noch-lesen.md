@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 6 Best Practices for Writing Dockerfiles
+[(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
+
+- Document Extraction Is GenAI’s Killer App
+[(link)](https://towardsdatascience.com/document-extraction-is-genais-killer-app-9e9c816e6caf)
+
 - Understanding pgvector's HNSW Index Storage in Postgres
 [(link)](https://lantern.dev/blog/pgvector-storage)
 
