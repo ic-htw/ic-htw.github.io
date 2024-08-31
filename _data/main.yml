@@ -152,24 +152,36 @@ home: &r
             ts: DBTECH
             url: /home/lv/dbtech/dbtech.html
             sub: &dbtech
-              - t: Material
-                ts: Material
-                url: /home/lv/dbtech/p/material.html
-              - t: Plan
-                ts: Plan
-                url: /home/lv/dbtech/p/plan.html
-              - t: Prüfung
-                ts: Prüfung
-                url: /home/lv/dbtech/p/pruefung.html
-              - t: Übung - Organisatorisches
-                ts: Übung - Org
-                url: /home/lv/dbtech/p/ue-org.html
-              - t: Übung - Aufgaben
-                ts: Übung - Aufgaben
-                url: /home/lv/dbtech/p/ue-ex.html
-              - t: Übung - DbTech mit VS Code
-                ts: Übung - DbTech mit VS Code
+              # - t: Material
+              #   ts: Material
+              #   url: /home/lv/dbtech/p/material.html
+              # - t: Plan
+              #   ts: Plan
+              #   url: /home/lv/dbtech/p/plan.html
+              # - t: Prüfung
+              #   ts: Prüfung
+              #   url: /home/lv/dbtech/p/pruefung.html
+              # - t: Übung - Organisatorisches
+              #   ts: Übung - Org
+              #   url: /home/lv/dbtech/p/ue-org.html
+              # - t: Übung - Aufgaben
+              #   ts: Übung - Aufgaben
+              #   url: /home/lv/dbtech/p/ue-ex.html
+              - t: Konfiguration SQL-Developer
+                ts: Konfiguration SQL-Developer
+                url: /home/lv/dbtech/p/config-sqldeveloper.html
+              - t: Repository-Import auf Github
+                ts: Repository-Import auf Github
+                url: /home/lv/dbtech/p/github-import.html
+              - t: IDE VS Code
+                ts: IDE VS Code
                 url: /home/lv/dbtech/p/ide-vscode.html
+              - t: IDE Intellij
+                ts: IDE Intellij
+                url: /home/lv/dbtech/p/ide-intellij.html
+              - t: IDE Eclipse
+                ts: IDE Eclipse
+                url: /home/lv/dbtech/p/ide-eclipse.html
           - t: Ausgewählte Datenbankkonzepte/-techniken
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html

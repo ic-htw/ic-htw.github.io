@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
+[(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
+
 - 6 Best Practices for Writing Dockerfiles
 [(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
 
