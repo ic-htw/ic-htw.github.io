@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Deepset Haystack git
+[(link)](https://github.com/deepset-ai/haystack)
+
+- Deepset Haystack
+[(link)](https://haystack.deepset.ai/)
+
 - How do we run Kafka 100% on the object storage?
 [(link)](https://medium.com/thedeephub/how-do-we-run-kafka-100-on-the-object-storage-521c6fec6341)
 
