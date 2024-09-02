@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How do we run Kafka 100% on the object storage?
+[(link)](https://medium.com/thedeephub/how-do-we-run-kafka-100-on-the-object-storage-521c6fec6341)
+
+- Grok 2–Why It’s HUGE for AI
+[(link)](https://ai.plainenglish.io/grok-2-why-its-huge-for-ai-43c18a75c19a)
+
+- Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
+[(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
+
 - Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
 [(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
 
