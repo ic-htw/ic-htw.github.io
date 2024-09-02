@@ -1,0 +1,433 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+is_slide: 1
+n: 20
+---
+
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Labelled Property Graph</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/nosql/d40-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Knoten-Label: Person, Company, Car</li>
+            <li>Kantentypen: MARRIED, WORKS_AT, OWNS</li>
+            <li>Properties: Maps</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Beispiel</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/100-100.png"></br></br>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/110-100.png">
+</div><div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Daten in Datenbank anlegen</h1>
+<pre><code class="cypher">// ------------------------------------------------------------------------------
+// Löschen
+// ------------------------------------------------------------------------------
+match (n) detach delete n;
+
+// ------------------------------------------------------------------------------
+// Knoten: Haltestellen
+// ------------------------------------------------------------------------------
+CREATE
+  (AugsburgerStr:Haltestelle {name: 'AugsburgerStr'}),
+  (BayerischerPlatz:Haltestelle {name: 'BayerischerPlatz'}),
+  (BerlinerStr:Haltestelle {name: 'BerlinerStr'}),
+  (BlisseStr:Haltestelle {name: 'BlisseStr'}),
+  (Bundesplatz:Haltestelle {name: 'Bundesplatz'}),
+  (FehrbellinerPlatz:Haltestelle {name: 'FehrbellinerPlatz'}), 
+  (GüntzelStr:Haltestelle {name: 'GüntzelStr'}),
+  (HeidelbergerPlatz:Haltestelle {name: 'HeidelbergerPlatz'}), 
+  (Hohenzollernplatz:Haltestelle {name: 'Hohenzollernplatz'}),
+  (KonstanzerStr:Haltestelle {name: 'KonstanzerStr'}),
+  (Kurfürstendamm:Haltestelle {name: 'Kurfürstendamm'}),
+  (SpichernStr:Haltestelle {name: 'SpichernStr'}),
+  (Wittenbergplatz:Haltestelle {name: 'Wittenbergplatz'}),
+  (ZoologischerGarten:Haltestelle {name: 'ZoologischerGarten'})
+
+// ------------------------------------------------------------------------------
+// Beziehungen: L (Link): Haltestelle -> Haltestelle
+// ------------------------------------------------------------------------------
+CREATE
+  (AugsburgerStr)-[:L {distanz: 429}]->(Wittenbergplatz),
+  (BerlinerStr)-[:L {distanz: 550}]->(GüntzelStr),
+  (Bundesplatz)-[:L {distanz: 1088}]->(BerlinerStr),
+  (FehrbellinerPlatz)-[:L {distanz: 763}]->(Hohenzollernplatz),
+  (GüntzelStr)-[:L {distanz: 512}]->(SpichernStr),
+  (HeidelbergerPlatz)-[:L {distanz: 1211}]->(FehrbellinerPlatz),
+  (Hohenzollernplatz)-[:L {distanz: 541}]->(SpichernStr),
+  (KonstanzerStr)-[:L {distanz: 481}]->(FehrbellinerPlatz),
+  (Kurfürstendamm)-[:L {distanz: 362}]->(ZoologischerGarten),
+  (SpichernStr)-[:L {distanz: 609}]->(AugsburgerStr),
+  (SpichernStr)-[:L {distanz: 801}]->(Kurfürstendamm),
+  (FehrbellinerPlatz)-[:L {distanz: 582}]->(BlisseStr),
+  (BlisseStr)-[:L {distanz: 737}]->(BerlinerStr),
+  (BerlinerStr)-[:L {distanz: 629}]->(BayerischerPlatz)
+
+// ------------------------------------------------------------------------------
+// Knoten: Halte
+// ------------------------------------------------------------------------------
+CREATE
+  // U3
+  (SU31HeidelbergerPlatz:Stop {linie: 'U3', ankunft: localtime('10:00:00'), abfahrt: localtime('10:01:00')}),
+  (SU31FehrbellinerPlatz:Stop {linie: 'U3', ankunft: localtime('10:03:01'), abfahrt: localtime('10:04:00')}),
+  (SU31Hohenzollernplatz:Stop {linie: 'U3', ankunft: localtime('10:05:16'), abfahrt: localtime('10:06:00')}),
+  (SU31SpichernStr:Stop {linie: 'U3', ankunft: localtime('10:06:54'), abfahrt: localtime('10:08:00')}),
+  (SU31AugsburgerStr:Stop {linie: 'U3', ankunft: localtime('10:09:00'), abfahrt: localtime('10:10:00')}),
+  (SU31Wittenbergplatz:Stop {linie: 'U3', ankunft: localtime('10:10:42'), abfahrt: localtime('10:12:00')}),
+  // U7
+  (SU71KonstanzerStr:Stop {linie: 'U7', ankunft: localtime('09:58:02'), abfahrt: localtime('09:59:00')}),
+  (SU71FehrbellinerPlatz:Stop {linie: 'U7', ankunft: localtime('09:59:48'), abfahrt: localtime('10:01:00')}),
+  (SU71BlisseStr:Stop {linie: 'U7', ankunft: localtime('10:01:58'), abfahrt: localtime('10:03:00')}),
+  (SU71BerlinerStr:Stop {linie: 'U7', ankunft: localtime('10:04:13'), abfahrt: localtime('10:06:00')}),
+  (SU71BayerischerPlatz:Stop {linie: 'U7', ankunft: localtime('10:07:02'), abfahrt: localtime('10:08:00')}),
+  // U7, 10 Minuten später
+  (SU72KonstanzerStr:Stop {linie: 'U7', ankunft: localtime('10:08:02'), abfahrt: localtime('10:09:00')}),
+  (SU72FehrbellinerPlatz:Stop {linie: 'U7', ankunft: localtime('10:09:48'), abfahrt: localtime('10:11:00')}),
+  (SU72BlisseStr:Stop {linie: 'U7', ankunft: localtime('10:11:58'), abfahrt: localtime('10:13:00')}),
+  (SU72BerlinerStr:Stop {linie: 'U7', ankunft: localtime('10:14:13'), abfahrt: localtime('10:16:00')}),
+  (SU72BayerischerPlatz:Stop {linie: 'U7', ankunft: localtime('10:17:02'), abfahrt: localtime('10:16:00')}),
+  // U9
+  (SU91Bundesplatz:Stop {linie: 'U9', ankunft: localtime('10:01:01'), abfahrt: localtime('10:02:00')}),
+  (SU91BerlinerStr:Stop {linie: 'U9', ankunft: localtime('10:03:48'), abfahrt: localtime('10:05:00')}),
+  (SU91GüntzelStr:Stop {linie: 'U9', ankunft: localtime('10:05:55'), abfahrt: localtime('10:07:00')}),
+  (SU91SpichernStr:Stop {linie: 'U9', ankunft: localtime('10:07:51'), abfahrt: localtime('10:09:00')}),
+  (SU91Kurfürstendamm:Stop {linie: 'U9', ankunft: localtime('10:10:20'), abfahrt: localtime('10:12:00')}),
+  (SU91ZoologischerGarten:Stop {linie: 'U9', ankunft: localtime('10:12:36'), abfahrt: localtime('10:14:00')})
+
+// ------------------------------------------------------------------------------
+// Beziehungen: IH (in Haltestelle): Stop -> Haltestelle
+// ------------------------------------------------------------------------------
+CREATE
+  (SU31AugsburgerStr)-[:IH]->(AugsburgerStr),
+  (SU71BayerischerPlatz)-[:IH]->(BayerischerPlatz),
+  (SU72BayerischerPlatz)-[:IH]->(BayerischerPlatz),
+  (SU71BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU72BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU91BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU71BlisseStr)-[:IH]->(BlisseStr),
+  (SU72BlisseStr)-[:IH]->(BlisseStr),
+  (SU91Bundesplatz)-[:IH]->(Bundesplatz),
+  (SU31FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU71FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU72FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU91GüntzelStr)-[:IH]->(GüntzelStr),
+  (SU31HeidelbergerPlatz)-[:IH]->(HeidelbergerPlatz),
+  (SU31Hohenzollernplatz)-[:IH]->(Hohenzollernplatz),
+  (SU71KonstanzerStr)-[:IH]->(KonstanzerStr),
+  (SU72KonstanzerStr)-[:IH]->(KonstanzerStr),
+  (SU91Kurfürstendamm)-[:IH]->(Kurfürstendamm),
+  (SU31SpichernStr)-[:IH]->(SpichernStr),
+  (SU91SpichernStr)-[:IH]->(SpichernStr),
+  (SU31Wittenbergplatz)-[:IH]->(Wittenbergplatz),
+  (SU91ZoologischerGarten)-[:IH]->(ZoologischerGarten)
+
+// ------------------------------------------------------------------------------
+// Beziehungen: N (nächster Stop): Stop -> Stop
+// ------------------------------------------------------------------------------
+CREATE
+  (SU31HeidelbergerPlatz)-[:N]->(SU31FehrbellinerPlatz),
+  (SU31FehrbellinerPlatz)-[:N]->(SU31Hohenzollernplatz),
+  (SU31Hohenzollernplatz)-[:N]->(SU31SpichernStr),
+  (SU31SpichernStr)-[:N]->(SU31AugsburgerStr),
+  (SU31AugsburgerStr)-[:N]->(SU31Wittenbergplatz),
+  //
+  (SU71KonstanzerStr)-[:N]->(SU71FehrbellinerPlatz),
+  (SU71FehrbellinerPlatz)-[:N]->(SU71BlisseStr),
+  (SU71BlisseStr)-[:N]->(SU71BerlinerStr),
+  (SU71BerlinerStr)-[:N]->(SU71BayerischerPlatz),
+  //
+  (SU72KonstanzerStr)-[:N]->(SU72FehrbellinerPlatz),
+  (SU72FehrbellinerPlatz)-[:N]->(SU72BlisseStr),
+  (SU72BlisseStr)-[:N]->(SU72BerlinerStr),
+  (SU72BerlinerStr)-[:N]->(SU72BayerischerPlatz),
+  //
+  (SU91Bundesplatz)-[:N]->(SU91BerlinerStr),
+  (SU91BerlinerStr)-[:N]->(SU91GüntzelStr),
+  (SU91GüntzelStr)-[:N]->(SU91SpichernStr),
+  (SU91SpichernStr)-[:N]->(SU91Kurfürstendamm),
+  (SU91Kurfürstendamm)-[:N]->(SU91ZoologischerGarten)</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Schema</h1>
+<pre><code class="cypher">CALL db.schema.visualization();</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/120-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Knoten-Matching</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN h as haltestelle
+ORDER BY h.name;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/130-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Knotenausgabe und tabellarische Ausgabe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h as haltestelle
+ORDER BY h.name;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/140-100.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h.name as haltestelle
+ORDER BY h.name;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/150-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Knotenausgabe in JSON-Format</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="cypher">MATCH (h:Haltestelle {name: 'HeidelbergerPlatz'})
+RETURN h as haltestelle;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/160-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Aggregation</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN count(*);</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/170-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Pfade fester Länge</h1>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]->(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/180-100.png">
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})<-[l:L]-(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/190-100.png">
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]-(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/200-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Textuelle Ausgabe</h1>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]->(h2:Haltestelle)
+RETURN h1.name, h2.name, l.distanz
+ORDER BY h1.name, h2.name;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/210-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Halte 1</h1>
+<pre><code class="cypher">MATCH (s:Stop)-[ih:IH]->(h:Haltestelle {name: 'SpichernStr'})
+RETURN s, ih, h;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/220-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Halte 2</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  <-[ih1:IH]-(s1:Stop)
+  -[n:N]->(s2:Stop)
+  -[ih2:IH]->(h2:Haltestelle)
+RETURN s1, ih1, h1, n, s2, ih2, h2
+ORDER BY s1.abfahrt;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/230-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Halte 3</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  <-[:IH]-(s1:Stop WHERE s1.abfahrt > localtime('10:08'))
+  -[:N]->(s2:Stop)
+  -[:IH]->(h2:Haltestelle)
+RETURN 
+  h1.name as abfahrtVon, s1.abfahrt as umAbfahrt, 
+  h2.name as ankunftAn, s2.ankunft as umAnkunft
+ORDER BY s1.abfahrt;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/240-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Komplexere Pfade, Komma, MATCH doppelt</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l1:L]->(h2:Haltestelle)
+  -[l2:L]->(h3:Haltestelle {name: 'ZoologischerGarten'}),
+  (h2)<-[:IH]-(s:Stop)
+RETURN h2.name, s;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/250-100.png">
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l1:L]->(h2:Haltestelle)
+  -[l2:L]->(h3:Haltestelle {name: 'ZoologischerGarten'})
+MATCH
+  (h2)<-[:IH]-(s:Stop)
+RETURN h2.name, s;</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Eindeutigkeit Relationship Matching</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'})
+MATCH 
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/260-100.png">
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'}),
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/270-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Aggregationen / WITH</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+      <pre><code class="cypher">MATCH (s:Stop)-[ih:IH]->(h:Haltestelle)
+WITH h.name as haltestelle, count(*) as anzahlStops
+WHERE anzahlStops > 1
+RETURN haltestelle, anzahlStops;</code></pre>
+    </div>
+    <div class="w3-col m5">
+      <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher/280-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
