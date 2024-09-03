@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- HA PostgreSQL Cluster
+[(link)](https://medium.com/@roma.gordeev/ha-postgresql-cluster-5d3672ae8b31)
+
 - Deepset Haystack git
 [(link)](https://github.com/deepset-ai/haystack)
 
