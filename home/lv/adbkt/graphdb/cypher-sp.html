@@ -20,7 +20,7 @@ n: 6
 {% include padding-id.html id=1 %}
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = ANY SHORTEST  
-  (i:N {name: 'A'})-[:L]->+(b:N {name: 'F'})
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/100-100.png">
 <div class="ic-gap"></div>
@@ -32,7 +32,7 @@ RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 {% include padding-id.html id=2 %}
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = ALL SHORTEST  
-  (i:N {name: 'A'})-[:L]->+(b:N {name: 'F'})
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/110-100.png">
 <div class="ic-gap"></div>
@@ -44,7 +44,7 @@ RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 {% include padding-id.html id=3 %}
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = SHORTEST 3
-  (i:N {name: 'A'})-[:L]->+(b:N {name: 'F'})
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/120-100.png">
 <div class="ic-gap"></div>
@@ -56,7 +56,7 @@ RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 {% include padding-id.html id=4 %}
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = SHORTEST 4
-  (i:N {name: 'A'})-[:L]->+(b:N {name: 'F'})
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/130-100.png">
 <div class="ic-gap"></div>
@@ -68,7 +68,7 @@ RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 {% include padding-id.html id=5 %}
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = SHORTEST 10
-  (i:N {name: 'A'})-[:L]->+(b:N {name: 'F'})
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/140-100.png">
 <div class="ic-gap"></div>
@@ -81,8 +81,8 @@ RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <h1>xxx</h1>
 <pre><code class="cypher">MATCH p = ANY SHORTEST  
   (i:N {name: 'A'})
-  -[:L]->+
-  (b:N WHERE NOT EXISTS {(b)-[:L]->(:N)})
+  -[:E]->+
+  (b:N WHERE NOT EXISTS {(b)-[:E]->(:N)})
 RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/150-100.png">
 <div class="ic-gap"></div>
