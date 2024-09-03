@@ -221,12 +221,6 @@ home: &r
                   - t: Log Structured Merge Trees
                     ts: Log Structured Merge Trees
                     url: /home/lv/adbkt/vorlesungen/lsm.html
-                  - t: Cypher
-                    ts: Cypher
-                    url: /home/lv/adbkt/vorlesungen/cypher.html
-                  - t:  Graph-Data-Science
-                    ts:  Graph-Data-Science
-                    url: /home/lv/adbkt/a/graph/gds.pdf
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
                     url: /home/lv/adbkt/a/geo/geo.pdf
@@ -279,12 +273,6 @@ home: &r
                   - t:  Python DB-Intro
                     ts:  Python DB-Intro
                     url: /home/lv/adbkt/uebungen/db-intro.html
-                  - t: Cypher-Abfragen
-                    ts: Cypher-Abfragen
-                    url: /home/lv/adbkt/uebungen/cypher-queries.html
-                  - t:  Graph-Data-Science
-                    ts:  Graph-Data-Science
-                    url: /home/lv/adbkt/uebungen/gds.html
                   - t: Geo-Abfragen
                     ts: Geo-Abfragen
                     url: /home/lv/adbkt/uebungen/geo-sql.html
@@ -343,6 +331,34 @@ home: &r
                   - t: P6 (20 Punkte)
                     ts: P6 (20 Punkte)
                     url: /home/lv/adbkt/pruefungen/graphql.html
+              - t: Graph-Datenbanken
+                ts: Graph-Datenbanken
+                url: /home/lv/adbkt/graphdb/1-graphdb.html
+                sub:
+                  - t: Graph-Datenmodelle
+                    ts: Graph-Datenmodelle
+                    url: /home/lv/adbkt/graphdb/graph-dm.html
+                  - t: Cypher Knoten
+                    ts: Cypher Knoten
+                    url: /home/lv/adbkt/graphdb/cypher-knoten.html
+                  - t: Cypher Pfade fester Länge
+                    ts: Cypher Pfade fester Länge
+                    url: /home/lv/adbkt/graphdb/cypher-pfad1.html
+                  - t: Cypher Pfade variabler Länge
+                    ts: Cypher Pfade variabler Länge
+                    url: /home/lv/adbkt/graphdb/cypher-pfad2.html
+                  - t: Cypher kürzeste Pfade
+                    ts: Cypher kürzeste Pfade
+                    url: /home/lv/adbkt/graphdb/cypher-sp.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t: Übung - Cypher-Abfragen
+                    ts: Übung - Cypher-Abfragen
+                    url: /home/lv/adbkt/graphdb/cypher-queries.html
+                  - t:  Übung - Graph-Data-Science
+                    ts: Übung - Graph-Data-Science
+                    url: /home/lv/adbkt/graphdb/gds.html
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html

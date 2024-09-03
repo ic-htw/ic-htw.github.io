@@ -1,0 +1,89 @@
+---
+layout: default1
+nav: graphdb
+is_slide: 1
+n: 4
+---
+
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Knoten-Matching</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN h as haltestelle
+ORDER BY h.name;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/130-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Knotenausgabe und tabellarische Ausgabe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h as haltestelle
+ORDER BY h.name;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/140-100.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h.name as haltestelle
+ORDER BY h.name;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/150-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Knotenausgabe in JSON-Format</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="cypher">MATCH (h:Haltestelle {name: 'HeidelbergerPlatz'})
+RETURN h as haltestelle;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/160-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Aggregation</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN count(*);</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/170-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
