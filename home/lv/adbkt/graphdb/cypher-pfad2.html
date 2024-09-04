@@ -2,7 +2,7 @@
 layout: default1
 nav: graphdb
 is_slide: 1
-n: 20
+n: 10
 ---
 
 <!--
@@ -18,7 +18,21 @@ n: 20
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>110</h1>
+<h1>Reihung von Beziehungen</h1>
+<p class="w3-large ic-neg15">Pfadmuster</p>
+<ul class="w3-large">
+  <li>Beschreiben eine mehrfache Reihung von Beziehungen<br>
+  <pre><code class="cypher">((:Haltestelle)-[:L]->(:Haltestelle)){1,2}</code></pre></li>
+  <li>In diesem Fall ein- oder zweimal mal -[:L]-></li>
+  <li>Ein Pfadmuster muss von Knoten mit passenden Labels umschlossen werden</li>
+  <li>Pfade können einer Variablen zugewiesen werden (p)<br>
+    <pre><code class="cypher">nodes(p)</code></pre> 
+    liefert eine Liste aller Knoten in einem Pfad und<br>
+    <pre><code class="cypher">[n IN nodes(p) | n.name]</code></pre>
+    eine Liste mit den namen alle Knoten (List Comprehnsion)
+  </li>
+</ul>
+
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'Hohenzollernplatz'})
   ((:Haltestelle)-[:L]->(:Haltestelle)){1,2}
@@ -33,7 +47,8 @@ RETURN [n IN nodes(p) | n.name] as pfade;</code></pre>
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>120</h1>
+<h1>Pfade beliebiger Länge</h1>
+<p class="w3-large ic-neg15">Plus-Symbol: Länge größer gleich 1</p>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'Hohenzollernplatz'})
   ((:Haltestelle)-[:L]->(:Haltestelle))+
@@ -51,7 +66,9 @@ RETURN pfade;</code></pre>
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>130</h1>
+<h1>Bedingungen über Beziehungen formuliert</h1>
+<p class="w3-large ic-neg15">Zielhaltestelle darf keine Links mehr haben<br>
+  <pre><code class="cypher">NOT EXISTS {(hn)-[:L]->(:Haltestelle)}</code></pre> </p>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'FehrbellinerPlatz'})
   ((:Haltestelle)-[:L]->(:Haltestelle))+
@@ -70,34 +87,7 @@ RETURN pfade;
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>140</h1>
-<pre><code class="cypher">MATCH 
-  p1 = (
-    (h1:Haltestelle {name: 'SpichernStr'})
-    ((:Haltestelle)-[:L]->(:Haltestelle))+
-    (hm:Haltestelle)
-  ),
-  p2 = (
-    (hm)
-    ((:Haltestelle)-[:L]->(:Haltestelle))*
-  (hn:Haltestelle)
-)
-WITH p1, p2
-ORDER BY length(p1), length(p2)
-WITH 
-  [n IN nodes(p1) | n.name] as haltestellen1,
-  [n IN nodes(p2) | n.name] as haltestellen2
-RETURN haltestellen1, haltestellen2;
-</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/140-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    05 ******************************************************************
--->
-{% include padding-id.html id=5 %}
-<h1>150</h1>
+<h1>Kombination von Pfadmustern</h1>
 <pre><code class="cypher">MATCH 
   (h1:Haltestelle {name: 'Hohenzollernplatz'})
   ((ha:Haltestelle)-[:L]->(:Haltestelle))+
@@ -110,10 +100,10 @@ RETURN h1.name, [h IN ha | h.name], hm.name, [h IN hb | h.name], hn.name;</code>
 
 
 <!--
-    06 ******************************************************************
+    05 ******************************************************************
 -->
-{% include padding-id.html id=6 %}
-<h1>160</h1>
+{% include padding-id.html id=5 %}
+<h1>Bidirektionale Pfade</h1>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'SpichernStr'})
   -[l:L]-*
@@ -125,10 +115,10 @@ RETURN  [n IN nodes(p) | n.name];</code></pre>
 
 
 <!--
-    07 ******************************************************************
+    06 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
-<h1>170</h1>
+{% include padding-id.html id=6 %}
+<h1>Bedingungen in Pfadmustern</h1>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
   ((ha:Haltestelle)-[l:L]->(hb:Haltestelle))*
@@ -136,14 +126,7 @@ RETURN  [n IN nodes(p) | n.name];</code></pre>
 )
 RETURN [n IN nodes(p) | n.name];</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/170-100.png">
-<div class="ic-gap"></div>
 
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>180</h1>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'HeidelbergerPlatz'})
   ((ha:Haltestelle)-[l:L]-(hb:Haltestelle where hb.name<>'GüntzelStr'))*
@@ -155,10 +138,10 @@ RETURN [n IN nodes(p) | n.name];</code></pre>
 
 
 <!--
-    09 ******************************************************************
+    07 ******************************************************************
 -->
-{% include padding-id.html id=9 %}
-<h1>190</h1>
+{% include padding-id.html id=7 %}
+<h1>Zugriff auf Beziehungen in Pfaden</h1>
 <pre><code class="cypher">MATCH p = (
   (h1:Haltestelle {name: 'FehrbellinerPlatz'})
   ((ha:Haltestelle)-[l:L]->(hb:Haltestelle))*
@@ -172,10 +155,10 @@ RETURN startnode(r).name as von, endnode(r).name as bis, r.distanz as distanz;</
 
 
 <!--
-    10 ******************************************************************
+    08 ******************************************************************
 -->
-{% include padding-id.html id=10 %}
-<h1>200</h1>
+{% include padding-id.html id=8 %}
+<h1>Reduce</h1>
 <pre><code class="cypher">MATCH 
   (h1:Haltestelle {name: 'FehrbellinerPlatz'})
   -[l:L]->+
@@ -191,10 +174,10 @@ ORDER BY distanz;</code></pre>
 
 
 <!--
-    11 ******************************************************************
+    09 ******************************************************************
 -->
-{% include padding-id.html id=11 %}
-<h1>210</h1>
+{% include padding-id.html id=9 %}
+<h1>Pfade mit Längeneinschränkung</h1>
 <pre><code class="cypher">MATCH 
   (h1:Haltestelle {name: 'FehrbellinerPlatz'})
   -[l:L]->+
@@ -211,92 +194,50 @@ ORDER BY distanz;</code></pre>
 
 
 <!--
-    12 ******************************************************************
+    10 ******************************************************************
 -->
-{% include padding-id.html id=12 %}
-<h1>220</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
+{% include padding-id.html id=10 %}
+<h1>Beispiel für eine sehr komplexe Abfrage</h1>
+<pre><code class="cypher">MATCH 
+  (stb:Station {name: 'Starbeck'})
+  <-[:CALLS_AT]-
+  (a:Stop1 {departs: time('11:11')})
+  -[n1:NEXT]->*
+  (b:Stop1)
+  -[n2:NEXT]->*
+  (c:Stop1)
+  -[:CALLS_AT]->
+  (lds:Station {name: 'Leeds'}),
+  //
+  (b:Stop1)
+  -[:CALLS_AT]->
+  (l:Station)
+  <-[:CALLS_AT]-
+  (m:Stop1)
+  -[:NEXT]->*
+  (n:Stop1)
+  -[:CALLS_AT]->
+  (lds),
+  //
+  (lds)<-[:CALLS_AT]-
+  (x:Stop1)
+  -[:NEXT]->*
+  (y:Stop1)
+  -[:CALLS_AT]->
+  (:Station {name: 'Huddersfield'})
+WHERE 
+  b.arrives < m.departs AND
+  n.arrives < x.departs
+RETURN 
+stb.name as start,
+b.departs AS harDeparture,
+c.arrives AS ldsArrival,
+l.name as ChangeAt,
+m.departs AS harDeparts,
+n.arrives AS leedsArrival,
+x.departs AS leedsDeparture,
+y.arrives AS arrives
+ORDER BY arrives, harDeparts;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/300-100.png">
 <div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>230</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>240</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>250</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>260</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>270</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>280</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>290</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>300</h1>
-<pre><code class="cypher">xxxxxxxxxxxxxxxxxx</code></pre>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad2/-100.png">
-<div class="ic-gap"></div>
-
 

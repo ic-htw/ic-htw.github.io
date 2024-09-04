@@ -338,17 +338,17 @@ home: &r
                   - t: Graph-Datenmodelle
                     ts: Graph-Datenmodelle
                     url: /home/lv/adbkt/graphdb/graph-dm.html
-                  - t: Cypher Knoten
-                    ts: Cypher Knoten
+                  - t: Cypher Knoten Matching
+                    ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/graphdb/cypher-knoten.html
-                  - t: Cypher Pfade fester Länge
-                    ts: Cypher Pfade fester Länge
+                  - t: Cypher Matching Pfade fester Länge
+                    ts: Cypher Matching Pfade fester Länge
                     url: /home/lv/adbkt/graphdb/cypher-pfad1.html
-                  - t: Cypher Pfade variabler Länge
-                    ts: Cypher Pfade variabler Länge
+                  - t: Cypher Matching Pfade variabler Länge
+                    ts: Cypher Matching Pfade variabler Länge
                     url: /home/lv/adbkt/graphdb/cypher-pfad2.html
-                  - t: Cypher kürzeste Pfade
-                    ts: Cypher kürzeste Pfade
+                  - t: Cypher Matching kürzeste Pfade
+                    ts: Cypher Matching kürzeste Pfade
                     url: /home/lv/adbkt/graphdb/cypher-sp.html
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
