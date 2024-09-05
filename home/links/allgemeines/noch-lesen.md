@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What is the Open Source Alternative to CockroachDB?
+[(link)](https://medium.com/@magda7817/what-is-the-open-source-alternative-to-cockroachdb-c346cbfdbe41)
+
 - HA PostgreSQL Cluster
 [(link)](https://medium.com/@roma.gordeev/ha-postgresql-cluster-5d3672ae8b31)
 
