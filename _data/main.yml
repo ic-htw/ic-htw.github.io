@@ -341,11 +341,11 @@ home: &r
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/graphdb/cypher-knoten.html
-                  - t: Cypher Matching Pfade fester Länge
-                    ts: Cypher Matching Pfade fester Länge
+                  - t: Cypher Pfade fester Länge
+                    ts: Cypher Pfade fester Länge
                     url: /home/lv/adbkt/graphdb/cypher-pfad1.html
-                  - t: Cypher Matching Pfade variabler Länge
-                    ts: Cypher Matching Pfade variabler Länge
+                  - t: Cypher Pfade variabler Länge
+                    ts: Cypher Pfade variabler Länge
                     url: /home/lv/adbkt/graphdb/cypher-pfad2.html
                   - t: Cypher Matching kürzeste Pfade
                     ts: Cypher Matching kürzeste Pfade
@@ -353,9 +353,12 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
-                  - t: Übung - Cypher-Abfragen
-                    ts: Übung - Cypher-Abfragen
-                    url: /home/lv/adbkt/graphdb/cypher-queries.html
+                  - t: Übung - Cypher-Abfragen 1
+                    ts: Übung - Cypher-Abfragen 1
+                    url: /home/lv/adbkt/graphdb/ueb1-cypher.html
+                  - t: Übung - Cypher-Abfragen 2
+                    ts: Übung - Cypher-Abfragen 2
+                    url: /home/lv/adbkt/graphdb/ueb2-cypher.html
                   - t:  Übung - Graph-Data-Science
                     ts: Übung - Graph-Data-Science
                     url: /home/lv/adbkt/graphdb/gds.html
