@@ -7,7 +7,7 @@ is_slide: 0
 
 
 ## Warum ADBKT?
-- Haben sie schon einmal die Begriffe NoSQL, Replikation,Sharding gehört und wollen verstehen, was sich dahinter verbirgt?
+- Haben sie schon einmal die Begriffe NoSQL, Replikation, Sharding gehört und wollen verstehen, was sich dahinter verbirgt?
 - Wollen sie verstehen, wie Graphdatenbanksysteme ticken und sehen, wie damit kürzesteste Pfade und zentrale Punkte in Graphen ermittelt werden können?
 - Wollen sie lernen, wie Datenbanksysteme die Verarbeitung von Geodaten unterstützen?
 - Wollen sie lernen, wie JSON innerhalb von Datenbanksystemen verarbeitet werden kann?

@@ -203,9 +203,9 @@ home: &r
                 ts: ADBKT - Vorlesungen
                 url: /home/lv/adbkt/vorlesungen/1-vorlesungen.html
                 sub:
-                  - t:  Historischer Überblick
-                    ts:  Historischer Überblick
-                    url: /home/lv/adbkt/vorlesungen/history.html
+                  - t:  Entwicklung von DB-Systemen
+                    ts:  Entwicklung von DB-Systemen
+                    url: /home/lv/adbkt/a/hist/hist.pdf
                   - t: Überblick Cassandra
                     ts: Überblick Cassandra
                     url: /home/lv/adbkt/vorlesungen/cas.html
@@ -232,10 +232,25 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/dynamo.html
                   - t: Nebenläufigkeit
                     ts: Nebenläufigkeit
-                    url: /home/lv/adbkt/vorlesungen/concur.html
+                    url: /home/lv/adbkt/a/concur/concur.pdf
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
                     url: /home/lv/adbkt/a/concur/2pc.pdf
+                  - t: Cypher Knoten Matching
+                    ts: Cypher Knoten Matching
+                    url: /home/lv/adbkt/vorlesungen/cypher-knoten.html
+                  - t: Cypher Pfade fester Länge
+                    ts: Cypher Pfade fester Länge
+                    url: /home/lv/adbkt/vorlesungen/cypher-pfad1.html
+                  - t: Cypher Pfade variabler Länge
+                    ts: Cypher Pfade variabler Länge
+                    url: /home/lv/adbkt/vorlesungen/cypher-pfad2.html
+                  - t: Cypher kürzeste Pfade
+                    ts: Cypher kürzeste Pfade
+                    url: /home/lv/adbkt/vorlesungen/cypher-sp.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/a/graph/gds.pdf
                   - t:  JSON in Postgres
                     ts:  JSON in Postgres
                     url: /home/lv/adbkt/a/json/json-pg.pdf
@@ -297,6 +312,18 @@ home: &r
                   - t: Rekursive Abfrage
                     ts: Rekursive Abfrage
                     url: /home/lv/adbkt/uebungen/rec-sql.html
+                  - t: Graph-Datenmodelle
+                    ts: Graph-Datenmodelle
+                    url: /home/lv/adbkt/uebungen/graph-dm.html
+                  - t: Übung - Cypher-Abfragen 1
+                    ts: Übung - Cypher-Abfragen 1
+                    url: /home/lv/adbkt/uebungen/ueb1-cypher.html
+                  - t: Übung - Cypher-Abfragen 2
+                    ts: Übung - Cypher-Abfragen 2
+                    url: /home/lv/adbkt/uebungen/ueb2-cypher.html
+                  - t:  Übung - Graph-Data-Science
+                    ts: Übung - Graph-Data-Science
+                    url: /home/lv/adbkt/uebungen/gds.html
                   - t:  SQL mit ChatGPT
                     ts:  SQL mit ChatGPT
                     url: /home/lv/adbkt/uebungen/sql-chatgpt.html
@@ -331,37 +358,6 @@ home: &r
                   - t: P6 (20 Punkte)
                     ts: P6 (20 Punkte)
                     url: /home/lv/adbkt/pruefungen/graphql.html
-              - t: Graph-Datenbanken
-                ts: Graph-Datenbanken
-                url: /home/lv/adbkt/graphdb/1-graphdb.html
-                sub:
-                  - t: Graph-Datenmodelle
-                    ts: Graph-Datenmodelle
-                    url: /home/lv/adbkt/graphdb/graph-dm.html
-                  - t: Cypher Knoten Matching
-                    ts: Cypher Knoten Matching
-                    url: /home/lv/adbkt/graphdb/cypher-knoten.html
-                  - t: Cypher Pfade fester Länge
-                    ts: Cypher Pfade fester Länge
-                    url: /home/lv/adbkt/graphdb/cypher-pfad1.html
-                  - t: Cypher Pfade variabler Länge
-                    ts: Cypher Pfade variabler Länge
-                    url: /home/lv/adbkt/graphdb/cypher-pfad2.html
-                  - t: Cypher Matching kürzeste Pfade
-                    ts: Cypher Matching kürzeste Pfade
-                    url: /home/lv/adbkt/graphdb/cypher-sp.html
-                  - t:  Graph-Data-Science
-                    ts:  Graph-Data-Science
-                    url: /home/lv/adbkt/a/graph/gds.pdf
-                  - t: Übung - Cypher-Abfragen 1
-                    ts: Übung - Cypher-Abfragen 1
-                    url: /home/lv/adbkt/graphdb/ueb1-cypher.html
-                  - t: Übung - Cypher-Abfragen 2
-                    ts: Übung - Cypher-Abfragen 2
-                    url: /home/lv/adbkt/graphdb/ueb2-cypher.html
-                  - t:  Übung - Graph-Data-Science
-                    ts: Übung - Graph-Data-Science
-                    url: /home/lv/adbkt/graphdb/gds.html
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html
