@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+-  spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.
+[(link)](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0)
+
+- Using docker init to write Dockerfile and docker-compose configs
+[(link)](https://livingdevops.com/devops/docker-init-to-write-dockerfile-docker-compose/)
+
 - What is the Open Source Alternative to CockroachDB?
 [(link)](https://medium.com/@magda7817/what-is-the-open-source-alternative-to-cockroachdb-c346cbfdbe41)
 
