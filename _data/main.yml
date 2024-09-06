@@ -206,6 +206,12 @@ home: &r
                   - t:  Entwicklung von DB-Systemen
                     ts:  Entwicklung von DB-Systemen
                     url: /home/lv/adbkt/a/hist/hist.pdf
+                  - t: Nebenläufigkeit
+                    ts: Nebenläufigkeit
+                    url: /home/lv/adbkt/a/concur/concur.pdf
+                  - t: Verteilte Transaktionen
+                    ts: Verteilte Transaktionen
+                    url: /home/lv/adbkt/a/concur/2pc.pdf
                   - t: Überblick Cassandra
                     ts: Überblick Cassandra
                     url: /home/lv/adbkt/vorlesungen/cas.html
@@ -230,12 +236,6 @@ home: &r
                   - t: DynamoDB
                     ts: DynamoDB
                     url: /home/lv/adbkt/vorlesungen/dynamo.html
-                  - t: Nebenläufigkeit
-                    ts: Nebenläufigkeit
-                    url: /home/lv/adbkt/a/concur/concur.pdf
-                  - t: Verteilte Transaktionen
-                    ts: Verteilte Transaktionen
-                    url: /home/lv/adbkt/a/concur/2pc.pdf
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/vorlesungen/cypher-knoten.html
@@ -273,21 +273,24 @@ home: &r
                   - t: Präsentation von Fallbeispielen
                     ts: Präsentation von Fallbeispielen
                     url: /home/lv/adbkt/uebungen/pres.html
+                  - t: Konfiguration DBeaver
+                    ts: Konfiguration DBeaver
+                    url: /home/lv/adbkt/uebungen/dbeaver.html
                   - t: Python-Container erstellen
                     ts: Python-Container erstellen
                     url: /home/lv/adbkt/uebungen/py-cont.html
+                  - t:  Python DB-Intro
+                    ts:  Python DB-Intro
+                    url: /home/lv/adbkt/uebungen/db-intro.html
+                  - t: Nebenläufigkeit
+                    ts: Nebenläufigkeit
+                    url: /home/lv/adbkt/uebungen/concur.html
                   - t: Cassandra Replikation
                     ts: Cassandra Replikation
                     url: /home/lv/adbkt/uebungen/cas-repl.html
                   - t: Neo4j-Container erstellen
                     ts: Neo4j-Container erstellen
                     url: /home/lv/adbkt/uebungen/neo4j-cont.html
-                  - t: Konfiguration DBeaver
-                    ts: Konfiguration DBeaver
-                    url: /home/lv/adbkt/uebungen/dbeaver.html
-                  - t:  Python DB-Intro
-                    ts:  Python DB-Intro
-                    url: /home/lv/adbkt/uebungen/db-intro.html
                   - t: Geo-Abfragen
                     ts: Geo-Abfragen
                     url: /home/lv/adbkt/uebungen/geo-sql.html
@@ -303,9 +306,6 @@ home: &r
                   - t: DynamoDB
                     ts: DynamoDB
                     url: /home/lv/adbkt/uebungen/dynamodb.html
-                  - t: Nebenläufigkeit
-                    ts: Nebenläufigkeit
-                    url: /home/lv/adbkt/uebungen/concur.html
                   - t:  Retail Sales
                     ts:  Retail Sales
                     url: /home/lv/adbkt/uebungen/retail.html
@@ -342,7 +342,7 @@ home: &r
                 sub:
                   - t: P1 (15 Punkte)
                     ts: P1 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/tour-delight.html
+                    url: /home/lv/adbkt/pruefungen/er-dia.html
                   - t: P2 (10 Punkte)
                     ts: P2 (10 Punkte)
                     url: /home/lv/adbkt/pruefungen/nosql-sys.html
