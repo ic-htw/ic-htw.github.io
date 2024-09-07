@@ -212,9 +212,6 @@ home: &r
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
                     url: /home/lv/adbkt/a/concur/2pc.pdf
-                  - t: Überblick Cassandra
-                    ts: Überblick Cassandra
-                    url: /home/lv/adbkt/vorlesungen/cas.html
                   - t:  NoSQL
                     ts:  NoSQL
                     url: /home/lv/adbkt/vorlesungen/nosql.html
@@ -227,15 +224,9 @@ home: &r
                   - t: Log Structured Merge Trees
                     ts: Log Structured Merge Trees
                     url: /home/lv/adbkt/vorlesungen/lsm.html
-                  - t:  Geo-Datenverarbeitung
-                    ts:  Geo-Datenverarbeitung
-                    url: /home/lv/adbkt/a/geo/geo.pdf
-                  - t: Vektordatenbanken
-                    ts: Vektordatenbanken
-                    url: /home/lv/adbkt/vorlesungen/vectordb.html
-                  - t: DynamoDB
-                    ts: DynamoDB
-                    url: /home/lv/adbkt/vorlesungen/dynamo.html
+                  - t: Überblick Cassandra
+                    ts: Überblick Cassandra
+                    url: /home/lv/adbkt/vorlesungen/cas.html
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/vorlesungen/cypher-knoten.html
@@ -251,9 +242,18 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t:  Geo-Datenverarbeitung
+                    ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/a/geo/geo.pdf
                   - t:  JSON in Postgres
                     ts:  JSON in Postgres
                     url: /home/lv/adbkt/a/json/json-pg.pdf
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/vorlesungen/dynamo.html
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/vorlesungen/vectordb.html
                   - t: Window-Funktionen in SQL
                     ts: Window-Funktionen in SQL
                     url: /home/lv/adbkt/vorlesungen/window-sql.html
@@ -291,6 +291,18 @@ home: &r
                   - t: Neo4j-Container erstellen
                     ts: Neo4j-Container erstellen
                     url: /home/lv/adbkt/uebungen/neo4j-cont.html
+                  - t: Beispiel-Graph-Datenmodelle
+                    ts: Beispiel-Graph-Datenmodelle
+                    url: /home/lv/adbkt/uebungen/graph-dm.html
+                  - t: Cypher-Abfragen 1
+                    ts: Cypher-Abfragen 1
+                    url: /home/lv/adbkt/uebungen/ueb1-cypher.html
+                  - t:  Cypher-Abfragen 2
+                    ts:  Cypher-Abfragen 2
+                    url: /home/lv/adbkt/uebungen/ueb2-cypher.html
+                  - t:  Graph-Data-Science
+                    ts: Graph-Data-Science
+                    url: /home/lv/adbkt/uebungen/gds.html
                   - t: Geo-Abfragen
                     ts: Geo-Abfragen
                     url: /home/lv/adbkt/uebungen/geo-sql.html
@@ -300,30 +312,18 @@ home: &r
                   - t: pgRouting
                     ts: pgRouting
                     url: /home/lv/adbkt/uebungen/pgrouting.html
-                  - t:  Langchain
-                    ts:  Langchain
-                    url: /home/lv/adbkt/uebungen/langchain.html
                   - t: DynamoDB
                     ts: DynamoDB
                     url: /home/lv/adbkt/uebungen/dynamodb.html
+                  - t:  Langchain
+                    ts:  Langchain
+                    url: /home/lv/adbkt/uebungen/langchain.html
                   - t:  Retail Sales
                     ts:  Retail Sales
                     url: /home/lv/adbkt/uebungen/retail.html
                   - t: Rekursive Abfrage
                     ts: Rekursive Abfrage
                     url: /home/lv/adbkt/uebungen/rec-sql.html
-                  - t: Graph-Datenmodelle
-                    ts: Graph-Datenmodelle
-                    url: /home/lv/adbkt/uebungen/graph-dm.html
-                  - t: Übung - Cypher-Abfragen 1
-                    ts: Übung - Cypher-Abfragen 1
-                    url: /home/lv/adbkt/uebungen/ueb1-cypher.html
-                  - t: Übung - Cypher-Abfragen 2
-                    ts: Übung - Cypher-Abfragen 2
-                    url: /home/lv/adbkt/uebungen/ueb2-cypher.html
-                  - t:  Übung - Graph-Data-Science
-                    ts: Übung - Graph-Data-Science
-                    url: /home/lv/adbkt/uebungen/gds.html
                   - t:  SQL mit ChatGPT
                     ts:  SQL mit ChatGPT
                     url: /home/lv/adbkt/uebungen/sql-chatgpt.html
@@ -343,18 +343,18 @@ home: &r
                   - t: P1 (15 Punkte)
                     ts: P1 (15 Punkte)
                     url: /home/lv/adbkt/pruefungen/er-dia.html
-                  - t: P2 (10 Punkte)
-                    ts: P2 (10 Punkte)
-                    url: /home/lv/adbkt/pruefungen/nosql-sys.html
-                  - t: P3 (20 Punkte)
-                    ts: P3 (20 Punkte)
+                  - t: P2 (15 Punkte)
+                    ts: P2 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/sql-concur.html
+                  - t: P3 (15 Punkte)
+                    ts: P3 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/tour-delight.html
+                  - t: P4 (15 Punkte)
+                    ts: P4 (15 Punkte)
                     url: /home/lv/adbkt/pruefungen/auth.html
-                  - t: P4 (20 Punkte)
-                    ts: P4 (20 Punkte)
+                  - t: P5 (20 Punkte)
+                    ts: P5 (20 Punkte)
                     url: /home/lv/adbkt/pruefungen/sched.html
-                  - t: P5 (15 Punkte)
-                    ts: P5 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/vectordb-case.html
                   - t: P6 (20 Punkte)
                     ts: P6 (20 Punkte)
                     url: /home/lv/adbkt/pruefungen/graphql.html
