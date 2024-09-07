@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Migrate Postgres Database With Zero Downtime using pgsync
+[(link)](https://livingdevops.com/devops/migrate-postgres-database-with-zero-downtime-using-pgsync/)
+
+- Navigating the New Types of LLM Agents and Architectures
+[(link)](https://towardsdatascience.com/navigating-the-new-types-of-llm-agents-and-architectures-309382ce9f88)
+
 -  spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.
 [(link)](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0)
 
