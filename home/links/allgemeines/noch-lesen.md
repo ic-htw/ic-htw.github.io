@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Build Your Own Llama 3 Architecture from Scratch Using PyTorch
+[(link)](https://pub.towardsai.net/build-your-own-llama-3-architecture-from-scratch-using-pytorch-2ce1ecaa901c)
+
+- Running Ollama on Google Colab (Free Tier): A Step-by-Step Guide
+[(link)](https://pub.towardsai.net/running-ollama-on-google-colab-free-tier-a-step-by-step-guide-9ef74b1f8f7a)
+
 - Migrate Postgres Database With Zero Downtime using pgsync
 [(link)](https://livingdevops.com/devops/migrate-postgres-database-with-zero-downtime-using-pgsync/)
 
