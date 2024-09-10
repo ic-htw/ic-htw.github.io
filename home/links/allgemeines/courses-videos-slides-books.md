@@ -59,30 +59,42 @@ is_slide: 0
 [(link)](https://www.kaggle.com/learn/embeddings)
 
 # Books
-- Principles of Distributed Database Systems
-[(link)](https://cs.uwaterloo.ca/~ddbook/)
-- Mathematics for Machine Learning
-[(link)](https://mml-book.github.io/)
-- The Mechanics of Machine Learning
-[(link)](https://mlbook.explained.ai/)
-- Patterns, Predictions, and Actions
-[(link)](https://mlstory.org/)
-- fastbook
-[(link)](https://github.com/fastai/fastbook)
-- Speech and Language Processing
-[(link)](https://web.stanford.edu/~jurafsky/slp3/)
-- Data Analytics - A Small Data Approach
-[(link)](https://dataanalyticsbook.info/)
-- Interpretable Machine Learning
-[(link)](https://christophm.github.io/interpretable-ml-book/)
-- Elements of Data Science
-[(link)](https://allendowney.github.io/ElementsOfDataScience/README.html)
 - An Introduction to Statistical Learning
 [(link)](https://statlearning.com/)
+
+- Data Analytics - A Small Data Approach
+[(link)](https://dataanalyticsbook.info/)
+
+- Elements of Data Science
+[(link)](https://allendowney.github.io/ElementsOfDataScience/README.html)
+
+- Interpretable Machine Learning
+[(link)](https://christophm.github.io/interpretable-ml-book/)
+
+- Mathematics for Machine Learning
+[(link)](https://mml-book.github.io/)
+
+- Patterns, Predictions, and Actions
+[(link)](https://mlstory.org/)
+
 - Pattern Recognition and Machine Learning
 [(link)](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+
 - Probabilistic Machine Learning: An Introduction
 [(link)](https://probml.github.io/pml-book/book1.html)
+
+- Principles of Distributed Database Systems
+[(link)](https://cs.uwaterloo.ca/~ddbook/)
+
+- Speech and Language Processing
+[(link)](https://web.stanford.edu/~jurafsky/slp3/)
+
+- The fastai book
+[(link)](https://github.com/fastai/fastbook)
+
+- The Mechanics of Machine Learning
+[(link)](https://mlbook.explained.ai/)
+
 - Think Bayes 2
 [(link)](http://allendowney.github.io/ThinkBayes2/index.html)
 
