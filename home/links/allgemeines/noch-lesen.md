@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why I Always Use PostgreSQL Functions For Everything
+[(link)](https://blog.devgenius.io/why-i-always-use-postgresql-functions-for-everything-aa501a33842a)
+
 - Agentic AI: Build a Tech Research Agent
 [(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 
