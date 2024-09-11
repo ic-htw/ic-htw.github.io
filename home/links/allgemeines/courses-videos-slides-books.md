@@ -7,8 +7,16 @@ is_slide: 0
 # Courses
 - Scikit-learn course
 [(link)](https://inria.github.io/scikit-learn-mooc/)
+- Introduction to Machine Learning - Raschka
+[(link)](https://sebastianraschka.com/blog/2021/ml-course.html)
+- Introduction to Deep Learning - Raschka
+[(link)](https://sebastianraschka.com/blog/2021/dl-course.html)
 - Hugging Face Course
 [(link)](https://huggingface.co/course/chapter1?fw=pt)
+- Functions, Tools and Agents with LangChain
+[(link)](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
+- Building Your Own Database Agent
+[(link)](https://www.deeplearning.ai/short-courses/building-your-own-database-agent/)
 - Time Series - Kaggle
 [(link)](https://www.kaggle.com/learn/time-series)
 - Dive into Deep Learning
@@ -19,8 +27,6 @@ is_slide: 0
 [(link)](https://atcold.github.io/pytorch-Deep-Learning/)
 - NLP Zero to One: Full Course
 [(link)](https://medium.com/nerd-for-tech/nlp-zero-to-one-full-course-4f8e1902c379)
-- Introduction to Deep Learning - Raschka
-[(link)](https://sebastianraschka.com/blog/2021/dl-course.html)
 - Mathematical Tools for Data Science
 [(link)](https://cds.nyu.edu/math-tools/)
 - UMass CS685 (Advanced NLP)
@@ -57,6 +63,8 @@ is_slide: 0
 [(link)](https://www.kaggle.com/learn/time-series-with-siraj)
 
 # Books
+- 14 Awesome Free Books for Machine Learning, Deep Learning & Reinforcement Learning
+[(link)](https://medium.com/@mlblogging.k/14-awesome-free-books-for-machine-learning-deep-learning-reinforcement-learning-8f1d3a90a394)
 - An Introduction to Statistical Learning
 [(link)](https://statlearning.com/)
 - Data Analytics - A Small Data Approach
