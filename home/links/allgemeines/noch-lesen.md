@@ -9,6 +9,63 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 4 SQLAlchemy Features For Data Engineering
+[(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
+
+- Fine-Tuning LLM model (Meta-Llama-3.1–8B) using unsloth for Text-to-SQL Data
+[(link)](https://blog.gopenai.com/fine-tuning-llm-model-meta-llama-3-1-8b-for-text-to-sql-data-ea5a07620dd3)
+
+- Navigating the New Types of LLM Agents and Architectures
+[(link)](https://towardsdatascience.com/navigating-the-new-types-of-llm-agents-and-architectures-309382ce9f88)
+
+- Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
+[(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
+
+- Liger Kernel: Efficient Triton Kernels for LLM Training
+[(link)](https://github.com/linkedin/Liger-Kernel)
+
+- Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
+[(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
+
+- How to Containerize Your Local LLM
+[(link)](https://medium.com/intel-tech/how-to-containerize-your-local-llm-436182cd179a)
+
+- LLM Monitoring and Observability: Tools, Tips and Best Practices
+[(link)](https://mlengineering.medium.com/llm-monitoring-and-observability-tools-tips-and-best-practices-98ea16f533a7)
+
+- Retrieving information from SQL databases with the help of LLMs
+[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
+
+- Quantization of LLMs with llama.cpp
+[(link)](https://medium.com/@ingridwickstevens/quantization-of-llms-with-llama-cpp-9bbf59deda35)
+
+- Why I Use Open Weights LLMs Locally
+[(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
+
+- 50+ Open-Source Options for Running LLMs Locally
+[(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
+
+- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
+[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
+
+- Build your own Large Language Model (LLM) From Scratch Using PyTorch
+[(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
+
+- What We Learned from a Year of Building with LLMs (Part I)
+[(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
+
+- TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
+[(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
+
+
+
+
+- IDE in the Web Browser? Let me show you Project IDX by Google
+[(link)](https://levelup.gitconnected.com/ide-in-the-web-browser-let-me-show-you-project-idx-by-google-e9c38de046fe)
+
+- A Practical Guide to using Pydantic
+[(link)](https://medium.com/@marcnealer/a-practical-guide-to-using-pydantic-8aafa7feebf6)
+
 - Why I Always Use PostgreSQL Functions For Everything
 [(link)](https://blog.devgenius.io/why-i-always-use-postgresql-functions-for-everything-aa501a33842a)
 
@@ -23,9 +80,6 @@ is_slide: 0
 
 - Migrate Postgres Database With Zero Downtime using pgsync
 [(link)](https://livingdevops.com/devops/migrate-postgres-database-with-zero-downtime-using-pgsync/)
-
-- Navigating the New Types of LLM Agents and Architectures
-[(link)](https://towardsdatascience.com/navigating-the-new-types-of-llm-agents-and-architectures-309382ce9f88)
 
 -  spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.
 [(link)](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0)
@@ -54,9 +108,6 @@ is_slide: 0
 - Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
 [(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
 
-- Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
-[(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
-
 - 6 Best Practices for Writing Dockerfiles
 [(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
 
@@ -72,20 +123,8 @@ is_slide: 0
 - Graph RAG — A Conceptual Introduction
 [(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
 
-- Liger Kernel: Efficient Triton Kernels for LLM Training
-[(link)](https://github.com/linkedin/Liger-Kernel)
-
 - High-Precision RAG for Table Heavy Documents
 [(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
-
-- Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
-[(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
-
-- How to Containerize Your Local LLM
-[(link)](https://medium.com/intel-tech/how-to-containerize-your-local-llm-436182cd179a)
-
-- 4 SQLAlchemy Features For Data Engineering
-[(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
 
 - Understanding the Future of Apache Iceberg Catalogs
 [(link)](https://alexmercedcoder.medium.com/understanding-the-future-of-apache-iceberg-catalogs-9d87ad8bdc00)
@@ -114,12 +153,6 @@ is_slide: 0
 - DuckDB & PyArrow: Lightweight and Speed Data Analysis
 [(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
 
-- LLM Monitoring and Observability: Tools, Tips and Best Practices
-[(link)](https://mlengineering.medium.com/llm-monitoring-and-observability-tools-tips-and-best-practices-98ea16f533a7)
-
-- Retrieving information from SQL databases with the help of LLMs
-[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
-
 - When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
 [(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
 
@@ -141,9 +174,6 @@ is_slide: 0
 - Postgres vs. Pinecone
 [(link)](https://lantern.dev/blog/postgres-vs-pinecone)
 
-- Quantization of LLMs with llama.cpp
-[(link)](https://medium.com/@ingridwickstevens/quantization-of-llms-with-llama-cpp-9bbf59deda35)
-
 - No, Data Engineers Don’t NEED dbt.
 [(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
 
@@ -152,12 +182,6 @@ is_slide: 0
 
 - Improving Performance for Data Visualization AI Agent
 [(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
-
-- Why I Use Open Weights LLMs Locally
-[(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
-
-- 50+ Open-Source Options for Running LLMs Locally
-[(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
 
 - The new “window.ai” API will blow your mind.
 [(link)](https://javascript.plainenglish.io/the-new-window-ai-api-will-blow-your-mind-3eb8b4704ca0)
@@ -195,20 +219,11 @@ is_slide: 0
 - Psycopg 3.2 released
 [(link)](https://www.psycopg.org/articles/2024/06/30/psycopg-32-released/)
 
-- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
-[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
-
 - Text Embeddings: Comprehensive Guide
 [(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
 
 - Stream Changes from a PostgreSQL Database to a Vector Store
 [(link)](https://ai.gopubby.com/stream-changes-from-a-postgresql-database-to-a-vector-store-83df7adc0bfa)
-
-- Build your own Large Language Model (LLM) From Scratch Using PyTorch
-[(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
-
-- TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
-[(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
 
 - Building an AI Text-to-Video Model from Scratch Using Python
 [(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
@@ -227,9 +242,6 @@ is_slide: 0
 
 - Making PostgreSQL a Better AI Database
 [(link)](https://www.timescale.com/blog/making-postgresql-a-better-ai-database/)
-
-- What We Learned from a Year of Building with LLMs (Part I)
-[(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
 
 - When Should You Use Distributed PostgreSQL for Gen AI Apps?
 [(link)](https://medium.com/@magda7817/when-should-you-use-distributed-postgresql-for-gen-ai-apps-64f2470cf1a1)
