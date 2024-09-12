@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Implementing Filtered Semantic Search Using Pgvector and JavaScript
+[(link)](https://www.timescale.com/blog/implementing-filtered-semantic-search-using-pgvector-and-javascript/)
+
+- Open-Source Visual ETL Tools in 2024
+[(link)](https://medium.com/@thibaut_gourdel/open-source-visual-etl-tools-in-2024-1d3ef4ef6f15)
+
 - 4 SQLAlchemy Features For Data Engineering
 [(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
 
