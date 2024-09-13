@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Build AI Agents with LangGraph: A Step-by-Step Guide
+[(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
+
+- Microsoft GraphRAG and Ollama: Code Your Way to Smarter Question Answering
+[(link)](https://blog.gopenai.com/microsoft-graphrag-and-ollama-code-your-way-to-smarter-question-answering-45a57cc5c38b)
+
+- Generate Millions of Records in PostgreSQL
+[(link)](https://python.plainenglish.io/generate-millions-of-records-in-postgresql-e68986e43fd8)
+
 - Implementing Filtered Semantic Search Using Pgvector and JavaScript
 [(link)](https://www.timescale.com/blog/implementing-filtered-semantic-search-using-pgvector-and-javascript/)
 
