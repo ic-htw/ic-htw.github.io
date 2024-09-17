@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 11 Open-Source SaaS Killer — Selfhost With Docker
+[(link)](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
+
+- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
+[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
+
+- Text2SQL is Not Enough: Unifying AI and Databases with TAG
+[(link)](https://github.com/TAG-Research/TAG-Bench)
+
+- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
+[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
+
+- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
+[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
+
+- RAG LLM Best Practices
+[(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
+
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
 
