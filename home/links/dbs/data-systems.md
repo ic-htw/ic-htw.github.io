@@ -8,6 +8,8 @@ is_slide: 0
 [(link)](https://airbyte.com/)
 
 # alloydb
+- home
+[(link)](https://cloud.google.com/alloydb)
 - Run AlloyDB anywhere - in your data center, your laptop, or in any cloud
 [(link)](https://cloud.google.com/blog/products/databases/run-alloydb-anywhere?hl=en)
 
@@ -226,6 +228,10 @@ is_slide: 0
 [(link)](https://docs.paradedb.com/blog)
 - pg_analytics: Transforming Postgres into a Fast OLAP Database
 [(link)](https://blog.paradedb.com/pages/introducing_analytics)
+
+# polardb
+- PolarDB for PostgreSQL
+[(link)](https://github.com/ApsaraDB/PolarDB-for-PostgreSQL)
 
 
 
