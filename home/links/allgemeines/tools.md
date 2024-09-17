@@ -232,6 +232,17 @@ is_slide: 0
 - Datenanalyse mit Looker Studio
 [(link)](https://www.121watt.de/digital-analytics/datenanalyse-mit-looker-studio/)
 
+# moodle
+- home
+[(link)](https://moodle.org/)
+- doc
+[(link)](https://docs.moodle.org/401/de/Hauptseite)
+- Aktivitäten
+[(link)](https://docs.moodle.org/401/de/Aktivit%C3%A4ten)
+- Aufgabe konfigurieren
+[(link)](https://docs.moodle.org/401/de/Aufgabe_konfigurieren)
+
+
 
 # pip
 - commands
