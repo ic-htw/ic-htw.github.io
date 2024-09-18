@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Uber’s Big Data Revolution: From MySQL to Hadoop and Beyond
+[(link)](https://medium.com/@vutrinh274/ubers-big-data-revolution-from-mysql-to-hadoop-and-beyond-5b4d89a0d754)
+
 - 11 Open-Source SaaS Killer — Selfhost With Docker
 [(link)](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
 
