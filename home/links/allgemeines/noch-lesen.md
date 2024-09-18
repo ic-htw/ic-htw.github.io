@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How SELECT FOR UPDATE Works
+[(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
+
+- Serializable Snapshot Isolation (SSI) in PostgreSQL
+[(link)](https://wiki.postgresql.org/wiki/SSI)
+
 - Uber’s Big Data Revolution: From MySQL to Hadoop and Beyond
 [(link)](https://medium.com/@vutrinh274/ubers-big-data-revolution-from-mysql-to-hadoop-and-beyond-5b4d89a0d754)
 
