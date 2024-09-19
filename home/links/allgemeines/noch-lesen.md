@@ -9,6 +9,28 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+
+- Stop using SERIAL in Postgres
+[(link)](https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/)
+
+- Optimizing Your Database for Analytics
+[(link)](https://karenjex.blogspot.com/2024/09/optimising-your-database-for-analytics.html)
+
+- Implementing Hybrid Search with Postgres and pgvector
+[(link)](https://jkatz05.com/post/postgres/hybrid-search-postgres-pgvector/)
+
+- rainfrog - terminal ui for postgres
+[(link)](https://github.com/achristmascarl/rainfrog)
+
+- Build an LLM RAG Chatbot With LangChain
+[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
+
+- I used OpenAI’s o1 model to develop a trading strategy. It is DESTROYING the market
+[(link)](https://medium.datadriveninvestor.com/i-used-openais-o1-model-to-develop-a-trading-strategy-it-is-destroying-the-market-576a6039e8fa)
+
+- Langchain vs Haystack
+[(link)](https://medium.com/@amit25173/langchain-vs-haystack-7fa0faa901cd)
+
 - How SELECT FOR UPDATE Works
 [(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
 
