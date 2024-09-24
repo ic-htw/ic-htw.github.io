@@ -9,6 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LangGraph Studio: Visualizing and Testing AI Agents with LangChain
+[(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
 
 - Stop using SERIAL in Postgres
 [(link)](https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/)
