@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- A Visual Exploration of Semantic Text Chunking
+[(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
+
+- The Best NVIDIA GPUs for LLM Inference: A Comprehensive Guide
+[(link)](https://medium.com/@mahernaija/the-best-nvidia-gpus-for-llm-inference-a-comprehensive-guide-e093c9d914e5)
+
 - Choosing Between LLM Agent Frameworks
 [(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
 
