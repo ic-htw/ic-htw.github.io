@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- TAG vs Text2SQL
+[(link)](https://medium.com/@visrow/tag-vs-text2sql-96542742e401)
+
 - A Visual Exploration of Semantic Text Chunking
 [(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
 
