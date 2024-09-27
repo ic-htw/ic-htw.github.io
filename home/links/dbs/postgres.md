@@ -25,6 +25,16 @@ is_slide: 0
 - pgHero
 [(link)](https://github.com/ankane/pghero)
 
+# configuration
+- How to Get the Most out of Postgres Memory Settings
+[(link)](https://tembo.io/blog/optimizing-memory-usage)
+- PostgreSQL Configuration Chronicles: Memory Related Configurations
+[(link)](https://demirhuseyinn-94.medium.com/postgresql-configuration-chronicles-memory-related-configurations-9e867b98548d)
+- Basic PostgreSQL Configuration on Linux
+[(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
+- Tuning your PostgreSQL for High Performance
+[(link)](https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d)
+
 # index
 - Index Types in PostgreSQL
 [(link)](https://www.red-gate.com/simple-talk/databases/postgresql/index-types-in-postgresql-learning-postgresql-with-grant/)
@@ -40,6 +50,8 @@ is_slide: 0
 [(link)](https://medium.com/@anasanjaria/how-to-determine-unused-index-in-postgresql-6af846686a3)
 - PostgreSQL DB Indexes Maintenance Script
 [(link)](https://medium.com/@dmitry.romanoff/postgresql-db-indexes-maintenance-script-460c645e9f28)
+- Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
+[(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 
 
 
@@ -63,6 +75,8 @@ is_slide: 0
 [(link)](https://github.com/Florents-Tselai/pgJQ)
 - Can PostgreSQL with its JSONB column type replace MongoDB?
 [(link)](https://medium.com/@yurexus/can-postgresql-with-its-jsonb-column-type-replace-mongodb-30dc7feffaf3)
+- JSON in PostgreSQL: The Ultimate Guide
+[(link)](https://www.databasestar.com/postgresql-json/)
 
 
 
@@ -126,6 +140,42 @@ is_slide: 0
 - pgweb
 [(link)](https://sosedoff.github.io/pgweb/)
 
+# psycopg
+- Home
+[(link)](https://www.psycopg.org/)
+- Psycopg 3 doc
+[(link)](https://www.psycopg.org/psycopg3/docs/)
+- Psycopg 2 doc
+[(link)](https://www.psycopg.org/docs/)
+
+
+
+# replication
+- PostgreSQL Multi-Active Replication - Part 1: An Introduction
+[(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
+- How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
+[(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
+- Managing PostgreSQL backup and replication for very large databases
+[(link)](https://medium.com/leboncoin-tech-blog/managing-postgresql-backup-and-replication-for-very-large-databases-61fb36e815a0)
+- Zero-Downtime PostgreSQL Cutovers
+[(link)](https://tech.instacart.com/zero-downtime-postgresql-cutovers-e6f16090fabf)
+- How to Set Up PostgreSQL High Availability with Patroni
+[(link)](https://databasedive.com/how-to-set-up-postgresql-high-availability-with-patroni-c91450ec3c16)
+
+
+# transactions
+- Postgres concurrency, locks and isolation levels
+[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
+- Different Isolation levels and anomalies in Postgres
+[(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
+- Transaction Isolation in Postgres, explained
+[(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
+- Row locks in PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/row-locks-in-postgresql/)
+- Transaction management in PostgreSQL and what is different from Oracle
+[(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
+- How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?
+[(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
 
 
 # misc
@@ -135,47 +185,29 @@ is_slide: 0
 [(link)](https://dev.to/ftisiot/11-lessons-to-learn-when-using-nulls-in-postgresqlr-2b7g)
 - My fun journey of managing a large table of PostgreSQL
 [(link)](https://medium.com/@digitake/my-fun-journey-of-managing-a-large-table-of-postgresql-b8d09cb19444)
-- Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
-[(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 - Understanding the Performance Difference in Adding Columns in PostgreSQL
 [(link)](https://0xhagen.medium.com/understanding-the-performance-difference-in-adding-columns-in-postgresql-d46eaaa3f64a)
 - The fastest way to copy data between Postgres tables
 [(link)](https://ongres.com/blog/fastest_way_copy_data_between_postgres_tables/)
-- Postgres concurrency, locks and isolation levels
-[(link)](https://medium.com/@zeeshan.shamsuddeen/postgres-concurrency-locks-and-isolation-levels-ef222204484d)
 - Query Hugging Face Datasets from Postgres
 [(link)](https://www.crunchydata.com/blog/query-hugging-face-datasets-from-postgres)
-- How to Get the Most out of Postgres Memory Settings
-[(link)](https://tembo.io/blog/optimizing-memory-usage)
-- PostgreSQL Multi-Active Replication - Part 1: An Introduction
-[(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
-- How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
-[(link)](https://medium.com/@mkremer_75412/how-to-replicate-postgres-rds-functionality-with-a-few-scripts-and-a-cloudformation-template-748c391fce51)
 - Last Updated Columns With Postgres
 [(link)](https://www.morling.dev/blog/last-updated-columns-with-postgres/)
-- Different Isolation levels and anomalies in Postgres
-[(link)](https://medium.com/@Sushil_Kumar/different-isolation-levels-and-anomalies-in-postgres-2a284ca25d80)
-- PostgreSQL Configuration Chronicles: Memory Related Configurations
-[(link)](https://demirhuseyinn-94.medium.com/postgresql-configuration-chronicles-memory-related-configurations-9e867b98548d)
 - How to check a distribution of values that PostgreSQL has collected on some column of a table?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-a-distribution-of-values-that-postgresql-has-collected-on-some-column-of-a-table-104dd8158a62)
 - postgres - Checking Your Privileges
 [(link)](https://thebuild.com/blog/2024/03/25/checking-your-privileges/)
-- How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?
-[(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
 - Introduction to CDC (Change Data Capture): PostgreSQL to Kafka
 [(link)](https://medium.com/@kenichiderumo/introduction-to-cdc-change-data-capture-postgresql-to-kafka-3dc5f41a0627)
 - What’s new in the Postgres 16 query planner / optimizer 
 [(link)](https://www.citusdata.com/blog/2024/02/08/whats-new-in-postgres-16-query-planner-optimizer/)
 - Connecting to Postgres With psql and .pg_service.conf 
 [(link)](https://www.timescale.com/blog/connecting-to-postgres-with-psql-and-pg_service-conf/)
-- Transaction Isolation in Postgres, explained
-[(link)](https://www.thenile.dev/blog/transaction-isolation-postgres)
 - temBoard - PostgreSQL Remote Control
 [(link)](https://github.com/dalibo/temboard)    
 - pgexporter is a Prometheus exporter for PostgreSQL
 [(link)](https://github.com/pgexporter/pgexporter/tree/main)
-        - Pgbench Load Test
+- Pgbench Load Test
 [(link)](https://medium.com/@c.ucanefe/pgbench-load-test-166bdfb5c75a)
 - Did you forget to allocate Huge Pages on your PostgreSQL server?
 [(link)](https://franckpachot.medium.com/did-you-forget-to-allocate-huge-pages-on-your-postgresql-server-7a97e7727b03)
@@ -183,8 +215,6 @@ is_slide: 0
 [(link)](https://imantung.medium.com/manage-bloated-postgres-database-22e14ce382a9)
 - Understand Explain Plans in PostgreSQL 
 [(link)](https://stormatics.tech/alis-planet-postgresql/understand-explain-plans-in-postgresql)
-- Transaction management in PostgreSQL and what is different from Oracle
-[(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
 - Easiest way to load TPC-DS data into PostgreSQL
 [(link)](https://atwong.medium.com/easiest-way-to-load-tpc-ds-data-into-postgresql-1ebd83871a07)
 - Exploring a Postgres query plan
@@ -195,14 +225,10 @@ is_slide: 0
 [(link)](https://www.highgo.ca/2023/11/18/experiencing-wal-redo-in-postgresql/)
 - How to measure the performance of PostgreSQL Database Server(s)?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-measure-the-performance-of-postgresql-database-server-s-067965a9b851)
-- Basic PostgreSQL Configuration on Linux
-[(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
 - Do you know what you are measuring with pgbench?
 [(link)](https://franckpachot.medium.com/do-you-know-what-you-are-measuring-with-pgbench-d8692a33e3d6)
 - PostgreSQL Trigger-Based Audit Log
 [(link)](https://medium.com/israeli-tech-radar/postgresql-trigger-based-audit-log-fd9d9d5e412c)
-- Managing PostgreSQL backup and replication for very large databases
-[(link)](https://medium.com/leboncoin-tech-blog/managing-postgresql-backup-and-replication-for-very-large-databases-61fb36e815a0)
 - Troubleshooting PostgreSQL High CPU Usage — Part 2
 [(link)](https://medium.com/@adamf_64691/troubleshooting-postgresql-high-cpu-usage-part-2-8a1173739339)
 - High-compression Metrics Storage with Postgres Hyperloglog
@@ -225,8 +251,6 @@ is_slide: 0
 [(link)](https://medium.com/full-stack-architecture/postgresql-a-reusable-sql-library-of-domains-cdc9e73a6148)
 - Subqueries and Performance
 [(link)](https://www.cybertec-postgresql.com/en/subqueries-and-performance-in-postgresql/)
-- Zero-Downtime PostgreSQL Cutovers
-[(link)](https://tech.instacart.com/zero-downtime-postgresql-cutovers-e6f16090fabf)
 - Securing your PostgreSQL DB with Roles &amp; Privilege
 [(link)](https://rlopzc.com/posts/securing-your-postgresql-db-with-roles--privileges/)
 - Timeseries with PostgreSQL
@@ -257,8 +281,6 @@ is_slide: 0
 [(link)](https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most/)
 - Don't Do This
 [(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
-- Row locks in PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/row-locks-in-postgresql/)
 - Time Ranges without Overlapping
 [(link)](https://sqlfordevs.com/non-overlapping-time-ranges)
 - Everything you know about setting `work_mem` is wrong.
@@ -269,8 +291,6 @@ is_slide: 0
 [(link)](https://github.com/pganalyze/libpg_query)
 - Azure Database for PostgreSQL Blog
 [(link)](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/bg-p/ADforPostgreSQL)
-- JSON in PostgreSQL: The Ultimate Guide
-[(link)](https://www.databasestar.com/postgresql-json/)
 - pgbadger
 [(link)](https://pgbadger.darold.net/documentation.html)
 - pg_activity
@@ -289,8 +309,6 @@ is_slide: 0
 [(link)](https://medium.com/cognite/postgres-can-do-that-f221a8046e)
 - Advanced PostgreSQL Features: A Guide
 [(link)](https://databasedive.com/advanced-postgresql-features-a-guide-2964878989f9)
-- Tuning your PostgreSQL for High Performance
-[(link)](https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d)
 - Top 5 PostgreSQL Extensions
 [(link)](https://blog.timescale.com/blog/top-5-postgresql-extensions/)
 - Awesome Postgres
@@ -313,8 +331,6 @@ is_slide: 0
 [(link)](https://databasedive.com/fast-key-value-store-with-postgresql-ebac3cd76d9b)
 - Explore the new SEARCH and CYCLE features in PostgreSQL 14
 [(link)](https://ftisiot.medium.com/explore-the-new-search-and-cycle-features-in-postgresql-14-6c1cdf493c30)
-- How to Set Up PostgreSQL High Availability with Patroni
-[(link)](https://databasedive.com/how-to-set-up-postgresql-high-availability-with-patroni-c91450ec3c16)
 - Lessons learned scaling PostgreSQL database to 1.2bn records/month
 [(link)](https://gajus.medium.com/lessons-learned-scaling-postgresql-database-to-1-2bn-records-month-edc5449b3067)
 - A Hairy PostgreSQL Incident

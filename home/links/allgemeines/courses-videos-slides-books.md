@@ -5,6 +5,18 @@ title: Kurse, Videos, Folien, Bücher
 is_slide: 0
 ---
 # Courses
+- Scikit-learn course
+[(link)](https://inria.github.io/scikit-learn-mooc/)
+- Introduction to Machine Learning - Raschka
+[(link)](https://sebastianraschka.com/blog/2021/ml-course.html)
+- Introduction to Deep Learning - Raschka
+[(link)](https://sebastianraschka.com/blog/2021/dl-course.html)
+- Hugging Face Course
+[(link)](https://huggingface.co/course/chapter1?fw=pt)
+- Functions, Tools and Agents with LangChain
+[(link)](https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/)
+- Building Your Own Database Agent
+[(link)](https://www.deeplearning.ai/short-courses/building-your-own-database-agent/)
 - Time Series - Kaggle
 [(link)](https://www.kaggle.com/learn/time-series)
 - Dive into Deep Learning
@@ -15,16 +27,10 @@ is_slide: 0
 [(link)](https://atcold.github.io/pytorch-Deep-Learning/)
 - NLP Zero to One: Full Course
 [(link)](https://medium.com/nerd-for-tech/nlp-zero-to-one-full-course-4f8e1902c379)
-- Introduction to Deep Learning - Raschka
-[(link)](https://sebastianraschka.com/blog/2021/dl-course.html)
-- Hugging Face Course
-[(link)](https://huggingface.co/course/chapter1?fw=pt)
 - Mathematical Tools for Data Science
 [(link)](https://cds.nyu.edu/math-tools/)
 - UMass CS685 (Advanced NLP)
 [(link)](https://www.youtube.com/playlist?list=PLWnsVgP6CzadmQX6qevbar3_vDBioWHJL)
-- Scikit-learn course
-[(link)](https://inria.github.io/scikit-learn-mooc/)
 - DeepMind x UCL | Deep Learning Lecture Series 2020
 [(link)](https://www.youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF)
 - Linear Algebra - Strang Videos
@@ -55,34 +61,34 @@ is_slide: 0
 [(link)](https://fleuret.org/ee559/)
 - Time Series video course
 [(link)](https://www.kaggle.com/learn/time-series-with-siraj)
-- Embeddings video course
-[(link)](https://www.kaggle.com/learn/embeddings)
 
 # Books
-- Principles of Distributed Database Systems
-[(link)](https://cs.uwaterloo.ca/~ddbook/)
-- Mathematics for Machine Learning
-[(link)](https://mml-book.github.io/)
-- The Mechanics of Machine Learning
-[(link)](https://mlbook.explained.ai/)
-- Patterns, Predictions, and Actions
-[(link)](https://mlstory.org/)
-- fastbook
-[(link)](https://github.com/fastai/fastbook)
-- Speech and Language Processing
-[(link)](https://web.stanford.edu/~jurafsky/slp3/)
-- Data Analytics - A Small Data Approach
-[(link)](https://dataanalyticsbook.info/)
-- Interpretable Machine Learning
-[(link)](https://christophm.github.io/interpretable-ml-book/)
-- Elements of Data Science
-[(link)](https://allendowney.github.io/ElementsOfDataScience/README.html)
+- 14 Awesome Free Books for Machine Learning, Deep Learning & Reinforcement Learning
+[(link)](https://medium.com/@mlblogging.k/14-awesome-free-books-for-machine-learning-deep-learning-reinforcement-learning-8f1d3a90a394)
 - An Introduction to Statistical Learning
 [(link)](https://statlearning.com/)
+- Data Analytics - A Small Data Approach
+[(link)](https://dataanalyticsbook.info/)
+- Elements of Data Science
+[(link)](https://allendowney.github.io/ElementsOfDataScience/README.html)
+- Interpretable Machine Learning
+[(link)](https://christophm.github.io/interpretable-ml-book/)
+- Mathematics for Machine Learning
+[(link)](https://mml-book.github.io/)
+- Patterns, Predictions, and Actions
+[(link)](https://mlstory.org/)
 - Pattern Recognition and Machine Learning
 [(link)](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
 - Probabilistic Machine Learning: An Introduction
 [(link)](https://probml.github.io/pml-book/book1.html)
+- Principles of Distributed Database Systems
+[(link)](https://cs.uwaterloo.ca/~ddbook/)
+- Speech and Language Processing
+[(link)](https://web.stanford.edu/~jurafsky/slp3/)
+- The fastai book
+[(link)](https://github.com/fastai/fastbook)
+- The Mechanics of Machine Learning
+[(link)](https://mlbook.explained.ai/)
 - Think Bayes 2
 [(link)](http://allendowney.github.io/ThinkBayes2/index.html)
 

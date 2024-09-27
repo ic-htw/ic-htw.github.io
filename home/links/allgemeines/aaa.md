@@ -7,6 +7,7 @@ is_slide: 0
 
 # {{page.title}}
 
+- Preiswerte Minicomputer: HP ProDesk 600 G3, lenovo thinkcentre
 - Tanke Mecklenburgische
 [(link)](https://www.tankstellenpreise.de/tankstelle-300.html)
 - Tanke HZD
