@@ -206,9 +206,9 @@ home: &r
                   - t:  Entwicklung von DB-Systemen
                     ts:  Entwicklung von DB-Systemen
                     url: /home/lv/adbkt/a/hist/hist.pdf
-                  - t: Nebenläufigkeit
-                    ts: Nebenläufigkeit
-                    url: /home/lv/adbkt/a/concur/concur.pdf
+                  - t: Transaktionen
+                    ts: Transaktionen
+                    url: /home/lv/adbkt/vorlesungen/trans.html
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
                     url: /home/lv/adbkt/a/concur/2pc.pdf
@@ -282,8 +282,8 @@ home: &r
                   - t:  Python DB-Intro
                     ts:  Python DB-Intro
                     url: /home/lv/adbkt/uebungen/db-intro.html
-                  - t: Nebenläufigkeit
-                    ts: Nebenläufigkeit
+                  - t: Transaktionen
+                    ts: Transaktionen
                     url: /home/lv/adbkt/uebungen/concur.html
                   - t: Cassandra Replikation
                     ts: Cassandra Replikation
