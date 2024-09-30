@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How does Notion handle 200 billion data entities?
+[(link)](https://blog.det.life/how-does-notion-handle-200-billion-data-entities-919b238c2846)
+
 - Postgres - Hierarchical data types
 [(link)](https://fljd.in/en/2024/09/19/hierarchical-data-types/)
 
