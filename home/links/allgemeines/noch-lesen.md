@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Postgres - Hierarchical data types
+[(link)](https://fljd.in/en/2024/09/19/hierarchical-data-types/)
+
 - TAG vs Text2SQL
 [(link)](https://medium.com/@visrow/tag-vs-text2sql-96542742e401)
 

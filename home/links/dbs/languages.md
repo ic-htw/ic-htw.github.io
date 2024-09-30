@@ -16,6 +16,9 @@ is_slide: 0
 [(link)](https://medium.com/learning-sql)
 - A Brief History of SQL & The Rise of Graph Queries
 [(link)](https://medium.com/@yu-joshua/a-brief-history-of-sql-the-rise-of-graph-queries-c99d5871d218)
+- Tanimura SQL Book - git
+[(link)](https://github.com/cathytanimura/sql_book/tree/master)
+
 
 
 
