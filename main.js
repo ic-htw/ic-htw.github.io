@@ -4,7 +4,7 @@
 function init() {
     navLevelHandle();
     fillSecondSidebar();
-    fillToc();
+    // fillToc();
     if (slideIsOn()) {
         slidemodeHandle();
         document.onkeyup = function (e) {
@@ -84,7 +84,7 @@ function setNoOfSlides(noOfSlides) {
 
 function getNoOfSlides() {
     const noOfSlides = parseInt(localStorage.getItem("ichp-noOfSlides"));
-    return (noOfSlides == null) ? 0 : parseInt(noOfSlides);
+    return (noOfSlides == null) ? 1 : parseInt(noOfSlides);
 }
 
 // Current slide numbers ------------------------------------------------------
@@ -96,7 +96,7 @@ function setCurrentSlideNo(slideNo) {
 function getCurrentSlideNo() {
     const slideset = getSlideset()
     const slideNo = localStorage.getItem(`ichp-${slideset}-slideno`);
-    return (slideNo == null) ? 0 : parseInt(slideNo);
+    return (slideNo == null) ? 1 : parseInt(slideNo);
 }
 
 
@@ -115,10 +115,10 @@ function keyUpSlide(dir) {
         if (slideNo < noOfSlides) {
             setCurrentSlideNo(slideNo + 1);
         } else {
-            setCurrentSlideNo(0);
+            setCurrentSlideNo(1);
         }
     } else {
-        if (slideNo == 0) {
+        if (slideNo == 1) {
             setCurrentSlideNo(noOfSlides);
         } else {
             setCurrentSlideNo(slideNo - 1);
@@ -136,6 +136,7 @@ function activateButton(i) {
 
 function renderButtonActivation() {
     const slideNo = getCurrentSlideNo()
+    // console.log(`renderButtonActivation: slideNo: ${slideNo}`);
 
     // remove all activations
     const icActive = Array.from(document.getElementsByClassName("ic-active"));
@@ -144,7 +145,9 @@ function renderButtonActivation() {
     });
 
     const btn = document.getElementById("btn-" + slideNo);
+    const btnn = document.getElementById("btnn-" + slideNo);
     btn.className += " ic-active";
+    btnn.className += " ic-active";
 
     location.href = `#${slideNo}`;
 }
@@ -227,7 +230,7 @@ function fillSecondSidebar() {
 // ----------------------------------------------------------------------------
 function fillToc() {
     // executed only for slides
-    const tocCont = document.getElementById('toc');
+    const tocCont = document.getElementById('toc1');
     if (tocCont == null) {
         return
     }
@@ -237,7 +240,8 @@ function fillToc() {
     headers.forEach(h => {
         const btn = document.createElement("button");
         const br = document.createElement("br");
-        btn.textContent = h;
+        btn.id = `btnn-${i}`
+        btn.textContent = `${i.toString().padStart(2, "0")}: ${h}`;
         btn.classList.add("w3-button")
         btn.classList.add("w3-padding-small")
         btn.addEventListener('click', makeClickCallback(i));
@@ -248,10 +252,9 @@ function fillToc() {
 }
 
 function clickTocBtn(i) {
-    // console.log(`#${i}`)
+    // console.log(`clickTocBtn: ${i}`)
     window.location.href = `#${i}`;
-    const slideBtn = document.getElementById(`btn-${i}`);
-    activateButton(slideBtn);
+    activateButton(i);
 }
 
 function makeClickCallback(i) {

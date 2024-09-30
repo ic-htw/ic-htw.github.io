@@ -4,6 +4,5 @@ nav: lv
 is_slide: 0
 ---
 {% include translate.html %}
-<h1>{{ x.t }}</h1>
-{% include nav.html root=x.sub title=x.ts url=x.url %}
+{% include nav.html root=x.sub t=x.t ts=x.ts url=x.url shortmode=0 %}
 

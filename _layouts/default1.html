@@ -30,17 +30,18 @@
     <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb1', 'ovl1')"><i class="fa fa-bars"></i></a>
     <a class="w3-bar-item w3-theme w3-left" href="#">Top</a>
+    <a class="w3-bar-item w3-theme w3-left" href="{{y.url}}">Up</a>
     <a class="w3-bar-item w3-theme w3-left" href="/index.html">Home</a>
     {% if page.is_slide == 0 %}
     <a class="w3-bar-item w3-button w3-right w3-small w3-theme" href="javascript:void(0)"
       onclick="toggleSidebar('sb2', 'ovl2')"><i class="fa fa-bars"></i></a>
     {% endif %}
-    <a class="w3-bar-item  w3-theme w3-right">{{x.t}}</a>
+    <a class="w3-bar-item  w3-theme w3-right">{{page.title}}</a>
   </div>
   
   <!-- Sidebar 1 -->
   <nav id="sb1" class="w3-sidebar w3-bar-block w3-collapse w3-small w3-theme-l5 w3-animate-left">
-    {% include nav.html root=x.sub title=x.ts url=x.url %}
+    {% include nav.html root=x.sub t=x.t ts=x.ts url=x.url shortmode=1 %}
   </nav>
   
   <!-- Sidebar 2 -->
@@ -67,7 +68,7 @@
   <div class="w3-bar w3-bottom w3-theme w3-small">
     <div class="w3-bar-item">&nbsp;</div>
     {% if page.is_slide == 1 %}
-      {% for i in (0..page.n) reversed %}
+      {% for i in (1..page.n) reversed %}
         <button id="btn-{{i}}" onclick="activateButton('{{i}}')" class="w3-button w3-tiny w3-right">{{i}}</button>
       {% endfor %}
       <script>
@@ -76,12 +77,13 @@
         const noOfSlides = "{{page.n}}"
         setSlideset(slideset);
         setNoOfSlides(noOfSlides);
+        fillToc();
         renderButtonActivation();
       </script>
     {% else %}
-    <script>
+      <script>
         slideSetOff();
-    </script>
+      </script>
     {% endif %}
   </div>
 

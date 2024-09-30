@@ -1,7 +1,7 @@
 home: &r
   - t: Prof. Dr. Ingo Claßen
     ts: Home
-    url: /home/home.html
+    url: /index.html
     sub: &h
       - t: Lehrveranstaltungen
         ts: Lehre
