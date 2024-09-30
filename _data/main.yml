@@ -209,6 +209,9 @@ home: &r
                   - t: Transaktionen
                     ts: Transaktionen
                     url: /home/lv/adbkt/vorlesungen/trans.html
+                  - t: Transaktionen in Postgres
+                    ts: Transaktionen in Postgres
+                    url: /home/lv/adbkt/vorlesungen/trans-pg.html
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
                     url: /home/lv/adbkt/a/concur/2pc.pdf
