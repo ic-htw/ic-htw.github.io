@@ -57,7 +57,41 @@ title: Transaktionen in Postgres
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>xxx</h1>
+<h1>Transaktions API</h1>
+<h3>Python</h3>
+<pre><code class="language-python">reset_personal(conparams)
+show_tc(conparams, tblPers, ordPers, msgBeforePers)
+con = t_start("T1", il1, conparams, rc, pers100upd41000, persAllSel)
+t_finish("T1", il1, con)
+show_tc(conparams, tblPers, ordPers, msgAfterPers)
+</code></pre>
+
+<h3>Ausgabe</h3>
+<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+T1: READ_COMMITTED
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+T1: commit and close
+DB state after (pid, gehalt): [(100, 41000), (200, 50000)]
+</code></pre>
+
+<h3>Python</h3>
+<pre><code class="language-python">reset_personal(conparams)
+show_tc(conparams, tblPers, ordPers, msgBeforePers)
+con = t_start("T1", il1, conparams, rc, pers100upd41000, persAllSel)
+t_finish("T1", il1, con, rollback=True)
+show_tc(conparams, tblPers, ordPers, msgAfterPers)
+</code></pre>
+
+<h3>Ausgabe</h3>
+<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+T1: READ_COMMITTED
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+T1: rollback and close
+DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
+</code></pre>
+
 <div class="ic-gap"></div>
 
 
