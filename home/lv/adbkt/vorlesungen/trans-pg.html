@@ -57,7 +57,7 @@ title: Transaktionen in Postgres
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Transaktions API</h1>
+<h1>Benutzung Transaktions API</h1>
 <h3>Python</h3>
 <pre><code class="language-python">reset_personal(conparams)
 show_tc(conparams, tblPers, ordPers, msgBeforePers)
@@ -99,7 +99,39 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>xxx</h1>
+<h1>Transaktions API - synchron</h1>
+<pre><code class="language-python">def t_start(tname, il, conparams, iso, sql, sel="", printPre=False, printAfter=True):
+    prefix = t_prefix(tname, il)
+    print(f"{prefix}{iso.name}")
+    con = psycopg.connect(conparams)
+    con.set_isolation_level(iso)
+    if printPre: print(f"{prefix}{con.execute(sel).fetchall()}")    
+    con.execute(sql)
+    print(f"{prefix}{sql}")
+    if printAfter: print(f"{prefix}{con.execute(sel).fetchall()}")
+    return con
+</code></pre>
+
+<pre><code class="language-python">def t_do(tname, il, con, sql, sel="", printPre=False, printAfter=True):
+    prefix = t_prefix(tname, il)
+    if printPre: print(f"{prefix}{con.execute(sel).fetchall()}")    
+    print(f"{prefix}{sql}")
+    con.execute(sql)
+    if printAfter: print(f"{prefix}{con.execute(sel).fetchall()}")
+</code></pre>
+
+<pre><code class="language-python">def t_finish(tname, il, con, sel="", rollback=False, printState=False):
+    prefix = t_prefix(tname, il)
+    if printState: print(f"{prefix}{con.execute(sel).fetchall()}")    
+    if rollback: 
+        con.rollback()
+        print(f"{prefix}rollback and close")
+    else:
+        con.commit()
+        print(f"{prefix}commit and close")
+    con.close()
+</code></pre>
+
 <div class="ic-gap"></div>
 
 
@@ -107,7 +139,28 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>Snapshot - Read Committed</h1>
+<pre><code class="language-sql">DB state before (kid, betrag): [(100, 2), (200, 6)]
+T1: READ_COMMITTED
+T1: update konto set betrag = 3 where kid=100
+T1: [(100, 3), (200, 6)]
+T1: commit and close
+                    TRead: READ_COMMITTED
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
+          T2: READ_COMMITTED
+          T2: update konto set betrag = 7 where kid=200
+          T2: [(100, 3), (200, 7)]
+          T2: commit and close
+T3: READ_COMMITTED
+T3: insert into konto values (300, 1)
+T3: [(100, 3), (200, 7), (300, 1)]
+T3: commit and close
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 7), (300, 1)]
+                    TRead: commit and close
+DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
+</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -115,7 +168,30 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Snapshot - Repeatble Read</h1>
+<pre><code class="language-sql">DB state before (kid, betrag): [(100, 2), (200, 6)]
+T1: READ_COMMITTED
+T1: update konto set betrag = 3 where kid=100
+T1: [(100, 3), (200, 6)]
+T1: commit and close
+                    TRead: REPEATABLE_READ
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
+          T2: READ_COMMITTED
+          T2: update konto set betrag = 7 where kid=200
+          T2: [(100, 3), (200, 7)]
+          T2: commit and close
+T3: READ_COMMITTED
+T3: insert into konto values (300, 1)
+T3: [(100, 3), (200, 7), (300, 1)]
+T3: commit and close
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
+                    TRead: commit and close
+DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
+</code></pre>
+<p class="w3-large">Kein Unterschied bei SERIALIZABLE</p>
+
 <div class="ic-gap"></div>
 
 
@@ -123,7 +199,7 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>xxx</h1>
+<h1>Lost Update</h1>
 <div class="ic-gap"></div>
 
 
