@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LLM Finetuning Strategies
+[(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
+
+- Apache Iceberg: Built for Big Data, Not Ready for Small(?)
+[(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
+
 - How does Notion handle 200 billion data entities?
 [(link)](https://blog.det.life/how-does-notion-handle-200-billion-data-entities-919b238c2846)
 

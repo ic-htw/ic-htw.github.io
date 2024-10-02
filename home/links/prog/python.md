@@ -6,18 +6,16 @@ is_slide: 0
 # Home
 - The Python Standard Library
 [(link)](https://docs.python.org/3/library/index.html)
-
 - The Python Tutorial
 [(link)](https://docs.python.org/3/tutorial/index.html)
-
 - Python Wiki
 [(link)](https://wiki.python.org/moin/FrontPage)
-
 - Python Home
 [(link)](https://www.python.org/)
-
 - Python Docs
 [(link)](https://docs.python.org/3/)
+- PEP 8 – Style Guide for Python Code
+[(link)](https://peps.python.org/pep-0008/)
 
 
 # Allgemein
