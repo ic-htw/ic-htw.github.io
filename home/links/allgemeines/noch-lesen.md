@@ -12,6 +12,21 @@ is_slide: 0
 - LLM Finetuning Strategies
 [(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
 
+- What's so great about PostgreSQL v17?
+[(link)](https://www.cybertec-postgresql.com/en/whats-so-great-about-postgresql-v17/)
+
+- On NULL
+[(link)](https://github.com/agentm/project-m36/blob/master/docs/on_null.markdown)
+
+- Are You Qualified To Use Null in SQL?
+[(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
+
+- Exploring the limits of Postgres: when does it break?
+[(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
+
+- Query Your PostgreSQL Database with LangChain and Llama 3.1 : Exploring LLMs — 1
+[(link)](https://blog.gopenai.com/query-your-postgresql-database-with-langchain-and-llama-3-1-exploring-llms-1-ba3a9560c0d1)
+
 - Apache Iceberg: Built for Big Data, Not Ready for Small(?)
 [(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
 
