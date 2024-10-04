@@ -2,7 +2,7 @@
 layout: default1
 nav: adbkt-vorlesungen
 is_slide: 1
-n: 10
+n: 20
 title: Transaktionen in Postgres
 ---
 
@@ -12,7 +12,16 @@ title: Transaktionen in Postgres
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>SQL-Konsistenzstufen</h1>
+<h1>Transaktionskonzepte in Postgres</h1>
+<ul class="w3-large">
+    <li>Multiversion Concurrency Control, MVCC</li>
+    <li>Snapshot Isoloation, SI</li>
+    <li>Echte Serialisierbarkeit bei Snapshots, Serializable Snapshot Isoloation, SSI</li>
+    <li>Reader don't block Writer and Writer don't block Reader </li>
+    <li>Zeilensperren aber ebenfalls verfügbar, S2PL umsetzbar</li>
+</ul>
+
+<h1>Umsetzung SQL-Konsistenzstufen</h1>
 <table class="w3-table-all">
     <tr>
         <th>Isolation Level</th>
@@ -57,41 +66,43 @@ title: Transaktionen in Postgres
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Benutzung Transaktions API</h1>
-<h3>Python</h3>
-<pre><code class="language-python">reset_personal(conparams)
-show_tc(conparams, tblPers, ordPers, msgBeforePers)
-con = t_start("T1", il1, conparams, rc, pers100upd41000, persAllSel)
-t_finish("T1", il1, con)
-show_tc(conparams, tblPers, ordPers, msgAfterPers)
-</code></pre>
+<h1>Snapshot - Read Committed</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
-<h3>Ausgabe</h3>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
-T1: READ_COMMITTED
-T1: update personal set gehalt=41000 where pid=100
-T1: [(100, 41000), (200, 50000)]
+T1: START: READ_COMMITTED
+T1: update konto set betrag = 3 where kid=100
+T1: [(100, 3), (200, 6)]
 T1: commit and close
-DB state after (pid, gehalt): [(100, 41000), (200, 50000)]
-</code></pre>
 
-<h3>Python</h3>
-<pre><code class="language-python">reset_personal(conparams)
-show_tc(conparams, tblPers, ordPers, msgBeforePers)
-con = t_start("T1", il1, conparams, rc, pers100upd41000, persAllSel)
-t_finish("T1", il1, con, rollback=True)
-show_tc(conparams, tblPers, ordPers, msgAfterPers)
-</code></pre>
+                    TRead: START: READ_COMMITTED
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
 
-<h3>Ausgabe</h3>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
-T1: READ_COMMITTED
-T1: update personal set gehalt=41000 where pid=100
-T1: [(100, 41000), (200, 50000)]
-T1: rollback and close
-DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
-</code></pre>
+          T2: START: READ_COMMITTED
+          T2: update konto set betrag = 7 where kid=200
+          T2: [(100, 3), (200, 7)]
+          T2: commit and close
 
+T3: START: READ_COMMITTED
+T3: insert into konto values (300, 1)
+T3: [(100, 3), (200, 7), (300, 1)]
+T3: commit and close
+
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 7), (300, 1)]
+                    TRead: commit and close
+
+After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]
+</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -99,39 +110,45 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Transaktions API - synchron</h1>
-<pre><code class="language-python">def t_start(tname, il, conparams, iso, sql, sel="", printPre=False, printAfter=True):
-    prefix = t_prefix(tname, il)
-    print(f"{prefix}{iso.name}")
-    con = psycopg.connect(conparams)
-    con.set_isolation_level(iso)
-    if printPre: print(f"{prefix}{con.execute(sel).fetchall()}")    
-    con.execute(sql)
-    print(f"{prefix}{sql}")
-    if printAfter: print(f"{prefix}{con.execute(sel).fetchall()}")
-    return con
-</code></pre>
+<h1>Snapshot - Repeatble Read</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
-<pre><code class="language-python">def t_do(tname, il, con, sql, sel="", printPre=False, printAfter=True):
-    prefix = t_prefix(tname, il)
-    if printPre: print(f"{prefix}{con.execute(sel).fetchall()}")    
-    print(f"{prefix}{sql}")
-    con.execute(sql)
-    if printAfter: print(f"{prefix}{con.execute(sel).fetchall()}")
-</code></pre>
+T1: START: READ_COMMITTED
+T1: update konto set betrag = 3 where kid=100
+T1: [(100, 3), (200, 6)]
 
-<pre><code class="language-python">def t_finish(tname, il, con, sel="", rollback=False, printState=False):
-    prefix = t_prefix(tname, il)
-    if printState: print(f"{prefix}{con.execute(sel).fetchall()}")    
-    if rollback: 
-        con.rollback()
-        print(f"{prefix}rollback and close")
-    else:
-        con.commit()
-        print(f"{prefix}commit and close")
-    con.close()
-</code></pre>
+T1: commit and close
 
+                    TRead: START: REPEATABLE_READ
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
+
+          T2: START: READ_COMMITTED
+          T2: update konto set betrag = 7 where kid=200
+          T2: [(100, 3), (200, 7)]
+
+          T2: commit and close
+
+T3: START: READ_COMMITTED
+T3: insert into konto values (300, 1)
+T3: [(100, 3), (200, 7), (300, 1)]
+
+T3: commit and close
+
+                    TRead: select * from konto order by kid
+                    TRead: [(100, 3), (200, 6)]
+                    TRead: commit and close
+
+After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -139,28 +156,54 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Snapshot - Read Committed</h1>
-<pre><code class="language-sql">DB state before (kid, betrag): [(100, 2), (200, 6)]
-T1: READ_COMMITTED
-T1: update konto set betrag = 3 where kid=100
-T1: [(100, 3), (200, 6)]
+<h1>Lost Update</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: select * from personal order by pid
+T1: [(100, 40000), (200, 50000)]
+
+          T2: START: READ_COMMITTED
+          T2: select * from personal order by pid
+          T2: [(100, 40000), (200, 50000)]
+
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
 T1: commit and close
-                    TRead: READ_COMMITTED
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
-          T2: READ_COMMITTED
-          T2: update konto set betrag = 7 where kid=200
-          T2: [(100, 3), (200, 7)]
+
+          T2: update personal set gehalt=42000 where pid=100
+          T2: [(100, 42000), (200, 50000)]
           T2: commit and close
-T3: READ_COMMITTED
-T3: insert into konto values (300, 1)
-T3: [(100, 3), (200, 7), (300, 1)]
-T3: commit and close
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 7), (300, 1)]
-                    TRead: commit and close
-DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
-</code></pre>
+
+After  (pid, gehalt): [(100, 42000), (200, 50000)]
+
+**********************************************************************
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: REPEATABLE_READ
+T1: select * from personal order by pid
+T1: [(100, 40000), (200, 50000)]
+
+          T2: START: REPEATABLE_READ
+          T2: select * from personal order by pid
+          T2: [(100, 40000), (200, 50000)]
+
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+T1: commit and close
+
+          T2: update personal set gehalt=42000 where pid=100
+          T2: Exception:<class 'psycopg.errors.SerializationFailure'>
+After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -168,30 +211,17 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Snapshot - Repeatble Read</h1>
-<pre><code class="language-sql">DB state before (kid, betrag): [(100, 2), (200, 6)]
-T1: READ_COMMITTED
-T1: update konto set betrag = 3 where kid=100
-T1: [(100, 3), (200, 6)]
-T1: commit and close
-                    TRead: REPEATABLE_READ
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
-          T2: READ_COMMITTED
-          T2: update konto set betrag = 7 where kid=200
-          T2: [(100, 3), (200, 7)]
-          T2: commit and close
-T3: READ_COMMITTED
-T3: insert into konto values (300, 1)
-T3: [(100, 3), (200, 7), (300, 1)]
-T3: commit and close
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
-                    TRead: commit and close
-DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
-</code></pre>
-<p class="w3-large">Kein Unterschied bei SERIALIZABLE</p>
-
+<h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -199,7 +229,17 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Lost Update</h1>
+<h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -208,6 +248,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=7 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -216,6 +266,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=8 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -224,6 +284,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=9 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -232,6 +302,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=10 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -240,6 +320,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=11 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -248,6 +338,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=12 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -256,6 +356,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=13 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -264,6 +374,16 @@ DB state after (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 -->
 {% include padding-id.html id=14 %}
 <h1>xxx</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">xxx</code></pre>
+    </div>
+    <div class="w3-col m5">
+	    <p class="w3-large">
+		    xxx
+	    </p>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 

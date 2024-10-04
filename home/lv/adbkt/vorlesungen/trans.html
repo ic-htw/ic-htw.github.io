@@ -2,7 +2,7 @@
 layout: default1
 nav: adbkt-vorlesungen
 is_slide: 1
-n: 10
+n: 9
 title: Transaktionen
 ---
 
@@ -119,21 +119,34 @@ title: Transaktionen
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Anomalie - Dirty Read</h1>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+<h1>Anomalie - Dirty Read 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
 T1: select * from personal order by pid
 T1: [(100, 40000), (200, 50000)]
+
           T2: update personal set gehalt=41000 where pid=100
           T2: [(100, 41000), (200, 50000)]
+
 T1: select * from personal order by pid
 T1: [(100, 41000), (200, 50000)]
 T1: commit and close
+
           T2: rollback and close
-DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
-</code></pre>
-<p class="w3-large">
-    T1 hat nichtbestätigten Wert 41000 gelesen
-</p>
+
+After (pid, gehalt): [(100, 40000), (200, 50000)]</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large">
+            T2 ändert Wert, noch nicht beendet<br><br>
+            Wechsel zu T1<br><br>
+            T1 liest nichtbestätigten Wert 41000<br><br>
+            T2 macht rollback
+        </p>
+    </div>
+</div>
 
 <div class="ic-gap"></div>
 
@@ -142,46 +155,69 @@ DB state after (pid, gehalt): [(100, 40000), (200, 50000)]
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Anomalie - Read Skew One</h1>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+<h1>Anomalie - Dirty Read 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
 T1: update personal set gehalt=41000 where pid=100
 T1: [(100, 41000), (200, 50000)]
+
           T2: select * from personal order by pid
           T2: [(100, 41000), (200, 50000)]
           T2: commit and close
+
 T1: update personal set gehalt=51000 where pid=200
 T1: [(100, 41000), (200, 51000)]
 T1: commit and close
-DB state after (pid, gehalt): [(100, 41000), (200, 51000)]
-</code></pre>
-<p class="w3-large">
-Lesen eines nicht bestätigten Datenbankzustands<br>[(100, 41000), (200, 50000)]<br>
-Ähnlich wie Dirty Read, nur kein Rollback
-</p>
 
-</code><div class="ic-gap"></div>
+After (pid, gehalt): [(100, 41000), (200, 51000)]</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large">
+            T2 liest nicht bestätigten Datenbankzustand<br>
+            [(100, 41000), (200, 50000)]<br><br>
+            Ähnlich wie Dirty Read 1, nur kein Rollback
+        </p>
+    </div>
+</div>
+
+<div class="ic-gap"></div>
 
 
 <!--
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Anomalie - Non Repeatable Read</h1>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+<h1>Anomalie - Non Repeatable Read 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
 T1: select * from personal order by pid
 T1: [(100, 40000), (200, 50000)]
+
           T2: update personal set gehalt=41000 where pid=100
           T2: [(100, 41000), (200, 50000)]
           T2: commit and close
+
 T1: select * from personal order by pid
 T1: [(100, 41000), (200, 50000)]
 T1: commit and close
-DB state after (pid, gehalt): [(100, 41000), (200, 50000)]
-</code></pre>
-<p class="w3-large">
-Wiederholtes Lesen des gleichen Datensatzes pid=100 in T1 führt zu unterschiedlichen Werten
-(40000 und 41000) 
-</p>
+
+After (pid, gehalt): [(100, 41000), (200, 50000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large">
+            Wiederholtes Lesen des gleichen Datensatzes pid=100 in T1 führt zu unterschiedlichen Werten
+            (40000 und 41000) 
+        </p>
+    </div>
+</div>
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -189,23 +225,36 @@ Wiederholtes Lesen des gleichen Datensatzes pid=100 in T1 führt zu unterschiedl
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>Anomalie - Read Skew Two</h1>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
-          T2: select * from personal where pid=100
-          T2: [(100, 40000)]
-T1: update personal set gehalt=41000 where pid=100
-T1: update personal set gehalt=51000 where pid=200
-T1: [(100, 41000), (200, 51000)]
-T1: commit and close
-          T2: select * from personal where pid=200
-          T2: [(200, 51000)]
+<h1>Anomalie - Non Repeatable Read 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: select * from personal where pid=100
+T1: [(100, 40000)]
+
+          T2: update personal set gehalt=41000 where pid=100
+          T2: update personal set gehalt=51000 where pid=200
+          T2: [(100, 41000), (200, 51000)]
           T2: commit and close
-DB state after (pid, gehalt): [(100, 41000), (200, 51000)]
-</code></pre>
-<p class="w3-large">
-Ähnlich zu Non Repeatble Read, nur nicht zweimaliges Lesen des gleichen Datensatzes.
-Der Gesamtzustand der Datenbank hat sich beim zweiten Lesen geändert
-</p>
+
+T1: select * from personal where pid=200
+T1: [(200, 51000)]
+T1: commit and close
+
+After (pid, gehalt): [(100, 41000), (200, 51000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large">
+            Ähnlich zu Non Repeatble Read 1, nur nicht zweimaliges Lesen des gleichen Datensatzes.<br><br>
+            Der Gesamtzustand der Datenbank hat sich beim zweiten Lesen geändert
+        </p>
+    </div>
+</div>
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -214,19 +263,36 @@ Der Gesamtzustand der Datenbank hat sich beim zweiten Lesen geändert
 -->
 {% include padding-id.html id=8 %}
 <h1>Anomalie - Lost Update</h1>
-<pre><code class="language-sql">DB state before (pid, gehalt): [(100, 40000), (200, 50000)]
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
 T1: select * from personal order by pid
 T1: [(100, 40000), (200, 50000)]
+
           T2: select * from personal order by pid
           T2: [(100, 40000), (200, 50000)]
+
 T1: update personal set gehalt=41000 where pid=100
 T1: [(100, 41000), (200, 50000)]
 T1: commit and close
+
           T2: update personal set gehalt=42000 where pid=100
           T2: [(100, 42000), (200, 50000)]
           T2: commit and close
-DB state after (pid, gehalt): [(100, 42000), (200, 50000)]
-</code></pre>
+
+After (pid, gehalt): [(100, 42000), (200, 50000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large">
+            T1 und T2 lesen gleichen DB-Zustand<br><br>
+            T1 nimmt auf dessen Grundlage Änderungen vor und schreibt<br><br>
+            T2 nimmt ebenfalls auf dessen Grundlage Änderungen vor und überschreibt T1
+        </p>
+    </div>
+</div>
+
 <div class="ic-gap"></div>
 
 
@@ -237,23 +303,27 @@ DB state after (pid, gehalt): [(100, 42000), (200, 50000)]
 <h1>Anomalie - Write Skew</h1>
 <div class="w3-row-padding">
     <div class="w3-col m8">
-        <pre><code class="language-sql">DB state before (pid, gehalt): [(100, 80), (200, 50)]
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 80), (200, 50)]
+
 T1: [(100, 80), (200, 50)]
+
           T2: [(100, 80), (200, 50)]
-T1: update konto set betrag = -10 where kid=100
+
+T1: update konto set betrag = betrag -90 where kid=100
 T1: [(100, -10), (200, 50)]
 T1: commit and close
-          T2: update konto set betrag = 0 where kid=200
+
+          T2: update konto set betrag = betrag -50 where kid=200
           T2: [(100, 80), (200, 0)]
           T2: commit and close
-DB state after (pid, gehalt): [(100, -10), (200, 0)]
-        </code></pre>
+
+After (pid, gehalt): [(100, -10), (200, 0)]</code></pre>
     </div>
     <div class="w3-col m4">
         <p class="w3-large">
             Invariante: Summe auf beiden Konten
             darf nicht negativ werden.<br><br>
-            T1 prüft die Summe (130) und stellt fest,
+            T1 prüft Summe (130) und stellt fest,
             dass ein Abheben von 90 von kid=100
             ok ist, da Deckung durch kid=200
             gegeben.<br><br>
@@ -263,93 +333,4 @@ DB state after (pid, gehalt): [(100, -10), (200, 0)]
     </div>
 </div>
 <div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
 
