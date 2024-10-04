@@ -2,7 +2,7 @@
 layout: default1
 nav: adbkt-vorlesungen
 is_slide: 1
-n: 20
+n: 11
 title: Transaktionen in Postgres
 ---
 
@@ -21,7 +21,7 @@ title: Transaktionen in Postgres
     <li>Zeilensperren aber ebenfalls verfügbar, S2PL umsetzbar</li>
 </ul>
 
-<h1>Umsetzung SQL-Konsistenzstufen</h1>
+<h2>Umsetzung SQL-Konsistenzstufen</h2>
 <table class="w3-table-all">
     <tr>
         <th>Isolation Level</th>
@@ -68,7 +68,7 @@ title: Transaktionen in Postgres
 {% include padding-id.html id=2 %}
 <h1>Snapshot - Read Committed</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m8">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
@@ -94,12 +94,11 @@ T3: commit and close
                     TRead: [(100, 3), (200, 7), (300, 1)]
                     TRead: commit and close
 
-After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]
-</code></pre>
+After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -112,7 +111,7 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]
 {% include padding-id.html id=3 %}
 <h1>Snapshot - Repeatble Read</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m8">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
@@ -143,9 +142,9 @@ T3: commit and close
 
 After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -158,7 +157,7 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
 {% include padding-id.html id=4 %}
 <h1>Lost Update</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m8">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
@@ -177,9 +176,8 @@ T1: commit and close
           T2: [(100, 42000), (200, 50000)]
           T2: commit and close
 
-After  (pid, gehalt): [(100, 42000), (200, 50000)]
+**********
 
-**********************************************************************
 Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: REPEATABLE_READ
@@ -195,12 +193,13 @@ T1: [(100, 41000), (200, 50000)]
 T1: commit and close
 
           T2: update personal set gehalt=42000 where pid=100
-          T2: Exception:<class 'psycopg.errors.SerializationFailure'>
+          T2: SerializationFailure
+
 After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -211,14 +210,53 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Write Skew</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: REPEATABLE_READ
+T1: select * from konto order by kid
+T1: [(100, 80), (200, 50)]
+
+          T2: START: REPEATABLE_READ
+          T2: select * from konto order by kid
+          T2: [(100, 80), (200, 50)]
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1: [(100, -10), (200, 50)]
+T1: commit and close
+
+          T2: update konto set betrag = betrag -50 where kid=200
+          T2: [(100, 80), (200, 0)]
+          T2: commit and close
+
+After  (kid, betrag): [(100, -10), (200, 0)]
+
+**********
+
+Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: SERIALIZABLE
+T1: select * from konto order by kid
+T1: [(100, 80), (200, 50)]
+
+          T2: START: SERIALIZABLE
+          T2: select * from konto order by kid
+          T2: [(100, 80), (200, 50)]
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1: [(100, -10), (200, 50)]
+T1: commit and close
+
+          T2: update konto set betrag = betrag -50 where kid=200
+          T2: SerializationFailure
+
+After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -229,14 +267,61 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>xxx</h1>
+<h1>Update Conflicts 1 - READ COMMITTED</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: update personal set gehalt= gehalt + 1000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+
+          T2: START: READ_COMMITTED
+T1: rollback and close
+
+          T2: update personal set gehalt= gehalt + 2000 where pid=100
+          T2: [(100, 42000), (200, 50000)]
+          T2: commit and close
+
+After  (pid, gehalt): [(100, 42000), (200, 50000)]
+
+**********
+
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: update personal set gehalt= gehalt + 1000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+
+          T2: START: READ_COMMITTED
+T1: commit and close
+
+          T2: update personal set gehalt= gehalt + 2000 where pid=100
+          T2: [(100, 43000), (200, 50000)]
+          T2: commit and close
+
+After  (pid, gehalt): [(100, 43000), (200, 50000)]
+
+**********
+
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: delete from personal where pid=100
+T1: [(200, 50000)]
+
+          T2: START: READ_COMMITTED
+T1: commit and close
+
+          T2: update personal set gehalt= gehalt + 2000 where pid=100
+          T2: [(200, 50000)]
+          T2: commit and close
+
+After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -247,14 +332,57 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>xxx</h1>
+<h1>Update Conflicts 1 - REPEATABLE READ</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: update personal set gehalt= gehalt + 1000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+
+          T2: START: REPEATABLE_READ
+T1: rollback and close
+
+          T2: update personal set gehalt= gehalt + 2000 where pid=100
+          T2: [(100, 42000), (200, 50000)]
+          T2: commit and close
+
+After  (pid, gehalt): [(100, 42000), (200, 50000)]
+
+**********
+
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: update personal set gehalt= gehalt + 1000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+
+          T2: START: REPEATABLE_READ
+T1: commit and close
+
+          T2: SerializationFailure
+
+After  (pid, gehalt): [(100, 41000), (200, 50000)]
+
+**********
+
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: delete from personal where pid=100
+T1: [(200, 50000)]
+
+          T2: START: REPEATABLE_READ
+T1: commit and close
+
+          T2: SerializationFailure
+
+After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -265,14 +393,27 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>xxx</h1>
+<h1>Update Conflicts 2 - READ COMMITTED</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
+
+T1: START: READ_COMMITTED
+T1: update website set hits = hits + 1
+T1: [(100, 10), (200, 11)]
+
+          T2: START: READ_COMMITTED
+T1: commit and close
+
+          T2: delete from website where hits = 10
+          T2: [(100, 10), (200, 11)]
+          T2: commit and close
+
+After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -283,14 +424,25 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Update Conflicts 2 - REPEATABLE READ</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
+
+T1: START: READ_COMMITTED
+T1: update website set hits = hits + 1
+T1: [(100, 10), (200, 11)]
+
+          T2: START: REPEATABLE_READ
+T1: commit and close
+
+          T2: SerializationFailure
+
+After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -301,14 +453,76 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Serialisierungsfehler</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: SERIALIZABLE
+T1: insert into cv select 2, sum(val) from cv where cls=1
+T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+T1: commit and close
+
+          T2: START: SERIALIZABLE
+          T2: insert into cv select 1, sum(val) from cv where cls=2
+          T2: [(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
+          T2: commit and close
+
+After  (cls, val): [(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: SERIALIZABLE
+T1: insert into cv select 1, sum(val) from cv where cls=2
+T1: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+T1: commit and close
+
+          T2: START: SERIALIZABLE
+          T2: insert into cv select 2, sum(val) from cv where cls=1
+          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
+          T2: commit and close
+
+After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: REPEATABLE_READ
+T1: insert into cv select 2, sum(val) from cv where cls=1
+T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+
+          T2: START: REPEATABLE_READ
+          T2: insert into cv select 1, sum(val) from cv where cls=2
+          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+          T2: commit and close
+
+T1: commit and close
+
+After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 30), (2, 100), (2, 200)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: SERIALIZABLE
+T1: insert into cv select 2, sum(val) from cv where cls=1
+T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+
+          T2: START: SERIALIZABLE
+          T2: insert into cv select 1, sum(val) from cv where cls=2
+          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+          T2: commit and close
+
+T1: SerializationFailure
+
+After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m3">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
@@ -319,119 +533,31 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1>Write Skew Avoidance- with Locks</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
+    <div class="w3-col m8">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: READ_COMMITTED
+T1: select * from konto order by kid for update
+T1: [(100, 80), (200, 50)]
+
+          T2: START: READ_COMMITTED
+T1: update konto set betrag = betrag -90 where kid=100
+T1: [(100, -10), (200, 50)]
+T1: commit and close
+
+          T2: select * from konto order by kid for update
+          T2: [(100, -10), (200, 50)]
+
+          T2: commit and close
+
+After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx
+		    xxx<br><br>
 	    </p>
     </div>
 </div>
 <div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
-    </div>
-    <div class="w3-col m5">
-	    <p class="w3-large">
-		    xxx
-	    </p>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>xxx</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
-    </div>
-    <div class="w3-col m5">
-	    <p class="w3-large">
-		    xxx
-	    </p>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">xxx</code></pre>
-    </div>
-    <div class="w3-col m5">
-	    <p class="w3-large">
-		    xxx
-	    </p>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
