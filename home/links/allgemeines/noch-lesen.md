@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I spent 8 hours diving deep into Snowflake (again)
+[(link)](https://blog.det.life/i-spent-8-hours-diving-deep-into-snowflake-again-ccbe46f07176)
+
 - Finally JSON_TABLE() is here : Postgres 17
 [(link)](https://medium.com/@atarax/finally-json-table-is-here-postgres-17-a9b5245649bd)
 
