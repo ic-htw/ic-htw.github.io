@@ -1,0 +1,71 @@
+---
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
+---
+
+<h1>Übung Transaktionen</h1>
+
+
+<h2>Vorbereitung</h2>
+<p class="w3-large">
+    Importieren sie folgendes Notebook in ihren Python-Container:
+    (<a href="/home/lv/adbkt/a/ipynb/transaction.ipynb">ipynb</a>)
+    (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/transaction.ipynb">render</a>)
+</p>
+
+
+<h2>Implementierung von Szenarien aus der Vorlesung</h2>
+<ul class="w3-large">
+    <li>Vorlesung</li>
+    <li>
+        Szenario: Snapshot - Repeatble Read 
+        (<a href="/home/lv/adbkt/vorlesungen/trans-pg.html#3">link</a>)
+    </li>
+    <li>Vorlesung</li>
+    <li>
+        Szenario: Write Skew
+        (<a href="/home/lv/adbkt/vorlesungen/trans-pg.html#5">link</a>)
+    </li>
+    <li>Vorlesung</li>
+    <li>
+        Szenario: Update Conflicts 1
+        (<a href="/home/lv/adbkt/vorlesungen/trans-pg.html#7">link</a>)
+    </li>
+    <li>Vorlesung</li>
+    <li>
+        Szenario: Serialisierungsfehler
+        (<a href="/home/lv/adbkt/vorlesungen/trans-pg.html#10">link</a>)
+    </li>
+</ul>
+
+<h2>Implementierung von Szenarien aus dem PostgreSQL-Paper</h2>
+<ul class="w3-large">
+    <li>
+        Paper "Serializable Snapshot Isolation in PostgreSQL" - bis Kapitel 3.1 lesen
+        (<a href="https://arxiv.org/abs/1208.4179">link</a>)
+    </li>
+    <li>Szenario Fig 1 implementieren</li>
+    <li>Szenario Fig 2 implementieren</li>
+</ul>
+
+<h2>Umsetzung Zwei-Phasen-Commit-Protokoll</h2>
+<p class="w3-large">Erstellen sie einen Postgres-Container</p>
+
+<pre><code class="language-yaml">services:
+  pg:
+    container_name: pg
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: adbktpg
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:</code></pre>
+
+<p class="w3-large">
+    Entwickeln sie ein Szenario, in dem zwei Postgres-Datenbanken in einer Transaktion zusammenspielen.
+</p>

@@ -287,7 +287,7 @@ home: &r
                     url: /home/lv/adbkt/uebungen/db-intro.html
                   - t: Transaktionen
                     ts: Transaktionen
-                    url: /home/lv/adbkt/uebungen/concur.html
+                    url: /home/lv/adbkt/uebungen/trans-ueb.html
                   - t: Cassandra Replikation
                     ts: Cassandra Replikation
                     url: /home/lv/adbkt/uebungen/cas-repl.html

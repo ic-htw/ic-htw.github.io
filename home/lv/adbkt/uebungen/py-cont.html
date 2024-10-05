@@ -19,16 +19,15 @@ is_slide: 0
 
 <pre><code class="language-yaml">services:
   py:
-    container_name: py
-    image:  iclassen/py
+    container_name: pyuv
+    image:  iclassen/pyuv
     ports:
       - 8888:8888
     volumes:
-      - data:/opt/dev
+      - data:/root
 
 volumes:
-  data:
-</code></pre>
+  data:</code></pre>
 
 <p class="w3-large">Konsole in Container öffnen</p>
 <pre><code>jupyter notebook list</code></pre>
