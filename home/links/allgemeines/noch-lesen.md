@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Finally JSON_TABLE() is here : Postgres 17
+[(link)](https://medium.com/@atarax/finally-json-table-is-here-postgres-17-a9b5245649bd)
+
+- Step-by-Step Guide to Creating Your Own Large Language Model
+[(link)](https://medium.com/sciforce/step-by-step-guide-to-your-own-large-language-model-2b3fed6422d0)
+
 - LLM Finetuning Strategies
 [(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
 
