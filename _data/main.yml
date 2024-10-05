@@ -348,7 +348,7 @@ home: &r
                     url: /home/lv/adbkt/pruefungen/er-dia.html
                   - t: P2 (15 Punkte)
                     ts: P2 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/sql-concur.html
+                    url: /home/lv/adbkt/pruefungen/trans-sys.html
                   - t: P3 (15 Punkte)
                     ts: P3 (15 Punkte)
                     url: /home/lv/adbkt/pruefungen/tour-delight.html

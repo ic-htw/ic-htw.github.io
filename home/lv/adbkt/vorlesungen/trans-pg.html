@@ -98,8 +98,8 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
-	    </p>
+		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Lesens.
+        </p>
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -144,7 +144,7 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Starts dieser Transaktion
 	    </p>
     </div>
 </div>
@@ -199,7 +199,10 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    Lost Update bei read committed möglich.<br><br>
+		    Kein Lost Update bei repeatable read.<br>
+            Stattdessen Serialisierungsfehler mit Rollback.<br>
+            Erneutes Starten der abgebrochenen Transktion.
 	    </p>
     </div>
 </div>
@@ -256,7 +259,10 @@ After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    Write Skew bei repeatable read möglich.<br><br>
+		    Kein Write Skew bei serializable.<br>
+            Stattdessen Serialisierungsfehler mit Rollback.<br>
+            Erneutes Starten der abgebrochenen Transktion.
 	    </p>
     </div>
 </div>
@@ -321,7 +327,14 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    Update Datensatz 100 von T1 und T2.
+		    T2 bleibt stehen, da Sperre durch T1.<br><br>
+		    Abschluss T1 mit Rollback.<br>
+		    T2 läuft weiter, liest alten Wert und ändert 100.<br><br>
+		    Abschluss T1 mit Commit.<br>
+		    T2 läuft weiter, liest neuen Wert und ändert 100.<br><br>
+		    Bei Löschung: Erneutes Lesen liefert keinen Datensatz 100 mehr.<br>
+            Daher zweites Update ohne Effekt.
 	    </p>
     </div>
 </div>
@@ -336,23 +349,6 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m8">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
-
-T1: START: READ_COMMITTED
-T1: update personal set gehalt= gehalt + 1000 where pid=100
-T1: [(100, 41000), (200, 50000)]
-
-          T2: START: REPEATABLE_READ
-T1: rollback and close
-
-          T2: update personal set gehalt= gehalt + 2000 where pid=100
-          T2: [(100, 42000), (200, 50000)]
-          T2: commit and close
-
-After  (pid, gehalt): [(100, 42000), (200, 50000)]
-
-**********
-
-Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: update personal set gehalt= gehalt + 1000 where pid=100
@@ -382,7 +378,14 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    T2 mit repeatable read.<br><br>
+		    Update Datensatz 100 von T1 und T2.
+		    T2 bleibt stehen, da Sperre durch T1.<br><br>
+		    Abschluss T1 mit Rollback.<br>
+		    Gleiches Ergebnis wie bei repeatable read.<br><br>
+		    Abschluss T1 mit Commit.<br>
+		    T2 Serialisierungsfehler.<br><br>
+		    Bei Löschung: T2 Serialisierungsfehler.
 	    </p>
     </div>
 </div>
@@ -413,7 +416,12 @@ After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
+		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
+            Bleibt stehen.<br><br>
+		    T1 bestätigt Änderungen, wirkt sich auf Lösch-Snapshot aus.<br><br>
+		    T2 evaluiert Lösch-Snapshot, ist leer, da (200, 11) die Bedingung hits=10 nicht erfüllt.<br>
+		    Delete-Befehl ohne Effekt.<br><br>
 	    </p>
     </div>
 </div>
@@ -442,7 +450,11 @@ After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
+		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
+            Bleibt stehen.<br><br>
+		    T1 bestätigt Änderungen, wirkt sich auf Lösch-Snapshot aus.<br><br>
+		    T2 Serialisierungsfehler, bricht ab.
 	    </p>
     </div>
 </div>
@@ -522,7 +534,12 @@ After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]</code></pre>
     </div>
     <div class="w3-col m3">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    Erster Durchlauf: Keine Verzahnung, d.h. serialisierter Ablauf.<br><br>
+		    Zweiter Durchlauf: Keine Verzahnung, d.h. serialisierter Ablauf.<br><br>
+		    Dritter Durchlauf: Repatable read und Verzahnung. <br>
+            Ergebnis entspricht keinem serialisierten Ablauf.<br><br>
+		    Vierter Durchlauf: Serializable und Verzahnung. <br>
+            Serialisierungsfehler wird erkannt.<br><br>
 	    </p>
     </div>
 </div>
@@ -533,7 +550,7 @@ After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>Write Skew Avoidance- with Locks</h1>
+<h1>Write Skew Avoidance - with Locks</h1>
 <div class="w3-row-padding">
     <div class="w3-col m8">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
@@ -556,7 +573,9 @@ After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
     <div class="w3-col m4">
 	    <p class="w3-large">
-		    xxx<br><br>
+		    Explizites Setzen von Sperren (select for update).<br><br>
+		    T2 bleibt stehen, kann nicht einmal lesen.<br><br>
+		    T2 kann erst lesen, wenn T1 abgeschlossen.
 	    </p>
     </div>
 </div>
