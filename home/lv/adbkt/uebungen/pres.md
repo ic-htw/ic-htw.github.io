@@ -17,6 +17,7 @@ is_slide: 0
 
 ## Fallbeispiele
 
+1. Distributed payment system [(link)](https://www.cockroachlabs.com/customers/shipt/)
 1. FlightAware Flight Tracking [(link)](https://www.timescale.com/case-studies/flightaware)
 1. FI Neobank Platform [(link)](https://www.cockroachlabs.com/customers/building-a-scalable-neobank-platform-from-scratch-on-cockroachdb/)
 1. Scoutbee Supply Chain Insight [(link)](https://neo4j.com/case-studies/scoutbee/)
@@ -25,5 +26,4 @@ is_slide: 0
 1. Rapidsop Customer Journey Automation [(link)](https://www.cockroachlabs.com/customers/rapidops/)
 1. Trading Strategy Algorithmic Trading [(link)](https://www.timescale.com/case-studies/trading-strategy)
 1. Zurich Insurance Fraud Investigations [(link)](https://neo4j.com/case-studies/zurich-insurance/)
-1. Jane Eldercare [(link)](https://www.timescale.com/case-studies/jane)
-
+1.  Predictive maintenance [(link)](https://www.timescale.com/case-studies/soundsensing)
