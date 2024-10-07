@@ -21,6 +21,9 @@ home: &r
                   - t: Plan
                     ts: Plan
                     url: /home/lv/dmdb/allgemeines/plan.html
+                  - t: Konfiguration SQL-Developer
+                    ts: Konfiguration SQL-Developer
+                    url: /home/sonstiges/p/sqldeveloper.html
                   - t: Video
                     ts: Video
                     url: https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV
@@ -169,7 +172,7 @@ home: &r
               #   url: /home/lv/dbtech/p/ue-ex.html
               - t: Konfiguration SQL-Developer
                 ts: Konfiguration SQL-Developer
-                url: /home/lv/dbtech/p/config-sqldeveloper.html
+                url: /home/sonstiges/p/sqldeveloper.html
               - t: Repository-Import auf Github
                 ts: Repository-Import auf Github
                 url: /home/lv/dbtech/p/github-import.html
