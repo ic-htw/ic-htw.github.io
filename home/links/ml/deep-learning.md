@@ -5,6 +5,8 @@ is_slide: 0
 ---
 - Deep Learning Tuning Playbook
 [(link)](https://github.com/google-research/tuning_playbook)
+- viso.ai Blog
+[(link)](https://viso.ai/blog/)
 
 
 # CNN

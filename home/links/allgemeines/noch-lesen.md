@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 PostgreSQL Queries/Functions I Find The Most Useful
+[(link)](https://blog.devgenius.io/10-postgresql-techniques-i-find-the-most-useful-1f98b5c7c38e)
+
 - I spent 8 hours diving deep into Snowflake (again)
 [(link)](https://blog.det.life/i-spent-8-hours-diving-deep-into-snowflake-again-ccbe46f07176)
 
