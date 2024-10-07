@@ -91,6 +91,8 @@ is_slide: 0
 [(link)](https://jobs.zalando.com/tech/blog/)
 
 # Sites
+- Karpathy
+[(link)](https://karpathy.ai/)
 - Spatial Data Management
 [(link)](https://geog-414.gishub.org/)
 - superfastpython
