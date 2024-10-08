@@ -208,7 +208,7 @@ home: &r
                 sub:
                   - t:  Entwicklung von DB-Systemen
                     ts:  Entwicklung von DB-Systemen
-                    url: /home/lv/adbkt/a/hist/hist.pdf
+                    url: /home/lv/adbkt/vorlesungen/history.html
                   - t: Transaktionen
                     ts: Transaktionen
                     url: /home/lv/adbkt/vorlesungen/trans.html
