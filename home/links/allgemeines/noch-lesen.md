@@ -9,6 +9,33 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Examples of specialized DB Usage
+[(link)](https://aws.plainenglish.io/why-developers-are-ditching-postgresql-mysql-and-mongodb-b3b953ebe6b6)
+
+- Turn Your CSVs Into Graphs Using LLMs
+[(link)](https://medium.com/neo4j/turn-your-csvs-into-graphs-using-llms-49fb77a837b2)
+
+- Highlights of RisingWave v1.8: The Open-Source Streaming Database
+[(link)](https://medium.risingwave.com/highlights-of-risingwave-v1-8-the-open-source-postgres-compatible-streaming-database-09895273ec7a)
+
+- The Pipe Syntax Revolution: How Google’s New SQL Is Making Queries Easier
+[(link)](https://medium.com/@vishalbarvaliya/the-pipe-syntax-revolution-how-googles-new-sql-is-making-queries-easier-7e69f522d894)
+
+- Was Rust Worth It?
+[(link)](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3)
+
+- The Python Packaging Hell
+[(link)](https://www.courtbouillon.org/blog/00011-the-python-packaging-hell-the-can-of-worms/)
+
+- pgai
+[(link)](https://github.com/timescale/pgai)
+
+- How We Built a Content Recommendation System With Pgai and Pgvectorscale 
+[(link)](https://www.timescale.com/blog/how-we-built-a-content-recommendation-system-with-pgai-and-pgvectorscale/)
+
+- SQL Applications using LlamaIndex 
+[(link)](https://medium.com/@avikumart_/building-natural-language-to-sql-applications-using-llamaindex-39280e90d52f)
+
 - 10 PostgreSQL Queries/Functions I Find The Most Useful
 [(link)](https://blog.devgenius.io/10-postgresql-techniques-i-find-the-most-useful-1f98b5c7c38e)
 

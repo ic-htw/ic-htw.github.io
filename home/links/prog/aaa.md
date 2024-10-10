@@ -51,6 +51,17 @@ is_slide: 0
 - blog
 [(link)](https://localstack.cloud/blog/)
 
+# unicode
+- Unicode Wikipedia
+[(link)](https://de.wikipedia.org/wiki/Unicode)
+
+- A Programmer’s Introduction to Unicode
+[(link)](https://www.reedbeta.com/blog/programmers-intro-to-unicode/)
+
+- UTF-8 Everywhere
+[(link)](bbb)
+
+
 # vim
 - Write Code Faster in Vim
 [(link)](https://jacobcomer.medium.com/write-code-faster-in-vim-c564ff9b9f6c)

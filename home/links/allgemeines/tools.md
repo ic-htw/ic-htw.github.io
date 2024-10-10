@@ -288,6 +288,9 @@ is_slide: 0
 [(link)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-7.4)
 
 
+# rsql
+- rsql
+[(link)](https://github.com/theseus-rs/rsql)
 
 
 # schemaSpy
