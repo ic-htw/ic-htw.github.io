@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I Made A Python Script 130 Times Faster with PostgreSQL Query Optimization
+[(link)](https://blog.devgenius.io/how-i-made-a-python-script-130-times-faster-with-postgresql-query-optimization-5e05ab8e6d85)
+
 - Examples of specialized DB Usage
 [(link)](https://aws.plainenglish.io/why-developers-are-ditching-postgresql-mysql-and-mongodb-b3b953ebe6b6)
 
