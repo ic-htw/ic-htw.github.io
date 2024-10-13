@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Crafting Python ORM: Advanced Meta Programming Techniques.
+[(link)](https://levelup.gitconnected.com/crafting-python-orm-advanced-meta-programming-techniques-e9afca905c5b)
+
+- PostgreSQL: UPSERT
+[(link)](https://medium.com/codex/postgresql-upsert-4e6f20b337ba)
+
+- What The Heck is Apache Polaris?
+[(link)](https://progrockrec.medium.com/what-the-heck-is-apache-polaris-df403e625c51)
+
+- Mastering Python Project Management with uv Part1: it’s Time to Ditch Poetry!
+[(link)](https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a)
+
+- Optimizing PostgreSQL Buffer Cache: Automating Analysis with a Bash Script
+[(link)](https://medium.com/@dmitry.romanoff/optimizing-postgresql-buffer-cache-automating-analysis-with-a-bash-script-2afd7b9da508)
+
+- SQL in your browser — DuckDB Web Shell for purely local data analytics
+[(link)](https://towardsdev.com/sql-in-your-browser-duckdb-web-shell-for-purely-local-data-analytics-82b8876eb7f7)
+
 - How I Made A Python Script 130 Times Faster with PostgreSQL Query Optimization
 [(link)](https://blog.devgenius.io/how-i-made-a-python-script-130-times-faster-with-postgresql-query-optimization-5e05ab8e6d85)
 
