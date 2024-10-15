@@ -217,7 +217,7 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/trans-pg.html
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
-                    url: /home/lv/adbkt/a/concur/2pc.pdf
+                    url: /home/lv/adbkt/vorlesungen/trans-dist.html
                   - t:  NoSQL
                     ts:  NoSQL
                     url: /home/lv/adbkt/vorlesungen/nosql.html
