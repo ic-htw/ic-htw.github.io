@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Statistical information about tables in a PostgreSQL Database
+[(link)](https://medium.com/@dmitry.romanoff/statistical-information-about-tables-in-a-postgresql-database-194e3932ffff)
+
 - Crafting Python ORM: Advanced Meta Programming Techniques.
 [(link)](https://levelup.gitconnected.com/crafting-python-orm-advanced-meta-programming-techniques-e9afca905c5b)
 
