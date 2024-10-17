@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I spent 8 hours researching WarpStream
+[(link)](https://medium.com/@vutrinh274/i-spent-8-hours-researching-warpstream-65ac1dd1f027)
+
+- ScyllaDB’s Rust Developer Workshop: What We Learned
+[(link)](https://scylladb.medium.com/scylladbs-rust-developer-workshop-what-we-learned-69cebf9efb45)
+
+- Convert JSON into Columns and Rows with JSON_TABLE
+[(link)](https://www.crunchydata.com/blog/easily-convert-json-into-columns-and-rows-with-json_table)
+
+- SQL/JSON is here
+[(link)](https://www.depesz.com/2024/10/11/sql-json-is-here-kinda-waiting-for-pg-17/)
+
+Postgres Type Explorer
+[(link)](https://masteringpostgres.com/types)
+
 - Statistical information about tables in a PostgreSQL Database
 [(link)](https://medium.com/@dmitry.romanoff/statistical-information-about-tables-in-a-postgresql-database-194e3932ffff)
 
