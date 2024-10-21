@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Docker pros are shrinking images by 99%
+[(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
+
+- The Ultimate Guide to Relational Databases for Backend Developers
+[(link)](https://blog.devgenius.io/the-ultimate-guide-to-relational-databases-for-backend-developers-42b1efb492b0)
+
+- Dynamic SQL Query Formation with Jinja Template
+[(link)](https://rajansahu713.medium.com/dynamic-sql-query-formation-with-jinja-template-113b2ef28134)
+
+- OCR with Phi-3-Vision: Revolutionizing Document Processing
+[(link)](https://bhavikjikadara.medium.com/ocr-with-phi-3-vision-revolutionizing-document-processing-81489b35d78f)
+
 - I spent 8 hours researching WarpStream
 [(link)](https://medium.com/@vutrinh274/i-spent-8-hours-researching-warpstream-65ac1dd1f027)
 
