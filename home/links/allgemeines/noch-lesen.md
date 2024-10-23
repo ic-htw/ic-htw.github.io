@@ -9,6 +9,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Apache Iceberg Topics: Stream directly into your data lake
+[(link)](https://redpanda-data.medium.com/apache-iceberg-topics-stream-directly-into-your-data-lake-0250a8dfdd76)
+
+- LlamaCoder
+[(link)](https://llamacoder.together.ai/)
+
+- Efficient Pagination with PostgreSQL Using Cursors
+[(link)](https://medium.com/@ietienam/efficient-pagination-with-postgresql-using-cursors-83e827148118)
+
+- Why PyMuPDF4LLM is the Best Tool for Extracting Data from PDFs
+[(link)](https://python.plainenglish.io/why-pymupdf4llm-is-the-best-tool-for-extracting-data-from-pdfs-even-if-you-didnt-know-you-needed-7bff75313691)
+
+- This is How I Use Swagger to Design REST APIs Before Starting the Development
+[(link)](https://levelup.gitconnected.com/this-is-how-i-use-swagger-to-design-rest-apis-before-starting-the-development-9de19cb1640f)
+
+- Why PostgreSQL Sometimes Skips Indexes for Better Query Performance
+[(link)](https://blog.devgenius.io/did-you-know-that-postgresql-doesnt-always-use-the-index-to-filter-by-an-indexed-column-0a4157f8d2a3)
+
+- ADBC: The Future of Database Connectivity
+[(link)](https://medium.com/@thibaut_gourdel/adbc-the-future-of-database-connectivity-4784c03637e8)
+
+- amphi - Visual Data Transformation based on Python 
+[(link)](https://github.com/amphi-ai/amphi-etl)
+
 - Docker pros are shrinking images by 99%
 [(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
 
