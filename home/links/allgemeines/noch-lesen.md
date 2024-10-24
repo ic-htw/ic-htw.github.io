@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introducing the Pydantic Library
+[(link)](https://medium.com/@thomas_reid/793c7b07ef09)
+
+- Optimise INSERT, UPDATE and DELETE in PostgreSQL using best indexing strategy
+[(link)](https://medium.com/@shaileshkumarmishra/optimise-insert-update-and-delete-in-postgresql-using-best-indexing-strategy-99427bb30f08)
+
 - Apache Iceberg Topics: Stream directly into your data lake
 [(link)](https://redpanda-data.medium.com/apache-iceberg-topics-stream-directly-into-your-data-lake-0250a8dfdd76)
 
