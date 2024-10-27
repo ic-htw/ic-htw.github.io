@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Nue.js: A New Frontier in Front-End Development
+[(link)](https://medium.com/@haiou-a/nue-js-a-new-frontier-in-front-end-development-4c438f95be90)
+
+- Building a High-Performance Data Pipeline Using DuckDB
+[(link)](https://alirezasadeghi1.medium.com/building-a-high-performance-data-pipeline-using-duckdb-829e01eec5f3)
+
+- The problem of text-to-SQL
+[(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
+
 - Introducing the Pydantic Library
 [(link)](https://medium.com/@thomas_reid/793c7b07ef09)
 
