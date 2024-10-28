@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Database Performance Benchmark: PostgreSQL vs. MySQL vs. SQLite
+[(link)](https://blog.probirsarkar.com/database-performance-benchmark-postgresql-vs-mysql-vs-sqlite-which-is-the-fastest-ae7f02de88e0)
+
+- Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker
+[(link)](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
+
 - Nue.js: A New Frontier in Front-End Development
 [(link)](https://medium.com/@haiou-a/nue-js-a-new-frontier-in-front-end-development-4c438f95be90)
 
