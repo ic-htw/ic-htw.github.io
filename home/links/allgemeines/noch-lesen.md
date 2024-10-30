@@ -9,6 +9,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Parquet pruning in DataFusion
+[(link)](https://blog.haoxp.xyz/posts/parquet-to-arrow/)
+
+- Hash tables in ClickHouse and C++ Zero-cost Abstractions
+[(link)](https://clickhouse.com/blog/hash-tables-in-clickhouse-and-zero-cost-abstractions)
+
+- From query to plot: Exploring GeoParquet Overture Maps with Ibis, DuckDB, and Lonboard
+[(link)](https://ibis-project.org/posts/ibis-overturemaps/)
+
+- PostGIS meets DuckDB: Crunchy Bridge for Analytics goes Spatial
+[(link)](https://www.crunchydata.com/blog/postgis-meets-duckdb-crunchy-bridge-for-analytics-goes-spatial)
+
+- One PID to Lock Them All: Finding the Source of the Lock in Postgres
+[(link)](https://www.crunchydata.com/blog/one-pid-to-lock-them-all-finding-the-source-of-the-lock-in-postgres)
+
+- FlockMTL is a DuckDB extension that integrates language model (LLM)
+[(link)](https://github.com/dsg-polymtl/duckdb-flockmtl)
+
+- DuckPGQ documentation
+[(link)](https://duckpgq.notion.site/b8ac652667964f958bfada1c3e53f1bb?v=3b47a8d44bdf4e0c8b503bf23f1b76f2)
+
+- DuckERD CLI
+[(link)](https://github.com/tobilg/duckerd)
+
 - Top 10 RAG Frameworks Github Repos 2024
 [(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
 
