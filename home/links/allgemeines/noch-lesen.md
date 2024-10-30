@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Top 10 RAG Frameworks Github Repos 2024
+[(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
+
+- I spent 6 hours learning Apache Arrow: Overview
+[(link)](https://blog.det.life/i-spent-6-hours-learning-apache-arrow-overview-e7f3b8ee85b2)
+
+- Create a custom AI assistant to auto-generate SQL queries
+[(link)](https://medium.com/low-code-for-advanced-data-science/create-a-custom-ai-assistant-to-auto-generate-sql-queries-fa1432e75ad0)
+
+- Enhance your AI/ML applications with flexible Bring Your Own Model options
+[(link)](https://blogs.oracle.com/database/post/enhance-your-ai-ml-apps-with-flexible-byom-options-dbi?elq_mid=259746)
+
 - Database Performance Benchmark: PostgreSQL vs. MySQL vs. SQLite
 [(link)](https://blog.probirsarkar.com/database-performance-benchmark-postgresql-vs-mysql-vs-sqlite-which-is-the-fastest-ae7f02de88e0)
 
