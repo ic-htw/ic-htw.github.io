@@ -306,6 +306,9 @@ home: &r
                   - t:  Cypher-Abfragen 2
                     ts:  Cypher-Abfragen 2
                     url: /home/lv/adbkt/uebungen/ueb2-cypher.html
+                  - t:  Cypher-Python
+                    ts:  Cypher-Python
+                    url: /home/lv/adbkt/uebungen/ueb-python-cypher.html
                   - t:  Graph-Data-Science
                     ts: Graph-Data-Science
                     url: /home/lv/adbkt/uebungen/gds.html
