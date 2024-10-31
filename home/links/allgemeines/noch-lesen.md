@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Python Memory Management: Best Practices for Performance
+[(link)](https://blog.devgenius.io/python-memory-management-best-practices-for-performance-53fa39c4e1a4)
+
+- pg_duckdb
+[(link)](https://motherduck.com/blog/pgduckdb-beta-release-duckdb-postgres/)
+
+- pg_duckdb git
+[(link)](https://github.com/duckdb/pg_duckdb?tab=readme-ov-file)
+
 - Parquet pruning in DataFusion
 [(link)](https://blog.haoxp.xyz/posts/parquet-to-arrow/)
 
