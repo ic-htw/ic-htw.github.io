@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-3 Vision, Transformers
+[(link)](https://generativeai.pub/building-a-free-open-source-invoice-fraud-detection-system-with-ai-using-phi-3-vision-2ef7c8c0ef8f)
+
+- Financial Analysis: Multi-Agent with Open Source LLMs Using CrewAI and Ollama Models
+[(link)](https://generativeai.pub/financial-analysis-multi-agent-with-open-source-llms-using-crewai-and-ollama-models-9f20076f8995)
+
 - Python Memory Management: Best Practices for Performance
 [(link)](https://blog.devgenius.io/python-memory-management-best-practices-for-performance-53fa39c4e1a4)
 
