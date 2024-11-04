@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I spent 5 hours learning how ClickHouse built their internal data warehouse
+[(link)](https://blog.det.life/i-spent-5-hours-learning-how-clickhouse-built-their-internal-data-warehouse-a7adad358c5d)
+
 Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-3 Vision, Transformers
 [(link)](https://generativeai.pub/building-a-free-open-source-invoice-fraud-detection-system-with-ai-using-phi-3-vision-2ef7c8c0ef8f)
 
