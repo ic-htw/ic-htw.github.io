@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- SQL with Measures: A Context-aware Calculations to Tables
+[(link)](https://blog.getdatascale.com/sql-with-measures-a-context-aware-calculations-to-tables-ea1429111b54)
+
 - I spent 5 hours learning how ClickHouse built their internal data warehouse
 [(link)](https://blog.det.life/i-spent-5-hours-learning-how-clickhouse-built-their-internal-data-warehouse-a7adad358c5d)
 
