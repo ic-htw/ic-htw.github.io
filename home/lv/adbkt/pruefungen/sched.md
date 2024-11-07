@@ -51,7 +51,7 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
 
 
 ## Datenmodell Neo4j
-Graphprojektion "bubahn" siehe [(link)](/lv/adbkt/p/gds.html)
+Graphprojektion "bubahn" siehe [(link)](/home/lv/adbkt/uebungen/gds.html#graphprojektion)
 
 ## Relevanter Netzausschnitt für die Beispiele
 > ![Bild](/home/lv/adbkt/a/shed/netzausschnitt.png)
