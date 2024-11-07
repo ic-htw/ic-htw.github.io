@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Build an LLM RAG Chatbot With LangChain
+[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
+
 - Building Effective Dashboards
 [(link)](https://medium.com/@nydas/building-effective-dashboards-de81c3c45aeb)
 
