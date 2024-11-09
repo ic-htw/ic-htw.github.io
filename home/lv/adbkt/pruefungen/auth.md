@@ -32,7 +32,10 @@ is_slide: 0
     - Zeigt detailliert in tabellarischer Form an, welcher Admin Zugriff auf welche Unternehmen hat
 
   - `unsetAuth(gruppe, unternehmen, auth)`
-    - Damit sollen für die Admingruppe `gruppe` für das (Sub)Unternehmen `unternehmen` die Zugriffsrechte zurückgesetzt werden
+    - Ein unsetAuth(g3, u11, "A") soll ein setAuth(g3, u11, "A") aufheben
+    - Es ist dann so, als wenn das setAuth(g3, u11, "A") nicht erfolgt wäre und die Berechnung der Authorisierungen erfolgt den mit allen anderen noch bestehenden Befehlen
+    -  Der Zeitpunkt des unsetAuth kann beliebig sein
+    - Gab es kein zu dem unsetAuth passendes setAuth, passiert nichts
 
 ## Hinweise zur Lösung
 - Code zum Anlegen der Knoten und Kanten [(ipynb)](/home/lv/adbkt/a/ipynb/neo4j-auth.ipynb)
