@@ -8,6 +8,5 @@ is_slide: 0
 
 - Download NoSQL Workbench for DynamoDB
 [(link)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html)
-- Implementierung des folgenden Beispiels mit der NoSQL Workbench for DynamoDB
-[(link)](https://www.trek10.com/blog/dynamodb-single-table-relational-modeling/)
+- Präsentation eines der folgenden Beispiele [(link)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schemas.html)
 
