@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Build an LLM RAG Chatbot With LangChain
+[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
+
+- Building Effective Dashboards
+[(link)](https://medium.com/@nydas/building-effective-dashboards-de81c3c45aeb)
+
+- Amazon Aurora PostgreSQL Limitless Database is now generally available
+[(link)](https://aws.amazon.com/de/blogs/aws/amazon-aurora-postgresql-limitless-database-is-now-generally-available/)
+
+- Vector Databases Are the Wrong Abstraction 
+[(link)](https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction/)
+
+- Fastest Open-Source Databases
+[(link)](https://datasystemreviews.com/fastest-open-source-databases.html)
+
 - SQL with Measures: A Context-aware Calculations to Tables
 [(link)](https://blog.getdatascale.com/sql-with-measures-a-context-aware-calculations-to-tables-ea1429111b54)
 
