@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Openai Swarm
+[(link)](https://github.com/openai/swarm)
+
+- Exploring OpenAI’s Swarm: An experimental framework for multi-agent systems
+[(link)](https://medium.com/@michael_79773/exploring-openais-swarm-an-experimental-framework-for-multi-agent-systems-5ba09964ca18)
+
+- How OpenAI Swarm Enhances Multi-Agent Collaboration?
+[(link)](https://www.analyticsvidhya.com/blog/2024/10/openai-swarm/)
+
 - Unlock Custom Quantization for Hugging Face Models Locally with Ollama
 [(link)](https://pub.towardsai.net/unlock-custom-quantization-for-hugging-face-models-locally-with-ollama-eb34166ced6a)
 
