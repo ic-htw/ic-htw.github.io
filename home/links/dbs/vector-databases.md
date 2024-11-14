@@ -61,6 +61,10 @@ is_slide: 0
 
 
 # Indexes
+- Product Quantization - Pinecone
+[(link)](https://www.pinecone.io/learn/series/faiss/product-quantization/)
+- Product Quantization in Postgres
+[(link)](https://lantern.dev/blog/pq)
 - Similarity Search - Efimov
 [(link)](https://medium.com/@slavahead/list/similarity-search-598d963ad35e)
 - Vector Indexing: Roadmaps to Search

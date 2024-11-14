@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Unlock Custom Quantization for Hugging Face Models Locally with Ollama
+[(link)](https://pub.towardsai.net/unlock-custom-quantization-for-hugging-face-models-locally-with-ollama-eb34166ced6a)
+
+- PostgreSQL Arrays
+[(link)](https://medium.com/@vbilopav/postgresql-arrays-a33470e30861)
+
+- Python Mako
+[(link)](https://medium.com/@marcnealer/python-mako-daaa40ad9b91)
+
 - Build an LLM RAG Chatbot With LangChain
 [(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
 
