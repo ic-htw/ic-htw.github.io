@@ -36,6 +36,15 @@ is_slide: 0
   RETURN
     g.graphName AS graph, g.nodeCount AS nodes, g.relationshipCount AS rels
   ```
+- Graph-Projektionen auflisten
+  ```cypher
+call gds.graph.list()
+   ```
+- Graph-Projektion löschen
+  ```cypher
+CALL gds.graph.drop('bubahn') YIELD graphName;
+   ```
+
 
 ## Netz-Zusammenhang
 - Ermitteln Sie den Netz-Zusammenhang im Graphen<br>
