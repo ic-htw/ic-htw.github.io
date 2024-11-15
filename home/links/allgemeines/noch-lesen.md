@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks
+[(link)](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/)
+
 - Openai Swarm
 [(link)](https://github.com/openai/swarm)
 
