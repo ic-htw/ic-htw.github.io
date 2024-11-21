@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Git Like a Pro: 6 Advanced Commands with Step-by-Step Examples
+[(link)](https://levelup.gitconnected.com/6-key-advanced-git-commands-for-developers-with-examples-cedb26859b8e)
+
+- Building a Modern Data Service Layer with Apache Arrow
+[(link)](https://medium.com/gooddata-developers/building-a-modern-data-service-layer-with-apache-arrow-33ace768e3f1)
+
 - Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks
 [(link)](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/)
 
