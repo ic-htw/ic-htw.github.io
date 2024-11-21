@@ -260,6 +260,9 @@ home: &r
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
                     url: /home/lv/adbkt/vorlesungen/vectordb.html
+                  - t: Large Language Models
+                    ts: LLMs
+                    url: /home/lv/adbkt/vorlesungen/llms.html
                   - t: Window-Funktionen in SQL
                     ts: Window-Funktionen in SQL
                     url: /home/lv/adbkt/vorlesungen/window-sql.html

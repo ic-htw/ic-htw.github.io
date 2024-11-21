@@ -48,6 +48,10 @@ is_slide: 0
 
 
 # divers
+- Tiktokenizer
+[(link)](https://tiktokenizer.vercel.app/)
+- Overview of Large Language Models
+[(link)](https://aman.ai/primers/ai/LLM/)
 - Calculate : How much GPU Memory you need to serve any LLM ?
 [(link)](https://ksingh7.medium.com/calculate-how-much-gpu-memory-you-need-to-serve-any-llm-67301a844f21)
 - A Tutorial on LLM

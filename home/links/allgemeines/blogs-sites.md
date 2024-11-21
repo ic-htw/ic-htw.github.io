@@ -91,6 +91,8 @@ is_slide: 0
 [(link)](https://jobs.zalando.com/tech/blog/)
 
 # Sites
+- aman.ai
+[(link)](https://aman.ai/)
 - Karpathy
 [(link)](https://karpathy.ai/)
 - Spatial Data Management
