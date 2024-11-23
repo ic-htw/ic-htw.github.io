@@ -538,9 +538,12 @@ home: &r
               - t: Kundenanalyse
                 ts: Kundenanalyse
                 url: /home/links/ml/customer-analytics.html
-              - t: Large Language Models
-                ts: Large Language Models
-                url: /home/links/ml/large-language-models.html
+              - t: LLMs
+                ts: LLMs
+                url: /home/links/ml/llms.html
+              - t: LLMs - Analytics
+                ts: LLMs - Analytics
+                url: /home/links/ml/llms-analytics.html
               - t: Linear Algebra
                 ts: Linear Algebra
                 url: /home/links/ml/linear-algebra.html
