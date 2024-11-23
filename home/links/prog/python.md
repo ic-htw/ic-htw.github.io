@@ -67,39 +67,32 @@ is_slide: 0
 
 
 # Libs
+- more-itertools
+[(link)](https://more-itertools.readthedocs.io/en/stable/toctree.html)
+- Plumbum: Shell Combinators and More
+[(link)](https://plumbum.readthedocs.io/en/latest/#)
 - FireDucks
 [(link)](https://fireducks-dev.github.io/)
-
 - parse
 [(link)](https://pypi.org/project/parse/)
-
 - PyGWalker
 [(link)](https://github.com/Kanaries/pygwalker)
-
 - petl - Extract, Transform and Load
 [(link)](https://petl.readthedocs.io/en/stable/)
-
 - leafmap
 [(link)](https://leafmap.org/)
-
 - graphql-py
 [(link)](https://github.com/ivelum/graphql-py)
-
 - pyvis
 [(link)](https://pyvis.readthedocs.io/en/latest/)
-
 - Folium
 [(link)](https://python-visualization.github.io/folium/quickstart.html)
-
 - GeoPandas
 [(link)](https://geopandas.org/en/stable/)
-
 - SQLAlchemy
 [(link)](https://www.sqlalchemy.org/)
-
 - Alchemical
 [(link)](https://pypi.org/project/alchemical/)
-
 - Alchemical, the unknown friend of SQLAlchemy
 [(link)](https://lewoudar.medium.com/alchemical-the-unknown-friend-of-sqlalchemy-c83e2e1144d8)
 

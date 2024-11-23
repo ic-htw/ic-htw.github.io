@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Dear IT Departments, Please Stop Trying To Build Your Own RAG
+[(link)](https://pub.towardsai.net/dear-it-departments-please-stop-trying-to-build-your-own-rag-4546b4638273)
+
+- The History and Evolution of Open Table Formats
+[(link)](https://alirezasadeghi1.medium.com/the-history-and-evolution-of-open-table-formats-0f1b9ea10e1e)
+
 - Git Like a Pro: 6 Advanced Commands with Step-by-Step Examples
 [(link)](https://levelup.gitconnected.com/6-key-advanced-git-commands-for-developers-with-examples-cedb26859b8e)
 
