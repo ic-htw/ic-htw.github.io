@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Apache Iceberg Won the Future — What’s Next for 2025?
+[(link)](https://blog.det.life/apache-iceberg-won-the-future-whats-next-for-2025-731635bfcb7a)
+
+- Stop Wasting Time in Excel: Let Python Do the Work
+[(link)](https://python.plainenglish.io/stop-wasting-time-in-excel-let-python-do-the-work-4bdba1700f86)
+
+- 7 Must-Have JupyterLab Extensions for Data Practitioners in 2024
+[(link)](https://medium.com/@thibaut_gourdel/my-favorite-jupyterlab-extensions-in-2024-ecf84f85f4fc)
+
 - Dear IT Departments, Please Stop Trying To Build Your Own RAG
 [(link)](https://pub.towardsai.net/dear-it-departments-please-stop-trying-to-build-your-own-rag-4546b4638273)
 
