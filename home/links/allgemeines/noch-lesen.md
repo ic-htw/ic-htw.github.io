@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
+[(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
+
+- Ollama’s New Vision Model Support: A Comprehensive Guide
+[(link)](https://ai.plainenglish.io/ollamas-new-vision-model-support-a-comprehensive-guide-ba1da6c4f45b)
+
 - Apache Iceberg Won the Future — What’s Next for 2025?
 [(link)](https://blog.det.life/apache-iceberg-won-the-future-whats-next-for-2025-731635bfcb7a)
 
