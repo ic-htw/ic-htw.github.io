@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I spent 8 hours understanding ClickHouse Architecture
+[(link)](https://levelup.gitconnected.com/clickhouse-architecture-the-formula-for-blazing-speed-d719e9b9d1c8)
+
 - Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
 [(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
 
