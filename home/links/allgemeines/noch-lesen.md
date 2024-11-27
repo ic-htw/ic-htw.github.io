@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Could GROUP-BY clause reordering improve performance?
+[(link)](https://danolivo.substack.com/p/could-group-by-clause-reordering)
+
+- pgai 
+[(link)](https://github.com/timescale/pgai)
+
 - I spent 8 hours understanding ClickHouse Architecture
 [(link)](https://levelup.gitconnected.com/clickhouse-architecture-the-formula-for-blazing-speed-d719e9b9d1c8)
 
