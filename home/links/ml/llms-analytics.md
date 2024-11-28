@@ -4,6 +4,13 @@ nav: links-ml
 is_slide: 0
 ---
 # paper
+- Semantic Scholar
+[(link)](https://www.semanticscholar.org/)
+
+- nl2sql folder semantic scholar
+[(link)](https://www.semanticscholar.org/shared/library/folder/11452802)
+
+<!-- 
 - A comprehensive evaluation of ChatGPT’s zero-shot Text-to-SQL capability
 [(link)](https://arxiv.org/abs/2303.13547)
 - Benchmarking and Improving Text-to-SQL Generation under Ambiguity
@@ -30,6 +37,15 @@ is_slide: 0
 [(link)](https://arxiv.org/abs/2308.15363)
 - Towards Robustness of Text-to-SQL Models against Synonym Substitution
 [(link)](https://arxiv.org/abs/2106.01065)
+- Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows
+[(link)](https://arxiv.org/abs/2411.07763)
+
+- A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?
+[(link)](bbb)
+
+- NL2SQL Handbook
+[(link)](https://github.com/HKUSTDial/NL2SQL_Handbook)
+-->
 
 # tools
 ## relta
