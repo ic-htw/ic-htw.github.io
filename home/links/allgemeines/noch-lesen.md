@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Third Quarterly Update on Oracle Graph (2024)
+[(link)](https://blogs.oracle.com/database/post/third-quarterly-update-on-oracle-graph-2024)
+
 - Could GROUP-BY clause reordering improve performance?
 [(link)](https://danolivo.substack.com/p/could-group-by-clause-reordering)
 
