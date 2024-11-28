@@ -4,10 +4,7 @@ nav: links-ml
 is_slide: 0
 ---
 # paper
-- Semantic Scholar
-[(link)](https://www.semanticscholar.org/)
-
-- nl2sql folder semantic scholar
+- my nl2sql folder semantic scholar
 [(link)](https://www.semanticscholar.org/shared/library/folder/11452802)
 
 <!-- 
@@ -91,6 +88,9 @@ is_slide: 0
 [(link)](https://bird-bench.github.io/)
 - Spider Text-to-SQL Benchmark
 [(link)](https://yale-lily.github.io/spider)
+- Spider git
+[(link)](https://github.com/taoyds/spider)
+
 
 
 
