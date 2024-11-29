@@ -16,32 +16,16 @@ is_slide: 0
 [(link)](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1833681&dswid=-7059)
 - C3: Zero-shot Text-to-SQL with ChatGPT
 [(link)](https://arxiv.org/abs/2307.07306)
-- DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction
-[(link)](https://arxiv.org/abs/2304.11015)
 - Divide and Prompt: Chain of Thought Prompting for Text-to-SQL
 [(link)](https://arxiv.org/abs/2304.11556)
 - Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
 [(link)](https://arxiv.org/abs/2305.12586)
 - Exploring Chain-of-Thought Style Prompting for Text-to-SQL
 [(link)](https://arxiv.org/abs/2305.14215)
-- How to Prompt LLMs for Text-to-SQL: A Study in Zero-shot, Single-domain, and Cross-domain Settings
-[(link)](https://arxiv.org/abs/2305.11853)
 - Retrieval-augmented GPT-3.5-based Text-to-SQL Framework with Sample-aware Prompting and Dynamic Revision Chain
 [(link)](https://arxiv.org/abs/2307.05074)
-- Text2SQL is Not Enough - Unifying AI and Databases with TAG
-[(link)](https://arxiv.org/abs/2408.14717)
-- Text-to-SQL Empowered by Large Language Models - A Benchmark Evaluation
-[(link)](https://arxiv.org/abs/2308.15363)
 - Towards Robustness of Text-to-SQL Models against Synonym Substitution
 [(link)](https://arxiv.org/abs/2106.01065)
-- Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows
-[(link)](https://arxiv.org/abs/2411.07763)
-
-- A Survey of NL2SQL with Large Language Models: Where are we, and where are we going?
-[(link)](bbb)
-
-- NL2SQL Handbook
-[(link)](https://github.com/HKUSTDial/NL2SQL_Handbook)
 -->
 
 # tools
@@ -84,14 +68,19 @@ is_slide: 0
 
 
 # benchmarks
+## bird
 - BIRD Text-to-SQL Benchmark
 [(link)](https://bird-bench.github.io/)
+
+## spider
 - Spider Text-to-SQL Benchmark
 [(link)](https://yale-lily.github.io/spider)
 - Spider git
 [(link)](https://github.com/taoyds/spider)
 
-
+## sonstiges
+- NL2SQL Handbook
+[(link)](https://github.com/HKUSTDial/NL2SQL_Handbook)
 
 
 
