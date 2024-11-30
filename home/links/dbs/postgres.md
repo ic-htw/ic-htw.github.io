@@ -25,7 +25,11 @@ is_slide: 0
 - pgHero
 [(link)](https://github.com/ankane/pghero)
 
-# configuration
+# monitoring/configuration
+- How to Monitor PostgreSQL Performance
+[(link)](https://blog.kloudmate.com/how-to-monitor-postgresql-performance-2de746eacaf6)
+- Memory Matters in PostgreSQL : Configuring max_connections and work_mem Effectively
+[(link)](https://demirhuseyinn-94.medium.com/memory-matters-in-postgresql-configuring-max-connections-and-work-mem-effectively-19045fa5d548)
 - How to Get the Most out of Postgres Memory Settings
 [(link)](https://tembo.io/blog/optimizing-memory-usage)
 - PostgreSQL Configuration Chronicles: Memory Related Configurations
@@ -34,8 +38,18 @@ is_slide: 0
 [(link)](https://medium.com/@crushby/basic-postgresql-configuration-on-linux-660cbce4c7b8)
 - Tuning your PostgreSQL for High Performance
 [(link)](https://luis-sena.medium.com/tuning-your-postgresql-for-high-performance-5580abed193d)
+- One PID to Lock Them All: Finding the Source of the Lock in Postgres
+[(link)](https://www.crunchydata.com/blog/one-pid-to-lock-them-all-finding-the-source-of-the-lock-in-postgres)
+- Statistical information about tables in a PostgreSQL Database
+[(link)](https://medium.com/@dmitry.romanoff/statistical-information-about-tables-in-a-postgresql-database-194e3932ffff)
+- Optimizing PostgreSQL Buffer Cache: Automating Analysis with a Bash Script
+[(link)](https://medium.com/@dmitry.romanoff/optimizing-postgresql-buffer-cache-automating-analysis-with-a-bash-script-2afd7b9da508)
 
 # index
+- Optimise INSERT, UPDATE and DELETE in PostgreSQL using best indexing strategy
+[(link)](https://medium.com/@shaileshkumarmishra/optimise-insert-update-and-delete-in-postgresql-using-best-indexing-strategy-99427bb30f08)
+- Why PostgreSQL Sometimes Skips Indexes for Better Query Performance
+[(link)](https://blog.devgenius.io/did-you-know-that-postgresql-doesnt-always-use-the-index-to-filter-by-an-indexed-column-0a4157f8d2a3)
 - Index Types in PostgreSQL
 [(link)](https://www.red-gate.com/simple-talk/databases/postgresql/index-types-in-postgresql-learning-postgresql-with-grant/)
 - How Postgres Chooses Which Index To Use For A Query
@@ -57,6 +71,8 @@ is_slide: 0
 
 
 # json
+- Finally JSON_TABLE() is here : Postgres 17
+[(link)](https://medium.com/@atarax/finally-json-table-is-here-postgres-17-a9b5245649bd)
 - Forget SQL vs NoSQL — Get the Best of Both Worlds with JSON in PostgreSQL
 [(link)](https://databasedive.com/forget-sql-vs-nosql-get-the-best-of-both-worlds-with-json-in-postgresql-aee30ba0542c)
 - Using JSONB in PostgreSQL
@@ -179,6 +195,22 @@ is_slide: 0
 
 
 # misc
+- 10 PostgreSQL Queries/Functions I Find The Most Useful
+[(link)](https://blog.devgenius.io/10-postgresql-techniques-i-find-the-most-useful-1f98b5c7c38e)
+- Postgres - Hierarchical data types
+[(link)](https://fljd.in/en/2024/09/19/hierarchical-data-types/)
+- Stop using SERIAL in Postgres
+[(link)](https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/)
+- Migrate Postgres Database With Zero Downtime using pgsync
+[(link)](https://livingdevops.com/devops/migrate-postgres-database-with-zero-downtime-using-pgsync/)
+- HA PostgreSQL Cluster
+[(link)](https://medium.com/@roma.gordeev/ha-postgresql-cluster-5d3672ae8b31)
+- PostgreSQL: UPSERT
+[(link)](https://medium.com/codex/postgresql-upsert-4e6f20b337ba)
+- Efficient Pagination with PostgreSQL Using Cursors
+[(link)](https://medium.com/@ietienam/efficient-pagination-with-postgresql-using-cursors-83e827148118)
+- PostgreSQL Arrays
+[(link)](https://medium.com/@vbilopav/postgresql-arrays-a33470e30861)
 - How to check if the PostgreSQL tables of the same structure have identical data using aggregated hash and md5?
 [(link)](https://medium.com/@dmitry.romanoff/how-to-check-if-the-postgresql-tables-of-the-same-structure-have-identical-data-using-aggregated-8f60b9dd0af8)
 - 11 Lessons to learn when using NULLs in PostgreSQL

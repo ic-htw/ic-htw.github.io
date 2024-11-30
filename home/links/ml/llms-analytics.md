@@ -94,10 +94,20 @@ is_slide: 0
 - Generating Cypher Queries With ChatGPT 4 on Any Graph Schema
 [(link)](https://medium.com/neo4j/generating-cypher-queries-with-chatgpt-4-on-any-graph-schema-a57d7082a7e7)
 
+# tag
+- TAG vs Text2SQL
+[(link)](https://medium.com/@visrow/tag-vs-text2sql-96542742e401)
+
 
 
 
 # text to sql
+- Build a Fully Local RAG App With PostgreSQL, Mistral, and Ollama 
+[(link)](https://www.timescale.com/blog/build-a-fully-local-rag-app-with-postgresql-mistral-and-ollama/)
+
+- Query Your PostgreSQL Database with LangChain and Llama 3.1 : Exploring LLMs — 1
+[(link)](https://blog.gopenai.com/query-your-postgresql-database-with-langchain-and-llama-3-1-exploring-llms-1-ba3a9560c0d1)
+
 - Create a SQL Agent using CrewAI and Groq
 [(link)](https://medium.com/the-ai-forum/create-a-sql-agent-using-crewai-and-groq-005895ba31b3)
 - Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide

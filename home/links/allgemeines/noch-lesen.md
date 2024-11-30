@@ -63,9 +63,6 @@ is_slide: 0
 - Unlock Custom Quantization for Hugging Face Models Locally with Ollama
 [(link)](https://pub.towardsai.net/unlock-custom-quantization-for-hugging-face-models-locally-with-ollama-eb34166ced6a)
 
-- PostgreSQL Arrays
-[(link)](https://medium.com/@vbilopav/postgresql-arrays-a33470e30861)
-
 - Python Mako
 [(link)](https://medium.com/@marcnealer/python-mako-daaa40ad9b91)
 
@@ -117,9 +114,6 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 - PostGIS meets DuckDB: Crunchy Bridge for Analytics goes Spatial
 [(link)](https://www.crunchydata.com/blog/postgis-meets-duckdb-crunchy-bridge-for-analytics-goes-spatial)
 
-- One PID to Lock Them All: Finding the Source of the Lock in Postgres
-[(link)](https://www.crunchydata.com/blog/one-pid-to-lock-them-all-finding-the-source-of-the-lock-in-postgres)
-
 - FlockMTL is a DuckDB extension that integrates language model (LLM)
 [(link)](https://github.com/dsg-polymtl/duckdb-flockmtl)
 
@@ -159,26 +153,17 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 - Introducing the Pydantic Library
 [(link)](https://medium.com/@thomas_reid/793c7b07ef09)
 
-- Optimise INSERT, UPDATE and DELETE in PostgreSQL using best indexing strategy
-[(link)](https://medium.com/@shaileshkumarmishra/optimise-insert-update-and-delete-in-postgresql-using-best-indexing-strategy-99427bb30f08)
-
 - Apache Iceberg Topics: Stream directly into your data lake
 [(link)](https://redpanda-data.medium.com/apache-iceberg-topics-stream-directly-into-your-data-lake-0250a8dfdd76)
 
 - LlamaCoder
 [(link)](https://llamacoder.together.ai/)
 
-- Efficient Pagination with PostgreSQL Using Cursors
-[(link)](https://medium.com/@ietienam/efficient-pagination-with-postgresql-using-cursors-83e827148118)
-
 - Why PyMuPDF4LLM is the Best Tool for Extracting Data from PDFs
 [(link)](https://python.plainenglish.io/why-pymupdf4llm-is-the-best-tool-for-extracting-data-from-pdfs-even-if-you-didnt-know-you-needed-7bff75313691)
 
 - This is How I Use Swagger to Design REST APIs Before Starting the Development
 [(link)](https://levelup.gitconnected.com/this-is-how-i-use-swagger-to-design-rest-apis-before-starting-the-development-9de19cb1640f)
-
-- Why PostgreSQL Sometimes Skips Indexes for Better Query Performance
-[(link)](https://blog.devgenius.io/did-you-know-that-postgresql-doesnt-always-use-the-index-to-filter-by-an-indexed-column-0a4157f8d2a3)
 
 - ADBC: The Future of Database Connectivity
 [(link)](https://medium.com/@thibaut_gourdel/adbc-the-future-of-database-connectivity-4784c03637e8)
@@ -213,23 +198,14 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 Postgres Type Explorer
 [(link)](https://masteringpostgres.com/types)
 
-- Statistical information about tables in a PostgreSQL Database
-[(link)](https://medium.com/@dmitry.romanoff/statistical-information-about-tables-in-a-postgresql-database-194e3932ffff)
-
 - Crafting Python ORM: Advanced Meta Programming Techniques.
 [(link)](https://levelup.gitconnected.com/crafting-python-orm-advanced-meta-programming-techniques-e9afca905c5b)
-
-- PostgreSQL: UPSERT
-[(link)](https://medium.com/codex/postgresql-upsert-4e6f20b337ba)
 
 - What The Heck is Apache Polaris?
 [(link)](https://progrockrec.medium.com/what-the-heck-is-apache-polaris-df403e625c51)
 
 - Mastering Python Project Management with uv Part1: it’s Time to Ditch Poetry!
 [(link)](https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a)
-
-- Optimizing PostgreSQL Buffer Cache: Automating Analysis with a Bash Script
-[(link)](https://medium.com/@dmitry.romanoff/optimizing-postgresql-buffer-cache-automating-analysis-with-a-bash-script-2afd7b9da508)
 
 - SQL in your browser — DuckDB Web Shell for purely local data analytics
 [(link)](https://towardsdev.com/sql-in-your-browser-duckdb-web-shell-for-purely-local-data-analytics-82b8876eb7f7)
@@ -264,23 +240,14 @@ Postgres Type Explorer
 - SQL Applications using LlamaIndex 
 [(link)](https://medium.com/@avikumart_/building-natural-language-to-sql-applications-using-llamaindex-39280e90d52f)
 
-- 10 PostgreSQL Queries/Functions I Find The Most Useful
-[(link)](https://blog.devgenius.io/10-postgresql-techniques-i-find-the-most-useful-1f98b5c7c38e)
-
 - I spent 8 hours diving deep into Snowflake (again)
 [(link)](https://blog.det.life/i-spent-8-hours-diving-deep-into-snowflake-again-ccbe46f07176)
-
-- Finally JSON_TABLE() is here : Postgres 17
-[(link)](https://medium.com/@atarax/finally-json-table-is-here-postgres-17-a9b5245649bd)
 
 - Step-by-Step Guide to Creating Your Own Large Language Model
 [(link)](https://medium.com/sciforce/step-by-step-guide-to-your-own-large-language-model-2b3fed6422d0)
 
 - LLM Finetuning Strategies
 [(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
-
-- What's so great about PostgreSQL v17?
-[(link)](https://www.cybertec-postgresql.com/en/whats-so-great-about-postgresql-v17/)
 
 - On NULL
 [(link)](https://github.com/agentm/project-m36/blob/master/docs/on_null.markdown)
@@ -291,20 +258,11 @@ Postgres Type Explorer
 - Exploring the limits of Postgres: when does it break?
 [(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
 
-- Query Your PostgreSQL Database with LangChain and Llama 3.1 : Exploring LLMs — 1
-[(link)](https://blog.gopenai.com/query-your-postgresql-database-with-langchain-and-llama-3-1-exploring-llms-1-ba3a9560c0d1)
-
 - Apache Iceberg: Built for Big Data, Not Ready for Small(?)
 [(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
 
 - How does Notion handle 200 billion data entities?
 [(link)](https://blog.det.life/how-does-notion-handle-200-billion-data-entities-919b238c2846)
-
-- Postgres - Hierarchical data types
-[(link)](https://fljd.in/en/2024/09/19/hierarchical-data-types/)
-
-- TAG vs Text2SQL
-[(link)](https://medium.com/@visrow/tag-vs-text2sql-96542742e401)
 
 - A Visual Exploration of Semantic Text Chunking
 [(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
@@ -317,9 +275,6 @@ Postgres Type Explorer
 
 - LangGraph Studio: Visualizing and Testing AI Agents with LangChain
 [(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
-
-- Stop using SERIAL in Postgres
-[(link)](https://www.naiyerasif.com/post/2024/09/04/stop-using-serial-in-postgres/)
 
 - Optimizing Your Database for Analytics
 [(link)](https://karenjex.blogspot.com/2024/09/optimising-your-database-for-analytics.html)
@@ -453,9 +408,6 @@ Postgres Type Explorer
 - Running Ollama on Google Colab (Free Tier): A Step-by-Step Guide
 [(link)](https://pub.towardsai.net/running-ollama-on-google-colab-free-tier-a-step-by-step-guide-9ef74b1f8f7a)
 
-- Migrate Postgres Database With Zero Downtime using pgsync
-[(link)](https://livingdevops.com/devops/migrate-postgres-database-with-zero-downtime-using-pgsync/)
-
 -  spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.
 [(link)](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0)
 
@@ -464,9 +416,6 @@ Postgres Type Explorer
 
 - What is the Open Source Alternative to CockroachDB?
 [(link)](https://medium.com/@magda7817/what-is-the-open-source-alternative-to-cockroachdb-c346cbfdbe41)
-
-- HA PostgreSQL Cluster
-[(link)](https://medium.com/@roma.gordeev/ha-postgresql-cluster-5d3672ae8b31)
 
 - Deepset Haystack git
 [(link)](https://github.com/deepset-ai/haystack)
@@ -491,9 +440,6 @@ Postgres Type Explorer
 
 - Understanding pgvector's HNSW Index Storage in Postgres
 [(link)](https://lantern.dev/blog/pgvector-storage)
-
-- Build a Fully Local RAG App With PostgreSQL, Mistral, and Ollama 
-[(link)](https://www.timescale.com/blog/build-a-fully-local-rag-app-with-postgresql-mistral-and-ollama/)
 
 - Graph RAG — A Conceptual Introduction
 [(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
