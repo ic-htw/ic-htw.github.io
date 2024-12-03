@@ -3,6 +3,27 @@ layout: default1
 nav: links-dbs
 is_slide: 0
 ---
+# Oracle Database 23c Free
+- Home
+[(link)](https://www.oracle.com/database/free/)
+- blog
+[(link)](https://www.oracle.com/database/23c/)
+- doc
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/index.html)
+- SQL Language Reference 
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html#Oracle%C2%AE-Database)
+- Number Format Models
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Format-Models.html#GUID-24E16D8D-25E4-4BD3-A38D-CE1399F2897C)
+- Database Sample Schemas
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/comsc/index.html#Oracle%C2%AE-Database)
+- Oracle Database 23c: The Next Long Term Support Release
+[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release)
+- Announcing Oracle Database 23ai : General Availability
+[(link)](https://blogs.oracle.com/database/post/oracle-23ai-now-generally-available)
+- Oracle Database Archive Logging — Where are my archive logs?
+[(link)](https://www.databasejournal.com/oracle/oracle-database-archive-logging-where-are-my-archive-logs/)
+
+
 # Oracle Database 21c
 - Home
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/21/)
@@ -34,24 +55,6 @@ is_slide: 0
 [(link)](https://container-registry.oracle.com/)
 - docker pull 
 [(link)](http://container-registry.oracle.com/database/free)
-
-# Oracle Database 23c Free
-- Home
-[(link)](https://www.oracle.com/database/free/)
-- blog
-[(link)](https://www.oracle.com/database/23c/)
-- doc
-[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/index.html)
-- SQL Language Reference 
-[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html#Oracle%C2%AE-Database)
-- Number Format Models
-[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Format-Models.html#GUID-24E16D8D-25E4-4BD3-A38D-CE1399F2897C)
-- Database Sample Schemas
-[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/comsc/index.html#Oracle%C2%AE-Database)
-- Oracle Database 23c: The Next Long Term Support Release
-[(link)](https://blogs.oracle.com/database/post/oracle-database-23c-the-next-long-term-support-release)
-- Announcing Oracle Database 23ai : General Availability
-[(link)](https://blogs.oracle.com/database/post/oracle-23ai-now-generally-available)
 
 
 # ml

@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Think Big LLM Models Can’t Fit Small GPUs? Think Again!
+[(link)](https://ai.gopubby.com/think-big-llm-models-cant-fit-small-gpus-think-again-ebbbb3bd0da7)
+
 - Third Quarterly Update on Oracle Graph (2024)
 [(link)](https://blogs.oracle.com/database/post/third-quarterly-update-on-oracle-graph-2024)
 
