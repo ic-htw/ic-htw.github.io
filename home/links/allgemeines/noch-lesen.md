@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS
+[(link)](https://blog.det.life/from-scrolls-to-similarity-search-building-a-movie-recommender-with-duckdb-vss-8122e4d2e486)
+
+- Boost PostgreSQL Efficiency with Recursive Query Patterns
+[(link)](https://rajansahu713.medium.com/boost-postgresql-efficiency-with-recursive-query-patterns-bd363cb8287d)
+
+- Unlock Any Open-Source LLM with Ollama
+[(link)](https://generativeai.pub/unlock-any-open-source-llm-with-ollama-cd043cc6e2e7)
+
+- DSQL Vignette: Aurora DSQL, and A Personal Stor
+[(link)](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html)
+
 - Think Big LLM Models Can’t Fit Small GPUs? Think Again!
 [(link)](https://ai.gopubby.com/think-big-llm-models-cant-fit-small-gpus-think-again-ebbbb3bd0da7)
 
