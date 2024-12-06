@@ -26,6 +26,8 @@ is_slide: 0
 [(link)](https://github.com/ankane/pghero)
 
 # monitoring/configuration
+- Custom SQL Queries in Grafana for PostgreSQL Insights
+[(link)](https://medium.com/@mayurkoshti12/custom-sql-queries-in-grafana-for-postgresql-insights-367245a475f6)
 - How to Monitor PostgreSQL Performance
 [(link)](https://blog.kloudmate.com/how-to-monitor-postgresql-performance-2de746eacaf6)
 - Memory Matters in PostgreSQL : Configuring max_connections and work_mem Effectively
