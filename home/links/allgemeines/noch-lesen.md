@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Comparing DuckDB, ChDB and Polars like a noob
+[(link)](https://medium.com/@MarinAgli1/comparing-duckdb-chdb-and-polars-like-a-noob-ad74584456b9)
+
+- I spent 3 hours learning the overview of ClickHouse
+[(link)](https://blog.det.life/i-spent-3-hours-learning-the-overview-of-clickhouse-15377361d646)
+
+- 14 VS Code Extensions Every Data Engineer Should Swear By for Maximum Productivity
+[(link)](https://medium.com/@manojkumar.vadivel/14-vs-code-extensions-every-data-engineer-should-swear-by-for-maximum-productivity-9fcc2e1b3c4f)
+
 - From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS
 [(link)](https://blog.det.life/from-scrolls-to-similarity-search-building-a-movie-recommender-with-duckdb-vss-8122e4d2e486)
 
