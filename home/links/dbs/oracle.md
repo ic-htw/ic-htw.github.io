@@ -14,6 +14,8 @@ is_slide: 0
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/index.html#Oracle%C2%AE-Database)
 - Number Format Models
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Format-Models.html#GUID-24E16D8D-25E4-4BD3-A38D-CE1399F2897C)
+- Oracle Data Pump
+[(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/sutil/oracle-data-pump.html)
 - Database Sample Schemas
 [(link)](https://docs.oracle.com/en/database/oracle/oracle-database/23/comsc/index.html#Oracle%C2%AE-Database)
 - Oracle Database 23c: The Next Long Term Support Release
