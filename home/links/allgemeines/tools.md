@@ -370,6 +370,9 @@ is_slide: 0
 [(link)](https://vscode-sqltools.mteixeira.dev/en/home)
 - The Ultimate VS Code Setup for Python
 [(link)](https://medium.com/@ordinaryindustries/the-ultimate-vs-code-setup-for-python-538026b34d94)
+- 14 VS Code Extensions Every Data Engineer Should Swear By for Maximum Productivity
+[(link)](https://medium.com/@manojkumar.vadivel/14-vs-code-extensions-every-data-engineer-should-swear-by-for-maximum-productivity-9fcc2e1b3c4f)
+
  
 
 # wsl

@@ -9,20 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Comparing DuckDB, ChDB and Polars like a noob
-[(link)](https://medium.com/@MarinAgli1/comparing-duckdb-chdb-and-polars-like-a-noob-ad74584456b9)
-
-- I spent 3 hours learning the overview of ClickHouse
-[(link)](https://blog.det.life/i-spent-3-hours-learning-the-overview-of-clickhouse-15377361d646)
-
-- 14 VS Code Extensions Every Data Engineer Should Swear By for Maximum Productivity
-[(link)](https://medium.com/@manojkumar.vadivel/14-vs-code-extensions-every-data-engineer-should-swear-by-for-maximum-productivity-9fcc2e1b3c4f)
-
-- From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS
-[(link)](https://blog.det.life/from-scrolls-to-similarity-search-building-a-movie-recommender-with-duckdb-vss-8122e4d2e486)
-
-- Boost PostgreSQL Efficiency with Recursive Query Patterns
-[(link)](https://rajansahu713.medium.com/boost-postgresql-efficiency-with-recursive-query-patterns-bd363cb8287d)
+- My LLM’s outputs got 1000% better with this simple trick.
+[(link)](https://ai.gopubby.com/my-llms-outputs-got-1000-better-with-this-simple-trick-8403cf58691c)
 
 - Unlock Any Open-Source LLM with Ollama
 [(link)](https://generativeai.pub/unlock-any-open-source-llm-with-ollama-cd043cc6e2e7)

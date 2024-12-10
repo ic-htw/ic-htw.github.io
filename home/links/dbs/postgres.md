@@ -197,6 +197,8 @@ is_slide: 0
 
 
 # misc
+- Boost PostgreSQL Efficiency with Recursive Query Patterns
+[(link)](https://rajansahu713.medium.com/boost-postgresql-efficiency-with-recursive-query-patterns-bd363cb8287d)
 - 10 PostgreSQL Queries/Functions I Find The Most Useful
 [(link)](https://blog.devgenius.io/10-postgresql-techniques-i-find-the-most-useful-1f98b5c7c38e)
 - Postgres - Hierarchical data types

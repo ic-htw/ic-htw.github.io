@@ -59,6 +59,9 @@ is_slide: 0
 [(link)](https://clickhouse.com/)
 - ClickHouse: A Blazingly Fast DBMS with Full SQL Join Support
 [(link)](https://medium.com/clickhousedb/clickhouse-a-blazingly-fast-dbms-with-full-sql-join-support-3eb3b38c59c5)
+- I spent 3 hours learning the overview of ClickHouse
+[(link)](https://blog.det.life/i-spent-3-hours-learning-the-overview-of-clickhouse-15377361d646)
+
 
 
 # cockroachdb

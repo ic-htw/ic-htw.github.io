@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS
+[(link)](https://blog.det.life/from-scrolls-to-similarity-search-building-a-movie-recommender-with-duckdb-vss-8122e4d2e486)
 - Using DuckDB for Embeddings and Vector Search
 [(link)](https://blog.brunk.io/posts/similarity-search-with-duckdb/)
 - How to directly access 150k+ Hugging Face Datasets with DuckDB and query using GPT-4o
