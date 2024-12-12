@@ -197,6 +197,8 @@ is_slide: 0
 
 
 # misc
+- Could GROUP-BY clause reordering improve performance?
+[(link)](https://danolivo.substack.com/p/could-group-by-clause-reordering)
 - Boost PostgreSQL Efficiency with Recursive Query Patterns
 [(link)](https://rajansahu713.medium.com/boost-postgresql-efficiency-with-recursive-query-patterns-bd363cb8287d)
 - 10 PostgreSQL Queries/Functions I Find The Most Useful

@@ -35,7 +35,7 @@ is_slide: 0
 - optd - Apache Arrow Datafusion
 [(link)](https://github.com/cmu-db/optd)
 
-# pache datafusion
+# apache datafusion
 - home 
 [(link)](https://datafusion.apache.org/)
 
@@ -44,6 +44,12 @@ is_slide: 0
 # apache doris
 - home
 [(link)](https://doris.apache.org/)
+
+# aws aurora
+- DSQL Vignette: Aurora DSQL, and A Personal Stor
+[(link)](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html)
+
+
 
 # cedarDB
 - home 
@@ -61,6 +67,9 @@ is_slide: 0
 [(link)](https://medium.com/clickhousedb/clickhouse-a-blazingly-fast-dbms-with-full-sql-join-support-3eb3b38c59c5)
 - I spent 3 hours learning the overview of ClickHouse
 [(link)](https://blog.det.life/i-spent-3-hours-learning-the-overview-of-clickhouse-15377361d646)
+- I spent 8 hours understanding ClickHouse Architecture
+[(link)](https://levelup.gitconnected.com/clickhouse-architecture-the-formula-for-blazing-speed-d719e9b9d1c8)
+
 
 
 

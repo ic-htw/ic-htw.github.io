@@ -9,29 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- My LLM’s outputs got 1000% better with this simple trick.
-[(link)](https://ai.gopubby.com/my-llms-outputs-got-1000-better-with-this-simple-trick-8403cf58691c)
-
-- Unlock Any Open-Source LLM with Ollama
-[(link)](https://generativeai.pub/unlock-any-open-source-llm-with-ollama-cd043cc6e2e7)
-
-- DSQL Vignette: Aurora DSQL, and A Personal Stor
-[(link)](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html)
-
-- Think Big LLM Models Can’t Fit Small GPUs? Think Again!
-[(link)](https://ai.gopubby.com/think-big-llm-models-cant-fit-small-gpus-think-again-ebbbb3bd0da7)
-
-- Third Quarterly Update on Oracle Graph (2024)
-[(link)](https://blogs.oracle.com/database/post/third-quarterly-update-on-oracle-graph-2024)
-
-- Could GROUP-BY clause reordering improve performance?
-[(link)](https://danolivo.substack.com/p/could-group-by-clause-reordering)
+- Smarter Postgres LLM with Retrieval Augmented Generation
+[(link)](https://www.crunchydata.com/blog/smarter-postgres-llm-with-retrieval-augmented-generation)
 
 - pgai 
 [(link)](https://github.com/timescale/pgai)
-
-- I spent 8 hours understanding ClickHouse Architecture
-[(link)](https://levelup.gitconnected.com/clickhouse-architecture-the-formula-for-blazing-speed-d719e9b9d1c8)
 
 - Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
 [(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
