@@ -253,6 +253,8 @@ is_slide: 0
 [(link)](https://www.portainer.io/)
 - doc
 [(link)](https://docs.portainer.io/)
+- Updating on Docker Standalone
+[(link)](https://docs.portainer.io/start/upgrade/docker)
 
 # NVIDIA
 - Driver Download (sudo ./NVIDEA-Linux...)
