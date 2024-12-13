@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Combining FastAPI, PostgreSQL, and Leaflet — GIS Tutorial
+[(link)](https://levelup.gitconnected.com/combining-fastapi-postgresql-and-leaflet-gis-tutorial-597e6a8ed028)
+
 - Smarter Postgres LLM with Retrieval Augmented Generation
 [(link)](https://www.crunchydata.com/blog/smarter-postgres-llm-with-retrieval-augmented-generation)
 
