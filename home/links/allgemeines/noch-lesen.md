@@ -9,6 +9,33 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Cursor IDE
+[(link)](https://www.cursor.com/)
+
+- 5 Brilliant Prompts I Wish every Single ChatGPT User Knew
+[(link)](https://ai.plainenglish.io/5-brilliant-prompts-i-wish-every-single-chatgpt-user-knew-684f298fe262)
+
+- ETL-PIPES: An Efficient Python ETL Data Processing Library
+[(link)](https://medium.com/@tubelwj/etl-pipes-an-efficient-python-etl-data-processing-library-fd263612f674)
+
+- Text-to-SQL LLM App with Snowflake Cortex
+[(link)](https://ai.gopubby.com/text-to-sql-llm-app-with-snowflake-cortex-f5a03759d421)
+
+- Is this secret ChatGPT trick true?
+[(link)](https://generativeai.pub/is-this-secret-chatgpt-trick-true-73789ebb665f)
+
+- Why Kafka ditched Zookeeper
+[(link)](https://blog.devgenius.io/why-kafka-ditched-zookeeper-1add2f204d11)
+
+- Understanding Postgres Sql Plan
+[(link)](https://medium.com/@anassguendef/understanding-postgres-sql-plan-310799b30c4e)
+
+- We might not fully understand the column store!
+[(link)](https://blog.det.life/we-might-not-fully-understand-the-column-store-977d30391446)
+
+- Intelligible advanced SQL queries with pipe syntax
+[(link)](https://medium.com/google-cloud/intelligible-advanced-sql-queries-with-pipe-syntax-86d3a431b660)
+
 - Combining FastAPI, PostgreSQL, and Leaflet — GIS Tutorial
 [(link)](https://levelup.gitconnected.com/combining-fastapi-postgresql-and-leaflet-gis-tutorial-597e6a8ed028)
 
