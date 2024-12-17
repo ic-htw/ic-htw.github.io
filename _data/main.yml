@@ -135,6 +135,9 @@ home: &r
                   - t: Hochschule
                     ts: Hochschule
                     url: /home/lv/dmdb/dm-er/er-hochschule.html
+                  - t: ER Übungsbeispiele
+                    ts: ER Übungsbeispiele
+                    url: /home/lv/dmdb/dm-er/er-ueb.html
               - t: Arbeitsblätter
                 ts: Arbeitsblätter
                 url: /home/lv/dmdb/ab/1-ab.html
