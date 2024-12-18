@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Apache Iceberg: The Hadoop of the Modern Data Stack?
+[(link)](https://blog.det.life/apache-iceberg-the-hadoop-of-the-modern-data-stack-c83f63a4ebb9)
+
+- Introducing UV: The Next Evolution in Python Package Management
+[(link)](https://medium.com/@madhavarora1988/introducing-uv-the-next-evolution-in-python-package-management-8266e799e138)
+
+-  Chonkie
+[(link)](https://github.com/chonkie-ai/chonkie)
+
 - Cursor IDE
 [(link)](https://www.cursor.com/)
 
