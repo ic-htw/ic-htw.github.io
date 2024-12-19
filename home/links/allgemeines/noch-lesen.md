@@ -9,11 +9,26 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Apache Iceberg: The Hadoop of the Modern Data Stack?
-[(link)](https://blog.det.life/apache-iceberg-the-hadoop-of-the-modern-data-stack-c83f63a4ebb9)
+- marp
+[(link)](https://marp.app/)
 
-- Introducing UV: The Next Evolution in Python Package Management
-[(link)](https://medium.com/@madhavarora1988/introducing-uv-the-next-evolution-in-python-package-management-8266e799e138)
+- Introducing DBOS Cloud: Radically Simplifying Serverless Computing
+[(link)](https://www.dbos.dev/blog/announcing-dbos)
+
+- SQL query optimization: a comprehensive developer's guide
+[(link)](https://aiven.io/developer/sql-query-optimization-guide)
+
+- Hacking on PostgreSQL is Really Hard 
+[(link)](https://rhaas.blogspot.com/2024/05/hacking-on-postgresql-is-really-hard.html)
+
+- A Deep Dive into Retrieval-Augmented Generation (RAG) with HyDE
+[(link)](https://generativeai.pub/a-deep-dive-into-retrieval-augmented-generation-rag-with-hyde-how-to-enhance-your-ais-response-4d7ac0b8c200)
+
+- PydanticAI 
+[(link)](https://ai.pydantic.dev/)
+
+- 7 Things I Regret Not Knowing Earlier About Python Generators
+[(link)](https://levelup.gitconnected.com/7-things-i-regret-not-knowing-earlier-about-python-generators-bb04ccecab20)
 
 -  Chonkie
 [(link)](https://github.com/chonkie-ai/chonkie)
