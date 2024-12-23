@@ -9,6 +9,36 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Database Performance Benchmark: PostgreSQL 17 vs. MySQL 9 vs. MongoDB 8
+[(link)](https://blog.probirsarkar.com/database-performance-benchmark-postgresql-17-vs-mysql-9-vs-mongodb-8-047b3c32d933)
+
+- LlamaIndex 
+[(link)](https://docs.llamaindex.ai/en/stable/)
+
+- Unlocking the Power of Structured Outputs with Ollama
+[(link)](https://medium.com/@mauryaanoop3/unlocking-the-power-of-structured-outputs-with-ollama-0eeccfca7cab)
+
+- How Amazon’s NEW AI Just Solved The HARDEST Programming Problem
+[(link)](https://medium.com/@arnoldgunter/how-amazons-new-ai-just-solved-the-hardest-programming-problem-d03d18a146e2)
+
+- AWS S3 Tables: What it Means for Apache Iceberg and the Data Ecosystem
+[(link)](https://blog.det.life/aws-s3-tables-what-it-means-for-apache-iceberg-and-the-data-ecosystem-4a1f6b978b22)
+
+- From Zero to 50 Million Uploads per Day: Scaling Media at Canva
+[(link)](https://www.canva.dev/blog/engineering/from-zero-to-50-million-uploads-per-day-scaling-media-at-canva/)
+
+- Docling
+[(link)](https://ds4sd.github.io/docling/)
+
+- Stop Struggling with Git: These Tips Will Be Your Life Saver
+[(link)](https://python.plainenglish.io/stop-struggling-with-git-these-tips-will-be-life-d3ea14ee9893)
+
+- From Prototype to Production: Enhancing LLM Accuracy
+[(link)](https://towardsdatascience.com/from-prototype-to-production-enhancing-llm-accuracy-791d79b0af9b)
+
+- MarkItDown
+[(link)](https://github.com/microsoft/markitdown)
+
 - marp
 [(link)](https://marp.app/)
 
