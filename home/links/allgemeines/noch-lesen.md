@@ -9,80 +9,41 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Database Performance Benchmark: PostgreSQL 17 vs. MySQL 9 vs. MongoDB 8
-[(link)](https://blog.probirsarkar.com/database-performance-benchmark-postgresql-17-vs-mysql-9-vs-mongodb-8-047b3c32d933)
+- Is Data Modeling Dead with Text-to-SQL? How Wren AI Bridges Modern BI and Traditional Practices
+[(link)](https://medium.com/wrenai/is-data-modeling-dead-with-text-to-sql-how-wren-ai-bridges-modern-bi-and-traditional-practices-4f4b21043682)
 
-- LlamaIndex 
-[(link)](https://docs.llamaindex.ai/en/stable/)
+- How to Debug Python Code Like a Pro: Tips You Need to Know
+[(link)](https://python.plainenglish.io/how-to-debug-python-code-like-a-pro-tips-you-need-to-know-d4cacb84b582)
 
-- Unlocking the Power of Structured Outputs with Ollama
-[(link)](https://medium.com/@mauryaanoop3/unlocking-the-power-of-structured-outputs-with-ollama-0eeccfca7cab)
+- 14 Git Things I Regret Not Knowing Earlier
+[(link)](https://levelup.gitconnected.com/14-git-things-i-regret-not-knowing-earlier-20956c192b2b)
 
-- How Amazon’s NEW AI Just Solved The HARDEST Programming Problem
-[(link)](https://medium.com/@arnoldgunter/how-amazons-new-ai-just-solved-the-hardest-programming-problem-d03d18a146e2)
+- 10 Python Features That Seem Confusing (But Are Actually Brilliant)
+[(link)](https://python.plainenglish.io/10-python-features-that-seem-confusing-but-are-actually-brilliant-2197989729bd)
 
-- AWS S3 Tables: What it Means for Apache Iceberg and the Data Ecosystem
-[(link)](https://blog.det.life/aws-s3-tables-what-it-means-for-apache-iceberg-and-the-data-ecosystem-4a1f6b978b22)
+- Why Every Python Developer Needs to Know Dunder Methods! 
+[(link)](https://python.plainenglish.io/why-every-python-developer-needs-to-know-dunder-methods-263c0b3b06cf)
 
-- From Zero to 50 Million Uploads per Day: Scaling Media at Canva
-[(link)](https://www.canva.dev/blog/engineering/from-zero-to-50-million-uploads-per-day-scaling-media-at-canva/)
+- 5 Surprising Python Tricks That Feel Like Cheating (But Aren’t)
+[(link)](https://python.plainenglish.io/5-surprising-python-tricks-that-feel-like-cheating-but-arent-951cf89fa86a)
 
-- Docling
-[(link)](https://ds4sd.github.io/docling/)
+- Handling Billions of Records in Minutes with SQL
+[(link)](https://towardsdatascience.com/handling-billions-of-records-in-minutes-with-sql-%EF%B8%8F-484d2d6027bc)
 
-- Stop Struggling with Git: These Tips Will Be Your Life Saver
-[(link)](https://python.plainenglish.io/stop-struggling-with-git-these-tips-will-be-life-d3ea14ee9893)
+- Deep Dive into New Amazon S3 Tables
+[(link)](https://medium.com/@naren3883/deep-dive-into-new-amazon-s3-tables-4e1de56394eb)
 
-- From Prototype to Production: Enhancing LLM Accuracy
-[(link)](https://towardsdatascience.com/from-prototype-to-production-enhancing-llm-accuracy-791d79b0af9b)
+- Evaluation-Driven Development for agentic applications using PydanticAI
+[(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
 
-- MarkItDown
-[(link)](https://github.com/microsoft/markitdown)
+- Recursive Query vs Closure Table vs Graph Database: A Complete Guide from My POV
+[(link)](https://blog.getdatascale.com/recursive-query-vs-closure-table-vs-graph-database-a-complete-guide-from-my-pov-2a8dd794b733)
 
-- marp
-[(link)](https://marp.app/)
+- Advanced Prompt Engineering: Chain of Thought (CoT)
+[(link)](https://towardsdatascience.com/advanced-prompt-engineering-chain-of-thought-cot-8d8b090bf699)
 
-- Introducing DBOS Cloud: Radically Simplifying Serverless Computing
-[(link)](https://www.dbos.dev/blog/announcing-dbos)
-
-- SQL query optimization: a comprehensive developer's guide
-[(link)](https://aiven.io/developer/sql-query-optimization-guide)
-
-- Hacking on PostgreSQL is Really Hard 
-[(link)](https://rhaas.blogspot.com/2024/05/hacking-on-postgresql-is-really-hard.html)
-
-- A Deep Dive into Retrieval-Augmented Generation (RAG) with HyDE
-[(link)](https://generativeai.pub/a-deep-dive-into-retrieval-augmented-generation-rag-with-hyde-how-to-enhance-your-ais-response-4d7ac0b8c200)
-
-- PydanticAI 
-[(link)](https://ai.pydantic.dev/)
-
-- 7 Things I Regret Not Knowing Earlier About Python Generators
-[(link)](https://levelup.gitconnected.com/7-things-i-regret-not-knowing-earlier-about-python-generators-bb04ccecab20)
-
--  Chonkie
-[(link)](https://github.com/chonkie-ai/chonkie)
-
-- Cursor IDE
-[(link)](https://www.cursor.com/)
-
-- 5 Brilliant Prompts I Wish every Single ChatGPT User Knew
-[(link)](https://ai.plainenglish.io/5-brilliant-prompts-i-wish-every-single-chatgpt-user-knew-684f298fe262)
-
-- ETL-PIPES: An Efficient Python ETL Data Processing Library
-[(link)](https://medium.com/@tubelwj/etl-pipes-an-efficient-python-etl-data-processing-library-fd263612f674)
-
-- Text-to-SQL LLM App with Snowflake Cortex
-[(link)](https://ai.gopubby.com/text-to-sql-llm-app-with-snowflake-cortex-f5a03759d421)
-
-- Is this secret ChatGPT trick true?
-[(link)](https://generativeai.pub/is-this-secret-chatgpt-trick-true-73789ebb665f)
-
-- Why Kafka ditched Zookeeper
-[(link)](https://blog.devgenius.io/why-kafka-ditched-zookeeper-1add2f204d11)
-
-- Understanding Postgres Sql Plan
-[(link)](https://medium.com/@anassguendef/understanding-postgres-sql-plan-310799b30c4e)
+- AWS S3 Deep Dive
+[(link)](https://medium.com/@joudwawad/aws-s3-deep-dive-1c19ad58af40)
 
 - We might not fully understand the column store!
 [(link)](https://blog.det.life/we-might-not-fully-understand-the-column-store-977d30391446)

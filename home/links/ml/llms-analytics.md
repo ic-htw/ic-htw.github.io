@@ -102,12 +102,12 @@ is_slide: 0
 
 
 # text to sql
+- From Prototype to Production: Enhancing LLM Accuracy
+[(link)](https://towardsdatascience.com/from-prototype-to-production-enhancing-llm-accuracy-791d79b0af9b)
 - Build a Fully Local RAG App With PostgreSQL, Mistral, and Ollama 
 [(link)](https://www.timescale.com/blog/build-a-fully-local-rag-app-with-postgresql-mistral-and-ollama/)
-
 - Query Your PostgreSQL Database with LangChain and Llama 3.1 : Exploring LLMs — 1
 [(link)](https://blog.gopenai.com/query-your-postgresql-database-with-langchain-and-llama-3-1-exploring-llms-1-ba3a9560c0d1)
-
 - Create a SQL Agent using CrewAI and Groq
 [(link)](https://medium.com/the-ai-forum/create-a-sql-agent-using-crewai-and-groq-005895ba31b3)
 - Building a SQL Agent Using CrewAI and Ollama: A Comprehensive Guide

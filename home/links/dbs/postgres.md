@@ -166,6 +166,11 @@ is_slide: 0
 - Psycopg 2 doc
 [(link)](https://www.psycopg.org/docs/)
 
+# query plan
+- Understanding Postgres Sql Plan
+[(link)](https://medium.com/@anassguendef/understanding-postgres-sql-plan-310799b30c4e)
+
+
 
 
 # replication

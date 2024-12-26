@@ -118,6 +118,11 @@ is_slide: 0
 - Play with Docker
 [(link)](https://labs.play-with-docker.com/)
 
+# docling
+- Docling
+[(link)](https://ds4sd.github.io/docling/)
+
+
 # gimp
 - home
 [(link)](https://www.gimp.org/)
@@ -141,6 +146,9 @@ is_slide: 0
 [(link)](https://kylegenebrown.medium.com/gitarchitecture-a-better-way-to-capture-architectural-decisions-b3574a3d604)
 - Choosing the Right Git Branching Strategy: A Comparative Analysis
 [(link)](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
+- Stop Struggling with Git: These Tips Will Be Your Life Saver
+[(link)](https://python.plainenglish.io/stop-struggling-with-git-these-tips-will-be-life-d3ea14ee9893)
+
 
 
 # github
@@ -231,6 +239,16 @@ is_slide: 0
 [(link)](https://lookerstudio.google.com/navigation/reporting)
 - Datenanalyse mit Looker Studio
 [(link)](https://www.121watt.de/digital-analytics/datenanalyse-mit-looker-studio/)
+
+# MarkItDown
+- MarkItDown
+[(link)](https://github.com/microsoft/markitdown)
+
+# marp
+- marp
+[(link)](https://marp.app/)
+
+
 
 # moodle
 - home

@@ -18,6 +18,9 @@ is_slide: 0
 [(link)](https://medium.com/@yu-joshua/a-brief-history-of-sql-the-rise-of-graph-queries-c99d5871d218)
 - Tanimura SQL Book - git
 [(link)](https://github.com/cathytanimura/sql_book/tree/master)
+- SQL query optimization: a comprehensive developer's guide
+[(link)](https://aiven.io/developer/sql-query-optimization-guide)
+
 
 
 

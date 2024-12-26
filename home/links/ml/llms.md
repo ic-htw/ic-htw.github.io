@@ -126,6 +126,10 @@ is_slide: 0
 - The Llama 3 Herd of Models
 [(link)](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
 
+# llamaindex
+- LlamaIndex 
+[(link)](https://docs.llamaindex.ai/en/stable/)
+
 
 
 
@@ -155,6 +159,9 @@ is_slide: 0
 [(link)](https://blog.devops.dev/ollama-the-ultimate-tool-for-running-language-models-locally-062589ec3a09)
 - Unlock Any Open-Source LLM with Ollama
 [(link)](https://generativeai.pub/unlock-any-open-source-llm-with-ollama-cd043cc6e2e7)
+- Unlocking the Power of Structured Outputs with Ollama
+[(link)](https://medium.com/@mauryaanoop3/unlocking-the-power-of-structured-outputs-with-ollama-0eeccfca7cab)
+
 
 
 # phi3
@@ -169,7 +176,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 
-# rag case studies
+# rag
+- A Deep Dive into Retrieval-Augmented Generation (RAG) with HyDE
+[(link)](https://generativeai.pub/a-deep-dive-into-retrieval-augmented-generation-rag-with-hyde-how-to-enhance-your-ais-response-4d7ac0b8c200)
+
 - Build an Agentic RAG using HuggingFace Transformers Agent
 [(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
 - Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.

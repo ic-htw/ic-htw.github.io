@@ -31,6 +31,11 @@ is_slide: 0
 - Which Vector Database Should You Use? 
 [(link)](https://medium.com/the-ai-forum/which-vector-database-should-you-use-choosing-the-best-one-for-your-needs-5108ec7ba133)
 
+# chunking
+-  Chonkie
+[(link)](https://github.com/chonkie-ai/chonkie)
+
+
 
 
 # chroma
