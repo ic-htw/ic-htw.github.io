@@ -9,26 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Is Data Modeling Dead with Text-to-SQL? How Wren AI Bridges Modern BI and Traditional Practices
-[(link)](https://medium.com/wrenai/is-data-modeling-dead-with-text-to-sql-how-wren-ai-bridges-modern-bi-and-traditional-practices-4f4b21043682)
+- The 6 Best LLM Tools To Run Models Locally
+[(link)](https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f7c2bbd)
 
-- How to Debug Python Code Like a Pro: Tips You Need to Know
-[(link)](https://python.plainenglish.io/how-to-debug-python-code-like-a-pro-tips-you-need-to-know-d4cacb84b582)
-
-- 14 Git Things I Regret Not Knowing Earlier
-[(link)](https://levelup.gitconnected.com/14-git-things-i-regret-not-knowing-earlier-20956c192b2b)
-
-- 10 Python Features That Seem Confusing (But Are Actually Brilliant)
-[(link)](https://python.plainenglish.io/10-python-features-that-seem-confusing-but-are-actually-brilliant-2197989729bd)
-
-- Why Every Python Developer Needs to Know Dunder Methods! 
-[(link)](https://python.plainenglish.io/why-every-python-developer-needs-to-know-dunder-methods-263c0b3b06cf)
-
-- 5 Surprising Python Tricks That Feel Like Cheating (But Aren’t)
-[(link)](https://python.plainenglish.io/5-surprising-python-tricks-that-feel-like-cheating-but-arent-951cf89fa86a)
-
-- Handling Billions of Records in Minutes with SQL
-[(link)](https://towardsdatascience.com/handling-billions-of-records-in-minutes-with-sql-%EF%B8%8F-484d2d6027bc)
+- The Top 10 AI Research Papers of 2024
+[(link)](https://pub.towardsai.net/the-top-10-ai-research-papers-of-2024-key-takeaways-and-how-you-can-apply-them-5cec1583f60a)
 
 - Deep Dive into New Amazon S3 Tables
 [(link)](https://medium.com/@naren3883/deep-dive-into-new-amazon-s3-tables-4e1de56394eb)

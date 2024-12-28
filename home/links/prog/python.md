@@ -21,30 +21,30 @@ is_slide: 0
 # Allgemein
 - Cheat Sheet
 [(link)](https://github.com/gto76/python-cheatsheet)
-
 - An A-Z of useful Python tricks
 [(link)](https://medium.freecodecamp.org/an-a-z-of-useful-python-tricks-b467524ee747)
-
 - Type Hints
 [(link)](https://www.python.org/dev/peps/pep-0484/)
-
 - Resources
 [(link)](https://opensource.com/tags/python)
-
 - RealPython
 [(link)](https://realpython.com/)
-
 - Python Tutorials
  [(link)](http://www.dabeaz.com/tutorials.html)
-
 - f-string usage
 [(link)](https://medium.com/geekculture/python-f-string-codes-i-use-every-day-e03558f12057)
-
 - Python f-string Codes
 [(link)](https://ibexorigin.medium.com/have-mercy-on-yourself-and-learn-these-9-everyday-python-f-string-codes-e8104677d7c7)
-
 - How to Use Python Data Classes
 [(link)](https://www.dataquest.io/blog/how-to-use-python-data-classes/)
+- 10 Python Features That Seem Confusing (But Are Actually Brilliant)
+[(link)](https://python.plainenglish.io/10-python-features-that-seem-confusing-but-are-actually-brilliant-2197989729bd)
+- Why Every Python Developer Needs to Know Dunder Methods! 
+[(link)](https://python.plainenglish.io/why-every-python-developer-needs-to-know-dunder-methods-263c0b3b06cf)
+- 5 Surprising Python Tricks That Feel Like Cheating (But Aren’t)
+[(link)](https://python.plainenglish.io/5-surprising-python-tricks-that-feel-like-cheating-but-arent-951cf89fa86a)
+
+
 
 # astral
 - Announcing Astral, the company behind Ruff

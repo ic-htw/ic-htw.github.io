@@ -31,6 +31,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Handling Billions of Records in Minutes with SQL
+[(link)](https://towardsdatascience.com/handling-billions-of-records-in-minutes-with-sql-%EF%B8%8F-484d2d6027bc)
 - From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS
 [(link)](https://blog.det.life/from-scrolls-to-similarity-search-building-a-movie-recommender-with-duckdb-vss-8122e4d2e486)
 - Using DuckDB for Embeddings and Vector Search

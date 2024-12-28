@@ -148,6 +148,9 @@ is_slide: 0
 [(link)](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
 - Stop Struggling with Git: These Tips Will Be Your Life Saver
 [(link)](https://python.plainenglish.io/stop-struggling-with-git-these-tips-will-be-life-d3ea14ee9893)
+- 14 Git Things I Regret Not Knowing Earlier
+[(link)](https://levelup.gitconnected.com/14-git-things-i-regret-not-knowing-earlier-20956c192b2b)
+
 
 
 
