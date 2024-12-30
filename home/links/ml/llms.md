@@ -35,6 +35,8 @@ is_slide: 0
 
 
 # divers
+- EvalPlus - a rigorous evaluation framework for LLM4Code
+[(link)](https://github.com/evalplus/evalplus)
 - Tiktokenizer
 [(link)](https://tiktokenizer.vercel.app/)
 - Overview of Large Language Models

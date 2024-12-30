@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- End to end ELT process example for DW using Postgres.
+[(link)](https://blog.devgenius.io/end-to-end-elt-process-example-for-dw-using-postgres-4d1a8cefd7e3)
+
 - The 6 Best LLM Tools To Run Models Locally
 [(link)](https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f7c2bbd)
 
