@@ -263,6 +263,10 @@ is_slide: 0
 - Aufgabe konfigurieren
 [(link)](https://docs.moodle.org/401/de/Aufgabe_konfigurieren)
 
+# navidrome music streaming
+- home
+[(link)](https://www.navidrome.org/)
+
 
 
 # pip
