@@ -381,6 +381,20 @@ is_slide: 0
 - obs
 [(link)](https://obsproject.com/de)
 
+# vnc
+- TigerVNC 
+[(link)](https://tigervnc.org/)
+
+- How To Install and Configure TigerVNC server on Ubuntu - nixCraft
+[(link)](https://www.cyberciti.biz/faq/install-and-configure-tigervnc-server-on-ubuntu-18-04/)
+
+- VNC Server Ubuntu 22.04 installieren: Schritt für Schritt - ionos
+[(link)](https://www.ionos.de/digitalguide/server/konfiguration/vnc-server-ubuntu-2204/)
+
+- Setting Up VNC Server/Client on Ubuntu Linux
+[(link)](https://linuxconfig.org/vnc-server-on-ubuntu-20-04-focal-fossa-linux)
+
+
 
 # vscode
 - doc [(link)](https://code.visualstudio.com/docs)
