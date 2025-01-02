@@ -49,6 +49,12 @@ is_slide: 0
 - DSQL Vignette: Aurora DSQL, and A Personal Stor
 [(link)](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html)
 
+# aws s3
+- AWS S3 Deep Dive
+[(link)](https://medium.com/@joudwawad/aws-s3-deep-dive-1c19ad58af40)
+- Deep Dive into New Amazon S3 Tables
+[(link)](https://medium.com/@naren3883/deep-dive-into-new-amazon-s3-tables-4e1de56394eb)
+
 
 
 # cedarDB

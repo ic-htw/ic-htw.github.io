@@ -202,6 +202,8 @@ is_slide: 0
 
 
 # misc
+- End to end ELT process example for DW using Postgres.
+[(link)](https://blog.devgenius.io/end-to-end-elt-process-example-for-dw-using-postgres-4d1a8cefd7e3)
 - Could GROUP-BY clause reordering improve performance?
 [(link)](https://danolivo.substack.com/p/could-group-by-clause-reordering)
 - Boost PostgreSQL Efficiency with Recursive Query Patterns

@@ -9,17 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- End to end ELT process example for DW using Postgres.
-[(link)](https://blog.devgenius.io/end-to-end-elt-process-example-for-dw-using-postgres-4d1a8cefd7e3)
+- Why HuggingFace and Kaggle Win with AI — And What You’re Missing
+[(link)](https://ai.gopubby.com/millions-invested-yet-no-ai-results-uncovering-the-missing-link-between-data-readiness-and-real-135b857ec8b2)
 
-- The 6 Best LLM Tools To Run Models Locally
-[(link)](https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f7c2bbd)
-
-- The Top 10 AI Research Papers of 2024
-[(link)](https://pub.towardsai.net/the-top-10-ai-research-papers-of-2024-key-takeaways-and-how-you-can-apply-them-5cec1583f60a)
-
-- Deep Dive into New Amazon S3 Tables
-[(link)](https://medium.com/@naren3883/deep-dive-into-new-amazon-s3-tables-4e1de56394eb)
+- Agentic RAG Series: Exploring LangGraph for Advanced Workflows
+[(link)](https://generativeai.pub/agentic-rag-series-exploring-langgraph-for-advanced-workflows-60152c017795)
 
 - Evaluation-Driven Development for agentic applications using PydanticAI
 [(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
@@ -29,9 +23,6 @@ is_slide: 0
 
 - Advanced Prompt Engineering: Chain of Thought (CoT)
 [(link)](https://towardsdatascience.com/advanced-prompt-engineering-chain-of-thought-cot-8d8b090bf699)
-
-- AWS S3 Deep Dive
-[(link)](https://medium.com/@joudwawad/aws-s3-deep-dive-1c19ad58af40)
 
 - We might not fully understand the column store!
 [(link)](https://blog.det.life/we-might-not-fully-understand-the-column-store-977d30391446)
