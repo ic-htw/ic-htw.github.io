@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Top 6+ Must Have Database Tools in 2025 as a Developer
+[(link)](https://medium.com/@letscodefuture/top-5-must-have-database-tools-in-2025-as-a-developer-26911a38e125)
+
+- Your Machine, Your AI — The Ultimate Local Productivity Stack with Ollama
+[(link)](https://blog.det.life/your-machine-your-ai-the-ultimate-local-productivity-stack-with-ollama-7a118f271479)
+
+- Building an Advanced RAG Pipeline Using Docling, Groq, Ollama with GLIDER Evaluation
+[(link)](https://medium.com/the-ai-forum/building-an-advanced-rag-pipeline-using-docling-groq-ollama-with-glider-evaluation-b91c290b0c84)
+
+- AI-Powered Information Extraction and Matchmaking
+[(link)](https://towardsdatascience.com/ai-powered-information-extraction-and-matchmaking-0408c93ec1b9)
+
+- How Uber is Saving 140,000 Hours Each Month Using Text-to-SQL 
+[(link)](https://medium.com/wrenai/how-uber-is-saving-140-000-hours-each-month-using-text-to-sql-and-how-you-can-harness-the-same-fb4818ae4ea3)
+
+- How Jupyter Agent Blew My Mind. 
+[(link)](https://ai.gopubby.com/how-jupyter-agent-blew-my-mind-the-ai-revolution-you-didnt-see-coming-aaec7601277d)
+
 - Why HuggingFace and Kaggle Win with AI — And What You’re Missing
 [(link)](https://ai.gopubby.com/millions-invested-yet-no-ai-results-uncovering-the-missing-link-between-data-readiness-and-real-135b857ec8b2)
 
