@@ -35,6 +35,8 @@ is_slide: 0
 
 
 # divers
+- AI-Powered Information Extraction and Matchmaking
+[(link)](https://towardsdatascience.com/ai-powered-information-extraction-and-matchmaking-0408c93ec1b9)
 - The 6 Best LLM Tools To Run Models Locally
 [(link)](https://medium.com/@amosgyamfi/the-6-best-llm-tools-to-run-models-locally-eedd0f7c2bbd)
 - EvalPlus - a rigorous evaluation framework for LLM4Code
@@ -165,6 +167,11 @@ is_slide: 0
 [(link)](https://generativeai.pub/unlock-any-open-source-llm-with-ollama-cd043cc6e2e7)
 - Unlocking the Power of Structured Outputs with Ollama
 [(link)](https://medium.com/@mauryaanoop3/unlocking-the-power-of-structured-outputs-with-ollama-0eeccfca7cab)
+- Your Machine, Your AI — The Ultimate Local Productivity Stack with Ollama
+[(link)](https://blog.det.life/your-machine-your-ai-the-ultimate-local-productivity-stack-with-ollama-7a118f271479)
+- Building an Advanced RAG Pipeline Using Docling, Groq, Ollama with GLIDER Evaluation
+[(link)](https://medium.com/the-ai-forum/building-an-advanced-rag-pipeline-using-docling-groq-ollama-with-glider-evaluation-b91c290b0c84)
+
 
 
 

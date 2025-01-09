@@ -26,6 +26,8 @@ is_slide: 0
 
 
 # zzz
+- Top 6+ Must Have Database Tools in 2025 as a Developer
+[(link)](https://medium.com/@letscodefuture/top-5-must-have-database-tools-in-2025-as-a-developer-26911a38e125)
 - Rebuilding Redis on S3 Express
 [(link)](https://blog.det.life/rebuilding-redis-on-s3-express-e2701c5dcc29)
 - Relational Dataset Repository
