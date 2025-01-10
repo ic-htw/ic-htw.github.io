@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Bolt DIY doc
+[(link)](https://stackblitz-labs.github.io/bolt.diy/)
+
+- Bolt DIY git
+[(link)](https://github.com/stackblitz-labs/bolt.diy)
+
 - Introducing Gemini 2.0
 [(link)](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/#ceo-message)
 
