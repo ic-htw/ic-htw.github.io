@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Reducing Hallucinations in Text-to-SQL: Building Trust and Accuracy in Data Access
+[(link)](https://medium.com/wrenai/reducing-hallucinations-in-text-to-sql-building-trust-and-accuracy-in-data-access-176ac636e208)
+
+- Python in Microsoft Fabric: Data Factory vs Polars and DuckDB
+[(link)](https://medium.com/@mariusz_kujawski/python-in-microsoft-fabric-data-factory-vs-polars-and-duckdb-06dc4383475b)
+
 - Bolt DIY doc
 [(link)](https://stackblitz-labs.github.io/bolt.diy/)
 
