@@ -346,6 +346,13 @@ is_slide: 0
 - pythOnBoarding Bot
 [(link)](https://github.com/slackapi/Slack-Python-Onboarding-Tutorial)
 
+# slurm
+- home
+[(link)](https://slurm.schedmd.com/documentation.html)
+- sbatch
+[(link)](https://slurm.schedmd.com/sbatch.html)
+
+
 # tableau
 - Parquet to Hyper Tableau: converting massive data for higher performance
 [(link)](https://medium.com/@guilhermenoronha2001/parquet-to-hyper-tableau-converting-massive-data-for-higher-performance-20e0b090eabb)
