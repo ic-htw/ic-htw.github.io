@@ -1,0 +1,329 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Wie gut sind Query Optimierer wirklich?
+is_slide: 0
+n: 7
+---
+
+<h1>Composable Data Systems</h1>
+
+<h2>Einführung</h2>
+<ul>
+  <li>Was sind Composable Data Systems? [1, 2]</li>
+  <li>Vorteile von Composable Data Systems [2-9]</li>
+  <li>Der Weg zu Composable Data Systems [10-12]</li>
+</ul>
+
+<h2>Offene Standards über Silos</h2>
+<ul>
+  <li>Die Bedeutung von offenen Standards [8, 13-18]</li>
+  <li>Arrow als Beispiel für einen offenen Standard [19-22]</li>
+  <li>Das Arrow-Ökosystem [23-25]</li>
+  <li>Composable Data Systems mit Substrait, ADBC und Arrow [26, 27]</li>
+</ul>
+
+<h2>Sprachinteroperabilität</h2>
+<ul>
+  <li>Herausforderungen der Sprachinteroperabilität [6, 28-34]</li>
+  <li>Die Rolle von Intermediate Representations (IR) [35-43]</li>
+  <li>Substrait als IR-Standard [43-45]</li>
+  <li>Composable User Interfaces [46-58]</li>
+</ul>
+
+<h2>Von Datenwildwuchs zu Datenkonnektivität</h2>
+<ul>
+  <li>Die Herausforderungen des Datenwildwuchses [7, 59-65]</li>
+  <li>Die Bedeutung der Datenkonnektivität [66-73]</li>
+  <li>Wesentliche Komplexitäten der Datenkonnektivität [74-82]</li>
+  <li>Datenkonnektivitätsstandards [83-89]</li>
+  <li>Arrow Database Connectivity (ADBC) [90-93]</li>
+  <li>Arrow Flight SQL [94-96]</li>
+  <li>Composable Datenkonnektivität [97-105]</li>
+</ul>
+
+<h2>Beschleunigte Hardware</h2>
+<ul>
+  <li>Die Herausforderungen der Engine-Optimierung [9, 106-110]</li>
+  <li>Die "Wall" der CPU-basierten Systeme [111, 112]</li>
+  <li>Der Aufstieg von GPUs und beschleunigter Hardware [113-118]</li>
+  <li>Die "Machine" für beschleunigte Systeme [119-131]</li>
+  <li>Die Rolle von Standards in beschleunigten Systemen [132-139]</li>
+</ul>
+
+<h2>Zusammenfassung und Ausblick</h2>
+<ul>
+  <li>Composable Data Systems sind die Zukunft [140, 141]</li>
+  <li>Wie Sie sich über Composable Data Systems informieren können [1, 8, 16, 28, 59, 106, 142-146]</li>
+  <li>Wie Sie sich an der Entwicklung von Composable Data Systems beteiligen können [140]</li>
+</ul>
+
+<h2>Referenzen</h2>
+<ul>
+  <li>Voltron Data. 2023. The Composable Codex. <a href="https://voltrondata.com/codex">https://voltrondata.com/codex</a> [147-150]</li>
+  <li>Pedreira et al. 2023. The Composable Data Management System Manifesto. [127, 151]</li>
+  <li>Chattopadhyay et al. 2023. Shared Foundations: Modernizing Meta’s Data Lakehouse. [121, 151]</li>
+  <li>Li et al. Mainlining Databases: Supporting Fast Transactional Workloads on Universal Columnar Data File Formats. [78]</li>
+  <li>Raasveldt & Muhleisen. Don’t hold my data hostage. [79]</li>
+  <li>Jindal et al 2021, Magpie: Python at Speed and Scale using Cloud Backends. [152]</li>
+  <li>Ahmad et al. Benchmarking Apache Arrow Flight - A wire-speed protocol for data transfer, querying and microservices. [96]</li>
+</ul>
+
+
+<h1>Composable Data Systems</h1>
+
+<h2>Einführung</h2>
+<p>Daten-Systeme zu bauen ist schwierig: es ist teuer, verbraucht Ressourcen und nur wenige Experten sind in der Lage, sie zu entwerfen und zu implementieren. Doch das Blatt wendet sich. Anstatt von Grund auf neu zu programmieren, sind jetzt die Voraussetzungen dafür geschaffen, Systeme durch Komposition zu erstellen. [1]</p>
+<ul>
+  <li>Was sind Composable Data Systems?</li>
+  <li>Vorteile von Composable Data Systems</li>
+  <li>Der Weg zu Composable Data Systems</li>
+</ul>
+
+<h2>Der Weg zu composable Data Systems</h2>
+<p>Im Jahr 2010 begann eine Bewegung ohne Namen. Man kann sie als "Build Your Own Database" (BYODB)-Bewegung bezeichnen. Oder die "Build Your Own Data System"-Bewegung. [2]</p>
+<p>Meta baut sein eigenes Datensystem. Walmart baut sein eigenes Datensystem. Ebenso Microsoft, GE, Netflix, Airbnb, Apple, Two Sigma, Twitter, Man Group, Goldman Sachs und die Liste geht weiter. Diese Unternehmen haben effektiv damit begonnen, ihre eigenen Datensysteme intern zu entwickeln. [3]</p>
+
+<h2>Warum Composable Data Systems?</h2>
+<ul>
+  <li>Der Traum ist, dass das System einfach nahtlos funktioniert: Es gibt unendlich skalierbaren Speicherplatz, die Ausführung ist schnell und Daten können abgefragt werden, ohne dass es Vorbehalte gibt, welche Programmiersprachen oder APIs unterstützt werden. [4]</li>
+  <li>Unternehmen, die es sich leisten konnten, begannen, alle oder einen erheblichen Teil der Softwarekomponenten von Grund auf neu zu entwickeln und so maßgeschneiderte Datensysteme zu entwickeln, die ihren speziellen Bedürfnissen entsprechen. [4]</li>
+</ul>
+
+<h2>Herausforderungen und Trends</h2>
+<p>Die Entscheidung, Millionen von Dollar und jahrelange Entwicklung in ein Moonshot-Dateninfrastrukturprojekt zu investieren, kann für kein Unternehmen einfach sein. Was würde ein Unternehmen dazu bringen, sich für den Bau eines eigenen Datensystems zu entscheiden? Wahrscheinlich ist es eine Kombination aus zwei Trends, die sich im Universum abzeichnen: [5]</p>
+<ul>
+  <li>Mikrotrends ("Trends im kleinen Maßstab, die sie von ihrem aktuellen System wegdrängten") und</li>
+  <li>Makrotrends ("Trends im großen Maßstab der Branche, die sie zu einer Veränderung drängten"). [5]</li>
+</ul>
+<h3>Mikrotrends</h3>
+<ul>
+  <li>Lock-in: Niemand wird gerne in seinem Stack eingesperrt. Vor allem, wenn sie wissen, dass jede Änderung am System bedeutet, dass sie alle Daten in das neue System migrieren, alle Datenteams für die Verwendung des neuen Systems umschulen und alle vorhandenen Daten-Workloads in einer neuen Benutzeroberfläche neu schreiben müssen. [6]</li>
+  <li>Skalierbarkeit: Niemand mag es, wenn die Ressourcen ausgehen. Vor allem, wenn sie Abfragen neu schreiben müssen, um eine Workload zu skalieren. [6]</li>
+  <li>Leistung: Niemand mag ein langsames System. Geschwindigkeit ist wichtig. Rechenzeit ist wichtig. Datentransportzeit ist wichtig. [6]</li>
+</ul>
+<h3>Makrotrends</h3>
+<ul>
+  <li>Der KI-Wettrüsten: Schon vor dem Aufstieg der LLMs gab es einen echten Bedarf an "schnellerem, skalierbarerem und kostengünstigerem maschinellem Lernen". In den frühen Tagen der BYODB-Bewegung waren viele Unternehmen vielleicht nicht in der Lage, genau zu bestimmen, wie und warum sie KI oder ML einsetzen müssten. Aber sicher wollte niemand im "KI-Wettrüsten" auf dem falschen Fuß erwischt werden. Die FOMO (*Fear of Missing Out*) war real. [7]</li>
+  <li>Der Aufstieg von GPUs und anderer beschleunigter Hardware: Die Hardware hat sich seit dem Beginn der BYODB-Bewegung sowohl in vorhersehbarer als auch in unvorhersehbarer Weise verändert. Was einst ein Bereich war, in dem CPUs herrschten, ist heute ein "Wilder Westen der Hardware", in dem sich Chips wie GPUs, FPGAs, ASICs, TPUs und andere spezialisierte Hardware rasant weiterentwickelt haben. Aber wie auf der JupyterCon 2018 festgestellt wurde, "haben sich die Werkzeuge, die wir verwenden, nicht so elegant skaliert, um die Vorteile moderner Hardware zu nutzen". Die Entwickler, die die BYODB-Bewegung anführten, erkannten, dass Software zwar ein Gatekeeper für beschleunigte Hardware war, dies aber nur vorübergehend war. In Zukunft würde Software ein Gateway zu beschleunigter Hardware bieten, aber nur für diejenigen, deren Systeme so aufgestellt waren, dass sie die Hardware-Lotterie gewinnen konnten. Genau wie bei der KI wollte niemand die Frage hören "GPUs sind da - sind wir bereit?" und mit "Nein" antworten. Die FUD (*Fear, Uncertainty, and Doubt*) war real. [8]</li>
+</ul>
+
+<h2>Eine neue composable Grenze</h2>
+<p>Wie sieht diese neue Grenze der Datensysteme aus? Sie sieht eigentlich sehr ähnlich aus wie Ihr traditionelles Datensystem. [9]</p>
+<p>Auch wenn moderne, spezialisierte Datensysteme auf den ersten Blick unterschiedlich erscheinen mögen, so bestehen sie im Kern doch alle aus einem ähnlichen Satz logischer Komponenten. [9]</p>
+<p>Ein minimal lebensfähiges Datensystem kann in drei Hauptschichten unterteilt werden: [10]</p>
+<ul>
+  <li>Eine Benutzeroberfläche</li>
+  <li>Eine Ausführungsmaschine</li>
+  <li>Datenspeicherung [10]</li>
+</ul>
+
+<h2>Open Source und Standards</h2>
+<p>Glücklicherweise begannen die Teams in diesen Pionierunternehmen, als sie mit dem Aufbau ihrer eigenen Datensysteme begannen, die Macht zweier sich ergänzender Kräfte zu erkennen: [11]</p>
+<ol>
+  <li>Open Source bietet mehr Auswahlmöglichkeiten</li>
+  <li>Standards helfen, bessere Entscheidungen zu treffen [11]</li>
+</ol>
+
+<h2>Composable Systeme</h2>
+<p>Viele leitende Entwickler in Unternehmen, die ihre eigenen Systeme aufgebaut haben, plädieren nun für einen Paradigmenwechsel im Design von Datensystemen. Der Paradigmenwechsel würde nicht nur den Unternehmen zugute kommen, die es sich leisten können, ihre eigenen Systeme zu bauen, sondern auch jeder Organisation, die ein bestehendes Datensystem modernisieren möchte. Die Umstellung besteht darin, sich von der Entwicklung von Systemen durch "Coding First" zu entfernen und stattdessen mit "Composing First" zu beginnen. [12]</p>
+<p>Ein composable Datensystem ist eines, das durch die Wiederverwendung verfügbarer Komponenten entworfen wird. Aber man baut ein Datensystem nicht einfach aus Komponenten zusammen, die einfach herumliegen. Aus den Lehren der BYODB-Bewegung heraus balanciert ein gesundes composable Datensystem die sich ergänzenden Kräfte von: [13]</p>
+<ul>
+  <li>Open-Source-Komponenten zur Förderung von Innovationen</li>
+  <li>Standards für Dateninteroperabilität [14]</li>
+</ul>
+<h3>Struktur eines composable Datensystems</h3>
+<p>Ein composable Datensystem hat die gleichen drei Kernschichten wie ein traditionelles Datensystem: [15]</p>
+<ol>
+  <li>Eine Benutzeroberfläche</li>
+  <li>Eine Ausführungsmaschine</li>
+  <li>Datenspeicherung [15]</li>
+</ol>
+<p>Sie können sich diese Schichten als die "Macher" eines Systems vorstellen. Das sind die Werkzeuge, die wir kennen und lieben, die Logos, die Sie wiedererkennen, und die Dokumente, die die Leute stundenlang durchkämmen. [15]</p>
+<p>Aber in einem composable System sind die "Kleber" genauso wichtig oder sogar noch wichtiger. Die Kleber sind die Kernstandards, die die Schichten zusammenhalten: [15]</p>
+<ul>
+  <li>Dateninteroperabilität</li>
+  <li>Abfrageinteroperabilität</li>
+  <li>Systeminteroperabilität [16]</li>
+</ul>
+
+<h2>Zusammenfassung und Ausblick</h2>
+<p>Composable Data Systems sind die Zukunft. [17]</p>
+<p>Wegen der BYODB-Bewegung können die Menschen jetzt bessere, schnellere und leistungsfähigere Datensysteme aufbauen, deren Aufbau in der Vergangenheit Jahre gedauert hätte. Dank der BYODB-Bewegung sind composable Systeme nun das, was der Wissenschaftler Stuart Kauffman als "das angrenzende Mögliche" bezeichnet hat. [18]</p>
+
+<h1>Composable Data Systems: Sprachinteroperabilität</h1>
+
+<h2>Die Herausforderung der Sprachwahl</h2>
+<p>In der Welt der Datenanalyse gibt es viele verschiedene Programmiersprachen und Benutzeroberflächen (UIs). Datenexperten haben oft ihre bevorzugten Sprachen und Tools, die sie für ihre Arbeit verwenden.  Diese Vielfalt an Sprachen und UIs kann jedoch zu Problemen führen, wenn verschiedene Teams in einem Unternehmen unterschiedliche Tools verwenden. [1, 2]</p>
+<ul>
+  <li>Unterschiedliche Teams verwenden unterschiedliche Tools und Infrastrukturen, um auf unterschiedliche Daten zuzugreifen und unterschiedliche Workloads auszuführen. [1]</li>
+  <li>Dies führt zu Silos, in denen die Teams ihre Arbeit duplizieren, um ihr eigenes Silo am Laufen zu halten. [1]</li>
+  <li>Die Sprachwahl kann zu großen Gräben führen, insbesondere zwischen den "Datenmenschen", die das System nutzen, und den "Systemmenschen", die es entwerfen und warten. [1]</li>
+</ul>
+
+<h2>Der Wunsch nach einer einheitlichen Benutzeroberfläche</h2>
+<p>Jeder wünscht sich eine einheitliche Benutzeroberfläche, aber jeder möchte sie auch in seiner Sprache, auf seine Weise. [3] Wie können wir also die Kluft zwischen den Programmiersprachen überbrücken? [3]</p>
+<p>Anstatt mit Abfragesprachen, SQL-Dialekten und einem Netzwerk von Verbindungen zwischen Benutzeroberflächen und Engines zu jonglieren, bieten <b>Composable Data Systems Standards, um die Kluft zwischen Programmiersprachen zu überbrücken</b>. [3]</p>
+
+<h2>Die Rolle von Intermediate Representations (IR)</h2>
+<p>Composable Data Systems nutzen <b>Intermediate Representations (IRs)</b>, um die Sprachinteroperabilität zu ermöglichen. [4]</p>
+<ul>
+  <li>Eine IR ist eine spezielle Sprache, die von Maschinen gelesen und geschrieben werden kann, aber nicht von Menschen. [4, 5]</li>
+  <li>Die IR fungiert als Übersetzer zwischen den UIs und den Ausführungs-Engines. [4]</li>
+  <li>Eine UI wandelt die Abfrage eines Benutzers in eine IR um. [4]</li>
+  <li>Eine Ausführungs-Engine wandelt diese IR in den spezifischen Code um, den sie ausführen kann. [4]</li>
+</ul>
+<p>Dadurch entfällt die Notwendigkeit, Gewinner (und Verlierer) bei der Sprachauswahl zu bestimmen, und es eröffnet sich die Möglichkeit, Data Engineering anders zu betreiben. [4]</p>
+
+<h2>Substrait als IR-Standard</h2>
+<p><b>Substrait ist ein offener IR-Standard für UIs und Engines zur Darstellung von Analyseplänen</b>. [6]</p>
+<ul>
+  <li>Substrait ist eine sprachübergreifende Spezifikation für Datenberechnungsoperationen, auch bekannt als IR für relationale Algebra. [6]</li>
+  <li>Substrait-Pläne konzentrieren sich auf die Definition und Standardisierung von Datenmanipulationsoperationen. [6]</li>
+</ul>
+<p>Anstatt ein Netzwerk von Verbindungen zwischen Schnittstellen und Engines zu verwalten, muss ein Composable Data System nur Folgendes festlegen: [7]</p>
+<ul>
+  <li>UIs erzeugen letztendlich einen Substrait-Plan. [7]</li>
+  <li>Engines können arbeiten, indem sie einen Substrait-Plan akzeptieren. [7]</li>
+</ul>
+
+<h2>Vorteile von Composable Data Systems</h2>
+<p>Composable Data Systems bieten eine Reihe von Vorteilen, darunter: [8, 9]</p>
+<ul>
+  <li><b>Flexibilität</b>: Benutzer können die Programmiersprachen und Tools verwenden, die ihren Bedürfnissen am besten entsprechen. [9]</li>
+  <li><b>Interoperabilität</b>: Verschiedene Komponenten des Systems können nahtlos zusammenarbeiten. [9]</li>
+  <li><b>Skalierbarkeit</b>: Systeme können leicht skaliert werden, um wachsende Datenmengen und Workloads zu bewältigen. [9]</li>
+  <li><b>Kosteneffizienz</b>: Durch die Wiederverwendung von Komponenten und die Vermeidung von Silos können Unternehmen Kosten sparen. [8]</li>
+</ul>
+
+<h1>Composable Data Systems: Datenkonnektivität</h1>
+
+<h2>Von Datenwildwuchs zu Datenkonnektivität</h2>
+<p>Wenn Sie jemals gefragt wurden: "Wie bekomme ich diese Daten, die ich jetzt brauche?" und Sie mit "Es ist kompliziert und es kommt darauf an" geantwortet haben, dann sind Sie am schlechten Datenort angekommen. Sobald Sie mehr als einen Ort haben, an dem Daten gespeichert sind, können die Komplexität und die Kosten Ihres Systems nur in eine Richtung gehen: nach oben (vorerst). [1] <b>Datenwildwuchs erfordert Lösungen, die über Speicherebenen und Datenbanken hinweg greifen können.</b> Anstatt sich mit kostspieligen Migrationen, langwierigen Umschreibungen und Labyrinthen von Glue-Code herumzuschlagen, verlassen sich <b>Composable Data Systems</b> auf Standards, um den Datenwildwuchs klein erscheinen zu lassen. [1]</p>
+
+<h2>Warum ist Datenkonnektivität wichtig?</h2>
+<p>Die meisten Datenteams tragen dieses Wissen über ihre Daten an verschiedenen Orten mit sich herum. Im besten Fall ist das gesamte Wissen irgendwo festgehalten. Doch selbst wenn es Dokumentationen gibt, fehlen oft die praktischen Anmerkungen wie "funktioniert, aber nur, wenn dies passiert" oder "funktioniert mehr oder weniger, abhängig von der Mondphase". [2] Dokumentation ist oft ein Flickwerk für einen Prozess, der eigentlich einfacher zu benutzen sein sollte. [3] Daher behalten viele Menschen das Wissen einfach im Kopf oder in ihrem persönlichen Datentagebuch, damit ihr jetziges Ich ihrem zukünftigen Ich Zeit und Leid ersparen kann. [3] Es gibt selten eine klare oder einfache Antwort auf die Frage "Wie komme ich jetzt an diese Daten, die ich brauche?" ohne eine mündliche Überlieferung, die mit vielen Sternchen und Entschuldigungen gespickt ist. [3]</p>
+
+<h2>Die Kosten des Datenwildwuchses</h2>
+<p>Auf Systemebene können die Komplexität und die Kosten Ihres Systems nur in eine Richtung gehen: nach *oben* (vorerst), sobald Sie mehr als einen Ort haben, an dem Daten gespeichert sind. [4] Wie summieren sich diese Kosten? [5]
+<ul>
+  <li><b>Viele Datenkopien</b>: Um den Systemwildwuchs zu umgehen, werden die gleichen Daten viele, viele Male kopiert - einige an legitimen Orten und einige an nicht so legitimen Orten. Dies führt zu veralteten, nicht aktuellen Datenkopien mit unterschiedlichem Grad an Legitimität und zu Analysen, die nie die neuesten oder vollständigsten Daten erreichen (ganz zu schweigen von Sicherheits- und Datenschutzrisiken). [5]</li>
+  <li><b>Kostspielige Datenkopien</b>: Wenn man über Daten in Terabyte- oder Petabyte-Größe spricht, die immer wieder kopiert werden, können die Kosten für die Speicherung der Originaldaten plus ihrer Nachkommen sehr teuer werden. [5]</li>
+  <li><b>Kostspielige Komplexität</b>: Mehr Datenquellen bedeuten mehr Wartung, was mehr Personal, Zeit und Ressourcen bedeutet: [5]
+    <ul>
+      <li><b>Mehr Personal</b> wird benötigt, um die gleiche Arbeit zu erledigen, weil die Systeme zu komplex sind. [5]</li>
+      <li><b>Mehr Zeit</b> wird benötigt, um neue Arbeiten zu erledigen, weil die Anzahl der Werkzeuge und Schritte so groß ist. [5]</li>
+      <li><b>Mehr Ressourcen</b> werden benötigt, um Dinge zu reparieren: um zu bemerken, wenn Dinge kaputt gehen, herauszufinden, was schief gelaufen ist, und sie zu reparieren. [5]</li>
+    </ul>
+  </li>
+</ul>
+</p>
+
+<h2>Den Wildwuchs annehmen</h2>
+<p>Die kurze Antwort, die viele unserer Teammitglieder auf die harte Tour gelernt haben, ist, dass man den Wildwuchs nicht *beseitigt* - man *nimmt* ihn an, mit all der knorrigen Komplexität, die damit einhergeht. [6] <b>Den Datenwildwuchs anzunehmen bedeutet, dass man die Daten in Ruhe lässt</b>: Man muss seine Daten nicht verschieben, man muss nicht seine gesamte Organisation dazu bringen, eine weitere groß angelegte Datenmigration zu einem neuen System zu versuchen, und man muss definitiv keine "große Zentralisierungs"-Initiative durchführen, um sich auf ein einziges Datensystem zu einigen, das den Zugriff auf alle wichtigen Daten des Unternehmens beinhaltet. [6]</p>
+
+<h2>Composable Data Systems</h2>
+<p>Wie kann man also den Wildwuchs annehmen und trotzdem alle Züge pünktlich fahren lassen, so dass die Datenleute auf die Daten zugreifen können, die sie brauchen, wenn sie sie brauchen? Wir denken, die Antwort ist ein Composable Data System, das auf drei wesentlichen Konnektivitätsstandards aufgebaut ist: [7]
+<ol>
+  <li><b>Datenformate</b>: Standard-Datenformate können viele der Sternchen rund um die Datenkonnektivität in einem System für Endbenutzer und für die Datensysteme, die diese Benutzer unterstützen, entfernen. [7]</li>
+  <li><b>Datenzugriff</b>: Konnektivitätsstandards können eine reibungslosere und konsistentere Datenzugriffsschicht für Menschen in allen Bereichen des Unternehmens schaffen, die das Datensystem nutzen, unabhängig von der/den zugrunde liegenden Datenbank(en). [7]</li>
+  <li><b>Datentransport</b>: Standard-Wire-Protokolle und eine Standardmethode zur Darstellung von Daten auf der Leitung schaffen eine reibungslosere und vorhersehbarere Entwicklererfahrung beim Entwurf von Datensystemen, die skalierbar sind. [7]</li>
+</ol>
+</p>
+<p>Allein oder zusammen lassen diese Konnektivitätsstandards den Wildwuchs für die Endbenutzer kleiner erscheinen und bieten Wege (falls der Geist Sie bewegt), um schließlich Schritte zur Bändigung des Datenwildwuchses in einem Composable System zu unternehmen. [8]</p>
+
+<h2>Drei wesentliche Standards für die Datenkonnektivität</h2>
+<p>Ein Composable Data System kann die Anzahl der verwendeten Datenbanken nicht verringern. Aber es kann die Kompatibilität der verwendeten Datenbanken erhöhen. Kurz gesagt, ein Composable Data System kann den Datenwildwuchs kleiner erscheinen lassen, weil die Leute sich mit Daten verbinden können, egal wo genau sie gespeichert sind. [9] Was bedeutet es, den Wildwuchs kleiner erscheinen zu lassen? Es bedeutet, dass ein Composable System: [9]
+<ul>
+  <li>es den Benutzern leichter machen kann, über Datensysteme hinweg zu greifen, um Daten aus verschiedenen Quellen zu kombinieren, größere Fragen mit vollständigeren und aktuelleren Datensätzen zu beantworten und sicher zu sein, dass sie sich mit den benötigten Daten verbinden können - mit weniger Überraschungen, Sternchen und "es kommt darauf an". [9]</li>
+  <li>die Anzahl der Oberflächen und Knöpfe reduzieren kann, die Datenleute berühren müssen, um auf Daten zuzugreifen. [9]</li>
+  <li>Verschwendung im System reduzieren kann, wie z. B. das Konfetti aus Datenkopien, Glue-Infrastruktur und Notlösungen für die Konnektivität. [9]</li>
+  <li>die Wartezeit auf Ergebnisse reduzieren kann, um schneller iterieren zu können. [9]</li>
+</ul>
+</p>
+<p>Standards reduzieren die Datenkonnektivität auf drei wesentliche Komplexitäten: [10]
+<ol>
+  <li><b>Format des Ergebnissatzes</b> - Datenleute mögen Spaltendaten für die meisten Analyseanwendungsfälle [10]</li>
+  <li><b>Datenzugriff</b> - Datenleute wollen nahtlosen und schnellen Zugriff [10]</li>
+  <li><b>Datentransport</b> - Entwickler wollen (a) das Datenformat während der gesamten Datenpipeline gleich halten und (b) das Spaltenformat als Standarddatenformat verwenden (um Himmels willen) [10]</li>
+</ol>
+</p>
+
+<h1>Composable Data Systems: Offene Standards über Silos</h1>
+
+<h2>Die stille Macht offener Standards</h2>
+<p>Es kann schwierig sein, ein Verfechter von Standards zu sein. Standards haben kein Marketingbudget. Standards sind auch nicht die Art von Technologie, die die meisten Leute begeistert: Die Begeisterung kommt oft später, wenn man Software sieht, die auf den Standards aufgebaut ist. [1]</p>
+<p>Aber genau das macht vielleicht den Reiz von Standards aus. Und in der Geschichte der revolutionären Technologie, die unsere Welt verändert hat, haben Standards tatsächlich eine stille Hauptrolle gespielt. [2]</p>
+
+<h2>Beispiel: Das World Wide Web</h2>
+<p>Offene Standards waren der Schlüssel zum frühen Erfolg des World Wide Web: [2]</p>
+<ul>
+  <li>Die Standardisierung rund um HTML ermöglichte es dem Web, sich zu entwickeln. Es war nicht nur die Tatsache, dass es sich um einen Standard handelte, sondern auch die Tatsache, dass er offen und lizenzfrei war. [2]</li>
+  <li>Wenn HTML nicht frei gewesen wäre, wenn es eine proprietäre Technologie gewesen wäre, dann hätte es das Geschäft mit dem tatsächlichen Verkauf von HTML und den konkurrierenden Produkten JTML, LTML, MTML gegeben… [2]</li>
+</ul>
+<p>Zitat von Tim Berners-Lee, dem Erfinder des World Wide Web: "Ja, wir brauchen Standards, denn das Geld, die Aufregung liegt nicht im Wettbewerb um die Technologie auf dieser Ebene. Die Aufregung liegt in den Unternehmen und den Anwendungen, die man darauf aufbaut." [2]</p>
+
+<h2>Standards in Datensystemen</h2>
+<p>Standards sind auch für die Funktionsweise von Datensystemen entscheidend, aber sie erhalten nicht immer die Anerkennung, die sie im "modernen Datenstapel" verdienen. [3]</p>
+<p>Für Ingenieure mag sich die Begeisterung über die Einführung eines neuen Standards wie etwas anfühlen, das man in eine interne Slack-Nachricht schreibt, anstatt es mit dem Rest der Welt zu teilen. Es ist schwer zu vermitteln, wie gut es sich anfühlt, Tausende von Zeilen Klebecode zu entfernen und durch ein paar API-Aufrufe an eine Standardbibliothek zu ersetzen. [3]</p>
+
+<h2>Erfolgsgeschichten von Standards</h2>
+<p>Hier sind zwei Erfolgsgeschichten von Standards, die von Entwicklern geteilt werden: [3]</p>
+<ul>
+  <li>Streamlit-Entwicklungsteam (2021) wechselte zu Arrow: "In unserem alten Serialisierungsformat stieg mit zunehmender DataFrame-Größe auch die Serialisierungszeit deutlich an… Vergleichen Sie einfach die Leistung unseres alten Formats mit Arrow. Es ist nicht einmal lustig!" [4]</li>
+  <li>Ingenieurteam bei Meta (2023) schrieb in ihrem Artikel "Shared Foundations: Modernizing Meta’s Data Lakehouse": "In den letzten drei Jahren haben wir mit dem Shared Foundations-Projekt einen Generationssprung in der Dateninfrastrukturlandschaft bei Meta vollzogen. Das Ergebnis war: ein modernerer, zusammensetzbarer und konsistenterer Stack, mit weniger Komponenten, reicheren Funktionen, konsistenten Schnittstellen und besserer Leistung für die Benutzer unseres Stacks, insbesondere für maschinelles Lernen und Analytik. Wir haben mehrere große Systeme stillgelegt und Hunderttausende von Codezeilen entfernt, was die Entwicklungsgeschwindigkeit verbessert und den Betriebsaufwand reduziert hat." [5]</p>
+</ul>
+
+<h2>Wann sollte man nach Standards suchen?</h2>
+<p>Zitat der Internationalen Organisation für Normung (ISO): "Wenn die Dinge nicht so funktionieren, wie sie sollten, bedeutet das oft, dass Standards fehlen." [6]</p>
+
+<h2>Vorteile von offenen Standards</h2>
+<p>Im "Composable Data Management System Manifesto" (2023) skizzierte eine Gruppe von Ingenieuren bei Meta, Voltron Data, Databricks und Sundeck die folgenden Vorteile der Entwicklung auf der Grundlage eines Ökosystems offener Standards: [7]</p>
+<ul>
+  <li>Schnellere und produktivere Engineering-Teams – Weniger Doppelarbeit bedeutet mehr Zeit für Innovation. [7]</li>
+  <li>Engere Innovationszyklen – Gezielte Feature-Entwicklung auf einer kleineren Codebasis bedeutet schnellere Releases. [7]</li>
+  <li>Koevolution von Datenbanksoftware und -hardware – Die Vereinheitlichung der Kernschichten bedeutet bessere Leistung und Skalierbarkeit. [7]</li>
+  <li>Bessere Benutzererfahrung – Konsistentere Schnittstellen und Semantik bedeuten eine reibungslosere Benutzererfahrung. [7]</li>
+</ul>
+
+<h2>Warum fliegen Standards unter dem Radar?</h2>
+<p>Es wird vermutet, dass diese Vorteile unsichtbar eintreten - kein neuer Algorithmus, kein glänzendes neues Produkt, keine Pressemitteilung, nur Tausende von Zeilen Klebecode gelöscht und Entwickler, die nachts ruhig schlafen können. Aus diesem Grund kann es schwierig sein, einen guten Standard zu finden. [7]</p>
+
+<h1>Die Mauer und die Maschine: Beschleunigte Hardware</h1>
+
+<h2>Die Herausforderung: Die Mauer</h2>
+<p>Die zunehmende Nutzung von KI/ML-Modellen in Produktionssystemen führt zu einem Engpass in der Datenverarbeitung. Während KI/ML-Engines wie PyTorch und TensorFlow auf GPUs für schnelle Trainingszeiten ausgelegt sind, werden Datenverarbeitungspipelines oft noch auf CPUs ausgeführt, die deutlich langsamer sind. [1]</p>
+<p>Dieser Leistungsunterschied zwischen KI/ML-Systemen und Datenverarbeitungssystemen wird als "Die Mauer" bezeichnet. Sie stellt eine wachsende Kluft dar und begrenzt die Effizienz von Datensystemen. [1, 2]</p>
+<ul>
+  <li>GPUs bleiben ungenutzt, während sie auf Daten warten. [3, 4]</li>
+  <li>Die Optimierung der Systemleistung wird zu einem komplexen Problem, da Engpässe an verschiedenen Stellen auftreten. [5]</li>
+  <li>Der Stromverbrauch für Speicher und Datenvorverarbeitung übersteigt den der eigentlichen GPU-Trainer. [6, 7]</li>
+</ul>
+
+<h2>Die Lösung: Die Maschine</h2>
+<p>Um "Die Mauer" zu überwinden, wird ein ganzheitlicher Ansatz benötigt, der die gesamte Systemarchitektur beschleunigt - von der Berechnung über den Speicher bis hin zur Netzwerkverbindung. [8, 9]</p>
+<h3>Komponenten der Maschine:</h3>
+<ul>
+  <li>**Ein zusammensetzbarer Motor:** Dieser Motor kann verschiedene Berechnungsbibliotheken verwenden, um mit unterschiedlicher Hardware zu kommunizieren. [9, 10]</li>
+  <li>**Beschleunigte Software und Hardware:**  Hierbei handelt es sich um Berechnungsbibliotheken, die den Motor auf beschleunigter Hardware ausführen. [9, 11]</li>
+  <li>**Ein beschleunigernatives System:** Dieses System ist so konzipiert, dass es die Beschleunigung auf Systemebene von der Berechnung über den Speicher bis hin zur Netzwerkverbindung und zum Speicher unterstützt. [9, 12]</li>
+</ul>
+
+<h2>Prinzipien der Maschine</h2>
+<p>Die Maschine basiert auf drei Kernprinzipien, um eine effiziente Datenverarbeitung zu ermöglichen: [13]</p>
+<ul>
+  <li>**Intelligenter arbeiten:**  Einsatz von heterogener Berechnung, d.h. die Verwendung unterschiedlicher Hardware für verschiedene Aufgaben. [13, 14]</li>
+  <li>**Weniger bewegen:**  Gemeinsamer Speicher für alle Komponenten, um Datenkopien zu vermeiden. [13, 15]</li>
+  <li>**Schneller bewegen:**  Schnelle Datenübertragung durch hohe Speicherbandbreite und beschleunigte Netzwerkverbindungen. [13, 16]</li>
+</ul>
+
+<h2>Standards für eine sichere Zukunft</h2>
+<p>Offene Standards wie Arrow und Substrait spielen eine wichtige Rolle bei der Entwicklung von beschleunigten Datensystemen. [17-19]</p>
+<ul>
+  <li>**Arrow** bietet ein standardisiertes In-Memory-Datenformat, das den Datenaustausch zwischen verschiedenen Komponenten vereinfacht. [19]</li>
+  <li>**Substrait** definiert eine standardisierte Abfragesprache, die die Portabilität von Abfragen zwischen verschiedenen Engines ermöglicht. [19, 20]</li>
+</ul>
+<p>Durch die Verwendung dieser Standards können neue Hardwareplattformen leichter in bestehende Softwaresysteme integriert werden, was die Innovation und Weiterentwicklung von Datensystemen fördert. [20, 21]</p>
+
+<h2>Fazit</h2>
+<p>Die "Mauer" stellt eine Herausforderung für moderne Datensysteme dar, aber die "Maschine", die auf offenen Standards, beschleunigter Hardware und einem ganzheitlichen Systemansatz basiert, bietet eine vielversprechende Lösung. Durch die Überwindung dieser Herausforderungen können wir die Leistungsfähigkeit von KI/ML-Modellen voll ausschöpfen und die Effizienz von Datensystemen steigern. [22]</p>

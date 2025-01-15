@@ -278,6 +278,12 @@ home: &r
                   - t:  Instacart
                     ts:  Instacart
                     url: /home/lv/adbkt/a/insta/insta.pdf
+                  - t:  zzz01
+                    ts:  zzz01
+                    url: /home/lv/adbkt/vorlesungen/zzz01.html
+                  - t:  zzz02
+                    ts:  zzz02
+                    url: /home/lv/adbkt/vorlesungen/zzz02.html
               - t: ADBKT - Übungen
                 ts: ADBKT - Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
