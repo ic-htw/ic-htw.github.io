@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- This Free AI Coder Can Generate Apps in Seconds
+[(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)
+
+- You are an absolute moron for believing in the hype of “AI Agents”.
+[(link)](https://medium.com/@austin-starks/you-are-an-absolute-moron-for-believing-in-the-hype-of-ai-agents-c0f760e7e48e)
+
 - Reducing Hallucinations in Text-to-SQL: Building Trust and Accuracy in Data Access
 [(link)](https://medium.com/wrenai/reducing-hallucinations-in-text-to-sql-building-trust-and-accuracy-in-data-access-176ac636e208)
 
