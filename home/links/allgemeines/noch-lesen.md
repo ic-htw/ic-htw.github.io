@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building RAG Research Multi-Agent with LangGraph
+[(link)](https://medium.com/@nicoladisabato_19197/building-rag-research-multi-agent-with-langgraph-1bd47acac69f)
+
+- Google Pipe Syntax: Modernizing SQL Without Sacrificing its Strengths
+[(link)](https://medium.com/google-cloud/google-pipe-syntax-modernizing-sql-without-sacrificing-its-strengths-78b6e8177648)
+
+- A not-so-good idea: Pipe Syntax In SQL
+[(link)](https://www.linkedin.com/pulse/not-so-good-idea-pipe-syntax-sql-franck-pachot-dx6he)
+
+- Posrgres - don't use this
+[(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
+
+- Anatomy of Table-Level Locks in PostgreSQL
+[(link)](https://xata.io/blog/anatomy-of-locks)
+
 - This Free AI Coder Can Generate Apps in Seconds
 [(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)
 
