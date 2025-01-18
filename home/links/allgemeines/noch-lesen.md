@@ -9,20 +9,14 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Building RAG Research Multi-Agent with LangGraph
-[(link)](https://medium.com/@nicoladisabato_19197/building-rag-research-multi-agent-with-langgraph-1bd47acac69f)
+- Roo Cline
+[(link)](https://github.com/RooVetGit/Roo-Cline?tab=readme-ov-file#roo-cline)
 
-- Google Pipe Syntax: Modernizing SQL Without Sacrificing its Strengths
-[(link)](https://medium.com/google-cloud/google-pipe-syntax-modernizing-sql-without-sacrificing-its-strengths-78b6e8177648)
+- Creating a Research Agent with AutoGen and Panel UI
+[(link)](https://generativeai.pub/creating-a-research-agent-with-autogen-and-panel-ui-7386ebf76fd9)
 
-- A not-so-good idea: Pipe Syntax In SQL
-[(link)](https://www.linkedin.com/pulse/not-so-good-idea-pipe-syntax-sql-franck-pachot-dx6he)
-
-- Posrgres - don't use this
-[(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
-
-- Anatomy of Table-Level Locks in PostgreSQL
-[(link)](https://xata.io/blog/anatomy-of-locks)
+- Create AI Agent CRUD Application with PydanticAI: Step by Step
+[(link)](https://skolo-online.medium.com/create-ai-agent-crud-application-with-pydanticai-step-by-step-524f36aba381)
 
 - This Free AI Coder Can Generate Apps in Seconds
 [(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)

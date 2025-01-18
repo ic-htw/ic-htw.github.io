@@ -31,6 +31,10 @@ is_slide: 0
 - VeRA: Vector-based Random Matrix Adaptation
 
 
+# agents
+- Building RAG Research Multi-Agent with LangGraph
+[(link)](https://medium.com/@nicoladisabato_19197/building-rag-research-multi-agent-with-langgraph-1bd47acac69f)
+
 
 
 

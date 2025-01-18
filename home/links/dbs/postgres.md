@@ -24,6 +24,9 @@ is_slide: 0
 [(link)](https://github.com/docker-library/docs/blob/master/postgres/README.md)
 - pgHero
 [(link)](https://github.com/ankane/pghero)
+- Postrgres - don't use this
+[(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
+
 
 # monitoring/configuration
 - Custom SQL Queries in Grafana for PostgreSQL Insights
@@ -199,6 +202,9 @@ is_slide: 0
 [(link)](https://franckpachot.medium.com/transaction-management-in-postgresql-and-what-is-different-from-oracle-eeae34675a77)
 - How to check the number of transactions per second (TPS) for the given PostgreSQL DB instance?
 [(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
+- Anatomy of Table-Level Locks in PostgreSQL
+[(link)](https://xata.io/blog/anatomy-of-locks)
+
 
 
 # misc

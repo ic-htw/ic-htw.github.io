@@ -22,6 +22,12 @@ is_slide: 0
 [(link)](https://aiven.io/developer/sql-query-optimization-guide)
 
 
+# sql - neue syntax
+- Google Pipe Syntax: Modernizing SQL Without Sacrificing its Strengths
+[(link)](https://medium.com/google-cloud/google-pipe-syntax-modernizing-sql-without-sacrificing-its-strengths-78b6e8177648)
+- A not-so-good idea: Pipe Syntax In SQL
+[(link)](https://www.linkedin.com/pulse/not-so-good-idea-pipe-syntax-sql-franck-pachot-dx6he)
+
 
 
 
