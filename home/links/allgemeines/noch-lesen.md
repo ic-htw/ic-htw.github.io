@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Crawl4AI git
+[(link)](https://github.com/unclecode/crawl4ai)
+
+- A Python Module I Wish I Knew Earlier: Functools for Optimal Performance
+[(link)](https://levelup.gitconnected.com/a-python-module-i-wish-i-knew-earlier-functools-for-optimal-performance-e5132571a29a)
+
+- Python ETL Framework Bonobo
+[(link)](https://medium.com/@tubelwj/python-etl-framework-bonobo-efficiently-perform-data-extraction-and-transformation-989f227571d1)
+
+- dateparser – python parser for human readable dates
+[(link)](https://dateparser.readthedocs.io/en/latest/)
+
 - Roo Cline
 [(link)](https://github.com/RooVetGit/Roo-Cline?tab=readme-ov-file#roo-cline)
 
