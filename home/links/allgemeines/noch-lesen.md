@@ -9,80 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Crawl4AI git
-[(link)](https://github.com/unclecode/crawl4ai)
+- My GPT-evaluator got 1000% better with this simple trick.
+[(link)](https://ai.gopubby.com/my-gpt-evaluator-performance-improved-by-1000-with-this-simple-trick-2384027734c6)
 
-- A Python Module I Wish I Knew Earlier: Functools for Optimal Performance
-[(link)](https://levelup.gitconnected.com/a-python-module-i-wish-i-knew-earlier-functools-for-optimal-performance-e5132571a29a)
+- Pandas vs Polars: Is learning Polars worth the performance boost?
+[(link)](https://medium.com/codex/pandas-vs-polars-is-learning-polars-worth-the-performance-boost-c920a118619b)
 
-- Python ETL Framework Bonobo
-[(link)](https://medium.com/@tubelwj/python-etl-framework-bonobo-efficiently-perform-data-extraction-and-transformation-989f227571d1)
-
-- dateparser – python parser for human readable dates
-[(link)](https://dateparser.readthedocs.io/en/latest/)
-
-- Roo Cline
-[(link)](https://github.com/RooVetGit/Roo-Cline?tab=readme-ov-file#roo-cline)
-
-- Creating a Research Agent with AutoGen and Panel UI
-[(link)](https://generativeai.pub/creating-a-research-agent-with-autogen-and-panel-ui-7386ebf76fd9)
-
-- Create AI Agent CRUD Application with PydanticAI: Step by Step
-[(link)](https://skolo-online.medium.com/create-ai-agent-crud-application-with-pydanticai-step-by-step-524f36aba381)
-
-- This Free AI Coder Can Generate Apps in Seconds
-[(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)
-
-- You are an absolute moron for believing in the hype of “AI Agents”.
-[(link)](https://medium.com/@austin-starks/you-are-an-absolute-moron-for-believing-in-the-hype-of-ai-agents-c0f760e7e48e)
-
-- Reducing Hallucinations in Text-to-SQL: Building Trust and Accuracy in Data Access
-[(link)](https://medium.com/wrenai/reducing-hallucinations-in-text-to-sql-building-trust-and-accuracy-in-data-access-176ac636e208)
-
-- Python in Microsoft Fabric: Data Factory vs Polars and DuckDB
-[(link)](https://medium.com/@mariusz_kujawski/python-in-microsoft-fabric-data-factory-vs-polars-and-duckdb-06dc4383475b)
-
-- Bolt DIY doc
-[(link)](https://stackblitz-labs.github.io/bolt.diy/)
-
-- Bolt DIY git
-[(link)](https://github.com/stackblitz-labs/bolt.diy)
-
-- Introducing Gemini 2.0
-[(link)](https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/#ceo-message)
-
-- OrbStack
-[(link)](https://orbstack.dev/)
-
-- 50 Python Shortcuts Only Advanced Developers Know
-[(link)](https://python.plainenglish.io/50-python-shortcuts-only-advanced-developers-know-1474a4bf0094)
-
-- How Uber is Saving 140,000 Hours Each Month Using Text-to-SQL 
-[(link)](https://medium.com/wrenai/how-uber-is-saving-140-000-hours-each-month-using-text-to-sql-and-how-you-can-harness-the-same-fb4818ae4ea3)
-
-- How Jupyter Agent Blew My Mind. 
-[(link)](https://ai.gopubby.com/how-jupyter-agent-blew-my-mind-the-ai-revolution-you-didnt-see-coming-aaec7601277d)
-
-- Why HuggingFace and Kaggle Win with AI — And What You’re Missing
-[(link)](https://ai.gopubby.com/millions-invested-yet-no-ai-results-uncovering-the-missing-link-between-data-readiness-and-real-135b857ec8b2)
-
-- Agentic RAG Series: Exploring LangGraph for Advanced Workflows
-[(link)](https://generativeai.pub/agentic-rag-series-exploring-langgraph-for-advanced-workflows-60152c017795)
-
-- Evaluation-Driven Development for agentic applications using PydanticAI
-[(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
-
-- Recursive Query vs Closure Table vs Graph Database: A Complete Guide from My POV
-[(link)](https://blog.getdatascale.com/recursive-query-vs-closure-table-vs-graph-database-a-complete-guide-from-my-pov-2a8dd794b733)
-
-- Advanced Prompt Engineering: Chain of Thought (CoT)
-[(link)](https://towardsdatascience.com/advanced-prompt-engineering-chain-of-thought-cot-8d8b090bf699)
+- Jupyter Agent: Revolutionizing Data Analysis with LLMs
+[(link)](https://medium.com/@mauryaanoop3/jupyter-agent-revolutionizing-data-analysis-with-llms-d0cbc636cf89)
 
 - We might not fully understand the column store!
 [(link)](https://blog.det.life/we-might-not-fully-understand-the-column-store-977d30391446)
-
-- Intelligible advanced SQL queries with pipe syntax
-[(link)](https://medium.com/google-cloud/intelligible-advanced-sql-queries-with-pipe-syntax-86d3a431b660)
 
 - Combining FastAPI, PostgreSQL, and Leaflet — GIS Tutorial
 [(link)](https://levelup.gitconnected.com/combining-fastapi-postgresql-and-leaflet-gis-tutorial-597e6a8ed028)
@@ -621,9 +558,6 @@ Postgres Type Explorer
 - Building an AI Text-to-Video Model from Scratch Using Python
 [(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
 
-- GLiNER: A Zero-Shot NER that outperforms ChatGPT and traditional NER models
-[(link)](https://netraneupane.medium.com/gliner-zero-shot-ner-outperforming-chatgpt-and-traditional-ner-models-1f4aae0f9eef)
-
 - 3 Best Practices For Using AI To Query Your Database
 [(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
 
@@ -642,9 +576,6 @@ Postgres Type Explorer
 
 - Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
 [(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
-
-- Real-Time Twitch Chat Sentiment Analysis with Apache Flink
-[(link)](https://towardsdatascience.com/real-time-twitch-chat-sentiment-analysis-with-apache-flink-e165ac1a8dcf)
 
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)

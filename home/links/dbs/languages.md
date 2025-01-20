@@ -27,6 +27,9 @@ is_slide: 0
 [(link)](https://medium.com/google-cloud/google-pipe-syntax-modernizing-sql-without-sacrificing-its-strengths-78b6e8177648)
 - A not-so-good idea: Pipe Syntax In SQL
 [(link)](https://www.linkedin.com/pulse/not-so-good-idea-pipe-syntax-sql-franck-pachot-dx6he)
+- Intelligible advanced SQL queries with pipe syntax
+[(link)](https://medium.com/google-cloud/intelligible-advanced-sql-queries-with-pipe-syntax-86d3a431b660)
+
 
 
 

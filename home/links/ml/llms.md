@@ -34,11 +34,39 @@ is_slide: 0
 # agents
 - Building RAG Research Multi-Agent with LangGraph
 [(link)](https://medium.com/@nicoladisabato_19197/building-rag-research-multi-agent-with-langgraph-1bd47acac69f)
+- Creating a Research Agent with AutoGen and Panel UI
+[(link)](https://generativeai.pub/creating-a-research-agent-with-autogen-and-panel-ui-7386ebf76fd9)
+- Create AI Agent CRUD Application with PydanticAI: Step by Step
+[(link)](https://skolo-online.medium.com/create-ai-agent-crud-application-with-pydanticai-step-by-step-524f36aba381)
+- Agentic RAG Series: Exploring LangGraph for Advanced Workflows
+[(link)](https://generativeai.pub/agentic-rag-series-exploring-langgraph-for-advanced-workflows-60152c017795)
+- Evaluation-Driven Development for agentic applications using PydanticAI
+[(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
+
+
+
+# coding
+- Roo Cline
+[(link)](https://github.com/RooVetGit/Roo-Cline?tab=readme-ov-file#roo-cline)
+- This Free AI Coder Can Generate Apps in Seconds
+[(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)
+- Bolt DIY doc
+[(link)](https://stackblitz-labs.github.io/bolt.diy/)
+- Bolt DIY git
+[(link)](https://github.com/stackblitz-labs/bolt.diy)
+
+
+# cot
+- Advanced Prompt Engineering: Chain of Thought (CoT)
+[(link)](https://towardsdatascience.com/advanced-prompt-engineering-chain-of-thought-cot-8d8b090bf699)
+
 
 
 
 
 # divers
+- Crawl4AI git
+[(link)](https://github.com/unclecode/crawl4ai)
 - AI-Powered Information Extraction and Matchmaking
 [(link)](https://towardsdatascience.com/ai-powered-information-extraction-and-matchmaking-0408c93ec1b9)
 - The 6 Best LLM Tools To Run Models Locally

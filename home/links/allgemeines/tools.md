@@ -306,6 +306,10 @@ is_slide: 0
 - Docker Images
 [(link)](https://hub.docker.com/r/nvidia/cuda/)
 
+# orbstack
+- home
+[(link)](https://orbstack.dev/)
+
 # PowerShell
 - PowerShell Doku
 [(link)](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4)

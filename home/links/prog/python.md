@@ -58,6 +58,11 @@ is_slide: 0
 - Ruff
 [(link)](https://docs.astral.sh/ruff/)
 
+# etl
+- Python ETL Framework Bonobo
+[(link)](https://medium.com/@tubelwj/python-etl-framework-bonobo-efficiently-perform-data-extraction-and-transformation-989f227571d1)
+
+
 # FastHTML
 - FastHTML
 [(link)](https://www.fastht.ml/)
@@ -67,6 +72,8 @@ is_slide: 0
 
 
 # Libs
+- dateparser – python parser for human readable dates
+[(link)](https://dateparser.readthedocs.io/en/latest/)
 - more-itertools
 [(link)](https://more-itertools.readthedocs.io/en/stable/toctree.html)
 - Plumbum: Shell Combinators and More
