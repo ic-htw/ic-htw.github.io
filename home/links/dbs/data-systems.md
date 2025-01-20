@@ -34,6 +34,12 @@ is_slide: 0
 [(link)](https://wasit7.medium.com/apache-arrow-flight-as-a-data-catalog-3f193e0cad8a)
 - optd - Apache Arrow Datafusion
 [(link)](https://github.com/cmu-db/optd)
+- I spent 6 hours learning Apache Arrow: Overview
+[(link)](https://blog.det.life/i-spent-6-hours-learning-apache-arrow-overview-e7f3b8ee85b2)
+- ADBC: The Future of Database Connectivity
+[(link)](https://medium.com/@thibaut_gourdel/adbc-the-future-of-database-connectivity-4784c03637e8)
+
+
 
 # apache datafusion
 - home 
@@ -75,6 +81,11 @@ is_slide: 0
 [(link)](https://blog.det.life/i-spent-3-hours-learning-the-overview-of-clickhouse-15377361d646)
 - I spent 8 hours understanding ClickHouse Architecture
 [(link)](https://levelup.gitconnected.com/clickhouse-architecture-the-formula-for-blazing-speed-d719e9b9d1c8)
+- I spent 5 hours learning how ClickHouse built their internal data warehouse
+[(link)](https://blog.det.life/i-spent-5-hours-learning-how-clickhouse-built-their-internal-data-warehouse-a7adad358c5d)
+- Hash tables in ClickHouse and C++ Zero-cost Abstractions
+[(link)](https://clickhouse.com/blog/hash-tables-in-clickhouse-and-zero-cost-abstractions)
+
 
 
 
@@ -342,6 +353,11 @@ is_slide: 0
 - ScyllaDB’s Path to Strong Consistency
 [(link)](https://scylladb.medium.com/scylladbs-path-to-strong-consistency-a-new-milestone-3f9f7a18bae7)
         
+# snowflake
+- I spent 8 hours diving deep into Snowflake (again)
+[(link)](https://blog.det.life/i-spent-8-hours-diving-deep-into-snowflake-again-ccbe46f07176)
+
+
 
 # sqlite
 - SQLite compiled to JavaScript

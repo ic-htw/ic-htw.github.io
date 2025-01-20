@@ -15,6 +15,9 @@ is_slide: 0
 [(link)](https://medium.com/@kywe665/delta-hudi-iceberg-a-benchmark-compilation-a5630c69cffc)
 - Data lake Table formats : Apache Iceberg vs Apache Hudi vs Delta lake
 [(link)](https://shashwat-pandey.medium.com/data-lake-table-formats-apache-iceberg-vs-apache-hudi-vs-delta-lake-10b67a1d587)
+- The History and Evolution of Open Table Formats
+[(link)](https://alirezasadeghi1.medium.com/the-history-and-evolution-of-open-table-formats-0f1b9ea10e1e)
+
 
 
 
@@ -44,6 +47,15 @@ is_slide: 0
 [(link)](https://alexmercedcoder.medium.com/apache-iceberg-git-like-catalog-versioning-and-data-lakehouse-management-pillars-of-a-robust-8aaf93000e9a)
 - I spent 4 hours learning Apache Iceberg. Here’s what I found.
 [(link)](https://blog.det.life/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84)
+- Apache Iceberg Won the Future — What’s Next for 2025?
+[(link)](https://blog.det.life/apache-iceberg-won-the-future-whats-next-for-2025-731635bfcb7a)
+- Apache Iceberg Topics: Stream directly into your data lake
+[(link)](https://redpanda-data.medium.com/apache-iceberg-topics-stream-directly-into-your-data-lake-0250a8dfdd76)
+- Apache Iceberg: Built for Big Data, Not Ready for Small(?)
+[(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
+
+
+
 
 
 

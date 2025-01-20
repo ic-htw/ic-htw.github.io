@@ -42,6 +42,9 @@ is_slide: 0
 [(link)](https://generativeai.pub/agentic-rag-series-exploring-langgraph-for-advanced-workflows-60152c017795)
 - Evaluation-Driven Development for agentic applications using PydanticAI
 [(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
+- Financial Analysis: Multi-Agent with Open Source LLMs Using CrewAI and Ollama Models
+[(link)](https://generativeai.pub/financial-analysis-multi-agent-with-open-source-llms-using-crewai-and-ollama-models-9f20076f8995)
+
 
 
 
@@ -203,6 +206,9 @@ is_slide: 0
 [(link)](https://blog.det.life/your-machine-your-ai-the-ultimate-local-productivity-stack-with-ollama-7a118f271479)
 - Building an Advanced RAG Pipeline Using Docling, Groq, Ollama with GLIDER Evaluation
 [(link)](https://medium.com/the-ai-forum/building-an-advanced-rag-pipeline-using-docling-groq-ollama-with-glider-evaluation-b91c290b0c84)
+- Ollama’s New Vision Model Support: A Comprehensive Guide
+[(link)](https://ai.plainenglish.io/ollamas-new-vision-model-support-a-comprehensive-guide-ba1da6c4f45b)
+
 
 
 
@@ -220,9 +226,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag
+- Build an LLM RAG Chatbot With LangChain
+[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
 - A Deep Dive into Retrieval-Augmented Generation (RAG) with HyDE
 [(link)](https://generativeai.pub/a-deep-dive-into-retrieval-augmented-generation-rag-with-hyde-how-to-enhance-your-ais-response-4d7ac0b8c200)
-
 - Build an Agentic RAG using HuggingFace Transformers Agent
 [(link)](https://medium.com/the-ai-forum/build-an-agentic-rag-using-huggingface-transformer-agent-ec741f09ddcc)
 - Using RAG Architecture to query databases, export to Google Sheets, and visualize in Looker Studio.

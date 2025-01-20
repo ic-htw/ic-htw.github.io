@@ -98,6 +98,10 @@ is_slide: 0
 [(link)](https://medium.com/@yurexus/can-postgresql-with-its-jsonb-column-type-replace-mongodb-30dc7feffaf3)
 - JSON in PostgreSQL: The Ultimate Guide
 [(link)](https://www.databasestar.com/postgresql-json/)
+- Convert JSON into Columns and Rows with JSON_TABLE
+[(link)](https://www.crunchydata.com/blog/easily-convert-json-into-columns-and-rows-with-json_table)
+- SQL/JSON is here
+[(link)](https://www.depesz.com/2024/10/11/sql-json-is-here-kinda-waiting-for-pg-17/)
 
 
 
@@ -128,6 +132,10 @@ is_slide: 0
 
 
 # extensions / tools
+- pg_duckdb
+[(link)](https://motherduck.com/blog/pgduckdb-beta-release-duckdb-postgres/)
+- pg_duckdb git
+[(link)](https://github.com/duckdb/pg_duckdb?tab=readme-ov-file)
 - pg_statviz
 [(link)](https://github.com/vyruss/pg_statviz)
 - PGXN: PostgreSQL Extension Network
@@ -204,10 +212,15 @@ is_slide: 0
 [(link)](https://blog.devgenius.io/how-to-check-the-number-of-transactions-per-second-tps-for-the-given-postgresql-db-instance-da811d99aef1)
 - Anatomy of Table-Level Locks in PostgreSQL
 [(link)](https://xata.io/blog/anatomy-of-locks)
+- Serializable Snapshot Isolation (SSI) in PostgreSQL
+[(link)](https://wiki.postgresql.org/wiki/SSI)
+
 
 
 
 # misc
+- Postgres Type Explorer
+[(link)](https://masteringpostgres.com/types)
 - End to end ELT process example for DW using Postgres.
 [(link)](https://blog.devgenius.io/end-to-end-elt-process-example-for-dw-using-postgres-4d1a8cefd7e3)
 - Could GROUP-BY clause reordering improve performance?

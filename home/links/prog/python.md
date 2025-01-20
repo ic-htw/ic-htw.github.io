@@ -19,6 +19,8 @@ is_slide: 0
 
 
 # Allgemein
+- The Python Packaging Hell
+[(link)](https://www.courtbouillon.org/blog/00011-the-python-packaging-hell-the-can-of-worms/)
 - Cheat Sheet
 [(link)](https://github.com/gto76/python-cheatsheet)
 - An A-Z of useful Python tricks
@@ -61,6 +63,9 @@ is_slide: 0
 # etl
 - Python ETL Framework Bonobo
 [(link)](https://medium.com/@tubelwj/python-etl-framework-bonobo-efficiently-perform-data-extraction-and-transformation-989f227571d1)
+- amphi - Visual Data Transformation based on Python 
+[(link)](https://github.com/amphi-ai/amphi-etl)
+
 
 
 # FastHTML

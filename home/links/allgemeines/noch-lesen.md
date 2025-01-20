@@ -9,6 +9,69 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Langchain vs Haystack
+[(link)](https://medium.com/@amit25173/langchain-vs-haystack-7fa0faa901cd)
+
+- Choosing Between LLM Agent Frameworks
+[(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
+
+- LangGraph Studio: Visualizing and Testing AI Agents with LangChain
+[(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
+
+- Top 10 RAG Frameworks Github Repos 2024
+[(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
+
+- Create a custom AI assistant to auto-generate SQL queries
+[(link)](https://medium.com/low-code-for-advanced-data-science/create-a-custom-ai-assistant-to-auto-generate-sql-queries-fa1432e75ad0)
+
+- The problem of text-to-SQL
+[(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
+
+- Introducing the Pydantic Library
+[(link)](https://medium.com/@thomas_reid/793c7b07ef09)
+
+- LlamaCoder
+[(link)](https://llamacoder.together.ai/)
+
+- OCR with Phi-3-Vision: Revolutionizing Document Processing
+[(link)](https://bhavikjikadara.medium.com/ocr-with-phi-3-vision-revolutionizing-document-processing-81489b35d78f)
+
+- How We Built a Content Recommendation System With Pgai and Pgvectorscale 
+[(link)](https://www.timescale.com/blog/how-we-built-a-content-recommendation-system-with-pgai-and-pgvectorscale/)
+
+- SQL Applications using LlamaIndex 
+[(link)](https://medium.com/@avikumart_/building-natural-language-to-sql-applications-using-llamaindex-39280e90d52f)
+
+- Step-by-Step Guide to Creating Your Own Large Language Model
+[(link)](https://medium.com/sciforce/step-by-step-guide-to-your-own-large-language-model-2b3fed6422d0)
+
+- LLM Finetuning Strategies
+[(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
+
+- A Visual Exploration of Semantic Text Chunking
+[(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
+
+- The Best NVIDIA GPUs for LLM Inference: A Comprehensive Guide
+[(link)](https://medium.com/@mahernaija/the-best-nvidia-gpus-for-llm-inference-a-comprehensive-guide-e093c9d914e5)
+
+- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
+[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
+
+- Text2SQL is Not Enough: Unifying AI and Databases with TAG
+[(link)](https://github.com/TAG-Research/TAG-Bench)
+
+- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
+[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
+
+- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
+[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
+
+- RAG LLM Best Practices
+[(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
+
+- Agentic AI: Build a Tech Research Agent
+[(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
+
 - My GPT-evaluator got 1000% better with this simple trick.
 [(link)](https://ai.gopubby.com/my-gpt-evaluator-performance-improved-by-1000-with-this-simple-trick-2384027734c6)
 
@@ -18,56 +81,11 @@ is_slide: 0
 - Jupyter Agent: Revolutionizing Data Analysis with LLMs
 [(link)](https://medium.com/@mauryaanoop3/jupyter-agent-revolutionizing-data-analysis-with-llms-d0cbc636cf89)
 
-- We might not fully understand the column store!
-[(link)](https://blog.det.life/we-might-not-fully-understand-the-column-store-977d30391446)
-
 - Combining FastAPI, PostgreSQL, and Leaflet — GIS Tutorial
 [(link)](https://levelup.gitconnected.com/combining-fastapi-postgresql-and-leaflet-gis-tutorial-597e6a8ed028)
 
-- Smarter Postgres LLM with Retrieval Augmented Generation
-[(link)](https://www.crunchydata.com/blog/smarter-postgres-llm-with-retrieval-augmented-generation)
-
-- pgai 
-[(link)](https://github.com/timescale/pgai)
-
-- Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
-[(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
-
-- Ollama’s New Vision Model Support: A Comprehensive Guide
-[(link)](https://ai.plainenglish.io/ollamas-new-vision-model-support-a-comprehensive-guide-ba1da6c4f45b)
-
-- Apache Iceberg Won the Future — What’s Next for 2025?
-[(link)](https://blog.det.life/apache-iceberg-won-the-future-whats-next-for-2025-731635bfcb7a)
-
 - Stop Wasting Time in Excel: Let Python Do the Work
 [(link)](https://python.plainenglish.io/stop-wasting-time-in-excel-let-python-do-the-work-4bdba1700f86)
-
-- 7 Must-Have JupyterLab Extensions for Data Practitioners in 2024
-[(link)](https://medium.com/@thibaut_gourdel/my-favorite-jupyterlab-extensions-in-2024-ecf84f85f4fc)
-
-- Dear IT Departments, Please Stop Trying To Build Your Own RAG
-[(link)](https://pub.towardsai.net/dear-it-departments-please-stop-trying-to-build-your-own-rag-4546b4638273)
-
-- The History and Evolution of Open Table Formats
-[(link)](https://alirezasadeghi1.medium.com/the-history-and-evolution-of-open-table-formats-0f1b9ea10e1e)
-
-- Git Like a Pro: 6 Advanced Commands with Step-by-Step Examples
-[(link)](https://levelup.gitconnected.com/6-key-advanced-git-commands-for-developers-with-examples-cedb26859b8e)
-
-- Building a Modern Data Service Layer with Apache Arrow
-[(link)](https://medium.com/gooddata-developers/building-a-modern-data-service-layer-with-apache-arrow-33ace768e3f1)
-
-- Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks
-[(link)](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/)
-
-- Openai Swarm
-[(link)](https://github.com/openai/swarm)
-
-- Exploring OpenAI’s Swarm: An experimental framework for multi-agent systems
-[(link)](https://medium.com/@michael_79773/exploring-openais-swarm-an-experimental-framework-for-multi-agent-systems-5ba09964ca18)
-
-- How OpenAI Swarm Enhances Multi-Agent Collaboration?
-[(link)](https://www.analyticsvidhya.com/blog/2024/10/openai-swarm/)
 
 - Unlock Custom Quantization for Hugging Face Models Locally with Ollama
 [(link)](https://pub.towardsai.net/unlock-custom-quantization-for-hugging-face-models-locally-with-ollama-eb34166ced6a)
@@ -75,47 +93,11 @@ is_slide: 0
 - Python Mako
 [(link)](https://medium.com/@marcnealer/python-mako-daaa40ad9b91)
 
-- Build an LLM RAG Chatbot With LangChain
-[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
-
-- Building Effective Dashboards
-[(link)](https://medium.com/@nydas/building-effective-dashboards-de81c3c45aeb)
-
-- Amazon Aurora PostgreSQL Limitless Database is now generally available
-[(link)](https://aws.amazon.com/de/blogs/aws/amazon-aurora-postgresql-limitless-database-is-now-generally-available/)
-
-- Vector Databases Are the Wrong Abstraction 
-[(link)](https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction/)
-
-- Fastest Open-Source Databases
-[(link)](https://datasystemreviews.com/fastest-open-source-databases.html)
-
-- SQL with Measures: A Context-aware Calculations to Tables
-[(link)](https://blog.getdatascale.com/sql-with-measures-a-context-aware-calculations-to-tables-ea1429111b54)
-
-- I spent 5 hours learning how ClickHouse built their internal data warehouse
-[(link)](https://blog.det.life/i-spent-5-hours-learning-how-clickhouse-built-their-internal-data-warehouse-a7adad358c5d)
-
-Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-3 Vision, Transformers
-[(link)](https://generativeai.pub/building-a-free-open-source-invoice-fraud-detection-system-with-ai-using-phi-3-vision-2ef7c8c0ef8f)
-
-- Financial Analysis: Multi-Agent with Open Source LLMs Using CrewAI and Ollama Models
-[(link)](https://generativeai.pub/financial-analysis-multi-agent-with-open-source-llms-using-crewai-and-ollama-models-9f20076f8995)
-
 - Python Memory Management: Best Practices for Performance
 [(link)](https://blog.devgenius.io/python-memory-management-best-practices-for-performance-53fa39c4e1a4)
 
-- pg_duckdb
-[(link)](https://motherduck.com/blog/pgduckdb-beta-release-duckdb-postgres/)
-
-- pg_duckdb git
-[(link)](https://github.com/duckdb/pg_duckdb?tab=readme-ov-file)
-
 - Parquet pruning in DataFusion
 [(link)](https://blog.haoxp.xyz/posts/parquet-to-arrow/)
-
-- Hash tables in ClickHouse and C++ Zero-cost Abstractions
-[(link)](https://clickhouse.com/blog/hash-tables-in-clickhouse-and-zero-cost-abstractions)
 
 - From query to plot: Exploring GeoParquet Overture Maps with Ibis, DuckDB, and Lonboard
 [(link)](https://ibis-project.org/posts/ibis-overturemaps/)
@@ -126,20 +108,8 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 - FlockMTL is a DuckDB extension that integrates language model (LLM)
 [(link)](https://github.com/dsg-polymtl/duckdb-flockmtl)
 
-- DuckPGQ documentation
-[(link)](https://duckpgq.notion.site/b8ac652667964f958bfada1c3e53f1bb?v=3b47a8d44bdf4e0c8b503bf23f1b76f2)
-
 - DuckERD CLI
 [(link)](https://github.com/tobilg/duckerd)
-
-- Top 10 RAG Frameworks Github Repos 2024
-[(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
-
-- I spent 6 hours learning Apache Arrow: Overview
-[(link)](https://blog.det.life/i-spent-6-hours-learning-apache-arrow-overview-e7f3b8ee85b2)
-
-- Create a custom AI assistant to auto-generate SQL queries
-[(link)](https://medium.com/low-code-for-advanced-data-science/create-a-custom-ai-assistant-to-auto-generate-sql-queries-fa1432e75ad0)
 
 - Enhance your AI/ML applications with flexible Bring Your Own Model options
 [(link)](https://blogs.oracle.com/database/post/enhance-your-ai-ml-apps-with-flexible-byom-options-dbi?elq_mid=259746)
@@ -156,32 +126,11 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 - Building a High-Performance Data Pipeline Using DuckDB
 [(link)](https://alirezasadeghi1.medium.com/building-a-high-performance-data-pipeline-using-duckdb-829e01eec5f3)
 
-- The problem of text-to-SQL
-[(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
-
-- Introducing the Pydantic Library
-[(link)](https://medium.com/@thomas_reid/793c7b07ef09)
-
-- Apache Iceberg Topics: Stream directly into your data lake
-[(link)](https://redpanda-data.medium.com/apache-iceberg-topics-stream-directly-into-your-data-lake-0250a8dfdd76)
-
-- LlamaCoder
-[(link)](https://llamacoder.together.ai/)
-
 - Why PyMuPDF4LLM is the Best Tool for Extracting Data from PDFs
 [(link)](https://python.plainenglish.io/why-pymupdf4llm-is-the-best-tool-for-extracting-data-from-pdfs-even-if-you-didnt-know-you-needed-7bff75313691)
 
 - This is How I Use Swagger to Design REST APIs Before Starting the Development
 [(link)](https://levelup.gitconnected.com/this-is-how-i-use-swagger-to-design-rest-apis-before-starting-the-development-9de19cb1640f)
-
-- ADBC: The Future of Database Connectivity
-[(link)](https://medium.com/@thibaut_gourdel/adbc-the-future-of-database-connectivity-4784c03637e8)
-
-- amphi - Visual Data Transformation based on Python 
-[(link)](https://github.com/amphi-ai/amphi-etl)
-
-- Docker pros are shrinking images by 99%
-[(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
 
 - The Ultimate Guide to Relational Databases for Backend Developers
 [(link)](https://blog.devgenius.io/the-ultimate-guide-to-relational-databases-for-backend-developers-42b1efb492b0)
@@ -189,35 +138,8 @@ Building a Free & Open-Source Invoice Fraud Detection System with AI: Using PHI-
 - Dynamic SQL Query Formation with Jinja Template
 [(link)](https://rajansahu713.medium.com/dynamic-sql-query-formation-with-jinja-template-113b2ef28134)
 
-- OCR with Phi-3-Vision: Revolutionizing Document Processing
-[(link)](https://bhavikjikadara.medium.com/ocr-with-phi-3-vision-revolutionizing-document-processing-81489b35d78f)
-
-- I spent 8 hours researching WarpStream
-[(link)](https://medium.com/@vutrinh274/i-spent-8-hours-researching-warpstream-65ac1dd1f027)
-
 - ScyllaDB’s Rust Developer Workshop: What We Learned
 [(link)](https://scylladb.medium.com/scylladbs-rust-developer-workshop-what-we-learned-69cebf9efb45)
-
-- Convert JSON into Columns and Rows with JSON_TABLE
-[(link)](https://www.crunchydata.com/blog/easily-convert-json-into-columns-and-rows-with-json_table)
-
-- SQL/JSON is here
-[(link)](https://www.depesz.com/2024/10/11/sql-json-is-here-kinda-waiting-for-pg-17/)
-
-Postgres Type Explorer
-[(link)](https://masteringpostgres.com/types)
-
-- Crafting Python ORM: Advanced Meta Programming Techniques.
-[(link)](https://levelup.gitconnected.com/crafting-python-orm-advanced-meta-programming-techniques-e9afca905c5b)
-
-- What The Heck is Apache Polaris?
-[(link)](https://progrockrec.medium.com/what-the-heck-is-apache-polaris-df403e625c51)
-
-- Mastering Python Project Management with uv Part1: it’s Time to Ditch Poetry!
-[(link)](https://bury-thomas.medium.com/mastering-python-project-management-with-uv-part1-its-time-to-ditch-poetry-c2590091d90a)
-
-- SQL in your browser — DuckDB Web Shell for purely local data analytics
-[(link)](https://towardsdev.com/sql-in-your-browser-duckdb-web-shell-for-purely-local-data-analytics-82b8876eb7f7)
 
 - How I Made A Python Script 130 Times Faster with PostgreSQL Query Optimization
 [(link)](https://blog.devgenius.io/how-i-made-a-python-script-130-times-faster-with-postgresql-query-optimization-5e05ab8e6d85)
@@ -228,62 +150,11 @@ Postgres Type Explorer
 - Turn Your CSVs Into Graphs Using LLMs
 [(link)](https://medium.com/neo4j/turn-your-csvs-into-graphs-using-llms-49fb77a837b2)
 
-- Highlights of RisingWave v1.8: The Open-Source Streaming Database
-[(link)](https://medium.risingwave.com/highlights-of-risingwave-v1-8-the-open-source-postgres-compatible-streaming-database-09895273ec7a)
-
-- The Pipe Syntax Revolution: How Google’s New SQL Is Making Queries Easier
-[(link)](https://medium.com/@vishalbarvaliya/the-pipe-syntax-revolution-how-googles-new-sql-is-making-queries-easier-7e69f522d894)
-
 - Was Rust Worth It?
 [(link)](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3)
 
-- The Python Packaging Hell
-[(link)](https://www.courtbouillon.org/blog/00011-the-python-packaging-hell-the-can-of-worms/)
-
-- pgai
-[(link)](https://github.com/timescale/pgai)
-
-- How We Built a Content Recommendation System With Pgai and Pgvectorscale 
-[(link)](https://www.timescale.com/blog/how-we-built-a-content-recommendation-system-with-pgai-and-pgvectorscale/)
-
-- SQL Applications using LlamaIndex 
-[(link)](https://medium.com/@avikumart_/building-natural-language-to-sql-applications-using-llamaindex-39280e90d52f)
-
-- I spent 8 hours diving deep into Snowflake (again)
-[(link)](https://blog.det.life/i-spent-8-hours-diving-deep-into-snowflake-again-ccbe46f07176)
-
-- Step-by-Step Guide to Creating Your Own Large Language Model
-[(link)](https://medium.com/sciforce/step-by-step-guide-to-your-own-large-language-model-2b3fed6422d0)
-
-- LLM Finetuning Strategies
-[(link)](https://pub.towardsai.net/llm-finetuning-strategies-f1e2e8d91b30)
-
-- On NULL
-[(link)](https://github.com/agentm/project-m36/blob/master/docs/on_null.markdown)
-
-- Are You Qualified To Use Null in SQL?
-[(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
-
 - Exploring the limits of Postgres: when does it break?
 [(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
-
-- Apache Iceberg: Built for Big Data, Not Ready for Small(?)
-[(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
-
-- How does Notion handle 200 billion data entities?
-[(link)](https://blog.det.life/how-does-notion-handle-200-billion-data-entities-919b238c2846)
-
-- A Visual Exploration of Semantic Text Chunking
-[(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
-
-- The Best NVIDIA GPUs for LLM Inference: A Comprehensive Guide
-[(link)](https://medium.com/@mahernaija/the-best-nvidia-gpus-for-llm-inference-a-comprehensive-guide-e093c9d914e5)
-
-- Choosing Between LLM Agent Frameworks
-[(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
-
-- LangGraph Studio: Visualizing and Testing AI Agents with LangChain
-[(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
 
 - Optimizing Your Database for Analytics
 [(link)](https://karenjex.blogspot.com/2024/09/optimising-your-database-for-analytics.html)
@@ -300,35 +171,11 @@ Postgres Type Explorer
 - I used OpenAI’s o1 model to develop a trading strategy. It is DESTROYING the market
 [(link)](https://medium.datadriveninvestor.com/i-used-openais-o1-model-to-develop-a-trading-strategy-it-is-destroying-the-market-576a6039e8fa)
 
-- Langchain vs Haystack
-[(link)](https://medium.com/@amit25173/langchain-vs-haystack-7fa0faa901cd)
-
 - How SELECT FOR UPDATE Works
 [(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
 
-- Serializable Snapshot Isolation (SSI) in PostgreSQL
-[(link)](https://wiki.postgresql.org/wiki/SSI)
-
 - Uber’s Big Data Revolution: From MySQL to Hadoop and Beyond
 [(link)](https://medium.com/@vutrinh274/ubers-big-data-revolution-from-mysql-to-hadoop-and-beyond-5b4d89a0d754)
-
-- 11 Open-Source SaaS Killer — Selfhost With Docker
-[(link)](https://blog.devgenius.io/11-open-source-saas-killer-selfhost-with-docker-034456653568)
-
-- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
-[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
-
-- Text2SQL is Not Enough: Unifying AI and Databases with TAG
-[(link)](https://github.com/TAG-Research/TAG-Bench)
-
-- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
-[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
-
-- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
-[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
-
-- RAG LLM Best Practices
-[(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
 
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
@@ -397,8 +244,6 @@ Postgres Type Explorer
 [(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
 
 
-
-
 - IDE in the Web Browser? Let me show you Project IDX by Google
 [(link)](https://levelup.gitconnected.com/ide-in-the-web-browser-let-me-show-you-project-idx-by-google-e9c38de046fe)
 
@@ -407,9 +252,6 @@ Postgres Type Explorer
 
 - Why I Always Use PostgreSQL Functions For Everything
 [(link)](https://blog.devgenius.io/why-i-always-use-postgresql-functions-for-everything-aa501a33842a)
-
-- Agentic AI: Build a Tech Research Agent
-[(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 
 - Build Your Own Llama 3 Architecture from Scratch Using PyTorch
 [(link)](https://pub.towardsai.net/build-your-own-llama-3-architecture-from-scratch-using-pytorch-2ce1ecaa901c)

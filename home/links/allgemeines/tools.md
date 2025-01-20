@@ -117,10 +117,16 @@ is_slide: 0
 [(link)](https://blog.devops.dev/how-to-reduce-jvm-docker-image-size-by-at-least-60-459ec87b95d8)
 - Play with Docker
 [(link)](https://labs.play-with-docker.com/)
+- Docker pros are shrinking images by 99%
+[(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
+
 
 # docling
 - Docling
 [(link)](https://ds4sd.github.io/docling/)
+- Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
+[(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
+
 
 
 # gimp
@@ -150,6 +156,9 @@ is_slide: 0
 [(link)](https://python.plainenglish.io/stop-struggling-with-git-these-tips-will-be-life-d3ea14ee9893)
 - 14 Git Things I Regret Not Knowing Earlier
 [(link)](https://levelup.gitconnected.com/14-git-things-i-regret-not-knowing-earlier-20956c192b2b)
+- Git Like a Pro: 6 Advanced Commands with Step-by-Step Examples
+[(link)](https://levelup.gitconnected.com/6-key-advanced-git-commands-for-developers-with-examples-cedb26859b8e)
+
 
 
 

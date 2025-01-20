@@ -11,16 +11,22 @@ is_slide: 0
 - Awesome DuckDB
 [(link)](https://github.com/davidgasquez/awesome-duckdb)
 
-# WASM Workbench
+# WASM 
 - SQL Workbench
 [(link)](https://sql-workbench.com/)
 - Using DuckDB-WASM for in-browser Data Engineering
 [(link)](https://tobilg.com/using-duckdb-wasm-for-in-browser-data-engineering)
+- SQL in your browser — DuckDB Web Shell for purely local data analytics
+[(link)](https://towardsdev.com/sql-in-your-browser-duckdb-web-shell-for-purely-local-data-analytics-82b8876eb7f7)
+
 
 
 # graph
 - duckdb-pgq - git
 [(link)](https://github.com/cwida/duckdb-pgq)
+- DuckPGQ documentation
+[(link)](https://duckpgq.notion.site/b8ac652667964f958bfada1c3e53f1bb?v=3b47a8d44bdf4e0c8b503bf23f1b76f2)
+
 
 # spatial
 - DuckDB - Spatial Relationships
@@ -31,6 +37,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Building Effective Dashboards
+[(link)](https://medium.com/@nydas/building-effective-dashboards-de81c3c45aeb)
 - Handling Billions of Records in Minutes with SQL
 [(link)](https://towardsdatascience.com/handling-billions-of-records-in-minutes-with-sql-%EF%B8%8F-484d2d6027bc)
 - From Scrolls to Similarity Search: Building a Movie Recommender with DuckDB VSS

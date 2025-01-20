@@ -120,7 +120,7 @@ is_slide: 0
 
 
 
-# pgvector
+# pg
 - pgvector
 [(link)](https://github.com/pgvector/pgvector)
 - PostgreSQL as a Vector Database: Getting Started and Scaling
@@ -139,11 +139,11 @@ is_slide: 0
 [(link)](https://tembo.io/blog/pgvector-and-embedding-solutions-with-postgres)
 - Why we replaced Pinecone with PGVector
 [(link)](https://medium.com/@jeffreyip54/why-we-replaced-pinecone-with-pgvector-2f679d253eba)
-
-
-# pg_vectorize
 - pg_vectorize
 [(link)](https://github.com/tembo-io/pg_vectorize)
+- pgai 
+[(link)](https://github.com/timescale/pgai)
+
 
 
 

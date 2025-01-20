@@ -20,6 +20,11 @@ is_slide: 0
 [(link)](https://github.com/cathytanimura/sql_book/tree/master)
 - SQL query optimization: a comprehensive developer's guide
 [(link)](https://aiven.io/developer/sql-query-optimization-guide)
+- On NULL
+[(link)](https://github.com/agentm/project-m36/blob/master/docs/on_null.markdown)
+- Are You Qualified To Use Null in SQL?
+[(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
+
 
 
 # sql - neue syntax
@@ -29,6 +34,9 @@ is_slide: 0
 [(link)](https://www.linkedin.com/pulse/not-so-good-idea-pipe-syntax-sql-franck-pachot-dx6he)
 - Intelligible advanced SQL queries with pipe syntax
 [(link)](https://medium.com/google-cloud/intelligible-advanced-sql-queries-with-pipe-syntax-86d3a431b660)
+- The Pipe Syntax Revolution: How Google’s New SQL Is Making Queries Easier
+[(link)](https://medium.com/@vishalbarvaliya/the-pipe-syntax-revolution-how-googles-new-sql-is-making-queries-easier-7e69f522d894)
+
 
 
 
