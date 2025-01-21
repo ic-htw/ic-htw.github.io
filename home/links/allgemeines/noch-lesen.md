@@ -9,14 +9,48 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Langchain vs Haystack
-[(link)](https://medium.com/@amit25173/langchain-vs-haystack-7fa0faa901cd)
+- Building an On-Premise Document Intelligence Stack with Docling, Ollama, Phi-4 | ExtractThinker
+[(link)](https://pub.towardsai.net/building-an-on-premise-document-intelligence-stack-with-docling-ollama-phi-4-extractthinker-6ab60b495751)
 
-- Choosing Between LLM Agent Frameworks
-[(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
+- Top 10 Free Tailwind-based UI LibraryYou Wish You Know
+[(link)](https://medium.com/@letscodefuture/top-10-free-tailwind-based-ui-you-wish-you-know-c677cbb348d2)
 
-- LangGraph Studio: Visualizing and Testing AI Agents with LangChain
-[(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
+- tailwindcss
+[(link)](https://tailwindcss.com/)
+
+- 10 Jupyter Notebook Features You Didn’t Know they exist
+[(link)](https://medium.com/top-python-libraries/10-jupyter-notebook-features-you-didnt-know-they-exist-225ef0793182)
+
+
+- 3 Best Practices For Using AI To Query Your Database
+[(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
+
+- Text Embeddings: Comprehensive Guide
+[(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
+
+- ChatOllama
+[(link)](https://github.com/sugarforever/chat-ollama)
+
+- Build a text to SQL chatbot with Claude-Sonnet 3.5.
+[(link)](https://arslanshahid-1997.medium.com/build-a-text-to-sql-chatbot-with-claude-sonnet-3-5-621a5bf9f922)
+
+- Query SQL Database Using Natural Language with Llama 3 and LangChain
+[(link)](https://blog.devgenius.io/query-sql-database-using-natural-language-with-llama-3-and-langchain-a310e6d7dc14)
+
+- From Basics to Advanced: Exploring LangGraph
+[(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
+
+- Advanced RAG for Database without exposing DB Data: Text to SQL
+[(link)](https://blog.gopenai.com/advanced-rag-for-database-without-exposing-db-data-text-to-sql-a0e71f00e010)
+
+- Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
+[(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
+
+- Retrieving information from SQL databases with the help of LLMs
+[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
+
+- How to Build AI Agents with LangGraph: A Step-by-Step Guide
+[(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
 
 - Top 10 RAG Frameworks Github Repos 2024
 [(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
@@ -72,20 +106,11 @@ is_slide: 0
 - Agentic AI: Build a Tech Research Agent
 [(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 
-- My GPT-evaluator got 1000% better with this simple trick.
-[(link)](https://ai.gopubby.com/my-gpt-evaluator-performance-improved-by-1000-with-this-simple-trick-2384027734c6)
-
-- Pandas vs Polars: Is learning Polars worth the performance boost?
-[(link)](https://medium.com/codex/pandas-vs-polars-is-learning-polars-worth-the-performance-boost-c920a118619b)
-
 - Jupyter Agent: Revolutionizing Data Analysis with LLMs
 [(link)](https://medium.com/@mauryaanoop3/jupyter-agent-revolutionizing-data-analysis-with-llms-d0cbc636cf89)
 
 - Combining FastAPI, PostgreSQL, and Leaflet — GIS Tutorial
 [(link)](https://levelup.gitconnected.com/combining-fastapi-postgresql-and-leaflet-gis-tutorial-597e6a8ed028)
-
-- Stop Wasting Time in Excel: Let Python Do the Work
-[(link)](https://python.plainenglish.io/stop-wasting-time-in-excel-let-python-do-the-work-4bdba1700f86)
 
 - Unlock Custom Quantization for Hugging Face Models Locally with Ollama
 [(link)](https://pub.towardsai.net/unlock-custom-quantization-for-hugging-face-models-locally-with-ollama-eb34166ced6a)
@@ -95,9 +120,6 @@ is_slide: 0
 
 - Python Memory Management: Best Practices for Performance
 [(link)](https://blog.devgenius.io/python-memory-management-best-practices-for-performance-53fa39c4e1a4)
-
-- Parquet pruning in DataFusion
-[(link)](https://blog.haoxp.xyz/posts/parquet-to-arrow/)
 
 - From query to plot: Exploring GeoParquet Overture Maps with Ibis, DuckDB, and Lonboard
 [(link)](https://ibis-project.org/posts/ibis-overturemaps/)
@@ -113,12 +135,6 @@ is_slide: 0
 
 - Enhance your AI/ML applications with flexible Bring Your Own Model options
 [(link)](https://blogs.oracle.com/database/post/enhance-your-ai-ml-apps-with-flexible-byom-options-dbi?elq_mid=259746)
-
-- Database Performance Benchmark: PostgreSQL vs. MySQL vs. SQLite
-[(link)](https://blog.probirsarkar.com/database-performance-benchmark-postgresql-vs-mysql-vs-sqlite-which-is-the-fastest-ae7f02de88e0)
-
-- Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker
-[(link)](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
 
 - Nue.js: A New Frontier in Front-End Development
 [(link)](https://medium.com/@haiou-a/nue-js-a-new-frontier-in-front-end-development-4c438f95be90)
@@ -138,9 +154,6 @@ is_slide: 0
 - Dynamic SQL Query Formation with Jinja Template
 [(link)](https://rajansahu713.medium.com/dynamic-sql-query-formation-with-jinja-template-113b2ef28134)
 
-- ScyllaDB’s Rust Developer Workshop: What We Learned
-[(link)](https://scylladb.medium.com/scylladbs-rust-developer-workshop-what-we-learned-69cebf9efb45)
-
 - How I Made A Python Script 130 Times Faster with PostgreSQL Query Optimization
 [(link)](https://blog.devgenius.io/how-i-made-a-python-script-130-times-faster-with-postgresql-query-optimization-5e05ab8e6d85)
 
@@ -149,12 +162,6 @@ is_slide: 0
 
 - Turn Your CSVs Into Graphs Using LLMs
 [(link)](https://medium.com/neo4j/turn-your-csvs-into-graphs-using-llms-49fb77a837b2)
-
-- Was Rust Worth It?
-[(link)](https://jsoverson.medium.com/was-rust-worth-it-f43d171fb1b3)
-
-- Exploring the limits of Postgres: when does it break?
-[(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
 
 - Optimizing Your Database for Analytics
 [(link)](https://karenjex.blogspot.com/2024/09/optimising-your-database-for-analytics.html)
@@ -180,14 +187,8 @@ is_slide: 0
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
 
-- How to Build AI Agents with LangGraph: A Step-by-Step Guide
-[(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
-
 - Microsoft GraphRAG and Ollama: Code Your Way to Smarter Question Answering
 [(link)](https://blog.gopenai.com/microsoft-graphrag-and-ollama-code-your-way-to-smarter-question-answering-45a57cc5c38b)
-
-- Generate Millions of Records in PostgreSQL
-[(link)](https://python.plainenglish.io/generate-millions-of-records-in-postgresql-e68986e43fd8)
 
 - Implementing Filtered Semantic Search Using Pgvector and JavaScript
 [(link)](https://www.timescale.com/blog/implementing-filtered-semantic-search-using-pgvector-and-javascript/)
@@ -207,9 +208,6 @@ is_slide: 0
 - Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
 [(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
 
-- Liger Kernel: Efficient Triton Kernels for LLM Training
-[(link)](https://github.com/linkedin/Liger-Kernel)
-
 - Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
 [(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
 
@@ -219,17 +217,11 @@ is_slide: 0
 - LLM Monitoring and Observability: Tools, Tips and Best Practices
 [(link)](https://mlengineering.medium.com/llm-monitoring-and-observability-tools-tips-and-best-practices-98ea16f533a7)
 
-- Retrieving information from SQL databases with the help of LLMs
-[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
-
 - Quantization of LLMs with llama.cpp
 [(link)](https://medium.com/@ingridwickstevens/quantization-of-llms-with-llama-cpp-9bbf59deda35)
 
 - Why I Use Open Weights LLMs Locally
 [(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
-
-- 50+ Open-Source Options for Running LLMs Locally
-[(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
 
 - Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
 [(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
@@ -250,38 +242,17 @@ is_slide: 0
 - A Practical Guide to using Pydantic
 [(link)](https://medium.com/@marcnealer/a-practical-guide-to-using-pydantic-8aafa7feebf6)
 
-- Why I Always Use PostgreSQL Functions For Everything
-[(link)](https://blog.devgenius.io/why-i-always-use-postgresql-functions-for-everything-aa501a33842a)
-
 - Build Your Own Llama 3 Architecture from Scratch Using PyTorch
 [(link)](https://pub.towardsai.net/build-your-own-llama-3-architecture-from-scratch-using-pytorch-2ce1ecaa901c)
 
 - Running Ollama on Google Colab (Free Tier): A Step-by-Step Guide
 [(link)](https://pub.towardsai.net/running-ollama-on-google-colab-free-tier-a-step-by-step-guide-9ef74b1f8f7a)
 
--  spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.
-[(link)](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0)
-
 - Using docker init to write Dockerfile and docker-compose configs
 [(link)](https://livingdevops.com/devops/docker-init-to-write-dockerfile-docker-compose/)
 
-- What is the Open Source Alternative to CockroachDB?
-[(link)](https://medium.com/@magda7817/what-is-the-open-source-alternative-to-cockroachdb-c346cbfdbe41)
-
-- Deepset Haystack git
-[(link)](https://github.com/deepset-ai/haystack)
-
-- Deepset Haystack
-[(link)](https://haystack.deepset.ai/)
-
-- How do we run Kafka 100% on the object storage?
-[(link)](https://medium.com/thedeephub/how-do-we-run-kafka-100-on-the-object-storage-521c6fec6341)
-
 - Grok 2–Why It’s HUGE for AI
 [(link)](https://ai.plainenglish.io/grok-2-why-its-huge-for-ai-43c18a75c19a)
-
-- Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
-[(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
 
 - 6 Best Practices for Writing Dockerfiles
 [(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
@@ -298,38 +269,17 @@ is_slide: 0
 - High-Precision RAG for Table Heavy Documents
 [(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
 
-- Understanding the Future of Apache Iceberg Catalogs
-[(link)](https://alexmercedcoder.medium.com/understanding-the-future-of-apache-iceberg-catalogs-9d87ad8bdc00)
-
 - Fine-Tuning LLAMA 3 Model for Relation Extraction Using UBIAI Data
 [(link)](https://medium.com/ubiai-nlp/fine-tuning-llama-3-model-for-relation-extraction-using-ubiai-data-1fd1946a62e0)
 
 - Splicing Duck and Elephant DNA
 [(link)](https://motherduck.com/blog/pg_duckdb-postgresql-extension-for-duckdb-motherduck/)
 
-- How Postgres stores data on disk – this one's a page turner 
-[(link)](https://drew.silcock.dev/blog/how-postgres-stores-data-on-disk/)
-
-- Advanced RAG for Database without exposing DB Data: Text to SQL
-[(link)](https://blog.gopenai.com/advanced-rag-for-database-without-exposing-db-data-text-to-sql-a0e71f00e010)
-
-- From Basics to Advanced: Exploring LangGraph
-[(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
-
-- Understanding the Future of Apache Iceberg Catalogs
-[(link)](https://medium.com/data-engineering-with-dremio/understanding-the-future-of-apache-iceberg-catalogs-ff2a2878fbc0)
-
-- Query SQL Database Using Natural Language with Llama 3 and LangChain
-[(link)](https://blog.devgenius.io/query-sql-database-using-natural-language-with-llama-3-and-langchain-a310e6d7dc14)
-
 - DuckDB & PyArrow: Lightweight and Speed Data Analysis
 [(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
 
 - When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
 [(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
-
-- Hudi-rs with DuckDB, Polars, Daft, DataFusion — Single-node Lakehouse
-[(link)](https://dipankar-tnt.medium.com/hudi-rs-with-duckdb-polars-daft-datafusion-single-node-lakehouse-347ee1a45371)
 
 - Real-time Distributed score streaming using gRPC and Redis
 [(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
@@ -348,9 +298,6 @@ is_slide: 0
 
 - No, Data Engineers Don’t NEED dbt.
 [(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
-
-- Apache Kafka — Important Designs
-[(link)](https://blog.det.life/apache-kafka-important-designs-2a0e6aa6c5bf)
 
 - Improving Performance for Data Visualization AI Agent
 [(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
@@ -379,33 +326,6 @@ is_slide: 0
 - Mastering RAG Chunking Techniques for Enhanced Document Processing
 [(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
 
-- Build a text to SQL chatbot with Claude-Sonnet 3.5.
-[(link)](https://arslanshahid-1997.medium.com/build-a-text-to-sql-chatbot-with-claude-sonnet-3-5-621a5bf9f922)
-
-- How to handle a Million Vector Embeddings in the RAG Applications
-[(link)](https://medium.datadriveninvestor.com/how-to-handle-a-million-embedding-vectors-in-the-rag-application-d10b875a0218)
-
-- ChatOllama
-[(link)](https://github.com/sugarforever/chat-ollama)
-
-- Psycopg 3.2 released
-[(link)](https://www.psycopg.org/articles/2024/06/30/psycopg-32-released/)
-
-- Text Embeddings: Comprehensive Guide
-[(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
-
-- Stream Changes from a PostgreSQL Database to a Vector Store
-[(link)](https://ai.gopubby.com/stream-changes-from-a-postgresql-database-to-a-vector-store-83df7adc0bfa)
-
-- Building an AI Text-to-Video Model from Scratch Using Python
-[(link)](https://levelup.gitconnected.com/building-an-ai-text-to-video-model-from-scratch-using-python-35b4eb4002de)
-
-- 3 Best Practices For Using AI To Query Your Database
-[(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
-
-- MiniCPM-Llama3-V 2.5 review: A game-changing open-source multimodal language model
-[(link)](https://medium.com/@simeon.emanuilov/minicpm-llama3-v-2-5-review-a-game-changing-open-source-multimodal-language-model-109d2e68989f)
-
 - PostgreSQL and Pgvector
 [(link)](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)
 
@@ -424,17 +344,5 @@ is_slide: 0
 
 - How to use PostgreSQL for (military) geoanalytics tasks
 [(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
-
-- FastUI
-[(link)](https://github.com/pydantic/FastUI)
-
-- Load StackOverflow's StackExchange data in PostgreSQL
-[(link)](https://dev.to/ftisiot/load-stackoverflows-stackexchange-data-in-postgresqlr-40ip)
-
-- What’s new with Looker 2024?
-[(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
-
-- 5 Brilliant Lakehouse Architectures from Tencent, WeChat, and More
-[(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
 
 

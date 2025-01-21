@@ -55,3 +55,9 @@ is_slide: 0
 [(link)](https://flowingdata.com/2018/01/08/visualizing-the-uncertainty-in-data/)
 - Data Visualization A practical introduction
 [(link)](https://socviz.co/)
+
+
+# looker
+- What’s new with Looker 2024?
+[(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
+

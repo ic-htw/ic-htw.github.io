@@ -352,6 +352,10 @@ is_slide: 0
 [(link)](https://www.scylladb.com/blog/)
 - ScyllaDB’s Path to Strong Consistency
 [(link)](https://scylladb.medium.com/scylladbs-path-to-strong-consistency-a-new-milestone-3f9f7a18bae7)
+- ScyllaDB’s Rust Developer Workshop: What We Learned
+[(link)](https://scylladb.medium.com/scylladbs-rust-developer-workshop-what-we-learned-69cebf9efb45)
+
+
         
 # snowflake
 - I spent 8 hours diving deep into Snowflake (again)

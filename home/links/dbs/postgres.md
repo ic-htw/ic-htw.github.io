@@ -219,6 +219,14 @@ is_slide: 0
 
 
 # misc
+- Exploring the limits of Postgres: when does it break?
+[(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
+- Generate Millions of Records in PostgreSQL
+[(link)](https://python.plainenglish.io/generate-millions-of-records-in-postgresql-e68986e43fd8)
+- Why I Always Use PostgreSQL Functions For Everything
+[(link)](https://blog.devgenius.io/why-i-always-use-postgresql-functions-for-everything-aa501a33842a)
+- How Postgres stores data on disk – this one's a page turner 
+[(link)](https://drew.silcock.dev/blog/how-postgres-stores-data-on-disk/)
 - Postgres Type Explorer
 [(link)](https://masteringpostgres.com/types)
 - End to end ELT process example for DW using Postgres.

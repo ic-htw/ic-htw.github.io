@@ -34,6 +34,9 @@ is_slide: 0
 [(link)](https://blog.stackademic.com/python-building-simple-api-with-fastapi-and-postgresql-d5ddd7d501b7)
 
 
+# FastUI
+- FastUI
+[(link)](https://github.com/pydantic/FastUI)
 
 
 

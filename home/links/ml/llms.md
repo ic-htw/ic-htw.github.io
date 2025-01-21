@@ -44,6 +44,9 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/evaluation-driven-development-for-agentic-applications-using-pydanticai-d9293ac81d91)
 - Financial Analysis: Multi-Agent with Open Source LLMs Using CrewAI and Ollama Models
 [(link)](https://generativeai.pub/financial-analysis-multi-agent-with-open-source-llms-using-crewai-and-ollama-models-9f20076f8995)
+- Choosing Between LLM Agent Frameworks
+[(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
+
 
 
 
@@ -68,6 +71,8 @@ is_slide: 0
 
 
 # divers
+- 50+ Open-Source Options for Running LLMs Locally
+[(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
 - Crawl4AI git
 [(link)](https://github.com/unclecode/crawl4ai)
 - AI-Powered Information Extraction and Matchmaking
@@ -153,6 +158,13 @@ is_slide: 0
 - State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods
 [(link)](https://github.com/huggingface/peft)
 
+# haystack
+
+- Deepset Haystack
+[(link)](https://haystack.deepset.ai/)
+- Deepset Haystack git
+[(link)](https://github.com/deepset-ai/haystack)
+
 
 
 # llama
@@ -174,13 +186,18 @@ is_slide: 0
 
 
 
-# langchain
+# langchain / langgraph
 - home
 [(link)](https://www.langchain.com/)
 - doc
 [(link)](https://python.langchain.com/v0.1/docs/get_started/introduction/)
 - What Is LangChain?
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
+- LangGraph Studio: Visualizing and Testing AI Agents with LangChain
+[(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
+
+
+
 
 # nvidia
 - Nemotron-4 15B: NVIDIA’s Powerful New Language Model
