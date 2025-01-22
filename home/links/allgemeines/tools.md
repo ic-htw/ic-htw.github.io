@@ -126,6 +126,9 @@ is_slide: 0
 [(link)](https://ds4sd.github.io/docling/)
 - Docling by IBM: The Tool That Claims to Make Document Parsing Effortless-But Does It Really
 [(link)](https://ai.gopubby.com/docling-by-ibm-the-tool-that-claims-to-make-document-parsing-effortless-but-does-it-really-4d31fa1786bf)
+- Building an On-Premise Document Intelligence Stack with Docling, Ollama, Phi-4 | ExtractThinker
+[(link)](https://pub.towardsai.net/building-an-on-premise-document-intelligence-stack-with-docling-ollama-phi-4-extractthinker-6ab60b495751)
+
 
 
 

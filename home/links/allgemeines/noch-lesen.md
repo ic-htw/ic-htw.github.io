@@ -9,57 +9,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Building an On-Premise Document Intelligence Stack with Docling, Ollama, Phi-4 | ExtractThinker
-[(link)](https://pub.towardsai.net/building-an-on-premise-document-intelligence-stack-with-docling-ollama-phi-4-extractthinker-6ab60b495751)
+- Agentic AI: Build a Tech Research Agent
+[(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 
-- Top 10 Free Tailwind-based UI LibraryYou Wish You Know
-[(link)](https://medium.com/@letscodefuture/top-10-free-tailwind-based-ui-you-wish-you-know-c677cbb348d2)
+- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
+[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
 
-- tailwindcss
-[(link)](https://tailwindcss.com/)
+- Text2SQL is Not Enough: Unifying AI and Databases with TAG
+[(link)](https://github.com/TAG-Research/TAG-Bench)
 
-- 10 Jupyter Notebook Features You Didn’t Know they exist
-[(link)](https://medium.com/top-python-libraries/10-jupyter-notebook-features-you-didnt-know-they-exist-225ef0793182)
+- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
+[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
 
-
-- 3 Best Practices For Using AI To Query Your Database
-[(link)](https://medium.com/locusive/3-best-practices-for-using-ai-to-query-your-database-e970da76647e)
-
-- Text Embeddings: Comprehensive Guide
-[(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
-
-- ChatOllama
-[(link)](https://github.com/sugarforever/chat-ollama)
-
-- Build a text to SQL chatbot with Claude-Sonnet 3.5.
-[(link)](https://arslanshahid-1997.medium.com/build-a-text-to-sql-chatbot-with-claude-sonnet-3-5-621a5bf9f922)
-
-- Query SQL Database Using Natural Language with Llama 3 and LangChain
-[(link)](https://blog.devgenius.io/query-sql-database-using-natural-language-with-llama-3-and-langchain-a310e6d7dc14)
-
-- From Basics to Advanced: Exploring LangGraph
-[(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
-
-- Advanced RAG for Database without exposing DB Data: Text to SQL
-[(link)](https://blog.gopenai.com/advanced-rag-for-database-without-exposing-db-data-text-to-sql-a0e71f00e010)
-
-- Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
-[(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
-
-- Retrieving information from SQL databases with the help of LLMs
-[(link)](https://medium.com/@getindatatechteam/retrieving-information-from-sql-databases-with-the-help-of-llms-d8ce120f9c37)
-
-- How to Build AI Agents with LangGraph: A Step-by-Step Guide
-[(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
-
-- Top 10 RAG Frameworks Github Repos 2024
-[(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
-
-- Create a custom AI assistant to auto-generate SQL queries
-[(link)](https://medium.com/low-code-for-advanced-data-science/create-a-custom-ai-assistant-to-auto-generate-sql-queries-fa1432e75ad0)
-
-- The problem of text-to-SQL
-[(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
+- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
+[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
 
 - Introducing the Pydantic Library
 [(link)](https://medium.com/@thomas_reid/793c7b07ef09)
@@ -87,24 +50,6 @@ is_slide: 0
 
 - The Best NVIDIA GPUs for LLM Inference: A Comprehensive Guide
 [(link)](https://medium.com/@mahernaija/the-best-nvidia-gpus-for-llm-inference-a-comprehensive-guide-e093c9d914e5)
-
-- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
-[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
-
-- Text2SQL is Not Enough: Unifying AI and Databases with TAG
-[(link)](https://github.com/TAG-Research/TAG-Bench)
-
-- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
-[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
-
-- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
-[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
-
-- RAG LLM Best Practices
-[(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
-
-- Agentic AI: Build a Tech Research Agent
-[(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 
 - Jupyter Agent: Revolutionizing Data Analysis with LLMs
 [(link)](https://medium.com/@mauryaanoop3/jupyter-agent-revolutionizing-data-analysis-with-llms-d0cbc636cf89)
@@ -135,9 +80,6 @@ is_slide: 0
 
 - Enhance your AI/ML applications with flexible Bring Your Own Model options
 [(link)](https://blogs.oracle.com/database/post/enhance-your-ai-ml-apps-with-flexible-byom-options-dbi?elq_mid=259746)
-
-- Nue.js: A New Frontier in Front-End Development
-[(link)](https://medium.com/@haiou-a/nue-js-a-new-frontier-in-front-end-development-4c438f95be90)
 
 - Building a High-Performance Data Pipeline Using DuckDB
 [(link)](https://alirezasadeghi1.medium.com/building-a-high-performance-data-pipeline-using-duckdb-829e01eec5f3)
@@ -175,14 +117,8 @@ is_slide: 0
 - Build an LLM RAG Chatbot With LangChain
 [(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
 
-- I used OpenAI’s o1 model to develop a trading strategy. It is DESTROYING the market
-[(link)](https://medium.datadriveninvestor.com/i-used-openais-o1-model-to-develop-a-trading-strategy-it-is-destroying-the-market-576a6039e8fa)
-
 - How SELECT FOR UPDATE Works
 [(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
-
-- Uber’s Big Data Revolution: From MySQL to Hadoop and Beyond
-[(link)](https://medium.com/@vutrinh274/ubers-big-data-revolution-from-mysql-to-hadoop-and-beyond-5b4d89a0d754)
 
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)

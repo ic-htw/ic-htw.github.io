@@ -144,6 +144,12 @@ is_slide: 0
 - Anomaly Detection in Time Series using ChatGPT
 [(link)](https://medium.com/@sztistvan/anomaly-detection-in-time-series-using-chatgpt-3fc48f958c88)
 
+# embeddings
+- Text Embeddings: Comprehensive Guide
+[(link)](https://towardsdatascience.com/text-embeddings-comprehensive-guide-afd97fce8fb5)
+
+
+
 # dspy
 - DSPy
 [(link)](https://dspy-docs.vercel.app/)
@@ -195,6 +201,12 @@ is_slide: 0
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
 - LangGraph Studio: Visualizing and Testing AI Agents with LangChain
 [(link)](https://ai.gopubby.com/langgraph-studio-visualizing-and-testing-ai-agents-with-langchain-9a6fe80d2643)
+- From Basics to Advanced: Exploring LangGraph
+[(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
+- How to Build AI Agents with LangGraph: A Step-by-Step Guide
+[(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
+
+
 
 
 
@@ -225,6 +237,9 @@ is_slide: 0
 [(link)](https://medium.com/the-ai-forum/building-an-advanced-rag-pipeline-using-docling-groq-ollama-with-glider-evaluation-b91c290b0c84)
 - Ollama’s New Vision Model Support: A Comprehensive Guide
 [(link)](https://ai.plainenglish.io/ollamas-new-vision-model-support-a-comprehensive-guide-ba1da6c4f45b)
+- ChatOllama
+[(link)](https://github.com/sugarforever/chat-ollama)
+
 
 
 
@@ -243,6 +258,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag
+- RAG LLM Best Practices
+[(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
+- Top 10 RAG Frameworks Github Repos 2024
+[(link)](https://sebastian-petrus.medium.com/top-10-rag-frameworks-github-repos-2024-12b2a81f4a49)
 - Build an LLM RAG Chatbot With LangChain
 [(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
 - A Deep Dive into Retrieval-Augmented Generation (RAG) with HyDE
