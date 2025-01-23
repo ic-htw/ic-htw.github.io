@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Anatomy of table-level locks: Reducing locking impact
+[(link)](https://xata.io/blog/anatomy-of-locks-reduce)
+
 - PostgreSQL Clustered Index: When to Use? Does it Worth?
 [(link)](https://levelup.gitconnected.com/postgresql-clustered-index-when-to-use-does-it-worth-2258a644b02c)
 

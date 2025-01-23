@@ -230,7 +230,13 @@ is_slide: 0
 [(link)](https://cwiki.apache.org/confluence/display/JMETER/Home)
 
 
-# jupyter notebooks
+# jupyter
+- JupyterHub
+[(link)](https://jupyterhub.readthedocs.io/en/stable/)
+
+- Jupyterhub - Setting up Development Environment
+[(link)](https://tljh.jupyter.org/en/latest/contributing/dev-setup.html)
+
 - ipython-sql
 [(link)](https://github.com/catherinedevlin/ipython-sql)
 
