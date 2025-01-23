@@ -32,6 +32,8 @@ is_slide: 0
 
 
 # agents
+- Agentic AI: Build a Tech Research Agent
+[(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 - Building RAG Research Multi-Agent with LangGraph
 [(link)](https://medium.com/@nicoladisabato_19197/building-rag-research-multi-agent-with-langgraph-1bd47acac69f)
 - Creating a Research Agent with AutoGen and Panel UI
