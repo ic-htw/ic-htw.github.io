@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- DeepSeek-R1 - I Can’t Believe This Model Is Open-Sourced
+[(link)](https://medium.com/@yash9439/i-cant-believe-this-model-is-open-sourced-95cbdeb9d045)
+
 - Anatomy of table-level locks: Reducing locking impact
 [(link)](https://xata.io/blog/anatomy-of-locks-reduce)
 
