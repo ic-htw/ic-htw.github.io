@@ -71,6 +71,9 @@ is_slide: 0
 [(link)](https://medium.com/@dmitry.romanoff/postgresql-db-indexes-maintenance-script-460c645e9f28)
 - Index Creation in PostgreSQL Large Tables: Essential Checklist for Developers
 [(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
+- PostgreSQL Clustered Index: When to Use? Does it Worth?
+[(link)](https://levelup.gitconnected.com/postgresql-clustered-index-when-to-use-does-it-worth-2258a644b02c)
+
 
 
 
@@ -214,6 +217,9 @@ is_slide: 0
 [(link)](https://xata.io/blog/anatomy-of-locks)
 - Serializable Snapshot Isolation (SSI) in PostgreSQL
 [(link)](https://wiki.postgresql.org/wiki/SSI)
+- Anatomy of table-level locks: Reducing locking impact
+[(link)](https://xata.io/blog/anatomy-of-locks-reduce)
+
 
 
 

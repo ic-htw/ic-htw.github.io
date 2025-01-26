@@ -9,14 +9,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- DeepSeek-R1 - I Can’t Believe This Model Is Open-Sourced
-[(link)](https://medium.com/@yash9439/i-cant-believe-this-model-is-open-sourced-95cbdeb9d045)
+- Latest Updates on Google Data Analytics
+[(link)](https://datadice.medium.com/latest-updates-on-google-data-analytics-december-2024-a2ce1d2f2236)
 
-- Anatomy of table-level locks: Reducing locking impact
-[(link)](https://xata.io/blog/anatomy-of-locks-reduce)
+- Mind-blowing: PostgreSQL Meets ScyllaDB’s Lightning Speed and Monstrous Scalability
+[(link)](https://medium.com/@abdurohman/mind-blowing-postgresql-meets-scylladbs-lightning-speed-and-monstrous-scalability-7dcda1eb1cea)
 
-- PostgreSQL Clustered Index: When to Use? Does it Worth?
-[(link)](https://levelup.gitconnected.com/postgresql-clustered-index-when-to-use-does-it-worth-2258a644b02c)
+- The Chinese OBLITERATED OpenAI. A side-by-side comparison of DeepSeek R1 vs OpenAI O1 for Finance
+[(link)](https://medium.datadriveninvestor.com/the-chinese-obliterated-openai-a-side-by-side-comparison-of-deepseek-r1-vs-openai-o1-for-finance-93a1b4343a82)
+
+- Why Text-to-SQL is Failing for Agents and How to Fix It?
+[(link)](https://medium.com/madhukarkumar/why-text-to-sql-is-failing-for-agents-and-how-to-fix-it-6cb4065d40e9)
+
+- Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen & Other AI Agent Frameworks? Read this!
+[(link)](https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411)
 
 - Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
 [(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
