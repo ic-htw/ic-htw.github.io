@@ -48,6 +48,9 @@ is_slide: 0
 [(link)](https://generativeai.pub/financial-analysis-multi-agent-with-open-source-llms-using-crewai-and-ollama-models-9f20076f8995)
 - Choosing Between LLM Agent Frameworks
 [(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
+- Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen & Other AI Agent Frameworks? Read this!
+[(link)](https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411)
+
 
 
 
@@ -68,6 +71,10 @@ is_slide: 0
 - Advanced Prompt Engineering: Chain of Thought (CoT)
 [(link)](https://towardsdatascience.com/advanced-prompt-engineering-chain-of-thought-cot-8d8b090bf699)
 
+
+# deepseek
+- The Chinese OBLITERATED OpenAI. A side-by-side comparison of DeepSeek R1 vs OpenAI O1 for Finance
+[(link)](https://medium.datadriveninvestor.com/the-chinese-obliterated-openai-a-side-by-side-comparison-of-deepseek-r1-vs-openai-o1-for-finance-93a1b4343a82)
 
 
 

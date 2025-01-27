@@ -9,35 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Latest Updates on Google Data Analytics
-[(link)](https://datadice.medium.com/latest-updates-on-google-data-analytics-december-2024-a2ce1d2f2236)
+- DeepSeek-R1: A Cutting-Edge Logical Reasoning Model for Local AI Development with Ollama
+[(link)](https://medium.com/@pankaj_pandey/deepseek-r1-an-advanced-reasoning-model-for-ai-applications-using-ollama-0497a4899cb2)
 
-- Mind-blowing: PostgreSQL Meets ScyllaDB’s Lightning Speed and Monstrous Scalability
-[(link)](https://medium.com/@abdurohman/mind-blowing-postgresql-meets-scylladbs-lightning-speed-and-monstrous-scalability-7dcda1eb1cea)
-
-- The Chinese OBLITERATED OpenAI. A side-by-side comparison of DeepSeek R1 vs OpenAI O1 for Finance
-[(link)](https://medium.datadriveninvestor.com/the-chinese-obliterated-openai-a-side-by-side-comparison-of-deepseek-r1-vs-openai-o1-for-finance-93a1b4343a82)
-
-- Why Text-to-SQL is Failing for Agents and How to Fix It?
-[(link)](https://medium.com/madhukarkumar/why-text-to-sql-is-failing-for-agents-and-how-to-fix-it-6cb4065d40e9)
-
-- Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen & Other AI Agent Frameworks? Read this!
-[(link)](https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411)
-
-- Table-augmented generation shows promise for complex dataset querying, outperforms text-to-SQL
-[(link)](https://venturebeat.com/data-infrastructure/table-augmented-generation-shows-promise-for-complex-dataset-querying-outperforms-text-to-sql/)
-
-- Text2SQL is Not Enough: Unifying AI and Databases with TAG
-[(link)](https://github.com/TAG-Research/TAG-Bench)
-
-- Table-Augmented Generation (TAG): A Unified Approach for Enhancing Natural Language Querying over Databases
-[(link)](https://www.marktechpost.com/2024/08/29/table-augmented-generation-tag-a-unified-approach-for-enhancing-natural-language-querying-over-databases/)
-
-- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
-[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
-
-- Introducing the Pydantic Library
-[(link)](https://medium.com/@thomas_reid/793c7b07ef09)
+- I spent 6 hours learning AWS Glue. Here is what I found
+[(link)](https://medium.com/@vutrinh274/i-spent-6-hours-learning-aws-glue-here-is-what-i-found-89e76476cbda)
 
 - LlamaCoder
 [(link)](https://llamacoder.together.ai/)

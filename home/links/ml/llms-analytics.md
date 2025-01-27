@@ -108,6 +108,12 @@ is_slide: 0
 # tag
 - TAG vs Text2SQL
 [(link)](https://medium.com/@visrow/tag-vs-text2sql-96542742e401)
+- Text2SQL is Not Enough: Unifying AI and Databases with TAG
+[(link)](https://github.com/TAG-Research/TAG-Bench)
+- From Queries to Insights: Revolutionize Your Data Strategy with Table Augmented Generation (TAG)
+[(link)](https://medium.com/@kanishk.khatter/from-queries-to-insights-revolutionize-your-data-strategy-with-table-augmented-generation-tag-b9fb31006a52)
+
+
 
 
 

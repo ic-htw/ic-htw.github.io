@@ -354,6 +354,9 @@ is_slide: 0
 [(link)](https://scylladb.medium.com/scylladbs-path-to-strong-consistency-a-new-milestone-3f9f7a18bae7)
 - ScyllaDB’s Rust Developer Workshop: What We Learned
 [(link)](https://scylladb.medium.com/scylladbs-rust-developer-workshop-what-we-learned-69cebf9efb45)
+- Mind-blowing: PostgreSQL Meets ScyllaDB’s Lightning Speed and Monstrous Scalability
+[(link)](https://medium.com/@abdurohman/mind-blowing-postgresql-meets-scylladbs-lightning-speed-and-monstrous-scalability-7dcda1eb1cea)
+
 
 
         
