@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I am among the first people to gain access to OpenAI’s “Operator” Agent. Here are my thoughts.
+[(link)](https://ai.plainenglish.io/i-am-among-the-first-people-to-gain-access-to-openais-operator-agent-here-are-my-thoughts-65a5116e5eaa)
+
+- Building a Reliable Text-to-SQL Pipeline: A Step-by-Step Guide pt.1
+[(link)](https://arslanshahid-1997.medium.com/building-a-reliable-text-to-sql-pipeline-a-step-by-step-guide-pt-1-9041b0777a77)
+
 - DeepSeek-R1: A Cutting-Edge Logical Reasoning Model for Local AI Development with Ollama
 [(link)](https://medium.com/@pankaj_pandey/deepseek-r1-an-advanced-reasoning-model-for-ai-applications-using-ollama-0497a4899cb2)
 
