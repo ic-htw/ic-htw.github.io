@@ -51,6 +51,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/categories.html)
 - Mc Cormick
 [(link)](https://mccormickml.com/)
+- Nexustrade blog
+[(link)](https://nexustrade.io/blog)
 - ntentional
 [(link)](https://www.ntentional.com/)
 - NVIDIA
