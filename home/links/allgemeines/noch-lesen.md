@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Top 11 AI-Powered Developer Tools Transforming Workflows in 2025 
+[(link)](https://blog.stackademic.com/top-11-ai-powered-developer-tools-transforming-workflows-in-2025-75a6326741a3)
+
+- A Simple Guide to DeepSeek R1: Architecture, Training, Local Deployment, and Hardware Requirements
+[(link)](https://medium.com/@isaakmwangi2018/a-simple-guide-to-deepseek-r1-architecture-training-local-deployment-and-hardware-requirements-300c87991126)
+
+- Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
+[(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
+
+- 25 Game-Changing Websites Every Developer Must Bookmark
+[(link)](https://medium.com/@letscodefuture/25-game-changing-websites-every-developer-must-bookmark-bfbb1399e35f)
+
 - I am among the first people to gain access to OpenAI’s “Operator” Agent. Here are my thoughts.
 [(link)](https://ai.plainenglish.io/i-am-among-the-first-people-to-gain-access-to-openais-operator-agent-here-are-my-thoughts-65a5116e5eaa)
 
