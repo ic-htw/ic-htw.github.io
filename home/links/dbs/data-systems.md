@@ -54,6 +54,9 @@ is_slide: 0
 # aws aurora
 - DSQL Vignette: Aurora DSQL, and A Personal Stor
 [(link)](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html)
+-  A Major Postgres Upgrade with Zero Downtime
+[(link)](https://www.instantdb.com/essays/pg_upgrade)
+
 
 # aws s3
 - AWS S3 Deep Dive
@@ -257,6 +260,9 @@ is_slide: 0
 [(link)](https://docs.paradedb.com/blog)
 - pg_analytics: Transforming Postgres into a Fast OLAP Database
 [(link)](https://blog.paradedb.com/pages/introducing_analytics)
+- ParadeDB - A New Postgres Block Storage Layout for Full Text Search
+[(link)](bbb)
+
 
 # polardb
 - PolarDB for PostgreSQL
