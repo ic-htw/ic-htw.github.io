@@ -33,8 +33,8 @@ is_slide: 0
 
   - `unsetAuth(gruppe, unternehmen, auth)`
     - Ein unsetAuth(g3, u11, "A") soll ein setAuth(g3, u11, "A") aufheben
-    - Es ist dann so, als wenn das setAuth(g3, u11, "A") nicht erfolgt wäre und die Berechnung der Authorisierungen erfolgt den mit allen anderen noch bestehenden Befehlen
-    -  Der Zeitpunkt des unsetAuth kann beliebig sein
+    - Die Berechnung der Autorisierungen erfolgt dann so, als wenn es das setAuth(g3, u11, "A") nicht gäbe
+    -  Der Zeitpunkt des unsetAuth kann beliebig sein, muss also nicht direkt nacht dem setAuth folgen
     - Gab es kein zu dem unsetAuth passendes setAuth, passiert nichts
 
 ## Hinweise zur Lösung

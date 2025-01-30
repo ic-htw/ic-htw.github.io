@@ -236,6 +236,9 @@ home: &r
                   - t: Überblick Cassandra
                     ts: Überblick Cassandra
                     url: /home/lv/adbkt/vorlesungen/cas.html
+                  - t: Neo4j
+                    ts: Neo4j
+                    url: /home/lv/adbkt/vorlesungen/neo4j.html
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/vorlesungen/cypher-knoten.html

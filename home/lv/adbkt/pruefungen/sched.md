@@ -22,6 +22,7 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
     - Damit brauchen sie keine kürzesten Weg im Berliner Straßenetz zu berechnen
   - Die Geo- und Fahrzeitdaten finden sie in der Postgres-Datenbank
   - Die kürzesten Pfade bitte in der Neo4j-Datenbank berechnen
+  - Gehen sie von einer minimalen Umstiegszeit von 30 Sekunden aus
 - Die Python-Funktion soll folgende Signatur haben:
   - `fahrverbindung(lat_lng_start, lat_lng_ziel, startdatum, startzeit)`
   - Beachten sie, dass sich aus dem Startdatum ein Zeitplan ergibt
