@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- AlloyDB vs PostgreSQL: Unleash Performance, Slash Costs, Simplify Data Stack
+[(link)](https://medium.com/google-cloud/alloydb-vs-postgresql-unleash-performance-slash-costs-simplify-data-stack-5ced5419adea)
+
+- 2025 Data Engineering & AI Trends
+[(link)](https://levelup.gitconnected.com/2025-data-engineering-ai-trends-2deeae105cac)
+
+- Don’t Fear Async: A Friendly Guide to Python’s Most Powerful Tool
+[(link)](https://python.plainenglish.io/dont-fear-async-a-friendly-guide-to-python-s-most-powerful-tool-a45f4a477a81)
+
 - Top 11 AI-Powered Developer Tools Transforming Workflows in 2025 
 [(link)](https://blog.stackademic.com/top-11-ai-powered-developer-tools-transforming-workflows-in-2025-75a6326741a3)
 
