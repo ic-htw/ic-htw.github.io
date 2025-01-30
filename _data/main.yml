@@ -192,8 +192,8 @@ home: &r
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html
             sub: &adbkt
-              - t: ADBKT - Allgemeines
-                ts: ADBKT - Allgemeines
+              - t: Allgemeines
+                ts: Allgemeines
                 url: /home/lv/adbkt/allgemeines/1-allgemeines.html
                 sub:
                   - t: Überblick
@@ -205,55 +205,70 @@ home: &r
                   - t: Ressourcen
                     ts: Ressourcen
                     url: /home/lv/adbkt/allgemeines/res.html
-              - t: ADBKT - Vorlesungen
-                ts: ADBKT - Vorlesungen
-                url: /home/lv/adbkt/vorlesungen/1-vorlesungen.html
+              - t: Transaktionen
+                ts: Transaktionen
+                url: /home/lv/adbkt/transaktionen/1-transaktionen.html
                 sub:
-                  - t:  Entwicklung von DB-Systemen
-                    ts:  Entwicklung von DB-Systemen
-                    url: /home/lv/adbkt/vorlesungen/history.html
                   - t: Transaktionen
                     ts: Transaktionen
-                    url: /home/lv/adbkt/vorlesungen/trans.html
+                    url: /home/lv/adbkt/transaktionen/trans.html
                   - t: Transaktionen in Postgres
                     ts: Transaktionen in Postgres
-                    url: /home/lv/adbkt/vorlesungen/trans-pg.html
+                    url: /home/lv/adbkt/transaktionen/trans-pg.html
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
-                    url: /home/lv/adbkt/vorlesungen/trans-dist.html
-                  - t:  NoSQL
-                    ts:  NoSQL
-                    url: /home/lv/adbkt/vorlesungen/nosql.html
+                    url: /home/lv/adbkt/transaktionen/trans-dist.html
+                  - t: Übung Transaktionen
+                    ts: Übung Transaktionen
+                    url: /home/lv/adbkt/transaktionen/ueb1-trans.html
+              - t: NoSQL
+                ts: NoSQL
+                url: /home/lv/adbkt/nosql/1-nosql.html
+                sub:
+                  - t:  Einführung
+                    ts:  Einführung
+                    url: /home/lv/adbkt/nosql/intro-nosql.html
                   - t: Replikation / Partitionierung
                     ts: Replikation / Partitionierung
-                    url: /home/lv/adbkt/vorlesungen/repl-part.html
+                    url: /home/lv/adbkt/nosql/repl-part.html
                   - t: Konsistenz
                     ts: Konsistenz
-                    url: /home/lv/adbkt/vorlesungen/consistency.html
+                    url: /home/lv/adbkt/nosql/consistency.html
                   - t: Log Structured Merge Trees
                     ts: Log Structured Merge Trees
-                    url: /home/lv/adbkt/vorlesungen/lsm.html
+                    url: /home/lv/adbkt/nosql/lsm.html
                   - t: Überblick Cassandra
                     ts: Überblick Cassandra
-                    url: /home/lv/adbkt/vorlesungen/cas.html
+                    url: /home/lv/adbkt/nosql/cas.html
+              - t: Graph-Datenbanken
+                ts: Graph-Datenbanken
+                url: /home/lv/adbkt/graphdb/1-graphdb.html
+                sub:
                   - t: Neo4j
                     ts: Neo4j
-                    url: /home/lv/adbkt/vorlesungen/neo4j.html
+                    url: /home/lv/adbkt/graphdb/neo4j.html
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
-                    url: /home/lv/adbkt/vorlesungen/cypher-knoten.html
+                    url: /home/lv/adbkt/graphdb/cypher-knoten.html
                   - t: Cypher Pfade fester Länge
                     ts: Cypher Pfade fester Länge
-                    url: /home/lv/adbkt/vorlesungen/cypher-pfad1.html
+                    url: /home/lv/adbkt/graphdb/cypher-pfad1.html
                   - t: Cypher Pfade variabler Länge
                     ts: Cypher Pfade variabler Länge
-                    url: /home/lv/adbkt/vorlesungen/cypher-pfad2.html
+                    url: /home/lv/adbkt/graphdb/cypher-pfad2.html
                   - t: Cypher kürzeste Pfade
                     ts: Cypher kürzeste Pfade
-                    url: /home/lv/adbkt/vorlesungen/cypher-sp.html
+                    url: /home/lv/adbkt/graphdb/cypher-sp.html
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
+              - t: Sonstiges
+                ts: Sonstiges
+                url: /home/lv/adbkt/sonstiges/1-sonstiges.html
+                sub:
+                  - t: Historischer Überblick
+                    ts: Historischer Überblick
+                    url: /home/lv/adbkt/sonstiges/history.html
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
                     url: /home/lv/adbkt/a/geo/geo.pdf
@@ -262,16 +277,16 @@ home: &r
                     url: /home/lv/adbkt/a/json/json-pg.pdf
                   - t: DynamoDB
                     ts: DynamoDB
-                    url: /home/lv/adbkt/vorlesungen/dynamo.html
+                    url: /home/lv/adbkt/sonstiges/dynamo.html
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
-                    url: /home/lv/adbkt/vorlesungen/vectordb.html
+                    url: /home/lv/adbkt/sonstiges/vectordb.html
                   - t: Large Language Models
                     ts: LLMs
-                    url: /home/lv/adbkt/vorlesungen/llms.html
+                    url: /home/lv/adbkt/sonstiges/llms.html
                   - t: Window-Funktionen in SQL
                     ts: Window-Funktionen in SQL
-                    url: /home/lv/adbkt/vorlesungen/window-sql.html
+                    url: /home/lv/adbkt/sonstiges/window-sql.html
                   - t: Rekursive Abfragen
                     ts: Rekursive Abfragen
                     url: /home/lv/adbkt/a/sql/rec.pdf
@@ -283,12 +298,12 @@ home: &r
                     url: /home/lv/adbkt/a/insta/insta.pdf
                   - t:  zzz01
                     ts:  zzz01
-                    url: /home/lv/adbkt/vorlesungen/zzz01.html
+                    url: /home/lv/adbkt/sonstiges/zzz01.html
                   - t:  zzz02
                     ts:  zzz02
-                    url: /home/lv/adbkt/vorlesungen/zzz02.html
-              - t: ADBKT - Übungen
-                ts: ADBKT - Übungen
+                    url: /home/lv/adbkt/sonstiges/zzz02.html
+              - t: Übungen
+                ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
                 sub:
                   - t: Präsentation von Fallbeispielen
@@ -303,9 +318,6 @@ home: &r
                   - t:  Python DB-Intro
                     ts:  Python DB-Intro
                     url: /home/lv/adbkt/uebungen/db-intro.html
-                  - t: Transaktionen
-                    ts: Transaktionen
-                    url: /home/lv/adbkt/uebungen/trans-ueb.html
                   - t: Cassandra Replikation
                     ts: Cassandra Replikation
                     url: /home/lv/adbkt/uebungen/cas-repl.html
@@ -360,8 +372,8 @@ home: &r
                   - t: Closeness Centrality in SAP Hana
                     ts: Closeness Centrality in SAP Hana
                     url: /home/lv/adbkt/uebungen/hana-cc.html
-              - t: ADBKT - Prüfungsleistungen
-                ts: ADBKT - Prüfungsleistungen
+              - t: Prüfungsleistungen
+                ts: Prüfungsleistungen
                 url: /home/lv/adbkt/pruefungen/1-pruefungen.html
                 sub:
                   - t: P1 (15 Punkte)
