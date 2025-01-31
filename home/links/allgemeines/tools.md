@@ -404,6 +404,15 @@ is_slide: 0
 - datacamp
 [(link)](https://www.datacamp.com/community/tutorials/generate-data-trumania)
 
+# uv
+- git
+[(link)](https://github.com/astral-sh/uv)
+- doc
+[(link)](https://docs.astral.sh/uv/)
+
+
+
+
 # Video / Screencasting
 - shotcut
 [(link)](https://shotcut.org/)
