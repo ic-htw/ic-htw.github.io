@@ -192,19 +192,34 @@ home: &r
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html
             sub: &adbkt
-              - t: Allgemeines
-                ts: Allgemeines
-                url: /home/lv/adbkt/allgemeines/1-allgemeines.html
+              - t: Intro
+                ts: Intro
+                url: /home/lv/adbkt/intro/1-intro.html
                 sub:
                   - t: Überblick
                     ts: Überblick
-                    url: /home/lv/adbkt/allgemeines/ueberblick.html
+                    url: /home/lv/adbkt/intro/ueberblick.html
                   - t: Plan
                     ts: Plan
-                    url: /home/lv/adbkt/allgemeines/plan.html
+                    url: /home/lv/adbkt/intro/plan.html
                   - t: Ressourcen
                     ts: Ressourcen
-                    url: /home/lv/adbkt/allgemeines/res.html
+                    url: /home/lv/adbkt/intro/res.html
+                  - t: Historischer Überblick
+                    ts: Historischer Überblick
+                    url: /home/lv/adbkt/intro/history.html
+                  - t: "Ü: Präsentation von Fallbeispielen"
+                    ts: "Ü: Präsentation von Fallbeispielen"
+                    url: /home/lv/adbkt/uebungen/pres.html
+                  - t: "Ü: Konfiguration DBeaver"
+                    ts: "Ü: Konfiguration DBeaver"
+                    url: /home/lv/adbkt/uebungen/dbeaver.html
+                  - t: "Ü: Python-Container erstellen"
+                    ts: "Ü: Python-Container erstellen"
+                    url: /home/lv/adbkt/uebungen/py-cont.html
+                  - t:  "Ü: Python DB-Intro"
+                    ts:  "Ü: Python DB-Intro"
+                    url: /home/lv/adbkt/uebungen/db-intro.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
@@ -218,8 +233,8 @@ home: &r
                   - t: Verteilte Transaktionen
                     ts: Verteilte Transaktionen
                     url: /home/lv/adbkt/transaktionen/trans-dist.html
-                  - t: Übung Transaktionen
-                    ts: Übung Transaktionen
+                  - t: "Ü: Transaktionen"
+                    ts: "Ü: Transaktionen"
                     url: /home/lv/adbkt/transaktionen/ueb1-trans.html
               - t: NoSQL
                 ts: NoSQL
@@ -240,6 +255,9 @@ home: &r
                   - t: Überblick Cassandra
                     ts: Überblick Cassandra
                     url: /home/lv/adbkt/nosql/cas.html
+                  - t: "Ü: Cassandra Replikation"
+                    ts: "Ü: Cassandra Replikation"
+                    url: /home/lv/adbkt/nosql/cas-repl.html
               - t: Graph-Datenbanken
                 ts: Graph-Datenbanken
                 url: /home/lv/adbkt/graphdb/1-graphdb.html
@@ -262,16 +280,44 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t: "Ü: Neo4j-Container erstellen"
+                    ts: "Ü: Neo4j-Container erstellen"
+                    url: /home/lv/adbkt/graphdb/neo4j-cont.html
+                  - t: "Ü: Beispiel-Graph-Datenmodelle"
+                    ts: "Ü: Beispiel-Graph-Datenmodelle"
+                    url: /home/lv/adbkt/graphdb/graph-dm.html
+                  - t: "Ü: Cypher-Abfragen 1"
+                    ts: "Ü: Cypher-Abfragen 1"
+                    url: /home/lv/adbkt/graphdb/ueb1-cypher.html
+                  - t:  "Ü: Cypher-Abfragen 2"
+                    ts:  "Ü: Cypher-Abfragen 2"
+                    url: /home/lv/adbkt/graphdb/ueb2-cypher.html
+                  - t:  "Ü: Cypher-Python"
+                    ts:  "Ü: Cypher-Python"
+                    url: /home/lv/adbkt/graphdb/ueb-python-cypher.html
+                  - t:  "Ü: Graph-Data-Science"
+                    ts: "Ü: Graph-Data-Science"
+                    url: /home/lv/adbkt/graphdb/gds.html
+              - t: Geo-Datenverarbeitung
+                ts: Geo-Datenverarbeitung
+                url: /home/lv/adbkt/geo/1-geo.html
+                sub:
+                  - t:  Geo-Datenverarbeitung
+                    ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/a/geo/geo.pdf
+                  - t: "Ü: Geo-Abfragen"
+                    ts: "Ü: Geo-Abfragen"
+                    url: /home/lv/adbkt/geo/geo-sql.html
+                  - t: "Ü: Visualisierung Geodaten"
+                    ts: "Ü: Visualisierung Geodaten"
+                    url: /home/lv/adbkt/geo/geo-viz.html
+                  - t: "Ü: pgRouting"
+                    ts: "Ü: pgRouting"
+                    url: /home/lv/adbkt/geo/pgrouting.html
               - t: Sonstiges
                 ts: Sonstiges
                 url: /home/lv/adbkt/sonstiges/1-sonstiges.html
                 sub:
-                  - t: Historischer Überblick
-                    ts: Historischer Überblick
-                    url: /home/lv/adbkt/sonstiges/history.html
-                  - t:  Geo-Datenverarbeitung
-                    ts:  Geo-Datenverarbeitung
-                    url: /home/lv/adbkt/a/geo/geo.pdf
                   - t:  JSON in Postgres
                     ts:  JSON in Postgres
                     url: /home/lv/adbkt/a/json/json-pg.pdf
@@ -306,71 +352,29 @@ home: &r
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
                 sub:
-                  - t: Präsentation von Fallbeispielen
-                    ts: Präsentation von Fallbeispielen
-                    url: /home/lv/adbkt/uebungen/pres.html
-                  - t: Konfiguration DBeaver
-                    ts: Konfiguration DBeaver
-                    url: /home/lv/adbkt/uebungen/dbeaver.html
-                  - t: Python-Container erstellen
-                    ts: Python-Container erstellen
-                    url: /home/lv/adbkt/uebungen/py-cont.html
-                  - t:  Python DB-Intro
-                    ts:  Python DB-Intro
-                    url: /home/lv/adbkt/uebungen/db-intro.html
-                  - t: Cassandra Replikation
-                    ts: Cassandra Replikation
-                    url: /home/lv/adbkt/uebungen/cas-repl.html
-                  - t: Neo4j-Container erstellen
-                    ts: Neo4j-Container erstellen
-                    url: /home/lv/adbkt/uebungen/neo4j-cont.html
-                  - t: Beispiel-Graph-Datenmodelle
-                    ts: Beispiel-Graph-Datenmodelle
-                    url: /home/lv/adbkt/uebungen/graph-dm.html
-                  - t: Cypher-Abfragen 1
-                    ts: Cypher-Abfragen 1
-                    url: /home/lv/adbkt/uebungen/ueb1-cypher.html
-                  - t:  Cypher-Abfragen 2
-                    ts:  Cypher-Abfragen 2
-                    url: /home/lv/adbkt/uebungen/ueb2-cypher.html
-                  - t:  Cypher-Python
-                    ts:  Cypher-Python
-                    url: /home/lv/adbkt/uebungen/ueb-python-cypher.html
-                  - t:  Graph-Data-Science
-                    ts: Graph-Data-Science
-                    url: /home/lv/adbkt/uebungen/gds.html
-                  - t: Geo-Abfragen
-                    ts: Geo-Abfragen
-                    url: /home/lv/adbkt/uebungen/geo-sql.html
-                  - t: Visualisierung Geodaten
-                    ts: Visualisierung Geodaten
-                    url: /home/lv/adbkt/uebungen/geo-viz.html
-                  - t: pgRouting
-                    ts: pgRouting
-                    url: /home/lv/adbkt/uebungen/pgrouting.html
-                  - t: DynamoDB
-                    ts: DynamoDB
+                  - t: "Ü: DynamoDB"
+                    ts: "Ü: DynamoDB"
                     url: /home/lv/adbkt/uebungen/dynamodb.html
-                  - t:  Langchain
-                    ts:  Langchain
+                  - t:  "Ü: Langchain"
+                    ts:  "Ü: Langchain"
                     url: /home/lv/adbkt/uebungen/langchain.html
-                  - t:  Retail Sales
-                    ts:  Retail Sales
+                  - t:  "Ü: Retail Sales"
+                    ts:  "Ü: Retail Sales"
                     url: /home/lv/adbkt/uebungen/retail.html
-                  - t: Rekursive Abfrage
-                    ts: Rekursive Abfrage
+                  - t: "Ü: Rekursive Abfrage"
+                    ts: "Ü: Rekursive Abfrage"
                     url: /home/lv/adbkt/uebungen/rec-sql.html
-                  - t:  SQL mit ChatGPT
-                    ts:  SQL mit ChatGPT
+                  - t:  "Ü: SQL mit ChatGPT"
+                    ts:  "Ü: SQL mit ChatGPT"
                     url: /home/lv/adbkt/uebungen/sql-chatgpt.html
-                  - t:  Hana, BTP Account
-                    ts:  Hana, BTP Account
+                  - t:  "Ü: Hana, BTP Account"
+                    ts:  "Ü: Hana, BTP Account"
                     url: /home/lv/adbkt/uebungen/hana-btp-account.html
-                  - t: Hana Graph
-                    ts: Hana Graph
+                  - t: "Ü: Hana Graph"
+                    ts: "Ü: Hana Graph"
                     url: /home/lv/adbkt/uebungen/hana-graph.html
-                  - t: Closeness Centrality in SAP Hana
-                    ts: Closeness Centrality in SAP Hana
+                  - t: "Ü: Closeness Centrality in SAP Hana"
+                    ts: "Ü: Closeness Centrality in SAP Hana"
                     url: /home/lv/adbkt/uebungen/hana-cc.html
               - t: Prüfungsleistungen
                 ts: Prüfungsleistungen

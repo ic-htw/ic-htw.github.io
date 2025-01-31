@@ -1,6 +1,7 @@
 ---
 layout: default1
-nav: adbkt-uebungen
+nav: adbkt-grphdb
+title: "Ü: Graph-Data-Science"
 is_slide: 0
 ---
 

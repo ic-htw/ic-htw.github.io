@@ -1,6 +1,7 @@
 ---
 layout: default1
-nav: adbkt-uebungen
+nav: adbkt-geo
+title: "Ü: Geo-Abfragen"
 is_slide: 0
 ---
 
