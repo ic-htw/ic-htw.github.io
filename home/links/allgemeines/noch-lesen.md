@@ -9,6 +9,27 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- documentdb
+[(link)](https://github.com/microsoft/documentdb)
+
+- Top 15 Trending GitHub Repositories For AI Developement
+[(link)](https://blog.stackademic.com/top-15-trending-github-repositories-for-ai-developement-ca05acb9d390)
+
+- Stream Processing Systems in 2025: RisingWave, Flink, Spark Streaming, and What’s Ahead
+[(link)](https://blog.det.life/stream-processing-systems-in-2025-risingwave-flink-spark-streaming-and-whats-ahead-6e24927f7d8b)
+
+- Full-stack RAG: FastAPI Backend (Part 1)
+[(link)](https://medium.com/@o39joey/full-stack-rag-fastapi-backend-part-1-eab28eb21392)
+
+- Ollama vs vLLM: which framework is better for inference?
+[(link)](https://henrynavarro.org/ollama-vs-vllm-which-framework-is-better-for-inference-part-i-d8211d7248d2)
+
+- Is Cursor better than VS Code?
+[(link)](https://javascript.plainenglish.io/is-cursor-a-vs-code-killer-56031b7c9a08)
+
+- Stop Being Racist! Just Use DeepSeek Dammit!
+[(link)](https://generativeai.pub/stop-being-racist-just-use-deepseek-dammit-b2a7f2a35cf4)
+
 - AlloyDB vs PostgreSQL: Unleash Performance, Slash Costs, Simplify Data Stack
 [(link)](https://medium.com/google-cloud/alloydb-vs-postgresql-unleash-performance-slash-costs-simplify-data-stack-5ced5419adea)
 

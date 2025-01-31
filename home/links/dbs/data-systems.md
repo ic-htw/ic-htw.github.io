@@ -112,6 +112,10 @@ is_slide: 0
 [(link)](https://www.heise.de/hintergrund/Eine-Einfuehrung-in-die-Azure-Cosmos-DB-4446403.html)
 
 
+# documentDB - microsoft
+- git
+[(link)](https://github.com/microsoft/documentdb)
+
 
 
 # dragonflydb
