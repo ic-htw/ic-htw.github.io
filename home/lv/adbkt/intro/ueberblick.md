@@ -1,8 +1,8 @@
 ---
 layout: default1
 nav: adbkt-intro
+title: Überblick
 is_slide: 0
-title: ADBKT - Überblick
 ---
 # Ausgewählte Datenbankkonzepte/-techniken (ADBKT)
 

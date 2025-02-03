@@ -1,5 +1,5 @@
 home: &r
-  - t: Prof. Dr. Ingo Claßen
+  - t: Homepage
     ts: Home
     url: /index.html
     sub: &h
@@ -210,16 +210,16 @@ home: &r
                     url: /home/lv/adbkt/intro/history.html
                   - t: "Ü: Präsentation von Fallbeispielen"
                     ts: "Ü: Präsentation von Fallbeispielen"
-                    url: /home/lv/adbkt/uebungen/pres.html
+                    url: /home/lv/adbkt/intro/pres.html
                   - t: "Ü: Konfiguration DBeaver"
                     ts: "Ü: Konfiguration DBeaver"
-                    url: /home/lv/adbkt/uebungen/dbeaver.html
+                    url: /home/lv/adbkt/intro/dbeaver.html
                   - t: "Ü: Python-Container erstellen"
                     ts: "Ü: Python-Container erstellen"
-                    url: /home/lv/adbkt/uebungen/py-cont.html
+                    url: /home/lv/adbkt/intro/py-cont.html
                   - t:  "Ü: Python DB-Intro"
                     ts:  "Ü: Python DB-Intro"
-                    url: /home/lv/adbkt/uebungen/db-intro.html
+                    url: /home/lv/adbkt/intro/db-intro.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
@@ -342,16 +342,6 @@ home: &r
                   - t:  Instacart
                     ts:  Instacart
                     url: /home/lv/adbkt/a/insta/insta.pdf
-                  - t:  zzz01
-                    ts:  zzz01
-                    url: /home/lv/adbkt/sonstiges/zzz01.html
-                  - t:  zzz02
-                    ts:  zzz02
-                    url: /home/lv/adbkt/sonstiges/zzz02.html
-              - t: Übungen
-                ts: Übungen
-                url: /home/lv/adbkt/uebungen/1-uebungen.html
-                sub:
                   - t: "Ü: DynamoDB"
                     ts: "Ü: DynamoDB"
                     url: /home/lv/adbkt/uebungen/dynamodb.html
@@ -398,6 +388,16 @@ home: &r
                   - t: P6 (20 Punkte)
                     ts: P6 (20 Punkte)
                     url: /home/lv/adbkt/pruefungen/graphql.html
+              - t: zzz
+                ts: zzz
+                url: /home/lv/adbkt/zzz/1-zzz.html
+                sub:
+                  - t:  zzz01
+                    ts:  zzz01
+                    url: /home/lv/adbkt/zzz/zzz01.html
+                  - t:  zzz02
+                    ts:  zzz02
+                    url: /home/lv/adbkt/zzz/zzz02.html
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html
