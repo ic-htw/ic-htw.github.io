@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: Deep Learning
 is_slide: 0
 ---
 - Deep Learning Tuning Playbook

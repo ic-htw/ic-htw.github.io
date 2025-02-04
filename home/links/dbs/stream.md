@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Stream / Event Processing
 is_slide: 0
 ---
 

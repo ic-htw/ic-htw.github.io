@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-prog
+title: Python
 is_slide: 0
 ---
 # Home

@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: DuckDB
 is_slide: 0
 ---
 # home

@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: 
 is_slide: 0
 ---
 - Customer Lifetime Value (CLV) Prediction With Machine Learning and DB Querying With LLM

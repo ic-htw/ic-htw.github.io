@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title:  Decision Trees
 is_slide: 0
 ---
 - Understanding Random Forest

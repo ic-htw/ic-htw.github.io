@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Abfragesprachen
 is_slide: 0
 ---
 # sql

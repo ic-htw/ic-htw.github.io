@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-prog
+title: SAP
 is_slide: 0
 ---
 - DAT260 - Multimodel Data Processing with SAP HANA Cloud

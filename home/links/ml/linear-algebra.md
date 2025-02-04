@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: Lineare Algebra
 is_slide: 0
 ---
 - Intuitive Math - Linear Algebra

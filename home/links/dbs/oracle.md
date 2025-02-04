@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Oracle
 is_slide: 0
 ---
 # Oracle Database 23c Free

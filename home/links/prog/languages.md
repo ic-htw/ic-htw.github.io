@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-prog
+title: Programmiersprachen
 is_slide: 0
 ---
 

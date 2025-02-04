@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: Interpretation of ML Models
 is_slide: 0
 ---
 - Shapash: Making ML Models Understandable by Everyone

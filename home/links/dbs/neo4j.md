@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Neo4j
 is_slide: 0
 ---
 # official

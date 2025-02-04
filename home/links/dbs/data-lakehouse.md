@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Data Lakehouse
 is_slide: 0
 ---
 

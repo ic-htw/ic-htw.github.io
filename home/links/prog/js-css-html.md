@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-prog
+title: JavaScript, CSS, HTML
 is_slide: 0
 ---
 # JavaScript References / Tutorials / Sites

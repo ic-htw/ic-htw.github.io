@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: LSM
 is_slide: 0
 ---
 - LSM-based Storage Techniques: A Survey

@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title: Visualization
 is_slide: 0
 ---
 - Six Awesome Strategies to Visualize Temporal Changes Effectively

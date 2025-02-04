@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-prog
+title: 
 is_slide: 0
 ---
 # posts

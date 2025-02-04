@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: NLP
 is_slide: 0
 ---
 # Hugging Face

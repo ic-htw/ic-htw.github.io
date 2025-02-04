@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: AAA
 is_slide: 0
 ---
 # aaa

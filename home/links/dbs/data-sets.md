@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-dbs
+title:  Data Sets
 is_slide: 0
 ---
 - Tableau Beispieldaten

@@ -1,6 +1,7 @@
 ---
 layout: default1
 nav: links-ml
+title: Anomaly Detection
 is_slide: 0
 ---
 - Anomaly Detection
