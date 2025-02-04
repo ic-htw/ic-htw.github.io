@@ -1,9 +1,10 @@
 ---
 layout: default1
-nav: adbkt-uebungen
+nav: adbkt-intro
+title: Python DB-Intro
 is_slide: 0
 ---
-
+#
 # Python DB-Intro
 
 - Download [pg.py](/home/lv/adbkt/a/ipynb/pg.py) und speichern unter "cred_pg.py"

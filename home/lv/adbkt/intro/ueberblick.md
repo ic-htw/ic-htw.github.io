@@ -4,6 +4,7 @@ nav: adbkt-intro
 title: Überblick
 is_slide: 0
 ---
+#
 # Ausgewählte Datenbankkonzepte/-techniken (ADBKT)
 
 
