@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Rethinking the frontend with HTMX
+[(link)](https://medium.com/@marcnealer/rethinking-the-frontend-with-htmx-780045980352)
+
+- Why Docker Might Not Be Your Best Choice
+[(link)](https://dipanshu10.medium.com/why-docker-might-not-be-your-best-choice-74beb3bcad74)
+
+- SQLModel
+[(link)](https://sqlmodel.tiangolo.com/)
+
+- Why Choose Caddy Server instead Nginx?
+[(link)](https://blog.9ssi7.dev/why-choose-caddy-server-over-nginx-e49b01c631a1)
+
 - documentdb
 [(link)](https://github.com/microsoft/documentdb)
 
