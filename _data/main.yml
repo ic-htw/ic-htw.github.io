@@ -27,9 +27,6 @@ home: &r
                   - t: Video
                     ts: Video
                     url: https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV
-                  - t: Share
-                    ts: Share
-                    url: /home/lv/dmdb/allgemeines/share.html
                   - t: Probeklausur
                     ts: Probeklausur
                     url: /home/lv/dmdb/a/probeklausur/dmdb-probeklausur.pdf
@@ -40,13 +37,13 @@ home: &r
                   - t: Relationenmodell
                     ts: Relationenmodell
                     url: /home/lv/dmdb/rel/relmod.html
-                  - t: Excel / Rel
+                  - t: Relationenmodell im Verhältnis zu Excel
                     ts: Excel / Rel
                     url: /home/lv/dmdb/rel/rel-excel.html
                   - t: Normalformen
                     ts: Normalformen
                     url: /home/lv/dmdb/rel/norm.html
-              - t: ER
+              - t: Entity-Relationship-Modell
                 ts: ER
                 url: /home/lv/dmdb/er/1-er.html
                 sub:
@@ -66,23 +63,23 @@ home: &r
                 ts: SQL
                 url: /home/lv/dmdb/sql/1-sql.html
                 sub:
-                  - t: Abfragen auf einer Tabelle
-                    ts: Abfragen auf einer Tabelle
+                  - t: SQL - Abfragen auf einer Tabelle
+                    ts: SQL - Abfragen auf einer Tabelle
                     url: /home/lv/dmdb/sql/sql-one.html
-                  - t: Verbund
-                    ts: Verbund
+                  - t: SQL - Verbund
+                    ts: SQL - Verbund
                     url: /home/lv/dmdb/sql/sql-join.html
-                  - t: Gruppierungen / Aggregationen
-                    ts: Gruppierungen / Aggregationen
+                  - t: SQL - Gruppierungen / Aggregationen
+                    ts: SQL - Gruppierungen / Aggregationen
                     url: /home/lv/dmdb/sql/sql-grp-agg.html
-                  - t: Unterabfragen
-                    ts: Unterabfragen
+                  - t: SQL - Unterabfragen
+                    ts: SQL - Unterabfragen
                     url: /home/lv/dmdb/sql/sql-sub.html
-                  - t: Fenster-Funktionen
-                    ts: Fenster-Funktionen
+                  - t: SQL - Fenster-Funktionen
+                    ts: SQL - Fenster-Funktionen
                     url: /home/lv/dmdb/sql/sql-window.html
-                  - t: Fallbeipiele
-                    ts: Fallbeipiele
+                  - t: SQL - Fallbeipiele
+                    ts: SQL - Fallbeipiele
                     url: /home/lv/dmdb/sql/sql-case.html
               - t: Visualisierungen
                 ts: Visualisierungen
