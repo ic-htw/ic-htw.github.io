@@ -3,7 +3,7 @@ layout: default1
 nav: dmdb-sql
 title: SQL - Abfragen auf einer Tabelle - DMDB
 is_slide: 1
-n: 19
+n: 18
 hide: 1
 ---
 <!--
@@ -500,32 +500,4 @@ SELECT to_char(1234567.89, '9G999G999D99') as wert FROM dual;</code></pre>
 </div>
 <div class="ic-gap"></div>
 
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>Playlist - Transformation Stückedauer</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image w3-padding-16" src="/home/lv/dmdb/a/sql-one/pl-10.png">
-    </div>
-    <div class="w3-col m6">
-{% if page.hide == 0 %}
-            <pre><code class="language-sql">SELECT 
-  sid,
-  titel,
-  dauerinsek,
-  to_char(trunc(dauerinsek/60), '999') 
-    || ':' ||
-    to_char(mod(dauerinsek, 60), 'FM09') 
-      as dauer
-FROM stueck;</code></pre>
-{% else %} 
-             <pre><code class="language-sql">SELECT ...</code></pre>
-{% endif %} 
-</div>
-</div>
-<div class="ic-gap"></div>
 

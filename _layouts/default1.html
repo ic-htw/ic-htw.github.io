@@ -79,9 +79,10 @@
       {% endfor %}
       <script>
         slideSetOn();
-        const slideset = "{{page.name}}"
+        // const slideset = nameFromHref()
+        // const slideset = "{{page.name}}"
         const noOfSlides = "{{page.n}}"
-        setSlideset(slideset);
+        // setSlideset(slideset);
         setNoOfSlides(noOfSlides);
         fillToc();
         renderButtonActivation();

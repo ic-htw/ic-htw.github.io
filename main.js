@@ -1,7 +1,14 @@
 // ----------------------------------------------------------------------------
+// Global strings
+// ----------------------------------------------------------------------------
+const keyPrefix = "ichp"
+const allPages = "all"
+
+// ----------------------------------------------------------------------------
 // Init page
 // ----------------------------------------------------------------------------
 function init() {
+    document.addEventListener("visibilitychange", handleVisibilityChange)
     navLevelHandle();
     fillSecondSidebar();
     // fillToc();
@@ -19,49 +26,99 @@ function init() {
 }
 
 // ----------------------------------------------------------------------------
-// Local storage
+// Visibility Change - for Tab Switch
+// ----------------------------------------------------------------------------
+function handleVisibilityChange() {
+    // const slidesetOld = getSlideset();
+    // const slidesetNew = nameFromHref();
+    if (document.hidden) {
+        console.log(`hidden - ${nameFromHref()}`);
+    } else {
+        console.log(`visible - ${nameFromHref()}`);
+        // setSlideset(slidesetNew);
+        // setNoOfSlides(getNoOfSlides());       
+    }
+  }
+
+function nameFromHref() {
+    const url = window.location.href; 
+    // Get last part of url
+    const filename = url.substring(url.lastIndexOf('/') + 1);
+    // Get basename, assume filename has extension .html
+    const baseFilename = filename.substring(0, filename.lastIndexOf('.')) 
+    return baseFilename;
+}
+
+
+// ----------------------------------------------------------------------------
+// State storage handling
+// ----------------------------------------------------------------------------
+function stateSet(funcName, pageName, varName, val) {
+    const key = `${keyPrefix}-${pageName}-${varName}`;
+    console.log(`stateSet: ${funcName}|${key}|${val}`);
+    localStorage.setItem(key, val);
+}
+
+function stateGet(funcName, pageName, varName) {
+    const key = `${keyPrefix}-${pageName}-${varName}`;
+    const val = localStorage.getItem(key);
+    console.log(`stateGet: ${funcName}|${key}|${val}`);
+    return val;
+}
+
+
+// ----------------------------------------------------------------------------
+// State management
 // ----------------------------------------------------------------------------
 
 // Slides ---------------------------------------------------------------------
 function slideSetOn() {
-    localStorage.setItem("ichp-slide", 1);
+    stateSet("slideSetOn", nameFromHref(), "slide", 1);
+    // localStorage.setItem("ichp-slide", 1);
 }
 
 function slideSetOff() {
-    localStorage.setItem("ichp-slide", 0);
+    stateSet("slideSetOff", nameFromHref(), "slide", 0);
+    // localStorage.setItem("ichp-slide", 0);
 }
 
 function slideIsOn() {
-    const slide = localStorage.getItem('ichp-slide');
+    const slide = stateGet("slideIsOn", nameFromHref(), "slide");
+    // const slide = localStorage.getItem('ichp-slide');
     // null is regarded as off
     return slide == 1;
 }
 
 // Slide mode -----------------------------------------------------------------
 function slideModeSetOn() {
-    localStorage.setItem("slidemode", 1);
+    stateSet("slideModeSetOn", nameFromHref(), "slidemode", 1);
+    // localStorage.setItem("slidemode", 1);
     slidemodeHandle();
 }
 
 function slideModeSetOff() {
-    localStorage.setItem("slidemode", 0);
+    stateSet("slideModeSetOff", nameFromHref(), "slidemode", 0);
+    // localStorage.setItem("slidemode", 0);
     slidemodeHandle();
 }
 
 function slidemodeIsOn() {
-    const slidemode = localStorage.getItem('slidemode');
+    const slidemode = stateGet("slidemodeIsOn", nameFromHref(), "slidemode");
+    // const slidemode = localStorage.getItem('slidemode');
     // null is regarded as off
     return slidemode == 1;
 }
 
 // Navigation levels ----------------------------------------------------------
 function setNavLevel(level) {
-    localStorage.setItem("ichp-nav-level", level);
+    stateSet("setNavLevel", allPages, "nav-level", level);
+    // localStorage.setItem("ichp-nav-level", level);
     navLevelHandle();
 }
 
 function getNavLevel() {
-    const navLevel = localStorage.getItem("ichp-nav-level");
+    const navLevel = stateGet("getNavLevel", allPages, "nav-level");
+    // const navLevel = localStorage.getItem("ichp-nav-level");
     return (navLevel == null) ? 4 : parseInt(navLevel);
 }
 
@@ -79,23 +136,27 @@ function getSlideset() {
 
 // Slide numbers --------------------------------------------------------------
 function setNoOfSlides(noOfSlides) {
-    localStorage.setItem("ichp-noOfSlides", noOfSlides);
+    stateSet("setNoOfSlides", nameFromHref(), "noOfSlides", noOfSlides);
+    // localStorage.setItem("ichp-noOfSlides", noOfSlides);
 }
 
 function getNoOfSlides() {
-    const noOfSlides = parseInt(localStorage.getItem("ichp-noOfSlides"));
+    const noOfSlides = stateGet("getNoOfSlides", nameFromHref(), "noOfSlides");
+    // const noOfSlides = parseInt(localStorage.getItem("ichp-noOfSlides"));
     return (noOfSlides == null) ? 1 : parseInt(noOfSlides);
 }
 
 // Current slide numbers ------------------------------------------------------
 function setCurrentSlideNo(slideNo) {
-    const slideset = getSlideset()
-    localStorage.setItem(`ichp-${slideset}-slideno`, slideNo);
+    stateSet("setCurrentSlideNo", nameFromHref(), "slideno", slideNo);
+    // const slideset = getSlideset()
+    // localStorage.setItem(`ichp-${slideset}-slideno`, slideNo);
 }
 
 function getCurrentSlideNo() {
-    const slideset = getSlideset()
-    const slideNo = localStorage.getItem(`ichp-${slideset}-slideno`);
+    const slideNo = stateGet("getCurrentSlideNo", nameFromHref(), "slideno");
+    // const slideset = getSlideset()
+    // const slideNo = localStorage.getItem(`ichp-${slideset}-slideno`);
     return (slideNo == null) ? 1 : parseInt(slideNo);
 }
 

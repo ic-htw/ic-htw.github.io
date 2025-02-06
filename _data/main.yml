@@ -78,6 +78,9 @@ home: &r
                   - t: SQL - Fenster-Funktionen
                     ts: SQL - Fenster-Funktionen
                     url: /home/lv/dmdb/sql/sql-window.html
+                  - t: SQL - Aufgaben Interaktiv
+                    ts: SQL - Aufgaben Interaktiv
+                    url: /home/lv/dmdb/sql/sql-exercises.html
                   - t: SQL - Fallbeipiele
                     ts: SQL - Fallbeipiele
                     url: /home/lv/dmdb/sql/sql-case.html
