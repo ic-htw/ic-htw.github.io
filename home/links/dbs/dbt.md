@@ -14,6 +14,8 @@ is_slide: 0
 [(link)](https://github.com/dbt-labs/dbt)
 
 # bbb
+- dbt Semantic Layer — What Is and How to Use
+[(link)](https://medium.com/getindata-blog/dbt-semantic-layer-what-is-and-how-to-use-a8a418301c8f)
 - dbt 1.8 it is just wow
 [(link)](https://medium.astrafy.io/dbt-1-8-it-is-just-wow-5eb77fb273db)
 - dbt + Airflow
