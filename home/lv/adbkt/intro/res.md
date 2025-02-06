@@ -2,7 +2,7 @@
 layout: default1
 nav: adbkt-intro
 is_slide: 0
-title: ADBKT - Ressourcen
+title: Ressourcen - ADBKT
 ---
 
 # Ressourcen im Web
