@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Automating Data Summarization in PostgreSQL With Claude
+[(link)](https://www.timescale.com/blog/automating-data-summarization-in-postgresql-with-claude)
+
+- RunSQL
+[(link)](https://runsql.com/)
+
+- ChartDB
+[(link)](https://github.com/chartdb/chartdb)
+
 - Rethinking the frontend with HTMX
 [(link)](https://medium.com/@marcnealer/rethinking-the-frontend-with-htmx-780045980352)
 
