@@ -199,14 +199,8 @@ home: &r
                   - t: Überblick
                     ts: Überblick
                     url: /home/lv/adbkt/intro/ueberblick.html
-                  - t: Plan
-                    ts: Plan
-                    url: /home/lv/adbkt/intro/plan.html
-                  - t: Ressourcen
-                    ts: Ressourcen
-                    url: /home/lv/adbkt/intro/res.html
-                  - t: Historischer Überblick
-                    ts: Historischer Überblick
+                  - t: Historischer Überblick DB-Systeme
+                    ts: Historischer Überblick DB-Systeme
                     url: /home/lv/adbkt/intro/history.html
                   - t: "Ü: Präsentation von Fallbeispielen"
                     ts: "Ü: Präsentation von Fallbeispielen"
@@ -214,12 +208,18 @@ home: &r
                   - t: "Ü: Konfiguration DBeaver"
                     ts: "Ü: Konfiguration DBeaver"
                     url: /home/lv/adbkt/intro/dbeaver.html
-                  - t: "Ü: Python-Container erstellen"
-                    ts: "Ü: Python-Container erstellen"
-                    url: /home/lv/adbkt/intro/py-cont.html
+                  - t: "Ü: Jupyter Notebook"
+                    ts: "Ü: Jupyter Notebook"
+                    url: /home/lv/adbkt/intro/jupyter-intro.html
                   - t:  "Ü: Python DB-Intro"
                     ts:  "Ü: Python DB-Intro"
                     url: /home/lv/adbkt/intro/db-intro.html
+                  - t: Plan
+                    ts: Plan
+                    url: /home/lv/adbkt/intro/plan.html
+                  - t: Ressourcen
+                    ts: Ressourcen
+                    url: /home/lv/adbkt/intro/res.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html

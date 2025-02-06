@@ -1,6 +1,7 @@
 ---
 layout: default1
-nav: adbkt-uebungen
+nav: adbkt-intro
+title: Konfiguration DBeaver - ADBKT
 is_slide: 0
 ---
 
