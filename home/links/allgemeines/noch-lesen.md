@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Beyond Cost Savings: The True Power of Apache Iceberg in Modern Data Architectures
+[(link)](https://towardsdev.com/the-true-power-of-apache-iceberg-revolutionizing-modern-data-architectures-044146d463c6)
+
+- Handling Slowly Changing Dimensions (SCD) in Modern Data Pipelines: A Complete Guide with SQL Examples
+[(link)](https://blog.det.life/handling-slowly-changing-dimensions-scd-in-modern-data-pipeline-a-complete-guide-with-sql-fbb95f19a7cf)
+
+- Top 15 Must-Have JavaScript UI Libraries to Elevate Your Web Development
+[(link)](https://javascript.plainenglish.io/top-15-must-have-javascript-ui-libraries-to-elevate-your-web-development-87da115a075f)
+
+- I ranked every AI Coder: Bolt vs. Cursor vs. Replit vs Lovable
+[(link)](https://mitaboost.medium.com/i-ranked-every-ai-coder-bolt-vs-cursor-vs-replit-vs-lovable-d8cc17a3e989)
+
+- Ollama vs vLLM: which framework is better for inference?  (Part II)
+[(link)](https://henrynavarro.org/ollama-vs-vllm-which-framework-is-better-for-inference-part-ii-37f7e24d3899)
+
 - Automating Data Summarization in PostgreSQL With Claude
 [(link)](https://www.timescale.com/blog/automating-data-summarization-in-postgresql-with-claude)
 
