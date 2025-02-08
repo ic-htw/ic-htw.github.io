@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Step-by-Step: Running DeepSeek locally in VSCode for a Powerful, Private AI Copilot
+[(link)](https://medium.com/@dan.avila7/step-by-step-running-deepseek-locally-in-vscode-for-a-powerful-private-ai-copilot-4edc2108b83e)
+
+- DeepSeek R1 in 24GB GPU : Dynamic Quantization by Unsloth AI for a 671B-Parameter Model
+[(link)](https://medium.com/@sonamshrish1618/deepseek-r1-in-24gb-gpu-dynamic-quantization-by-unsloth-ai-for-a-671b-parameter-model-6b0cf85f9065)
+
+- Fine-Tuning DeepSeek-R1 on Consumer Hardware: A Step-by-Step Guide
+[(link)](https://medium.com/@pankaj_pandey/dab90bf69e38)
+
+- DeepSeek Fine-Tuning Made Simple: Create Custom AI Models with Python
+[(link)](https://pub.towardsai.net/deepseek-fine-tuning-made-simple-create-custom-ai-models-with-python-7b98f091c824)
+
 - Beyond Cost Savings: The True Power of Apache Iceberg in Modern Data Architectures
 [(link)](https://towardsdev.com/the-true-power-of-apache-iceberg-revolutionizing-modern-data-architectures-044146d463c6)
 
