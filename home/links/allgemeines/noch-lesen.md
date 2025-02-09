@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c
+[(link)](https://github.com/karpathy/llm.c/discussions/677)
+
+- Drawing DeepSeek R1 Architecture and Training Process from Scratch
+[(link)](https://levelup.gitconnected.com/drawing-deepseek-r1-architecture-and-training-process-from-scratch-72043da33955)
+
+- Advanced SQL for Data Professionals
+[(link)](https://medium.com/@mariusz_kujawski/advanced-sql-for-data-professionals-875ab725730c)
+
+- FineWeb: decanting the web for the finest text data at scale
+[(link)](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1)
+
 - Step-by-Step: Running DeepSeek locally in VSCode for a Powerful, Private AI Copilot
 [(link)](https://medium.com/@dan.avila7/step-by-step-running-deepseek-locally-in-vscode-for-a-powerful-private-ai-copilot-4edc2108b83e)
 

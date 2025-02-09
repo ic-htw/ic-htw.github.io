@@ -69,6 +69,10 @@ is_slide: 0
 [(link)](https://medium.com/analytics-vidhya/how-to-use-google-colab-with-github-via-google-drive-68efb23a42d)
 
 # diagram drawer
+- excalidraw
+[(link)](https://excalidraw.com/)
+- plus excalidraw
+[(link)](https://plus.excalidraw.com/)
 - yEd Live
 [(link)](https://www.yworks.com/yed-live/)
 - DiagramGPT

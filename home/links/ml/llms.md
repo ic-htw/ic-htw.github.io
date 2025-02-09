@@ -76,11 +76,16 @@ is_slide: 0
 # deepseek
 - The Chinese OBLITERATED OpenAI. A side-by-side comparison of DeepSeek R1 vs OpenAI O1 for Finance
 [(link)](https://medium.datadriveninvestor.com/the-chinese-obliterated-openai-a-side-by-side-comparison-of-deepseek-r1-vs-openai-o1-for-finance-93a1b4343a82)
+- Fine-tuning DeepSeek R1 to respond like Humans using Python!
+[(link)](https://pub.towardsai.net/fine-tuning-deepseek-r1-to-respond-like-humans-using-python-55f3aec6551c)
+
 
 
 
 
 # divers
+- LLM Visualization
+[(link)](https://bbycroft.net/llm)
 - 50+ Open-Source Options for Running LLMs Locally
 [(link)](https://medium.com/thedeephub/50-open-source-options-for-running-llms-locally-db1ec6f5a54f)
 - Crawl4AI git
@@ -358,6 +363,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 [(link)](https://www.koyeb.com/tutorials/use-pgvector-and-hugging-face-to-build-an-optimized-faq-search-with-sentence-similarity)
 
 
+
+# tiktokenizer
+- Tiktokenizer
+[(link)](https://tiktokenizer.vercel.app/)
 
 
 
