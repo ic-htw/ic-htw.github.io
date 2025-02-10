@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- OpenAI just quietly released another agentic framework. It’s really fucking cool
+[(link)](https://ai.plainenglish.io/openai-just-quietly-released-another-agentic-framework-its-really-fucking-cool-241ea35b6a94)
+
+- Google just ANNIHILATED DeepSeek and OpenAI with their new Flash 2.0 model
+[(link)](https://medium.com/codex/google-just-annihilated-deepseek-and-openai-with-their-new-flash-2-0-model-f5ac84b4bb60)
+
+- Enhancing Text-to-SQL Agents with Step-by-Step Reasoning
+[(link)](https://yia333.medium.com/implementing-reasoning-in-text-to-sql-agents-f979331176b4)
+
+- Top 16+ Modern React Libraries To Supercharge Your Next Big Project
+[(link)](https://medium.com/@letscodefuture/top-16-modern-react-libraries-to-supercharge-your-next-big-project-78e912e95014)
+
+- Developing RAG Systems with DeepSeek R1 & Ollama (Complete Code Included)
+[(link)](https://sebastian-petrus.medium.com/developing-rag-systems-with-deepseek-r1-ollama-f2f561cfda97)
+
 - Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c
 [(link)](https://github.com/karpathy/llm.c/discussions/677)
 
