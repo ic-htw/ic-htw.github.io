@@ -184,7 +184,7 @@ home: &r
                 url: /home/lv/dbtech/p/ide-vscode.html
               - t: IDE Intellij
                 ts: IDE Intellij
-                url: /home/lv/dbtech/p/ide-intellij.html
+                url: /home/lv/dbtech/p/ide-intellij-pks.html
               - t: IDE Eclipse
                 ts: IDE Eclipse
                 url: /home/lv/dbtech/p/ide-eclipse.html
