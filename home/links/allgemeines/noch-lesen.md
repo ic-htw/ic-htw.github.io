@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Data Formulator: Create Rich Visualizations with AI
+[(link)](https://github.com/microsoft/data-formulator)
+
+- Improving Agentic SQL Generation
+[(link)](https://medium.com/google-cloud/improving-agentic-sql-generation-9afe4e713fd9)
+
+- Several ways to improving the accuracy of AI-generated SQL
+[(link)](https://medium.com/@tubelwj/several-ways-to-improving-the-accuracy-of-ai-generated-sql-0087de0d12d5)
+
+- IceCream 
+[(link)](https://github.com/gruns/icecream)
+
+- Building a SQL Bot with LangChain, Azure OpenAI, and Microsoft Fabric
+[(link)](https://medium.com/@mariusz_kujawski/building-a-sql-bot-with-langchain-azure-openai-and-microsoft-fabric-b9524e5a6430)
+
+- 11 Free Must-Know Websites for Every Developer
+[(link)](https://medium.com/@letscodefuture/11-free-must-know-websites-for-every-developer-6e21afddfbcf)
+
 - OpenAI just quietly released another agentic framework. It’s really fucking cool
 [(link)](https://ai.plainenglish.io/openai-just-quietly-released-another-agentic-framework-its-really-fucking-cool-241ea35b6a94)
 
