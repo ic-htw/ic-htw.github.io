@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 11+ React Ecosystem: Libraries That Shape Modern Development in 2025
+[(link)](https://medium.com/@letscodefuture/11-react-ecosystem-libraries-that-shape-modern-development-in-2025-ce7cbb0c25eb)
+
+- 20 Advanced Statistical Approaches Every Data Scientist Should Know
+[(link)](https://medium.com/@sarowar.saurav10/20-advanced-statistical-approaches-every-data-scientist-should-know-ccc70ae4df28)
+
+- How Uber Handles TRILLIONS of Transactions — The Secret
+[(link)](https://medium.com/@teenageprogrammer/5cc14afcb7ac)
+
 - Data Formulator: Create Rich Visualizations with AI
 [(link)](https://github.com/microsoft/data-formulator)
 
