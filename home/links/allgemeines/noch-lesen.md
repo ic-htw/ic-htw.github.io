@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The twelve-factor app
+[(link)](https://12factor.net/)
+
+- What I’ve Discovered While Using uv
+[(link)](https://medium.com/@petrica.leuca/what-ive-discovered-while-using-uv-436b4085b6d6)
+
 - 11+ React Ecosystem: Libraries That Shape Modern Development in 2025
 [(link)](https://medium.com/@letscodefuture/11-react-ecosystem-libraries-that-shape-modern-development-in-2025-ce7cbb0c25eb)
 
