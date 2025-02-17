@@ -81,7 +81,7 @@ title: Transaktionen
 <ul class="w3-large">
     <li>Read Uncommitted</li>
     <ul>
-        <li>Lesen nichtbestätigter Änderungen möglich</li>
+        <li>Lesen nicht bestätigter Änderungen möglich</li>
     </ul>
     <li>Read Committed</li>
     <ul>
@@ -121,7 +121,7 @@ title: Transaktionen
 {% include padding-id.html id=4 %}
 <h1>Anomalie - Dirty Read 1</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: select * from personal order by pid
@@ -138,11 +138,10 @@ T1: commit and close
 
 After (pid, gehalt): [(100, 40000), (200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m3">
         <p class="w3-large">
-            T2 ändert Wert, noch nicht beendet<br><br>
-            Wechsel zu T1<br><br>
-            T1 liest nichtbestätigten Wert 41000<br><br>
+            T2 ändert Wert<br>
+            T1 liest nicht bestätigten Wert 41000<br>
             T2 macht rollback
         </p>
     </div>
@@ -157,7 +156,7 @@ After (pid, gehalt): [(100, 40000), (200, 50000)]</code></pre>
 {% include padding-id.html id=5 %}
 <h1>Anomalie - Dirty Read 2</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: update personal set gehalt=41000 where pid=100
@@ -173,7 +172,7 @@ T1: commit and close
 
 After (pid, gehalt): [(100, 41000), (200, 51000)]</code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m3">
         <p class="w3-large">
             T2 liest nicht bestätigten Datenbankzustand<br>
             [(100, 41000), (200, 50000)]<br><br>
@@ -191,7 +190,7 @@ After (pid, gehalt): [(100, 41000), (200, 51000)]</code></pre>
 {% include padding-id.html id=6 %}
 <h1>Anomalie - Non Repeatable Read 1</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: select * from personal order by pid
@@ -208,7 +207,7 @@ T1: commit and close
 After (pid, gehalt): [(100, 41000), (200, 50000)]
         </code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m3">
         <p class="w3-large">
             Wiederholtes Lesen des gleichen Datensatzes pid=100 in T1 führt zu unterschiedlichen Werten
             (40000 und 41000) 
@@ -227,7 +226,7 @@ After (pid, gehalt): [(100, 41000), (200, 50000)]
 {% include padding-id.html id=7 %}
 <h1>Anomalie - Non Repeatable Read 2</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m7">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: select * from personal where pid=100
@@ -245,7 +244,7 @@ T1: commit and close
 After (pid, gehalt): [(100, 41000), (200, 51000)]
         </code></pre>
     </div>
-    <div class="w3-col m5">
+    <div class="w3-col m3">
         <p class="w3-large">
             Ähnlich zu Non Repeatble Read 1, nur nicht zweimaliges Lesen des gleichen Datensatzes.<br><br>
             Der Gesamtzustand der Datenbank hat sich beim zweiten Lesen geändert
@@ -264,7 +263,7 @@ After (pid, gehalt): [(100, 41000), (200, 51000)]
 {% include padding-id.html id=8 %}
 <h1>Anomalie - Lost Update</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: select * from personal order by pid
@@ -284,7 +283,7 @@ T1: commit and close
 After (pid, gehalt): [(100, 42000), (200, 50000)]
         </code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
         <p class="w3-large">
             T1 und T2 lesen gleichen DB-Zustand<br><br>
             T1 nimmt auf dessen Grundlage Änderungen vor und schreibt<br><br>
@@ -302,8 +301,8 @@ After (pid, gehalt): [(100, 42000), (200, 50000)]
 {% include padding-id.html id=9 %}
 <h1>Anomalie - Write Skew</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
-        <pre><code class="language-sql">Before (pid, gehalt): [(100, 80), (200, 50)]
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
 
 T1: [(100, 80), (200, 50)]
 
@@ -317,9 +316,9 @@ T1: commit and close
           T2: [(100, 80), (200, 0)]
           T2: commit and close
 
-After (pid, gehalt): [(100, -10), (200, 0)]</code></pre>
+After (kid, betrag): [(100, -10), (200, 0)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
         <p class="w3-large">
             Invariante: Summe auf beiden Konten
             darf nicht negativ werden.<br><br>

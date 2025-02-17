@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-vorlesungen
+nav: adbkt-transaktionen
 is_slide: 1
 n: 11
 title: Transaktionen in Postgres
@@ -68,7 +68,7 @@ title: Transaktionen in Postgres
 {% include padding-id.html id=2 %}
 <h1>Snapshot - Read Committed</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
@@ -96,7 +96,7 @@ T3: commit and close
 
 After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Lesens.
         </p>
@@ -111,7 +111,7 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
 {% include padding-id.html id=3 %}
 <h1>Snapshot - Repeatble Read</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
@@ -142,7 +142,7 @@ T3: commit and close
 
 After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Starts dieser Transaktion
 	    </p>
@@ -157,7 +157,7 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
 {% include padding-id.html id=4 %}
 <h1>Lost Update</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
@@ -175,6 +175,8 @@ T1: commit and close
           T2: update personal set gehalt=42000 where pid=100
           T2: [(100, 42000), (200, 50000)]
           T2: commit and close
+
+After  (pid, gehalt): [(100, 42000), (200, 50000)]
 
 **********
 
@@ -197,12 +199,12 @@ T1: commit and close
 
 After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    Lost Update bei read committed möglich.<br><br>
 		    Kein Lost Update bei repeatable read.<br>
             Stattdessen Serialisierungsfehler mit Rollback.<br>
-            Erneutes Starten der abgebrochenen Transktion.
+            Erneutes Starten der abgebrochenen Transaktion erforderlich.
 	    </p>
     </div>
 </div>
@@ -215,7 +217,7 @@ After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
 {% include padding-id.html id=5 %}
 <h1>Write Skew</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
 
 T1: START: REPEATABLE_READ
@@ -257,12 +259,12 @@ T1: commit and close
 
 After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    Write Skew bei repeatable read möglich.<br><br>
 		    Kein Write Skew bei serializable.<br>
             Stattdessen Serialisierungsfehler mit Rollback.<br>
-            Erneutes Starten der abgebrochenen Transktion.
+            Erneutes Starten der abgebrochenen Transaktion erforderlich.
 	    </p>
     </div>
 </div>
@@ -275,7 +277,7 @@ After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
 {% include padding-id.html id=6 %}
 <h1>Update Conflicts 1 - READ COMMITTED</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
@@ -283,8 +285,11 @@ T1: update personal set gehalt= gehalt + 1000 where pid=100
 T1: [(100, 41000), (200, 50000)]
 
           T2: START: READ_COMMITTED
+          -- Versuch 
+          -- update personal set gehalt= gehalt + 2000 where pid=100
+          -- bleibt stehen
 T1: rollback and close
-
+          -- T2 läuft weiter
           T2: update personal set gehalt= gehalt + 2000 where pid=100
           T2: [(100, 42000), (200, 50000)]
           T2: commit and close
@@ -325,7 +330,7 @@ T1: commit and close
 
 After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    Update Datensatz 100 von T1 und T2.
 		    T2 bleibt stehen, da Sperre durch T1.<br><br>
@@ -347,7 +352,7 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 {% include padding-id.html id=7 %}
 <h1>Update Conflicts 1 - REPEATABLE READ</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
@@ -376,7 +381,7 @@ T1: commit and close
 
 After  (pid, gehalt): [(200, 50000)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    T2 mit repeatable read.<br><br>
 		    Update Datensatz 100 von T1 und T2.
@@ -398,7 +403,7 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 {% include padding-id.html id=8 %}
 <h1>Update Conflicts 2 - READ COMMITTED</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
 
 T1: START: READ_COMMITTED
@@ -414,7 +419,7 @@ T1: commit and close
 
 After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
 		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
@@ -434,7 +439,7 @@ After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
 {% include padding-id.html id=9 %}
 <h1>Update Conflicts 2 - REPEATABLE READ</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
 
 T1: START: READ_COMMITTED
@@ -448,7 +453,7 @@ T1: commit and close
 
 After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
 		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
@@ -552,7 +557,7 @@ After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]</code></pre>
 {% include padding-id.html id=11 %}
 <h1>Write Skew Avoidance - with Locks</h1>
 <div class="w3-row-padding">
-    <div class="w3-col m8">
+    <div class="w3-col m9">
         <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
 
 T1: START: READ_COMMITTED
@@ -571,7 +576,7 @@ T1: commit and close
 
 After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     </div>
-    <div class="w3-col m4">
+    <div class="w3-col m3">
 	    <p class="w3-large">
 		    Explizites Setzen von Sperren (select for update).<br><br>
 		    T2 bleibt stehen, kann nicht einmal lesen.<br><br>
