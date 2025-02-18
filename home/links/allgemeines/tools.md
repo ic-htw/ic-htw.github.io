@@ -192,6 +192,13 @@ is_slide: 0
 - docker
 [(link)](https://hub.docker.com/r/grafana/grafana)
 
+# grafana K6
+- Home
+[(link)](https://k6.io/)
+- doc
+[(link)](https://grafana.com/docs/k6/latest/)
+
+
 # ImageMagick
 - Home
 [(link)](https://imagemagick.org/index.php)
