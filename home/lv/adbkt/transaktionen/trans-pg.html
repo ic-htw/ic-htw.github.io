@@ -2,7 +2,7 @@
 layout: default1
 nav: adbkt-transaktionen
 is_slide: 1
-n: 11
+n: 14
 title: Transaktionen in Postgres
 ---
 
@@ -67,41 +67,39 @@ title: Transaktionen in Postgres
 -->
 {% include padding-id.html id=2 %}
 <h1>Snapshot - Read Committed</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
+<pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
 T1: update konto set betrag = 3 where kid=100
-T1: [(100, 3), (200, 6)]
+T1:[(100, 3), (200, 6)]
 T1: commit and close
 
-                    TRead: START: READ_COMMITTED
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
+        TRead: START: READ_COMMITTED
+        TRead: select * from konto order by kid
+        TRead:[(100, 3), (200, 6)]
+        -- Liest alle bestätigte Änderungen
+        -- von vor Beginn der Transaktion
+        -- Transaktion bleibt offen
 
-          T2: START: READ_COMMITTED
-          T2: update konto set betrag = 7 where kid=200
-          T2: [(100, 3), (200, 7)]
-          T2: commit and close
+    T2: START: READ_COMMITTED
+    T2: update konto set betrag = 7 where kid=200
+    T2:[(100, 3), (200, 7)]
+    T2: commit and close
 
 T3: START: READ_COMMITTED
 T3: insert into konto values (300, 1)
-T3: [(100, 3), (200, 7), (300, 1)]
+T3:[(100, 3), (200, 7), (300, 1)]
 T3: commit and close
 
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 7), (300, 1)]
-                    TRead: commit and close
+        TRead: select * from konto order by kid
+        TRead:[(100, 3), (200, 7), (300, 1)]
+        -- Liest alle bestätigte Änderungen
+        -- die in der Zwischenzeit erfolgt sind
+        TRead: commit and close
 
-After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Lesens.
-        </p>
-    </div>
-</div>
+After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]
+
+</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -110,44 +108,39 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
 -->
 {% include padding-id.html id=3 %}
 <h1>Snapshot - Repeatble Read</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
+<pre><code class="language-sql">Before (kid, betrag): [(100, 2), (200, 6)]
 
 T1: START: READ_COMMITTED
 T1: update konto set betrag = 3 where kid=100
-T1: [(100, 3), (200, 6)]
-
+T1:[(100, 3), (200, 6)]
 T1: commit and close
 
-                    TRead: START: REPEATABLE_READ
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
+        TRead: START: REPEATABLE_READ
+        TRead: select * from konto order by kid
+        TRead:[(100, 3), (200, 6)]
+        -- Liest alle bestätigte Änderungen
+        -- von vor Beginn der Transaktion
+        -- Transaktion bleibt offen
 
-          T2: START: READ_COMMITTED
-          T2: update konto set betrag = 7 where kid=200
-          T2: [(100, 3), (200, 7)]
-
-          T2: commit and close
+    T2: START: READ_COMMITTED
+    T2: update konto set betrag = 7 where kid=200
+    T2:[(100, 3), (200, 7)]
+    T2: commit and close
 
 T3: START: READ_COMMITTED
 T3: insert into konto values (300, 1)
-T3: [(100, 3), (200, 7), (300, 1)]
-
+T3:[(100, 3), (200, 7), (300, 1)]
 T3: commit and close
 
-                    TRead: select * from konto order by kid
-                    TRead: [(100, 3), (200, 6)]
-                    TRead: commit and close
+        TRead: select * from konto order by kid
+        TRead:[(100, 3), (200, 6)]
+        -- Änderungen von T2 und T3 waren
+        -- zu Begin von TREAD nicht bestätigt
+        -- Sind daher nicht sichtbar
+        -- TREAD hat REPEATABLE_READ
+        TRead: commit and close
 
 After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    TRead liest alle bestätigten Änderungen zum Zeitpunkt des Starts dieser Transaktion
-	    </p>
-    </div>
-</div>
 <div class="ic-gap"></div>
 
 
@@ -155,119 +148,61 @@ After  (kid, betrag): [(100, 3), (200, 7), (300, 1)]</code></pre>
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Lost Update</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+<h1>Lost Update - Read Comitted</h1>
+<pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: select * from personal order by pid
-T1: [(100, 40000), (200, 50000)]
+T1:[(100, 40000), (200, 50000)]
 
-          T2: START: READ_COMMITTED
-          T2: select * from personal order by pid
-          T2: [(100, 40000), (200, 50000)]
-
-T1: update personal set gehalt=41000 where pid=100
-T1: [(100, 41000), (200, 50000)]
-T1: commit and close
-
-          T2: update personal set gehalt=42000 where pid=100
-          T2: [(100, 42000), (200, 50000)]
-          T2: commit and close
-
-After  (pid, gehalt): [(100, 42000), (200, 50000)]
-
-**********
-
-Before (pid, gehalt): [(100, 40000), (200, 50000)]
-
-T1: START: REPEATABLE_READ
-T1: select * from personal order by pid
-T1: [(100, 40000), (200, 50000)]
-
-          T2: START: REPEATABLE_READ
-          T2: select * from personal order by pid
-          T2: [(100, 40000), (200, 50000)]
+    T2: START: READ_COMMITTED
+    T2: select * from personal order by pid
+    T2:[(100, 40000), (200, 50000)]
+    -- T1 und T2 haben denselben DB-Zustand gelesen
 
 T1: update personal set gehalt=41000 where pid=100
-T1: [(100, 41000), (200, 50000)]
+T1:[(100, 41000), (200, 50000)]
 T1: commit and close
 
-          T2: update personal set gehalt=42000 where pid=100
-          T2: SerializationFailure
+    T2: update personal set gehalt=42000 where pid=100
+    T2:[(100, 42000), (200, 50000)]
+    -- T2 überschreibt die Änderung von T1
+    -- Ist möglich, da READ_COMMITTED
+    T2: commit and close
 
-After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    Lost Update bei read committed möglich.<br><br>
-		    Kein Lost Update bei repeatable read.<br>
-            Stattdessen Serialisierungsfehler mit Rollback.<br>
-            Erneutes Starten der abgebrochenen Transaktion erforderlich.
-	    </p>
-    </div>
-</div>
+After  (pid, gehalt): [(100, 42000), (200, 50000)]</code></pre>
 <div class="ic-gap"></div>
-
 
 <!--
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Write Skew</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+<h1>Lost Update - Repeatable Read</h1>
+<pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: REPEATABLE_READ
-T1: select * from konto order by kid
-T1: [(100, 80), (200, 50)]
+T1: select * from personal order by pid
+T1:[(100, 40000), (200, 50000)]
 
-          T2: START: REPEATABLE_READ
-          T2: select * from konto order by kid
-          T2: [(100, 80), (200, 50)]
+    T2: START: REPEATABLE_READ
+    -- T2 ist auf REPEATABLE_READ gesetzt
+    T2: select * from personal order by pid
+    T2:[(100, 40000), (200, 50000)]
+    -- T1 und T2 haben denselben DB-Zustand gelesen
 
-T1: update konto set betrag = betrag -90 where kid=100
-T1: [(100, -10), (200, 50)]
+T1: update personal set gehalt=41000 where pid=100
+T1:[(100, 41000), (200, 50000)]
 T1: commit and close
 
-          T2: update konto set betrag = betrag -50 where kid=200
-          T2: [(100, 80), (200, 0)]
-          T2: commit and close
+    -- T2 versucht update
+    T2: update personal set gehalt=42000 where pid=100
+    T2: SerializationFailure
+    -- Erkennt Änderung von T1
+    -- Bricht ab, um Lost Update zu vermeiden
+    -- Neustart erforderlich
+    -- Basiert dann auf von T1 geänderten Werten
 
-After  (kid, betrag): [(100, -10), (200, 0)]
-
-**********
-
-Before (kid, betrag): [(100, 80), (200, 50)]
-
-T1: START: SERIALIZABLE
-T1: select * from konto order by kid
-T1: [(100, 80), (200, 50)]
-
-          T2: START: SERIALIZABLE
-          T2: select * from konto order by kid
-          T2: [(100, 80), (200, 50)]
-
-T1: update konto set betrag = betrag -90 where kid=100
-T1: [(100, -10), (200, 50)]
-T1: commit and close
-
-          T2: update konto set betrag = betrag -50 where kid=200
-          T2: SerializationFailure
-
-After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    Write Skew bei repeatable read möglich.<br><br>
-		    Kein Write Skew bei serializable.<br>
-            Stattdessen Serialisierungsfehler mit Rollback.<br>
-            Erneutes Starten der abgebrochenen Transaktion erforderlich.
-	    </p>
-    </div>
-</div>
+After  (pid, gehalt): [(100, 41000), (200, 50000)]</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -275,24 +210,214 @@ After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
+<h1>Write Skew - Repeatable Read</h1>
+<pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: REPEATABLE_READ
+T1: select * from konto order by kid
+T1:[(100, 80), (200, 50)]
+-- T1 stellt fest, dass Konto 100 und 200
+-- zusammen 130 Euro haben
+
+    T2: START: REPEATABLE_READ
+    T2: select * from konto order by kid
+    T2:[(100, 80), (200, 50)]
+    -- T2 stellt ebenfalls fest, dass Konto 100 und 200
+    -- zusammen 130 Euro haben
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1:[(100, -10), (200, 50)]
+-- T1 hebt 90 Euro von Konto 100 ab, da negativer 
+-- Kontostand durch Konto 200 gedeckt ist
+T1: commit and close
+
+    T2: update konto set betrag = betrag -50 where kid=200
+    T2:[(100, 80), (200, 0)]
+    -- T2 hebt 50 Euro von Konto 200 ab
+    -- Ist ok, da Konto 200 den Betrag deckt
+    T2: commit and close
+
+-- Invariante verletzt, da Summe
+-- auf beiden Konten nicht negativ sein darf
+After  (kid, betrag): [(100, -10), (200, 0)]</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Write Skew - SERIALIZABLE - T2 abhängig von T1</h1>
+<pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: SERIALIZABLE
+-- T1 ist nun auf SERIALIZABLE eingestellt
+T1: select * from konto order by kid
+T1:[(100, 80), (200, 50)]
+-- T1 stellt fest, dass Konto 100 und 200
+-- zusammen 130 Euro haben
+
+    T2: START: SERIALIZABLE
+    -- T2 ist nun auf SERIALIZABLE eingestellt
+    T2: select * from konto order by kid
+    T2:[(100, 80), (200, 50)]
+    -- T2 stellt ebenfalls fest, dass Konto 100 und 200
+    -- zusammen 130 Euro haben
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1:[(100, -10), (200, 50)]
+-- T1 hebt 90 Euro von Konto 100 ab, da negativer 
+-- Kontostand durch Konto 200 gedeckt ist
+T1: commit and close
+
+    -- T2 versucht 50 Euro von Konto 200 abzuheben
+    T2: update konto set betrag = betrag -50 where kid=200
+    T2: SerializationFailure
+    -- Ist nicht möglich, da T2 vom gelesenen Zustand
+    -- von Konto 100 abhängt, dieser wurde aber geändert
+    -- Neustart erforderlich
+    -- Basiert dann auf von T1 geänderten Werten
+
+-- Invariante nicht verletzt
+After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Write Skew - SERIALIZABLE - T2 unabhängig von T1</h1>
+<pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: SERIALIZABLE
+-- T1 immer noch auf SERIALIZABLE
+T1: select * from konto order by kid
+T1:[(100, 80), (200, 50)]
+-- T1 stellt fest, dass Konto 100 und 200
+-- zusammen 130 Euro haben
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1:[(100, -10), (200, 50)]
+-- T1 hebt 90 Euro von Konto 100 ab, da negativer 
+-- Kontostand durch Konto 200 gedeckt ist
+T1: commit and close
+
+    T2: START: SERIALIZABLE
+    -- Hat den Zustand von Konto 100 nicht gelesen
+    T2: update konto set betrag = betrag -50 where kid=200
+    T2:[(100, -10), (200, 0)]
+    -- Update möglich, da die Änderung von Konto 100
+    -- für T2 nicht relevant ist
+    T2: commit and close
+
+-- Invariante verletzt
+After  (kid, betrag): [(100, -10), (200, 0)]</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Serialisierungsfehler</h1>
+<pre><code class="language-sql">Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: REPEATABLE_READ
+T1: insert into cv select 2, sum(val) from cv where cls=1
+T1:[(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+T1: commit and close
+
+    T2: START: REPEATABLE_READ
+    T2: insert into cv select 1, sum(val) from cv where cls=2
+    T2:[(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
+    T2: commit and close
+
+-- Erst T1 komplett, dann T2
+After  (cls, val): [(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+    T2: START: REPEATABLE_READ
+    T2: insert into cv select 1, sum(val) from cv where cls=2
+    T2:[(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+    T2: commit and close
+
+T1: START: REPEATABLE_READ
+T1: insert into cv select 2, sum(val) from cv where cls=1
+T1:[(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
+T1: commit and close
+
+-- Erst T2 komplett, dann T1
+After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: REPEATABLE_READ
+T1: insert into cv select 1, sum(val) from cv where cls=2
+T1:[(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+
+    T2: START: REPEATABLE_READ
+    T2: insert into cv select 2, sum(val) from cv where cls=1
+    T2:[(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+    T2: commit and close
+
+T1: commit and close
+
+-- Jetzt T1 und T2 verzahnt
+-- REPEATABLE_READ
+-- Ergebnis entspricht keiner serialisierten Ausführung
+After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 30), (2, 100), (2, 200)]
+
+**********
+
+Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
+
+T1: START: SERIALIZABLE
+T1: insert into cv select 1, sum(val) from cv where cls=2
+T1:[(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
+
+    T2: START: SERIALIZABLE
+    T2: insert into cv select 2, sum(val) from cv where cls=1
+    T2:[(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
+    T2: commit and close
+
+T1: SerializationFailure
+
+-- Erneut T1 und T2 verzahnt
+-- SERIALIZABLE
+-- Serialisierungsfehler wird erkannt
+After  (cls, val): [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]</code></pre>
+<div class="ic-gap"></div>
+
+
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
 <h1>Update Conflicts 1 - READ COMMITTED</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+<pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: update personal set gehalt= gehalt + 1000 where pid=100
-T1: [(100, 41000), (200, 50000)]
+T1:[(100, 41000), (200, 50000)]
+-- T1 hat Datensatz 100 geändert, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
 
-          T2: START: READ_COMMITTED
-          -- Versuch 
-          -- update personal set gehalt= gehalt + 2000 where pid=100
-          -- bleibt stehen
+    -- T2 versucht auch, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    T2: START: READ_COMMITTED
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
 T1: rollback and close
-          -- T2 läuft weiter
-          T2: update personal set gehalt= gehalt + 2000 where pid=100
-          T2: [(100, 42000), (200, 50000)]
-          T2: commit and close
+-- T1 macht Rollback, Sperre fällt weg
+
+    -- T2 kann weiterlaufen
+    T2:[(100, 42000), (200, 50000)]
+    T2: commit and close
 
 After  (pid, gehalt): [(100, 42000), (200, 50000)]
 
@@ -302,14 +427,23 @@ Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: update personal set gehalt= gehalt + 1000 where pid=100
-T1: [(100, 41000), (200, 50000)]
+T1:[(100, 41000), (200, 50000)]
+-- T1 hat Datensatz 100 geändert, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
 
-          T2: START: READ_COMMITTED
+    -- T2 versucht auch, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    T2: START: READ_COMMITTED
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
 T1: commit and close
+-- T1 macht Commit, Sperre fällt weg
 
-          T2: update personal set gehalt= gehalt + 2000 where pid=100
-          T2: [(100, 43000), (200, 50000)]
-          T2: commit and close
+    -- T2 kann weiterlaufen
+    -- Aktualisiert wegen READ_COMMITTED den Zustand von 100
+    -- Macht update auf geänderten Zustand
+    T2:[(100, 43000), (200, 50000)]
+    T2: commit and close
 
 After  (pid, gehalt): [(100, 43000), (200, 50000)]
 
@@ -319,50 +453,82 @@ Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: delete from personal where pid=100
-T1: [(200, 50000)]
+T1:[(200, 50000)]
+-- T1 hat Datensatz 100 gelöscht, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
 
-          T2: START: READ_COMMITTED
+    -- T2 versucht, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    T2: START: READ_COMMITTED
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
 T1: commit and close
+-- T1 macht Commit, Sperre fällt weg
 
-          T2: update personal set gehalt= gehalt + 2000 where pid=100
-          T2: [(200, 50000)]
-          T2: commit and close
+    -- T2 kann weiterlaufen
+    -- Aktualisiert wegen READ_COMMITTED den Zustand von 100,
+    -- d.h. die Löschung
+    -- Update von T2 läuft ins Leere
+    T2:[(200, 50000)]
+    T2: commit and close
 
 After  (pid, gehalt): [(200, 50000)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    Update Datensatz 100 von T1 und T2.
-		    T2 bleibt stehen, da Sperre durch T1.<br><br>
-		    Abschluss T1 mit Rollback.<br>
-		    T2 läuft weiter, liest alten Wert und ändert 100.<br><br>
-		    Abschluss T1 mit Commit.<br>
-		    T2 läuft weiter, liest neuen Wert und ändert 100.<br><br>
-		    Bei Löschung: Erneutes Lesen liefert keinen Datensatz 100 mehr.<br>
-            Daher zweites Update ohne Effekt.
-	    </p>
-    </div>
-</div>
 <div class="ic-gap"></div>
 
 
 <!--
-    07 ******************************************************************
+    11 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
+{% include padding-id.html id=11 %}
 <h1>Update Conflicts 1 - REPEATABLE READ</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+<pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: update personal set gehalt= gehalt + 1000 where pid=100
-T1: [(100, 41000), (200, 50000)]
+T1:[(100, 41000), (200, 50000)]
+-- T1 hat Datensatz 100 geändert, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
 
-          T2: START: REPEATABLE_READ
+    -- T2 versucht auch, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    -- T2 ist auf REPEATABLE_READ
+    T2: START: REPEATABLE_READ
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
+T1: rollback and close
+-- T1 macht Rollback, Sperre fällt weg
+
+    -- T2 kann weiterlaufen
+    -- Keine Veränderung von Datensatz 100 wegen Rollback
+    -- T2 kann erfolgreich abgeschlossen werden
+    T2:[(100, 42000), (200, 50000)]
+    T2: commit and close
+
+After  (pid, gehalt): [(100, 42000), (200, 50000)]
+
+**********
+
+Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: START: READ_COMMITTED
+T1: update personal set gehalt= gehalt + 1000 where pid=100
+T1:[(100, 41000), (200, 50000)]
+-- T1 hat Datensatz 100 geändert, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
+
+    -- T2 versucht auch, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    -- T2 ist auf REPEATABLE_READ
+    T2: START: REPEATABLE_READ
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
 T1: commit and close
+-- T1 macht Commit, Sperre fällt weg
 
-          T2: SerializationFailure
+    -- T2 kann weiterlaufen
+    -- Erkennt Änderung auf Datensatz 100
+    -- Bricht ab
+    T2: SerializationFailure
 
 After  (pid, gehalt): [(100, 41000), (200, 50000)]
 
@@ -372,216 +538,50 @@ Before (pid, gehalt): [(100, 40000), (200, 50000)]
 
 T1: START: READ_COMMITTED
 T1: delete from personal where pid=100
-T1: [(200, 50000)]
+T1:[(200, 50000)]
+-- T1 hat Datensatz 100 gelöscht, aber noch nicht bestätigt
+-- T1 hält Sperre auf Datensatz 100
 
-          T2: START: REPEATABLE_READ
+    -- T2 versucht, Datensatz 100 zu ändern
+    -- Bleibt stehen, wegen Sperre von T1
+    -- T2 ist auf REPEATABLE_READ
+    T2: START: REPEATABLE_READ
+    T2: update personal set gehalt= gehalt + 2000 where pid=100
+
 T1: commit and close
+-- T1 macht Commit, Sperre fällt weg
 
-          T2: SerializationFailure
+    -- T2 kann weiterlaufen
+    -- Erkennt Änderung (Löschung) auf Datensatz 100
+    -- Bricht ab
+    T2: SerializationFailure
 
 After  (pid, gehalt): [(200, 50000)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    T2 mit repeatable read.<br><br>
-		    Update Datensatz 100 von T1 und T2.
-		    T2 bleibt stehen, da Sperre durch T1.<br><br>
-		    Abschluss T1 mit Rollback.<br>
-		    Gleiches Ergebnis wie bei repeatable read.<br><br>
-		    Abschluss T1 mit Commit.<br>
-		    T2 Serialisierungsfehler.<br><br>
-		    Bei Löschung: T2 Serialisierungsfehler.
-	    </p>
-    </div>
-</div>
 <div class="ic-gap"></div>
 
 
 <!--
-    08 ******************************************************************
+    12 ******************************************************************
 -->
-{% include padding-id.html id=8 %}
+{% include padding-id.html id=12 %}
 <h1>Update Conflicts 2 - READ COMMITTED</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
-
-T1: START: READ_COMMITTED
-T1: update website set hits = hits + 1
-T1: [(100, 10), (200, 11)]
-
-          T2: START: READ_COMMITTED
-T1: commit and close
-
-          T2: delete from website where hits = 10
-          T2: [(100, 10), (200, 11)]
-          T2: commit and close
-
-After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
-		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
-            Bleibt stehen.<br><br>
-		    T1 bestätigt Änderungen, wirkt sich auf Lösch-Snapshot aus.<br><br>
-		    T2 evaluiert Lösch-Snapshot, ist leer, da (200, 11) die Bedingung hits=10 nicht erfüllt.<br>
-		    Delete-Befehl ohne Effekt.<br><br>
-	    </p>
-    </div>
-</div>
+<pre><code class="language-sql">xxx</code></pre>
 <div class="ic-gap"></div>
 
 
 <!--
-    09 ******************************************************************
+    13 ******************************************************************
 -->
-{% include padding-id.html id=9 %}
+{% include padding-id.html id=13 %}
 <h1>Update Conflicts 2 - REPEATABLE READ</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
-
-T1: START: READ_COMMITTED
-T1: update website set hits = hits + 1
-T1: [(100, 10), (200, 11)]
-
-          T2: START: REPEATABLE_READ
-T1: commit and close
-
-          T2: SerializationFailure
-
-After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    T1 ändert alle Datensätze. Aber noch nicht bestätigt.<br><br>
-		    T2 liest Snapshot der zu löschenden Daten, enthält (200, 10)<br>
-            Bleibt stehen.<br><br>
-		    T1 bestätigt Änderungen, wirkt sich auf Lösch-Snapshot aus.<br><br>
-		    T2 Serialisierungsfehler, bricht ab.
-	    </p>
-    </div>
-</div>
+<pre><code class="language-sql">xxx</code></pre>
 <div class="ic-gap"></div>
 
 
 <!--
-    10 ******************************************************************
+    14 ******************************************************************
 -->
-{% include padding-id.html id=10 %}
-<h1>Serialisierungsfehler</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
-
-T1: START: SERIALIZABLE
-T1: insert into cv select 2, sum(val) from cv where cls=1
-T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
-T1: commit and close
-
-          T2: START: SERIALIZABLE
-          T2: insert into cv select 1, sum(val) from cv where cls=2
-          T2: [(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
-          T2: commit and close
-
-After  (cls, val): [(1, 10), (1, 20), (1, 330), (2, 30), (2, 100), (2, 200)]
-
-**********
-
-Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
-
-T1: START: SERIALIZABLE
-T1: insert into cv select 1, sum(val) from cv where cls=2
-T1: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
-T1: commit and close
-
-          T2: START: SERIALIZABLE
-          T2: insert into cv select 2, sum(val) from cv where cls=1
-          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
-          T2: commit and close
-
-After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200), (2, 330)]
-
-**********
-
-Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
-
-T1: START: REPEATABLE_READ
-T1: insert into cv select 2, sum(val) from cv where cls=1
-T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
-
-          T2: START: REPEATABLE_READ
-          T2: insert into cv select 1, sum(val) from cv where cls=2
-          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
-          T2: commit and close
-
-T1: commit and close
-
-After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 30), (2, 100), (2, 200)]
-
-**********
-
-Before (cls, val): [(1, 10), (1, 20), (2, 100), (2, 200)]
-
-T1: START: SERIALIZABLE
-T1: insert into cv select 2, sum(val) from cv where cls=1
-T1: [(1, 10), (1, 20), (2, 30), (2, 100), (2, 200)]
-
-          T2: START: SERIALIZABLE
-          T2: insert into cv select 1, sum(val) from cv where cls=2
-          T2: [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]
-          T2: commit and close
-
-T1: SerializationFailure
-
-After  (cls, val): [(1, 10), (1, 20), (1, 300), (2, 100), (2, 200)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    Erster Durchlauf: Keine Verzahnung, d.h. serialisierter Ablauf.<br><br>
-		    Zweiter Durchlauf: Keine Verzahnung, d.h. serialisierter Ablauf.<br><br>
-		    Dritter Durchlauf: Repatable read und Verzahnung. <br>
-            Ergebnis entspricht keinem serialisierten Ablauf.<br><br>
-		    Vierter Durchlauf: Serializable und Verzahnung. <br>
-            Serialisierungsfehler wird erkannt.<br><br>
-	    </p>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
+{% include padding-id.html id=14 %}
 <h1>Write Skew Avoidance - with Locks</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m9">
-        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
-
-T1: START: READ_COMMITTED
-T1: select * from konto order by kid for update
-T1: [(100, 80), (200, 50)]
-
-          T2: START: READ_COMMITTED
-T1: update konto set betrag = betrag -90 where kid=100
-T1: [(100, -10), (200, 50)]
-T1: commit and close
-
-          T2: select * from konto order by kid for update
-          T2: [(100, -10), (200, 50)]
-
-          T2: commit and close
-
-After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
-    </div>
-    <div class="w3-col m3">
-	    <p class="w3-large">
-		    Explizites Setzen von Sperren (select for update).<br><br>
-		    T2 bleibt stehen, kann nicht einmal lesen.<br><br>
-		    T2 kann erst lesen, wenn T1 abgeschlossen.
-	    </p>
-    </div>
-</div>
+<pre><code class="language-sql">xxx</code></pre>
 <div class="ic-gap"></div>
