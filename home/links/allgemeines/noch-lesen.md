@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building the Modern PostgreSQL GUI With PopSQL
+[(link)](https://medium.com/timescale/building-the-modern-postgresql-gui-with-popsql-ffaf98e7323c)
+
 - The twelve-factor app
 [(link)](https://12factor.net/)
 
