@@ -372,7 +372,7 @@ home: &r
                 sub:
                   - t: P1 (15 Punkte)
                     ts: P1 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/er-dia.html
+                    url: /home/lv/adbkt/pruefungen/sql-llm.html
                   - t: P2 (15 Punkte)
                     ts: P2 (15 Punkte)
                     url: /home/lv/adbkt/pruefungen/trans-sys.html

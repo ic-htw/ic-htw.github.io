@@ -246,7 +246,7 @@ After  (kid, betrag): [(100, -10), (200, 0)]</code></pre>
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>Write Skew - SERIALIZABLE - T2 abhängig von T1</h1>
+<h1>Write Skew - SERIALIZABLE - T2->T1</h1>
 <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
 
 T1: START: SERIALIZABLE
@@ -285,7 +285,7 @@ After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>Write Skew - SERIALIZABLE - T2 unabhängig von T1</h1>
+<h1>Write Skew - SERIALIZABLE - T2-/-> T1</h1>
 <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
 
 T1: START: SERIALIZABLE
@@ -565,7 +565,31 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 -->
 {% include padding-id.html id=12 %}
 <h1>Update Conflicts 2 - READ COMMITTED</h1>
-<pre><code class="language-sql">xxx</code></pre>
+<pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
+
+T1: START: READ_COMMITTED
+T1: update website set hits = hits + 1
+T1:[(100, 10), (200, 11)]
+-- Hits werden für Site 100 und 200 um 1 erhöht
+-- Sperren auf beiden Datensätzen
+
+    -- T2 versucht, Datensätze mit 10 Hits zu löschen
+    -- Bleibt stehen, wegen Sperren von T1
+    -- Datensatz 200 ist in der Löschmenge
+    T2: START: READ_COMMITTED
+    T2: delete from website where hits = 10
+
+T1: commit and close
+-- T1 macht Commit, Sperren fallen weg
+
+    -- T2 kann weiterlaufen
+    -- Aktualisiert Löschmenge, d.h. Datensatz 200
+    -- Hat jetzt 11 Hits, erfüllt die Löschbedingung nicht mehr
+    -- Löschung läuft ins Leere
+    T2:[(100, 10), (200, 11)]
+    T2: commit and close
+
+After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -574,7 +598,29 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 -->
 {% include padding-id.html id=13 %}
 <h1>Update Conflicts 2 - REPEATABLE READ</h1>
-<pre><code class="language-sql">xxx</code></pre>
+<pre><code class="language-sql">Before (wsid, hits): [(100, 9), (200, 10)]
+
+T1: START: READ_COMMITTED
+T1: update website set hits = hits + 1
+T1:[(100, 10), (200, 11)]
+-- Hits werden für Site 100 und 200 um 1 erhöht
+-- Sperren auf beiden Datensätzen
+
+    -- T2 versucht, Datensätze mit 10 Hits zu löschen
+    -- Bleibt stehen, wegen Sperren von T1
+    -- Datensatz 200 ist in der Löschmenge
+    T2: START: REPEATABLE_READ
+    T2: delete from website where hits = 10
+
+T1: commit and close
+-- T1 macht Commit, Sperren fallen weg
+
+    -- T2 kann weiterlaufen
+    -- Datensatz 200 aus der Löschmenge wurde geändert
+    -- Bricht ab
+    T2: SerializationFailure
+
+After  (wsid, hits): [(100, 10), (200, 11)]</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -583,5 +629,29 @@ After  (pid, gehalt): [(200, 50000)]</code></pre>
 -->
 {% include padding-id.html id=14 %}
 <h1>Write Skew Avoidance - with Locks</h1>
-<pre><code class="language-sql">xxx</code></pre>
+<pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: START: READ_COMMITTED
+T1: select * from konto order by kid for update
+T1:[(100, 80), (200, 50)]
+-- T1 liest Kontostände
+-- T1 hält Sperre auf Datensatz 100 und 200
+
+    -- T2 versucht auch, Sperren auf Datensätze 100 und 200 zu setzen
+    -- Bleibt stehen, wegen Sperren von T2
+    T2: START: READ_COMMITTED
+    T2: select * from konto order by kid for update
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1:[(100, -10), (200, 50)]
+T1: commit and close
+-- T1 hebt 90 Euro von Konto 100 ab
+-- Bestätigt und entfernt alle Sperren
+
+    -- T2 läuft weiter
+    -- Stellt fest, dass Abhebung von 50 Euro nicht gedeckt ist
+    T2:[(100, -10), (200, 50)]
+    T2: commit and close
+
+After  (kid, betrag): [(100, -10), (200, 50)]</code></pre>
 <div class="ic-gap"></div>
