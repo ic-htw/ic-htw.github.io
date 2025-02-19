@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Redis with FastAPI for Lightning-Fast Applications
+[(link)](https://rajansahu713.medium.com/redis-with-fastapi-for-lightning-fast-applications-75a7ba5d13a7)
+
+- Top 8 PostgreSQL Extensions
+[(link)](https://medium.com/timescale/top-8-postgresql-extensions-f72d5de57f1f)
+
+- No need to write the boilerplate code again. Use Python dataclasses instead
+[(link)](https://levelup.gitconnected.com/no-need-to-write-the-boilerplate-code-again-use-python-dataclasses-instead-4c8271a9d6ec)
+
 - Building the Modern PostgreSQL GUI With PopSQL
 [(link)](https://medium.com/timescale/building-the-modern-postgresql-gui-with-popsql-ffaf98e7323c)
 
