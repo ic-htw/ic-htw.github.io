@@ -9,6 +9,36 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Open Source Data Engineering Landscape 2025
+[(link)](Open Source Data Engineering Landscape 2025)
+
+- Modern CI-CD Pipelines of REST API Python Project with UV
+[(link)](https://autognosi.medium.com/modern-ci-cd-pipelines-of-rest-api-python-project-with-uv-be0c5fa1f514)
+
+- Real-Time Chat Application with FastAPI and WebSockets
+[(link)](https://rajansahu713.medium.com/real-time-chat-application-with-fastapi-and-websockets-ab66fbee8c8a)
+
+- 10 Advanced Python Concepts You Should Know To Be a Senior Developer
+[(link)](https://levelup.gitconnected.com/10-advanced-python-concepts-you-should-know-to-be-a-senior-developer-a29c12ae9b71)
+
+- ETL, ELT… or Something Better?
+[(link)](https://blog.det.life/etl-elt-or-something-better-470a7082c25c)
+
+- MkDocs
+[(link)](https://www.mkdocs.org/)
+
+- Building DeepSeek R1 from Scratch Using Python
+[(link)](https://levelup.gitconnected.com/building-deepseek-r1-from-scratch-using-python-a967fbfdaac4)
+
+- Postgres in the time of monster hardware
+[(link)](https://www.enterprisedb.com/blog/postgres-time-monster-hardware)
+
+- Representing graphs in Postgresql
+[(link)](https://www.richard-towers.com/2025/02/16/representing-graphs-in-postgres.html)
+
+- Expanding Pgai Vectorizer: SQLAlchemy and LiteLLM Make Vector Search Simple
+[(link)](https://www.timescale.com/blog/sqlalchemy-and-litellm-make-vector-search-simple)
+
 - Redis with FastAPI for Lightning-Fast Applications
 [(link)](https://rajansahu713.medium.com/redis-with-fastapi-for-lightning-fast-applications-75a7ba5d13a7)
 
