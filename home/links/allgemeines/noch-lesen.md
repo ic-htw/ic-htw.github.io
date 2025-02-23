@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Try Deep Research and our new experimental model in Gemini, your AI assistant
+[(link)](https://blog.google/products/gemini/google-gemini-deep-research/)
+
+- Introducing Perplexity Deep Research
+[(link)](https://www.perplexity.ai/de/hub/blog/introducing-perplexity-deep-research)
+
+- ClickBench — a Benchmark For Analytical DBMS
+[(link)](https://benchmark.clickhouse.com/)
+
+- Economics of LLMs: Evaluations vs Pricing
+[(link)](https://medium.com/data-science-collective/economics-of-llms-evaluations-vs-pricing-04802074e095)
+
 - Open Source Data Engineering Landscape 2025
 [(link)](Open Source Data Engineering Landscape 2025)
 
