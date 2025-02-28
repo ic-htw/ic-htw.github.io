@@ -1,0 +1,30 @@
+---
+layout: default1
+nav: adbkt-infrastruktur
+title: Postgres Container 2 anlegen - ADBKT
+is_slide: 0
+---
+
+<h1>Postgres Container 2 anlegen</h1>
+
+
+<h2 class="ic-neg15">Stack anlegen - Name: pg2</h2>
+<p class="w3-large">Wichtig: Port 5433 wird nach außen gereicht</p>
+
+<pre><code class="language-yaml">services:
+  pg1:
+    container_name: pg1
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: adbktpg</code></pre>
+
+<h2 class="ic-neg15">Credentials</h2>
+<p class="w3-large">Datei <code>cred-pg2.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<p class="w3-large">Wichtig: Auf Port 5433 zugreifen</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5433
+dbname='postgres'</code></pre>

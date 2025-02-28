@@ -53,37 +53,41 @@
 {% elsif page.nav == "adbkt"%}
   {% assign x = site.data.main.lv[2] %}
   {% assign y = site.data.main.h[0] %}
-<!-- ADBKT - Allgemeines -->
+<!-- ADBKT - Intro -->
 {% elsif page.nav == "adbkt-intro"%}
   {% assign x = site.data.main.adbkt[0] %}
   {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Infrastruktur -->
+{% elsif page.nav == "adbkt-infrastruktur"%}
+  {% assign x = site.data.main.adbkt[1] %}
+  {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Transaktionen -->
 {% elsif page.nav == "adbkt-transaktionen"%}
-  {% assign x = site.data.main.adbkt[1] %}
+  {% assign x = site.data.main.adbkt[2] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - NoSql -->
 {% elsif page.nav == "adbkt-nosql"%}
-  {% assign x = site.data.main.adbkt[2] %}
+  {% assign x = site.data.main.adbkt[3] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Graph Datenbanken -->
 {% elsif page.nav == "adbkt-graphdb"%}
-  {% assign x = site.data.main.adbkt[3] %}
+  {% assign x = site.data.main.adbkt[4] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Geo-Datenverabeitung -->
 {% elsif page.nav == "adbkt-geo"%}
-  {% assign x = site.data.main.adbkt[4] %}
+  {% assign x = site.data.main.adbkt[5] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Sonstiges -->
 {% elsif page.nav == "adbkt-sonstiges"%}
-  {% assign x = site.data.main.adbkt[5] %}
+  {% assign x = site.data.main.adbkt[6] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Übungen -->
 {% elsif page.nav == "adbkt-pruefungen"%}
-  {% assign x = site.data.main.adbkt[6] %}
+  {% assign x = site.data.main.adbkt[7] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Prüfungsleistungen -->
 {% elsif page.nav == "adbkt-zzz"%}
-  {% assign x = site.data.main.adbkt[7] %}
+  {% assign x = site.data.main.adbkt[8] %}
   {% assign y = site.data.main.lv[2] %}
 
   <!-- DataMan -->

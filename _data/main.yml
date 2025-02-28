@@ -223,6 +223,40 @@ home: &r
                   - t: Ressourcen
                     ts: Ressourcen
                     url: /home/lv/adbkt/intro/res.html
+              - t: Infrastruktur
+                ts: Infrastruktur
+                url: /home/lv/adbkt/infrastruktur/1-infrastruktur.html
+                sub:
+                  - t: Konfiguration DBeaver
+                    ts: Konfiguration DBeaver
+                    url: /home/lv/adbkt/infrastruktur/infra-dbeaver.html
+                  - t: Jupyter Lab
+                    ts: Jupyter Lab
+                    url: /home/lv/adbkt/infrastruktur/infra-jupyterlab.html
+                  - t: Postgres Python
+                    ts: Postgres Python
+                    url: /home/lv/adbkt/infrastruktur/infra-pg-py.html
+                  - t: Stack anlegen
+                    ts: Stack anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
+                  - t: Postgres Container 1 anlegen
+                    ts: Postgres Container 1 anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-pg1-cont.html
+                  - t: Postgres Container 2 anlegen
+                    ts: Postgres Container 2 anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-pg2-cont.html
+                  - t: Cassandra Container 1 anlegen
+                    ts: Cassandra Container 1 anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-cas1-cont.html
+                  - t: Stack anlegen
+                    ts: Stack anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
+                  - t: Stack anlegen
+                    ts: Stack anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
+                  - t: Stack anlegen
+                    ts: Stack anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
