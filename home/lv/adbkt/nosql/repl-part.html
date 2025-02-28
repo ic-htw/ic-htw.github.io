@@ -1,0 +1,269 @@
+---
+layout: default1
+nav: adbkt-nosql
+title:  Replikation / Partitionierung - ADBKT
+is_slide: 1
+n: 12
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Leader-based Replication</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d100-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Verändern der Daten nur über Leader</li>
+            <li>Keine Schreibkonflikte</li>
+            <li>Leader can Bottleneck werden</li>
+            <li>Lesen über alle Knoten</li>
+            <li>Follower können veraltete Daten haben</li>
+            <li>Leader-Ausfall erkennen</li>
+            <li>Leader-Auswahl nach Ausfall</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Leaderless Replication</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d110-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Verändern der Daten über alle Knoten</li>
+            <li>Lesen über alle Knoten</li>
+            <li>Replikate können veraltete Daten haben</li>
+            <li>Schreibkonflikte möglich</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Multi-Leader Replication</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d120-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Ein Leader pro Datacenter</li>
+            <li>Vermeidet Latenz über Datacentergrenzen hinweg</li>
+            <li>Ansonsten Kombination der Nachteile</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Synchrone / Asynchrone Replikation</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d130-100.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">OK an User</p>
+        <ul class="w3-large">
+            <li>erst nachdem Follower1
+                bestätigt hat (synchron)</li>
+            <li>aber schon bevor
+                Follower2 bestätigt hat
+                (asynchron)</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Einrichtung neuer Followers bei leader-based Replikation</h1>
+<ol class="w3-large">
+    <li>Konsistenter Schnappschuss der Datenbank zum Zeitpunkt t</li>
+    <li>Kopieren des Schnappschusses auf den neuen Follower</li>
+    <li>Follower verbindet sich mit Leader, um Änderungen zu
+        aktualisieren</li>
+</ol>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Knotenausfälle bei leader-based Replikation</h1>
+<p class="w3-large ic-neg15">Follower</p>
+<ul class="w3-large">
+    <li>Hält auf der lokalen Disk ein Log vor, das die vom Leader erhaltenen Änderungen enthält</li>
+    <li>Absturz des Knotens</li>
+    <ul>
+        <li>Neustart und Wiederherstellung</li>
+        <li>Aktualisierung der Änderungen (Rückfrage beim Leader) </li>
+    </ul>
+    <li>Netzwerkausfall</li>
+    <ul>
+        <li>Aktualisierung der Änderungen (Rückfrage beim Leader) </li>
+    </ul>
+</ul>
+<p class="w3-large ic-neg15">Leader</p>
+<ul class="w3-large">
+    <li>Feststellung Leader-Ausfall</li>
+    <li>Auswahl neuer Leader </li>
+    <li>Rekonfiguration System auf neuen Leader</li>
+    <li>Mögliche Probleme</li>
+    <ul>
+        <li>Welcher Timeout für Feststellung Leaderausfall</li>
+        <li>Alter Leader wird wieder aktiv, Split Brain - zwei Knoten denken, sie sind Leader</li>
+        <li>Neuer Leader ist nicht auf neustem Stand der Daten (bei asynchronen Replikation)</li>
+        <li>Alter Leader hat neueren Stand an externe Systeme bereits übertragen</li>
+    </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Übertragung Replikationsdaten</h1>
+<p class="w3-large ic-neg15">Übertragung von Anweisungen</p>
+<ul class="w3-large">
+    <li>Nichtdeterministische Funktionen - z.B. now() </li>
+    <li>Reihenfolge der Anweisungsausführung</li>
+    <li>Seiteneffekte - Trigger, Stored Procedures</li>
+</ul>
+<p class="w3-large ic-neg15">Übertragung Transaktionsprotokoll (Write-Ahead-Log, WAL)</p>
+<ul class="w3-large">
+    <li>Anwendung des WAL auf dem Follower-Knoten</li>
+    <li>Direkte Kopplung an die Speichermaschine</li>
+    <li>Kompatibilitätsprobleme bei unterschiedlichen Software-Versionen auf den Knoten</li>
+</ul>
+<p class="w3-large ic-neg15">Übertragung von Datensätzen</p>
+<ul class="w3-large">
+    <li>Logische Übertragung der Datensatzdaten, nicht physisch wie bei WAL</li>
+    <li>Eine Datenbankanweisung kann zu mehreren logischen Datensatzprotokolleinträgen führen</li>
+</ul>
+<p class="w3-large ic-neg15">Übertragung auf Anwendungsebene</p>
+<ul class="w3-large">
+    <li>Große Flexibilität</li>
+    <li>Change Data Capture (CDC)</li>
+    <li>Z.B. über Trigger - Eintragung in Protokolltabellen - Auslesen dieser Tabellen </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Gossip-Protokoll</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Jeder Knoten kontaktiert zufällig ausgewählte Knoten in der Nähe</li>
+            <li>Erhält Rückmeldung, misst Laufzeit bis Antwort kommt</li>
+            <li>Meldet an andere Knoten seine gemessenen Werte</li>
+            <li>Dadurch verteilte Ermittlung des Gesamtzustands des Systems</li>
+            <li>Beinhaltet spezielle Regeln unter welchen Bedingungen ein Knoten als ausgefallen betrachtet wird</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d180-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Read Repair</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d160-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Hält Replikate auf dem aktuellen Stand</li>
+            <li>Im Rahmen von Quorum-Konsistenz</li>
+            <li>Problem, wenn ein Wert lange Zeit nicht gelesen wird</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Anti-Entropie</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/repl-part/d170-70.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Hält Replikate auf dem aktuellen Stand</li>
+            <li>Läuft periodisch</li>
+            <li>Zufallsauswahl</li>
+            <li>Ergänzt Read Repair</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Partitionierung (Sharding)</h1>
+<ul class="w3-large">
+    <li>Daten auf verschiedenen Knoten verteilen</li>
+    <li>Horizontale Skalierung</li>
+    <li>Allokation Daten: z.B. Consistent Hashing</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/repl-part/d140-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Partitionierung + Replikation</h1>
+<ul class="w3-large">
+    <li>Datenelemente A, B und C landen in verschiedenen (primären) Partitionen</li>
+    <li>Jedes Datenelement wird auf andere Partitionen repliziert</li>
+    <li>Replikationsstrategien können konfiguriert werden</li>
+    <li>Verschiedene Master für verschiedene Datenelemente möglich</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/repl-part/d150-100.png">
+<div class="ic-gap"></div>
+
+
+<

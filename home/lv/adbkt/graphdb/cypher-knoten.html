@@ -1,0 +1,75 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title: Cypher Knoten Matching
+is_slide: 1
+n: 5
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Alle Knoten zu einem Label</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN h as haltestelle;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/130-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Matching mit Bedingung</h1>
+<p class="w3-large ic-neg15">Bedingung mit WHERE</p>
+<pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h as haltestelle;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/140-100.png">
+
+<p class="w3-large ic-neg15">Bedingung als fester Eigenschaftswert</p>
+<pre><code class="cypher">MATCH (h:Haltestelle {name: 'HeidelbergerPlatz'})
+RETURN h as haltestelle;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/142-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Knoten sind JSON-Objekte</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle {name: 'HeidelbergerPlatz'})
+RETURN h as haltestelle;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/160-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Tabellarische Ausgabe von Eigenschaften</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle WHERE h.name STARTS WITH 'H')
+RETURN h.name as haltestelle
+ORDER BY h.name;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/150-100.png">
+<div class="ic-gap"></div>
+
+
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Aggregation</h1>
+<pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN count(*);</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/170-100.png">
+
+<pre><code class="cypher">MATCH (h:Haltestelle)
+RETURN collect(h.name) as haltestellen;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-knoten/180-100.png">
+<div class="ic-gap"></div>
+

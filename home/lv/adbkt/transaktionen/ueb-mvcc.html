@@ -1,0 +1,39 @@
+---
+layout: default1
+nav: adbkt-transaktionen
+title: "Ü: Multi Version Concurrency Control - ADBKT"
+is_slide: 0
+---
+
+<h1>Übung Multi Version Concurrency Control</h1>
+
+
+<h2>Vorbereitung</h2>
+<p class="w3-large">
+    Importieren sie folgendes Notebook in ihren Python-Container:
+    (<a href="/home/lv/adbkt/a/ipynb/transaktionen.ipynb">ipynb</a>)
+    (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/transaktionen.ipynb">render</a>)
+</p>
+
+
+<h2>Implementierung von Szenarien aus der Vorlesung</h2>
+<ul class="w3-large">
+    <li>Snapshot - Read Committed</li>
+    <li>Snapshot - Repeatble Read</li>
+    <li>Lost Update - Read Comitted</li>
+    <li>Lost Update - Repeatable Read</li>
+    <li>Write Skew - Repeatable Read</li>
+    <li>Write Skew - SERIALIZABLE - T2->T1</li>
+    <li>Write Skew - SERIALIZABLE - T2-/-> T1</li>
+    <li>Serialisierungsfehler</li>
+</ul>
+
+<h2>Implementierung von Szenarien aus dem PostgreSQL-Paper</h2>
+<ul class="w3-large">
+    <li>
+        Paper "Serializable Snapshot Isolation in PostgreSQL" - bis Kapitel 3.1 lesen
+        (<a href="https://arxiv.org/abs/1208.4179">link</a>)
+    </li>
+    <li>Szenario Fig 1 implementieren</li>
+    <li>Szenario Fig 2 implementieren</li>
+</ul>

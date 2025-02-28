@@ -1,0 +1,12 @@
+create or replace package body maut_service as
+
+procedure berechnemaut(
+    p_mautabschnitt mautabschnitt.abschnitts_id%type,
+    p_achszahl fahrzeug.achsen%type,
+    p_kennzeichen fahrzeug.kennzeichen%type)
+as
+  v_dummy integer;
+begin
+    v_dummy := 0;
+end berechnemaut;
+end maut_service;

@@ -1,0 +1,47 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title: "Ü: Neo4j-Container erstellen"
+is_slide: 0
+---
+
+<h1>Übung Neo4-Container erstellen</h1>
+
+<h2 class="ic-neg15">Container anlegen</h2>
+<ul class="w3-large">
+  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+  <li>Auf Button "Add stack" klicken</li>
+  <li>Name "neo4j" für Stack vergeben</li>
+  <li>Code in Webeditor kopieren</li>
+  <li>Auf "Deploy the stack" klicken</li>
+</ul>
+
+<pre><code class="language-yaml">services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - data:/data
+      - logs:/logs
+    environment:
+      - NEO4J_AUTH=neo4j/adbktneo4j
+      - NEO4J_server_memory_heap_initial__size=500M 
+      - NEO4J_server_memory_heap_max__size=500M 
+      - NEO4J_server_memory_pagecache_size=500M 
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+      - NEO4J_dbms_security_allow__csv__import__from__file__urls=true
+      - NEO4J_server_directories_import=/data/csv
+
+volumes:
+  data:
+  logs:
+</code></pre>
+
+<h1>Auf Neo4j-Browser zugreifen</h1>
+<p class="w3-large">
+  <code>http://xxx.f4.htw-berlin.de:7474</code>
+</p>
+

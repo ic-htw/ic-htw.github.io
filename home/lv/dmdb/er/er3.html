@@ -1,0 +1,336 @@
+---
+layout: default1
+nav: dmdb-er
+title: ER-Modelle 3 - DMDB
+is_slide: 1
+n: 18
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Generalisierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010-130.png">
+    </div>
+    <div class="w3-col m7">
+        <ul class="w3-large">
+            <li>Gemeinsamkeiten in Obertyp</li>
+            <li>Spezialisierungen im Untertyp</li>
+            <li>Ist-Ein-Beziehung (1-zu-1)</li>
+            <li>Vererbung von Attributen</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Generalisierung - Extension</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d020-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Element der Extension StudentIn ist Element der Extension Person</li>
+            <li>Extension StudentIn ist Teilmenge von Extension Person</li>
+            <li>Person kann weder StudentIn noch Lehrperson sein</li>
+            <li>Person kann gleichzeitig StudentIn und Lehrperson sein</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Attributvererbung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d040-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>StudentIn und Lehrperson erben PID und Name</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Relationale Umsetzung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d030-130.png">
+    </div>
+    <div class="w3-col m7">
+        <ul class="w3-large">
+            <li>Obertyp und Untertypen werden zu Tabellen</li>
+            <li>Primärschlüssel Obertyp wird zu Primär- und Fremdschlüssel in Untertyp</li>
+            <li>Gemeinsame Attribute in Tabelle für Obertyp</li>
+            <li>Spezialisierte Attribute in Untertypen</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Relationale Umsetzung - Daten</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d050-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Vererbung von Beziehungstypen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d060-100.png"><br>
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d070-100.png">
+    </div>
+    <div class="w3-col m4">
+        <ul class="w3-large">
+            <li>Beziehungstyp geht auf Obertyp</li>
+            <li>Instanzen der Untertypen können an diesem Beziehungstyp teilnehmen</li>
+            <li>StudentIn und Lehrperson können Adresse haben</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Vollständigkeit der Generalisierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d080-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Keine Instanzen im Obertyp möglich</li>
+            <li>Weitere Untertypen zum Modell hinzufügen</li>
+            <li>Im Extremfall "Sonstige"</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Disjunktheit der Generalisierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d090-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Keine gemeinsamen Instanzen in zwei Untertypen</li>
+            <li>Erfordert anderes Modell</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Vorteile vollständiger, disjunkter Generalisierungen</h1>
+<p class="w3-large ic-neg15">Bei Implementierung in einer objektorientierten Sprache wie Java</p>
+<ul class="w3-large">
+    <li>Abstrakte Oberklassen - verhindert versehentliche Objekterzeugung für Oberklasse</li>
+    <li>Komplexere Umsetzung nichtdisjunkter Generalisierungen in Sprachen mit Einfachvererbung (wie Java)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Rollenmodell</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d100-100.png">
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Rolle "Sonstige" für Vollständigkeit</li>
+            <li>Keine Generalisierung auf Personen</li>
+            <li>Generalisierung auf Rollen</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Rollen sind disjunkt</li>
+            <li>Daher vollständiges und disjunktes Modell</li>
+            <li>Dynamische Domäne "Rolle" - explizite Typinformation im Modell</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Rollemnmodell - Extension</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d110-80.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Generalisierung - Fehlerbeispiel</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d120a-130.png"><br>
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d130-130.png">
+    </div>
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">Verletzung Substitutionsprinzip</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1 class="ic-neg15">Verletzung Substitutionsprinzip</h1>
+<div>
+    <div class="w3-col m6">
+        <pre><code class="language-java">public class Quadrat {
+  protected int breite;
+  public Quadrat(int breite) {
+    this.breite = breite;
+  }	
+  public int flaeche() {
+    return breite * breite;
+  }
+}
+public class Rechteck extends Quadrat {
+  private int laenge;
+  public Rechteck(int breite, int laenge) {
+    super(breite);
+    this.laenge = laenge;
+}</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-java">public class Main {
+  public static void main(String[] args) {
+    Quadrat q = new Quadrat(5);
+    System.out.println(q.flaeche());
+    // liefert 25
+		
+    Rechteck r = new Rechteck(5, 6);
+    System.out.println(r.flaeche());
+    // liefert ebenfalls 25 statt 30
+  }
+}</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1 class="ic-neg10">Übersetzungstrategien ER nach Rel</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010-130.png">
+        <ul class="w3-large">
+            <li>Eine Tabelle pro Entitätstyp</li>
+            <li>Eine Tabelle für die gesamte Hierarchie</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d030-130.png"><br><hr class="ic-hr">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d140-130.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Bewertung Übersetzungstrategien</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Eine Tabelle pro Entitätstyp</li>
+            <ul>
+                <li>Not-NULL-Constraints für Untertypen bleiben erhalten</li>
+                <li>Verbund erforderlich</li>
+            </ul>
+            <li>Eine Tabelle für die gesamte Hierarchie</li>
+            <ul>
+                <li>Keine Not-NULL-Constraints in Untertypen</li>
+                <li>Kein Verbund erforderlich</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d150-100.png">
+    </div>
+        </div>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1 class="ic-neg10">Bibliothek - Nutzer</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d160-130.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1 class="ic-neg10">Bibliothek - Medien</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d170-130.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1 class="ic-neg10">Bibliothek - Ausleihe</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d180-130.png">
+<div class="ic-gap"></div>
+
+

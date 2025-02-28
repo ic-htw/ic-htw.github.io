@@ -1,0 +1,333 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Wie gut sind Query Optimierer wirklich?
+is_slide: 1
+n: 7
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>1. Einleitung</h1>
+<ul>
+  <li><strong>Problemstellung:</strong> Die Wahl der optimalen Join-Reihenfolge ist entscheidend für die Query-Performance.</li>
+  <li><strong>Klassische Architektur von Query-Optimierern:</strong> Vorstellung der traditionellen Architektur mit Kardinalitätsschätzung, Kostenmodell und Planaufzählung.</li>
+  <li><strong>Forschungsfragen:</strong>
+    <ul>
+      <li>Wie gut sind Kardinalitätsschätzungen und wann führen schlechte Schätzungen zu langsamen Queries?</li>
+      <li>Wie wichtig ist ein genaues Kostenmodell für den gesamten Query-Optimierungsprozess?</li>
+      <li>Wie groß muss der enumerierte Planraum sein?</li>
+    </ul>
+  </li>
+  <li><strong>Methodik:</strong>
+    <ul>
+      <li><strong>"Join Order Benchmark" (JOB):</strong> Ein neuer Benchmark basierend auf dem IMDB-Datensatz mit realistischen Queries und Korrelationen.</li>
+      <li><strong>PostgreSQL als Testsystem:</strong> Ein Open-Source DBMS mit traditioneller Architektur.</li>
+      <li><strong>Kardinalitätsextraktion und -injektion:</strong> Ermöglicht die Isolierung des Einflusses der Kardinalitätsschätzung.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>2. Hintergrund und Methodik</h1>
+<ul>
+  <li>Detaillierte Beschreibung des <strong>IMDB-Datensatzes</strong> und dessen Eignung für den Benchmark (reale Korrelationen, ungleichmäßige Datenverteilungen).</li>
+  <li><strong>JOB-Queries:</strong>
+    <ul>
+      <li>33 Query-Strukturen mit 2-6 Varianten (unterschiedliche Selektionen).</li>
+      <li>3 bis 16 Joins pro Query (durchschnittlich 8).</li>
+      <li>Fokus auf Join-Reihenfolge als wichtigstes Optimierungsproblem.</li>
+    </ul>
+  </li>
+  <li><strong>PostgreSQL:</strong>
+    <ul>
+      <li>Traditionelle Architektur mit dynamischer Programmierung für die Join-Reihenfolge.</li>
+      <li>Kardinalitätsschätzung basierend auf Histogrammen, häufigsten Werten und Domänenkardinalitäten.</li>
+      <li>Vereinfachende Annahmen: Gleichverteilung, Unabhängigkeit, Inklusionsprinzip.</li>
+      <li>Query-Engine mit verschiedenen Join-Algorithmen (Nested-Loop, Hash-Join, Sort-Merge).</li>
+    </ul>
+  </li>
+  <li><strong>Kardinalitätsextraktion und -injektion:</strong>
+    <ul>
+      <li>Gewinnung von Kardinalitätsschätzungen aus verschiedenen DBMS.</li>
+      <li>Injektion der Schätzungen in PostgreSQL zur isolierten Untersuchung der Kardinalitätsschätzung.</li>
+    </ul>
+  </li>
+  <li><strong>Experimentelles Setup:</strong>
+    <ul>
+      <li>Hardware- und Software-Spezifikation des Testsystems.</li>
+      <li>Konfigurationsparameter von PostgreSQL.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>3. Kardinalitätsschätzung</h1>
+<ul>
+  <li><strong>Bedeutung der Kardinalitätsschätzung:</strong> Wichtigste Grundlage für die Wahl des optimalen Query-Plans.</li>
+  <li><strong>Schätzungen für Basisrelationen:</strong>
+    <ul>
+      <li>Q-Fehler-Analyse (Faktor, um den eine Schätzung von der tatsächlichen Kardinalität abweicht).</li>
+      <li>Vergleich verschiedener DBMS: PostgreSQL, HyPer und drei kommerzielle Systeme.</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Die meisten Basisrelationen werden korrekt geschätzt.</li>
+          <li>Es gibt jedoch Ausreißer mit großen Fehlern.</li>
+          <li>DBMS A und HyPer zeigen die besten Ergebnisse (vermutlich durch Sampling).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Schätzungen für Joins:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li><strong>Große Fehler:</strong> Oftmals um Faktor 1000 oder mehr.</li>
+          <li><strong>Exponentielles Fehlerwachstum:</strong> Mit zunehmender Anzahl der Joins.</li>
+          <li><strong>Systematische Unterschätzung:</strong> Besonders ausgeprägt bei DBMS B.</li>
+        </ul>
+      </li>
+      <li><strong>Ursache:</strong>
+        <ul>
+          <li>Unabhängigkeitsannahme bei der Join-Schätzung.</li>
+          <li>Keine Erkennung von Join-übergreifenden Korrelationen.</li>
+          <li><strong>Abbildung 3:</strong> Visualisiert die Q-Fehler für verschiedene DBMS und Join-Größen.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Schätzungen für TPC-H:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>TPC-H stellt keine große Herausforderung für Kardinalitätsschätzer dar.</li>
+          <li><strong>Abbildung 4:</strong> Vergleich der Schätzfehler von PostgreSQL für JOB- und TPC-H-Queries.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Verbesserte Statistiken für PostgreSQL:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Die Verwendung der tatsächlichen Anzahl unterschiedlicher Werte verbessert die Varianz der Fehler.</li>
+          <li>Die Unterschätzung der Kardinalitäten wird jedoch verstärkt.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 5:</strong> Vergleich der Schätzungen mit geschätzten und tatsächlichen Anzahlen unterschiedlicher Werte.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>4. Wann führen schlechte Kardinalitätsschätzungen zu langsamen Queries?</h1>
+<ul>
+  <li><strong>Einfluss des physischen Datenbankdesigns:</strong> Die Art und Anzahl der Indizes beeinflusst den Suchraum für Pläne und die Sensitivität gegenüber Schätzfehlern.</li>
+  <li><strong>Risiko der Abhängigkeit von Schätzungen:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Die Verwendung von Schätzungen führt oft zu langsameren Queries im Vergleich zu den tatsächlichen Kardinalitäten.</li>
+          <li>Schlechte Schätzungen können zu Timeouts führen.</li>
+        </ul>
+      </li>
+      <li><strong>Ursachen:</strong>
+        <ul>
+          <li><strong>Wahl von Nested-Loop-Joins aufgrund von Unterschätzungen:</strong> Diese haben eine hohe Komplexität und sollten vermieden werden.</li>
+          <li><strong>Falsch dimensionierte Hash-Tabellen aufgrund von Unterschätzungen:</strong> Führt zu langen Kollisionsketten.</li>
+        </ul>
+      </li>
+      <li><strong>Lösung:</strong>
+        <ul>
+          <li>Deaktivierung von Nested-Loop-Joins (ohne Index-Lookup).</li>
+          <li>Dynamische Größenanpassung der Hash-Tabellen zur Laufzeit.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 6:</strong> Zeigt den Einfluss der Optimierungen auf die Query-Laufzeiten.</li>
+    </ul>
+  </li>
+  <li><strong>Gute Pläne trotz schlechter Kardinalitäten:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Mit nur Primärschlüsselindizes und den genannten Optimierungen ist die Performance oft nahe am Optimum.</li>
+        </ul>
+      </li>
+      <li><strong>Ursachen:</strong>
+        <ul>
+          <li>Full-Table-Scans bei großen Tabellen dämpfen den Einfluss der Join-Reihenfolge.</li>
+          <li>Im Hauptspeicher ist die Wahl eines suboptimalen Join-Algorithmus nicht katastrophal.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Komplexe Zugriffspfade:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Zusätzliche Fremdschlüsselindizes führen zu größeren Performanceunterschieden.</li>
+        </ul>
+      </li>
+      <li><strong>Ursache:</strong>
+        <ul>
+          <li>Der Suchraum für Pläne wird komplexer.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 7:</strong> Vergleich der Laufzeiten mit und ohne Fremdschlüsselindizes.</li>
+    </ul>
+  </li>
+  <li><strong>Join-übergreifende Korrelationen:</strong>
+    <ul>
+      <li><strong>Herausforderung:</strong> Schätzung von Kardinalitäten bei korrelierten Prädikaten über mehrere Tabellen.</li>
+      <li><strong>Beispiel DBLP-Datensatz:</strong> Partitionierung von Indizes kann Join-übergreifende Korrelationen ausnutzen.</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Der Einfluss von Join-übergreifenden Korrelationen hängt von den verfügbaren Zugriffspfaden ab.</li>
+          <li>Neue physische Designs und Zugriffspfade könnten notwendig sein.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>5. Kostenmodelle</h1>
+<ul>
+  <li><strong>Zweck des Kostenmodells:</strong> Auswahl des besten Plans aus dem Suchraum basierend auf den Kardinalitätsschätzungen.</li>
+  <li><strong>Das PostgreSQL-Kostenmodell:</strong>
+    <ul>
+      <li>Komplexes Modell mit über 4000 Zeilen C-Code.</li>
+      <li>Berücksichtigt CPU- und I/O-Kosten.</li>
+      <li>Schwierige Konfiguration der Parameter.</li>
+    </ul>
+  </li>
+  <li><strong>Kosten und Laufzeit:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Das Kostenmodell korreliert mit der Laufzeit, aber schlechte Schätzungen führen zu Ausreißern.</li>
+          <li>Die Verwendung der tatsächlichen Kardinalitäten macht das Kostenmodell zuverlässiger.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 8:</strong> Vergleich von Kosten und Laufzeiten für verschiedene Kostenmodelle.</li>
+    </ul>
+  </li>
+  <li><strong>Optimierung des Kostenmodells für Hauptspeicher:</strong>
+    <ul>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Anpassung der Parameter für geringere I/O-Kosten verbessert die Korrelation.</li>
+          <li>Die Verbesserung ist jedoch geringer als der Einfluss der Kardinalitätsschätzung.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Sind komplexe Kostenmodelle notwendig?</strong>
+    <ul>
+      <li><strong>Einfaches Kostenmodell (Cmm):</strong> Zählt nur die Anzahl der verarbeiteten Tupel.</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Selbst das einfache Modell kann die Laufzeit im Hauptspeicher gut vorhersagen.</li>
+          <li>Die Verbesserung durch das Kostenmodell ist geringer als der Einfluss der Kardinalitätsschätzung.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 8:</strong> Vergleich von Kosten und Laufzeiten für verschiedene Kostenmodelle.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>6. Planraum</h1>
+<ul>
+  <li><strong>Planaufzählungsalgorithmen:</strong> Untersuchen den Raum der möglichen Join-Reihenfolgen (exhaustiv oder heuristisch).</li>
+  <li><strong>Wie wichtig ist die Join-Reihenfolge?</strong>
+    <ul>
+      <li><strong>Quickpick-Algorithmus:</strong> Erzeugt zufällige Pläne, um die Kostenverteilung zu visualisieren.</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Die Kosten verschiedener Join-Reihenfolgen können sich um Größenordnungen unterscheiden.</li>
+          <li>Die Form der Verteilungen variiert je nach Query und Indexkonfiguration.</li>
+          <li>Fremdschlüsselindizes führen zu größeren Performanceunterschieden.</li>
+        </ul>
+      </li>
+      <li><strong>Abbildung 9:</strong> Visualisiert die Kostenverteilungen für verschiedene Queries und Indexkonfigurationen.</li>
+    </ul>
+  </li>
+  <li><strong>Sind Bushy Trees notwendig?</strong>
+    <ul>
+      <li><strong>Vergleich verschiedener Baumstrukturen:</strong> Left-Deep, Right-Deep, Zig-Zag, Bushy.</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Zig-Zag-Bäume bieten in den meisten Fällen eine gute Performance.</li>
+          <li>Left-Deep-Bäume sind akzeptabel, Right-Deep-Bäume hingegen schlecht.</li>
+        </ul>
+      </li>
+      <li><strong>Tabelle 2:</strong> Zeigt die Performanceeinbußen für eingeschränkte Baumstrukturen.</li>
+    </ul>
+  </li>
+  <li><strong>Sind Heuristiken ausreichend?</strong>
+    <ul>
+      <li><strong>Vergleich von dynamischer Programmierung mit Heuristiken:</strong> Quickpick-1000, Greedy Operator Ordering (GOO).</li>
+      <li><strong>Feststellung:</strong>
+        <ul>
+          <li>Die vollständige Aufzählung mit dynamischer Programmierung liefert die besten Ergebnisse.</li>
+          <li>Heuristiken sind jedoch weniger anfällig für Schätzfehler.</li>
+        </ul>
+      </li>
+      <li><strong>Tabelle 3:</strong> Vergleich der Performance verschiedener Algorithmen.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>7. Schlussfolgerungen und zukünftige Arbeiten</h1>
+<ul>
+  <li>Zusammenfassung der wichtigsten Erkenntnisse:
+    <ul>
+      <li>Query-Optimierung ist essentiell für effiziente Query-Verarbeitung.</li>
+      <li>Kardinalitätsschätzung ist die wichtigste Komponente und stellt die größte Herausforderung dar.</li>
+      <li>Kostenmodelle spielen eine untergeordnete Rolle.</li>
+      <li>Exhausive Planaufzählung ist vorzuziehen, aber der Einfluss von Schätzfehlern ist groß.</li>
+    </ul>
+  </li>
+  <li>Ausblick auf zukünftige Forschung:
+    <ul>
+      <li>Integration fortschrittlicherer Schätzalgorithmen.</li>
+      <li>Stärkere Interaktion zwischen Laufzeit und Query-Optimierer.</li>
+      <li>Untersuchung von datenbankresidenten und verteilten Datenbanken.</li>
+    </ul>
+  </li>
+</ul>
+<div class="ic-gap"></div>

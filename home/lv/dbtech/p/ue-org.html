@@ -1,0 +1,117 @@
+---
+layout: default1
+nav: dbtech
+is_slide: 0
+---
+{% include translate.html %}
+<h1>{{ x.sub[3].t }}</h1>
+<h2>Hinweise zu Plagiaten in Übungen</h2>
+{% include plagiate.html %}
+
+<h2>Form der Abgabe der Übungsaufgaben Ü2, Ü3, Ü4</h2>
+<ul class="w3-large">
+    <li>Betrifft nur die Übungen der Claßen-Gruppen</li>
+    <li>Per EMail an ingo.classen@htw-berlin.de</li>
+    <li>Betreffzeile: DbTech: Üx: Nachname1-Nachname2-..., Üx = Ü1, Ü2, ...</li>
+    <li>Beispiel-Betreffzeile: DbTech: Ü2: Müller-Özdem-Nguyen</li>
+    <li>Im Text der EMail: Nachnamen, Vornamen, Matrikelnummern aller Gruppenmitglieder</li>
+    <li>Alle Gruppenmitglieder auf cc setzen</li>
+    <li>In den Anhängen die eigentlichen Ergebnisse</li>
+</ul>
+
+<h2>Hinweise zur Gruppenbildung</h2>
+<ul class="w3-large">
+    <li>In meinem Zug ist keine Meldung der Gruppen notwendig</li>
+    <li>Ich erkenne bei der Abgabe von Ü2, wer zu einer Gruppe gehört</li>
+    <li>Auf dieser Grundlage erfasse ich die Gruppen</li>
+    <li>Sollte es später Änderungen bei den Gruppen geben ist auch keine Meldung notwendig</li>
+    <li>Ich erkenne bei der Abgabe von Ü3 und Ü4, welche Änderungen es gegeben hat.</li>
+</ul>
+
+<h2>Bonuspunkte</h2>
+<ul class="w3-large">
+    <li>Sie können Bonuspunkte durch Präsenation ihrer Lösungen erlangen</li>
+    <li>Die Präsentationen finden nach der Bewertung der Übungen statt</li>
+    <li>Den Termin gebe ich rechtzeitig bekannt</li>
+    <li>Jede Gruppe präsentiert eine Methode</li>
+    <li>Es reicht, wenn ein Gruppenmitglied präsentiert</li>
+    <li>Hinweise zu den Bonuspunkten</li>
+    <ul>
+        <li>Sie können die Präsentation im Semester nur einmal wahrnehmen</li>
+        <li>Die zwei Punkte können nur zum Ausgleich von Abzügen in den Übungspunkten verwendet werden</li>
+        <li>D.h. Sie können damit Verluste ausgleichen</li>
+        <li>Sie können in Summe aber nicht über 40 Punkte in den Übungen kommen</li>
+        <li>Die Bonuspunkte sind also nützlich, wenn Sie Punkte in den Übungen verloren haben</li>
+    </ul>
+</ul>
+
+<h2>Konfiguration Sql-Developer</h2>
+{% include sqldeveloper.html %}
+
+<h2>Eclipse-Projekte</h2>
+<ul class="w3-large">
+    <li>Bibliotheksprojekt (<a  href="">link</a>)</li>
+    <li>Codebeispielen (<a  href="">link</a>)</li>
+</ul>
+
+<h2>Logging</h2>
+<p class="w3-large">Logging-Einstellungen (Systemeigenschaften beim Start der VM)</p>
+<pre><code>-Dorg.slf4j.simpleLogger.showThreadName="false"
+-Dorg.slf4j.simpleLogger.logFile="System.out"
+-Dorg.slf4j.simpleLogger.log.org.dbunit="error"
+-Dorg.slf4j.simpleLogger.log.de.htwberlin="info"</code></pre>
+<p class="w3-large">Protokollstufen</p>
+<ul class="w3-large">
+    <li>error</li>
+    <li>warn</li>
+    <li>info</li>
+    <li>debug</li>
+</ul>
+
+<h2>Konfiguration Datenbankzugriff aus Java</h2>
+<p class="w3-large">In allen Eclipse-Projekten gibt es eine Datei DbCred.java (im Paket de.htwberlin.utils), die folgendes Interface enthält:</p>
+<pre><code class="language-java">public interface DbCred {
+    final String driverClass = "oracle.jdbc.driver.OracleDriver";
+    final String url = "jdbc:oracle:thin:@host:1521:sid";
+    final String user = "uuu";
+    final String password = "ppp";
+    final String schema = "sss";
+}</code></pre>
+
+
+<h2>IntelliJ - Eclipse-Projekte</h2>
+<ul class="w3-large">
+    <li>Download Eclipse Bibliotheksprojekt und Projekt mit den Codbeispielen</li>
+    <li>Auspacken der Zip-Dateien</li>
+    <li>IntelliJ starten</li>
+    <li>Menüpunkt: File->New->Project from Existing Sources ...</li>
+    <li>Ausgepacktes Verzeichnis code-bsp im File-Dialog selektieren</li>
+    <li>Import-Dialog geht auf: So oft "Next" klicken, bis "Finish" kommt</li>
+    <li>"Finish" klicken</li>
+    <li>Menüpunkt: File->Project Structure</li>
+    <li>Project-Structure-Dialog geht auf:</li>
+    <ul>
+        <li>"Libraries" auswählen</li>
+        <li>"+" klicken</li>
+        <li>"Java" auswählen</li>
+        <li>Im File-Dialog Unterverzeichnis "lib" dbtech_lib selektieren</li>
+        <li>"OK" Klicken</li>
+    </ul>
+    <li>Eclipse-Projekte mit den Übungen später analog behandeln</li>
+    <li>Intellij - Resources-Ordner hinzufügen</li>
+    <ul>
+        <li>Ist notwendig, damit die Test-Daten gefunden werden.</li>
+        <li>Screenshot (<a  href="/lv/dbtech/a/ex/intellij-resources.png">link</a>)</li>
+        <li>File->Project Structure ...</li>
+        <li>Auf "Modules klicken"</li>
+        <li>Module "test" auswählen</li>
+        <li>Auf Ordner "resources" klicken</li>
+        <li>Auf Tab "Resources" klicken</li>
+    </ul>
+    <li>Intellij - Logging einstellen</li>
+    <ul>
+        <li>Screenshot (<a  href="/home/lv/dbtech/a/ex/intellij-logging.png">link</a>)</li>
+    </ul>
+</ul>
+
+

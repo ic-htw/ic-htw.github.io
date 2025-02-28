@@ -1,0 +1,91 @@
+---
+layout: default1
+nav: dataman
+is_slide: 0
+---
+
+<h1>Basics</h1>
+<h2>Query on one Table</h2>
+<pre><code class="language-sql">select column1, column2, column3 as name
+from table
+where left=right;</code></pre>
+
+<h2>Query on one Table with null Condition</h2>
+<pre><code class="language-sql">select column1, column2, column3 as name
+from table
+where column is null;</code></pre>
+
+
+
+<h1>Join</h1>
+<h2>Join of two Tables</h2>
+<pre><code class="language-sql">select column1, column2, column3 as name
+from table1 t1
+     join table2 t2 on t2.column=t1.column
+where left=right;</code></pre>
+
+<h2>Join of three Tables</h2>
+<pre><code class="language-sql">select column1, column2, column3 as name
+from table1 t1
+     join table2 t2 on t2.column=t1.column
+     join table3 t3 on t3.column=t2.column
+where left=right;</code></pre>
+
+<h2>Join of four Tables</h2>
+<pre><code class="language-sql">select column1, column2, column3 as name
+from table1 t1
+     join table2 t2 on t2.column=t1.column
+     join table3 t3 on t3.column=t2.column
+     join table4 t4 on t4.column=t3.column
+where left=right;</code></pre>
+
+
+<h1>Aggregaton</h1>
+<h2>Aggregation without Grouping</h2>
+<pre><code class="language-sql">select 
+  sum(column) as total,
+  avg(column) as mean,
+  count(*) as number_of
+from table;</code></pre>
+
+<h2>Aggregation with Grouping</h2>
+<pre><code class="language-sql">select column1, column2, sum(column3) as total , count(*) as number_of
+from table
+group by column1, column2;</code></pre>
+
+<h2>Aggregation with Condition on Group Level</h2>
+<pre><code class="language-sql">select column1, column2, sum(column3) as total , count(*) as number_of
+from table
+group by column1, column2
+having count(*) = 10;</code></pre>
+
+<h2>Aggregation with Join</h2>
+<pre><code class="language-sql">select column1, column2, sum(column3) as total , count(*) as number_of
+from table t1
+    join table2 t2 on t2.column=t1.column
+group by column1, column2
+having count(*) = 10;</code></pre>
+
+<h1>Subquery</h1>
+<h2>Subquery in Where Part</h2>
+<pre><code class="language-sql">select column1, column2
+from table
+where  left = (
+  subquery here
+);</code></pre>
+
+<h2>Subquery in Select Part</h2>
+<pre><code class="language-sql">select column1, (subquery here)
+from table
+where left = right;</code></pre>
+
+<h2>Subquery in From Part</h2>
+<pre><code class="language-sql">select column1, column2
+from
+    table t1
+        join
+    (subquery here) t2
+        on t2.column=t1.column
+where left = right;</code></pre>
+
+

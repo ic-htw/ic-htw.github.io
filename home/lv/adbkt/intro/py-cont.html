@@ -1,0 +1,48 @@
+---
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
+---
+
+<h1>Python-Container erstellen</h1>
+
+<ul class="w3-large">
+  <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
+  <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
+  <li><code>https://aaa.f4.htw-berlin.de:9443/</code></li>
+  <li>Environment "local" auswählen</li>
+  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+  <li>Auf Button "Add stack" klicken</li>
+  <li>Name für Container vergeben</li>
+  <li>Folgendes Skript in Web Editor kopieren - dann auf "Deploy the stack" klicken</li>
+</ul>
+
+<pre><code class="language-yaml">services:
+  py:
+    container_name: pyuv
+    image:  iclassen/pyuv
+    ports:
+      - 8888:8888
+    volumes:
+      - data:/root
+
+volumes:
+  data:</code></pre>
+
+<p class="w3-large">Konsole in Container öffnen</p>
+<pre><code>jupyter notebook list</code></pre>
+
+<p class="w3-large">Token kopieren</p>
+
+<p class="w3-large">Zugriff auf Jupyter Notebook</p>
+<pre><code>http://aaa.f4.htw-berlin.de:8888/</code></pre>
+
+<p class="w3-large">Token einfügen</p>
+
+<p class="w3-large">Dieser Container verwendet "uv" als Paketmanager. D.h., statt</p>
+<pre><code>pip install something</code></pre>
+<p class="w3-large">muss</p>
+<pre><code>uv pip install something</code></pre>
+<p class="w3-large">verwendet werden</p>
+
+

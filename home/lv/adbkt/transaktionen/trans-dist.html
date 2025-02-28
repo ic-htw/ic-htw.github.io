@@ -1,0 +1,198 @@
+---
+layout: default1
+nav: adbkt-transaktionen
+title: Verteilte Transaktionen - ADBKT
+is_slide: 1
+n: 9
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Verteilte Transaktionen</h1>
+<p class="w3-large">Transaktionen, die mehr als einen Ressource-Manager umfassen</p>
+<p class="w3-large">Typische Ressource-Manager sind Datenbank- oder Messaging-Systeme</p>
+<img class="w3-image" src="/home/lv/adbkt/a/trans/100-100.png">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Anforderungen</h1>
+<p class="w3-large">ACID muss wie bei nicht verteilten Transaktionen gewahrt werden</p>
+
+<p class="w3-large ic-neg15">Alle RM müssen</p>
+<ul class="w3-large">
+    <li>die Transaktion erfolgreich beenden oder</li>
+    <li>alle ihre Änderungen rückgängig machen</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Zwei-Phasen-Commit-Protokoll (2PC)</p>
+<ul class="w3-large">
+    <li>Umgang mit mit Systemfehlern,</li>
+    <li>z.B. Kommunikationsfehler (Netzwerkunterbrechung)</li>
+    <li>TM stürzt ab, RM stürzt ab</li>
+    <li>Sicherstellung der Atomarität</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Spezifikationen</h1>
+
+<p class="w3-large">Distributed-Transaction-Processing-Modell (DTP) </p>
+<p class="w3-large ic-neg15">TX-Spezifikation</p>
+<ul class="w3-large">
+    <li>Schnittstelle zwischen AP und TM</li>
+    <li>Das AP steuert die Transaktion: bot, commit, rollback</li>
+</ul>
+<p class="w3-large ic-neg15">XA-Spezifikation</p>
+<ul class="w3-large">
+    <li> Schnittstelle zwischen TM und RM</li>
+    <li>Assoziation von Operationenen im RM mit einer Transaktion</li>
+    <li>Funktionen zur Abbildung des Zwei-Phasen-Commit-Protokolls</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Überweisung Giro-/Sparkonto</h1>
+<p class="w3-large">Verschiedene Unternehmenseinheiten für Giro- und Sparkonten</p>
+<p class="w3-large">Jeweils eigene IT-Infrastruktur</p>
+<img class="w3-image" src="/home/lv/adbkt/a/trans/110-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>2PC - erfolgreicher Abschluss</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/trans/120-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>2PC - Fehlerabbruch</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/trans/130-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Zustandsübergänge in RM</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">executing</p>
+        <ul class="w3-large">
+            <li>RM führt Operationen durch, z. B. Änderungen an Daten</li>
+            <li>Bei Fehler kann sofort in den aborting/aborted-Zustand
+                gewechselt werden</li>
+            <li>Nach der prepare-Aufforderung durch den TM wird bei
+                positivem Ergebnis in den prepared-Zustand gewechselt</li>
+            <li>Der RM muss auf die Entscheidung durch den TM
+                warten</li>
+        </ul>
+        <p class="w3-large ic-neg15">prepared</p>
+        <ul class="w3-large">
+            <li>Abhängig von der Entscheidung des TM wird die
+                Transaktion erfolgreich beendet oder es findet ein
+                Rückgängigmachen aller Operationen statt</li>
+        </ul>
+        <p class="w3-large ic-neg15">aborting/aborted</p>
+        <ul class="w3-large">
+            <li>Transaktion wurde abgebrochen</li>
+        </ul>
+        <p class="w3-large ic-neg15">commiting/committed</p>
+        <ul class="w3-large">
+            <li>Transaktion wurde erfolgreich beendet</li>
+        </ul>
+
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/trans/140-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Zustandsübergänge in TM</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">executing</p>
+        <ul class="w3-large">
+            <li>TM startet commit-Bearbeitung</li>
+            <li>Sendet prepare-Meldung an alle RM</li>
+            <li>Kann aber Transaktion auch abbrechen</li>
+        </ul>
+        <p class="w3-large ic-neg15">prepared</p>
+        <ul class="w3-large">
+            <li>TM wartet auf Ergebnisse von den RM</li>
+            <li>Antworten alle RM positiv geht er in den Zustand committing
+                über</li>
+            <li>Antwortet nur ein RM negativ geht er in den aborting-Zustand
+                über</li>
+        </ul>
+        <p class="w3-large ic-neg15">aborting, commiting</p>
+        <ul class="w3-large">
+            <li>TM warted auf Bestätigungen</li>
+        </ul>
+        <p class="w3-large ic-neg15">aborted/committed</p>
+        <ul class="w3-large">
+            <li>Information zur Transaktion wird in den Programmstrukturen des
+                TM gelöscht, da sie komplett abgeschlossen ist</li>
+        </ul>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/trans/150-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Heuristische Entscheidungen</h1>
+
+<p class="w3-large">RM hat bei prepare mit yes geantwortet</p>
+<p class="w3-large ic-neg15"> TM stürzt ab</p>
+<ul class="w3-large">
+    <li>Alle Sperren müssen im RM gehalten werden</li>
+    <li>Andere Transaktionen auf diesem RM werden möglicherweise
+        blockiert</li>
+</ul>
+<p class="w3-large ic-neg15">Pragmatische Lösung für diesen Fall: RM können von sich aus, d. h.
+    heuristisch, eine Entscheidung zum Ausgang der Transaktion
+    treffen, entweder commit oder abort</p>
+<ul class="w3-large">
+    <li>Dadurch wird die Atomarität der Transaktion durchbrochen, da
+        der TM möglicherweise eine andere Entscheidung zum
+        Ausgang getroffen hat</li>
+    <li>In diesem Fall muss ggf. manuell wieder ein konsistenter
+        Gesamtzustand des Systems hergestellt werden</li>
+</ul>
+<div class="ic-gap"></div>
+

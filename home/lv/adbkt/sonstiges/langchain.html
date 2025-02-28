@@ -1,0 +1,36 @@
+---
+layout: default1
+nav: adbkt-uebungen
+is_slide: 0
+---
+
+<h1>Langchain</h1>
+
+<p class="w3-large ic-neg15">
+  Sie sollen die Grundlage für eine RAG-Anwendung schaffen, die Fragen zum Studium der Wirtschaftsinformatik beantworten kann. Dazu müssen Informationen von der WI-Website heruntergeladen, aufbereitet und in Embeddings transformiert werden.
+  <br>
+  <b>Arbeitspunkte</b>
+</p>
+<ul class="w3-large">
+<li>Starten sei mit einer URL, z.B. (<a href="https://wirtschaftsinformatik.htw-berlin.de/bachelor/bachelorarbeit/">link</a>)</li>
+<li>Extrahieren sie Informationen mittels Langchain (<a href="https://python.langchain.com/docs/integrations/document_loaders/async_html/">link</a>)</li>
+<li>Zerlegen sie die Informationen in Chunks (<a href="https://python.langchain.com/docs/how_to/recursive_text_splitter/">link</a>)</li>
+<li>Erzeugen sie Embeddings für die Chunks (<a href="https://python.langchain.com/docs/how_to/embed_text//">link</a>, <a href="https://python.langchain.com/docs/integrations/text_embedding/huggingfacehub/">link</a>). Verwenden sie z.B.:<br> <code>sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</code> </li>
+<li>Speichern Sie die Textfragmente mit ihren Embeddings in einer Vektordatenbank (s.u.)</li>
+<li>Erweitern sie das Ganze mit relevanten URLs aus der WI-Website</li>
+<li>Überlegen sie sich Fragen (Z.B "Wieviele Semester dauert das Bachelor-Studium?")</li>
+<li>Lassen sie sich die drei ähnlichsten Texfragmente aus der Datenbank ausgeben</li>
+<li>Präsentieren sie ihre Lösung</li>
+</ul>
+
+<p class="w3-large ic-neg15">
+  Vektordatenbanken
+</p>
+<ul class="w3-large">
+  <li>Chroma</li>
+  <li>LanceDB </li>
+  <li>Milvus</li>
+  <li>Pinecone</li>
+  <li>Qdrant</li>
+  <li>Weaviate </li>
+</ul>

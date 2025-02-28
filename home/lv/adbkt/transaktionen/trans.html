@@ -1,0 +1,335 @@
+---
+layout: default1
+nav: adbkt-transaktionen
+title: Transaktionen - ADBKT
+is_slide: 1
+n: 9
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Anforderungen an Transaktionen (ACID)</h1>
+<p class="w3-large ic-neg15">Atomarität (Atomicity)</p>
+<ul class="w3-large">
+    <li>Alles oder Nichts</li>
+    <li>Alle Aktionen einer Transaktion werden bestätigt oder keine</li>
+</ul>
+<p class="w3-large ic-neg15">Konsistenz (Consistency)</p>
+<ul class="w3-large">
+    <li>Eine Transaktion kann nur bestätigt werden, wenn keine Konsistenbedingungen verletzt sind</li>
+    <li>Ist eigentlich ein Konzept der Anwendung</li>
+</ul>
+<p class="w3-large ic-neg15">Isolation (Isolation)</p>
+<ul class="w3-large">
+    <li>Nebenläufige/Parallele Transaktionen beinflussen sich nicht auf unerlaubte Art und Weise</li>
+    <li>Es gibt verschiedene Stufen der Isolation, deren stärkste Serialisierbarkeit ist</li>
+    <li>Stärkere Stufe bedeutet geringere Leistung</li>
+</ul>
+<p class="w3-large ic-neg15">Dauerhaftigkeit (Durability)</p>
+<ul class="w3-large">
+    <li>Veränderungen bestätigter Transkationen haben für Folgetransaktionen Bestand</li>
+    <li>Solange bis sie durch weitere Transaktionen bestätigt verändert werden</li>
+    <li>Auch im Falle von Fehlern (z.B. Festplatte defekt)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Mechanismen</h1>
+<p class="w3-large ic-neg15">Strikte 2-Phasen-Sperren (Strict two-phase locking , 2PL)</p>
+<ul class="w3-large">
+    <li>Lesesperren (Shared Locks , Slocks) vor jedem Lesen</li>
+    <li>Schreibsperren (Exclusive Locks, Xlocks) vor jedem Schreiben</li>
+    <li>Sperren auf existierende Datensätze (Row Level Locks)</li>
+    <li>Sperren basierend auf Prädikate (Predicate Locks) zur Verhinderung von Phantomen</li>
+    <li>Sperren werden bis zum Transkationsende gehalten</li>
+</ul>
+<p class="w3-large ic-neg15">Optimistic Concurrency Control (OCC)</p>
+<ul class="w3-large">
+    <li>Lesen und Schreiben ohne Sperren (auf Kopien)</li>
+    <li>Führen der Historie der Lese- und Schreibvorgänge</li>
+    <li>Überprüfung der Historie auf Konflikte vor Commit</li>
+    <li>Abbruch bei Konflikt</li>
+</ul>
+<p class="w3-large ic-neg15">Multi-Version Concurrency Control (MVCC) / Snapshot Isolation</p>
+<ul class="w3-large">
+    <li>Keine Lesesperren</li>
+    <li>Änderungen erzeugen neue Versionen</li>
+    <li>Transaktionen sehen Version der letzten bestätigten Änderung, d.h. Lesen und Schreiben stehen nicht in Konflikt</li>
+    <li>Prüfung der Schreibvorgänge, Abbruch bei Konflikt</li>
+</ul>
+<p class="w3-large ic-neg15">Optimistische Verfahren auf Anwendungsebene</p>
+<ul class="w3-large">
+    <li>Explizite Versionsfelder</li>
+    <li>Änderung nur, wenn keine Versionsänderung in Datenbank</li>
+    <li>Bsp. OR-Mapper</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Isolationsstufen</h1>
+<p class="w3-large ic-neg15">SQL-Isolationsstufen</p>
+<ul class="w3-large">
+    <li>Read Uncommitted</li>
+    <ul>
+        <li>Lesen nicht bestätigter Änderungen möglich</li>
+    </ul>
+    <li>Read Committed</li>
+    <ul>
+        <li>Lesen nur von bestätigten Änderungen möglich</li>
+    </ul>
+    <li>Repetable Read</li>
+    <ul>
+        <li>Wiederholtes Lesen in der Transaktion liefert gleichen Wert</li>
+    </ul>
+    <li>Serializable</li>
+    <ul>
+        <li>Nebenläufige Ausführung von Transkationen muss einer serialisierten Ausführung entsprechen</li>
+    </ul>
+</ul>
+<p class="w3-large ic-neg15">Produktspezifische Isolationsstufen</p>
+<ul class="w3-large">
+    <li>Snapshot Isolation (PostgreSQL, …)</li>
+    <ul>
+        <li>First Committer wins</li>
+    </ul>
+    <li>Read Consistency (Oracle)</li>
+    <ul>
+        <li>First Updater wins </li>
+    </ul>
+    <li>Cursor Stability (DB2, ..)</li>
+    <ul>
+        <li>Basiert auf Datenbank-Cursor</li>
+        <li>Sperre bleibt solange bestehen, bis auf den nächsten Datensatz im Cursor weitergeschaltet wird</li>
+    </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Anomalie - Dirty Read 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: select * from personal order by pid
+T1: [(100, 40000), (200, 50000)]
+
+          T2: update personal set gehalt=41000 where pid=100
+          T2: [(100, 41000), (200, 50000)]
+
+T1: select * from personal order by pid
+T1: [(100, 41000), (200, 50000)]
+T1: commit and close
+
+          T2: rollback and close
+
+After (pid, gehalt): [(100, 40000), (200, 50000)]</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            T2 ändert Wert<br>
+            T1 liest nicht bestätigten Wert 41000<br>
+            T2 macht rollback
+        </p>
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Anomalie - Dirty Read 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+
+          T2: select * from personal order by pid
+          T2: [(100, 41000), (200, 50000)]
+          T2: commit and close
+
+T1: update personal set gehalt=51000 where pid=200
+T1: [(100, 41000), (200, 51000)]
+T1: commit and close
+
+After (pid, gehalt): [(100, 41000), (200, 51000)]</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            T2 liest nicht bestätigten Datenbankzustand<br>
+            [(100, 41000), (200, 50000)]<br><br>
+            Ähnlich wie Dirty Read 1, nur kein Rollback
+        </p>
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Anomalie - Non Repeatable Read 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: select * from personal order by pid
+T1: [(100, 40000), (200, 50000)]
+
+          T2: update personal set gehalt=41000 where pid=100
+          T2: [(100, 41000), (200, 50000)]
+          T2: commit and close
+
+T1: select * from personal order by pid
+T1: [(100, 41000), (200, 50000)]
+T1: commit and close
+
+After (pid, gehalt): [(100, 41000), (200, 50000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            Wiederholtes Lesen des gleichen Datensatzes pid=100 in T1 führt zu unterschiedlichen Werten
+            (40000 und 41000) 
+        </p>
+    </div>
+</div>
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Anomalie - Non Repeatable Read 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: select * from personal where pid=100
+T1: [(100, 40000)]
+
+          T2: update personal set gehalt=41000 where pid=100
+          T2: update personal set gehalt=51000 where pid=200
+          T2: [(100, 41000), (200, 51000)]
+          T2: commit and close
+
+T1: select * from personal where pid=200
+T1: [(200, 51000)]
+T1: commit and close
+
+After (pid, gehalt): [(100, 41000), (200, 51000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            Ähnlich zu Non Repeatble Read 1, nur nicht zweimaliges Lesen des gleichen Datensatzes.<br><br>
+            Der Gesamtzustand der Datenbank hat sich beim zweiten Lesen geändert
+        </p>
+    </div>
+</div>
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Anomalie - Lost Update</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (pid, gehalt): [(100, 40000), (200, 50000)]
+
+T1: select * from personal order by pid
+T1: [(100, 40000), (200, 50000)]
+
+          T2: select * from personal order by pid
+          T2: [(100, 40000), (200, 50000)]
+
+T1: update personal set gehalt=41000 where pid=100
+T1: [(100, 41000), (200, 50000)]
+T1: commit and close
+
+          T2: update personal set gehalt=42000 where pid=100
+          T2: [(100, 42000), (200, 50000)]
+          T2: commit and close
+
+After (pid, gehalt): [(100, 42000), (200, 50000)]
+        </code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            T1 und T2 lesen gleichen DB-Zustand<br><br>
+            T1 nimmt auf dessen Grundlage Änderungen vor und schreibt<br><br>
+            T2 nimmt ebenfalls auf dessen Grundlage Änderungen vor und überschreibt T1
+        </p>
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Anomalie - Write Skew</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+        <pre><code class="language-sql">Before (kid, betrag): [(100, 80), (200, 50)]
+
+T1: [(100, 80), (200, 50)]
+
+          T2: [(100, 80), (200, 50)]
+
+T1: update konto set betrag = betrag -90 where kid=100
+T1: [(100, -10), (200, 50)]
+T1: commit and close
+
+          T2: update konto set betrag = betrag -50 where kid=200
+          T2: [(100, 80), (200, 0)]
+          T2: commit and close
+
+After (kid, betrag): [(100, -10), (200, 0)]</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">
+            Invariante: Summe auf beiden Konten
+            darf nicht negativ werden.<br><br>
+            T1 prüft Summe (130) und stellt fest,
+            dass ein Abheben von 90 von kid=100
+            ok ist, da Deckung durch kid=200
+            gegeben.<br><br>
+            T2 hebt ebenfalls Geld ab.
+            Dadurch wird die Invariante verletzt.
+        </p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+

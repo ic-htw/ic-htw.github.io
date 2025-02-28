@@ -1,0 +1,126 @@
+{% if page.nav == "home" %}
+  {% assign x = site.data.main.r[0] %}
+  {% assign y = site.data.main.r[0] %}
+
+  <!-- Lehre -->
+{% elsif page.nav == "lv"%}
+  {% assign x = site.data.main.h[0] %}
+  {% assign y = site.data.main.r[0] %}
+
+  <!-- DMDB -->
+{% elsif page.nav == "dmdb"%}
+  {% assign x = site.data.main.lv[0] %}
+  {% assign y = site.data.main.h[0] %}
+<!-- DMDB - Allgemeines -->
+{% elsif page.nav == "dmdb-allgemeines"%}
+  {% assign x = site.data.main.dmdb[0] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - Rel -->
+{% elsif page.nav == "dmdb-rel"%}
+  {% assign x = site.data.main.dmdb[1] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - ER -->
+{% elsif page.nav == "dmdb-er"%}
+  {% assign x = site.data.main.dmdb[2] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - SQL -->
+{% elsif page.nav == "dmdb-sql"%}
+  {% assign x = site.data.main.dmdb[3] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - Viz -->
+{% elsif page.nav == "dmdb-viz"%}
+  {% assign x = site.data.main.dmdb[4] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - DM-Rel -->
+{% elsif page.nav == "dmdb-dm-rel"%}
+  {% assign x = site.data.main.dmdb[5] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - DM-ER -->
+{% elsif page.nav == "dmdb-dm-er"%}
+  {% assign x = site.data.main.dmdb[6] %}
+  {% assign y = site.data.main.lv[0] %}
+<!-- DMDB - AB -->
+{% elsif page.nav == "dmdb-ab"%}
+  {% assign x = site.data.main.dmdb[7] %}
+  {% assign y = site.data.main.lv[0] %}
+
+  <!-- DbTech -->
+{% elsif page.nav == "dbtech"%}
+  {% assign x = site.data.main.lv[1] %}
+  {% assign y = site.data.main.h[0] %}
+
+  <!-- ADBKT -->
+{% elsif page.nav == "adbkt"%}
+  {% assign x = site.data.main.lv[2] %}
+  {% assign y = site.data.main.h[0] %}
+<!-- ADBKT - Allgemeines -->
+{% elsif page.nav == "adbkt-intro"%}
+  {% assign x = site.data.main.adbkt[0] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Transaktionen -->
+{% elsif page.nav == "adbkt-transaktionen"%}
+  {% assign x = site.data.main.adbkt[1] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - NoSql -->
+{% elsif page.nav == "adbkt-nosql"%}
+  {% assign x = site.data.main.adbkt[2] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Graph Datenbanken -->
+{% elsif page.nav == "adbkt-graphdb"%}
+  {% assign x = site.data.main.adbkt[3] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Geo-Datenverabeitung -->
+{% elsif page.nav == "adbkt-geo"%}
+  {% assign x = site.data.main.adbkt[4] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Sonstiges -->
+{% elsif page.nav == "adbkt-sonstiges"%}
+  {% assign x = site.data.main.adbkt[5] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Übungen -->
+{% elsif page.nav == "adbkt-pruefungen"%}
+  {% assign x = site.data.main.adbkt[6] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Prüfungsleistungen -->
+{% elsif page.nav == "adbkt-zzz"%}
+  {% assign x = site.data.main.adbkt[7] %}
+  {% assign y = site.data.main.lv[2] %}
+
+  <!-- DataMan -->
+{% elsif page.nav == "dataman"%}
+  {% assign x = site.data.main.lv[3] %}
+  {% assign y = site.data.main.h[0] %}
+
+  <!-- PBI -->
+{% elsif page.nav == "pbi"%}
+  {% assign x = site.data.main.lv[4] %}
+  {% assign y = site.data.main.h[0] %}
+
+  <!-- Sonstiges -->
+{% elsif page.nav == "sonstiges"%}
+  {% assign x = site.data.main.h[1] %}
+  {% assign y = site.data.main.r[0] %}
+
+  <!-- Links -->
+{% elsif page.nav == "links"%}
+  {% assign x = site.data.main.h[2] %}
+  {% assign y = site.data.main.r[0] %}
+<!-- Allgemeines -->
+{% elsif page.nav == "links-allgemeines"%}
+  {% assign x = site.data.main.links[0] %}
+  {% assign y = site.data.main.h[2] %}
+<!-- DBS -->
+{% elsif page.nav == "links-dbs"%}
+  {% assign x = site.data.main.links[1] %}
+  {% assign y = site.data.main.h[2] %}
+<!-- ML -->
+{% elsif page.nav == "links-ml"%}
+  {% assign x = site.data.main.links[2] %}
+  {% assign y = site.data.main.h[2] %}
+<!-- PROG -->
+{% elsif page.nav == "links-prog"%}
+  {% assign x = site.data.main.links[3] %}
+  {% assign y = site.data.main.h[2] %}
+{% else %}
+  Fehler
+{% endif %}

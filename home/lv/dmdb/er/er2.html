@@ -1,0 +1,323 @@
+---
+layout: default1
+nav: dmdb-er
+title: ER-Modelle 2 - DMDB
+is_slide: 1
+n: 17
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Werteliste</h1>
+<ul class="w3-large">
+    <li>Liste mit einer festgelegten Menge von Werten  </li>
+    <li>Z.B. für Drop-Down-Menü</li>
+</ul>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er-hochschule/modul2-100.png">
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er-hochschule/modul1-100.png">
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Implementierung durch Check-Constrains</h1>
+<p class="w3-large">Statische Domäne</p>
+<pre><code class="language-sql">CREATE TABLE Modul (
+  MID INTEGER NOT NULL PRIMARY KEY,
+  Bez VARCHAR(100) NOT NULL,
+  CP INTEGER NOT NULL,
+  Regelsemester INTEGER NOT NULL,
+  Modulart VARCHAR(20) NOT NULL, 
+  CHECK (Modulart IN ('Pflicht', 'Wahlpflicht', 'Wahl'))
+); </code></pre>
+
+<ul class="w3-large">
+    <li>Änderung an Werteliste erfordert Änderung des Datenmodells</li>
+    <li>Änderung am Code, d.h. Entwicklungstätigkeit</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1 class="ic-neg10">Implementierung durch Tabelle</h1>
+<p class="w3-large ic-neg10">Dynamische Domäne</p>
+<div class="w3-row-padding ic-neg15">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d10-150.png"><br>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d20-150.png">
+    </div>
+    <div class="w3-col m5">
+<pre><code class="language-sql">INSERT INTO Modulart
+    VALUES (1, 'Pflicht');
+INSERT INTO Modulart
+    VALUES (2, 'Wahlpflicht');
+INSERT INTO Modulart
+    VALUES (3, 'Wahl');</code></pre>
+    </div>
+</div>
+<ul class="w3-large">
+    <li>Änderung an Werteliste erfordert neuen Eintrag in die Tabelle</li>
+    <li>Keine Änderung am Code, lediglich Dateningabe</li>
+    <li>Verbund erforderlich</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Implementierung durch Tabelle - Erweiterung</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d30-150.png">
+<ul class="w3-large">
+    <li><b>Aktiv</b>: Ausblenden von nicht mehr nutzbaren Werten</li>
+    <li><b>LfdNr</b>: Sortierreihenfolge bei der Ausgabe</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Identizierende Beziehungstypen 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d40-130.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d50-130.png">
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large">Konsistenzproblem</p>
+        <pre><code class="language-sql">INSERT INTO Note 
+  VALUES (1, 2.3, 1, 1);
+INSERT INTO Note 
+  VALUES (2, 3.7, 1, 1);</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Identizierende Beziehungstypen 2</h1>
+<div class="w3-row-padding ic-neg15">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d60-130.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d70-130.png">
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large ic-neg10">Kein Konsistenzproblem</p>
+        <pre><code class="language-sql">INSERT INTO Note 
+  VALUES (2.3, 1, 1);</code></pre>
+  <p class="w3-large ic-neg10">Nicht möglich</p>
+        <pre><code class="language-sql">INSERT INTO Note 
+  VALUES (3.7, 1, 1);</code></pre>
+    </div>
+</div>
+<ul class="w3-large">
+    <li><b>Senkrechter Strich</b>: Identizierender Beziehungstyp</li>
+    <li>Primärschlüsselbestandteil wird erzeugt</li>
+    <li>SID UND MID bilden einen zusammengestzte Primärschlüssel</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Nichttransferierbarkeit 1</h1>
+<div class="w3-row-padding ic-neg15">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d80-130.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d90-130.png">
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large ic-neg10">Konsistenzproblem</p>
+        <pre><code class="language-sql">UPDATE Raum 
+  set GID=99
+WHERE RID=1;</code></pre>
+        <ul class="w3-large">
+            <li>Raum wird in ein anderes Gebäude transferiert</li>
+            <li>Das ist inhaltlich inkonsistent</li>
+        </ul>
+    </div>
+</div>
+<p class="w3-large">Fremdschüssel auf Raum 1 bleiben gültig</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Nichttransferierbarkeit 2</h1>
+<div class="w3-row-padding ic-neg15">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d100-130.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d110-130.png">
+    </div>
+    <div class="w3-col m5">
+        <p class="w3-large ic-neg10">Identifizierender Beziehungstyp, zusammengesetzter Primärschlüssel</p>
+        <pre><code class="language-sql">UPDATE Raum 
+  set GID=99
+WHERE RID=1;</code></pre>
+        <ul class="w3-large">
+            <li>Raum erhält neue Identität - ist somit ein neuer Raum</li>
+            <li>Update nur möglich, wenn kein Fremdschüssel auf Raum 1 zeigt</li>
+        </ul>
+    </div>
+</div>
+<p class="w3-large">Fremdschüssel auf Raum 1 müssen vorher gelöscht werden</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Existenzabhängigkeit</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d100-130.png">
+ <pre><code class="language-sql">DELETE FROM Gebaeude 
+WHERE GID=1;</code></pre>
+<ul class="w3-large">
+    <li>Raum kann nicht verschoben werden (Nichttransferierbarkeit)</li>
+    <li>D.h., Raum muss gelöscht werden, damit Gebäude gelöscht werden kann</li>
+    <li>D.h., Räume hängen von der Existenz von Gebäuden ab </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Problem zweistelliger Beziehungstypen 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Personen können mehrere Adressen haben</li>
+            <li>Einer Adresse können mehrere Personen zugeordnet werden</li>
+            <li>Personen können mehrere Adressarten haben</li>
+            <li>Einer Adressart können mehrere Personen zugeordnet sein</li>
+            <li>Eine Adresse kann mehrere Adressarten haben</li>
+            <li>Einer Adressart können mehrere Adressen zugeordnet sein</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d120-130.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Problem zweistelliger Beziehungstypen 2</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d130-80.png">
+<p class="w3-large">Nicht möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Assoziationstypen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d140-130.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Personenadresse hat Doppelnatur</li>
+            <li>Wird daher Assoziationstyp genannt</li>
+            <li>Ist Entitätstyp</li>
+            <li>Ist aber auch Beziehungstyp: verbindet Entitätstypen</li>
+            <li>Dreistelliger Beziehungstyp</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Auflösung Problem</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d150-80.png">
+<p class="w3-large">Nun möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Zweistellige Beziehungstypen mit Attributen</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d60-130.png">
+<ul class="w3-large">
+    <li>Note verbindet Studierende mit Modulen</li>
+    <li>Ist Assoziationstyp</li>
+    <li>Als Beziehungstyp ist er zweistellig, hat aber ein Attribut, den Notenwert</li>
+    <li>Kann daher nicht als N-zu-M-Beziehungstyp modelliert werden</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Note als dreistelliger Beziehungstyp</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d160-130.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Notenwert ist dynamische Domäne</li>
+            <li>Note hat nur Beziehungstypen</li>
+            <li>Aus zweistellig ist dreistellig geworden</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Beispiel Handelsunternehmen</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d170-130.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Assoziationstypen in HVS</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er1/d110-130.png">
+<div class="ic-gap"></div>
+

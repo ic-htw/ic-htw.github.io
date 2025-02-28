@@ -1,0 +1,138 @@
+---
+layout: default1
+nav: adbkt-nosql
+title: Einführung NoSQL
+is_slide: 1
+n: 6
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Einordnung</h1>
+<p class="w3-large ic-neg15">Was ist NoSQL</p>
+<ul class="w3-large">
+    <li>Eindeutige Definition schwierig</li>
+    <li>Alles, was nicht dem relationalen Datenmodell entspricht</li>
+    <li>Not only SQL</li>
+    <li>Verteilung</li>
+    <li>Keine vollständige Transaktionsunterstützung (ACID)</li>
+</ul>
+<p class="w3-large ic-neg15">Warum NoSQL</p>
+<ul class="w3-large">
+    <li>Unterstützung großer Datenmengen verwaltet durch Computer-Cluster</li>
+    <li>Horizontale Skalierbarkeit</li>
+    <li>Flexibler Umgang mit Schemata</li>
+    <li>Bessere Anpassung an Datenstrukturen in Anwendungen</li>
+    <li>Polyglot Persistence</li>
+</ul>
+<p class="w3-large ic-neg15">NoSQL vs SQL</p>
+<ul class="w3-large">
+    <li>Relationale Systeme integrieren immer mehr nicht-relationale Strukturen</li>
+    <li>Realisieren ebenfalls Verteilung</li>
+    <li>NoSQL-Syteme unterstützen vermehrt SQL und Transaktionen</li>
+    <li>Die Grenze verschwimmt immer weiter</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Aspekte der Verteilung</h1>
+<ul class="w3-large">
+    <li>Zugriffstransparenz: Von wo erfolgt der Zugriff</li>
+    <li>Partitionierungsstransparenz: Wo liegen die Daten</li>
+    <li>Replikationstransparenz: An welchen Stellen werden Kopien gespeichert</li>
+    <li>Migrationstransparenz: Repartionierung der Daten</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Key Value Store</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/nosql/d10-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Bekannter Vertreter: Redis</li>
+            <li>Nur Schlüssel-Wert-Paare</li>
+            <li>Keine Abfragesprache</li>
+            <li>Werte sind "Black Box"</li>
+            <li>Strukturierte Datentypen möglich, z.B. Listen, Mengen, Hashes, Blobs</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Wide Column Store</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/nosql/d20-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Bekannter Vertreter: Cassandra</li>
+            <li>Ist kein spaltenorientiertes Datenbanksystemen</li>
+            <li>Zeilenweise Speicherung</li>
+            <li>Zeilen haben kein festes Schema</li>
+            <li>Keine Joins, keine Aggregation</li>
+            <li>Partitionierung / Replikation</li>
+            <li>Schnelles Schreiben, LSM Tree</li>
+            <li>Verschiedene Konistenzmodelle</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Document Database</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/nosql/d30-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Bekannter Vertreter: MongoDB</li>
+            <li>Fokus auf JSON als Dokumente</li>
+            <li>Geschachtete Strukturen</li>
+            <li>Ansonsten ähnlich zu Wide Column Stores</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Graph Database</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/nosql/d40-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Bekannter Vertreter: neo4j</li>
+            <li>Knoten, Kanten, Property Graph</li>
+            <li>Spezielle Abfragesprache, z.B. Cypher</li>
+            <li>Graphalgorithmen, z.B. Shortest Path</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>

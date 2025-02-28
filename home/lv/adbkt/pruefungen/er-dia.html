@@ -1,0 +1,65 @@
+---
+layout: default1
+nav: adbkt-pruefungen
+title: P1
+is_slide: 0
+---
+
+<h1>ER-Diagramm aus Datenbankschema erzeugen</h1>
+
+<p class="w3-large ic-neg15">
+  Entwickeln Sie eine Python-Funktion, die ein ER-Diagramm
+  aus einem Datenbankschema einer Postgres-Datenbank erzeugt.
+</p>
+<pre><code class="python">def er_diagram(schema):
+  ...
+</code></pre>
+
+<p class="w3-large">
+  Verwenden Sie das Schema "umobility" als Beispiel:<br>
+  <img class="w3-image" src="/home/lv/adbkt/a/shed/bubahn-modell.png">
+</p>
+
+<p class="w3-large ic-neg15">Die Funktion muss auf die Metadaten von Postgres zugreifen, siehe:</p>
+<ul class="w3-large">
+  <li>System Catalogs
+    (<a href="https://www.postgresql.org/docs/current/catalogs.html">link</a>)
+  </li>
+  <li>System Views
+    (<a href="https://www.postgresql.org/docs/current/views.html">link</a>)
+  </li>
+</ul>
+
+<p class="w3-large ic-neg15">
+  Als Ausgabe erzeugt die Funktion einen Text,
+  der als Eingabe für PlantUml verwendet werden kann
+</p>
+<ul class="w3-large">
+  <li>ER Diagramme in PlantUml
+    (<a href="https://plantuml.com/de/ie-diagram">link</a>)
+  </li>
+  <li>Interaktive Diagrammerzeugung
+    (<a href="https://www.plantuml.com/plantuml/uml">link</a>)
+  </li>
+</ul>
+
+<p class="w3-large ic-neg15">
+  Folgende Informationen sollen im Diagramm enthalten sein
+</p>
+<ul class="w3-large">
+  <li>Alle Tabellen des Schemas als Entities</li>
+  <li>Alle Primär- und Fremdschlüssel</li>
+  <li>Alle Spalten mit Typinformationen</li>
+  <li>Not Null Constraints</li>
+  <li>Die Fremdschlüssel sollen als 1:n-Beziehungen visualisiert werden</li>
+</ul>
+
+<p class="w3-large ic-neg15">Code</p>
+<ul class="w3-large">
+  <li>Download
+    (<a href="/home/lv/adbkt/a/ipynb/er-diagramm.ipynb">link</a>)
+    (<a
+      href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/er-diagramm.ipynb">render</a>)
+  </li>
+  <li>Upload in Python-Container</li>
+</ul>

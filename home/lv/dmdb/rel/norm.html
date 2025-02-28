@@ -1,0 +1,237 @@
+---
+layout: default1
+nav: dmdb-rel
+title: Normalformen - DMDB
+is_slide: 1
+n: 10
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Anomalien</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/norm/d-10.png"
+alt='
+Tabelle mit der Überschrift "Mitarbeiter", die vier Zeilen und drei Spalten enthält. Die Spaltenüberschriften lauten von links nach rechts: "MNR", "Name", "ANR" und "AbtBez". Die erste Zeile enthält die Werte "11", "Meyer", "25", "Buchhaltung". Die zweite Zeile enthält die Werte "12", "Lehmann", "25", "Buchhaltung". Die dritte Zeile enthält die Werte "13", "Schmidt", "26", "Vertrieb". Die vierte Zeile enthält die Werte "14", "Krämer", "27", "Einkauf". Die Tabelle stellt eine Liste von Mitarbeitern dar, mit ihrer Mitarbeiternummer (MNR), Namen, Abteilungsnummer (ANR) und der Bezeichnung ihrer Abteilung (AbtBez).
+'>
+<p class="w3-large ic-neg15">Update-Anomalie</p>
+<pre><code class="language-sql  ic-neg15">UPDATE Mitarbeiter SET AbtBez='Finanz' WHERE MNR=12</code></pre>
+
+<p class="w3-large ic-neg15">Insert-Anomalie</p>
+<pre><code class="language-sql ic-neg15">INSERT INTO Mitarbeiter VALUES (15, Krause, 27, 'Beschaffung')</code></pre>
+
+<p class="w3-large ic-neg15">Delete-Anomalie</p>
+<pre><code class="language-sql">DELETE FROM Mitarbeiter WHERE MNR=13</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Funktionale Abhängigkeit</h1>
+<ul class="w3-large">
+  <li>Eine Spalte B ist funktional von einer Spalte A abhängig (A &rarr; B),<br>
+    wenn die Werte von A die Werte von B festlegen</li>
+  <li>A wird auch Determinante genannt</li>
+</ul>
+<img class="w3-image w3-margin-left" src="/home/lv/dmdb/a/norm/d-20.png"
+alt='
+Die Abbildung zeigt eine Tabelle mit der Überschrift "Mitarbeiter". Die Tabelle besteht aus vier Spalten und fünf Zeilen, einschließlich der Kopfzeile. Die Spaltenüberschriften lauten von links nach rechts: "MNR", "Name", "Tätigkeit" und "Gehalt". Unter der Kopfzeile sind vier Zeilen mit Daten aufgeführt: - In der ersten Zeile steht die MNR "101", der Name "Heinrich", die Tätigkeit "Geschäftsführer" und ein Gehalt von "5000". - In der zweiten Zeile steht die MNR "102", der Name "Konrad", die Tätigkeit "Verkäufer" und ein Gehalt von "2300". - In der dritten Zeile steht die MNR "103", der Name "Schulze", die Tätigkeit "Geschäftsführer" und ein Gehalt von "5000". - In der vierten Zeile steht die MNR "104", der Name "Heinrich", die Tätigkeit "Verkäufer" und ein Gehalt von "2300".
+'>
+<ul class="w3-large">
+  <li>MNR &rarr; Name, Tätigkeit, Gehalt</li>
+  <li>Tätigkeit &rarr; Gehalt?</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>2. Normalform (2. NF)</h1>
+<ul class="w3-large">
+  <li>Die 2. NF liegt vor</li>
+  <ul>
+    <li>wenn alle Nichtschlüsselspalten</li>
+    <li>vom gesamten Schlüssel abhängen</li>
+  </ul>
+  <li>Sobald eine einzige Nichtschlüsselspalte</li>
+  <ul>
+    <li>von einem Teil des Schlüssels </li>
+    <li>funktional abhängig ist</li>
+  </ul>
+  ist die 2. NF verletzt
+</ul>
+<p class="w3-large ic-neg3">Die folgende Tabelle verletzt die 2. NF</p>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <img class="w3-image" src="/home/lv/dmdb/a/norm/d-30.png"
+    alt='
+    Tabelle mit dem Titel "Projekt". Sie enthält fünf Spalten mit den Überschriften "MNR", "PNR", "Stunden", "Name" und "Projektname". Es gibt vier Zeilen mit Daten. Die erste Zeile listet die Werte "11", "10", "20", "Meyer" und "HR Einführung". Die zweite Zeile enthält "12", "22", "30", "Lehmann" und "CRM Einführung". Die dritte Zeile zeigt "13", "10", "25", "Schmidt" und "HR Einführung". Die vierte und letzte Zeile zeigt "11", "22", "20", "Meyer" und "CRM Einführung".
+    '>
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>MNR &rarr; Name</li>
+      <li>PNR &rarr; Projektname</li>
+      <li>MNR und PNR sind Teile des Schlüssels</li>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>3. Normalform (3. NF)</h1>
+<ul class="w3-large">
+  <li>Die 3. NF liegt vor</li>
+  <ul>
+    <li>wenn es keine funktionalen Abhängigkeiten </li>
+    <li>zwischen Nichtschlüsselspalten gibt</li>
+  </ul>
+  <li>Sobald eine einzige Nichtschlüsselspalte</li>
+  <ul>
+    <li>von einer anderen</li>
+    <li>funktional abhängig ist</li>
+  </ul>
+  ist die 3. NF verletzt
+</ul>
+<p class="w3-large ic-neg3">Die folgende Tabelle verletzt die 3. NF</p>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <img class="w3-image" src="/home/lv/dmdb/a/norm/d-10.png"
+    alt='
+    Tabelle mit der Überschrift "Mitarbeiter", die vier Zeilen und drei Spalten enthält. Die Spaltenüberschriften lauten von links nach rechts: "MNR", "Name", "ANR" und "AbtBez". Die erste Zeile enthält die Werte "11", "Meyer", "25", "Buchhaltung". Die zweite Zeile enthält die Werte "12", "Lehmann", "25", "Buchhaltung". Die dritte Zeile enthält die Werte "13", "Schmidt", "26", "Vertrieb". Die vierte Zeile enthält die Werte "14", "Krämer", "27", "Einkauf". Die Tabelle stellt eine Liste von Mitarbeitern dar, mit ihrer Mitarbeiternummer (MNR), Namen, Abteilungsnummer (ANR) und der Bezeichnung ihrer Abteilung (AbtBez).
+    '>
+  </div>
+  <div class="w3-col m6">
+    <ul class="w3-large">
+      <li>ANR &rarr; AbtBez</li>
+      <li>ANR und AbtBez sind Nichtschlüsselspalten</li>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1 class="ic-neg15">Wiederholungsgruppen</h1>
+<p class="w3-large ic-neg3">Mehrfaches Auftreten gleicher Spaltenkombinationen</p>
+<img class="w3-image ic-neg20" src="/home/lv/dmdb/a/norm/d-40.png"
+alt='
+Die Abbildung zeigt eine Tabelle mit dem Titel "Gebäude". Die Tabelle besteht aus zwei Zeilen und einer Kopfzeile. Die Kopfzeile enthält die Spaltenüberschriften "GNR", "GebBez", "RNR1", "AnzPlätze1", gefolgt von einer Auslassungspunkte-Spalte, "RNR87" und "AnzPlätze87".  "GNR" steht für Gebäudenummer, "GebBez" für Gebäudebezeichnung, "RNR" für Raumnummer und "AnzPlätze" für die Anzahl der Plätze in einem Raum. In der ersten Zeile stehen die Werte "1", "HG", "1", "25", dann Auslassungspunkte, "87" und "40". In der zweiten Zeile stehen die Werte "2", "MG", "1", "250", gefolgt von Auslassungspunkten.
+'>
+<p class="w3-large ic-neg3">Entspricht logisch einer nicht-atomaren Spalte, d.h. einer Spalte, die eine
+  Tabelle enthält</p>
+<img class="w3-image" src="/home/lv/dmdb/a/norm/d-50.png"
+alt='
+Die Abbildung zeigt eine Tabelle mit drei Spalten und einer variablen Anzahl von Zeilen, die eine Beziehung zwischen Gebäuden und Räumen darstellt. Die erste Spalte ist überschrieben mit "GNR", die zweite mit "GebBez" und die dritte mit "Räume", welche wiederum in zwei Spalten unterteilt ist: "RNR" und "AnzPlätze". In der ersten Zeile der Tabelle sind die Werte "1", "HG" und darunter in der Spalte "Räume" die Werte "1" und "25" eingetragen. Es folgen Punkte, die andeuten, dass weitere Daten folgen, und dann die Werte "87" und "25". In der nächsten Zeile sind die Werte "2", "MG" und in der Spalte "Räume" die Werte "1" und "250" eingetragen, gefolgt von weiteren Punkten, die wiederum für zusätzliche Daten stehen.
+'>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>1. Normalform (1. NF)</h1>
+<p class="w3-large">Alle Spalten müssen atomar sein, d.h. Wiederholungsgruppen sind nicht
+  erlaubt.</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Normalisierung</h1>
+<ul class="w3-large">
+  <li>Zerlegung von Tabellen</li>
+  <ul>
+    <li>in Bestandteile, die sich in 1. NF, 2. NF und 3. NF befinden</li>
+    <li>bei äquivalentem Informationsgehalt</li>
+  </ul>
+  <li>Vorgehen</li>
+  <ul>
+    <li>Auflösung von Wiederholungsgruppen</li>
+    <li>Extraktion von Determinanten und abhängigen Spalten</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1 class="ic-neg15">Auflösung von Wiederholungsgruppen</h1>
+<ul class="w3-large ic-neg3">
+  <li>Erstellung einer neuen Tabelle für die Wiederholungsgruppe</li>
+  <li>Enthält alle Spalten der Wiederholungsgruppe</li>
+  <li>Plus Primärschlüssel der Ausgangstabelle als Fremdschlüssel</li>
+  <li>Weiterer Schlüsselbestandteil</li>
+</ul>
+<img class="w3-image ic-neg20" src="/home/lv/dmdb/a/norm/d-40-80.png"
+alt='
+Die Abbildung zeigt eine Tabelle mit dem Titel "Gebäude". Die Tabelle besteht aus zwei Zeilen und einer Kopfzeile. Die Kopfzeile enthält die Spaltenüberschriften "GNR", "GebBez", "RNR1", "AnzPlätze1", gefolgt von einer Auslassungspunkte-Spalte, "RNR87" und "AnzPlätze87".  "GNR" steht für Gebäudenummer, "GebBez" für Gebäudebezeichnung, "RNR" für Raumnummer und "AnzPlätze" für die Anzahl der Plätze in einem Raum. In der ersten Zeile stehen die Werte "1", "HG", "1", "25", dann Auslassungspunkte, "87" und "40". In der zweiten Zeile stehen die Werte "2", "MG", "1", "250", gefolgt von Auslassungspunkten.
+'>
+<p class="w3-large ic-neg7"><b>wird zu</b></p>
+<img class="w3-image ic-neg20" src="/home/lv/dmdb/a/norm/d-60-80.png"
+alt='
+Das Bild zeigt die Tabelle "Raum" und die Tabelle "Gebäude", die durch einen Pfeil von "Raum" zu "Gebäude" miteinander verbunden sind. Die Tabelle "Gebäude" enthält zwei Spalten: "GNR" und "GebBez". Unter "GNR" sind die Zahlen 1 und 2 aufgeführt, unter "GebBez" die Abkürzungen "HG" und "MG". Die Tabelle "Raum" hat drei Spalten: "GNR", "RNR" und "AnzPlätze". In der "GNR"-Spalte sind die Zahlen 1 und 2 mehrfach aufgelistet. In der "RNR"-Spalte sind die Zahlen 1 und 87 sowie Platzhalter in Form von drei Punkten zu sehen. In der "AnzPlätze"-Spalte stehen die Zahlen 25 und 250 sowie ebenfalls Platzhalter.
+'>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1 class="ic-neg10">Extraktion Determinanten und abhängige Spalten (1)</h1>
+<ul class="w3-large ic-neg3">
+  <li>Erstellung einer Tabelle für Determinante und abhängige Spalten</li>
+  <li>Determinante wird Primärschlüssel in neuer Tabelle</li>
+  <li>Löschung abhängige Spalten in alter Tabelle</li>
+  <li>Determinante in alter Tabelle wird Fremdschlüssel auf neue Tabelle</li>
+</ul>
+<img class="w3-image ic-neg10" src="/home/lv/dmdb/a/norm/d-10-80.png"
+alt='
+Die Abbildung zeigt die Tabellen "Mitarbeiter" und "Abteilung", die durch einen Pfeil von "Mitarbeiter" zu "Abteilung" miteinander verbunden sind. Die Tabelle "Mitarbeiter" enthält drei Spalten mit den Überschriften "MNR", "Name" und "ANR". Es gibt vier Zeilen mit Daten: Die erste Zeile enthält die Werte "11", "Meyer" und "25"; die zweite Zeile "12", "Lehmann" und "25"; die dritte Zeile "13", "Schmidt" und "26"; und die vierte Zeile "14", "Krämer" und "27". Die Tabelle "Abteilung" enthält zwei Spalten mit den Überschriften "ANR" und "AbtBez". Sie hat drei Zeilen: Die erste Zeile enthält die Werte "25" und "Buchhaltung"; die zweite Zeile "26" und "Vertrieb"; und die dritte Zeile "27" und "Einkauf".
+'>
+<p class="w3-large ic-neg3"><b>wird zu</b></p>
+<img class="w3-image" src="/home/lv/dmdb/a/norm/d-70-80.png"
+alt='
+Die Abbildung zeigt die Tabellen "Mitarbeiter" und "Abteilung", die durch einen Pfeil von "Mitarbeiter" zu "Abteilung" miteinander verbunden sind. Die Tabelle "Mitarbeiter" enthält drei Spalten mit den Überschriften "MNR", "Name" und "ANR". Es gibt vier Zeilen mit Daten: Die erste Zeile enthält die Werte "11", "Meyer" und "25"; die zweite Zeile "12", "Lehmann" und "25"; die dritte Zeile "13", "Schmidt" und "26"; und die vierte Zeile "14", "Krämer" und "27". Die Tabelle "Abteilung" enthält zwei Spalten mit den Überschriften "ANR" und "AbtBez". Sie hat drei Zeilen: Die erste Zeile enthält die Werte "25" und "Buchhaltung"; die zweite Zeile "26" und "Vertrieb"; und die dritte Zeile "27" und "Einkauf".
+'>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Extraktion Determinanten und abhängige Spalten (2)</h1>
+<img class="w3-image ic-neg20" src="/home/lv/dmdb/a/norm/d-30-80.png"
+alt='
+Tabelle mit dem Titel "Projekt". Sie enthält fünf Spalten mit den Überschriften "MNR", "PNR", "Stunden", "Name" und "Projektname". Es gibt vier Zeilen mit Daten. Die erste Zeile listet die Werte "11", "10", "20", "Meyer" und "HR Einführung". Die zweite Zeile enthält "12", "22", "30", "Lehmann" und "CRM Einführung". Die dritte Zeile zeigt "13", "10", "25", "Schmidt" und "HR Einführung". Die vierte und letzte Zeile zeigt "11", "22", "20", "Meyer" und "CRM Einführung".
+'>
+<p class="w3-large ic-neg7"><b>wird zu</b></p>
+<img class="w3-image ic-neg20" src="/home/lv/dmdb/a/norm/d-80-80.png"
+alt='
+Die Abbildung zeigt drei Tabellen "MaProjekt", "Mitarbeiter" und "Projekt". Die Tabelle "MaProjekt" enthält die Spalten "MNR", "PNR" und "Stunden" mit den Zeilenwerten "11, 10, 20", "12, 22, 30" und "13, 10, 25" sowie "11, 22, 20". Diese Tabelle zeigt mit jeweils einem Pfeil auf die Tabellen "Mitarbeiter" und "Projekt". Die Tabelle  "Mitarbeiter" hat die Spalten "MNR" und "Name" mit den Zeilenwerten "11, Meyer", "12, Lehmann" und "13, Schmidt". Die Tabelle "Projekt" enthält die Spalten "PNR" und "Projektname" mit den Zeilenwerten "10, HR Einführung" und "22, CRM Einführung".
+'>
+<div class="ic-gap"></div>
+
+

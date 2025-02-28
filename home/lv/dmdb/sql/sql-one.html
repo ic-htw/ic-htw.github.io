@@ -1,0 +1,503 @@
+---
+layout: default1
+nav: dmdb-sql
+title: SQL - Abfragen auf einer Tabelle - DMDB
+is_slide: 1
+n: 18
+hide: 1
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Querystruktur</h1>
+<div class="w3-center">
+    <div class="w3-row">
+        <div class="w3-col m6">
+            <img class="w3-image" src="/home/lv/dmdb/a/sql-one/fig-querystrutur.png">
+        </div>
+        <div class="w3-col m6  w3-padding-48">
+            <table class="w3-table w3-bordered w3-border w3-left">
+                <tr>
+                    <th>Selektion</th>
+                    <td>Spalten</td>
+                </tr>
+                <tr>
+                    <th>Filterung</th>
+                    <td>Zeilen</td>
+                </tr>
+                <tr>
+                    <th>Sortierung</th>
+                    <td>Reihenfolge</td>
+                </tr>
+            </table> 
+            <div class=" w3-padding-64"></div>
+            <pre><code class="language-sql w3-large w3-left w3-left-align">SELECT ausgabespalten
+FROM tabelle
+WHERE bedingung
+ORDER BY spaltennamen</code></pre>
+        </div>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Selektion, Filterung, Sortierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name, vorname, gehalt
+FROM mitarbeiter
+WHERE oeid=14
+ORDER BY gehalt;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-01.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name, vorname, gehalt
+FROM mitarbeiter
+WHERE oeid=14
+ORDER BY gehalt desc;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-02.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT *
+FROM mitarbeiter;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-padding-24">Ausgabe der gesamten Tabelle,
+            d.h. alle Zeilen und alle Spalten</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Berechnete Spalten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT
+  name, vorname,
+  extract(year FROM eintrittsdatum) 
+    AS eintrittsjahr
+FROM mitarbeiter
+WHERE oeid=14;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-03.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT
+  name, vorname,
+  extract(year FROM current_date) -
+    extract(year FROM eintrittsdatum) 
+    AS beschaeftigungsjahre
+FROM mitarbeiter
+WHERE oeid=14;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-04.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Zusammengesetzte Bedingung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT
+  name, vorname, gehalt
+FROM mitarbeiter
+WHERE
+  gehalt < 35000 AND 
+  eintrittsdatum 
+    BETWEEN '01.01.2010' AND '31.12.2020';</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-05.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Nullwerte in Bedingungen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, vorname, gehalt, bonus
+FROM mitarbeiter
+WHERE
+  bonus=null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-06.png"><br>
+        <p class="w3-large">Falsch: Vergleich (=) mit "unbekannt" liefert "weiß ich nicht"</p>
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, vorname, gehalt, bonus
+FROM mitarbeiter
+WHERE
+  bonus is null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-07.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, vorname, gehalt, bonus
+FROM mitarbeiter
+WHERE
+  not bonus is null;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-08.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Rechnen mit Nullwerten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, gehalt, bonus, 
+  gehalt + bonus AS gesamt
+FROM mitarbeiter
+WHERE oeid=17;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-09.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, gehalt, bonus,
+  gehalt +
+  CASE
+    WHEN bonus is null THEN 0
+    ELSE bonus
+  END AS gesamt
+FROM mitarbeiter
+WHERE oeid=17;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Detailreduktion in der Ausgabe</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT
+  name, oeid,
+  CASE
+    WHEN gehalt>100000 THEN 'hoch'
+    WHEN gehalt>35000 THEN 'mittel'
+    ELSE 'niedrig'
+  END AS gesamt
+FROM mitarbeiter
+ORDER BY gehalt;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-11.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Limitierung der Zeilenanzahl</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT mid, name
+FROM MITARBEITER
+ORDER BY mid
+FETCH FIRST 3 ROWS ONLY;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-12.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Eingebaute Dual-Tabelle</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT * FROM dual;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/tab-13.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Mengenoperationen</h1>
+<ul class="w3-large">
+    <li>UNION [ALL]</li>
+    <li>INTERSECT</li>
+    <li>MINUS</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>UNION 1</h1>
+T01
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT id, name, Vorname
+FROM t01
+UNION
+SELECT id, nachname as name, rufname as vorname
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/set-30.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>UNION 2</h1>
+T01
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+UNION
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/set-40.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+UNION ALL
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/set-50.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>INTERSECT</h1>
+T01
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+INTERSECT
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/set-60.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>MINUS</h1>
+T01
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-10.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+T02
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/set-20.png">
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">SELECT name
+FROM t01
+MINUS
+SELECT nachname as name
+FROM t02;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/set-70.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Ausgewählte Datumsfunktionen</h1>
+T10
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT * FROM t10 
+where ende = to_date('2023/01/17', 'YYYY/MM/DD');</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/dat-20.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT ende - beginn AS anzahl_tage  FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/home/lv/dmdb/a/sql-one/dat-30.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT ende, ende + 2  FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/home/lv/dmdb/a/sql-one/dat-40.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Ausgewählte Zeichenkettenfunktionen</h1>
+T10
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT aufgabe || 'a' as a
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/str-10.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT substr(aufgabe, 2, 3) as a
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-16" src="/home/lv/dmdb/a/sql-one/str-20.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Länge ermitteln</h1>
+T10
+<img class="w3-image" src="/home/lv/dmdb/a/sql-one/dat-10.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">SELECT length(aufgabe) as l
+FROM t10;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dmdb/a/sql-one/str-30.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>Zahlenformatierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="language-sql">SELECT to_char(123.4, '999D9') as wert FROM dual UNION ALL
+SELECT to_char(123.4, '999D99') as wert FROM dual UNION ALL
+SELECT to_char(123.4, '9999D99') as wert FROM dual UNION ALL
+SELECT to_char(123.4, '0000D99') as wert FROM dual UNION ALL
+SELECT to_char(123.4, '9G999G999D99') as wert FROM dual UNION ALL
+SELECT to_char(1234567.89, '9G999G999D99') as wert FROM dual;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image w3-padding-16" src="/home/lv/dmdb/a/sql-one/fmt-10.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+

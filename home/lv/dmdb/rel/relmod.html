@@ -1,0 +1,498 @@
+---
+layout: default1
+nav: dmdb-rel
+title: Relationenmodell - DMDB
+is_slide: 1
+n: 16
+---
+{% include translate.html %}
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Tabelle = Tabellenstruktur + Tabelleninhalt</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-01.png"
+alt='
+Tabelle mit dem Titel "Student". Sie enthält fünf Spalten und vier 
+Zeilen, einschließlich der Kopfzeile. Von links nach rechts lauten die 
+Spaltenüberschriften: SID, MATRNR, NAME, VORNAME, IMMATDATUM, 
+EXMATDATUM. In der ersten Datenzeile stehen die Werte: 1, 500123, May, 
+Phillip, 01.04.2016, 30.09.2023. In der zweiten Datenzeile stehen die 
+Werte: 2, 503456, Özedem, Ali, 01.04.2023. In der dritten Datenzeile 
+stehen die Werte: 3, 505789, Phan, Thi Mai Nhi, 01.10.2023.
+'>
+
+<div class="w3-row">
+  <div class="w3-col m6">
+    <h2>Tabellenstruktur</h2>
+    <ul class="w3-large">
+      <li>Tabellenname (grün)</li>
+      <li>Spaltennamen (blaugrau)</li>
+      <li>Primärschlüssel (unterstrichen)</li>
+    </ul>
+  </div>
+
+  <div class="w3-col m6">
+    <h2>Tabelleninhalt</h2>
+    <ul class="w3-large">
+      <li>Datensätze (hellgrau)</li>
+    </ul>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Datentypen (beispielhaft)</h1>
+<table class="w3-table-all">
+  <tr>
+    <th>Typname</th>
+    <th>Wertebereich</th>
+    <th>Beispiele</th>
+  </tr>
+  <tr>
+    <td>integer</td>
+    <td>ganze Zahlen</td>
+    <td>-100, 200</td>
+  </tr>
+  <tr>
+    <td>decimal(5,3)</td>
+    <td>Festkommazahlen</td>
+    <td>10,156</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>Gleitkommazahlen</td>
+    <td>10,154789</td>
+  </tr>
+  <tr>
+    <td>varchar(10)</td>
+    <td>Zeichenketten variabler Länge</td>
+    <td>'Hallo'</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>Datum</td>
+    <td>1.1.2007 14:30:12</td>
+  </tr>
+</table>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Fremdschlüssel</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-02.png"
+alt='
+Gleiche Tabelle mit dem Titel "Student", mit einer Änderung. Es gibt 
+sechs Spalten mit den Überschriften "SID", "MATRNR", "NAME", "VORNAME", 
+"IMMADATUM", "EXMADATUM" und "SG". Drei Zeilen sind gefüllt mit Daten: 
+1. Zeile: SID 1, MATRNR 500123, NAME May, VORNAME Phillip, IMMADATUM 
+01.04.2016, EXMADATUM 30.09.2023, SG 1. 2. Zeile: SID 2, MATRNR 503456, 
+NAME Özdem, VORNAME Ali, IMMADATUM 01.04.2023, EXMADATUM leer, SG 1. Die 
+Zelle für EXMADATUM ist leer und die SG-Zelle ist mit einer blauen 
+Füllung und der Zahl 1 markiert. 3. Zeile: SID 3, MATRNR 505789, NAME 
+Phan, VORNAME Thi Mai Nhi, IMMADATUM 01.10.2023, EXMADATUM leer, SG 2. 
+Die Zelle für EXMADATUM ist leer und die SG-Zelle ist mit einer 
+orangefarbenen Füllung und der Zahl 2 markiert.
+'>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-03.png"
+alt='
+Die Abbildung zeigt eine Tabelle mit dem Titel "Studiengang". Die 
+Tabelle besteht aus drei Spalten und drei Zeilen. Die Kopfzeile der 
+Tabelle enthält die Spaltentitel "SGID", "NAME" und "STANDORT". In der 
+ersten Zeile unter der Kopfzeile steht in der ersten Spalte die Zahl 
+"1", in der zweiten Spalte das Kürzel "WI" und in der dritten Spalte das 
+Kürzel "TA". In der zweiten Zeile unter der Kopfzeile steht in der 
+ersten Spalte die Zahl "2", in der zweiten Spalte das Kürzel "AI" und in 
+der dritten Spalte das Kürzel "WH". Die Zellen mit den SGID-Werten "1" 
+und "2" sind blau hinterlegt, während die Zellen mit den Namen "WI" und 
+"AI" orange hinterlegt sind.
+'>
+
+<ul class="w3-large">
+  <li>Spalte SG enthält Zeiger auf Studiengang-Datensätze</li>
+  <li>Fremd- und Primärschlüssel müssen gleichen Datentyp haben</li>
+  <li>Fremdschlüssel müssen nicht eindeutig sein</li>
+  <li>Werte in der Fremdschlüsselspalte müssen in der Zieltabelle als Primärschlüssel existieren</li>
+  <li>Repräsentieren eine 1-zu-n-Beziehung</li>
+  <ul class="w3-large">
+    <li>Studierende 1 und 2 studieren WI</li>
+    <li>Studierende 3 studiert AI</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Integritätsbedingungen</h1>
+<ul class="w3-large">
+  <li>Primärschlüssel / Unique Constraint</li>
+  <ul>
+    <li>Eindeutigkeit der Spaltenwerte</li>
+    <li>Identifikation von Datensätzen</li>
+  </ul>
+  <li>Fremdschlüssel</li>
+  <ul>
+    <li>Beziehungen zwischen Tabellen</li>
+    <li>Referenzielle Integrität, Zielwert muss existieren</li>
+  </ul>
+  <li>Check-Constraint</li>
+  <ul>
+    <li>Einschränkungen einer Spalte</li>
+    <li>Anzahl Plätze in einer Veranstaltung darf nicht negativ sein</li>
+  </ul>
+  <li>Not-Null-Constraint</li>
+  <ul>
+    <li>Spalte muss Werte enthalten</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Gründe für Nullwerte</h1>
+<ul class="w3-large">
+  <li>Information wird nicht bereit gestellt</li>
+  <ul>
+    <li>Private Telefonnummer</li>
+  </ul>
+  <li>Information noch nicht vorhanden</li>
+  <ul>
+    <li>Exmatrikulationsdatum existiert erst nach Exmatrikulation</li>
+  </ul>
+  <li>Spalte macht für Datensatz keinen Sinn</li>
+  <ul>
+    <li>Personentabelle mit Daten von Studies und Profs</li>
+    <li>Spalte MatrNr macht nur für Studies Sinn</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Strukturdarstellung</h1>
+<ul class="w3-large">
+  <li>Struktureller Überblick über Tabellen und Beziehungen</li>
+  <li>Keine Tabelleninhalte</li>
+  <li>Keine Detailinformationen</li>
+  <li>Kompakt und übersichtlich</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/stud-sg.png"
+alt='
+Das Bild zeigt ein einfaches Entity-Relationship-Diagramm (ERD) mit zwei 
+Entitäten. Die linke Entität ist beschriftet mit "STUDENT" und enthält 
+die Attribute SID, MATRNR, NAME, VORNAME, IMMATDATUM, EXMATDATUM und SG 
+(FK). Die rechte Entität ist beschriftet mit "STUDIENGANG" und enthält 
+die Attribute SGID, NAME und STANDORT. Zwischen den beiden Entitäten 
+besteht eine Beziehung, die mit "SG=SGID" gekennzeichnet ist, was darauf 
+hinweist, dass das Attribut SG in der Entität STUDENT als Fremdschlüssel 
+(FK) auf das Attribut SGID in der Entität STUDIENGANG verweist.
+'>
+<ul class="w3-large">
+  <li>Pfeil gibt Quelle und Ziel des Fremdschlüssels an</li>
+  <li>Quell- und Zielspalte stehen beim Pfeil</li>
+  <li>Kann weggelassen werden, falls gleiche Namen</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Werkzeugdarstellung</h1>
+<div class="w3-row-padding">
+  <div class="w3-col m8">
+    <p class="w3-large">Kompakte Form (ohne Datentypen)</p>
+    <img class="w3-image" src="/home/lv/dmdb/a/relmod/00-100.png"
+    alt='
+    Die Abbildung zeigt ein Entity-Relationship-Diagramm (ERD) mit zwei 
+    Entitäten: "STUDENT" und "STUDIENGANG". Zwischen den Entitäten besteht 
+    eine Beziehung, die durch eine Linie mit einem Pfeil an einem Ende 
+    dargestellt wird, der auf "STUDIENGANG" zeigt. Die Entität "STUDENT" ist 
+    in einem gelben Rechteck dargestellt und enthält folgende Attribute: ein 
+    Primärschlüsselattribut "SID", das mit einem P gekennzeichnet ist, 
+    gefolgt von "MATNR", "NAME", "VORNAME", "IMMATDATUM", "EXMADATUM" und 
+    ein Fremdschlüsselattribut "SG", das mit einem "F" gekennzeichnet ist. 
+    Die Entität "STUDIENGANG" ist in einem blauen Rechteck dargestellt und 
+    enthält folgende Attribute: ein Primärschlüsselattribut "SGID", gefolgt 
+    von "NAME" und "STANDORT". Die Beziehung zwischen den beiden Entitäten 
+    wird durch eine Linie mit einem Pfeil dargestellt, der von "STUDENT" zu 
+    "STUDIENGANG" zeigt, was darauf hindeutet, dass "STUDENT" in einem 
+    "STUDIENGANG" eingeschrieben ist.
+        '>
+    <p class="w3-large">Darstellung mit Datentypen</p>
+    <img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
+    alt='
+    Die Abbildung zeigt ein Entity-Relationship-Diagramm mit zwei Entitäten: 
+    "STUDENT" und "STUDIENGANG". Die Entität "STUDENT" hat die Attribute 
+    "SID" (INTEGER), "MATNR" (VARCHAR2(10)), "NAME" (VARCHAR2(200)), 
+    "VORNAME" (VARCHAR2(200)), "IMMADATUM" (DATE), "EXMDATUM" (DATE) und ist 
+    mit einem Primärschlüssel "P" bei "SID" und einem Fremdschlüssel "F" bei 
+    "SG" gekennzeichnet. Die Entität "STUDIENGANG" hat die Attribute "SGID" 
+    (INTEGER), "NAME" (VARCHAR2(200)) und "STANDORT" (VARCHAR2(50)) und ist 
+    mit einem Primärschlüssel "P" bei "SGID" gekennzeichnet. Zwischen 
+    "STUDENT" und "STUDIENGANG" besteht eine Beziehung, die auf Studiengang 
+    zeigt.
+        '>
+  </div>
+  <div class="w3-col m4">
+    <ul class="w3-large">
+      <li>Werkzeug: <b>sqldeveloper</b></li>
+      <li>Andere Werkzeuge liefern andere Darstellungen</li>
+      <li>Fremdschlüssel in Krähenfuß-Notation</li>
+      <li>Krähenfuß auf der N-Seite</li>
+      <li>Pfeilspitze auf 1-Seite</li>
+      <li>Primärschlüssel: P</li>
+      <li>Fremdschlüssel: F</li>
+      <li>Not Null: Sternchen (rot)</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Code-Erzeugung</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
+alt='
+Gleiche Abbildung, nur mit Datentypen. Datentypen: siehe folgender SQL-Code.
+'>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  sid INTEGER NOT NULL,
+  matrnr VARCHAR2(10) NOT NULL,
+  name VARCHAR2(200) NOT NULL,
+  vorname VARCHAR2(200) NOT NULL,
+  immadatum DATE NOT NULL,
+  exmadatum DATE,
+  sg INTEGER NOT NULL
+);
+
+ALTER TABLE ucla.student 
+  ADD CONSTRAINT pk_student PRIMARY KEY ( sid );</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+  sgid INTEGER NOT NULL,
+  name VARCHAR2(200) NOT NULL,
+  standort VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE ucla.studiengang 
+  ADD CONSTRAINT pk_studiengang 
+  PRIMARY KEY ( sgid );</code></pre>
+  </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Fremdschlüsselvariante 1</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/01-100.png"
+alt='
+Gleiche Abbildungg.
+'>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER NOT NULL
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid );
+</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Fremdschlüsselvariante 2</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/02-100.png"
+alt='
+Gleiche Abbildung, aber zwischen "STUDENT" und "STUDIENGANG" besteht 
+eine Beziehung, die durch eine gestrichelte Linie mit einer Raute am 
+Ende dargestellt wird, was auf eine n-zu-1-Beziehung hinweist. Ein 
+STUDENT kann hier einen oder keinen STUDIENGANG haben.
+'>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid );
+</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Fremdschlüsselvariante 3</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/03-100.png"
+alt='
+Gleiche Abbildung, aber die Beziehung zwischen STUDENT und STUDIENGANG 
+wird durch eine (1:n)-Assoziation dargestellt, wobei ein STUDIENGANG 
+mehrere STUDENTen haben kann, aber jeder STUDENT genau einem STUDIENGANG 
+zugeordnet ist. Dies ist gekennzeichnet durch ein Rotes Asterisk neben 
+dem Attribut "SG" in der Entität "STUDENT". Ein Kreuz neben "STUDENT" 
+auf der Beziehung zu "STUDIENGANG" markiert, dass ein Student gelöscht 
+wird, wenn der dazugehörige Studiengang gelöscht wird.
+'>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER NOT NULL
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid )
+    ON DELETE CASCADE;
+</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Fremdschlüsselvariante 4</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/04-100.png"
+alt='
+Gleiche Abbildung, aber mit der gestrichelten Beziehungslinie.
+'>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.student (
+  ...
+  sg INTEGER
+);</code></pre>
+  </div>
+  <div class="w3-col m6">
+    <pre><code class="language-sql">CREATE TABLE ucla.studiengang (
+      sgid INTEGER NOT NULL,
+      ...
+);</code></pre>
+  </div>
+</div>
+<pre><code class="language-sql">ALTER TABLE ucla.student 
+  ADD CONSTRAINT fk_student_sg FOREIGN KEY ( sg ) REFERENCES ucla.studiengang ( sgid )
+    ON DELETE CASCADE;
+</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Datenmanipulation (DML-Befehle)</h1>
+<ul class="w3-large">
+  <li>Einfügen (INSERT)</li>
+  <li>Ändern (UPDATE)</li>
+  <li>Löschen (DELETE)</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>INSERT</h1>
+
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-10.png"
+alt='
+Die Tabelle "STUDENT" in der Ansicht des SQL Developers, mit den drei 
+Studierenden May, Özedem und Phan.
+'>
+<pre><code class="language-sql">INSERT INTO STUDENT(SID, MATRNR, NAME, VORNAME, IMMADATUM, SG)
+  VALUES (4, '505790', 'Al-Hasan', 'Mohammed', '01.10.2023', 1)</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-20.png"
+alt='
+Die Tabelle nach dem INSERT INTO command. Al-Hasan wurde hinzugefügt mit 
+der "SID" 4, "MATRNR" 505790, "NAME" Al-Hasan, "VORNAME" Mohammed, 
+"IMMADATUM" 01.10.23, "EXMADATUM" (null) und "SG" 1.
+'>
+<div class="ic-gap"></div>
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>UPDATE</h1>
+
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-20.png"
+alt='
+Die gleiche Tabelle mit dem neuem Datensatz für Al-Hasan
+'>
+<pre><code class="language-sql">UPDATE STUDENT SET VORNAME='Mohamed' WHERE SID=4</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-30.png"
+alt='
+Die gleiche Tabelle mit dem geänderten Vornamen Mohamed, nun mit einem 
+"m" statt zwei.
+'>
+<div class="ic-gap"></div>
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>DELETE</h1>
+
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-30.png"
+alt='
+Die gleiche Tabelle wie vorher.
+'>
+<pre><code class="language-sql">DELETE FROM STUDENT WHERE SID=4</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/relmod/tab-10.png"
+alt='
+Die gleiche Tabelle nach dem DELETE command. Die Zeile mit dem 
+Studierenden Mohamed wurde gelöscht und ist nicht mehr vorhanden.
+'>
+<div class="ic-gap"></div>

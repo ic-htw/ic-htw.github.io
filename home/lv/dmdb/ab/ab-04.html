@@ -1,0 +1,91 @@
+---
+layout: default1
+nav: dmdb-ab
+title: Arbeitsblatt 4 - DMDB 
+is_slide: 0
+---
+<h1>Arbeitsblatt 4</h1>
+
+<h2>Open-Data-Projekt - Radzählung</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/d010-100.png">
+<p class="w3-large">Radzähldaten in Berlin (<a href="https://daten.berlin.de/datensaetze/radz%C3%A4hldaten-berlin">link</a>)</p>
+    
+    
+<h2>Datengrundlage</h2>
+<p class="w3-large">
+    Die Grundlage für diese Aufgabe bildet eine Excel-Datei mit mehreren Tabellenblätter, die Daten zu Zählstellen und und zu Zählungen von Raddurchfahrten enthalten.
+</p>
+<h3>Hinweisseite</h3>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/excel0.png"><br>
+
+<h3 class="ic-neg15">Zählstellen</h3>
+<p class="w3-large">
+    Zu den Zählstellen werden diverse Informationen in Tabellenblatt "Standortdaten" bereitgestellt.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/excel1.png"><br>
+
+<h3 class="ic-neg15">Zähldaten für Raddurchfahrten an der Zählstelle</h3>
+<p class="w3-large">
+    Die gezählten Raddurchfahrten werden in Tabellenblätter mit der Bezeichnung "Jahresdatei JJJJ" (JJJJ = 2023, 2022, ...) bereitgestellt, wobei jede Zählstelle eine eigene Spalte erhält. Es handelt sich hierbei um eine pivotierte Darstellung.
+</p>
+<p class="w3-large">2018</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/excel2.png"><br>
+
+<p class="w3-large">2023</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/excel3.png"><br>
+
+<h3>Lage der Standorte</h3>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/geo.png"><br>
+
+
+<h2>Datenimport</h2>
+<p class="w3-large ic-neg15">
+    Rohdatenimport
+</p>
+<ul class="w3-large">
+    <li>Colab-Datei (<a href="https://colab.research.google.com/drive/1dvBgl9sASX67zEYjev5KlVesjqC5eAsx?usp=sharing">link</a>)</li>
+</ul>
+<p class="w3-large ic-neg15">
+    Aufgaben
+</p>
+<ul class="w3-large">
+    <li>Imp01 - Leere Spalten entfernen, unpivotieren (1P)</li>
+    <li>Imp02 - Daten Bereinigen (1P)</li>
+    <li>Imp03 - Datum/Uhrzeit extrahieren (1P)</li>
+    <li>Imp04 - Daten in Zieltabelle laden (1P)</li>
+</ul>
+
+<p class="w3-large">
+    Erwartetes Ergebnis
+</p>
+
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/radzaehlung.png"><br>
+
+<h2>Datenanalyse</h2>
+<ul class="w3-large">
+    <li>Colab-Datei (<a href="https://colab.research.google.com/drive/1C9EFVtm1W2uccxvyCuQ28kzWJkPdePoG?usp=sharing">link</a>)</li>
+</ul>
+
+<h3>Ana01 (1P)</h3>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/fahrten.png"><br>
+
+<h3>Ana02 (1P)</h3>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/vergleich.png">
+
+<h3>Ana03 (1P)</h3>
+<ul class="w3-large">
+    <li>Nacht: 0 bis 6 Uhr</li>
+    <li>Abend: 19 bis 23 Uhr</li>
+    <li>Tag: 7 bis 18 Uhr</li>
+</ul>
+
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/verteilung.png">
+
+<h3>Ana04 (1P)</h3>
+<img class="w3-image" src="/home/lv/dmdb/a/ab4/diff.png">
+
+
+
+<p class="w3-large">
+    Technische Details zu Colab, DuckDB und Visualisierungen gibt es in der Übung.
+</p>

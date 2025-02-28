@@ -1,0 +1,620 @@
+home: &r
+  - t: Homepage
+    ts: Home
+    url: /index.html
+    sub: &h
+      - t: Lehrveranstaltungen
+        ts: Lehre
+        url: /home/lv/lv.html
+        sub: &lv
+          - t: Datenmodellierung und Datenbanksysteme
+            ts: DMDB
+            url: /home/lv/dmdb/dmdb.html
+            sub: &dmdb
+              - t: Allgemeines
+                ts: Allgemeines
+                url: /home/lv/dmdb/allgemeines/1-allgemeines.html
+                sub:
+                  - t: Überblick
+                    ts: Überblick
+                    url: /home/lv/dmdb/allgemeines/ueberblick.html
+                  - t: Plan
+                    ts: Plan
+                    url: /home/lv/dmdb/allgemeines/plan.html
+                  - t: Konfiguration SQL-Developer
+                    ts: Konfiguration SQL-Developer
+                    url: /home/sonstiges/p/sqldeveloper.html
+                  - t: Video
+                    ts: Video
+                    url: https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV
+                  - t: Probeklausur
+                    ts: Probeklausur
+                    url: /home/lv/dmdb/a/probeklausur/dmdb-probeklausur.pdf
+              - t: Relationenmodell
+                ts: Rel
+                url: /home/lv/dmdb/rel/1-rel.html
+                sub:
+                  - t: Relationenmodell
+                    ts: Relationenmodell
+                    url: /home/lv/dmdb/rel/relmod.html
+                  - t: Relationenmodell im Verhältnis zu Excel
+                    ts: Excel / Rel
+                    url: /home/lv/dmdb/rel/rel-excel.html
+                  - t: Normalformen
+                    ts: Normalformen
+                    url: /home/lv/dmdb/rel/norm.html
+              - t: Entity-Relationship-Modell
+                ts: ER
+                url: /home/lv/dmdb/er/1-er.html
+                sub:
+                  - t: ER-Modelle 1
+                    ts: ER-Modelle 1
+                    url: /home/lv/dmdb/er/er1.html
+                  - t: ER-Modelle 2
+                    ts: ER-Modelle 2
+                    url: /home/lv/dmdb/er/er2.html
+                  - t: ER-Modelle 3
+                    ts: ER-Modelle 3
+                    url: /home/lv/dmdb/er/er3.html
+                  - t: ER-Modelle 4
+                    ts: ER-Modelle 4
+                    url: /home/lv/dmdb/er/er4.html
+              - t: SQL
+                ts: SQL
+                url: /home/lv/dmdb/sql/1-sql.html
+                sub:
+                  - t: SQL - Abfragen auf einer Tabelle
+                    ts: SQL - Abfragen auf einer Tabelle
+                    url: /home/lv/dmdb/sql/sql-one.html
+                  - t: SQL - Verbund
+                    ts: SQL - Verbund
+                    url: /home/lv/dmdb/sql/sql-join.html
+                  - t: SQL - Gruppierungen / Aggregationen
+                    ts: SQL - Gruppierungen / Aggregationen
+                    url: /home/lv/dmdb/sql/sql-grp-agg.html
+                  - t: SQL - Unterabfragen
+                    ts: SQL - Unterabfragen
+                    url: /home/lv/dmdb/sql/sql-sub.html
+                  - t: SQL - Fenster-Funktionen
+                    ts: SQL - Fenster-Funktionen
+                    url: /home/lv/dmdb/sql/sql-window.html
+                  - t: SQL - Aufgaben Interaktiv
+                    ts: SQL - Aufgaben Interaktiv
+                    url: /home/lv/dmdb/sql/sql-exercises.html
+                  - t: SQL - Fallbeipiele
+                    ts: SQL - Fallbeipiele
+                    url: /home/lv/dmdb/sql/sql-case.html
+              - t: Visualisierungen
+                ts: Visualisierungen
+                url: /home/lv/dmdb/viz/1-viz.html
+                sub:
+                  - t: Diagrammtypen
+                    ts: Diagrammtypen
+                    url: /home/lv/dmdb/viz/viz-types.html
+                  - t: Beträge
+                    ts: Beträge
+                    url: /home/lv/dmdb/viz/viz-amounts.html
+                  - t: Verteilungen
+                    ts: Verteilungen
+                    url: /home/lv/dmdb/viz/viz-dist.html
+                  - t: Viele Verteilungen
+                    ts: Viele Verteilungen
+                    url: /home/lv/dmdb/viz/viz-dist-many.html
+                  - t: Proportionen
+                    ts: Proportionen
+                    url: /home/lv/dmdb/viz/viz-proportions.html
+                  - t: Assoziationen
+                    ts: Assoziationen
+                    url: /home/lv/dmdb/viz/viz-assoc.html
+                  - t: Zeitreihen
+                    ts: Zeitreihen
+                    url: /home/lv/dmdb/viz/viz-timeseries.html
+                  - t: Sonstiges
+                    ts: Sonstiges
+                    url: /home/lv/dmdb/viz/viz-sonstige.html
+              - t: Datenmodelle - relational
+                ts: Datenmodelle - relational
+                url: /home/lv/dmdb/dm-rel/1-dm-rel.html
+                sub:
+                  - t: Unternehmen
+                    ts: Unternehmen
+                    url: /home/lv/dmdb/dm-rel/dm-unternehmen.html
+                  - t: Playlist
+                    ts: Playlist
+                    url: /home/lv/dmdb/dm-rel/dm-playlist.html
+                  - t: Foodmart
+                    ts: Foodmart
+                    url: /home/lv/dmdb/dm-rel/dm-foodmart.html
+                  - t: Gartenmöbel
+                    ts: Gartenmöbel
+                    url: /home/lv/dmdb/dm-rel/dm-gm.html
+              - t: Datenmodelle - ER
+                ts: Datenmodelle - ER
+                url: /home/lv/dmdb/dm-er/1-dm-er.html
+                sub:
+                  - t: Hochschule
+                    ts: Hochschule
+                    url: /home/lv/dmdb/dm-er/er-hochschule.html
+                  - t: ER Übungsbeispiele
+                    ts: ER Übungsbeispiele
+                    url: /home/lv/dmdb/dm-er/er-ueb.html
+              - t: Arbeitsblätter
+                ts: Arbeitsblätter
+                url: /home/lv/dmdb/ab/1-ab.html
+                sub:
+                  - t: Arbeitsblatt 1
+                    ts: Arbeitsblatt 1
+                    url: /home/lv/dmdb/ab/ab-01.html
+                  - t: Arbeitsblatt 2
+                    ts: Arbeitsblatt 2
+                    url: /home/lv/dmdb/ab/ab-02.html
+                  - t: Arbeitsblatt 3
+                    ts: Arbeitsblatt 3
+                    url: /home/lv/dmdb/ab/ab-03.html
+                  - t: Arbeitsblatt 4
+                    ts: Arbeitsblatt 4
+                    url: /home/lv/dmdb/ab/ab-04.html
+          - t: Datenbanktechnologien
+            ts: DBTECH
+            url: /home/lv/dbtech/dbtech.html
+            sub: &dbtech
+              # - t: Material
+              #   ts: Material
+              #   url: /home/lv/dbtech/p/material.html
+              # - t: Plan
+              #   ts: Plan
+              #   url: /home/lv/dbtech/p/plan.html
+              # - t: Prüfung
+              #   ts: Prüfung
+              #   url: /home/lv/dbtech/p/pruefung.html
+              # - t: Übung - Organisatorisches
+              #   ts: Übung - Org
+              #   url: /home/lv/dbtech/p/ue-org.html
+              # - t: Übung - Aufgaben
+              #   ts: Übung - Aufgaben
+              #   url: /home/lv/dbtech/p/ue-ex.html
+              - t: Konfiguration SQL-Developer
+                ts: Konfiguration SQL-Developer
+                url: /home/sonstiges/p/sqldeveloper.html
+              - t: Repository-Import auf Github
+                ts: Repository-Import auf Github
+                url: /home/lv/dbtech/p/github-import.html
+              - t: IDE VS Code
+                ts: IDE VS Code
+                url: /home/lv/dbtech/p/ide-vscode-vers.html
+              - t: IDE Intellij
+                ts: IDE Intellij
+                url: /home/lv/dbtech/p/ide-intellij-vers.html
+              - t: IDE Eclipse
+                ts: IDE Eclipse
+                url: /home/lv/dbtech/p/ide-eclipse.html
+          - t: Ausgewählte Datenbankkonzepte/-techniken
+            ts: ADBKT
+            url: /home/lv/adbkt/adbkt.html
+            sub: &adbkt
+              - t: Intro
+                ts: Intro
+                url: /home/lv/adbkt/intro/1-intro.html
+                sub:
+                  - t: Überblick
+                    ts: Überblick
+                    url: /home/lv/adbkt/intro/ueberblick.html
+                  - t: Historischer Überblick DB-Systeme
+                    ts: Historischer Überblick DB-Systeme
+                    url: /home/lv/adbkt/intro/history.html
+                  - t: "Ü: Präsentation von Fallbeispielen"
+                    ts: "Ü: Präsentation von Fallbeispielen"
+                    url: /home/lv/adbkt/intro/ueb-pres-case.html
+                  - t: "Ü: Konfiguration DBeaver"
+                    ts: "Ü: Konfiguration DBeaver"
+                    url: /home/lv/adbkt/intro/ueb-dbeaver.html
+                  - t: "Ü: Jupyter Notebook"
+                    ts: "Ü: Jupyter Notebook"
+                    url: /home/lv/adbkt/intro/ueb-jupyter-nb.html
+                  - t:  "Ü: Python DB-Intro"
+                    ts:  "Ü: Python DB-Intro"
+                    url: /home/lv/adbkt/intro/ueb-py-db-intro.html
+                  - t:  "Ü: Postgres Container anlegen"
+                    ts:  "Ü: Postgres Container anlegen"
+                    url: /home/lv/adbkt/intro/ueb-pg-container.html
+                  - t: Plan
+                    ts: Plan
+                    url: /home/lv/adbkt/intro/plan.html
+                  - t: Ressourcen
+                    ts: Ressourcen
+                    url: /home/lv/adbkt/intro/res.html
+              - t: Transaktionen
+                ts: Transaktionen
+                url: /home/lv/adbkt/transaktionen/1-transaktionen.html
+                sub:
+                  - t: Transaktionen
+                    ts: Transaktionen
+                    url: /home/lv/adbkt/transaktionen/trans.html
+                  - t: Transaktionen in Postgres
+                    ts: Transaktionen in Postgres
+                    url: /home/lv/adbkt/transaktionen/trans-pg.html
+                  - t: "Ü: Multi Version Concurrency Control"
+                    ts: "Ü: MVCC"
+                    url: /home/lv/adbkt/transaktionen/ueb-mvcc.html
+                  - t: Verteilte Transaktionen
+                    ts: Verteilte Transaktionen
+                    url: /home/lv/adbkt/transaktionen/trans-dist.html
+                  - t: "Ü: Verteilte Transaktionen"
+                    ts: "Ü: Verteilte Transaktionen"
+                    url: /home/lv/adbkt/transaktionen/ueb-dist-trans.html
+              - t: NoSQL
+                ts: NoSQL
+                url: /home/lv/adbkt/nosql/1-nosql.html
+                sub:
+                  - t:  Einführung
+                    ts:  Einführung
+                    url: /home/lv/adbkt/nosql/intro-nosql.html
+                  - t: Replikation / Partitionierung
+                    ts: Replikation / Partitionierung
+                    url: /home/lv/adbkt/nosql/repl-part.html
+                  - t: Konsistenz
+                    ts: Konsistenz
+                    url: /home/lv/adbkt/nosql/consistency.html
+                  - t: Log Structured Merge Trees
+                    ts: Log Structured Merge Trees
+                    url: /home/lv/adbkt/nosql/lsm.html
+                  - t: Überblick Cassandra
+                    ts: Überblick Cassandra
+                    url: /home/lv/adbkt/nosql/cas.html
+                  - t: "Ü: Cassandra Replikation"
+                    ts: "Ü: Cassandra Replikation"
+                    url: /home/lv/adbkt/nosql/ueb-cas-repl.html
+              - t: Graph-Datenbanken
+                ts: Graph-Datenbanken
+                url: /home/lv/adbkt/graphdb/1-graphdb.html
+                sub:
+                  - t: Neo4j
+                    ts: Neo4j
+                    url: /home/lv/adbkt/graphdb/neo4j.html
+                  - t: Cypher Knoten Matching
+                    ts: Cypher Knoten Matching
+                    url: /home/lv/adbkt/graphdb/cypher-knoten.html
+                  - t: Cypher Pfade fester Länge
+                    ts: Cypher Pfade fester Länge
+                    url: /home/lv/adbkt/graphdb/cypher-pfad1.html
+                  - t: Cypher Pfade variabler Länge
+                    ts: Cypher Pfade variabler Länge
+                    url: /home/lv/adbkt/graphdb/cypher-pfad2.html
+                  - t: Cypher kürzeste Pfade
+                    ts: Cypher kürzeste Pfade
+                    url: /home/lv/adbkt/graphdb/cypher-sp.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t: "Ü: Neo4j-Container erstellen"
+                    ts: "Ü: Neo4j-Container erstellen"
+                    url: /home/lv/adbkt/graphdb/ueb-neo4j-cont.html
+                  - t: "Ü: Beispiel-Graph-Datenmodelle"
+                    ts: "Ü: Beispiel-Graph-Datenmodelle"
+                    url: /home/lv/adbkt/graphdb/ueb-graph-dm.html
+                  - t: "Ü: Cypher-Abfragen 1"
+                    ts: "Ü: Cypher-Abfragen 1"
+                    url: /home/lv/adbkt/graphdb/ueb1-cypher.html
+                  - t:  "Ü: Cypher-Abfragen 2"
+                    ts:  "Ü: Cypher-Abfragen 2"
+                    url: /home/lv/adbkt/graphdb/ueb2-cypher.html
+                  - t:  "Ü: Cypher-Python"
+                    ts:  "Ü: Cypher-Python"
+                    url: /home/lv/adbkt/graphdb/ueb-python-cypher.html
+                  - t:  "Ü: Graph-Data-Science"
+                    ts: "Ü: Graph-Data-Science"
+                    url: /home/lv/adbkt/graphdb/gds.html
+              - t: Geo-Datenverarbeitung
+                ts: Geo-Datenverarbeitung
+                url: /home/lv/adbkt/geo/1-geo.html
+                sub:
+                  - t:  Geo-Datenverarbeitung
+                    ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/a/geo/geo.pdf
+                  - t: "Ü: Geo-Abfragen"
+                    ts: "Ü: Geo-Abfragen"
+                    url: /home/lv/adbkt/geo/geo-sql.html
+                  - t: "Ü: Visualisierung Geodaten"
+                    ts: "Ü: Visualisierung Geodaten"
+                    url: /home/lv/adbkt/geo/geo-viz.html
+                  - t: "Ü: pgRouting"
+                    ts: "Ü: pgRouting"
+                    url: /home/lv/adbkt/geo/pgrouting.html
+              - t: Sonstiges
+                ts: Sonstiges
+                url: /home/lv/adbkt/sonstiges/1-sonstiges.html
+                sub:
+                  - t:  JSON in Postgres
+                    ts:  JSON in Postgres
+                    url: /home/lv/adbkt/a/json/json-pg.pdf
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/sonstiges/dynamo.html
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/sonstiges/vectordb.html
+                  - t: Large Language Models
+                    ts: LLMs
+                    url: /home/lv/adbkt/sonstiges/llms.html
+                  - t: Window-Funktionen in SQL
+                    ts: Window-Funktionen in SQL
+                    url: /home/lv/adbkt/sonstiges/window-sql.html
+                  - t: Rekursive Abfragen
+                    ts: Rekursive Abfragen
+                    url: /home/lv/adbkt/a/sql/rec.pdf
+                  - t: SAP Hana
+                    ts: SAP Hana
+                    url: /home/lv/adbkt/a/hana/hana.pdf
+                  - t:  Instacart
+                    ts:  Instacart
+                    url: /home/lv/adbkt/a/insta/insta.pdf
+                  - t: "Ü: DynamoDB"
+                    ts: "Ü: DynamoDB"
+                    url: /home/lv/adbkt/uebungen/dynamodb.html
+                  - t:  "Ü: Langchain"
+                    ts:  "Ü: Langchain"
+                    url: /home/lv/adbkt/uebungen/langchain.html
+                  - t:  "Ü: Retail Sales"
+                    ts:  "Ü: Retail Sales"
+                    url: /home/lv/adbkt/uebungen/retail.html
+                  - t: "Ü: Rekursive Abfrage"
+                    ts: "Ü: Rekursive Abfrage"
+                    url: /home/lv/adbkt/uebungen/rec-sql.html
+                  - t:  "Ü: SQL mit ChatGPT"
+                    ts:  "Ü: SQL mit ChatGPT"
+                    url: /home/lv/adbkt/uebungen/sql-chatgpt.html
+                  - t:  "Ü: Hana, BTP Account"
+                    ts:  "Ü: Hana, BTP Account"
+                    url: /home/lv/adbkt/uebungen/hana-btp-account.html
+                  - t: "Ü: Hana Graph"
+                    ts: "Ü: Hana Graph"
+                    url: /home/lv/adbkt/uebungen/hana-graph.html
+                  - t: "Ü: Closeness Centrality in SAP Hana"
+                    ts: "Ü: Closeness Centrality in SAP Hana"
+                    url: /home/lv/adbkt/uebungen/hana-cc.html
+              - t: Prüfungsleistungen
+                ts: Prüfungsleistungen
+                url: /home/lv/adbkt/pruefungen/1-pruefungen.html
+                sub:
+                  - t: P1 (15 Punkte)
+                    ts: P1 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/sql-llm.html
+                  - t: P2 (15 Punkte)
+                    ts: P2 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/trans-sys.html
+                  - t: P3 (15 Punkte)
+                    ts: P3 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/tour-delight.html
+                  - t: P4 (15 Punkte)
+                    ts: P4 (15 Punkte)
+                    url: /home/lv/adbkt/pruefungen/auth.html
+                  - t: P5 (20 Punkte)
+                    ts: P5 (20 Punkte)
+                    url: /home/lv/adbkt/pruefungen/sched.html
+                  - t: P6 (20 Punkte)
+                    ts: P6 (20 Punkte)
+                    url: /home/lv/adbkt/pruefungen/graphql.html
+              - t: zzz
+                ts: zzz
+                url: /home/lv/adbkt/zzz/1-zzz.html
+                sub:
+                  - t:  zzz01
+                    ts:  zzz01
+                    url: /home/lv/adbkt/zzz/zzz01.html
+                  - t:  zzz02
+                    ts:  zzz02
+                    url: /home/lv/adbkt/zzz/zzz02.html
+          - t: Data Management and Business Performance Management
+            ts: DataMan
+            url: /home/lv/dataman/dataman.html
+            sub:
+              - t: Teaching Material
+                ts: Teaching Material
+                url: /home/lv/dataman/p/teach-mat.html
+              - t: Schedule
+                ts: Schedule
+                url: /home/lv/dataman/p/schedule.html
+              - t: Presentations
+                ts: Presentations
+                url: /home/lv/dataman/p/pres.html
+              - t: Classroom Exercises
+                ts: Classroom Exercises
+                url: /home/lv/dataman/p/ex-classroom.html
+              - t: Rated Exercises
+                ts: Rated Exercises
+                url: /home/lv/dataman/p/ex-rated.html
+              - t: Software
+                ts: Software
+                url: /home/lv/dataman/p/software.html
+              - t: SQL Patterns
+                ts: SQL Patterns
+                url: /home/lv/dataman/p/sql-patterns.html
+              - t: Grading
+                ts: Grading
+                url: /home/lv/dataman/p/grading.html
+          - t: Projekt Business Intelligence
+            ts: PBI
+            url: /home/lv/pbi/pbi.html
+      - t: Sonstiges
+        ts: Sonstiges
+        url: /home/sonstiges/sonstiges.html
+        sub: &sonst
+          - t: Abschlussarbeiten
+            ts: Abschlussarbeiten
+            url: /home/sonstiges/p/abschluss.html
+          - t: Prüfungsmodalitäten
+            ts: Prüfungsmodalitäten
+            url: /home/sonstiges/p/pruefmod.html
+          - t: Plagiate in Übungen
+            ts: Plagiate in Übungen
+            url: /home/sonstiges/p/plagiate.html
+          - t: SQL-Developer
+            ts: SQL-Developer
+            url: /home/sonstiges/p/sqldeveloper.html
+          - t: Ressourcen
+            ts: Ressourcen
+            url: /home/sonstiges/p/ressourcen.html         
+      - t: Links
+        ts: Links
+        url: /home/links/links.html
+        sub: &links
+          - t: Allgemeines
+            ts: Allgemeines
+            url: /home/links/allgemeines/1-allgemeines.html
+            sub:
+              - t: aaa
+                ts: aaa
+                url: /home/links/allgemeines/aaa.html
+              - t: Blogs/Sites
+                ts: Blogs/Sites
+                url: /home/links/allgemeines/blogs-sites.html
+              - t: Kurse, Videos, Folien, Bücher
+                ts: Kurse, Videos, Folien, Bücher
+                url: /home/links/allgemeines/courses-videos-slides-books.html
+              - t: Linux
+                ts: Linux
+                url: /home/links/allgemeines/linux.html
+              - t: Noch lesen
+                ts: Noch lesen
+                url: /home/links/allgemeines/noch-lesen.html
+              - t: Posts
+                ts: Posts
+                url: /home/links/allgemeines/posts.html
+              - t: Services
+                ts: Services
+                url: /home/links/allgemeines/services.html
+              - t: System Design
+                ts: System Design
+                url: /home/links/allgemeines/system-design.html
+              - t: Tools
+                ts: Tools
+                url: /home/links/allgemeines/tools.html
+          - t: Datenbanksysteme
+            ts: DBS
+            url: /home/links/dbs/1-dbs.html
+            sub:
+              - t: aaa
+                ts: aaa
+                url: /home/links/dbs/aaa.html
+              - t: Abfragesprachen
+                ts: Abfragesprachen
+                url: /home/links/dbs/languages.html
+              - t: Cassandra
+                ts: Cassandra
+                url: /home/links/dbs/cassandra.html
+              - t: Data Lakehouse
+                ts: Data Lakehouse
+                url: /home/links/dbs/data-lakehouse.html
+              - t: Data Sets
+                ts: Data Sets
+                url: /home/links/dbs/data-sets.html
+              - t: Data Systems
+                ts: Data Systems
+                url: /home/links/dbs/data-systems.html
+              - t: DBT
+                ts: DBT
+                url: /home/links/dbs/dbt.html
+              - t: DuckDB
+                ts: DuckDB
+                url: /home/links/dbs/duckdb.html
+              - t: DynamoDB
+                ts: DynamoDB
+                url: /home/links/dbs/dynamodb.html
+              - t: Hana
+                ts: Hana
+                url: /home/links/dbs/hana.html
+              - t: LSM
+                ts: LSM
+                url: /home/links/dbs/lsm.html
+              - t: Neo4j
+                ts: Neo4j
+                url: /home/links/dbs/neo4j.html
+              - t: Oracle
+                ts: Oracle
+                url: /home/links/dbs/oracle.html
+              - t: Postgis
+                ts: Postgis
+                url: /home/links/dbs/postgis.html
+              - t: Postgres
+                ts: Postgres
+                url: /home/links/dbs/postgres.html
+              - t: Stream / Event Processing
+                ts: Stream / Event Processing
+                url: /home/links/dbs/stream.html
+              - t: Vector Databases
+                ts: Vector Databases
+                url: /home/links/dbs/vector-databases.html
+              - t: Visualization
+                ts: Visualization
+                url: /home/links/dbs/visualization.html
+          - t: Maschinelles Lernen
+            ts: ML
+            url: /home/links/ml/1-ml.html
+            sub:
+              - t: aaa
+                ts: aaa
+                url: /home/links/ml/aaa.html
+              - t: Anomaly Detection
+                ts: Anomaly Detection
+                url: /home/links/ml/anomaly-detection.html
+              - t: Decision Trees
+                ts: Decision Trees
+                url: /home/links/ml/decision-trees.html
+              - t: Deep Learning
+                ts: Deep Learning
+                url: /home/links/ml/deep-learning.html
+              - t: Empfehlungssysteme
+                ts: Empfehlungssysteme
+                url: /home/links/ml/recommendation.html
+              - t: Interpretation of ML Models
+                ts: Interpretation of ML Models
+                url: /home/links/ml/interpretation.html
+              - t: Kundenanalyse
+                ts: Kundenanalyse
+                url: /home/links/ml/customer-analytics.html
+              - t: LLMs
+                ts: LLMs
+                url: /home/links/ml/llms.html
+              - t: LLMs - Analytics
+                ts: LLMs - Analytics
+                url: /home/links/ml/llms-analytics.html
+              - t: Linear Algebra
+                ts: Linear Algebra
+                url: /home/links/ml/linear-algebra.html
+              - t: NLP
+                ts: NLP
+                url: /home/links/ml/nlp.html
+              - t: Timeseries
+                ts: Timeseries
+                url: /home/links/ml/timeseries.html
+          - t: Programmierung
+            ts: PROG
+            url: /home/links/prog/1-prog.html
+            sub:
+              - t: aaa
+                ts: aaa
+                url: /home/links/prog/aaa.html
+              - t: JavaScript, CSS, HTML
+                ts: JavaScript, CSS, HTML
+                url: /home/links/prog/js-css-html.html
+              - t: Programmiersprachen
+                ts: Programmiersprachen
+                url: /home/links/prog/languages.html
+              - t: Python
+                ts: Python
+                url: /home/links/prog/python.html
+              - t: Rust
+                ts: Rust
+                url: /home/links/prog/rust.html
+              - t: SAP
+                ts: SAP
+                url: /home/links/prog/sap.html
+
+r: *r
+h: *h
+lv: *lv
+dmdb: *dmdb
+dbtech: *dbtech
+adbkt: *adbkt
+sonst: *sonst
+links: *links

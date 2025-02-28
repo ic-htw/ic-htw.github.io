@@ -1,0 +1,189 @@
+---
+layout: default1
+nav: dmdb-ab
+title: Arbeitsblatt 2 - DMDB
+is_slide: 0
+---
+<h1>Arbeitsblatt 2</h1>
+<p class="w3-large">
+    Vorgehensweise:
+</p>
+<ul class="w3-large">
+    <li>Alle Abschnitte, die mit <b>SQL</b> beginnen enthalten 2 Aufgaben</li>
+    <li>Die erste Aufgabe davon lösen wir gemeinsam in der Übung</li>
+    <li>Die zweite Aufgabe müssen sie in Eigenarbeit lösen und mir in der Abnahme vorführen</li>
+    <li>Alle Abschnitte, ohne <b>SQL</b> im Titel, enthalten nur eine Aufgabe, die in der Übung behandelt wird</li>
+</ul>
+<p class="w3-large">
+    Die in der Übung behandelten Aufgaben sind sehr ähnlich zu den in Eigenarbeit zu lösenden.<br>
+    Es gibt <b>einen Punkt</b> für jede SQL-Aufgabe
+</p>
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL01 - Filterung</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Bestellungen mit Bestelldatum 23.09.2019 und KID kleiner als 10700.<br>
+    Sortiert nach BID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q01.png">
+
+<p class="w3-large">
+    Preise der Preisliste PLID=1, deren Betrag größer als 70 Euro ist.<br>
+    Sortiert nach Betrag.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q02.png"><br><hr>
+
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL02 - Null</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Alle Produkte, die keine Längenangabe haben.<br>
+    Sortiert nach Bez.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q03.png">
+
+<p class="w3-large">
+    Alle Verkaufsgebiete, die keine Obergebiete haben.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q04.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">CASE </h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Verkaufsgebiete und Kennzeichnung, ob ein Gebiet Wurzel der Hierarchie ist,<br> 
+    innerer Knoten oder Blatt.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q06.png"><br><hr>
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL03 - Einrückungen</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Verkaufsgebiethierarchie mit Einrückungen entsprechend der Ebene.<br>
+    Sortiert nach VGID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q07.png">
+
+<p class="w3-large">
+    Produktkategoriehierarchie mit Einrückungen entsprechend der Ebene.<br>
+    Sortiert nach KID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q08.png"><br><hr>
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">Datenfehler</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Bestellpositionen mit fehlerhaftem Einzelpreis.<br>
+    D.h., der Einzelpreis stimmt nicht mit dem Betrag aus der zum Zeitpunkt gültigen Preisliste überein.<br>
+    Sortiert nach BID und PID. 
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q15.png">
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL04 - Self Join</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Produktkategorien mit Unter- und Unter-Unterkategorien.<br>
+    Sortiert nach KID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q16.png">
+
+<p class="w3-large">
+    Verkaufsgebietshierarchie mit allen Ebenen.<br>
+    Sortiert nach VGID von Ebene 1 bis 4.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q16b.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL05 - Left Join</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Kunden aus Verkaufsgebiet 2220 ohne Bestellungen.<br>
+    Sortiert nach KID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q17.png">
+
+<p class="w3-large">
+    Produkte ohne Bestellungen.<br>
+    Sortiert nach PID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q18.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL06 - Anzahlen</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Anzahl Bestellungen pro Verkaufsgebiet der Ebene 3.<br>
+    Es sollen nur solche Verkaufsgebiete ausgegeben werden, die mehr als 2000 Bestellungen haben.<br>
+    Sortiert nach VGID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q19.png">
+
+<p class="w3-large">
+    Anzahl Bestellungpositionen pro Kategorie der Ebene 2.<br>
+    Es sollen nur solche Kategorien ausgegeben werden,  die mehr als 20000 Bestellungen haben.<br>
+    Sortiert nach KID.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q20.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL07 - Monatsweiser Umsatz</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Umsatz 'Lima Gartensessel' über alle Monate des Jahres 2019.<br>
+    Umsatz ist Summe über die Spalte "Gesamtpreis" in Tabelle "Bestellung".<br>
+    Absteigend sortiert nach Umsatz.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q21.png">
+
+<p class="w3-large">
+    Umsatz im Verkaufsgebiet 'Nordwest' über alle Monate des Jahres 2019.<br>
+    Umsatz ist Summe über die Spalte "Gesamtpreis" in Tabelle "Bestellung".<br>
+    Absteigend sortiert nach Umsatz.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q22.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------>
+<h2 class="ic-neg15">SQL08 - Umsatz in zwei Dimensionen</h2>
+<!------------------------------------------------------------------------------------>
+<p class="w3-large">
+    Umsatz pro Jahr und Verkaufsgebiet für die Jahre 2018 und 2019.<br>
+    Umsatz ist Summe über die Spalte "Gesamtpreis" in Tabelle "Bestellung".<br>
+    Sortiert nach Jahr und Verkaufsgebietbezeichnung.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q24.png">
+
+<p class="w3-large">
+    Umsatz pro Jahr und Kategorie für die Jahre 2018 und 2019.<br>
+    Es sollen nur Produkte der Kategorien der Ebene 3 betrachtet werden.<br>
+    Umsatz ist Summe über die Spalte "Gesamtpreis" in Tabelle "Bestellung".<br>
+    In die Berechnung darf jedes Produkt nur bzgl. der Hauptkategorie einbezogen werden.<br>
+    Sortiert nach Jahr und Produktbezeichnung.
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2/q23.png"><br><hr>
+
+
+<!------------------------------------------------------------------------------------
+<h2 class="ic-neg15">SQL0x - xxx</h2>
+------------------------------------------------------------------------------------
+<p class="w3-large">
+    xxx
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2">
+
+<p class="w3-large">
+    xxx
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/ab2"><br><hr>
+->

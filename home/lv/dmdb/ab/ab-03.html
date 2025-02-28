@@ -1,0 +1,76 @@
+---
+layout: default1
+nav: dmdb-ab
+title: Arbeitsblatt 3 - DMDB
+is_slide: 0
+---
+<h1>Arbeitsblatt 3</h1>
+<ul class="w3-large">
+    <li>Implementierung</li>
+    <li>Modell erweitern</li>
+</ul>
+
+
+
+<h2>ER-Modell</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/ab3/d10-100.png">
+
+<h2>Modelldatei (sqldeveloper)</h2>
+Link auf Zip-Datei (<a href="/home/lv/dmdb/a/ab3/hvs.zip">zip</a>)<br>
+Link auf Domain-Datei (<a href="/home/lv/dmdb/a/ab3/defaultdomains.xml">xml</a>)
+
+<h2>ER01 - Implementierung (4P) </h2>
+<ul class="w3-large">
+    <li>Übersetzung in relationales Modell</li>
+    <li>Tabellen anlegen</li>
+    <li>Daten ausdenken und eintragen. Mindestanzahlen:</li>
+    <ul>
+        <li>Ein Semester (SoSe 2024)</li>
+        <li>Ein Modul mit zwei Modulbestandteilen (SL und PCÜ)</li>
+        <li>Ein Kurs, zwei Kursbestandteile SL und vier Kursbestandteile PCÜ</li>
+        <li>Pro Kursbestandteil zwei Studierende</li>
+        <li>Zwei Lehrpersonen</li>
+        <li>Kursbestandteile mit Wochenterminen</li>
+    </ul>
+    <li>Schreiben sie zwei  Abfragen, die die Daten gut verstehbar anzeigen</li>
+    <li>Die erste soll die sechs Kursbestandteile anzeigen (d.h. 6 Zeilen) und folgende Spalten haben</li>
+    <ul>
+        <li>Bez - von Semester</li>
+        <li>Bez - von Modul</li>
+        <li>Bez - von Modulart</li>
+        <li>Bez - von ModulBTArt</li>
+        <li>SWS - von ModulBT</li>
+        <li>RaumNr - von Raum</li>
+        <li>Bez - von Tag</li>
+        <li>UhrzeitVon - von Zeitblock</li>
+        <li>UhrzeitBis - von Zeitblock</li>
+        <li>Anzahl Studierende</li>
+    </ul>
+    <li>Die zweite soll alle Personen anzeigen und folgende Spalten haben</li>
+    <ul>
+        <li>Name - von Person</li>
+        <li>DatumBeginn - von Personenrolle</li>
+        <li>DatumEnde - von Personenrolle</li>
+        <li>Bez - von Rolle</li>
+        <li>MatrNr - von Studentin falls Rolle='Studentin'</li>
+        <li>Steuernummer - von Lehrperson falls Rolle='Lehrperson'</li>
+    </ul>
+</ul>
+
+<h2>ER02 - Akademische Struktur (1P)</h2>
+<ul class="w3-large">
+    <li>Fachbereich</li>
+    <li>Studiengang</li>
+    <li>Studienordnung</li>
+    <li>Zuordnung Module zur Studienordnung</li>
+    <li>Entitäts- und Beziehungstypen ergänzen</li>
+</ul>
+
+<h2>ER03 - Durchführung des Studiums (3P)</h2>
+<ul class="w3-large">
+    <li>Belegungen - Priorität, Zuordnung zu Kurs, Belegungsbestandteile, Belegungsstatus</li>
+    <li>Klausuren - Zuordnung zu Modul, Zeitpunkt, Anmeldung </li>
+    <li>Noten - Notenwerte, Versuch, Lehrperson</li>
+    <li>Entitäts- und Beziehungstypen ergänzen</li>
+</ul>
+

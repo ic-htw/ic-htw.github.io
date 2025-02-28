@@ -1,0 +1,185 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title:  Cypher Pfade fester Länge
+is_slide: 1
+n: 8
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Pfade fester Länge</h1>
+<p class="w3-large ic-neg15">Unidirektional -[l:L]-> von rechts nach links</p>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]->(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/180-100.png">
+
+<p class="w3-large ic-neg15">Unidirektional <-[l:L]- von links nach rechts</p>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})<-[l:L]-(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/190-100.png">
+
+<p class="w3-large ic-neg15">Bidirektional -[l:L]-</p>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]-(h2:Haltestelle)
+RETURN h1, l, h2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/200-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Tabellarische Ausgabe von Eigenschaften</h1>
+<pre><code class="cypher">MATCH (h1:Haltestelle {name: 'SpichernStr'})-[l:L]->(h2:Haltestelle)
+RETURN h1.name, h2.name, l.distanz
+ORDER BY h1.name, h2.name;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/210-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Stop 1</h1>
+<pre><code class="cypher">MATCH (s:Stop)-[ih:IH]->(h:Haltestelle {name: 'SpichernStr'})
+RETURN s, ih, h;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/220-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Stop 2</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  <-[ih1:IH]-(s1:Stop)
+  -[n:N]->(s2:Stop)
+  -[ih2:IH]->(h2:Haltestelle)
+RETURN s1, ih1, h1, n, s2, ih2, h2
+ORDER BY s1.abfahrt;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/230-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Stop 3</h1>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  <-[:IH]-(s1:Stop WHERE s1.abfahrt > localtime('10:08'))
+  -[:N]->(s2:Stop)
+  -[:IH]->(h2:Haltestelle)
+RETURN 
+  h1.name as abfahrtVon, s1.abfahrt as umAbfahrt, 
+  h2.name as ankunftAn, s2.ankunft as umAnkunft
+ORDER BY s1.abfahrt;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/240-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Komplexere Pfade</h1>
+<p class="w3-large ic-neg15">Problem</p>
+<ul class="w3-large">
+  <li>Stops für Haltestelle h2 ermitteln</li>
+  <li>Haltestelle h2 ist in einen Pfad mit Links -[:L]-> eingebettet </li>
+  <li>Muss in einen weiteren Pfad eingebettet werden <-[:IH]-</li>
+  <li>Das Komma ermöglicht es, Pfadfragmente zu kombinieren</li>
+</ul>
+
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l1:L]->(h2:Haltestelle)
+  -[l2:L]->(h3:Haltestelle {name: 'ZoologischerGarten'}),
+  (h2)<-[:IH]-(s:Stop)
+RETURN h2.name, s;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/250-100.png">
+
+<p class="w3-large ic-neg15">Derselbe Effekt kann mit der mehrfachen Verwendung von MATCH erzielt werden</p>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l1:L]->(h2:Haltestelle)
+  -[l2:L]->(h3:Haltestelle {name: 'ZoologischerGarten'})
+MATCH
+  (h2)<-[:IH]-(s:Stop)
+RETURN h2.name, s;</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Eindeutigkeit Relationship Matching</h1>
+<p class="w3-large">MATCH und Komma haben unterschiedliches Verhalten</p>
+<p class="w3-large ic-neg15">Variante mit zweimal MATCH</p>
+<ul class="w3-large">
+  <li>In der folgenden Abfrage wird zweimal dieselbe Beziehung durchlaufen</li>
+  <li>Beide MATCHes sind unabhängig voneinander</li>
+  <li>Können bedient werden</li>
+</ul>
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'})
+MATCH 
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/260-100.png">
+
+<p class="w3-large ic-neg15">Variante mit Komma</p>
+<ul class="w3-large">
+  <li>Es findet nur ein MATCHing statt</li>
+  <li>Die MATCHing-Semantik von Cypher erlaubt nur, jede Beziehung einmal zu MATCHen</li>
+  <li>D.h., der Ausdruck hinter dem Komma (h1)-[l:L]->(h2) versucht die gleiche Beziehung erneut zu MATCHen</li>
+  <li>Das ist nicht erlaubt</li>
+  <li>Daher kann das gesamte Muster nicht MATCHen</li>
+  <li>Deshalb eine leere Ausgabe</li>
+</ul>
+
+<pre><code class="cypher">MATCH 
+  (h1:Haltestelle {name: 'SpichernStr'})
+  -[l:L]->
+  (h2:Haltestelle  {name: 'AugsburgerStr'}),
+  (h1)-[l:L]->(h2)
+RETURN h1.name, h2.name, l.distanz;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/270-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Aggregationen / WITH</h1>
+<p class="w3-large ic-neg15">Die Abfrage ermittelt die Anzahl der Stops pro Haltestelle</p>
+<ul class="w3-large">
+  <li>Damit eine Bedingung für die Anzahl formuliert werden kann, ist WITH notwendig</li>
+  <li>WITH fungiert als Pipeline durch die MATCHes getunnelt werden können</li>
+</ul>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+      <pre><code class="cypher">MATCH (s:Stop)-[ih:IH]->(h:Haltestelle)
+WITH h.name as haltestelle, count(*) as anzahlStops
+WHERE anzahlStops > 1
+RETURN haltestelle, anzahlStops;</code></pre>
+    </div>
+    <div class="w3-col m5">
+      <img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-pfad1/280-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+

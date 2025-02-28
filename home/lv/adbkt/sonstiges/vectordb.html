@@ -1,0 +1,359 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+is_slide: 1
+n: 20
+title: Vektordatenabnken
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Vektordatenbanken</h1>
+<ul class="w3-large">
+    <li>Speicherung und Verwaltung von Vektordaten</li>
+    <li>Effiziente Suche nächstgelegener Nachbarn</li>
+    <li>Distanzmaße</li>
+    <li>Index-Strukturen</li>
+    <li>Auch in hochdimensionalen Vektorräumen</li>
+    <li>Anwendung in Zusammenhang mit </li>
+    <ul>
+        <li>Semantischen Vektoreinbettungen (Embeddings) </li>
+        <li>Großen Sprachmodellen (Large Language Models, LLM)</li>
+        <li>Retrieval Augmented Generation (RAG)</li>
+    </ul>
+    <li>Aktives Entwicklungsfeld - viele neue Anbieter</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Vektoreinbettungen 1</h1>
+
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Vektor = Zahlenfeld fester Länge</li>
+            <ul>
+                <li>Zweidimensional: (3, 5): Vektor der in der Ebene</li>
+                <li>Dreidimensional: (3, 5, 1): Vektor im Raum</li>
+                <li>1536-dimensional: (1.7, 2.9, 0.9, ..., 3.4, 4,7): OpenAI-Texteinbettung</li>
+            </ul>
+            <li>Einbettungen: Umwandlung von Datenobjekten in Vektoren</li>
+            <ul>
+                <li>Texte, Bilder, Audio, Video</li>
+                <li>Erfassung der Bedeutung der Objekte</li>
+                <li>Ähnlichkeiten von Wörtern, Bildern usw.</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="w3-col m6 w3-center">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d120-100.png"><br>
+        (<a href="https://partee.io/2022/08/11/vector-embeddings">Quelle</a>)
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Vektoreinbettungen 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Mathematische Repräsentation von Datenobjekten</li>
+            <li>Komprimierte, einheitliche Darstellung</li>
+            <li>Bewahren Beziehungen in den Daten</li>
+            <li>Ergebnis tiefer neuronaler Netze (Deep Learning)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6 w3-center">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d100-100.png"><br>
+        (<a href="https://arize.com/blog-course/embeddings-meaning-examples-and-how-to-compute">Quelle</a>)
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Sentence Transformers</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d130-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Vektoreinbettungen - Beispiel 1</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d140-100.png"><br>
+(<a href="https://partee.io/2022/08/11/vector-embeddings/">Quelle</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Vektoreinbettungen - Beispiel 2</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d150-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Vektoreinbettungen - Beispiel 3</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d160-100.png">
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d170-100.png">
+    </div>
+</div>
+<p class="w3-large">
+    Explained: Tokens and Embeddings in LLMs (<a href="https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33">link</a>)
+</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Retrieval Augmented Generation</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d200-100.png"><br>
+(<a href="https://gradientflow.substack.com/p/best-practices-in-retrieval-augmented">Quelle</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Distanzmaße</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d311-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Gängige Distanzmaße in Vektordatenbanken</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d320-100.png"><br>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1 class="ic-neg15">Verteilung im n-dimensionalen Raum 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">Ein-dimensional</p>
+        <img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d350-100.png"><br>
+        <p class="w3-large ic-neg15">Zwei-dimensional</p>
+        <img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d360-100.png"><br>
+        <p class="w3-large ic-neg15">Drei-dimensional</p>
+        <img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d370-100.png"><br>
+    </div>
+    <div class="w3-col m5 ic-neg15">
+        <ul class="w3-large ic-neg15">
+            <li>Verteilung von 50 Datenpunkten</li>
+            <li>Seitenlänge eines Teilwürfels: 0.2 Einheiten</li>
+            <li>Füllgrad der Teilwürfel nimmt drastisch ab</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Verteilung im n-dimensionalen Raum 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d380-100.png"><br>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d390-100.png"><br>
+    </div>
+</div>
+<p class="w3-large ic-neg15">Verhalten der Verteilung bei 20% Seitenlänge</p>
+<ul class="w3-large">
+    <li>Ein-dimensional: ca. 20% Datenpunkte</li>
+    <li>Zwei-dimensional: ca. 4% Datenpunkte</li>
+    <li>Drei-dimensional: viele leere Teilwürfel</li>
+    <li>n>10-dimensional: sehr dünn besiedelter Datenraum</li>
+</ul>
+<p class="w3-large">784-dimensional: für 20% der Datenpunkte ist über 99,9% Seitenlänge erforderlich</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1 class="ic-neg15">Distanzen im n-dimensinalen Raum</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <img class="w3-image ic-pos20" src="/home/lv/adbkt/a/vectordb/d400-100.png"><br>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d410-100.png"><br>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large ic-neg15">Je mehr Dimensionen, desto</p>
+        <ul class="w3-large">
+            <li>größer die Abstände</li>
+            <li>ähnlicher die Abstände</li>
+        </ul>
+        <p class="w3-large">
+            Fluch der Dimensionalität<br>
+            Euklidische Distanz verliert an Bedeutung</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Vergleich der Ähnlichkeitsmaße</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Cosinus-Ähnlichkeit</th>
+        <th>Euklidische Distanz</th>
+        <th>Inneres Prdukt</th>
+    </tr>
+    <tr>
+        <td>Winkel zwischen Vektoren</td>
+        <td>Abstand zwischen Vektoren</td>
+        <td>Winkel und Abstand zwischen Vektoren</td>
+    </tr>
+    <tr>
+        <td>Unabhängigkeit von Größe der Vektoren</td>
+        <td>Abhängigkeit von Größe der Vektoren</td>
+        <td>Abhängigkeit von Größe der Vektoren</td>
+    </tr>
+</table>
+(<a href="https://www.geeksforgeeks.org/when-to-use-cosine-similarity-over-euclidean-similarity/">Quelle</a>)
+<p class="w3-large">Eignung und Einsatzbereiche der jeweiligen Metrik: Untersuchung im Klassenraum</p>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Suchstrategien in Vektordatenbanken</h1>
+<p class="w3-large ic-neg15">Lineare Suche</p>
+<ul class="w3-large">
+    <li>Berechne Distanz des Query-Vektors zu allen Vektoren in der DB</li>
+    <li>Liefere Vektor mit geringstem Abstand</li>
+    <li>Liefert genaue Ergebnisse</li>
+    <li>Zu langsam bei großen Datemengen</li>
+</ul>
+<p class="w3-large ic-neg15">Inverted File Index</p>
+<ul class="w3-large">
+    <li>Partitionierung des Datenraums auf Basis von Clustering, z.B 256 Cluster</li>
+    <li>256 Zentroide </li>
+    <li>Berechne Distanz des Query-Vektors zu allen Zentroiden</li>
+    <li>Lineare Suche in der Partition des gefundenen Zentroiden</li>
+    <li>Liefert Näherungswerte</li>
+    <li>Drastische Reduktion der Suchvorgänge</li>
+</ul>
+<p class="w3-large ic-neg15">Quantitisierung</p>
+<ul class="w3-large">
+    <li>Reduzierung der Genauigkeit der Vektoren</li>
+    <li>Spart Speicherplatz, z.B. 8-fach bei float64 zu int8 </li>
+    <li>Schnellere Abstandsberechnungen auf int8 als auf float64</li>
+    <li>Skalare Quantitisierung</li>
+    <li>Produkt-Quantitisierung</li>
+</ul>
+<p class="w3-large ic-neg15">Hierarchical Navigable Small Worlds (HNSW)</p>
+<ul class="w3-large">
+    <li>Umwandlung der Vektoren in einen Graph</li>
+    <li>Abstände zwischen Vektoren als Kanten</li>
+    <li>Multi-Ebenen-Graph</li>
+    <li>Hierarchische Suche im Graphen</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Lineare Suche</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d503-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Render</a>)<br>
+(<a href="/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Download</a>)
+<div class="ic-gap"></div>
+
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Inverted File Index</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d501-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Render</a>)<br>
+(<a href="/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Download</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>Skalare Quantitisierung</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d510-100.png"><br>
+(<a href="https://www.quora.com/What-does-quantisation-mean">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Render</a>)<br>
+(<a href="/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Download</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>Produkt-Quantitisierung</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d521-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-product-quantization-b2a1a6397701">Quelle</a>)<br>
+(<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Render</a>)<br>
+(<a href="/home/lv/adbkt/a/ipynb/vectordb-index.ipynb">Download</a>)
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>Hierarchical Navigable Small Worlds (HNSW)</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d531-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-part-4-hierarchical-navigable-small-world-hnsw-2aad4fe87d37">Quelle</a>)
+<div class="ic-gap"></div>
+

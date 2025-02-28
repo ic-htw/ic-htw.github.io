@@ -1,0 +1,67 @@
+---
+layout: default1
+nav: adbkt-nosql
+title:   Log Structured Merge Trees - ADBKT
+is_slide: 1
+n: 3
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Struktur</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/lsm/d110-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Schreib-optimierte Speicherstrukturen</li>
+            <li>Memtable im Haupspeicher</li>
+            <li>Schlüssel-Wert-Paare</li>
+            <li>Bloom-Filter für Prüfung, ob Schlüssel vorhanden</li>
+            <li>Transaktionsprotokoll für Datensicherheit</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Speicherformat</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/lsm/d100-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Dateiblöcke komprimiert</li>
+            <li>Sparse Index</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Kompaktifizierung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/lsm/d120-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Segmente entsprechen SSTables</li>
+            <li>Löschung von Daten durch Tombstone-Einträge</li>
+            <li>Verschiedene Kompaktifizierungsstrategien</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>

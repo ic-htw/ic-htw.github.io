@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{page.name | remove_first: ".html" | remove_first: ".md"}}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://unpkg.com/highlightjs-cypher/dist/cypher.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/main.js"></script>
+
+</head>
+
+<body onload="init()">
+  {% include translate.html %}
+
+  <!-- Header -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-left-align w3-small">
+      <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-small w3-theme" href="javascript:void(0)"
+        onclick="toggleSidebar('sb1', 'ovl1')"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-theme w3-left" href="/index.html">Home</a>
+        <a class="w3-bar-item w3-theme w3-left" href="{{y.url}}">Up</a>
+        <a class="w3-bar-item w3-theme w3-left" href="https://pdfcrowd.com/">PDF</a>
+      {% if page.is_slide == 0 %}
+      <a class="w3-bar-item w3-button w3-right w3-small w3-theme" href="javascript:void(0)"
+        onclick="toggleSidebar('sb2', 'ovl2')"><i class="fa fa-bars"></i></a>
+      {% endif %}
+      <a class="w3-bar-item  w3-theme w3-right">Prof. Dr. Ingo Claßen</a>
+    </div>
+    <div class="w3-bar w3-light-gray w3-large w3-right-align">
+      <div class="w3-bar-item w3-right">{{page.title}}</div>
+    </div>
+</div>
+  
+  <!-- Sidebar 1 -->
+  <nav id="sb1" class="w3-sidebar w3-bar-block w3-collapse w3-small w3-theme-l5 w3-animate-left">
+    {% include nav.html root=x.sub t=x.t ts=x.ts url=x.url shortmode=1 %}
+  </nav>
+  
+  <!-- Sidebar 2 -->
+  <nav id="sb2" class="w3-sidebar w3-bar-block w3-small w3-theme-l5 w3-animate-right" style="display:none;right:0;">
+    <div id="sb2cont"></div>
+  </nav>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div id="ovl1" class="w3-overlay w3-hide-large" onclick="closeSidebar('sb1', 'ovl1')"></div>
+  <div id="ovl2" class="w3-overlay w3-hide-large" onclick="closeSidebar('sb2', 'ovl2')"></div>
+
+
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+    <div class="w3-row w3-padding-32">
+      <div id="ct" class="w3-container">
+        <div class=" w3-padding-32"></div>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-bar w3-bottom w3-theme w3-small">
+    <div class="w3-bar-item">&nbsp;</div>
+    {% if page.is_slide == 1 %}
+      {% for i in (1..page.n) reversed %}
+        <button id="btn-{{i}}" onclick="activateButton('{{i}}')" class="w3-button w3-tiny w3-right">{{i}}</button>
+      {% endfor %}
+      <script>
+        slideSetOn();
+        // const slideset = nameFromHref()
+        // const slideset = "{{page.name}}"
+        const noOfSlides = "{{page.n}}"
+        // setSlideset(slideset);
+        setNoOfSlides(noOfSlides);
+        fillToc();
+        renderButtonActivation();
+      </script>
+    {% else %}
+      <script>
+        slideSetOff();
+      </script>
+    {% endif %}
+  </div>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+
+</body>
+
+</html>

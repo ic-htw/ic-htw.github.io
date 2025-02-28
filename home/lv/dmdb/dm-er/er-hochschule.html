@@ -1,0 +1,136 @@
+---
+layout: default1
+nav: dmdb-dm-er
+title: ER-Modell - Hochschule - DMDB
+is_slide: 1
+n: 8
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Hochschulverwaltungssystem - HVS</h1>
+<p class="w3-large ic-neg15">Bereiche der Modellierung</p>
+<ul class="w3-large">
+  <li>Personen</li>
+  <li>Standorte</li>
+  <li>Akademische Struktur</li>
+  <li>Lehre</li>
+  <li>Prüfungen</li>
+  <li>Bibliothek</li>
+</ul>
+<p class="w3-large ic-neg15">Die folgenden Folien beschreiben Anforderungen an das Datenmodell</p>
+<ul class="w3-large">
+  <li>Diese sind nicht vollständig</li>
+  <li>Sie sind auch nicht präzise</li>
+  <li>Sie dienen lediglich als Grundlage für die VL und Ü</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Personen</h1>
+<ul class="w3-large">
+  <li>Unterschiedliche Personengruppen mit unterschiedlichen Aufgaben</li>
+  <li> Studendierende sind Studiengängen zugeordnet, studieren nach einer Studienordnung, nehmen an Lehrveranstaltungen teil, machen Prüfungen</li>
+  <li>Lehrpersonen halten Lehrveranstaltungen, führen Prüfungen durch</li>
+  <li>Lehrpersonen (Rollen): Professoren, akademische Mitarbeiter, Lehrbeauftragte</li>
+  <li> Rollen gelten für bestimmte Zeiträume</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Standorte</h1>
+<ul class="w3-large">
+  <li>Eine Hochschule umfasst mehrere Standorte</li>
+  <li>Ein Standort umfasst Gebäude</li>
+  <li>Ein Gebäude enthält Räume</li>
+  <li>Räume haben verschiedene Raumarten</li>
+  <li>Räume haben Ausstattungsmerkmale, z.B. Whiteboard, Beamer</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Akademische Struktur</h1>
+<ul class="w3-large">
+  <li>Eine Hochschule setzt sich aus Fachbereichen zusammen</li>
+  <li>Ein Fachbereich beinhaltet Studiengänge</li>
+  <li>Ein Studiengang hat mehrere Studienordnungen</li>
+  <li>Studienordnungen legen Module und deren Regelsemester fest</li>
+  <li>Module können Pflicht, Wahlpficht und Wahl sein</li>
+  <li>Module haben Bestandteile, z.B. Vorlesung, Übung</li>
+  <li>Bestandteile haben einen zeitlichen Umfang (SWS)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Lehre</h1>
+<ul class="w3-large">
+  <li>Studierende belegen Module</li>
+  <li>Module werden semesterweise durchgeführt</li>
+  <li>Module können im Semester mehrfach angeboten werden (Züge, Gruppen)</li>
+  <li>Modulbestandteile finden zu bestimmten Zeiten in festgelegten Räumen statt</li>
+  <li>Z.B. wochenweise in bestimmten Zeitbereichen</li>
+  <li>Oder zweiwöchentlich, oder als Blockveranstaltung</li>
+  <li>Belegungen haben Prioritäten, z.B Studierende mit Kindern</li>
+  <li>Oder Belegung im Regelsemester</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Prüfungen</h1>
+<ul class="w3-large">
+  <li>Studierende melden sich zu Prüfungen an</li>
+  <li>Prüfungen beziehen sich auf Module</li>
+  <li>Haben einen Status, z.B. angemeldet, abgemeldet, durchgeführt</li>
+  <li>Haben einen Termin</li>
+  <li>Führen zu einer Note</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Bibliothek</h1>
+<ul class="w3-large">
+  <li>Die Bibliothek hat verschiedene Medien, z.B. Bücher, Zeitschriften,
+    Abschlussarbeiten</li>
+  <li>Medien werden Schlagworte zugeordnet</li>
+  <li>Zu jedem Medium gibt es Exemplare, die an verschiedenen Standorten stehen können</li>
+  <li>Exemplare können zu unterschiedlichen Zeitpunkten beschafft worden sein</li>
+  <li>Es gibt mehrere Nutzerklassen, z.B. Studierende, ProfessorInnen </li>
+  <li>Für die Nutzerklassen gelten unterschiedliche Ausleihefristen</li>
+  <li>Ausleihen können verlängert werden</li>
+  <li>Medien können vorbestellt werden</li>
+  <li>Bei Fristüberschreitung erfolgt eine Mahnung </li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Beispieloberfläche</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er-hochschule/login-100.png">
+<div class="ic-gap"></div>

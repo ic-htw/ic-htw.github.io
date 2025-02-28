@@ -1,0 +1,351 @@
+---
+layout: default1
+nav: adbkt-intro
+is_slide: 1
+n: 17
+title: Historischer Überblick DB-Systeme - ADBKT
+---
+
+<!--
+    01 ******************************************************************
+-->
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Vorbemerkung - SQL Forever</h1>
+<p class="w3-large">
+    Viele Aspekte von Datenbanksystemen sind alt, aber heutzutage immer 
+    noch relevant
+</p>
+<p class="w3-large">
+    Immer mal wieder wird ein Ersatz für SQL vorgeschlagen. 
+    Nach einiger Zeit stellt sich heraus, das dieser nicht wirklich besser ist
+</p>
+<p class="w3-large">
+    Stattdessen werden sinnvolle Ideen dieser Ersatztvorschläge in SQL übernommen
+</p>
+
+<p class="w3-large ic-neg15">Hinweis</p>
+<ul class="w3-large">
+    <li>Dieser Überblick basiert auf Folien von Andy Pavlo 
+        (<a href="http://www.cs.cmu.edu/~pavlo/">link</a>)</li>
+    <li>History of Databases
+        (<a href="https://15721.courses.cs.cmu.edu/spring2023/schedule.html">link</a>)</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>1960er Jahre - Die Welt vor den relationalen Systemen</h1>
+<p class="w3-large">Einzeltupel-Verarbeitung</p>
+<p class="w3-large">Programmorientierter Zugriff</p>
+<p class="w3-large">Keine deklarative Abfragesprache</p>
+<p class="w3-large ic-neg15">Vertreter</p>
+<ul class="w3-large">
+    <li>Netzwerk-Datenmodell</li>
+    <li>Hierachisches Datenmodell</li>
+</ul>
+<p class="w3-large">Noch in Großrechnersystemen im Einsatz </p>
+<p class="w3-large">Keine Neuentwicklung auf deren Basis</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>1970er Jahre - Das relationale Datenmodell</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Konzepte</p>
+        <ul class="w3-large">
+            <li>Tabellen</li>
+            <li>Referenzen zwischen Tabellen</li>
+            <li>Normalisierung<br>
+                <img class="w3-image" src="/home/lv/adbkt/a/hist/100-100.png">
+            </li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Theoretische Grundlagen</p>
+        <ul class="w3-large">
+            <li>Ted Codd: A relational Model of Data
+                for Large Shared Data Banks<br>
+                <img class="w3-image" src="/home/lv/adbkt/a/hist/110-100.png">
+            </li>
+            <li>Reines Konzept</li>
+            <li>Implementierbarkeit effizienter Systeme unklar</li>
+        </ul>
+        <p class="w3-large ic-neg15">Erste Implementierungen:</p>
+        <ul class="w3-large">
+            <li>System R - IBM Research</li>
+            <li>INGRES - U.C. Berkeley </li>
+            <li>Oracle - Larry Ellison</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>1980er Jahre - Siegeszug des relationalen Modells</h1>
+<p class="w3-large">Das relationale Modell setzt sich durch</p>
+<p class="w3-large">SQL-Standard</p>
+<p class="w3-large ic-neg15">Bekannte kommerzielle Anbieter </p>
+<ul class="w3-large">
+    <li>Oracle</li>
+    <li>IBM DB2</li>
+    <li>Sybase</li>
+    <li>Informix</li>
+    <li>Terradata</li>
+</ul>
+<p class="w3-large">Oracle setzt sich durch </p>
+<p class="w3-large">Stonebraker entwickelt Postgres als objektrelationales DBMS </p>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>1980er Jahre - Aufkommen und Niedergang objekt-orientierter Datenbanksysteme</h1>
+<p class="w3-large">Vermeidung des "relational-object impedance mismatch" </p>
+<p class="w3-large">Direkte Umsetzung von Konzepten objektorientierter Sprachen in der Datenbank</p>
+<p class="w3-large ic-neg15">Führen nur noch ein Nischendasein</p>
+<ul class="w3-large">
+    <li>ObjectStore, letztes Update 2014, Rank 141 in DB Engines </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>1990er Jahre - Konsolidierung relationaler Datenbanksysteme</h1>
+<p class="w3-large">Keine großen Veränderungen/Fortschritte im Bereich Datenbanksysteme</p>
+<p class="w3-large">Kommerzielle Anbieter beherrschen den Markt </p>
+<p class="w3-large ic-neg15">Neue Systeme: </p>
+<ul class="w3-large">
+    <li>Microsoft SQL Server</li>
+    <li>MySQL</li>
+    <li>SQLite</li>
+</ul>
+<p class="w3-large">Aufkommen dedzierter OLAP-Systeme - Data Cubes </p>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>2000er Jahre - Internet Boom</h1>
+<p class="w3-large">Kommerzielle Anbieter zu schwergewichtig und teuer</p>
+<p class="w3-large">Open-Source-Systemen fehlen wichtige Funktionen</p>
+<p class="w3-large">
+    Viele Unternehmen bauen eigene Middleware zur horizontalen
+    Skalierung von Datenbanksysteen (scale out statt scale up)
+</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>2000er Jahre - Data-Warehouse-Systeme</h1>
+<p class="w3-large ic-neg15">Aufkommen spezieller OLAP-Systeme</p>
+<ul class="w3-large">
+    <li>Verteilt / Shared-Nothing </li>
+    <li>Relational / SQL </li>
+    <li>Kommerziell</li>
+</ul>
+<p class="w3-large">Entscheidende Leistungsgewinne durch Spaltenorientierung </p>
+<p class="w3-large ic-neg15">Systeme:</p>
+<ul class="w3-large">
+    <li>Netezza</li>
+    <li>Greenplum</li>
+    <li>Vertica</li>
+    <li>MonetDB</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>2000er Jahre - Map-Reduce-Systeme</h1>
+<p class="w3-large ic-neg15">Big Data</p>
+<ul class="w3-large">
+    <li>Analyse sehr großer Datenmengen</li>
+    <li>Verteiltes Programmier- und Ausführungsmodell</li>
+    <li>Google entwickelt erste Lösung - für seine Suchmaschine</li>
+    <li>Yahoo - Hadoop - Open Source, Java</li>
+    <li>Kein explizites Datenmodell - steckt in den Analysefunktionen</li>
+    <li>kein SQL</li>
+    <li>Programmorientierte Sprachen: Pig</li>
+</ul>
+<p class="w3-large">Situation</p>
+<ul class="w3-large">
+    <li>Großer Hype</li>
+    <li>Große Probleme </li>
+    <li>Einführung von SQL in dieses Modell, keine gute Idee </li>
+</ul>
+<p class="w3-large ic-neg15">System:</p>
+<ul class="w3-large">
+    <li>MAPR-DB</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>2000er Jahre - NoSQL-Systeme</h1>
+<p class="w3-large ic-neg15">Fokus auf hoher Verfügbarkeit und großer Skalierbarkeit</p>
+<ul class="w3-large">
+    <li>Nichtrelational</li>
+    <li>Schemalos</li>
+    <li>Keine Transaktionen</li>
+    <li>Kein SQL </li>
+    <li>Open Source </li>
+</ul>
+<p class="w3-large ic-neg15">Systeme:</p>
+<ul class="w3-large">
+    <li>Redis</li>
+    <li>Cassandra</li>
+    <li>MongoDB</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>2010er Jahre - New-SQL- / Distributed-SQL-Systeme</h1>
+<p class="w3-large ic-neg15">Vereinigung der Vorteile von SQL- und NoSQL-Systeme</p>
+<ul class="w3-large">
+    <li>Verteilt</li>
+    <li>Hohe Verfügbarkeit</li>
+    <li>Horizontale Skalierbarkeit</li>
+    <li>Relational</li>
+    <li>SQL</li>
+    <li>Transaktionen</li>
+</ul>
+<p class="w3-large ic-neg15">Systeme:</p>
+<ul class="w3-large">
+    <li>TiDB</li>
+    <li>YugabyteDB</li>
+    <li>Singlestore</li>
+    <li>CockroachDB</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>2010er Jahre - Cloud-Systeme</h1>
+<p class="w3-large">Datenbanken als Service</p>
+<p class="w3-large">Containerbasiert</p>
+<p class="w3-large">Cloud-Native, komplett neues Design</p>
+<p class="w3-large ic-neg15">Systeme (OLTP):</p>
+<ul class="w3-large">
+    <li>Amazon DynamoDB</li>
+    <li>Amazon Aurora</li>
+    <li>Azure SQL Server</li>
+    <li>Google AlloyDB</li>
+</ul>
+<p class="w3-large ic-neg15">Systeme (OLAP):</p>
+<ul class="w3-large">
+    <li>Snowflake</li>
+    <li>Amazon Redshift</li>
+    <li>Google Big Query</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>2010er Jahre - Shared-Disk</h1>
+<p class="w3-large">Trennung von Ausführungs- und Speichermaschine</p>
+<p class="w3-large">Disaggregation</p>
+<p class="w3-large">Uanhängige Skalierung der beiden Komponenten </p>
+<p class="w3-large">Log Structured Storage </p>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>2010er Jahre - Graph-Systeme</h1>
+<p class="w3-large">Graph-Strukturen - Knoten und Kanten</p>
+<p class="w3-large">Abfragesprache Cypher</p>
+<p class="w3-large">SQL:2023 ergänzt SQL um Graph Query Syntax</p>
+<p class="w3-large ic-neg15">Native Graph Databases - Direkt Speicherung von Referenzen</p>
+<ul class="w3-large">
+    <li>Behauptete bessere Performance als relationale Systeme</li>
+    <li>Neuere Forschung zeigt, dass relationale Systeme vergleichbare
+        bzw. besser Performance bringen können als native Systeme
+    </li>
+</ul>
+<p class="w3-large ic-neg15">Systeme:</p>
+<ul class="w3-large">
+    <li>Neo4j</li>
+    <li>TigerGraph</li>
+    <li>Amazon Neptune</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>2010er Jahre - Timeseries Systems</h1>
+<p class="w3-large ic-neg15">Spezialisierte Systeme für Zeitreihen- bzw. Ereignisdaten</p>
+<p class="w3-large ic-neg15">Systeme:</p>
+<ul class="w3-large">
+    <li>influxdb</li>
+    <li>Timescale</li>
+    <li>Clickhousee</li>
+    <li>Prometheus</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Neue Entwicklungen</h1>
+<p class="w3-large">Composable Data Systems  </p>
+<p class="w3-large">Apache Arrow</p>
+<p class="w3-large">DuckDB</p>
+<p class="w3-large">...</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Db-Sites</h1>
+<p class="w3-large">Database of Databases (<a href="https://dbdb.io/">link</a>)</p>
+<p class="w3-large">DB-Engines (<a href="https://db-engines.com/de/">link</a>)</p>
+<div class="ic-gap"></div>

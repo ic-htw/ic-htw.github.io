@@ -1,0 +1,76 @@
+---
+layout: default1
+nav: adbkt-transaktionen
+title: "Ü: Verteilte Transaktionen - ADBKT"
+is_slide: 0
+---
+
+<h1>Übung Verteilte Transaktionen</h1>
+
+<h2 class="ic-neg15">Container anlegen</h2>
+<ul class="w3-large">
+  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+  <li>Auf Button "Add stack" klicken</li>
+  <li>Name "pg2" für Stack vergeben</li>
+  <li>Code in Webeditor kopieren</li>
+  <li>Auf "Deploy the stack" klicken</li>
+</ul>
+<pre><code class="language-yaml">services:
+  pg2:
+    container_name: pg2
+    image: postgres
+    ports:
+      - 5432:5433
+    environment:
+      POSTGRES_PASSWORD: adbktpg</code></pre>
+
+
+<h2 class="ic-neg15">Credentials</h2>
+<p class="w3-large">Datei <code>cred-pg2.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5433
+dbname='postgres'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a/ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
+
+<h2>Umsetzung Zwei-Phasen-Commit-Protokoll</h2>
+
+<p class="w3-large ic-neg15">
+  Implementieren sie Überweisungs-Szenarien, in dem zwei Postgres-Datenbanken in einer Transaktion zusammenspielen. 
+</p>
+<p class="w3-large ic-neg15">Szenario 1</p>
+<ul class="w3-large">
+  <li>Abbuchen 100 Euro von Konto 1001 auf Server "pg1"</li>
+  <li>Zubuchen 100 Euro auf Konto 1002 auf Server "pg2"</li>
+  <li>Erfolgreicher Abschluss</li>
+</ul>
+
+<p class="w3-large ic-neg15">Szenario 2</p>
+<ul class="w3-large">
+  <li>Abbuchen 100 Euro von Konto 1001 auf Server "pg1"</li>
+  <li>Zubuchen 100 Euro auf Konto 1002 auf Server "pg2"</li>
+  <li>Abbruch</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">
+  Informationen zur Umsetzung finden sie in der <code>psycopg</code>-Dokumentation.
+</p>
+<ul class="w3-large">
+    <li>Two-Phase Commit protocol support (<a href="https://www.psycopg.org/psycopg3/docs/basic/transactions.html#two-phase-commit-protocol-support">link</a>)</li>
+    <li>Two-Phase Commit support methods (<a href="https://www.psycopg.org/psycopg3/docs/api/connections.html#tpc-methods">link</a>)</li>
+    <li>Verwenden sie als xid den String "ttt"</li>
+</ul>

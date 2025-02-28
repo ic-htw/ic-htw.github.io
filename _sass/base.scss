@@ -1,0 +1,82 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 35px;
+  bottom: 35px;
+  height: inherit;
+}
+
+.ic-gap {
+  height: 2000px;
+}
+
+.ic-active {
+  background-color: lightgray;
+  color: black;
+}
+
+.ic-neg3 {
+  margin-bottom: -3px;
+}
+
+.ic-neg5 {
+  margin-bottom: -5px;
+}
+
+.ic-neg7 {
+  margin-bottom: -7px;
+}
+
+.ic-neg10 {
+  margin-bottom: -10px;
+}
+
+.ic-neg15 {
+  margin-bottom: -15px;
+}
+
+.ic-neg20 {
+  margin-bottom: -20px;
+}
+
+.ic-pos3 {
+  margin-top: 3px;
+}
+
+.ic-pos5 {
+  margin-top: 5px;
+}
+
+.ic-pos7 {
+  margin-top: 7px;
+}
+
+.ic-pos10 {
+  margin-top: 10px;
+}
+
+.ic-pos15 {
+  margin-top: 15px;
+}
+
+.ic-pos20 {
+  margin-top: 20px;
+}
+
+.ic-pos25 {
+  margin-top: 25px;
+}
+
+.ic-pos30 {
+  margin-top: 30px;
+}
+
+.ic-hr {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+}
+

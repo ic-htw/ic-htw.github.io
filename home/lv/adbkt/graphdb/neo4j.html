@@ -1,0 +1,82 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title: Neo4j
+is_slide: 1
+n: 3
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Einführung in Neo4j</h1>
+<p class="w3-large ic-neg15">Hauptmerkmale</p>
+<ul class="w3-large">
+    <li>Native Graph-Datenbank</li>
+    <li>Speichert Daten in Form von Knoten, Kanten und deren Eigenschaften</li>
+    <li>Optimiert für die Traversierung von Pfaden</li>
+    <li>Optimiert für Graphalgorithmen</li>
+    <li>On-Premise und als Cloud-Dienst verfügbar</li>
+</ul>
+
+<p class="w3-large ic-neg15">Anwendungsbeispiele</p>
+<ul class="w3-large">
+    <li>Lieferketten</li>
+    <li>Materialflüsse</li>
+    <li>Soziale Netzwerke</li>
+    <li>Empfehlungssysteme</li>
+    <li>Betrugserkennung</li>
+    <li>Netzwerk- und IT-Management</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Technologie</h1>
+<p class="w3-large ic-neg15">Implementierung</p>
+<ul class="w3-large">
+    <li>Implementierung in Java, läuft auf der Java Virtual Machine (JVM)</li>
+    <li>Datenspeicherung erfolgt in einem nativen Graphformat</li>
+    <li>Vermeidet dadurch Verbundoperationen</li>
+    <li>Unterstützung von Indizes für schnelle Suchen</li>
+    <li>Unterstützt ACID-Transaktionen für Zuverlässigkeit und Datenkonsistenz</li>
+</ul>
+
+<p class="w3-large ic-neg15">Modellierungskonzepte</p>
+<ul class="w3-large">
+    <li>Knoten (Nodes): Repräsentieren Entitäten (z.B. Personen, Orte, Produkte)</li>
+    <li>Kanten (Relationships): Repräsentieren Verbindungen oder Beziehungen zwischen Knoten (z.B. „kennt“, „gekauft“)</li>
+    <li>Eigenschaften (Properties): Key-Value-Paare, die Details über Knoten und Kanten speichern</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Abfragesprache Cypher</h1>
+
+<p class="w3-large ic-neg15">Überblick</p>
+<ul class="w3-large">
+    <li>Deklarative Abfragesprache für Neo4j</li>
+    <li>Ähnlich zu SQL, aber für Graphen optimiert</li>
+    <li>Pfadbasierte Datenabfrage</li>
+</ul>
+
+<p class="w3-large ic-neg15">Beispiel</p>
+<pre><code class="cypher">  MATCH (a:Person)-[:FREUND_VON]->(b:Person)
+  WHERE a.name = 'Alice'
+  RETURN b</code></pre>
+
+<p class="w3-large ic-neg15">Vorteile</p>
+<ul class="w3-large">
+    <li>Lesbar und intuitiv gestaltet</li>
+    <li>Pfadausdrücke / Pfadmuster</li>
+</ul>
+<div class="ic-gap"></div>
+

@@ -1,0 +1,38 @@
+---
+layout: default1
+nav: adbkt-pruefungen
+title: Px
+is_slide: 0
+---
+
+<h1>Aufgabenstellung</h1>
+<p class="w3-large ic-neg15">
+  Alle Gruppe arbeiteten mit verschiedenen Vektordatenbanken.
+</p>
+<ul class="w3-large">
+  <li>g1: Chroma</li>
+  <li>g2: LanceDB </li>
+  <li>g3: Milvus</li>
+  <li>g4: Pinecone</li>
+  <li>g4: Qdrant</li>
+  <li>g6: Weaviate </li>
+</ul>
+
+<p class="w3-large ic-neg15">
+    Sie sollen die Grundlage einer RAG-Anwendung schaffen, die Fragen zum Studium der Wirtschaftsinformatik beantworten kann. Dazu müssen Informationen von der WI-Website (<a href="https://wirtschaftsinformatik.htw-berlin.de/">link</a>) in der Vektordatenbank gespeichert werden. Diese dienen dazu, Kontext für die Prompts eines Sprachmodells bereitzustellen, in dem zur Frage ähnliche Texte (Fragmente) aus der Website zum Prompt hinzugefügt werden.
+    <br>
+    <b>Arbeitspunkte</b>
+</p>
+<ul class="w3-large">
+  <li>Lassen sie die Datenbank in einem Docker-Container laufen.</li>
+  <li>Identifizieren sie die relevanten URLs (HTML und PDF)</li>
+  <li>Extrahieren sie Informationen mittels Langchain (<a href="https://python.langchain.com/v0.1/docs/get_started/introduction">link</a>)</li>
+  <li>Zerlegen sie die Informationen in Chunks</li>
+  <li>Erzeugen sie Embeddings für die Chunks. </li>
+  <li>Speichern Sie die Textfragmente mit ihren Embeddings in der Vektordatenbank</li>
+  <li>Überlegen sie sich Fragen (Z.B "Wieviele Semester dauert das Bachelor-Studium?")</li>
+  <li>Lassen sie sich die drei ähnlichsten Texfragmente aus der Datenbank ausgeben</li>
+  <li>Präsentieren sie die von ihnen gewählte Datenbank</li>
+  <li>Präsentieren sie ihre Lösung</li>
+  <li>Die Anbindung an ein Sprachmodell ist nicht Gegenstand der Aufgabe</li>
+</ul>

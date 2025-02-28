@@ -1,0 +1,70 @@
+<div class="w3-bar w3-padding-small"> 
+  <button onclick="setNavLevel(1)" class="w3-button w3-tiny w3-theme">1</button>
+  <button onclick="setNavLevel(2)" class="w3-button w3-tiny w3-theme">2</button>
+  <button onclick="setNavLevel(3)" class="w3-button w3-tiny w3-theme">3</button>
+  <button onclick="setNavLevel(4)" class="w3-button w3-tiny w3-theme">4</button>
+</div>
+  
+{% if page.is_slide == 1 %}
+  <div class="w3-padding-small">
+    <button id="btn-slidemode-off" onclick="slideModeSetOn()" class="w3-button w3-tiny w3-theme">Slidemode: off</button>
+    <button id="btn-slidemode-on" onclick="slideModeSetOff()" class="w3-button w3-tiny w3-theme">Slidemode: on</button>
+  </div>
+  <div id="toc1"></div>
+{% else %}
+  {% if include.shortmode == 1 %}
+    <div class="w3-large w3-padding-small">{{include.ts}}</div>
+  {% else %}
+      <div class="w3-large w3-padding-small">{{include.t}}</div>
+  {% endif %}
+  
+  <div class="w3-padding-small">
+  {% for i in include.root %}
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    {% if include.shortmode == 1 %}
+      <a href="{{i.url}}">{{i.ts}}</a><br>
+    {% else %}
+      <a href="{{i.url}}">{{i.t}}</a><br>
+    {% endif %}
+  
+    <div class="L2">
+    {% for j in i.sub %}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      {% if include.shortmode == 1 %}
+        <a href="{{j.url}}">{{j.ts}}</a><br>
+      {% else %}
+        <a href="{{j.url}}">{{j.t}}</a><br>
+      {% endif %}
+  
+      <div class="L3">
+      {% for k in j.sub %}
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        {% if include.shortmode == 1 %}
+          <a href="{{k.url}}">{{k.ts}}</a><br>
+        {% else %}
+          <a href="{{k.url}}">{{k.t}}</a><br>
+        {% endif %}
+  
+        <div class="L4">
+        {% for l in k.sub %}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {% if include.shortmode == 1 %}
+            <a href="{{l.url}}">{{l.ts}}</a><br>
+          {% else %}
+            <a href="{{l.url}}">{{l.t}}</a><br>
+          {% endif %}
+        {% endfor %}
+        </div>
+      {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+{% endif %}

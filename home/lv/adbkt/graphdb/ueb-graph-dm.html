@@ -1,0 +1,554 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title: "Ü: Beispiel-Graph-Datenmodelle"
+is_slide: 1
+n: 16
+---
+
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Berliner U-Bahn - Konzeptbild</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/100-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Berliner U-Bahn - Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/110-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Berliner U-Bahn - Schema</h1>
+<pre><code class="cypher">CALL db.schema.visualization();</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/120-100.png">
+<ul class="w3-large">
+    <li>Knoten Haltestelle: U-Bahn-Stationen</li>
+    <li>Knoten Stop: Halt eines Zuges an einer Haltestelle mit Ankunft- und Abfahrtzeit </li>
+    <li>Beziehung L (Link): verbindet Haltestellen</li>
+    <li>Beziehung N (Next): nächster Stop</li>
+    <li>Beziehung IH: (InHaltestelle):  Haltestelle, auf die sich der Stop bezieht</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Berliner U-Bahn - Code zum Anlegen der Daten</h1>
+<pre><code class="cypher">// ------------------------------------------------------------------------------
+// Löschen
+// ------------------------------------------------------------------------------
+MATCH (x:Haltestelle) DETACH DELETE x;
+MATCH (x:Stop) DETACH DELETE x;
+
+// ------------------------------------------------------------------------------
+// Knoten: Haltestellen
+// ------------------------------------------------------------------------------
+CREATE
+  (AugsburgerStr:Haltestelle {name: 'AugsburgerStr'}),
+  (BayerischerPlatz:Haltestelle {name: 'BayerischerPlatz'}),
+  (BerlinerStr:Haltestelle {name: 'BerlinerStr'}),
+  (BlisseStr:Haltestelle {name: 'BlisseStr'}),
+  (Bundesplatz:Haltestelle {name: 'Bundesplatz'}),
+  (FehrbellinerPlatz:Haltestelle {name: 'FehrbellinerPlatz'}), 
+  (GüntzelStr:Haltestelle {name: 'GüntzelStr'}),
+  (HeidelbergerPlatz:Haltestelle {name: 'HeidelbergerPlatz'}), 
+  (Hohenzollernplatz:Haltestelle {name: 'Hohenzollernplatz'}),
+  (KonstanzerStr:Haltestelle {name: 'KonstanzerStr'}),
+  (Kurfürstendamm:Haltestelle {name: 'Kurfürstendamm'}),
+  (SpichernStr:Haltestelle {name: 'SpichernStr'}),
+  (Wittenbergplatz:Haltestelle {name: 'Wittenbergplatz'}),
+  (ZoologischerGarten:Haltestelle {name: 'ZoologischerGarten'})
+
+// ------------------------------------------------------------------------------
+// Beziehungen: L (Link): Haltestelle -> Haltestelle
+// ------------------------------------------------------------------------------
+CREATE
+  (AugsburgerStr)-[:L {distanz: 429}]->(Wittenbergplatz),
+  (BerlinerStr)-[:L {distanz: 550}]->(GüntzelStr),
+  (Bundesplatz)-[:L {distanz: 1088}]->(BerlinerStr),
+  (FehrbellinerPlatz)-[:L {distanz: 763}]->(Hohenzollernplatz),
+  (GüntzelStr)-[:L {distanz: 512}]->(SpichernStr),
+  (HeidelbergerPlatz)-[:L {distanz: 1211}]->(FehrbellinerPlatz),
+  (Hohenzollernplatz)-[:L {distanz: 541}]->(SpichernStr),
+  (KonstanzerStr)-[:L {distanz: 481}]->(FehrbellinerPlatz),
+  (Kurfürstendamm)-[:L {distanz: 362}]->(ZoologischerGarten),
+  (SpichernStr)-[:L {distanz: 609}]->(AugsburgerStr),
+  (SpichernStr)-[:L {distanz: 801}]->(Kurfürstendamm),
+  (FehrbellinerPlatz)-[:L {distanz: 582}]->(BlisseStr),
+  (BlisseStr)-[:L {distanz: 737}]->(BerlinerStr),
+  (BerlinerStr)-[:L {distanz: 629}]->(BayerischerPlatz)
+
+// ------------------------------------------------------------------------------
+// Knoten: Halte
+// ------------------------------------------------------------------------------
+CREATE
+  // U3
+  (SU31HeidelbergerPlatz:Stop {linie: 'U3', ankunft: localtime('10:00:00'), abfahrt: localtime('10:01:00')}),
+  (SU31FehrbellinerPlatz:Stop {linie: 'U3', ankunft: localtime('10:03:01'), abfahrt: localtime('10:04:00')}),
+  (SU31Hohenzollernplatz:Stop {linie: 'U3', ankunft: localtime('10:05:16'), abfahrt: localtime('10:06:00')}),
+  (SU31SpichernStr:Stop {linie: 'U3', ankunft: localtime('10:06:54'), abfahrt: localtime('10:08:00')}),
+  (SU31AugsburgerStr:Stop {linie: 'U3', ankunft: localtime('10:09:00'), abfahrt: localtime('10:10:00')}),
+  (SU31Wittenbergplatz:Stop {linie: 'U3', ankunft: localtime('10:10:42'), abfahrt: localtime('10:12:00')}),
+  // U7
+  (SU71KonstanzerStr:Stop {linie: 'U7', ankunft: localtime('09:58:02'), abfahrt: localtime('09:59:00')}),
+  (SU71FehrbellinerPlatz:Stop {linie: 'U7', ankunft: localtime('09:59:48'), abfahrt: localtime('10:01:00')}),
+  (SU71BlisseStr:Stop {linie: 'U7', ankunft: localtime('10:01:58'), abfahrt: localtime('10:03:00')}),
+  (SU71BerlinerStr:Stop {linie: 'U7', ankunft: localtime('10:04:13'), abfahrt: localtime('10:06:00')}),
+  (SU71BayerischerPlatz:Stop {linie: 'U7', ankunft: localtime('10:07:02'), abfahrt: localtime('10:08:00')}),
+  // U7, 10 Minuten später
+  (SU72KonstanzerStr:Stop {linie: 'U7', ankunft: localtime('10:08:02'), abfahrt: localtime('10:09:00')}),
+  (SU72FehrbellinerPlatz:Stop {linie: 'U7', ankunft: localtime('10:09:48'), abfahrt: localtime('10:11:00')}),
+  (SU72BlisseStr:Stop {linie: 'U7', ankunft: localtime('10:11:58'), abfahrt: localtime('10:13:00')}),
+  (SU72BerlinerStr:Stop {linie: 'U7', ankunft: localtime('10:14:13'), abfahrt: localtime('10:16:00')}),
+  (SU72BayerischerPlatz:Stop {linie: 'U7', ankunft: localtime('10:17:02'), abfahrt: localtime('10:16:00')}),
+  // U9
+  (SU91Bundesplatz:Stop {linie: 'U9', ankunft: localtime('10:01:01'), abfahrt: localtime('10:02:00')}),
+  (SU91BerlinerStr:Stop {linie: 'U9', ankunft: localtime('10:03:48'), abfahrt: localtime('10:05:00')}),
+  (SU91GüntzelStr:Stop {linie: 'U9', ankunft: localtime('10:05:55'), abfahrt: localtime('10:07:00')}),
+  (SU91SpichernStr:Stop {linie: 'U9', ankunft: localtime('10:07:51'), abfahrt: localtime('10:09:00')}),
+  (SU91Kurfürstendamm:Stop {linie: 'U9', ankunft: localtime('10:10:20'), abfahrt: localtime('10:12:00')}),
+  (SU91ZoologischerGarten:Stop {linie: 'U9', ankunft: localtime('10:12:36'), abfahrt: localtime('10:14:00')})
+
+// ------------------------------------------------------------------------------
+// Beziehungen: IH (in Haltestelle): Stop -> Haltestelle
+// ------------------------------------------------------------------------------
+CREATE
+  (SU31AugsburgerStr)-[:IH]->(AugsburgerStr),
+  (SU71BayerischerPlatz)-[:IH]->(BayerischerPlatz),
+  (SU72BayerischerPlatz)-[:IH]->(BayerischerPlatz),
+  (SU71BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU72BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU91BerlinerStr)-[:IH]->(BerlinerStr),
+  (SU71BlisseStr)-[:IH]->(BlisseStr),
+  (SU72BlisseStr)-[:IH]->(BlisseStr),
+  (SU91Bundesplatz)-[:IH]->(Bundesplatz),
+  (SU31FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU71FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU72FehrbellinerPlatz)-[:IH]->(FehrbellinerPlatz),
+  (SU91GüntzelStr)-[:IH]->(GüntzelStr),
+  (SU31HeidelbergerPlatz)-[:IH]->(HeidelbergerPlatz),
+  (SU31Hohenzollernplatz)-[:IH]->(Hohenzollernplatz),
+  (SU71KonstanzerStr)-[:IH]->(KonstanzerStr),
+  (SU72KonstanzerStr)-[:IH]->(KonstanzerStr),
+  (SU91Kurfürstendamm)-[:IH]->(Kurfürstendamm),
+  (SU31SpichernStr)-[:IH]->(SpichernStr),
+  (SU91SpichernStr)-[:IH]->(SpichernStr),
+  (SU31Wittenbergplatz)-[:IH]->(Wittenbergplatz),
+  (SU91ZoologischerGarten)-[:IH]->(ZoologischerGarten)
+
+// ------------------------------------------------------------------------------
+// Beziehungen: N (nächster Stop): Stop -> Stop
+// ------------------------------------------------------------------------------
+CREATE
+  (SU31HeidelbergerPlatz)-[:N]->(SU31FehrbellinerPlatz),
+  (SU31FehrbellinerPlatz)-[:N]->(SU31Hohenzollernplatz),
+  (SU31Hohenzollernplatz)-[:N]->(SU31SpichernStr),
+  (SU31SpichernStr)-[:N]->(SU31AugsburgerStr),
+  (SU31AugsburgerStr)-[:N]->(SU31Wittenbergplatz),
+  //
+  (SU71KonstanzerStr)-[:N]->(SU71FehrbellinerPlatz),
+  (SU71FehrbellinerPlatz)-[:N]->(SU71BlisseStr),
+  (SU71BlisseStr)-[:N]->(SU71BerlinerStr),
+  (SU71BerlinerStr)-[:N]->(SU71BayerischerPlatz),
+  //
+  (SU72KonstanzerStr)-[:N]->(SU72FehrbellinerPlatz),
+  (SU72FehrbellinerPlatz)-[:N]->(SU72BlisseStr),
+  (SU72BlisseStr)-[:N]->(SU72BerlinerStr),
+  (SU72BerlinerStr)-[:N]->(SU72BayerischerPlatz),
+  //
+  (SU91Bundesplatz)-[:N]->(SU91BerlinerStr),
+  (SU91BerlinerStr)-[:N]->(SU91GüntzelStr),
+  (SU91GüntzelStr)-[:N]->(SU91SpichernStr),
+  (SU91SpichernStr)-[:N]->(SU91Kurfürstendamm),
+  (SU91Kurfürstendamm)-[:N]->(SU91ZoologischerGarten)
+  ;
+
+
+// ------------------------------------------------------------------------------
+// Graph anzeigen
+// ------------------------------------------------------------------------------
+OPTIONAL MATCH (h1:Haltestelle)-[l:L]-(h2:Haltestelle)
+OPTIONAL MATCH (s1:Stop)-[ih:IH]->(h1)
+OPTIONAL MATCH (s1)-[n:N]->(s2:Stop)
+return h1, l, h2, s1, ih, s2, n;</code></pre>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Bank - Konzeptbild</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/200-100.png">
+<ul class="w3-large">
+    <li>Durchgezogene Linien: Subunternehmen</li>
+    <li>Gestrichelte Linien: Überweisung</li>
+    <li>Banken und Konten fehlen in diesem Bild</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Bank - Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/210-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Bank - Schema</h1>
+<pre><code class="cypher">CALL db.schema.visualization();</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/220-100.png">
+<ul class="w3-large">
+    <li>Knoten Bank: Repräsentiert Geldinstitute</li>
+    <li>Knoten Kunde: Kunden der Bank</li>
+    <li>Knoten Privatkunde, Unternehmenskunde: Unterkategorien von Kunden</li>
+    <li>Beziehung KD: verbindet Kunde mit Bank</li>
+    <li>Beziehung KTO: verbindet Konto mit Kunde</li>
+    <li>Beziehung SUB: verbindet Subunternehmen mit übergordnetem Unternehmen</li>
+    <li>Beziehung UEB: verbindet Konten per Überweisung</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Bank - Code zum Anlegen der Daten</h1>
+<pre><code class="cypher">// ------------------------------------------------------------------------------
+// Löschen
+// ------------------------------------------------------------------------------
+MATCH (x:Kunde) DETACH DELETE x;
+MATCH (x:Konto) DETACH DELETE x;
+MATCH (x:Bank) DETACH DELETE x;
+
+// ------------------------------------------------------------------------------
+// Knoten: Banken
+// ------------------------------------------------------------------------------
+CREATE
+  (b01:Bank {name: 'Deutsche Bank'}), 
+  (b02:Bank {name: 'Commerzbank'}), 
+  (b03:Bank {name: 'Volksbank'}), 
+  (b04:Bank {name: 'Ing Diba'})
+
+// ------------------------------------------------------------------------------
+// Knoten: Kunden
+// ------------------------------------------------------------------------------
+CREATE
+  (pk01:Privatkunde:Kunde {name: 'Klausen'}),
+  (pk02:Privatkunde:Kunde {name: 'Franzen'}),
+  (pk03:Privatkunde:Kunde {name: 'Vogel'}),
+  (pk04:Privatkunde:Kunde {name: 'Bauer'}),
+
+  (uk01:Unternehmenskunde:Kunde {name: 'Baustoff Gruppe'}),
+  (uk011:Unternehmenskunde:Kunde {name: 'Feststoff AG'}),
+  (uk0111:Unternehmeskunde:Kunde {name: 'Beton GmbH'}),
+  (uk0112:Unternehmenskunde:Kunde {name: 'Zement GmbH'}),
+  (uk012:Unternehmenskunde:Kunde {name: 'Holz AG'}),
+
+  (uk02:Unternehmenskunde:Kunde {name: 'Fix GmbH'}),
+  (uk03:Unternehmenskunde:Kunde {name: 'Happy OHG'})
+
+// ------------------------------------------------------------------------------
+// Knoten: Konten
+// ------------------------------------------------------------------------------
+CREATE
+  (kto01:Konto {iban: '#iban01'}), 
+  (kto02:Konto {iban: '#iban02'}), 
+  (kto03:Konto {iban: '#iban03'}), 
+  (kto04:Konto {iban: '#iban04'}), 
+  (kto05:Konto {iban: '#iban05'}), 
+  (kto06:Konto {iban: '#iban06'}), 
+  (kto07:Konto {iban: '#iban07'}), 
+  (kto08:Konto {iban: '#iban08'}), 
+  (kto09:Konto {iban: '#iban09'}), 
+  (kto10:Konto {iban: '#iban10'}), 
+  (kto11:Konto {iban: '#iban11'}),
+  (kto12:Konto {iban: '#iban12'})
+
+// ------------------------------------------------------------------------------
+// Beziehungen: Subuternehmen
+// ------------------------------------------------------------------------------
+CREATE
+  (uk011)-[:SUB]->(uk01),
+  (uk0111)-[:SUB]->(uk011),
+  (uk0112)-[:SUB]->(uk011),
+  (uk012)-[:SUB]->(uk01)
+
+
+// ------------------------------------------------------------------------------
+// Beziehungen: Kunde -> Bank
+// ------------------------------------------------------------------------------
+CREATE
+  (pk01)-[:KD]->(b02),
+  (pk02)-[:KD]->(b03),
+  (pk03)-[:KD]->(b04),
+  (pk04)-[:KD]->(b04),
+  (uk01)-[:KD]->(b01),
+  (uk011)-[:KD]->(b01),
+  (uk0111)-[:KD]->(b01),
+  (uk0112)-[:KD]->(b01),
+  (uk012)-[:KD]->(b01),
+  (uk02)-[:KD]->(b02),
+  (uk03)-[:KD]->(b02)
+
+// ------------------------------------------------------------------------------
+// Beziehungen: Konto -> Kunde 
+// ------------------------------------------------------------------------------
+CREATE
+  (kto01)-[:KTO]->(pk01), // Klausen
+  (kto02)-[:KTO]->(pk02), // Franzen
+  (kto03)-[:KTO]->(pk03), // Vogel
+  (kto04)-[:KTO]->(pk04), // Bauer
+  (kto05)-[:KTO]->(uk01), // Baustoff Gruppe
+  (kto06)-[:KTO]->(uk01), // Baustoff Gruppe
+  (kto07)-[:KTO]->(uk011), // Feststoff AG
+  (kto08)-[:KTO]->(uk0111), // Beton GmbH
+  (kto09)-[:KTO]->(uk0112), // Zement GmbH
+  (kto10)-[:KTO]->(uk012), // Holz AG
+  (kto11)-[:KTO]->(uk02), // Fix GmbH
+  (kto12)-[:KTO]->(uk03) // Happy OHG
+
+
+// ------------------------------------------------------------------------------
+// Beziehungen: Überweisungen
+// ------------------------------------------------------------------------------
+CREATE
+  (kto01)-[:UEB {betrag: 100}]->(kto12),
+  (kto01)-[:UEB {betrag: 150}]->(kto10),
+
+  (kto02)-[:UEB {betrag: 200}]->(kto09),
+
+  (kto05)-[:UEB {betrag: 1000}]->(kto09),
+
+  (kto07)-[:UEB {betrag: 1000}]->(kto05),
+
+  (kto08)-[:UEB {betrag: 250}]->(kto04),
+  (kto08)-[:UEB {betrag: 1000}]->(kto07),
+
+  (kto09)-[:UEB {betrag: 300}]->(kto03),
+  (kto09)-[:UEB {betrag: 1000}]->(kto10),
+  (kto09)-[:UEB {betrag: 350}]->(kto08),
+  (kto09)-[:UEB {betrag: 1000}]->(kto08),
+
+  (kto10)-[:UEB {betrag: 1100}]->(kto05)
+  ;
+
+// ------------------------------------------------------------------------------
+// Graph anzeigen
+// ------------------------------------------------------------------------------
+OPTIONAL MATCH (ku1:Kunde)-[kd:KD]->(b:Bank)
+OPTIONAL MATCH  (ku1:Kunde)-[sub:SUB]->(ku2:Kunde)
+OPTIONAL MATCH  (k:Konto)-[kto:KTO]->(ku1:Kunde)
+OPTIONAL MATCH  (kto1:Konto)-[ueb:UEB]->(kto2:Konto)
+return ku1, kd, b, ku2, sub, kto1, kto, kto2, ueb;</code></pre>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Kürzeste Pfade - Konzeptbild</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/300-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Kürzeste Pfade - Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/310-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Kürzeste Pfade - Schema</h1>
+<pre><code class="cypher">CALL db.schema.visualization();</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/320-100.png">
+<ul class="w3-large">
+    <li>Knoten N (Node)</li>
+    <li>Beziehung L (Link): verbindet Knoten</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Kürzeste Pfade - Code zum Anlegen der Daten</h1>
+<pre><code class="cypher">// ------------------------------------------------------------------------------
+// Löschen
+// ------------------------------------------------------------------------------
+MATCH (x:N) DETACH DELETE x;
+
+// ------------------------------------------------------------------------------
+// Knoten
+// ------------------------------------------------------------------------------
+CREATE 
+  (a:N {name:"A"}),
+  (b:N {name:"B"}),
+  (c:N {name:"C"}),
+  (d:N {name:"D"}),
+  (e:N {name:"E"}),
+  (f:N {name:"F"}),
+  (g:N {name:"G"}),
+  (h:N {name:"H"}),
+  (i:N {name:"I"})
+
+// ------------------------------------------------------------------------------
+// Beziehungen
+// ------------------------------------------------------------------------------
+CREATE 
+  (a)-[:E {w: 1}]->(b),
+  (a)-[:E {w: 1}]->(i),
+  (b)-[:E {w: 1}]->(c),
+  (b)-[:E {w: 1}]->(d),
+  (c)-[:E {w: 1}]->(e),
+  (c)-[:E {w: 1}]->(h),
+  (d)-[:E {w: 1}]->(e),
+  (e)-[:E {w: 1}]->(f),
+  (e)-[:E {w: 1}]->(g),
+  (e)-[:E {w: 1}]->(h),
+  (g)-[:E {w: 1}]->(f)
+  ;
+
+// ------------------------------------------------------------------------------
+// Graph anzeigen
+// ------------------------------------------------------------------------------
+OPTIONAL MATCH (n:N)-[e:E]-(m:N) return n, e, m;</code></pre>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Zug UK - Konzeptbild</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/400-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Zug UK - Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/410-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Zug UK - Schema</h1>
+<pre><code class="cypher">CALL db.schema.visualization();</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/dm/420-100.png">
+<ul class="w3-large">
+    <li>Knoten Station: Bahn-Stationen</li>
+    <li>Knoten Stop: Halt eines Zuges an einer Haltestelle mit Ankunft- und Abfahrtzeit </li>
+    <li>Beziehung CALLS_AT:  Haltestelle, auf die sich der Stop bezieht</li>
+    <li>Beziehung Next: nächster Stop</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Zug UK - Code zum Anlegen der Daten</h1>
+<pre><code class="cypher">// ------------------------------------------------------------------------------
+// Löschen
+// ------------------------------------------------------------------------------
+MATCH (x:Station) DETACH DELETE x;
+MATCH (x:Stop1) DETACH DELETE x;
+
+// ------------------------------------------------------------------------------
+// Knoten
+// ------------------------------------------------------------------------------
+CREATE (hgt:Station {name: 'Harrogate'}), (lds:Station {name: 'Leeds'}),
+(sbe:Station {name: 'Starbeck'}), (hbp:Station {name: 'Hornbeam Park'}),
+(wet:Station {name: 'Weeton'}), (hrs:Station {name: 'Horsforth'}),
+(hdy:Station {name: 'Headingley'}), (buy:Station {name: 'Burley Park'}),
+(pnl:Station {name: 'Pannal'}), (hud:Station {name: 'Huddersfield'}),
+(s9:Stop1 {arrives: time('11:53')}),
+(s8:Stop1 {arrives: time('11:44'), departs: time('11:45')}),
+(s7:Stop1 {arrives: time('11:40'), departs: time('11:43')}),
+(s6:Stop1 {arrives: time('11:38'), departs: time('11:39')}),
+(s5:Stop1 {arrives: time('11:29'), departs: time('11:30')}),
+(s4:Stop1 {arrives: time('11:24'), departs: time('11:25')}),
+(s3:Stop1 {arrives: time('11:19'), departs: time('11:20')}),
+(s2:Stop1 {arrives: time('11:16'), departs: time('11:17')}),
+(s1:Stop1 {departs: time('11:11')}), (s21:Stop1 {arrives: time('11:25')}),
+(s211:Stop1 {departs: time('11:00')}), (s10:Stop1 {arrives: time('11:45')}),
+(s101:Stop1 {departs: time('11:20')}), (s11:Stop1 {arrives: time('12:05')}),
+(s111:Stop1 {departs: time('11:40')}), (s12:Stop1 {arrives: time('12:07')}),
+(s121:Stop1 {departs: time('11:50')}), (s13:Stop1 {arrives: time('12:37')}),
+(s131:Stop1 {departs: time('12:20')}),
+(lds)<-[:CALLS_AT]-(s9), 
+(buy)<-[:CALLS_AT]-(s8)-[:NEXT]->(s9),
+(hdy)<-[:CALLS_AT]-(s7)-[:NEXT]->(s8), 
+(hrs)<-[:CALLS_AT]-(s6)-[:NEXT]->(s7),
+(wet)<-[:CALLS_AT]-(s5)-[:NEXT]->(s6), 
+(pnl)<-[:CALLS_AT]-(s4)-[:NEXT]->(s5),
+(hbp)<-[:CALLS_AT]-(s3)-[:NEXT]->(s4), 
+(hgt)<-[:CALLS_AT]-(s2)-[:NEXT]->(s3),
+(sbe)<-[:CALLS_AT]-(s1)-[:NEXT]->(s2), 
+(lds)<-[:CALLS_AT]-(s21), 
+(hgt)<-[:CALLS_AT]-(s211)-[:NEXT]->(s21), 
+(lds)<-[:CALLS_AT]-(s10), 
+(hgt)<-[:CALLS_AT]-(s101)-[:NEXT]->(s10), 
+(lds)<-[:CALLS_AT]-(s11), 
+(hgt)<-[:CALLS_AT]-(s111)-[:NEXT]->(s11), 
+(hud)<-[:CALLS_AT]-(s12), 
+(lds)<-[:CALLS_AT]-(s121)-[:NEXT]->(s12), 
+(hud)<-[:CALLS_AT]-(s13), 
+(lds)<-[:CALLS_AT]-(s131)-[:NEXT]->(s13)
+;
+
+
+// ------------------------------------------------------------------------------
+// Graph anzeigen
+// ------------------------------------------------------------------------------
+OPTIONAL MATCH (s1:Stop1)-[ca:CALLS_AT]->(sta:Station) 
+OPTIONAL MATCH (s1:Stop1)-[n:NEXT]->(s2:Stop1) 
+return s1, ca, sta, s2, n;</code></pre>
+<div class="ic-gap"></div>
+
+

@@ -1,0 +1,66 @@
+---
+layout: default1
+nav: adbkt-pruefungen
+title: P1
+is_slide: 0
+---
+
+<h1>SQL-Anweisungen und Python-Code mittels LLM erzeugen</h1>
+<p class="w3-large ic-neg15">
+In dieser Aufgabe sollen sie eine Tabelle mit Kreditkartenabrechnungsdaten analysieren. Sie sollen SQL-Abfragen für gegebene Fragestellungen erstellen, durch die Postgres-Datenbank ausführen lassen und die Ergebnisse mittels Python visualisieren.
+
+Verwenden sie ein Sprachmodell ihrer Wahl (siehe z.B. ChatKI der HTW) und lassen sie pro Unteraufgabe erst einmal den SQL-Befehl erzeugen. Lassen sie danach Python-Code zur Datenvisualisierung erzeugen. Protollieren sie ihre Chats und präsentieren sie in der nächsten Übung ihre Ergebnisse:
+</p>
+<ul class="w3-large">
+  <li>Konnte die Aufgabe gelöst werden</li>
+  <li>Wieviel Rückfragen waren notwendig</li>
+  <li>Wie gut wurde auf die Rückfragen reagiert</li>
+  <li>usw.</li>
+</ul>
+
+<p class="w3-large">
+  Sollten sie eine korrekte Lösung nicht mit dem Sprachmodell erstellen können, so erstellen sie diese selbst.
+</p>
+
+<p class="w3-large">
+  Die folgenden Aufgaben basieren auf der Tabelle <code>ccfraud</code>, die in der Postgres-Datenbank zur Verfügung steht.<br>
+  <img class="w3-image" src="/home/lv/adbkt/a/ccfraud/ccfraud-columns.png">
+</p>
+
+<p class="w3-large">
+  Versuchen sie ähnliche Visualisierungen zu erstellen, wie ich in den Aufgaben vorgegeben habe. Machen sie eine Kopie von "intro-pg.ipynb" und benennen sie die in "ccfraud-llm.ipynb" um und tragen sie dort den vom LLM erzeugten Code ein.
+</p>
+
+<p class="w3-large">
+  Senden sie mir ihre Präsentationen vor Beginn der Übung als PDF zu.
+</p>
+
+<h2>Anteil Datensätze pro Jahr</h2>
+<p class="w3-large">Hier soll ein Balkendiagramm angezeigt werden.</p>
+
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/100-100.png">
+
+<h2>Anteil Datensätze Ok/Betrug</h2>
+<p class="w3-large">Hier soll eine tabellarische Darstellung erfolgen</p>
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/110-100.png">
+
+<h2>Histogramm Nutzer</h2>
+<p class="w3-large">Hier soll ein Histgramm angezeigt werden.</p>
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/120-100.png">
+
+<h2>Betrugsanteil pro Jahr</h2>
+<p class="w3-large">Balkendiagramm</p>
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/130-100.png">
+
+<h2>Betrugsanteil pro Umsatzbereich</h2>
+<p class="w3-large">Balkendiagramm</p>
+<p class="w3-large">Die Umsatzbereiche müssen durch einen Case-Ausdruck definiert werden.</p>
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/140-100.png">
+
+
+<h2>Betrugsanteil pro Abstand in Minuten für selben User und Stadt unterschiedlich</h2>
+<p class="w3-large">Balkendiagramm</p>
+<p class="w3-large">
+  Sie müssen hier alle Transaktionen zusammenfassen, die vom selben User stammen, in unterschiedlichen Städten ausgelöst wurden und deren zeitlicher Abstand maximal 5 Minuten beträgt. Des Weitern müssen sie ein zweite Gruppe bilden, ebenfalls identischer User und unterschiedliche Stadt, aber zeitlicher Abstand größer als 5 Minuten.
+</p>
+<img class="w3-image" src="/home/lv/adbkt/a/ccfraud/150-100.png">

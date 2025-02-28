@@ -1,0 +1,75 @@
+---
+layout: default1
+nav: adbkt-graphdb
+title: Cypher kürzeste Pfade
+is_slide: 1
+n: 4
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Ein ausgewählter kürzester Pfad</h1>
+<ul class="w3-large">
+  <li>in Bezug auf Anzahl Haltestellen</li>
+  <li>nicht Distanz</li>
+</ul>
+<pre><code class="cypher">MATCH p = ANY SHORTEST  
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/100-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Alle kürzesten Pfade</h1>
+<pre><code class="cypher">MATCH p = ALL SHORTEST  
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/110-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Pfade mit aufsteigender Pfadlänge</h1>
+<ul class="w3-large">
+  <li>erst alle kürzesten Pfade</li>
+  <li>dann die nächstlängeren usw.</li>
+  <li>bis die Anzahl ausgeschöpft ist</li>
+</ul>
+<pre><code class="cypher">MATCH p = SHORTEST 3
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/120-100.png">
+
+<pre><code class="cypher">MATCH p = SHORTEST 4
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/130-100.png">
+
+<pre><code class="cypher">MATCH p = SHORTEST 10
+  (i:N {name: 'A'})-[:E]->+(b:N {name: 'F'})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/140-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Pfade nur zu Endpunkten</h1>
+<pre><code class="cypher">MATCH p = ANY SHORTEST  
+  (i:N {name: 'A'})
+  -[:E]->+
+  (b:N WHERE NOT EXISTS {(b)-[:E]->(:N)})
+RETURN [n IN nodes(p) | n.name] AS path;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/cypher-sp/150-100.png">
+<div class="ic-gap"></div>

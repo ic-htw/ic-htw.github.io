@@ -1,0 +1,173 @@
+---
+layout: default1
+nav: dmdb-viz
+title: Visualisierungen - Verteilungen - DMDB
+is_slide: 1
+n: 12
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Attribution</h1>
+<p class="w3-large">Die folgenden Folien basieren auf</p>
+<ul class="w3-large">
+  <li>Fundamentals of Data Visualization (<a  href="https://clauswilke.com/dataviz/index.html">link</a>)<br>
+  und folgen damit der</li>
+  <li>Attribution-NonCommercial-NoDerivatives 4.0 International Lizenz (<a  href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">link</a>) </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Histogramm</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Beispiel Altergruppen von Passagieren</li>
+            <li>Anzahl Datensätze pro Altergruppen</li>
+        </ul>        
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Hier Bin-Größe 5</li>
+            <li>Richtige Bin-Größe finden (ausprobieren)</li>
+        </ul>
+    </div>
+</div>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/10-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Verschiedene Bin-Größen</h1>
+<ul class="w3-large">
+    <li>Bin-Größe 1 Jahr (a) zu klein und 15 Jahre zu groß (d)</li>
+    <li>Bin-Größen 3 Jahre (b) und 5 Jahre (c) Jahre ok</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/40-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Wahrscheinlichkeitsverteilung</h1>
+<ul class="w3-large">
+    <li>Besser als Histogramm bei kontinuierlichen Werten</li>
+    <li>Teilweise Geschmackssache, was besser passt</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/30-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Bandbreiten/Kerndichteschätzer</h1>
+<ul class="w3-large">
+    <li>a-c: Gaußkern mit unterschiedlicher Bandbreite</li>
+    <li>d: Rechteckkern</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/20-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Vorsicht bei Kerndichteschätzer</h1>
+<ul class="w3-large">
+    <li>Können Daten für sinnlose Wertebereiche vortäuschen</li>
+    <li>Hier Wahrscheinlichkeit > 0 für negative Alter</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/50-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Visualisierung mehrerer Verteilungen</h1>
+<ul class="w3-large">
+    <li>Unklar, ob Balken überlappen</li>
+    <li>Höhe der Balken für weiblicher Passagiere schlecht vergleichbar</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/60-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Transparente Balken</h1>
+<ul class="w3-large">
+    <li>Nicht klar, ob die blauen Balken bei 0 starten</li>
+    <li>Nicht klar, was die dritte Farbe bedeutet</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/70-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Mehrere Wahrscheinlichkeitsverteilungen</h1>
+<ul class="w3-large">
+    <li>Klareres Verständnis, was die Überlappung bedeutet</li>
+    <li>Skalierung der Y-Achse</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/80-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Separate Wahrscheinlichkeitsverteilungen</h1>
+<ul class="w3-large">
+    <li>Verhältnis von Männern und Frauen besser erkennbar</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/90-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Genau zwei Verteilungen</h1>
+<ul class="w3-large">
+    <li>Horizontale Balkendiagramme</li>
+    <li>Hier Alterspyramide</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/100-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Viele Verteilungen</h1>
+<ul class="w3-large">
+    <li>Verteilung von Butterfett bei Kühen verschiedener Rasse</li>
+    <li>Wahrscheinlichkeitsverteilungen besser als Histogramme</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/110-30.png">
+<div class="ic-gap"></div>
+
+

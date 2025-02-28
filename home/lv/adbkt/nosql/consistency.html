@@ -1,0 +1,357 @@
+---
+layout: default1
+nav: adbkt-nosql
+title:  Konsistenz - ADBKT
+is_slide: 1
+n: 14
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>CAP Theorem</h1>
+<p class="w3-large">
+    CAP - Consistency, Availability, Partition Tolerance
+</p>
+
+<p class="w3-large ic-neg15">
+    Konsistenz (Consistency)</p>
+<ul class="w3-large">
+    <li>Konsistenter Zustand im verteilten System</li>
+    <li>Änderung auf einem Knoten</li>
+    <li>Lesezugriff auf replizierten Knoten liefert geänderten Wert</li>
+</ul>
+
+<p class="w3-large ic-neg15">
+    Verfügbarkeit (Availability)</p>
+<ul class="w3-large">
+    <li>System bietet akzeptable Reaktionszeit</li>
+    <li>Auch bei Ausfall von Knoten und Netzwerkverbindungen</li>
+</ul>
+
+<p class="w3-large ic-neg15">
+    Partitionierungstoleranz (Partition Tolerance)
+</p>
+<ul class="w3-large">
+    <li>Bei Netzwerk-Split: Teilnetze können weiter arbeiten</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1 class="ic-neg15">Zusammenspiel von C, A und P</h1>
+<p class="w3-large">
+    In einem verteilten System kann P nicht ausgeschlossen werden<br>
+    Daher macht nur die Diskussion von A und C Sinn
+</p>
+<p class="w3-large ic-neg15">
+    Knoten nicht verfügbar (Ausfall oder nicht erreichbar)
+</p>
+<ul class="w3-large">
+    <li>Entscheidung für C</li>
+    <ul>
+        <li>Operationen ablehnen</li>
+        <li>Keine Verfügbarkeit</li>
+    </ul>
+    <li>Entscheidung für A</li>
+    <ul>
+        <li>Operationen auf verfügbaren Knoten zulassen</li>
+        <li>Erzeugt möglicherweise inkonstistenten Zustand im Gesamsystem</li>
+        <li>Knoten können verschiedene Zustände für gleiches Objekt haben</li>
+        <li>Konstistenz später herstellen</li>
+        <li>(Eingeschränkte) Verfügbarkeit</li>
+    </ul>
+    <li>Keine absolute Entscheidung zwischen C und A</li>
+    <li>Verschiedene Strategien möglich</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>BASE</h1>
+<p class="w3-large">
+    BASE - Basic Available, Soft State, Eventually Consistent
+</p>
+
+<p class="w3-large ic-neg15">Basic Available</p>
+<ul class="w3-large">
+    <li>(Eingeschränkte) Verfügbarkeit als oberstes Ziel</li>
+</ul>
+<p class="w3-large ic-neg15">Soft State</p>
+<ul class="w3-large">
+    <li>Fenster der Inkonsistenz</li>
+</ul>
+<p class="w3-large ic-neg15">Eventually Consistent</p>
+<ul class="w3-large">
+    <li>Irgendwann wird ein konsistenter Zustand erreicht</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Konsistenz aus Nutzersicht</h1>
+<p class="w3-large ic-neg15">Beteiligte</p>
+<ul class="w3-large">
+    <li>Verteiltes Speichersystem</li>
+    <li>Prozesse A und B schreiben und lesen </li>
+</ul>
+<p class="w3-large ic-neg15">Starke Konsistenz</p>
+<ul class="w3-large">
+    <li>Nach Änderung: A und B sehen immer den neuen Wert</li>
+    <li>Alle Replikate müssen aktualisiert sein</li>
+</ul>
+<p class="w3-large ic-neg15">Schwache Konsistenz </p>
+<ul class="w3-large">
+    <li>A oder B sehen den alten Wert</li>
+    <li>z.B. beim Lesen eines Replikats</li>
+    <li>Eventual Consistency ist eine Form schwacher Konsistenz</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Quoren</h1>
+<p class="w3-large ic-neg15">
+    Mechanismus zur Konsistenzsteuerung
+</p>
+<ul class="w3-large">
+    <li>Replikationsfaktor n</li>
+    <ul>
+        <li>Anzahl der Kopien von Datenelementen: n</li>
+    </ul>
+    <li>Read Quorum r </li>
+    <ul>
+        <li>Lies r Replikate</li>
+    </ul>
+    <li>Write Quorum w</li>
+    <ul>
+        <li>Schreibe r Replikate, melde erst dann erfolgreiches Schreiben</li>
+    </ul>
+    <li>r + w > n: starke Konsistenz</li>
+    <li>r + w <= n: schwache Konsistenz</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1 class="ic-neg15">Read your own writes</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d100-100.png">
+    </div>
+    <div class="w3-col m7">
+        <p class="w3-large ic-neg15">Problem</p>
+        <ul class="w3-large">
+            <li>Ändern auf dem Leader</li>
+            <li>Lesen von einem Follower</li>
+            <li>z.B. Lesen von unterschiedlichen Geräten</li>
+        </ul>
+        <p class="w3-large ic-neg15">Lösungsansätze</p>
+        <ul class="w3-large">
+            <li>Daten, die nur vom Nutzer geändert werden können
+                (z.B. Profil) - Lesen immer vom Leader</li>
+            <li>Zeitpunkt der letzten Änderung merken - innerhalb
+                einer Minute immer vom Leader lesen, danach
+                beliebig</li>
+            <li>Zeitpunkt der letzten Änderung merken - nur dann
+                von einem Follower lesen, wenn dieser aktueller ist</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1 class="ic-neg15">Monotonic Reads</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d110-100.png">
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large ic-neg15">Problem</p>
+        <ul class="w3-large">
+            <li>Lesen von unterschiedlichen Follower</li>
+            <li>Erstes Lesen liefert aktuellere Version als
+                zweites Lesen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Lösungsansatz</p>
+        <ul class="w3-large">
+            <li>Gleicher Nutzer muss immer vom gleichen
+                Replikat lesen</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1 class="ic-neg15">Consistent Prefix Read 1</h1>
+<img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d120-80.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Consistent Prefix Read 2</h1>
+<p class="w3-large ic-neg15">Problem</p>
+<ul class="w3-large">
+    <li>Lesen entgegen der Schreibreihenfolge</li>
+    <li>Kann bei Sharding auftreten</li>
+    <li>Nuzter 1 und 2 schreiben in unterschiedlichen Shards</li>
+    <li>Replikate werden entgegen der Schreibreihenfolge aktualisiert</li>
+    <li>Shards operieren unabhängig, deshalbe keine globale Ordnung auf den Schreibvorgängen</li>
+</ul>
+<p class="w3-large ic-neg15">Lösungsansatz</p>
+<ul class="w3-large">
+    <li>Kausale Abhängigkeiten erkennen und berücksichtigen</li>
+    <li>Im Beispiel liest Nutzer 2 einen von Nutzer 1 geschriebenen Wert</li>
+    <li>Das begründet eine kausale Abhängigkeit</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1 class="ic-neg20">Schreiben bei Knotenausfall</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d130-100.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Quorum beim Schreiben (z.B. 2 von 3)</p>
+        <ul class="w3-large">
+            <li>Fehler beim Schreiben wird ignoriert, wenn Quorum erreicht</li>
+        </ul>
+        <p class="w3-large ic-neg15">Quorum beim Lesen (z.B. 2 von 3)</p>
+        <ul class="w3-large">
+            <li>Lesen ok, wenn Quorum erreicht </li>
+            <li>Schreiben des neuen Wertes auf Replikat mit altem Wert (Read Repair)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Konsistenz</p>
+        <ul class="w3-large">
+            <li>Replikationsfaktor: n</li>
+            <li>Anzahl gelesener Replikate: r </li>
+            <li>Anzahl geschriebener Replikate: w</li>
+            <li>r + w > n stellt Überlappung von Lesern und Schreibern sicher</li>
+            <li>wenigstens ein Leser liefert die neuste Version</li>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1 class="ic-neg20">Paralleles Schreiben</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d140-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>userA erhält Rückmeldung, dass x=100 geschrieben wurde (Quorum erfüllt)</li>
+            <li>userB erhält Rückmeldung, dass x=200 geschrieben wurde (Quorum erfüllt)</li>
+            <li>node3: x=200 wird durch x=100 überschrieben</li>
+            <li>node2: x=100 wird durch x=200 überschrieben</li>
+            <li class="ic-pos15">reader liest x per Quorum</li>
+            <li>Quorum liefert x=100</li>
+            <li>das Schreiben von x=200 geht verloren, obwohl für user2 der Wert x=200 per Quorum bestätigt wurde</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Aspekte von Quorum-Konsistenz 1</h1>
+<p class="w3-large ic-neg15">Konsistenz versus Verfügbarkeit</p>
+<ul class="w3-large">
+    <li>r + w < n stellt Konsistenz nicht sicher </li>
+    <li>liefert aber eine gewisse Wahrscheinlichkeit für das Lesen der aktuellen Version</li>
+    <li>erhöht die Verfügbarkeit des Systems, wenn mehrere Knoten ausfallen</li>
+</ul>
+<p class="w3-large ic-neg15">Probleme aus praktischer Sicht bei r + w > n</p>
+<ul class="w3-large">
+    <li>Paralles Schreiben und Überschreiben von Werten (z.B bei "first writer wins)"</li>
+    <li>Paralleles Lesen und Schreiben, welche Version wird geliefert</li>
+    <li>Wiederherstellung von Knoten durch möglicherweise alte Versionen</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Aspekte von Quorum-Konsistenz 2</h1>
+<p class="w3-large ic-neg15">Sloppy Quorums und Hinted Handoff</p>
+<ul class="w3-large">
+    <li>Große Cluster: echte Anzahl Knoten N > n (Replikationsfaktor)</li>
+    <li>Explizite (feste) Knotenzuordnung für Replikate</li>
+    <li>Beispiel</li>
+    <ul>
+        <li>Datensatz d auf Knoten k3, k10, k15</li>
+        <li>Ausfall von k10 und k15, danach Änderung von d</li>
+        <li>Kein echtes Quorum erreichbar, aber Schreiben auf k3, k8 und k17 möglich</li>
+    </ul>
+    <li>Denkbares Vorgehen</li>
+    <ul>
+        <li>Schreiben auf k3, k8 und k17 (Sloppy Quorum)</li>
+        <li>k8 und k17 vermerken "echte" Replikatsknoten (Hinted Handoff)</li>
+        <li>Übertragung auf k10 und k15 bei Verfügbarkeit</li>
+    </ul>
+</ul>
+<div class="ic-gap"></div>
+
+
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1 class="ic-neg15">Schreiben mit Versionen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image ic-pos30" src="/home/lv/adbkt/a/consistency/d150-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Versionen dienen zum Auflösen von Schreibkonflikten</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
