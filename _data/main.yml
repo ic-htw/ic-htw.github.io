@@ -248,9 +248,15 @@ home: &r
                   - t: Cassandra Container 1 anlegen
                     ts: Cassandra Container 1 anlegen
                     url: /home/lv/adbkt/infrastruktur/infra-cas1-cont.html
-                  - t: Stack anlegen
-                    ts: Stack anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
+                  - t: Cassandra Container 2 anlegen
+                    ts: Cassandra Container 2 anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-cas2-cont.html
+                  - t: Cassandra Container 3 anlegen
+                    ts: Cassandra Container 3 anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-cas3-cont.html
+                  - t: Neo4j Container anlegen
+                    ts: Neo4j Container anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-neo4j-cont.html
                   - t: Stack anlegen
                     ts: Stack anlegen
                     url: /home/lv/adbkt/infrastruktur/infra-stack.html
