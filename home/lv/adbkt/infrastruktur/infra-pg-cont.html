@@ -1,0 +1,32 @@
+---
+layout: default1
+nav: adbkt-infrastruktur
+title: Postgres Container anlegen - ADBKT
+is_slide: 0
+---
+
+<h1>Postgres Container anlegen</h1>
+
+
+<h2 class="ic-neg15">Stack <code>pg1</code> anlegen</h2>
+<pre><code class="language-yaml">services:
+  pg1:
+    container_name: pg1
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: adbktpg</code></pre>
+
+<h2 class="ic-neg15">Stack <code>pg2</code> anlegen</h2>
+<p class="w3-large">Wichtig: Port 5433 wird nach außen gereicht</p>
+
+<pre><code class="language-yaml">services:
+  pg1:
+    container_name: pg1
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: adbktpg</code></pre>
+      

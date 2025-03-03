@@ -205,18 +205,6 @@ home: &r
                   - t: "Ü: Präsentation von Fallbeispielen"
                     ts: "Ü: Präsentation von Fallbeispielen"
                     url: /home/lv/adbkt/intro/ueb-pres-case.html
-                  - t: "Ü: Konfiguration DBeaver"
-                    ts: "Ü: Konfiguration DBeaver"
-                    url: /home/lv/adbkt/intro/ueb-dbeaver.html
-                  - t: "Ü: Jupyter Notebook"
-                    ts: "Ü: Jupyter Notebook"
-                    url: /home/lv/adbkt/intro/ueb-jupyter-nb.html
-                  - t:  "Ü: Python DB-Intro"
-                    ts:  "Ü: Python DB-Intro"
-                    url: /home/lv/adbkt/intro/ueb-py-db-intro.html
-                  - t:  "Ü: Postgres Container anlegen"
-                    ts:  "Ü: Postgres Container anlegen"
-                    url: /home/lv/adbkt/intro/ueb-pg-container.html
                   - t: Plan
                     ts: Plan
                     url: /home/lv/adbkt/intro/plan.html
@@ -233,36 +221,24 @@ home: &r
                   - t: Jupyter Lab
                     ts: Jupyter Lab
                     url: /home/lv/adbkt/infrastruktur/infra-jupyterlab.html
-                  - t: Postgres Python
-                    ts: Postgres Python
-                    url: /home/lv/adbkt/infrastruktur/infra-pg-py.html
                   - t: Stack anlegen
                     ts: Stack anlegen
                     url: /home/lv/adbkt/infrastruktur/infra-stack.html
-                  - t: Postgres Container 1 anlegen
-                    ts: Postgres Container 1 anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-pg1-cont.html
-                  - t: Postgres Container 2 anlegen
-                    ts: Postgres Container 2 anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-pg2-cont.html
-                  - t: Cassandra Container 1 anlegen
-                    ts: Cassandra Container 1 anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-cas1-cont.html
-                  - t: Cassandra Container 2 anlegen
-                    ts: Cassandra Container 2 anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-cas2-cont.html
-                  - t: Cassandra Container 3 anlegen
-                    ts: Cassandra Container 3 anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-cas3-cont.html
+                  - t: Postgres Container anlegen
+                    ts: Postgres Container anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-pg-cont.html
+                  - t: Cassandra Container anlegen
+                    ts: Cassandra Container anlegen
+                    url: /home/lv/adbkt/infrastruktur/infra-cas-cont.html
                   - t: Neo4j Container anlegen
                     ts: Neo4j Container anlegen
                     url: /home/lv/adbkt/infrastruktur/infra-neo4j-cont.html
-                  - t: Stack anlegen
-                    ts: Stack anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
-                  - t: Stack anlegen
-                    ts: Stack anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
+                  - t: Graph-Datenmodelle
+                    ts: Graph-Datenmodelle
+                    url: /home/lv/adbkt/infrastruktur/infra-graph-dm.html
+                  - t: xxx anlegen
+                    ts: xxx anlegen
+                    url: /home/lv/adbkt/infrastruktur/xxx.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
@@ -329,9 +305,6 @@ home: &r
                   - t: "Ü: Neo4j-Container erstellen"
                     ts: "Ü: Neo4j-Container erstellen"
                     url: /home/lv/adbkt/graphdb/ueb-neo4j-cont.html
-                  - t: "Ü: Beispiel-Graph-Datenmodelle"
-                    ts: "Ü: Beispiel-Graph-Datenmodelle"
-                    url: /home/lv/adbkt/graphdb/ueb-graph-dm.html
                   - t: "Ü: Cypher-Abfragen 1"
                     ts: "Ü: Cypher-Abfragen 1"
                     url: /home/lv/adbkt/graphdb/ueb1-cypher.html

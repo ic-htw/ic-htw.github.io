@@ -1,26 +1,260 @@
 ---
 layout: default1
 nav: adbkt-infrastruktur
-title: Jupyter Lab - ADBKT
-is_slide: 0
+title: JupyterLab - ADBKT
+is_slide: 1
+n: 10
 ---
 
-<h1>Jupyter Lab</h1>
-<p class="w3-large">Das Token für den Zugriff auf das Notebook erhalten sie von mir</p>
+<!--
+    00 ******************************************************************
+-->
+{% include padding-id.html id=0 %}
+<p class="w3-xlarge">{{ page.title }}</p>
+<div id="toc"></div>
+<div class="ic-gap"></div>
 
-<p class="w3-large">Zugriff auf Jupyter Notebook</p>
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Zugriff auf den Server</h1>
 <pre><code>http://aaa.f4.htw-berlin.de:100gn/lab</code></pre>
 <ul class="w3-large">
   <li>"g" steht für ihre Gruppennummer</li>
   <li>"n" steht für die Nummer des Gruppenmitglieds</li>
 </ul>
+<p class="w3-large">Das Token für den Zugriff auf das Notebook erhalten sie von mir.</p>
+<div class="ic-gap"></div>
 
-<p class="w3-large">Token einfügen</p>
 
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Installation von Python-Moduen</h1>
 <p class="w3-large">Dieser Container verwendet "uv" als Paketmanager. D.h., statt</p>
 <pre><code>pip install something</code></pre>
 <p class="w3-large">muss</p>
 <pre><code>uv pip install something</code></pre>
 <p class="w3-large">verwendet werden</p>
+<div class="ic-gap"></div>
 
-<!---->
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Globale Postgres-Datenbank</h1>
+
+<h2>Credentials</h2>
+<p class="w3-large">
+  Datei <code>cred-pg.txt</code> anlegen.
+  Die Werte für "aaa" wie bei DBeaver.</p>
+<pre><code>user='aaa'
+password='aaa'
+host='aaa.f4.htw-berlin.de'
+port=5432
+dbname='adbkt'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/pg-py.ipynb">pg-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/pg-py.ipynb">pg-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Lokale Postgres-Datenbanken</h1>
+
+<h2 class="ic-neg15">Credentials 1</h2>
+<p class="w3-large">Datei <code>cred-pg1.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5432
+dbname='postgres'</code></pre>
+
+<h2 class="ic-neg15">Credentials 2</h2>
+<p class="w3-large">Datei <code>cred-pg2.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<p class="w3-large">Wichtig: Auf Port 5433 zugreifen</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5433
+dbname='postgres'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/pg1-py.ipynb">pg1-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/pg1-py.ipynb">pg1-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Cassandra</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Neo4j</h1>
+<h2 class="ic-neg15">Credentials</h2>
+<p class="w3-large">Datei <code>cred-neo4j.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>neo4j_userid='neo4j'
+neo4j_password='adbktneo4j'
+neo4j_host='neo4j://aaa.f4.htw-berlin.de:7687'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
