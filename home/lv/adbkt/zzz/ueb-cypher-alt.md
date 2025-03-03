@@ -15,14 +15,14 @@ is_slide: 0
   - Datenmodell in der Neo4j-Datenbank<br> 
   ![(png)](/home/lv/adbkt/a/shed/bubahn-modell-neo4j.png)
   - Code 
-    - Credentials [(py)](/home/lv/adbkt/a/ipynb/neo4j.py )
+    - Credentials [(py)](/home/lv/adbkt/a-ipynb/neo4j.py )
       - Download
       - Umbenennen in cred_neo4j.py
       - Werte anpassen
       - Upload
     - Übertragung der Daten 
-      [(ipynb)](/home/lv/adbkt/a/ipynb/neo4j-fill-mobility.ipynb) 
-      [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/neo4j-fill-mobility.ipynb)
+      [(ipynb)](/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb) 
+      [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb)
 
 ## Cypher-Abfrage 1
 

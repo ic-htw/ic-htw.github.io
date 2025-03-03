@@ -28,26 +28,7 @@ beschrieben.
 </p>
 <h1>Container</h1>
 <p class="w3-large">
-  Implementieren sie das Ganze in einem Docker-Container.
-</p>
-<pre><code class="language-yaml">services:
-  cas:
-    container_name: cas
-    image: cassandra:latest
-    ports:
-      - 7000:7000
-      - 7001:7001
-      - 7070:7070
-      - 7199:7199 
-      - 9042:9042
-      - 9160:9160
-    environment:
-      - JVM_OPTS=-Xms1024M -Xmx1024M
-      - HEAP_NEWSIZE=1024M
-      - MAX_HEAP_SIZE=1024M
-</code></pre>
-<p class="w3-large">
-  Legen sie einen Keyspace tourdelight an:
+  Implementieren sie das Ganze in einem Docker-Container. Legen sie einen Keyspace tourdelight an:
 </p>
 <pre><code class="language-sql">create keyspace tourdelight with replication = {
   'class': 'SimpleStrategy', 'replication_factor' : 1
@@ -59,7 +40,7 @@ beschrieben.
 </p>
 
 <p class="w3-large">
-  Installieren sie den Python-Treiberm mit
+  Installieren sie den Python-Treiber mit
   <pre><code class="python">uv pip install cassandra-driver</code></pre>
 </p>
 

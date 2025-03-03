@@ -39,8 +39,8 @@ is_slide: 0
     - Gab es kein zu dem unsetAuth passendes setAuth, passiert nichts
 
 ## Hinweise zur Lösung
-- Code zum Anlegen der Knoten und Kanten [(ipynb)](/home/lv/adbkt/a/ipynb/neo4j-auth.ipynb)
-  [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/neo4j-auth.ipynb)
+- Code zum Anlegen der Knoten und Kanten [(ipynb)](/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb)
+  [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb)
 - Legen Sie mittels "setAuth" geeignete Beziehungen in der Graphdatenbank an
 - Nutzen sie Cypher-Abfragen zur Lösung des Problems
 - Nur die tabellarischen Ausgaben sind in ihrer Lösung notwendig, nicht die Graphiken

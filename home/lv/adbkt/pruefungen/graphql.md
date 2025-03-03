@@ -13,5 +13,5 @@ is_slide: 0
   - Als Ergebnis liefert sie eine JSON-Struktur
 - Details der Aufgabe finden sie hier [(pdf)](/home/lv/adbkt/a/graph-ql/graph-ql.pdf)
 - Code-Rahmen: 
-[(link)](/home/lv/adbkt/a/ipynb/graph-ql.ipynb)
-[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/graph-ql.ipynb)
+[(link)](/home/lv/adbkt/a-ipynb/graph-ql.ipynb)
+[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/graph-ql.ipynb)

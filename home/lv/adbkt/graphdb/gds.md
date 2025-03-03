@@ -14,8 +14,8 @@ is_slide: 0
   MATCH (x) DETACH DELETE x;
   ```
 - U-Bahn-Daten aus der Postgres holen: 
-  [(ipynb)](/home/lv/adbkt/a/ipynb/neo4j-fill-mobility.ipynb) 
-  [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a/ipynb/neo4j-fill-mobility.ipynb)
+  [(ipynb)](/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb) 
+  [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb)
 - Die Cypher-Abfragen beziehen sich auf Daten des Berliner UBahn-Netzes
   - Aktuelles Netz [(link)](https://de.m.wikipedia.org/wiki/Datei:U-Bahn_Berlin_-_Netzplan.png)
   - Datenmodell in der Postgres-Datenbank<br> 
