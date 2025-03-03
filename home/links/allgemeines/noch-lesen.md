@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introducing Wren AI’s New AI-Powered Spreadsheets & Pre-
+[(link)](https://medium.com/wrenai/introducing-wren-ais-new-ai-powered-spreadsheets-pre-built-100-cross-platform-metrics-4ef99970390a)
+
+- Finding the Best Open-Source Embedding Model for RAG
+[(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
+
+- Top 6 Core App Dashboard Building Tools
+[(link)](https://medium.com/@nocobase/top-6-core-app-dashboard-building-tools-6ca8522da15d)
+
+- How I Learned to Love __init__.py : A Simple Guide
+[(link)](https://python.plainenglish.io/how-i-learned-to-love-f-a-simple-guide-120857df7af0)
+
 - Postgres as a Graph Database: (Ab)using pgRouting
 [(link)](https://supabase.com/blog/pgrouting-postgres-graph-database)
 
