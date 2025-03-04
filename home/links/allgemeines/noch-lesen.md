@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Map Column Values in a Pandas DataFrame?
+[(link)](https://medium.com/@tubelwj/how-to-map-column-values-in-a-pandas-dataframe-0b4e3f12cff9)
+
 - Introducing Wren AI’s New AI-Powered Spreadsheets & Pre-
 [(link)](https://medium.com/wrenai/introducing-wren-ais-new-ai-powered-spreadsheets-pre-built-100-cross-platform-metrics-4ef99970390a)
 
