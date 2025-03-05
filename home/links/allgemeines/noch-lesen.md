@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Optimizing PostgreSQL Performance: Essential Queries for Monitoring and Maintenance
+[(link)](https://medium.com/@dmitry.romanoff/optimizing-postgresql-performance-essential-queries-for-monitoring-and-maintenance-75fb610b4a8c)
+
+- One Line of SQL, All the LiteLLM Embeddings
+[(link)](https://medium.com/timescale/one-line-of-sql-all-the-litellm-embeddings-a3d31b41baf3)
+
 - How to Map Column Values in a Pandas DataFrame?
 [(link)](https://medium.com/@tubelwj/how-to-map-column-values-in-a-pandas-dataframe-0b4e3f12cff9)
 
