@@ -1,0 +1,284 @@
+---
+layout: default1
+nav: adbkt-pruefungen
+title: P6
+is_slide: 0
+---
+
+<h1>JSON aus GraphQL-Abfragen erzeugen</h1>
+
+<p class="w3-large">
+  In dieser Aufgabe sollen sie aus vereinfachten GraphQL-Abfragen Postgres-Code erzeugen, der JSON-Strukturen als Antwort zurückliefert.
+
+  Die vereinfachten GraphQL-Abfragen sehen folgndermaßen aus:
+
+</p>
+<table class="w3-table-all">
+  <tr>
+      <th>Abfrage</th>
+      <th>Bedeutung</th>
+  </tr>
+  <tr>
+      <td>Beispiel 01
+      <pre><code class="graphql">t1 {
+    a
+}</code></pre></td>
+      <td>xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx</td>
+  </tr>
+
+<tr>
+    <td>Beispiel 02
+    <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+}</code></pre></td>
+    <td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+
+<tr>
+  <td>Beispiel 03
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 {
+        c
+        d
+    }
+}</code></pre></td>
+  <td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+
+<tr>
+  <td>Beispiel 04
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+    }
+}</code></pre></td>
+  <td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+
+<tr>
+  <td>Beispiel 05
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+        t3 {
+            e
+            f
+        }
+    }
+}</code></pre></td>
+  <td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+
+<tr>
+  <td>Beispiel 06
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+        t3 (f: 'f103') {
+            e
+            f
+        }
+    }
+}</code></pre></td>
+  <td>xxxxxxxxxxxxxxxxxx</td>
+</tr>
+</table>
+
+
+<h2>Tabellen</h2>
+<p class="w3-large">Zum Testen werde folgenden Beispieldaten bereitgestellt.</p>
+
+<table class="w3-table-all">
+  <tr>
+      <th>t1</th>
+      <th>t2</th>
+      <th>t3</th>
+  </tr>
+  <tr>
+      <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/110-100.png"></td>
+      <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/120-100.png"></td>
+      <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/130-100.png"></td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align:center"><img  class="w3-image" src="/home/lv/adbkt/a/graph-ql/100-100.png"></td>
+  </tr>
+</table>
+
+<h2>Auswertungsbeispiele</h2>
+<p class="w3-large">Die  Auswertungsbeispiele basieren auf folgenden Beispieldaten</p>
+
+
+<table class="w3-table-all">
+  <tr>
+      <th>Abfrage</th>
+      <th>Erwartetes JSON-Ergebnis</th>
+  </tr>
+  <tr>
+      <td>Beispiel 01
+      <pre><code class="graphql">t1 {
+    a
+}</code></pre></td>
+      <td>    <pre><code class="json">[
+      {
+          "a": "a1"
+      },
+      {
+          "a": "a2"
+      }
+]</code></pre></td>
+  </tr>
+
+<tr>
+    <td>Beispiel 02
+    <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+}</code></pre></td>
+    <td>    <pre><code class="json">[
+    {
+        "a": "a1",
+        "b": "b1"
+    }
+]</code></pre></td>
+</tr>
+
+<tr>
+  <td>Beispiel 03
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 {
+        c
+        d
+    }
+}</code></pre></td>
+  <td>    <pre><code class="json">[
+    {
+        "a": "a1",
+        "b": "b1",
+        "t2": [
+            {
+                "c": "c11",
+                "d": "d11"
+            },
+            {
+                "c": "c12",
+                "d": "d12"
+            }
+        ]
+    }
+]</code></pre></td>
+</tr>
+
+<tr>
+  <td>Beispiel 04
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+    }
+}</code></pre></td>
+  <td>    <pre><code class="json">[
+    {
+        "a": "a1",
+        "b": "b1",
+        "t2": [
+            {
+                "c": "c12",
+                "d": "d12"
+            }
+        ]
+    }
+]</code></pre></td>
+</tr>
+
+<tr>
+  <td>Beispiel 05
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+        t3 {
+            e
+            f
+        }
+    }
+}</code></pre></td>
+  <td>    <pre><code class="json">[
+    {
+        "a": "a1",
+        "b": "b1",
+        "t2": [
+            {
+                "c": "c12",
+                "d": "d12",
+                "t3": [
+                    {
+                        "e": "e103",
+                        "f": "f103"
+                    },
+                    {
+                        "e": "e104",
+                        "f": "f104"
+                    }
+                ]
+            }
+        ]
+    }
+]</code></pre></td>
+</tr>
+
+<tr>
+  <td>Beispiel 06
+  <pre><code class="graphql">t1 (a: 'a1') {
+    a
+    b
+    t2 (d: 'd12') {
+        c
+        d
+        t3 (f: 'f103') {
+            e
+            f
+        }
+    }
+}</code></pre></td>
+  <td>    <pre><code class="json">[
+    {
+        "a": "a1",
+        "b": "b1",
+        "t2": [
+            {
+                "c": "c12",
+                "d": "d12",
+                "t3": [
+                    {
+                        "e": "e103",
+                        "f": "f103"
+                    }
+                ]
+            }
+        ]
+    }
+]</code></pre></td>
+</tr>
+</table>
+
+
+
+<!---->
