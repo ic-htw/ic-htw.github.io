@@ -8,11 +8,36 @@ is_slide: 0
 <h1>JSON aus GraphQL-Abfragen erzeugen</h1>
 
 <p class="w3-large">
-  In dieser Aufgabe sollen sie aus vereinfachten GraphQL-Abfragen Postgres-Code erzeugen, der JSON-Strukturen als Antwort zurückliefert.
-
-  Die vereinfachten GraphQL-Abfragen sehen folgndermaßen aus:
-
+  In dieser Aufgabe sollen sie aus vereinfachten GraphQL-Abfragen Postgres-SQL-Code erzeugen, der JSON-Strukturen als Antwort zurückliefert.
 </p>
+<p class="w3-large">
+    Grundlage für die Erzeugung sind Tabellen, die durch Fremdschlüssel miteinander verbunden sind, wie im folgenden Beispiel. GraphQL ermöglicht einen einfachen Zugriff auf solche Strukturen und liefert JSON zurück, das dann in Anwendungsprogrammen direkt weiterverwendet werden kann.
+</p>
+
+<div class="w3-center"><img  class="w3-image" src="/home/lv/adbkt/a/graph-ql/100-100.png"></div>
+
+<p class="w3-large">
+    Konkret besteht ihr Aufgabe darin, in Python folgende Funktion zu implementieren:
+    <pre><code class="python">def gql_to_jon(gql: AST) -> str</code></pre>
+    Die Abfragen werden als Abstract Syntax Trees (AST) bereitgestellt:
+    <pre><code class="python">@dataclass
+class Cond():
+    l: str
+    r: str
+
+@dataclass
+class AST():
+    name: str
+    attr: list[str]
+    cond: Optional[Cond] = None
+    sub: Optional['AST'] = None</code></pre>
+</p>
+
+<p class="w3-large">
+    Im Folgenden finden sie eine Reihe von Beispielabfragen, die für ihren Code als Test dienen sollen.
+</p>
+
+
 <table class="w3-table-all">
   <tr>
       <th>Abfrage</th>
@@ -23,7 +48,7 @@ is_slide: 0
       <pre><code class="graphql">t1 {
     a
 }</code></pre></td>
-      <td>xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx</td>
+      <td>Alle Objekte aus Tabelle "t1", e</td>
   </tr>
 
 <tr>
@@ -110,9 +135,6 @@ is_slide: 0
       <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/110-100.png"></td>
       <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/120-100.png"></td>
       <td><img class="w3-image" src="/home/lv/adbkt/a/graph-ql/130-100.png"></td>
-  </tr>
-  <tr>
-    <td colspan="3" style="text-align:center"><img  class="w3-image" src="/home/lv/adbkt/a/graph-ql/100-100.png"></td>
   </tr>
 </table>
 
