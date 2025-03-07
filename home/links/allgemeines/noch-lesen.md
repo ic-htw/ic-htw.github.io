@@ -9,6 +9,27 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I “vibe-coded” over 160,000 lines of code. It IS real.
+[(link)](https://medium.com/codex/i-vibe-coded-an-entire-algorithmic-trading-platform-it-is-real-c8ee0addef57)
+
+- Hard-Earned Lessons from a Year of Building AI Agents
+[(link)](https://medium.com/@mayamurad/hard-earned-lessons-from-a-year-of-building-ai-agents-945d90c78707)
+
+- License to Kill: Coding with Cursor AI Agents
+[(link)](https://levelup.gitconnected.com/license-to-kill-coding-with-cursor-ai-agents-1df3d6a0bfe8)
+
+- How To Train Your PyTorch Models (Much) Faster
+[(link)](https://levelup.gitconnected.com/how-to-train-your-pytorch-models-much-faster-14737c8c9770)
+
+- Prompt Decorators: A Simple Way to Improve AI Responses
+[(link)](https://kalami.medium.com/prompt-decorators-a-simple-way-to-improve-ai-responses-c3f3c2579a8c)
+
+- Postgres query plan visualization tools
+[(link)](https://www.pgmustard.com/blog/postgres-query-plan-visualization-tools)
+
+- Vector Search at 10,000 QPS in PostgreSQL with VectorChord
+[(link)](https://blog.vectorchord.ai/vector-search-at-10000-qps-in-postgresql-with-vectorchord)
+
 - Optimizing PostgreSQL Performance: Essential Queries for Monitoring and Maintenance
 [(link)](https://medium.com/@dmitry.romanoff/optimizing-postgresql-performance-essential-queries-for-monitoring-and-maintenance-75fb610b4a8c)
 
