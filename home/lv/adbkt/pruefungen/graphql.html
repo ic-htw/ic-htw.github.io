@@ -7,6 +7,7 @@ is_slide: 0
 
 <h1>JSON aus GraphQL-Abfragen erzeugen</h1>
 
+<h2>Einleitung</h2>
 <p class="w3-large">
   In dieser Aufgabe sollen sie aus vereinfachten GraphQL-Abfragen Postgres-SQL-Code erzeugen, der JSON-Strukturen als Antwort zurückliefert.
 </p>
@@ -19,6 +20,8 @@ is_slide: 0
 <p class="w3-large">
     Konkret besteht ihr Aufgabe darin, in Python folgende Funktion zu implementieren:
     <pre><code class="python">def gql_to_jon(gql: AST) -> str</code></pre>
+</p>
+<p class="w3-large">
     Die Abfragen werden als Abstract Syntax Trees (AST) bereitgestellt:
     <pre><code class="python">@dataclass
 class Cond():
@@ -33,6 +36,31 @@ class AST():
     sub: Optional['AST'] = None</code></pre>
 </p>
 
+<table class="w3-table-all">
+    <tr>
+        <th>Abfrage</th>
+        <th>AST</th>
+    </tr>
+    <tr>
+        <td><pre><code class="graphql">t1 {
+      a
+}</code></pre></td>
+        <td><pre><code>AST(name='t1', attr=['a'], cond=None, sub=None)</code></pre></td>
+    </tr>
+</table>
+  
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+<h2>Beispielabfragen</h2>
 <p class="w3-large">
     Im Folgenden finden sie eine Reihe von Beispielabfragen, die für ihren Code als Test dienen sollen.
 </p>
@@ -48,7 +76,7 @@ class AST():
       <pre><code class="graphql">t1 {
     a
 }</code></pre></td>
-      <td>Alle Objekte aus Tabelle "t1", e</td>
+      <td>Alle Objekte aus Tabelle "t1". Es soll nur Spalte "a" ausgegeben werden.</td>
   </tr>
 
 <tr>
@@ -57,7 +85,7 @@ class AST():
     a
     b
 }</code></pre></td>
-    <td>xxxxxxxxxxxxxxxxxx</td>
+    <td>Wie Beispiel 01. Es sollen aber nur Objekte ausgegeben werden, bei denen die Spalte "a" den Wert 'a1' hat.</td>
 </tr>
 
 <tr>
@@ -70,7 +98,7 @@ class AST():
         d
     }
 }</code></pre></td>
-  <td>xxxxxxxxxxxxxxxxxx</td>
+  <td>Wie Beispiel 02. Es sollen zusätzlich alle "t2"-Objekte ausgegeben  werden, die mit den "t1"-Objekten verbunden sind.</td>
 </tr>
 
 <tr>
@@ -83,7 +111,7 @@ class AST():
         d
     }
 }</code></pre></td>
-  <td>xxxxxxxxxxxxxxxxxx</td>
+  <td>Wie Beispiel 03. Die verbundenen Objekte sollen gefiltert werden, die Spalte "d" soll den Wert 'd12' haben.</td>
 </tr>
 
 <tr>
@@ -100,7 +128,7 @@ class AST():
         }
     }
 }</code></pre></td>
-  <td>xxxxxxxxxxxxxxxxxx</td>
+  <td>Wie Beispiel 04. Es soll eine weitere Ebene mit den verbundenen "t3"-Objekten ausgegeben werden</td>
 </tr>
 
 <tr>
@@ -117,7 +145,7 @@ class AST():
         }
     }
 }</code></pre></td>
-  <td>xxxxxxxxxxxxxxxxxx</td>
+  <td>Wie Beispiel 05. Die verbundenen "t3"-Objekte sollen gefiltert werden, die Spalte "f" soll den Wert 'f103' haben.</td>
 </tr>
 </table>
 
@@ -139,7 +167,7 @@ class AST():
 </table>
 
 <h2>Auswertungsbeispiele</h2>
-<p class="w3-large">Die  Auswertungsbeispiele basieren auf folgenden Beispieldaten</p>
+<p class="w3-large">Hier werden die Ergebnisse angegeben, die ihr Code bei der jeweiligen Abfrage liefern soll.</p>
 
 
 <table class="w3-table-all">
@@ -301,6 +329,16 @@ class AST():
 </tr>
 </table>
 
+<h2>Hinweise zur Lösung</h2>
+<p class="w3-large ic-neg15">Gehen sie bei der Implementierung wie folgt vor:</p>
+<ul class="w3-large">
+    <li>AST traversieren und eine Postgres-Query erzeugen</li>
+    <li>Diese Query muss geeignete JSON-Erzeugungsfunktionen verwenden</li>
+    <li>Query an die Datenbank senden und Ergebnis ausgeben</li>
+    <li>Beachten sie, dass sie die Namen der Tabellen und Spalten aus der GraphQL-Query entnehmen und nicht hart kodieren</li>
+    <li>Um verbundene Objekte auszugeben, müssen sie Datenbank-Joins erzeugen</li>
+    <li>Die dazu notwendigen Fremd- und Primärschlüssel müssen sie über die Datenbank-Metadaten ermitteln</li>
+</ul>
 
 
 <!---->
