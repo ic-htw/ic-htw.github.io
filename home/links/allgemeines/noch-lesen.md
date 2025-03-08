@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building a Perfect Million Parameter LLM Like ChatGPT in Python
+[(link)](https://levelup.gitconnected.com/building-a-perfect-million-parameter-llm-like-chatgpt-in-python-3b16e26b4139)
+
 - I “vibe-coded” over 160,000 lines of code. It IS real.
 [(link)](https://medium.com/codex/i-vibe-coded-an-entire-algorithmic-trading-platform-it-is-real-c8ee0addef57)
 
