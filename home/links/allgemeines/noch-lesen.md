@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Claude 3.7 Sonnet: the first AI model that understands your entire codebase
+[(link)](https://medium.com/@DaveThackeray/claude-3-7-sonnet-the-first-ai-model-that-understands-your-entire-codebase-560915c6a703)
+
+- Using Custom Agents in Cursor, Windsurf, Copilot and Others to Supercharge Your Workflow
+[(link)](https://ai.gopubby.com/using-custom-agents-in-cursor-windsurf-copilot-and-others-to-supercharge-your-workflow-f936b630c5e5)
+
+- Data Warehouse Basics: How to Handle Changing Data with SCDs
+[(link)](https://medium.com/@vijaygadhave2014/data-warehouse-basics-how-to-handle-changing-data-with-scds-497bd2a714bf)
+
+- Postgres is all you need for vectors
+[(link)](https://medium.com/neuml/postgres-is-all-you-need-for-vectors-fb065e09ec64)
+
 - Building a Perfect Million Parameter LLM Like ChatGPT in Python
 [(link)](https://levelup.gitconnected.com/building-a-perfect-million-parameter-llm-like-chatgpt-in-python-3b16e26b4139)
 
