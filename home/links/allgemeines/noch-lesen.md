@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Multi-Tenant Architecture using SpringBoot and PostgreSQL
+[(link)](https://towardsdev.com/multi-tenant-architecture-using-springboot-and-postgresql-d3d800e44ab0)
+
+- PyGWalker 
+[(link)](https://github.com/Kanaries/pygwalker)
+
+- OpenAI’s new prompting guide: how to get the best results from reasoning models
+[(link)](https://blog.stackademic.com/openais-new-prompting-guide-how-to-get-the-best-results-from-reasoning-models-354a6adf76c2)
+
 - Claude 3.7 Sonnet: the first AI model that understands your entire codebase
 [(link)](https://medium.com/@DaveThackeray/claude-3-7-sonnet-the-first-ai-model-that-understands-your-entire-codebase-560915c6a703)
 
