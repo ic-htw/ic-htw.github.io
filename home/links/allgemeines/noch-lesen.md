@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Model Context Protocol (MCP)
+[(link)](https://github.com/modelcontextprotocol)
+
+- Getting Started: Model Context Protocol
+[(link)](https://medium.com/@kenzic/getting-started-model-context-protocol-e0a80dddff80)
+
+- Is Kimball Still Relevant in the Modern Data Warehouse Era?
+[(link)](https://medium.com/@neeraj3685/kimball-in-the-lakehouse-era-adapting-dimensional-modeling-for-modern-data-2587ee0536c7)
+
+- STOP Using Python Dictionaries Like This!
+[(link)](https://python.plainenglish.io/stop-using-python-dictionaries-like-this-157c53bc93c2)
+
 - Multi-Tenant Architecture using SpringBoot and PostgreSQL
 [(link)](https://towardsdev.com/multi-tenant-architecture-using-springboot-and-postgresql-d3d800e44ab0)
 

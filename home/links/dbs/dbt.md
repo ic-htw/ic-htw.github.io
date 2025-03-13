@@ -5,15 +5,13 @@ title: DBT
 is_slide: 0
 ---
 
-# aaa
-- Comprehensive Guide to Getting Started with dbt (Data Build Tool)
-[(link)](https://medium.com/@karim.faiz/comprehensive-guide-to-getting-started-with-dbt-data-build-tool-f0355203865e)
+# Official
 - doc
 [(link)](https://docs.getdbt.com/)
 - git
 [(link)](https://github.com/dbt-labs/dbt)
 
-# bbb
+# Articles
 - dbt Semantic Layer — What Is and How to Use
 [(link)](https://medium.com/getindata-blog/dbt-semantic-layer-what-is-and-how-to-use-a8a418301c8f)
 - dbt 1.8 it is just wow
