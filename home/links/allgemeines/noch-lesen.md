@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- PostgreSQL: 1 trillion rows in Citus
+[(link)](https://www.cybertec-postgresql.com/en/postgresql-1-trillion-rows-in-citus/)
+
+- Microsoft PostgreSQL OSS engine team: reflecting on 2024
+[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/microsoft-postgresql-oss-engine-team-reflecting-on-2024/4388700)
+
 - Model Context Protocol (MCP)
 [(link)](https://github.com/modelcontextprotocol)
 
