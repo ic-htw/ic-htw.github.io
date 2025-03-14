@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Stop Writing Manual Validators! Use Pydantic for Data Validation
+[(link)](https://python.plainenglish.io/stop-writing-manual-validators-use-pydantic-for-data-validation-18bde92f4bfa)
+
 - PostgreSQL: 1 trillion rows in Citus
 [(link)](https://www.cybertec-postgresql.com/en/postgresql-1-trillion-rows-in-citus/)
 
