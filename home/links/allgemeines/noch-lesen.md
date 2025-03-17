@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- SQLAlchemy 2.0: The Most Powerful ORM for Python Yet
+[(link)](https://leapcell.medium.com/leapcell-the-next-gen-serverless-platform-for-python-app-hosting-0722d1b32047)
+
+- After DeepSeek-R1, a goldmine of research is waiting to be discovered.
+[(link)](https://ai.gopubby.com/after-deepseek-r1-a-goldmine-of-research-is-waiting-to-be-discovered-085038421285)
+
+- Reinforcement Learning
+[(link)](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)
+
 - Stop Writing Manual Validators! Use Pydantic for Data Validation
 [(link)](https://python.plainenglish.io/stop-writing-manual-validators-use-pydantic-for-data-validation-18bde92f4bfa)
 
