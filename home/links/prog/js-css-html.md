@@ -25,6 +25,10 @@ is_slide: 0
 [(link)](https://simn.fr/posts/dicthing-django-admin-for-fasthtml)
 - fasthtml_chat
 [(link)](https://github.com/matdmiller/fasthtml_chat)
+- htmx
+[(link)](https://htmx.org/)
+- Hypermedia Systems
+[(link)](https://hypermedia.systems/book/contents/)
 
 
 
