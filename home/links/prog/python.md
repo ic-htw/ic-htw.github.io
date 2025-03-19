@@ -78,6 +78,11 @@ is_slide: 0
 [(link)](https://github.com/AnswerDotAI/fasthtml-example)
 - FastHTML - github
 [(link)](https://github.com/AnswerDotAI/fasthtml/tree/main?tab=readme-ov-file#fasthtml)
+- MonsterUI: Bringing Beautiful UI to FastHTML
+[(link)](https://www.answer.ai/posts/2025-01-15-monsterui.html)
+- MonsterUI doc
+[(link)](https://monsterui.answer.ai/)
+
 
 
 
