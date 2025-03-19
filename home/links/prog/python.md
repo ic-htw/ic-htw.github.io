@@ -74,6 +74,11 @@ is_slide: 0
 [(link)](https://www.fastht.ml/)
 - This New Python Web Framework Changes Everything…
 [(link)](https://medium.com/@hhartleyjs/this-new-python-web-framework-changes-everything-b667db75f6fd)
+- FastHTML Example Apps
+[(link)](https://github.com/AnswerDotAI/fasthtml-example)
+- FastHTML - github
+[(link)](https://github.com/AnswerDotAI/fasthtml/tree/main?tab=readme-ov-file#fasthtml)
+
 
 
 
