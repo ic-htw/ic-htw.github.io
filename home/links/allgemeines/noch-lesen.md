@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- This Happens Inside Python...When We Call a Function
+[(link)](https://python.plainenglish.io/this-happens-inside-python-when-we-call-a-function-161f8d212e98)
+
 - SQLAlchemy 2.0: The Most Powerful ORM for Python Yet
 [(link)](https://leapcell.medium.com/leapcell-the-next-gen-serverless-platform-for-python-app-hosting-0722d1b32047)
 
