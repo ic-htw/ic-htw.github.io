@@ -9,6 +9,39 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- This Happens Inside Python...When We Call a Function
+[(link)](https://python.plainenglish.io/this-happens-inside-python-when-we-call-a-function-161f8d212e98)
+
+- SQLAlchemy 2.0: The Most Powerful ORM for Python Yet
+[(link)](https://leapcell.medium.com/leapcell-the-next-gen-serverless-platform-for-python-app-hosting-0722d1b32047)
+
+- After DeepSeek-R1, a goldmine of research is waiting to be discovered.
+[(link)](https://ai.gopubby.com/after-deepseek-r1-a-goldmine-of-research-is-waiting-to-be-discovered-085038421285)
+
+- Reinforcement Learning
+[(link)](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)
+
+- Stop Writing Manual Validators! Use Pydantic for Data Validation
+[(link)](https://python.plainenglish.io/stop-writing-manual-validators-use-pydantic-for-data-validation-18bde92f4bfa)
+
+- PostgreSQL: 1 trillion rows in Citus
+[(link)](https://www.cybertec-postgresql.com/en/postgresql-1-trillion-rows-in-citus/)
+
+- Microsoft PostgreSQL OSS engine team: reflecting on 2024
+[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/microsoft-postgresql-oss-engine-team-reflecting-on-2024/4388700)
+
+- Model Context Protocol (MCP)
+[(link)](https://github.com/modelcontextprotocol)
+
+- Getting Started: Model Context Protocol
+[(link)](https://medium.com/@kenzic/getting-started-model-context-protocol-e0a80dddff80)
+
+- Is Kimball Still Relevant in the Modern Data Warehouse Era?
+[(link)](https://medium.com/@neeraj3685/kimball-in-the-lakehouse-era-adapting-dimensional-modeling-for-modern-data-2587ee0536c7)
+
+- STOP Using Python Dictionaries Like This!
+[(link)](https://python.plainenglish.io/stop-using-python-dictionaries-like-this-157c53bc93c2)
+
 - Multi-Tenant Architecture using SpringBoot and PostgreSQL
 [(link)](https://towardsdev.com/multi-tenant-architecture-using-springboot-and-postgresql-d3d800e44ab0)
 

@@ -5,6 +5,8 @@ title: Blogs / Sites
 is_slide: 0
 ---
 # Blogs
+- Answer.AI
+[(link)](https://www.answer.ai/)
 - AWS Database Blog
 [(link)](https://aws.amazon.com/de/blogs/database/)
 - Azure Database for PostgreSQL Blog

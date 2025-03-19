@@ -16,6 +16,23 @@ is_slide: 0
 - JS Complete / learn
 [(link)](https://jscomplete.com/learn)
 
+# FastHTML
+- Home
+[(link)](https://fastht.ml/)
+- MonsterUI Getting Started
+[(link)](https://monsterui.answer.ai/)
+- Ditching Django Admin for FastHTML with HTMX
+[(link)](https://simn.fr/posts/dicthing-django-admin-for-fasthtml)
+- fasthtml_chat
+[(link)](https://github.com/matdmiller/fasthtml_chat)
+- htmx
+[(link)](https://htmx.org/)
+- Hypermedia Systems
+[(link)](https://hypermedia.systems/book/contents/)
+
+
+
+
 # HTML / CSS
 - self html
 [(link)](https://wiki.selfhtml.org/)
