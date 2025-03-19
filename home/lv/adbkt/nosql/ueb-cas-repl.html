@@ -1,22 +1,13 @@
 ---
 layout: default1
 nav: adbkt-nosql
-title: "Ü: Cassandra Replikation"
+title: "Ü: Cassandra Replikation - ADBKT"
 is_slide: 0
 ---
 
 <h1>Übung Cassandra Replikation</h1>
 
-<h2 class="ic-neg15">Container anlegen</h2>
-<p class="w3-large ic-neg15">Das Folgende dreimal ausführen</p>
-<ul class="w3-large">
-  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
-  <li>Auf Button "Add stack" klicken</li>
-  <li>Name für Container vergeben</li>
-  <li>Auf "Deploy the stack" klicken</li>
-</ul>
-
-<h3>cas1</h3>
+<h2>Stack <code>cas1</code> anlegen</h2>
 <pre><code class="language-yaml">networks:
   ncas:
     name: ncas
@@ -25,13 +16,6 @@ services:
   cas1:
     container_name: cas1
     image: cassandra:latest
-    ports:
-      - 17000:7000
-      - 17001:7001
-      - 17070:7070
-      - 17199:7199 
-      - 19042:9042
-      - 19160:9160
     environment:
       - JVM_OPTS=-Xms1024M -Xmx1024M
       - HEAP_NEWSIZE=1024M
@@ -40,7 +24,10 @@ services:
       - ncas
 </code></pre>
 
-<h3>cas2</h3>
+<p class="w3-large">Etwas warten, bis <code>cas1</code> up ist</p>
+
+
+<h2>Stack <code>cas2</code> anlegen</h2>
 <pre><code class="language-yaml">networks:
   ncas:
     name: ncas
@@ -49,13 +36,6 @@ services:
   cas2:
     container_name: cas2
     image: cassandra:latest
-    ports:
-      - 27000:7000
-      - 27001:7001
-      - 27070:7070
-      - 27199:7199 
-      - 29042:9042
-      - 29160:9160
     environment:
       - CASSANDRA_SEEDS=cas1
       - JVM_OPTS=-Xms1024M -Xmx1024M
@@ -65,7 +45,9 @@ services:
       - ncas
 </code></pre>
 
-<h3>cas3</h3>
+
+
+<h2>Stack <code>cas3</code> anlegen</h2>
 <pre><code class="language-yaml">networks:
   ncas:
     name: ncas
@@ -74,13 +56,6 @@ services:
   cas3:
     container_name: cas3
     image: cassandra:latest
-    ports:
-      - 37000:7000
-      - 37001:7001
-      - 37070:7070
-      - 37199:7199 
-      - 39042:9042
-      - 39160:9160
     environment:
       - CASSANDRA_SEEDS=cas1
       - JVM_OPTS=-Xms1024M -Xmx1024M
@@ -92,7 +67,7 @@ services:
 
 
 
-<h1>Code ausführen</h1>
+<h2>Code ausführen</h2>
 <p class="w3-large ic-neg15">
   Erst cas1 starten und dann etwas warten, dann erst cas2 und cas3 
 </p>
