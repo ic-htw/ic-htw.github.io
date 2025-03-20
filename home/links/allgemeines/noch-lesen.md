@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Benchmarking PostgreSQL Batch Ingest
+[(link)](https://medium.com/timescale/benchmarking-postgresql-batch-ingest-51fbe09174de)
+
+- Google’s Gemma-3 Fine-Tuning Made Simple: Create Custom AI Models with Python and Unsloth
+[(link)](https://pub.towardsai.net/googles-gemma-3-fine-tuning-made-simple-create-custom-ai-models-with-python-and-unsloth-fb937495e9db)
+
 - This Happens Inside Python...When We Call a Function
 [(link)](https://python.plainenglish.io/this-happens-inside-python-when-we-call-a-function-161f8d212e98)
 

@@ -168,10 +168,10 @@ is_slide: 0
 
 
 # influxdb
-- docs - cloud
-[(link)](https://docs.influxdata.com/influxdb/cloud/)
-- docs - oss
-[(link)](https://docs.influxdata.com/influxdb/v2.4/)
+- home
+[(link)](https://www.influxdata.com/)
+- InfluxDB 3 Core documentation
+[(link)](https://docs.influxdata.com/influxdb3/core/)
 - blog
 [(link)](https://www.influxdata.com/blog/)
 

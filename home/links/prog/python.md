@@ -82,6 +82,11 @@ is_slide: 0
 [(link)](https://www.answer.ai/posts/2025-01-15-monsterui.html)
 - MonsterUI doc
 [(link)](https://monsterui.answer.ai/)
+- hypermedia.systems - buch
+[(link)](https://hypermedia.systems/book/contents/)
+- htmx
+[(link)](https://htmx.org/)
+
 
 
 
