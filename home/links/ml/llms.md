@@ -33,6 +33,14 @@ is_slide: 0
 
 
 # agents
+- Agentic 1: Model Context Protocol
+[(link)](https://medium.com/@adnanmasood/the-agentic-imperative-series-part-1-model-context-protocol-bridging-ai-and-enterprise-reality-52caa5b8b580)
+- Agentic 2: Crew AI & Semantic Kernel 
+[(link)](https://medium.com/@adnanmasood/the-agentic-imperative-series-part-2-crew-dd4b016a0254)
+- Agentic 3: LangChain & LangGraph
+[(link)](https://medium.com/@adnanmasood/the-agentic-imperative-series-part-3-langchain-langgraph-building-dynamic-agentic-workflows-7184bad6b827)
+- Agentic 4: Manus & AutoGen
+[(link)](https://medium.com/@adnanmasood/the-agentic-imperative-series-part-5-manus-autogen-scaling-autonomy-in-agentic-frameworks-41724fe77a77)
 - Agentic AI: Build a Tech Research Agent
 [(link)](https://levelup.gitconnected.com/agentic-workflows-build-a-tech-research-agent-da5e8247e123)
 - Building RAG Research Multi-Agent with LangGraph

@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Claude with MCPs Replaced Cursor & Windsurf — How Did That Happen?
+[(link)](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96)
+
+- Turbocharging Denodo AI SDK: How Semantic Caching Makes Text-to-SQL 9X Faster
+[(link)](https://medium.com/data-science-collective/turbocharging-denodo-ai-sdk-how-semantic-caching-makes-text-to-sql-9x-faster-5f58249641ab)
+
+- How I built a SaaS product with 100% AI generated code
+[(link)](https://sakkyb.medium.com/how-i-built-a-saas-product-with-100-ai-generated-code-5728e0c97c8d)
+
+- How an Undergraduate Shattered a 40-Year-Old Computer Science Theory
+[(link)](https://levelup.gitconnected.com/how-an-undergraduate-shattered-a-40-year-old-computer-science-theory-c605283214a3)
+
 - Benchmarking PostgreSQL Batch Ingest
 [(link)](https://medium.com/timescale/benchmarking-postgresql-batch-ingest-51fbe09174de)
 
