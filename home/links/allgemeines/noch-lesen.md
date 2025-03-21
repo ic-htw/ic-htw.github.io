@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Xata Agent, your AI expert in PostgreSQL
+[(link)](https://github.com/xataio/agent)
+
+- Can Artificial Intelligence Created Better Tables Than You?
+[(link)](https://stokerpostgresql.blogspot.com/2025/03/can-artificial-intelligence-created.html)
+
 - Claude with MCPs Replaced Cursor & Windsurf — How Did That Happen?
 [(link)](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96)
 
