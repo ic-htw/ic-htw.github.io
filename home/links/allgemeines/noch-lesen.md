@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The Most Comprehensive Explanation of Session, Cookie, Token, and JWT
+[(link)](https://levelup.gitconnected.com/the-http-protocol-is-a-stateless-protocol-that-is-every-time-the-server-receives-a-request-b9c4f31bfbb3)
+
+- Should Stakeholders be Writing SQL for Self-Service?
+[(link)](https://medium.com/@analyticsmentor/should-stakeholders-be-writing-sql-for-self-service-289561fbbbbf)
+
+- PgBouncer: Don’t Let Connection Chaos Ruin Your Day
+[(link)](https://rajansahu713.medium.com/pgbouncer-dont-let-connection-chaos-ruin-your-day-4e9f93fb1037)
+
 - Xata Agent, your AI expert in PostgreSQL
 [(link)](https://github.com/xataio/agent)
 
