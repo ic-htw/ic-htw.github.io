@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Bauplan: Operate your lakehouse with zero infrastructure
+[(link)](https://blog.det.life/bauplan-operate-your-lakehouse-with-zero-infrastructure-f15a24ca33a9)
+
+- bauplan
+[(link)](https://www.bauplanlabs.com/)
+
+- Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
+[(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
+
+- Open Source Python Data Lineage with OpenLineage and Hamilton
+[(link)](https://medium.com/@stefan.krawczyk/open-source-python-data-lineage-with-openlineage-and-hamilton-fe599c0459d6)
+
+- Maximizing Simple RAG Performance Using RL in Python
+[(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
+
 - The Most Comprehensive Explanation of Session, Cookie, Token, and JWT
 [(link)](https://levelup.gitconnected.com/the-http-protocol-is-a-stateless-protocol-that-is-every-time-the-server-receives-a-request-b9c4f31bfbb3)
 
