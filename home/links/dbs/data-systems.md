@@ -174,6 +174,45 @@ is_slide: 0
 [(link)](https://docs.influxdata.com/influxdb3/core/)
 - blog
 [(link)](https://www.influxdata.com/blog/)
+- InfluxDB 3 Core and Enterprise Are Now in Beta
+[(link)](https://www.influxdata.com/blog/influxdb3-open-source-public-beta/)
+- How to Set Up Real-Time SMS/WhatsApp Alerts with InfluxDB 3 Processing Engine
+[(link)](https://www.influxdata.com/blog/setting-up-sms-whatsapp-alerts-influxdb3/)
+- Alerting with InfluxDB 3 Core and Enterprise
+[(link)](https://www.influxdata.com/blog/core-enterprise-alerting-influxdb3/)
+- Building Your First Python Plugin for the InfluxDB 3 Processing Engine
+[(link)](https://www.influxdata.com/blog/influxdb3-processing-engine-python-plugin/)
+- InfluxDB 3 Core and Enterprise Architecture Highlights
+[(link)](https://www.influxdata.com/blog/influxdb3-core-enterprise-architecture/)
+- Query the Latest Values in Under 10ms with the InfluxDB 3 Last Value Cache
+[(link)](https://www.influxdata.com/blog/-influxdb3-last-value-cache/)
+- Making Most Recent Value Queries Hundreds of Times Faster
+[(link)](https://www.influxdata.com/blog/making-recent-value-queries-hundreds-times-faster/)
+- CLI Operations for InfluxDB 3 Core and Enterprise 
+[(link)](https://www.influxdata.com/blog/cli-operations-influxdb3-core-enterprise/)
+- Apache DataFusion is Now the Fastest Single Node Engine for Querying Apache Parquet Files
+[(link)](https://www.influxdata.com/blog/apache-datafusion-fastest-single-node-querying-engine/)
+- Optimizing Queries in InfluxDB 3.0 Using Progressive Evaluation 
+[(link)](https://www.influxdata.com/blog/query-optimization-progressive-evaluation-influxdb/)
+- Part Two: InfluxDB 3.0 Under the Hood
+[(link)](https://www.influxdata.com/blog/understanding-influxdb-3.0-part-two/)
+- System Tables Part 2: How We Made It Faster
+[(link)](https://www.influxdata.com/blog/system-tables-part-two-influxdb/)
+- System Tables Part 1: Introduction and Best Practices
+[(link)](https://www.influxdata.com/blog/system-tables-intro-part-one-influxdb/)
+- Handling Partial Writes in InfluxDB 3.0
+[(link)](https://www.influxdata.com/blog/handling-partial-writes-influxdb-3.0/)
+- Using StringView / German Style Strings to Make Queries Faster: Part 1 - Reading Parquet 
+[(link)](https://www.influxdata.com/blog/faster-queries-with-stringview-part-one-influxdb/)
+- Using StringView / German Style Strings to Make Queries Faster: Part 2 - String Operations 
+[(link)](https://www.influxdata.com/blog/faster-queries-with-stringview-part-two-influxdb/)
+- Using Parquet’s Bloom Filters 
+[(link)](https://www.influxdata.com/blog/using-parquets-bloom-filters/)
+- Flight, DataFusion, Arrow, and Parquet: Using the FDAP Architecture to build InfluxDB 3.0
+[(link)](https://www.influxdata.com/blog/flight-datafusion-arrow-parquet-fdap-architecture-influxdb/)
+- Aggregating Millions of Groups Fast in Apache Arrow DataFusion
+[(link)](https://www.influxdata.com/blog/aggregating-millions-groups-fast-apache-arrow-datafusion/)
+
 
 # kafka
 - Processing guarantees in Kafka
