@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- API-First AI Agentic Patterns: Building Smarter Systems Without the Framework Overhead
+[(link)](https://levelup.gitconnected.com/api-first-ai-agentic-patterns-building-smarter-systems-without-the-framework-overhead-1a0bac2f1b04)
+
+- PostgreSQL Indexes for Columnstore: 1,185x Faster Lookup Queries, 224x Faster Inserts in TimescaleDB
+[(link)](https://medium.com/timescale/postgresql-indexes-for-columnstore-1-185x-faster-lookup-queries-224x-faster-inserts-in-2f10996726eb)
+
 - Bauplan: Operate your lakehouse with zero infrastructure
 [(link)](https://blog.det.life/bauplan-operate-your-lakehouse-with-zero-infrastructure-f15a24ca33a9)
 
