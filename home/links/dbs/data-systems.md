@@ -212,6 +212,9 @@ is_slide: 0
 [(link)](https://www.influxdata.com/blog/flight-datafusion-arrow-parquet-fdap-architecture-influxdb/)
 - Aggregating Millions of Groups Fast in Apache Arrow DataFusion
 [(link)](https://www.influxdata.com/blog/aggregating-millions-groups-fast-apache-arrow-datafusion/)
+- InfluxDB 3.0 Python Client
+[(link)](https://github.com/InfluxCommunity/influxdb3-python/)
+
 
 
 # kafka
