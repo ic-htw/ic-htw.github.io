@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- smallpond
+[(link)](https://github.com/deepseek-ai/smallpond)
+
+- Life Altering Postgresql Patterns
+[(link)](https://mccue.dev/pages/3-11-25-life-altering-postgresql-patterns)
+
 - API-First AI Agentic Patterns: Building Smarter Systems Without the Framework Overhead
 [(link)](https://levelup.gitconnected.com/api-first-ai-agentic-patterns-building-smarter-systems-without-the-framework-overhead-1a0bac2f1b04)
 
