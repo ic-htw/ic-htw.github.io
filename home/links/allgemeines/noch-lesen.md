@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why the Semantic Layer is Essential for Reliable Text-to-SQL and How Wren AI Brings it to Life
+[(link)](https://medium.com/wrenai/why-the-semantic-layer-is-essential-for-reliable-text-to-sql-and-how-wren-ai-brings-it-to-life-c54cc0e6e4bc)
+
+- Transforming VS Code into a Powerful SQL IDE
+[(link)](https://levelup.gitconnected.com/transforming-vs-code-into-a-powerful-sql-ide-26286a2726bf)
+
 - smallpond
 [(link)](https://github.com/deepseek-ai/smallpond)
 
