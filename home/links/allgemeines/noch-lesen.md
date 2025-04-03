@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- I tested out all of the best language models for frontend development. One model stood out amongst the rest.
+[(link)](https://medium.com/codex/i-tested-out-all-of-the-best-language-models-for-frontend-development-one-model-stood-out-f180b9c12bc1)
+
 - Why the Semantic Layer is Essential for Reliable Text-to-SQL and How Wren AI Brings it to Life
 [(link)](https://medium.com/wrenai/why-the-semantic-layer-is-essential-for-reliable-text-to-sql-and-how-wren-ai-brings-it-to-life-c54cc0e6e4bc)
 
