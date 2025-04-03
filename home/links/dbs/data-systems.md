@@ -473,6 +473,21 @@ is_slide: 0
 [(link)](https://docs.timescale.com/)
 - blog
 [(link)](https://www.timescale.com/blog/)
+- Timescale architecture for real-time analytics
+[(link)](https://docs.timescale.com/about/latest/whitepaper/)
+- How to Set Up a Dashboard for Global Energy Data Analytics (Real-World Use Case)
+[(link)](https://www.timescale.com/blog/how-to-set-up-a-dashboard-for-global-energy-data-analytics-real-world-use-case)
+- How to Build an IoT Pipeline for Real-Time Analytics in PostgreSQL
+[(link)](https://www.timescale.com/blog/how-to-build-an-iot-pipeline-for-real-time-analytics-in-postgresql)
+- Time Series Benchmark Suite (TSBS)
+[(link)](https://github.com/timescale/tsbs)
+- IoT Renewable Energy Models: Building the Future With Time-Series Data
+[(link)](https://www.timescale.com/blog/iot-renewable-energy-models-building-the-future-with-time-series-data)
+- Storing IoT Data: 8 Reasons Why You Should Use PostgreSQL
+[(link)](https://www.timescale.com/blog/storing-iot-data-why-you-should-use-postgresql)
+- What InfluxDB Got Wrong
+[(link)](https://www.timescale.com/blog/what-influxdb-got-wrong)
+
 
 # vannaAI
 - Vanna.ai

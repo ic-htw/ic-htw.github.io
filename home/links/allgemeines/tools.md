@@ -123,6 +123,9 @@ is_slide: 0
 [(link)](https://labs.play-with-docker.com/)
 - Docker pros are shrinking images by 99%
 [(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
+- How to add users to Docker container?
+[(link)](https://stackoverflow.com/questions/27701930/how-to-add-users-to-docker-container)
+
 
 
 # docling
