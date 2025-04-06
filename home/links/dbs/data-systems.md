@@ -475,6 +475,10 @@ is_slide: 0
 [(link)](https://www.timescale.com/blog/)
 - Timescale architecture for real-time analytics
 [(link)](https://docs.timescale.com/about/latest/whitepaper/)
+- Timescale @ Medium
+[(link)](https://medium.com/timescale)
+- Real-time Analytics in Postgres: Why It’s Hard (and How to Solve It)
+[(link)](https://medium.com/timescale/real-time-analytics-in-postgres-why-its-hard-and-how-to-solve-it-bd28fa7314c7)
 - How to Set Up a Dashboard for Global Energy Data Analytics (Real-World Use Case)
 [(link)](https://www.timescale.com/blog/how-to-set-up-a-dashboard-for-global-energy-data-analytics-real-world-use-case)
 - How to Build an IoT Pipeline for Real-Time Analytics in PostgreSQL
