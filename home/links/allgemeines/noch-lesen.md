@@ -9,20 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Postgres vs. SQL Server: B-Tree Index Differences & the Benefit of Deduplication
-[(link)](https://pganalyze.com/blog/postgresql-vs-sql-server-btree-index-deduplication)
+- LLMs Do Not Predict the Next Word
+[(link)](https://www.harysdalvi.com/blog/llms-dont-predict-next-word)
 
-- Internals of MVCC in Postgres: Hidden costs of Updates vs Inserts
-[(link)](https://medium.com/@rohanjnr44/internals-of-mvcc-in-postgres-hidden-costs-of-updates-vs-inserts-381eadd35844)
-
-- RTABench
-[(link)](https://github.com/timescale/rtabench/)
-
-- pg_sentence_transformer
-[(link)](https://github.com/serpent7776/pg_sentence_transformer)
-
-- Are Dashboards Dead?
-[(link)](https://medium.com/basejump-ai/are-dashboards-dead-0e64a57dd68c)
+- Comparing Model Context Protocol (MCP) Server Frameworks
+[(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
 
 - I tested out all of the best language models for frontend development. One model stood out amongst the rest.
 [(link)](https://medium.com/codex/i-tested-out-all-of-the-best-language-models-for-frontend-development-one-model-stood-out-f180b9c12bc1)
