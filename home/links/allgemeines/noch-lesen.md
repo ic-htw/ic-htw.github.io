@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Drawing and Coding 18 RL Algorithms from Scratch
+[(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
+
+- Fine-Tuning a Text-to-SQL LLM for Reasoning Using GRPO
+[(link)](https://blog.gopenai.com/fine-tuning-a-text-to-sql-llm-for-reasoning-using-grpo-ec2c1b55278f)
+
+- From Zero to Production: Building a Rock-Solid K3s Cluster with PostgreSQL
+[(link)](https://blogs.learningdevops.com/from-zero-to-production-building-a-rock-solid-k3s-cluster-with-postgresql-676dcd678ae4)
+
+- Beyond Materialized Views: Using DuckDB for In-Process Columnar Caching
+[(link)](https://medium.com/striim/beyond-materialized-views-using-duckdb-for-in-process-columnar-caching-98b8387b8568)
+
 - LLMs Do Not Predict the Next Word
 [(link)](https://www.harysdalvi.com/blog/llms-dont-predict-next-word)
 
