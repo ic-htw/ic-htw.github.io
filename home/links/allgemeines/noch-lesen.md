@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Time to Better Know The Time in PostgreSQL
+[(link)](https://boringsql.com/posts/know-the-time-in-postgresql/)
+
+- A case where SQL joins struggle but MongoDB documents shine
+[(link)](https://dev.to/franckpachot/a-case-where-sql-joins-struggle-but-mongodb-documents-shine-11kj)
+
+- pgai: Importing Wikipedia into PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/pgai-importing-wikipedia-into-postgresql/)
+
+- TimescaleDB to the Rescue - Speeding Up Statistics
+[(link)](https://sarvendev.com/posts/timescale-db-to-the-rescue/)
+
+- A Postgres MCP server 
+[(link)](https://github.com/crystaldba/postgres-mcp)
+
 - Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)
 [(link)](https://medium.com/google-cloud/model-context-protocol-mcp-with-google-gemini-llm-a-deep-dive-full-code-ea16e3fac9a3)
 
