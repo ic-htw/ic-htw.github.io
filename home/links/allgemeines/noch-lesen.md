@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)
+[(link)](https://medium.com/google-cloud/model-context-protocol-mcp-with-google-gemini-llm-a-deep-dive-full-code-ea16e3fac9a3)
+
+- Is this the future of SQL? Exploring the Pipe Syntax
+[(link)](https://medium.com/@mtrentz/is-this-the-future-of-sql-exploring-the-pipe-syntax-6122abb1f2a4)
+
 - Drawing and Coding 18 RL Algorithms from Scratch
 [(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
 
