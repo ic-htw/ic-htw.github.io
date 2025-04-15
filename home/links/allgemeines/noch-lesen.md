@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison
+[(link)](https://medium.com/timescale/pgvector-vs-pinecone-vector-database-performance-and-cost-comparison-269f012f2ef4)
+
 - Time to Better Know The Time in PostgreSQL
 [(link)](https://boringsql.com/posts/know-the-time-in-postgresql/)
 
