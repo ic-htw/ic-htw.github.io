@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The end of Docker? The Reasons Behind Developers Changing Their Runtimes
+[(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
+
+- Llama 4 is here: How to Deploy Meta’s New Multimodal Model 100% Locally?
+[(link)](https://henrynavarro.org/llama-4-is-here-how-to-deploy-metas-new-multimodal-model-100-locally-6f29b49ea3bf)
+
 - Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison
 [(link)](https://medium.com/timescale/pgvector-vs-pinecone-vector-database-performance-and-cost-comparison-269f012f2ef4)
 
