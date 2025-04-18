@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Agent mode: available to all users and supports MCP
+[(link)](https://code.visualstudio.com/blogs/2025/04/07/agentMode)
+
+- GitHub Copilot in VS Code
+[(link)](https://code.visualstudio.com/docs/copilot/overview)
+
+- Vibe coding with GitHub Copilot: Agent mode and MCP support rolling out to all VS Code users
+[(link)](https://github.blog/news-insights/product-news/github-copilot-agent-mode-activated/)
+
 - The end of Docker? The Reasons Behind Developers Changing Their Runtimes
 [(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
 
