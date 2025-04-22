@@ -77,6 +77,9 @@ is_slide: 0
 [(link)](https://medium.com/@qdrddr/wrenai-text-to-sql-api-the-good-stuff-e4d57c0c181c)
 - How to use Meta Llama 3 to query MySQL database using Ollama and Wren AI
 [(link)](https://blog.getwren.ai/how-to-use-meta-llama-3-to-query-mysql-database-using-ollama-on-your-machine-2c087b204e41)
+- Why the Semantic Layer is Essential for Reliable Text-to-SQL and How Wren AI Brings it to Life
+[(link)](https://medium.com/wrenai/why-the-semantic-layer-is-essential-for-reliable-text-to-sql-and-how-wren-ai-brings-it-to-life-c54cc0e6e4bc)
+
 
 
 # benchmarks

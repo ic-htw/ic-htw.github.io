@@ -37,6 +37,9 @@ is_slide: 0
 [(link)](https://medium.com/google-cloud/intelligible-advanced-sql-queries-with-pipe-syntax-86d3a431b660)
 - The Pipe Syntax Revolution: How Google’s New SQL Is Making Queries Easier
 [(link)](https://medium.com/@vishalbarvaliya/the-pipe-syntax-revolution-how-googles-new-sql-is-making-queries-easier-7e69f522d894)
+- Is this the future of SQL? Exploring the Pipe Syntax
+[(link)](https://medium.com/@mtrentz/is-this-the-future-of-sql-exploring-the-pipe-syntax-6122abb1f2a4)
+
 
 
 

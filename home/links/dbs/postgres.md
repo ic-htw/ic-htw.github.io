@@ -28,6 +28,19 @@ is_slide: 0
 - Postrgres - don't use this
 [(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
 
+# date/time
+- Time to Better Know The Time in PostgreSQL
+[(link)](https://boringsql.com/posts/know-the-time-in-postgresql/)
+- Time, TIMETZ, Timestamp, and TimestampTZ in PostgreSQL
+[(link)](https://www.cockroachlabs.com/blog/time-data-types-postgresql/)
+- Working with Time in Postgres
+[(link)](https://www.crunchydata.com/blog/working-with-time-in-postgres)
+- Time Ranges without Overlapping
+[(link)](https://sqlfordevs.com/non-overlapping-time-ranges)
+- Time zone management in PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/time-zone-management-in-postgresql/)
+
+
 
 # monitoring/configuration
 - Custom SQL Queries in Grafana for PostgreSQL Insights
@@ -340,12 +353,8 @@ is_slide: 0
 [(link)](https://fragland.dev/a-guide-to-table-partitioning-with-postgresql-12)
 - Postgres Guide
 [(link)](https://www.postgresguide.com/)
-- Time, TIMETZ, Timestamp, and TimestampTZ in PostgreSQL
-[(link)](https://www.cockroachlabs.com/blog/time-data-types-postgresql/)
 - Holy Sheet! Remote Access CSV Files from Postgres
 [(link)](https://www.crunchydata.com/blog/holy-sheet-remote-access-csv-files-from-postgres)
-- Working with Time in Postgres
-[(link)](https://www.crunchydata.com/blog/working-with-time-in-postgres)
 - Use PostgreSQL DOMAIN rules to validate columns of data
 [(link)](https://aiven.io/developer/use-postgresql-domain-rules-to-validate)
 - Understanding PostgreSQL Parallel Query
@@ -360,8 +369,6 @@ is_slide: 0
 [(link)](https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most/)
 - Don't Do This
 [(link)](https://wiki.postgresql.org/wiki/Don%27t_Do_This)
-- Time Ranges without Overlapping
-[(link)](https://sqlfordevs.com/non-overlapping-time-ranges)
 - Everything you know about setting `work_mem` is wrong.
 [(link)](https://thebuild.com/blog/2023/03/13/everything-you-know-about-setting-work_mem-is-wrong/)
 - postgresml
@@ -418,8 +425,6 @@ is_slide: 0
 [(link)](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/speeding-up-sort-performance-in-postgres-15/ba-p/3396953)
 - Battery-Included Open-Source Database DistributionBattery-Included Open-Source Database Distribution
 [(link)](https://pigsty.cc/#/)
-- Time zone management in PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/time-zone-management-in-postgresql/)
 - Counting faster with Postgres
 [(link)](https://arctype.com/blog/postgres-count/)
 - Parquet and Postgres in the Data Lake

@@ -152,3 +152,7 @@ is_slide: 0
 - BatchNorm 3
 [(link)](https://blog.paperspace.com/busting-the-myths-about-batch-normalization/)
 
+# RL
+- Drawing and Coding 18 RL Algorithms from Scratch
+[(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
+

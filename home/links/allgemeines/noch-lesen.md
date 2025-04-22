@@ -9,26 +9,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Agent mode: available to all users and supports MCP
-[(link)](https://code.visualstudio.com/blogs/2025/04/07/agentMode)
+- VS Code’s New AI Did My Job for 30 Minutes. The Results? Honestly Shocking!
+[(link)](https://medium.com/mr-plan-publication/vs-codes-new-ai-did-my-job-for-30-minutes-the-results-honestly-shocking-33b490a5afde)
 
-- GitHub Copilot in VS Code
-[(link)](https://code.visualstudio.com/docs/copilot/overview)
+- Building a modern Data Warehouse from scratch
+[(link)](https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118)
 
-- Vibe coding with GitHub Copilot: Agent mode and MCP support rolling out to all VS Code users
-[(link)](https://github.blog/news-insights/product-news/github-copilot-agent-mode-activated/)
+- Stop Using Hibernate: The Hidden Dangers You Need to Know
+[(link)](https://medium.com/javarevisited/stop-using-hibernate-the-hidden-dangers-you-need-to-know-f0d82ebdfa43)
 
-- The end of Docker? The Reasons Behind Developers Changing Their Runtimes
-[(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
+- Agentic AI: Comparing New Open-Source Frameworks
+[(link)](https://medium.com/data-science-collective/agentic-ai-comparing-new-open-source-frameworks-21ec676732df)
 
-- Llama 4 is here: How to Deploy Meta’s New Multimodal Model 100% Locally?
-[(link)](https://henrynavarro.org/llama-4-is-here-how-to-deploy-metas-new-multimodal-model-100-locally-6f29b49ea3bf)
-
-- Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison
-[(link)](https://medium.com/timescale/pgvector-vs-pinecone-vector-database-performance-and-cost-comparison-269f012f2ef4)
-
-- Time to Better Know The Time in PostgreSQL
-[(link)](https://boringsql.com/posts/know-the-time-in-postgresql/)
+- Building a Modern Data Lakehouse with DuckDB and MinIO
+[(link)](https://medium.com/@sweetkobem/building-a-modern-data-lakehouse-with-duckdb-and-minio-ec689a61e7bd)
 
 - A case where SQL joins struggle but MongoDB documents shine
 [(link)](https://dev.to/franckpachot/a-case-where-sql-joins-struggle-but-mongodb-documents-shine-11kj)
@@ -39,17 +33,17 @@ is_slide: 0
 - TimescaleDB to the Rescue - Speeding Up Statistics
 [(link)](https://sarvendev.com/posts/timescale-db-to-the-rescue/)
 
+- Comparing Model Context Protocol (MCP) Server Frameworks
+[(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
+
 - A Postgres MCP server 
 [(link)](https://github.com/crystaldba/postgres-mcp)
 
+- Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
+[(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
+
 - Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)
 [(link)](https://medium.com/google-cloud/model-context-protocol-mcp-with-google-gemini-llm-a-deep-dive-full-code-ea16e3fac9a3)
-
-- Is this the future of SQL? Exploring the Pipe Syntax
-[(link)](https://medium.com/@mtrentz/is-this-the-future-of-sql-exploring-the-pipe-syntax-6122abb1f2a4)
-
-- Drawing and Coding 18 RL Algorithms from Scratch
-[(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
 
 - Fine-Tuning a Text-to-SQL LLM for Reasoning Using GRPO
 [(link)](https://blog.gopenai.com/fine-tuning-a-text-to-sql-llm-for-reasoning-using-grpo-ec2c1b55278f)
@@ -63,14 +57,8 @@ is_slide: 0
 - LLMs Do Not Predict the Next Word
 [(link)](https://www.harysdalvi.com/blog/llms-dont-predict-next-word)
 
-- Comparing Model Context Protocol (MCP) Server Frameworks
-[(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
-
 - I tested out all of the best language models for frontend development. One model stood out amongst the rest.
 [(link)](https://medium.com/codex/i-tested-out-all-of-the-best-language-models-for-frontend-development-one-model-stood-out-f180b9c12bc1)
-
-- Why the Semantic Layer is Essential for Reliable Text-to-SQL and How Wren AI Brings it to Life
-[(link)](https://medium.com/wrenai/why-the-semantic-layer-is-essential-for-reliable-text-to-sql-and-how-wren-ai-brings-it-to-life-c54cc0e6e4bc)
 
 - Transforming VS Code into a Powerful SQL IDE
 [(link)](https://levelup.gitconnected.com/transforming-vs-code-into-a-powerful-sql-ide-26286a2726bf)
@@ -92,9 +80,6 @@ is_slide: 0
 
 - bauplan
 [(link)](https://www.bauplanlabs.com/)
-
-- Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
-[(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
 
 - Open Source Python Data Lineage with OpenLineage and Hamilton
 [(link)](https://medium.com/@stefan.krawczyk/open-source-python-data-lineage-with-openlineage-and-hamilton-fe599c0459d6)

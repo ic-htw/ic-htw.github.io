@@ -125,6 +125,9 @@ is_slide: 0
 [(link)](https://aws.plainenglish.io/docker-pros-are-shrinking-images-by-99-the-hidden-techniques-you-cant-afford-to-miss-a70ee26b4cbf)
 - How to add users to Docker container?
 [(link)](https://stackoverflow.com/questions/27701930/how-to-add-users-to-docker-container)
+- The end of Docker? The Reasons Behind Developers Changing Their Runtimes
+[(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
+
 
 
 
@@ -465,6 +468,13 @@ is_slide: 0
 [(link)](https://medium.com/@ordinaryindustries/the-ultimate-vs-code-setup-for-python-538026b34d94)
 - 14 VS Code Extensions Every Data Engineer Should Swear By for Maximum Productivity
 [(link)](https://medium.com/@manojkumar.vadivel/14-vs-code-extensions-every-data-engineer-should-swear-by-for-maximum-productivity-9fcc2e1b3c4f)
+- Agent mode: available to all users and supports MCP
+[(link)](https://code.visualstudio.com/blogs/2025/04/07/agentMode)
+- GitHub Copilot in VS Code
+[(link)](https://code.visualstudio.com/docs/copilot/overview)
+- Vibe coding with GitHub Copilot: Agent mode and MCP support rolling out to all VS Code users
+[(link)](https://github.blog/news-insights/product-news/github-copilot-agent-mode-activated/)
+
 
  
 
