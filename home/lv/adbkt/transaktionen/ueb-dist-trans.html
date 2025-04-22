@@ -7,6 +7,18 @@ is_slide: 0
 
 <h1>Übung Verteilte Transaktionen</h1>
 
+<h2>Vorbereitung</h2>
+<p class="w3-large">In pg1 und pg2 durchführen</p>
+<pre><code>su postgres
+psql postgres</code></pre>
+
+<pre><code class="language-sql">SHOW max_prepared_transactions;
+ALTER SYSTEM SET max_prepared_transactions = 100;</code></pre>
+
+<p class="w3-large">Container stoppen und starten (restart)</p>
+  
+<h2>Locks</h2>
+<pre><code class="language-sql">select relation::regclass, mode from pg_locks;</code></pre>
 
 <h2>Umsetzung Zwei-Phasen-Commit-Protokoll</h2>
 
@@ -36,3 +48,4 @@ is_slide: 0
     <li>Two-Phase Commit support methods (<a href="https://www.psycopg.org/psycopg3/docs/api/connections.html#tpc-methods">link</a>)</li>
     <li>Verwenden sie als xid den String "ttt"</li>
 </ul>
+
