@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Postgres Language Server: Initial Release
+[(link)](https://supabase.com/blog/postgres-language-server)
+
 - VS Code’s New AI Did My Job for 30 Minutes. The Results? Honestly Shocking!
 [(link)](https://medium.com/mr-plan-publication/vs-codes-new-ai-did-my-job-for-30-minutes-the-results-honestly-shocking-33b490a5afde)
 
