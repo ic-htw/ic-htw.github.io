@@ -236,9 +236,6 @@ home: &r
                   - t: Graph-Datenmodelle
                     ts: Graph-Datenmodelle
                     url: /home/lv/adbkt/infrastruktur/infra-graph-dm.html
-                  - t: xxx anlegen
-                    ts: xxx anlegen
-                    url: /home/lv/adbkt/infrastruktur/xxx.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
@@ -302,9 +299,6 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
-                  - t: "Ü: Neo4j-Container erstellen"
-                    ts: "Ü: Neo4j-Container erstellen"
-                    url: /home/lv/adbkt/graphdb/ueb-neo4j-cont.html
                   - t: "Ü: Cypher-Abfragen 1"
                     ts: "Ü: Cypher-Abfragen 1"
                     url: /home/lv/adbkt/graphdb/ueb1-cypher.html
