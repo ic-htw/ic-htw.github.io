@@ -6,6 +6,10 @@ is_slide: 0
 ---
 
 # aaa
+- RL Buch - git
+[(link)](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On-3E/)
+- RL Buch -recordings
+[(link)](https://youtube.com/playlist?list=PLMVwuZENsfJmjPlBuFy5u7c3uStMTJYz7)
 - mPLUG-DocOwl 1.5: A leap forward in OCR-Free document understanding
 [(link)](https://medium.com/@simeon.emanuilov/mplug-docowl-1-5-a-leap-forward-in-ocr-free-document-understanding-255d6605dc67)
 - Mesop - Web UIs in Python 
