@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- GPT-4.1 just PERMANENTLY transformed how the world will interact with data
+[(link)](https://medium.com/@austin-starks/gpt-4-1-just-permanently-transformed-how-the-world-will-interact-with-data-a788cbbf1b0d)
+
+- How to Setup and Use PostgreSQL MCP Server
+[(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
+
 - Postgres Language Server: Initial Release
 [(link)](https://supabase.com/blog/postgres-language-server)
 
