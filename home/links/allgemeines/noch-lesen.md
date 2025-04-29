@@ -12,6 +12,12 @@ is_slide: 0
 - GPT-4.1 just PERMANENTLY transformed how the world will interact with data
 [(link)](https://medium.com/@austin-starks/gpt-4-1-just-permanently-transformed-how-the-world-will-interact-with-data-a788cbbf1b0d)
 
+- SQLMesh Incremental Modeling with DuckDB: A Hands-On Tutorial
+[(link)](https://medium.com/@andymadson/sqlmesh-incremental-modeling-with-duckdb-a-hands-on-tutorial-9cf5b11d6e80)
+
+- Building a Multi-Agent System with Multiple MCP Servers using Smolagents
+[(link)](https://pub.towardsai.net/building-a-multi-agent-system-with-multiple-mcp-servers-using-smolagents-95e9cedb1334)
+
 - How to Setup and Use PostgreSQL MCP Server
 [(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
 
