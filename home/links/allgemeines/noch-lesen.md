@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
+[(link)](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579)
+
 - GPT-4.1 just PERMANENTLY transformed how the world will interact with data
 [(link)](https://medium.com/@austin-starks/gpt-4-1-just-permanently-transformed-how-the-world-will-interact-with-data-a788cbbf1b0d)
 
