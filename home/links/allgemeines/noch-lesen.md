@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
+[(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
+
+- Dynamic Data Source Routing in Spring Boot: Master Multi-Tenancy & Read-Write Separation
+[(link)](https://blog.devgenius.io/dynamic-data-source-routing-in-spring-boot-master-multi-tenancy-read-write-separation-ea45811f6e65)
+
+- Documents to Markdown Beyond Conventional Limits with gpt4.1 | ExtractThinker
+[(link)](https://pub.towardsai.net/documents-to-markdown-beyond-conventional-limits-with-gpt4-1-extractthinker-cc71ead1c87b)
+
+- Postgres to ClickHouse: Data Modeling Tips V2
+[(link)](https://clickhouse.com/blog/postgres-to-clickhouse-data-modeling-tips-v2)
+
+- Announcing the new ClickHouse SQL Playground
+[(link)](https://clickhouse.com/blog/announcing-the-new-sql-playground)
+
 - Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
 [(link)](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579)
 
