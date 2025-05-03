@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Should you run PostgreSQL on Kubernetes?
+[(link)](https://medium.com/@jake.page91/should-you-run-postgresql-on-kubernetes-9a96d6fffefa)
+
+- The Future of Data is a rude awakening for the Modern Data Stack
+[(link)](https://medium.com/@hugolu87/the-future-of-data-is-a-rude-awakening-for-the-modern-data-stack-7732a4fd11c6)
+
 - Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
 [(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
 
@@ -32,12 +38,6 @@ is_slide: 0
 
 - SQLMesh Incremental Modeling with DuckDB: A Hands-On Tutorial
 [(link)](https://medium.com/@andymadson/sqlmesh-incremental-modeling-with-duckdb-a-hands-on-tutorial-9cf5b11d6e80)
-
-- Building a Multi-Agent System with Multiple MCP Servers using Smolagents
-[(link)](https://pub.towardsai.net/building-a-multi-agent-system-with-multiple-mcp-servers-using-smolagents-95e9cedb1334)
-
-- How to Setup and Use PostgreSQL MCP Server
-[(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
 
 - Postgres Language Server: Initial Release
 [(link)](https://supabase.com/blog/postgres-language-server)
@@ -65,18 +65,6 @@ is_slide: 0
 
 - TimescaleDB to the Rescue - Speeding Up Statistics
 [(link)](https://sarvendev.com/posts/timescale-db-to-the-rescue/)
-
-- Comparing Model Context Protocol (MCP) Server Frameworks
-[(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
-
-- A Postgres MCP server 
-[(link)](https://github.com/crystaldba/postgres-mcp)
-
-- Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
-[(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
-
-- Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)
-[(link)](https://medium.com/google-cloud/model-context-protocol-mcp-with-google-gemini-llm-a-deep-dive-full-code-ea16e3fac9a3)
 
 - Fine-Tuning a Text-to-SQL LLM for Reasoning Using GRPO
 [(link)](https://blog.gopenai.com/fine-tuning-a-text-to-sql-llm-for-reasoning-using-grpo-ec2c1b55278f)
@@ -135,9 +123,6 @@ is_slide: 0
 - Can Artificial Intelligence Created Better Tables Than You?
 [(link)](https://stokerpostgresql.blogspot.com/2025/03/can-artificial-intelligence-created.html)
 
-- Claude with MCPs Replaced Cursor & Windsurf — How Did That Happen?
-[(link)](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96)
-
 - Turbocharging Denodo AI SDK: How Semantic Caching Makes Text-to-SQL 9X Faster
 [(link)](https://medium.com/data-science-collective/turbocharging-denodo-ai-sdk-how-semantic-caching-makes-text-to-sql-9x-faster-5f58249641ab)
 
@@ -173,12 +158,6 @@ is_slide: 0
 
 - Microsoft PostgreSQL OSS engine team: reflecting on 2024
 [(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/microsoft-postgresql-oss-engine-team-reflecting-on-2024/4388700)
-
-- Model Context Protocol (MCP)
-[(link)](https://github.com/modelcontextprotocol)
-
-- Getting Started: Model Context Protocol
-[(link)](https://medium.com/@kenzic/getting-started-model-context-protocol-e0a80dddff80)
 
 - Is Kimball Still Relevant in the Modern Data Warehouse Era?
 [(link)](https://medium.com/@neeraj3685/kimball-in-the-lakehouse-era-adapting-dimensional-modeling-for-modern-data-2587ee0536c7)
