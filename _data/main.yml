@@ -357,28 +357,28 @@ home: &r
                     url: /home/lv/adbkt/a/insta/insta.pdf
                   - t: "Ü: DynamoDB"
                     ts: "Ü: DynamoDB"
-                    url: /home/lv/adbkt/uebungen/dynamodb.html
+                    url: /home/lv/adbkt/sonstiges/dynamodb.html
                   - t:  "Ü: Langchain"
                     ts:  "Ü: Langchain"
-                    url: /home/lv/adbkt/uebungen/langchain.html
+                    url: /home/lv/adbkt/sonstiges/langchain.html
                   - t:  "Ü: Retail Sales"
                     ts:  "Ü: Retail Sales"
-                    url: /home/lv/adbkt/uebungen/retail.html
+                    url: /home/lv/adbkt/sonstiges/retail.html
                   - t: "Ü: Rekursive Abfrage"
                     ts: "Ü: Rekursive Abfrage"
-                    url: /home/lv/adbkt/uebungen/rec-sql.html
+                    url: /home/lv/adbkt/sonstiges/rec-sql.html
                   - t:  "Ü: SQL mit ChatGPT"
                     ts:  "Ü: SQL mit ChatGPT"
-                    url: /home/lv/adbkt/uebungen/sql-chatgpt.html
+                    url: /home/lv/adbkt/sonstiges/sql-chatgpt.html
                   - t:  "Ü: Hana, BTP Account"
                     ts:  "Ü: Hana, BTP Account"
-                    url: /home/lv/adbkt/uebungen/hana-btp-account.html
+                    url: /home/lv/adbkt/sonstiges/hana-btp-account.html
                   - t: "Ü: Hana Graph"
                     ts: "Ü: Hana Graph"
-                    url: /home/lv/adbkt/uebungen/hana-graph.html
+                    url: /home/lv/adbkt/sonstiges/hana-graph.html
                   - t: "Ü: Closeness Centrality in SAP Hana"
                     ts: "Ü: Closeness Centrality in SAP Hana"
-                    url: /home/lv/adbkt/uebungen/hana-cc.html
+                    url: /home/lv/adbkt/sonstiges/hana-cc.html
               - t: Prüfungsleistungen
                 ts: Prüfungsleistungen
                 url: /home/lv/adbkt/pruefungen/1-pruefungen.html
