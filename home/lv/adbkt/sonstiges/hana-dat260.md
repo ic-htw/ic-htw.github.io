@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-vorlesungen
+nav: adbkt-sonstiges
 ---
 
 # Data Download und Import

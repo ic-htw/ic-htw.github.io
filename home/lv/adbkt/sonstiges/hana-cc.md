@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-uebungen
+nav: adbkt-sonstiges
 is_slide: 0
 ---
 
