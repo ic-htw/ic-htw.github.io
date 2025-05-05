@@ -493,6 +493,9 @@ is_slide: 0
 [(link)](https://www.timescale.com/blog/storing-iot-data-why-you-should-use-postgresql)
 - What InfluxDB Got Wrong
 [(link)](https://www.timescale.com/blog/what-influxdb-got-wrong)
+- Quickly Building SQL Dashboards for Time Series With Continuous Aggregates
+[(link)](https://medium.com/timescale/quickly-building-sql-dashboards-for-time-series-with-continuous-aggregates-2e6f6956716c)
+
 
 
 # vannaAI
