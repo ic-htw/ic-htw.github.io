@@ -475,6 +475,8 @@ is_slide: 0
 [(link)](https://docs.timescale.com/self-hosted/latest/install/installation-docker/#install-timescaledb-from-a-docker-container)
 - blog
 [(link)](https://www.timescale.com/blog/)
+- Tutorials
+[(link)](https://docs.timescale.com/tutorials/latest/)
 - Timescale architecture for real-time analytics
 [(link)](https://docs.timescale.com/about/latest/whitepaper/)
 - Timescale @ Medium
