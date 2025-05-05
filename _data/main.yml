@@ -405,6 +405,12 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t:  tsdb
+                    ts:  tsdb
+                    url: /home/lv/adbkt/zzz/tsdb.html
+                  - t:  timscaledb
+                    ts:  timscaledb
+                    url: /home/lv/adbkt/zzz/timscaledb.html
                   - t:  zzz01
                     ts:  zzz01
                     url: /home/lv/adbkt/zzz/zzz01.html
