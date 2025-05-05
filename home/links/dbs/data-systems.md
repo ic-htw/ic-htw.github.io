@@ -497,6 +497,8 @@ is_slide: 0
 [(link)](https://www.timescale.com/blog/what-influxdb-got-wrong)
 - Quickly Building SQL Dashboards for Time Series With Continuous Aggregates
 [(link)](https://medium.com/timescale/quickly-building-sql-dashboards-for-time-series-with-continuous-aggregates-2e6f6956716c)
+- Time-Series Database: An Explainer
+[(link)](https://www.timescale.com/blog/time-series-database-an-explainer)
 
 
 
