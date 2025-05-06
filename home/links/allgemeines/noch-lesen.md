@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
+[(link)](https://medium.com/@community_md101/lakehouse-2-0-the-open-system-that-lakehouse-1-0-was-meant-to-be-part-1-743efc645ea6)
+
+- How to Monitor PostgreSQL Like a Pro
+[(link)](https://medium.com/timescale/how-to-monitor-postgresql-like-a-pro-5-techniques-every-developer-should-know-68581c49a4a4)
+
 - Should you run PostgreSQL on Kubernetes?
 [(link)](https://medium.com/@jake.page91/should-you-run-postgresql-on-kubernetes-9a96d6fffefa)
 
