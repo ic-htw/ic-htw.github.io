@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- JDK 24 is Here! Game-Changing Features Every Java Developer Must Know
+[(link)](https://amritpandey.medium.com/jdk-24-is-here-game-changing-features-every-java-developer-must-know-c34754286d02)
+
+- Propensity-Scoring Matching (PSM) using Machine learning in SQL
+[(link)](https://medium.com/data-science-collective/propensity-scoring-matching-psm-using-machine-learning-in-sql-339b7fcc24e7)
+
+- Building a Multi-Modal Retrieval-Augmented Generation (RAG) System: A Comprehensive Guide
+[(link)](https://pub.towardsai.net/building-a-multi-modal-retrieval-augmented-generation-rag-system-a-comprehensive-guide-0626a88b7c82)
+
 - Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
 [(link)](https://medium.com/@community_md101/lakehouse-2-0-the-open-system-that-lakehouse-1-0-was-meant-to-be-part-1-743efc645ea6)
 
