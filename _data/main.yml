@@ -230,8 +230,8 @@ home: &r
                   - t: Cassandra Container anlegen
                     ts: Cassandra Container anlegen
                     url: /home/lv/adbkt/infrastruktur/infra-cas-cont.html
-                  - t: Neo4j Container anlegen
-                    ts: Neo4j Container anlegen
+                  - t: Neo4j Container / Python-Zugriff
+                    ts: Neo4j Container / Python-Zugriff
                     url: /home/lv/adbkt/infrastruktur/infra-neo4j-cont.html
                   - t: Graph-Datenmodelle
                     ts: Graph-Datenmodelle
@@ -305,9 +305,6 @@ home: &r
                   - t:  "Ü: Cypher-Abfragen 2"
                     ts:  "Ü: Cypher-Abfragen 2"
                     url: /home/lv/adbkt/graphdb/ueb2-cypher.html
-                  - t:  "Ü: Cypher-Python"
-                    ts:  "Ü: Cypher-Python"
-                    url: /home/lv/adbkt/graphdb/ueb-python-cypher.html
                   - t:  "Ü: Graph-Data-Science"
                     ts: "Ü: Graph-Data-Science"
                     url: /home/lv/adbkt/graphdb/gds.html
@@ -405,6 +402,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t:  tsdb-links
+                    ts:  tsdb-links
+                    url: /home/lv/adbkt/zzz/tsdb-links.html
                   - t:  tsdb
                     ts:  tsdb
                     url: /home/lv/adbkt/zzz/tsdb.html
