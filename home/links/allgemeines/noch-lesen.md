@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- ClickHouse Architecture 101—A Comprehensive Overview (2025)
+[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
+
+- A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
+[(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
+
+- The Challenge of Primary Keys in Partitioned Tables in PostgreSQL
+[(link)](https://medium.com/@dfs.techblog/the-challenge-of-primary-keys-in-partitioned-tables-in-postgresql-1b61b6f237d6)
+
 - JDK 24 is Here! Game-Changing Features Every Java Developer Must Know
 [(link)](https://amritpandey.medium.com/jdk-24-is-here-game-changing-features-every-java-developer-must-know-c34754286d02)
 

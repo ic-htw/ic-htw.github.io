@@ -17,18 +17,57 @@ is_slide: 0
 - duckdb: Temporal Analysis with Stream Windowing Functions in DuckDB
 [(link)](https://duckdb.org/2025/05/02/stream-windowing-functions.html)
 
+- timescale: Counter Analytics in PostgreSQL: Beyond Simple Data Denormalization
+[(link)](bbb)
+
+- timescale: Real-Time Analytics for Time Series: A Dev’s Intro to Continuous Aggregates
+[(link)](https://www.timescale.com/blog/real-time-analytics-for-time-series-continuous-aggregates)
+
+- aaa
+[(link)](bbb)
+
+
+
+# High Cardinality
 - timescale: What Is High Cardinality?
 [(link)](https://www.timescale.com/blog/what-is-high-cardinality)
 
 - timescale: How Different Databases Handle High-Cardinality Data
 [(link)](https://www.timescale.com/blog/how-different-databases-handle-high-cardinality-data)
 
+- Performance Impact of High Cardinality in Time-Series DBs 
+[(link)](https://last9.io/blog/performance-implications-of-high-cardinality-in-time-series-databases/)
+
+- aaa
+[(link)](bbb)
+
+
+
 # TimeseriesDB 
+- timescale: The Best Time-Series Databases Compared
+[(link)](https://www.timescale.com/learn/the-best-time-series-databases-compared)
+
 - timescale: Time-Series Database: An Explainer
 [(link)](https://www.timescale.com/blog/time-series-database-an-explainer)
 
 - timescale: Time-series data: Why (and how) to use a relational database instead of NoSQL
 [(link)](https://www.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c)
+
+- timescale: How to Write Better Queries for Time-Series Data Analysis With Custom SQL Functions
+[(link)](https://www.timescale.com/blog/how-to-write-better-queries-for-time-series-data-analysis-using-custom-sql-functions)
+
+- clickhouse: An intro to time-series databases
+[(link)](https://clickhouse.com/engineering-resources/what-is-time-series-database)
+
+- alibaba: Key Concepts and Features of Time Series Databases
+[(link)](https://www.alibabacloud.com/blog/key-concepts-and-features-of-time-series-databases_594734)
+
+- tdengine: Characteristics of Time Series Data
+[(link)](https://tdengine.com/characteristics-of-time-series-data/)
+
+- aaa
+[(link)](bbb)
+
 
 # Use Cases
 - timescale: How to Set Up a Dashboard for Global Energy Data Analytics
@@ -41,6 +80,11 @@ is_slide: 0
 [(link)](https://www.timescale.com/blog/iot-renewable-energy-models-building-the-future-with-time-series-data)
 
 
+- aaa
+[(link)](bbb)
+
+
+
 # Benchmarks
 - Time Series Benchmark Suite
 [(link)](https://github.com/timescale/tsbs#time-series-benchmark-suite-tsbs)
@@ -50,6 +94,22 @@ is_slide: 0
 
 - aaa
 [(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+
+# InfluxDB
+- InfluxDB 3.0 Under the Hood
+[(link)](https://www.influxdata.com/blog/understanding-influxdb-3.0-part-two/)
+
+- InfluxDB 3 Core and Enterprise Architecture Highlights
+[(link)](https://www.influxdata.com/blog/influxdb3-core-enterprise-architecture/)
+
+- aaa
+[(link)](bbb)
+
+
 
 # TimescaleDB
 - Timescale architecture for real-time analytics
@@ -61,33 +121,22 @@ is_slide: 0
 - PostgreSQL Indexes for Columnstore: 1,185x Faster Lookup Queries, 224x Faster Inserts in TimescaleDB
 [(link)](https://www.timescale.com/blog/postgresql-indexes-for-columnstore)
 
+- PostgreSQL + TimescaleDB: 1,000x Faster Queries, 90 % Data Compression, and Much More
+[(link)](https://www.timescale.com/blog/postgresql-timescaledb-1000x-faster-queries-90-data-compression-and-much-more)
+
+- Pg_partman vs. Hypertables for Postgres Partitioning
+[(link)](https://www.timescale.com/learn/pg_partman-vs-hypertables-for-postgres-partitioning)
+
+- Increase Your Storage Savings With TimescaleDB 2.6: Introducing Compression for Continuous Aggregates
+[(link)](https://www.timescale.com/blog/increase-your-storage-savings-with-timescaledb-2-6-introducing-compression-for-continuous-aggregates)
+
+- aaa
+[(link)](bbb)
+
+
 # Misc
 - The Stream Processing Model Behind Google Cloud Dataflow
 [(link)](https://towardsdatascience.com/the-stream-processing-model-behind-google-cloud-dataflow-0d927c9506a0/)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
 
 - aaa
 [(link)](bbb)
