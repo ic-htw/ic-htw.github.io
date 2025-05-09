@@ -5,9 +5,6 @@ is_slide: 0
 ---
 
 # Timeseries
-- baresquare: Time Series Analysis: Definitions, Types & Challenges
-[(link)](https://baresquare.com/blog/decoding-time-series-an-in-depth-look-at-definitions-types-and-challenges)
-
 - timescale: What Is a Time Series and How Is It Used?
 [(link)](https://www.timescale.com/blog/time-series-introduction)
 
@@ -23,6 +20,9 @@ is_slide: 0
 - timescale: Real-Time Analytics for Time Series: A Dev’s Intro to Continuous Aggregates
 [(link)](https://www.timescale.com/blog/real-time-analytics-for-time-series-continuous-aggregates)
 
+- What is real-time analytics?
+[(link)](https://clickhouse.com/engineering-resources/what-is-real-time-analytics)
+
 - aaa
 [(link)](bbb)
 
@@ -35,8 +35,11 @@ is_slide: 0
 - timescale: How Different Databases Handle High-Cardinality Data
 [(link)](https://www.timescale.com/blog/how-different-databases-handle-high-cardinality-data)
 
-- Performance Impact of High Cardinality in Time-Series DBs 
+- last9: Performance Impact of High Cardinality in Time-Series DBs 
 [(link)](https://last9.io/blog/performance-implications-of-high-cardinality-in-time-series-databases/)
+
+- last9: What is High Cardinality?
+[(link)](https://last9.io/guides/high-cardinality/what-is-high-cardinality/)
 
 - aaa
 [(link)](bbb)
@@ -98,8 +101,27 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 
+# Systems
 
-# InfluxDB
+## ClickHouse
+- ClickHouse Architecture 101—A Comprehensive Overview (2025)
+[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
+
+- Building a product analytics solution with ClickHouse
+[(link)](https://clickhouse.com/blog/building-product-analytics-with-clickhouse)
+
+- Building an Observability Solution with ClickHouse at Dash0
+[(link)](https://clickhouse.com/blog/building-an-observability-solution-with-clickhouse-at-dash0)
+
+- ClickHouse and OpenTelemetry
+[(link)](https://clickhouse.com/blog/clickhouse-and-open-telemtry)
+
+- aaa
+[(link)](bbb)
+
+
+
+## InfluxDB
 - InfluxDB 3.0 Under the Hood
 [(link)](https://www.influxdata.com/blog/understanding-influxdb-3.0-part-two/)
 
@@ -109,9 +131,27 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 
+- alibaba: A Comprehensive Analysis of Open-Source Time Series Databases (3)
+[(link)](bbb)
 
 
-# TimescaleDB
+
+## Prometheus
+- Home
+[(link)](https://prometheus.io/)
+
+- Docs
+[(link)](https://prometheus.io/docs/introduction/overview/)
+
+- aaa
+[(link)](bbb)
+
+- alibaba: A Comprehensive Analysis of Open-Source Time Series Databases (4)
+[(link)](https://www.alibabacloud.com/blog/a-comprehensive-analysis-of-open-source-time-series-databases-4_594733?spm=a2c65.11461447.0.0.62321ef8lvj4kd)
+
+
+
+## TimescaleDB
 - Timescale architecture for real-time analytics
 [(link)](https://docs.timescale.com/about/latest/whitepaper/)
 
