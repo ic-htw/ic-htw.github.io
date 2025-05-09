@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What's new with Postgres at Microsoft, 2025 edition
+[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/whats-new-with-postgres-at-microsoft-2025-edition/4410710)
+
+- Pgai Vectorizer Now Works With Any Postgres Database
+[(link)](https://www.timescale.com/blog/pgai-vectorizer-now-works-with-any-postgres-database)
+
+- Which LLM writes the best analytical SQL?
+[(link)](https://www.tinybird.co/blog-posts/which-llm-writes-the-best-sql)
+
 - ClickHouse Architecture 101—A Comprehensive Overview (2025)
 [(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
 
