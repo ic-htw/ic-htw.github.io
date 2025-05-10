@@ -18,8 +18,8 @@ is_slide: 0
 
 ## Code
 - Geo in Python 
-[(link)](/home/lv/adbkt/a-ipynb/intro-geo.ipynb) 
-[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/intro-geo.ipynb)
+[(link)](/home/lv/adbkt/a-ipynb/geo.ipynb) 
+[(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/geo.ipynb)
 
 ## Gebäude-Shapes
 Schreiben Sie in Python Code, der eine Visualisierung von Gebäude-Shapes erzeugt

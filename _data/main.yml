@@ -307,7 +307,7 @@ home: &r
                     url: /home/lv/adbkt/graphdb/ueb2-cypher.html
                   - t:  "Ü: Graph-Data-Science"
                     ts: "Ü: Graph-Data-Science"
-                    url: /home/lv/adbkt/graphdb/gds.html
+                    url: /home/lv/adbkt/graphdb/ueb-gds.html
               - t: Geo-Datenverarbeitung
                 ts: Geo-Datenverarbeitung
                 url: /home/lv/adbkt/geo/1-geo.html
@@ -317,13 +317,36 @@ home: &r
                     url: /home/lv/adbkt/a/geo/geo.pdf
                   - t: "Ü: Geo-Abfragen"
                     ts: "Ü: Geo-Abfragen"
-                    url: /home/lv/adbkt/geo/geo-sql.html
+                    url: /home/lv/adbkt/geo/ueb-geo-sql.html
                   - t: "Ü: Visualisierung Geodaten"
                     ts: "Ü: Visualisierung Geodaten"
-                    url: /home/lv/adbkt/geo/geo-viz.html
+                    url: /home/lv/adbkt/geo/ueb-geo-viz.html
                   - t: "Ü: pgRouting"
                     ts: "Ü: pgRouting"
-                    url: /home/lv/adbkt/geo/pgrouting.html
+                    url: /home/lv/adbkt/geo/ueb-pgrouting.html
+              - t: Cloud DB
+                ts: Cloud DB
+                url: /home/lv/adbkt/clouddb/1-clouddb.html
+                sub:
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/clouddb/dynamodb.html
+                  - t: "Ü: DynamoDB"
+                    ts: "Ü: DynamoDB"
+                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
+              - t: KI und DB
+                ts: KI und DB
+                url: /home/lv/adbkt/kidb/1-kidb.html
+                sub:
+                  - t: LLMs
+                    ts: Large Language Models
+                    url: /home/lv/adbkt/kidb/llms.html
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/kidb/vectordb.html
+                  - t:  "Ü: Langchain"
+                    ts:  "Ü: Langchain"
+                    url: /home/lv/adbkt/kidb/ueb-langchain.html
               - t: Sonstiges
                 ts: Sonstiges
                 url: /home/lv/adbkt/sonstiges/1-sonstiges.html
@@ -331,15 +354,6 @@ home: &r
                   - t:  JSON in Postgres
                     ts:  JSON in Postgres
                     url: /home/lv/adbkt/a/json/json-pg.pdf
-                  - t: DynamoDB
-                    ts: DynamoDB
-                    url: /home/lv/adbkt/sonstiges/dynamo.html
-                  - t: Vektordatenbanken
-                    ts: Vektordatenbanken
-                    url: /home/lv/adbkt/sonstiges/vectordb.html
-                  - t: Large Language Models
-                    ts: LLMs
-                    url: /home/lv/adbkt/sonstiges/llms.html
                   - t: Window-Funktionen in SQL
                     ts: Window-Funktionen in SQL
                     url: /home/lv/adbkt/sonstiges/window-sql.html
@@ -352,12 +366,6 @@ home: &r
                   - t:  Instacart
                     ts:  Instacart
                     url: /home/lv/adbkt/a/insta/insta.pdf
-                  - t: "Ü: DynamoDB"
-                    ts: "Ü: DynamoDB"
-                    url: /home/lv/adbkt/sonstiges/dynamodb.html
-                  - t:  "Ü: Langchain"
-                    ts:  "Ü: Langchain"
-                    url: /home/lv/adbkt/sonstiges/langchain.html
                   - t:  "Ü: Retail Sales"
                     ts:  "Ü: Retail Sales"
                     url: /home/lv/adbkt/sonstiges/retail.html

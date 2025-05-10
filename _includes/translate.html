@@ -77,17 +77,25 @@
 {% elsif page.nav == "adbkt-geo"%}
   {% assign x = site.data.main.adbkt[5] %}
   {% assign y = site.data.main.lv[2] %}
-<!-- ADBKT - Sonstiges -->
-{% elsif page.nav == "adbkt-sonstiges"%}
+<!-- ADBKT - Cloud DB -->
+{% elsif page.nav == "adbkt-clouddb"%}
   {% assign x = site.data.main.adbkt[6] %}
   {% assign y = site.data.main.lv[2] %}
-<!-- ADBKT - Übungen -->
-{% elsif page.nav == "adbkt-pruefungen"%}
+<!-- ADBKT - KI und DB -->
+{% elsif page.nav == "adbkt-kidb"%}
   {% assign x = site.data.main.adbkt[7] %}
   {% assign y = site.data.main.lv[2] %}
-<!-- ADBKT - Prüfungsleistungen -->
-{% elsif page.nav == "adbkt-zzz"%}
+<!-- ADBKT - Sonstiges -->
+{% elsif page.nav == "adbkt-sonstiges"%}
   {% assign x = site.data.main.adbkt[8] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Prüfungsleistungen -->
+{% elsif page.nav == "adbkt-pruefungen"%}
+  {% assign x = site.data.main.adbkt[9] %}
+  {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - zzz -->
+{% elsif page.nav == "adbkt-zzz"%}
+  {% assign x = site.data.main.adbkt[10] %}
   {% assign y = site.data.main.lv[2] %}
 
   <!-- DataMan -->
