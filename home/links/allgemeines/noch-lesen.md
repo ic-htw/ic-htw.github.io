@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Claude Sonet on Azure Databricks- Automate ETL Genration
+[(link)](https://medium.com/@mariusz_kujawski/claude-sonet-on-azure-databricks-automate-etl-genration-b174f33efe63)
+
+- AI Data Agents: Unlocking a New Era of Data Intelligence and Analytics
+[(link)](https://medium.com/basejump-ai/ai-data-agents-unlocking-a-new-era-of-data-intelligence-and-analytics-f0b4437d89b5)
+
 - What's new with Postgres at Microsoft, 2025 edition
 [(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/whats-new-with-postgres-at-microsoft-2025-edition/4410710)
 
