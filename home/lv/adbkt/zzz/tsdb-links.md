@@ -23,8 +23,9 @@ is_slide: 0
 - What is real-time analytics?
 [(link)](https://clickhouse.com/engineering-resources/what-is-real-time-analytics)
 
-- aaa
-[(link)](bbb)
+- tdengine: Characteristics of Time Series Data
+[(link)](https://tdengine.com/characteristics-of-time-series-data/)
+
 
 
 
@@ -65,11 +66,8 @@ is_slide: 0
 - alibaba: Key Concepts and Features of Time Series Databases
 [(link)](https://www.alibabacloud.com/blog/key-concepts-and-features-of-time-series-databases_594734)
 
-- tdengine: Characteristics of Time Series Data
-[(link)](https://tdengine.com/characteristics-of-time-series-data/)
-
-- aaa
-[(link)](bbb)
+- tdengine: What Is a Time-Series Database and Why Do I Need One?
+[(link)](https://tdengine.com/what-is-a-time-series-database/)
 
 
 # Use Cases

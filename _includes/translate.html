@@ -85,17 +85,21 @@
 {% elsif page.nav == "adbkt-kidb"%}
   {% assign x = site.data.main.adbkt[7] %}
   {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Zeitreihendatenbanken -->
+{% elsif page.nav == "adbkt-tsdb"%}
+  {% assign x = site.data.main.adbkt[8] %}
+  {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Sonstiges -->
 {% elsif page.nav == "adbkt-sonstiges"%}
   {% assign x = site.data.main.adbkt[8] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Prüfungsleistungen -->
 {% elsif page.nav == "adbkt-pruefungen"%}
-  {% assign x = site.data.main.adbkt[9] %}
+  {% assign x = site.data.main.adbkt[10] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - zzz -->
 {% elsif page.nav == "adbkt-zzz"%}
-  {% assign x = site.data.main.adbkt[10] %}
+  {% assign x = site.data.main.adbkt[11] %}
   {% assign y = site.data.main.lv[2] %}
 
   <!-- DataMan -->

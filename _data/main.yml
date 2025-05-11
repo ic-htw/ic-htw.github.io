@@ -347,6 +347,16 @@ home: &r
                   - t:  "Ü: Langchain"
                     ts:  "Ü: Langchain"
                     url: /home/lv/adbkt/kidb/ueb-langchain.html
+              - t: Zeitreihendatenbanken
+                ts: Zeitreihendatenbanken
+                url: /home/lv/adbkt/tsdb/1-tsdb.html
+                sub:
+                  - t: Zeitreihendatenbanken
+                    ts: Zeitreihendatenbanken
+                    url: /home/lv/adbkt/tsdb/tsdb.html
+                  - t: "Ü: Zeitreihendatenbanken"
+                    ts: "Ü: Zeitreihendatenbanken"
+                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
               - t: Sonstiges
                 ts: Sonstiges
                 url: /home/lv/adbkt/sonstiges/1-sonstiges.html
