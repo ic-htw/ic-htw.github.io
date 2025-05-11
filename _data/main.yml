@@ -426,6 +426,9 @@ home: &r
                   - t:  tsdb
                     ts:  tsdb
                     url: /home/lv/adbkt/zzz/tsdb.html
+                  - t:  cardinality
+                    ts:  cardinality
+                    url: /home/lv/adbkt/zzz/cardinality.html
                   - t:  timscaledb
                     ts:  timscaledb
                     url: /home/lv/adbkt/zzz/timscaledb.html

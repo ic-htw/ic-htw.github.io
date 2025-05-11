@@ -48,17 +48,8 @@ is_slide: 0
 
 
 # TimeseriesDB 
-- timescale: The Best Time-Series Databases Compared
-[(link)](https://www.timescale.com/learn/the-best-time-series-databases-compared)
-
 - timescale: Time-Series Database: An Explainer
 [(link)](https://www.timescale.com/blog/time-series-database-an-explainer)
-
-- timescale: Time-series data: Why (and how) to use a relational database instead of NoSQL
-[(link)](https://www.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c)
-
-- timescale: How to Write Better Queries for Time-Series Data Analysis With Custom SQL Functions
-[(link)](https://www.timescale.com/blog/how-to-write-better-queries-for-time-series-data-analysis-using-custom-sql-functions)
 
 - clickhouse: An intro to time-series databases
 [(link)](https://clickhouse.com/engineering-resources/what-is-time-series-database)
@@ -68,6 +59,16 @@ is_slide: 0
 
 - tdengine: What Is a Time-Series Database and Why Do I Need One?
 [(link)](https://tdengine.com/what-is-a-time-series-database/)
+
+- timescale: How to Write Better Queries for Time-Series Data Analysis With Custom SQL Functions
+[(link)](https://www.timescale.com/blog/how-to-write-better-queries-for-time-series-data-analysis-using-custom-sql-functions)
+
+- timescale: The Best Time-Series Databases Compared
+[(link)](https://www.timescale.com/learn/the-best-time-series-databases-compared)
+
+- timescale: Time-series data: Why (and how) to use a relational database instead of NoSQL
+[(link)](https://www.timescale.com/blog/time-series-data-why-and-how-to-use-a-relational-database-instead-of-nosql-d0cd6975e87c)
+
 
 
 # Use Cases
