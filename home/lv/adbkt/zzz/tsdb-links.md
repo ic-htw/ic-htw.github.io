@@ -48,6 +48,9 @@ is_slide: 0
 
 
 # TimeseriesDB 
+- questdb: Master the Time-series Database (TSDB)
+[(link)](https://questdb.com/glossary/time-series-database/)
+
 - timescale: Time-Series Database: An Explainer
 [(link)](https://www.timescale.com/blog/time-series-database-an-explainer)
 
@@ -102,23 +105,6 @@ is_slide: 0
 
 # Systems
 
-## ClickHouse
-- ClickHouse Architecture 101—A Comprehensive Overview (2025)
-[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
-
-- Building a product analytics solution with ClickHouse
-[(link)](https://clickhouse.com/blog/building-product-analytics-with-clickhouse)
-
-- Building an Observability Solution with ClickHouse at Dash0
-[(link)](https://clickhouse.com/blog/building-an-observability-solution-with-clickhouse-at-dash0)
-
-- ClickHouse and OpenTelemetry
-[(link)](https://clickhouse.com/blog/clickhouse-and-open-telemtry)
-
-- aaa
-[(link)](bbb)
-
-
 
 ## InfluxDB
 - InfluxDB 3.0 Under the Hood
@@ -126,9 +112,6 @@ is_slide: 0
 
 - InfluxDB 3 Core and Enterprise Architecture Highlights
 [(link)](https://www.influxdata.com/blog/influxdb3-core-enterprise-architecture/)
-
-- aaa
-[(link)](bbb)
 
 - alibaba: A Comprehensive Analysis of Open-Source Time Series Databases (3)
 [(link)](bbb)
@@ -142,11 +125,41 @@ is_slide: 0
 - Docs
 [(link)](https://prometheus.io/docs/introduction/overview/)
 
-- aaa
-[(link)](bbb)
-
 - alibaba: A Comprehensive Analysis of Open-Source Time Series Databases (4)
 [(link)](https://www.alibabacloud.com/blog/a-comprehensive-analysis-of-open-source-time-series-databases-4_594733?spm=a2c65.11461447.0.0.62321ef8lvj4kd)
+
+
+## Kdb+
+- Home
+[(link)](https://kx.com/products/kdb/)
+
+- Doc
+[(link)](https://code.kx.com/q/)
+
+- KDB+ Explained
+[(link)](https://yjschein.medium.com/kdb-explained-52b64661430d)
+
+- KDB+ - Quick Guide
+[(link)](https://www.tutorialspoint.com/kdbplus/kdbplus_quick_guide.htm)
+
+## Graphite
+- Home
+[(link)](https://graphiteapp.org/)
+
+- Doc
+[(link)](https://graphite.readthedocs.io/en/stable/overview.html)
+
+- Monitoring with Graphite: Architecture and Concepts
+[(link)](https://www.metricfire.com/blog/monitoring-with-graphite-architecture-and-concepts/)
+
+- What is Graphite?
+[(link)](https://medium.com/@MetricFire/what-is-graphite-dbb87037d067)
+
+- The Architecture of Open Source Applications (Volume 1) Graphite
+[(link)](https://aosabook.org/en/v1/graphite.html)
+
+- aaa
+[(link)](bbb)
 
 
 
@@ -169,8 +182,90 @@ is_slide: 0
 - Increase Your Storage Savings With TimescaleDB 2.6: Introducing Compression for Continuous Aggregates
 [(link)](https://www.timescale.com/blog/increase-your-storage-savings-with-timescaledb-2-6-introducing-compression-for-continuous-aggregates)
 
+## QuestDB
+- Home
+[(link)](https://questdb.com/)
+
+- Doc
+[(link)](https://questdb.com/docs/)
+
+- Blog
+[(link)](https://questdb.com/blog/)
+
 - aaa
 [(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+## Apache Druid
+- Home
+[(link)](bbb)
+
+- Doc
+[(link)](https://druid.apache.org/docs/latest/design/)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+## GridDB
+- Home
+[(link)](bbb)
+
+- Doc
+[(link)](https://docs.griddb.net/)
+
+- Blog
+[(link)](https://griddb.net/en/blogs/)
+
+
+
+
+## TDengine
+- Home
+[(link)](https://tdengine.com/)
+
+- Doc
+[(link)](https://docs.tdengine.com/)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- High Performance at Any Scale
+[(link)](https://tdengine.com/high-performance/)
+
+- aaa
+[(link)](bbb)
+
+
+- aaa
+[(link)](bbb)
+
+## ClickHouse
+- ClickHouse Architecture 101—A Comprehensive Overview (2025)
+[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
+
+- Building a product analytics solution with ClickHouse
+[(link)](https://clickhouse.com/blog/building-product-analytics-with-clickhouse)
+
+- Building an Observability Solution with ClickHouse at Dash0
+[(link)](https://clickhouse.com/blog/building-an-observability-solution-with-clickhouse-at-dash0)
+
+- ClickHouse and OpenTelemetry
+[(link)](https://clickhouse.com/blog/clickhouse-and-open-telemtry)
+
+- aaa
+[(link)](bbb)
+
 
 
 # Misc
