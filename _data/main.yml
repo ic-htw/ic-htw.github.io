@@ -344,9 +344,9 @@ home: &r
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
                     url: /home/lv/adbkt/kidb/vectordb.html
-                  - t:  "Ü: Langchain"
-                    ts:  "Ü: Langchain"
-                    url: /home/lv/adbkt/kidb/ueb-langchain.html
+                  - t:  "Ü: Vektordatenbanken"
+                    ts:  "Ü: Vektordatenbanken"
+                    url: /home/lv/adbkt/kidb/ueb-vectordb.html
               - t: Zeitreihendatenbanken
                 ts: Zeitreihendatenbanken
                 url: /home/lv/adbkt/tsdb/1-tsdb.html
