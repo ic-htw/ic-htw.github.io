@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why Netflix and Apple Are Choosing Rust, PostgreSQL, and Iceberg for Their Data Stacks
+[(link)](https://blog.devgenius.io/why-netflix-and-apple-are-choosing-rust-postgresql-and-iceberg-for-their-data-stacks-985242ff564e)
+
 - Claude Sonet on Azure Databricks- Automate ETL Genration
 [(link)](https://medium.com/@mariusz_kujawski/claude-sonet-on-azure-databricks-automate-etl-genration-b174f33efe63)
 
