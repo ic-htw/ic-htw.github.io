@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 8 Common Mistakes in Vector Search 
+[(link)](https://ai.gopubby.com/8-common-mistakes-in-vector-search-and-how-to-avoid-them-e48d849c23f8)
+
+- Best Practices for Postgres Database Replication
+[(link)](https://medium.com/timescale/best-practices-for-postgres-database-replication-b5ed69caf96d)
+
+- queryhub
+[(link)](https://www.queryhub.ai/)
+
+- How LLMs Are Revolutionizing Database Queries Through Natural Language
+[(link)](https://www.queryhub.ai/blog/natural-language-to-sql-llm)
+
+- pgModeller
+[(link)](https://pgmodeler.io/)
+
 - Why Netflix and Apple Are Choosing Rust, PostgreSQL, and Iceberg for Their Data Stacks
 [(link)](https://blog.devgenius.io/why-netflix-and-apple-are-choosing-rust-postgresql-and-iceberg-for-their-data-stacks-985242ff564e)
 
