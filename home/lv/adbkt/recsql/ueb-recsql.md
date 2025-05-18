@@ -7,6 +7,9 @@ is_slide: 0
 
 # Rekursive Abfrage - Summierung in einer Hierarchie
 
+> ![Bild](/home/lv/adbkt/a/sql/fig/baum.png)
+
+
 ## Hierarchie in einer Graphdatenbank
 
 <pre><code class="cypher">MATCH (x:Node) DETACH DELETE x;</code></pre>
@@ -35,18 +38,20 @@ CREATE
   (n20)-[:S]->(n17),
   (n21)-[:S]->(n17)</code></pre>
 
+## Summierung mit Cypher
+
 <pre><code class="cypher">MATCH (p:Node)
 OPTIONAL MATCH (c:Node)-[:S*0..]->(p)
 WITH p, sum(coalesce(c.v, 0)) AS sum
 RETURN p.id AS node_id, sum
 ORDER BY node_id</code></pre>
 
+# Ergebnis
+> ![Bild](/home/lv/adbkt/a/sql/120-100.png)
 
 
-## Aufgabenstellung
-Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Blättern bis zur Wurzel aufsummiert.
+## Hierarchie in einer relationalen Datenbank
 
-## Tabelle
   ```sql
   create table tree0 (
     id integer not null primary key,
@@ -55,7 +60,6 @@ Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Bl
   );
   ```
 
-## Beispieldaten
   ```sql
   insert into tree0 values (11, null, null);
   insert into tree0 values (12, 11, null);
@@ -71,8 +75,9 @@ Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Bl
   ```
 > ![Bild](/home/lv/adbkt/a/sql/fig/tabelle.png)
 
-## Baumstruktur
-> ![Bild](/home/lv/adbkt/a/sql/fig/baum.png)
+## Aufgabenstellung
+Schreiben Sie eine SQL-Abfrage, die in einer Baumstrukture alle Werte von den Blättern bis zur Wurzel aufsummiert.
+
 
 ## Erwartetes Ergebnis der Abfrage
 > ![Bild](/home/lv/adbkt/a/sql/fig/ergebnis.png)

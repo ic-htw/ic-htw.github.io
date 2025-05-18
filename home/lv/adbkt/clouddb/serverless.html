@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: adbkt-clouddb
-title: Serverlose DB - ADBKT
+title: Serverlose Datenbanksysteme - ADBKT
 is_slide: 1
 n: 20
 ---
@@ -9,72 +9,150 @@ n: 20
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>xxx</h1>
+<h1>Merkmale</h1>
+<ul class="w3-large">
+    <li>Abstraktion der physischen Infrastruktur</li>
+    <li>Reduzierter Verwaltungsaufwand</li>
+    <li>Hohe Verfügbarkeit und Ausfallsicherheit</li>
+    <li>Nutzungsbasierte Abrechnung</li>
+    <li>Automatische Skalierung (Elastische Skalierung)</li>
+    <li>Skalierung auf Null</li>
+</ul>
 <div class="ic-gap"></div>
-
 
 <!--
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>xxx</h1>
+<h1>Herausforderungen </h1>
+<ul class="w3-large">
+    <li>Kaltstart und potenziell höhere Latenz</li>
+    <li>Sicherheit - weniger direkte Kontrolle</li>
+    <li>Anbieterbindung (Vendor Lock-in)</li>
+    <li>Begrenzungen hinsichtlich der maximalen Ausführungszeiten</li>
+    <li>Begrenzter Zugriff auf zentrale Infrastrukturaspekte</li>
+    <li>Debugging und Fehlersuche</li>
+    <li>Kostenunvorhersehbarkeit</li>
+    <li>Auswahlkomplexität</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Automatische elastische Skalierung</h1>
+<ul class="w3-large">
+    <li>Anpassung von Ressourcen (VMs, Container, Rechen-/Speicherressourcen)</li>
+    <li>Automatisch in Echtzeit an aktuelle Anforderungen</li>
+    <li>Bewältigung großer Transaktionsvolumen und Lastspitzen ohne manuelle Eingriffe</li>
+    <li>Kontinuierliche Überwachung zentraler Leistungsmetriken (CPU, Speicher, Netzwerk, Anfragen) in Echtzeit</li>
+    <li>Entscheidung über Ressourcenzuweisung basierend auf vordefinierten oder maschinell erlernten Regeln/Schwellenwerten</li>
+    <li>Inkrementelle Skalierung</li>
+    <li>Automatischer Skalierungsprozess</li>
+ </ul>
 <div class="ic-gap"></div>
 
 
 <!--
     03 ******************************************************************
 -->
-{% include padding-id.html id=3 %}
-<h1>xxx</h1>
+{% include padding-id.html id=4 %}
+<h1>Skalierung auf null (Scale-to-Zero)</h1>
+<ul class="w3-large">
+    <li>Ressourcen automatisch vollständig auf null herunterzufahren, wenn keine Anfragen oder Aktivitäten an die Datenbank gesendet werden</li>
+    <li>Sobald eine neue Anfrage eingeht, wird die Datenbank automatisch wieder hochgefahren und die erforderlichen Ressourcen bereitgestellt</li>
+    <li>Basiert häufig auf einer verteilten Architektur über mehrere Knoten</li>
+    <li>Rechenkapazität (CPU, RAM) und Speicherkapazität können unabhängig skaliert werden</li>
+    <li>Bei minimaler Aktivität werden aktive Knoten heruntergefahren und temporäre Daten verschoben oder gelöscht. Netzwerkressourcen (Verbindungen, Load Balancers) werden deaktiviert</li>
+    <li>Bei neuer Anfrage: System erkennt Aktivität, startet "Hochskalierung" von Null</li>
+    <li>Erforderliche Knoten werden neu gestartet, Rechenressourcen zugewiesen</li>
+    <li>Prozesse sind auf schnelle und reibungslose Wiederaufnahme ausgelegt, um Verzögerungen zu minimieren</li>
+    <li>Architektur ist optimiert, damit keine Daten während der Skalierung verloren gehen</li>
+</ul>
 <div class="ic-gap"></div>
 
 
 <!--
     04 ******************************************************************
 -->
-{% include padding-id.html id=4 %}
-<h1>xxx</h1>
+{% include padding-id.html id=5 %}
+<h1>Preismodell - Pay-As-You-Go</h1>
+<ul class="w3-large">
+    <li>Abrechnungsmodell, bei dem Kunden nur für die tatsächlich genutzten Ressourcen, Dienste oder Produkte bezahlen</li>
+    <li>Kosten sind direkt an das Volumen oder die Menge der verbrauchten Ressourcen gekoppelt (z. B. Anzahl der Anfragen, Speicherkapazität)</li>
+    <li>Keine hohen Anfangsinvestitionen oder langfristigen Verträge notwendig</li>
+    <li>Ermöglicht flexible Nutzung ohne langfristige finanzielle Verpflichtungen</li>
+</ul>
 <div class="ic-gap"></div>
 
 
 <!--
     05 ******************************************************************
 -->
-{% include padding-id.html id=5 %}
-<h1>xxx</h1>
+{% include padding-id.html id=6 %}
+<h1>Preismodell - Provisionierung</h1>
+<ul class="w3-large">
+    <li>Bezeichnet die Zuweisung und Reservierung einer festen Menge an IT-Ressourcen im Voraus</li>
+    <li>Für Nutzer, die eine konstante Arbeitslast und Leistungsniveaus erwarten, bieten einige serverlose Datenbanken diese Option</li>
+    <li>Vorteil: Verfügbarkeit und Leistung der Ressourcen sind sichergestellt, unabhängig von der tatsächlichen Nutzung</li>
+    <li>Kosten: Im Voraus festgelegt und bleiben konstant, unabhängig von der Nutzung</li>
+    <li>Kann für Anwendungen mit konsistenter, vorhersehbarer Leistung kostengünstiger sein</li>
+    <li>Viele Anbieter bieten dennoch Flexibilität zur Anpassung/Erweiterung der provisonierten Ressourcen bei Bedarf</li>
+</ul>
 <div class="ic-gap"></div>
 
 
 <!--
     06 ******************************************************************
 -->
-{% include padding-id.html id=6 %}
-<h1>xxx</h1>
+{% include padding-id.html id=7 %}
+<h1>Sicherheit</h1>
+<ul class="w3-large">
+    <li>Sicherheitsaspekte spielen eine entscheidende Rolle, da die Infrastruktur-Verantwortung beim Cloud-Anbieter liegt</li>
+    <li>Cloud-Anbieter implementieren umfassende Sicherheitsmaßnahmen zur Gewährleistung der Datenintegrität</li>
+    <li>Zentrale Sicherheitsaspekte:</li>
+    <ul class="w3-large">
+        <li>Datenverschlüsselung: Schutz von Daten während Übertragung und im Ruhezustand</li>
+        <li>Zugriffskontrolle: Rollenbasierte Zugriffskontrolle und Identitäts-/Zugriffsmanagement (IAM)</li>
+        <li>Netzwerksicherheit: Virtual Private Clouds (VPCs) und Netzwerksicherheitsgruppen zur Isolierung</li>
+        <li>Protokollierung und Überwachung: Nachverfolgung von Zugriffen/Änderungen für Compliance und Sicherheitsvorfälle</li>
+        <li>Datenisolierung: Strikte Trennung der Daten verschiedener Kunden in Multi-Tenant-Umgebungen</li>
+    </ul>
+</ul>
 <div class="ic-gap"></div>
 
 
 <!--
     07 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
-<h1>xxx</h1>
+{% include padding-id.html id=8 %}
+<h1>Verfügbarkeit und Zuverlässigkeit</h1>
+<ul class="w3-large">
+    <li>Darauf ausgelegt, eine kontinuierliche Nutzung von Anwendungen sicherzustellen, auch unter unerwarteten Bedingungen</li>
+    <li>Automatische Replikation der Daten über mehrere Rechenzentren (Availability Zones)</li>
+    <li>Fehlererkennungs- und -behebungsmechanismen überwachen kontinuierlich, erkennen Fehler automatisch und leiten Verkehr bei Bedarf auf funktionierende Instanzen um, bevor ein Ausfall spürbar wird</li>
+    <li>Integration von Backup- und Wiederherstellungsfunktionen ermöglicht schnelle Datenwiederherstellung</li>
+    <li>Redundanz und Lastverteilung tragen dazu bei, dass die Datenbank funktionsfähig bleibt, selbst wenn Teile der Infrastruktur beeinträchtigt sind</li>
+</ul>
 <div class="ic-gap"></div>
 
 
 <!--
     08 ******************************************************************
 -->
-{% include padding-id.html id=8 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Geografische Verteilung</h1>
+<ul class="w3-large">
+    <li>Nutzung der geografischen Verteilung zur Maximierung von Zuverlässigkeit und Verfügbarkeit</li>
+    <li>Datenbanken werden über mehrere geografisch getrennte Regionen hinweg repliziert</li>
+    <li>Minimiert das Risiko eines vollständigen Ausfalls</li>
+    <li>Der Datenzugriff wird nahtlos auf andere Standorte umgeleitet, ohne dass der Endbenutzer eine Unterbrechung bemerkt</li>
+</ul>
 <div class="ic-gap"></div>
+
 
 
 <!--
@@ -153,14 +231,6 @@ n: 20
     19 ******************************************************************
 -->
 {% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
 <h1>xxx</h1>
 <div class="ic-gap"></div>
 
