@@ -77,29 +77,33 @@
 {% elsif page.nav == "adbkt-geo"%}
   {% assign x = site.data.main.adbkt[5] %}
   {% assign y = site.data.main.lv[2] %}
+<!-- ADBKT - Rekursives SQL -->
+{% elsif page.nav == "adbkt-recsql"%}
+  {% assign x = site.data.main.adbkt[6] %}
+  {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Cloud DB -->
 {% elsif page.nav == "adbkt-clouddb"%}
-  {% assign x = site.data.main.adbkt[6] %}
+  {% assign x = site.data.main.adbkt[7] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - KI und DB -->
 {% elsif page.nav == "adbkt-kidb"%}
-  {% assign x = site.data.main.adbkt[7] %}
+  {% assign x = site.data.main.adbkt[8] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Zeitreihendatenbanken -->
 {% elsif page.nav == "adbkt-tsdb"%}
-  {% assign x = site.data.main.adbkt[8] %}
+  {% assign x = site.data.main.adbkt[9] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Sonstiges -->
 {% elsif page.nav == "adbkt-sonstiges"%}
-  {% assign x = site.data.main.adbkt[8] %}
+  {% assign x = site.data.main.adbkt[10] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - Prüfungsleistungen -->
 {% elsif page.nav == "adbkt-pruefungen"%}
-  {% assign x = site.data.main.adbkt[10] %}
+  {% assign x = site.data.main.adbkt[11] %}
   {% assign y = site.data.main.lv[2] %}
 <!-- ADBKT - zzz -->
 {% elsif page.nav == "adbkt-zzz"%}
-  {% assign x = site.data.main.adbkt[11] %}
+  {% assign x = site.data.main.adbkt[12] %}
   {% assign y = site.data.main.lv[2] %}
 
   <!-- DataMan -->

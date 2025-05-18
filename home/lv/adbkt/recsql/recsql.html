@@ -1,0 +1,70 @@
+---
+layout: default1
+nav: adbkt-recsql
+title: Rekursives SQL - ADBKT
+is_slide: 1
+n: 3
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Allgemeine Struktur </h1>
+<pre><code class="language-sql">with recursive t(n) as (
+  values (1)
+  union all
+  select n+1 from t where n < 100
+)
+select sum(n) from t;</code></pre>
+
+<img class="w3-image" src="/home/lv/adbkt/a/sql/100-100.png">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Daten</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/sql/fig/tabelle.png">
+<img class="w3-image" src="/home/lv/adbkt/a/sql/fig/baum.png"><ul class="w3-large">
+    <li>Tabelle tree0, p: Parent, v: Value</li>
+    <li>Werte gibt es nur bei den Blättern</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Rekursive Abfrage</h1>
+<pre><code class="language-sql">with recursive
+  tree1(id, p, v, lvl, pth) as (
+    select id, p, v, 1, cast(id as varchar(200))
+    from tree0
+    where p is null
+  union all
+    select t0.id, t0.p, t0.v, lvl+1, cast(pth || '/' || t0.id as varchar(200))
+    from tree0 t0 join tree1 t1 on t0.p=t1.id
+  ),
+  tree2(id, p, v, lvl, pth, kind) as (
+    select 
+      id, p, v, lvl, pth,
+      case
+        when lvl=(select min(lvl) from tree1) then 'root'
+        when (not exists (select * from tree1 below where below.p =tree1.id)) then 'leaf'
+        else 'inner'
+      end
+    from tree1
+  )
+select id, p, v, lvl, pth, kind
+from tree2
+order by lvl;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/sql/110-100.png">
+
+<div class="ic-gap"></div>
+
+
