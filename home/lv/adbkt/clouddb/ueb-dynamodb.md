@@ -10,6 +10,10 @@ is_slide: 0
 - Download NoSQL Workbench for DynamoDB
 [(link)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html)
 
+# Modellierung
+- Modellieren sie TourDelight im Single Table Design
+
+<!--
 # Präsentationen
 <table class="w3-table-all">
     <tr>
@@ -49,3 +53,4 @@ is_slide: 0
     </tr>
 </table>
 
+-->

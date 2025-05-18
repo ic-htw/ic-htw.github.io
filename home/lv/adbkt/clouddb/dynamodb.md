@@ -17,3 +17,14 @@ is_slide: 0
 [video1](https://youtu.be/ummOosOW4lE),
 [video2](https://youtu.be/0iGR8GnIItQ)
 
+## Beispiele
+<ul class="w3-large">
+    <li>
+    Social network
+    (<a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-social-network.html">link</a>)
+    </li>
+    <li>
+    Online shop
+    (<a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-online-shop.html">link</a>)
+    </li>
+</ul>

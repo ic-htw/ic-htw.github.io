@@ -324,10 +324,23 @@ home: &r
                   - t: "Ü: pgRouting"
                     ts: "Ü: pgRouting"
                     url: /home/lv/adbkt/geo/ueb-pgrouting.html
+              - t: Rekursives SQL
+                ts: Rekursives SQL
+                url: /home/lv/adbkt/recsql/1-recsql.html
+                sub:
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/recsql/recsql.html
+                  - t: "Ü: Rekursives SQL"
+                    ts: "Ü: Rekursives SQL"
+                    url: /home/lv/adbkt/recsql/ueb-recsql.html
               - t: Cloud DB
                 ts: Cloud DB
                 url: /home/lv/adbkt/clouddb/1-clouddb.html
                 sub:
+                  - t: Serverlose DB
+                    ts: Serverlose DB
+                    url: /home/lv/adbkt/clouddb/serverless.html
                   - t: DynamoDB
                     ts: DynamoDB
                     url: /home/lv/adbkt/clouddb/dynamodb.html
