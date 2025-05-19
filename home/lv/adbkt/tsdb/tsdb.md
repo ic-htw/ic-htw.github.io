@@ -28,7 +28,7 @@ title: Zeitreihendatenbanken
 # Beispiele
 ## IOT
 - Predictive Maintenance: Analyzing historical sensor data to predict equipment failures
-- Smart Homes: Monitoring and controlling appliances.27
+- Smart Homes: Monitoring and controlling appliances
 - Industrial Automation: Tracking machine performance in real-time
 - Environmental Monitoring: Analyzing air quality, weather patterns, water levels
 

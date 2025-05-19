@@ -367,9 +367,9 @@ home: &r
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html
-                  - t: "Ü: Zeitreihendatenbanken"
-                    ts: "Ü: Zeitreihendatenbanken"
-                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
+#                  - t: "Ü: Zeitreihendatenbanken"
+#                    ts: "Ü: Zeitreihendatenbanken"
+#                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
               - t: Sonstiges
                 ts: Sonstiges
                 url: /home/lv/adbkt/sonstiges/1-sonstiges.html
