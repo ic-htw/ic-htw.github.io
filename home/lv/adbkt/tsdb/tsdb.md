@@ -100,154 +100,30 @@ title: Zeitreihendatenbanken
 
 ## InfluxDB
 
-- Architektur
-[(link)](bbb)
+- InfluxDB 3.0 Under the Hood
+[(link)](https://www.influxdata.com/blog/understanding-influxdb-3.0-part-two/)
 
-- Datenmodell
-[(link)](bbb)
+- Flight, DataFusion, Arrow, and Parquet: Using the FDAP Architecture to build InfluxDB 3.0
+[(link)](https://www.influxdata.com/blog/flight-datafusion-arrow-parquet-fdap-architecture-influxdb)
 
-- Speicherung
-[(link)](bbb)
+- Apache Arrow introduction
+[(link)](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/apache-optimization-on-arm)
 
-- Abfragesprache
-[(link)](bbb)
+- Apache Parquet File Format
+[(link)](https://parquet.apache.org/docs/file-format/)
 
-- aaa
-[(link)](bbb)
 
 ## Prometheus
 
-- Architektur
-[(link)](bbb)
+- Docs
+[(link)](https://prometheus.io/docs/introduction/overview/)
 
-- Datenmodell
-[(link)](bbb)
+- PromQL: A Developer's Guide to Prometheus Query Language
+[(link)](https://last9.io/blog/guide-to-prometheus-query-language/)
 
-- Speicherung
-[(link)](bbb)
 
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## Kdb
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## Graphite
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
 
 ## TimescaleDB
 
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## QuestDB
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## Apache Druid
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## GridDB
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-## TDengine
-
-- Architektur
-[(link)](bbb)
-
-- Datenmodell
-[(link)](bbb)
-
-- Speicherung
-[(link)](bbb)
-
-- Abfragesprache
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
+- Timescale architecture for real-time analytics
+[(link)](https://docs.timescale.com/about/latest/whitepaper/)

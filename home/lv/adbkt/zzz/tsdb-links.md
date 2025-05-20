@@ -125,6 +125,9 @@ is_slide: 0
 - Docs
 [(link)](https://prometheus.io/docs/introduction/overview/)
 
+- PromQL: A Developer's Guide to Prometheus Query Language
+[(link)](https://last9.io/blog/guide-to-prometheus-query-language/)
+
 - alibaba: A Comprehensive Analysis of Open-Source Time Series Databases (4)
 [(link)](https://www.alibabacloud.com/blog/a-comprehensive-analysis-of-open-source-time-series-databases-4_594733?spm=a2c65.11461447.0.0.62321ef8lvj4kd)
 
