@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Turning Data into Insight: Flexible Lakehouse with MinIO, Iceberg, Airflow, DBT, Spark, Pandera & Superset
+[(link)](https://medium.com/@sweetkobem/turning-data-into-insight-flexible-lakehouse-with-minio-iceberg-airflow-dbt-spark-pandera-409d036e5542)
+
+- Qwen-3 Fine Tuning Made Easy: Create Custom AI Models with Python and Unsloth
+[(link)](https://pub.towardsai.net/qwen-3-fine-tuning-made-easy-create-custom-ai-models-with-python-and-unsloth-b1a8f684c3f1)
+
 - 8 Common Mistakes in Vector Search 
 [(link)](https://ai.gopubby.com/8-common-mistakes-in-vector-search-and-how-to-avoid-them-e48d849c23f8)
 
