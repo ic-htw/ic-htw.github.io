@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
+[(link)](https://medium.com/data-science-collective/learning-to-rank-advancing-e-commerce-recommendations-with-sql-based-machine-learning-part-1-6ef4c999f034)
+
+- DocETL: Powering Complex Document Processing Pipelines
+[(link)](https://github.com/ucbepic/docetl)
+
+- Testing 17 Prompt Engineering Techniques on 1B Parameter LLM
+[(link)](https://levelup.gitconnected.com/testing-17-prompt-engineering-techniques-on-1b-parameter-llm-f3f9e5348929)
+
+- Introducing Iceberg Table Engine in RisingWave: Manage Streaming Data in Iceberg with SQL
+[(link)](https://towardsdev.com/introducing-iceberg-table-engine-in-risingwave-manage-streaming-data-in-iceberg-with-sql-66c37878aa45)
+
+- Why Are There So Many Databases?
+[(link)](https://blog.det.life/why-are-there-so-many-databases-87d334c5dce6)
+
 - Turning Data into Insight: Flexible Lakehouse with MinIO, Iceberg, Airflow, DBT, Spark, Pandera & Superset
 [(link)](https://medium.com/@sweetkobem/turning-data-into-insight-flexible-lakehouse-with-minio-iceberg-airflow-dbt-spark-pandera-409d036e5542)
 
