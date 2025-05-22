@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Darts
+[(link)](https://unit8co.github.io/darts/index.html)
+
+- Darts: Time Series Made Easy in Python
+[(link)](https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878)
+
+- Transfer Learning for Time Series Forecasting
+[(link)](https://medium.com/unit8-machine-learning-publication/transfer-learning-for-time-series-forecasting-87f39e375278)
+
+- Time Series Forecasting Using Past and Future External Data with Darts
+[(link)](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993)
+
 - Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
 [(link)](https://medium.com/data-science-collective/learning-to-rank-advancing-e-commerce-recommendations-with-sql-based-machine-learning-part-1-6ef4c999f034)
 
