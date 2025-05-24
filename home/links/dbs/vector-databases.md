@@ -122,6 +122,10 @@ is_slide: 0
 
 
 # pg
+- Pgai Vectorizer Now Works With Any Postgres Database
+[(link)](https://www.timescale.com/blog/pgai-vectorizer-now-works-with-any-postgres-database)
+- pgai: Importing Wikipedia into PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/pgai-importing-wikipedia-into-postgresql/)
 - pgvector
 [(link)](https://github.com/pgvector/pgvector)
 - PostgreSQL as a Vector Database: Getting Started and Scaling

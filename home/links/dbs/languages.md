@@ -26,6 +26,13 @@ is_slide: 0
 - Are You Qualified To Use Null in SQL?
 [(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
 
+# sql - ml
+- Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
+[(link)](https://medium.com/data-science-collective/learning-to-rank-advancing-e-commerce-recommendations-with-sql-based-machine-learning-part-1-6ef4c999f034)
+- Propensity-Scoring Matching (PSM) using Machine learning in SQL
+[(link)](https://medium.com/data-science-collective/propensity-scoring-matching-psm-using-machine-learning-in-sql-339b7fcc24e7)
+
+
 
 
 # sql - neue syntax

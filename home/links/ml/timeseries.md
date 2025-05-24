@@ -4,10 +4,48 @@ nav: links-ml
 title:  Timeseries
 is_slide: 0
 ---
+# anomaly detection
+- Anomaly Detection
+[(link)](https://lolithasherley7.medium.com/anomaly-detection-c9b62ee740f6)
+- Scalable time series forecasting and anomaly detection
+[(link)](https://medium.com/data-science-at-microsoft/scalable-time-series-forecasting-and-anomaly-detection-3fdf8134c6d8)
+- Anomaly Detection for Predictive Maintenance — Exploratory Data Analysis
+[(link)](https://medium.com/low-code-for-advanced-data-science/anomaly-detection-for-predictive-maintenance-exploratory-data-analysis-56d13f1bc212)
+- Isolation forest anomaly detection for telemetry time series data
+[(link)](https://medium.com/@juniper.cto.aiml.2021/isolation-forest-anomaly-detection-for-telemetry-time-series-data-bbd71adacfaf)
+- Anomaly Detection for Predictive Maintenance — Control Charts
+[(link)](https://medium.com/low-code-for-advanced-data-science/anomaly-detection-for-predictive-maintenance-control-charts-abcbe656c2d0)
+- Machine Learning for Anomaly Detection
+[(link)](https://simpson-danielb.medium.com/machine-learning-for-anomaly-detection-39a7dff659ee)
+- Anomalies detection using River
+[(link)](https://medium.com/spikelab/anomalies-detection-using-river-398544d3536)
+- Anomaly Detection On IP Address Data
+[(link)](https://medium.com/geekculture/anomaly-detection-on-ip-address-data-1520955fa568)
+- How to Detect Anomalies — state-of-the-art methods using Conformal Prediction
+[(link)](https://valeman.medium.com/how-to-detect-anomalies-state-of-the-art-methods-using-conformal-prediction-e02691659412)
+- Time Series Anomaly Detection: Simple Yet Powerful Approaches
+[(link)](https://medium.com/bukalapak-data/time-series-anomaly-detection-simple-yet-powerful-approaches-4449ffe1ca12)
+
+# darts
+- Darts
+[(link)](https://unit8co.github.io/darts/index.html)
+- Darts: Time Series Made Easy in Python
+[(link)](https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878)
+- Transfer Learning for Time Series Forecasting
+[(link)](https://medium.com/unit8-machine-learning-publication/transfer-learning-for-time-series-forecasting-87f39e375278)
+- Time Series Forecasting Using Past and Future External Data with Darts
+[(link)](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993)
+
+# hyndmann buch
 - Forecasting: Principles and Practice (book)
 [(link)](https://otexts.org/fpp2/)
+
+# prophet
 - Time series forecasting with Facebook Prophet
 [(link)](https://rahulaga.medium.com/time-series-forecasting-with-facebook-prophet-f0468ff6fa3b)
+
+
+# zzz
 - PatchTST
 [(link)](https://github.com/yuqinie98/PatchTST)
 - Unsupervised Feature Selection for Time-Series Sensor Data with MSDA package
@@ -32,8 +70,6 @@ is_slide: 0
 [(link)](https://igodfried.medium.com/deep-learning-for-time-series-forecasting-framework-updates-9cfb277d45c0)
 - A Thorough Introduction To ARIMA Models
 [(link)](https://medium.com/analytics-vidhya/a-thorough-introduction-to-arima-models-987a24e9ff71)
-- Time Series Anomaly Detection: Simple Yet Powerful Approaches
-[(link)](https://medium.com/bukalapak-data/time-series-anomaly-detection-simple-yet-powerful-approaches-4449ffe1ca12)
 - Time Series Forecasting with PyCaret Regression Module
 [(link)](https://towardsdatascience.com/time-series-forecasting-with-pycaret-regression-module-237b703a0c63)
 - M5 Forecasting — Accuracy

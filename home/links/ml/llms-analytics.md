@@ -8,26 +8,6 @@ is_slide: 0
 - my nl2sql folder semantic scholar
 [(link)](https://www.semanticscholar.org/shared/library/folder/11452802)
 
-<!-- 
-- A comprehensive evaluation of ChatGPT’s zero-shot Text-to-SQL capability
-[(link)](https://arxiv.org/abs/2303.13547)
-- Benchmarking and Improving Text-to-SQL Generation under Ambiguity
-[(link)](https://arxiv.org/abs/2310.13659)
-- Bridging Language and Data - Optimizing Text-to-SQL Generation in Large Language Models
-[(link)](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1833681&dswid=-7059)
-- C3: Zero-shot Text-to-SQL with ChatGPT
-[(link)](https://arxiv.org/abs/2307.07306)
-- Divide and Prompt: Chain of Thought Prompting for Text-to-SQL
-[(link)](https://arxiv.org/abs/2304.11556)
-- Enhancing Text-to-SQL Capabilities of Large Language Models: A Study on Prompt Design Strategies
-[(link)](https://arxiv.org/abs/2305.12586)
-- Exploring Chain-of-Thought Style Prompting for Text-to-SQL
-[(link)](https://arxiv.org/abs/2305.14215)
-- Retrieval-augmented GPT-3.5-based Text-to-SQL Framework with Sample-aware Prompting and Dynamic Revision Chain
-[(link)](https://arxiv.org/abs/2307.05074)
-- Towards Robustness of Text-to-SQL Models against Synonym Substitution
-[(link)](https://arxiv.org/abs/2106.01065)
--->
 
 # tools
 ## general
@@ -35,17 +15,23 @@ is_slide: 0
 [(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
 
 
+## Dataherald
+- Dataherald 
+[(link)](https://github.com/Dataherald/dataherald)
+
+# queryhub
+- queryhub
+[(link)](https://www.queryhub.ai/)
+- How LLMs Are Revolutionizing Database Queries Through Natural Language
+[(link)](https://www.queryhub.ai/blog/natural-language-to-sql-llm)
+
+
+
 ## relta
 - relta
 [(link)](https://www.relta.dev/)
 - The problem of text-to-SQL
 [(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
-
-
-## Dataherald
-- Dataherald 
-[(link)](https://github.com/Dataherald/dataherald)
-
 
 
 
@@ -123,6 +109,8 @@ is_slide: 0
 
 
 # text to sql
+- Claude Sonet on Azure Databricks- Automate ETL Genration
+[(link)](https://medium.com/@mariusz_kujawski/claude-sonet-on-azure-databricks-automate-etl-genration-b174f33efe63)
 - From Basics to Advanced: Exploring LangGraph
 [(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
 - From Prototype to Production: Enhancing LLM Accuracy

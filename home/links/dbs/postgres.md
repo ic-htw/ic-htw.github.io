@@ -43,6 +43,8 @@ is_slide: 0
 
 
 # monitoring/configuration
+- How to Monitor PostgreSQL Like a Pro
+[(link)](https://medium.com/timescale/how-to-monitor-postgresql-like-a-pro-5-techniques-every-developer-should-know-68581c49a4a4)
 - Custom SQL Queries in Grafana for PostgreSQL Insights
 [(link)](https://medium.com/@mayurkoshti12/custom-sql-queries-in-grafana-for-postgresql-insights-367245a475f6)
 - How to Monitor PostgreSQL Performance
@@ -149,6 +151,10 @@ is_slide: 0
 
 
 # extensions / tools
+- Announcing a new IDE for PostgreSQL in VS Code from Microsoft
+[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-a-new-ide-for-postgresql-in-vs-code-from-microsoft/4414648)
+- pgModeller
+[(link)](https://pgmodeler.io/)
 - pg_duckdb
 [(link)](https://motherduck.com/blog/pgduckdb-beta-release-duckdb-postgres/)
 - pg_duckdb git
@@ -212,6 +218,9 @@ is_slide: 0
 [(link)](https://tech.instacart.com/zero-downtime-postgresql-cutovers-e6f16090fabf)
 - How to Set Up PostgreSQL High Availability with Patroni
 [(link)](https://databasedive.com/how-to-set-up-postgresql-high-availability-with-patroni-c91450ec3c16)
+- Best Practices for Postgres Database Replication
+[(link)](https://medium.com/timescale/best-practices-for-postgres-database-replication-b5ed69caf96d)
+
 
 
 # transactions
@@ -239,6 +248,8 @@ is_slide: 0
 
 
 # misc
+- Scaling Postgres
+[(link)](https://www.youtube.com/@ScalingPostgres/videos)
 - Exploring the limits of Postgres: when does it break?
 [(link)](https://stepchange.work/blog/exploring-the-limits-of-postgres-when-does-it-break)
 - Generate Millions of Records in PostgreSQL

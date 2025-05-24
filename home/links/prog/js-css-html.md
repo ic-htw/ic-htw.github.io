@@ -29,6 +29,9 @@ is_slide: 0
 [(link)](https://htmx.org/)
 - Hypermedia Systems
 [(link)](https://hypermedia.systems/book/contents/)
+- HTMX Foundations for FastHTML
+[(link)](https://isaacflath.com/blog/blog_post?fpath=posts%2F2025-04-22-HTMXFoundationsForFasthtml.qmd)
+
 
 
 

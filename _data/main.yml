@@ -601,9 +601,6 @@ home: &r
               - t: aaa
                 ts: aaa
                 url: /home/links/ml/aaa.html
-              - t: Anomaly Detection
-                ts: Anomaly Detection
-                url: /home/links/ml/anomaly-detection.html
               - t: Decision Trees
                 ts: Decision Trees
                 url: /home/links/ml/decision-trees.html

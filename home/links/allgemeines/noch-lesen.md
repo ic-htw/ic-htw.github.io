@@ -9,74 +9,29 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Darts
-[(link)](https://unit8co.github.io/darts/index.html)
+- Understanding pgvector's HNSW Index Storage in Postgres
+[(link)](https://lantern.dev/blog/pgvector-storage)
 
-- Darts: Time Series Made Easy in Python
-[(link)](https://medium.com/unit8-machine-learning-publication/darts-time-series-made-easy-in-python-5ac2947a8878)
+- How robust does your data analysis need to be to become an Oxford University professor?
+[(link)](https://medium.com/data-science-collective/how-robust-does-your-data-analysis-need-to-be-to-become-an-oxford-university-professor-45bf6c0c2a82)
 
-- Transfer Learning for Time Series Forecasting
-[(link)](https://medium.com/unit8-machine-learning-publication/transfer-learning-for-time-series-forecasting-87f39e375278)
-
-- Time Series Forecasting Using Past and Future External Data with Darts
-[(link)](https://medium.com/unit8-machine-learning-publication/time-series-forecasting-using-past-and-future-external-data-with-darts-1f0539585993)
-
-- Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
-[(link)](https://medium.com/data-science-collective/learning-to-rank-advancing-e-commerce-recommendations-with-sql-based-machine-learning-part-1-6ef4c999f034)
-
-- DocETL: Powering Complex Document Processing Pipelines
-[(link)](https://github.com/ucbepic/docetl)
+- dblab
+[(link)](https://github.com/danvergara/dblab)
 
 - Testing 17 Prompt Engineering Techniques on 1B Parameter LLM
 [(link)](https://levelup.gitconnected.com/testing-17-prompt-engineering-techniques-on-1b-parameter-llm-f3f9e5348929)
 
-- Introducing Iceberg Table Engine in RisingWave: Manage Streaming Data in Iceberg with SQL
-[(link)](https://towardsdev.com/introducing-iceberg-table-engine-in-risingwave-manage-streaming-data-in-iceberg-with-sql-66c37878aa45)
-
 - Why Are There So Many Databases?
 [(link)](https://blog.det.life/why-are-there-so-many-databases-87d334c5dce6)
-
-- Turning Data into Insight: Flexible Lakehouse with MinIO, Iceberg, Airflow, DBT, Spark, Pandera & Superset
-[(link)](https://medium.com/@sweetkobem/turning-data-into-insight-flexible-lakehouse-with-minio-iceberg-airflow-dbt-spark-pandera-409d036e5542)
-
-- Qwen-3 Fine Tuning Made Easy: Create Custom AI Models with Python and Unsloth
-[(link)](https://pub.towardsai.net/qwen-3-fine-tuning-made-easy-create-custom-ai-models-with-python-and-unsloth-b1a8f684c3f1)
-
-- 8 Common Mistakes in Vector Search 
-[(link)](https://ai.gopubby.com/8-common-mistakes-in-vector-search-and-how-to-avoid-them-e48d849c23f8)
-
-- Best Practices for Postgres Database Replication
-[(link)](https://medium.com/timescale/best-practices-for-postgres-database-replication-b5ed69caf96d)
-
-- queryhub
-[(link)](https://www.queryhub.ai/)
-
-- How LLMs Are Revolutionizing Database Queries Through Natural Language
-[(link)](https://www.queryhub.ai/blog/natural-language-to-sql-llm)
-
-- pgModeller
-[(link)](https://pgmodeler.io/)
 
 - Why Netflix and Apple Are Choosing Rust, PostgreSQL, and Iceberg for Their Data Stacks
 [(link)](https://blog.devgenius.io/why-netflix-and-apple-are-choosing-rust-postgresql-and-iceberg-for-their-data-stacks-985242ff564e)
 
-- Claude Sonet on Azure Databricks- Automate ETL Genration
-[(link)](https://medium.com/@mariusz_kujawski/claude-sonet-on-azure-databricks-automate-etl-genration-b174f33efe63)
-
 - AI Data Agents: Unlocking a New Era of Data Intelligence and Analytics
 [(link)](https://medium.com/basejump-ai/ai-data-agents-unlocking-a-new-era-of-data-intelligence-and-analytics-f0b4437d89b5)
 
-- What's new with Postgres at Microsoft, 2025 edition
-[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/whats-new-with-postgres-at-microsoft-2025-edition/4410710)
-
-- Pgai Vectorizer Now Works With Any Postgres Database
-[(link)](https://www.timescale.com/blog/pgai-vectorizer-now-works-with-any-postgres-database)
-
 - Which LLM writes the best analytical SQL?
 [(link)](https://www.tinybird.co/blog-posts/which-llm-writes-the-best-sql)
-
-- ClickHouse Architecture 101—A Comprehensive Overview (2025)
-[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
 
 - A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
 [(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
@@ -87,17 +42,11 @@ is_slide: 0
 - JDK 24 is Here! Game-Changing Features Every Java Developer Must Know
 [(link)](https://amritpandey.medium.com/jdk-24-is-here-game-changing-features-every-java-developer-must-know-c34754286d02)
 
-- Propensity-Scoring Matching (PSM) using Machine learning in SQL
-[(link)](https://medium.com/data-science-collective/propensity-scoring-matching-psm-using-machine-learning-in-sql-339b7fcc24e7)
-
 - Building a Multi-Modal Retrieval-Augmented Generation (RAG) System: A Comprehensive Guide
 [(link)](https://pub.towardsai.net/building-a-multi-modal-retrieval-augmented-generation-rag-system-a-comprehensive-guide-0626a88b7c82)
 
 - Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
 [(link)](https://medium.com/@community_md101/lakehouse-2-0-the-open-system-that-lakehouse-1-0-was-meant-to-be-part-1-743efc645ea6)
-
-- How to Monitor PostgreSQL Like a Pro
-[(link)](https://medium.com/timescale/how-to-monitor-postgresql-like-a-pro-5-techniques-every-developer-should-know-68581c49a4a4)
 
 - Should you run PostgreSQL on Kubernetes?
 [(link)](https://medium.com/@jake.page91/should-you-run-postgresql-on-kubernetes-9a96d6fffefa)
@@ -113,12 +62,6 @@ is_slide: 0
 
 - Documents to Markdown Beyond Conventional Limits with gpt4.1 | ExtractThinker
 [(link)](https://pub.towardsai.net/documents-to-markdown-beyond-conventional-limits-with-gpt4-1-extractthinker-cc71ead1c87b)
-
-- Postgres to ClickHouse: Data Modeling Tips V2
-[(link)](https://clickhouse.com/blog/postgres-to-clickhouse-data-modeling-tips-v2)
-
-- Announcing the new ClickHouse SQL Playground
-[(link)](https://clickhouse.com/blog/announcing-the-new-sql-playground)
 
 - Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
 [(link)](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579)
@@ -138,23 +81,11 @@ is_slide: 0
 - Building a modern Data Warehouse from scratch
 [(link)](https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118)
 
-- Stop Using Hibernate: The Hidden Dangers You Need to Know
-[(link)](https://medium.com/javarevisited/stop-using-hibernate-the-hidden-dangers-you-need-to-know-f0d82ebdfa43)
-
-- Agentic AI: Comparing New Open-Source Frameworks
-[(link)](https://medium.com/data-science-collective/agentic-ai-comparing-new-open-source-frameworks-21ec676732df)
-
 - Building a Modern Data Lakehouse with DuckDB and MinIO
 [(link)](https://medium.com/@sweetkobem/building-a-modern-data-lakehouse-with-duckdb-and-minio-ec689a61e7bd)
 
 - A case where SQL joins struggle but MongoDB documents shine
 [(link)](https://dev.to/franckpachot/a-case-where-sql-joins-struggle-but-mongodb-documents-shine-11kj)
-
-- pgai: Importing Wikipedia into PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/pgai-importing-wikipedia-into-postgresql/)
-
-- TimescaleDB to the Rescue - Speeding Up Statistics
-[(link)](https://sarvendev.com/posts/timescale-db-to-the-rescue/)
 
 - Fine-Tuning a Text-to-SQL LLM for Reasoning Using GRPO
 [(link)](https://blog.gopenai.com/fine-tuning-a-text-to-sql-llm-for-reasoning-using-grpo-ec2c1b55278f)
@@ -164,9 +95,6 @@ is_slide: 0
 
 - Beyond Materialized Views: Using DuckDB for In-Process Columnar Caching
 [(link)](https://medium.com/striim/beyond-materialized-views-using-duckdb-for-in-process-columnar-caching-98b8387b8568)
-
-- LLMs Do Not Predict the Next Word
-[(link)](https://www.harysdalvi.com/blog/llms-dont-predict-next-word)
 
 - I tested out all of the best language models for frontend development. One model stood out amongst the rest.
 [(link)](https://medium.com/codex/i-tested-out-all-of-the-best-language-models-for-frontend-development-one-model-stood-out-f180b9c12bc1)
@@ -182,18 +110,6 @@ is_slide: 0
 
 - API-First AI Agentic Patterns: Building Smarter Systems Without the Framework Overhead
 [(link)](https://levelup.gitconnected.com/api-first-ai-agentic-patterns-building-smarter-systems-without-the-framework-overhead-1a0bac2f1b04)
-
-- PostgreSQL Indexes for Columnstore: 1,185x Faster Lookup Queries, 224x Faster Inserts in TimescaleDB
-[(link)](https://medium.com/timescale/postgresql-indexes-for-columnstore-1-185x-faster-lookup-queries-224x-faster-inserts-in-2f10996726eb)
-
-- Bauplan: Operate your lakehouse with zero infrastructure
-[(link)](https://blog.det.life/bauplan-operate-your-lakehouse-with-zero-infrastructure-f15a24ca33a9)
-
-- bauplan
-[(link)](https://www.bauplanlabs.com/)
-
-- Open Source Python Data Lineage with OpenLineage and Hamilton
-[(link)](https://medium.com/@stefan.krawczyk/open-source-python-data-lineage-with-openlineage-and-hamilton-fe599c0459d6)
 
 - Maximizing Simple RAG Performance Using RL in Python
 [(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
@@ -219,9 +135,6 @@ is_slide: 0
 - How I built a SaaS product with 100% AI generated code
 [(link)](https://sakkyb.medium.com/how-i-built-a-saas-product-with-100-ai-generated-code-5728e0c97c8d)
 
-- How an Undergraduate Shattered a 40-Year-Old Computer Science Theory
-[(link)](https://levelup.gitconnected.com/how-an-undergraduate-shattered-a-40-year-old-computer-science-theory-c605283214a3)
-
 - Benchmarking PostgreSQL Batch Ingest
 [(link)](https://medium.com/timescale/benchmarking-postgresql-batch-ingest-51fbe09174de)
 
@@ -237,17 +150,11 @@ is_slide: 0
 - After DeepSeek-R1, a goldmine of research is waiting to be discovered.
 [(link)](https://ai.gopubby.com/after-deepseek-r1-a-goldmine-of-research-is-waiting-to-be-discovered-085038421285)
 
-- Reinforcement Learning
-[(link)](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)
-
 - Stop Writing Manual Validators! Use Pydantic for Data Validation
 [(link)](https://python.plainenglish.io/stop-writing-manual-validators-use-pydantic-for-data-validation-18bde92f4bfa)
 
 - PostgreSQL: 1 trillion rows in Citus
 [(link)](https://www.cybertec-postgresql.com/en/postgresql-1-trillion-rows-in-citus/)
-
-- Microsoft PostgreSQL OSS engine team: reflecting on 2024
-[(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/microsoft-postgresql-oss-engine-team-reflecting-on-2024/4388700)
 
 - Is Kimball Still Relevant in the Modern Data Warehouse Era?
 [(link)](https://medium.com/@neeraj3685/kimball-in-the-lakehouse-era-adapting-dimensional-modeling-for-modern-data-2587ee0536c7)
@@ -263,9 +170,6 @@ is_slide: 0
 
 - OpenAI’s new prompting guide: how to get the best results from reasoning models
 [(link)](https://blog.stackademic.com/openais-new-prompting-guide-how-to-get-the-best-results-from-reasoning-models-354a6adf76c2)
-
-- Claude 3.7 Sonnet: the first AI model that understands your entire codebase
-[(link)](https://medium.com/@DaveThackeray/claude-3-7-sonnet-the-first-ai-model-that-understands-your-entire-codebase-560915c6a703)
 
 - Using Custom Agents in Cursor, Windsurf, Copilot and Others to Supercharge Your Workflow
 [(link)](https://ai.gopubby.com/using-custom-agents-in-cursor-windsurf-copilot-and-others-to-supercharge-your-workflow-f936b630c5e5)
@@ -742,9 +646,6 @@ is_slide: 0
 - Document Extraction Is GenAI’s Killer App
 [(link)](https://towardsdatascience.com/document-extraction-is-genais-killer-app-9e9c816e6caf)
 
-- Understanding pgvector's HNSW Index Storage in Postgres
-[(link)](https://lantern.dev/blog/pgvector-storage)
-
 - Graph RAG — A Conceptual Introduction
 [(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
 
@@ -754,9 +655,6 @@ is_slide: 0
 - Fine-Tuning LLAMA 3 Model for Relation Extraction Using UBIAI Data
 [(link)](https://medium.com/ubiai-nlp/fine-tuning-llama-3-model-for-relation-extraction-using-ubiai-data-1fd1946a62e0)
 
-- Splicing Duck and Elephant DNA
-[(link)](https://motherduck.com/blog/pg_duckdb-postgresql-extension-for-duckdb-motherduck/)
-
 - DuckDB & PyArrow: Lightweight and Speed Data Analysis
 [(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
 
@@ -765,9 +663,6 @@ is_slide: 0
 
 - Real-time Distributed score streaming using gRPC and Redis
 [(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
-
-- Claude Dev
-[(link)](https://github.com/saoudrizwan/claude-dev)
 
 - Customize Generative AI Models for Enterprise Applications with Llama 3.1
 [(link)](https://developer.nvidia.com/blog/customize-generative-ai-models-for-enterprise-applications-with-llama-3-1/)
@@ -796,15 +691,6 @@ is_slide: 0
 - GPT Fine-tuning
 [(link)](https://platform.openai.com/docs/guides/fine-tuning)
 
-- Claude 3.5 Sonnet vs. GPT-4o
-[(link)](https://hackernoon.com/de/Claude-35-Sonett-vs.-GPT-4O-%E2%80%93-eine-ehrliche-Bewertung)
-
-- Claude 3.5 Sonnet
-[(link)](https://www.anthropic.com/news/claude-3-5-sonnet)
-
-- Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)
-[(link)](https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca)
-
 - Mastering RAG Chunking Techniques for Enhanced Document Processing
 [(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
 
@@ -823,8 +709,5 @@ is_slide: 0
 
 - Web Scraping With 5 Different Methods: All You Need to Know
 [(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
-
-- How to use PostgreSQL for (military) geoanalytics tasks
-[(link)](https://klioba.com/how-to-use-postgresql-for-military-geoanalytics-tasks)
 
 

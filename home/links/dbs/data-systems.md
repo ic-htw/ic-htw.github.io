@@ -89,7 +89,12 @@ is_slide: 0
 [(link)](https://blog.det.life/i-spent-5-hours-learning-how-clickhouse-built-their-internal-data-warehouse-a7adad358c5d)
 - Hash tables in ClickHouse and C++ Zero-cost Abstractions
 [(link)](https://clickhouse.com/blog/hash-tables-in-clickhouse-and-zero-cost-abstractions)
-
+- ClickHouse Architecture 101—A Comprehensive Overview (2025)
+[(link)](https://www.chaosgenius.io/blog/clickhouse-architecture/)
+- Postgres to ClickHouse: Data Modeling Tips V2
+[(link)](https://clickhouse.com/blog/postgres-to-clickhouse-data-modeling-tips-v2)
+- Announcing the new ClickHouse SQL Playground
+[(link)](https://clickhouse.com/blog/announcing-the-new-sql-playground)
 
 
 
@@ -366,6 +371,9 @@ is_slide: 0
 # risingwave
 - home
 [(link)](https://www.risingwave.com/)
+- Introducing Iceberg Table Engine in RisingWave: Manage Streaming Data in Iceberg with SQL
+[(link)](https://towardsdev.com/introducing-iceberg-table-engine-in-risingwave-manage-streaming-data-in-iceberg-with-sql-66c37878aa45)
+
 
 # rocksdb
 - wiki
@@ -499,6 +507,12 @@ is_slide: 0
 [(link)](https://medium.com/timescale/quickly-building-sql-dashboards-for-time-series-with-continuous-aggregates-2e6f6956716c)
 - Time-Series Database: An Explainer
 [(link)](https://www.timescale.com/blog/time-series-database-an-explainer)
+- TimescaleDB to the Rescue - Speeding Up Statistics
+[(link)](https://sarvendev.com/posts/timescale-db-to-the-rescue/)
+- PostgreSQL Indexes for Columnstore: 1,185x Faster Lookup Queries, 224x Faster Inserts in TimescaleDB
+[(link)](https://medium.com/timescale/postgresql-indexes-for-columnstore-1-185x-faster-lookup-queries-224x-faster-inserts-in-2f10996726eb)
+
+
 
 
 

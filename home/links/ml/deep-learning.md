@@ -153,6 +153,13 @@ is_slide: 0
 [(link)](https://blog.paperspace.com/busting-the-myths-about-batch-normalization/)
 
 # RL
+- RL Buch - git
+[(link)](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On-3E/)
+- RL Buch -recordings
+[(link)](https://youtube.com/playlist?list=PLMVwuZENsfJmjPlBuFy5u7c3uStMTJYz7)
 - Drawing and Coding 18 RL Algorithms from Scratch
 [(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
+- Reinforcement Learning
+[(link)](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)
+
 

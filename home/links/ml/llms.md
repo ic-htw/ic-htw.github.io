@@ -59,21 +59,36 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)
 - Want to Build AI Agents? Tired of LangChain, CrewAI, AutoGen & Other AI Agent Frameworks? Read this!
 [(link)](https://ai.gopubby.com/want-to-build-ai-agents-c83ab4535411)
+- Agentic AI: Comparing New Open-Source Frameworks
+[(link)](https://medium.com/data-science-collective/agentic-ai-comparing-new-open-source-frameworks-21ec676732df)
 
-
-
+# agent frameworks
+- Autogen
+[(link)](https://github.com/microsoft/autogen)
+- CrewAI
+[(link)](https://docs.crewai.com/introduction)
+- LangGraph
+[(link)](https://www.langchain.com/langgraph)
+- Manus
+[(link)](https://manus.im/)
+- Smolagents
+[(link)](https://github.com/huggingface/smolagents)
 
 
 
 # coding
+- antrphic artefacts
+[(link)](https://www.anthropic.com/news/artifacts)
+- bolt
+[(link)](https://bolt.new/)
+- replit
+[(link)](https://replit.com/)
 - Roo Cline
 [(link)](https://github.com/RooVetGit/Roo-Cline?tab=readme-ov-file#roo-cline)
 - This Free AI Coder Can Generate Apps in Seconds
 [(link)](https://medium.com/@mauryaanoop3/this-free-ai-coder-can-generate-apps-in-seconds-b128c2f7d905)
 - Bolt DIY doc
 [(link)](https://stackblitz-labs.github.io/bolt.diy/)
-- Bolt DIY git
-[(link)](https://github.com/stackblitz-labs/bolt.diy)
 
 
 # cot
@@ -232,6 +247,8 @@ is_slide: 0
 
 
 # mcp
+- MindsDB 
+[(link)](https://mindsdb.com/)
 - 5 Best MCP Servers for Effortless Vibe Coding in 2025
 [(link)](https://blog.stackademic.com/5-best-mcp-servers-for-effortless-vibe-coding-in-2025-4de16bcb0fb2)
 - MCP is on Fire! 10 + Insane Use Cases That Prove It’s the Future of AI Integration
@@ -256,6 +273,9 @@ is_slide: 0
 [(link)](https://github.com/modelcontextprotocol)
 - Getting Started: Model Context Protocol
 [(link)](https://medium.com/@kenzic/getting-started-model-context-protocol-e0a80dddff80)
+- How to make your clients more context-aware with OpenMemory MCP
+[(link)](https://levelup.gitconnected.com/how-to-make-your-clients-more-context-aware-with-openmemory-mcp-60057bcc24a3)
+
 
 
 
@@ -298,7 +318,7 @@ is_slide: 0
 
 
 
-# phi3
+# phi
 - Bridging the Gap: Fine-Tuning Phi-3 for SQL Query Generation with Natural Language Queries
 [(link)](https://medium.com/@mauryaanoop3/bridging-the-gap-fine-tuning-phi-3-for-sql-query-generation-with-natural-language-queries-8fbe6a58b1ec)
 - Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
@@ -307,6 +327,12 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 [(link)](https://medium.com/@enrico.randellini/exploring-the-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-part-2-904f6e1b9b2d)
 - Exploring the Microsoft Phi3 Vision Language model as OCR for document data extraction
 [(link)](https://medium.com/@enrico.randellini/exploring-microsoft-phi3-vision-language-model-as-ocr-for-document-data-extraction-c269f7694d62)
+
+# qwen
+- Qwen3 from Alibaba : How to deploy this very communist but smart model 100% Locally?
+[(link)](https://henrynavarro.org/qwen3-from-alibaba-how-to-deploy-this-very-communist-but-smart-model-100-locally-d60347ac9344)
+- Qwen-3 Fine Tuning Made Easy: Create Custom AI Models with Python and Unsloth
+[(link)](https://pub.towardsai.net/qwen-3-fine-tuning-made-easy-create-custom-ai-models-with-python-and-unsloth-b1a8f684c3f1)
 
 
 
@@ -400,11 +426,19 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 - Use pgvector and Hugging Face to Build an Optimized FAQ Search with Sentence Similarity
 [(link)](https://www.koyeb.com/tutorials/use-pgvector-and-hugging-face-to-build-an-optimized-faq-search-with-sentence-similarity)
 
+# RLHF
+- Reinforcement Learning from Human Feedback - Book
+[(link)](https://rlhfbook.com/)
+
 
 
 # tiktokenizer
 - Tiktokenizer
 [(link)](https://tiktokenizer.vercel.app/)
+
+# vLLM
+- vLLM
+[(link)](https://github.com/vllm-project/vllm)
 
 
 

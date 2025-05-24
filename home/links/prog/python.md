@@ -61,6 +61,12 @@ is_slide: 0
 - Ruff
 [(link)](https://docs.astral.sh/ruff/)
 
+# docETL
+- DocETL: Powering Complex Document Processing Pipelines
+[(link)](https://github.com/ucbepic/docetl)
+
+
+
 # etl
 - Python ETL Framework Bonobo
 [(link)](https://medium.com/@tubelwj/python-etl-framework-bonobo-efficiently-perform-data-extraction-and-transformation-989f227571d1)

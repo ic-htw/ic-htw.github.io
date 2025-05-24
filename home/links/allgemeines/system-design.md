@@ -5,6 +5,9 @@ title: System Design
 is_slide: 0
 ---
 
+- Turning Data into Insight: Flexible Lakehouse with MinIO, Iceberg, Airflow, DBT, Spark, Pandera & Superset
+[(link)](https://medium.com/@sweetkobem/turning-data-into-insight-flexible-lakehouse-with-minio-iceberg-airflow-dbt-spark-pandera-409d036e5542)
+
 - Reliably Processing Trillions of Kafka Messages Per Day
 [(link)](https://medium.com/walmartglobaltech/reliably-processing-trillions-of-kafka-messages-per-day-23494f553ef9)
 
