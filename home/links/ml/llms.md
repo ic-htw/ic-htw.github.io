@@ -247,30 +247,36 @@ is_slide: 0
 
 
 # mcp
+- MCP-Home: Model Context Protocol (MCP)
+[(link)](https://github.com/modelcontextprotocol)
+- The guide to MCP I never had
+[(link)](https://levelup.gitconnected.com/the-guide-to-mcp-i-never-had-f79091cf99f8)
+- What is the Model Context Protocol (MCP)?
+[(link)](https://www.builder.io/blog/model-context-protocol)
+
+
 - MindsDB 
 [(link)](https://mindsdb.com/)
 - 5 Best MCP Servers for Effortless Vibe Coding in 2025
 [(link)](https://blog.stackademic.com/5-best-mcp-servers-for-effortless-vibe-coding-in-2025-4de16bcb0fb2)
 - MCP is on Fire! 10 + Insane Use Cases That Prove It’s the Future of AI Integration
 [(link)](https://medium.com/lets-code-future/mcp-is-on-fire-10-insane-use-cases-that-prove-its-the-future-of-ai-integration-a63549493640)
-- The guide to MCP I never had
-[(link)](https://levelup.gitconnected.com/the-guide-to-mcp-i-never-had-f79091cf99f8)
 - Building a Multi-Agent System with Multiple MCP Servers using Smolagents
 [(link)](https://pub.towardsai.net/building-a-multi-agent-system-with-multiple-mcp-servers-using-smolagents-95e9cedb1334)
-- How to Setup and Use PostgreSQL MCP Server
-[(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
 - Comparing Model Context Protocol (MCP) Server Frameworks
 [(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
+
+- How to Setup and Use PostgreSQL MCP Server
+[(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
 - A Postgres MCP server 
 [(link)](https://github.com/crystaldba/postgres-mcp)
+
 - Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
 [(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
 - Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)
 [(link)](https://medium.com/google-cloud/model-context-protocol-mcp-with-google-gemini-llm-a-deep-dive-full-code-ea16e3fac9a3)
 - Claude with MCPs Replaced Cursor & Windsurf — How Did That Happen?
 [(link)](https://wonderwhy-er.medium.com/claude-with-mcps-replaced-cursor-windsurf-how-did-that-happen-c1d1e2795e96)
-- Model Context Protocol (MCP)
-[(link)](https://github.com/modelcontextprotocol)
 - Getting Started: Model Context Protocol
 [(link)](https://medium.com/@kenzic/getting-started-model-context-protocol-e0a80dddff80)
 - How to make your clients more context-aware with OpenMemory MCP
@@ -314,6 +320,10 @@ is_slide: 0
 [(link)](https://github.com/sugarforever/chat-ollama)
 
 
+
+# prompt eng
+- Testing 17 Prompt Engineering Techniques on 1B Parameter LLM
+[(link)](https://levelup.gitconnected.com/testing-17-prompt-engineering-techniques-on-1b-parameter-llm-f3f9e5348929)
 
 
 

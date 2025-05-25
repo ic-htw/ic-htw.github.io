@@ -62,3 +62,7 @@ is_slide: 0
 - What’s new with Looker 2024?
 [(link)](https://medium.com/@hanna.le/whats-new-with-looker-2024-a9bfebe9afcb)
 
+# python
+- Matplotlib Alternatives That Actually Save You Time
+[(link)](https://nathanrosidi.medium.com/matplotlib-alternatives-that-actually-save-you-time-75631616cc4e)
+

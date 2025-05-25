@@ -150,6 +150,9 @@ is_slide: 0
 [(link)](https://github.com/timescale/pgai)
 - Pgvector vs. Pinecone: Vector Database Performance and Cost Comparison
 [(link)](https://medium.com/timescale/pgvector-vs-pinecone-vector-database-performance-and-cost-comparison-269f012f2ef4)
+- Understanding pgvector's HNSW Index Storage in Postgres
+[(link)](https://lantern.dev/blog/pgvector-storage)
+
 
 
 

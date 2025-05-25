@@ -14,12 +14,17 @@ is_slide: 0
 - Several Outstanding Text2Sql (Chat2Sql) Open Source Projects
 [(link)](https://medium.com/@tubelwj/several-outstanding-text2sql-chat2sql-open-source-projects-237de8496b93)
 
+# basejump
+- AI Data Agents: Unlocking a New Era of Data Intelligence and Analytics
+[(link)](https://medium.com/basejump-ai/ai-data-agents-unlocking-a-new-era-of-data-intelligence-and-analytics-f0b4437d89b5)
 
-## Dataherald
+
+
+## dataherald
 - Dataherald 
 [(link)](https://github.com/Dataherald/dataherald)
 
-# queryhub
+## queryhub
 - queryhub
 [(link)](https://www.queryhub.ai/)
 - How LLMs Are Revolutionizing Database Queries Through Natural Language
@@ -32,6 +37,10 @@ is_slide: 0
 [(link)](https://www.relta.dev/)
 - The problem of text-to-SQL
 [(link)](https://medium.com/relta/the-problem-of-text-to-sql-9fa9df8d15ab)
+
+## tinybird
+- Which LLM writes the best analytical SQL?
+[(link)](https://www.tinybird.co/blog-posts/which-llm-writes-the-best-sql)
 
 
 

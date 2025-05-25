@@ -9,29 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Understanding pgvector's HNSW Index Storage in Postgres
-[(link)](https://lantern.dev/blog/pgvector-storage)
-
-- How robust does your data analysis need to be to become an Oxford University professor?
-[(link)](https://medium.com/data-science-collective/how-robust-does-your-data-analysis-need-to-be-to-become-an-oxford-university-professor-45bf6c0c2a82)
-
 - dblab
 [(link)](https://github.com/danvergara/dblab)
-
-- Testing 17 Prompt Engineering Techniques on 1B Parameter LLM
-[(link)](https://levelup.gitconnected.com/testing-17-prompt-engineering-techniques-on-1b-parameter-llm-f3f9e5348929)
-
-- Why Are There So Many Databases?
-[(link)](https://blog.det.life/why-are-there-so-many-databases-87d334c5dce6)
-
-- Why Netflix and Apple Are Choosing Rust, PostgreSQL, and Iceberg for Their Data Stacks
-[(link)](https://blog.devgenius.io/why-netflix-and-apple-are-choosing-rust-postgresql-and-iceberg-for-their-data-stacks-985242ff564e)
-
-- AI Data Agents: Unlocking a New Era of Data Intelligence and Analytics
-[(link)](https://medium.com/basejump-ai/ai-data-agents-unlocking-a-new-era-of-data-intelligence-and-analytics-f0b4437d89b5)
-
-- Which LLM writes the best analytical SQL?
-[(link)](https://www.tinybird.co/blog-posts/which-llm-writes-the-best-sql)
 
 - A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
 [(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
