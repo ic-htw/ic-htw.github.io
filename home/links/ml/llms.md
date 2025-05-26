@@ -419,6 +419,9 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 [(link)](https://github.com/thinknimble/embeddings-search-demo)
 - Multimodal RAG pipeline with LlamaIndex and Neo4j
 [(link)](https://blog.llamaindex.ai/multimodal-rag-pipeline-with-llamaindex-and-neo4j-a2c542eb0206)
+- Building a Multi-Modal Retrieval-Augmented Generation (RAG) System: A Comprehensive Guide
+[(link)](https://pub.towardsai.net/building-a-multi-modal-retrieval-augmented-generation-rag-system-a-comprehensive-guide-0626a88b7c82)
+
 
 
 

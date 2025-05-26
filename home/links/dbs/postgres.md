@@ -248,6 +248,8 @@ is_slide: 0
 
 
 # misc
+- The Challenge of Primary Keys in Partitioned Tables in PostgreSQL
+[(link)](https://medium.com/@dfs.techblog/the-challenge-of-primary-keys-in-partitioned-tables-in-postgresql-1b61b6f237d6)
 - Scaling Postgres
 [(link)](https://www.youtube.com/@ScalingPostgres/videos)
 - Exploring the limits of Postgres: when does it break?

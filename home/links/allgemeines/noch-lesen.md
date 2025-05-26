@@ -9,32 +9,53 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- dblab
-[(link)](https://github.com/danvergara/dblab)
-
-- A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
-[(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
-
-- The Challenge of Primary Keys in Partitioned Tables in PostgreSQL
-[(link)](https://medium.com/@dfs.techblog/the-challenge-of-primary-keys-in-partitioned-tables-in-postgresql-1b61b6f237d6)
-
-- JDK 24 is Here! Game-Changing Features Every Java Developer Must Know
-[(link)](https://amritpandey.medium.com/jdk-24-is-here-game-changing-features-every-java-developer-must-know-c34754286d02)
-
-- Building a Multi-Modal Retrieval-Augmented Generation (RAG) System: A Comprehensive Guide
-[(link)](https://pub.towardsai.net/building-a-multi-modal-retrieval-augmented-generation-rag-system-a-comprehensive-guide-0626a88b7c82)
-
-- Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
-[(link)](https://medium.com/@community_md101/lakehouse-2-0-the-open-system-that-lakehouse-1-0-was-meant-to-be-part-1-743efc645ea6)
-
-- Should you run PostgreSQL on Kubernetes?
-[(link)](https://medium.com/@jake.page91/should-you-run-postgresql-on-kubernetes-9a96d6fffefa)
-
-- The Future of Data is a rude awakening for the Modern Data Stack
-[(link)](https://medium.com/@hugolu87/the-future-of-data-is-a-rude-awakening-for-the-modern-data-stack-7732a4fd11c6)
+- Gen AI Merchant Matching — using Opensource LLMs, Elastic search and FIASS
+[(link)](https://medium.com/data-science-collective/gen-ai-merchant-matching-using-opensource-llms-elastic-search-and-fiass-c4835a9d89f4)
 
 - Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
 [(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
+
+- Let’s Build a RAG Agent Using Phi-Data in Just 20 Lines of Code — Open Source & Local!
+[(link)](https://pub.towardsai.net/lets-build-a-rag-agent-using-phi-data-in-just-20-lines-of-code-open-source-local-5defc836f11c)
+
+- Maximizing Simple RAG Performance Using RL in Python
+[(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
+
+- Finding the Best Open-Source Embedding Model for RAG
+[(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
+
+- Developing RAG Systems with DeepSeek R1 & Ollama (Complete Code Included)
+[(link)](https://sebastian-petrus.medium.com/developing-rag-systems-with-deepseek-r1-ollama-f2f561cfda97)
+
+- Full-stack RAG: FastAPI Backend (Part 1)
+[(link)](https://medium.com/@o39joey/full-stack-rag-fastapi-backend-part-1-eab28eb21392)
+
+- Build an LLM RAG Chatbot With LangChain
+[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
+
+- Microsoft GraphRAG and Ollama: Code Your Way to Smarter Question Answering
+[(link)](https://blog.gopenai.com/microsoft-graphrag-and-ollama-code-your-way-to-smarter-question-answering-45a57cc5c38b)
+
+- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
+[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
+
+- Graph RAG — A Conceptual Introduction
+[(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
+
+- High-Precision RAG for Table Heavy Documents
+[(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
+
+- Why Your RAG Doesn’t Work
+[(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
+
+- Mastering RAG Chunking Techniques for Enhanced Document Processing
+[(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
+
+- Most Developers Get This Wrong in Docker Networking!
+[(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
+
+- dblab
+[(link)](https://github.com/danvergara/dblab)
 
 - Dynamic Data Source Routing in Spring Boot: Master Multi-Tenancy & Read-Write Separation
 [(link)](https://blog.devgenius.io/dynamic-data-source-routing-in-spring-boot-master-multi-tenancy-read-write-separation-ea45811f6e65)
@@ -89,9 +110,6 @@ is_slide: 0
 
 - API-First AI Agentic Patterns: Building Smarter Systems Without the Framework Overhead
 [(link)](https://levelup.gitconnected.com/api-first-ai-agentic-patterns-building-smarter-systems-without-the-framework-overhead-1a0bac2f1b04)
-
-- Maximizing Simple RAG Performance Using RL in Python
-[(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
 
 - The Most Comprehensive Explanation of Session, Cookie, Token, and JWT
 [(link)](https://levelup.gitconnected.com/the-http-protocol-is-a-stateless-protocol-that-is-every-time-the-server-receives-a-request-b9c4f31bfbb3)
@@ -194,9 +212,6 @@ is_slide: 0
 
 - Introducing Wren AI’s New AI-Powered Spreadsheets & Pre-
 [(link)](https://medium.com/wrenai/introducing-wren-ais-new-ai-powered-spreadsheets-pre-built-100-cross-platform-metrics-4ef99970390a)
-
-- Finding the Best Open-Source Embedding Model for RAG
-[(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
 
 - Top 6 Core App Dashboard Building Tools
 [(link)](https://medium.com/@nocobase/top-6-core-app-dashboard-building-tools-6ca8522da15d)
@@ -339,9 +354,6 @@ is_slide: 0
 - Top 16+ Modern React Libraries To Supercharge Your Next Big Project
 [(link)](https://medium.com/@letscodefuture/top-16-modern-react-libraries-to-supercharge-your-next-big-project-78e912e95014)
 
-- Developing RAG Systems with DeepSeek R1 & Ollama (Complete Code Included)
-[(link)](https://sebastian-petrus.medium.com/developing-rag-systems-with-deepseek-r1-ollama-f2f561cfda97)
-
 - Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c
 [(link)](https://github.com/karpathy/llm.c/discussions/677)
 
@@ -410,9 +422,6 @@ is_slide: 0
 
 - Stream Processing Systems in 2025: RisingWave, Flink, Spark Streaming, and What’s Ahead
 [(link)](https://blog.det.life/stream-processing-systems-in-2025-risingwave-flink-spark-streaming-and-whats-ahead-6e24927f7d8b)
-
-- Full-stack RAG: FastAPI Backend (Part 1)
-[(link)](https://medium.com/@o39joey/full-stack-rag-fastapi-backend-part-1-eab28eb21392)
 
 - Ollama vs vLLM: which framework is better for inference?
 [(link)](https://henrynavarro.org/ollama-vs-vllm-which-framework-is-better-for-inference-part-i-d8211d7248d2)
@@ -543,17 +552,11 @@ is_slide: 0
 - rainfrog - terminal ui for postgres
 [(link)](https://github.com/achristmascarl/rainfrog)
 
-- Build an LLM RAG Chatbot With LangChain
-[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
-
 - How SELECT FOR UPDATE Works
 [(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
 
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
-
-- Microsoft GraphRAG and Ollama: Code Your Way to Smarter Question Answering
-[(link)](https://blog.gopenai.com/microsoft-graphrag-and-ollama-code-your-way-to-smarter-question-answering-45a57cc5c38b)
 
 - Implementing Filtered Semantic Search Using Pgvector and JavaScript
 [(link)](https://www.timescale.com/blog/implementing-filtered-semantic-search-using-pgvector-and-javascript/)
@@ -587,9 +590,6 @@ is_slide: 0
 
 - Why I Use Open Weights LLMs Locally
 [(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
-
-- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
-[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
 
 - Build your own Large Language Model (LLM) From Scratch Using PyTorch
 [(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
@@ -625,12 +625,6 @@ is_slide: 0
 - Document Extraction Is GenAI’s Killer App
 [(link)](https://towardsdatascience.com/document-extraction-is-genais-killer-app-9e9c816e6caf)
 
-- Graph RAG — A Conceptual Introduction
-[(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
-
-- High-Precision RAG for Table Heavy Documents
-[(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
-
 - Fine-Tuning LLAMA 3 Model for Relation Extraction Using UBIAI Data
 [(link)](https://medium.com/ubiai-nlp/fine-tuning-llama-3-model-for-relation-extraction-using-ubiai-data-1fd1946a62e0)
 
@@ -663,15 +657,6 @@ is_slide: 0
 
 - Cost-Effective Text Embedding: Leveraging Ollama Local Models with Azure SQL Databases
 [(link)](https://medium.com/@lawrenceteixeira/cost-effective-text-embedding-leveraging-ollama-local-models-with-azure-sql-databases-2e3c6345f7e4)
-
-- Why Your RAG Doesn’t Work
-[(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
-
-- GPT Fine-tuning
-[(link)](https://platform.openai.com/docs/guides/fine-tuning)
-
-- Mastering RAG Chunking Techniques for Enhanced Document Processing
-[(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
 
 - PostgreSQL and Pgvector
 [(link)](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)

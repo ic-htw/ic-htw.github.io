@@ -6,6 +6,8 @@ is_slide: 0
 ---
 
 # aaa
+- Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
+[(link)](https://medium.com/@community_md101/lakehouse-2-0-the-open-system-that-lakehouse-1-0-was-meant-to-be-part-1-743efc645ea6)
 - Building a Local Data Lake from scratch with MinIO, Iceberg, Spark, StarRocks, Mage, and Docker
 [(link)](https://blog.det.life/building-a-local-data-lake-from-scratch-with-minio-iceberg-spark-starrocks-mage-and-docker-c12436e6ff9d)
 - Build an on-premise Data Lakehouse

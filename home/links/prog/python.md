@@ -61,9 +61,6 @@ is_slide: 0
 - Ruff
 [(link)](https://docs.astral.sh/ruff/)
 
-# docETL
-- DocETL: Powering Complex Document Processing Pipelines
-[(link)](https://github.com/ucbepic/docetl)
 
 
 

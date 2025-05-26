@@ -127,6 +127,12 @@ is_slide: 0
 [(link)](https://stackoverflow.com/questions/27701930/how-to-add-users-to-docker-container)
 - The end of Docker? The Reasons Behind Developers Changing Their Runtimes
 [(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
+- A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
+[(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
+
+# docETL
+- DocETL: Powering Complex Document Processing Pipelines
+[(link)](https://github.com/ucbepic/docetl)
 
 
 
