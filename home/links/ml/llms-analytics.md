@@ -118,6 +118,8 @@ is_slide: 0
 
 
 # text to sql
+- Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
+[(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
 - Claude Sonet on Azure Databricks- Automate ETL Genration
 [(link)](https://medium.com/@mariusz_kujawski/claude-sonet-on-azure-databricks-automate-etl-genration-b174f33efe63)
 - From Basics to Advanced: Exploring LangGraph

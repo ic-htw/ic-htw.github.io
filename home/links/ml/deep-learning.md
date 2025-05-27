@@ -161,5 +161,8 @@ is_slide: 0
 [(link)](https://levelup.gitconnected.com/drawing-and-coding-18-rl-algorithms-from-scratch-714ec2f581e5)
 - Reinforcement Learning
 [(link)](https://www.geeksforgeeks.org/what-is-reinforcement-learning/)
+- Maximizing Simple RAG Performance Using RL in Python
+[(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
+
 
 

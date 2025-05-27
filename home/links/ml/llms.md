@@ -63,21 +63,32 @@ is_slide: 0
 [(link)](https://medium.com/data-science-collective/agentic-ai-comparing-new-open-source-frameworks-21ec676732df)
 
 # agent frameworks
+## autogen
 - Autogen
 [(link)](https://github.com/microsoft/autogen)
+
+# crewai
 - CrewAI
 [(link)](https://docs.crewai.com/introduction)
+
+## langgraph
 - LangGraph
 [(link)](https://www.langchain.com/langgraph)
+
+## manus
 - Manus
 [(link)](https://manus.im/)
+
+## smalagents
 - Smolagents
 [(link)](https://github.com/huggingface/smolagents)
+- Open Computer
+[(link)](https://huggingface.co/spaces/smolagents/computer-agent)
 
 
 
 # coding
-- antrphic artefacts
+- antrophic artefacts
 [(link)](https://www.anthropic.com/news/artifacts)
 - bolt
 [(link)](https://bolt.new/)
@@ -347,6 +358,10 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag
+- Let’s Build a RAG Agent Using Phi-Data in Just 20 Lines of Code — Open Source & Local!
+[(link)](https://pub.towardsai.net/lets-build-a-rag-agent-using-phi-data-in-just-20-lines-of-code-open-source-local-5defc836f11c)
+- Gen AI Merchant Matching — using Opensource LLMs, Elastic search and FIASS
+[(link)](https://medium.com/data-science-collective/gen-ai-merchant-matching-using-opensource-llms-elastic-search-and-fiass-c4835a9d89f4)
 - RAG LLM Best Practices
 [(link)](https://medium.com/israeli-tech-radar/rag-llm-best-practices-1bced251201f)
 - Top 10 RAG Frameworks Github Repos 2024

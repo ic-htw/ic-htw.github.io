@@ -9,18 +9,6 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Gen AI Merchant Matching — using Opensource LLMs, Elastic search and FIASS
-[(link)](https://medium.com/data-science-collective/gen-ai-merchant-matching-using-opensource-llms-elastic-search-and-fiass-c4835a9d89f4)
-
-- Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
-[(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
-
-- Let’s Build a RAG Agent Using Phi-Data in Just 20 Lines of Code — Open Source & Local!
-[(link)](https://pub.towardsai.net/lets-build-a-rag-agent-using-phi-data-in-just-20-lines-of-code-open-source-local-5defc836f11c)
-
-- Maximizing Simple RAG Performance Using RL in Python
-[(link)](https://levelup.gitconnected.com/maximizing-simple-rag-performance-using-rl-in-python-d4c14cbadf59)
-
 - Finding the Best Open-Source Embedding Model for RAG
 [(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
 
