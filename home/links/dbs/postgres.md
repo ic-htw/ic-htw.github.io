@@ -153,6 +153,8 @@ is_slide: 0
 # extensions / tools
 - Announcing a new IDE for PostgreSQL in VS Code from Microsoft
 [(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-a-new-ide-for-postgresql-in-vs-code-from-microsoft/4414648)
+- dblab
+[(link)](https://github.com/danvergara/dblab)
 - pgModeller
 [(link)](https://pgmodeler.io/)
 - pg_duckdb

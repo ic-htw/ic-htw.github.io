@@ -9,41 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Finding the Best Open-Source Embedding Model for RAG
-[(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
-
-- Developing RAG Systems with DeepSeek R1 & Ollama (Complete Code Included)
-[(link)](https://sebastian-petrus.medium.com/developing-rag-systems-with-deepseek-r1-ollama-f2f561cfda97)
-
-- Full-stack RAG: FastAPI Backend (Part 1)
-[(link)](https://medium.com/@o39joey/full-stack-rag-fastapi-backend-part-1-eab28eb21392)
-
-- Build an LLM RAG Chatbot With LangChain
-[(link)](https://realpython.com/build-llm-rag-chatbot-with-langchain/)
-
-- Microsoft GraphRAG and Ollama: Code Your Way to Smarter Question Answering
-[(link)](https://blog.gopenai.com/microsoft-graphrag-and-ollama-code-your-way-to-smarter-question-answering-45a57cc5c38b)
-
-- Best practices for LLM optimization for call and message compliance: prompt engineering, RAG, and fine-tuning
-[(link)](https://medium.com/@sgreenman/best-practices-for-llm-optimization-for-call-and-message-compliance-prompt-engineering-rag-and-45ccca32ff17)
-
-- Graph RAG — A Conceptual Introduction
-[(link)](https://towardsdatascience.com/graph-rag-a-conceptual-introduction-41cd0d431375)
-
-- High-Precision RAG for Table Heavy Documents
-[(link)](https://medium.com/kx-systems/high-precision-rag-for-table-heavy-documents-using-langchain-unstructured-io-kdb-ai-22f7830eac9a)
-
-- Why Your RAG Doesn’t Work
-[(link)](https://medium.com/@cdg2718/why-your-rag-doesnt-work-9755726dd1e9)
-
-- Mastering RAG Chunking Techniques for Enhanced Document Processing
-[(link)](https://blog.gopenai.com/mastering-rag-chunking-techniques-for-enhanced-document-processing-8d5fd88f6b72)
-
 - Most Developers Get This Wrong in Docker Networking!
 [(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
-
-- dblab
-[(link)](https://github.com/danvergara/dblab)
 
 - Dynamic Data Source Routing in Spring Boot: Master Multi-Tenancy & Read-Write Separation
 [(link)](https://blog.devgenius.io/dynamic-data-source-routing-in-spring-boot-master-multi-tenancy-read-write-separation-ea45811f6e65)
