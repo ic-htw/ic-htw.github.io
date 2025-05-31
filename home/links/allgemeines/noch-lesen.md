@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- OpenAI: Scaling PostgreSQL to the Next Level 
+[(link)](https://www.pixelstech.net/article/1747708863-openai%3a-scaling-postgresql-to-the-next-level)
+
+- Bright Data MCP
+[(link)](https://github.com/brightdata-com/brightdata-mcp)
+
+- Data Engineering: Now with 30% More Bullshit
+[(link)](https://blog.det.life/data-engineering-now-with-30-more-bullshit-b9de5f81f8c2)
+
+Solving RL Algorithms by Hand: A Step-by-Step Math Example
+[(link)](https://levelup.gitconnected.com/solving-rl-algorithms-by-hand-a-step-by-step-math-example-fdaf61d42958)
+
+- DuckDB vs Databricks SQL Warehouse: Can We Save on Compute?
+[(link)](https://medium.com/@pablo.lopez.santori/duckdb-vs-databricks-sql-warehouse-can-we-save-on-compute-9d7e0836fdfe)
+
+- Google I/O 2025
+[(link)](https://medium.com/write-a-catalyst/google-has-solved-ais-biggest-problem-and-19-other-major-updates-347a99f4a5d8)
+
 - Most Developers Get This Wrong in Docker Networking!
 [(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
 
