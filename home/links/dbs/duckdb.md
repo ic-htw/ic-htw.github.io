@@ -28,6 +28,13 @@ is_slide: 0
 - DuckPGQ documentation
 [(link)](https://duckpgq.notion.site/b8ac652667964f958bfada1c3e53f1bb?v=3b47a8d44bdf4e0c8b503bf23f1b76f2)
 
+# data lake
+- From DuckDB to DuckHouse
+[(link)](https://juhache.substack.com/p/from-duckdb-to-duckhouse)
+- Duckhouse: DuckDB + Iceberg + Flight
+[(link)](https://github.com/boringdata/duckhouse)
+
+
 
 # spatial
 - DuckDB - Spatial Relationships
