@@ -314,6 +314,9 @@ home: &r
                 sub:
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/geo/geo.html
+                  - t:  Geo-Datenverarbeitung - pdf
+                    ts:  Geo-Datenverarbeitung - pdf
                     url: /home/lv/adbkt/a/geo/geo.pdf
                   - t: "Ü: Geo-Abfragen"
                     ts: "Ü: Geo-Abfragen"
