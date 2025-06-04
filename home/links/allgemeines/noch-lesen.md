@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Build an AI Agent That Turns SQL Databases into Dashboards — No Queries Needed
+[(link)](https://viveksinghpathania.medium.com/build-an-ai-agent-that-turns-sql-databases-into-dashboards-no-queries-needed-ea78571b2475)
+
 - OpenAI: Scaling PostgreSQL to the Next Level 
 [(link)](https://www.pixelstech.net/article/1747708863-openai%3a-scaling-postgresql-to-the-next-level)
 
