@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Performance vs Practicality: A Comparison of vLLM and Ollama
+[(link)](https://robert-mcdermott.medium.com/performance-vs-practicality-a-comparison-of-vllm-and-ollama-104acad250fd)
+
+- Building a Multi-Agent AI System with LangGraph and LangSmith
+[(link)](https://levelup.gitconnected.com/building-a-multi-agent-ai-system-with-langgraph-and-langsmith-6cb70487cd81)
+
+- Agentic RAG: Company Knowledge Slack Agents
+[(link)](https://medium.com/data-science-collective/agentic-rag-company-knowledge-slack-agents-98e588fd1209)
+
+- The math and logic behind ChatGPT. This paper is all you need.
+[(link)](https://medium.com/@joshuaanang783/the-math-and-logic-behind-chatgpt-this-paper-is-all-you-need-57b82a0527f9)
+
 - Build an AI Agent That Turns SQL Databases into Dashboards — No Queries Needed
 [(link)](https://viveksinghpathania.medium.com/build-an-ai-agent-that-turns-sql-databases-into-dashboards-no-queries-needed-ea78571b2475)
 
@@ -21,14 +33,11 @@ is_slide: 0
 - Data Engineering: Now with 30% More Bullshit
 [(link)](https://blog.det.life/data-engineering-now-with-30-more-bullshit-b9de5f81f8c2)
 
-Solving RL Algorithms by Hand: A Step-by-Step Math Example
+- Solving RL Algorithms by Hand: A Step-by-Step Math Example
 [(link)](https://levelup.gitconnected.com/solving-rl-algorithms-by-hand-a-step-by-step-math-example-fdaf61d42958)
 
 - DuckDB vs Databricks SQL Warehouse: Can We Save on Compute?
 [(link)](https://medium.com/@pablo.lopez.santori/duckdb-vs-databricks-sql-warehouse-can-we-save-on-compute-9d7e0836fdfe)
-
-- Google I/O 2025
-[(link)](https://medium.com/write-a-catalyst/google-has-solved-ais-biggest-problem-and-19-other-major-updates-347a99f4a5d8)
 
 - Most Developers Get This Wrong in Docker Networking!
 [(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
