@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 3 CPUs, 10,000 Threads: What Every Java Developer Should Understand
+[(link)](https://medium.com/@gaddamnaveen192/3-cpus-10-000-threads-what-every-java-developer-should-understand-e997a11d0128)
+
+- SSH Keys Don’t Scale. SSH Certificates Do.
+[(link)](https://medium.com/@tony.infisical/ssh-keys-dont-scale-ssh-certificates-do-268d594b99ba)
+
+- What is MCP? A Comprehensive Guide to Building Advanced AI Agents Beyond Traditional APIs.
+[(link)](https://pub.towardsai.net/what-is-mcp-a-comprehensive-guide-to-building-advanced-ai-agents-beyond-traditional-apis-c110abbeabb2)
+
+- Stop Rewriting Code in Python: Start Using Functools Now
+[(link)](https://medium.com/@aliyannshaikhh/a2da4a28d9c5)
+
+- From a Point to L infinity
+[(link)](https://ai.gopubby.com/from-a-point-to-l-bcaa09c8b66f)
+
 - Performance vs Practicality: A Comparison of vLLM and Ollama
 [(link)](https://robert-mcdermott.medium.com/performance-vs-practicality-a-comparison-of-vllm-and-ollama-104acad250fd)
 
