@@ -1,50 +1,55 @@
 Attribute and License: http://postgis.net/workshops/postgis-intro
-
-select *
+----------------------------------------------------------------------------------------------------
+-- visualisierungen
+----------------------------------------------------------------------------------------------------
+select name, geometry, st_centroid(geometry) as center
 from gis_osm_pois_a_free_1 
 where osm_id ='41361350';
 
-select *, st_centroid(geometry) as center
-from gis_osm_pois_a_free_1 
-where osm_id ='41361350';
-
-select ST_MakeEnvelope(13.518118858337404,52.45335495170562,13.532881736755371,52.45929126340994, 4326)
-select ST_MakeEnvelope(13.523375988006594,52.457251563734225,13.532248735427858,52.46021955697443, 4326)
-
+select ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326);
 
 select null, null, null, null,
-  ST_MakeEnvelope(13.518118858337404,52.45335495170562,13.532881736755371,52.45929126340994, 4326)
+  ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326)
 union all
 select *
 from gis_osm_pois_a_free_1 
-where st_intersects(
-  ST_MakeEnvelope(13.518118858337404,52.45335495170562,13.532881736755371,52.45929126340994, 4326),
-  geometry);
+where st_intersects(ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326), geometry);
   
-select name, shape 
-from bezirk; 
-
-select name, shape
-from bezirk
+select name, shape from bezirk
 union all
-select 'bb' as name, ST_Extent(shape) as shape
-from bezirk;
+select 'bb' as name, ST_Extent(shape) as shape from bezirk;
 
 
-select bez, pos
+select bez, pos from haltestelle;
+
+select * 
+from gis_osm_buildings_a_free_1 b
+order by b.geometry <-> st_point(13.5270, 52.4585, 4326)
+limit 300;
+
+select * 
+from gis_osm_water_a_free_1 b
+order by b.geometry <-> st_point(13.5270, 52.4585, 4326)
+limit 400;
+
+----------------------------------------------------------------------------------------------------
+-- voronoi - fetch auf 500 setzen
+----------------------------------------------------------------------------------------------------
+-- bb von berlin
+select ST_MakeEnvelope(13.0883, 52.3382, 13.7611, 52.6755, 4326)
+
+select pos as shape
 from haltestelle;
 
-select ST_Transform((st_dump(ST_VoronoiPolygons(st_collect(h.posp)))).geom, 4326) as shape
-from haltestelle h
-union all
-select pos from haltestelle;
+select st_collect(pos) as shape
+from haltestelle;
 
-
+select ST_VoronoiPolygons(st_collect(pos)) as shape from haltestelle h;
 
 select pos from haltestelle
 union all
-select ST_Transform((st_dump(ST_VoronoiPolygons(st_collect(h.posp)))).geom, 4326) as shape
-from haltestelle h;
+select ST_VoronoiPolygons(st_collect(pos)) as shape from haltestelle h;
+
 
 
 ----------------------------------------------------------------------------------------------------
@@ -83,46 +88,9 @@ select st_transform(st_point(11.5667, 48.1333, 4326), 31468)
 -- Zentrum Deutschland
 select st_transform(st_point(4391723.01, 5672810.04, 31468), 4326);
 
-
 ----------------------------------------------------------------------------------------------------
--- index
+-- pfaueninsel
 ----------------------------------------------------------------------------------------------------
-select ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326);
-select st_point(13.5270, 52.4585, 4326);
-
-select * from bln_edges limit 10;
-select * from gis_osm_buildings_a_free_1 limit 10;
-
-select * 
-from bln_edges be
-where 
-  st_intersects(be.geometry, ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326))
-  and not name is null;
-
-
-
-select * 
-from bln_edges be
-where 
-  st_intersects(be.geometry, st_buffer(ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326), 0.001)) 
-  and not name is null;
-
-
-select * 
-from gis_osm_buildings_a_free_1 b
-where 
-  st_intersects(b.geometry, ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326));
-  
-select * 
-from gis_osm_buildings_a_free_1 b
-order by b.geometry <-> st_point(13.5270, 52.4585, 4326)
-limit 300;
-
-select * 
-from gis_osm_water_a_free_1 b
-order by b.geometry <-> st_point(13.5270, 52.4585, 4326)
-limit 500;
-
 with 
   pi as (
     select * 
@@ -170,3 +138,36 @@ with
   )
 select *, d.api-d.ab as diff from d;
 
+
+----------------------------------------------------------------------------------------------------
+-- index
+----------------------------------------------------------------------------------------------------
+create index idx_bln_edges_geometry on ugeobln.bln_edges using gist (geometry);
+drop index idx_bln_edges_geometry;
+
+create index idx_bln_bezirk_museum on ugeobln.bln_bezirk_museum_shape using gist (shape);
+drop index idx_bln_bezirk_museum_shape;
+
+
+
+select * from bln_edges limit 10;
+select count(*) from bln_edges;
+select * from gis_osm_buildings_a_free_1 limit 10;
+
+-- mit  index: 83846, < 0.170sec
+-- ohne index: 83846, > 5sec
+select count(*)
+from bln_edges be 
+     join bln_bezirk_museum bm on st_intersects(be.geometry, bm.shape)
+where bm.name='Pankow';
+
+select * from bezirk where name='Pankow';
+
+-- mit  index: 181201, < 0.055sec
+-- ohne index: 181201, > 1.490sec
+select count(*)
+from bln_edges be 
+     join bln_bezirk_museum bm on be.geometry && bm.shape
+where bm.name='Pankow';	 
+	 
+	 
