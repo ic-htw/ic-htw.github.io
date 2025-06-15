@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why the Industry is Moving Back to JDBC from JPA 
+[(link)](https://medium.com/@gaddamnaveen192/why-the-industry-is-moving-back-to-jdbc-from-jpa-this-one-will-hurt-a-lot-of-developers-1d206ca2a9c7)
+
+- From Cursor to Claude Code — Why I’m Paying 5x More and Getting 10x Value
+[(link)](https://blog.whiteprompt.com/from-cursor-to-claude-code-why-im-paying-5x-more-and-getting-10x-value-1d61710df356)
+
+- The end of prestige: How AI is quietly dismantling the elite professions
+[(link)](https://medium.com/design-bootcamp/the-end-of-prestige-how-ai-is-quietly-dismantling-the-elite-professions-0b96b649edf4)
+
+- Mastering Type Annotations & Pydantic with Code Snippets
+[(link)](https://python.plainenglish.io/mastering-type-annotations-pydantic-with-code-snippets-6cba7847a760)
+
+- How to Find the Right Distribution for Your Data: A Practical Guide for Non-Statistician
+[(link)](https://medium.com/data-science-collective/how-to-find-the-right-distribution-for-your-data-a-practical-guide-for-non-statistician-with-two-dc2aa0ed707f)
+
 - 3 CPUs, 10,000 Threads: What Every Java Developer Should Understand
 [(link)](https://medium.com/@gaddamnaveen192/3-cpus-10-000-threads-what-every-java-developer-should-understand-e997a11d0128)
 
