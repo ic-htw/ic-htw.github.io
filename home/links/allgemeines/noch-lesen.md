@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Virtual Threads Are 1000x Lighter — But What’s the Catch?
+[(link)](https://medium.com/@ravibiswas0909/virtual-threads-are-1000x-lighter-but-whats-the-catch-e1b7b5944f81)
+
 - Why the Industry is Moving Back to JDBC from JPA 
 [(link)](https://medium.com/@gaddamnaveen192/why-the-industry-is-moving-back-to-jdbc-from-jpa-this-one-will-hurt-a-lot-of-developers-1d206ca2a9c7)
 
