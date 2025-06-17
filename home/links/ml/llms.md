@@ -264,8 +264,12 @@ is_slide: 0
 [(link)](https://levelup.gitconnected.com/the-guide-to-mcp-i-never-had-f79091cf99f8)
 - What is the Model Context Protocol (MCP)?
 [(link)](https://www.builder.io/blog/model-context-protocol)
-
-
+- The complete guide to building MCP Agents
+[(link)](https://levelup.gitconnected.com/the-complete-guide-to-building-mcp-agents-ec877f30136d)
+- What is MCP? A Comprehensive Guide to Building Advanced AI Agents Beyond Traditional APIs.
+[(link)](https://pub.towardsai.net/what-is-mcp-a-comprehensive-guide-to-building-advanced-ai-agents-beyond-traditional-apis-c110abbeabb2)
+- Bright Data MCP
+[(link)](https://github.com/brightdata-com/brightdata-mcp)
 - MindsDB 
 [(link)](https://mindsdb.com/)
 - 5 Best MCP Servers for Effortless Vibe Coding in 2025
@@ -276,12 +280,10 @@ is_slide: 0
 [(link)](https://pub.towardsai.net/building-a-multi-agent-system-with-multiple-mcp-servers-using-smolagents-95e9cedb1334)
 - Comparing Model Context Protocol (MCP) Server Frameworks
 [(link)](https://medium.com/@FrankGoortani/comparing-model-context-protocol-mcp-server-frameworks-03df586118fd)
-
 - How to Setup and Use PostgreSQL MCP Server
 [(link)](https://medium.com/towards-agi/how-to-setup-and-use-postgresql-mcp-server-e1c7ad2edc52)
 - A Postgres MCP server 
 [(link)](https://github.com/crystaldba/postgres-mcp)
-
 - Model Context Protocol (MCP): The AI Integration Breakthrough You Need to Know
 [(link)](https://ai.gopubby.com/model-context-protocol-mcp-the-ai-integration-breakthrough-you-need-to-know-f63d8dfc6253)
 - Model Context Protocol(MCP) with Google Gemini 2.5 Pro — A Deep Dive (Full Code)

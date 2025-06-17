@@ -9,17 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Virtual Threads Are 1000x Lighter — But What’s the Catch?
-[(link)](https://medium.com/@ravibiswas0909/virtual-threads-are-1000x-lighter-but-whats-the-catch-e1b7b5944f81)
 
-- Why the Industry is Moving Back to JDBC from JPA 
-[(link)](https://medium.com/@gaddamnaveen192/why-the-industry-is-moving-back-to-jdbc-from-jpa-this-one-will-hurt-a-lot-of-developers-1d206ca2a9c7)
+- Stop Rewriting Code in Python: Start Using Functools Now
+[(link)](https://medium.com/@aliyannshaikhh/a2da4a28d9c5)
 
 - From Cursor to Claude Code — Why I’m Paying 5x More and Getting 10x Value
 [(link)](https://blog.whiteprompt.com/from-cursor-to-claude-code-why-im-paying-5x-more-and-getting-10x-value-1d61710df356)
-
-- The end of prestige: How AI is quietly dismantling the elite professions
-[(link)](https://medium.com/design-bootcamp/the-end-of-prestige-how-ai-is-quietly-dismantling-the-elite-professions-0b96b649edf4)
 
 - Mastering Type Annotations & Pydantic with Code Snippets
 [(link)](https://python.plainenglish.io/mastering-type-annotations-pydantic-with-code-snippets-6cba7847a760)
@@ -32,12 +27,6 @@ is_slide: 0
 
 - SSH Keys Don’t Scale. SSH Certificates Do.
 [(link)](https://medium.com/@tony.infisical/ssh-keys-dont-scale-ssh-certificates-do-268d594b99ba)
-
-- What is MCP? A Comprehensive Guide to Building Advanced AI Agents Beyond Traditional APIs.
-[(link)](https://pub.towardsai.net/what-is-mcp-a-comprehensive-guide-to-building-advanced-ai-agents-beyond-traditional-apis-c110abbeabb2)
-
-- Stop Rewriting Code in Python: Start Using Functools Now
-[(link)](https://medium.com/@aliyannshaikhh/a2da4a28d9c5)
 
 - From a Point to L infinity
 [(link)](https://ai.gopubby.com/from-a-point-to-l-bcaa09c8b66f)
@@ -59,9 +48,6 @@ is_slide: 0
 
 - OpenAI: Scaling PostgreSQL to the Next Level 
 [(link)](https://www.pixelstech.net/article/1747708863-openai%3a-scaling-postgresql-to-the-next-level)
-
-- Bright Data MCP
-[(link)](https://github.com/brightdata-com/brightdata-mcp)
 
 - Data Engineering: Now with 30% More Bullshit
 [(link)](https://blog.det.life/data-engineering-now-with-30-more-bullshit-b9de5f81f8c2)
