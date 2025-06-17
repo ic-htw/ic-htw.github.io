@@ -14,6 +14,11 @@ union all
 select *
 from gis_osm_pois_a_free_1 
 where st_intersects(ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326), geometry);
+
+select geometry
+from bln_edges 
+where st_intersects(ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326), geometry);
+
   
 select name, shape from bezirk
 union all
