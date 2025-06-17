@@ -12,8 +12,8 @@ n: 20
 <h1>Geo-Datentypen</h1>
 <p class="w3-large ic-neg15">Geographische Referenzsysteme (spatial reference)</p>
 <ul class="w3-large">
-    <li>Gesamte Welt sphärisch GPS (<a href="https://epsg.io/4326">SRID 4326</a>)</li>
-    <li>Deutschland planar (<a href="https://epsg.io/31468">SRID 31468</a>)</li>
+    <li>Sphärisch (<a href="https://epsg.io/4326">SRID 4326</a>) - gesamte Welt, GPS</li>
+    <li>Planar (<a href="https://epsg.io/31468">SRID 31468</a>)- Deutschland</li>
 </ul>
 
 <img class="w3-image" src="/home/lv/adbkt/a/geo/types.png">
@@ -85,7 +85,44 @@ n: 20
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1></h1>
+<h1>Geometry-Typ vs. Geography-Typ</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Merkmal</th>
+        <th>Geometry-Typ</th>
+        <th>Geography-Typ</th>
+    </tr>
+    <tr>
+        <td>Modell der Erde</td>
+        <td>Planar (flach), kartesische Ebene</td>
+        <td>Sphärisch (rund), geodätisches Modell</td>
+    </tr>
+    <tr>
+        <td>Koordinaten</td>
+        <td>Kann beliebige Koordinatensysteme verwenden (planar oder sphärisch)</td>
+        <td>Fast ausschließlich für sphärische Koordinatensysteme</td>
+    </tr>
+    <tr>
+        <td>Einheiten</td>
+        <td>Hängen vom Koordinatensystem (SRID) ab. Grad oder Meter. Grad sind für Distanzen nutzlos</td>
+        <td>Immer Meter, für Distanzen ok</td>
+    </tr>
+    <tr>
+        <td>Genauigkeit</td>
+        <td>Sehr genau für kleine Gebiete (z.B. eine Stadt), bei denen die Erdkrümmung vernachlässigbar ist. Ungenau für große Distanzen</td>
+        <td>Sehr genau für große, globale Distanzen, da die Erdkrümmung berücksichtigt wird</td>
+    </tr>
+    <tr>
+        <td>Performance</td>
+        <td>Schneller, da die Berechnungen mathematisch einfacher sind (Pythagoras statt komplexer sphärischer Trigonometrie)</td>
+        <td>Langsamer, da die Berechnungen auf dem Sphäroid viel komplexer sind</td>
+    </tr>
+    <tr>
+        <td>Funktionsumfang</td>
+        <td>Fast alle Funktionen für Geometry-Typ verfügbar</td>
+        <td>Kleinerer Funktionsumfang als Geometry-Typ</td>
+    </tr>
+</table>
 <div class="ic-gap"></div>
 
 
@@ -93,7 +130,50 @@ n: 20
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>xxx</h1>
+<h1>Distanzberechnungen</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Code</th>
+        <th>Ergebnis</th>
+    </tr>
+    <tr>
+        <td><strong>Geometry</strong>
+<pre><code class="language-sql">select st_distance(
+  -- Berlin
+  st_point(13.4049, 52.5200, 4326),
+  -- München
+  st_point(11.5667, 48.1333, 4326)    
+) as dst;</code></pre></td>
+        <td><strong>4,76</strong><br>Ergebnis ist in Grad und daher nutzlos</td>
+    </tr>
+    <tr>
+        <td><strong>Geography</strong>
+<pre><code class="language-sql">select st_distance(
+  -- Berlin
+  st_point(13.4049, 52.5200, 4326)::geography,
+  -- München
+  st_point(11.5667, 48.1333, 4326)::geography    
+) as dst;</code></pre></td>
+        <td><strong>505162</strong><br>Ergebnis ist in Meter und daher sinnvoll</td>
+    </tr>
+    <tr>
+        <td><strong>Geometry</strong>
+<pre><code class="language-sql">select st_distance(
+  -- Berlin
+  st_transform(
+    st_point(13.4049, 52.5200, 4326), 
+    31468
+  ),
+  -- München
+  st_transform(
+    st_point(11.5667, 48.1333, 4326), 
+    31468
+  )    
+) as dst;</code></pre></td>
+        <td><strong>505178</strong><br>Ergebnis ist in Meter und daher sinnvoll.<br>Ungenauer: 16m Differenz, da Transformation in planares System (31468)</td>
+    </tr>
+</table>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/geo-dist-formulas.png">
 <div class="ic-gap"></div>
 
 
@@ -101,7 +181,39 @@ n: 20
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Geo-Index: Strukturen</h1>
+<ul class="w3-large">
+    <li>Räumliche Abfragen sind komplex</li>
+    <ul>
+        <li>Welche Grundstücke schneiden diese Straße?</li>
+        <li>Welche Cafés liegen innerhalb dieses Stadtteils?</li>
+        <li>Welche Krankenhäuser sind im Umkreis von 5 km?</li>
+    </ul>
+    <li>Ohne Index müsste für jeden einzelnen Datensatz die komplexe geometrische Berechnung durchgeführt werden  </li>
+    <li>GiST-Index (Generalized Search Tree) basiert auf R-Tree</li>
+    <ul>
+        <li>Keine Speicherung der komplexe Geometrie (z.B. ein Polygon mit 1000 Punkten)</li>
+        <li>Sondern kleinstmögliches Rechteck, das eine Geometrie vollständig umschließt</li>
+        <li>Vergleiche zwischen Bounding Boxes (BB) sind schnell</li>
+        <li><img class="w3-image" src="/home/lv/adbkt/a/geo/idx4.png"></li>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+    </ul>
+    <li>Welche Objekte schneiden das gelbe Dreieck<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx6.png"></li>
+    <li>Filterschritt: Welche BB der Objekte schneiden die BB des gelben Dreiecks</li>
+    <li>Das liefert (wenige) Kandidaten<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx7.png"></li>
+    <li>Verfeinerungsschritt: Exakte Suche nur in Kandidaten<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx8.png"></li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <ul>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+        <li>xxxxxxxxxxxxxxxxxx</li>
+    </ul>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -109,7 +221,69 @@ n: 20
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Geo-Index: Performance</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Tabelle</th>
+        <th>Inhalt</th>
+        <th>Geometrien</th>
+        <th>Anzahl Datensätze</th>
+    </tr>
+    <tr>
+        <td><code>bln_edges</code></td>
+        <td>Segmente aller Straßen in Berlin</td>
+        <td>Linestring</td>
+        <td>920966</td>
+    </tr>
+    <tr>
+        <td><code>bln_bezirk_museum</code></td>
+        <td>Bezirke und Museen in Berlin</td>
+        <td>Polygone und Points</td>
+        <td>128</td>
+    </tr>
+</table>
+
+<div class="ic-pos20"></div>
+
+<h3>Anzahl Straßensegmente in Pankow (83846)</h3>
+<div class="ic-neg15"></div>
+<p class="w3-large">In der Abfrage wird ein Geo-Join durchgeführt</p>
+<div class="ic-neg15"></div>
+<pre><code class="language-sql">select count(*)
+from bln_edges be 
+     join bln_bezirk_museum bm on st_intersects(be.geometry, bm.shape)
+where bm.name='Pankow'
+</code></pre>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Dauer ohne Index in Sekunden</th>
+        <th>Dauer mit Index in Sekunden</th>
+        <th>Faktor</th>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>0.170</td>
+        <td>29</td>
+    </tr>
+</table>
+
+<div class="ic-pos20"></div>
+<h3>Code zur Index-Erzeung</h3>
+<div class="ic-neg15"></div>
+<pre><code class="language-sql">create index idx_bln_edges_geometry on ugeobln.bln_edges using gist (geometry)</code></pre>
+
+<div class="ic-pos20"></div>
+<h3>Nur Bounding-Box-Suche</h3>
+<div class="ic-neg15"></div>
+<pre><code class="language-sql">select count(*)
+from bln_edges be 
+     join bln_bezirk_museum bm on be.geometry && bm.shape
+where bm.name='Pankow'</code></pre>
+<div class="ic-neg15"></div>
+<p class="w3-large">Dauert nur 0.055 Sekunden, liefert aber ungenaue Ergebnisse, da kein Verfeinerungsschritt</p>
+
+
 <div class="ic-gap"></div>
 
 
@@ -117,7 +291,83 @@ n: 20
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1>Geo-Funktionen</h1>
+<h3>Zentroid eines Polygons</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select name, geometry, st_centroid(geometry) as center
+from gis_osm_pois_a_free_1 
+where osm_id ='41361350';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-centroid.png">
+
+<h3>Box</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326);</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-envelope.png">
+
+<h3>Intersect</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select null, null, null, null,
+  ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326)
+union all
+select *
+from gis_osm_pois_a_free_1 
+where st_intersects(ST_MakeEnvelope(13.5233,52.4572,13.5322,52.4602, 4326), geometry);
+</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-intersect.png">
+
+<h3>Bounding Box</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select name, shape from bezirk
+union all
+select 'bb' as name, ST_Extent(shape) as shape from bezirk;
+</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-bb.png">
+
+<h3>Distance</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select * 
+from gis_osm_buildings_a_free_1 b
+order by b.geometry <-> st_point(13.5270, 52.4585, 4326)
+limit 300;
+</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-dist.png">
+
+<h3>Voronoi</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">select pos from haltestelle
+union all
+select ST_VoronoiPolygons(st_collect(pos)) as shape from haltestelle h;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-voronoi.png">
+
+<h3>Pfaueninsel</h3>
+<div class="ic-neg20"></div>
+<pre><code class="language-sql">with 
+  pi as (
+    select * 
+    from gis_osm_places_a_free_1 
+    where name = 'Pfaueninsel'
+  )
+select b.geometry
+from gis_osm_buildings_a_free_1 b join pi on st_contains(pi.geometry, b.geometry)
+union all
+select  pi.geometry from pi;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-pi-1.png">
+<pre><code class="language-sql">with 
+  pi as (
+    select geometry
+    from gis_osm_places_a_free_1 
+    where name = 'Pfaueninsel'
+  ),
+  d as (
+    select
+      round(min(st_area(pi.geometry::geography))) as flaeche_insel,
+      round(sum(st_area(b.geometry::geography))) as flaeche_gebaeude
+    from gis_osm_buildings_a_free_1 b join pi on st_contains(pi.geometry, b.geometry)
+  )
+select *, d.flaeche_insel-d.flaeche_gebaeude as diff from d;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-pi-2.png">
+
+
 <div class="ic-gap"></div>
 
 
@@ -125,15 +375,14 @@ n: 20
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
+<h1>Voronoi</h1>
 
 
 <!--
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1>Pfaueninsel</h1>
 <div class="ic-gap"></div>
 
 
