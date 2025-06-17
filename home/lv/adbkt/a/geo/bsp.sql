@@ -69,19 +69,25 @@ select st_distance(
   st_point(11.5667, 48.1333, 4326)    
 ) as dst;
 
-select floor(st_distance(
+select st_distance(
   -- Berlin
   st_point(13.4049, 52.5200, 4326)::geography,
   -- München
   st_point(11.5667, 48.1333, 4326)::geography    
-)) / 1000 as dst;
+) as dst;
 
-select floor(st_distance(
+select st_distance(
   -- Berlin
-  st_transform(st_point(13.4049, 52.5200, 4326), 31468),
+  st_transform(
+    st_point(13.4049, 52.5200, 4326), 
+    31468
+  ),
   -- München
-  st_transform(st_point(11.5667, 48.1333, 4326), 31468)    
-)) / 1000 as dst;
+  st_transform(
+    st_point(11.5667, 48.1333, 4326), 
+    31468
+  )    
+) as dst;
 
 -- Berlin
 select st_point(13.4049, 52.5200, 4326)
@@ -137,11 +143,11 @@ with
   ),
   d as (
     select
-      round(min(st_area(pi.geometry::geography))) as api,
-      round(sum(st_area(b.geometry::geography))) as ab
+      round(min(st_area(pi.geometry::geography))) as flaeche_insel,
+      round(sum(st_area(b.geometry::geography))) as flaeche_gebaeude
     from gis_osm_buildings_a_free_1 b join pi on st_contains(pi.geometry, b.geometry)
   )
-select *, d.api-d.ab as diff from d;
+select *, d.flaeche_insel-d.flaeche_gebaeude as diff from d;
 
 
 ----------------------------------------------------------------------------------------------------
