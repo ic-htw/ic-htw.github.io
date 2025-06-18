@@ -3,14 +3,14 @@ layout: default1
 nav: adbkt-geo
 title: Geo-Datenverarbeitung - ADBKT
 is_slide: 1
-n: 20
+n: 11
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
 <h1>Geo-Datentypen</h1>
-<p class="w3-large ic-neg15">Geographische Referenzsysteme (spatial reference)</p>
+<p class="w3-large ic-neg15">Geographische Referenzsysteme (spatial reference systems)</p>
 <ul class="w3-large">
     <li>Sphärisch (<a href="https://epsg.io/4326">SRID 4326</a>) - gesamte Welt, GPS</li>
     <li>Planar (<a href="https://epsg.io/31468">SRID 31468</a>)- Deutschland</li>
@@ -131,6 +131,7 @@ n: 20
 -->
 {% include padding-id.html id=8 %}
 <h1>Distanzberechnungen</h1>
+<h2>SQL</h2>
 <table class="w3-table-all">
     <tr>
         <th>Code</th>
@@ -173,6 +174,7 @@ n: 20
         <td><strong>505178</strong><br>Ergebnis ist in Meter und daher sinnvoll.<br>Ungenauer: 16m Differenz, da Transformation in planares System (31468)</td>
     </tr>
 </table>
+<h2>Formeln zur Distanzberechnung</h2>
 <img class="w3-image" src="/home/lv/adbkt/a/geo/geo-dist-formulas.png">
 <div class="ic-gap"></div>
 
@@ -196,23 +198,11 @@ n: 20
         <li>Sondern kleinstmögliches Rechteck, das eine Geometrie vollständig umschließt</li>
         <li>Vergleiche zwischen Bounding Boxes (BB) sind schnell</li>
         <li><img class="w3-image" src="/home/lv/adbkt/a/geo/idx4.png"></li>
-        <li>xxxxxxxxxxxxxxxxxx</li>
     </ul>
     <li>Welche Objekte schneiden das gelbe Dreieck<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx6.png"></li>
     <li>Filterschritt: Welche BB der Objekte schneiden die BB des gelben Dreiecks</li>
     <li>Das liefert (wenige) Kandidaten<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx7.png"></li>
     <li>Verfeinerungsschritt: Exakte Suche nur in Kandidaten<br><img class="w3-image" src="/home/lv/adbkt/a/geo/idx8.png"></li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <ul>
-        <li>xxxxxxxxxxxxxxxxxx</li>
-        <li>xxxxxxxxxxxxxxxxxx</li>
-        <li>xxxxxxxxxxxxxxxxxx</li>
-        <li>xxxxxxxxxxxxxxxxxx</li>
-        <li>xxxxxxxxxxxxxxxxxx</li>
-    </ul>
 </ul>
 <div class="ic-gap"></div>
 
@@ -339,7 +329,7 @@ union all
 select ST_VoronoiPolygons(st_collect(pos)) as shape from haltestelle h;</code></pre>
 <img class="w3-image" src="/home/lv/adbkt/a/geo/bsp-voronoi.png">
 
-<h3>Pfaueninsel</h3>
+<h3>Area</h3>
 <div class="ic-neg20"></div>
 <pre><code class="language-sql">with 
   pi as (
@@ -369,76 +359,4 @@ select *, d.flaeche_insel-d.flaeche_gebaeude as diff from d;</code></pre>
 
 
 <div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>Voronoi</h1>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>Pfaueninsel</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
 

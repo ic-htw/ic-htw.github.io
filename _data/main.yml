@@ -233,9 +233,6 @@ home: &r
                   - t: Neo4j Container / Python-Zugriff
                     ts: Neo4j Container / Python-Zugriff
                     url: /home/lv/adbkt/infrastruktur/infra-neo4j-cont.html
-                  - t: Graph-Datenmodelle
-                    ts: Graph-Datenmodelle
-                    url: /home/lv/adbkt/infrastruktur/infra-graph-dm.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
@@ -284,6 +281,9 @@ home: &r
                   - t: Neo4j
                     ts: Neo4j
                     url: /home/lv/adbkt/graphdb/neo4j.html
+                  - t: Graph-Datenmodelle
+                    ts: Graph-Datenmodelle
+                    url: /home/lv/adbkt/graphdb/graph-dm.html
                   - t: Cypher Knoten Matching
                     ts: Cypher Knoten Matching
                     url: /home/lv/adbkt/graphdb/cypher-knoten.html
@@ -315,18 +315,12 @@ home: &r
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
                     url: /home/lv/adbkt/geo/geo.html
-                  - t:  Geo-Datenverarbeitung - pdf
-                    ts:  Geo-Datenverarbeitung - pdf
-                    url: /home/lv/adbkt/a/geo/geo.pdf
                   - t: "Ü: Geo-Abfragen"
                     ts: "Ü: Geo-Abfragen"
                     url: /home/lv/adbkt/geo/ueb-geo-sql.html
-                  - t: "Ü: Visualisierung Geodaten"
-                    ts: "Ü: Visualisierung Geodaten"
-                    url: /home/lv/adbkt/geo/ueb-geo-viz.html
-                  - t: "Ü: pgRouting"
-                    ts: "Ü: pgRouting"
-                    url: /home/lv/adbkt/geo/ueb-pgrouting.html
+                  # - t: "Ü: pgRouting"
+                  #   ts: "Ü: pgRouting"
+                  #   url: /home/lv/adbkt/geo/ueb-pgrouting.html
               - t: Rekursives SQL
                 ts: Rekursives SQL
                 url: /home/lv/adbkt/recsql/1-recsql.html

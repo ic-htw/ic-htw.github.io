@@ -1,0 +1,49 @@
+---
+layout: default1
+nav: adbkt-infrastruktur
+title: "Konfiguration DBeaver - ADBKT"
+is_slide: 0
+---
+
+<h1>Konfiguration DBeaver</h1>
+<p class="w3-large"><a href="https://dbeaver.io/download/">DBeaver Download</a></p>
+
+
+<h2>DBeaver starten - neue Verbindung anlegen</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/100.png">
+
+<h2>PostgreSQL auswählen - "Next" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/110.png">
+
+<h2>Credentials eingeben - "Test Connection ..." klicken</h2>
+<p class="w3-large">Ggf. öffnet sich ein Download-Dialog für den Treiber. Treiber downloaden.</p>
+<p class="w3-large">Username und Password durch eigene Werte ersetzen!</p>
+
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/120.png">
+
+<h2>"OK" klicken, "Finish" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/130.png">
+
+<h2>Verbindung mit Name "adbkt" wurde angelegt</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/140.png">
+
+<h2>Rechte Maustaste - "Rename" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/150.png">
+
+<h2>Umbenennen</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/160.png">
+
+<h2>Rechte Maustaste - "Edit Connection" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/170.png">
+
+<h2>"Initialization" auswählen - "Configure ..." klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/180.png">
+
+<h2>"Add" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/190.png">
+
+<h2>Search Path einstellen - 3x "OK" klicken - fertig</h2>
+<pre><code class="language-sql">set search_path to ${user},ugeobln,ugm,uinsta,umisc,umobility,usozmed,public;</code></pre>
+
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/200.png">
+
