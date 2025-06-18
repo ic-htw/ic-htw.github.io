@@ -452,15 +452,15 @@ is_slide: 0
 
 - home
 [(link)](https://matplotlib.org/)
-
 - tutorial
 [(link)](https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
-
 - axes
 [(link)](https://matplotlib.org/api/axes_api.html)
-
 - subplots
 [(link)](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html)
+- From Default Python Line Chart to Journal-Quality Infographics
+[(link)](https://medium.com/data-science/from-default-python-line-chart-to-journal-quality-infographics-80e3949eacc3)
+
 
 
 # numpy
