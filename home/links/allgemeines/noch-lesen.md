@@ -10,11 +10,11 @@ is_slide: 0
 [(link)](bbb)
 -->
 
-- Stop Rewriting Code in Python: Start Using Functools Now
-[(link)](https://medium.com/@aliyannshaikhh/a2da4a28d9c5)
+- Declarative DuckLakes on Kubernetes
+[(link)](https://medium.com/@tfmv/declarative-ducklakes-on-kubernetes-6044736cf9a9)
 
-- From Cursor to Claude Code — Why I’m Paying 5x More and Getting 10x Value
-[(link)](https://blog.whiteprompt.com/from-cursor-to-claude-code-why-im-paying-5x-more-and-getting-10x-value-1d61710df356)
+- Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix
+[(link)](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)
 
 - Mastering Type Annotations & Pydantic with Code Snippets
 [(link)](https://python.plainenglish.io/mastering-type-annotations-pydantic-with-code-snippets-6cba7847a760)
