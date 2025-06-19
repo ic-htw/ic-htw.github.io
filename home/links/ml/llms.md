@@ -118,6 +118,8 @@ is_slide: 0
 
 
 # divers
+- Awesome LLM Books
+[(link)](https://github.com/Jason2Brownlee/awesome-llm-books)
 - LLM Visualization
 [(link)](https://bbycroft.net/llm)
 - 50+ Open-Source Options for Running LLMs Locally

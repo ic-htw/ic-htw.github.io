@@ -9,6 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- SELECT FOR UPDATE considered harmful in PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/select-for-update-considered-harmful-postgresql/)
 
 - Declarative DuckLakes on Kubernetes
 [(link)](https://medium.com/@tfmv/declarative-ducklakes-on-kubernetes-6044736cf9a9)
