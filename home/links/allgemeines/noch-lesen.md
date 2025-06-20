@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- fastmigrate
+[(link)](https://answerdotai.github.io/fastmigrate/)
+
+- Foundations of Computer Vision
+[(link)](https://visionbook.mit.edu/)
+
+- Exploring flexicache
+[(link)](https://www.answer.ai/posts/2025-06-07-exploring-flexicache.html)
+
+- A tour of fastcore
+[(link)](https://fastcore.fast.ai/tour.html)
+
 - SELECT FOR UPDATE considered harmful in PostgreSQL
 [(link)](https://www.cybertec-postgresql.com/en/select-for-update-considered-harmful-postgresql/)
 
