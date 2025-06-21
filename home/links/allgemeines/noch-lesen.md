@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Fine-Tuning LLMs is a Huge Waste of Time
+[(link)](https://machine-learning-made-simple.medium.com/fine-tuning-llms-is-a-huge-waste-of-time-bd0b98fcc282)
+
+- Classifying Concord
+[(link)](https://medium.com/@ranton256/classifying-concord-5c68c691f343)
+
+- We’re Back to Square One: Why AI is Forcing Us to Reinvent Programming Languages (Again)
+[(link)](https://pub.towardsai.net/were-back-to-square-one-why-ai-is-forcing-us-to-reinvent-programming-languages-again-7d6a0abed918)
+
+- Flight Club
+[(link)](https://medium.com/@tfmv/flight-club-6a56825fe0c8)
+
+- Claude Code: The Agentic Development Revolution That Made Me Cancel Cursor, Copilot, & ChatGPT — and Upgrade to Claude Max (Part 2)
+[(link)](https://medium.com/@george.vetticaden/claude-code-the-agentic-development-revolution-that-made-me-cancel-cursor-copilot-chatgpt-67508130e2e5)
+
 - fastmigrate
 [(link)](https://answerdotai.github.io/fastmigrate/)
 
