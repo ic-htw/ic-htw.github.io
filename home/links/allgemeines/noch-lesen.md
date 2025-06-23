@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How Does Google Search Work in Milliseconds? (And Why It’s Not Magic)
+[(link)](https://medium.com/hacking-hunter/how-does-google-search-work-in-milliseconds-and-why-its-not-magic-6fec4dd5fea4)
+
+- Diabetes Prediction Using Machine Learning Classification Approaches: A Capstone Project by Team Nabhan
+[(link)](https://medium.com/@agbaoyeadedeji78/diabetes-prediction-using-machine-learning-classification-approaches-a-capstone-project-by-team-cbd0b784a30b)
+
+- Why Most AI Agent Projects Will Fail by 2026, And How Not to Be One of Them
+[(link)](https://ai.plainenglish.io/why-most-ai-agent-projects-will-fail-by-2026-and-how-not-to-be-one-of-them-40e7b99b446e)
+
+- Why Most AI Agents Fail in Production (And How to Build Ones That Don’t)
+[(link)](https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075)
+
 - Fine-Tuning LLMs is a Huge Waste of Time
 [(link)](https://machine-learning-made-simple.medium.com/fine-tuning-llms-is-a-huge-waste-of-time-bd0b98fcc282)
 
