@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Porter
+[(link)](https://github.com/TFMV/porter)
+
+- Why __init__.py Changed the Way I Code in Python 
+[(link)](https://bigprogrammer.medium.com/why-init-py-changed-the-way-i-code-in-python-86b0201869f7)
+
 - How Does Google Search Work in Milliseconds? (And Why It’s Not Magic)
 [(link)](https://medium.com/hacking-hunter/how-does-google-search-work-in-milliseconds-and-why-its-not-magic-6fec4dd5fea4)
 
