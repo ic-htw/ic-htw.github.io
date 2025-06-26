@@ -179,12 +179,12 @@ home: &r
               - t: Repository-Import auf Github
                 ts: Repository-Import auf Github
                 url: /home/lv/dbtech/p/github-import.html
-              - t: IDE VS Code
-                ts: IDE VS Code
-                url: /home/lv/dbtech/p/ide-vscode-vers.html
               - t: IDE Intellij
                 ts: IDE Intellij
                 url: /home/lv/dbtech/p/ide-intellij-vers.html
+              - t: IDE VS Code
+                ts: IDE VS Code
+                url: /home/lv/dbtech/p/ide-vscode-vers.html
               - t: IDE Eclipse
                 ts: IDE Eclipse
                 url: /home/lv/dbtech/p/ide-eclipse.html
