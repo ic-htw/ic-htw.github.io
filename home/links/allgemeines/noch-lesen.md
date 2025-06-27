@@ -9,14 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- DuckTales: A DuckLake Story
-[(link)](https://medium.com/@tfmv/ducktales-a-ducklake-story-3b4d4e400578)
-
-- This Free Chinese AI Outperforms Claude 4 — Here’s How to Exploit It
-[(link)](https://generativeai.pub/this-free-chinese-ai-outperforms-claude-4-heres-how-to-exploit-it-ca4b80db25a5)
-
-- The AI Toolkit That Made Me a 10x DevOps Engineer (Without Burnout or Buzzwords)
-[(link)](https://medium.com/@osomudeyazudonu/the-ai-toolkit-that-made-me-a-10x-devops-engineer-without-burnout-or-buzzwords-beef70279ff1)
+- The SQL Fanatics’ Dream: AI Agents Without the Application Code!
+[(link)](https://medium.com/google-cloud/the-sql-fanatics-dream-ai-agents-without-the-application-code-67779e4cca81)
 
 - The Tools That Make Me a 10x Data Engineer
 [(link)](https://medium.com/brilliant-programmer/the-tools-that-make-me-a-10x-data-engineer-0f161f2e2ad5)
@@ -32,9 +26,6 @@ is_slide: 0
 
 - Why __init__.py Changed the Way I Code in Python 
 [(link)](https://bigprogrammer.medium.com/why-init-py-changed-the-way-i-code-in-python-86b0201869f7)
-
-- How Does Google Search Work in Milliseconds? (And Why It’s Not Magic)
-[(link)](https://medium.com/hacking-hunter/how-does-google-search-work-in-milliseconds-and-why-its-not-magic-6fec4dd5fea4)
 
 - Diabetes Prediction Using Machine Learning Classification Approaches: A Capstone Project by Team Nabhan
 [(link)](https://medium.com/@agbaoyeadedeji78/diabetes-prediction-using-machine-learning-classification-approaches-a-capstone-project-by-team-cbd0b784a30b)
