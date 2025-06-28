@@ -9,44 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- The SQL Fanatics’ Dream: AI Agents Without the Application Code!
-[(link)](https://medium.com/google-cloud/the-sql-fanatics-dream-ai-agents-without-the-application-code-67779e4cca81)
-
-- The Tools That Make Me a 10x Data Engineer
-[(link)](https://medium.com/brilliant-programmer/the-tools-that-make-me-a-10x-data-engineer-0f161f2e2ad5)
-
-- II-Agent: The Open-Source Python Framework for Intelligent Agents
-[(link)](https://medium.com/@pankaj_pandey/ii-agent-the-open-source-python-framework-for-intelligent-agents-678da060d700)
-
-- A Billion-Dollar Company,Brought Down by Programming 101
-[(link)](https://generativeai.pub/a-billion-dollar-company-brought-down-by-programming-101-5b2c37bc6396)
-
-- Porter
-[(link)](https://github.com/TFMV/porter)
-
-- Why __init__.py Changed the Way I Code in Python 
-[(link)](https://bigprogrammer.medium.com/why-init-py-changed-the-way-i-code-in-python-86b0201869f7)
-
-- Diabetes Prediction Using Machine Learning Classification Approaches: A Capstone Project by Team Nabhan
-[(link)](https://medium.com/@agbaoyeadedeji78/diabetes-prediction-using-machine-learning-classification-approaches-a-capstone-project-by-team-cbd0b784a30b)
-
-- Why Most AI Agent Projects Will Fail by 2026, And How Not to Be One of Them
-[(link)](https://ai.plainenglish.io/why-most-ai-agent-projects-will-fail-by-2026-and-how-not-to-be-one-of-them-40e7b99b446e)
-
-- Why Most AI Agents Fail in Production (And How to Build Ones That Don’t)
-[(link)](https://medium.com/data-science-collective/why-most-ai-agents-fail-in-production-and-how-to-build-ones-that-dont-f6f604bcd075)
-
-- Fine-Tuning LLMs is a Huge Waste of Time
-[(link)](https://machine-learning-made-simple.medium.com/fine-tuning-llms-is-a-huge-waste-of-time-bd0b98fcc282)
-
-- Classifying Concord
-[(link)](https://medium.com/@ranton256/classifying-concord-5c68c691f343)
-
-- We’re Back to Square One: Why AI is Forcing Us to Reinvent Programming Languages (Again)
-[(link)](https://pub.towardsai.net/were-back-to-square-one-why-ai-is-forcing-us-to-reinvent-programming-languages-again-7d6a0abed918)
-
-- Flight Club
-[(link)](https://medium.com/@tfmv/flight-club-6a56825fe0c8)
+- 99% of Developers Confuse These Terms: URI vs URL vs URN (Are You One of Them?)
+[(link)](https://medium.com/@gaddamnaveen192/99-of-developers-confuse-these-terms-uri-vs-url-vs-urn-are-you-one-of-them-12bff9f8906a)
 
 - Claude Code: The Agentic Development Revolution That Made Me Cancel Cursor, Copilot, & ChatGPT — and Upgrade to Claude Max (Part 2)
 [(link)](https://medium.com/@george.vetticaden/claude-code-the-agentic-development-revolution-that-made-me-cancel-cursor-copilot-chatgpt-67508130e2e5)
@@ -54,20 +18,11 @@ is_slide: 0
 - fastmigrate
 [(link)](https://answerdotai.github.io/fastmigrate/)
 
-- Foundations of Computer Vision
-[(link)](https://visionbook.mit.edu/)
-
 - Exploring flexicache
 [(link)](https://www.answer.ai/posts/2025-06-07-exploring-flexicache.html)
 
 - A tour of fastcore
 [(link)](https://fastcore.fast.ai/tour.html)
-
-- SELECT FOR UPDATE considered harmful in PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/select-for-update-considered-harmful-postgresql/)
-
-- Declarative DuckLakes on Kubernetes
-[(link)](https://medium.com/@tfmv/declarative-ducklakes-on-kubernetes-6044736cf9a9)
 
 - Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix
 [(link)](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)

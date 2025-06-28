@@ -344,3 +344,13 @@ is_slide: 0
 [(link)](https://developers.google.com/machine-learning/clustering/similarity/check-your-understanding)
 
 
+# projects
+- Lessons from the Titanic Kaggle Dataset (Part 1): Aggresive Data Cleaning Isn’t Always Improve Model Accuracy
+[(link)](https://fcel2510.medium.com/lessons-from-the-titanic-kaggle-dataset-part-1-aggresive-data-cleaning-isnt-always-improve-d41078311db2)
+
+- Lessons from the Titanic Kaggle Dataset (Part 2): Which Features Matter Most in Predicting Survival?
+[(link)](https://fcel2510.medium.com/lessons-from-the-titanic-kaggle-dataset-part-2-which-features-matter-most-in-predicting-survival-a4008154e290)
+
+- Diabetes Prediction Using Machine Learning Classification Approaches: A Capstone Project by Team Nabhan
+[(link)](https://medium.com/@agbaoyeadedeji78/diabetes-prediction-using-machine-learning-classification-approaches-a-capstone-project-by-team-cbd0b784a30b)
+

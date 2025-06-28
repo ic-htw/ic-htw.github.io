@@ -45,6 +45,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- Declarative DuckLakes on Kubernetes
+[(link)](https://medium.com/@tfmv/declarative-ducklakes-on-kubernetes-6044736cf9a9)
 - Building Effective Dashboards
 [(link)](https://medium.com/@nydas/building-effective-dashboards-de81c3c45aeb)
 - Handling Billions of Records in Minutes with SQL

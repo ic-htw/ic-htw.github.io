@@ -91,4 +91,7 @@ is_slide: 0
 [(link)](https://mlbook.explained.ai/)
 - Think Bayes 2
 [(link)](http://allendowney.github.io/ThinkBayes2/index.html)
+- Foundations of Computer Vision
+[(link)](https://visionbook.mit.edu/)
+
 
