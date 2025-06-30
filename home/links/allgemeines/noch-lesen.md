@@ -9,20 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- 99% of Developers Confuse These Terms: URI vs URL vs URN (Are You One of Them?)
-[(link)](https://medium.com/@gaddamnaveen192/99-of-developers-confuse-these-terms-uri-vs-url-vs-urn-are-you-one-of-them-12bff9f8906a)
-
 - Claude Code: The Agentic Development Revolution That Made Me Cancel Cursor, Copilot, & ChatGPT — and Upgrade to Claude Max (Part 2)
 [(link)](https://medium.com/@george.vetticaden/claude-code-the-agentic-development-revolution-that-made-me-cancel-cursor-copilot-chatgpt-67508130e2e5)
-
-- fastmigrate
-[(link)](https://answerdotai.github.io/fastmigrate/)
-
-- Exploring flexicache
-[(link)](https://www.answer.ai/posts/2025-06-07-exploring-flexicache.html)
-
-- A tour of fastcore
-[(link)](https://fastcore.fast.ai/tour.html)
 
 - Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix
 [(link)](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)
