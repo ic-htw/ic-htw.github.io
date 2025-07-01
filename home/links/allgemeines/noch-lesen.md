@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- If You Still Don’t Know How Java Heap Works, This Will Change Everything
+[(link)](https://medium.com/@ravibiswas0909/if-you-still-dont-know-how-java-heap-works-this-will-change-everything-afd72a9f6d62)
+
+- I Tried Google’s New Gemini CLI. It’s the Most Powerful Open-Source Dev Tool
+[(link)](https://javascript.plainenglish.io/i-tried-googles-new-gemini-cli-it-s-the-most-powerful-open-source-dev-tool-e8c35ee338a6)
+
 - Claude Code: The Agentic Development Revolution That Made Me Cancel Cursor, Copilot, & ChatGPT — and Upgrade to Claude Max (Part 2)
 [(link)](https://medium.com/@george.vetticaden/claude-code-the-agentic-development-revolution-that-made-me-cancel-cursor-copilot-chatgpt-67508130e2e5)
 
