@@ -11,7 +11,17 @@ is_slide: 0
 - git
 [(link)](https://github.com/dbt-labs/dbt)
 
+# udemy course
+- dbt course - ressources
+[(link)](https://github.com/nordquant/complete-dbt-bootcamp-zero-to-hero/blob/main/_course_resources/course-resources.md)
+- dbt course - git
+[(link)](https://github.com/nordquant/complete-dbt-bootcamp-zero-to-hero)
+
+
+
 # Articles
+- Building a dbt Pipeline with NBA Data — My Second Project Using Medallion Architecture
+[(link)](https://medium.com/@aljpacho/building-a-dbt-pipeline-with-nba-data-my-second-project-using-medallion-architecture-e98ba5faf394)
 - dbt Semantic Layer — What Is and How to Use
 [(link)](https://medium.com/getindata-blog/dbt-semantic-layer-what-is-and-how-to-use-a8a418301c8f)
 - dbt 1.8 it is just wow
