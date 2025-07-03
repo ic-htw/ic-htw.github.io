@@ -10,6 +10,9 @@ is_slide: 0
 [(link)](https://docs.getdbt.com/)
 - git
 [(link)](https://github.com/dbt-labs/dbt)
+- dbt hub
+[(link)](https://hub.getdbt.com/)
+
 
 # udemy course
 - dbt course - ressources
