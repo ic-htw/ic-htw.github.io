@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building a Complex, Production-Ready RAG System with LangChain, LangGraph, and RAGAS
+[(link)](https://levelup.gitconnected.com/building-a-complex-production-ready-rag-system-with-langchain-langgraph-and-ragas-36a66d663c5c)
+
+- Google Just Launched Gemini CLI, $200/month Worth of AI for Free.
+[(link)](https://generativeai.pub/google-just-launched-gemini-cli-200-month-worth-of-ai-for-free-8b03a474e119)
+
 - Quacks & Stacks
 [(link)](https://medium.com/@tfmv/quacks-stacks-5565069a5ef0)
 
