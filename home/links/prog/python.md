@@ -262,9 +262,6 @@ is_slide: 0
 - Classmethods, etc
 [(link)](https://realpython.com/courses/python-method-types/)
 
-- Pydantic
-[(link)](https://pydantic-docs.helpmanual.io/)
-
 - Protocol Types in Python 3.8
 [(link)](https://auth0.com/blog/protocol-types-in-python/)
 
@@ -508,6 +505,11 @@ is_slide: 0
 - 18 Important functions in Pandas
 [(link)](https://aparnamishra144.medium.com/18-important-functions-in-pandas-eb696ed15fdb)
 
+# pydantic
+- Mastering Type Annotations & Pydantic with Code Snippets
+[(link)](https://python.plainenglish.io/mastering-type-annotations-pydantic-with-code-snippets-6cba7847a760)
+- Pydantic
+[(link)](https://pydantic-docs.helpmanual.io/)
 
 
 # OpenCV

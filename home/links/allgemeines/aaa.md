@@ -49,3 +49,9 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/tokyo-walking-tour-guide.html)
 
 
+# Vorbereitung Dataman neu
+- How to Find the Right Distribution for Your Data: A Practical Guide for Non-Statistician
+[(link)](https://medium.com/data-science-collective/how-to-find-the-right-distribution-for-your-data-a-practical-guide-for-non-statistician-with-two-dc2aa0ed707f)
+- Mapping Healthcare Access in Chicago
+[(link)](https://medium.com/@yiannismastoras/mapping-healthcare-access-in-chicago-df351df0c944)
+

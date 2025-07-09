@@ -362,6 +362,8 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag
+- Building a Complex, Production-Ready RAG System with LangChain, LangGraph, and RAGAS
+[(link)](https://levelup.gitconnected.com/building-a-complex-production-ready-rag-system-with-langchain-langgraph-and-ragas-36a66d663c5c)
 - Finding the Best Open-Source Embedding Model for RAG
 [(link)](https://medium.com/timescale/finding-the-best-open-source-embedding-model-for-rag-929d1656d331)
 - Developing RAG Systems with DeepSeek R1 & Ollama (Complete Code Included)

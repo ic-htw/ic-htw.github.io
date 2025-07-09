@@ -9,29 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Building a Complex, Production-Ready RAG System with LangChain, LangGraph, and RAGAS
-[(link)](https://levelup.gitconnected.com/building-a-complex-production-ready-rag-system-with-langchain-langgraph-and-ragas-36a66d663c5c)
+- Can Junie be a real competitor for Cursor, Windsurf, and VS Code Copilot?
+[(link)](https://medium.com/vibecodingpub/can-junie-be-a-real-competitor-for-cursor-windsurf-and-vs-code-copilot-a6202660f477)
 
-- Google Just Launched Gemini CLI, $200/month Worth of AI for Free.
-[(link)](https://generativeai.pub/google-just-launched-gemini-cli-200-month-worth-of-ai-for-free-8b03a474e119)
+- Comparing JetBrains Junie and Google Jules Coding Agents for reimplementing a project in Java
+[(link)](https://medium.com/vibecodingpub/comparing-jetbrains-junie-and-google-jules-coding-agents-for-reimplementing-a-project-in-java-8b2f660406b7)
 
-- Quacks & Stacks
-[(link)](https://medium.com/@tfmv/quacks-stacks-5565069a5ef0)
+- Spring Boot 4 Released: A Full Analysis of 11 Major Changes!
+[(link)](https://blog.stackademic.com/spring-boot-4-released-a-full-analysis-of-11-major-changes-c98bda2bb358)
 
-- Claude Code: The Agentic Development Revolution That Made Me Cancel Cursor, Copilot, & ChatGPT — and Upgrade to Claude Max (Part 2)
-[(link)](https://medium.com/@george.vetticaden/claude-code-the-agentic-development-revolution-that-made-me-cancel-cursor-copilot-chatgpt-67508130e2e5)
-
-- Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix
-[(link)](https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d)
-
-- Mastering Type Annotations & Pydantic with Code Snippets
-[(link)](https://python.plainenglish.io/mastering-type-annotations-pydantic-with-code-snippets-6cba7847a760)
-
-- How to Find the Right Distribution for Your Data: A Practical Guide for Non-Statistician
-[(link)](https://medium.com/data-science-collective/how-to-find-the-right-distribution-for-your-data-a-practical-guide-for-non-statistician-with-two-dc2aa0ed707f)
-
-- 3 CPUs, 10,000 Threads: What Every Java Developer Should Understand
-[(link)](https://medium.com/@gaddamnaveen192/3-cpus-10-000-threads-what-every-java-developer-should-understand-e997a11d0128)
+- Mapping Healthcare Access in Chicago
+[(link)](https://medium.com/@yiannismastoras/mapping-healthcare-access-in-chicago-df351df0c944)
 
 - SSH Keys Don’t Scale. SSH Certificates Do.
 [(link)](https://medium.com/@tony.infisical/ssh-keys-dont-scale-ssh-certificates-do-268d594b99ba)
