@@ -33,6 +33,8 @@ is_slide: 0
 
 
 # agents
+- Building a Multi-Agent AI System with LangGraph and LangSmith
+[(link)](https://levelup.gitconnected.com/building-a-multi-agent-ai-system-with-langgraph-and-langsmith-6cb70487cd81)
 - Agentic 1: Model Context Protocol
 [(link)](https://medium.com/@adnanmasood/the-agentic-imperative-series-part-1-model-context-protocol-bridging-ai-and-enterprise-reality-52caa5b8b580)
 - Agentic 2: Crew AI & Semantic Kernel 

@@ -397,6 +397,10 @@ is_slide: 0
 - sbatch
 [(link)](https://slurm.schedmd.com/sbatch.html)
 
+# ssh
+- SSH Keys Don’t Scale. SSH Certificates Do.
+[(link)](https://medium.com/@tony.infisical/ssh-keys-dont-scale-ssh-certificates-do-268d594b99ba)
+
 
 # tableau
 - Parquet to Hyper Tableau: converting massive data for higher performance

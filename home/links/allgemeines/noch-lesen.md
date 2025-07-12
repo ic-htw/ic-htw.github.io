@@ -9,29 +9,29 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Can Junie be a real competitor for Cursor, Windsurf, and VS Code Copilot?
-[(link)](https://medium.com/vibecodingpub/can-junie-be-a-real-competitor-for-cursor-windsurf-and-vs-code-copilot-a6202660f477)
+- Building Real-Time Dashboards with FastAPI and HTMX
+[(link)](https://boadziedaniel.medium.com/building-real-time-dashboards-with-fastapi-and-htmx-01ea458673cb)
 
-- Comparing JetBrains Junie and Google Jules Coding Agents for reimplementing a project in Java
-[(link)](https://medium.com/vibecodingpub/comparing-jetbrains-junie-and-google-jules-coding-agents-for-reimplementing-a-project-in-java-8b2f660406b7)
+- HTMX Made Me Like the Web Again
+[(link)](https://itnext.io/htmx-made-me-like-the-web-again-aee0862a62bb)
 
-- Spring Boot 4 Released: A Full Analysis of 11 Major Changes!
-[(link)](https://blog.stackademic.com/spring-boot-4-released-a-full-analysis-of-11-major-changes-c98bda2bb358)
+- I Used MCP for 3 months: Everything You Need to Know + 24 Best Servers. New Anthropic DTX Extensions
+[(link)](https://pub.towardsai.net/i-used-mcp-for-3-months-everything-you-need-to-know-24-best-servers-0c02f3915867)
 
-- Mapping Healthcare Access in Chicago
-[(link)](https://medium.com/@yiannismastoras/mapping-healthcare-access-in-chicago-df351df0c944)
+- UV Cheatsheet for Python Developers
+[(link)](https://tarzzotech.medium.com/uv-cheatsheet-for-python-developers-2142bf6be8bf)
 
-- SSH Keys Don’t Scale. SSH Certificates Do.
-[(link)](https://medium.com/@tony.infisical/ssh-keys-dont-scale-ssh-certificates-do-268d594b99ba)
+- Using AI for Data Modeling in dbt
+[(link)](https://medium.com/@mikldd/using-ai-for-data-modeling-in-dbt-975838054cb1)
 
-- From a Point to L infinity
-[(link)](https://ai.gopubby.com/from-a-point-to-l-bcaa09c8b66f)
+- Palantir Foundry Is 5–10 Years Ahead of Every Other Data Platform
+[(link)](https://blog.det.life/what-palantir-foundry-taught-me-about-building-better-data-systems-407e3768d5fc)
+
+- What does git for Data even look like anymore?
+[(link)](https://dataopsleadership.substack.com/p/what-does-git-for-data-even-look)
 
 - Performance vs Practicality: A Comparison of vLLM and Ollama
 [(link)](https://robert-mcdermott.medium.com/performance-vs-practicality-a-comparison-of-vllm-and-ollama-104acad250fd)
-
-- Building a Multi-Agent AI System with LangGraph and LangSmith
-[(link)](https://levelup.gitconnected.com/building-a-multi-agent-ai-system-with-langgraph-and-langsmith-6cb70487cd81)
 
 - Agentic RAG: Company Knowledge Slack Agents
 [(link)](https://medium.com/data-science-collective/agentic-rag-company-knowledge-slack-agents-98e588fd1209)
