@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 5 Things You Didn’t Know About LocalStorage
+[(link)](https://javascript.plainenglish.io/5-things-you-didnt-know-about-localstorage-f13a39133247)
+
+- How Apache Iceberg Actually Works
+[(link)](https://medium.com/@tfmv/how-apache-iceberg-actually-works-64f97fb13c45)
+
+- From ERDs to Ontologies: Why Data Modelers Are Making the Switch
+[(link)](https://medium.com/timbr-ai/from-erds-to-ontologies-why-data-modelers-are-making-the-switch-6e37f04dc324)
+
 - Building Real-Time Dashboards with FastAPI and HTMX
 [(link)](https://boadziedaniel.medium.com/building-real-time-dashboards-with-fastapi-and-htmx-01ea458673cb)
 
