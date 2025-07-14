@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
+[(link)](https://medium.com/@snowflake_ai_research/smaller-models-smarter-sql-arctic-text2sql-r1-tops-bird-and-wins-broadly-33df9074246b)
+
+- How to Build Near Real Time Data Pipelines with Incremental Loading
+[(link)](https://medium.com/@vijaygadhave2014/how-to-build-near-real-time-data-pipelines-with-incremental-loading-e5caf13089ea)
+
 - 5 Things You Didn’t Know About LocalStorage
 [(link)](https://javascript.plainenglish.io/5-things-you-didnt-know-about-localstorage-f13a39133247)
 
