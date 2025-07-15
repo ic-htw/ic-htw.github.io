@@ -33,6 +33,10 @@ is_slide: 0
 
 
 # agents
+- The guide to OpenAI Codex CLI
+[(link)](https://levelup.gitconnected.com/the-guide-to-openai-codex-cli-e40f21f279d8)
+- Building a High-Performance Parallel LLM Pipeline Using Weight Optimization, KV Cache, SDPA, and Kubernetes
+[(link)](https://levelup.gitconnected.com/building-a-high-performance-parallel-llm-pipeline-using-weight-optimization-kv-cache-sdpa-and-d02225f2b1d1)
 - Building a Multi-Agent AI System with LangGraph and LangSmith
 [(link)](https://levelup.gitconnected.com/building-a-multi-agent-ai-system-with-langgraph-and-langsmith-6cb70487cd81)
 - Agentic 1: Model Context Protocol
