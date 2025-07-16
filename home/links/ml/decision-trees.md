@@ -4,12 +4,11 @@ nav: links-ml
 title:  Decision Trees
 is_slide: 0
 ---
-- Understanding Random Forest
-[(link)](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
-- AUTOXGBOOST + Optuna
-[(link)](https://medium.datadriveninvestor.com/autoxgboost-optuna-62a6e23a4604)
-- Why random forests outperform decision trees
-[(link)](https://towardsdatascience.com/why-random-forests-outperform-decision-trees-1b0f175a0b5)
+# aaa
+- Custom Loss Functions for Gradient Boosting
+[(link)](https://towardsdatascience.com/custom-loss-functions-for-gradient-boosting-f79c1b40466d)
+- What is the difference between Bagging and Boosting?
+[(link)](https://www.kdnuggets.com/2017/11/difference-bagging-boosting.html)
 - Decision Tree Regressor explained in depth
 [(link)](https://gdcoder.com/decision-tree-regressor-explained-in-depth/)
 - 4 Simple Ways to Split a Decision Tree in Machine Learning
@@ -26,36 +25,58 @@ is_slide: 0
 [(link)](https://medium.com/analytics-vidhya/decision-trees-for-dummies-a8e3c00c5e2e)
 - Decision Tree From Scratch
 [(link)](https://medium.com/swlh/decision-tree-from-scratch-a72069240293)
-- An Introduction to Random Forest
-[(link)](https://towardsdatascience.com/random-forest-3a55c3aca46d)
-- Introducing TensorFlow Decision Forests
-[(link)](https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html)
-- What is Out of Bag (OOB) score in Random Forest?
-[(link)](https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710)
 - Ensemble methods: bagging, boosting and stacking
 [(link)](https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205)
+
+
+
+# Gradiant Boosting
+- Gradient Boosted Regression Trees
+[(link)](https://www.datarobot.com/blog/gradient-boosted-regression-trees/)
+- Gradient Boosted Regression Trees - google
+[(link)](https://developers.google.com/machine-learning/decision-forests/intro-to-gbdt)
+- An introduction to Gradient Boosted Trees for machine learning
+[(link)](https://wandb.ai/mostafaibrahim17/ml-articles/reports/An-introduction-to-Gradient-Boosted-Trees-for-machine-learning--Vmlldzo2NTQ4NzYx)
+- Introduction to Boosted Trees - xgboost
+[(link)](https://xgboost.readthedocs.io/en/stable/tutorials/model.html)
+- An Introduction to Gradient Boosting Decision Trees
+[(link)](https://www.machinelearningplus.com/machine-learning/an-introduction-to-gradient-boosting-decision-trees/)
+- CatBoost vs. Light GBM vs. XGBoost
+[(link)](https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db)
+- Boosting with AdaBoost and Gradient Boosting
+[(link)](https://medium.com/diogo-menezes-borges/boosting-with-adaboost-and-gradient-boosting-9cbab2a1af81)
+- AUTOXGBOOST + Optuna
+[(link)](https://medium.datadriveninvestor.com/autoxgboost-optuna-62a6e23a4604)
+
+
+# XGBoost
+- Complete Guide to Parameter Tuning in XGBoost
+[(link)](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
+- XGBoost, a Top Machine Learning Method on Kaggle, Explained
+[(link)](https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html)
 - XGBoost Algorithm: Long May She Reign!
 [(link)](https://towardsdatascience.com/https-medium-com-vishalmorde-xgboost-algorithm-long-she-may-rein-edd9f99be63d)
-- An Implementation and Explanation of the Random Forest in Python
-[(link)](https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76)
-- Hyperparameter Tuning the Random Forest in Python
-[(link)](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
+
+
+
+# Random Forest
+- Understanding Random Forest
+[(link)](https://towardsdatascience.com/understanding-random-forest-58381e0602d2)
+- An Introduction to Random Forest
+[(link)](https://towardsdatascience.com/random-forest-3a55c3aca46d)
+- Beware Default Random Forest Importances
+[(link)](http://parrt.cs.usfca.edu/doc/rf-importance/index.html)
 - Random Forest in Python
 [(link)](https://towardsdatascience.com/random-forest-in-python-24d0893d51c0)
 - Are categorical variables getting lost in your random forests?
 [(link)](https://roamanalytics.com/2016/10/28/are-categorical-variables-getting-lost-in-your-random-forests/)
-- Boosting with AdaBoost and Gradient Boosting
-[(link)](https://medium.com/diogo-menezes-borges/boosting-with-adaboost-and-gradient-boosting-9cbab2a1af81)
-- Custom Loss Functions for Gradient Boosting
-[(link)](https://towardsdatascience.com/custom-loss-functions-for-gradient-boosting-f79c1b40466d)
-- XGBoost, a Top Machine Learning Method on Kaggle, Explained
-[(link)](https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html)
-- Complete Guide to Parameter Tuning in XGBoost
-[(link)](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
-- CatBoost vs. Light GBM vs. XGBoost
-[(link)](https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db)
-- What is the difference between Bagging and Boosting?
-[(link)](https://www.kdnuggets.com/2017/11/difference-bagging-boosting.html)
-- Beware Default Random Forest Importances
-[(link)](http://parrt.cs.usfca.edu/doc/rf-importance/index.html)
-
+- Hyperparameter Tuning the Random Forest in Python
+[(link)](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
+- An Implementation and Explanation of the Random Forest in Python
+[(link)](https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76)
+- Why random forests outperform decision trees
+[(link)](https://towardsdatascience.com/why-random-forests-outperform-decision-trees-1b0f175a0b5)
+- Introducing TensorFlow Decision Forests
+[(link)](https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html)
+- What is Out of Bag (OOB) score in Random Forest?
+[(link)](https://towardsdatascience.com/what-is-out-of-bag-oob-score-in-random-forest-a7fa23d710)
