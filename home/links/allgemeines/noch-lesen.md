@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Billions of Edges Per Second with Postgres
+[(link)](https://onesparse.com/blog/2025/07/01/billions-of-edges-per-second-with-postgres.html)
+
+- pdot: Interactive Directed Graphs of Your Database
+[(link)](https://gitlab.com/dmfay/pdot)
+
+- Exploring Databases Visually
+[(link)](https://di.nmfay.com/exploring-databases-visually)
+
+- pdot: Exploring Databases Visually, Part II
+[(link)](https://di.nmfay.com/pdot)
+
+- pgai
+[(link)](https://github.com/timescale/pgai)
+
 - Foursquare Introduces SQLRooms
 [(link)](https://medium.com/@foursquare/foursquare-introduces-sqlrooms-b6397d53546c)
 
