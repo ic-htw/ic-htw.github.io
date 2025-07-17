@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Foursquare Introduces SQLRooms
+[(link)](https://medium.com/@foursquare/foursquare-introduces-sqlrooms-b6397d53546c)
+
 - Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
 [(link)](https://medium.com/@snowflake_ai_research/smaller-models-smarter-sql-arctic-text2sql-r1-tops-bird-and-wins-broadly-33df9074246b)
 
