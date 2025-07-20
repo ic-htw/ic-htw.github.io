@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Chat with your documents tool — RAG (vector DBs + cosine sim.) & Claude API implementation
+[(link)](https://medium.com/@lucascarrasquillaparra/chat-with-your-documents-tool-rag-vector-dbs-cosine-sim-claude-api-implementation-2312cf14c67a)
+
+- Implementing 9 Techniques to Optimize AI Agent Memory
+[(link)](https://levelup.gitconnected.com/implementing-9-techniques-to-optimize-ai-agent-memory-67d813e3d796)
+
+- The Hidden Costs of LangChain, CrewAI, PydanticAI and Others: Why Popular AI Frameworks Are Failing Production Teams
+[(link)](https://ai.gopubby.com/the-hidden-costs-of-langchain-crewai-pydanticai-and-others-why-popular-ai-frameworks-are-failing-77b9a40c16cf)
+
+- SQL Isn’t a Query Language. It’s a Thinking Framework
+[(link)](https://medium.com/ai-analytics-diaries/sql-isnt-a-query-language-it-s-a-thinking-framework-77cfb0f31bdb)
+
+- How to Build a Production-Ready RAG App with Gemma and Bright Data in Under an Hour
+[(link)](https://ai.plainenglish.io/how-to-build-a-production-ready-rag-app-with-gemma-and-bright-data-in-under-an-hour-93dfdf414e96)
+
+- I spent $500 testing Replit/Lovable/Bolt/v0 & Cursor so you don’t have to
+[(link)](https://medium.com/realworld-ai-use-cases/i-spent-500-testing-replit-lovable-bolt-v0-cursor-so-you-dont-have-to-0e3c9b3a4e69)
+
 - Billions of Edges Per Second with Postgres
 [(link)](https://onesparse.com/blog/2025/07/01/billions-of-edges-per-second-with-postgres.html)
 
