@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Featherweight - Lightning Fast Analytics with DuckDB and Postgres
+[(link)](https://medium.com/@tfmv/featherweight-73e1865b31a1)
+
+- Why Your Data Lake Needs BLM, Not LLM
+[(link)](https://pub.towardsai.net/why-your-data-lake-needs-blm-not-llm-f0191aeca494)
+
 - Chat with your documents tool — RAG (vector DBs + cosine sim.) & Claude API implementation
 [(link)](https://medium.com/@lucascarrasquillaparra/chat-with-your-documents-tool-rag-vector-dbs-cosine-sim-claude-api-implementation-2312cf14c67a)
 
