@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- A Database Schema for Engineering Project Management
+[(link)](https://roshnnoronha.medium.com/a-database-schema-for-engineering-project-management-51d1b1f1078c)
+
 - Featherweight - Lightning Fast Analytics with DuckDB and Postgres
 [(link)](https://medium.com/@tfmv/featherweight-73e1865b31a1)
 
