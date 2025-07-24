@@ -364,9 +364,9 @@ home: &r
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html
-#                  - t: "Ü: Zeitreihendatenbanken"
-#                    ts: "Ü: Zeitreihendatenbanken"
-#                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
+                  - t: "Ü: Zeitreihendatenbanken"
+                    ts: "Ü: Zeitreihendatenbanken"
+                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
               - t: Sonstiges
                 ts: Sonstiges
                 url: /home/lv/adbkt/sonstiges/1-sonstiges.html
@@ -476,6 +476,30 @@ home: &r
               - t: Grading
                 ts: Grading
                 url: /home/lv/dataman/p/grading.html
+          - t: Data Science and Machine Learning for Business
+            ts: DSML
+            url: /home/lv/dsml/dsml.html
+            sub: &dsml
+              - t: General
+                ts: General
+                url: /home/lv/dsml/general/1-general.html
+                sub:
+                  - t: Schedule
+                    ts: Schedule
+                    url: /home/lv/dsml/general/schedule.html
+                  - t: Intro
+                    ts: Intro
+                    url: /home/lv/dsml/general/intro.html
+              - t: zzz
+                ts: zzz
+                url: /home/lv/dsml/general/1-zzz.html
+                sub:
+                  - t: Material
+                    ts: Material
+                    url: /home/lv/dsml/zzz/material.html
+                  - t: Kaggle Grandmaster Advice
+                    ts: Advice
+                    url: /home/lv/dsml/zzz/advice.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
@@ -657,5 +681,6 @@ lv: *lv
 dmdb: *dmdb
 dbtech: *dbtech
 adbkt: *adbkt
+dsml: *dsml
 sonst: *sonst
 links: *links

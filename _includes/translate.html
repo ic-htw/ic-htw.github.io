@@ -106,22 +106,36 @@
   {% assign x = site.data.main.adbkt[12] %}
   {% assign y = site.data.main.lv[2] %}
 
-  <!-- DataMan -->
+<!-- DataMan -->
 {% elsif page.nav == "dataman"%}
   {% assign x = site.data.main.lv[3] %}
   {% assign y = site.data.main.h[0] %}
 
-  <!-- PBI -->
-{% elsif page.nav == "pbi"%}
+<!-- DSML -->
+{% elsif page.nav == "dsml"%}
   {% assign x = site.data.main.lv[4] %}
   {% assign y = site.data.main.h[0] %}
+<!-- DSML - General -->
+{% elsif page.nav == "dsml-general"%}
+  {% assign x = site.data.main.dsml[0] %}
+  {% assign y = site.data.main.lv[4] %}
+<!-- DSML - zzz -->
+{% elsif page.nav == "dsml-zzz"%}
+  {% assign x = site.data.main.dsml[1] %}
+  {% assign y = site.data.main.lv[4] %}
 
-  <!-- Sonstiges -->
+
+<!-- PBI -->
+{% elsif page.nav == "pbi"%}
+  {% assign x = site.data.main.lv[5] %}
+  {% assign y = site.data.main.h[0] %}
+
+<!-- Sonstiges -->
 {% elsif page.nav == "sonstiges"%}
   {% assign x = site.data.main.h[1] %}
   {% assign y = site.data.main.r[0] %}
 
-  <!-- Links -->
+<!-- Links -->
 {% elsif page.nav == "links"%}
   {% assign x = site.data.main.h[2] %}
   {% assign y = site.data.main.r[0] %}
