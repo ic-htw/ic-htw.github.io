@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Experimenting with SQL:2023 Property-Graph Queries in Postgres 18
+[(link)](https://gavinray97.github.io/blog/postgres-sql-property-graphs)
+
 - A Database Schema for Engineering Project Management
 [(link)](https://roshnnoronha.medium.com/a-database-schema-for-engineering-project-management-51d1b1f1078c)
 
