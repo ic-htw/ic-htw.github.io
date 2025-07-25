@@ -119,9 +119,13 @@
 {% elsif page.nav == "dsml-general"%}
   {% assign x = site.data.main.dsml[0] %}
   {% assign y = site.data.main.lv[4] %}
+<!-- DSML - BI -->
+{% elsif page.nav == "dsml-bi"%}
+  {% assign x = site.data.main.dsml[1] %}
+  {% assign y = site.data.main.lv[4] %}
 <!-- DSML - zzz -->
 {% elsif page.nav == "dsml-zzz"%}
-  {% assign x = site.data.main.dsml[1] %}
+  {% assign x = site.data.main.dsml[2] %}
   {% assign y = site.data.main.lv[4] %}
 
 

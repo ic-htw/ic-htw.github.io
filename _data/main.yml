@@ -490,6 +490,13 @@ home: &r
                   - t: Intro
                     ts: Intro
                     url: /home/lv/dsml/general/intro.html
+              - t: Business Intelligence
+                ts: BI
+                url: /home/lv/dsml/bi/1-bi.html
+                sub:
+                  - t: Overview
+                    ts: Overview
+                    url: /home/lv/dsml/bi/overview.html
               - t: zzz
                 ts: zzz
                 url: /home/lv/dsml/general/1-zzz.html
