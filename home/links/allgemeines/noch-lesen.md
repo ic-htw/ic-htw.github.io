@@ -9,6 +9,25 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why the Server Should Handle the Web Again
+[(link)](https://itnext.io/why-the-server-should-handle-the-web-again-bf6689c78637)
+
+
+- From Chaos to Clarity: Building Modern Python Projects with UV
+[(link)](https://medium.com/@lmpo/from-chaos-to-clarity-building-modern-python-projects-with-uv-974bcde80c9b)
+
+
+- The Ultimate Guide to Git Branching Strategies
+[(link)](https://blog.prateekjain.dev/the-ultimate-guide-to-git-branching-strategies-6324f1aceac2)
+
+
+- The AI Stack No One Talks About: Data Acquisition as Infrastructure
+[(link)](https://ai.plainenglish.io/the-ai-stack-no-one-talks-about-data-acquisition-as-infrastructure-502189d2e55f)
+
+
+- Agentic-Doc: Extract Structured Data from Complex Documents with Ease
+[(link)](https://medium.com/@pankaj_pandey/agentic-doc-extract-structured-data-from-complex-documents-with-ease-9b18d12b1f9f)
+
 - Experimenting with SQL:2023 Property-Graph Queries in Postgres 18
 [(link)](https://gavinray97.github.io/blog/postgres-sql-property-graphs)
 
