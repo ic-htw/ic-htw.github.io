@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 25 ChatGPT Prompts to Replace Hours of Work as a Data Analyst
+[(link)](https://medium.com/ai-analytics-diaries/25-chatgpt-prompts-to-replace-hours-of-work-as-a-data-analyst-e5b206c3e175)
+
+- Optimizing LangChain AI Agents with Contextual Engineering
+[(link)](https://levelup.gitconnected.com/optimizing-langchain-ai-agents-with-contextual-engineering-0914d84601f3)
+
 - Why the Server Should Handle the Web Again
 [(link)](https://itnext.io/why-the-server-should-handle-the-web-again-bf6689c78637)
 
