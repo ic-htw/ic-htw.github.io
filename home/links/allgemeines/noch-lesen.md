@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How CERN Powers Ground-Breaking Physics with TimescaleDB
+[(link)](https://www.tigerdata.com/blog/how-cern-powers-ground-breaking-physics-with-timescaledb)
+
+- RAG Without Embeddings? Here's how OpenAI is doing this…
+[(link)](https://levelup.gitconnected.com/rag-without-embeddings-heres-how-openai-is-doing-this-45866cd5ddc6)
+
+- Object Detection with Python and HuggingFace Transformers
+[(link)](https://medium.com/h7w/object-detection-with-python-and-huggingface-transformers-508794c62456)
+
+- Implementing 12 AI Agent Evaluation Techniques Using LangSmith
+[(link)](https://levelup.gitconnected.com/implementing-12-ai-agent-evaluation-techniques-using-langsmith-507d5bf5c0aa)
+
 - 25 ChatGPT Prompts to Replace Hours of Work as a Data Analyst
 [(link)](https://medium.com/ai-analytics-diaries/25-chatgpt-prompts-to-replace-hours-of-work-as-a-data-analyst-e5b206c3e175)
 
