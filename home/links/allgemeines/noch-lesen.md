@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Customer-Facing Analytics Without Denormalizing Everything
+[(link)](https://starrocks.medium.com/customer-facing-analytics-without-denormalizing-everything-727e8aa2ec81)
+
+- Building Agentic Adaptive RAG with LangGraph for Production
+[(link)](https://ai.plainenglish.io/building-agentic-rag-with-langgraph-mastering-adaptive-rag-for-production-c2c4578c836a)
+
+- Microsoft Study: 40 Jobs AI Will Replace vs 40 Safe Careers
+[(link)](https://medium.com/write-a-catalyst/microsoft-study-40-jobs-ai-will-replace-vs-40-safe-careers-ecc2fa19bfd7)
+
 - How CERN Powers Ground-Breaking Physics with TimescaleDB
 [(link)](https://www.tigerdata.com/blog/how-cern-powers-ground-breaking-physics-with-timescaledb)
 
