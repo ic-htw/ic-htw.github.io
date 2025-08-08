@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Database Connections in FastAPI: Best Practices for Efficient and Scalable APIs
+[(link)](https://python.plainenglish.io/database-connections-in-fastapi-best-practices-for-efficient-and-scalable-apis-eb0867ed9e7c)
+
+- The Dark Side of @Transactional in Spring Boot—Exposed
+[(link)](https://medium.com/@pudarimadhavi99/the-dark-side-of-transactional-in-spring-boot-exposed-b4967c2ae166)
+
 - Customer-Facing Analytics Without Denormalizing Everything
 [(link)](https://starrocks.medium.com/customer-facing-analytics-without-denormalizing-everything-727e8aa2ec81)
 
