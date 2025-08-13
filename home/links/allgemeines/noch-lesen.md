@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What is a t-test and When to Use It in Pandas?
+[(link)](https://medium.com/@amit25173/what-is-a-t-test-and-when-to-use-it-in-pandas-9fde303d3c9f)
+
+- The Complete Beginner’s Guide to Python Modules
+[(link)](https://medium.com/cloud-for-everybody/the-complete-beginners-guide-to-python-modules-that-you-ll-actually-enjoy-reading-59b9b176f28b)
+
+- Kimball Star Schema vs Palantir’s Ontology
+[(link)](https://blog.astrobee.ai/kimball-star-schema-vs-palantirs-ontology-ab12728ff129)
+
+- Google’s Data Science Agent: Data Scientists are doomed
+[(link)](https://medium.com/data-science-in-your-pocket/googles-data-science-agent-data-scientists-are-doomed-fb7dc9330cda)
+
+- The Loop is Back: Why HRM is the Most Exciting AI Architecture in Years
+[(link)](https://medium.com/@gedanken.thesis/the-loop-is-back-why-hrm-is-the-most-exciting-ai-architecture-in-years-7b8c4414c0b3)
+
 - Database Connections in FastAPI: Best Practices for Efficient and Scalable APIs
 [(link)](https://python.plainenglish.io/database-connections-in-fastapi-best-practices-for-efficient-and-scalable-apis-eb0867ed9e7c)
 
