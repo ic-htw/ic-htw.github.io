@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Building the Entire RAG Ecosystem and Optimizing Every Component
+[(link)](https://levelup.gitconnected.com/building-the-entire-rag-ecosystem-and-optimizing-every-component-8f23349b96a4)
+
+- Nimtable: The Control Plane for Apache Iceberg
+[(link)](https://towardsdev.com/nimtable-the-control-plane-for-apache-iceberg-aa230a32f7e1)
+
+- Resolving 26 Git Workflow Challenges Every Dev Team Faces
+[(link)](https://levelup.gitconnected.com/resolving-26-git-workflow-challenges-every-dev-team-faces-6312cf976703)
+
 - What is a t-test and When to Use It in Pandas?
 [(link)](https://medium.com/@amit25173/what-is-a-t-test-and-when-to-use-it-in-pandas-9fde303d3c9f)
 
