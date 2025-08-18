@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The Modern Data Stack Is a Dumpster Fire
+[(link)](https://medium.com/@tfmv/the-modern-data-stack-is-a-dumpster-fire-b1aa81316d94)
+
 - Building the Entire RAG Ecosystem and Optimizing Every Component
 [(link)](https://levelup.gitconnected.com/building-the-entire-rag-ecosystem-and-optimizing-every-component-8f23349b96a4)
 
