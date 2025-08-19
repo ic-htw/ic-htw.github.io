@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- STOP Guessing Who Will Leave — How I Would Predict Customer Churn Before It Happens
+[(link)](https://medium.com/data-science-collective/stop-guessing-who-will-leave-how-i-would-predict-customer-churn-before-it-happens-300d34cbd13c)
+
 - The Modern Data Stack Is a Dumpster Fire
 [(link)](https://medium.com/@tfmv/the-modern-data-stack-is-a-dumpster-fire-b1aa81316d94)
 
