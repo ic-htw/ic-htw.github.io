@@ -507,6 +507,9 @@ home: &r
                   - t: Kaggle Grandmaster Advice
                     ts: Advice
                     url: /home/lv/dsml/zzz/advice.html
+                  - t: Metrics in Machine Learning
+                    ts: Metrics
+                    url: /home/lv/dsml/zzz/metrics.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
