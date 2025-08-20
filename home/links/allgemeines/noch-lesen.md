@@ -9,11 +9,20 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Give Your RTX GPU Nearly Infinite Memory for LLM Inference
+[(link)](https://medium.com/data-science-collective/how-to-give-your-rtx-gpu-nearly-infinite-memory-for-llm-inference-de2c57af1e82)
+
+- What You Should Know About B-Trees on Disk
+[(link)](https://levelup.gitconnected.com/what-you-should-know-about-b-trees-on-disk-but-probably-dont-5c87097f4b54)
+
+- PyCaret
+[(link)](https://pycaret.org/)
+
+- dbt Fusion: The Game-Changer for SQL Analytics Teams
+[(link)](https://www.carlosacchi.cloud/dbt-fusion-the-game-changer-for-sql-analytics-teams-eeffba792be5)
+
 - STOP Guessing Who Will Leave — How I Would Predict Customer Churn Before It Happens
 [(link)](https://medium.com/data-science-collective/stop-guessing-who-will-leave-how-i-would-predict-customer-churn-before-it-happens-300d34cbd13c)
-
-- The Modern Data Stack Is a Dumpster Fire
-[(link)](https://medium.com/@tfmv/the-modern-data-stack-is-a-dumpster-fire-b1aa81316d94)
 
 - Building the Entire RAG Ecosystem and Optimizing Every Component
 [(link)](https://levelup.gitconnected.com/building-the-entire-rag-ecosystem-and-optimizing-every-component-8f23349b96a4)
