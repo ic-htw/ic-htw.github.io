@@ -513,6 +513,9 @@ home: &r
                   - t: Correlation in Machine Learning
                     ts: Correlation
                     url: /home/lv/dsml/zzz/correlation.html
+                  - t: Gradient Boosting vs Random Forest
+                    ts: GradBoost vs RF
+                    url: /home/lv/dsml/zzz/gradboost_rf.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
