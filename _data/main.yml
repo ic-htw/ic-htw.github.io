@@ -510,6 +510,9 @@ home: &r
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/zzz/metrics.html
+                  - t: Correlation in Machine Learning
+                    ts: Correlation
+                    url: /home/lv/dsml/zzz/correlation.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
