@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introducing LangExtract: A Gemini powered information extraction library
+[(link)](https://developers.googleblog.com/en/introducing-langextract-a-gemini-powered-information-extraction-library/)
+
+- LangExtract
+[(link)](https://github.com/google/langextract)
+
 - Postgres Logging for Performance Optimization
 [(link)](https://www.crunchydata.com/blog/postgres-logging-for-performance-optimization)
 
