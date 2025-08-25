@@ -490,6 +490,41 @@ home: &r
                   - t: Intro
                     ts: Intro
                     url: /home/lv/dsml/general/intro.html
+              - t: Python
+                ts: Python
+                url: /home/lv/dsml/python/1-python.html
+                sub:
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/python/xxx.html
+              - t: Exploratory Data Analysis
+                ts: EDA
+                url: /home/lv/dsml/eda/1-eda.html
+                sub:
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/eda/xxx.html
+              - t: Machine Learning
+                ts: ML
+                url: /home/lv/dsml/ml/1-ml.html
+                sub:
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/ml/xxx.html
+              - t: SQL
+                ts: SQL
+                url: /home/lv/dsml/sql/1-sql.html
+                sub:
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/sql/xxx.html
+              - t: Data Models
+                ts: Data Models
+                url: /home/lv/dsml/dm/1-dm.html
+                sub:
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/dm/xxx.html
               - t: Business Intelligence
                 ts: BI
                 url: /home/lv/dsml/bi/1-bi.html

@@ -119,17 +119,37 @@
 {% elsif page.nav == "dsml-general"%}
   {% assign x = site.data.main.dsml[0] %}
   {% assign y = site.data.main.lv[4] %}
+<!-- DSML - Python -->
+{% elsif page.nav == "dsml-python"%}
+  {% assign x = site.data.main.dsml[1] %}
+  {% assign y = site.data.main.lv[4] %}
+<!-- DSML - EDA -->
+{% elsif page.nav == "dsml-eda"%}
+  {% assign x = site.data.main.dsml[2] %}
+  {% assign y = site.data.main.lv[4] %}
+<!-- DSML - ML -->
+{% elsif page.nav == "dsml-ml"%}
+  {% assign x = site.data.main.dsml[3] %}
+  {% assign y = site.data.main.lv[4] %}
+<!-- DSML - SQL -->
+{% elsif page.nav == "dsml-sql"%}
+  {% assign x = site.data.main.dsml[4] %}
+  {% assign y = site.data.main.lv[4] %}
+<!-- DSML - DM -->
+{% elsif page.nav == "dsml-dm"%}
+  {% assign x = site.data.main.dsml[5] %}
+  {% assign y = site.data.main.lv[4] %}
 <!-- DSML - BI -->
 {% elsif page.nav == "dsml-bi"%}
-  {% assign x = site.data.main.dsml[1] %}
+  {% assign x = site.data.main.dsml[6] %}
   {% assign y = site.data.main.lv[4] %}
 <!-- DSML - Reports -->
 {% elsif page.nav == "dsml-reports"%}
-  {% assign x = site.data.main.dsml[2] %}
+  {% assign x = site.data.main.dsml[7] %}
   {% assign y = site.data.main.lv[4] %}
 <!-- DSML - zzz -->
 {% elsif page.nav == "dsml-zzz"%}
-  {% assign x = site.data.main.dsml[3] %}
+  {% assign x = site.data.main.dsml[8] %}
   {% assign y = site.data.main.lv[4] %}
 
 
