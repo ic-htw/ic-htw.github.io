@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: dsml-zzz
+nav: dsml-reports
 title: ML Metrics
 is_slide: 0
 ---

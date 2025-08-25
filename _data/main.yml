@@ -497,25 +497,29 @@ home: &r
                   - t: Overview
                     ts: Overview
                     url: /home/lv/dsml/bi/overview.html
+              - t: AI Generated Reports
+                ts: AI Reports
+                url: /home/lv/dsml/reports/1-reports.html
+                sub:
+                  - t: Metrics in Machine Learning
+                    ts: Metrics
+                    url: /home/lv/dsml/reports/metrics.html
+                  - t: Correlation in Machine Learning
+                    ts: Correlation
+                    url: /home/lv/dsml/reports/correlation.html
+                  - t: Gradient Boosting vs Random Forest
+                    ts: GradBoost vs RF
+                    url: /home/lv/dsml/reports/gradboost_rf.html
+                  - t: Kaggle Grandmaster Advice
+                    ts: Advice
+                    url: /home/lv/dsml/reports/advice.html
               - t: zzz
                 ts: zzz
-                url: /home/lv/dsml/general/1-zzz.html
+                url: /home/lv/dsml/zzz/1-zzz.html
                 sub:
                   - t: Material
                     ts: Material
                     url: /home/lv/dsml/zzz/material.html
-                  - t: Kaggle Grandmaster Advice
-                    ts: Advice
-                    url: /home/lv/dsml/zzz/advice.html
-                  - t: Metrics in Machine Learning
-                    ts: Metrics
-                    url: /home/lv/dsml/zzz/metrics.html
-                  - t: Correlation in Machine Learning
-                    ts: Correlation
-                    url: /home/lv/dsml/zzz/correlation.html
-                  - t: Gradient Boosting vs Random Forest
-                    ts: GradBoost vs RF
-                    url: /home/lv/dsml/zzz/gradboost_rf.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
