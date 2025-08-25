@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: ML Metrics
+title: Gradient Boosting vs Random Forest
 is_slide: 0
 ---
 

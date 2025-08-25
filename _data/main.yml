@@ -501,15 +501,27 @@ home: &r
                 ts: AI Reports
                 url: /home/lv/dsml/reports/1-reports.html
                 sub:
+                  - t: Metrics in Machine Learning - Slides
+                    ts: Metrics - Slides
+                    url: /home/lv/dsml/reports/metrics-slides.html
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/reports/metrics.html
+                  - t: Correlation in Machine Learning - Slides
+                    ts: Correlation - Slides
+                    url: /home/lv/dsml/reports/correlation-slides.html
                   - t: Correlation in Machine Learning
                     ts: Correlation
                     url: /home/lv/dsml/reports/correlation.html
+                  - t: Gradient Boosting vs Random Forest - Slides
+                    ts: GradBoost vs RF - Slides
+                    url: /home/lv/dsml/reports/gradboost_rf-slides.html
                   - t: Gradient Boosting vs Random Forest
                     ts: GradBoost vs RF
                     url: /home/lv/dsml/reports/gradboost_rf.html
+                  - t: Boosting Algorithms - A Comparative Analysis
+                    ts: Boosting Algorithms
+                    url: /home/lv/dsml/reports/boosting-algos.html
                   - t: Kaggle Grandmaster Advice
                     ts: Advice
                     url: /home/lv/dsml/reports/advice.html
