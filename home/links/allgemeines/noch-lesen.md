@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Effortless EDA with Sweetviz & YData-Profiling
+[(link)](https://medium.com/@harishk3493/effortless-eda-with-sweetviz-ydata-profiling-secret-weapons-for-every-data-scientist-1c03625e4e8c)
+
+- How Agentic RAG is Transforming Information Retrieval
+[(link)](https://medium.com/@tam.tamanna18/how-agentic-rag-is-transforming-information-retrieval-faad92f588b6)
+
+- Why LLMs Can’t Solve Time Series
+[(link)](https://medium.com/@synthefy/why-llms-cant-solve-time-series-41834814961e)
+
+- Why AI Frameworks (LangChain, CrewAI, PydanticAI and Others) Fail in Production
+[(link)](https://medium.com/@tam.tamanna18/why-ai-frameworks-langchain-crewai-pydanticai-and-others-fail-in-production-c6292b98ee59)
+
 - Introducing LangExtract: A Gemini powered information extraction library
 [(link)](https://developers.googleblog.com/en/introducing-langextract-a-gemini-powered-information-extraction-library/)
 
