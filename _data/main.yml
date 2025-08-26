@@ -515,6 +515,18 @@ home: &r
                 ts: SQL
                 url: /home/lv/dsml/sql/1-sql.html
                 sub:
+                  - t: Queries on a Single Table
+                    ts: Queries on a Single Table
+                    url: /home/lv/dsml/sql/sql-1.html
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/sql/xxx.html
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/sql/xxx.html
+                  - t: xxx
+                    ts: xxx
+                    url: /home/lv/dsml/sql/xxx.html
                   - t: xxx
                     ts: xxx
                     url: /home/lv/dsml/sql/xxx.html

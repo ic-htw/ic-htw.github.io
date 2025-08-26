@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 5 SQL Questions That Stump Even Senior Analysts 
+[(link)](https://medium.com/ai-analytics-diaries/5-sql-questions-that-stump-even-senior-analysts-with-answers-69cc46a4a401)
+
+- SQLModel 
+[(link)](https://sqlmodel.tiangolo.com/)
+
 - Effortless EDA with Sweetviz & YData-Profiling
 [(link)](https://medium.com/@harishk3493/effortless-eda-with-sweetviz-ydata-profiling-secret-weapons-for-every-data-scientist-1c03625e4e8c)
 
