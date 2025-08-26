@@ -1,0 +1,62 @@
+---
+layout: default1
+nav: dsml-dm-rel
+title: Data Model - Company - DSML
+is_slide: 1
+n: 3
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Structural Representaton</h1>
+<!--
+    <pre><code class="language-sql">alter session set current_schema=uunternehmen;</code></pre>
+-->
+<img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-model.png">
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Data</h1>
+<div class="w3-row">
+    <div class="w3-col m6">
+        <code class="w3-large">Employee</code><br>
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-employee.png">
+    </div>
+    <div class="w3-col m6">
+        <code class="w3-large">OrgUnit</code><br>
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-orgunit.png">
+    </div>
+</div>
+
+<div class="w3-row">
+    <div class="w3-col m6">
+        <code class="w3-large">EmpProj</code><br>
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-empproj.png">
+    </div>
+    <div class="w3-col m6">
+        <code class="w3-large">Project</code><br>
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-project.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Hierarchy</h1>
+<div class="w3-row">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-hierarchy.png">
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-orgunit.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
