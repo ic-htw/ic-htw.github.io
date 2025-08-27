@@ -560,6 +560,12 @@ home: &r
                   - t: Correlation in Machine Learning
                     ts: Correlation
                     url: /home/lv/dsml/reports/correlation.html
+                  - t: Cross-Validation in Machine Learning - Slides
+                    ts: Cross-Validation - Slides
+                    url: /home/lv/dsml/reports/cross-validation-slides.html
+                  - t: Cross-Validation in Machine Learning
+                    ts: Cross-Validation 
+                    url: /home/lv/dsml/reports/cross-validation.html
                   - t: Gradient Boosting vs Random Forest - Slides
                     ts: GradBoost vs RF - Slides
                     url: /home/lv/dsml/reports/gradboost_rf-slides.html

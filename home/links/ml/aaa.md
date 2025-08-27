@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Visual Intro to Machine Learning
+[(link)](http://www.r2d3.us/)
 - Linear Algebra Concepts Every Data Scientist Should Know
 [(link)](https://medium.com/bitgrit-data-science-publication/linear-algebra-concepts-every-data-scientist-should-know-18b00bd453dd)
 - Table Transformer (TATR)
