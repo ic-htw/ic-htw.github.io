@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Claude Sonnet 4 vs Kimi K2 vs Gemini 2.5 Pro: Which AI actually ships production code?
+[(link)](https://generativeai.pub/claude-sonnet-4-vs-kimi-k2-vs-gemini-2-5-pro-which-ai-actually-ships-production-code-682485e5b6e8)
+
 - 5 SQL Questions That Stump Even Senior Analysts 
 [(link)](https://medium.com/ai-analytics-diaries/5-sql-questions-that-stump-even-senior-analysts-with-answers-69cc46a4a401)
 

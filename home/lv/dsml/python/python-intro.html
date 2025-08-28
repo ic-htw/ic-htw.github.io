@@ -1,0 +1,195 @@
+---
+layout: default1
+nav: dsml-python
+title: Python Introduction - DSML
+is_slide: 1
+n: 12
+---
+
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Mode of Work</h1>
+<ul class="w3-large">
+    <li>We are going to use Google Colab</li>
+    <li>We are using Large Language Models (LLM) to generate Code</li>
+    <li>Eg. Google Gemini, as it is built into Colab</li>
+    <li>Bt you can any LLM you like</li>
+    <li>We will use prompts to guide the LLMs</li>
+    <li>The following Slides will present topic-based prompts</li>
+    <li>Links to relevant information can be found on the resources page</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Program Structure</h1>
+<ul class="w3-large">
+    <li>write a simple python program</li>
+    <li>write a simple python program with an if statement</li>
+    <li>explain that program</li>
+    <li>explain colons and indentation</li>
+    <li>write code for nested if</li>
+    <li>write code for chained if</li>
+    <li>write a simple python program with a loop</li>
+    <li>what does range(5) mean</li>
+    <li>write code for nested loops</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Strings</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a variable of type string</li>
+    <li>generate examples of using string functions</li>
+    <li>explain the usage of f-string</li>
+    <li>explain formating within f-strings</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Lists</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a variable of type list</li>
+    <li>generate examples of list slicing</li>
+    <li>generate examples of using list functions</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Dicts</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a variable of type dict</li>
+    <li>generate examples of using dict functions</li>
+    <li>explain default within dict</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Functions</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a function definition</li>
+    <li>write a simple python program with a function definition that gets a number as input and returns a number</li>
+    <li>apply this function onto a list of numbers</li>
+    <li>use map</li>
+    <li>what is the difference between a list and an iterator</li>
+    <li>explain higher order functions in python</li>
+    <li>generate example code for reduce</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Classroom Exercise 1</h1>
+<p class="w3-large">
+    Create a function that that given a text counts the number of occurences per word.
+</p>
+
+<p class="w3-large">
+    Let the LLM generate the code and explain it.
+</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>List Comprehensions</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a list comprehension</li>
+    <li>explain list comprehensions</li>
+    <li>add a filter to the previous program</li>
+    <li>nest list comprehensions</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Files</h1>
+<ul class="w3-large">
+    <li>write a simple python program that reads from a file</li>
+    <li>read line by line</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Classroom Exercise 2</h1>
+<p class="w3-large ic-neg15">
+    Create a function that that given a list of two-dimensional tuples that represent cartesion coordinates, plots them on a two dimensional plane, connects them with lines, and calculates the length of the corresponding path.
+</p>
+<ul class="w3-large">
+    <li>define a variable named coords that is a list of two-dimensional tuples that represent cartesion coordinates</li>
+    <li>plot coords on a two dimensional plane</li>
+    <li>plot a path connecting the points in coords</li>
+    <li>connect points according to position in list</li>
+    <li>write a function that calculates the length of a path</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Classes</h1>
+<ul class="w3-large">
+    <li>write a simple python program with a class</li>
+    <li>explain that class</li>
+    <li>explain what methods are good for</li>
+    <li>what is the role of __init__</li>
+    <li>Explain instance generation</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Classroom Exercise 3</h1>
+<p class="w3-large ic-neg15">
+    Create a class that implements the Nearest Neighbor algorithm for finding the nearest point in a set of points.
+</p>
+<ul class="w3-large">
+    <li>create a class named NearestNeighbor that has an empty constuctor</li>
+    <li>it should have a method named fit with one parameter named instances</li>
+    <li>this parameter is a list of tuples that represent cartesion coordinates</li>
+    <li>it should have a soecond method called predict</li>
+    <li>this method should deliver the cordinates of the nearest point</li>
+</ul>
+<div class="ic-gap"></div>
+
+

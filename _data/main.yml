@@ -494,9 +494,18 @@ home: &r
                 ts: Python
                 url: /home/lv/dsml/python/1-python.html
                 sub:
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/python/xxx.html
+                  - t: Python Introduction
+                    ts: Python Introduction
+                    url: /home/lv/dsml/python/python-intro.html
+                  - t: Numpy Introduction
+                    ts: Numpy Introduction
+                    url: /home/lv/dsml/python/numpy-intro.html
+                  - t: Pandas Introduction
+                    ts: Pandas Introduction
+                    url: /home/lv/dsml/python/pandas-intro.html
+                  - t: Python Resources
+                    ts: Python Resources
+                    url: /home/lv/dsml/python/python-resources.html
               - t: Exploratory Data Analysis
                 ts: EDA
                 url: /home/lv/dsml/eda/1-eda.html
