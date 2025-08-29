@@ -510,9 +510,9 @@ home: &r
                 ts: EDA
                 url: /home/lv/dsml/eda/1-eda.html
                 sub:
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/eda/xxx.html
+                  - t: EDA Resources
+                    ts: EDA Resources
+                    url: /home/lv/dsml/eda/eda-resources.html
               - t: Machine Learning
                 ts: ML
                 url: /home/lv/dsml/ml/1-ml.html
@@ -563,6 +563,18 @@ home: &r
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/reports/metrics.html
+                  - t: Exploratory Data Analysis - Slides
+                    ts: EDA - Slides
+                    url: /home/lv/dsml/reports/eda-slides.html
+                  - t: Exploratory Data Analysis
+                    ts: EDA
+                    url: /home/lv/dsml/reports/eda.html
+                  - t: Visualization Types and Uses - Slides
+                    ts: Visualization - Slides
+                    url: /home/lv/dsml/reports/viz-slides.html
+                  - t: Visualization Types and Uses
+                    ts: Visualization
+                    url: /home/lv/dsml/reports/viz.html
                   - t: Correlation in Machine Learning - Slides
                     ts: Correlation - Slides
                     url: /home/lv/dsml/reports/correlation-slides.html
