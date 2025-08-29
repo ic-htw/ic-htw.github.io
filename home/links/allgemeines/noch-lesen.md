@@ -9,6 +9,30 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Understand MCP in 10 Minutes
+[(link)](https://medium.com/@haiou-a/understand-mcp-in-10-minutes-e864bbc62f03)
+
+- Radically Simple Data Lineage
+[(link)](https://blog.dataengineerthings.org/radically-simple-data-lineage-b528ab526ff9)
+
+- Mastering Advanced Exploratory Data Analysis and Visualization Effectively 2
+[(link)](https://python.plainenglish.io/mastering-exploratory-data-analysis-effectively-a-complete-guide-basics-to-advanced-part-2-6f0f8a045fb1)
+
+- Comprehensive-Guide-to-Exploratory-Data-Analysis
+[(link)](https://github.com/thom22/Comprehensive-Guide-to-Exploratory-Data-Analysis)
+
+- DocumentDB
+[(link)](https://github.com/documentdb/documentdb)
+
+- AWS joins the DocumentDB
+[(link)](https://aws.amazon.com/de/blogs/opensource/aws-joins-the-documentdb-project-to-build-interoperable-open-source-document-database-technology/)
+
+- A decade of database innovation: The Amazon Aurora story
+[(link)](https://www.amazon.science/blog/a-decade-of-database-innovation-the-amazon-aurora-story)
+
+- The Internals of PostgreSQL
+[(link)](https://www.interdb.jp/pg/index.html)
+
 - Claude Sonnet 4 vs Kimi K2 vs Gemini 2.5 Pro: Which AI actually ships production code?
 [(link)](https://generativeai.pub/claude-sonnet-4-vs-kimi-k2-vs-gemini-2-5-pro-which-ai-actually-ships-production-code-682485e5b6e8)
 
