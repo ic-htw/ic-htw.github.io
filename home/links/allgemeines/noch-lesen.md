@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Linear Regression Explained: From Theory to Real-World Implementation
+[(link)](https://mohith-g.medium.com/linear-regression-explained-from-theory-to-real-world-implementation-45b43faed743)
+
 - Understand MCP in 10 Minutes
 [(link)](https://medium.com/@haiou-a/understand-mcp-in-10-minutes-e864bbc62f03)
 
