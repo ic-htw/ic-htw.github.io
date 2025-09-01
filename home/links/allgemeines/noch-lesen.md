@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Simple Ways to Apply if-Else Condition in Pandas DataFrame
+[(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
+
 - Linear Regression Explained: From Theory to Real-World Implementation
 [(link)](https://mohith-g.medium.com/linear-regression-explained-from-theory-to-real-world-implementation-45b43faed743)
 
