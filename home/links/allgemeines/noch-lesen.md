@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How Google and Stanford made AI more Interpretable with a 20 year old Technique
+[(link)](https://machine-learning-made-simple.medium.com/breaking-down-db-ksvd-scalable-alternating-optimization-for-disentangling-high-dimensional-87d3e2237de4)
+
 - Simple Ways to Apply if-Else Condition in Pandas DataFrame
 [(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
 
