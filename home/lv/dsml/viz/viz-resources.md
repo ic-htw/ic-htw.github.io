@@ -1,7 +1,7 @@
 ---
 layout: default1
-nav: dsml-eda
-title: EDA Resources- DSML
+nav: dsml-viz
+title: Viz Resources- DSML
 is_slide: 0
 ---
 

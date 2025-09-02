@@ -506,13 +506,37 @@ home: &r
                   - t: Python Resources
                     ts: Python Resources
                     url: /home/lv/dsml/python/python-resources.html
-              - t: Exploratory Data Analysis
-                ts: EDA
-                url: /home/lv/dsml/eda/1-eda.html
+              - t: Visualization
+                ts: Visualization
+                url: /home/lv/dsml/viz/1-viz.html
                 sub:
-                  - t: EDA Resources
-                    ts: EDA Resources
-                    url: /home/lv/dsml/eda/eda-resources.html
+                  - t: Diagram Types
+                    ts: Diagram Types
+                    url: /home/lv/dsml/viz/viz-types.html
+                  - t: Amounts
+                    ts: Amounts
+                    url: /home/lv/dsml/viz/viz-amounts.html
+                  - t: Distributions
+                    ts: Distributions
+                    url: /home/lv/dsml/viz/viz-dist.html
+                  - t: Many Distributions
+                    ts: Many Distributions
+                    url: /home/lv/dsml/viz/viz-dist-many.html
+                  - t: Proportions
+                    ts: Proportions
+                    url: /home/lv/dsml/viz/viz-proportions.html
+                  - t: Associations
+                    ts: Associations
+                    url: /home/lv/dsml/viz/viz-assoc.html
+                  - t: Timeseries
+                    ts: Timeseries
+                    url: /home/lv/dsml/viz/viz-timeseries.html
+                  - t: Miscellaneous
+                    ts: Miscellaneous
+                    url: /home/lv/dsml/viz/viz-misc.html
+                  - t: Viz Resources
+                    ts: Viz Resources
+                    url: /home/lv/dsml/viz/viz-resources.html
               - t: Machine Learning
                 ts: ML
                 url: /home/lv/dsml/ml/1-ml.html

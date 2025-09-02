@@ -1,0 +1,224 @@
+---
+layout: default1
+nav: dsml-viz
+title: Visualization - Amounts - DSML
+is_slide: 1
+n: 16
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Attribution</h1>
+<p class="w3-large">The following slides are based on</p>
+<ul class="w3-large">
+  <li>Fundamentals of Data Visualization (<a  href="https://clauswilke.com/dataviz/index.html">link</a>)<br>
+  and are following the</li>
+  <li>Attribution-NonCommercial-NoDerivatives 4.0 International License (<a  href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">link</a>) </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Bar Charts</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Magnitudes of amounts</li>
+            <li>Comparison of amounts</li>
+            <li>Quantitative values per categorie</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Values start at 0</li>
+            <li>Common problem: labels too long</li>
+        </ul>
+    </div>
+</div>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/70-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Rotated Label</h1>
+<ul class="w3-large">
+    <li>Not optimal</li>
+    <li>Actualy, matter of taste</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/60-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Horizontal Bar Charts</h1>
+<ul class="w3-large">
+    <li>Better solution in case of long labels</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/40-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Sequence of Bars</h1>
+<ul class="w3-large">
+    <li>Should make sense in the given Context</li>
+    <li>Why is this bad?</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/50-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Natürliche Ordnung auf den Labeln 1</h1>
+<ul class="w3-large">
+    <li>Hier ist die Sortierung nach den Labeln sinnvoll</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/80-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Natürliche Ordnung auf den Labeln 2</h1>
+<ul class="w3-large">
+    <li>Hier wäre die Sortierung nach den Größen der Beträge ungünstig</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/110-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Gruppierte Balkendiagramme 1</h1>
+<ul class="w3-large">
+    <li>Beträge in Bezug auf mehrere Kategorien</li>
+    <li>Hier Bevölkerungsgruppe in Bezug auf Alter</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/90-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Gruppierte Balkendiagramme 2</h1>
+<ul class="w3-large">
+    <li>Hier Alter in Bezug auf Bevölkerungsgruppe</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/120-40.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Balkendiagramm-Matrix</h1>
+<ul class="w3-large">
+    <li>Hier Alter in Bezug auf Bevölkerungsgruppe</li>
+    <li>Keine Farbkodierung notwendig</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/100-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Gestapelte Balkendiagramme</h1>
+<ul class="w3-large">
+    <li>Gesamtbetrag für eine Kategorie besser sichtbar</li>
+    <li>Hier Passagiere pro Kabinenklasse</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/150-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Punktdiagramme (Dot Plots)</h1>
+<ul class="w3-large">
+    <li>Balkendiagramme müssen bei 0 starten</li>
+    <li>Kann unpraktisch sein</li>
+    <li>Kann Größe der Unterschiede verschleiern</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/10-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Verschleierung Größe der Unterschiede</h1>
+<ul class="w3-large">
+    <li>In dem Balkendiagramme scheinen die Unterschiede eher klein zu sein</li>
+    <li>Tatsächlich haben aber wenige Jahre Unterschied in der Lebenserwartung eine große Bedeutung</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/30-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Reihenfolge der Punkte</h1>
+<ul class="w3-large">
+    <li>Ungünstige Sortierung der Label</li>
+    <li>Erschwert den Vergleich erheblich</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/20-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Heatmaps 1</h1>
+<ul class="w3-large">
+    <li>Großer Anzahl von Kategorien/Kombinationen</li>
+    <li>Balkendiagramme ggf. ungünstig</li>
+    <li>Sortierung hier nach Betrag in 2016</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/130-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Heatmaps 2</h1>
+<ul class="w3-large">
+    <li>Sortierung hier nach Jahr, in dem erstmals 20% überschritten wurde</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/06-amounts/140-30.png">
+<div class="ic-gap"></div>
+
+
