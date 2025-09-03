@@ -519,9 +519,6 @@ home: &r
                   - t: Distributions
                     ts: Distributions
                     url: /home/lv/dsml/viz/viz-dist.html
-                  - t: Many Distributions
-                    ts: Many Distributions
-                    url: /home/lv/dsml/viz/viz-dist-many.html
                   - t: Proportions
                     ts: Proportions
                     url: /home/lv/dsml/viz/viz-proportions.html
@@ -534,6 +531,9 @@ home: &r
                   - t: Miscellaneous
                     ts: Miscellaneous
                     url: /home/lv/dsml/viz/viz-misc.html
+                  - t: Classroom Exercises
+                    ts: Classroom Exercises
+                    url: /home/lv/dsml/viz/cr-ex.html
                   - t: Viz Resources
                     ts: Viz Resources
                     url: /home/lv/dsml/viz/viz-resources.html
@@ -570,6 +570,9 @@ home: &r
                   - t: Company
                     ts: Company
                     url: /home/lv/dsml/dm/dm-company.html
+                  - t: Adventureworks OLAP
+                    ts: Adventureworks OLAP
+                    url: /home/lv/dsml/dm/dm-adw-olap.html
               - t: Business Intelligence
                 ts: BI
                 url: /home/lv/dsml/bi/1-bi.html

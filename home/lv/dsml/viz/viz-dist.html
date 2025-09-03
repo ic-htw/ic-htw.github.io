@@ -3,7 +3,7 @@ layout: default1
 nav: dsml-viz
 title: Visualization - Distributions - DSML
 is_slide: 1
-n: 12
+n: 19
 ---
 <!--
     01 ******************************************************************
@@ -85,12 +85,18 @@ n: 12
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Vorsicht bei Kerndichteschätzer</h1>
-<ul class="w3-large">
-    <li>Können Daten für sinnlose Wertebereiche vortäuschen</li>
-    <li>Hier Wahrscheinlichkeit > 0 für negative Alter</li>
-</ul>
-<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/50-30.png">
+<h1>Boxplot</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/20-30.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Einfach und informativ</li>
+            <li>Geeignet für gleichzeitige Darstellung vieler Verteilungen</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -98,12 +104,20 @@ n: 12
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>Visualisierung mehrerer Verteilungen</h1>
-<ul class="w3-large">
-    <li>Unklar, ob Balken überlappen</li>
-    <li>Höhe der Balken für weiblicher Passagiere schlecht vergleichbar</li>
-</ul>
-<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/60-30.png">
+<h1>Violinplot</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <ul class="w3-large">
+            <img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/40-30.png">
+        </ul>        
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>Modernere Variante von Boxplot</li>
+            <li>Genügend Datenpunkte erforderlich</li>
+                </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -111,12 +125,12 @@ n: 12
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>Transparente Balken</h1>
+<h1>Visualisierung mehrerer Verteilungen</h1>
 <ul class="w3-large">
-    <li>Nicht klar, ob die blauen Balken bei 0 starten</li>
-    <li>Nicht klar, was die dritte Farbe bedeutet</li>
+    <li>Unklar, ob Balken überlappen</li>
+    <li>Höhe der Balken für weiblicher Passagiere schlecht vergleichbar</li>
 </ul>
-<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/70-30.png">
+<img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/60-30.png">
 <div class="ic-gap"></div>
 
 
@@ -170,4 +184,84 @@ n: 12
 <img class="w3-image" src="/home/lv/dmdb/a/viz/07-dist/110-30.png">
 <div class="ic-gap"></div>
 
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Temperaturverteilungen - Boxplots</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/30-40.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Temperaturverteilungen - Violinplots</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/50-40.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Temperaturverteilungen - Stripplot</h1>
+<ul class="w3-large">
+    <li>Anzeige individueller Datenpunkte</li>
+    <li>Schlecht bei überlappenden Punkten</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/60-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Verzitterung (Jittering)</h1>
+<ul class="w3-large">
+    <li>Punkte werden künstlich verzittert</li>
+    <li>Besserer Überblick über die Verteilungen</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/70-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Temperaturverteilungen - Sinaplot</h1>
+<ul class="w3-large">
+    <li>Kombination von Violinplots und verzittertem Stripplot</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/80-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>Kammlinenplot (Ridgeline Plot)</h1>
+<ul class="w3-large">
+    <li>Halbe Violinplots gedreht um 90 Grad</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/90-30.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>Sehr viele Verteilungen</h1>
+<ul class="w3-large">
+    <li>Filmlängen im Verlauf der Jahre</li>
+    <li>Kammlinenplot gut geeignet</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/09-many-dist/110-30.png">
+<div class="ic-gap"></div>
 
