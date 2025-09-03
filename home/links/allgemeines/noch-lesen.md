@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 5 Signs of an Inexperienced, Self-Taught Machine Learning Engineer Sign #3 is a career-killer.
+[(link)](https://medium.com/data-science-collective/5-signs-of-an-inexperienced-self-taught-machine-learning-engineer-66cb372b2128)
+
+- The Scariest Database You’ve Never Heard Of (And How to Search It)
+[(link)](https://medium.com/@neonmaxima/the-scariest-database-youve-never-heard-of-and-how-to-search-it-efe0a510aa16)
+
 - How Google and Stanford made AI more Interpretable with a 20 year old Technique
 [(link)](https://machine-learning-made-simple.medium.com/breaking-down-db-ksvd-scalable-alternating-optimization-for-disentangling-high-dimensional-87d3e2237de4)
 
