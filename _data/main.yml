@@ -534,9 +534,6 @@ home: &r
                   - t: Classroom Exercises
                     ts: Classroom Exercises
                     url: /home/lv/dsml/viz/cr-ex.html
-                  - t: Viz Resources
-                    ts: Viz Resources
-                    url: /home/lv/dsml/viz/viz-resources.html
               - t: Machine Learning
                 ts: ML
                 url: /home/lv/dsml/ml/1-ml.html
