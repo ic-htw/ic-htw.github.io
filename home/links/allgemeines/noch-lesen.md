@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Detecting Peaks and Valleys: Learn The Essentials for Accurate Analysis.
+[(link)](https://medium.com/data-science-collective/detecting-peaks-and-valleys-learn-the-essentials-for-accurate-analysis-295b2a002f62)
+
+- Linear Regression for Humans: Predicting the Future in Plain English
+[(link)](https://medium.com/data-science-collective/linear-regression-for-humans-predicting-the-future-in-plain-english-7a98b877cb04)
+
 - 5 Signs of an Inexperienced, Self-Taught Machine Learning Engineer Sign #3 is a career-killer.
 [(link)](https://medium.com/data-science-collective/5-signs-of-an-inexperienced-self-taught-machine-learning-engineer-66cb372b2128)
 
