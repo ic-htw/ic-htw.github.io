@@ -538,9 +538,9 @@ home: &r
                 ts: ML
                 url: /home/lv/dsml/ml/1-ml.html
                 sub:
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/ml/xxx.html
+                  - t: Introduction to Machine Learning
+                    ts: Intro
+                    url: /home/lv/dsml/ml/ml-intro.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dsml/sql/1-sql.html
