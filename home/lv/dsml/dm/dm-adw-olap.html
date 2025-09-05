@@ -2,18 +2,101 @@
 layout: default1
 nav: dsml-dm
 title: Data Model - Adventure Works OLAP - DSML
-is_slide: 1
-n: 1
+is_slide: 0
 ---
 
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Structural Representation</h1>
+<h1>Model</h1>
 <!--
     <pre><code class="language-sql">alter session set current_schema=uunternehmen;</code></pre>
 -->
 <img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-model.png">
-<div class="ic-gap"></div>
+
+<h1 id="DimAccount">DimAccount</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimAccount.png">
+
+<h1 id="DimCurrency">DimCurrency</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimCurrency.png">
+
+<h1 id="DimCustomer">DimCustomer</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimCustomer.png">
+
+<h1 id="DimDate">DimDate</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimDate.png">
+
+<h1 id="DimDepartmentGroup">DimDepartmentGroup</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimDepartmentGroup.png">
+
+<h1 id="DimEmployee">DimEmployee</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimEmployee.png">
+
+<h1 id="DimGeography">DimGeography</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimGeography.png">
+
+<h1 id="DimOrganization">DimOrganization</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimOrganization.png">
+
+<h1 id="DimProduct">DimProduct</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimProduct.png">
+
+<h1 id="DimProductCategory">DimProductCategory</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimProductCategory.png">
+
+<h1 id="DimProductSubcategory">DimProductSubcategory</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimProductSubcategory.png">
+
+<h1 id="DimPromotion">DimPromotion</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimPromotion.png">
+
+<h1 id="DimReseller">DimReseller</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimReseller.png">
+
+<h1 id="DimSalesReason">DimSalesReason</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimSalesReason.png">
+
+<h1 id="DimSalesTerritory">DimSalesTerritory</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimSalesTerritory.png">
+
+<h1 id="DimScenario">DimScenario</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-DimScenario.png">
+
+<h1 id="FactAdditionalInternationalProductDescription">FactAdditionalInternationalProductDescription</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactAdditionalInternationalProductDescription.png">
+
+<h1 id="FactCallCenter">FactCallCenter</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactCallCenter.png">
+
+<h1 id="FactCurrencyRate">FactCurrencyRate</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactCurrencyRate.png">
+
+<h1 id="FactFinance">FactFinance</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactFinance.png">
+
+<h1 id="FactInternetSales">FactInternetSales</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactInternetSales.png">
+
+<h1 id="FactInternetSalesReason">FactInternetSalesReason</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactInternetSalesReason.png">
+
+<h1 id="FactProductInventory">FactProductInventory</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactProductInventory.png">
+
+<h1 id="FactResellerSales">FactResellerSales</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactResellerSales.png">
+
+<h1 id="FactSalesQuota">FactSalesQuota</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactSalesQuota.png">
+
+<h1 id="FactSurveyResponse">FactSurveyResponse</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-FactSurveyResponse.png">
+
+<h1 id="NewFactCurrencyRate">NewFactCurrencyRate</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-NewFactCurrencyRate.png">
+
+<h1 id="ProspectiveBuyer">ProspectiveBuyer</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-adw-olap/dm-adw-olap-ProspectiveBuyer.png">
+
 

@@ -567,6 +567,12 @@ home: &r
                   - t: Company
                     ts: Company
                     url: /home/lv/dsml/dm/dm-company.html
+                  - t: Playlist
+                    ts: Playlist
+                    url: /home/lv/dsml/dm/dm-playlist.html
+                  - t: Foodmart
+                    ts: Foodmart
+                    url: /home/lv/dsml/dm/dm-foodmart.html
                   - t: Adventureworks OLAP
                     ts: Adventureworks OLAP
                     url: /home/lv/dsml/dm/dm-adw-olap.html
