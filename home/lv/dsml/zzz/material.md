@@ -99,6 +99,12 @@ is_slide: 0
 - Fundamentals of Data Visualization
 [(link)](https://clauswilke.com/dataviz/index.html)
 
+- Tableau Public
+[(link)](https://www.tableau.com/products/public)
+
 - Tableau for Students
 [(link)](https://www.tableau.com/academic/students)
+
+- Seaborn
+[(link)](https://seaborn.pydata.org/)
 

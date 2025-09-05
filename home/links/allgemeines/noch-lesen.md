@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LLMs think in matrices and vectors.
+[(link)](https://ai.gopubby.com/the-crucial-math-behind-ais-thoughts-2c0305b658b3)
+
+- Understanding pandas Update Cell Value
+[(link)](https://medium.com/@amit25173/understanding-pandas-update-cell-value-b35f20d3b4c9)
+
 - Detecting Peaks and Valleys: Learn The Essentials for Accurate Analysis.
 [(link)](https://medium.com/data-science-collective/detecting-peaks-and-valleys-learn-the-essentials-for-accurate-analysis-295b2a002f62)
 
