@@ -484,12 +484,18 @@ home: &r
                 ts: General
                 url: /home/lv/dsml/general/1-general.html
                 sub:
-                  - t: Schedule
-                    ts: Schedule
-                    url: /home/lv/dsml/general/schedule.html
                   - t: Intro
                     ts: Intro
                     url: /home/lv/dsml/general/intro.html
+                  - t: Schedule
+                    ts: Schedule
+                    url: /home/lv/dsml/general/schedule.html
+                  - t: Presentations
+                    ts: Presentations
+                    url: /home/lv/dsml/general/pres.html
+                  - t: Resources
+                    ts: Resources
+                    url: /home/lv/dsml/general/resources.html
               - t: Python
                 ts: Python
                 url: /home/lv/dsml/python/1-python.html
