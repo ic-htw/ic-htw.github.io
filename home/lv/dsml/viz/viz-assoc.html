@@ -3,7 +3,7 @@ layout: default1
 nav: dsml-viz
 title: Visualization - Associations  - DSML
 is_slide: 1
-n: 10
+n: 5
 ---
 <!--
     01 ******************************************************************
@@ -23,38 +23,29 @@ n: 10
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Scatterplots 1</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/10-40.png">
-    </div>
-    <div class="w3-col m5">
-        <ul class="w3-large">
-            <li>Zusammenhänge zweier quantitativer Variablen</li>
-            <li>Hier Kopflängen und Gewicht von Vögeln</li>
-            <li>Je schwerer der Vogel, desto länger der Kopf</li>
-        </ul>
-    </div>
-</div>
+<h1>Association of two quantitative Variables</h1>
+<p class="w3-large ic-neg15">Scatter Plot</p>
+<p class="w3-large ic-neg15">Here headlength and wight of birds</p>
+<p class="w3-large">The heavier the bird, the longer the head, roughly</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/10-50.png">
+
+<p class="w3-large">Additional visual clue via color: sex</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/20-50.png">
+
+<p class="w3-large">Further information via dot size: skull size</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/30-40.png">
+
 <div class="ic-gap"></div>
+
 
 
 <!--
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Scatterplots 2</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/20-40.png">
-    </div>
-    <div class="w3-col m5">
-        <ul class="w3-large">
-            <li>Kopflängen und Gewicht von Vögeln</li>
-            <li>Unterscheidung nach Varaiable Geschlecht</li>
-        </ul>
-    </div>
-</div>
+<h1>Pairwise Association of many quantitative variables</h1>
+<p class="w3-large">Matrix of Scatter Plots</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/40-40.png">
 <div class="ic-gap"></div>
 
 
@@ -62,89 +53,33 @@ n: 10
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Bubble Charts</h1>
-<p class="w3-large">Weitere Variable Schädelgröße</p>
-<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/30-40.png">
+<h1>Correlation</h1>
+<p class="w3-large ic-neg15">Correlation coefficient</p>
+<p class="w3-large ic-neg15">+/-0.2: weak</p>
+<p class="w3-large ic-neg15">+/-0.6: medium</p>
+<p class="w3-large">+/-0.9: strong</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/50-40.png">
+
+<p class="w3-large ic-neg15">Heatmap, actually, correlogram due to symmetry</p>
+<p class="w3-large">Here mineral content of glass fragments </p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/60-40.png">
+<p class="w3-large ic-neg15">Magnesium negatively correlated with nearly all others</p>
+<p class="w3-large ic-neg15">Aluminum positively correlated with barium </p>
 <div class="ic-gap"></div>
+
+
 
 
 <!--
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Scatterplot-Matrix</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/40-30.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
-<h1>Korrelationskoeffizienten</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/50-40.png">
-    </div>
-    <div class="w3-col m5">
-        <ul class="w3-large">
-            <li>Zwischen -1 und +1</li>
-            <li>+/-0.2: Geringer Zusammenhang</li>
-            <li>+/-0.6: Mitteler Zusammenhang</li>
-            <li>+/-0.9: Starker Zusammenhang</li>
-        </ul>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1>Korrelogramm</h1>
-<p class="w3-large">Korrelation mineralischer Inhalt in Glassproben</p>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/60-40.png">
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Symmetrisch: r(A,B) = r(B,A)<br>
-                Deshalb nur eine Hälfte der Matrix</li>
-            <li>Viel Mg-Inhalt korreliert mit wenig Inhalt der anderen Mineralien</li>
-            <li>Barium und Aluminium korrelieren stark</li>
-        </ul>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>Slopegraph - zwei Variablen</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/120-40.png">
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Bei wenigen Datenpunkten</li>
-            <li>Direkter Zusammenhang erkennbar</li>
-            <li>Bei vielen Datenpunkten besser Scatterplot</li>
-        </ul>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1>Slopegraph - drei Variablen</h1>
+<h1>Association of few Data Points</h1>
+<p class="w3-large ic-neg15">Slopegraph</p>
+<p class="w3-large">Two measurements</p>
+<img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/120-40.png">
+<p class="w3-large">Three measurements</p>
 <img class="w3-image" src="/home/lv/dmdb/a/viz/12-assoc/130-40.png">
-</div>
 <div class="ic-gap"></div>
+
+
