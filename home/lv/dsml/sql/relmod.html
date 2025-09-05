@@ -1,0 +1,197 @@
+---
+layout: default1
+nav: dmdb-rel
+title: Relationenmodell - DMDB
+is_slide: 1
+n: 8
+---
+{% include translate.html %}
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Table = Schema + Contents</h1>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/table.png">
+
+<h2>Schema</h2>
+<ul class="w3-large">
+  <li>Table name (green)</li>
+  <li>Column name (brown)</li>
+  <li>Primary key (PK, underlined, pink)</li>
+</ul>
+
+<h2>Contents</h2>
+<ul class="w3-large">
+  <li>Records (grey lines)</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Data Types (Example Subset)</h1>
+<table class="w3-table-all">
+  <tr>
+    <th>Type Name</th>
+    <th>Domain</th>
+    <th>Examples</th>
+  </tr>
+  <tr>
+    <td>integer</td>
+    <td>integral numbers</td>
+    <td>-100, 200</td>
+  </tr>
+  <tr>
+    <td>decimal(5,3)</td>
+    <td>fixed precision numbers</td>
+    <td>10.156</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>floating point numbers</td>
+    <td>10.154789</td>
+  </tr>
+  <tr>
+    <td>varchar(10)</td>
+    <td>Strings</td>
+    <td>'Hallo'</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>dates</td>
+    <td>2025-01-01 14:30:12</td>
+  </tr>
+</table>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Foreign Key (FK)</h1>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/fk.png">
+<p class="w3-large ic-neg15">Dept contains references to department records</p>
+<p class="w3-large ic-neg15">FK and PK must have same data type</p>
+<p class="w3-large ic-neg15">FKs must not be unique</p>
+<p class="w3-large ic-neg15">Values in FK column must exist in PK column</p>
+<p class="w3-large ic-neg15">FKs represent many-to-one relationship</p>
+<p class="w3-large ic-neg15">Student 1 and 2 are registered in the MBAE programme</p>
+<p class="w3-large ic-neg15">Student 3 is registered in Business Computing</p>
+
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Integrity Constraints</h1>
+<ul class="w3-large">
+  <li>Primary key / Unique Constraint</li>
+  <ul>
+    <li>Uniqueness of column values</li>
+    <li>Identification of records</li>
+  </ul>
+  <li>Foreign key</li>
+  <ul>
+    <li>Relationships between tables</li>
+    <li>Referential integrity, target must exist</li>
+  </ul>
+  <li>Check Constraint</li>
+  <ul>
+    <li>Restriction on column values</li>
+    <li>Quantities of line items within orders must be greater than 0</li>
+  </ul>
+  <li>Not Null Constraint</li>
+  <ul>
+    <li>Must contain values, i.e. cannot be empty</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Reasons for Null Values</h1>
+<ul class="w3-large">
+  <li>Information not provided</li>
+  <ul>
+    <li>Private telefon number</li>
+  </ul>
+  <li>Information not existing, yet</li>
+  <ul>
+    <li>Exmatriculation date exists only after exmatriculation</li>
+  </ul>
+  <li>Column not suitable</li>
+  <ul>
+    <li>Table for person records with data for students and other persons</li>
+    <li>Column MatrNo only applicable for student records</li>
+  </ul>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Structural Representation</h1>
+<p class="w3-large ic-neg15">Structural overview of tables and relationships</p>
+<p class="w3-large ic-neg15">No table contents, no details</p>
+<p class="w3-large">Compact and clear</p>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/model-student.png">
+
+<p class="w3-large ic-neg15">FK and PK column above arrow</p>
+<p class="w3-large ic-neg15">Can be omitted if FK and PK have same name</p>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>SQL Code</h1>
+<h2>Table Student</h2>
+<pre><code class="language-sql">create table student (
+  SID integer not null,
+  MatrNo varchar2(10) not null,
+  Name varchar2(200) not null,
+  Immatriculation date not null,
+  Exdate date,
+  Dept integer not null
+);
+
+alter table student 
+  add constraint pk_student primary key ( SID );</code></pre>
+
+<h2>Table Department</h2>
+<pre><code class="language-sql">create table studiengang (
+  DID integer not null,
+  Name varchar2(200) not null,
+  Location varchar2(50) not null
+);
+
+alter table ucla.studiengang 
+  add constraint pk_studiengang primary key ( sgid );</code></pre>
+
+<h2>Foreign Key</h2>
+<pre><code class="language-sql">alter table Student 
+  add constraint fk_student_dept foreign key (Dept) references Department (DID);
+</code></pre>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Data Manipulation (DML Commands)</h1>
+<pre><code class="language-sql">insert into Student(SID, MatrNo , Name , Immatriculation, Dept)
+  values (4, '505790', 'Al-Hsan', 'SS 2019', 1)</code></pre>
+
+<pre><code class="language-sql">update Student set Name='Al-Hasan' where sid=4</code></pre>
+
+<pre><code class="language-sql">delete from Student where SID=4</code></pre>
+
+<div class="ic-gap"></div>
