@@ -151,6 +151,8 @@ is_slide: 0
 
 
 # extensions / tools
+- pg_csv
+[(link)](https://github.com/PostgREST/pg_csv)
 - Announcing a new IDE for PostgreSQL in VS Code from Microsoft
 [(link)](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-a-new-ide-for-postgresql-in-vs-code-from-microsoft/4414648)
 - dblab
