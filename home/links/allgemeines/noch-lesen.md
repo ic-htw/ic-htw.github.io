@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I Went from Non-Tech to Senior Machine Learning Scientist at Amazon
+[(link)](https://medium.com/data-science-collective/how-i-went-from-non-tech-to-senior-machine-learning-scientist-at-amazon-4f794de17499)
+
+- Why Every Data Engineer Is Talking About dbt — and How It Actually Works.
+[(link)](https://medium.com/@akanksha_singh/why-every-data-engineer-is-talking-about-dbt-and-how-it-actually-works-80f383364abc)
+
 - LLMs think in matrices and vectors.
 [(link)](https://ai.gopubby.com/the-crucial-math-behind-ais-thoughts-2c0305b658b3)
 
