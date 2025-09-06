@@ -1,9 +1,9 @@
 ---
 layout: default1
-nav: dmdb-rel
+nav: dsml-sql
 title: Relationenmodell - DMDB
 is_slide: 1
-n: 8
+n: 6
 ---
 {% include translate.html %}
 
@@ -11,20 +11,25 @@ n: 8
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Table = Schema + Contents</h1>
-<img class="w3-image" src="/home/lv/dsml/a/relmod/table.png">
+<h1>Tables and their Relationships</h1>
+<h2>Table Department</h2>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/tbl-department.png">
+<p class="w3-large ic-neg15">DID primary key (PK)</p>
+<p class="w3-large">PKs must be unique</p>
 
-<h2>Schema</h2>
-<ul class="w3-large">
-  <li>Table name (green)</li>
-  <li>Column name (brown)</li>
-  <li>Primary key (PK, underlined, pink)</li>
-</ul>
+<h2>Table Student</h2>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/tbl-student1.png">
 
-<h2>Contents</h2>
-<ul class="w3-large">
-  <li>Records (grey lines)</li>
-</ul>
+<p class="w3-large ic-neg15">SID primary key</p>
+<p class="w3-large ic-neg15">Dept foreign key (FK)</p>
+<p class="w3-large ic-neg15">Dept contains references to department records</p>
+<p class="w3-large ic-neg15">FK and PK must have same data type</p>
+<p class="w3-large ic-neg15">FKs must not be unique</p>
+<p class="w3-large ic-neg15">Values in FK column must exist in PK column</p>
+<p class="w3-large ic-neg15">FKs represent many-to-one relationship</p>
+<p class="w3-large ic-neg15">Student 1 and 2 are registered in the MBAE programme</p>
+<p class="w3-large ic-neg15">Student 3 is registered in Business Computing</p>
+
 <div class="ic-gap"></div>
 
 <!--
@@ -56,7 +61,7 @@ n: 8
   <tr>
     <td>varchar(10)</td>
     <td>Strings</td>
-    <td>'Hallo'</td>
+    <td>'Hello'</td>
   </tr>
   <tr>
     <td>date</td>
@@ -70,22 +75,6 @@ n: 8
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Foreign Key (FK)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/relmod/fk.png">
-<p class="w3-large ic-neg15">Dept contains references to department records</p>
-<p class="w3-large ic-neg15">FK and PK must have same data type</p>
-<p class="w3-large ic-neg15">FKs must not be unique</p>
-<p class="w3-large ic-neg15">Values in FK column must exist in PK column</p>
-<p class="w3-large ic-neg15">FKs represent many-to-one relationship</p>
-<p class="w3-large ic-neg15">Student 1 and 2 are registered in the MBAE programme</p>
-<p class="w3-large ic-neg15">Student 3 is registered in Business Computing</p>
-
-<div class="ic-gap"></div>
-
-<!--
-    04 ******************************************************************
--->
-{% include padding-id.html id=4 %}
 <h1>Integrity Constraints</h1>
 <ul class="w3-large">
   <li>Primary key / Unique Constraint</li>
@@ -111,9 +100,9 @@ n: 8
 <div class="ic-gap"></div>
 
 <!--
-    05 ******************************************************************
+    04 ******************************************************************
 -->
-{% include padding-id.html id=5 %}
+{% include padding-id.html id=4 %}
 <h1>Reasons for Null Values</h1>
 <ul class="w3-large">
   <li>Information not provided</li>
@@ -133,9 +122,9 @@ n: 8
 <div class="ic-gap"></div>
 
 <!--
-    06 ******************************************************************
+    05 ******************************************************************
 -->
-{% include padding-id.html id=6 %}
+{% include padding-id.html id=5 %}
 <h1>Structural Representation</h1>
 <p class="w3-large ic-neg15">Structural overview of tables and relationships</p>
 <p class="w3-large ic-neg15">No table contents, no details</p>
@@ -147,51 +136,41 @@ n: 8
 <div class="ic-gap"></div>
 
 <!--
-    07 ******************************************************************
+    06 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
+{% include padding-id.html id=6 %}
 <h1>SQL Code</h1>
 <h2>Table Student</h2>
-<pre><code class="language-sql">create table student (
-  SID integer not null,
-  MatrNo varchar2(10) not null,
-  Name varchar2(200) not null,
-  Immatriculation date not null,
-  Exdate date,
-  Dept integer not null
+<pre><code class="language-sql">create table Department (
+  DID integer not null primary key,
+  Name varchar(200) not null,
+  Location varchar(50) not null
 );
 
-alter table student 
-  add constraint pk_student primary key ( SID );</code></pre>
-
-<h2>Table Department</h2>
-<pre><code class="language-sql">create table studiengang (
-  DID integer not null,
-  Name varchar2(200) not null,
-  Location varchar2(50) not null
-);
-
-alter table ucla.studiengang 
-  add constraint pk_studiengang primary key ( sgid );</code></pre>
-
-<h2>Foreign Key</h2>
-<pre><code class="language-sql">alter table Student 
-  add constraint fk_student_dept foreign key (Dept) references Department (DID);
+insert into Department values (1, 'MBAE', 'TGS');
+insert into Department values (2, 'BC', 'TA');
 </code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/tbl-department.png">
+
+<pre><code class="language-sql">create table Student (
+  SID integer not null primary key,
+  MatrNo varchar(10) not null,
+  LastName varchar(200) not null,
+  ImDate date not null,
+  ExdDate date,
+  Dept integer not null,
+  foreign key (Dept) references Department (DID)
+);
+
+insert into Student values (1, '500123', 'Agarwal', '2024-10-01', null, 1);
+insert into Student values (2, '503456', 'Ali', '2019-10-01', '2023-03-24', 1);
+insert into Student values (3, '505789', 'Nguyen', '2021-04-01', null, 2);
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/tbl-student1.png">
+
+<pre><code class="language-sql">update Student set ExdDate = '2025-03-02' where SID = 3;
+delete from Student where SID = 2;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/relmod/tbl-student2.png">
 <div class="ic-gap"></div>
 
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>Data Manipulation (DML Commands)</h1>
-<pre><code class="language-sql">insert into Student(SID, MatrNo , Name , Immatriculation, Dept)
-  values (4, '505790', 'Al-Hsan', 'SS 2019', 1)</code></pre>
-
-<pre><code class="language-sql">update Student set Name='Al-Hasan' where sid=4</code></pre>
-
-<pre><code class="language-sql">delete from Student where SID=4</code></pre>
-
-<div class="ic-gap"></div>

@@ -556,7 +556,7 @@ home: &r
                     url: /home/lv/dsml/sql/relmod.html
                   - t: Queries on a Single Table
                     ts: Queries on a Single Table
-                    url: /home/lv/dsml/sql/sql-1.html
+                    url: /home/lv/dsml/sql/sql1.html
                   - t: xxx
                     ts: xxx
                     url: /home/lv/dsml/sql/xxx.html

@@ -1,0 +1,333 @@
+---
+layout: default1
+nav: dsml-sql
+title: SQL - Queries on a Single Table - DSML
+is_slide: 1
+n: 9
+hide: 1
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Structure of a Query</h1>
+<div class="w3-center">
+    <div class="w3-row">
+        <div class="w3-col m6">
+            <img class="w3-image" src="/home/lv/dsml/a/sql1/100.png">
+        </div>
+        <div class="w3-col m6  w3-padding-48">
+            <table class="w3-table w3-bordered w3-border w3-left">
+                <tr>
+                    <th>Selection</th>
+                    <td>Columns</td>
+                </tr>
+                <tr>
+                    <th>Filtering</th>
+                    <td>Rows</td>
+                </tr>
+                <tr>
+                    <th>Sorting</th>
+                    <td>Order of rows</td>
+                </tr>
+            </table> 
+            <div class=" w3-padding-64"></div>
+            <pre><code class="language-sql w3-large w3-left w3-left-align">SELECT output columns
+FROM table
+WHERE condition
+ORDER BY column names</code></pre>
+        </div>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Selection, Filtering, Sorting</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select lastname, salary
+from employee
+where ouid=14
+order by salary;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/110.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select lastname, salary
+from employee
+where ouid=14
+order by salary desc;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/120.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select *
+from employee
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-padding-24">Output of complete table, i.e. all rows and all columns</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Calculated Columns</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select
+  lastname,
+  extract(year from hiredate) as hireyear
+from employee
+where ouid=14
+order by lastname;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/130.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select
+  lastname,
+  extract(year from current_date) - 
+    extract(year from hiredate) 
+    as years_of_employment
+from employee
+where ouid=14
+order by lastname;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/140.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Compoud Condidition</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <pre><code class="language-sql">select
+  lastname, salary
+from employee
+where
+  salary < 35000
+  and hiredate 
+    between '2010-01-01' and '2023-12-31'
+order by lastname;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/150.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Null Values in Conditions</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, salary, bonus
+from employee
+where
+  bonus=null
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/160.png"><br>
+        <p class="w3-large">Falsch: Vergleich (=) mit "unbekannt" liefert "weiß ich nicht"</p>
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, salary, bonus
+from employee
+where
+  bonus is null
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/170.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, salary, bonus
+from employee
+where
+  not bonus is null
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/180.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Calculations with Null Values</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, salary, bonus,
+  salary + bonus as total
+from employee
+where
+  ouid=17
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/190.png">
+    </div>
+</div>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, salary, bonus,
+  salary+
+    case
+      when bonus is null then 0
+      else bonus
+    end as total
+from employee
+where
+  ouid=17
+order by eid;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/200.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Detail Reduction in Output</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select
+  lastname, ouid,
+  case
+   when salary>100000 then 'high'
+   when salary>35000 then 'medium'
+   else 'low'
+  end as salary_band
+from employee
+order by salary;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/210.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Limit Number of Lines in Output</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select lastname, salary
+from employee
+order by salary
+limit 2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/220.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Set Operations</h1>
+<h2>Example Tables</h2>
+<h3>Table t01</h3>
+<img class="w3-image" src="/home/lv/dsml/a/sql1/230.png">
+
+<h3>Table t02</h3>
+<img class="w3-image" src="/home/lv/dsml/a/sql1/240.png">
+
+<h2>Union</h2>
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select id, tag1, tag2 from t01
+union
+select id, tag1, tag2 from t02
+order by id, tag1, tag2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/250.png">
+    </div>
+</div>
+
+<h2>Union All</h2>
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select id, tag1, tag2 from t01
+union all
+select id, tag1, tag2 from t02
+order by id, tag1, tag2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/260.png">
+    </div>
+</div>
+
+<h2>Intersect</h2>
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select id, tag1, tag2 from t01
+intersect
+select id, tag1, tag2 from t02
+order by id, tag1, tag2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/270.png">
+    </div>
+</div>
+
+<h2>Except</h2>
+<div class="w3-row-padding w3-padding-24">
+    <div class="w3-col m6">
+        <pre><code class="language-sql">select id, tag1, tag2 from t01
+except
+select id, tag1, tag2 from t02
+order by id, tag1, tag2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql1/280.png">
+    </div>
+</div>
+
+<div class="ic-gap"></div>
+
