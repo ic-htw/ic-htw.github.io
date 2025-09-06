@@ -1,0 +1,355 @@
+---
+layout: default1
+nav: dmdb-sql
+title: SQL - Window Functions - DSML
+is_slide: 1
+n: 13
+hide: 1
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Dummy-Tabelle - WWWW</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d010-100.png">
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d020-100.png">
+    </div>
+    <div class="w3-col m4">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d030-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1 class="ic-neg15">Aggregationen 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v1,
+  sum(v1) OVER (PARTITION BY yyyy ORDER BY mm) AS kumuliert,
+  sum(v1) OVER (PARTITION BY yyyy) AS jahr,
+  sum(v1) OVER (ORDER BY yyyy, mm) AS alles_kumuliert,
+  sum(v1) OVER () AS alles
+FROM WWWW
+WHERE yyyy in ('2020', '2021') AND mm in ('01', '02', '03', '04')
+ORDER BY yyyy, mm;</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/sql-window/d040-100.png">
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large ic-neg15">Fensterumfang</p>
+        <ul class="w3-large">
+            <li>PARTITION BY:<br>gesamte Partition</li>
+            <li>ORDER BY:<br>von Beginn bis zur aktuellen Zeile (bis zum letzten Peer)</li>
+            <li>PARTITION BY ORDER BY:<br>von Beginn der Partition bis zur aktuellen Zeile in der Partition (bis zum letzten Peer)</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1 class="ic-neg15">Aggregationen 2</h1>
+<p class="w3-large">Window-Funktionen in Berechnungen,<br> hier prozentualer Anteil</p>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v1,
+  sum(v1) OVER (PARTITION BY yyyy) AS jahr,
+  round((v1 / sum(v1) OVER (PARTITION BY yyyy)) * 100, 2) 
+    AS prozent
+FROM WWWW
+WHERE yyyy in ('2021')
+ORDER BY yyyy, mm;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d050-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1 class="ic-neg15">Aggregationen 3</h1>
+<p class="w3-large">Sortierung über v2</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v2,
+  sum(v2) OVER (ORDER BY v2) AS vv2
+FROM WWWW
+WHERE yyyy in ('2021')
+ORDER BY v2;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d060-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1 class="ic-neg15">Rangbildung 1</h1>
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v1,
+  rank() OVER (ORDER BY v1 desc) AS rang,
+  dense_rank() OVER (ORDER BY v1 desc) AS dichter_rang,
+  round(percent_rank() OVER (ORDER BY v1 desc), 2) AS prozent_rang,
+  row_number() OVER (ORDER BY v1 desc) AS zeilennummer
+FROM WWWW
+WHERE yyyy in ('2021');</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/sql-window/d070-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1 class="ic-neg15">Rangbildung 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v1,
+  rank() OVER (ORDER BY v1 desc) AS rang,
+  dense_rank() OVER (ORDER BY v1 desc) AS dichter_rang,
+  round(percent_rank() OVER (ORDER BY v1 desc), 2) AS prozent_rang,
+  row_number() OVER (ORDER BY v1 desc) AS zeilennummer
+FROM WWWW
+WHERE yyyy in ('2021')
+ORDER BY yyyy, mm;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large">Andere Sortierung in der Ausgabe als in der Rangbildung</p>
+    </div>
+</div>
+
+<img class="w3-image" src="/home/lv/dmdb/a/sql-window/d080-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1 class="ic-neg15">Rangbildung 3</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m9">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v1,
+  rank() OVER (PARTITION BY yyyy ORDER BY v1 desc) AS rang,
+  dense_rank() OVER (PARTITION BY yyyy ORDER BY v1 desc) AS dichter_rang,
+  row_number() OVER (PARTITION BY yyyy ORDER BY v1 desc) AS zeilennummer
+FROM WWWW
+WHERE yyyy in ('2020', '2021');</code></pre>
+    </div>
+    <div class="w3-col m3">
+        <p class="w3-large">Rangbildung pro Partition</p>
+    </div>
+</div>
+<img class="w3-image" src="/home/lv/dmdb/a/sql-window/d090-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1 class="ic-neg15">Gleitende Durchschnitte</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+<pre><code class="language-sql w3-small ic-neg15">SELECT
+  yyyy,
+  mm,
+  v1,
+  round(avg(v1) OVER (
+    ORDER BY mm ROWS BETWEEN 
+      1 preceding AND 
+      1 following), 
+    2)
+  AS jahr
+FROM WWWW
+WHERE yyyy in ('2019')
+ORDER BY yyyy, mm;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d100-100.png">
+    </div>
+</div>
+<p class="w3-large ic-neg15">Einschränkung des Fensters</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>UNBOUNDED PRECEDING</li>
+            <li>offset PRECEDING</li>
+            <li>CURRENT ROW</li>
+        </ul>
+            </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>offset FOLLOWING</li>
+            <li>UNBOUNDED FOLLOWING</li>
+        </ul>
+            </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1 class="ic-neg15">Positionierung 1</h1>
+<pre><code class="language-sql w3-small">SELECT
+  mm,
+  v1,
+  lag(mm) OVER (ORDER BY mm) AS eins_vorher,
+  lag(mm, 4) OVER (ORDER BY mm) AS vier_vorher,
+  first_value(mm) OVER (ORDER BY mm) AS erster,
+  last_value(mm) OVER (ORDER BY mm ROWS BETWEEN unbounded preceding AND unbounded following) AS letzter,
+  nth_value(mm, 3) OVER (ORDER BY mm ROWS BETWEEN unbounded preceding AND unbounded following) AS dritter
+FROM WWWW
+WHERE yyyy in ('2021')
+ORDER BY mm;</code></pre>
+<img class="w3-image" src="/home/lv/dmdb/a/sql-window/d110-100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1 class="ic-neg15">Positionierung 2</h1>
+<pre><code class="language-sql w3-small">SELECT
+  mm,
+  v1,
+  lag(v1) OVER (ORDER BY mm) AS eins_vorher,
+  lag(v1, 4) OVER (ORDER BY mm) AS vier_vorher,
+  first_value(v1) OVER (ORDER BY mm) AS erster,
+  last_value(v1) OVER (ORDER BY mm ROWS BETWEEN unbounded preceding AND unbounded following) AS letzter,
+  nth_value(v1, 3) OVER (ORDER BY mm ROWS BETWEEN unbounded preceding AND unbounded following) AS dritter
+FROM WWWW
+WHERE yyyy in ('2021')
+ORDER BY mm;</code></pre>
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d120-100.png">
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-large">Spalte v1 in der Ausgabe</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1 class="ic-neg15">Positionierung 3</h1>
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  lag(yyyy || '-' || mm) OVER (PARTITION BY mm ORDER BY yyyy, mm) AS ein_jahr_vorher,
+  lag(yyyy || '-' || mm, 2) OVER (PARTITION BY mm ORDER BY yyyy, mm) AS zwei_jahre_vorher
+FROM WWWW
+WHERE mm in ('01', '02', '08')
+ORDER BY yyyy, mm;</code></pre>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d130-100.png">
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large">Year over Year</p>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1 class="ic-neg15">Verteilungen 1</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v3,
+  row_number() OVER (ORDER BY v3) AS nr,
+  ntile(6) OVER (ORDER BY v3) AS bucket,
+  round(cume_dist() OVER (ORDER BY v3), 2) 
+    AS verteilung
+FROM WWWW
+WHERE yyyy in ('2020', '2021')
+ORDER BY v3;</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d140-100.png">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1 class="ic-neg15">Verteilungen 2</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <p class="w3-large">Verteilungen pro Partition (Jahr)</p>
+<pre><code class="language-sql w3-small">SELECT
+  yyyy,
+  mm,
+  v3,
+  row_number() OVER (PARTITION BY yyyy ORDER BY v3) 
+    AS nr,
+  ntile(6) OVER (PARTITION BY yyyy ORDER BY v3) 
+    AS bucket,
+  round(
+    cume_dist() OVER (PARTITION BY yyyy ORDER BY v3),
+    2
+    ) AS verteilung
+FROM WWWW
+WHERE yyyy in ('2020', '2021')
+ORDER BY yyyy, v3;</code></pre>
+    </div>
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/sql-window/d150-100.png">
+    </div>
+</div>
+
+
+<div class="ic-gap"></div>
+
+

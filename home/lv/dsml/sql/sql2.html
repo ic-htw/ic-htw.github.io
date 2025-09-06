@@ -1,0 +1,208 @@
+---
+layout: default1
+nav: dsml-sql
+is_slide: 1
+title: SQL - Joins - DSML
+n: 10
+hide: 1
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Combining Data from two Tables </h1>
+    <img class="w3-image" src="/home/lv/dsml/a/sql2/100.png">
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Cartesian Product</h1>
+<p class="w3-xlarge ic-neg15">S1 = { a, b, c }</p>
+<p class="w3-xlarge">S2 = { 1, 2 } </p>
+
+<p class="w3-xlarge">S1 x S2 = { (a,1), (b,1), (c,1), (a,2), (b,2), (c,2) }</p>
+
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Cartesian Products on Tables</h1>
+<pre><code class="language-sql">select * 
+from employee 
+     cross join orgunit
+order by orgunit.ouid, employee.eid;</code></pre>
+<p class="w3-large"> 18 x 7 = 126 records</p>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/110.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Filtering of the Cartesian Product</h1>
+<pre><code class="language-sql">select *
+from employee 
+     cross join orgunit
+where employee.ouid=orgunit.ouid
+order by orgunit.ouid, employee.eid;</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/120.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Inner Join</h1>
+
+<h2>Long Version</h2>
+<pre><code class="language-sql">select
+  orgunit.name as orgunit,
+  employee.eid, employee.lastname as employee, employee.hiredate, employee.salary
+from employee
+     inner join orgunit on orgunit.ouid=employee.ouid
+order by orgunit.ouid, employee.eid;</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/130.png">
+
+<h2>Short Version</h2>
+<p class="w3-large ic-neg15"><b>short names for tables:</b></p>
+<p class="w3-large ic-neg15">employee e</p>
+<p class="w3-large ic">orgunit ou</p>
+<p class="w3-large "><b>inner join</b> can be abbreviated to <b>join</b></p>
+
+<pre><code class="language-sql">select
+ ou.name as orgunit,
+ e.eid, e.lastname as employee , e.hiredate, e.salary
+from employee e
+     join orgunit ou on ou.ouid=e.ouid;</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Inner Working of Joins</h1>
+<p class="w3-large">Execute interactively</p>
+
+<pre><code class="language-sql">select * 
+from R 
+     join S on B=D;</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/135.png">
+<p class="w3-large">Red box:<br>
+Record doesn't appear in output due to no connection</p>
+<p class="w3-large">Blue box:<br> 
+Two occurrence of record due to two connections</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Join of 3 Tables</h1>
+<p class="w3-large">Different order of tables don't matter</p>
+<pre><code class="language-sql">select p.title, e.lastname
+from project p
+     join empproj ep on ep.pid=p.pid
+     join employee e on e.eid=ep.eid
+order by p.title;</code></pre>
+
+<pre><code class="language-sql">select p.title, e.lastname
+from empproj ep
+     join project p on p.pid=ep.pid
+     join employee e on e.eid=ep.eid
+order by p.title;</code></pre>
+
+<pre><code class="language-sql">select p.title, e.lastname
+from empproj ep
+     join employee e on e.eid=ep.eid
+     join project p on p.pid=ep.pid
+order by p.title;</code></pre>
+<p class="w3-large">Same result in all cases</p>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/150.png">
+<p class="w3-large">An arbitrary number of tables can be joined in one statement</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Reflexive Join</h1>
+<pre><code class="language-sql">select
+  parent.name as parent_unit,
+  child.name as child_unit
+from orgunit parent
+     join orgunit child on child.superunit=parent.ouid
+order by parent.ouid, child.ouid;</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/160.png">
+
+<p class="w3-large">Twofold usage of same table requires different names of that table</p>
+<div class="ic-gap"></div>
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Outer Join</h1>
+<h2>Tables</h2>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/165.png">
+
+<h2>Joins</h2>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/166.png">
+<div class="ic-gap"></div>
+
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Heads and Non-Heads of Orgunits</h1>
+<h2>Only Heads</h2>
+<pre><code class="language-sql">select e.lastname, ou.name as head_of
+from employee e
+  join orgunit ou on ou.head=e.eid
+order by e.lastname;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/170.png">
+
+<h2>Left Outer Join keeps Non-Heads</h2>
+<pre><code class="language-sql">select e.lastname, ou.name as head_of
+from employee e
+     left join orgunit ou on ou.head=e.eid
+order by e.lastname;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/180.png">
+
+<h2>Only Non-Heads - Condition removes Heads</h2>
+<pre><code class="language-sql">sselect e.lastname
+from employee e
+     left join orgunit ou on ou.head=e.eid
+where ou.name is null
+order by e.lastname;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/190.png">
+
+<h2>Same Result with Set Operation</h2>
+<pre><code class="language-sql">elect e.lastname
+from employee e
+except
+select e.lastname
+from employee e
+     join orgunit ou on ou.head=e.eid
+order by e.lastname;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql2/200.png">
+
+<div class="ic-gap"></div>
+
+
+
