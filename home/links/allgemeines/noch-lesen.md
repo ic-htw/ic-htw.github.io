@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 7 AI Tools the Top 1% of Data Analysts Use
+[(link)](https://medium.com/ai-analytics-diaries/7-ai-tools-the-top-1-of-data-analysts-use-21a9dbb62a7b)
+
+- Building a Deep Thinking Trading System with Multi-Agentic Architecture
+[(link)](https://levelup.gitconnected.com/building-a-deep-thinking-trading-system-with-multi-agentic-architecture-c13da7effd2d)
+
+- 9 Books Every AI Engineer Should Read
+[(link)](https://medium.com/@joe.njenga/9-books-every-ai-engineer-should-read-to-go-fully-professional-e69d7e55cd50)
+
+- Distribution Analysis Charts
+[(link)](https://medium.com/@antonioneto_17307/distribution-analysis-charts-b9626a590b9e)
+
+- Tips for the pandas apply function to every row
+[(link)](https://medium.com/@amit25173/tips-for-the-pandas-apply-function-to-every-row-e15929325985)
+
 - How I Went from Non-Tech to Senior Machine Learning Scientist at Amazon
 [(link)](https://medium.com/data-science-collective/how-i-went-from-non-tech-to-senior-machine-learning-scientist-at-amazon-4f794de17499)
 
