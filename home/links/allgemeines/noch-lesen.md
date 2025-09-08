@@ -9,65 +9,23 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- 7 AI Tools the Top 1% of Data Analysts Use
-[(link)](https://medium.com/ai-analytics-diaries/7-ai-tools-the-top-1-of-data-analysts-use-21a9dbb62a7b)
+- mlflow
+[(link)](https://mlflow.org/)
 
-- Building a Deep Thinking Trading System with Multi-Agentic Architecture
-[(link)](https://levelup.gitconnected.com/building-a-deep-thinking-trading-system-with-multi-agentic-architecture-c13da7effd2d)
+- Future-Proof Data Engineering Skills You Need in 2025
+[(link)](https://medium.com/@vijaygadhave2014/future-proof-data-engineering-skills-you-need-in-2025-e697e98377e3)
 
-- 9 Books Every AI Engineer Should Read
-[(link)](https://medium.com/@joe.njenga/9-books-every-ai-engineer-should-read-to-go-fully-professional-e69d7e55cd50)
-
-- Distribution Analysis Charts
-[(link)](https://medium.com/@antonioneto_17307/distribution-analysis-charts-b9626a590b9e)
-
-- Tips for the pandas apply function to every row
-[(link)](https://medium.com/@amit25173/tips-for-the-pandas-apply-function-to-every-row-e15929325985)
-
-- How I Went from Non-Tech to Senior Machine Learning Scientist at Amazon
-[(link)](https://medium.com/data-science-collective/how-i-went-from-non-tech-to-senior-machine-learning-scientist-at-amazon-4f794de17499)
-
-- Why Every Data Engineer Is Talking About dbt — and How It Actually Works.
-[(link)](https://medium.com/@akanksha_singh/why-every-data-engineer-is-talking-about-dbt-and-how-it-actually-works-80f383364abc)
-
-- LLMs think in matrices and vectors.
-[(link)](https://ai.gopubby.com/the-crucial-math-behind-ais-thoughts-2c0305b658b3)
-
-- Understanding pandas Update Cell Value
-[(link)](https://medium.com/@amit25173/understanding-pandas-update-cell-value-b35f20d3b4c9)
+- I Studied 1,500 Academic Papers on Prompt Engineering. Here’s Why Everything You Know Is Wrong.
+[(link)](https://aakashgupta.medium.com/i-studied-1-500-academic-papers-on-prompt-engineering-heres-why-everything-you-know-is-wrong-391838b33468)
 
 - Detecting Peaks and Valleys: Learn The Essentials for Accurate Analysis.
 [(link)](https://medium.com/data-science-collective/detecting-peaks-and-valleys-learn-the-essentials-for-accurate-analysis-295b2a002f62)
 
-- Linear Regression for Humans: Predicting the Future in Plain English
-[(link)](https://medium.com/data-science-collective/linear-regression-for-humans-predicting-the-future-in-plain-english-7a98b877cb04)
-
-- 5 Signs of an Inexperienced, Self-Taught Machine Learning Engineer Sign #3 is a career-killer.
-[(link)](https://medium.com/data-science-collective/5-signs-of-an-inexperienced-self-taught-machine-learning-engineer-66cb372b2128)
-
 - The Scariest Database You’ve Never Heard Of (And How to Search It)
 [(link)](https://medium.com/@neonmaxima/the-scariest-database-youve-never-heard-of-and-how-to-search-it-efe0a510aa16)
 
-- How Google and Stanford made AI more Interpretable with a 20 year old Technique
-[(link)](https://machine-learning-made-simple.medium.com/breaking-down-db-ksvd-scalable-alternating-optimization-for-disentangling-high-dimensional-87d3e2237de4)
-
-- Simple Ways to Apply if-Else Condition in Pandas DataFrame
-[(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
-
-- Linear Regression Explained: From Theory to Real-World Implementation
-[(link)](https://mohith-g.medium.com/linear-regression-explained-from-theory-to-real-world-implementation-45b43faed743)
-
-- Understand MCP in 10 Minutes
-[(link)](https://medium.com/@haiou-a/understand-mcp-in-10-minutes-e864bbc62f03)
-
 - Radically Simple Data Lineage
 [(link)](https://blog.dataengineerthings.org/radically-simple-data-lineage-b528ab526ff9)
-
-- Mastering Advanced Exploratory Data Analysis and Visualization Effectively 2
-[(link)](https://python.plainenglish.io/mastering-exploratory-data-analysis-effectively-a-complete-guide-basics-to-advanced-part-2-6f0f8a045fb1)
-
-- Comprehensive-Guide-to-Exploratory-Data-Analysis
-[(link)](https://github.com/thom22/Comprehensive-Guide-to-Exploratory-Data-Analysis)
 
 - DocumentDB
 [(link)](https://github.com/documentdb/documentdb)
@@ -77,9 +35,6 @@ is_slide: 0
 
 - A decade of database innovation: The Amazon Aurora story
 [(link)](https://www.amazon.science/blog/a-decade-of-database-innovation-the-amazon-aurora-story)
-
-- The Internals of PostgreSQL
-[(link)](https://www.interdb.jp/pg/index.html)
 
 - Claude Sonnet 4 vs Kimi K2 vs Gemini 2.5 Pro: Which AI actually ships production code?
 [(link)](https://generativeai.pub/claude-sonnet-4-vs-kimi-k2-vs-gemini-2-5-pro-which-ai-actually-ships-production-code-682485e5b6e8)
@@ -108,14 +63,8 @@ is_slide: 0
 - LangExtract
 [(link)](https://github.com/google/langextract)
 
-- Postgres Logging for Performance Optimization
-[(link)](https://www.crunchydata.com/blog/postgres-logging-for-performance-optimization)
-
 - Fun and weirdness with SSDs
 [(link)](https://vondra.me/posts/fun-and-weirdness-with-ssds/)
-
-- Indexing JSONB in Postgres
-[(link)](https://www.crunchydata.com/blog/indexing-jsonb-in-postgres)
 
 - Vector Search Isn't the Answer to Everything. 
 [(link)](https://www.tigerdata.com/blog/vector-search-isnt-the-answer-to-everything-so-what-is-a-technical-deep-dive)
