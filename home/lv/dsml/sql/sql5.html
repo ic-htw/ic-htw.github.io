@@ -3,7 +3,7 @@ layout: default1
 nav: dmdb-sql
 title: SQL - Window Functions - DSML
 is_slide: 1
-n: 13
+n: 6
 hide: 1
 ---
 <!--
@@ -25,7 +25,14 @@ hide: 1
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1 class="ic-neg15">Aggregation 1</h1>
+<h1 class="ic-neg15">Aggregation</h1>
+<ul class="w3-large">
+    <li><b>partition by</b>: whole partition</li>
+    <li><b>order by</b>: begin up to current line</li>
+    <li><b>partition by order by</b>: begin partition up to current line in partition</li>
+</ul>
+
+<h2>Different Kinds of Aggregation</h2>
 <pre><code class="language-sql">select
   yyyy,
   mm,
@@ -36,45 +43,26 @@ hide: 1
   sum(v1) over () as all
 from t03
 where yyyy in ('2023', '2024') and mm in ('01', '02', '03', '04')
-order by yyyy, mm;
+order by yyyy, mm;;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/100.png">
-<p class="w3-large ic-neg15">Fensterumfang</p>
-<ul class="w3-large">
-    <li>PARTITION BY:<br>gesamte Partition</li>
-    <li>ORDER BY:<br>von Beginn bis zur aktuellen Zeile (bis zum letzten Peer)</li>
-    <li>PARTITION BY ORDER BY:<br>von Beginn der Partition bis zur aktuellen Zeile in der Partition (bis zum letzten Peer)</li>
-</ul>
-<div class="ic-gap"></div>
 
-
-<!--
-    03 ******************************************************************
--->
-{% include padding-id.html id=3 %}
-<h1 class="ic-neg15">Aggregation 2</h1>
-<p class="w3-large">Window-Funktionen in Berechnungen,<br> hier prozentualer Anteil</p>
+<h2>Percent of Total</h2>
 <pre><code class="language-sql">select
   yyyy,
   mm,
   v1,
-  sum(v1) over (partition by yyyy) as jahr,
+  sum(v1) over (partition by yyyy) as year,
   round((v1 / sum(v1) over (partition by yyyy)) * 100, 2)
-    as prozent
+    as percent_month_of_year
 from t03
-where yyyy in ('2024')
+where yyyy in ('2023', '2024') 
 order by yyyy, mm;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/110.png">
-<div class="ic-gap"></div>
 
-
-<!--
-    04 ******************************************************************
--->
-{% include padding-id.html id=4 %}
-<h1 class="ic-neg15">Aggregation 3</h1>
-<p class="w3-large">Sortierung über v2</p>
+<h2>Peers</h2>
+<p class="w3-large"><b>order by</b>: begin up to last peer</p>
 <pre><code class="language-sql">select
   yyyy,
   mm,
@@ -85,6 +73,81 @@ where yyyy in ('2024')
 order by v2;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/120.png">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1 class="ic-neg15">Rank</h1>
+<h2>Different Kinds of Ranking</h2>
+<pre><code class="language-sql">select
+  yyyy,
+  mm,
+  v1,
+  rank() over (order by v1 desc) as rank,
+  dense_rank() over (order by v1 desc) as dense_rank,
+  row_number() over (order by v1 desc) as lineno
+from t03
+where yyyy in ('2024')
+order by rank;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql5/130.png">
+
+<h2>Different Order of Output</h2>
+<pre><code class="language-sql">select
+  yyyy,
+  mm,
+  v1,
+  rank() over (order by v1 desc) as rank,
+  dense_rank() over (order by v1 desc) as dense_rank
+from t03
+where yyyy in ('2024')
+order by yyyy, mm;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql5/140.png">
+
+<h2>Ranking within Partitions</h2>
+<pre><code class="language-sql">select
+  yyyy,
+  mm,
+  v1,
+  rank() over (partition by yyyy order by v1 desc) as rank,
+  dense_rank() over (partition by yyyy order by v1 desc) as dense_rank,
+  row_number() over (partition by yyyy order by v1 desc) as lineno
+from t03
+where yyyy in ('2023', '2024');
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql5/150.png">
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1 class="ic-neg15">Moving Averages</h1>
+<pre><code class="language-sql">select
+  yyyy,
+  mm,
+  v1,
+  round(avg(v1) over (
+    order by mm rows between 1 preceding and 1 following),2)
+    as moving_avg
+from t03
+where yyyy in ('2022')
+order by yyyy, mm;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql5/160.png">
+<p class="w3-large ic-neg15">Restriction of window</p>
+<ul class="w3-large">
+    <li>UNBOUNDED PRECEDING</li>
+    <li>offset PRECEDING</li>
+    <li>CURRENT ROW</li>
+    <li>offset FOLLOWING</li>
+    <li>UNBOUNDED FOLLOWING</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -92,209 +155,81 @@ order by v2;
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1 class="ic-neg15">Rank 1</h1>
-<pre><code class="language-sql">select
-  yyyy,
-  mm,
-  v1,
-  rank() over (order by v1 desc) as rang,
-  dense_rank() over (order by v1 desc) as dichter_rang,
-  round(percent_rank() over (order by v1 desc), 2) as prozent_rang,
-  row_number() over (order by v1 desc) as zeilennummer
-from t03
-where yyyy in ('2024');
-</code></pre>
-<img class="w3-image" src="/home/lv/dsml/a/sql5/130.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
-<h1 class="ic-neg15">Rank 2</h1>
-<pre><code class="language-sql">select
-  yyyy,
-  mm,
-  v1,
-  rank() over (order by v1 desc) as rang,
-  dense_rank() over (order by v1 desc) as dichter_rang,
-  round(percent_rank() over (order by v1 desc), 2) as prozent_rang,
-  row_number() over (order by v1 desc) as zeilennummer
-from t03
-where yyyy in ('2024')
-order by yyyy, mm;
-</code></pre>
-<img class="w3-image" src="/home/lv/dsml/a/sql5/140.png">
-<p class="w3-large">Andere Sortierung in der Ausgabe als in der Rangbildung</p>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1 class="ic-neg15">Rank 3</h1>
-<pre><code class="language-sql">select
-  yyyy,
-  mm,
-  v1,
-  rank() over (partition by yyyy order by v1 desc) as rang,
-  dense_rank() over (partition by yyyy order by v1 desc) as dichter_rang,
-  row_number() over (partition by yyyy order by v1 desc) as zeilennummer
-from t03
-where yyyy in ('2023', '2024');
-</code></pre>
-<img class="w3-image" src="/home/lv/dsml/a/sql5/150.png">
-<p class="w3-large">Rangbildung pro Partition</p>
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1 class="ic-neg15">Moving Averages</h1>
-<pre><code class="language-sql">select
-  yyyy,
-  mm,
-  v1,
-  round(avg(v1) over (
-    order by mm rows between
-      1 preceding and
-      1 following),
-    2)
-  as jahr
-from t03
-where yyyy in ('2022')
-order by yyyy, mm;
-</code></pre>
-<img class="w3-image" src="/home/lv/dsml/a/sql5/160.png">
-<p class="w3-large ic-neg15">Einschränkung des Fensters</p>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>UNBOUNDED PRECEDING</li>
-            <li>offset PRECEDING</li>
-            <li>CURRENT ROW</li>
-        </ul>
-            </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>offset FOLLOWING</li>
-            <li>UNBOUNDED FOLLOWING</li>
-        </ul>
-            </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1 class="ic-neg15">Positioning 1</h1>
+<h1 class="ic-neg15">Positioning</h1>
+<h2>Column mm</h2>
 <pre><code class="language-sql">select
   mm,
   v1,
-  lag(mm) over (order by mm) as eins_vorher,
-  lag(mm, 4) over (order by mm) as vier_vorher,
-  first_value(mm) over (order by mm) as erster,
-  last_value(mm) over (order by mm rows between unbounded preceding and unbounded following) as letzter,
-  nth_value(mm, 3) over (order by mm rows between unbounded preceding and unbounded following) as dritter
+  lag(mm) over (order by mm) as one_before,
+  lag(mm, 4) over (order by mm) as four_before,
+  first_value(mm) over (order by mm) as first,
+  last_value(mm) over (order by mm rows between 
+    unbounded preceding and unbounded following) as last,
+  nth_value(mm, 3) over (order by mm rows between 
+    unbounded preceding and unbounded following) as third
 from t03
 where yyyy in ('2024')
 order by mm;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/170.png">
-<div class="ic-gap"></div>
 
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1 class="ic-neg15">Positioning 2</h1>
+<h2>Column v1</h2>
 <pre><code class="language-sql">select
   mm,
   v1,
-  lag(v1) over (order by mm) as eins_vorher,
-  lag(v1, 4) over (order by mm) as vier_vorher,
-  first_value(v1) over (order by mm) as erster,
-  last_value(v1) over (order by mm rows between unbounded preceding and unbounded following) as letzter,
-  nth_value(v1, 3) over (order by mm rows between unbounded preceding and unbounded following) as dritter
+  lag(v1) over (order by mm) as one_before,
+  lag(v1, 4) over (order by mm) as four_before,
+  first_value(v1) over (order by mm) as first,
+  last_value(v1) over (order by mm rows between 
+    unbounded preceding and unbounded following) as last,
+  nth_value(v1, 3) over (order by mm rows between 
+    unbounded preceding and unbounded following) as third
 from t03
 where yyyy in ('2024')
 order by mm;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/180.png">
-<p class="w3-large">Spalte v1 in der Ausgabe</p>
-<div class="ic-gap"></div>
 
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1 class="ic-neg15">Positioning 3</h1>
+<h2>Year-over-Year</h2>
 <pre><code class="language-sql">select
   yyyy,
   mm,
-  lag(yyyy || '-' || mm) over (partition by mm order by yyyy, mm) as ein_jahr_vorher,
-  lag(yyyy || '-' || mm, 2) over (partition by mm order by yyyy, mm) as zwei_jahre_vorher
+  lag(yyyy || '-' || mm) 
+    over (partition by mm order by yyyy, mm) as previous_year,
+  lag(yyyy || '-' || mm, 2) 
+    over (partition by mm order by yyyy, mm) as two_years_before
 from t03
 where mm in ('01', '02', '08')
 order by yyyy, mm;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/190.png">
-<p class="w3-large">Year over Year</p>
+
 <div class="ic-gap"></div>
 
 
+
 <!--
-    12 ******************************************************************
+    6 ******************************************************************
 -->
-{% include padding-id.html id=12 %}
-<h1 class="ic-neg15">Distributions 1</h1>
-<pre><code class="language-sql">select
+{% include padding-id.html id=6 %}
+<h1 class="ic-neg15">Distributions</h1>
+<pre><code class="language-sql">Select
   yyyy,
   mm,
   v3,
   row_number() over (order by v3) as nr,
   ntile(6) over (order by v3) as bucket,
   round(cume_dist() over (order by v3), 2)
-    as verteilung
+    as distribution
 from t03
-where yyyy in ('2023', '2024')
+where yyyy in ('2024')
 order by v3;
 </code></pre>
 <img class="w3-image" src="/home/lv/dsml/a/sql5/200.png">
-<div class="ic-gap"></div>
+<p class="w3-large ic-neg15"><b>ntile(6)</b>: dividing into 6 equal buckets</p>
+<p class="w3-large"><b>cume_dist</b>: cumulative distribution: number of rows or peers preceeding / total number of rows</p>
 
 
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1 class="ic-neg15">Distributions 2</h1>
-<pre><code class="language-sql">select
-  yyyy,
-  mm,
-  v3,
-  row_number() over (partition by yyyy order by v3)
-    as nr,
-  ntile(6) over (partition by yyyy order by v3)
-    as bucket,
-  round(
-    cume_dist() over (partition by yyyy order by v3),
-    2
-    ) as verteilung
-from t03
-where yyyy in ('2023', '2024')
-order by yyyy, v3;
-</code></pre>
-<img class="w3-image" src="/home/lv/dsml/a/sql5/210.png">
 <div class="ic-gap"></div>
 
 
