@@ -556,16 +556,19 @@ home: &r
                     url: /home/lv/dsml/sql/relmod.html
                   - t: Queries on a Single Table
                     ts: Queries on a Single Table
-                    url: /home/lv/dsml/sql/sql-1.html
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/sql/xxx.html
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/sql/xxx.html
-                  - t: xxx
-                    ts: xxx
-                    url: /home/lv/dsml/sql/xxx.html
+                    url: /home/lv/dsml/sql/sql1.html
+                  - t: Joins
+                    ts: Joins
+                    url: /home/lv/dsml/sql/sql2.html
+                  - t: Aggregations and Groupings
+                    ts: Aggregations and Groupings
+                    url: /home/lv/dsml/sql/sql3.html
+                  - t: Sub Queries
+                    ts: Sub Queries
+                    url: /home/lv/dsml/sql/sql4.html
+                  - t: Window Functions
+                    ts: Window Functions
+                    url: /home/lv/dsml/sql/sql5.html
               - t: Data Models
                 ts: Data Models
                 url: /home/lv/dsml/dm/1-dm.html

@@ -1,0 +1,328 @@
+---
+layout: default1
+nav: dsml-sql
+title: SQL - Aggregations and Groupings - DSML
+is_slide: 1
+n: 12
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Aggregation Functions</h1>
+<img class="w3-image" src="/home/lv/dsml/a/dm-company/dm-company-employee.png">
+<pre><code class="language-sql">select
+  sum(salary) as sal_sum,
+  round(avg(salary)) as sal_avg,
+  min(salary) as sal_min,
+  max(salary) as sal_max,
+  count(*) as rec_count,
+  count(bonus) as bonus_count
+from employee;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql3/100.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Grouping</h1>
+<h2>Partitioning of detail data</h2></p>
+<p class="w3-large ic-neg15">Into different groups</p>
+<p class="w3-large">According to grouping criterion, here OUID</p>
+<img class="w3-image" src="/home/lv/dsml/a/sql3/110.png">
+
+<h2>Resulting Groups</h2>
+<img class="w3-image" src="/home/lv/dsml/a/sql3/112.png">
+<img class="w3-image" src="/home/lv/dsml/a/sql3/113.png">
+
+
+
+<p class="w3-large ic-neg15">Application of aggregation functions on each individual group</p>
+<pre><code class="language-sql">select
+  sum(salary) as sal_sum,
+  round(avg(salary)) as sal_avg,
+  min(salary) as sal_min,
+  max(salary) as sal_max,
+  count(*) as rec_count,
+  count(bonus) as bonus_count
+from employee
+group by ouid;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql3/115.png">
+
+<p class="w3-large">One record per group in the output</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Aggregation Levels</h1>
+<pre><code class="language-sql">select ouid,
+  sum(salary) as sal_sum
+from employee
+group by ouid
+order by ouid;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql3/120.png">
+<p class="w3-large ic-neg15">All output columns on same aggregation level</p>
+<ul class="w3-large">
+    <li>OUID: part of <b>group by</b></li>
+    <li>sal_sum: aggregation function applied on column</li>
+</ul>
+
+<pre><code class="language-sql">select ouid, lastname,
+  sum(salary) as sal_sum
+from employee
+group by ouid
+order by ouid;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/130.png">
+<p class="w3-large ic-neg15">Output columns on different aggregation levels</p>
+<ul class="w3-large">
+    <li>OUID: aggregated</li>
+    <li>lastname: on detail level (not possible)</li>
+    <li>sal_sum: aggregated</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Grouping and Join</h1>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-employee.png"><br>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-orgunit.png">
+
+<pre><code class="language-sql">select ou.name,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee e
+     join orgunit ou on ou.ouid=e.ouid
+group by ou.name
+order by ou.name;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/140.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Grouping with Expressions 1</h1>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-employee.png">
+<pre><code class="language-sql">select
+  extract(year from hiredate) as hireyear,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by hireyear
+order by hireyear;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/150.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Grouping with Expressions 2</h1>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-employee.png">
+<pre><code class="language-sql">select
+  case
+    when hiredate >= '2010-01-01' then '2010-from'
+    when hiredate >= '2000-01-01' then '2009-until'
+  end as entry_year_range,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by entry_year_range
+order by entry_year_range;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/160.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Grouping with several Columns</h1>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-employee.png">
+<pre><code class="language-sql">select
+  ouid,
+  case
+    when hiredate >= '2010-01-01' then '2010-from'
+    when hiredate >= '2000-01-01' then '2009-until'
+  end as entry_year_range,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by ouid, entry_year_range
+order by ouid, entry_year_range;
+order by entry_year_range;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/170.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Value Combinations as Groups</h1>
+<h2>Grouping according to one Column</h2>
+<pre><code class="language-sql">select
+  case
+    when hiredate >= '2010-01-01' then '2010-from'
+    when hiredate >= '2000-01-01' then '2009-until'
+  end as entry_year_range,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by entry_year_range
+order by entry_year_range;
+</code></pre>
+
+<h2>Grouping according to two Columns</h2>
+<pre><code class="language-sql">select
+  ouid,
+  case
+    when hiredate >= '2010-01-01' then '2010-from'
+    when hiredate >= '2000-01-01' then '2009-until'
+  end as entry_year_range,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by ouid, entry_year_range
+order by ouid, entry_year_range;
+</code></pre>
+
+<h2>New Groups according to Value Combinations</h2>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/160.png">
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/170.png">
+<p class="w3-large">Adding a column in grouping usually leads to new groups</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Grouping with dependent Columns</h1>
+<h2>Bases Tables</h2>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-employee.png"><br>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/dm-company/dm-company-orgunit.png">
+
+<h2>Invalid Gouping</h2>
+<pre><code class="language-sql">Select ou.ouid, ou.name, sum(salary) as sal_sum
+from employee e
+     join orgunit ou on ou.ouid=e.ouid
+group by ou.ouid
+order by ou.ouid;
+</code></pre>
+<img class="w3-image w3-padding-24" src="/home/lv/dsml/a/sql3/180.png">
+
+<h2>Dependent Columns</h2>
+<p class="w3-large">Every time OUID has the same value, also name has the same value</p>
+
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/185.png">
+
+<h2>Valid Gouping</h2>
+<p class="w3-large ic-neg15">Column ou.name added to group by</p>
+<p class="w3-large">No new combinations, because ou.name depends on ou.OUID</p>
+
+<pre><code class="language-sql">select ou.ouid, ou.name, sum(salary) as sal_sum
+from employee e
+     join orgunit ou on ou.ouid=e.ouid
+group by ou.ouid, ou.name
+order by ou.ouid;
+</code></pre>
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/190.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Conditions on Group Level</h1>
+<h2>Without Condition on Group Level</h2>
+<pre><code class="language-sql">select ouid,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by ouid
+order by ouid;
+</code></pre>
+
+<h2>Same Query With Condition on Group Level</h2>
+<p class="w3-large">Keyword <b>having</b></p>
+<pre><code class="language-sql">select ouid,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by ouid
+having count(*) > 1
+order by ouid;
+</code></pre>
+
+<h2>Reduction of Number of Groups</h2>
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/200.png">
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/205.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Conditions on Detail Level and Group Level</h1>
+<h2>Without Condtition on Detail Level</h2>
+<pre><code class="language-sql">select ouid,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+group by ouid
+having count(*) > 1
+order by ouid;
+</code></pre>
+
+<h2>Same Query With Condition on Detail Level</h2>
+<p class="w3-large">Keyword <b>where</b></p>
+<pre><code class="language-sql">select ouid,
+  sum(salary) as sal_sum,
+  count(*) as rec_count
+from employee
+where salary > 40000
+group by ouid
+having count(*) > 1
+order by ouid;
+</code></pre>
+
+<h2>Reduction of Number of Groups and Number of Records per Group</h2>
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/205.png">
+<img class="w3-image w3-padding-8" src="/home/lv/dsml/a/sql3/210.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Structure of a Query with Grouping</h1>
+<pre><code class="language-sql w3-xlarge">select
+from
+where
+group by
+having
+order by</code></pre>
+<div class="ic-gap"></div>
