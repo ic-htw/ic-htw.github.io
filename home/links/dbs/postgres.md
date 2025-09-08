@@ -43,6 +43,8 @@ is_slide: 0
 
 
 # monitoring/configuration
+- Postgres Logging for Performance Optimization
+[(link)](https://www.crunchydata.com/blog/postgres-logging-for-performance-optimization)
 - How to Monitor PostgreSQL Like a Pro
 [(link)](https://medium.com/timescale/how-to-monitor-postgresql-like-a-pro-5-techniques-every-developer-should-know-68581c49a4a4)
 - Custom SQL Queries in Grafana for PostgreSQL Insights
@@ -89,6 +91,9 @@ is_slide: 0
 [(link)](https://medium.com/@HereAndBeyond/index-creation-in-postgresql-large-tables-essential-checklist-for-developers-4a344138c0c6)
 - PostgreSQL Clustered Index: When to Use? Does it Worth?
 [(link)](https://levelup.gitconnected.com/postgresql-clustered-index-when-to-use-does-it-worth-2258a644b02c)
+- Indexing JSONB in Postgres
+[(link)](https://www.crunchydata.com/blog/indexing-jsonb-in-postgres)
+
 
 
 
@@ -252,6 +257,8 @@ is_slide: 0
 
 
 # misc
+- The Internals of PostgreSQL
+[(link)](https://www.interdb.jp/pg/index.html)
 - The Challenge of Primary Keys in Partitioned Tables in PostgreSQL
 [(link)](https://medium.com/@dfs.techblog/the-challenge-of-primary-keys-in-partitioned-tables-in-postgresql-1b61b6f237d6)
 - Scaling Postgres

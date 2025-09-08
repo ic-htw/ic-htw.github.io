@@ -22,5 +22,8 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/svd-8c2f72e264f)
 - Visual intuition behind SVD
 [(link)](https://blog.usejournal.com/visual-intuition-behind-svd-593bfbbb5eec)
+- LLMs think in matrices and vectors.
+[(link)](https://ai.gopubby.com/the-crucial-math-behind-ais-thoughts-2c0305b658b3)
+
 
  
