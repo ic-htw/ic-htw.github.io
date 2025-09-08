@@ -5,6 +5,12 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Linear Regression Explained: From Theory to Real-World Implementation
+[(link)](https://mohith-g.medium.com/linear-regression-explained-from-theory-to-real-world-implementation-45b43faed743)
+- Linear Regression for Humans: Predicting the Future in Plain English
+[(link)](https://medium.com/data-science-collective/linear-regression-for-humans-predicting-the-future-in-plain-english-7a98b877cb04)
+- How Google and Stanford made AI more Interpretable with a 20 year old Technique
+[(link)](https://machine-learning-made-simple.medium.com/breaking-down-db-ksvd-scalable-alternating-optimization-for-disentangling-high-dimensional-87d3e2237de4)
 - Visual Intro to Machine Learning
 [(link)](http://www.r2d3.us/)
 - Linear Algebra Concepts Every Data Scientist Should Know
@@ -201,7 +207,6 @@ is_slide: 0
 [(link)](https://developers.google.com/machine-learning/guides/)
 - Machine Learning cheatsheets
 [(link)](https://github.com/afshinea/stanford-cs-229-machine-learning)
-
 - A Comprehensive Guide to Gradient Descent
 [(link)](https://medium.com/srm-mic/a-comprehensive-guide-to-gradient-descent-e2de8d4e10b9)
 - What’s the trade-off between Bias and Variance?

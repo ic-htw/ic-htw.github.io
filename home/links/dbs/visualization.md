@@ -4,6 +4,10 @@ nav: links-dbs
 title: Visualization
 is_slide: 0
 ---
+- Comprehensive-Guide-to-Exploratory-Data-Analysis
+[(link)](https://github.com/thom22/Comprehensive-Guide-to-Exploratory-Data-Analysis)
+- Mastering Advanced Exploratory Data Analysis and Visualization Effectively 2
+[(link)](https://python.plainenglish.io/mastering-exploratory-data-analysis-effectively-a-complete-guide-basics-to-advanced-part-2-6f0f8a045fb1)
 - Six Awesome Strategies to Visualize Temporal Changes Effectively
 [(link)](https://www.databrewer.co/blog/visualize-change-with-time)
 - This Open Source Dashboard Solution With 59k Stars on GitHub astonished me — Apache Superset

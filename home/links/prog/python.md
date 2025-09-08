@@ -480,30 +480,28 @@ is_slide: 0
 # pandas
 - home
 [(link)](https://pandas.pydata.org/)
-
 - docs
 [(link)](http://pandas.pydata.org/pandas-docs/stable/)
-
 - Pandas Profiling
 [(link)](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/)
-
 - Introduction to .LOC and .ILOC for Data Enthusiasts
 [(link)](https://medium.com/@fabianabarril/introduction-to-loc-and-iloc-for-data-enthusiasts-4468e8248a7b)
-
 - Basic Time Series Manipulation with Pandas
 [(link)](https://towardsdatascience.com/basic-time-series-manipulation-with-pandas-4432afee64ea)
-
 - Introduction to Pandas DataFrame.query() function
 [(link)](https://medium.com/analytics-vidhya/introduction-to-pandas-dataframe-query-function-60b5408ae58b)
-
 - Statistical Analysis in Python using Pandas
 [(link)](https://medium.com/analytics-vidhya/statistical-analysis-in-python-using-pandas-27c6a4209de2)
-
 - Top 3 Pandas Tricks I Wish I Knew Before
 [(link)](https://medium.com/nerd-for-tech/top-3-pandas-tricks-i-wish-i-knew-before-604cbe4166ea)
-
 - 18 Important functions in Pandas
 [(link)](https://aparnamishra144.medium.com/18-important-functions-in-pandas-eb696ed15fdb)
+- Understanding pandas Update Cell Value
+[(link)](https://medium.com/@amit25173/understanding-pandas-update-cell-value-b35f20d3b4c9)
+- Simple Ways to Apply if-Else Condition in Pandas DataFrame
+[(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
+
+
 
 # pydantic
 - Mastering Type Annotations & Pydantic with Code Snippets

@@ -266,6 +266,8 @@ is_slide: 0
 
 
 # mcp
+- Understand MCP in 10 Minutes
+[(link)](https://medium.com/@haiou-a/understand-mcp-in-10-minutes-e864bbc62f03)
 - MCP-Home: Model Context Protocol (MCP)
 [(link)](https://github.com/modelcontextprotocol)
 - The guide to MCP I never had
