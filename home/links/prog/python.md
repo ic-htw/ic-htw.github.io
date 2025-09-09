@@ -500,6 +500,9 @@ is_slide: 0
 [(link)](https://medium.com/@amit25173/understanding-pandas-update-cell-value-b35f20d3b4c9)
 - Simple Ways to Apply if-Else Condition in Pandas DataFrame
 [(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
+- Pandas Profiling Python: Your Easy Guide to Efficient Data Analysis
+[(link)](https://medium.com/@amit25173/pandas-profiling-python-your-easy-guide-to-efficient-data-analysis-ae18812f9da1)
+
 
 
 
