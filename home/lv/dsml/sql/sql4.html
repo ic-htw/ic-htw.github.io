@@ -3,39 +3,45 @@ layout: default1
 nav: dsml-sql
 title: SQL - Sub Queries - DSML
 is_slide: 1
-n: 15
+n: 5
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Durchschnittsgehalt als Bedingung</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT round(avg(gehalt))
-FROM mitarbeiter;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-10.png">
-    </div>
-</div>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT name
-FROM mitarbeiter
-WHERE gehalt > 67333
-ORDER BY name;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-20.png">
-    </div>
-</div>
-<p class="w3-large ic-neg15">Problem: Manuelle Ermittlung des Durchschnittswertes und Eintragung in die zweite Abfrage<br>
-Kombination zweier Aggregierungsstufen:</p>
-<ul class="w3-large">
-    <li>Mittelwert aggregiert</li>
-    <li>Ausgabe der Namen auf Detailebene</li>
-</ul>
+<h1>Modularization of Queries</h1>
+<h2>Common Table Expression (CTE)</h2>
+<pre><code class="language-sql">with
+  asal_ou as (
+    select ouid, round(avg(salary)) as avgsal_ou
+    from employee
+    group by ouid
+  )
+select
+  e.ouid,
+  lastname,
+  salary,
+  avgsal_ou,
+  salary-avgsal_ou as diff
+from employee e
+     join asal_ou on e.ouid=asal_ou.ouid
+order by e.ouid, diff desc;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/100.png">
+
+
+<h2>CTE with one Row and one Column</h2>
+<pre><code class="language-sql">with
+  asal as (select round(avg(salary)) as avgsal from employee)
+select
+  lastname,
+  salary,
+  avgsal,
+  salary-avgsal as diff
+from employee cross join asal
+order by diff desc;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/110.png">
 <div class="ic-gap"></div>
 
 
@@ -43,27 +49,28 @@ Kombination zweier Aggregierungsstufen:</p>
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Lösung mit Unterabfrage</h1>
-<p class="w3-large ic-neg15">Schachtelung von Abfragen</p>
-<ul class="w3-large">
-    <li>Übergeordnete Abfrage (Hauptabfrage)</li>
-    <li>Unterabfrage</li>
-</ul>
-
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT name
-FROM mitarbeiter
-WHERE gehalt >= (
-  SELECT round(avg(gehalt))
-  FROM mitarbeiter
+<h1>Subquery in Where Part</h1>
+<h2>Usage as Value - one Row and one Column</h2>
+<pre><code class="language-sql">select lastname
+from employee
+where salary >= (
+  select round(avg(salary ))
+  from employee
 )
-ORDER BY name;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-10.png">
-    </div>
-</div>
+order by lastname;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/120.png">
+
+<h2>Usage as List - many Rows and one Column</h2>
+<pre><code class="language-sql">select ouid, lastname
+from employee
+where ouid in (
+  select ouid
+  from orgunit
+  where head=109
+);
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/130.png">
 <div class="ic-gap"></div>
 
 
@@ -71,30 +78,34 @@ ORDER BY name;</code></pre>
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Konzeptproblem</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT name
-FROM mitarbeiter
-WHERE gehalt >= (
-  SELECT round(avg(gehalt))
-  FROM mitarbeiter
-)
-ORDER BY name;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Gehalt ist eine Zahl</li>
-            <li>Das Ergebnis einer Abfrage ist eine Tabelle</li>
-        </ul>
-    </div>
-</div>
-<p class="w3-large">Der Vergleichsoperator <br>
-    >= <br>
-    erfordert linke und rechte Seite mit kompatiblen Typ<br><br>
-    Ist in diesem Fall gegeben:<br>
-    Abfrage liefert Ergebnis mit einer Zeile und eine Spalte
-</p>
+<h1>Exists</h1>
+<h2>Employees with largest Salary</h2>
+<pre><code class="language-sql">select eid, lastname, salary
+from employee e
+where not exists (
+  select *
+  from employee e2
+  where e2.salary > e.salary
+);
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/140.png">
+
+<h2>Orgunits with largest average salary</h2>
+<pre><code class="language-sql">with
+  asal as (
+    select ouid, avg(salary) as avgsal_ou
+    from employee
+    group by ouid
+ )
+select ouid, avgsal_ou
+from asal asal_ou1
+where not exists (
+  select *
+  from asal asal_ou2
+  where asal_ou2.avgsal_ou > asal_ou1.avgsal_ou
+);
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/150.png">
 <div class="ic-gap"></div>
 
 
@@ -102,18 +113,20 @@ ORDER BY name;</code></pre>
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Datenzellen</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <p class="w3-large">Tabelle</p>
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/fig-10.png">
-    </div>
-    <div class="w3-col m6">
-        <p class="w3-large">Tabelle, eine Zeile, eine Spalte</p>
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/fig-20.png">
-        <p class="w3-large">Kann als Wert interpretiert werden</p>
-    </div>
-</div>
+<h1>Recursive Queries</h1>
+<pre><code class="language-sql">xwith 
+  recursive super as (
+    select ouid, name, 1 as level, superunit
+    from orgunit
+    where superunit is null
+    union all
+    select sub.ouid, sub.name, super.level + 1 as level, sub.superunit
+    from orgunit sub
+         join super on super.ouid=sub.superunit
+  )
+select * from super;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/160.png">
 <div class="ic-gap"></div>
 
 
@@ -121,321 +134,14 @@ ORDER BY name;</code></pre>
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Berechnung mit Detail- und aggregierten Werten</h1>
-<!-- Row -->
-<div class="w3-row-padding">
-    <div class="w3-col m8">
-        <pre><code class="language-sql">SELECT
-  name,
-  gehalt,
-  (SELECT round(avg(gehalt)) FROM mitarbeiter) AS dgehalt,
-  gehalt - (SELECT round(avg(gehalt)) FROM mitarbeiter) AS diff
-FROM mitarbeiter
-ORDER BY 
-  gehalt - (SELECT round(avg(gehalt)) FROM mitarbeiter) desc;</code></pre>
-        <p class="w3-large">Unterabfragen ermöglichen die Kombination
-            von Detail- und aggregierten Werten in einer Abfrage
-        </p>
-    </div>
-    <div class="w3-col m4">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-30.png">
-    </div>
-</div>
+<h1>Lateral Join</h1>
+<pre><code class="language-sql">with
+  asal as (select round(avg(salary)) as avgsal from employee)
+select lastname, salary, avgsal, diff
+from asal, 
+     lateral (select lastname, salary, salary-avgsal as diff from employee)
+order by diff desc;
+</code></pre>
+<img class="w3-image" src="/home/lv/dsml/a/sql4/170.png">
 <div class="ic-gap"></div>
 
-
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
-<h1>Common Table Expression (CTE)</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <p class="w3-large">Mehrfach verwendete Unterabfragen herausziehen und mit with definieren</p>
-        <pre><code class="language-sql">with
-  dg AS (SELECT round(avg(gehalt)) AS dgehalt 
-         FROM mitarbeiter)
-SELECT
-  name,
-  gehalt,
-  dgehalt,
-  gehalt - dgehalt AS diff
-FROM mitarbeiter cross join dg
-ORDER BY gehalt - dgehalt desc;</code></pre>
-        <p class="w3-large">Jeder Mitarbeiter-Datensatz soll um den Wert "dgehalt" ergänzt werden -> cross join
-        </p>
-    </div>
-    <div class="w3-col m5">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-30.png">
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1>Unterabfrage mit Werteliste</h1>
-<p class="w3-large">Alle Mitarbeiter, die in Abteilungen arbeiten,
-    die direkt von Meier (109) geleitet werden</p>
-<div class="w3-row-padding">
-    <div class="w3-col m4">
-        <pre><code class="language-sql">SELECT oeid, name
-FROM mitarbeiter
-WHERE oeid IN (
-  SELECT oeid
-  FROM orgeinheit
-  WHERE leitung=109
-);</code></pre>
-    </div>
-    <div class="w3-col m4">
-        <p class="w3-large">Unterabfrage liefert:<br>
-            15<br>
-            17
-        </p>
-    </div>
-    <div class="w3-col m4">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-40.png">
-    </div>
-</div>
-<p class="w3-large">Hinter dem Schlüsselwort IN muss eine Liste von Werten kommen<br>
-    Für eine Unterabfrage bedeutet das: mehrere Zeilen aber nur eine Spalte</p>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>Unterabfrage mit Verbund</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">SELECT oeid, name
-FROM mitarbeiter
-WHERE oeid IN (
-  SELECT oe.oeid
-  FROM orgeinheit oe
-  join mitarbeiter m ON m.mid=oe.leitung
-  WHERE name='Meier'
-);</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Hier dieselbe Abfrage mit Verwendung des Namens 'Meier'</li>
-            <li>Erfordert einen Join in der Unterabfrage mit der Mitarbeitertabelle</li>
-            <li>Wichtig: Der Join muss über die Leitungsbeziehung erfolgen</li>
-        </ul>
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1>Korrelierte Unterabfrage</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <p class="w3-large">Durchschnitt pro Orgeinheit</p>
-        <pre><code class="language-sql">SELECT
-  oeid,
-  name,
-  (SELECT round(avg(gehalt))
-  FROM mitarbeiter dg
-  WHERE dg.oeid=m.oeid) AS dgehalt_abt
-FROM mitarbeiter m
-ORDER BY oeid, mid;</code></pre>
-        <ul class="w3-large">
-            <li>Unterschiedliche Werte
-                der Durchschnittsgehälter für Orgeinheiten</li>
-            <li>Bezug von der Unterabfrage auf die Hauptabfrage</li>
-        </ul>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-50.png">
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>Unterabfragen im From-Teil</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m7">
-        <pre><code class="language-sql">SELECT m.oeid, name, gehalt,
-  dgehalt_abt,
-  gehalt - dgehalt_abt AS diff
-FROM mitarbeiter m 
-     join
-     (SELECT oeid, round(avg(gehalt)) AS dgehalt_abt
-     FROM mitarbeiter
-     group by oeid) dabt ON m.oeid=dabt.oeid;</code></pre>
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-60.png">
-        <p class="w3-large">Kann als Ergebnis eine
-            "echte" Tabelle abliefern
-        </p>
-    </div>
-    <div class="w3-col m5">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-70.png">
-
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>Mit CTE</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">with
-dabt AS (
-  SELECT oeid, round(avg(gehalt)) AS dgehalt_abt
-  FROM mitarbeiter
-  group by oeid)
-SELECT m.oeid, name, gehalt,
-  dgehalt_abt,
-  gehalt - dgehalt_abt AS diff
-FROM mitarbeiter m
-     join dabt ON m.oeid=dabt.oeid;</code></pre>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-70.png">
-
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>Positionen für Unterabfragen</h1>
-<table class="w3-table-all">
-    <tr>
-        <th><code>SELECT</code></th>
-        <td>(SELECT …) - eine Zeile, eine Spalte</th>
-    </tr>
-    <tr>
-        <th><code>FROM</code></th>
-        <td>(SELECT …) - keine Einschränkungen</th>
-    </tr>
-    <tr>
-        <th><code>WHERE</code></th>
-        <td class="ic-neg15">(SELECT …)
-            <ul>
-                <li>eine Zeile, eine Spalte</li>
-                <li>mehrere Zeilen, eine Spalte (in-Prädikat)</li>
-            </ul>
-    </tr>
-    <tr>
-        <th><code>GROUP BY</code></th>
-        <td>nicht zulässig</th>
-    </tr>
-    <tr>
-        <th><code>HAVING</code></th>
-        <td>(SELECT …) - eine Zeile, eine Spalte</th>
-    </tr>
-    <tr>
-        <th><code>ORDER BY</code></th>
-        <td>(SELECT …) - eine Zeile, eine Spalte</th>
-    </tr>
-</table>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>All</h1>
-<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">with
-dg AS (
-  SELECT oeid, avg(gehalt) AS dgehalt
-  FROM mitarbeiter
-  group by oeid
-)
-SELECT oeid
-FROM dg
-WHERE dgehalt >= all (SELECT dgehalt FROM dg);</code></pre>
-    </div>
-    <div class="w3-col m2">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-80.png">
-    </div>
-    <div class="w3-col m4">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-90.png">
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>Exists</h1>
-<p class="w3-large">Abteilungen mit größtem Durchschnittsgehalt</p>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">with
-dg AS (
-  SELECT oeid, avg(gehalt) AS dgehalt
-  FROM mitarbeiter
-  group by oeid
-  )
-SELECT oeid
-FROM dg dg1
-WHERE not exists (
-  SELECT dgehalt
-  FROM dg dg2
-  WHERE dg2.dgehalt > dg1.dgehalt
-);</code></pre>
-    </div>
-    <div class="w3-col m2">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-80.png">
-    </div>
-    <div class="w3-col m4">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-90.png">
-    </div>
-</div>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>Some</h1>
-<p class="w3-large">Abteilungen mit dem nicht-kleinsten Durchschnittsgehältern</p>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <pre><code class="language-sql">with
-dg AS (
-  SELECT oeid, avg(gehalt) AS dgehalt
-  FROM mitarbeiter
-  group by oeid
-)
-SELECT oeid
-FROM dg
-WHERE dgehalt > some (SELECT dgehalt FROM dg);</code></pre>
-    </div>
-    <div class="w3-col m2">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-100.png">
-    </div>
-    <div class="w3-col m4">
-        <img class="w3-image" src="/home/lv/dmdb/a/sql-sub/tab-110.png">
-    </div>
-</div>
-<div class="ic-gap"></div>
