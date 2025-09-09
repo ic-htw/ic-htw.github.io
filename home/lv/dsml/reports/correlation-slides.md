@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: Correlation in Machine Learning
+title: Correlation in Machine Learning - DSML
 is_slide: 0
 ---
 

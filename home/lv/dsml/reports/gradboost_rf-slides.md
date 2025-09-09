@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: Gradient Boosting vs Random Forest
+title: Gradient Boosting vs Random Forest - DSML
 is_slide: 0
 ---
 

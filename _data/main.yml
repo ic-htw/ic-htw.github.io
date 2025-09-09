@@ -602,6 +602,9 @@ home: &r
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/reports/metrics.html
+                  - t: Kaggle Competion Metrics
+                    ts: Kaggle Competion Metrics
+                    url: /home/lv/dsml/reports/kaggle-metrics.html
                   - t: Exploratory Data Analysis - Slides
                     ts: EDA - Slides
                     url: /home/lv/dsml/reports/eda-slides.html

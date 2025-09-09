@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: Boosting Algorithms - A Comparative Analysis
+title: Boosting Algorithms - A Comparative Analysis - DSML
 is_slide: 0
 ---
 

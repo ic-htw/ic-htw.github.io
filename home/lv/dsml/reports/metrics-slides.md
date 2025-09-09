@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: ML Metrics
+title: ML Metrics - DSML
 is_slide: 0
 ---
 

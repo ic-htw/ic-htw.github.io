@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-reports
-title: Kaggle Grandmaster Advice
+title: Kaggle Grandmaster Advice - DSML
 is_slide: 0
 ---
 
