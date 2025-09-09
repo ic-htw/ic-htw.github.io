@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Detecting Peaks and Valleys: Learn The Essentials for Accurate Analysis.
+[(link)](https://medium.com/data-science-collective/detecting-peaks-and-valleys-learn-the-essentials-for-accurate-analysis-295b2a002f62)
 - Linear Regression Explained: From Theory to Real-World Implementation
 [(link)](https://mohith-g.medium.com/linear-regression-explained-from-theory-to-real-world-implementation-45b43faed743)
 - Linear Regression for Humans: Predicting the Future in Plain English
