@@ -9,20 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How Google’s NotebookLM Made Me 80% Faster at Learning Anything
+[(link)](https://generativeai.pub/how-googles-notebooklm-made-me-80-faster-at-learning-anything-dc93d0c32b85)
+
+- How I Built a Personal Market Database with DuckDB and Parquet (Step by Step)
+[(link)](https://medium.com/data-science-collective/how-i-built-a-personal-market-database-with-duckdb-and-parquet-step-by-step-27b0d1bb7e2e)
+
+- Rust’s Top Experts Beg for Jobs: 3,000 Core Commits Lose to OpenAI API “Engineers”?
+[(link)](https://blog.stackademic.com/rusts-top-experts-beg-for-jobs-3-000-core-commits-lose-to-openai-api-engineers-401963c16217)
+
 - mlflow
 [(link)](https://mlflow.org/)
-
-- Future-Proof Data Engineering Skills You Need in 2025
-[(link)](https://medium.com/@vijaygadhave2014/future-proof-data-engineering-skills-you-need-in-2025-e697e98377e3)
-
-- I Studied 1,500 Academic Papers on Prompt Engineering. Here’s Why Everything You Know Is Wrong.
-[(link)](https://aakashgupta.medium.com/i-studied-1-500-academic-papers-on-prompt-engineering-heres-why-everything-you-know-is-wrong-391838b33468)
-
-- Detecting Peaks and Valleys: Learn The Essentials for Accurate Analysis.
-[(link)](https://medium.com/data-science-collective/detecting-peaks-and-valleys-learn-the-essentials-for-accurate-analysis-295b2a002f62)
-
-- The Scariest Database You’ve Never Heard Of (And How to Search It)
-[(link)](https://medium.com/@neonmaxima/the-scariest-database-youve-never-heard-of-and-how-to-search-it-efe0a510aa16)
 
 - Radically Simple Data Lineage
 [(link)](https://blog.dataengineerthings.org/radically-simple-data-lineage-b528ab526ff9)
