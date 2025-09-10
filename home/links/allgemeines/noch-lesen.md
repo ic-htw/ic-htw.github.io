@@ -9,14 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- How Google’s NotebookLM Made Me 80% Faster at Learning Anything
-[(link)](https://generativeai.pub/how-googles-notebooklm-made-me-80-faster-at-learning-anything-dc93d0c32b85)
-
-- How I Built a Personal Market Database with DuckDB and Parquet (Step by Step)
-[(link)](https://medium.com/data-science-collective/how-i-built-a-personal-market-database-with-duckdb-and-parquet-step-by-step-27b0d1bb7e2e)
-
-- Rust’s Top Experts Beg for Jobs: 3,000 Core Commits Lose to OpenAI API “Engineers”?
-[(link)](https://blog.stackademic.com/rusts-top-experts-beg-for-jobs-3-000-core-commits-lose-to-openai-api-engineers-401963c16217)
+- The Complete Timeline of How AI Went From Miracle to Bubble in 3 Months
+[(link)](https://ai.gopubby.com/the-complete-timeline-of-how-ai-went-from-miracle-to-bubble-in-3-months-be3fcca3463e)
 
 - mlflow
 [(link)](https://mlflow.org/)

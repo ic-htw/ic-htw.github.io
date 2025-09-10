@@ -45,6 +45,8 @@ is_slide: 0
 [(link)](https://tech.marksblogg.com/duckdb-geospatial-gis.html)
 
 # posts
+- How I Built a Personal Market Database with DuckDB and Parquet (Step by Step)
+[(link)](https://medium.com/data-science-collective/how-i-built-a-personal-market-database-with-duckdb-and-parquet-step-by-step-27b0d1bb7e2e)
 - Declarative DuckLakes on Kubernetes
 [(link)](https://medium.com/@tfmv/declarative-ducklakes-on-kubernetes-6044736cf9a9)
 - Building Effective Dashboards
