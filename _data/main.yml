@@ -547,6 +547,12 @@ home: &r
                   - t: Introduction to Machine Learning
                     ts: Intro
                     url: /home/lv/dsml/ml/ml-intro.html
+                  - t: Metrics in Machine Learning
+                    ts: Metrics
+                    url: /home/lv/dsml/ml/metrics.html
+                  - t: Tree-based Models
+                    ts: Trees
+                    url: /home/lv/dsml/ml/trees.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dsml/sql/1-sql.html
