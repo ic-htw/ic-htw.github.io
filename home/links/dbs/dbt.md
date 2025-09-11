@@ -23,6 +23,14 @@ is_slide: 0
 
 
 # Articles
+- No, Data Engineers Don’t NEED dbt.
+[(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
+- Using AI for Data Modeling in dbt
+[(link)](https://medium.com/@mikldd/using-ai-for-data-modeling-in-dbt-975838054cb1)
+- dbt Fusion: The Game-Changer for SQL Analytics Teams
+[(link)](https://www.carlosacchi.cloud/dbt-fusion-the-game-changer-for-sql-analytics-teams-eeffba792be5)
+- Mastering Data History: 4 SCD Patterns You Need to Know in dbt
+[(link)](https://medium.com/@vijaygadhave2014/mastering-data-history-4-scd-patterns-you-need-to-know-in-dbt-436b97a6fc80)
 - Building a dbt Pipeline with NBA Data — My Second Project Using Medallion Architecture
 [(link)](https://medium.com/@aljpacho/building-a-dbt-pipeline-with-nba-data-my-second-project-using-medallion-architecture-e98ba5faf394)
 - dbt Semantic Layer — What Is and How to Use

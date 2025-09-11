@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- HTAP: Still the Dream, a Decade Later
+[(link)](https://medium.com/@danthelion/htap-still-the-dream-a-decade-later-9d168f07c759)
+
+- Demystifying Apache Spark
+[(link)](https://medium.com/@tfmv/demystifying-apache-spark-cf1313a9943f)
+
 - The Complete Timeline of How AI Went From Miracle to Bubble in 3 Months
 [(link)](https://ai.gopubby.com/the-complete-timeline-of-how-ai-went-from-miracle-to-bubble-in-3-months-be3fcca3463e)
 
@@ -71,9 +77,6 @@ is_slide: 0
 
 - PyCaret
 [(link)](https://pycaret.org/)
-
-- dbt Fusion: The Game-Changer for SQL Analytics Teams
-[(link)](https://www.carlosacchi.cloud/dbt-fusion-the-game-changer-for-sql-analytics-teams-eeffba792be5)
 
 - STOP Guessing Who Will Leave — How I Would Predict Customer Churn Before It Happens
 [(link)](https://medium.com/data-science-collective/stop-guessing-who-will-leave-how-i-would-predict-customer-churn-before-it-happens-300d34cbd13c)
@@ -228,9 +231,6 @@ is_slide: 0
 
 - UV Cheatsheet for Python Developers
 [(link)](https://tarzzotech.medium.com/uv-cheatsheet-for-python-developers-2142bf6be8bf)
-
-- Using AI for Data Modeling in dbt
-[(link)](https://medium.com/@mikldd/using-ai-for-data-modeling-in-dbt-975838054cb1)
 
 - Palantir Foundry Is 5–10 Years Ahead of Every Other Data Platform
 [(link)](https://blog.det.life/what-palantir-foundry-taught-me-about-building-better-data-systems-407e3768d5fc)
@@ -853,9 +853,6 @@ is_slide: 0
 
 - Postgres vs. Pinecone
 [(link)](https://lantern.dev/blog/postgres-vs-pinecone)
-
-- No, Data Engineers Don’t NEED dbt.
-[(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
 
 - Improving Performance for Data Visualization AI Agent
 [(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
