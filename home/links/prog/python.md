@@ -502,6 +502,9 @@ is_slide: 0
 [(link)](https://medium.com/@amit25173/simple-ways-to-apply-if-else-condition-in-pandas-dataframe-2331b8843daa)
 - Pandas Profiling Python: Your Easy Guide to Efficient Data Analysis
 [(link)](https://medium.com/@amit25173/pandas-profiling-python-your-easy-guide-to-efficient-data-analysis-ae18812f9da1)
+- How to Create Empty DataFrame in Pandas: A Practical Guide for Beginners
+[(link)](https://medium.com/@amit25173/how-to-create-empty-dataframe-in-pandas-a-practical-guide-for-beginners-0480201c3922)
+
 
 
 

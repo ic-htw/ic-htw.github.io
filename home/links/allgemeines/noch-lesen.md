@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Zero Degrees of Separation
+[(link)](https://medium.com/@tfmv/zero-degrees-of-separation-70b106537e12)
+
 - HTAP: Still the Dream, a Decade Later
 [(link)](https://medium.com/@danthelion/htap-still-the-dream-a-decade-later-9d168f07c759)
 
