@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- LangExtract (Google, Open Source): Turn Unstructured Text into Structured, Auditable Data
+[(link)](https://medium.com/@pankaj_pandey/langextract-google-open-source-turn-unstructured-text-into-structured-auditable-data-121a6ffa4fcd)
+
 - Zero Degrees of Separation
 [(link)](https://medium.com/@tfmv/zero-degrees-of-separation-70b106537e12)
 

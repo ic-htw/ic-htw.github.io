@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](https://github.com/agentm/project-m36/blob/master/docs/on_null.markdown)
 - Are You Qualified To Use Null in SQL?
 [(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
+- SQL Best Practices: Hard-Learned Lessons from my years as a Software Engineer
+[(link)](https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7)
+
 
 # sql - ml
 - Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
