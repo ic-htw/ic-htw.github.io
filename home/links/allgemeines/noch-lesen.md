@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why Generative AI Is Forcing Us to Rethink Data Modeling
+[(link)](https://afroinfotech.medium.com/why-generative-ai-is-forcing-us-to-rethink-data-modeling-fbbea5e0aaea)
+
+- Lakehouse Architecture: Why Lakehouses Are the Future of Big Data
+[(link)](https://medium.com/@vijaygadhave2014/lakehouse-architecture-why-lakehouses-are-the-future-of-big-data-40a6ec4fc49f)
+
+- Stop Using Requests — Try This Modern HTTP Library Instead
+[(link)](https://medium.com/pythonic-af/stop-using-requests-try-this-modern-http-library-instead-3eccd6225995)
+
 - LangExtract (Google, Open Source): Turn Unstructured Text into Structured, Auditable Data
 [(link)](https://medium.com/@pankaj_pandey/langextract-google-open-source-turn-unstructured-text-into-structured-auditable-data-121a6ffa4fcd)
 
