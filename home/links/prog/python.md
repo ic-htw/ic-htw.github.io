@@ -515,6 +515,11 @@ is_slide: 0
 - Pydantic
 [(link)](https://pydantic-docs.helpmanual.io/)
 
+# pytorch
+- PyTorch — A Comprehensive Performance Tuning Guide
+[(link)](https://levelup.gitconnected.com/pytorch-a-comprehensive-performance-tuning-guide-a917d18bc6c2)
+
+
 
 # OpenCV
 
