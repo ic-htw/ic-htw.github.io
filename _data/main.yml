@@ -623,6 +623,12 @@ home: &r
                   - t: Visualization Types and Uses
                     ts: Visualization
                     url: /home/lv/dsml/reports/viz.html
+                  - t: Visualization Python Libraries - Slides
+                    ts: Visualization Python Libraries - Slides
+                    url: /home/lv/dsml/reports/viz-python-slides.html
+                  - t: Visualization Python Libraries
+                    ts: Visualization Python Libraries
+                    url: /home/lv/dsml/reports/viz-python.html
                   - t: Correlation in Machine Learning - Slides
                     ts: Correlation - Slides
                     url: /home/lv/dsml/reports/correlation-slides.html
