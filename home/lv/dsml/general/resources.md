@@ -43,6 +43,19 @@ is_slide: 0
 [(link)](https://www.datarobot.com/blog/gradient-boosted-regression-trees/)
 - The Mechanics of Machine Learning
 [(link)](https://mlbook.explained.ai/)
+- Decision Tree: an algorithm that works like the human brain
+[(link)](https://medium.com/data-science/decision-tree-an-algorithm-that-works-like-the-human-brain-8bc0652f1fc6)
+- treeinterpreter
+[(link)](https://pypi.org/project/treeinterpreter/)
+- Interpreting random forests
+[(link)](https://blog.datadive.net/interpreting-random-forests/)
+- Random forest interpretation with scikit-learn
+[(link)](https://blog.datadive.net/random-forest-interpretation-with-scikit-learn/)
+- treeinterpreter - Interpreting Tree-Based Model's Prediction of Individual Sample
+[(link)](https://coderzcolumn.com/tutorials/machine-learning/treeinterpreter-interpreting-tree-based-models-prediction-of-individual-sample)
+- Demystify the random forest
+[(link)](https://www.kaggle.com/code/akashram/demystify-the-random-forest)
+
 
 
 # Visualization
