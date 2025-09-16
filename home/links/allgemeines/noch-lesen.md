@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- SQL Window Functions Explained Like a Story
+[(link)](https://medium.com/ai-analytics-diaries/sql-window-functions-explained-like-a-story-with-brain-tricks-to-make-it-stick-b2539023b9d9)
+
 - Why Generative AI Is Forcing Us to Rethink Data Modeling
 [(link)](https://afroinfotech.medium.com/why-generative-ai-is-forcing-us-to-rethink-data-modeling-fbbea5e0aaea)
 
