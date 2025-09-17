@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Optuna: The Hyperparameter Optimization Framework That Saved My Machine Learning Sanity
+[(link)](https://medium.com/@harishk3493/optuna-the-hyperparameter-optimization-framework-that-saved-my-machine-learning-sanity-315febd8f722)
+
+- 7 Wonders of Data Science
+[(link)](https://medium.com/ai-analytics-diaries/7-wonders-of-data-science-4486e1b8d548)
+
 - SQL Window Functions Explained Like a Story
 [(link)](https://medium.com/ai-analytics-diaries/sql-window-functions-explained-like-a-story-with-brain-tricks-to-make-it-stick-b2539023b9d9)
 
