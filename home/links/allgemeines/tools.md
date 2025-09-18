@@ -439,6 +439,9 @@ is_slide: 0
 [(link)](https://github.com/astral-sh/uv)
 - doc
 [(link)](https://docs.astral.sh/uv/)
+- The Fastest Python Toolchain Setup for 2025
+[(link)](https://medium.com/@tricky16122000/the-fastest-python-toolchain-setup-for-2025-188db29a0414)
+
 
 
 

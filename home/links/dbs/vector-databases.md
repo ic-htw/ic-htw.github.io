@@ -105,6 +105,10 @@ is_slide: 0
 [(link)](https://blog.lancedb.com/benchmarking-lancedb-92b01032874a)
 - kein direkter docker link
 
+# leann
+- The World’s Smallest Vector Database: How LEANN
+[(link)](https://medium.com/@muthu10star/the-worlds-smallest-vector-database-how-leann-uses-97-less-space-than-traditional-vector-db-b00de3ec97be)
+
 
 
 # milvus
