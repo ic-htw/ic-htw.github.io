@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Get Excited About Postgres 18
+[(link)](https://www.crunchydata.com/blog/get-excited-about-postgres-18)
+
 - Optuna: The Hyperparameter Optimization Framework That Saved My Machine Learning Sanity
 [(link)](https://medium.com/@harishk3493/optuna-the-hyperparameter-optimization-framework-that-saved-my-machine-learning-sanity-315febd8f722)
 
