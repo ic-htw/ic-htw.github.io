@@ -20,6 +20,15 @@ is_slide: 0
 [(link)](https://seaborn.pydata.org/)
 
 
+# Kaagle
+- Regression with an Insurance Dataset
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e12/overview)
+- Exploring Mental Health Data
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e11/overview)
+- Loan Approval Prediction
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e10)
+- Regression of Used Car Prices
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/overview)
 
 
 # Machine Learning
