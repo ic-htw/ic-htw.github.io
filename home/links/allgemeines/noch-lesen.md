@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Memory Management in Python
+[(link)](https://medium.com/@aliyannshaikhh/aefd9e4c6542)
+
+- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
+[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
+
+- Top solutions of the regression playground competitions in last one year 
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
+
+- AutoML
+[(link)](https://www.automl.org/automl/)
+
 - Get Excited About Postgres 18
 [(link)](https://www.crunchydata.com/blog/get-excited-about-postgres-18)
 
