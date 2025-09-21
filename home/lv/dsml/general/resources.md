@@ -21,6 +21,13 @@ is_slide: 0
 
 
 # Kaagle
+- Predicting Optimal Fertilizers
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e6)
+- Predict Calorie Expenditure
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e5)
+- Binary Prediction with a Rainfall Dataset
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard)
+
 - Regression with an Insurance Dataset
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e12/overview)
 - Exploring Mental Health Data
@@ -29,6 +36,10 @@ is_slide: 0
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e10)
 - Regression of Used Car Prices
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e9/overview)
+- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
+[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
+- Top solutions of the regression playground competitions in last one year 
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
 
 
 # Machine Learning
@@ -64,6 +75,8 @@ is_slide: 0
 [(link)](https://coderzcolumn.com/tutorials/machine-learning/treeinterpreter-interpreting-tree-based-models-prediction-of-individual-sample)
 - Demystify the random forest
 [(link)](https://www.kaggle.com/code/akashram/demystify-the-random-forest)
+- AutoML
+[(link)](https://www.automl.org/automl/)
 
 
 
@@ -76,4 +89,6 @@ is_slide: 0
 [(link)](https://www.tableau.com/academic/students)
 - Seaborn
 [(link)](https://seaborn.pydata.org/)
+
+
 
