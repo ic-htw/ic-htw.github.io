@@ -20,14 +20,19 @@ is_slide: 0
 [(link)](https://seaborn.pydata.org/)
 
 
-# Kaagle
+# Kaggle
+- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
+[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
+- Top solutions of the regression playground competitions in last one year 
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
+
+# Kaggle Competions
 - Predicting Optimal Fertilizers
 [(link)](https://www.kaggle.com/competitions/playground-series-s5e6)
 - Predict Calorie Expenditure
 [(link)](https://www.kaggle.com/competitions/playground-series-s5e5)
 - Binary Prediction with a Rainfall Dataset
 [(link)](https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard)
-
 - Regression with an Insurance Dataset
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e12/overview)
 - Exploring Mental Health Data
@@ -36,10 +41,11 @@ is_slide: 0
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e10)
 - Regression of Used Car Prices
 [(link)](https://www.kaggle.com/competitions/playground-series-s4e9/overview)
-- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
-[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
-- Top solutions of the regression playground competitions in last one year 
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
+- Feature Engineering for House Prices
+[(link)](https://www.kaggle.com/code/ryanholbrook/feature-engineering-for-house-prices)
+- House Prices - Advanced Regression Techniques
+[(link)](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
+
 
 
 # Machine Learning
