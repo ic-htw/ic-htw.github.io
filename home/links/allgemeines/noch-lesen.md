@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Integrating LLMs and AI Agents into Data Engineering Workflows
+[(link)](https://medium.com/@ritam378/f0fb05eedb09)
+
 - Random Variables & Probability Distributions explained
 [(link)](https://medium.com/data-science-collective/random-variables-probability-distributions-explained-08903a825da6)
 
