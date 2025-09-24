@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Start Learning Machine Learning: A Practical Guide
+[(link)](https://medium.com/@amit25173/how-to-start-learning-machine-learning-a-practical-guide-7620d1843c9e)
+
+- Autoencoders for Defect Detection in Images
+[(link)](https://medium.com/@ryan.ar/autoencoders-for-defect-detection-in-images-06d534745ecc)
+
+- What is an autoencoder? 
+[(link)](https://www.ibm.com/think/topics/autoencoder)
+
 - Integrating LLMs and AI Agents into Data Engineering Workflows
 [(link)](https://medium.com/@ritam378/f0fb05eedb09)
 
