@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What Is The Best Diagramming Software in 2025
+[(link)](https://medium.com/codetodeploy/why-i-ditched-lucidchart-for-excalidraw-the-sketchy-app-that-doubled-our-output-edf10033e935)
+
+- excalidraw
+[(link)](https://excalidraw.com/)
+
+- Type Casting in Python
+[(link)](https://medium.com/cloud-for-everybody/type-casting-in-python-a-complete-beginners-guide-ec4ad80ced2e)
+
+- SIMD: The real superpower behind super fast databases
+[(link)](https://blog.dataengineerthings.org/simd-the-real-superpower-behind-super-fast-databases-104ce03dfa20)
+
 - How to Start Learning Machine Learning: A Practical Guide
 [(link)](https://medium.com/@amit25173/how-to-start-learning-machine-learning-a-practical-guide-7620d1843c9e)
 
