@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Waiting for Postgres 18: Accelerating Disk Reads with Asynchronous I/O
+[(link)](https://pganalyze.com/blog/postgres-18-async-io)
+
+- Building 17 Agentic AI Patterns and Their Role in Large-Scale AI Systems
+[(link)](https://levelup.gitconnected.com/building-17-agentic-ai-patterns-and-their-role-in-large-scale-ai-systems-f4915b5615ce)
+
+- MCMC & the art of Sampling without Sampling
+[(link)](https://medium.com/data-science-collective/mcmc-the-art-of-sampling-without-sampling-7272697e5744)
+
+- Building a Real-Time Profit & Loss Engine with RisingWave and Streaming SQL
+[(link)](https://levelup.gitconnected.com/building-a-real-time-profit-loss-engine-with-risingwave-and-streaming-sql-709c5ba6cf2e)
+
 - What Is The Best Diagramming Software in 2025
 [(link)](https://medium.com/codetodeploy/why-i-ditched-lucidchart-for-excalidraw-the-sketchy-app-that-doubled-our-output-edf10033e935)
 
