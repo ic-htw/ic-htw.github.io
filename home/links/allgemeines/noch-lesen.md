@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The Anatomy of a Modern LLM
+[(link)](https://medium.com/@damianvtran/the-anatomy-of-a-modern-llm-0347afd72514)
+
+- From Data Warehouse to Lakehouse: Hybrid Architectures Every Engineer Must Master in 2025
+[(link)](https://aws.plainenglish.io/from-data-warehouse-to-lakehouse-hybrid-architectures-every-engineer-must-master-in-2025-2b4726228797)
+
 - Waiting for Postgres 18: Accelerating Disk Reads with Asynchronous I/O
 [(link)](https://pganalyze.com/blog/postgres-18-async-io)
 
