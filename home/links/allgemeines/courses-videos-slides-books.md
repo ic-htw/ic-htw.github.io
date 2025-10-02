@@ -93,5 +93,8 @@ is_slide: 0
 [(link)](http://allendowney.github.io/ThinkBayes2/index.html)
 - Foundations of Computer Vision
 [(link)](https://visionbook.mit.edu/)
+- Introduction to Machine Learning - Wolfram / Bernad
+[(link)](https://www.wolfram.com/language/introduction-machine-learning/)
+
 
 

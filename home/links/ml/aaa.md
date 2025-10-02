@@ -258,6 +258,15 @@ is_slide: 0
 - Bayes’ Theorem Unbound
 [(link)](https://www.cantorsparadise.com/bayes-unbound-f0b464683e7c)
 
+# Bayesian Inference
+
+- Bayesian Inference: The Engine Behind Probabilistic Reasoning in Data Science
+[(link)](https://medium.com/@sajidkhan.sjic/bayesian-inference-the-engine-behind-probabilistic-reasoning-in-data-science-0b49dfc70709)
+- Bayesian Inference - Wolfram
+[(link)](https://www.wolfram.com/language/introduction-machine-learning/bayesian-inference/)
+- An Introduction to Bayesian Thinking - R
+[(link)](https://statswithr.github.io/book/)
+
 
 # CRF
 - Performing Sequence Labelling using CRF in Python
