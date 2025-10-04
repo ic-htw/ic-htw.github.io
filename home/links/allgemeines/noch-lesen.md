@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What Fivetran’s acquisition of dbt Labs would mean for the Data Industry
+[(link)](https://medium.com/@hugolu87/what-fivetrans-acquisition-of-dbt-labs-would-mean-for-the-data-industry-6b69bca919b4)
+
+- Agentic AI: Building Long-Term Memory
+[(link)](https://medium.com/data-science-collective/agentic-ai-implementing-long-term-memory-304be62063cc)
+
+- I built an end-to-end interpretable Machine Learning research pipeline
+[(link)](https://medium.com/@lucascampagnaro/i-built-an-end-to-end-interpretable-machine-learning-research-pipeline-0ba67d0ba700)
+
 - The Anatomy of a Modern LLM
 [(link)](https://medium.com/@damianvtran/the-anatomy-of-a-modern-llm-0347afd72514)
 
