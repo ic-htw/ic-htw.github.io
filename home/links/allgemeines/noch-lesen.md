@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Compare Two or More Distributions
+[(link)](https://towardsdatascience.com/how-to-compare-two-or-more-distributions-9b06ee4d30bf/)
+
+- Is Your Training Data Representative? A Guide to Checking with PSI in Python
+[(link)](https://medium.com/@jumbongjunior/is-your-training-data-representative-a-guide-to-checking-with-psi-in-python-215bd34cb572)
+
 - What Fivetran’s acquisition of dbt Labs would mean for the Data Industry
 [(link)](https://medium.com/@hugolu87/what-fivetrans-acquisition-of-dbt-labs-would-mean-for-the-data-industry-6b69bca919b4)
 
