@@ -3,13 +3,17 @@ layout: default1
 nav: dsml-ml
 title: Metrics in Machine Learning - DSML
 is_slide: 1
-n: 20
+n: 12
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Introduction</h1>
+<h1>The Role of Evaluation Metrics in the ML Lifecycle</h1>
+<p class="w3-large">Provide a constructive feedback mechanism</p>
+<p class="w3-large">Offer objective criteria to assess predictive ability</p>
+<p class="w3-large">Provide crucial direction for improvements</p>
+<p class="w3-large">Align models performance with business objectives</p>
 <div class="ic-gap"></div>
 
 
@@ -18,6 +22,35 @@ n: 20
 -->
 {% include padding-id.html id=2 %}
 <h1>Mean Absolute Error (MAE)</h1>
+<h2>Description</h2>
+<p class="w3-large ic-neg15">Error = absolute differences between actual and predicted values</p>
+<ul class="w3-large">
+    <li>Measures the average magnitude of errors in predictions</li>
+</ul>
+<p class="w3-large ic-neg15">Treats every error equally, regardless of size</p>
+<ul class="w3-large">
+    <li>An error of 10 is penalized twice as much as an error of 5</li>
+    <li>Extreme values do not disproportionately influence the metric</li>
+</ul>
+<p class="w3-large ic-neg15">Intuitively understandable</p>
+<ul class="w3-large">
+    <li>MAE of 5 means, on average, predictions are off by 5 units from true values</li>
+</ul>
+<p class="w3-large ic-neg15">Example use case <b>delivery time estimates</b></p>
+<ul class="w3-large">
+    <li>Extreme delays are expected but shouldn't skew the metric</li>
+</ul>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/100.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/110.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/120.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/130.png">
+
 <div class="ic-gap"></div>
 
 
@@ -26,6 +59,38 @@ n: 20
 -->
 {% include padding-id.html id=3 %}
 <h1>Mean Squared Error (MSE) and Root MSE (RMSE)</h1>
+<h2>Description</h2>
+<p class="w3-large ic-neg15">Error = squared differences between actual and predicted values</p>
+<ul class="w3-large">
+    <li>MSE: average magnitude of squared errors in predictions</li>
+    <li>RMSE: Square root of MSE</li>
+</ul>
+<p class="w3-large ic-neg15">Sensitivity to Outliers</p>
+<ul class="w3-large">
+    <li>Penalizes large errors</li>
+    <li>An error of 10 is penalized four times as much as an error of 5</li>
+    <li>Extreme values disproportionately influence the metric</li>
+</ul>
+<p class="w3-large ic-neg15">Interpretability</p>
+<ul class="w3-large">
+    <li>MSE not intuitively understandable (due to squared unit)</li>
+    <li>RSME better (due to same unit as values)</li>
+</ul>
+<p class="w3-large ic-neg15">Example use case <b>energy consumption</b></p>
+<ul class="w3-large">
+    <li>Extreme high energy demand should not disrupt systems</li>
+</ul>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/100.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/110.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/140.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/150.png">
+
 <div class="ic-gap"></div>
 
 
@@ -34,6 +99,20 @@ n: 20
 -->
 {% include padding-id.html id=4 %}
 <h1>MAE vs. RMSE</h1>
+<h2>Description</h2>
+<p class="w3-large">MAE treats all errors equally</p>
+<p class="w3-large">RMSE heavily penalizes large errors due to squaring residuals</p>
+<p class="w3-large">The true value is revealed when used together</p>
+<p class="w3-large">Low MAE but a high RMSE</p>
+<p class="w3-large">Few severe, high-impact prediction errors</p>
+<p class="w3-large">Outlier detection, data preprocessing</p>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/160.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/170.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/180.png">
 <div class="ic-gap"></div>
 
 
@@ -42,6 +121,34 @@ n: 20
 -->
 {% include padding-id.html id=5 %}
 <h1>R2</h1>
+<h2>Description</h2>
+<p class="w3-large">Proportion of variance of true values that is explained by predictions</p>
+<p class="w3-large">Goodness of fit</p>
+<p class="w3-large">Sensitive to outliers</p>
+<p class="w3-large ic-neg15">Interpretation</p>
+<ul class="w3-large">
+    <li>Best possible value is 1</li>
+    <li>Values close to 1 indicate strong fit</li>
+    <li>Can be negative if model gets arbitary worse</li>
+    <li>Simple model predicting average of true values get R2 of 0</li>
+</ul>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/100.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/110.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/190.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/200.png">
+
+<h2>Dependency of R2 on Mean of True Values</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/210.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/220.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/230.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/240.png">
+
 <div class="ic-gap"></div>
 
 
@@ -50,6 +157,35 @@ n: 20
 -->
 {% include padding-id.html id=6 %}
 <h1>Confusion Matrix - Binary Case</h1>
+<h2>Description</h2>
+<p class="w3-large">Tabular view how predictions align with true values (2x2 matrix)</p>
+
+<p class="w3-large ic-neg15">Based on classes and labels</p>
+<ul class="w3-large">
+    <li><b>Positive class</b> (e.g. email is spam) - label: <b>1</b></li>
+    <li><b>Negative class</b> (e.g. email is regular) - label: <b>0</b></li>
+</ul>
+
+<p class="w3-large ic-neg15">Four alternatives</p>
+<ul class="w3-large">
+    <li><b>True Positives (TP)</b>: Model correctly predicted the positive class</li>
+    <li><b>True Negatives (TN)</b>: Model correctly predicted the negative class</li>
+    <li><b>False Positives (FP)</b>: Model <b>incorrectly</b> predicted the positive class<br>
+        when true value was of negative class
+    </li>
+    <li><b>False Negatives (FN)</b>: Model <b>incorrectly</b> predicted the negative class<br>
+        when true value was of positive class
+    </li>
+</ul>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/250.png">
+<p class="w3-large">1, 2: was spam - predicted as spam <b>(TP)</b></p>
+<p class="w3-large">3: was spam - predicted as regular <b>(FN)</b></p>
+<p class="w3-large">4, 5, 7: was regular - predicted as spam <b>(FP)</b></p>
+<p class="w3-large">6, 8, 9, 10: was regular - predicted as regular <b>(TN)</b></p>
+
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/260.png">
 <div class="ic-gap"></div>
 
 
@@ -58,14 +194,63 @@ n: 20
 -->
 {% include padding-id.html id=7 %}
 <h1>Accuracy</h1>
-<div class="ic-gap"></div>
+<h2>Description</h2>
+<p class="w3-large">Fraction of correctly classified cases</p>
+<p class="w3-large">Values between 0 an 1</p>
 
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/250.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/260.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/270.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/280.png">
+
+<h2>Problems with Imbalanced Data Sets</h2>
+<p class="w3-large">Dummy classifier (always predict 0) completely useless</p>
+<p class="w3-large">Assume cancer - dummy classifier would have 99.999% accuracy</p>
+
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/290.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/300.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/310.png">
+<div class="ic-gap"></div>
 
 <!--
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
 <h1>Recall</h1>
+<h2>Description</h2>
+<p class="w3-large">Classifiers ability to capture all positive cases</p>
+<p class="w3-large">Of all true positive cases, how many are identified, ie. predited as 1</p>
+<p class="w3-large">Minimizing FN</p>
+<p class="w3-large ic-neg15">Usage when cost of FN is extremely high</p>
+<ul class="w3-large">
+    <li>Missed cancer diagnosis</li>
+    <li>Missed security threat detection</li>
+</ul>
+
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/250.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/260.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/320.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/330.png">
+
+<h2>Handling of Imbalanced Data Sets</h2>
+<p class="w3-large">Dummy classifier (always predict 0) gets very bad recall, ie. 0</p>
+<p class="w3-large">Doesn't capture a single positive instancey</p>
+
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/290.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/300.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/340.png">
 <div class="ic-gap"></div>
 
 
@@ -74,6 +259,26 @@ n: 20
 -->
 {% include padding-id.html id=9 %}
 <h1>Precision</h1>
+<h2>Description</h2>
+<p class="w3-large">Of all positive predicted cases, how many are actually positive</p>
+<p class="w3-large">Minimizing FP</p>
+<p class="w3-large ic-neg15">Usage when cost of FP is extremely high</p>
+<ul class="w3-large">
+    <li>Regular mail classified as spam</li>
+    <li>Legitimate financial transaction clssified as fraudulent</li>
+</ul>
+
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/250.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/260.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/350.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/360.png">
+
 <div class="ic-gap"></div>
 
 
@@ -82,6 +287,37 @@ n: 20
 -->
 {% include padding-id.html id=10 %}
 <h1>F1</h1>
+<h2>Description</h2>
+<p class="w3-large ic-neg15">Balance between precision and recall</p>
+<ul class="w3-large">
+    <li>Easy to get high recall: just predict positive</li>
+    <li>Leads to 100% recall but bad precision</li>
+    <li>Easy to get high precision: only predict best instance as positiv</li>
+    <li>Leads to 100% precision but bad recall</li>
+</ul>
+<p class="w3-large ic-neg15">Calculate mean between recall and precision</p>
+<ul class="w3-large">
+    <li>Arithmetic mean not a good choice</li>
+    <li>Precision of 100% and recall of 1% would lead to F1 of 50.5%</li>
+    <li>Would be too good F1 for such a bad classifier</li>
+    <li>Better harmonic mean</li>
+</ul>
+<p class="w3-large">Suitable for imbalanced data</p>
+<p class="w3-large">Better evaluation of minority class than accuracy</p>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/250.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/260.png">
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/370.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/375.png">
+
+<h2>Arithmetic Mean vs Harmonic Mean</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/380.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/390.png">
 <div class="ic-gap"></div>
 
 
@@ -90,6 +326,29 @@ n: 20
 -->
 {% include padding-id.html id=11 %}
 <h1>ROC / AUC</h1>
+<h2>Description</h2>
+<p class="w3-large">ROC = Receiver Operating Characteristic</p>
+<p class="w3-large">AUC = Area Under Curve</p>
+<p class="w3-large">Based on scoring classifier</p>
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/400.png">
+
+<h2>False Positive Rate vs True Positiv Rate</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/404.png"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/406.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/410.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/420.png">
+
+<h2>Ideal Classifier</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/430.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/435.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/440.png">
+
+<h2>Random Classifier</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/450.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/460.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/470.png"><br>
 <div class="ic-gap"></div>
 
 
@@ -97,71 +356,18 @@ n: 20
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>Balanced Accuracy</h1>
+<h1>Confusion Matrix - Multiclass Case</h1>
+<h2>Data</h2>
+<p class="w3-large">Classification of newspaper articles</p>
+<p class="w3-large">1: bus - business</p>
+<p class="w3-large">2: pol - politics</p>
+<p class="w3-large">3: spo - sports</p>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/480.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/490.png">
+
+<h2>Classification Report</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/500.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-metrics/510.png">
+
 <div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>Confusion Matix - Multiclass Case</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
 
