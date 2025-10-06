@@ -9,7 +9,33 @@ n: 20
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>xxx</h1>
+<h1>Concept of Decision Trees</h1>
+<p class="w3-large ic-neg15">General idea of decision trees</p>
+<ul class="w3-large">
+    <li>Gready decomposition of feature space by recursive binary splitting</li>
+    <li>Stop splitting according to criterion, e.g.</li>
+    <ul class="w3-large">
+        <li>minimal numbers of instances in region</li>
+        <li>max depth of tree</li>
+        <li>minimal performance gain</li>
+    </ul>
+</ul>
+<p class="w3-large ic-neg15">Finding splits</p>
+<ul class="w3-large">
+    <li>Search through all features</li>
+    <li>For each feature: consider all split values</li>
+    <li>Take "best" (feature, splitval) combination</li>
+</ul>
+
+<p class="w3-large ic-neg15">For each box</p>
+<ul class="w3-large">
+    <li>Take mean, in case of regression</li>
+    <li>Take majority class, in case of classification</li>
+</ul>
+
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/100.png">
+
+
 <div class="ic-gap"></div>
 
 
@@ -17,7 +43,16 @@ n: 20
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>xxx</h1>
+<h1>California Housing</h1>
+<h2>Decision Tree</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/110.png">
+
+<h2>Prediction of an individual Instance</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/120.png">
+
+<h2>Contributions</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/130.png">
+
 <div class="ic-gap"></div>
 
 
@@ -25,7 +60,21 @@ n: 20
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>xxx</h1>
+<h1>Recursive Binary Splitting</h1>
+<h2>Split 1</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/140.png">
+<hr>
+<h2>Split 2</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/150.png">
+<hr>
+<h2>Split 3</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/160.png">
+<hr>
+<h2>Split 4</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/170.png">
+<hr>
+<h2>Split 5</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/180.png">
 <div class="ic-gap"></div>
 
 
@@ -33,7 +82,19 @@ n: 20
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>MSE Value of Region</h1>
+
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/190.png">
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/200.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/210.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/220.png">
+
+
 <div class="ic-gap"></div>
 
 
@@ -41,7 +102,9 @@ n: 20
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Split Criterion Regression</h1>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/230.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/240.png">
 <div class="ic-gap"></div>
 
 
@@ -49,7 +112,13 @@ n: 20
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>xxx</h1>
+<h1>Iris Plants</h1>
+<h2>Decision Tree</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/250.png">
+
+<h2>Prediction of an individual Instance</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/260.png">
+
 <div class="ic-gap"></div>
 
 
@@ -57,7 +126,17 @@ n: 20
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>xxx</h1>
+<h1>Gini Value of Region</h1>
+<h2>Mathematical Definition</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/270.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/280.png">
+
+<h2>Data</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/290.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/300.png">
+
+<h2>Calculation</h2>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/310.png">
 <div class="ic-gap"></div>
 
 
@@ -65,103 +144,7 @@ n: 20
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>xxx</h1>
+<h1>Split Criterion Classification</h1>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/320.png"><br>
+<img class="w3-image" src="/home/lv/dsml/a/ml-trees/330.png">
 <div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
