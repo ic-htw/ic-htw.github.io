@@ -547,6 +547,9 @@ home: &r
                   - t: Introduction to Machine Learning
                     ts: Intro
                     url: /home/lv/dsml/ml/ml-intro.html
+                  - t: ML1
+                    ts: ML1
+                    url: /home/lv/dsml/ml/ml1.html
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/ml/metrics.html
