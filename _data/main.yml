@@ -550,6 +550,9 @@ home: &r
                   - t: ML1
                     ts: ML1
                     url: /home/lv/dsml/ml/ml1.html
+                  - t: Common Machine Learning Algorithms
+                    ts: Common ML Algos
+                    url: /home/lv/dsml/ml/algos.html
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/ml/metrics.html
