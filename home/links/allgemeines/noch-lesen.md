@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Cyclistic bike-share, a Google Data Analytics Capstone Project
+[(link)](https://medium.com/@jasonoloan2000/cyclistic-bike-share-a-google-data-analytics-capstone-project-f31579eb0314)
+
+- The Only 15 SQL Questions I Ask in Every Junior Data Scientist Interview
+[(link)](https://medium.com/@9-5-datascientist/the-only-15-sql-questions-i-ask-in-every-junior-data-scientist-interview-beea5f58b3e5)
+
+- From Raw Data to Reliable Systems: The Power of Data Modeling in Data Engineering
+[(link)](https://medium.com/@akanksha_singh/from-raw-data-to-reliable-systems-the-power-of-data-modeling-in-data-engineering-e6d75d8710c1)
+
+- From Chaos to Clarity: Advanced Data Models Every Data Engineer Must Master.
+[(link)](https://medium.com/@akanksha_singh/from-chaos-to-clarity-advanced-data-models-every-data-engineer-must-master-8ac07dfd61a5)
+
 - How to Compare Two or More Distributions
 [(link)](https://towardsdatascience.com/how-to-compare-two-or-more-distributions-9b06ee4d30bf/)
 
