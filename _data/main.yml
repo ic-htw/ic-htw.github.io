@@ -553,6 +553,9 @@ home: &r
                   - t: Common Machine Learning Algorithms
                     ts: Common ML Algos
                     url: /home/lv/dsml/ml/algos.html
+                  - t: Categorical Feature Encoding
+                    ts: Categorical Feature Encoding
+                    url: /home/lv/dsml/ml/cat.html
                   - t: Metrics in Machine Learning
                     ts: Metrics
                     url: /home/lv/dsml/ml/metrics.html

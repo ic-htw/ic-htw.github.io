@@ -1,0 +1,436 @@
+---
+layout: default1
+nav: dsml-ml
+title: Categorical Feature Encoding - DSML
+is_slide: 1
+n: 17
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Categorical Data Typology</h1>
+<ul class="w3-large">
+    <li><strong>Definition:</strong> Categorical features use discretnon-numeric values (typically strings) representing distinct groups classes. [1]</li>
+    <li><strong>Challenge:</strong> Most machine learning algorithms cannprocess these directly, requiring numerical conversion. [1]</li>
+</ul>
+
+<h2>Nominal Features</h2>
+<ul class="w3-large">
+    <li><strong>Characteristics:</strong> Lack intrinsic order or quantitatimeasure. [1]</li>
+    <li><strong>Examples:</strong> Colors, Countries (Singapore, USA, JapanAnimal Types (Cow, Dog, Cat). [1]</li>
+    <li><strong>Requirement:</strong> Encoding must avoid imposing arbitranumerical hierarchy.</li>
+</ul>
+
+<h2>Ordinal Features</h2>
+<ul class="w3-large">
+    <li><strong>Characteristics:</strong> Possess a clear, meaningful, ainherent rank or sequence. [1]</li>
+    <li><strong>Examples:</strong> Educational Levels, Customer SatisfactiRatings, Size (Small, Medium, Large). [1]</li>
+    <li><strong>Requirement:</strong> Encoding must preserve the quantitatirelationship (rank) between categories. </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Handling Missing Values (Basic Imputation)</h1>
+<ul class="w3-large">
+    <li><strong>Requirement:</strong> Handling missing values (NaN) must precede any encoding step.</li>
+    <li><strong>Mode Imputation:</strong>
+        <ul class="w3-large">
+            <li><strong>Mechanism:</strong> Replaces missing entries with the category that appears most frequently (the mode). [2, 3]</li>
+            <li><strong>Risk:</strong> Assumes data is missing completely at random (MCAR). If missingness is related to other features, it can introduce systematic bias, distorting the feature's distribution. [3]</li>
+        </ul>
+    </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Advanced Imputation Strategies</h1>
+<ul class="w3-large">
+    <li><strong>K-Nearest Neighbors (KNN) Imputation:</strong>
+        <ul class="w3-large">
+            <li><strong>Mechanism:</strong> Identifies the $K$ nearest data points based on other features. [3]</li>
+            <li><strong>Imputation:</strong> Missing categorical value is imputed with the most frequent category among those $K$ neighbors. [3]</li>
+            <li><strong>Effectiveness:</strong> Requires strong correlations between the categorical feature and other predictors. [3]</li>
+        </ul>
+    </li>
+    <li><strong>Multiple Imputation by Chained Equations (MICE):</strong>
+        <ul class="w3-large">
+            <li><strong>Purpose:</strong> Powerful, iterative technique for mixed continuous and categorical data. [4, 3, 5]</li>
+            <li><strong>Mechanism:</strong>
+                <ol>
+                    <li>Temporarily fills all NaNs (e.g., with mode/mean). [5]</li>
+                    <li>Iteratively predicts missing values in one column using a regression model trained on all other columns. [4]</li>
+                    <li>Repeats this process over multiple cycles until convergence. [3, 5]</li>
+                </ol>
+            </li>
+            <li><strong>Benefit:</strong> Uses specialized models (like multinomial logistic regression) for categorical data, providing a robust, less-biased estimation. [3]</li>
+        </ul>
+    </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Ordinal Encoding (Label Encoding)</h1>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Assigns a unique integer to each category (e.g., A=1, B=2, C=3). </li>
+    <li><strong>Appropriate Use:</strong> Mandatory <strong>only</strong> for Ordinal Features, where the integer mapping preserves the inherent order (e.g., Low, Medium, High $\rightarrow$ 1, 2, 3). </li>
+    <li><strong>Critical Risk (False Magnitude):</strong> When applied mistakenly to Nominal Features, it imposes an arbitrary, false numerical hierarchy. Models like Linear Regression will misinterpret the numerical distance, distorting learned relationships. </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>One-Hot Encoding (OHE)</h1>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Preferred default for Nominal Categorical Features. For $N$ categories, it creates $N$ new binary columns (dummy variables). </li>
+    <li><strong>Benefit:</strong> Successfully avoids imposing false order or magnitude by treating each category as independent. </li>
+</ul>
+<h2>The Dummy Variable Trap &amp; Multicollinearity</h2>
+<ul class="w3-large">
+    <li><strong>Dummy Variable Trap:</strong> The $N$ binary variables are perfectly linearly correlated, meaning $N-1$ variables can perfectly predict the $N^{th}$ variable. [6]</li>
+    <li><strong>Multicollinearity:</strong> This perfect dependency destabilizes coefficient estimation in models reliant on matrix inversion (e.g., Linear and Logistic Regression). [6]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>OHE Resolution: Multicollinearity Management</h1>
+<ul class="w3-large">
+    <li><strong>Detection:</strong> Use the <strong>Variance Inflation Factor (VIF)</strong> to quantify multicollinearity severity. [6]</li>
+</ul>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>VIF Score</th>
+            <th>Multicollinearity Severity</th>
+            <th>Actionable Interpretation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>$VIF = 1$</td>
+            <td>Very little multicollinearity</td>
+            <td>Ideal condition.</td>
+        </tr>
+        <tr>
+            <td>$VIF &lt; 5$</td>
+            <td>Moderate multicollinearity</td>
+            <td>Generally acceptable for most models.</td>
+        </tr>
+        <tr>
+            <td>$VIF &gt; 5$</td>
+            <td>Extreme multicollinearity</td>
+            <td>Indicates a severe dependency; avoidance is necessary. </td>
+        </tr>
+    </tbody>
+</table>
+<ul class="w3-large">
+    <li><strong>Resolution:</strong> Drop one of the $N$ dummy variables (perform an <strong>$N-1$ encoding</strong>).  This breaks the linear dependency, solves multicollinearity, and decreases VIF scores. [6]</li>
+</ul>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>Encoding Technique</th>
+            <th>Appropriate Data Type</th>
+            <th>Dimensionality Impact</th>
+            <th>Primary Risk</th>
+            <th>Multicollinearity Mitigation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Label Encoding</td>
+            <td>Ordinal</td>
+            <td>Minimal (1 feature)</td>
+            <td>Implies false order for nominal data</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>One-Hot Encoding</td>
+            <td>Nominal</td>
+            <td>Significant ($N$ features)</td>
+            <td>Dummy Variable Trap, High Dimensionality</td>
+            <td>Drop one dummy variable ($N-1$ encoding)</td>
+        </tr>
+    </tbody>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>The High Cardinality Challenge</h1>
+<ul class="w3-large">
+    <li><strong>Definition:</strong> Categorical features with a significantly large number of unique values (e.g., thousands of product IDs or city names). [7]</li>
+    <li><strong>OHE Consequence:</strong> Applying One-Hot Encoding leads to the <strong>curse of dimensionality</strong> (massive, sparse dataset), high memory consumption, and model instability. [8]</li>
+    <li><strong>Solution:</strong> Requires dimensionality-reducing encoding techniques. [7]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Dimensionality Reduction Encoders</h1>
+<ul class="w3-large">
+    <li><strong>Frequency and Count Encoding:</strong>
+        <ul class="w3-large">
+            <li><strong>Mechanism:</strong> Replaces the category with its raw count (Count Encoding) or relative proportion (Frequency Encoding). [9]</li>
+            <li><strong>Advantages:</strong> High memory efficiency and feature compactness.</li>
+            <li><strong>Trade-off:</strong> <strong>Loss of distinct identity</strong>—two different categories with the same count/frequency are mapped to the same value. </li>
+        </ul>
+    </li>
+    <li><strong>Binary and Base N Encoding:</strong>
+        <ul class="w3-large">
+            <li><strong>Mechanism:</strong> Converts the category to an integer, then transforms the integer to its binary string, and splits each bit into a new column. [10]</li>
+            <li><strong>Dimensionality Reduction:</strong> $N$ categories require only $log_2(N)$ columns. [10]</li>
+            <li><strong>Base N Encoding:</strong> Generalizes Binary Encoding (Base 2) by using a larger base (e.g., 4 or 8) to further reduce the feature count. [10]</li>
+        </ul>
+    </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Target (Mean) Encoding</h1>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Replaces each categorical value with the mean of the target variable associated with that category (e.g., category conversion rate). [11, 7]</li>
+    <li><strong>Benefit:</strong> Compresses high-dimensional data into a single, highly predictive numerical feature. [8]</li>
+    <li><strong>The Challenge (Leakage):</strong> Inherently susceptible to <strong>data leakage</strong> and severe overfitting, especially for low-frequency categories, because it uses information from the target variable ($Y$) to create the feature. [11, 12]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Target Encoding Mitigation (Regularization)</h1>
+<h2>Strategy I: Smoothing (Regularization)</h2>
+<ul class="w3-large">
+    <li><strong>Purpose:</strong> Blends the category mean ($\bar{Y}_c$) with the overall global mean ($\bar{Y}_{global}$) to prevent noisy estimates from small samples. [11, 12]</li>
+    <li><strong>Formula:</strong>
+    $$\text{EncodedValue} = \frac{\text{Count}_c \cdot \bar{Y}_c + \text{Smoothing Factor} \cdot \bar{Y}_{\text{global}}}{\text{Count}_c + \text{Smoothing Factor}}$$</li>
+    <li><strong>Effect:</strong> Low-frequency categories regress toward the stable $\bar{Y}_{global}$, preventing overfitting. [11]</li>
+</ul
+<h2>Strategy II: Cross-Validated (K-Fold) Target Encoding</h2>
+<ul class="w3-large">
+    <li><strong>Procedure:</strong> Splits the dataset into $K$ folds. [11, 12] The encoding map for a validation fold is computed <em>exclusively</em> using the target means from the remaining $K-1$ training folds. [11, 12]</li>
+    <li><strong>Benefit:</strong> Rigorously prevents leakage by ensuring the encoded value for a row is derived only from out-of-fold data. [11, 12]</li>
+</ul>
+<h2>CatBoost Encoding</h2>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> A sophisticated target encoding variant that calculates a running mean based only on <em>previously observed</em> data points, making it suitable for time series and robust against leakage. [13] It incorporates regularization. [13]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Feature Hashing (Hashing Trick)</h1>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Uses a hash function to map categorical values to an index within a fixed-size feature vector. [14]</li>
+    <li><strong>Scalability:</strong> The resulting feature space dimension is constant, regardless of the number of unique categories, eliminating the need for a category dictionary.  Ideal for streaming data. [14]</li>
+    <li><strong>Trade-off:</strong> <strong>Collision Risk</strong>—two distinct categories can be mapped to the same index, causing information loss.  Collision probability is reduced by increasing the hash space dimension. </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Deep Learning Embeddings</h1>
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Dense, low-dimensional vector representations of categories learned end-to-end within a neural network (via backpropagation). </li>
+    <li><strong>Benefits:</strong> Captures complex semantic similarity and interactions between categories.  Dimensionality increase is limited by the chosen embedding size, not the category count. </li>
+    <li><strong>Challenge:</strong> For use in traditional models (e.g., Decision Forests), embeddings must be trained in a preliminary phase using a separate neural network and then used as static inputs. </li>
+</ul>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>Encoding Technique</th>
+            <th>Primary Advantage</th>
+            <th>Mitigation/Regularization</th>
+            <th>Primary Risk/Trade-Off</th>
+            <th>Scalability</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Target Encoding</td>
+            <td>High predictive power, dimensionality reduction</td>
+            <td>Smoothing, K-Fold Cross-Validation</td>
+            <td>Overfitting, Data Leakage</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td>Frequency/Count</td>
+            <td>Reduces feature space, compact representation</td>
+            <td>Grouping rare categories</td>
+            <td>Loss of distinct identity, potential bias</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Binary/Base N</td>
+            <td>Significant dimensionality reduction from OHE</td>
+            <td>N/A</td>
+            <td>Loss of interpretability vs. OHE</td>
+            <td>Moderate to High</td>
+        </tr>
+        <tr>
+            <td>Feature Hashing</td>
+            <td>Fixed feature size, no dictionary needed</td>
+            <td>Tuning hash space dimension</td>
+            <td>Collision risk, complete loss of interpretability</td>
+            <td>Extreme</td>
+        </tr>
+        <tr>
+            <td>Embeddings</td>
+            <td>Captures category similarity and interaction</td>
+            <td>Tuning embedding size</td>
+            <td>Requires deep learning architecture</td>
+            <td>High</td>
+        </tr>
+    </tbody>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Encoding for Affine Transformation Models (ATI)</h1>
+<ul class="w3-large">
+    <li><strong>Models:</strong> Linear Regression, Logistic Regression, Support Vector Machines (SVMs), Multi-Layer Perceptrons (MLPs). [15, 16]</li>
+    <li><strong>Mechanism Reliance:</strong> Rely on learning additive weights/coefficients. [15]</li>
+    <li><strong>Preferred Encoder:</strong> <strong>One-Hot Encoding ($N-1$)</strong>. [15, 16]</li>
+    <li><strong>Rationale:</strong> OHE provides independent binary dimensions, avoiding false magnitude and allowing the model to learn a distinct coefficient weight for each category. OHE is theoretically sufficient for ATI models to mimic any simpler encoder. [15]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Encoding for Tree-Based Models</h1>
+<ul class="w3-large">
+    <li><strong>Models:</strong> Decision Trees, Random Forests (RF), Gradient Boosting Machines (GBM: XGBoost, LightGBM). [15, 16]</li>
+    <li><strong>Mechanism Reliance:</strong> Rely on recursive partitioning based on optimal threshold splits (Information Gain). [15]</li>
+    <li><strong>Preferred Encoder:</strong> <strong>Target Encoding</strong> and its variants (CatBoost Encoder). [15, 16]</li>
+    <li><strong>Rationale:</strong> Target encoding provides a single numerical feature that highly concentrates the category's relationship with the outcome, directly correlating with the desired split criterion and streamlining the learning process. [15]</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Model-Specific Encoding Selection Matrix</h1>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>Machine Learning Model Class</th>
+            <th>Mechanism Reliance</th>
+            <th>Preferred Encoder(s)</th>
+            <th>Rationale</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Linear/ATI Models (e.g., Regressors, SVM, MLP)</td>
+            <td>Feature Independence, Weight Learning</td>
+            <td>One-Hot Encoding (N-1)</td>
+            <td>Avoids implied ordering; enables learning of distinct additive coefficients [15]</td>
+        </tr>
+        <tr>
+            <td>Tree-Based Models (e.g., RF, XGBoost, LightGBM)</td>
+            <td>Optimal Threshold Splitting</td>
+            <td>Target/CatBoost Encoding</td>
+            <td>Single numerical feature leverages mean statistics for high-gain splits [15]</td>
+        </tr>
+        <tr>
+            <td>Deep Neural Networks (DNNs)</td>
+            <td>Feature Interaction Learning</td>
+            <td>Embeddings, Feature Hashing</td>
+            <td>Efficient dimensionality, captures deep semantic relationships </td>
+        </tr>
+    </tbody>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Leveraging the Python Ecosystem</h1>
+<ul class="w3-large">
+    <li><strong>Foundational Tools:</strong>
+        <ul class="w3-large">
+            <li><code>scikit-learn</code>: Provides basic Label/Ordinal Encoding.</li>
+            <li><code>pandas</code>: Used for simple One-Hot Encoding (<code>pandas.get_dummies</code>). [17]</li>
+        </ul>
+    </li>
+    <li><strong>Specialized Tools:</strong>
+        <ul class="w3-large">
+            <li><strong><code>category_encoders</code> library (scikit-contrib):</strong> Recommended standard for sophisticated techniques (Target, CatBoost, Binary, Hashing). [18, 17]</li>
+            <li><strong>Compatibility:</strong> All encoders are fully compatible <code>scikit-learn</code> transformers, allowing seamless integration into ML pipelines. [18]</li>
+        </ul>
+    </li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Best Practices for Production Systems</h1>
+<ul class="w3-large">
+    <li><strong>Preventing Data Leakage:</strong>
+        <ul class="w3-large">
+            <li>Encoders must be fitted <strong>only on the training data</strong> (or cross-validation folds).</li>
+            <li>The resulting encoding map is then applied to the validation and test sets. [11, 12]</li>
+        </ul>
+    </li>
+    <li><strong>Handling Unknown Categories (Inference Data):</strong>
+        <ul class="w3-large">
+            <li><strong>Definition:</strong> Categories present in the inference data stream but not in the training data.</li>
+            <li><strong>One-Hot Encoding:</strong> Unknown category maps to a vector of all zeros.</li>
+            <li><strong>Target/Frequency Encoding:</strong> Unknown categories must be mapped to a pre-defined fallback value (e.g., the overall global mean for Target Encoding). [11]</li>
+            <li><strong>CatBoost Encoding:</strong> Designed to map unknown categories to the <strong>last value of the running mean</strong> observed during training, providing a robust default. [13]</li>
+        </ul>
+    </li>
+</ul>
+<div class="ic-gap"></div>
+

@@ -3,7 +3,7 @@ layout: default1
 nav: dsml-ml
 title: Common Machine Learning Algorithms - DSML
 is_slide: 1
-n: 10
+n: 13
 ---
 <!--
     01 ******************************************************************
@@ -23,7 +23,20 @@ n: 10
 -->
 {% include padding-id.html id=2 %}
 <h1>Ordinary Least Squares (OLS)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/100.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Fundamental linear method that finds parameters ($\hat\beta$) minimizing the <strong>Residual Sum of Squares (RSS)</strong>, also known as the L2 loss :
+        <div class="formula">
+            $$\min_{\beta} ||Y - X\beta||^2_2$$ 
+        </div>
+    </li>
+    <li><strong>Statistical Property:</strong> When Classical Linear Regression Model (CLRM) assumptions are met, OLS produces the <strong>Best Linear Unbiased Estimator (BLUE)</strong>.</li>
+    <li><strong>Limitations:</strong> Highly sensitive to outliers and prone to high variance in noisy or multicollinear data environments. Fails when the number of features ($p$) exceeds the number of samples ($n$).</li>
+</ul>
+<h3 class="when-to-use">When to Use OLS:</h3>
+<ul class="w3-large">
+    <li>When the data relationship is believed to be truly linear.</li>
+    <li>When the primary goal is statistical inference (clear coefficient interpretability and hypothesis testing).</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -32,7 +45,20 @@ n: 10
 -->
 {% include padding-id.html id=3 %}
 <h1>Regularized Linear Models: Lasso (L1)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/110.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Modifies OLS by adding an <strong>L1 penalty</strong> (sum of absolute coefficients) :
+        <div class="formula">
+            $$\min_{\beta} ||Y - X\beta||^2_2 + \lambda \sum_{i=1}^p |\beta_i|$$ 
+        </div>
+    </li>
+    <li><strong>Key Feature: Feature Selection (Sparsity):</strong> The L1 penalty forces the coefficients of irrelevant or redundant features to become <b>exactly zero</b>.</li>
+    <li><strong>Multicollinearity Issue:</strong> Lasso tends to arbitrarily select only one feature from a group of highly correlated predictors and zero out the rest.</li>
+</ul>
+<h3 class="when-to-use">When to Use Lasso:</h3>
+<ul class="w3-large">
+    <li>For high-dimensional datasets where many features are expected to be irrelevant.</li>
+    <li>When model simplicity and interpretability through automatic feature selection are paramount.</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -41,7 +67,16 @@ n: 10
 -->
 {% include padding-id.html id=4 %}
 <h1>Regularized Linear Models: Elastic Net</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/120.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Combines the penalties of both <b>L1 (Lasso) and L2 (Ridge)</b> regularization, balancing feature selection with coefficient stability.</li>
+    <li><strong>Dual Hyperparameters:</strong> Controls overall penalty strength ($\lambda$) and the mix between L1/L2 ($\alpha$).</li>
+    <li><strong>Advantage: Grouping Effect:</strong> By incorporating the L2 penalty, Elastic Net addresses Lasso's instability with correlated features. It tends to include (or exclude) all highly correlated features together with similar weights.</li>
+</ul>
+<h3 class="when-to-use">When to Use Elastic Net:</h3>
+<ul class="w3-large">
+    <li>As the robust, general-purpose default regularization technique for linear models.</li>
+    <li>When the dataset is both high-dimensional and known (or suspected) to contain significant multicollinearity.</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -50,7 +85,16 @@ n: 10
 -->
 {% include padding-id.html id=5 %}
 <h1>Support Vector Machines (SVM)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/130.png">
+<ul class="w3-large">
+    <li><strong>Mechanism (Classification):</strong> Constructs the maximum-margin hyperplane that optimally separates data classes. The decision boundary is defined exclusively by the <b>Support Vectors</b> (data points closest to the margin).</li>
+    <li><strong>Non-Linearity: The Kernel Trick:</strong> Allows SVM to implicitly map non-linearly separable input data into a higher-dimensional feature space where a linear boundary can be found.</li>
+    <li><strong>Computational Profile:</strong> Training complexity is high, often $O(n^2p+n^3)$ where $n$ is samples, limiting scalability for very large datasets.</li>
+</ul>
+<h3 class="when-to-use">When to Use SVM:</h3>
+<ul class="w3-large">
+    <li>For complex classification tasks in high-dimensional feature spaces.</li>
+    <li>When the dataset size is moderate (typically $N < 50,000$).</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -59,7 +103,16 @@ n: 10
 -->
 {% include padding-id.html id=6 %}
 <h1>Nearest Neighbors (k-NN)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/140.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> A simple, non-parametric, <b>instance-based</b> algorithm. Prediction is based on the majority class (or average value) of the $k$ training examples closest to the new data point.</li>
+    <li><strong>Lazy Learning:</strong> There is no explicit training phase; the entire training dataset is stored until prediction time.</li>
+    <li><strong>Limitations:</strong> Prediction speed is slow for large datasets ($O(N)$ complexity). Performance degrades significantly with high dimensionality (Curse of Dimensionality).</li>
+</ul>
+<h3 class="when-to-use">When to Use k-NN:</h3>
+<ul class="w3-large">
+    <li>For small to moderate datasets where simplicity and local focus are valued.</li>
+    <li>When the training data is constantly updating and model refreshing must happen instantaneously.</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -68,7 +121,16 @@ n: 10
 -->
 {% include padding-id.html id=7 %}
 <h1> Naive Bayes (NB)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/150.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> A highly efficient probabilistic classifier based on <b>Bayes' theorem</b>.</li>
+    <li><strong>Core Assumption:</strong> Features are assumed to be **conditionally independent** of each other, given the class label ("Naive").</li>
+    <li><strong>Variants:</strong> Gaussian (continuous features), Multinomial (discrete counts/frequencies, ideal for text), Bernoulli (binary features).</li>
+</ul>
+<h3 class="when-to-use">When to Use Naive Bayes:</h3>
+<ul class="w3-large">
+    <li>As the foundational method for <b>text classification</b> (spam filtering, sentiment analysis).</li>
+    <li>When computational speed and efficiency in high-dimensional discrete spaces are critical.</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -77,7 +139,16 @@ n: 10
 -->
 {% include padding-id.html id=8 %}
 <h1>Decision Trees (DT)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/160.png">
+<ul class="w3-large">
+    <li><strong>Mechanism:</strong> Non-parametric, <b>white-box</b> model that partitions the feature space into if-then rules based on maximizing purity (e.g., Gini Impurity or Information Gain/Entropy).</li>
+    <li><strong>Key Challenge: Overfitting:</strong> A single deep tree is highly prone to overfitting (high variance) and structural instability.</li>
+    <li><strong>Regularization (Pruning):</strong> Must be controlled using constraints (Pre-pruning: <code>max_depth</code> , <code>min_samples_leaf</code> ) or post-pruning techniques (Cost-Complexity Pruning, Reduced Error Pruning).</li>
+</ul>
+<h3 class="when-to-use">When to Use Decision Trees:</h3>
+<ul class="w3-large">
+    <li>When maximum interpretability and clear, traceable logic are non-negotiable requirements (e.g., regulated environments).</li>
+    <li>As the base learner for more robust ensemble methods (RF, GB).</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -86,7 +157,16 @@ n: 10
 -->
 {% include padding-id.html id=9 %}
 <h1>Ensemble Method: Random Forests (RF)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/170.png">
+<ul class="w3-large">
+    <li><strong>Mechanism: Bagging (Bootstrap Aggregating):</strong> Trains multiple deep decision trees <b>independently</b> on bootstrapped data samples and uses a random subset of features for each split. Predictions are aggregated (voting/averaging).</li>
+    <li><strong>Bias-Variance Focus:</strong> Primarily targets <b>Variance Reduction</b>. The randomization and averaging decorrelate the errors of individual high-variance trees, leading to superior generalization.</li>
+    <li><strong>Practical Advantages:</strong> Robust to noisy features, handles missing data well, and is highly parallelizable (fast training).</li>
+</ul>
+<h3 class="when-to-use">When to Use Random Forests:</h3>
+<ul class="w3-large">
+    <li>As a robust, high-performance default/baseline model for most supervised tasks.</li>
+    <li>When stability, fast training, and effective handling of noisy or missing data are required.</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -95,7 +175,153 @@ n: 10
 -->
 {% include padding-id.html id=10 %}
 <h1>Ensemble Method: Gradient Boosting (GB)</h1>
-<img class="w3-image" src="/home/lv/dsml/a/ml-algos/180.png">
+<ul class="w3-large">
+    <li><strong>Mechanism: Sequential Correction:</strong> Builds models <b>iteratively</b>. Each new, typically shallow decision tree is constructed to correct the systematic errors (pseudo-residuals) made by the combined ensemble of all previous trees.</li>
+    <li><strong>Bias-Variance Focus:</strong> Aggressively targets <b>Bias Reduction</b>. This high focus on training error makes it prone to overfitting if not heavily regularized.</li>
+    <li><strong>Regularization:</strong> Requires careful tuning of a small <b>learning rate</b> (shrinkage) and often subsampling to control variance.</li>
+    <li><strong>Modern Variants:</strong> XGBoost (advanced regularization, missing data handling ), LightGBM (speed/efficiency for very large $N$), CatBoost (excels at categorical features).</li>
+</ul>
+<h3 class="when-to-use">When to Use Gradient Boosting:</h3>
+<ul class="w3-large">
+    <li>When the absolute highest predictive accuracy is the primary goal on structured/tabular data.</li>
+    <li>When resources permit extensive hyperparameter tuning for maximum performance gains.</li>
+</ul>
 <div class="ic-gap"></div>
 
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Comparison Table: Linear and Regularized Models</h1>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>Algorithm</th>
+            <th>Primary Mechanism</th>
+            <th>Focus/Benefit</th>
+            <th>Multicollinearity Handling</th>
+            <th>When to Use</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ordinary Least Squares (OLS)</td>
+            <td>Minimizes RSS (L2 Loss)</td>
+            <td>BLUE Estimates, Maximum Interpretability </td>
+            <td>Poor, highly sensitive to collinearity </td>
+            <td>Data is small, linear assumptions hold, interpretation of coefficients is critical.</td>
+        </tr>
+        <tr>
+            <td>Lasso Regression</td>
+            <td>L1 Regularization (Absolute Sum)</td>
+            <td>Feature Selection (induces sparsity) </td>
+            <td>Poor, arbitrarily selects one correlated feature </td>
+            <td>High-dimensional data where few features are relevant; seeking a sparse model.</td>
+        </tr>
+        <tr>
+            <td>Elastic Net</td>
+            <td>L1 + L2 Combination</td>
+            <td>Stability and Feature Grouping </td>
+            <td>Excellent, groups correlated features </td>
+            <td>Datasets with high dimensions and significant multicollinearity.</td>
+        </tr>
+    </tbody>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Comparison Table: Other Models and Ensembles</h1>
+<table class="w3-table-all">
+    <thead>
+        <tr>
+            <th>Algorithm</th>
+            <th>Core Principle</th>
+            <th>Primary Error Focus</th>
+            <th>Key Trade-off</th>
+            <th>Applicability Context</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Support Vector Machines (SVM)</td>
+            <td>Maximum Margin Hyperplane (Kernel Trick) </td>
+            <td>Reduction of Error / Optimization </td>
+            <td>High Training Complexity ($O(n^2)$) vs. High Accuracy </td>
+            <td>Medium-sized, high-dimensional data; superior classification when clear margin separation exists.</td>
+        </tr>
+        <tr>
+            <td>Nearest Neighbors (k-NN)</td>
+            <td>Classification based on $k$ closest neighbors </td>
+            <td>Local Data Structure is Predictive </td>
+            <td>Zero Training Cost vs. Slow Prediction Time ($O(N)$) </td>
+            <td>Simple, low-latency problems where updating the model is frequent; small datasets.</td>
+        </tr>
+        <tr>
+            <td>Naive Bayes (NB)</td>
+            <td>Computes posterior probability via Bayes' Theorem </td>
+            <td>Speed and Efficiency </td>
+            <td>Strong Independence Assumption vs. Extremely Fast Performance </td>
+            <td>Text classification, spam filtering, and high-dimensional categorical/discrete data.</td>
+        </tr>
+        <tr>
+            <td>Decision Tree (DT)</td>
+            <td>Recursive Feature Space Partitioning </td>
+            <td>High Variance / Overfitting </td>
+            <td>High Interpretability (White-Box) vs. Low Predictive Stability </td>
+            <td>When model interpretability is the paramount constraint; use as base learner for ensembles.</td>
+        </tr>
+        <tr>
+            <td>Random Forest (RF)</td>
+            <td>Bagging (Parallel Ensemble) </td>
+            <td>Reduction of Variance </td>
+            <td>High Stability/Robustness vs. Reduced Interpretability; Fast Training </td>
+            <td>Default, robust choice for high-performance and stable results.</td>
+        </tr>
+        <tr>
+            <td>Gradient Boosting (GB)</td>
+            <td>Boosting (Sequential Ensemble) </td>
+            <td>Reduction of Bias </td>
+            <td>Maximum Accuracy vs. High Computational Cost and Tuning Sensitivity </td>
+            <td>When the absolute highest predictive accuracy is required from structured data.</td>
+        </tr>
+    </tbody>
+</table>
+<div class="ic-gap"></div>
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Strategic Selection Framework</h1>
+<p>The choice of algorithm depends on balancing core constraints: accuracy, interpretability, data size, and computational feasibility.</p>
+<ol class="w3-large">
+    <li><strong>Interpretability Required (White-Box):</strong>
+        <ul class="w3-large">
+            <li><strong>Choose:</strong> OLS (for linear inference) or Decision Trees (for traceable, non-linear rules).</li>
+        </ul>
+    </li>
+    <li><strong>High-Dimensional/Noisy Data:</strong>
+        <ul class="w3-large">
+            <li><strong>Choose:</strong> Elastic Net (for balanced regularization and stability).</li>
+        </ul>
+    </li>
+    <li><strong>Maximum Accuracy & Robustness:</strong>
+        <ul class="w3-large">
+            <li><strong>Default Baseline:</strong> Random Forests (stable, fast, handles noise well).</li>
+            <li><strong>Highest Ceiling:</strong> Gradient Boosting (if resources allow for extensive tuning on clean, structured data).</li>
+        </ul>
+    </li>
+    <li><strong>Computational Constraints:</strong>
+        <ul class="w3-large">
+            <li><strong>Avoid:</strong> General SVM solvers or k-NN inference for extremely large sample sizes ($N$) due to high computational complexity.</li>
+            <li><strong>Prefer:</strong> Naive Bayes, Linear Models, or modern scaling Boosting methods (LightGBM) for massive datasets.</li>
+        </ul>
+    </li>
+</ol>
+<div class="ic-gap"></div>
 
