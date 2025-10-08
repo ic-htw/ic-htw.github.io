@@ -562,6 +562,9 @@ home: &r
                   - t: Tree-based Models
                     ts: Trees
                     url: /home/lv/dsml/ml/trees.html
+                  - t: Cross-Validation in Machine Learning 
+                    ts: Cross-Validation
+                    url: /home/lv/dsml/ml/cv.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dsml/sql/1-sql.html
