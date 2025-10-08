@@ -34,10 +34,6 @@ is_slide: 0
 [(link)](https://realpython.com/)
 - Python Tutorials
  [(link)](http://www.dabeaz.com/tutorials.html)
-- f-string usage
-[(link)](https://medium.com/geekculture/python-f-string-codes-i-use-every-day-e03558f12057)
-- Python f-string Codes
-[(link)](https://ibexorigin.medium.com/have-mercy-on-yourself-and-learn-these-9-everyday-python-f-string-codes-e8104677d7c7)
 - How to Use Python Data Classes
 [(link)](https://www.dataquest.io/blog/how-to-use-python-data-classes/)
 - 10 Python Features That Seem Confusing (But Are Actually Brilliant)
@@ -541,3 +537,12 @@ is_slide: 0
 
 - Multithreading vs. Multiprocessing
 [(link)](https://towardsdatascience.com/multithreading-vs-multiprocessing-in-python-3afeb73e105f)
+
+# strings
+- Mastering Python Strings: A Complete Guide
+[(link)](https://medium.com/@aliyannshaikhh/a4a9db97c366)
+- f-string usage
+[(link)](https://medium.com/geekculture/python-f-string-codes-i-use-every-day-e03558f12057)
+- Python f-string Codes
+[(link)](https://ibexorigin.medium.com/have-mercy-on-yourself-and-learn-these-9-everyday-python-f-string-codes-e8104677d7c7)
+
