@@ -509,9 +509,6 @@ home: &r
                   - t: Pandas Introduction
                     ts: Pandas Introduction
                     url: /home/lv/dsml/python/pandas-intro.html
-                  - t: Python Resources
-                    ts: Python Resources
-                    url: /home/lv/dsml/python/python-resources.html
               - t: Visualization
                 ts: Visualization
                 url: /home/lv/dsml/viz/1-viz.html

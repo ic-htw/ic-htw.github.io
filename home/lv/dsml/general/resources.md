@@ -4,8 +4,27 @@ nav: dsml-general
 title: Resources - DSML
 is_slide: 0
 ---
+# Google Colab(oratory)
+- Google Colab(oratory) 
+[(link)](https://colab.google/)
+- Wellcome
+[(link)](https://colab.research.google.com/?hl=en)
+- Curated Notebooks
+[(link)](https://colab.google/notebooks/)
 
 # Python
+- Python Home
+[(link)](https://www.python.org/)
+- Python Small Cheat Sheet
+[(link)](https://www.tunnelsup.com/images/PythonCheatSheet.png)
+- Comprehensive Python Cheatsheet
+[(link)](https://github.com/gto76/python-cheatsheet)
+- Intro to Programming
+[(link)](https://www.kaggle.com/learn/intro-to-programming)
+- Intro to Python
+[(link)](https://www.kaggle.com/learn/python)
+- Python Tutorial - W3Schools
+[(link)](https://www.w3schools.com/python/)
 - Numpy
 [(link)](https://numpy.org/doc/stable/index.html)
 - Visual Numpy
@@ -14,39 +33,16 @@ is_slide: 0
 [(link)](https://pandas.pydata.org/docs/index.html)
 - Visual Pandas
 [(link)](http://jalammar.github.io/gentle-visual-intro-to-data-analysis-python-pandas/)
+
+# Visualization
+- Fundamentals of Data Visualization
+[(link)](https://clauswilke.com/dataviz/index.html)
+- Tableau Public
+[(link)](https://www.tableau.com/products/public)
 - Matplotlib
 [(link)](https://matplotlib.org/stable/index.html)
 - Seaborn
 [(link)](https://seaborn.pydata.org/)
-
-
-# Kaggle
-- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
-[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
-- Top solutions of the regression playground competitions in last one year 
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
-
-# Kaggle Competions
-- Predicting Optimal Fertilizers
-[(link)](https://www.kaggle.com/competitions/playground-series-s5e6)
-- Predict Calorie Expenditure
-[(link)](https://www.kaggle.com/competitions/playground-series-s5e5)
-- Binary Prediction with a Rainfall Dataset
-[(link)](https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard)
-- Regression with an Insurance Dataset
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e12/overview)
-- Exploring Mental Health Data
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e11/overview)
-- Loan Approval Prediction
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e10)
-- Regression of Used Car Prices
-[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/overview)
-- Feature Engineering for House Prices
-[(link)](https://www.kaggle.com/code/ryanholbrook/feature-engineering-for-house-prices)
-- House Prices - Advanced Regression Techniques
-[(link)](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
-
-
 
 # Machine Learning
 - Visual Intro Decision Tree
@@ -55,6 +51,21 @@ is_slide: 0
 [(link)](http://www.r2d3.us/visual-intro-to-machine-learning-part-2/)
 - explained.ai
 [(link)](https://explained.ai/)
+- House Prices - Advanced Regression Techniques
+[(link)](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
+- Titanic - Machine Learning from Disaster
+[(link)](https://www.kaggle.com/c/titanic)
+
+<div class="ic-gap-700"></div>
+
+# Miscellaneous
+## Kaggle
+- The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data
+[(link)](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
+- Top solutions of the regression playground competitions in last one year 
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/discussion/531381)
+
+## ML
 - How to visualize decision trees
 [(link)](https://explained.ai/decision-tree-viz/index.html)
 - dtreeviz : Decision Tree Visualization
@@ -84,17 +95,25 @@ is_slide: 0
 - AutoML
 [(link)](https://www.automl.org/automl/)
 
+## Competions
+- Predicting Optimal Fertilizers
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e6)
+- Predict Calorie Expenditure
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e5)
+- Binary Prediction with a Rainfall Dataset
+[(link)](https://www.kaggle.com/competitions/playground-series-s5e3/leaderboard)
+- Regression with an Insurance Dataset
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e12/overview)
+- Exploring Mental Health Data
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e11/overview)
+- Loan Approval Prediction
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e10)
+- Regression of Used Car Prices
+[(link)](https://www.kaggle.com/competitions/playground-series-s4e9/overview)
+- Feature Engineering for House Prices
+[(link)](https://www.kaggle.com/code/ryanholbrook/feature-engineering-for-house-prices)
 
 
-# Visualization
-- Fundamentals of Data Visualization
-[(link)](https://clauswilke.com/dataviz/index.html)
-- Tableau Public
-[(link)](https://www.tableau.com/products/public)
-- Tableau for Students
-[(link)](https://www.tableau.com/academic/students)
-- Seaborn
-[(link)](https://seaborn.pydata.org/)
 
 
 
