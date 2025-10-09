@@ -27,6 +27,9 @@ is_slide: 0
 [(link)](https://agentm.github.io/project-m36/posts/2024-07-16-are-you-qualified-to-use-null.html)
 - SQL Best Practices: Hard-Learned Lessons from my years as a Software Engineer
 [(link)](https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7)
+- How to Write SQL Queries That Handle Billions of Rows
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-handle-billions-of-rows-7e640e91049d)
+
 
 
 # sql - ml

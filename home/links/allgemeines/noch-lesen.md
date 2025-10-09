@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 5 Essential MCP Servers That Give Claude & Cursor Real Superpowers (2025)
+[(link)](bbb)
+
+- Normalizing and Standardizing Datasets in Python
+[(link)](https://blog.gopenai.com/normalizing-and-standardizing-datasets-in-python-fb10496448b9)
+
 - Cyclistic bike-share, a Google Data Analytics Capstone Project
 [(link)](https://medium.com/@jasonoloan2000/cyclistic-bike-share-a-google-data-analytics-capstone-project-f31579eb0314)
 
