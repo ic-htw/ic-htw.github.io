@@ -257,6 +257,8 @@ is_slide: 0
 
 
 # misc
+- Exploring PostgreSQL to Parquet archival for JSON data with S3 range reads
+[(link)](https://www.shayon.dev/post/2025/276/exploring-postgresql-to-parquet-archival-for-json-data-with-s3-range-reads/)
 - The Internals of PostgreSQL
 [(link)](https://www.interdb.jp/pg/index.html)
 - The Challenge of Primary Keys in Partitioned Tables in PostgreSQL

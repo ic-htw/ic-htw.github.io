@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Async Programming in Python: Part 1 - The Fundamentals
+[(link)](https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533)
+
 - 5 Essential MCP Servers That Give Claude & Cursor Real Superpowers (2025)
 [(link)](bbb)
 
