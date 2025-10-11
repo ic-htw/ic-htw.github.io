@@ -434,6 +434,11 @@ is_slide: 0
 - datacamp
 [(link)](https://www.datacamp.com/community/tutorials/generate-data-trumania)
 
+# Typer
+- Typer 
+[(link)](https://typer.tiangolo.com/)
+
+
 # uv
 - git
 [(link)](https://github.com/astral-sh/uv)
