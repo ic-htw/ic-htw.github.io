@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Synthetic Data: What It Is and How to Use It
+[(link)](https://medium.com/@francescofranco_39234/synthetic-data-overcoming-the-limitations-of-real-world-datasets-in-machine-learning-ae95329d6063)
+
 - Async Programming in Python: Part 1 - The Fundamentals
 [(link)](https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533)
 
