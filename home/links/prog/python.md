@@ -57,6 +57,13 @@ is_slide: 0
 - Ruff
 [(link)](https://docs.astral.sh/ruff/)
 
+# async
+- Async Programming in Python: Part 1 - The Fundamentals
+[(link)](https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533)
+- Async Programming in Python: Part 2 — Advanced Patterns and Techniques
+[(link)](https://mskadu.medium.com/async-programming-in-python-part-2-advanced-patterns-and-techniques-7f6b65061b74)
+
+
 
 
 

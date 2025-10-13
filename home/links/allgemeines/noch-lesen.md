@@ -9,20 +9,26 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Cosine Distance vs Dot Product vs Euclidean in vector similarity search
+[(link)](https://medium.com/data-science-collective/cosine-distance-vs-dot-product-vs-euclidean-in-vector-similarity-search-227a6db32edb)
+
+- 6 Data Modeling Mistakes That Kill Scalability (and How to Fix Them)
+[(link)](https://medium.com/@sauravkumarrajjoli/data-modeling-mistakes-that-kill-scalability-c8cc817b78dd)
+
+- Why Recursive CTEs Are More Powerful Than You Think 
+[(link)](https://medium.com/@Rohan_Dutt/why-recursive-ctes-are-more-powerful-than-you-think-and-how-to-master-them-35d0d2594e9d)
+
+- Palantir’s Ontology, Kimball’s Star Schema, and Model-Driven Data Engineering: A Comparative View
+[(link)](https://medium.com/business-friendly-data-modeling/palantirs-ontology-kimball-s-star-schema-and-model-driven-data-engineering-a-comparative-view-8b175464c42a)
+
+- SQL Complexity Explained: What Your Queries Are Really Doing Behind the Scenes
+[(link)](https://medium.com/@vijaygadhave2014/sql-complexity-explained-what-your-queries-are-really-doing-behind-the-scenes-7867ddb111eb)
+
 - Synthetic Data: What It Is and How to Use It
 [(link)](https://medium.com/@francescofranco_39234/synthetic-data-overcoming-the-limitations-of-real-world-datasets-in-machine-learning-ae95329d6063)
 
-- Async Programming in Python: Part 1 - The Fundamentals
-[(link)](https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533)
-
 - 5 Essential MCP Servers That Give Claude & Cursor Real Superpowers (2025)
 [(link)](bbb)
-
-- Normalizing and Standardizing Datasets in Python
-[(link)](https://blog.gopenai.com/normalizing-and-standardizing-datasets-in-python-fb10496448b9)
-
-- Cyclistic bike-share, a Google Data Analytics Capstone Project
-[(link)](https://medium.com/@jasonoloan2000/cyclistic-bike-share-a-google-data-analytics-capstone-project-f31579eb0314)
 
 - The Only 15 SQL Questions I Ask in Every Junior Data Scientist Interview
 [(link)](https://medium.com/@9-5-datascientist/the-only-15-sql-questions-i-ask-in-every-junior-data-scientist-interview-beea5f58b3e5)

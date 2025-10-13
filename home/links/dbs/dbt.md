@@ -23,6 +23,8 @@ is_slide: 0
 
 
 # Articles
+- How to Set Up Automated Data Lineage Tracking Using dbt
+[(link)](https://medium.com/@sajidkhan.sjic/how-to-set-up-automated-data-lineage-tracking-using-dbt-75203330cda5)
 - No, Data Engineers Don’t NEED dbt.
 [(link)](https://blog.det.life/no-data-engineers-dont-need-dbt-30573eafa15e)
 - Using AI for Data Modeling in dbt
