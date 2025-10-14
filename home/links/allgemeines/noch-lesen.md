@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Async != Concurrent: Why 90% of Python Developers Get Concurrency Wrong 
+[(link)](https://medium.com/@dhruvahuja2330/async-concurrent-why-90-of-python-developers-get-concurrency-wrong-0a79dfae362e)
+
 - Cosine Distance vs Dot Product vs Euclidean in vector similarity search
 [(link)](https://medium.com/data-science-collective/cosine-distance-vs-dot-product-vs-euclidean-in-vector-similarity-search-227a6db32edb)
 
