@@ -190,6 +190,11 @@ is_slide: 0
 - Prompt Like a Pro Using DSPy: A guide to build a better local RAG model using DSPy, Qdrant and Ollama
 [(link)](https://medium.com/aimpact-all-things-ai/prompt-like-a-pro-using-dspy-a-guide-to-build-a-better-local-rag-model-using-dspy-qdrant-and-d8011a3942d9)
 
+# fareed khan
+- Fareed Khan - Medium
+[(link)](https://medium.com/@fareedkhandev)
+
+
 # finetuning
 - LoRA: Low-Rank Adaptation of Large Language Models
 [(link)](https://github.com/microsoft/LoRA)
@@ -345,6 +350,8 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 # rag
+- Why Your RAG System Fails Complex Questions? (And How Structure Fixes Everything)
+[(link)](https://levelup.gitconnected.com/why-your-rag-system-fails-complex-questions-and-how-structure-fixes-everything-4adfc7e810d0)
 - Building a Complex, Production-Ready RAG System with LangChain, LangGraph, and RAGAS
 [(link)](https://levelup.gitconnected.com/building-a-complex-production-ready-rag-system-with-langchain-langgraph-and-ragas-36a66d663c5c)
 - Finding the Best Open-Source Embedding Model for RAG
