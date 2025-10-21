@@ -99,8 +99,6 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/how-to-peek-inside-a-black-box-model-understand-partial-dependence-plots-17d1b673aafchttps://towardsdatascience.com/how-to-peek-inside-a-black-box-model-understand-partial-dependence-plots-17d1b673aafc)
 - Pitfalls To Avoid while Interpreting Machine Learning-PDP/ICE case
 [(link)](https://towardsdatascience.com/pitfalls-to-avoid-while-interpreting-machine-learning-pdp-ice-case-c63eeb596590)
-- Understanding Probability Distribution
-[(link)](https://medium.com/swlh/understanding-probability-distribution-b5c041f5d564)
 - Building 10 Regression Models in Machine Learning with Python
 [(link)](https://medium.com/analytics-vidhya/building-10-regression-models-in-machine-learning-with-python-6a8044022eff)
 - First neural network for beginners explained (with code)
@@ -179,8 +177,6 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0)
 - The Mathematics Behind Principal Component Analysis
 [(link)](https://towardsdatascience.com/the-mathematics-behind-principal-component-analysis-fff2d7f4b643)
-- Probability concepts explained: Maximum likelihood estimation
-[(link)](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
 - Fundamental Techniques of Feature Engineering for Machine Learning
 [(link)](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
 - PCA using Python (scikit-learn)
@@ -241,10 +237,6 @@ is_slide: 0
 [(link)](https://evidentlyai.com/blog/tutorial-2-model-evaluation-hr-attrition)
 - A Feature Selection Tool for Machine Learning in Python
 [(link)](https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0)
-- Transforming Scores Into Probability
-[(link)](https://www.cantorsparadise.com/transforming-scores-into-probability-fb4d4be7deab)
-- Probability vs Likelihood
-[(link)](https://medium.com/analytics-vidhya/probability-vs-likelihood-873dcfe15df8)
 - How to Remove Outliers for Machine Learning?
 [(link)](https://medium.com/analytics-vidhya/how-to-remove-outliers-for-machine-learning-24620c4657e8)
 - Predicting House Prices in Ames, IA
@@ -373,4 +365,16 @@ is_slide: 0
 [(link)](https://fcel2510.medium.com/lessons-from-the-titanic-kaggle-dataset-part-2-which-features-matter-most-in-predicting-survival-a4008154e290)
 - Diabetes Prediction Using Machine Learning Classification Approaches: A Capstone Project by Team Nabhan
 [(link)](https://medium.com/@agbaoyeadedeji78/diabetes-prediction-using-machine-learning-classification-approaches-a-capstone-project-by-team-cbd0b784a30b)
+
+# probability
+- Understanding Probability Distribution
+[(link)](https://medium.com/swlh/understanding-probability-distribution-b5c041f5d564)
+- Probability distributions — A deeper look
+[(link)](https://medium.com/data-science-collective/probability-distributions-a-deeper-look-476cbc87f0ea)
+- Probability concepts explained: Maximum likelihood estimation
+[(link)](https://towardsdatascience.com/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
+- Transforming Scores Into Probability
+[(link)](https://www.cantorsparadise.com/transforming-scores-into-probability-fb4d4be7deab)
+- Probability vs Likelihood
+[(link)](https://medium.com/analytics-vidhya/probability-vs-likelihood-873dcfe15df8)
 

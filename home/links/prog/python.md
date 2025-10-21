@@ -22,8 +22,6 @@ is_slide: 0
 # Allgemein
 - The Python Packaging Hell
 [(link)](https://www.courtbouillon.org/blog/00011-the-python-packaging-hell-the-can-of-worms/)
-- Cheat Sheet
-[(link)](https://github.com/gto76/python-cheatsheet)
 - An A-Z of useful Python tricks
 [(link)](https://medium.freecodecamp.org/an-a-z-of-useful-python-tricks-b467524ee747)
 - Type Hints
@@ -62,6 +60,17 @@ is_slide: 0
 [(link)](https://python.plainenglish.io/async-programming-in-python-part-1-the-fundamentals-60cb280c6533)
 - Async Programming in Python: Part 2 — Advanced Patterns and Techniques
 [(link)](https://mskadu.medium.com/async-programming-in-python-part-2-advanced-patterns-and-techniques-7f6b65061b74)
+
+
+# Cheat Sheets
+- Cheat Sheet
+[(link)](https://github.com/gto76/python-cheatsheet)
+- Python Cheatsheet 1
+[(link)](https://dranolia.medium.com/python-cheatsheet-51b552b56a81)
+- Python Cheatsheet 2
+[(link)](https://dranolia.medium.com/python-cheatsheet-part-2-ffc3ca76a2e3)
+- Python Regular Expressions Cheat Sheet
+[(link)](https://www.kdnuggets.com/2018/04/python-regular-expressions-cheat-sheet.html)
 
 
 
@@ -412,9 +421,6 @@ is_slide: 0
 
 - Kite - The smart copilot for programmers
 [(link)](https://kite.com)
-
-- Python Regular Expressions Cheat Sheet
-[(link)](https://www.kdnuggets.com/2018/04/python-regular-expressions-cheat-sheet.html)
 
 - panel - A high-level app and dashboarding solution for Python
 [(link)](https://panel.pyviz.org/)

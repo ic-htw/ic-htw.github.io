@@ -5,6 +5,8 @@ title:  Decision Trees
 is_slide: 0
 ---
 # aaa
+- The Decision Tree Algorithm: From Simple Splits to Advanced Optimization
+[(link)](https://medium.com/ai-ml-interview-playbook/the-decision-tree-algorithm-from-simple-splits-to-advanced-optimization-9527b3581ce6)
 - Custom Loss Functions for Gradient Boosting
 [(link)](https://towardsdatascience.com/custom-loss-functions-for-gradient-boosting-f79c1b40466d)
 - What is the difference between Bagging and Boosting?

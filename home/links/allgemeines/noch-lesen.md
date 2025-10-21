@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- n8n - Secure Workflow Automation for Technical Teams - git
+[(link)](https://github.com/n8n-io/n8n)
+
+- Understanding Data Lineage
+[(link)](https://medium.com/@sajidkhan.sjic/data-lineage-and-the-rise-of-metadata-driven-data-engineering-834684df1797)
+
+- Robust methods to generate synthetic table data
+[(link)](https://ai.gopubby.com/robust-methods-to-generate-synthetic-table-data-91962bcf8466)
+
+- Vibe coding: the antidote
+[(link)](https://medium.com/meetcyber/vibe-coding-the-antidote-104530b856a7)
+
+- A Marketer’s Guide to Calculus
+[(link)](https://blog.marketingdatascience.ai/a-marketers-guide-to-calculus-9ced95758447)
+
 - Async != Concurrent: Why 90% of Python Developers Get Concurrency Wrong 
 [(link)](https://medium.com/@dhruvahuja2330/async-concurrent-why-90-of-python-developers-get-concurrency-wrong-0a79dfae362e)
 

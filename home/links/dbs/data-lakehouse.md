@@ -6,6 +6,10 @@ is_slide: 0
 ---
 
 # aaa
+- The 6 Lakehouse Design Patterns Nobody Talks About (But Every Engineer Uses)
+[(link)](https://medium.com/@sauravkumarrajjoli/6-lakehouse-design-patterns-every-data-engineer-should-know-06c94c72efb0)
+- We Built an Open Source S3 Tables Alternative - Run Apache Iceberg as easily as Postgres
+[(link)](https://blog.dataengineerthings.org/we-built-an-open-source-s3-tables-alternative-2b3c95ef4b3a)
 - Quacks & Stacks
 [(link)](https://medium.com/@tfmv/quacks-stacks-5565069a5ef0)
 - Lakehouse 2.0: The Open System That Lakehouse 1.0 Was Meant to Be | Part 1
