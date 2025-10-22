@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Resampling Imbalanced Datasets for Binary Classification
+[(link)](https://medium.com/@josemanuelalbornoz/resampling-imbalanced-datasets-for-binary-classification-d216d1685aec)
+
 - n8n - Secure Workflow Automation for Technical Teams - git
 [(link)](https://github.com/n8n-io/n8n)
 
