@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Dual SCD2, Snapshots, and PIT Tables: A Technical Deep-Dive for Data Engineers
+[(link)](https://medium.com/@jacovanderlaan/technical-deep-dive-dual-scd2-snapshots-and-pit-tables-42931c9a2bba)
 - Top 25 Machine Learning Interview Questions
 [(link)](https://medium.com/@sajidkhan.sjic/top-25-machine-learning-interview-questions-and-how-to-answer-them-like-a-pro-e9ab1984a2ad)
 - Decoding Dendrograms: A Comprehensive Guide
