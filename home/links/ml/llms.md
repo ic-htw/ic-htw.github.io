@@ -480,7 +480,9 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 
 
 
-# tiktokenizer
+# tokenization
+- Let’s Build the GPT Tokenizer: A Complete Guide to Tokenization in LLMs - Karpathy Video transscipt with solve.it
+[(link)](https://www.fast.ai/posts/2025-10-16-karpathy-tokenizers)
 - Tiktokenizer
 [(link)](https://tiktokenizer.vercel.app/)
 

@@ -362,7 +362,9 @@ is_slide: 0
 - Motherduck - PuppyGraph
 [(link)](https://motherduck.com/blog/duckdb-puppygraph-graph-model-on-motherduck/)
 
-
+# r2 
+- R2 SQL: a deep dive into our new distributed query engine
+[(link)](https://blog.cloudflare.com/r2-sql-deep-dive/)
 
 # redis
 - home
@@ -426,6 +428,9 @@ is_slide: 0
 [(link)](https://medium.com/@abdurohman/mind-blowing-postgresql-meets-scylladbs-lightning-speed-and-monstrous-scalability-7dcda1eb1cea)
 
 
+# sedonaDB
+- Introducing SedonaDB: A single-node analytical database engine with geospatial as a first-class citizen
+[(link)](https://sedona.apache.org/latest/blog/2025/09/24/introducing-sedonadb-a-single-node-analytical-database-engine-with-geospatial-as-a-first-class-citizen/)
 
         
 # snowflake

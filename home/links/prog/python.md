@@ -101,7 +101,8 @@ is_slide: 0
 [(link)](https://hypermedia.systems/book/contents/)
 - htmx
 [(link)](https://htmx.org/)
-
+- FastHTML CLI
+[(link)](https://github.com/ExploringML/fasthtml-cli)
 
 
 
