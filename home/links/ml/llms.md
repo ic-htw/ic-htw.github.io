@@ -242,6 +242,9 @@ is_slide: 0
 [(link)](https://towardsdatascience.com/from-basics-to-advanced-exploring-langgraph-e8c1cf4db787)
 - How to Build AI Agents with LangGraph: A Step-by-Step Guide
 [(link)](https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832)
+- Build Agentic RAG using LangGraph
+[(link)](https://ai.plainenglish.io/build-agentic-rag-using-langgraph-b568aa26d710)
+
 
 
 

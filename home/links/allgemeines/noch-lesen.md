@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I’m Using Claude Skills (New Feature) To Blow Up My Claude Code Workflows
+[(link)](https://medium.com/@joe.njenga/how-im-using-claude-skills-new-feature-to-blow-up-my-claude-code-workflows-9010c16292ca)
+
+- Is dbt tbd? Everything you need to know post-Coalesce 2025
+[(link)](https://medium.com/@hugolu87/is-dbt-%EF%B8%8F-tbd-everything-you-need-to-know-post-coalesce-2025-02f93cbc19cc)
+
+- Time-Based SQL Questions: Gaps, Overlaps, and Intervals
+[(link)](https://medium.com/@Rohan_Dutt/time-based-sql-interview-questions-gaps-overlaps-and-intervals-4c83581e98bf)
+
 - Resampling Imbalanced Datasets for Binary Classification
 [(link)](https://medium.com/@josemanuelalbornoz/resampling-imbalanced-datasets-for-binary-classification-d216d1685aec)
 

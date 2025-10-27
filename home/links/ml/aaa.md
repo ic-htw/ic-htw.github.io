@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Marketing Data Science with Joe Domaleski
+[(link)](https://blog.marketingdatascience.ai/)
 - Dual SCD2, Snapshots, and PIT Tables: A Technical Deep-Dive for Data Engineers
 [(link)](https://medium.com/@jacovanderlaan/technical-deep-dive-dual-scd2-snapshots-and-pit-tables-42931c9a2bba)
 - Top 25 Machine Learning Interview Questions
