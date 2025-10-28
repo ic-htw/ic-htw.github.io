@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- From Kimball to Metadata: How Dimensional Thinking Still Shapes Modern Data Architecture
+[(link)](https://medium.com/@jacovanderlaan/from-kimball-to-metadata-how-dimensional-thinking-still-shapes-modern-data-architecture-8e04a6f976b3)
+
+- Dual SCD2: The Foundation for True History in Data Warehousing
+[(link)](https://medium.com/towards-data-engineering/dual-scd2-the-foundation-for-true-history-in-data-warehousing-a61ec17ee808)
+
 - How I’m Using Claude Skills (New Feature) To Blow Up My Claude Code Workflows
 [(link)](https://medium.com/@joe.njenga/how-im-using-claude-skills-new-feature-to-blow-up-my-claude-code-workflows-9010c16292ca)
 
