@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How and Why Netflix Built a Real-Time Distributed Graph: Part 1 — Ingesting and Processing Data Streams at Internet Scale
+[(link)](https://netflixtechblog.com/how-and-why-netflix-built-a-real-time-distributed-graph-part-1-ingesting-and-processing-data-80113e124acc)
+
 - From Kimball to Metadata: How Dimensional Thinking Still Shapes Modern Data Architecture
 [(link)](https://medium.com/@jacovanderlaan/from-kimball-to-metadata-how-dimensional-thinking-still-shapes-modern-data-architecture-8e04a6f976b3)
 
