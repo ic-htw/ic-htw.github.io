@@ -234,6 +234,12 @@ is_slide: 0
 [(link)](https://www.langchain.com/)
 - doc
 [(link)](https://python.langchain.com/v0.1/docs/get_started/introduction/)
+- LangChain reference
+[(link)](https://reference.langchain.com/python/langchain/)
+- LangChain integrations
+[(link)](https://reference.langchain.com/python/integrations/)
+- LangGraph reference
+[(link)](https://reference.langchain.com/python/langgraph/)
 - What Is LangChain?
 [(link)](https://datastax.medium.com/what-is-langchain-b5583de2989a)
 - LangGraph Studio: Visualizing and Testing AI Agents with LangChain
