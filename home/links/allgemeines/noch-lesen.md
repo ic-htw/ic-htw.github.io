@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Introducing Oracle AI Database 26ai: Next-Gen AI-Native Database for All Your Data
+[(link)](https://blogs.oracle.com/database/post/oracle-announces-oracle-ai-database-26ai)
+
+- Graph Analytics for All of Your Data - Oracle
+[(link)](https://blogs.oracle.com/database/post/graph-analytics-for-all-of-your-data)
+
+- Getting Started with Oracle AI Database AI Vector Search
+[(link)](https://blogs.oracle.com/database/post/getting-started-with-oracle-database-23ai-ai-vector-search)
+
 - How and Why Netflix Built a Real-Time Distributed Graph: Part 1 — Ingesting and Processing Data Streams at Internet Scale
 [(link)](https://netflixtechblog.com/how-and-why-netflix-built-a-real-time-distributed-graph-part-1-ingesting-and-processing-data-80113e124acc)
 
