@@ -11,6 +11,15 @@ is_slide: 0
 - Mesop - Web UIs in Python 
 [(link)](https://google.github.io/mesop/)
 
+# Architecture / SW-Design
+- The Architecture of Open Source Applications
+[(link)](https://aosabook.org/en/)
+- Software Design by Example - a tool-based introduction with Python
+[(link)](https://third-bit.com/sdxpy/)
+- Software Design by Example- a tool-based introduction with JavaScript
+[(link)](https://third-bit.com/sdxjs/)
+
+
 # dbunit
 - home
 [(link)](https://dbunit.sourceforge.net/dbunit/index.html)

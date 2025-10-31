@@ -254,9 +254,18 @@ is_slide: 0
 
 
 
+# tigerdata
+- Postgres for Agents
+[(link)](https://www.tigerdata.com/blog/postgres-for-agents)
+- From ts_rank to BM25. Introducing pg_textsearch: True BM25 Ranking and Hybrid Retrieval Inside Postgres
+[(link)](https://www.tigerdata.com/blog/introducing-pg_textsearch-true-bm25-ranking-hybrid-retrieval-postgres)
 
 
-# misc
+
+# zzz
+- Kafka is fast -- I'll use Postgres
+[(link)](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
+[(link)](https://news.ycombinator.com/item?id=45747018)
 - Exploring PostgreSQL to Parquet archival for JSON data with S3 range reads
 [(link)](https://www.shayon.dev/post/2025/276/exploring-postgresql-to-parquet-archival-for-json-data-with-s3-range-reads/)
 - The Internals of PostgreSQL
