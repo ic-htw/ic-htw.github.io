@@ -45,6 +45,8 @@ is_slide: 0
 [(link)](https://sgugger.github.io/)
 - Hugging Face
 [(link)](https://huggingface.curated.co/)
+- Ida Silfverskiöld - Medium
+[(link)](https://medium.com/@ilsilfverskiold)
 - Kaggle
 [(link)](http://blog.kaggle.com/)
 - lilianweng
