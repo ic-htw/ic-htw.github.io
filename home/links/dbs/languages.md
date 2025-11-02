@@ -29,6 +29,9 @@ is_slide: 0
 [(link)](https://darren-tan0512.medium.com/sql-best-practices-hard-learned-lessons-from-my-years-as-a-software-engineer-1d50f6ea54b7)
 - How to Write SQL Queries That Handle Billions of Rows
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-handle-billions-of-rows-7e640e91049d)
+- SQL NOT IN: the Good, Bad & the Ugly
+[(link)](https://www.dbvis.com/thetable/sql-not-in-the-good-bad-the-ugly/)
+
 
 
 

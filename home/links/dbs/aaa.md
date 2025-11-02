@@ -35,6 +35,8 @@ is_slide: 0
 # zzz
 - From YAML to SQL: Generating Physical Models and Diagrams from Metadata
 [(link)](https://medium.com/@jacovanderlaan/from-yaml-to-sql-generating-physical-models-and-diagrams-from-metadata-10324add354f)
+- From Semantics to AI: How Metadata Knowledge Graphs Enable Intelligent Modeling
+[(link)](https://pub.towardsai.net/from-semantics-to-ai-how-metadata-knowledge-graphs-enable-intelligent-modeling-57b510e16713)
 - Top 6+ Must Have Database Tools in 2025 as a Developer
 [(link)](https://medium.com/@letscodefuture/top-5-must-have-database-tools-in-2025-as-a-developer-26911a38e125)
 - Rebuilding Redis on S3 Express

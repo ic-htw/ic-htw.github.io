@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- From YAML to SQL: Generating Physical Models and Diagrams from Metadata
+[(link)](https://medium.com/@jacovanderlaan/from-yaml-to-sql-generating-physical-models-and-diagrams-from-metadata-10324add354f)
+
+- From Semantics to AI: How Metadata Knowledge Graphs Enable Intelligent Modeling
+[(link)](https://pub.towardsai.net/from-semantics-to-ai-how-metadata-knowledge-graphs-enable-intelligent-modeling-57b510e16713)
+
+- IBM Granite 4.0-Nano
+[(link)](https://alain-airom.medium.com/ibm-granite-4-0-nano-b4a3a4d9cef7)
+
 - Introducing Oracle AI Database 26ai: Next-Gen AI-Native Database for All Your Data
 [(link)](https://blogs.oracle.com/database/post/oracle-announces-oracle-ai-database-26ai)
 
