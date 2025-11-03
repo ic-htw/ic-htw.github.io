@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How has AI changed the cost of software? $20,000 is the new $200,000
+[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
+
 - From YAML to SQL: Generating Physical Models and Diagrams from Metadata
 [(link)](https://medium.com/@jacovanderlaan/from-yaml-to-sql-generating-physical-models-and-diagrams-from-metadata-10324add354f)
 
