@@ -548,3 +548,8 @@ is_slide: 0
 # umbradb
 - home
 [(link)](https://umbra-db.com/)
+
+# VulcanSQL
+- VulcanSQL
+[(link)](https://vulcansql.com/)
+

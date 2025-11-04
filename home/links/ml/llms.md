@@ -6,6 +6,8 @@ is_slide: 0
 ---
 
 # agents
+- Agent Lightning
+[(link)](https://github.com/microsoft/agent-lightning)
 - The guide to OpenAI Codex CLI
 [(link)](https://levelup.gitconnected.com/the-guide-to-openai-codex-cli-e40f21f279d8)
 - Building a High-Performance Parallel LLM Pipeline Using Weight Optimization, KV Cache, SDPA, and Kubernetes

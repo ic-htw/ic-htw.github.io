@@ -9,14 +9,29 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- How has AI changed the cost of software? $20,000 is the new $200,000
-[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
-
 - From YAML to SQL: Generating Physical Models and Diagrams from Metadata
 [(link)](https://medium.com/@jacovanderlaan/from-yaml-to-sql-generating-physical-models-and-diagrams-from-metadata-10324add354f)
 
 - From Semantics to AI: How Metadata Knowledge Graphs Enable Intelligent Modeling
 [(link)](https://pub.towardsai.net/from-semantics-to-ai-how-metadata-knowledge-graphs-enable-intelligent-modeling-57b510e16713)
+
+- How has AI changed the cost of software? $20,000 is the new $200,000
+[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
+
+- Dynamic Metadata Lineage: Visualizing Relationships Across Data Models
+[(link)](https://medium.com/@jacovanderlaan/dynamic-metadata-lineage-visualizing-relationships-across-data-models-c8a22eeeb2ca)
+
+- From Metadata-Driven Ingestion to Metadata-Driven Architecture
+[(link)](https://medium.com/towards-data-engineering/from-metadata-driven-ingestion-to-metadata-driven-architecture-ea4b5a83678d)
+
+- Rice’s Theorem: Why Computers Will Not Completely Replace Programmers
+[(link)](https://medium.com/@compuxela/rices-theorem-why-computers-will-not-completely-replace-programmers-0d84c4510bf6)
+
+- 10 Jupyter Notebook Features You Didn’t Know Existed
+[(link)](https://python.plainenglish.io/10-jupyter-notebook-features-you-didnt-know-existed-96721a6f4d5a)
+
+- Why Data Engineers Cannot Be Replaced by AI(What They Actually Do)
+[(link)](https://medium.com/@vijaygadhave2014/why-data-engineers-cannot-be-replaced-by-ai-what-they-actually-do-6affe895e721)
 
 - IBM Granite 4.0-Nano
 [(link)](https://alain-airom.medium.com/ibm-granite-4-0-nano-b4a3a4d9cef7)
