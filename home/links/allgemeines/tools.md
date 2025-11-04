@@ -254,9 +254,11 @@ is_slide: 0
 
 
 # jupyter
+- Jupyter AI
+[(doc)](https://jupyter-ai.readthedocs.io/en/latest/index.html)
+[(git)](https://github.com/jupyterlab/jupyter-ai)
 - JupyterHub
 [(link)](https://jupyterhub.readthedocs.io/en/stable/)
-
 - Jupyterhub - Setting up Development Environment
 [(link)](https://tljh.jupyter.org/en/latest/contributing/dev-setup.html)
 
