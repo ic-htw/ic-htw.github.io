@@ -13,13 +13,15 @@ Create Kaggle account
 
 Join competition
 
-# Mount gdrive
+# Get Data
+
+## Mount gdrive
 ```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-# Import / Config
+## Import / Config
 ```
 import pandas as pd
 import os
@@ -33,9 +35,8 @@ target_dir = f"{kaggle_dir}/rent-two-sigma"
 os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir
 ```
 
-# Data Preparation 
+## Data Preparation 
 - only done once
-- skip this cell if you start your notebook anew
 
 - Open Kaggle API doc [(link)](https://www.kaggle.com/docs/api)
 - Goto section authentication
@@ -49,7 +50,7 @@ os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir
 !unzip {competition}.zip -d "{target_dir}"
 !unzip "{target_dir}/train.json.zip" -d "{target_dir}"
 
-df = pd.read_json(f"{target_dir}/rent-two-sigma/train.json")
+df = pd.read_json(f"{target_dir}/train.json")
 df.to_parquet(f"{target_dir}/rent.parquet")
 
 df = df[(df.price>1_000) & (df.price<10_000)]
@@ -66,14 +67,39 @@ df_num.to_parquet(f"{target_dir}/rent-ideal.parquet")
 !rm "{target_dir}/train.json"
 !rm "{target_dir}/train.json.zip"
 ```
+- Remove runtime
+- Save notebook
+- Close notebook
 
 # Training a random forest model
-Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/first-taste.html#sec:3.2.2)
+- Create a new Notebook
 
+## Install
+```
+!pip install -q rfpimp
+```
+
+
+## Mount gdrive
+```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+## Import / Config
+```
+import numpy as np
+import pandas as pd
+```
+## Load Data
 ```
 rent = pd.read_parquet(f"{target_dir}/rent-ideal.parquet")
-rent
+rent.sample(5)
 ```
+## Hands-On
+Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/first-taste.html#sec:3.2.2)
+
+
 
 # Exploring and Denoising Your Data Set
 Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/prep.html)
