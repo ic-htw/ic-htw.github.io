@@ -15,8 +15,8 @@ is_slide: 0
 - From Semantics to AI: How Metadata Knowledge Graphs Enable Intelligent Modeling
 [(link)](https://pub.towardsai.net/from-semantics-to-ai-how-metadata-knowledge-graphs-enable-intelligent-modeling-57b510e16713)
 
-- How has AI changed the cost of software? $20,000 is the new $200,000
-[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
+- From Drawing to Generation — How Mermaid, Draw.io, PlantUML, GraphViz, and yEd Redefine Data Modeling Visualization
+[(link)](https://medium.com/towards-data-engineering/from-drawing-to-generation-how-mermaid-draw-io-06832d918736)
 
 - Dynamic Metadata Lineage: Visualizing Relationships Across Data Models
 [(link)](https://medium.com/@jacovanderlaan/dynamic-metadata-lineage-visualizing-relationships-across-data-models-c8a22eeeb2ca)
@@ -29,6 +29,9 @@ is_slide: 0
 
 - 10 Jupyter Notebook Features You Didn’t Know Existed
 [(link)](https://python.plainenglish.io/10-jupyter-notebook-features-you-didnt-know-existed-96721a6f4d5a)
+
+- How has AI changed the cost of software? $20,000 is the new $200,000
+[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
 
 - Why Data Engineers Cannot Be Replaced by AI(What They Actually Do)
 [(link)](https://medium.com/@vijaygadhave2014/why-data-engineers-cannot-be-replaced-by-ai-what-they-actually-do-6affe895e721)
