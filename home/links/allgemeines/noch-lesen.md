@@ -9,20 +9,8 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- From YAML to SQL: Generating Physical Models and Diagrams from Metadata
-[(link)](https://medium.com/@jacovanderlaan/from-yaml-to-sql-generating-physical-models-and-diagrams-from-metadata-10324add354f)
-
-- From Semantics to AI: How Metadata Knowledge Graphs Enable Intelligent Modeling
-[(link)](https://pub.towardsai.net/from-semantics-to-ai-how-metadata-knowledge-graphs-enable-intelligent-modeling-57b510e16713)
-
-- From Drawing to Generation — How Mermaid, Draw.io, PlantUML, GraphViz, and yEd Redefine Data Modeling Visualization
-[(link)](https://medium.com/towards-data-engineering/from-drawing-to-generation-how-mermaid-draw-io-06832d918736)
-
-- Dynamic Metadata Lineage: Visualizing Relationships Across Data Models
-[(link)](https://medium.com/@jacovanderlaan/dynamic-metadata-lineage-visualizing-relationships-across-data-models-c8a22eeeb2ca)
-
-- From Metadata-Driven Ingestion to Metadata-Driven Architecture
-[(link)](https://medium.com/towards-data-engineering/from-metadata-driven-ingestion-to-metadata-driven-architecture-ea4b5a83678d)
+- Understanding Long Context Windows in AI Models
+[(link)](https://medium.com/@phuocnguyen90/understanding-long-context-windows-in-ai-models-65eeb76ca20a)
 
 - Rice’s Theorem: Why Computers Will Not Completely Replace Programmers
 [(link)](https://medium.com/@compuxela/rices-theorem-why-computers-will-not-completely-replace-programmers-0d84c4510bf6)
