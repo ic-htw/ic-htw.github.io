@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- We’re Not Ready for What AI Agents Are Actually Doing
+[(link)](https://medium.com/analysts-corner/were-not-ready-for-what-ai-agents-are-actually-doing-238c604ce0e0)
+
+- How to Write SQL Queries That Automatically Detect and Fix Bad Data
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-automatically-detect-and-fix-bad-data-4dfc2c9858de)
+
+- 7 ChatGPT Prompts That I use Daily as a Data Analyst
+[(link)](https://medium.com/ai-analytics-diaries/7-chatgpt-prompts-that-i-use-daily-as-a-data-analyst-714bb47839cc)
+
+- Do We Still Need Traditional Data Modeling Tools?
+[(link)](https://medium.com/towards-data-engineering/do-we-still-need-traditional-data-modeling-tools-ac5d390370de)
+
 - Understanding Long Context Windows in AI Models
 [(link)](https://medium.com/@phuocnguyen90/understanding-long-context-windows-in-ai-models-65eeb76ca20a)
 
