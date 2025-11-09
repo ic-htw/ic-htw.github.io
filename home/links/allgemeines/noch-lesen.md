@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How Netflix and Airbnb Handle Slowly Changing Dimensions (SCD) Like Pros
+[(link)](https://aws.plainenglish.io/how-netflix-and-airbnb-handle-slowly-changing-dimensions-scd-in-data-warehousing-7779c7aba96c)
+
+- DSPy: The Framework That Kills Prompt Engineering (and Replaces It with Actual Code)
+[(link)](https://medium.com/data-science-collective/dspy-the-framework-that-kills-prompt-engineering-and-replaces-it-with-actual-code-38909cf5841f)
+
+- You Haven’t Seen AI Until You Try Claude Sonnet 4.5’s New Feature — It Redefines Insane
+[(link)](https://medium.com/@the_atomic_architect/claude-sonnet-45-persistent-storage-no-backend-bb38f42dd2d7)
+
+- Marketing Data Science with Joe Domaleski
+[(link)](https://blog.marketingdatascience.ai/)
+
 - We’re Not Ready for What AI Agents Are Actually Doing
 [(link)](https://medium.com/analysts-corner/were-not-ready-for-what-ai-agents-are-actually-doing-238c604ce0e0)
 
