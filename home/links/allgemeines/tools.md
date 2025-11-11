@@ -261,6 +261,8 @@ is_slide: 0
 [(link)](https://jupyterhub.readthedocs.io/en/stable/)
 - Jupyterhub - Setting up Development Environment
 [(link)](https://tljh.jupyter.org/en/latest/contributing/dev-setup.html)
+- 10 Jupyter Notebook Features You Didn’t Know Existed
+[(link)](https://python.plainenglish.io/10-jupyter-notebook-features-you-didnt-know-existed-96721a6f4d5a)
 
 - ipython-sql
 [(link)](https://github.com/catherinedevlin/ipython-sql)

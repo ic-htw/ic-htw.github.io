@@ -9,47 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- How Netflix and Airbnb Handle Slowly Changing Dimensions (SCD) Like Pros
-[(link)](https://aws.plainenglish.io/how-netflix-and-airbnb-handle-slowly-changing-dimensions-scd-in-data-warehousing-7779c7aba96c)
+- Islands and Gaps with Recursive CTE
+[(link)](https://medium.com/@mlasala1964/islands-and-gaps-with-recursive-cte-32fa8c0388b1)
 
-- DSPy: The Framework That Kills Prompt Engineering (and Replaces It with Actual Code)
-[(link)](https://medium.com/data-science-collective/dspy-the-framework-that-kills-prompt-engineering-and-replaces-it-with-actual-code-38909cf5841f)
-
-- You Haven’t Seen AI Until You Try Claude Sonnet 4.5’s New Feature — It Redefines Insane
-[(link)](https://medium.com/@the_atomic_architect/claude-sonnet-45-persistent-storage-no-backend-bb38f42dd2d7)
-
-- Marketing Data Science with Joe Domaleski
-[(link)](https://blog.marketingdatascience.ai/)
-
-- We’re Not Ready for What AI Agents Are Actually Doing
-[(link)](https://medium.com/analysts-corner/were-not-ready-for-what-ai-agents-are-actually-doing-238c604ce0e0)
-
-- How to Write SQL Queries That Automatically Detect and Fix Bad Data
-[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-automatically-detect-and-fix-bad-data-4dfc2c9858de)
-
-- 7 ChatGPT Prompts That I use Daily as a Data Analyst
-[(link)](https://medium.com/ai-analytics-diaries/7-chatgpt-prompts-that-i-use-daily-as-a-data-analyst-714bb47839cc)
-
-- Do We Still Need Traditional Data Modeling Tools?
-[(link)](https://medium.com/towards-data-engineering/do-we-still-need-traditional-data-modeling-tools-ac5d390370de)
-
-- Understanding Long Context Windows in AI Models
-[(link)](https://medium.com/@phuocnguyen90/understanding-long-context-windows-in-ai-models-65eeb76ca20a)
-
-- Rice’s Theorem: Why Computers Will Not Completely Replace Programmers
-[(link)](https://medium.com/@compuxela/rices-theorem-why-computers-will-not-completely-replace-programmers-0d84c4510bf6)
-
-- 10 Jupyter Notebook Features You Didn’t Know Existed
-[(link)](https://python.plainenglish.io/10-jupyter-notebook-features-you-didnt-know-existed-96721a6f4d5a)
-
-- How has AI changed the cost of software? $20,000 is the new $200,000
-[(link)](https://medium.com/realworld-ai-use-cases/how-has-ai-changed-the-cost-of-software-20-000-is-the-new-200-000-5f98ae364e24)
-
-- Why Data Engineers Cannot Be Replaced by AI(What They Actually Do)
-[(link)](https://medium.com/@vijaygadhave2014/why-data-engineers-cannot-be-replaced-by-ai-what-they-actually-do-6affe895e721)
-
-- IBM Granite 4.0-Nano
-[(link)](https://alain-airom.medium.com/ibm-granite-4-0-nano-b4a3a4d9cef7)
+- 7 AI Agents Every Data Analyst Should Use
+[(link)](https://medium.com/ai-analytics-diaries/7-ai-agents-every-data-analyst-should-use-e12cf625e376)
 
 - Introducing Oracle AI Database 26ai: Next-Gen AI-Native Database for All Your Data
 [(link)](https://blogs.oracle.com/database/post/oracle-announces-oracle-ai-database-26ai)

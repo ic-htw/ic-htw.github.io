@@ -31,6 +31,10 @@ is_slide: 0
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-handle-billions-of-rows-7e640e91049d)
 - SQL NOT IN: the Good, Bad & the Ugly
 [(link)](https://www.dbvis.com/thetable/sql-not-in-the-good-bad-the-ugly/)
+- How to Write SQL Queries That Automatically Detect and Fix Bad Data
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-automatically-detect-and-fix-bad-data-4dfc2c9858de)
+
+
 
 
 
