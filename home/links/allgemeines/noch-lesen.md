@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Lessons from Data Vault: Principles Without the Dogma
+[(link)](https://medium.com/towards-data-engineering/lessons-from-data-vault-principles-without-the-dogma-fa57894feb98)
+
 - Islands and Gaps with Recursive CTE
 [(link)](https://medium.com/@mlasala1964/islands-and-gaps-with-recursive-cte-32fa8c0388b1)
 
