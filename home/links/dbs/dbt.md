@@ -6,8 +6,14 @@ is_slide: 0
 ---
 
 # Official
-- doc
+- doc home
 [(link)](https://docs.getdbt.com/)
+- dbt - doc
+[(link)](https://docs.getdbt.com/docs/introduction)
+- dbt - references
+[(link)](https://docs.getdbt.com/reference/references-overview)
+- Quickstart for dbt Core using DuckDB
+[(link)](https://docs.getdbt.com/guides/duckdb?step=1)
 - git
 [(link)](https://github.com/dbt-labs/dbt)
 - dbt hub
