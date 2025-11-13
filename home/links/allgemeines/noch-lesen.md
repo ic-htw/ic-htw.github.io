@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Automating Dimensional Models with Metadata & dbt
+[(link)](https://medium.com/model-driven-data-engineering/automating-dimensional-models-with-metadata-dbt-5f1c7ad1397b)
+
+- Self-Describing SQL: Embedding Metadata as YAML Front-Matter in Generated Objects
+[(link)](https://medium.com/towards-data-engineering/self-describing-sql-embedding-metadata-as-yaml-front-matter-in-generated-objects-623bff8d1614)
+
 - Lessons from Data Vault: Principles Without the Dogma
 [(link)](https://medium.com/towards-data-engineering/lessons-from-data-vault-principles-without-the-dogma-fa57894feb98)
 
