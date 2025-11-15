@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Designing the Open Metadata Modeling Platform
+[(link)](https://medium.com/@jacovanderlaan/designing-the-open-metadata-modeling-platform-708581393a05)
+
+- Beyond a Single AI: A Step-by-Step Guide to Building a Team of AI Agents (LangChain, LangGraph)
+[(link)](https://python.plainenglish.io/beyond-a-single-ai-a-step-by-step-guide-to-building-a-team-of-ai-agents-langchain-langgraph-a86c974fa52d)
+
 - Automating Dimensional Models with Metadata & dbt
 [(link)](https://medium.com/model-driven-data-engineering/automating-dimensional-models-with-metadata-dbt-5f1c7ad1397b)
 
