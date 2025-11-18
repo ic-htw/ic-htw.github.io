@@ -9,6 +9,39 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Goodbye PyCharm Pro, Hello VS Code: How We Rebuilt Our Python Setup for Free
+[(link)](https://blog.stackademic.com/goodbye-pycharm-pro-hello-vs-code-how-we-rebuilt-our-python-setup-for-free-98c46ef85db8)
+
+- Stanford Just Ended Prompt Engineering With a Single Sentence….
+[(link)](https://medium.com/@kirantechblog/stanford-just-ended-prompt-engineering-with-a-single-sentence-9bfe702eb82c)
+
+- I Built Everything in Streamlit Until It Broke Me
+[(link)](https://python.plainenglish.io/i-built-everything-in-streamlit-until-it-broke-me-d0f54fa43d62)
+
+- All Colab users now get access to Gemini and Gemma models via Colab Python library at no cost
+[(link)](https://medium.com/google-colab/all-colab-users-now-get-access-to-gemini-and-gemma-models-via-colab-python-library-at-no-cost-a392599977c4)
+
+- I Analyzed 2,500 YouTube Videos to Understand Why RedLetterMedia Are Internet Darlings
+[(link)](https://python.plainenglish.io/i-analyzed-2-500-youtube-videos-to-understand-why-redlettermedia-are-internet-darlings-e4610cf17143)
+
+- Solving Many-to-Many & Drill-Across with the Unified Star Schema
+[(link)](https://medium.com/model-driven-data-engineering/solving-many-to-many-drill-across-with-the-unified-star-schema-2559bc152947)
+
+- SQL Agents Need Compilers
+[(link)](https://blog.waii.ai/sql-agents-need-compilers-7d52cc284408)
+
+- Stop Building Pipelines Manually: The Rise of Data Engineering Automation
+[(link)](https://medium.com/@sauravkumarrajjoli/metadata-driven-pipelines-the-future-of-data-engineering-1e6d7c8d9265)
+
+- Why Scalar Subqueries in SQL Are More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-scalar-subqueries-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84386e82d669)
+
+- SQL Query Optimization: Modern Techniques and Best Practices
+[(link)](https://blog.dataengineerthings.org/sql-query-optimization-modern-techniques-and-best-practices-%EF%B8%8F-32db686d235d)
+
+- Every Industry Faces the Same Data Problems. My Take on Palantir’s Solution at AIPCON 8
+[(link)](https://blog.dataengineerthings.org/every-industry-faces-the-same-data-problems-my-take-on-palantirs-approach-at-aipcon-8-8209377a702a)
+
 - Designing the Open Metadata Modeling Platform
 [(link)](https://medium.com/@jacovanderlaan/designing-the-open-metadata-modeling-platform-708581393a05)
 
