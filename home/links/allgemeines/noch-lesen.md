@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Agentic AI Project: Build a Multi-Agent System With LangGraph
+[(link)](https://pub.towardsai.net/agentic-ai-project-build-a-multi-agent-system-with-langgraph-and-open-ai-344ab768caac)
+
+- I Replaced Half My Coding Time With AI Agents. Here’s The Exact Workflow I Use In 2025
+[(link)](https://medium.com/@the_atomic_architect/ai-agents-cut-coding-time-half-workflow-2025-e1ff5ab28b5f)
+
 - Goodbye PyCharm Pro, Hello VS Code: How We Rebuilt Our Python Setup for Free
 [(link)](https://blog.stackademic.com/goodbye-pycharm-pro-hello-vs-code-how-we-rebuilt-our-python-setup-for-free-98c46ef85db8)
 
