@@ -1,7 +1,7 @@
 ---
 layout: default1
 nav: dsml-ml
-title: ML1 - DSML
+title: Applied ML - DSML
 is_slide: 0
 ---
 
@@ -13,7 +13,7 @@ Create Kaggle account
 
 Join competition
 
-# Get Data
+# Data Preparation via Kaggle
 
 ## Mount gdrive
 ```
@@ -35,12 +35,10 @@ target_dir = f"{kaggle_dir}/rent-two-sigma"
 os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir
 ```
 
-## Data Preparation 
-- only done once
-
+## Get Data 
 - Open Kaggle API doc [(link)](https://www.kaggle.com/docs/api)
-- Goto section authentication
-- Create kaggle.json
+- Go to authentication section 
+- Create kaggle.json, download to your computer
 - Upload kaggle.json to kaggle directory on your gdrive
 
 
@@ -71,14 +69,13 @@ df_num.to_parquet(f"{target_dir}/rent-ideal.parquet")
 - Save notebook
 - Close notebook
 
-# Training a random forest model
+# Practical work via ML book on explained.ai
 - Create a new Notebook
 
 ## Install
 ```
 !pip install -q rfpimp
 ```
-
 
 ## Mount gdrive
 ```
@@ -93,24 +90,16 @@ import pandas as pd
 ```
 ## Load Data
 ```
+kaggle_dir = f"/content/drive/My Drive/kaggle"
+target_dir = f"{kaggle_dir}/rent-two-sigma"
 rent = pd.read_parquet(f"{target_dir}/rent-ideal.parquet")
 rent.sample(5)
 ```
+```
+df = pd.read_parquet(f"{target_dir}/rent.parquet")
+df.sample(5)
+```
 ## Hands-On
-Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/first-taste.html#sec:3.2.2)
-
-
-
-# Exploring and Denoising Your Data Set
-Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/prep.html)
-```
-df = pd.read_parquet(f"{target_dir}/rent.parquet")
-df
-```
-
-# Categorically Speaking
-Link to ML book at explained.ai [(link)](https://mlbook.explained.ai/catvars.html)
-```
-df = pd.read_parquet(f"{target_dir}/rent.parquet")
-df
-```
+- Train a random forest model [(link)](https://mlbook.explained.ai/first-taste.html#sec:3.2.2)
+- Exploring and Denoising Your Data Set [(link)](https://mlbook.explained.ai/prep.html)
+- Categorically Speaking [(link)](https://mlbook.explained.ai/catvars.html)
