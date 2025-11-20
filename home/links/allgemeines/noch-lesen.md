@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Practical coding with AI Assistance
+[(link)](https://medium.com/@maksimkulichenko/practical-coding-with-ai-assistance-5fd697815cb9)
+
+- 10 GenAI Use Cases in ETL You Can Implement Today
+[(link)](https://medium.com/@Rohan_Dutt/10-genai-use-cases-in-etl-you-can-implement-today-0a5ba84dfc75)
+
+- Automating draw.io Diagram Generation from Metadata
+[(link)](https://medium.com/business-friendly-diagramming/automating-draw-io-diagram-generation-from-metadata-bbc1f6428140)
+
+- Scaling Metadata-Driven Data Modeling — From Conceptual to Physical with Git and YAML
+[(link)](https://medium.com/towards-data-engineering/scaling-metadata-driven-data-modeling-from-conceptual-to-physical-with-git-and-yaml-efefdac96889)
+
+- The Convergence Nobody Saw Coming: When APIs, AI, and Cloud Storage Accidentally Built the Future
+[(link)](https://medium.com/data-science-collective/the-convergence-nobody-saw-coming-when-apis-ai-and-cloud-storage-accidentally-built-the-future-05d94b357dcc)
+
+- Your Database Is Slow Because You’re Using UUIDs
+[(link)](https://medium.com/@jamauriceholt.com/your-database-is-slow-because-youre-using-uuids-and-how-i-made-it-500x-faster-e57270d9b294)
+
 - Agentic AI Project: Build a Multi-Agent System With LangGraph
 [(link)](https://pub.towardsai.net/agentic-ai-project-build-a-multi-agent-system-with-langgraph-and-open-ai-344ab768caac)
 
