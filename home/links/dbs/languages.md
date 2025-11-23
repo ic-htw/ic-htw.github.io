@@ -33,6 +33,9 @@ is_slide: 0
 [(link)](https://www.dbvis.com/thetable/sql-not-in-the-good-bad-the-ugly/)
 - How to Write SQL Queries That Automatically Detect and Fix Bad Data
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-automatically-detect-and-fix-bad-data-4dfc2c9858de)
+- These Queries Cover 80% of SQL
+[(link)](https://medium.com/ai-analytics-diaries/these-queries-cover-80-of-sql-0c108e736146)
+
 
 
 
