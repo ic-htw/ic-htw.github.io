@@ -9,11 +9,26 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I Built an AI That Talks to Your Database: A Journey into RAG
+[(link)](https://pub.towardsai.net/how-i-built-an-ai-that-talks-to-your-database-a-journey-into-rag-c21880cbc67a)
+
 - Agentic AI Project: Build a Multi-Agent Text2SQL Chatbot for E-commerce Database
 [(link)](https://pub.towardsai.net/agentic-ai-project-build-multi-agent-text2sql-chatbot-for-ecommerce-database-c8d0e294ec94)
 
 - Agentic AI Project: Build a Multi-Agent System With LangGraph
 [(link)](https://pub.towardsai.net/agentic-ai-project-build-a-multi-agent-system-with-langgraph-and-open-ai-344ab768caac)
+
+- All Colab users now get access to Gemini and Gemma 
+[(link)](https://medium.com/google-colab/all-colab-users-now-get-access-to-gemini-and-gemma-models-via-colab-python-library-at-no-cost-a392599977c4)
+
+- Introducing Gemini 3: Google’s Most Advanced AI Model, Now Available in Colab
+[(link)](https://medium.com/google-colab/introducing-gemini-3-googles-most-advanced-ai-model-now-available-in-colab-4f97e26d53a7)
+
+- The Final Voyage of the Modern Data Stack
+[(link)](https://www.getorchestra.io/blog/the-final-voyage-of-the-modern-data-stack)
+
+- The Era of Action Model with Gemini 3 Pro & Google Antigravity
+[(link)](https://medium.com/google-cloud/the-era-of-action-with-gemini-3-pro-google-antigravity-853b935c5df0)
 
 - HTMX Murdered React: Why Nobody Needs JavaScript Frameworks Anymore
 [(link)](https://medium.com/@sonampatel_97163/htmx-murdered-react-why-nobody-needs-javascript-frameworks-anymore-4c2d58ffc516)
