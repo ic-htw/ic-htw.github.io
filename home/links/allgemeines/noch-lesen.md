@@ -18,6 +18,18 @@ is_slide: 0
 - Agentic AI Project: Build a Multi-Agent System With LangGraph
 [(link)](https://pub.towardsai.net/agentic-ai-project-build-a-multi-agent-system-with-langgraph-and-open-ai-344ab768caac)
 
+- What Makes dbt So Popular in Modern Data Teams?
+[(link)](https://medium.com/@workwithalam/what-makes-dbt-so-popular-in-modern-data-teams-b775655c48e8)
+
+- Uber Eats Data Warehouse Architecture: A Complete Guide to Trip Data Modeling and Analytics Storage
+[(link)](https://medium.com/@anchitgupt2012/uber-eats-data-warehouse-architecture-a-complete-guide-to-trip-data-modeling-and-analytics-storage-34c8c65b4868)
+
+- UV in Python: The Fastest Package & Project Manager (Complete Guide + Example Project)
+[(link)](https://blog.stackademic.com/uv-in-python-the-fastest-package-project-manager-complete-guide-example-project-91e6a6048e80)
+
+- Google’s Antigravity Just Ended the Cursor IDE. Here’s How.
+[(link)](https://levelup.gitconnected.com/googles-antigravity-just-ended-the-cursor-ide-here-s-how-749aa0442260)
+
 - All Colab users now get access to Gemini and Gemma 
 [(link)](https://medium.com/google-colab/all-colab-users-now-get-access-to-gemini-and-gemma-models-via-colab-python-library-at-no-cost-a392599977c4)
 
