@@ -600,6 +600,9 @@ home: &r
                   - t: Foodmart
                     ts: Foodmart
                     url: /home/lv/dsml/dm/dm-foodmart.html
+                  - t: Adventureworks OLTP
+                    ts: Adventureworks OLTP
+                    url: /home/lv/dsml/dm/dm-adw-oltp.html
                   - t: Adventureworks OLAP
                     ts: Adventureworks OLAP
                     url: /home/lv/dsml/dm/dm-adw-olap.html
