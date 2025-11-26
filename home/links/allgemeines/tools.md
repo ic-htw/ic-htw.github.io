@@ -380,6 +380,13 @@ is_slide: 0
 - Datenbankanalyse mit SchemaSpy
 [(link)](https://www.jentsch.io/datenbank-analyse-mit-schemaspy/)
 
+# Scrapling
+- Scrapling git
+[(link)](https://github.com/D4Vinci/Scrapling)
+- Web Scraping with Scrapling: 2025 Tutorial
+[(link)](https://medium.com/@datajournal/web-scraping-with-scrapling-ae6c7fb1dd81)
+
+
 # Slack
 - home
 [(link)](https://slack.com/intl/de-de/)
