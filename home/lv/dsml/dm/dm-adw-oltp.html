@@ -15,5 +15,719 @@ is_slide: 0
 -->
 <img class="w3-image" src="/home/lv/dsml/a/dm-adw-oltp/dm-adw-oltp-model.png">
 
-<h1 id="DimAccount">DimAccount</h1>
+<h1 id="Address">Address</h1>
+<pre><code class="language-plaintext">AddressID                                                   1
+AddressLine1                                    1970 Napa Ct.
+AddressLine2                                             None
+City                                                  Bothell
+StateProvinceID                                            79
+PostalCode                                              98011
+SpatialLocation  E6100000010CAE8BFC28BCE4474067A89189898A5EC0
+rowguid                  9AADCB0D-36CF-483F-84D8-585C2D4EC6E9
+ModifiedDate                              2018-12-03 00:00:00
+Number of rows: 19614</code></pre>
+
+<h1 id="AddressType">AddressType</h1>
+<pre><code class="language-plaintext">AddressTypeID                                     1
+Name                                        Billing
+rowguid        B84F78B1-4EFE-4A0E-8CB7-70E9F112F886
+ModifiedDate                    2019-04-30 00:00:00
+Number of rows: 6</code></pre>
+
+
+
+<h1 id="BillOfMaterials">BillOfMaterials</h1>
+<pre><code class="language-plaintext">BillOfMaterialsID                  893
+ProductAssemblyID                 <NA>
+ComponentID                        749
+StartDate          2021-05-25 00:00:00
+EndDate                            NaT
+UnitMeasureCode                    EA 
+BOMLevel                             0
+PerAssemblyQty                     1.0
+ModifiedDate       2021-05-11 00:00:00
+Number of rows: 2679</code></pre>
+
+
+
+<h1 id="BusinessEntity">BusinessEntity</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                     1
+rowguid           0C7D8F81-D7B1-4CF0-9C0A-4CD8B6B50087
+ModifiedDate                2017-12-13 13:20:24.150000
+Number of rows: 20777</code></pre>
+
+
+
+<h1 id="BusinessEntityAddress">BusinessEntityAddress</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                     1
+AddressID                                          249
+AddressTypeID                                        2
+rowguid           3A5D0A00-6739-4DFE-A8F7-844CD9DEE3DF
+ModifiedDate                2025-09-11 11:15:06.967000
+Number of rows: 19614</code></pre>
+
+
+
+<h1 id="BusinessEntityContact">BusinessEntityContact</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                   292
+PersonID                                           291
+ContactTypeID                                       11
+rowguid           7D4D2DBC-4A44-48F5-911D-A63ABAFD5120
+ModifiedDate                2017-12-13 13:21:02.243000
+Number of rows: 909</code></pre>
+
+
+
+<h1 id="ContactType">ContactType</h1>
+<pre><code class="language-plaintext">ContactTypeID                    1
+Name            Accounting Manager
+ModifiedDate   2019-04-30 00:00:00
+Number of rows: 20</code></pre>
+
+
+
+<h1 id="CountryRegion">CountryRegion</h1>
+<pre><code class="language-plaintext">CountryRegionCode                   AD
+Name                           Andorra
+ModifiedDate       2019-04-30 00:00:00
+Number of rows: 238</code></pre>
+
+
+
+<h1 id="CountryRegionCurrency">CountryRegionCurrency</h1>
+<pre><code class="language-plaintext">CountryRegionCode                          AE
+CurrencyCode                              AED
+ModifiedDate       2025-02-07 10:17:21.510000
+Number of rows: 109</code></pre>
+
+
+
+<h1 id="CreditCard">CreditCard</h1>
+<pre><code class="language-plaintext">CreditCardID                    1
+CardType             SuperiorCard
+CardNumber         33332664695310
+ExpMonth                       11
+ExpYear                      2006
+ModifiedDate  2024-07-28 00:00:00
+Number of rows: 19118</code></pre>
+
+
+
+<h1 id="Culture">Culture</h1>
+<pre><code class="language-plaintext">CultureID                                           
+Name          Invariant Language (Invariant Country)
+ModifiedDate                     2019-04-30 00:00:00
+Number of rows: 8</code></pre>
+
+
+
+<h1 id="Currency">Currency</h1>
+<pre><code class="language-plaintext">CurrencyCode                  AED
+Name               Emirati Dirham
+ModifiedDate  2019-04-30 00:00:00
+Number of rows: 105</code></pre>
+
+
+
+<h1 id="CurrencyRate">CurrencyRate</h1>
+<pre><code class="language-plaintext">CurrencyRateID                      1
+CurrencyRateDate  2022-05-30 00:00:00
+FromCurrencyCode                  USD
+ToCurrencyCode                    ARS
+AverageRate                       1.0
+EndOfDayRate                   1.0002
+ModifiedDate      2022-05-30 00:00:00
+Number of rows: 13532</code></pre>
+
+
+
+<h1 id="xxx">Customer</h1>
+<pre><code class="language-plaintext">CustomerID                                        1
+PersonID                                       <NA>
+StoreID                                         934
+TerritoryID                                       1
+AccountNumber                            AW00000001
+rowguid        3F5AE95E-B87D-4AED-95B4-C3797AFCB74F
+ModifiedDate             2025-09-11 11:15:07.263000
+Number of rows: 19820</code></pre>
+
+
+
+<h1 id="Department">Department</h1>
+<pre><code class="language-plaintext">DepartmentID                         1
+Name                       Engineering
+GroupName     Research and Development
+ModifiedDate       2008-04-30 00:00:00
+Number of rows: 16</code></pre>
+
+
+
+<h1 id="EmailAddress">EmailAddress</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                     1
+EmailAddressID                                       1
+EmailAddress                  ken0@adventure-works.com
+rowguid           8A1901E4-671B-431A-871C-EADB2942E9EE
+ModifiedDate                       2020-01-07 00:00:00
+Number of rows: 19972</code></pre>
+
+
+
+<h1 id="Employee">Employee</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                         1
+NationalIDNumber                                 295847284
+LoginID                               adventure-works\ken0
+OrganizationNode                                      None
+OrganizationLevel                                     <NA>
+JobTitle                           Chief Executive Officer
+BirthDate                              1969-01-29 00:00:00
+MaritalStatus                                            S
+Gender                                                   M
+HireDate                               2009-01-14 00:00:00
+SalariedFlag       b'\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+VacationHours                                           99
+SickLeaveHours                                          69
+CurrentFlag        b'\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+rowguid               F01251E5-96A3-448D-981E-0F99D789110D
+ModifiedDate                           2014-06-30 00:00:00
+Number of rows: 290</code></pre>
+
+
+
+<h1 id="EmployeeDepartmentHistory">EmployeeDepartmentHistory</h1>
+<pre><code class="language-plaintext">BusinessEntityID                    1
+DepartmentID                       16
+ShiftID                             1
+StartDate         2009-01-14 00:00:00
+EndDate                           NaT
+ModifiedDate      2009-01-13 00:00:00
+Number of rows: 296</code></pre>
+
+
+
+<h1 id="EmployeePayHistory">EmployeePayHistory</h1>
+<pre><code class="language-plaintext">BusinessEntityID                    1
+RateChangeDate    2009-01-14 00:00:00
+Rate                            125.5
+PayFrequency                        2
+ModifiedDate      2014-06-30 00:00:00
+Number of rows: 316</code></pre>
+
+
+
+<h1 id="Location">Location</h1>
+<pre><code class="language-plaintext">LocationID                      1
+Name                    Tool Crib
+CostRate                      0.0
+Availability                  0.0
+ModifiedDate  2019-04-30 00:00:00
+Number of rows: 14</code></pre>
+
+
+
+<h1 id="Password">Password</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                             1
+PasswordHash      pbFwXWE99vobT6g+vPWFy93NtUU/orrIWafF01hccfM=
+PasswordSalt                                          bE3XiWw=
+rowguid                   329EACBE-C883-4F48-B8B6-17AA4627EFFF
+ModifiedDate                               2020-01-07 00:00:00
+Number of rows: 19972</code></pre>
+
+
+
+<h1 id="Person">Person</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                                       1
+PersonType                                                            EM
+NameStyle                        b'\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+Title                                                               None
+FirstName                                                            Ken
+MiddleName                                                             J
+LastName                                                         Sánchez
+Suffix                                                              None
+EmailPromotion                                                         0
+AdditionalContactInfo                                               None
+Demographics           &lt;IndividualSurvey xmlns="http://schemas.micros...
+rowguid                             92C4279F-1207-48A3-8448-4636514EB7E2
+ModifiedDate                                         2020-01-07 00:00:00
+Number of rows: 19972</code></pre>
+
+
+
+<h1 id="PersonCreditCard">PersonCreditCard</h1>
+<pre><code class="language-plaintext">BusinessEntityID                  293
+CreditCardID                    17038
+ModifiedDate      2024-07-30 00:00:00
+Number of rows: 19118</code></pre>
+
+
+
+<h1 id="PersonPhone">PersonPhone</h1>
+<pre><code class="language-plaintext">BusinessEntityID                     1
+PhoneNumber               697-555-0142
+PhoneNumberTypeID                    1
+ModifiedDate       2020-01-07 00:00:00
+Number of rows: 19972</code></pre>
+
+
+
+<h1 id="PhoneNumberType">PhoneNumberType</h1>
+<pre><code class="language-plaintext">PhoneNumberTypeID                           1
+Name                                     Cell
+ModifiedDate       2017-12-13 13:19:22.273000
+Number of rows: 3</code></pre>
+
+
+
+<h1 id="Product">Product</h1>
+<pre><code class="language-plaintext">ProductID                                                    1
+Name                                           Adjustable Race
+ProductNumber                                          AR-5381
+MakeFlag               b'\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+FinishedGoodsFlag      b'\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+Color                                                     None
+SafetyStockLevel                                          1000
+ReorderPoint                                               750
+StandardCost                                               0.0
+ListPrice                                                  0.0
+Size                                                      None
+SizeUnitMeasureCode                                       None
+WeightUnitMeasureCode                                     None
+Weight                                                     NaN
+DaysToManufacture                                            0
+ProductLine                                               None
+Class                                                     None
+Style                                                     None
+ProductSubcategoryID                                      &lt;NA&gt;
+ProductModelID                                            &lt;NA&gt;
+SellStartDate                              2019-04-30 00:00:00
+SellEndDate                                                NaT
+DiscontinuedDate                                           NaT
+rowguid                   694215B7-08F7-4C0D-ACB1-D734BA44C0C8
+ModifiedDate                        2025-02-07 10:01:36.827000
+Number of rows: 504</code></pre>
+
+
+
+<h1 id="ProductCategory">ProductCategory</h1>
+<pre><code class="language-plaintext">ProductCategoryID                                     1
+Name                                              Bikes
+rowguid            CFBDA25C-DF71-47A7-B81B-64EE161AA37C
+ModifiedDate                        2019-04-30 00:00:00
+Number of rows: 4</code></pre>
+
+
+
+<h1 id="ProductCostHistory">ProductCostHistory</h1>
+<pre><code class="language-plaintext">ProductID                     707
+StartDate     2022-05-30 00:00:00
+EndDate       2023-05-29 00:00:00
+StandardCost              12.0278
+ModifiedDate  2023-05-29 00:00:00
+Number of rows: 395</code></pre>
+
+
+
+<h1 id="ProductDescription">ProductDescription</h1>
+<pre><code class="language-plaintext">ProductDescriptionID                                     3
+Description                                Chromoly steel.
+rowguid               301EED3A-1A82-4855-99CB-2AFE8290D641
+ModifiedDate                           2024-04-29 00:00:00
+Number of rows: 762</code></pre>
+
+
+
+<h1 id="ProductInventory">ProductInventory</h1>
+<pre><code class="language-plaintext">ProductID                                        1
+LocationID                                       1
+Shelf                                            A
+Bin                                              1
+Quantity                                       408
+rowguid       47A24246-6C43-48EB-968F-025738A8A410
+ModifiedDate                   2025-08-07 00:00:00
+Number of rows: 1069</code></pre>
+
+
+
+<h1 id="ProductListPriceHistory">ProductListPriceHistory</h1>
+<pre><code class="language-plaintext">ProductID                     707
+StartDate     2022-05-30 00:00:00
+EndDate       2023-05-29 00:00:00
+ListPrice                 33.6442
+ModifiedDate  2023-05-29 00:00:00
+Number of rows: 395</code></pre>
+
+
+
+<h1 id="ProductModel">ProductModel</h1>
+<pre><code class="language-plaintext">ProductModelID                                         1
+Name                                        Classic Vest
+CatalogDescription                                  None
+Instructions                                        None
+rowguid             29321D47-1E4C-4AAC-887C-19634328C25E
+ModifiedDate                         2024-04-29 00:00:00
+Number of rows: 128</code></pre>
+
+
+
+<h1 id="ProductModelProductDescriptionCulture">ProductModelProductDescriptionCulture</h1>
+<pre><code class="language-plaintext">ProductModelID                          1
+ProductDescriptionID                 1199
+CultureID                              en    
+ModifiedDate          2024-04-29 00:00:00
+Number of rows: 762</code></pre>
+
+
+
+<h1 id="ProductSubcategory">ProductSubcategory</h1>
+<pre><code class="language-plaintext">ProductSubcategoryID                                     1
+ProductCategoryID                                        1
+Name                                        Mountain Bikes
+rowguid               2D364ADE-264A-433C-B092-4FCBF3804E01
+ModifiedDate                           2019-04-30 00:00:00
+Number of rows: 37</code></pre>
+
+
+
+<h1 id="xxx">ProductVendor</h1>
+<pre><code class="language-plaintext">ProductID                           1
+BusinessEntityID                 1580
+AverageLeadTime                    17
+StandardPrice                   47.87
+LastReceiptCost               50.2635
+LastReceiptDate   2022-08-28 00:00:00
+MinOrderQty                         1
+MaxOrderQty                         5
+OnOrderQty                          3
+UnitMeasureCode                    CS 
+ModifiedDate      2022-08-28 00:00:00
+Number of rows: 460</code></pre>
+
+
+
+<h1 id="PurchaseOrderDetail">PurchaseOrderDetail</h1>
+<pre><code class="language-plaintext">PurchaseOrderID                          1
+PurchaseOrderDetailID                    1
+DueDate                2022-04-29 00:00:00
+OrderQty                                 4
+ProductID                                1
+UnitPrice                            50.26
+LineTotal                           201.04
+ReceivedQty                            3.0
+RejectedQty                            0.0
+StockedQty                             3.0
+ModifiedDate           2022-04-22 00:00:00
+Number of rows: 8845</code></pre>
+
+
+
+<h1 id="PurchaseOrderHeader">PurchaseOrderHeader</h1>
+<pre><code class="language-plaintext">PurchaseOrderID                    1
+RevisionNumber                     5
+Status                             4
+EmployeeID                       258
+VendorID                        1580
+ShipMethodID                       3
+OrderDate        2022-04-15 00:00:00
+ShipDate         2022-04-24 00:00:00
+SubTotal                      201.04
+TaxAmt                       16.0832
+Freight                        5.026
+TotalDue                    222.1492
+ModifiedDate     2022-04-24 00:00:00
+Number of rows: 4012</code></pre>
+
+
+
+<h1 id="SalesOrderDetail">SalesOrderDetail</h1>
+<pre><code class="language-plaintext">SalesOrderID                                          43659
+SalesOrderDetailID                                        1
+CarrierTrackingNumber                          4911-403C-98
+OrderQty                                                  1
+ProductID                                               776
+SpecialOfferID                                            1
+UnitPrice                                          2024.994
+UnitPriceDiscount                                       0.0
+LineTotal                                          2024.994
+rowguid                B207C96D-D9E6-402B-8470-2CC176C42283
+ModifiedDate                            2022-05-30 00:00:00
+Number of rows: 121317</code></pre>
+
+
+
+<h1 id="SalesOrderHeader">SalesOrderHeader</h1>
+<pre><code class="language-plaintext">SalesOrderID                                              43659
+RevisionNumber                                               10
+OrderDate                                   2022-05-30 00:00:00
+DueDate                                     2022-06-11 00:00:00
+ShipDate                                    2022-06-06 00:00:00
+Status                                                        5
+OnlineOrderFlag         b'\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+SalesOrderNumber                                        SO43659
+PurchaseOrderNumber                                 PO522145787
+AccountNumber                                    10-4020-000676
+CustomerID                                                29825
+SalesPersonID                                               279
+TerritoryID                                                   5
+BillToAddressID                                             985
+ShipToAddressID                                             985
+ShipMethodID                                                  5
+CreditCardID                                              16281
+CreditCardApprovalCode                            105041Vi84182
+CurrencyRateID                                             <NA>
+SubTotal                                             20565.6206
+TaxAmt                                                1971.5149
+Freight                                                616.0984
+TotalDue                                             23153.2339
+Comment                                                    None
+rowguid                    79B65321-39CA-4115-9CBA-8FE0903E12E6
+ModifiedDate                                2022-06-06 00:00:00
+Number of rows: 31465</code></pre>
+
+
+
+<h1 id="SalesOrderHeaderSalesReason">SalesOrderHeaderSalesReason</h1>
+<pre><code class="language-plaintext">SalesOrderID                 43697
+SalesReasonID                    5
+ModifiedDate   2022-05-30 00:00:00
+Number of rows: 27647</code></pre>
+
+
+
+<h1 id="SalesPerson">SalesPerson</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                   274
+TerritoryID                                       <NA>
+SalesQuota                                         NaN
+Bonus                                              0.0
+CommissionPct                                      0.0
+SalesYTD                                   559697.5639
+SalesLastYear                                      0.0
+rowguid           48754992-9EE0-4C0E-8C94-9451604E3E02
+ModifiedDate                       2021-12-27 00:00:00
+Number of rows: 17</code></pre>
+
+
+
+<h1 id="SalesPersonQuotaHistory">SalesPersonQuotaHistory</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                   274
+QuotaDate                          2022-05-30 00:00:00
+SalesQuota                                     28000.0
+rowguid           99109BBF-8693-4587-BC23-6036EC89E1BE
+ModifiedDate                       2022-04-15 00:00:00
+Number of rows: 163</code></pre>
+
+
+
+<h1 id="SalesReason">SalesReason</h1>
+<pre><code class="language-plaintext">SalesReasonID                    1
+Name                         Price
+ReasonType                   Other
+ModifiedDate   2019-04-30 00:00:00
+Number of rows: 10</code></pre>
+
+
+
+<h1 id="SalesTaxRate">SalesTaxRate</h1>
+<pre><code class="language-plaintext">SalesTaxRateID                                       1
+StateProvinceID                                      1
+TaxType                                              1
+TaxRate                                           14.0
+Name             Canadian GST + Alberta Provincial Tax
+rowguid           683DE5DD-521A-47D4-A573-06A3CDB1BC5D
+ModifiedDate                       2019-04-30 00:00:00
+Number of rows: 29</code></pre>
+
+
+
+<h1 id="SalesTerritory">SalesTerritory</h1>
+<pre><code class="language-plaintext">TerritoryID                                           1
+Name                                          Northwest
+CountryRegionCode                                    US
+Grp                                       North America
+SalesYTD                                   7887186.7882
+SalesLastYear                              3298694.4938
+CostYTD                                             0.0
+CostLastYear                                        0.0
+rowguid            43689A10-E30B-497F-B0DE-11DE20267FF7
+ModifiedDate                        2019-04-30 00:00:00
+Number of rows: 10</code></pre>
+
+
+
+<h1 id="SalesTerritoryHistory">SalesTerritoryHistory</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                   275
+TerritoryID                                          2
+StartDate                          2022-05-30 00:00:00
+EndDate                            2023-11-29 00:00:00
+rowguid           8563CE6A-00FF-47D7-BA4D-3C3E1CDEF531
+ModifiedDate                       2023-11-22 00:00:00
+Number of rows: 17</code></pre>
+
+
+
+<h1 id="ScrapReason">ScrapReason</h1>
+<pre><code class="language-plaintext">ScrapReasonID                              1
+Name           Brake assembly not as ordered
+ModifiedDate             2019-04-30 00:00:00
+Number of rows: 16</code></pre>
+
+
+
+<h1 id="Shift">Shift</h1>
+<pre><code class="language-plaintext">ShiftID                         1
+Name                          Day
+StartTime                07:00:00
+EndTime                  15:00:00
+ModifiedDate  2008-04-30 00:00:00
+Number of rows: 3</code></pre>
+
+
+
+<h1 id="ShipMethod">ShipMethod</h1>
+<pre><code class="language-plaintext">ShipMethodID                                     1
+Name                            XRQ - TRUCK GROUND
+ShipBase                                      3.95
+ShipRate                                      0.99
+rowguid       6BE756D9-D7BE-4463-8F2C-AE60C710D606
+ModifiedDate                   2019-04-30 00:00:00
+Number of rows: 5</code></pre>
+
+
+
+<h1 id="ShoppingCartItem">ShoppingCartItem</h1>
+<pre><code class="language-plaintext">ShoppingCartItemID                           2
+ShoppingCartID                           14951
+Quantity                                     3
+ProductID                                  862
+DateCreated         2024-11-08 17:54:07.603000
+ModifiedDate        2024-11-08 17:54:07.603000
+Number of rows: 3</code></pre>
+
+
+
+<h1 id="SpecialOffer">SpecialOffer</h1>
+<pre><code class="language-plaintext">SpecialOfferID                                     1
+Description                              No Discount
+DiscountPct                                      0.0
+Type                                     No Discount
+Category                                 No Discount
+StartDate                        2022-04-30 00:00:00
+EndDate                          2025-11-29 00:00:00
+MinQty                                             0
+MaxQty                                          <NA>
+rowguid         0290C4F5-191F-4337-AB6B-0A2DDE03CBF9
+ModifiedDate                     2022-03-31 00:00:00
+Number of rows: 16</code></pre>
+
+
+
+<h1 id="SpecialOfferProduct">SpecialOfferProduct</h1>
+<pre><code class="language-plaintext">SpecialOfferID                                     1
+ProductID                                        680
+rowguid         BB30B868-D86C-4557-8DB2-4B2D0A83A0FB
+ModifiedDate                     2022-03-31 00:00:00
+Number of rows: 538</code></pre>
+
+
+
+<h1 id="StateProvince">StateProvince</h1>
+<pre><code class="language-plaintext">StateProvinceID                                                1
+StateProvinceCode                                            AB 
+CountryRegionCode                                             CA
+IsOnlyStateProvinceFlag  b'\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+Name                                                     Alberta
+TerritoryID                                                    6
+rowguid                     298C2880-AB1C-4982-A5AD-A36EB4BA0D34
+ModifiedDate                          2025-02-07 10:17:21.587000
+Number of rows: 181</code></pre>
+
+
+
+<h1 id="Store">Store</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                                292
+Name                                           Next-Door Bike Store
+SalesPersonID                                                   279
+Demographics      &lt;StoreSurvey xmlns="http://schemas.microsoft.c...
+rowguid                        A22517E3-848D-4EBE-B9D9-7437F3432304
+ModifiedDate                             2025-09-11 11:15:07.497000
+Number of rows: 701</code></pre>
+
+
+
+<h1 id="TransactionHistory">TransactionHistory</h1>
+<pre><code class="language-plaintext">TransactionID                      100000
+ProductID                             784
+ReferenceOrderID                    41590
+ReferenceOrderLineID                    0
+TransactionDate       2024-07-30 00:00:00
+TransactionType                         W
+Quantity                                2
+ActualCost                            0.0
+ModifiedDate          2024-07-30 00:00:00
+Number of rows: 113443</code></pre>
+
+
+
+<h1 id="TransactionHistoryArchive">TransactionHistoryArchive</h1>
+<pre><code class="language-plaintext">TransactionID                           1
+ProductID                               1
+ReferenceOrderID                        1
+ReferenceOrderLineID                    1
+TransactionDate       2022-04-15 00:00:00
+TransactionType                         P
+Quantity                                4
+ActualCost                          50.26
+ModifiedDate          2022-04-15 00:00:00
+Number of rows: 89253</code></pre>
+
+
+
+<h1 id="UnitMeasure">UnitMeasure</h1>
+<pre><code class="language-plaintext">UnitMeasureCode                  BOX
+Name                           Boxes
+ModifiedDate     2019-04-30 00:00:00
+Number of rows: 38</code></pre>
+
+
+
+<h1 id="Vendor">Vendor</h1>
+<pre><code class="language-plaintext">BusinessEntityID                                            1492
+AccountNumber                                       AUSTRALI0001
+Name                                     Australia Bike Retailer
+CreditRating                                                   1
+PreferredVendorStatus    b'\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+ActiveFlag               b'\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+PurchasingWebServiceURL                                     None
+ModifiedDate                                 2022-12-22 00:00:00
+Number of rows: 104</code></pre>
+
+
+
+<h1 id="WorkOrder">WorkOrder</h1>
+<pre><code class="language-plaintext">WorkOrderID                      1
+ProductID                      722
+OrderQty                         8
+StockedQty                       8
+ScrappedQty                      0
+StartDate      2022-06-02 00:00:00
+EndDate        2022-06-12 00:00:00
+DueDate        2022-06-13 00:00:00
+ScrapReasonID                 <NA>
+ModifiedDate   2022-06-12 00:00:00
+Number of rows: 72591</code></pre>
+
+
+
+<h1 id="xxx">WorkOrderRouting</h1>
+<pre><code class="language-plaintext">WorkOrderID                          13
+ProductID                           747
+OperationSequence                     1
+LocationID                           10
+ScheduledStartDate  2022-06-02 00:00:00
+ScheduledEndDate    2022-06-13 00:00:00
+ActualStartDate     2022-06-02 00:00:00
+ActualEndDate       2022-06-18 00:00:00
+ActualResourceHrs                   4.1
+PlannedCost                       92.25
+ActualCost                        92.25
+ModifiedDate        2022-06-18 00:00:00
+Number of rows: 67131</code></pre>
 
