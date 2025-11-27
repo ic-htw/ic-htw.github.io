@@ -40,7 +40,7 @@ import os
 
 kaggle_dir = f"/content/drive/My Drive/kaggle"
 competition = "tbd"
-target_dir = f"{kaggle_dir}/tbd"
+target_dir = f"{kaggle_dir}/{competition}"
 
 os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir</code></pre>
 
@@ -70,7 +70,15 @@ df.to_parquet(f"{target_dir}/sample_submission.parquet")</code></pre>
 df_test = pd.read_parquet(f"{target_dir}/test.parquet")
 df_submission = pd.read_parquet(f"{target_dir}/sample_submission.parquet")</code></pre>
 
-<h3>Train and Submit</h3>
-tbd
+<h3>Explorative Data Analysis</h3>
+<p class="w3-large">Analyse data for feature engineering and insights.</p>
+
+<h3>Train Model</h3>
+<p class="w3-large">Split df_train into training and validation sets, then train your model. Use the validation set to tune hyperparameters and avoid overfitting.</p>
+
+
+<h3>Submit</h3>
+<p class="w3-large">Use df_test to generate predictions and save them in df_submission before submitting.</p>
+
 
 
