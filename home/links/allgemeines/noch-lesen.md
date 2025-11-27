@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- The Best Way to Use AI for Learning
+[(link)](https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1)
+
 - How I Built an AI That Talks to Your Database: A Journey into RAG
 [(link)](https://pub.towardsai.net/how-i-built-an-ai-that-talks-to-your-database-a-journey-into-rag-c21880cbc67a)
 

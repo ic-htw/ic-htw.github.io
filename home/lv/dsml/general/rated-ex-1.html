@@ -1,0 +1,76 @@
+---
+layout: default1
+nav: dsml-general
+title: Rated Exercise 1 - DSML
+is_slide: 0
+---
+<h1>Rated Exercise 1</h1>
+<ul>
+    <li>Via Zoom - Link will be sent by email</li>
+    <li>Start <b>28.11.2025 at 8:00</b> - Intro to exercise</li>
+    <li>End <b>28.11.2025 at 14:00</b> - Submission of solution</li>
+    <li>One solution per group</li>
+    <li>I will be available during the whole time for video calls</li>
+</ul>
+
+<h2>Machine Learning - Kaggle Competition</h2>
+<ul class="w3-large">
+    <li>g1: <a href="https://www.kaggle.com/competitions/playground-series-s5e10">link</a></li>
+    <li>g2: <a href="https://www.kaggle.com/competitions/playground-series-s5e9">link</a></li>
+    <li>g3: <a href="https://www.kaggle.com/competitions/playground-series-s5e8">link</a></li>
+    <li>g4: <a href="https://www.kaggle.com/competitions/playground-series-s5e7">link</a></li>
+    <li>g5: <a href="https://www.kaggle.com/competitions/playground-series-s5e5">link</a></li>
+    <li>g6: <a href="https://www.kaggle.com/competitions/playground-series-s5e4">link</a></li>
+    <li>g7: <a href="https://www.kaggle.com/competitions/playground-series-s5e3">link</a></li>
+</ul>
+
+<p class="w3-large">Don't forget to join the competition: "Late Submission"</p>
+
+
+<h2>Get Data</h2>
+
+
+<h3>Mount gdrive</h3>
+<pre><code class="python">from google.colab import drive
+drive.mount('/content/drive')</code></pre>
+
+<h3>Import / Config</h3>
+<pre><code class="python">import pandas as pd
+import os
+
+kaggle_dir = f"/content/drive/My Drive/kaggle"
+competition = "tbd"
+target_dir = f"{kaggle_dir}/tbd"
+
+os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir</code></pre>
+
+<h3>Download Data</h3>
+<pre><code class="python">!kaggle competitions download -c "{competition}"
+!mkdir -p "{target_dir}"
+!unzip "{competition}.zip" -d "{target_dir}"</code></pre>
+
+<h3>Convert to Parquet</h3>
+<pre><code class="python">df = pd.read_csv(f"{target_dir}/train.csv")
+df.to_parquet(f"{target_dir}/train.parquet")
+
+df = pd.read_csv(f"{target_dir}/test.csv")
+df.to_parquet(f"{target_dir}/test.parquet")
+
+df = pd.read_csv(f"{target_dir}/sample_submission.csv")
+df.to_parquet(f"{target_dir}/sample_submission.parquet")</code></pre>
+
+<h3>Remove CSV Files</h3>
+<pre><code class="python">!rm "{target_dir}/train.csv"
+!rm "{target_dir}/test.csv"
+!rm "{target_dir}/sample_submission.csv"</code></pre>
+
+<h2>Work on ML Solution</h2>
+<h3>Load Data</h3>
+<pre><code class="python">df_train = pd.read_parquet(f"{target_dir}/train.parquet")
+df_test = pd.read_parquet(f"{target_dir}/test.parquet")
+df_submission = pd.read_parquet(f"{target_dir}/sample_submission.parquet")</code></pre>
+
+<h3>Train and Submit</h3>
+tbd
+
+

@@ -490,9 +490,12 @@ home: &r
                   - t: Schedule
                     ts: Schedule
                     url: /home/lv/dsml/general/schedule.html
-                  - t: Rated Exercises
-                    ts: Rated Exercises
-                    url: /home/lv/dsml/general/ex-rated.html
+                  - t: Rated Exercise 1
+                    ts: Rated Exercise 1
+                    url: /home/lv/dsml/general/rated-ex-1.html
+                  - t: Rated Exercise 2
+                    ts: Rated Exercise 2
+                    url: /home/lv/dsml/general/rated-ex-2.html
                   - t: Presentations
                     ts: Presentations
                     url: /home/lv/dsml/general/pres.html
