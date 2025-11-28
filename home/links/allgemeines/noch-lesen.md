@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- We Taught AI to Write Real Postgres Code
+[(link)](https://www.tigerdata.com/blog/we-taught-ai-to-write-real-postgres-code-open-sourced-it)
+
+- PostgreSQL AI Query Extension
+[(link)](https://benodiwal.github.io/pg_ai_query/introduction.html)
+
 - The Best Way to Use AI for Learning
 [(link)](https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1)
 
