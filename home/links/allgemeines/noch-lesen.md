@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Testing Google’s Antigravity for Data Engineering: My End-to-End Experience
+[(link)](https://medium.com/google-cloud/testing-googles-antigravity-for-data-engineering-my-end-to-end-experience-2404f808f2e7)
+
+- Insert-Only Design in Modern Data Warehousing: Lessons from Data Vault 2.0, SCD2, and Databricks Performance
+[(link)](https://medium.com/towards-data-engineering/insert-only-design-in-modern-data-warehousing-lessons-from-data-vault-2-0-f9ebfe362910)
+
+- 10 Hard Window Join Problems in SQL and How to Solve Them
+[(link)](https://medium.com/@Rohan_Dutt/10-hard-window-join-problems-in-sql-and-how-to-solve-them-f94d1f27b573)
+
+- How to Write SQL Queries That Predict What the Volcano vs. Cascades Optimizer Will Do
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-predict-what-the-volcano-vs-cascades-optimizer-will-do-c31043b91de8)
+
+- 11 Python Libraries I Trust the Most for Machine Learning & Deep Learning (After 7 Years)
+[(link)](https://python.plainenglish.io/11-python-libraries-i-trust-the-most-for-machine-learning-deep-learning-after-7-years-59d85ccc94b9)
+
+- The Serverless Illusion: Why Everyone Is Quietly Moving Back to VMs
+[(link)](https://medium.com/@maahisoft20/the-serverless-illusion-why-everyone-is-quietly-moving-back-to-vms-cbc649048540)
+
 - We Taught AI to Write Real Postgres Code
 [(link)](https://www.tigerdata.com/blog/we-taught-ai-to-write-real-postgres-code-open-sourced-it)
 
