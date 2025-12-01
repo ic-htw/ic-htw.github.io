@@ -30,6 +30,10 @@ is_slide: 0
 - data-diff
 [(link)](https://github.com/datafold/data-diff)
 
+# examples
+- Adventure Wworks
+[(link)](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works)
+
 
 
 # zzz
