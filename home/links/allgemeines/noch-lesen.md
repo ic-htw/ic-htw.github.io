@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Outlier Detection — 3 Effective Methods Every Data Scientist Should Know
+[(link)](https://medium.com/data-science-collective/outlier-detection-made-simple-3-effective-methods-every-data-scientist-should-know-005fea304ddd)
+
 - Testing Google’s Antigravity for Data Engineering: My End-to-End Experience
 [(link)](https://medium.com/google-cloud/testing-googles-antigravity-for-data-engineering-my-end-to-end-experience-2404f808f2e7)
 
