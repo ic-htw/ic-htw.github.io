@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
+[(link)](https://www.snowflake.com/en/engineering-blog/arctic-text2sql-r1-sql-generation-benchmark/)
+
+- Text2SQL Leaderboard
+[(link)](https://openlm.ai/text2sql-leaderboard/)
+
 - Outlier Detection — 3 Effective Methods Every Data Scientist Should Know
 [(link)](https://medium.com/data-science-collective/outlier-detection-made-simple-3-effective-methods-every-data-scientist-should-know-005fea304ddd)
 
