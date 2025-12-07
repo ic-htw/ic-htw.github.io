@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 SQL Techniques for Feature Extraction You Can Implement Today
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-feature-extraction-you-can-implement-today-e10715bf50b9)
+
+- The Python Cheatsheet That Makes You Dangerous in 10 Minutes
+[(link)](https://python.plainenglish.io/the-python-cheat-sheet-that-makes-you-dangerous-in-10-minutes-9ceefadc0965)
+
+- How Web Search Inside AI Chatbots Works
+[(link)](https://medium.com/data-science-collective/how-web-search-works-in-ai-chats-727ff4328980)
+
+- Python's ChainMap: Manage Multiple Contexts Effectively
+[(link)](https://realpython.com/python-chainmap/)
+
+- We switched from TensorFlow to PyTorch and this happened!
+[(link)](https://levelup.gitconnected.com/we-switched-from-tensorflow-to-pytorch-and-this-happened-ce87d16d73c6)
+
+- Jupyter AI
+[(link)](https://github.com/jupyterlab/jupyter-ai)
+
 - Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
 [(link)](https://www.snowflake.com/en/engineering-blog/arctic-text2sql-r1-sql-generation-benchmark/)
 
