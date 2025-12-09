@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 Hard Time-Series Problems You Can Surprisingly Solve in SQL
+[(link)](https://medium.com/@Rohan_Dutt/10-hard-time-series-problems-you-can-surprisingly-solve-in-sql-6707911f48af)
+
+- 10 Future Trends in GenAI for Data Engineering Pipelines
+[(link)](https://medium.com/@Rohan_Dutt/10-future-trends-in-genai-for-data-engineering-pipelines-2dc1a6aba8c9)
+
+- What is Microsoft MarkItDown and Why It Matters?
+[(link)](https://blog.xeynergy.com/what-is-microsoft-markitdown-and-why-it-matters-da775f74bdaa)
+
+- 10 SQL Patterns for Forecasting and Anomaly Detection on Irregular Timestamps
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-patterns-for-forecasting-and-anomaly-detection-on-irregular-timestamps-ccc2abb15ee5)
+
+- Every Python Built In Function Explained
+[(link)](https://medium.com/@tricky16122000/every-python-built-in-function-explained-22e4087dd2db)
+
 - 10 SQL Techniques for Feature Extraction You Can Implement Today
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-feature-extraction-you-can-implement-today-e10715bf50b9)
 
