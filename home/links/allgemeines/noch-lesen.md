@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Running LLMs Locally: Getting Started with Ollama
+[(link)](https://en.paradigmadigital.com/dev/running-llms-locally-getting-started-ollama/)
+
+- We Deleted 1,200 Dashboards. No One Noticed.
+[(link)](https://medium.com/@aminsiddique95/i-deleted-1-200-dashboards-no-one-noticed-c559ff5d3d85)
+
+- MIT’s Project Iceberg Reveals AI’s Job Impact Is Far Bigger Than It Appears
+[(link)](https://medium.com/@markaherschberg/mits-project-iceberg-reveals-ai-s-job-impact-is-far-bigger-than-it-appears-a36c5ef610cf)
+
 - 10 Hard Time-Series Problems You Can Surprisingly Solve in SQL
 [(link)](https://medium.com/@Rohan_Dutt/10-hard-time-series-problems-you-can-surprisingly-solve-in-sql-6707911f48af)
 
