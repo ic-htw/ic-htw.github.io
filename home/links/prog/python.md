@@ -71,6 +71,9 @@ is_slide: 0
 [(link)](https://dranolia.medium.com/python-cheatsheet-part-2-ffc3ca76a2e3)
 - Python Regular Expressions Cheat Sheet
 [(link)](https://www.kdnuggets.com/2018/04/python-regular-expressions-cheat-sheet.html)
+- The Python Cheatsheet That Makes You Dangerous in 10 Minutes
+[(link)](https://python.plainenglish.io/the-python-cheat-sheet-that-makes-you-dangerous-in-10-minutes-9ceefadc0965)
+
 
 
 
@@ -279,6 +282,13 @@ is_slide: 0
 [(link)](https://auth0.com/blog/protocol-types-in-python/)
 
 # Artikel
+
+- 11 Python Libraries I Trust the Most for Machine Learning & Deep Learning (After 7 Years)
+[(link)](https://python.plainenglish.io/11-python-libraries-i-trust-the-most-for-machine-learning-deep-learning-after-7-years-59d85ccc94b9)
+
+- Python's ChainMap: Manage Multiple Contexts Effectively
+[(link)](https://realpython.com/python-chainmap/)
+
 - Mastering Asynchronous Programming in Python: A Comprehensive Guide
 [(link)](https://blog.devgenius.io/mastering-asynchronous-programming-in-python-a-comprehensive-guide-ef1e8e5b35db)
 

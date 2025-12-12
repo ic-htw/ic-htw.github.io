@@ -35,6 +35,18 @@ is_slide: 0
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-automatically-detect-and-fix-bad-data-4dfc2c9858de)
 - These Queries Cover 80% of SQL
 [(link)](https://medium.com/ai-analytics-diaries/these-queries-cover-80-of-sql-0c108e736146)
+- 10 Time-Series Transformations in SQL You’ve Probably Never Used
+[(link)](https://medium.com/@Rohan_Dutt/10-advanced-time-series-transformations-in-sql-youve-probably-never-used-33c1322756d5)
+- 10 Hard Time-Series Problems You Can Surprisingly Solve in SQL
+[(link)](https://medium.com/@Rohan_Dutt/10-hard-time-series-problems-you-can-surprisingly-solve-in-sql-6707911f48af)
+- 10 SQL Patterns for Forecasting and Anomaly Detection on Irregular Timestamps
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-patterns-for-forecasting-and-anomaly-detection-on-irregular-timestamps-ccc2abb15ee5)
+- 10 SQL Techniques for Feature Extraction You Can Implement Today
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-feature-extraction-you-can-implement-today-e10715bf50b9)
+
+
+
+
 
 
 

@@ -361,6 +361,10 @@ is_slide: 0
 - Similarity Measures: Check Your Understanding
 [(link)](https://developers.google.com/machine-learning/clustering/similarity/check-your-understanding)
 
+# outlier detection
+- Outlier Detection — 3 Effective Methods Every Data Scientist Should Know
+[(link)](https://medium.com/data-science-collective/outlier-detection-made-simple-3-effective-methods-every-data-scientist-should-know-005fea304ddd)
+
 
 # projects
 - Mapping Healthcare Access in Chicago

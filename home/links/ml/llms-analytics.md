@@ -118,6 +118,10 @@ is_slide: 0
 
 
 # text to sql
+- Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
+[(link)](https://www.snowflake.com/en/engineering-blog/arctic-text2sql-r1-sql-generation-benchmark/)
+- Text2SQL Leaderboard
+[(link)](https://openlm.ai/text2sql-leaderboard/)
 - Let Users Talk to Your Databases: Build a RAG-Powered SQL Assistant with Streamlit
 [(link)](https://medium.com/@raphael.schols/4fc9a2ee3960)
 - Claude Sonet on Azure Databricks- Automate ETL Genration

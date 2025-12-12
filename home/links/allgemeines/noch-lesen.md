@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- We Spent 2 Years Building a Data Mesh. It Was a $4M Disaster.
+[(link)](https://medium.com/@aminsiddique95/we-spent-2-years-building-a-data-mesh-it-was-a-4m-disaster-a2667a80edc3)
+
+- We Spent $500K on dbt. Now Everything Takes Longer.
+[(link)](https://medium.com/@aminsiddique95/we-spent-500k-on-dbt-now-everything-takes-longer-2be4f00103d3)
+
+- Mastering Hyperparameter Tuning
+[(link)](https://medium.com/ai-ml-interview-playbook/mastering-hyperparameter-tuning-the-secret-sauce-behind-smarter-models-d2522f18ccf3)
+
 - Running LLMs Locally: Getting Started with Ollama
 [(link)](https://en.paradigmadigital.com/dev/running-llms-locally-getting-started-ollama/)
 
@@ -18,47 +27,17 @@ is_slide: 0
 - MIT’s Project Iceberg Reveals AI’s Job Impact Is Far Bigger Than It Appears
 [(link)](https://medium.com/@markaherschberg/mits-project-iceberg-reveals-ai-s-job-impact-is-far-bigger-than-it-appears-a36c5ef610cf)
 
-- 10 Hard Time-Series Problems You Can Surprisingly Solve in SQL
-[(link)](https://medium.com/@Rohan_Dutt/10-hard-time-series-problems-you-can-surprisingly-solve-in-sql-6707911f48af)
-
 - 10 Future Trends in GenAI for Data Engineering Pipelines
 [(link)](https://medium.com/@Rohan_Dutt/10-future-trends-in-genai-for-data-engineering-pipelines-2dc1a6aba8c9)
 
 - What is Microsoft MarkItDown and Why It Matters?
 [(link)](https://blog.xeynergy.com/what-is-microsoft-markitdown-and-why-it-matters-da775f74bdaa)
 
-- 10 SQL Patterns for Forecasting and Anomaly Detection on Irregular Timestamps
-[(link)](https://medium.com/@Rohan_Dutt/10-sql-patterns-for-forecasting-and-anomaly-detection-on-irregular-timestamps-ccc2abb15ee5)
-
 - Every Python Built In Function Explained
 [(link)](https://medium.com/@tricky16122000/every-python-built-in-function-explained-22e4087dd2db)
 
-- 10 SQL Techniques for Feature Extraction You Can Implement Today
-[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-feature-extraction-you-can-implement-today-e10715bf50b9)
-
-- The Python Cheatsheet That Makes You Dangerous in 10 Minutes
-[(link)](https://python.plainenglish.io/the-python-cheat-sheet-that-makes-you-dangerous-in-10-minutes-9ceefadc0965)
-
 - How Web Search Inside AI Chatbots Works
 [(link)](https://medium.com/data-science-collective/how-web-search-works-in-ai-chats-727ff4328980)
-
-- Python's ChainMap: Manage Multiple Contexts Effectively
-[(link)](https://realpython.com/python-chainmap/)
-
-- We switched from TensorFlow to PyTorch and this happened!
-[(link)](https://levelup.gitconnected.com/we-switched-from-tensorflow-to-pytorch-and-this-happened-ce87d16d73c6)
-
-- Jupyter AI
-[(link)](https://github.com/jupyterlab/jupyter-ai)
-
-- Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
-[(link)](https://www.snowflake.com/en/engineering-blog/arctic-text2sql-r1-sql-generation-benchmark/)
-
-- Text2SQL Leaderboard
-[(link)](https://openlm.ai/text2sql-leaderboard/)
-
-- Outlier Detection — 3 Effective Methods Every Data Scientist Should Know
-[(link)](https://medium.com/data-science-collective/outlier-detection-made-simple-3-effective-methods-every-data-scientist-should-know-005fea304ddd)
 
 - Testing Google’s Antigravity for Data Engineering: My End-to-End Experience
 [(link)](https://medium.com/google-cloud/testing-googles-antigravity-for-data-engineering-my-end-to-end-experience-2404f808f2e7)
@@ -68,12 +47,6 @@ is_slide: 0
 
 - 10 Hard Window Join Problems in SQL and How to Solve Them
 [(link)](https://medium.com/@Rohan_Dutt/10-hard-window-join-problems-in-sql-and-how-to-solve-them-f94d1f27b573)
-
-- How to Write SQL Queries That Predict What the Volcano vs. Cascades Optimizer Will Do
-[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-predict-what-the-volcano-vs-cascades-optimizer-will-do-c31043b91de8)
-
-- 11 Python Libraries I Trust the Most for Machine Learning & Deep Learning (After 7 Years)
-[(link)](https://python.plainenglish.io/11-python-libraries-i-trust-the-most-for-machine-learning-deep-learning-after-7-years-59d85ccc94b9)
 
 - The Serverless Illusion: Why Everyone Is Quietly Moving Back to VMs
 [(link)](https://medium.com/@maahisoft20/the-serverless-illusion-why-everyone-is-quietly-moving-back-to-vms-cbc649048540)
