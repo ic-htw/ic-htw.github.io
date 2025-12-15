@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Python + MCP Is the New Automation Superpower (Here’s the Proof)
+[(link)](https://medium.com/@tricky16122000/python-mcp-is-the-new-automation-superpower-heres-the-proof-cf20964219bd)
+
+- Why COLLATION Rules in SQL Are More Powerful Than You Think (And How to Master Them)
+[(link)](https://medium.com/@Rohan_Dutt/why-collation-rules-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-b45367d9a773)
+
 - We Spent 2 Years Building a Data Mesh. It Was a $4M Disaster.
 [(link)](https://medium.com/@aminsiddique95/we-spent-2-years-building-a-data-mesh-it-was-a-4m-disaster-a2667a80edc3)
 
