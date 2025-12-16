@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Phind vs Google: My Go-To Tool for Explaining Complex Code
+[(link)](https://javascript.plainenglish.io/phind-vs-google-my-go-to-tool-for-explaining-complex-code-1aabcdac0acf)
+
 - Python + MCP Is the New Automation Superpower (Here’s the Proof)
 [(link)](https://medium.com/@tricky16122000/python-mcp-is-the-new-automation-superpower-heres-the-proof-cf20964219bd)
 
