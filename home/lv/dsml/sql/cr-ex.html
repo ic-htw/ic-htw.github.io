@@ -1,0 +1,232 @@
+---
+layout: default1
+nav: dsml-sql
+title: Classroom Exercises - DSML
+is_slide: 1
+n: 20
+show_1: 0
+show_2: 1
+show_3: 1
+show_4: 1
+show_5: 1
+show_6: 1
+show_7: 1
+show_8: 1
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Single Table</h1>
+<h2>1</h2>
+<ul class="w3-large">
+    <li>Title of all projects whose budget is greater than 20000</li>
+    <li>Order by title</li>
+</ul>
+<pre><code>┌────────────────────────┐
+│         Title          │
+│        varchar         │
+├────────────────────────┤
+│ Plant Restructurierung │
+│ Strategy               │
+└────────────────────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select title
+from project
+where budget > 20000
+order by title;</code></pre>
+{% endif %} 
+
+<h2>2</h2>
+<ul class="w3-large">
+    <li>Title of all projects that don't have a budget</li>
+    <li>Order by title</li>
+</ul>
+<pre><code>┌─────────┐
+│  Title  │
+│ varchar │
+├─────────┤
+│ Sales   │
+└─────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select title
+from project
+where budget is null
+order by title;</code></pre>
+{% endif %} 
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Single Table 2</h1>
+<p class="w3-large">
+    Title of all projects that don't have a budget
+</p>
+<pre><code>xxx</code></pre>
+
+{% if page.show_1 == 0 %}
+<pre><code class="language-sql">xxx</code></pre>
+{% endif %} 
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>xxx</h1>
+<p class="w3-large">
+    xxx
+</p>
+<pre><code>xxx</code></pre>
+
+{% if page.show_1 == 0 %}
+<pre><code class="language-sql">xxx</code></pre>
+{% endif %} 
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+

@@ -590,6 +590,9 @@ home: &r
                   - t: Window Functions
                     ts: Window Functions
                     url: /home/lv/dsml/sql/sql5.html
+                  - t: Classroom Exercises
+                    ts: Classroom Exercises
+                    url: /home/lv/dsml/sql/cr-ex.html
               - t: Data Models
                 ts: Data Models
                 url: /home/lv/dsml/dm/1-dm.html
