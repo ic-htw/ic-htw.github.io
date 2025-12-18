@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How to Write SQL Queries That Detect When a LEFT JOIN Is Silently Dropping Rows
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-detect-when-a-left-join-is-silently-dropping-rows-ce513b7aadd5)
+
+- The Semantic Layer Revolution: How dbt and Databricks Built the Universal Language of Business Data
+[(link)](https://medium.com/@aminsiddique95/the-semantic-layer-revolution-how-dbt-and-databricks-built-the-universal-language-of-business-data-e060f2a65990)
+
+- GPT-5.2 Prompting Guide
+[(link)](https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/gpt-5-2_prompting_guide.ipynb)
+
+- The Truth About Data Modeling: What You Learn Only After Real Projects
+[(link)](https://medium.com/predict/the-truth-about-data-modeling-what-you-learn-after-real-projects-8932c4ea3db5)
+
+- I Wasted 6 Months Learning NotebookLM the Hard Way — So You Don’t Have To
+[(link)](https://medium.com/@anirbanmukherjee1311/i-wasted-6-months-learning-notebooklm-the-hard-way-so-you-dont-have-to-ce9e80dc6e4b)
+
 - Phind vs Google: My Go-To Tool for Explaining Complex Code
 [(link)](https://javascript.plainenglish.io/phind-vs-google-my-go-to-tool-for-explaining-complex-code-1aabcdac0acf)
 
