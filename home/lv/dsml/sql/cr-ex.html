@@ -4,7 +4,7 @@ nav: dsml-sql
 title: Classroom Exercises - DSML
 is_slide: 1
 n: 20
-show_1: 0
+show_1: 1
 show_2: 1
 show_3: 1
 show_4: 1
@@ -23,7 +23,7 @@ show_8: 1
     <li>Title of all projects whose budget is greater than 20000</li>
     <li>Order by title</li>
 </ul>
-<pre><code>┌────────────────────────┐
+<pre><code class="language-plaintext">┌────────────────────────┐
 │         Title          │
 │        varchar         │
 ├────────────────────────┤
@@ -43,7 +43,7 @@ order by title;</code></pre>
     <li>Title of all projects that don't have a budget</li>
     <li>Order by title</li>
 </ul>
-<pre><code>┌─────────┐
+<pre><code class="language-plaintext">┌─────────┐
 │  Title  │
 │ varchar │
 ├─────────┤
@@ -57,6 +57,150 @@ where budget is null
 order by title;</code></pre>
 {% endif %} 
 
+<h2>3</h2>
+<ul class="w3-large">
+    <li>EID and last name of all employees of org unit 17 that have a bonus</li>
+    <li>Order by EID </li>
+</ul>
+<pre><code class="language-plaintext">┌───────┬──────────┐
+│  EID  │ LastName │
+│ int32 │ varchar  │
+├───────┼──────────┤
+│   117 │ Oezdem   │
+│   118 │ Okeke    │
+└───────┴──────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select eid, lastname
+from employee
+where ouid=17 and not bonus is null
+order by eid;</code></pre>
+{% endif %} 
+
+<h2>4</h2>
+<ul class="w3-large">
+    <li>All columns of all employees whose  name starts with letter S</li>
+    <li>Order by EID</li>
+</ul>
+<pre><code class="language-plaintext">┌───────┬───────┬──────────┬────────────┬──────────────┬──────────────┐
+│  EID  │ OUID  │ LastName │  Hiredate  │    Salary    │    Bonus     │
+│ int32 │ int32 │ varchar  │    date    │ decimal(9,2) │ decimal(9,2) │
+├───────┼───────┼──────────┼────────────┼──────────────┼──────────────┤
+│   104 │    13 │ Stone    │ 2006-06-01 │     42000.00 │         NULL │
+│   108 │    14 │ Sanchez  │ 2014-04-01 │     39000.00 │      1500.00 │
+│   112 │    16 │ Singh    │ 2012-03-01 │     43000.00 │      2100.00 │
+└───────┴───────┴──────────┴────────────┴──────────────┴──────────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select *
+from employee
+where lastname like 'S%'
+order by eid;</code></pre>
+{% endif %} 
+
+<h2>5</h2>
+<ul class="w3-large">
+    <li>Name and duration of all titles that are longer than 400 sec</li>
+    <li>Order by duration descending</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────────────┬───────────────┐
+│       Name       │ DurationInSec │
+│     varchar      │     int32     │
+├──────────────────┼───────────────┤
+│ Are We Here?     │           934 │
+│ Sad But True     │           469 │
+│ Butterfly Caught │           455 │
+│ The World Is Our │           432 │
+└──────────────────┴───────────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select name, durationinsec
+from title
+where durationinsec > 400
+order by durationinsec desc;</code></pre>
+{% endif %} 
+
+<h2>6</h2>
+<ul class="w3-large">
+    <li>Names of all playlists whose last call was between Sep. 16 and Sep. 17, 2025</li>
+    <li>Order by name</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────────┬────────────┐
+│     Name     │  LastCall  │
+│   varchar    │    date    │
+├──────────────┼────────────┤
+│ chillout     │ 2025-09-16 │
+│ danceout     │ 2025-09-17 │
+│ hard n heavy │ 2025-09-16 │
+└──────────────┴────────────┘</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select name, lastcall
+from playlist
+where lastcall between '2025-09-16' and '2025-09-17'
+order by name;</code></pre>
+{% endif %} 
+
+<h2>7</h2>
+<ul class="w3-large">
+    <li>TID, name and duration band of all titles</li>
+    <li>Bands:</li>
+    <ul>
+        <li>durationinsec < 300: short</li>
+        <li>300 <= durationinsec < 400: medium</li>
+        <li>400 <= durationinsec < 800: long</li>
+        <li>durationinsec >= 800: very long</li>
+    </ul>
+    <li>Order by durationinsec </li>
+</ul>
+<pre><code class="language-plaintext">┌───────┬──────────────────┬───────────┐
+│  TID  │       Name       │   band    │
+│ int32 │     varchar      │  varchar  │
+├───────┼──────────────────┼───────────┤
+│     2 │ I Will Fade      │ short     │
+│     3 │ Out of Sight     │ short     │
+│    10 │ Soul for Me      │ short     │
+│     6 │ Aotearoa         │ short     │
+│     8 │ Science Friction │ medium    │
+│    11 │ Idioteque        │ medium    │
+│    13 │ Remedies         │ medium    │
+│     4 │ Gorecki          │ medium    │
+│     1 │ Sit Back Down    │ medium    │
+│    12 │ The World Is Our │ long      │
+│     5 │ Butterfly Caught │ long      │
+│     7 │ Sad But True     │ long      │
+│     9 │ Are We Here?     │ very long │
+├───────┴──────────────────┴───────────┤
+│ 13 rows                    3 columns │
+└──────────────────────────────────────┘
+
+</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">select tid, name,
+case
+  when durationinsec < 300 then 'short'
+  when durationinsec < 400 then 'medium'
+  when durationinsec < 800 then 'long'
+  else 'very long'
+end as band
+from title
+order by durationinsec;</code></pre>
+{% endif %} 
+
+<h2>8</h2>
+<ul class="w3-large">
+    <li>Name and duration in minutes and seconds of all titles 295 seconds -> 4 min 55sec</li>
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>Order by </li>
+</ul>
+<pre><code class="language-plaintext">xxx</code></pre>
+
+{% if page.show_1 == 1 %}
+<pre><code class="language-sql">xxx</code></pre>
+{% endif %} 
+
 
 
 <div class="ic-gap"></div>
@@ -66,15 +210,20 @@ order by title;</code></pre>
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Single Table 2</h1>
-<p class="w3-large">
-    Title of all projects that don't have a budget
-</p>
-<pre><code>xxx</code></pre>
+<h1>Join</h1>
+<h2>1</h2>
+<ul class="w3-large">
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>Order by </li>
+</ul>
+<pre><code class="language-plaintext">xxx</code></pre>
 
-{% if page.show_1 == 0 %}
+{% if page.show_1 == 1 %}
 <pre><code class="language-sql">xxx</code></pre>
 {% endif %} 
+
 <div class="ic-gap"></div>
 
 
