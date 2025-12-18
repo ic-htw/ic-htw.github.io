@@ -3,15 +3,12 @@ layout: default1
 nav: dsml-sql
 title: Classroom Exercises - DSML
 is_slide: 1
-n: 20
-show_1: 1
-show_2: 1
-show_3: 1
-show_4: 1
-show_5: 1
-show_6: 1
-show_7: 1
-show_8: 1
+n: 5
+show_1: 0
+show_2: 0
+show_3: 0
+show_4: 0
+show_5: 0
 ---
 <!--
     01 ******************************************************************
@@ -190,15 +187,37 @@ order by durationinsec;</code></pre>
 
 <h2>8</h2>
 <ul class="w3-large">
-    <li>Name and duration in minutes and seconds of all titles 295 seconds -> 4 min 55sec</li>
-    <li>xxx</li>
-    <li>xxx</li>
-    <li>Order by </li>
+    <li>Name durationinsec, and duration in minutes:seconds of all titles</li>
+    <li>Order by name</li>
 </ul>
-<pre><code class="language-plaintext">xxx</code></pre>
+<pre><code class="language-plaintext">┌──────────────────┬───────────────┬──────────┐
+│       Name       │ DurationInSec │ duration │
+│     varchar      │     int32     │ varchar  │
+├──────────────────┼───────────────┼──────────┤
+│ Aotearoa         │           266 │ 04:26    │
+│ Are We Here?     │           934 │ 15:34    │
+│ Butterfly Caught │           455 │ 07:35    │
+│ Gorecki          │           390 │ 06:30    │
+│ I Will Fade      │           189 │ 03:09    │
+│ Idioteque        │           309 │ 05:09    │
+│ Out of Sight     │           236 │ 03:56    │
+│ Remedies         │           378 │ 06:18    │
+│ Sad But True     │           469 │ 07:49    │
+│ Science Friction │           304 │ 05:04    │
+│ Sit Back Down    │           396 │ 06:36    │
+│ Soul for Me      │           243 │ 04:03    │
+│ The World Is Our │           432 │ 07:12    │
+├──────────────────┴───────────────┴──────────┤
+│ 13 rows                           3 columns │
+└─────────────────────────────────────────────┘</code></pre>
 
 {% if page.show_1 == 1 %}
-<pre><code class="language-sql">xxx</code></pre>
+<pre><code class="language-sql">select 
+  name, durationinsec,
+  format('{:02d}', floor(durationinsec / 60)::int) || ':' ||
+  format('{:02d}', mod(durationinsec, 60)) as duration
+from title
+order by name;</code></pre>
 {% endif %} 
 
 
@@ -213,15 +232,223 @@ order by durationinsec;</code></pre>
 <h1>Join</h1>
 <h2>1</h2>
 <ul class="w3-large">
-    <li>xxx</li>
-    <li>xxx</li>
-    <li>xxx</li>
+    <li>All playlists together with all titles on them</li>
+    <li>Order by playlist, title</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────────┬──────────────────┐
+│   playlist   │      title       │
+│   varchar    │     varchar      │
+├──────────────┼──────────────────┤
+│ chillout     │ Butterfly Caught │
+│ chillout     │ I Will Fade      │
+│ chillout     │ Sit Back Down    │
+│ chillout     │ Soul for Me      │
+│ danceout     │ Are We Here?     │
+│ danceout     │ Sad But True     │
+│ danceout     │ Science Friction │
+│ epic         │ Aotearoa         │
+│ epic         │ Gorecki          │
+│ epic         │ Idioteque        │
+│ epic         │ Out of Sight     │
+│ hard n heavy │ Remedies         │
+│ hard n heavy │ The World Is Our │
+├──────────────┴──────────────────┤
+│ 13 rows               2 columns │
+└─────────────────────────────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select pl.name as playlist, t.name as title
+from playlist pl
+     join title t on t.plid=pl.plid
+order by playlist, title;</code></pre>
+{% endif %} 
+
+<h2>2</h2>
+<ul class="w3-large">
+    <li>All genre together with all titles belonging to them</li>
+    <li>Order by genre, title</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────┬──────────────────┐
+│  genre   │      title       │
+│ varchar  │     varchar      │
+├──────────┼──────────────────┤
+│ Pop      │ I Will Fade      │
+│ Pop      │ Sit Back Down    │
+│ Rock     │ Idioteque        │
+│ Rock     │ Remedies         │
+│ Rock     │ The World Is Our │
+│ Trip Hop │ Aotearoa         │
+│ Trip Hop │ Are We Here?     │
+│ Trip Hop │ Butterfly Caught │
+│ Trip Hop │ Gorecki          │
+│ Trip Hop │ Out of Sight     │
+│ Trip Hop │ Sad But True     │
+│ Trip Hop │ Science Friction │
+│ Trip Hop │ Soul for Me      │
+├──────────┴──────────────────┤
+│ 13 rows           2 columns │
+└─────────────────────────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select g.description as genre, t.name as title
+from genre g
+     join title t on t.gid=g.gid
+order by genre, title;</code></pre>
+{% endif %} 
+
+<h2>3</h2>
+<ul class="w3-large">
+    <li>For each playlist: which genres are on it</li>
+    <li>Use distinct</li>
+    <li>Order by playlist</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────────┬──────────┐
+│   playlist   │  genre   │
+│   varchar    │ varchar  │
+├──────────────┼──────────┤
+│ chillout     │ Pop      │
+│ chillout     │ Trip Hop │
+│ danceout     │ Trip Hop │
+│ epic         │ Trip Hop │
+│ epic         │ Rock     │
+│ hard n heavy │ Rock     │
+└──────────────┴──────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select distinct 
+    pl.name as playlist, g.description as genre
+from playlist pl
+     join title t on t.plid=pl.plid
+     join genre g on g.gid=t.gid
+order by pl.name;</code></pre>
+{% endif %} 
+
+<h2>4</h2>
+<ul class="w3-large">
+    <li>Name of all Bosses</li>
+    <li>Order by bossname</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────┐
+│ bossname │
+│ varchar  │
+├──────────┤
+│ Blaschke │
+│ Durmaz   │
+│ Li       │
+│ Ortega   │
+│ Patil    │
+│ Umarani  │
+│ Umarani  │
+└──────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select lastname as bossname
+from orgunit ou
+     join employee e on ou.head=e.eid
+order by lastname;</code></pre>
+{% endif %} 
+
+<h2>5</h2>
+<ul class="w3-large">
+    <li>Name of all orgunits that are related to projects, i.e. where at least one employee of that orgunit is involved in a project</li>
+    <li>Use distinct</li>
+    <li>Order by project, orgunit</li>
+</ul>
+<pre><code class="language-plaintext">┌────────────────────────┬────────────────┐
+│        project         │    orgunit     │
+│        varchar         │    varchar     │
+├────────────────────────┼────────────────┤
+│ CRM                    │ Administration │
+│ CRM                    │ HR             │
+│ Plant Restructurierung │ Production     │
+│ Plant Restructurierung │ Warehouse      │
+│ Strategy               │ Administration │
+│ Strategy               │ Company        │
+│ Strategy               │ Production     │
+└────────────────────────┴────────────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select distinct p.title as project, ou.name as orgunit
+from project p
+     join empproj ep on ep.pid=p.pid
+     join employee e on e.eid=ep.eid
+     join orgunit ou on ou.ouid=e.ouid
+order by project, orgunit;</code></pre>
+{% endif %} 
+
+<h2>6</h2>
+<ul class="w3-large">
+    <li>Who earns more than his boss</li>
+    <li>Order by boss</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────┬─────────┬──────────────┬──────────────┐
+│ employee │  boss   │     esal     │     bsal     │
+│ varchar  │ varchar │ decimal(9,2) │ decimal(9,2) │
+├──────────┼─────────┼──────────────┼──────────────┤
+│ Jadhav   │ Ortega  │     91000.00 │     90000.00 │
+└──────────┴─────────┴──────────────┴──────────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select e.lastname as employee, b.lastname as boss, e.salary as esal, b.salary as bsal
+from employee e
+     join orgunit ou on ou.ouid=e.ouid
+     join employee b on b.eid=ou.head
+where e.salary>b.salary
+order by boss;</code></pre>
+{% endif %} 
+
+<h2>7</h2>
+<ul class="w3-large">
+    <li>All genres that are not related to any title</li>
+    <li>Order by genre</li>
+</ul>
+<pre><code class="language-plaintext">┌─────────┐
+│  genre  │
+│ varchar │
+├─────────┤
+│ Folk    │
+└─────────┘</code></pre>
+
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select g.description as genre
+from title t
+     right join genre g on g.gid=t.gid
+where t.tid is null
+order by genre;</code></pre>
+{% endif %} 
+
+<h2>8</h2>
+<ul class="w3-large">
+    <li>Project costs per employee</li>
+    <ul>
+        <li>40 hours per week</li>
+        <li>Project lasts exactly one year</li>
+        <li>Only labor costs, no material costs</li>
+        <li>Only salary is considered</li>
+    </ul>
     <li>Order by </li>
 </ul>
-<pre><code class="language-plaintext">xxx</code></pre>
+<pre><code class="language-plaintext">┌────────────────────────┬──────────┬───────┐
+│        project         │ employee │ cost  │
+│        varchar         │ varchar  │ int32 │
+├────────────────────────┼──────────┼───────┤
+│ CRM                    │ Blaschke │ 18600 │
+│ CRM                    │ Durmaz   │ 12000 │
+│ Plant Restructurierung │ Oezdem   │  3300 │
+│ Plant Restructurierung │ Okeke    │  6400 │
+│ Plant Restructurierung │ Popov    │  3400 │
+│ Plant Restructurierung │ Umarani  │  7100 │
+│ Strategy               │ Durmaz   │ 12000 │
+│ Strategy               │ Patil    │ 18000 │
+│ Strategy               │ Umarani  │ 14200 │
+└────────────────────────┴──────────┴───────┘</code></pre>
 
-{% if page.show_1 == 1 %}
-<pre><code class="language-sql">xxx</code></pre>
+{% if page.show_2 == 1 %}
+<pre><code class="language-sql">select title as project, lastname as employee, (noofhoursperweek/40*salary)::int as cost
+from employee e
+        join empproj ep on ep.eid=e.eid
+        join project p on p.pid=ep.pid
+order by project, employee;</code></pre>
 {% endif %} 
 
 <div class="ic-gap"></div>
@@ -231,15 +458,218 @@ order by durationinsec;</code></pre>
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>xxx</h1>
-<p class="w3-large">
-    xxx
-</p>
-<pre><code>xxx</code></pre>
+<h1>Aggregation</h1>
+<h2>1</h2>
+<ul class="w3-large">
+    <li>Total duration and number of records per genre</li>
+    <li>Order by genre</li>
+</ul>
+<pre><code class="language-plaintext">┌──────────┬───────────────┬─────────────┐
+│  genre   │ totalduration │ noofrecords │
+│ varchar  │    int128     │    int64    │
+├──────────┼───────────────┼─────────────┤
+│ Pop      │           585 │           2 │
+│ Rock     │          1119 │           3 │
+│ Trip Hop │          3297 │           8 │
+└──────────┴───────────────┴─────────────┘</code></pre>
 
-{% if page.show_1 == 0 %}
-<pre><code class="language-sql">xxx</code></pre>
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">SELECT description as genre, sum(DURATIONINSEC) AS totalduration, COUNT(*) AS noofrecords
+FROM title t
+JOIN genre g ON g.gid=t.gid
+GROUP BY description
+order by genre;</code></pre>
 {% endif %} 
+
+<h2>2</h2>
+<ul class="w3-large">
+    <li>Number of employees per project</li>
+    <li>Only projects with more than 2 members should be in the output</li>
+    <li>Order by project</li>
+</ul>
+<pre><code class="language-plaintext">┌────────────────────────┬──────────┐
+│        project         │ NoOfEmps │
+│        varchar         │  int64   │
+├────────────────────────┼──────────┤
+│ Plant Restructurierung │        4 │
+│ Strategy               │        3 │
+└────────────────────────┴──────────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select title as project, count(*) as NoOfEmps
+from project p
+          join empproj ep on p.pid=ep.pid
+group by title
+having count(*) > 2
+order by project;</code></pre>
+{% endif %} 
+
+
+<h2>3</h2>
+<ul class="w3-large">
+    <li>Name of orgunit and number of employees</li>
+    <li>Only employees whose salary exceeds 59000</li>
+    <li>Order by orgunit</li>
+</ul>
+<pre><code class="language-plaintext">┌────────────────┬──────────┐
+│    orgunit     │ NoOfEmps │
+│    varchar     │  int64   │
+├────────────────┼──────────┤
+│ Accounting     │        1 │
+│ Administration │        1 │
+│ Company        │        1 │
+│ HR             │        1 │
+│ Plant          │        2 │
+│ Production     │        1 │
+└────────────────┴──────────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select name as orgunit, count(*) as NoOfEmps
+from orgunit ou
+     join employee e on e.ouid=ou.ouid
+where salary > 59000
+group by name
+order by orgunit;</code></pre>
+{% endif %} 
+
+<h2>4</h2>
+<ul class="w3-large">
+    <li>Cost per project</li>
+    <ul>
+        <li>40 hours per week</li>
+        <li>Project lasts exactly one year</li>
+        <li>Only labor costs, no material costs</li>
+        <li>Only salary is considered</li>
+    </ul>
+    <li>Order by project</li>
+</ul>
+<pre><code class="language-plaintext">┌────────────────────────┬───────┐
+│        project         │ cost  │
+│        varchar         │ int32 │
+├────────────────────────┼───────┤
+│ CRM                    │ 30600 │
+│ Plant Restructurierung │ 20200 │
+│ Sales                  │     0 │
+│ Strategy               │ 44200 │
+└────────────────────────┴───────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select p.title as project, coalesce(sum(ep.noofhoursperweek/40*e.salary)::int, 0) as cost
+from project p
+     left join empproj ep on p.pid=ep.pid
+	   left join employee e on e.eid=ep.eid
+group by p.title
+order by project;</code></pre>
+{% endif %} 
+
+
+<h2>5</h2>
+<ul class="w3-large">
+    <li>Projects whose cost overrun budget</li>
+    <ul>
+        <li>40 hours per week</li>
+        <li>Project lasts exactly one year</li>
+        <li>Only labor costs, no material costs</li>
+        <li>Only salary is considered</li>
+    </ul>
+    <li>xxx</li>
+    <li>Order by project</li>
+</ul>
+<pre><code class="language-plaintext">┌─────────┬───────────────┬───────┐
+│ project │    Budget     │ cost  │
+│ varchar │ decimal(13,2) │ int32 │
+├─────────┼───────────────┼───────┤
+│ CRM     │      20000.00 │ 30600 │
+└─────────┴───────────────┴───────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select p.title as project, budget, coalesce(sum(ep.noofhoursperweek/40*e.salary)::int, 0) as cost
+from project p
+     left join empproj ep on p.pid=ep.pid
+	   left join employee e on e.eid=ep.eid
+group by p.title, p.budget
+having sum(ep.noofhoursperweek/40*e.salary) > budget
+order by project;</code></pre>
+{% endif %} 
+
+<h2>6</h2>
+<ul class="w3-large">
+    <li>Number of Customers wrt geography hierarchy</li>
+    <li>Order by number_of_customers</li>
+</ul>
+<pre><code class="language-plaintext">┌─────────┬──────────┬───────────────┬─────────────────────┐
+│ Country │  State   │     City      │ number_of_customers │
+│ varchar │ varchar  │    varchar    │        int64        │
+├─────────┼──────────┼───────────────┼─────────────────────┤
+│ Canada  │ BC       │ Shawnee       │                 111 │
+│ USA     │ CA       │ Downey        │                 110 │
+│ USA     │ OR       │ Lebanon       │                 108 │
+│ USA     │ CA       │ Lemon Grove   │                 107 │
+│ USA     │ CA       │ Concord       │                 106 │
+│ Mexico  │ Guerrero │ Acapulco      │                 106 │
+│ USA     │ CA       │ Pomona        │                 106 │
+│ USA     │ WA       │ Burien        │                 106 │
+│ Canada  │ BC       │ Langford      │                 105 │
+│ USA     │ OR       │ Lake Oswego   │                 104 │
+│  ·      │ ·        │      ·        │                   · │
+│  ·      │ ·        │      ·        │                   · │
+│  ·      │ ·        │      ·        │                   · │
+│ USA     │ CA       │ Mill Valley   │                  85 │
+│ USA     │ WA       │ Spokane       │                  85 │
+│ USA     │ OR       │ Albany        │                  84 │
+│ USA     │ CA       │ Colma         │                  84 │
+│ USA     │ CA       │ Redwood City  │                  84 │
+│ USA     │ CA       │ Lakewood      │                  82 │
+│ Mexico  │ Sinaloa  │ La Cruz       │                  78 │
+│ USA     │ CA       │ Fremont       │                  75 │
+│ Mexico  │ DF       │ Santa Fe      │                  51 │
+│ USA     │ CA       │ San Francisco │                  47 │
+├─────────┴──────────┴───────────────┴─────────────────────┤
+│ 109 rows (20 shown)                            4 columns │
+└──────────────────────────────────────────────────────────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select country, state, city, count(*) as number_of_customers
+from customer
+group by country, state, city
+order by number_of_customers desc;</code></pre>
+{% endif %} 
+
+<h2>7</h2>
+<ul class="w3-large">
+    <li>Revenue, Unitsales, Order Count per year, country and product family</li>
+    <li>Order by  tyear, store.country, product.family</li>
+</ul>
+<pre><code class="language-plaintext">┌───────┬─────────┬────────────────┬───────────────┬────────────────┬──────────────┐
+│ TYear │ Country │     Family     │    revenue    │ sum(unitsales) │ count_star() │
+│ int32 │ varchar │    varchar     │ decimal(38,2) │     int128     │    int64     │
+├───────┼─────────┼────────────────┼───────────────┼────────────────┼──────────────┤
+│  2014 │ USA     │ Drink          │      48836.21 │          24597 │         7978 │
+│  2014 │ USA     │ Food           │     409035.59 │         191940 │        62445 │
+│  2014 │ USA     │ Non-Consumable │     107366.33 │          50236 │        16414 │
+│  2015 │ Canada  │ Drink          │       8669.84 │           4354 │         1380 │
+│  2015 │ Canada  │ Food           │      70028.98 │          32691 │        10375 │
+│  2015 │ Canada  │ Non-Consumable │      19346.64 │           9112 │         2877 │
+│  2015 │ Mexico  │ Drink          │      36890.31 │          18483 │         5921 │
+│  2015 │ Mexico  │ Food           │     311041.43 │         146642 │        47052 │
+│  2015 │ Mexico  │ Non-Consumable │      82361.85 │          38789 │        12483 │
+│  2015 │ USA     │ Drink          │      48182.01 │          24117 │         7811 │
+│  2015 │ USA     │ Food           │     397065.39 │         186590 │        60716 │
+│  2015 │ USA     │ Non-Consumable │     105561.02 │          49209 │        15943 │
+├───────┴─────────┴────────────────┴───────────────┴────────────────┴──────────────┤
+│ 12 rows                                                                6 columns │
+└──────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+{% if page.show_3 == 1 %}
+<pre><code class="language-sql">select tyear, store.country, product.family, sum(storesales) as revenue, sum(unitsales), count(*)
+from sales 
+     join timebyday on timebyday.timeid=sales.timeid
+     join store on sales.storeid=store.storeid
+     join product on product.productid=sales.productid
+group by tyear, store.country, product.family
+order by tyear, store.country, product.family;</code></pre>
+{% endif %} 
+
 <div class="ic-gap"></div>
 
 
@@ -247,7 +677,21 @@ order by durationinsec;</code></pre>
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>Subquery</h1>
+<h2>x</h2>
+<ul class="w3-large">
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>Order by </li>
+</ul>
+<pre><code class="language-plaintext">xxx</code></pre>
+
+{% if page.show_4 == 1 %}
+<pre><code class="language-sql">xxx</code></pre>
+{% endif %} 
+
+
 <div class="ic-gap"></div>
 
 
@@ -255,127 +699,18 @@ order by durationinsec;</code></pre>
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Window Functions</h1>
+<h2>x</h2>
+<ul class="w3-large">
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>xxx</li>
+    <li>Order by </li>
+</ul>
+<pre><code class="language-plaintext">xxx</code></pre>
+
+{% if page.show_5 == 1 %}
+<pre><code class="language-sql">xxx</code></pre>
+{% endif %} 
+
 <div class="ic-gap"></div>
-
-
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    09 ******************************************************************
--->
-{% include padding-id.html id=9 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>xxx</h1>
-<div class="ic-gap"></div>
-
-
