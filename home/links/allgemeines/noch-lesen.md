@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Data Analyst vs. AI Agent: Who Wins the Job in 2026?
+[(link)](https://medium.com/ai-analytics-diaries/data-analyst-vs-ai-agent-who-wins-the-job-in-2026-a29be0ffbd87)
+
 - How to Write SQL Queries That Detect When a LEFT JOIN Is Silently Dropping Rows
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-detect-when-a-left-join-is-silently-dropping-rows-ce513b7aadd5)
 
