@@ -9,6 +9,21 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Vibe coding is dead (Learn this instead)
+[(link)](https://surendrapandar.medium.com/vibe-coding-is-dead-learn-this-instead-879c89577c9f)
+
+- Why Exponentials and Logarithms Dominate Statistics and Information Theory: The Fundamental Properties
+[(link)](https://medium.com/@tomkob99_89317/why-exponentials-and-logarithms-dominate-statistics-and-information-theory-the-fundamental-abc3cbb71bb6)
+
+- The Journey to Causality: From Dashboards to Causal Inference
+[(link)](https://medium.com/@brian-curry-research/the-journey-to-causality-from-dashboards-to-causal-inference-0633bce00c0a)
+
+- How to Choose the Right Search Algorithm for your VectorDB?
+[(link)](https://levelup.gitconnected.com/how-to-choose-the-right-search-algorithm-for-your-vectordb-0ce07a68f659)
+
+- Top 8 Free Python Excel Libraries for Developers in 2025
+[(link)](https://python.plainenglish.io/top-8-free-python-excel-libraries-for-developers-in-2025-af048f469e81)
+
 - Data Analyst vs. AI Agent: Who Wins the Job in 2026?
 [(link)](https://medium.com/ai-analytics-diaries/data-analyst-vs-ai-agent-who-wins-the-job-in-2026-a29be0ffbd87)
 
