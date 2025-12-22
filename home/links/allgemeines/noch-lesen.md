@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Fivetran vs. Airbyte in 2026 | Complete ELT Guide
+[(link)](https://medium.com/@hugolu87/fivetran-vs-airbyte-in-2026-complete-elt-guide-1a1b51f90776)
+
+- AI Skills Are Exploding in 2026
+[(link)](https://medium.com/ai-analytics-diaries/ai-skills-are-exploding-in-2026-71e5f5bdbc62)
+
+- Why Gradient Boosting Often Beats Deep Learning on Tabular Data (And How to Tune It)
+[(link)](https://medium.com/@Rohan_Dutt/why-gradient-boosting-often-beats-deep-learning-on-tabular-data-and-how-to-tune-it-17c4c59b1782)
+
 - Vibe coding is dead (Learn this instead)
 [(link)](https://surendrapandar.medium.com/vibe-coding-is-dead-learn-this-instead-879c89577c9f)
 
