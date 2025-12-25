@@ -9,6 +9,24 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 Powerful ChatGPT Prompts to Learn Coding Faster 
+[(link)](https://javascript.plainenglish.io/10-powerful-chatgpt-prompts-to-learn-coding-faster-00d13c0a6a40)
+
+- Eigenfunction: The Mathematical Puppy Often Seen as a Monster. So Says Fourier… Maybe
+[(link)](https://medium.com/@tomkob99_89317/eigenfunction-the-mathematical-puppy-often-seen-as-a-noble-monster-so-says-fourier-maybe-1526be266e66)
+
+- Ollama Enshittification — the Early Signs
+[(link)](https://medium.com/@rosgluk/ollama-enshittification-the-early-signs-f074ebd94ea7)
+
+- Why Semi-Joins in SQL Are More Powerful Than You Think (And How to Master Them)
+[(link)](https://medium.com/@Rohan_Dutt/why-semi-joins-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84030dc523a6)
+
+- Why I’m Making the Switch to marimo Notebooks
+[(link)](https://pandeyparul.medium.com/why-im-making-the-switch-to-marimo-notebooks-6e2218b5c98d)
+
+- Handling Imbalanced Data: The Complete Guide Every Data Scientist Must Know
+[(link)](https://pub.towardsai.net/handling-imbalanced-data-the-complete-guide-every-data-scientist-must-know-96dda53fb62b)
+
 - Fivetran vs. Airbyte in 2026 | Complete ELT Guide
 [(link)](https://medium.com/@hugolu87/fivetran-vs-airbyte-in-2026-complete-elt-guide-1a1b51f90776)
 

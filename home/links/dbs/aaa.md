@@ -31,8 +31,11 @@ is_slide: 0
 [(link)](https://github.com/datafold/data-diff)
 
 # examples
-- Adventure Wworks
+- Adventure Works
 [(link)](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works)
+- Adventure Dataedo
+[(link)](https://dataedo.com/samples/html/AdventureWorks/doc/AdventureWorks_2/home.html)
+
 
 
 
