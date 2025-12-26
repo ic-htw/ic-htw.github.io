@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+-  Unlock RAG-Anything’s Power with Ollama on Your Machine (with Docling as Bonus)
+[(link)](https://alain-airom.medium.com/unlock-rag-anythings-power-with-ollama-on-your-machine-with-docling-as-bonus-3887509dc0f0)
+
+- SQL Performance Mastery: 10 High-Impact Aggregation Strategies for Sub-Second Queries
+[(link)](https://systemweakness.com/10-sql-aggregation-query-design-tips-for-fast-and-scalable-data-workflows-c734309f8dd4)
+
+- My Local/Remote LLM Studio — watsonx.ai and Ollama (part 1)
+[(link)](https://alain-airom.medium.com/my-local-remote-llm-studio-watsonx-ai-and-ollama-part-1-4a016aae9806)
+
 - 10 Powerful ChatGPT Prompts to Learn Coding Faster 
 [(link)](https://javascript.plainenglish.io/10-powerful-chatgpt-prompts-to-learn-coding-faster-00d13c0a6a40)
 
