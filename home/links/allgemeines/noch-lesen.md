@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- How I Virtualized a Unified Star Schema Using LLM
+[(link)](https://medium.com/@irregularbi/how-i-virtualized-a-unified-star-schema-using-llm-7e69cd40a734)
+
+- Six Weeks After Writing About AI Agents, I’m Watching Them Fail Everywhere
+[(link)](https://medium.com/analysts-corner/six-weeks-after-writing-about-ai-agents-im-watching-them-fail-everywhere-fb6636a4568e)
+
+- How to Write SQL Queries That Use Window Frames to Transform Your Data Analysis
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-use-window-frames-to-transform-your-data-analysis-2d18e932aab3)
+
+- Building a Simple SQL Parser in Python: From Basics to Hands-On
+[(link)](https://leapcell.medium.com/building-a-simple-sql-parser-in-python-from-basics-to-hands-on-c0bcfc273327)
+
 -  Unlock RAG-Anything’s Power with Ollama on Your Machine (with Docling as Bonus)
 [(link)](https://alain-airom.medium.com/unlock-rag-anythings-power-with-ollama-on-your-machine-with-docling-as-bonus-3887509dc0f0)
 
