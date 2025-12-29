@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Why Yann LeCun Bet $3.5 Billion on World Models Over LLMs
+[(link)](https://ai.gopubby.com/yann-lecun-ami-labs-world-models-2025-e26eefdd900e)
+
+- All You Need To Know About Retrieval-Augmented Generation (RAG) in 2025
+[(link)](https://pub.towardsai.net/all-you-need-to-know-about-retrieval-augmented-generation-rag-in-2025-04c386284c18)
+
+- Eigenvectors Explained: The Magic Directions That Never Change
+[(link)](https://medium.com/data-science-collective/eigenvectors-explained-the-magic-directions-that-never-change-e0c45c7721e8)
+
+- Google Just Dropped Gemini 3 Flash, and Honestly? The Economics Just Changed.
+[(link)](https://ai.plainenglish.io/google-just-dropped-gemini-3-flash-and-honestly-the-economics-just-changed-a303e25472f4)
+
 - How I Virtualized a Unified Star Schema Using LLM
 [(link)](https://medium.com/@irregularbi/how-i-virtualized-a-unified-star-schema-using-llm-7e69cd40a734)
 
