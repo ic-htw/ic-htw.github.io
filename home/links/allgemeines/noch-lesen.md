@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 Data Models Every Data Engineer Must Know
+[(link)](https://medium.com/@Rohan_Dutt/10-data-models-every-data-engineer-must-know-before-they-break-production-11a020e87e31)
+
+- The First Nmap Scan That Makes You Realize How the Internet Actually Works
+[(link)](https://medium.com/@fatihaali093/the-first-nmap-scan-that-makes-you-realize-how-the-internet-actually-works-4f7de267d72a)
+
+- Read this and you will finally understand how ChatGPT actually works
+[(link)](https://medium.com/@chrisdunlop_37984/read-this-and-you-will-finally-understand-how-chatgpt-actually-works-cda50dcf7c29)
+
+- Beyond the Prompt: Why Context Engineering is the Future of Production AI
+[(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
+
 - Why Yann LeCun Bet $3.5 Billion on World Models Over LLMs
 [(link)](https://ai.gopubby.com/yann-lecun-ami-labs-world-models-2025-e26eefdd900e)
 
