@@ -9,6 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Probability Theory for Machine Learning: A Beginner’s Tutorial
+[(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
+
+- The Power of PyTorch and vLLM Together
+[(link)](https://medium.com/@pankaj_pandey/the-power-of-pytorch-and-vllm-together-3cb03c35f349)
+
+- Bayesian Statistics: An introductory course
+[(link)](https://medium.com/@kdwaMachineLearning/bayesian-statistics-an-introductory-course-1059672505c5)
+
+- Building the 7 Layers of a Production-Grade Agentic AI System
+[(link)](https://levelup.gitconnected.com/building-the-7-layers-of-a-production-grade-agentic-ai-system-37ee5d941f1c)
 - 10 Data Models Every Data Engineer Must Know
 [(link)](https://medium.com/@Rohan_Dutt/10-data-models-every-data-engineer-must-know-before-they-break-production-11a020e87e31)
 
