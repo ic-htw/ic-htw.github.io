@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Microsoft’s Power BI Modeling MCP Server: What It Actually Means for Your BI Workflow
+[(link)](https://medium.com/@michael.hannecke/microsofts-power-bi-modeling-mcp-server-what-it-actually-means-for-your-bi-workflow-b7afe99eef80)
+
 - Probability Theory for Machine Learning: A Beginner’s Tutorial
 [(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
 
