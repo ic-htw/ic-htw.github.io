@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 dbt Macros That Saved Us 100+ Hours (With Copy-Paste Code)
+[(link)](https://medium.com/@reliabledataengineering/10-dbt-macros-that-saved-us-100-hours-with-copy-paste-code-55b4bd7051ba)
+
+- Learn MCP Fast: 6 Free Must-Have Resources
+[(link)](https://levelup.gitconnected.com/learn-mcp-fast-6-free-must-have-resources-e8639adf0365)
+
 - Microsoft’s Power BI Modeling MCP Server: What It Actually Means for Your BI Workflow
 [(link)](https://medium.com/@michael.hannecke/microsofts-power-bi-modeling-mcp-server-what-it-actually-means-for-your-bi-workflow-b7afe99eef80)
 
