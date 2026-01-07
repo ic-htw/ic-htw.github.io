@@ -9,6 +9,9 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 Business-Centric Data Metrics Analysts Ignore (Until They’re Replaced)
+[(link)](https://medium.com/@Rohan_Dutt/10-business-centric-data-metrics-analysts-ignore-until-theyre-replaced-d8b8e39b3f7b)
+
 - 10 dbt Macros That Saved Us 100+ Hours (With Copy-Paste Code)
 [(link)](https://medium.com/@reliabledataengineering/10-dbt-macros-that-saved-us-100-hours-with-copy-paste-code-55b4bd7051ba)
 
