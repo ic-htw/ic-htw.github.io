@@ -833,6 +833,12 @@ home: &r
               - t: Timeseries
                 ts: Timeseries
                 url: /home/links/ml/timeseries.html
+              - t: Spider 2 - lite questions
+                ts: Spider 2 - lite questions
+                url: /home/links/ml/spider2-lite-questions.html
+              - t: Spider 2 - lite sql
+                ts: Spider 2 - lite sql
+                url: /home/links/ml/spider2-lite-sql.html
           - t: Programmierung
             ts: PROG
             url: /home/links/prog/1-prog.html
