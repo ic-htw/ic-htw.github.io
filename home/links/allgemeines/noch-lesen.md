@@ -8,7 +8,32 @@ is_slide: 0
 <!-- 
 - aaa
 [(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
 -->
+- The 2026 Data Engineering Roadmap: Building Data Systems for the Agentic AI Era
+[(link)](https://medium.com/@sanjeebmeister/the-2026-data-engineering-roadmap-building-data-systems-for-the-agentic-ai-era-8e7064c2cf55)
+
+- Why Everyone is Talking about Google Antigravity: The Era of Agentic AI Coding
+[(link)](https://pub.towardsai.net/why-everyone-is-talking-about-google-antigravity-the-era-of-agentic-ai-coding-bad5e9e78326)
+
+- Postgres in the time of monster hardware
+[(link)](https://www.enterprisedb.com/blog/postgres-time-monster-hardware)
+
 - 10 Business-Centric Data Metrics Analysts Ignore (Until They’re Replaced)
 [(link)](https://medium.com/@Rohan_Dutt/10-business-centric-data-metrics-analysts-ignore-until-theyre-replaced-d8b8e39b3f7b)
 
