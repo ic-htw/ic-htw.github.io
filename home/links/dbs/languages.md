@@ -43,6 +43,12 @@ is_slide: 0
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-patterns-for-forecasting-and-anomaly-detection-on-irregular-timestamps-ccc2abb15ee5)
 - 10 SQL Techniques for Feature Extraction You Can Implement Today
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-feature-extraction-you-can-implement-today-e10715bf50b9)
+- How to Write SQL Queries That Prevent Cardinality Explosions in Multi-Way Joins
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-prevent-cardinality-explosions-in-multi-way-joins-b41ba236acac)
+- 10 Join Ordering Mistakes That Kill SQL Performance at Scale
+[(link)](https://medium.com/@Rohan_Dutt/10-join-ordering-mistakes-that-kill-sql-performance-at-scale-basic-blunders-28efec976e02bb)
+
+
 
 
 

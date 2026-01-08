@@ -9,6 +9,119 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 10 Business-Centric Data Metrics Analysts Ignore (Until They’re Replaced)
+[(link)](https://medium.com/@Rohan_Dutt/10-business-centric-data-metrics-analysts-ignore-until-theyre-replaced-d8b8e39b3f7b)
+
+- 10 dbt Macros That Saved Us 100+ Hours (With Copy-Paste Code)
+[(link)](https://medium.com/@reliabledataengineering/10-dbt-macros-that-saved-us-100-hours-with-copy-paste-code-55b4bd7051ba)
+
+- Learn MCP Fast: 6 Free Must-Have Resources
+[(link)](https://levelup.gitconnected.com/learn-mcp-fast-6-free-must-have-resources-e8639adf0365)
+
+- Microsoft’s Power BI Modeling MCP Server: What It Actually Means for Your BI Workflow
+[(link)](https://medium.com/@michael.hannecke/microsofts-power-bi-modeling-mcp-server-what-it-actually-means-for-your-bi-workflow-b7afe99eef80)
+
+- Probability Theory for Machine Learning: A Beginner’s Tutorial
+[(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
+
+- The Power of PyTorch and vLLM Together
+[(link)](https://medium.com/@pankaj_pandey/the-power-of-pytorch-and-vllm-together-3cb03c35f349)
+
+- Bayesian Statistics: An introductory course
+[(link)](https://medium.com/@kdwaMachineLearning/bayesian-statistics-an-introductory-course-1059672505c5)
+
+- Building the 7 Layers of a Production-Grade Agentic AI System
+[(link)](https://levelup.gitconnected.com/building-the-7-layers-of-a-production-grade-agentic-ai-system-37ee5d941f1c)
+- 10 Data Models Every Data Engineer Must Know
+[(link)](https://medium.com/@Rohan_Dutt/10-data-models-every-data-engineer-must-know-before-they-break-production-11a020e87e31)
+
+- The First Nmap Scan That Makes You Realize How the Internet Actually Works
+[(link)](https://medium.com/@fatihaali093/the-first-nmap-scan-that-makes-you-realize-how-the-internet-actually-works-4f7de267d72a)
+
+- Read this and you will finally understand how ChatGPT actually works
+[(link)](https://medium.com/@chrisdunlop_37984/read-this-and-you-will-finally-understand-how-chatgpt-actually-works-cda50dcf7c29)
+
+- Beyond the Prompt: Why Context Engineering is the Future of Production AI
+[(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
+
+- Why Yann LeCun Bet $3.5 Billion on World Models Over LLMs
+[(link)](https://ai.gopubby.com/yann-lecun-ami-labs-world-models-2025-e26eefdd900e)
+
+- All You Need To Know About Retrieval-Augmented Generation (RAG) in 2025
+[(link)](https://pub.towardsai.net/all-you-need-to-know-about-retrieval-augmented-generation-rag-in-2025-04c386284c18)
+
+- Eigenvectors Explained: The Magic Directions That Never Change
+[(link)](https://medium.com/data-science-collective/eigenvectors-explained-the-magic-directions-that-never-change-e0c45c7721e8)
+
+- Google Just Dropped Gemini 3 Flash, and Honestly? The Economics Just Changed.
+[(link)](https://ai.plainenglish.io/google-just-dropped-gemini-3-flash-and-honestly-the-economics-just-changed-a303e25472f4)
+
+- How I Virtualized a Unified Star Schema Using LLM
+[(link)](https://medium.com/@irregularbi/how-i-virtualized-a-unified-star-schema-using-llm-7e69cd40a734)
+
+- Six Weeks After Writing About AI Agents, I’m Watching Them Fail Everywhere
+[(link)](https://medium.com/analysts-corner/six-weeks-after-writing-about-ai-agents-im-watching-them-fail-everywhere-fb6636a4568e)
+
+- How to Write SQL Queries That Use Window Frames to Transform Your Data Analysis
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-use-window-frames-to-transform-your-data-analysis-2d18e932aab3)
+
+- Building a Simple SQL Parser in Python: From Basics to Hands-On
+[(link)](https://leapcell.medium.com/building-a-simple-sql-parser-in-python-from-basics-to-hands-on-c0bcfc273327)
+
+-  Unlock RAG-Anything’s Power with Ollama on Your Machine (with Docling as Bonus)
+[(link)](https://alain-airom.medium.com/unlock-rag-anythings-power-with-ollama-on-your-machine-with-docling-as-bonus-3887509dc0f0)
+
+- SQL Performance Mastery: 10 High-Impact Aggregation Strategies for Sub-Second Queries
+[(link)](https://systemweakness.com/10-sql-aggregation-query-design-tips-for-fast-and-scalable-data-workflows-c734309f8dd4)
+
+- My Local/Remote LLM Studio — watsonx.ai and Ollama (part 1)
+[(link)](https://alain-airom.medium.com/my-local-remote-llm-studio-watsonx-ai-and-ollama-part-1-4a016aae9806)
+
+- 10 Powerful ChatGPT Prompts to Learn Coding Faster 
+[(link)](https://javascript.plainenglish.io/10-powerful-chatgpt-prompts-to-learn-coding-faster-00d13c0a6a40)
+
+- Eigenfunction: The Mathematical Puppy Often Seen as a Monster. So Says Fourier… Maybe
+[(link)](https://medium.com/@tomkob99_89317/eigenfunction-the-mathematical-puppy-often-seen-as-a-noble-monster-so-says-fourier-maybe-1526be266e66)
+
+- Ollama Enshittification — the Early Signs
+[(link)](https://medium.com/@rosgluk/ollama-enshittification-the-early-signs-f074ebd94ea7)
+
+- Why Semi-Joins in SQL Are More Powerful Than You Think (And How to Master Them)
+[(link)](https://medium.com/@Rohan_Dutt/why-semi-joins-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84030dc523a6)
+
+- Why I’m Making the Switch to marimo Notebooks
+[(link)](https://pandeyparul.medium.com/why-im-making-the-switch-to-marimo-notebooks-6e2218b5c98d)
+
+- Handling Imbalanced Data: The Complete Guide Every Data Scientist Must Know
+[(link)](https://pub.towardsai.net/handling-imbalanced-data-the-complete-guide-every-data-scientist-must-know-96dda53fb62b)
+
+- Fivetran vs. Airbyte in 2026 | Complete ELT Guide
+[(link)](https://medium.com/@hugolu87/fivetran-vs-airbyte-in-2026-complete-elt-guide-1a1b51f90776)
+
+- AI Skills Are Exploding in 2026
+[(link)](https://medium.com/ai-analytics-diaries/ai-skills-are-exploding-in-2026-71e5f5bdbc62)
+
+- Why Gradient Boosting Often Beats Deep Learning on Tabular Data (And How to Tune It)
+[(link)](https://medium.com/@Rohan_Dutt/why-gradient-boosting-often-beats-deep-learning-on-tabular-data-and-how-to-tune-it-17c4c59b1782)
+
+- Vibe coding is dead (Learn this instead)
+[(link)](https://surendrapandar.medium.com/vibe-coding-is-dead-learn-this-instead-879c89577c9f)
+
+- Why Exponentials and Logarithms Dominate Statistics and Information Theory: The Fundamental Properties
+[(link)](https://medium.com/@tomkob99_89317/why-exponentials-and-logarithms-dominate-statistics-and-information-theory-the-fundamental-abc3cbb71bb6)
+
+- The Journey to Causality: From Dashboards to Causal Inference
+[(link)](https://medium.com/@brian-curry-research/the-journey-to-causality-from-dashboards-to-causal-inference-0633bce00c0a)
+
+- How to Choose the Right Search Algorithm for your VectorDB?
+[(link)](https://levelup.gitconnected.com/how-to-choose-the-right-search-algorithm-for-your-vectordb-0ce07a68f659)
+
+- Top 8 Free Python Excel Libraries for Developers in 2025
+[(link)](https://python.plainenglish.io/top-8-free-python-excel-libraries-for-developers-in-2025-af048f469e81)
+
+- Data Analyst vs. AI Agent: Who Wins the Job in 2026?
+[(link)](https://medium.com/ai-analytics-diaries/data-analyst-vs-ai-agent-who-wins-the-job-in-2026-a29be0ffbd87)
+
 - How to Write SQL Queries That Detect When a LEFT JOIN Is Silently Dropping Rows
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-detect-when-a-left-join-is-silently-dropping-rows-ce513b7aadd5)
 

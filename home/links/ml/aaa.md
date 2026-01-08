@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- Understanding Gradient Descent
+[(link)](https://medium.com/@arnanbonny/001-understanding-gradient-descent-bcc3387f9610)
 - Marketing Data Science with Joe Domaleski
 [(link)](https://blog.marketingdatascience.ai/)
 - Dual SCD2, Snapshots, and PIT Tables: A Technical Deep-Dive for Data Engineers
