@@ -114,7 +114,7 @@ where not exists (
 -->
 {% include padding-id.html id=4 %}
 <h1>Recursive Queries</h1>
-<pre><code class="language-sql">xwith 
+<pre><code class="language-sql">with 
   recursive super as (
     select ouid, name, 1 as level, superunit
     from orgunit
