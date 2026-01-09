@@ -18,3 +18,48 @@ is_slide: 0
 <h1 id="Genre">Genre</h1>
 <img class="w3-image" src="/home/lv/dsml/a/dm-playlist/dm-playlist-genre.png">
 
+<h1 id="YAML">YAML</h1>
+<pre><code class="yaml">tables:
+- tablename: Genre
+  columns:
+  - columnname: GID
+    type: INTEGER
+  - columnname: Description
+    type: VARCHAR
+  primary_key:
+  - GID
+- tablename: Playlist
+  columns:
+  - columnname: PLID
+    type: INTEGER
+  - columnname: Name
+    type: VARCHAR
+  - columnname: LastCall
+    type: DATE
+  primary_key:
+  - PLID
+- tablename: Title
+  columns:
+  - columnname: TID
+    type: INTEGER
+  - columnname: Name
+    type: VARCHAR
+  - columnname: DurationInSec
+    type: INTEGER
+  - columnname: PLID
+    type: INTEGER
+  - columnname: GID
+    type: INTEGER
+  primary_key:
+  - TID
+  foreign_keys:
+  - sourcecolumns:
+    - PLID
+    targettable: Playlist
+    targetcolumns:
+    - PLID
+  - sourcecolumns:
+    - GID
+    targettable: Genre
+    targetcolumns:
+    - GID</code></pre>
