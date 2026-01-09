@@ -681,6 +681,27 @@ home: &r
                   - t: Material
                     ts: Material
                     url: /home/lv/dsml/zzz/material.html
+                  - t: q-clv-combined
+                    ts: q-clv-combined
+                    url: /home/lv/dsml/zzz/q-clv-combined.html
+                  - t: q-clv01
+                    ts: q-clv01
+                    url: /home/lv/dsml/zzz/q-clv01.html
+                  - t: q-clv02
+                    ts: q-clv02
+                    url: /home/lv/dsml/zzz/q-clv02.html
+                  - t: q-clv03
+                    ts: q-clv03
+                    url: /home/lv/dsml/zzz/q-clv03.html
+                  - t: q-clv04
+                    ts: q-clv04
+                    url: /home/lv/dsml/zzz/q-clv04.html
+                  - t: q-clv05
+                    ts: q-clv05
+                    url: /home/lv/dsml/zzz/q-clv05.html
+                  - t: q-clv
+                    ts: q-clv
+                    url: /home/lv/dsml/zzz/q-clv.html
           - t: Projekt Business Intelligence
             ts: PBI
             url: /home/lv/pbi/pbi.html
