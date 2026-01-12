@@ -628,6 +628,9 @@ home: &r
                   - t: Cubes and OLAP Operations
                     ts: Cubes and OLAP Operations
                     url: /home/lv/dsml/bi/cubes-olap.html
+                  - t: Classroom Exercises
+                    ts: Classroom Exercises
+                    url: /home/lv/dsml/bi/cr-ex.html
               - t: AI Generated Reports
                 ts: AI Reports
                 url: /home/lv/dsml/reports/1-reports.html
