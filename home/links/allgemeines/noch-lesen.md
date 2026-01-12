@@ -25,6 +25,45 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Google Finally Solved The Fragile Text-to-SQL Systems
+[(link)](https://medium.com/coding-nexus/google-finally-solved-the-fragile-text-to-sql-systems-63ce09c20670)
+
+- F3: The Future-Proof File Format That Finally Gets It Right
+[(link)](https://medium.com/@reliabledataengineering/f3-the-future-proof-file-format-that-finally-gets-it-right-0e7f0ddd2e72)
+
+- Dynamic Programming: A Handbook
+[(link)](https://medium.com/@tomkob99_89317/dynamic-programming-a-handbook-fbbd39cfb99a)
+
+- Automate schema mappings with LLMs
+[(link)](https://medium.com/road-to-full-stack-data-science/automate-schema-mappings-with-llms-637e55988524)
+
+- How to Scrape a Website to Markdown: 2026 Guide
+[(link)](https://medium.com/@datajournal/how-to-scrape-a-website-to-markdown-f03345cc6ee3)
+
+- I Built a Claude Skill for Knowledge Extraction & Report Writing
+[(link)](https://medium.com/data-science-collective/i-created-a-claude-skill-that-turns-piles-of-messy-documents-media-into-a-structured-report-19e9950f93b2)
+
+- Building a Scalable, Production-Grade Agentic RAG Pipeline
+[(link)](https://levelup.gitconnected.com/building-a-scalable-production-grade-agentic-rag-pipeline-1168dcd36260)
+
+- Django vs FastAPI: I Built the Same App Twice
+[(link)](https://medium.com/engineering-playbook/django-vs-fastapi-i-built-the-same-app-twice-25a1ceb477eb)
+
+- How to Build a Local ELT Pipeline with DuckDB and DBT
+[(link)](https://blog.dataengineerthings.org/how-to-build-a-local-elt-pipeline-with-duckdb-and-dbt-c8080ee89036)
+
+- How the Creator of Claude Code Actually Uses It: 13 Practical Moves
+[(link)](https://blog.devgenius.io/how-the-creator-of-claude-code-actually-uses-it-13-practical-moves-2bf02eec032a)
+
+- NumPy + Pandas: The Only Guide You Need
+[(link)](https://medium.com/activated-thinker/numpy-pandas-the-only-guide-you-need-7595c0461b30)
+
+- AI Code Assistants for Data Engineering: I Tested 6 Tools for SQL and Python
+[(link)](https://medium.com/@reliabledataengineering/ai-code-assistants-for-data-engineering-i-tested-6-tools-for-sql-and-python-e20183f3154e)
+
+- Agentic EDA with AI Foundry: Automating Exploratory Analysis
+[(link)](https://pub.towardsai.net/agentic-eda-automating-exploratory-data-analysis-for-data-science-workflow-b874dec24d7a)
+
 - The 2026 Data Engineering Roadmap: Building Data Systems for the Agentic AI Era
 [(link)](https://medium.com/@sanjeebmeister/the-2026-data-engineering-roadmap-building-data-systems-for-the-agentic-ai-era-8e7064c2cf55)
 
