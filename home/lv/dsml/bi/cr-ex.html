@@ -337,3 +337,182 @@ ddbu.sql_print(con, sql)</code></pre>
 │ 432 rows (20 shown)    3 columns │
 └──────────────────────────────────┘</code></pre>
 
+<h1>YAML of Star Schema</h1>
+<pre><code class="yaml">tables:
+- tablename: DimCurrency
+  columns:
+  - columnname: CurrencyKey
+    type: INTEGER
+  - columnname: CurrencyName
+    type: VARCHAR
+  primary_key:
+  - CurrencyKey
+- tablename: DimCustomer
+  columns:
+  - columnname: CustomerKey
+    type: INTEGER
+  - columnname: FirstName
+    type: VARCHAR
+  - columnname: LastName
+    type: VARCHAR
+  - columnname: City
+    type: VARCHAR
+  - columnname: StateProvinceCode
+    type: VARCHAR
+  - columnname: StateProvinceName
+    type: VARCHAR
+  - columnname: CountryRegionCode
+    type: VARCHAR
+  - columnname: EnglishCountryRegionName
+    type: VARCHAR
+  - columnname: PostalCode
+    type: VARCHAR
+  primary_key:
+  - CustomerKey
+- tablename: DimDate
+  columns:
+  - columnname: DateKey
+    type: INTEGER
+  - columnname: DayNumberOfWeek
+    type: INTEGER
+  - columnname: EnglishDayNameOfWeek
+    type: VARCHAR
+  - columnname: DayNumberOfMonth
+    type: INTEGER
+  - columnname: DayNumberOfYear
+    type: INTEGER
+  - columnname: WeekNumberOfYear
+    type: INTEGER
+  - columnname: EnglishMonthName
+    type: VARCHAR
+  - columnname: MonthNumberOfYear
+    type: INTEGER
+  - columnname: CalendarQuarter
+    type: INTEGER
+  - columnname: CalendarYear
+    type: INTEGER
+  - columnname: CalendarSemester
+    type: INTEGER
+  primary_key:
+  - DateKey
+- tablename: DimProduct
+  columns:
+  - columnname: ProductKey
+    type: INTEGER
+  - columnname: EnglishProductName
+    type: VARCHAR
+  - columnname: EnglishProductSubcategoryName
+    type: VARCHAR
+  - columnname: EnglishProductCategoryName
+    type: VARCHAR
+  primary_key:
+  - ProductKey
+- tablename: DimPromotion
+  columns:
+  - columnname: PromotionKey
+    type: INTEGER
+  - columnname: EnglishPromotionName
+    type: VARCHAR
+  - columnname: DiscountPct
+    type: FLOAT
+  - columnname: EnglishPromotionType
+    type: VARCHAR
+  - columnname: EnglishPromotionCategory
+    type: VARCHAR
+  - columnname: StartDate
+    type: TIMESTAMP
+  - columnname: EndDate
+    type: TIMESTAMP
+  - columnname: MinQty
+    type: INTEGER
+  - columnname: MaxQty
+    type: INTEGER
+  primary_key:
+  - PromotionKey
+- tablename: FactInternetSales
+  columns:
+  - columnname: ProductKey
+    type: INTEGER
+  - columnname: OrderDateKey
+    type: INTEGER
+  - columnname: DueDateKey
+    type: INTEGER
+  - columnname: ShipDateKey
+    type: INTEGER
+  - columnname: CustomerKey
+    type: INTEGER
+  - columnname: PromotionKey
+    type: INTEGER
+  - columnname: CurrencyKey
+    type: INTEGER
+  - columnname: SalesOrderNumber
+    type: VARCHAR
+  - columnname: SalesOrderLineNumber
+    type: INTEGER
+  - columnname: OrderQuantity
+    type: INTEGER
+  - columnname: UnitPrice
+    type: DECIMAL(13,2)
+  - columnname: SalesAmount
+    type: DECIMAL(13,2)
+  primary_key:
+  - SalesOrderNumber
+  - SalesOrderLineNumber
+  foreign_keys:
+  - sourcecolumns:
+    - CurrencyKey
+    targettable: DimCurrency
+    targetcolumns:
+    - CurrencyKey
+  - sourcecolumns:
+    - CustomerKey
+    targettable: DimCustomer
+    targetcolumns:
+    - CustomerKey
+  - sourcecolumns:
+    - OrderDateKey
+    targettable: DimDate
+    targetcolumns:
+    - DateKey
+  - sourcecolumns:
+    - DueDateKey
+    targettable: DimDate
+    targetcolumns:
+    - DateKey
+  - sourcecolumns:
+    - ShipDateKey
+    targettable: DimDate
+    targetcolumns:
+    - DateKey
+  - sourcecolumns:
+    - ProductKey
+    targettable: DimProduct
+    targetcolumns:
+    - ProductKey
+  - sourcecolumns:
+    - PromotionKey
+    targettable: DimPromotion
+    targetcolumns:
+    - PromotionKey
+- tablename: FactProductInventory
+  columns:
+  - columnname: ProductKey
+    type: INTEGER
+  - columnname: DateKey
+    type: INTEGER
+  - columnname: Quantity
+    type: INTEGER
+  primary_key:
+  - ProductKey
+  - DateKey
+  foreign_keys:
+  - sourcecolumns:
+    - DateKey
+    targettable: DimDate
+    targetcolumns:
+    - DateKey
+  - sourcecolumns:
+    - ProductKey
+    targettable: DimProduct
+    targetcolumns:
+    - ProductKey</code></pre>
