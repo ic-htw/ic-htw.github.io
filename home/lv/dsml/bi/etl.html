@@ -1,0 +1,129 @@
+---
+layout: default1
+nav: dsml-bi
+title: Extract, Transform, Load (ETL) - DSML
+is_slide: 1
+n: 4
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Data Provisioning</h1>
+<p class="w3-large ic-neg15">Staging Area</p>
+<ul class="w3-large">
+    <li>Data bucket for data preparation</li>
+    <li>Location depends on architecture</li>
+</ul>
+
+<h2>Extract, Transform, Load (ETL)</h2>
+<p class="w3-large ic-neg15">Extract</p>
+<ul class="w3-large">
+    <li>Get data from source systems</li>
+</ul>
+
+<p class="w3-large ic-neg15">Transform</p>
+<ul class="w3-large">
+    <li>Clean data</li>
+    <li>Normalize data</li>
+    <li>Transform data</li>
+</ul>
+
+<p class="w3-large ic-neg15">Load</p>
+<ul class="w3-large">
+    <li>Store data in Data Warehouse</li>
+</ul>
+
+<h2>Extract, Load, Transform (ELT) - L and T switched</h2>
+<p class="w3-large ic-neg15">Extract</p>
+<p class="w3-large ic-neg15">Load</p>
+<p class="w3-large ic-neg15">Transform</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>ETL Operations</h1>
+<p class="w3-large ic-neg15">Input / Output</p>
+<ul class="w3-large">
+    <li>File Access</li>
+    <li>Database Access</li>
+    <li>API / WebServices Access</li>
+</ul>
+
+<p class="w3-large ic-neg15">Data Manipulation</p>
+<ul class="w3-large">
+    <li>Operations on Data - to Clean, Normalize, Transform</li>
+    <li>Filter</li>
+    <li>Split / Union</li>
+    <li>Join</li>
+    <li>Aggregation</li>
+    <li>Calculations</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Visual Description of Dataflow</h1>
+<img class="w3-image" src="/home/lv/dsml/a/bi/alteryx.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Code-based Description of Dataflow</h1>
+<pre><code class="language-sql">with
+DimGeography as (
+SELECT DISTINCT
+    ROW_NUMBER() OVER (
+        ORDER BY a.City, sp.StateProvinceCode, cr.CountryRegionCode, a.PostalCode
+    ) AS GeographyKey,
+    a.City,
+    sp.StateProvinceCode,
+    sp.Name AS StateProvinceName,
+    cr.CountryRegionCode,
+    cr.Name AS EnglishCountryRegionName,
+    a.PostalCode
+FROM Address a
+LEFT JOIN StateProvince sp ON a.StateProvinceID = sp.StateProvinceID
+LEFT JOIN CountryRegion cr ON sp.CountryRegionCode = cr.CountryRegionCode
+),
+DimCustomerRaw as (
+SELECT
+    c.CustomerID AS CustomerKey,
+    (
+        SELECT g.GeographyKey
+        FROM DimGeography g
+        INNER JOIN Address a ON
+            g.City = a.City
+            AND g.PostalCode = a.PostalCode
+        INNER JOIN BusinessEntityAddress bea ON a.AddressID = bea.AddressID
+        WHERE bea.BusinessEntityID = p.BusinessEntityID
+        LIMIT 1
+    ) AS GeographyKey,
+    p.FirstName,
+    p.LastName,
+FROM Customer c
+LEFT JOIN Person p ON c.PersonID = p.BusinessEntityID)
+INSERT INTO DimCustomer 
+SELECT 
+    CustomerKey,
+    FirstName,
+    LastName,
+    City,
+    StateProvinceCode,
+    StateProvinceName,
+    CountryRegionCode,
+    EnglishCountryRegionName,
+    PostalCode
+FROM DimCustomerRaw dcr
+LEFT JOIN DimGeography dg on dcr.GeographyKey = dg.GeographyKey;</code></pre>
+<div class="ic-gap"></div>
+

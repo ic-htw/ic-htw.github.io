@@ -1,0 +1,122 @@
+---
+layout: default1
+nav: dsml-bi
+title: Multidimensional Data Model - DSML
+is_slide: 1
+n: 7
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Multidimensional Data Model</h1>
+<p class="w3-large ic-neg15">Main elements</p>
+<ul class="w3-large">
+    <li>Measures (quantitive facts) - revenue, cost, profit</li>
+    <li>Dimensions (qualitative attributes) - time, product, customer</li>
+    <li>Hierarchies (levels of granularity) - year, quarter, month, day</li>
+</ul>
+
+<p class="w3-large">Star Schema</p>
+<img class="w3-image" src="/home/lv/dsml/a/bi/md-sales-trans.png">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Inventory Snapshot Facts</h1>
+<p class="w3-large">QuantityOnStock - semiadditive</p>
+<img class="w3-image" src="/home/lv/dsml/a/bi/md-inventory-snapshot.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Inventory Process Facts</h1>
+<img class="w3-image" src="/home/lv/dsml/a/bi/md-inventory-process.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Conformed Dimensions - as introduced by Kimball</h1>
+<img class="w3-image" src="/home/lv/dsml/a/bi/md-conformed.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Procurement Transaction Facts</h1>
+<img class="w3-image" src="/home/lv/dsml/a/bi/md-procurement-trans.png">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Kinds of Facts</h1>
+<table class="w3-table-all">
+    <tr>
+        <th></th>
+        <th>Transaction</th>
+        <th>Snapshot</th>
+        <th>Process</th>
+    </tr>
+    <tr>
+        <td><b>Grain</b></td>
+        <td>One row per event</td>
+        <td>One row per period</td>
+        <td>One row per process</td>
+    </tr>
+    <tr>
+        <td><b>Fact table loads </b></td>
+        <td>Insert</td>
+        <td>Insert</td>
+        <td>Insert and update</td>
+    </tr>
+    <tr>
+        <td><b>Fact row update</b></td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td><b>Date dimension</b></td>
+        <td>Transaction date</td>
+        <td>End-of-period date</td>
+        <td>Multiple dates</td>
+    </tr>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Example Domains</h1>
+<ul class="w3-large">
+    <li>Health care</li>
+    <li>Telecommunications</li>
+    <li>Banking</li>
+    <li>Insurance</li>
+    <li>Retail</li>
+    <li>Manufacturing</li>
+    <li>Education</li>
+    <li>Government</li>
+    <li>Transportation</li>
+    <li>Travel</li>
+    <li>University</li>
+</ul>
+<div class="ic-gap"></div>
+

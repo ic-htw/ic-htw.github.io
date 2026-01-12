@@ -619,6 +619,15 @@ home: &r
                   - t: Overview
                     ts: Overview
                     url: /home/lv/dsml/bi/overview.html
+                  - t: Extract, Transform, Load (ETL)
+                    ts: ETL
+                    url: /home/lv/dsml/bi/etl.html
+                  - t: Multidimensional Data Model
+                    ts: Multidimensional Data Model
+                    url: /home/lv/dsml/bi/multi-dm.html
+                  - t: Cubes and OLAP Operations
+                    ts: Cubes and OLAP Operations
+                    url: /home/lv/dsml/bi/cubes-olap.html
               - t: AI Generated Reports
                 ts: AI Reports
                 url: /home/lv/dsml/reports/1-reports.html
