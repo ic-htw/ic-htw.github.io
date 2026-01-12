@@ -4,5 +4,336 @@ nav: dsml-bi
 title: Classroom Exercises - DSML
 is_slide: 0
 ---
+<h1>ETL-Process</h1>
+<p class="w3-large">
+    Create a code-based ETL process using SQL.
+</p>
+
+
+<h1>Database</h1>
+
+DuckDB file (<a href="https://drive.google.com/file/d/1hDaRE-GEsClJmdGgYggzrbK9oMy47vPd/view?usp=sharing">link</a>)
+
 <h1>Star Schema</h1>
 <img class="w3-image" src="/home/lv/dsml/a/bi/schema-adw-etl.png">
+
+<h1>Code</h1>
+<h2>Import / Config</h2>
+<pre><code class="python">import duckdb
+
+path = "/content/drive/MyDrive/your-path/adw-etl.duckdb"
+con = duckdb.connect(database=path, read_only=False)</code></pre>
+
+<h2>Clear DWH</h2>
+<pre><code class="python">sql = """
+delete from factinternetsales;
+delete from factproductinventory;
+delete from dimproduct;
+delete from dimdate;
+delete from dimcustomer;
+delete from DimCurrency;
+delete from DimPromotion;
+"""
+con.execute(sql)</code></pre>
+
+<h2>ETL</h2>
+<h3>DimCurrency</h3>
+<pre><code class="python">sql = """
+INSERT INTO DimCurrency (CurrencyKey, CurrencyName)
+SELECT
+    ROW_NUMBER() OVER (ORDER BY CurrencyCode) AS CurrencyKey,
+    Name AS CurrencyName
+FROM Currency;
+"""
+con.execute(sql)</code></pre>
+
+<h1>Expected Contents in DWH</h1>
+<h2>DimCurrency</h2>
+<pre><code class="python">sql = """
+select * from DimCurrency 
+order by CurrencyKey;
+"""
+print(con.sql(sql))</code></pre>
+
+<pre><code class="language-plaintext">┌─────────────┬───────────────────────────────┐
+│ CurrencyKey │         CurrencyName          │
+│    int32    │            varchar            │
+├─────────────┼───────────────────────────────┤
+│           1 │ Emirati Dirham                │
+│           2 │ Afghani                       │
+│           3 │ Lek                           │
+│           4 │ Armenian Dram                 │
+│           5 │ Netherlands Antillian Guilder │
+│           6 │ Kwanza                        │
+│           7 │ Argentine Peso                │
+│           8 │ Shilling                      │
+│           9 │ Australian Dollar             │
+│          10 │ Aruban Guilder                │
+│           · │      ·                        │
+│           · │      ·                        │
+│           · │      ·                        │
+│          96 │ Turkish Lira                  │
+│          97 │ Trinidad and Tobago Dollar    │
+│          98 │ New Taiwan Dollar             │
+│          99 │ US Dollar                     │
+│         100 │ Uruguayan Peso                │
+│         101 │ Bolivar                       │
+│         102 │ Dong                          │
+│         103 │ CFA Franc BCEAO               │
+│         104 │ Rand                          │
+│         105 │ Zimbabwe Dollar               │
+├─────────────┴───────────────────────────────┤
+│ 105 rows (20 shown)               2 columns │
+└─────────────────────────────────────────────┘</code></pre>
+
+<h2>DimProduct</h2>
+<pre><code class="language-sql">sql = """
+select * from DimProduct  
+where not EnglishProductSubcategoryName is null 
+order by ProductKey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌────────────┬────────────────────────────┬───────────────────────────────┬────────────────────────────┐
+│ ProductKey │     EnglishProductName     │ EnglishProductSubcategoryName │ EnglishProductCategoryName │
+│   int32    │          varchar           │            varchar            │          varchar           │
+├────────────┼────────────────────────────┼───────────────────────────────┼────────────────────────────┤
+│        680 │ HL Road Frame - Black, 58  │ Road Frames                   │ Components                 │
+│        706 │ HL Road Frame - Red, 58    │ Road Frames                   │ Components                 │
+│        707 │ Sport-100 Helmet, Red      │ Helmets                       │ Accessories                │
+│        708 │ Sport-100 Helmet, Black    │ Helmets                       │ Accessories                │
+│        709 │ Mountain Bike Socks, M     │ Socks                         │ Clothing                   │
+│        710 │ Mountain Bike Socks, L     │ Socks                         │ Clothing                   │
+│        711 │ Sport-100 Helmet, Blue     │ Helmets                       │ Accessories                │
+│        712 │ AWC Logo Cap               │ Caps                          │ Clothing                   │
+│        713 │ Long-Sleeve Logo Jersey, S │ Jerseys                       │ Clothing                   │
+│        714 │ Long-Sleeve Logo Jersey, M │ Jerseys                       │ Clothing                   │
+│         ·  │           ·                │    ·                          │   ·                        │
+│         ·  │           ·                │    ·                          │   ·                        │
+│         ·  │           ·                │    ·                          │   ·                        │
+│        990 │ Mountain-500 Black, 42     │ Mountain Bikes                │ Bikes                      │
+│        991 │ Mountain-500 Black, 44     │ Mountain Bikes                │ Bikes                      │
+│        992 │ Mountain-500 Black, 48     │ Mountain Bikes                │ Bikes                      │
+│        993 │ Mountain-500 Black, 52     │ Mountain Bikes                │ Bikes                      │
+│        994 │ LL Bottom Bracket          │ Bottom Brackets               │ Components                 │
+│        995 │ ML Bottom Bracket          │ Bottom Brackets               │ Components                 │
+│        996 │ HL Bottom Bracket          │ Bottom Brackets               │ Components                 │
+│        997 │ Road-750 Black, 44         │ Road Bikes                    │ Bikes                      │
+│        998 │ Road-750 Black, 48         │ Road Bikes                    │ Bikes                      │
+│        999 │ Road-750 Black, 52         │ Road Bikes                    │ Bikes                      │
+├────────────┴────────────────────────────┴───────────────────────────────┴────────────────────────────┤
+│ 295 rows (20 shown)                                                                        4 columns │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+
+<h2>DimCustomer</h2>
+<pre><code class="language-sql">sql = """
+select * from DimCustomer 
+where not firstname is null 
+order by CustomerKey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌─────────────┬───────────┬──────────┬────────────────┬───────────────────┬───────────────────┬───────────────────┬──────────────────────────┬────────────┐
+│ CustomerKey │ FirstName │ LastName │      City      │ StateProvinceCode │ StateProvinceName │ CountryRegionCode │ EnglishCountryRegionName │ PostalCode │
+│    int32    │  varchar  │ varchar  │    varchar     │      varchar      │      varchar      │      varchar      │         varchar          │  varchar   │
+├─────────────┼───────────┼──────────┼────────────────┼───────────────────┼───────────────────┼───────────────────┼──────────────────────────┼────────────┤
+│       11000 │ Jon       │ Yang     │ Rockhampton    │ QLD               │ Queensland        │ AU                │ Australia                │ 4700       │
+│       11001 │ Eugene    │ Huang    │ Seaford        │ VIC               │ Victoria          │ AU                │ Australia                │ 3198       │
+│       11002 │ Ruben     │ Torres   │ Hobart         │ TAS               │ Tasmania          │ AU                │ Australia                │ 7001       │
+│       11003 │ Christy   │ Zhu      │ North Ryde     │ NSW               │ New South Wales   │ AU                │ Australia                │ 2113       │
+│       11004 │ Elizabeth │ Johnson  │ Wollongong     │ NSW               │ New South Wales   │ AU                │ Australia                │ 2500       │
+│       11005 │ Julio     │ Ruiz     │ East Brisbane  │ QLD               │ Queensland        │ AU                │ Australia                │ 4169       │
+│       11006 │ Janet     │ Alvarez  │ Matraville     │ NSW               │ New South Wales   │ AU                │ Australia                │ 2036       │
+│       11007 │ Marco     │ Mehta    │ Warrnambool    │ VIC               │ Victoria          │ AU                │ Australia                │ 3280       │
+│       11008 │ Rob       │ Verhoff  │ Bendigo        │ VIC               │ Victoria          │ AU                │ Australia                │ 3550       │
+│       11009 │ Shannon   │ Carlson  │ Hervey Bay     │ QLD               │ Queensland        │ AU                │ Australia                │ 4655       │
+│         ·   │   ·       │   ·      │     ·          │  ·                │     ·             │ ·                 │     ·                    │  ·         │
+│         ·   │   ·       │   ·      │     ·          │  ·                │     ·             │ ·                 │     ·                    │  ·         │
+│         ·   │   ·       │   ·      │     ·          │  ·                │     ·             │ ·                 │     ·                    │  ·         │
+│       20990 │ Mayra     │ Raman    │ Port Macquarie │ NSW               │ New South Wales   │ AU                │ Australia                │ 2444       │
+│       20991 │ Frederick │ Sai      │ Warrnambool    │ VIC               │ Victoria          │ AU                │ Australia                │ 3280       │
+│       20992 │ Julio     │ Serrano  │ Gold Coast     │ QLD               │ Queensland        │ AU                │ Australia                │ 4217       │
+│       20993 │ Mitchell  │ Xie      │ Perth          │ SA                │ South Australia   │ AU                │ Australia                │ 6006       │
+│       20994 │ Autumn    │ Ma       │ Caloundra      │ QLD               │ Queensland        │ AU                │ Australia                │ 4551       │
+│       20995 │ Danny     │ Suarez   │ Caloundra      │ QLD               │ Queensland        │ AU                │ Australia                │ 4551       │
+│       20996 │ Keith     │ Shan     │ Hervey Bay     │ QLD               │ Queensland        │ AU                │ Australia                │ 4655       │
+│       20997 │ Joanna    │ Ashe     │ Lane Cove      │ NSW               │ New South Wales   │ AU                │ Australia                │ 1597       │
+│       20998 │ Eugene    │ She      │ Caloundra      │ QLD               │ Queensland        │ AU                │ Australia                │ 4551       │
+│       20999 │ Carolyn   │ Garcia   │ East Brisbane  │ QLD               │ Queensland        │ AU                │ Australia                │ 4169       │
+├─────────────┴───────────┴──────────┴────────────────┴───────────────────┴───────────────────┴───────────────────┴──────────────────────────┴────────────┤
+│ ? rows (>9999 rows, 20 shown)                                                                                                                 9 columns │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+<pre><code class="language-sql">sql = """
+select count(*) as no_of_customers from DimCustomer;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌─────────────────┐
+│ no_of_customers │
+│      int64      │
+├─────────────────┤
+│           19820 │
+└─────────────────┘</code></pre>
+
+<h2>DimPromotion</h2>
+<pre><code class="language-sql">sql = """
+select * from DimPromotion 
+order by PromotionKey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌──────────────┬────────────────────────────────────┬─────────────┬──────────────────────┬──────────────────────────┬─────────────────────┬─────────────────────┬────────┬────────┐
+│ PromotionKey │        EnglishPromotionName        │ DiscountPct │ EnglishPromotionType │ EnglishPromotionCategory │      StartDate      │       EndDate       │ MinQty │ MaxQty │
+│    int32     │              varchar               │    float    │       varchar        │         varchar          │      timestamp      │      timestamp      │ int32  │ int32  │
+├──────────────┼────────────────────────────────────┼─────────────┼──────────────────────┼──────────────────────────┼─────────────────────┼─────────────────────┼────────┼────────┤
+│            1 │ No Discount                        │         0.0 │ No Discount          │ No Discount              │ 2022-04-30 00:00:00 │ 2025-11-29 00:00:00 │      0 │   NULL │
+│            2 │ Volume Discount 11 to 14           │        0.02 │ Volume Discount      │ Reseller                 │ 2022-05-30 00:00:00 │ 2025-05-29 00:00:00 │     11 │     14 │
+│            3 │ Volume Discount 15 to 24           │        0.05 │ Volume Discount      │ Reseller                 │ 2022-05-30 00:00:00 │ 2025-05-29 00:00:00 │     15 │     24 │
+│            4 │ Volume Discount 25 to 40           │         0.1 │ Volume Discount      │ Reseller                 │ 2022-05-30 00:00:00 │ 2025-05-29 00:00:00 │     25 │     40 │
+│            5 │ Volume Discount 41 to 60           │        0.15 │ Volume Discount      │ Reseller                 │ 2022-05-30 00:00:00 │ 2025-05-29 00:00:00 │     41 │     60 │
+│            6 │ Volume Discount over 60            │         0.2 │ Volume Discount      │ Reseller                 │ 2022-05-30 00:00:00 │ 2025-05-29 00:00:00 │     61 │   NULL │
+│            7 │ Mountain-100 Clearance Sale        │        0.35 │ Discontinued Product │ Reseller                 │ 2023-04-13 00:00:00 │ 2023-05-29 00:00:00 │      0 │   NULL │
+│            8 │ Sport Helmet Discount-2002         │         0.1 │ Seasonal Discount    │ Reseller                 │ 2023-05-30 00:00:00 │ 2023-06-29 00:00:00 │      0 │   NULL │
+│            9 │ Road-650 Overstock                 │         0.3 │ Excess Inventory     │ Reseller                 │ 2023-05-30 00:00:00 │ 2023-07-30 00:00:00 │      0 │   NULL │
+│           10 │ Mountain Tire Sale                 │         0.5 │ Excess Inventory     │ Customer                 │ 2024-05-13 00:00:00 │ 2024-07-28 00:00:00 │      0 │   NULL │
+│           11 │ Sport Helmet Discount-2003         │        0.15 │ Seasonal Discount    │ Reseller                 │ 2024-05-29 00:00:00 │ 2024-06-28 00:00:00 │      0 │   NULL │
+│           12 │ LL Road Frame Sale                 │        0.35 │ Excess Inventory     │ Reseller                 │ 2024-05-29 00:00:00 │ 2024-07-13 00:00:00 │      0 │   NULL │
+│           13 │ Touring-3000 Promotion             │        0.15 │ New Product          │ Reseller                 │ 2024-05-29 00:00:00 │ 2024-08-28 00:00:00 │      0 │   NULL │
+│           14 │ Touring-1000 Promotion             │         0.2 │ New Product          │ Reseller                 │ 2024-05-29 00:00:00 │ 2024-08-28 00:00:00 │      0 │   NULL │
+│           15 │ Half-Price Pedal Sale              │         0.5 │ Seasonal Discount    │ Customer                 │ 2024-07-13 00:00:00 │ 2024-08-13 00:00:00 │      0 │   NULL │
+│           16 │ Mountain-500 Silver Clearance Sale │         0.4 │ Discontinued Product │ Reseller                 │ 2025-03-30 00:00:00 │ 2025-05-29 00:00:00 │      0 │   NULL │
+├──────────────┴────────────────────────────────────┴─────────────┴──────────────────────┴──────────────────────────┴─────────────────────┴─────────────────────┴────────┴────────┤
+│ 16 rows                                                                                                                                                               9 columns │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+<h2>DimDate</h2>
+<pre><code class="language-sql">sql = """
+select * from DimDate 
+order by DateKey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌──────────┬─────────────────┬──────────────────────┬──────────────────┬─────────────────┬──────────────────┬──────────────────┬───────────────────┬─────────────────┬──────────────┬──────────────────┐
+│ DateKey  │ DayNumberOfWeek │ EnglishDayNameOfWeek │ DayNumberOfMonth │ DayNumberOfYear │ WeekNumberOfYear │ EnglishMonthName │ MonthNumberOfYear │ CalendarQuarter │ CalendarYear │ CalendarSemester │
+│  int32   │      int32      │       varchar        │      int32       │      int32      │      int32       │     varchar      │       int32       │      int32      │    int32     │      int32       │
+├──────────┼─────────────────┼──────────────────────┼──────────────────┼─────────────────┼──────────────────┼──────────────────┼───────────────────┼─────────────────┼──────────────┼──────────────────┤
+│ 20000101 │               6 │ Saturday             │                1 │               1 │               52 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000102 │               7 │ Sunday               │                2 │               2 │               52 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000103 │               1 │ Monday               │                3 │               3 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000104 │               2 │ Tuesday              │                4 │               4 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000105 │               3 │ Wednesday            │                5 │               5 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000106 │               4 │ Thursday             │                6 │               6 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000107 │               5 │ Friday               │                7 │               7 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000108 │               6 │ Saturday             │                8 │               8 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000109 │               7 │ Sunday               │                9 │               9 │                1 │ January          │                 1 │               1 │         2000 │                1 │
+│ 20000110 │               1 │ Monday               │               10 │              10 │                2 │ January          │                 1 │               1 │         2000 │                1 │
+│     ·    │               · │   ·                  │                · │               · │                · │  ·               │                 · │               · │           ·  │                · │
+│     ·    │               · │   ·                  │                · │               · │                · │  ·               │                 · │               · │           ·  │                · │
+│     ·    │               · │   ·                  │                · │               · │                · │  ·               │                 · │               · │           ·  │                · │
+│ 20270509 │               7 │ Sunday               │                9 │             129 │               18 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270510 │               1 │ Monday               │               10 │             130 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270511 │               2 │ Tuesday              │               11 │             131 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270512 │               3 │ Wednesday            │               12 │             132 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270513 │               4 │ Thursday             │               13 │             133 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270514 │               5 │ Friday               │               14 │             134 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270515 │               6 │ Saturday             │               15 │             135 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270516 │               7 │ Sunday               │               16 │             136 │               19 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270517 │               1 │ Monday               │               17 │             137 │               20 │ May              │                 5 │               2 │         2027 │                1 │
+│ 20270518 │               2 │ Tuesday              │               18 │             138 │               20 │ May              │                 5 │               2 │         2027 │                1 │
+├──────────┴─────────────────┴──────────────────────┴──────────────────┴─────────────────┴──────────────────┴──────────────────┴───────────────────┴─────────────────┴──────────────┴──────────────────┤
+│ ? rows (>9999 rows, 20 shown)                                                                                                                                                             11 columns │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+<pre><code class="language-sql">sql = """
+select count(*) as no_of_dates from DimDate;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌─────────────┐
+│ no_of_dates │
+│    int64    │
+├─────────────┤
+│       11323 │
+└─────────────┘</code></pre>
+
+<h2>FactInternetSales</h2>
+<pre><code class="language-sql">sql = """
+select * from FactInternetSales 
+order by productkey, orderdatekey, customerkey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌────────────┬──────────────┬────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────────┬──────────────────────┬───────────────┬───────────────┬───────────────┐
+│ ProductKey │ OrderDateKey │ DueDateKey │ ShipDateKey │ CustomerKey │ PromotionKey │ CurrencyKey │ SalesOrderNumber │ SalesOrderLineNumber │ OrderQuantity │   UnitPrice   │  SalesAmount  │
+│   int32    │    int32     │   int32    │    int32    │    int32    │    int32     │    int32    │     varchar      │        int32         │     int32     │ decimal(13,2) │ decimal(13,2) │
+├────────────┼──────────────┼────────────┼─────────────┼─────────────┼──────────────┼─────────────┼──────────────────┼──────────────────────┼───────────────┼───────────────┼───────────────┤
+│        707 │     20240529 │   20240610 │    20240605 │       12132 │            1 │           1 │ SO51181          │                37766 │             1 │         34.99 │         34.99 │
+│        707 │     20240529 │   20240610 │    20240605 │       16313 │            1 │           1 │ SO51180          │                37761 │             1 │         34.99 │         34.99 │
+│        707 │     20240530 │   20240611 │    20240606 │       11241 │            1 │           1 │ SO51192          │                37793 │             1 │         34.99 │         34.99 │
+│        707 │     20240530 │   20240611 │    20240606 │       12390 │            1 │           1 │ SO51191          │                37791 │             1 │         34.99 │         34.99 │
+│        707 │     20240531 │   20240612 │    20240607 │       11338 │            1 │           1 │ SO51207          │                37839 │             1 │         34.99 │         34.99 │
+│        707 │     20240531 │   20240612 │    20240607 │       24604 │            1 │           9 │ SO51212          │                37853 │             1 │         34.99 │         34.99 │
+│        707 │     20240601 │   20240613 │    20240608 │       11061 │            1 │           9 │ SO51237          │                37920 │             1 │         34.99 │         34.99 │
+│        707 │     20240601 │   20240613 │    20240608 │       11615 │            1 │          41 │ SO51232          │                37911 │             1 │         34.99 │         34.99 │
+│        707 │     20240601 │   20240613 │    20240608 │       25625 │            1 │           1 │ SO51246          │                37945 │             1 │         34.99 │         34.99 │
+│        707 │     20240601 │   20240613 │    20240608 │       28204 │            1 │           9 │ SO51234          │                37914 │             1 │         34.99 │         34.99 │
+│         ·  │         ·    │       ·    │        ·    │         ·   │            · │           · │    ·             │                  ·   │             · │           ·   │           ·   │
+│         ·  │         ·    │       ·    │        ·    │         ·   │            · │           · │    ·             │                  ·   │             · │           ·   │           ·   │
+│         ·  │         ·    │       ·    │        ·    │         ·   │            · │           · │    ·             │                  ·   │             · │           ·   │           ·   │
+│        716 │     20240729 │   20240810 │    20240805 │       16103 │            2 │          22 │ SO53443          │                46725 │             1 │         49.99 │         49.99 │
+│        716 │     20240729 │   20240810 │    20240805 │       18760 │            1 │           1 │ SO53421          │                46674 │             1 │         49.99 │         49.99 │
+│        716 │     20240730 │   20240811 │    20240806 │       13363 │            2 │           1 │ SO53649          │                50569 │             1 │         49.99 │         49.99 │
+│        716 │     20240731 │   20240812 │    20240807 │       12291 │            2 │           1 │ SO53663          │                50601 │             1 │         49.99 │         49.99 │
+│        716 │     20240803 │   20240815 │    20240810 │       12153 │            2 │           1 │ SO53857          │                51068 │             1 │         49.99 │         49.99 │
+│        716 │     20240803 │   20240815 │    20240810 │       20116 │            1 │           1 │ SO53845          │                51032 │             1 │         49.99 │         49.99 │
+│        716 │     20240803 │   20240815 │    20240810 │       21549 │            1 │           1 │ SO53850          │                51042 │             1 │         49.99 │         49.99 │
+│        716 │     20240804 │   20240816 │    20240811 │       17130 │            1 │           1 │ SO53895          │                51156 │             1 │         49.99 │         49.99 │
+│        716 │     20240805 │   20240817 │    20240812 │       12065 │            1 │           1 │ SO53931          │                51238 │             1 │         49.99 │         49.99 │
+│        716 │     20240805 │   20240817 │    20240812 │       12977 │            2 │           1 │ SO53962          │                51313 │             1 │         49.99 │         49.99 │
+├────────────┴──────────────┴────────────┴─────────────┴─────────────┴──────────────┴─────────────┴──────────────────┴──────────────────────┴───────────────┴───────────────┴───────────────┤
+│ ? rows (>9999 rows, 20 shown)                                                                                                                                                  12 columns │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+<pre><code class="language-sql">sql = """
+select count(*) as no_of_internet_sales from FactInternetSales;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌──────────────────────┐
+│ no_of_internet_sales │
+│        int64         │
+├──────────────────────┤
+│                60398 │
+└──────────────────────┘</code></pre>
+
+<h2>FactProductInventory</h2>
+<pre><code class="language-sql">sql = """
+select * from FactProductInventory 
+order by ProductKey;
+"""
+ddbu.sql_print(con, sql)</code></pre>
+<pre><code class="language-plaintext">┌────────────┬──────────┬──────────┐
+│ ProductKey │ DateKey  │ Quantity │
+│   int32    │  int32   │  int32   │
+├────────────┼──────────┼──────────┤
+│          1 │ 20250807 │     1085 │
+│          2 │ 20250807 │     1109 │
+│          3 │ 20190331 │     1352 │
+│          4 │ 20250807 │     1322 │
+│        316 │ 20190331 │     1361 │
+│        317 │ 20250808 │      593 │
+│        318 │ 20250808 │      439 │
+│        319 │ 20250808 │      797 │
+│        320 │ 20250808 │     1136 │
+│        321 │ 20250808 │     1750 │
+│         ·  │     ·    │       ·  │
+│         ·  │     ·    │       ·  │
+│         ·  │     ·    │       ·  │
+│        990 │ 20240429 │      153 │
+│        991 │ 20240429 │      154 │
+│        992 │ 20240429 │      164 │
+│        993 │ 20240429 │      153 │
+│        994 │ 20240429 │      814 │
+│        995 │ 20240429 │      816 │
+│        996 │ 20240429 │      970 │
+│        997 │ 20240429 │      153 │
+│        998 │ 20240429 │      155 │
+│        999 │ 20240429 │      194 │
+├────────────┴──────────┴──────────┤
+│ 432 rows (20 shown)    3 columns │
+└──────────────────────────────────┘</code></pre>
+
