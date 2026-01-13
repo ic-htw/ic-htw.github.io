@@ -88,7 +88,7 @@ select * from DimProduct
 where not EnglishProductSubcategoryName is null 
 order by ProductKey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌────────────┬────────────────────────────┬───────────────────────────────┬────────────────────────────┐
 │ ProductKey │     EnglishProductName     │ EnglishProductSubcategoryName │ EnglishProductCategoryName │
 │   int32    │          varchar           │            varchar            │          varchar           │
@@ -127,7 +127,7 @@ select * from DimCustomer
 where not firstname is null 
 order by CustomerKey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌─────────────┬───────────┬──────────┬────────────────┬───────────────────┬───────────────────┬───────────────────┬──────────────────────────┬────────────┐
 │ CustomerKey │ FirstName │ LastName │      City      │ StateProvinceCode │ StateProvinceName │ CountryRegionCode │ EnglishCountryRegionName │ PostalCode │
 │    int32    │  varchar  │ varchar  │    varchar     │      varchar      │      varchar      │      varchar      │         varchar          │  varchar   │
@@ -162,7 +162,7 @@ ddbu.sql_print(con, sql)</code></pre>
 <pre><code class="language-sql">sql = """
 select count(*) as no_of_customers from DimCustomer;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌─────────────────┐
 │ no_of_customers │
 │      int64      │
@@ -175,7 +175,7 @@ ddbu.sql_print(con, sql)</code></pre>
 select * from DimPromotion 
 order by PromotionKey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌──────────────┬────────────────────────────────────┬─────────────┬──────────────────────┬──────────────────────────┬─────────────────────┬─────────────────────┬────────┬────────┐
 │ PromotionKey │        EnglishPromotionName        │ DiscountPct │ EnglishPromotionType │ EnglishPromotionCategory │      StartDate      │       EndDate       │ MinQty │ MaxQty │
 │    int32     │              varchar               │    float    │       varchar        │         varchar          │      timestamp      │      timestamp      │ int32  │ int32  │
@@ -205,7 +205,7 @@ ddbu.sql_print(con, sql)</code></pre>
 select * from DimDate 
 order by DateKey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌──────────┬─────────────────┬──────────────────────┬──────────────────┬─────────────────┬──────────────────┬──────────────────┬───────────────────┬─────────────────┬──────────────┬──────────────────┐
 │ DateKey  │ DayNumberOfWeek │ EnglishDayNameOfWeek │ DayNumberOfMonth │ DayNumberOfYear │ WeekNumberOfYear │ EnglishMonthName │ MonthNumberOfYear │ CalendarQuarter │ CalendarYear │ CalendarSemester │
 │  int32   │      int32      │       varchar        │      int32       │      int32      │      int32       │     varchar      │       int32       │      int32      │    int32     │      int32       │
@@ -240,7 +240,7 @@ ddbu.sql_print(con, sql)</code></pre>
 <pre><code class="language-sql">sql = """
 select count(*) as no_of_dates from DimDate;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌─────────────┐
 │ no_of_dates │
 │    int64    │
@@ -253,7 +253,7 @@ ddbu.sql_print(con, sql)</code></pre>
 select * from FactInternetSales 
 order by productkey, orderdatekey, customerkey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌────────────┬──────────────┬────────────┬─────────────┬─────────────┬──────────────┬─────────────┬──────────────────┬──────────────────────┬───────────────┬───────────────┬───────────────┐
 │ ProductKey │ OrderDateKey │ DueDateKey │ ShipDateKey │ CustomerKey │ PromotionKey │ CurrencyKey │ SalesOrderNumber │ SalesOrderLineNumber │ OrderQuantity │   UnitPrice   │  SalesAmount  │
 │   int32    │    int32     │   int32    │    int32    │    int32    │    int32     │    int32    │     varchar      │        int32         │     int32     │ decimal(13,2) │ decimal(13,2) │
@@ -288,7 +288,7 @@ ddbu.sql_print(con, sql)</code></pre>
 <pre><code class="language-sql">sql = """
 select count(*) as no_of_internet_sales from FactInternetSales;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌──────────────────────┐
 │ no_of_internet_sales │
 │        int64         │
@@ -301,7 +301,7 @@ ddbu.sql_print(con, sql)</code></pre>
 select * from FactProductInventory 
 order by ProductKey;
 """
-ddbu.sql_print(con, sql)</code></pre>
+print(con.sql(sql))</code></pre>
 <pre><code class="language-plaintext">┌────────────┬──────────┬──────────┐
 │ ProductKey │ DateKey  │ Quantity │
 │   int32    │  int32   │  int32   │
