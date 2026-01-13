@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How NotebookLM Analyzes 20,000 Documents in 48 Hours
+[(link)](https://medium.com/@kombib/notebooklm-analyze-20k-documents-fast-4dc84a33fcf5)
+
 - Google Finally Solved The Fragile Text-to-SQL Systems
 [(link)](https://medium.com/coding-nexus/google-finally-solved-the-fragile-text-to-sql-systems-63ce09c20670)
 
