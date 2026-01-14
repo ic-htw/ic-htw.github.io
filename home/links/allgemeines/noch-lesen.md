@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Critical Data Quality Queries Every Data Engineer Should Implement (Before Trust Is Lost)
+[(link)](https://medium.com/@Rohan_Dutt/10-critical-data-quality-queries-every-data-engineer-should-implement-before-trust-is-lost-0b80d770a9ff)
+
 - How NotebookLM Analyzes 20,000 Documents in 48 Hours
 [(link)](https://medium.com/@kombib/notebooklm-analyze-20k-documents-fast-4dc84a33fcf5)
 
