@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- sqlit
+[(link)](https://github.com/Maxteabag/sqlit)
+
+- PostgreSQL as a Graph Database
+[(link)](https://www.klioba.com/postgresql-as-a-graph-database)
+
+- The hidden cost of PostgreSQL arrays
+[(link)](https://boringsql.com/posts/good-bad-arrays/)
+
+- 10 SQL Time Zone Mistakes Most Teams Discover Only After Numbers Are Escalated by Executives
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-time-zone-mistakes-most-teams-discover-only-after-numbers-are-challenged-a0f58beca404)
+
 - 10 Critical Data Quality Queries Every Data Engineer Should Implement (Before Trust Is Lost)
 [(link)](https://medium.com/@Rohan_Dutt/10-critical-data-quality-queries-every-data-engineer-should-implement-before-trust-is-lost-0b80d770a9ff)
 
