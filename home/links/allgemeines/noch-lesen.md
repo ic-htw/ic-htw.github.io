@@ -25,6 +25,36 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Is Kubernetes Becoming Legacy Tech? What Modern Teams Are Using Instead in 2025
+[(link)](https://aws.plainenglish.io/is-kubernetes-becoming-legacy-tech-what-modern-teams-are-using-instead-in-2025-9dcf1a0b9fe8)
+
+- How to Build Your Own Local Data Lakehouse using Open Source Tools
+[(link)](https://medium.com/@aw_marcell/how-to-build-your-own-local-data-lakehouse-using-open-source-tools-c5a8626d10f7)
+
+- OpenCode
+[(link)](https://opencode.ai/)
+
+- You’re Using AI to Write Code. You’re Not Using It to Review Code.
+[(link)](https://medium.com/data-science-collective/youre-using-ai-to-write-code-you-re-not-using-it-to-review-code-728e5ec2576e)
+
+- “OpenRAG” From Documents to Agentic Search in Minutes (from IBM research open source)
+[(link)](https://alain-airom.medium.com/openrag-from-documents-to-agentic-search-in-minutes-from-ibm-research-open-source-ed6bf506507b)
+
+- Eigenvectors and Eigenfunctions in Differential Systems: An Exploratory Analysis
+[(link)](https://medium.com/@tomkob99_89317/eigenvectors-and-eigenfunctions-in-differential-systems-an-exploratory-analysis-e11b5d5bf251)
+
+- End-to-End Data Engineering Project (by Free Tools)
+[(link)](https://fhattat.medium.com/end-to-end-data-engineering-project-by-free-tools-cd5810372588)
+
+- How to Build a High-Performance, Free ELT Pipeline Locally using DuckDB
+[(link)](https://levelup.gitconnected.com/how-to-build-a-high-performance-free-elt-pipeline-locally-using-duckdb-8fe9d7235079)
+
+- Git Confused Me for Years Until I Found This Simple Guide
+[(link)](https://medium.com/lets-code-future/git-confused-me-for-years-until-i-found-this-simple-guide-a45223bebb40)
+
+- Why the Transformer Architecture Changed the World — A Historical Story from Origins to Impact
+[(link)](https://blog.stackademic.com/why-the-transformer-architecture-changed-the-world-a-historical-story-from-origins-to-impact-5b20e6f18a95)
+
 - sqlit
 [(link)](https://github.com/Maxteabag/sqlit)
 
