@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- oLLM: The Revolutionary Python Library Running Powerful Language Models on Ordinary Computers
+[(link)](https://medium.com/@kombib/ollm-the-revolutionary-python-library-running-powerful-language-models-on-ordinary-computers-214c0e7213e1)
+
+- The RAG Layer Nobody Talks About
+[(link)](https://ai.gopubby.com/the-rag-layer-nobody-talks-about-7580d2f59f6f)
+
 - Is Kubernetes Becoming Legacy Tech? What Modern Teams Are Using Instead in 2025
 [(link)](https://aws.plainenglish.io/is-kubernetes-becoming-legacy-tech-what-modern-teams-are-using-instead-in-2025-9dcf1a0b9fe8)
 
