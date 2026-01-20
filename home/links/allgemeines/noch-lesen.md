@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- XGBoost Finally Explained: The Simple Breakdown That Most Tutorials Skip
+[(link)](https://pub.towardsai.net/xgboost-finally-explained-the-simple-breakdown-that-most-tutorials-skip-54c655b3143b)
+
+- Creating an Advanced AI Agent From Scratch with Python in 2026: Part 1
+[(link)](https://pub.towardsai.net/creating-an-advanced-ai-agent-from-scratch-with-python-in-2025-part-1-ce74a23f6514)
+
+- Stop Burning Snowflake Credits: I Built a Local Snowflake Emulator with DuckDB
+[(link)](https://medium.com/towards-data-engineering/stop-burning-snowflake-credits-i-built-a-local-emulator-with-duckdb-d657bd68d212)
+
+- Exploratory Data Analysis Checklist: What to Look for Every Time
+[(link)](https://medium.com/codetodeploy/exploratory-data-analysis-checklist-what-to-look-for-every-time-b922da6090ed)
+
 - oLLM: The Revolutionary Python Library Running Powerful Language Models on Ordinary Computers
 [(link)](https://medium.com/@kombib/ollm-the-revolutionary-python-library-running-powerful-language-models-on-ordinary-computers-214c0e7213e1)
 
