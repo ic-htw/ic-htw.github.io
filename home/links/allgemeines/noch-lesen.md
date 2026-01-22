@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- SQL - Why Probability Mass Functions in SQL Are More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-probability-mass-functions-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-de6412d88a57)
+
+- SQL - Why Hypothesis Testing Using SQL Aggregations Is Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-hypothesis-testing-using-sql-aggregations-is-more-powerful-than-you-think-and-how-to-master-f0e66908c17c)
+
+- Why Every Python Developer Should Build Their Own MCP Server in 2026
+[(link)](https://medium.com/@tricky16122000/why-every-python-developer-should-build-their-own-mcp-server-in-2026-9c7505214792)
+
 - XGBoost Finally Explained: The Simple Breakdown That Most Tutorials Skip
 [(link)](https://pub.towardsai.net/xgboost-finally-explained-the-simple-breakdown-that-most-tutorials-skip-54c655b3143b)
 
