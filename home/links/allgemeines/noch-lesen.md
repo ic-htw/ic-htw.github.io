@@ -25,6 +25,24 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tried New Claude Code Ollama Workflow ( It’s Wild & Free)
+[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-ollama-workflow-its-wild-free-cb7a12b733b5)
+
+- Claude Code Just Cut MCP Context Bloat by 46.9% — 51K Tokens Down to 8.5K With Tool Search
+[(link)](https://medium.com/@joe.njenga/claude-code-just-cut-mcp-context-bloat-by-46-9-51k-tokens-down-to-8-5k-with-new-tool-search-ddf9e905f734)
+
+- Claude Code’s Creator, 100 PRs a Week — His Setup Will Surprise You
+[(link)](https://medium.com/vibe-coding/claude-codes-creator-100-prs-a-week-his-setup-will-surprise-you-7d6939c99f2b)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
+- aaa
+[(link)](bbb)
+
 - SQL - Why Probability Mass Functions in SQL Are More Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-probability-mass-functions-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-de6412d88a57)
 
