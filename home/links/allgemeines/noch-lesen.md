@@ -34,14 +34,17 @@ is_slide: 0
 - Claude Code’s Creator, 100 PRs a Week — His Setup Will Surprise You
 [(link)](https://medium.com/vibe-coding/claude-codes-creator-100-prs-a-week-his-setup-will-surprise-you-7d6939c99f2b)
 
-- aaa
-[(link)](bbb)
+- A 30B Qwen model runs in real time on a Raspberry Pi, here’s why that matters
+[(link)](https://medium.com/@sebuzdugan/a-30b-qwen-model-runs-in-real-time-on-a-raspberry-pi-heres-why-that-matters-d51bd8df9bb6)
 
-- aaa
-[(link)](bbb)
+- Opencode - I Finally Tried It
+[(link)](https://medium.com/vibe-coding/this-tool-gained-30k-github-stars-in-one-month-i-finally-tried-it-1294a47f41b7)
 
-- aaa
-[(link)](bbb)
+- Claude Code in Action
+[(link)](https://anthropic.skilljar.com/claude-code-in-action)
+
+- Every Python Concept Explained
+[(link)](https://medium.com/@tricky16122000/every-python-concept-explained-60f3a2d40736)
 
 - SQL - Why Probability Mass Functions in SQL Are More Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-probability-mass-functions-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-de6412d88a57)
