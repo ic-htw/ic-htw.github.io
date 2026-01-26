@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Our JetBrains Devs Switched to VSCode. They Hate VSCode.
+[(link)](https://medium.com/vibe-coding/our-jetbrains-devs-switched-to-vscode-they-hate-vscode-771a2a4a63d1)
+
 - I Tried New Claude Code Ollama Workflow ( It’s Wild & Free)
 [(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-ollama-workflow-its-wild-free-cb7a12b733b5)
 
