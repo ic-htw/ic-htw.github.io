@@ -499,8 +499,8 @@ home: &r
                   - t: Presentations
                     ts: Presentations
                     url: /home/lv/dsml/general/pres.html
-                  - t: Structure of Exam
-                    ts: Structure of Exam
+                  - t: Exam
+                    ts: Exam
                     url: /home/lv/dsml/general/exam.html
                   - t: Resources
                     ts: Resources

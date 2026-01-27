@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tested Clawdbot: The Most Powerful AI Assistant You Have Ever Seen (And It’s Free)
+[(link)](https://medium.com/ai-software-engineer/i-tested-clawdbot-the-most-powerful-ai-assistant-you-have-ever-seen-and-its-free-b5b803771637)
+
 - Our JetBrains Devs Switched to VSCode. They Hate VSCode.
 [(link)](https://medium.com/vibe-coding/our-jetbrains-devs-switched-to-vscode-they-hate-vscode-771a2a4a63d1)
 
