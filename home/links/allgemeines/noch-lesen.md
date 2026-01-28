@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Graphs, Algorithms, and My First Impression of DataFusion
+[(link)](https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc/)
+
+- Zero ETL Is the Reality Check Every Data Engineer Needs in 2026
+[(link)](https://aws.plainenglish.io/zero-etl-is-the-reality-check-every-data-engineer-needs-in-2026-c4623d7df460)
+
+- Agentic AI with DuckDB and smolagents
+[(link)](https://buckenhofer.com/2025/11/agentic-ai-with-duckdb-and-smolagents-natural-language-queries-for-analytics/)
+
 - I Tested Clawdbot: The Most Powerful AI Assistant You Have Ever Seen (And It’s Free)
 [(link)](https://medium.com/ai-software-engineer/i-tested-clawdbot-the-most-powerful-ai-assistant-you-have-ever-seen-and-its-free-b5b803771637)
 
