@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Introducing: Postgres Best Practices for AI Agents
+[(link)](https://supabase.com/blog/postgres-best-practices-for-ai-agents)
+
 - Graphs, Algorithms, and My First Impression of DataFusion
 [(link)](https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc/)
 
