@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How Agent Skills Became AI’s Most Important Standard in 90 Days
+[(link)](https://ai.gopubby.com/how-agent-skills-became-ais-most-important-standard-in-90-days-a66b6369b1b7)
+
+- 10 Regression Estimators That Don’t Collapse When Outliers Slip Into Production Data
+[(link)](https://medium.com/@Rohan_Dutt/10-regression-estimators-that-dont-collapse-when-outliers-slip-into-production-data-544120d3093a)
+
+- The Concept Every AI Coder Learns Too Late
+[(link)](https://medium.com/vibe-coding/the-concept-every-ai-coder-learns-too-late-c63dd872f923)
+
+- I Tested Kimi K2.5 with Claude Code (1-Trillion Parameters, 8x Cheaper Than Opus)
+[(link)](https://medium.com/@joe.njenga/i-tested-kimi-k2-5-with-claude-code-1-trillion-parameters-8x-cheaper-than-opus-8d4f9e9c7b4d)
+
 - Introducing: Postgres Best Practices for AI Agents
 [(link)](https://supabase.com/blog/postgres-best-practices-for-ai-agents)
 
