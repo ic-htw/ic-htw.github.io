@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How to Build a Medallion Architecture Locally with dbt and DuckDB
+[(link)](https://blog.dataengineerthings.org/how-to-build-a-medallion-architecture-locally-with-dbt-and-duckdb-e8e5e9270a72)
+
 - How Agent Skills Became AI’s Most Important Standard in 90 Days
 [(link)](https://ai.gopubby.com/how-agent-skills-became-ais-most-important-standard-in-90-days-a66b6369b1b7)
 
