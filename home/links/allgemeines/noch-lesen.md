@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Apache Airflow vs NiFi: Which is the Right Tool for Data Logistics?
+[(link)](https://medium.com/towards-data-engineering/apache-airflow-vs-nifi-which-is-the-right-tool-for-data-logistics-48625c2bcd2d)
+
 - How to Build a Medallion Architecture Locally with dbt and DuckDB
 [(link)](https://blog.dataengineerthings.org/how-to-build-a-medallion-architecture-locally-with-dbt-and-duckdb-e8e5e9270a72)
 
