@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tested (New) Claude Code /Insights
+[(link)](https://medium.com/@joe.njenga/i-tested-claude-code-insights-it-roasted-my-coding-habits-e38c642e1642)
+
+- Apache Pinot Architecture Explained for Data Engineers
+[(link)](https://medium.com/towards-data-engineering/apache-pinot-architecture-explained-for-data-engineers-2bd971ed4a4c)
+
+- Memgraph: Real-Time Graph Computing for Modern Data Systems
+[(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
+
 - Apache Airflow vs NiFi: Which is the Right Tool for Data Logistics?
 [(link)](https://medium.com/towards-data-engineering/apache-airflow-vs-nifi-which-is-the-right-tool-for-data-logistics-48625c2bcd2d)
 
