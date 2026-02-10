@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why Pandas 3.0 Feels Like a Whole New Library
+[(link)](https://techwithram.medium.com/why-pandas-3-0-feels-like-a-whole-new-library-487d8f20ef1a)
+
+- Why Time-Series Recursion in SQL Is More Powerful Than You Think 
+[(link)](https://medium.com/@Rohan_Dutt/why-time-series-recursion-in-sql-is-more-powerful-than-you-think-and-how-to-master-it-1e0599a46fc3)
+
 - I Tested (New) Claude Code /Insights
 [(link)](https://medium.com/@joe.njenga/i-tested-claude-code-insights-it-roasted-my-coding-habits-e38c642e1642)
 
