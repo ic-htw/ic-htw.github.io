@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Claude Opus 4.6: What Actually Changed and Why It Matters
+[(link)](https://medium.com/data-science-collective/claude-opus-4-6-what-actually-changed-and-why-it-matters-1c81baeea0c9)
+
+- I Tried (New) Claude Code Agent Teams 
+[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-agent-teams-and-discovered-new-way-to-swarm-28a6cd72adb8)
+
+- GPT-5.3-Codex: The Model That Built Itself
+[(link)](https://medium.com/data-science-collective/gpt-5-3-codex-the-model-that-built-itself-6946670037f9)
+
+- 9 Free Google AI Trainings
+[(link)](https://osintteam.blog/9-free-google-ai-trainings-the-opportunity-you-cant-afford-to-miss-in-2026-d0e1d85afc3d)
+
 - Why Pandas 3.0 Feels Like a Whole New Library
 [(link)](https://techwithram.medium.com/why-pandas-3-0-feels-like-a-whole-new-library-487d8f20ef1a)
 
