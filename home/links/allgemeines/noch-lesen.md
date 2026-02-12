@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Enterprise grade Postgres for Agentic AI
+[(link)](https://www.pgedge.com/)
+
+- ErwinDB - A TUI for browsing Erwin Brandstetter's Stack Overflow Q&A content.
+[(link)](https://github.com/ahacop/erwindb)
+
+- Understanding RLHF from First Principles
+[(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
+
 - Claude Opus 4.6: What Actually Changed and Why It Matters
 [(link)](https://medium.com/data-science-collective/claude-opus-4-6-what-actually-changed-and-why-it-matters-1c81baeea0c9)
 
