@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tested Antigravity Claude Opus 4.6 
+[(link)](https://medium.com/ai-software-engineer/i-tested-antigravity-claude-opus-4-6-agentic-workflow-i-didnt-expect-36c04ab6b25e)
+
+- Top Industries Using AI in 2025-The Real Game Changers
+[(link)](https://medium.com/illumination/top-industries-using-ai-in-2025-the-real-game-changers-bca143bbc2a7)
+
 - Enterprise grade Postgres for Agentic AI
 [(link)](https://www.pgedge.com/)
 
