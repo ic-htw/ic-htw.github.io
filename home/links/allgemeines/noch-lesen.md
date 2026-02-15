@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Building A Distributed SQL Database in 30 Days with AI
+[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
+
+- roborev
+[(link)](https://www.roborev.io/)
+
+- VS Code Agent updates
+[(link)](https://code.visualstudio.com/updates/v1_109)
+
+- 9 Things Every Python Script Should Have
+[(link)](https://meetcyber.net/9-things-every-python-script-should-have-2b1717381bcb)
+
+- My Team Asked Why I’m ‘Wasting $100/Month’ on Claude When Copilot Is $10! 
+[(link)](https://isitvritra101.medium.com/claude-opus-vs-github-copilot-net-developer-cost-8f50da6a1467)
+
 - I Tested Antigravity Claude Opus 4.6 
 [(link)](https://medium.com/ai-software-engineer/i-tested-antigravity-claude-opus-4-6-agentic-workflow-i-didnt-expect-36c04ab6b25e)
 
