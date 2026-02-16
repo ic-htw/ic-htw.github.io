@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Finally, I Switched to Gemini From ChatGPT
+[(link)](https://medium.com/lets-code-future/finally-i-switched-to-gemini-from-chatgpt-heres-why-b35d47fb8629)
+
+- Stop Using Notion for Everything: How Google Keep Became My Productivity Multiplier
+[(link)](https://medium.com/@InsightfulEdge/google-keep-isnt-a-note-app-it-s-your-brain-s-operating-system-d797ea665585)
+
 - Building A Distributed SQL Database in 30 Days with AI
 [(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
 
