@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 25 LLM Best Practices I Believe Every Engineer Should Learn Early
+[(link)](https://pub.towardsai.net/25-llm-best-practices-i-believe-every-engineer-should-learn-early-259ce970e06c)
+
 - Finally, I Switched to Gemini From ChatGPT
 [(link)](https://medium.com/lets-code-future/finally-i-switched-to-gemini-from-chatgpt-heres-why-b35d47fb8629)
 
