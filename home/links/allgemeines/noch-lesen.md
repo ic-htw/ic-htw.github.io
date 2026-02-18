@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tested Opus 4.6 In Claude Code: How to Use Opus 4.6 in Claude Code
+[(link)](https://medium.com/@joe.njenga/i-tested-opus-4-6-in-claude-code-how-to-use-opus-4-6-in-claude-code-f5e289956f8f)
+
+- Postgres can replace your entire stack
+[(link)](https://blog.stackademic.com/postgres-can-replace-your-entire-stack-ab3e04018911)
+
 - 25 LLM Best Practices I Believe Every Engineer Should Learn Early
 [(link)](https://pub.towardsai.net/25-llm-best-practices-i-believe-every-engineer-should-learn-early-259ce970e06c)
 
