@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Introducing Bluebox Docker: A Living PostgreSQL Sample Database
+[(link)](https://www.softwareandbooz.com/introducing-bluebox-docker-a-living-postgresql-sample-database/)
+
+- Teaching an LLM What It Doesn't Know About PostgreSQL
+[(link)](https://www.pgedge.com/blog/teaching-an-llm-what-it-doesn-t-know-about-postgresql)
+
+- Something Big Is Happening - Matt Shumer
+[(link)](https://shumer.dev/something-big-is-happening)
+
+- Federated Learning, Part 1: The Basics of training models where the data lives
+[(link)](https://pandeyparul.medium.com/federated-learning-part-1-the-basics-of-training-models-where-the-data-lives-a6d40469c898)
+
 - I Tested Opus 4.6 In Claude Code: How to Use Opus 4.6 in Claude Code
 [(link)](https://medium.com/@joe.njenga/i-tested-opus-4-6-in-claude-code-how-to-use-opus-4-6-in-claude-code-f5e289956f8f)
 
