@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- LEANN: The World’s Smallest Vector Index That Could Redefine RAG
+[(link)](https://www.towardsdeeplearning.com/leann-the-worlds-smallest-vector-index-that-could-redefine-rag-75d5aa3708c8)
+
+- DuckDB and Cloud Data Warehouses: How to Choose For Your Project
+[(link)](https://blog.dataengineerthings.org/duckdb-and-cloud-data-warehouses-how-to-choose-for-your-project-54c7576496ae)
+
+- The Prompt Language Microsoft’s AI Team Uses 
+[(link)](https://medium.com/vibe-coding/the-prompt-language-microsofts-ai-team-uses-they-finally-released-it-bc62eafd79e6)
+
+- DeepSite v2: The Free, Open-Source AI Website Builder That Actually Ships
+[(link)](https://www.towardsdeeplearning.com/deepsite-v2-the-free-open-source-ai-website-builder-that-actually-ships-6f5985156ae9)
+
+- Figma's 2025 AI report: Perspectives from designers and developers
+[(link)](https://www.figma.com/blog/figma-2025-ai-report-perspectives/)
+
 - Introducing Bluebox Docker: A Living PostgreSQL Sample Database
 [(link)](https://www.softwareandbooz.com/introducing-bluebox-docker-a-living-postgresql-sample-database/)
 
