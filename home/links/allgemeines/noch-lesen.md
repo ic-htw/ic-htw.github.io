@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
+[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
+
+- Everything You Can Do with Chrome’s Built-In AI Assistant (2025)
+[(link)](https://generativeai.pub/everything-you-can-do-with-chromes-built-in-ai-assistant-2025-9307e962deb4)
+
+- Google Is Quietly Dismantling Everything OpenAI Built
+[(link)](https://medium.com/@teja.kusireddy23/google-is-quietly-dismantling-everything-openai-built-4edc406f572d)
+
+- My friend tried Claude Code and wants to quit his job. Here is what I said.
+[(link)](https://medium.com/realworld-ai-use-cases/my-friend-tried-claude-code-and-wants-to-quit-his-job-here-is-what-i-said-f5bee10ed8e7)
+
+- How to Choose a Database for your Project in 2026?
+[(link)](https://medium.com/@khushbu.shah_661/how-to-choose-a-database-for-your-project-in-2026-4b5cfb8845bf)
+
 - LEANN: The World’s Smallest Vector Index That Could Redefine RAG
 [(link)](https://www.towardsdeeplearning.com/leann-the-worlds-smallest-vector-index-that-could-redefine-rag-75d5aa3708c8)
 
