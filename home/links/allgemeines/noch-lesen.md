@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Anthropic Just Fixed the Biggest Hidden Cost in AI Agents (Automatic Prompt Caching)
+[(link)](https://medium.com/ai-software-engineer/anthropic-just-fixed-the-biggest-hidden-cost-in-ai-agents-using-automatic-prompt-caching-9d47c95903c5)
+
+- Building an AI Agent from Scratch with pure Python
+[(link)](https://levelup.gitconnected.com/building-an-ai-agent-from-scratch-with-pure-python-7d4532202637)
+
+- LangExtract Google
+[(link)](https://github.com/google/langextract)
+
+- 9 Agentic AI Projects I’d Build in 2026 to Learn What Agents Really Are
+[(link)](https://pub.towardsai.net/9-agentic-ai-projects-id-build-in-2026-to-learn-what-agents-really-are-e8b875892320)
+
 - Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
 
