@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The February Reset: Three Labs, Four Models, and the End of “One Best AI”
+[(link)](https://medium.com/data-science-collective/the-february-reset-three-labs-four-models-and-the-end-of-one-best-ai-7a9755eccdcc)
+
 - Anthropic Just Fixed the Biggest Hidden Cost in AI Agents (Automatic Prompt Caching)
 [(link)](https://medium.com/ai-software-engineer/anthropic-just-fixed-the-biggest-hidden-cost-in-ai-agents-using-automatic-prompt-caching-9d47c95903c5)
 
