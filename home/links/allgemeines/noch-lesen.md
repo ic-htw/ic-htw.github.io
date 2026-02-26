@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Entire
+[(link)](https://entire.io/)
+
+- sabiql - Postgres TUI
+[(link)](https://github.com/riii111/sabiql)
+
 - The February Reset: Three Labs, Four Models, and the End of “One Best AI”
 [(link)](https://medium.com/data-science-collective/the-february-reset-three-labs-four-models-and-the-end-of-one-best-ai-7a9755eccdcc)
 
