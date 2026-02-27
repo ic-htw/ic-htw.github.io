@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The Day a Google L7 Engineer Tore My System Design to Shreds
+[(link)](https://medium.com/expocomputing/google-l7-system-design-interview-lessons-0b3834fded07)
+
+- The “AI Kills SaaS” Take Is Lazy. Here’s What’s Actually Happening
+[(link)](https://medium.com/realworld-ai-use-cases/the-ai-kills-saas-take-is-lazy-heres-what-s-actually-happening-28ae945b7832)
+
 - Entire
 [(link)](https://entire.io/)
 
