@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Apache DataFusion: A Data Engineer's Guide to the Query Engine Reshaping How We Build Data Systems
+[(link)](https://www.linkedin.com/pulse/apache-datafusion-data-engineers-guide-query-engine-reshaping-madson-lojrc/)
+
+- Building A Distributed SQL Database in 30 Days with AI
+[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
+
 - The Day a Google L7 Engineer Tore My System Design to Shreds
 [(link)](https://medium.com/expocomputing/google-l7-system-design-interview-lessons-0b3834fded07)
 
@@ -33,9 +39,6 @@ is_slide: 0
 
 - Entire
 [(link)](https://entire.io/)
-
-- sabiql - Postgres TUI
-[(link)](https://github.com/riii111/sabiql)
 
 - The February Reset: Three Labs, Four Models, and the End of “One Best AI”
 [(link)](https://medium.com/data-science-collective/the-february-reset-three-labs-four-models-and-the-end-of-one-best-ai-7a9755eccdcc)
@@ -79,26 +82,12 @@ is_slide: 0
 - DeepSite v2: The Free, Open-Source AI Website Builder That Actually Ships
 [(link)](https://www.towardsdeeplearning.com/deepsite-v2-the-free-open-source-ai-website-builder-that-actually-ships-6f5985156ae9)
 
-- Figma's 2025 AI report: Perspectives from designers and developers
-[(link)](https://www.figma.com/blog/figma-2025-ai-report-perspectives/)
-
-- Introducing Bluebox Docker: A Living PostgreSQL Sample Database
-[(link)](https://www.softwareandbooz.com/introducing-bluebox-docker-a-living-postgresql-sample-database/)
-
-- Teaching an LLM What It Doesn't Know About PostgreSQL
-[(link)](https://www.pgedge.com/blog/teaching-an-llm-what-it-doesn-t-know-about-postgresql)
-
-- Something Big Is Happening - Matt Shumer
-[(link)](https://shumer.dev/something-big-is-happening)
 
 - Federated Learning, Part 1: The Basics of training models where the data lives
 [(link)](https://pandeyparul.medium.com/federated-learning-part-1-the-basics-of-training-models-where-the-data-lives-a6d40469c898)
 
 - I Tested Opus 4.6 In Claude Code: How to Use Opus 4.6 in Claude Code
 [(link)](https://medium.com/@joe.njenga/i-tested-opus-4-6-in-claude-code-how-to-use-opus-4-6-in-claude-code-f5e289956f8f)
-
-- Postgres can replace your entire stack
-[(link)](https://blog.stackademic.com/postgres-can-replace-your-entire-stack-ab3e04018911)
 
 - 25 LLM Best Practices I Believe Every Engineer Should Learn Early
 [(link)](https://pub.towardsai.net/25-llm-best-practices-i-believe-every-engineer-should-learn-early-259ce970e06c)
@@ -108,9 +97,6 @@ is_slide: 0
 
 - Stop Using Notion for Everything: How Google Keep Became My Productivity Multiplier
 [(link)](https://medium.com/@InsightfulEdge/google-keep-isnt-a-note-app-it-s-your-brain-s-operating-system-d797ea665585)
-
-- Building A Distributed SQL Database in 30 Days with AI
-[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
 
 - roborev
 [(link)](https://www.roborev.io/)
@@ -130,11 +116,6 @@ is_slide: 0
 - Top Industries Using AI in 2025-The Real Game Changers
 [(link)](https://medium.com/illumination/top-industries-using-ai-in-2025-the-real-game-changers-bca143bbc2a7)
 
-- Enterprise grade Postgres for Agentic AI
-[(link)](https://www.pgedge.com/)
-
-- ErwinDB - A TUI for browsing Erwin Brandstetter's Stack Overflow Q&A content.
-[(link)](https://github.com/ahacop/erwindb)
 
 - Understanding RLHF from First Principles
 [(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
@@ -160,9 +141,6 @@ is_slide: 0
 - I Tested (New) Claude Code /Insights
 [(link)](https://medium.com/@joe.njenga/i-tested-claude-code-insights-it-roasted-my-coding-habits-e38c642e1642)
 
-- Apache Pinot Architecture Explained for Data Engineers
-[(link)](https://medium.com/towards-data-engineering/apache-pinot-architecture-explained-for-data-engineers-2bd971ed4a4c)
-
 - Memgraph: Real-Time Graph Computing for Modern Data Systems
 [(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
 
@@ -183,12 +161,6 @@ is_slide: 0
 
 - I Tested Kimi K2.5 with Claude Code (1-Trillion Parameters, 8x Cheaper Than Opus)
 [(link)](https://medium.com/@joe.njenga/i-tested-kimi-k2-5-with-claude-code-1-trillion-parameters-8x-cheaper-than-opus-8d4f9e9c7b4d)
-
-- Introducing: Postgres Best Practices for AI Agents
-[(link)](https://supabase.com/blog/postgres-best-practices-for-ai-agents)
-
-- Graphs, Algorithms, and My First Impression of DataFusion
-[(link)](https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc/)
 
 - Zero ETL Is the Reality Check Every Data Engineer Needs in 2026
 [(link)](https://aws.plainenglish.io/zero-etl-is-the-reality-check-every-data-engineer-needs-in-2026-c4623d7df460)
@@ -211,14 +183,8 @@ is_slide: 0
 - Claude Code’s Creator, 100 PRs a Week — His Setup Will Surprise You
 [(link)](https://medium.com/vibe-coding/claude-codes-creator-100-prs-a-week-his-setup-will-surprise-you-7d6939c99f2b)
 
-- A 30B Qwen model runs in real time on a Raspberry Pi, here’s why that matters
-[(link)](https://medium.com/@sebuzdugan/a-30b-qwen-model-runs-in-real-time-on-a-raspberry-pi-heres-why-that-matters-d51bd8df9bb6)
-
 - Opencode - I Finally Tried It
 [(link)](https://medium.com/vibe-coding/this-tool-gained-30k-github-stars-in-one-month-i-finally-tried-it-1294a47f41b7)
-
-- Claude Code in Action
-[(link)](https://anthropic.skilljar.com/claude-code-in-action)
 
 - Every Python Concept Explained
 [(link)](https://medium.com/@tricky16122000/every-python-concept-explained-60f3a2d40736)
@@ -250,12 +216,6 @@ is_slide: 0
 - The RAG Layer Nobody Talks About
 [(link)](https://ai.gopubby.com/the-rag-layer-nobody-talks-about-7580d2f59f6f)
 
-- Is Kubernetes Becoming Legacy Tech? What Modern Teams Are Using Instead in 2025
-[(link)](https://aws.plainenglish.io/is-kubernetes-becoming-legacy-tech-what-modern-teams-are-using-instead-in-2025-9dcf1a0b9fe8)
-
-- How to Build Your Own Local Data Lakehouse using Open Source Tools
-[(link)](https://medium.com/@aw_marcell/how-to-build-your-own-local-data-lakehouse-using-open-source-tools-c5a8626d10f7)
-
 - OpenCode
 [(link)](https://opencode.ai/)
 
@@ -274,20 +234,12 @@ is_slide: 0
 - How to Build a High-Performance, Free ELT Pipeline Locally using DuckDB
 [(link)](https://levelup.gitconnected.com/how-to-build-a-high-performance-free-elt-pipeline-locally-using-duckdb-8fe9d7235079)
 
-- Git Confused Me for Years Until I Found This Simple Guide
-[(link)](https://medium.com/lets-code-future/git-confused-me-for-years-until-i-found-this-simple-guide-a45223bebb40)
-
 - Why the Transformer Architecture Changed the World — A Historical Story from Origins to Impact
 [(link)](https://blog.stackademic.com/why-the-transformer-architecture-changed-the-world-a-historical-story-from-origins-to-impact-5b20e6f18a95)
 
 - sqlit
 [(link)](https://github.com/Maxteabag/sqlit)
 
-- PostgreSQL as a Graph Database
-[(link)](https://www.klioba.com/postgresql-as-a-graph-database)
-
-- The hidden cost of PostgreSQL arrays
-[(link)](https://boringsql.com/posts/good-bad-arrays/)
 
 - 10 SQL Time Zone Mistakes Most Teams Discover Only After Numbers Are Escalated by Executives
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-time-zone-mistakes-most-teams-discover-only-after-numbers-are-challenged-a0f58beca404)
@@ -343,8 +295,6 @@ is_slide: 0
 - Why Everyone is Talking about Google Antigravity: The Era of Agentic AI Coding
 [(link)](https://pub.towardsai.net/why-everyone-is-talking-about-google-antigravity-the-era-of-agentic-ai-coding-bad5e9e78326)
 
-- Postgres in the time of monster hardware
-[(link)](https://www.enterprisedb.com/blog/postgres-time-monster-hardware)
 
 - 10 Business-Centric Data Metrics Analysts Ignore (Until They’re Replaced)
 [(link)](https://medium.com/@Rohan_Dutt/10-business-centric-data-metrics-analysts-ignore-until-theyre-replaced-d8b8e39b3f7b)
@@ -498,9 +448,6 @@ is_slide: 0
 - We Deleted 1,200 Dashboards. No One Noticed.
 [(link)](https://medium.com/@aminsiddique95/i-deleted-1-200-dashboards-no-one-noticed-c559ff5d3d85)
 
-- MIT’s Project Iceberg Reveals AI’s Job Impact Is Far Bigger Than It Appears
-[(link)](https://medium.com/@markaherschberg/mits-project-iceberg-reveals-ai-s-job-impact-is-far-bigger-than-it-appears-a36c5ef610cf)
-
 - 10 Future Trends in GenAI for Data Engineering Pipelines
 [(link)](https://medium.com/@Rohan_Dutt/10-future-trends-in-genai-for-data-engineering-pipelines-2dc1a6aba8c9)
 
@@ -525,11 +472,7 @@ is_slide: 0
 - The Serverless Illusion: Why Everyone Is Quietly Moving Back to VMs
 [(link)](https://medium.com/@maahisoft20/the-serverless-illusion-why-everyone-is-quietly-moving-back-to-vms-cbc649048540)
 
-- We Taught AI to Write Real Postgres Code
-[(link)](https://www.tigerdata.com/blog/we-taught-ai-to-write-real-postgres-code-open-sourced-it)
 
-- PostgreSQL AI Query Extension
-[(link)](https://benodiwal.github.io/pg_ai_query/introduction.html)
 
 - The Best Way to Use AI for Learning
 [(link)](https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1)
@@ -588,8 +531,6 @@ is_slide: 0
 - Meet TOON — The Fresh Data Format That Could Replace JSON in the AI Era
 [(link)](https://ai.plainenglish.io/meet-toon-the-fresh-data-format-that-could-replace-json-in-the-ai-era-d93874066abd)
 
-- Postgres for Agents
-[(link)](https://www.tigerdata.com/blog/postgres-for-agents)
 
 - Storing products, prices and orders in PostgreSQL
 [(link)](https://www.cybertec-postgresql.com/en/storing-products-prices-and-orders-in-postgresql/)
@@ -753,8 +694,7 @@ is_slide: 0
 - The Anatomy of a Modern LLM
 [(link)](https://medium.com/@damianvtran/the-anatomy-of-a-modern-llm-0347afd72514)
 
-- From Data Warehouse to Lakehouse: Hybrid Architectures Every Engineer Must Master in 2025
-[(link)](https://aws.plainenglish.io/from-data-warehouse-to-lakehouse-hybrid-architectures-every-engineer-must-master-in-2025-2b4726228797)
+
 
 - Waiting for Postgres 18: Accelerating Disk Reads with Asynchronous I/O
 [(link)](https://pganalyze.com/blog/postgres-18-async-io)
@@ -813,8 +753,7 @@ is_slide: 0
 - Why Generative AI Is Forcing Us to Rethink Data Modeling
 [(link)](https://afroinfotech.medium.com/why-generative-ai-is-forcing-us-to-rethink-data-modeling-fbbea5e0aaea)
 
-- Lakehouse Architecture: Why Lakehouses Are the Future of Big Data
-[(link)](https://medium.com/@vijaygadhave2014/lakehouse-architecture-why-lakehouses-are-the-future-of-big-data-40a6ec4fc49f)
+
 
 - Stop Using Requests — Try This Modern HTTP Library Instead
 [(link)](https://medium.com/pythonic-af/stop-using-requests-try-this-modern-http-library-instead-3eccd6225995)
@@ -900,12 +839,6 @@ is_slide: 0
 - Building the Entire RAG Ecosystem and Optimizing Every Component
 [(link)](https://levelup.gitconnected.com/building-the-entire-rag-ecosystem-and-optimizing-every-component-8f23349b96a4)
 
-- Nimtable: The Control Plane for Apache Iceberg
-[(link)](https://towardsdev.com/nimtable-the-control-plane-for-apache-iceberg-aa230a32f7e1)
-
-- Resolving 26 Git Workflow Challenges Every Dev Team Faces
-[(link)](https://levelup.gitconnected.com/resolving-26-git-workflow-challenges-every-dev-team-faces-6312cf976703)
-
 - What is a t-test and When to Use It in Pandas?
 [(link)](https://medium.com/@amit25173/what-is-a-t-test-and-when-to-use-it-in-pandas-9fde303d3c9f)
 
@@ -962,8 +895,6 @@ is_slide: 0
 [(link)](https://medium.com/@lmpo/from-chaos-to-clarity-building-modern-python-projects-with-uv-974bcde80c9b)
 
 
-- The Ultimate Guide to Git Branching Strategies
-[(link)](https://blog.prateekjain.dev/the-ultimate-guide-to-git-branching-strategies-6324f1aceac2)
 
 
 - The AI Stack No One Talks About: Data Acquisition as Infrastructure
@@ -1030,11 +961,6 @@ is_slide: 0
 - 5 Things You Didn’t Know About LocalStorage
 [(link)](https://javascript.plainenglish.io/5-things-you-didnt-know-about-localstorage-f13a39133247)
 
-- How Apache Iceberg Actually Works
-[(link)](https://medium.com/@tfmv/how-apache-iceberg-actually-works-64f97fb13c45)
-
-- From ERDs to Ontologies: Why Data Modelers Are Making the Switch
-[(link)](https://medium.com/timbr-ai/from-erds-to-ontologies-why-data-modelers-are-making-the-switch-6e37f04dc324)
 
 - Building Real-Time Dashboards with FastAPI and HTMX
 [(link)](https://boadziedaniel.medium.com/building-real-time-dashboards-with-fastapi-and-htmx-01ea458673cb)
@@ -1050,9 +976,6 @@ is_slide: 0
 
 - Palantir Foundry Is 5–10 Years Ahead of Every Other Data Platform
 [(link)](https://blog.det.life/what-palantir-foundry-taught-me-about-building-better-data-systems-407e3768d5fc)
-
-- What does git for Data even look like anymore?
-[(link)](https://dataopsleadership.substack.com/p/what-does-git-for-data-even-look)
 
 - Performance vs Practicality: A Comparison of vLLM and Ollama
 [(link)](https://robert-mcdermott.medium.com/performance-vs-practicality-a-comparison-of-vllm-and-ollama-104acad250fd)
@@ -1105,8 +1028,6 @@ is_slide: 0
 - Building a modern Data Warehouse from scratch
 [(link)](https://rihab-feki.medium.com/building-a-modern-data-warehouse-from-scratch-d18d346a7118)
 
-- Building a Modern Data Lakehouse with DuckDB and MinIO
-[(link)](https://medium.com/@sweetkobem/building-a-modern-data-lakehouse-with-duckdb-and-minio-ec689a61e7bd)
 
 - A case where SQL joins struggle but MongoDB documents shine
 [(link)](https://dev.to/franckpachot/a-case-where-sql-joins-struggle-but-mongodb-documents-shine-11kj)
@@ -1402,8 +1323,6 @@ is_slide: 0
 - DeepSeek Fine-Tuning Made Simple: Create Custom AI Models with Python
 [(link)](https://pub.towardsai.net/deepseek-fine-tuning-made-simple-create-custom-ai-models-with-python-7b98f091c824)
 
-- Beyond Cost Savings: The True Power of Apache Iceberg in Modern Data Architectures
-[(link)](https://towardsdev.com/the-true-power-of-apache-iceberg-revolutionizing-modern-data-architectures-044146d463c6)
 
 - Handling Slowly Changing Dimensions (SCD) in Modern Data Pipelines: A Complete Guide with SQL Examples
 [(link)](https://blog.det.life/handling-slowly-changing-dimensions-scd-in-modern-data-pipeline-a-complete-guide-with-sql-fbb95f19a7cf)
@@ -1591,14 +1510,8 @@ is_slide: 0
 - 4 SQLAlchemy Features For Data Engineering
 [(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
 
-- Fine-Tuning LLM model (Meta-Llama-3.1–8B) using unsloth for Text-to-SQL Data
-[(link)](https://blog.gopenai.com/fine-tuning-llm-model-meta-llama-3-1-8b-for-text-to-sql-data-ea5a07620dd3)
-
 - Navigating the New Types of LLM Agents and Architectures
 [(link)](https://towardsdatascience.com/navigating-the-new-types-of-llm-agents-and-architectures-309382ce9f88)
-
-- Self-Hosting LLaMA 3.1 70B (or any ~70B LLM) Affordably
-[(link)](https://abhinand05.medium.com/self-hosting-llama-3-1-70b-or-any-70b-llm-affordably-2bd323d72f8d)
 
 - Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
 [(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
@@ -1621,10 +1534,6 @@ is_slide: 0
 - What We Learned from a Year of Building with LLMs (Part I)
 [(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
 
-- TEXTGRAD vs DSPY : Revolutionizing AI System Optimization through Automatic Text-Based Differentiation
-[(link)](https://medium.com/@jelkhoury880/textgrad-vs-dspy-revolutionizing-ai-system-optimization-through-automatic-text-based-58f8ee776447)
-
-
 - IDE in the Web Browser? Let me show you Project IDX by Google
 [(link)](https://levelup.gitconnected.com/ide-in-the-web-browser-let-me-show-you-project-idx-by-google-e9c38de046fe)
 
@@ -1640,8 +1549,6 @@ is_slide: 0
 - Using docker init to write Dockerfile and docker-compose configs
 [(link)](https://livingdevops.com/devops/docker-init-to-write-dockerfile-docker-compose/)
 
-- Grok 2–Why It’s HUGE for AI
-[(link)](https://ai.plainenglish.io/grok-2-why-its-huge-for-ai-43c18a75c19a)
 
 - 6 Best Practices for Writing Dockerfiles
 [(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
@@ -1649,26 +1556,10 @@ is_slide: 0
 - Document Extraction Is GenAI’s Killer App
 [(link)](https://towardsdatascience.com/document-extraction-is-genais-killer-app-9e9c816e6caf)
 
-- Fine-Tuning LLAMA 3 Model for Relation Extraction Using UBIAI Data
-[(link)](https://medium.com/ubiai-nlp/fine-tuning-llama-3-model-for-relation-extraction-using-ubiai-data-1fd1946a62e0)
 
 - DuckDB & PyArrow: Lightweight and Speed Data Analysis
 [(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
 
-- When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
-[(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
-
-- Real-time Distributed score streaming using gRPC and Redis
-[(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
-
-- Customize Generative AI Models for Enterprise Applications with Llama 3.1
-[(link)](https://developer.nvidia.com/blog/customize-generative-ai-models-for-enterprise-applications-with-llama-3-1/)
-
-- Pinecone vs. Postgres pgvector
-[(link)](https://www.pinecone.io/blog/pinecone-vs-pgvector/)
-
-- Postgres vs. Pinecone
-[(link)](https://lantern.dev/blog/postgres-vs-pinecone)
 
 - Improving Performance for Data Visualization AI Agent
 [(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
@@ -1676,23 +1567,8 @@ is_slide: 0
 - The new “window.ai” API will blow your mind.
 [(link)](https://javascript.plainenglish.io/the-new-window-ai-api-will-blow-your-mind-3eb8b4704ca0)
 
-- Cost-Effective Text Embedding: Leveraging Ollama Local Models with Azure SQL Databases
-[(link)](https://medium.com/@lawrenceteixeira/cost-effective-text-embedding-leveraging-ollama-local-models-with-azure-sql-databases-2e3c6345f7e4)
-
-- PostgreSQL and Pgvector
-[(link)](https://www.timescale.com/blog/pgvector-is-now-as-fast-as-pinecone-at-75-less-cost/)
-
-- Making PostgreSQL a Better AI Database
-[(link)](https://www.timescale.com/blog/making-postgresql-a-better-ai-database/)
-
-- When Should You Use Distributed PostgreSQL for Gen AI Apps?
-[(link)](https://medium.com/@magda7817/when-should-you-use-distributed-postgresql-for-gen-ai-apps-64f2470cf1a1)
 
 
-- Building the Best PostgreSQL GUI: Announcing Our Acquisition of PopSQL
-[(link)](https://www.timescale.com/blog/best-postgresql-gui-popsql-joins-timescale/)
 
-- Web Scraping With 5 Different Methods: All You Need to Know
-[(link)](https://heartbeat.comet.ml/web-scraping-with-5-different-methods-all-you-need-to-know-403a59fceea0)
 
 

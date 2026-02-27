@@ -45,6 +45,8 @@ is_slide: 0
 # apache datafusion
 - home 
 [(link)](https://datafusion.apache.org/)
+- Graphs, Algorithms, and My First Impression of DataFusion
+[(link)](https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc/)
 
 # apache flight
 - Porter
@@ -321,6 +323,11 @@ is_slide: 0
 [(link)](https://blog.paradedb.com/pages/introducing_analytics)
 - ParadeDB - A New Postgres Block Storage Layout for Full Text Search
 [(link)](bbb)
+
+# pinot
+- Apache Pinot Architecture Explained for Data Engineers
+[(link)](https://medium.com/towards-data-engineering/apache-pinot-architecture-explained-for-data-engineers-2bd971ed4a4c)
+
 
 
 # polardb

@@ -177,10 +177,14 @@ is_slide: 0
 [(link)](https://levelup.gitconnected.com/14-git-things-i-regret-not-knowing-earlier-20956c192b2b)
 - Git Like a Pro: 6 Advanced Commands with Step-by-Step Examples
 [(link)](https://levelup.gitconnected.com/6-key-advanced-git-commands-for-developers-with-examples-cedb26859b8e)
-
-
-
-
+- Git Confused Me for Years Until I Found This Simple Guide
+[(link)](https://medium.com/lets-code-future/git-confused-me-for-years-until-i-found-this-simple-guide-a45223bebb40)
+- Resolving 26 Git Workflow Challenges Every Dev Team Faces
+[(link)](https://levelup.gitconnected.com/resolving-26-git-workflow-challenges-every-dev-team-faces-6312cf976703)
+- The Ultimate Guide to Git Branching Strategies
+[(link)](https://blog.prateekjain.dev/the-ultimate-guide-to-git-branching-strategies-6324f1aceac2)
+- What does git for Data even look like anymore?
+[(link)](https://dataopsleadership.substack.com/p/what-does-git-for-data-even-look)
 
 # github
 - Get started with GitHub

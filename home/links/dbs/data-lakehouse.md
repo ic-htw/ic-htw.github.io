@@ -6,6 +6,14 @@ is_slide: 0
 ---
 
 # aaa
+- Building a Modern Data Lakehouse with DuckDB and MinIO
+[(link)](https://medium.com/@sweetkobem/building-a-modern-data-lakehouse-with-duckdb-and-minio-ec689a61e7bd)
+- Lakehouse Architecture: Why Lakehouses Are the Future of Big Data
+[(link)](https://medium.com/@vijaygadhave2014/lakehouse-architecture-why-lakehouses-are-the-future-of-big-data-40a6ec4fc49f)
+- From Data Warehouse to Lakehouse: Hybrid Architectures Every Engineer Must Master in 2025
+[(link)](https://aws.plainenglish.io/from-data-warehouse-to-lakehouse-hybrid-architectures-every-engineer-must-master-in-2025-2b4726228797)
+- How to Build Your Own Local Data Lakehouse using Open Source Tools
+[(link)](https://medium.com/@aw_marcell/how-to-build-your-own-local-data-lakehouse-using-open-source-tools-c5a8626d10f7)
 - The 6 Lakehouse Design Patterns Nobody Talks About (But Every Engineer Uses)
 [(link)](https://medium.com/@sauravkumarrajjoli/6-lakehouse-design-patterns-every-data-engineer-should-know-06c94c72efb0)
 - We Built an Open Source S3 Tables Alternative - Run Apache Iceberg as easily as Postgres
@@ -30,7 +38,6 @@ is_slide: 0
 [(link)](https://starrocks.medium.com/5-brilliant-lakehouse-architectures-from-tencent-wechat-and-more-dd069facf532)
 - Data Pipeline Development with MinIO, Iceberg, Nessie, Polars, StarRocks, Mage, and Docker
 [(link)](https://blog.det.life/data-pipeline-development-with-minio-iceberg-nessie-polars-starrocks-mage-and-docker-1c7b4b52d5f4)
-
 
 
 
@@ -70,8 +77,12 @@ is_slide: 0
 [(link)](https://medium.com/@yingjunwu/apache-iceberg-built-for-big-data-ready-for-small-a2535d9e463a)
 - Understanding the Future of Apache Iceberg Catalogs
 [(link)](https://medium.com/data-engineering-with-dremio/understanding-the-future-of-apache-iceberg-catalogs-ff2a2878fbc0)
-
-
+- Nimtable: The Control Plane for Apache Iceberg
+[(link)](https://towardsdev.com/nimtable-the-control-plane-for-apache-iceberg-aa230a32f7e1)
+- How Apache Iceberg Actually Works
+[(link)](https://medium.com/@tfmv/how-apache-iceberg-actually-works-64f97fb13c45)
+- Beyond Cost Savings: The True Power of Apache Iceberg in Modern Data Architectures
+[(link)](https://towardsdev.com/the-true-power-of-apache-iceberg-revolutionizing-modern-data-architectures-044146d463c6)
 
 
 

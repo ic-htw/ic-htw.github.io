@@ -5,6 +5,9 @@ title: System Design
 is_slide: 0
 ---
 
+- Real-time Distributed score streaming using gRPC and Redis
+[(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
+
 - Turning Data into Insight: Flexible Lakehouse with MinIO, Iceberg, Airflow, DBT, Spark, Pandera & Superset
 [(link)](https://medium.com/@sweetkobem/turning-data-into-insight-flexible-lakehouse-with-minio-iceberg-airflow-dbt-spark-pandera-409d036e5542)
 

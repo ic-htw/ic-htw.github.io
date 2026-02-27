@@ -146,6 +146,8 @@ is_slide: 0
 
 
 # graph
+- PostgreSQL as a Graph Database
+[(link)](https://www.klioba.com/postgresql-as-a-graph-database)
 - A Graph Extension for PostgreSQL
 [(link)](https://age.apache.org/)
 - Postgres: The Graph Database You Didn't Know You Had
@@ -158,7 +160,19 @@ is_slide: 0
 [(link)](https://blog.yugabyte.com/using-postgresql-recursive-cte-part-1-employee-hierarchy/)
 
 
-# ml
+# ml / llm
+- Postgres for Agents
+[(link)](https://www.tigerdata.com/blog/postgres-for-agents)
+- PostgreSQL AI Query Extension
+[(link)](https://benodiwal.github.io/pg_ai_query/introduction.html)
+- We Taught AI to Write Real Postgres Code
+[(link)](https://www.tigerdata.com/blog/we-taught-ai-to-write-real-postgres-code-open-sourced-it)
+- Introducing: Postgres Best Practices for AI Agents
+[(link)](https://supabase.com/blog/postgres-best-practices-for-ai-agents)
+- Enterprise grade Postgres for Agentic AI
+[(link)](https://www.pgedge.com/)
+- Teaching an LLM What It Doesn't Know About PostgreSQL
+[(link)](https://www.pgedge.com/blog/teaching-an-llm-what-it-doesn-t-know-about-postgresql)
 - PostgresML
 [(link)](https://postgresml.org/)
 [(link)](https://github.com/postgresml/postgresml)
@@ -227,6 +241,9 @@ is_slide: 0
 # query plan
 - Understanding Postgres Sql Plan
 [(link)](https://medium.com/@anassguendef/understanding-postgres-sql-plan-310799b30c4e)
+- When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
+[(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
+
 
 
 
@@ -278,6 +295,16 @@ is_slide: 0
 
 
 # zzz
+- Postgres in the time of monster hardware
+[(link)](https://www.enterprisedb.com/blog/postgres-time-monster-hardware)
+- The hidden cost of PostgreSQL arrays
+[(link)](https://boringsql.com/posts/good-bad-arrays/)
+- Postgres can replace your entire stack
+[(link)](https://blog.stackademic.com/postgres-can-replace-your-entire-stack-ab3e04018911)
+- Introducing Bluebox Docker: A Living PostgreSQL Sample Database
+[(link)](https://www.softwareandbooz.com/introducing-bluebox-docker-a-living-postgresql-sample-database/)
+- sabiql - Postgres TUI
+[(link)](https://github.com/riii111/sabiql)
 - Kafka is fast -- I'll use Postgres
 [(link)](https://topicpartition.io/blog/postgres-pubsub-queue-benchmarks)
 [(link)](https://news.ycombinator.com/item?id=45747018)
