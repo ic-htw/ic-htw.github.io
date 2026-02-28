@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- GA of Oracle AI Database 26ai for Linux x86-64 on-premises platforms
+[(link)](https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms)
+
+- Detecting and preventing distillation attacks 
+[(link)](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks)
+
 - Apache DataFusion: A Data Engineer's Guide to the Query Engine Reshaping How We Build Data Systems
 [(link)](https://www.linkedin.com/pulse/apache-datafusion-data-engineers-guide-query-engine-reshaping-madson-lojrc/)
 
