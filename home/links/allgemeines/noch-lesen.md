@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Tried (New) Claude Code Remote-Control (Before You Waste Your Time)
+[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-remote-control-before-you-waste-your-time-c829a83417f7)
+
 - GA of Oracle AI Database 26ai for Linux x86-64 on-premises platforms
 [(link)](https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms)
 
