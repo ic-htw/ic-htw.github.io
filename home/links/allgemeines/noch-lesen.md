@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How I’m Using Claude Code (New) /simplify & /batch (To x10 My Code Reviews)
+[(link)](https://medium.com/@joe.njenga/how-im-using-claude-code-new-simplify-batch-to-x10-my-code-reviews-888780a6a42a)
+
+- A Senior Engineer’s Concern That Revealed the Most Important Role in Tech Right Now
+[(link)](https://medium.com/data-science-collective/i-just-watch-ai-write-code-all-day-f0f3fad2d857)
+
+- I Tried (New) Claude Code Git Worktree (I Now Run Smooth Parallel Agents)
+[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-git-worktree-i-now-run-smooth-parallel-agents-8e21627167b7)
+
+- JSON Is Dying in the AI Era
+[(link)](https://medium.com/javarevisited/json-is-dying-in-the-ai-era-e616271444be)
+
 - I Tried (New) Claude Code Remote-Control (Before You Waste Your Time)
 [(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-remote-control-before-you-waste-your-time-c829a83417f7)
 
