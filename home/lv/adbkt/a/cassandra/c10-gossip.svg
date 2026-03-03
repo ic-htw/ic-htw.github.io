@@ -1,0 +1,91 @@
+<svg viewBox="0 0 520 310" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#1565C0"/>
+    </marker>
+    <marker id="arrg" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#388E3C"/>
+    </marker>
+    <marker id="arrr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#C62828"/>
+    </marker>
+  </defs>
+
+  <!-- Nodes as circles -->
+  <!-- Node 1 - top center -->
+  <circle cx="200" cy="60" r="28" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="200" y="57" text-anchor="middle" font-size="12" font-weight="bold" fill="white">N1</text>
+  <text x="200" y="72" text-anchor="middle" font-size="9" fill="#BBD" >NORMAL</text>
+
+  <!-- Node 2 - right -->
+  <circle cx="330" cy="140" r="28" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="330" y="137" text-anchor="middle" font-size="12" font-weight="bold" fill="white">N2</text>
+  <text x="330" y="152" text-anchor="middle" font-size="9" fill="#BBD">NORMAL</text>
+
+  <!-- Node 3 - bottom right -->
+  <circle cx="280" cy="230" r="28" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="280" y="227" text-anchor="middle" font-size="12" font-weight="bold" fill="white">N3</text>
+  <text x="280" y="242" text-anchor="middle" font-size="9" fill="#BBD">NORMAL</text>
+
+  <!-- Node 4 - bottom left -->
+  <circle cx="120" cy="230" r="28" fill="#C62828" stroke="#B71C1C" stroke-width="2"/>
+  <text x="120" y="227" text-anchor="middle" font-size="12" font-weight="bold" fill="white">N4</text>
+  <text x="120" y="242" text-anchor="middle" font-size="9" fill="#FFB" >DOWN</text>
+
+  <!-- Node 5 - left -->
+  <circle cx="70" cy="140" r="28" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+  <text x="70" y="137" text-anchor="middle" font-size="12" font-weight="bold" fill="white">N5</text>
+  <text x="70" y="152" text-anchor="middle" font-size="9" fill="#BBD">NORMAL</text>
+
+  <!-- Gossip arrows (bidirectional) -->
+  <!-- N1 <-> N2 -->
+  <line x1="226" y1="72" x2="304" y2="126" stroke="#1565C0" stroke-width="1.5" marker-end="url(#arr)" stroke-dasharray="5,3"/>
+  <line x1="304" y1="128" x2="226" y2="74" stroke="#388E3C" stroke-width="1.5" marker-end="url(#arrg)" stroke-dasharray="5,3"/>
+
+  <!-- N1 <-> N5 -->
+  <line x1="174" y1="72" x2="96" y2="126" stroke="#1565C0" stroke-width="1.5" marker-end="url(#arr)" stroke-dasharray="5,3"/>
+  <line x1="94" y1="128" x2="172" y2="74" stroke="#388E3C" stroke-width="1.5" marker-end="url(#arrg)" stroke-dasharray="5,3"/>
+
+  <!-- N2 <-> N3 -->
+  <line x1="316" y1="166" x2="294" y2="202" stroke="#1565C0" stroke-width="1.5" marker-end="url(#arr)" stroke-dasharray="5,3"/>
+  <line x1="292" y1="204" x2="314" y2="168" stroke="#388E3C" stroke-width="1.5" marker-end="url(#arrg)" stroke-dasharray="5,3"/>
+
+  <!-- N5 <-> N4 - red (N4 down) -->
+  <line x1="96" y1="165" x2="97" y2="202" stroke="#C62828" stroke-width="1.5" marker-end="url(#arrr)" stroke-dasharray="3,3"/>
+  <text x="75" y="188" font-size="9" fill="#C62828">timeout!</text>
+
+  <!-- N3 <-> N4 -->
+  <line x1="253" y1="240" x2="148" y2="241" stroke="#C62828" stroke-width="1.5" marker-end="url(#arrr)" stroke-dasharray="3,3"/>
+
+  <!-- Gossip message label -->
+  <rect x="167" y="130" width="66" height="42" rx="4" fill="#FFF9C4" stroke="#F57F17" stroke-width="1.5"/>
+  <text x="200" y="147" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">Gossip:</text>
+  <text x="200" y="160" text-anchor="middle" font-size="9" fill="#555">Status, Token</text>
+  <text x="200" y="172" text-anchor="middle" font-size="9" fill="#555">Schema-Ver.</text>
+
+  <!-- Right panel -->
+  <rect x="370" y="15" width="140" height="285" rx="6" fill="#F5F5F5" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="440" y="38" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Gossip-Protokoll</text>
+
+  <text x="380" y="58" font-size="11" font-weight="bold" fill="#333">Ablauf</text>
+  <text x="380" y="74" font-size="10" fill="#555">1. Jede Sekunde:</text>
+  <text x="380" y="88" font-size="10" fill="#555">   Node wählt 1-3</text>
+  <text x="380" y="102" font-size="10" fill="#555">   zufällige Peers</text>
+  <text x="380" y="116" font-size="10" fill="#555">2. Austausch von</text>
+  <text x="380" y="130" font-size="10" fill="#555">   Zustandsinfos</text>
+  <text x="380" y="144" font-size="10" fill="#555">3. Weitergabe an</text>
+  <text x="380" y="158" font-size="10" fill="#555">   weitere Peers</text>
+
+  <line x1="378" y1="167" x2="502" y2="167" stroke="#ddd" stroke-width="1"/>
+
+  <text x="380" y="183" font-size="11" font-weight="bold" fill="#333">Inhalte</text>
+  <text x="380" y="199" font-size="10" fill="#555">• Node-Status</text>
+  <text x="380" y="215" font-size="10" fill="#555">• Token-Bereiche</text>
+  <text x="380" y="231" font-size="10" fill="#555">• Rack / DC</text>
+  <text x="380" y="247" font-size="10" fill="#555">• Schema-Version</text>
+
+  <line x1="378" y1="257" x2="502" y2="257" stroke="#ddd" stroke-width="1"/>
+
+  <text x="380" y="273" font-size="11" font-weight="bold" fill="#C62828">Failure Detection</text>
+  <text x="380" y="289" font-size="10" fill="#555">Phi-Accrual-Algo.</text>
+</svg>

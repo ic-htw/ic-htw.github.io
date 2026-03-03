@@ -1,0 +1,675 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Cassandra - ADBKT
+is_slide: 1
+n: 20
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Cassandra Einordnung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Open-Source-Datenbank der Apache Software Foundation</li>
+            <li>Ursprünglich von Facebook entwickelt (2008), 2009 Open Source</li>
+            <li>Kombiniert Ideen aus Amazon Dynamo (Replikation, Peer-to-Peer) und Google Bigtable (Wide Column)</li>
+            <li>Kategorie: <strong>Wide Column Store</strong> (auch: Wide-Column-Family-Store)</li>
+            <li>Ausgelegt auf extreme Schreiblast, hohe Verfügbarkeit, lineare Skalierbarkeit</li>
+            <li>Kein Single Point of Failure – vollständig masterlos</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c01-einordnung.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Wide Column Store Konzept</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Vergleich der Modelle</p>
+        <ul class="w3-large">
+            <li><strong>Relational</strong>: festes Schema, Zeilen mit gleichen Spalten, Joins</li>
+            <li><strong>Key-Value</strong>: Schlüssel → opaker Wert, keine Struktur</li>
+            <li><strong>Wide Column</strong>: Schlüssel → Menge von typisierten Spalten, pro Row variabel</li>
+        </ul>
+        <p class="w3-large ic-neg15">Eigenschaften</p>
+        <ul class="w3-large">
+            <li>Sparse Data: fehlende Spalten belegen keinen Speicher</li>
+            <li>Spalten innerhalb einer Row sortiert gespeichert</li>
+            <li>Sehr effizient für Zeitreihendaten und Aggregationen über Spalten</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c02-widecolumn.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Datenmodell: Keyspace</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Keyspace = Äquivalent zu einer Datenbank in relationalen Systemen</li>
+            <li>Enthält mehrere Tabellen</li>
+            <li><strong>Replikationsfaktor (RF)</strong>: Anzahl der Kopien jedes Datensatzes</li>
+            <li><strong>Replikationsstrategie</strong> bestimmt, auf welche Nodes Daten verteilt werden</li>
+        </ul>
+        <p class="w3-large ic-neg15">Strategien</p>
+        <ul class="w3-large">
+            <li><strong>SimpleStrategy</strong>: für Single-Datacenter, nächste Nodes im Ring</li>
+            <li><strong>NetworkTopologyStrategy</strong>: für Multi-Datacenter, RF pro Datacenter konfigurierbar</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">CREATE KEYSPACE sensor_data
+  WITH replication = {
+    'class': 'NetworkTopologyStrategy',
+    'dc1': 3,
+    'dc2': 2
+  };</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Datenmodell: Tabelle und Partition</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>Tabelle</strong>: Schema mit festen Spaltendefinitionen</li>
+            <li><strong>Partition</strong>: Gruppe von Rows mit gleichem Partition Key → physische Speichereinheit</li>
+            <li><strong>Partition Key</strong>: bestimmt, auf welchem Node Daten liegen</li>
+            <li><strong>Clustering Key</strong>: Sortierung der Rows innerhalb einer Partition</li>
+            <li><strong>Columns</strong>: reguläre Datenspalten (typisiert)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c04-tabelle.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Partition Key</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Bestimmt die physische Verteilung im Cluster</li>
+            <li>Hash-Funktion (Murmur3) → Token → Node-Zuweisung im Ring</li>
+            <li>Alle Rows einer Partition liegen auf denselben Nodes</li>
+            <li>Abfragen ohne Partition Key erfordern Cluster-Scan (ineffizient)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Hot Partitions vermeiden</p>
+        <ul class="w3-large">
+            <li>Schlecht: <code>date</code> als einziger Partition Key (alle Writes heute → ein Node)</li>
+            <li>Besser: <code>(sensor_id, date)</code> → gleichmäßige Verteilung</li>
+            <li>Ziel: Partitionen möglichst gleich groß, max. ~100 MB empfohlen</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c05-partitionkey.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Clustering Key</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Sekundärer Teil des Primary Key: <code>PRIMARY KEY (partition_key, clustering_key)</code></li>
+            <li>Definiert die <strong>Sortierreihenfolge</strong> der Rows innerhalb einer Partition</li>
+            <li>Ermöglicht effiziente <strong>Bereichsabfragen</strong> (BETWEEN, &lt;, &gt;, ORDER BY)</li>
+            <li>Mehrere Clustering Keys möglich (Compound Primary Key)</li>
+            <li>Sortierrichtung pro Clustering Key konfigurierbar (ASC / DESC)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">CREATE TABLE messwerte (
+  sensor_id  TEXT,
+  zeitpunkt  TIMESTAMP,
+  temperatur DOUBLE,
+  PRIMARY KEY (sensor_id, zeitpunkt)
+) WITH CLUSTERING ORDER BY
+    (zeitpunkt DESC);</code></pre>
+        <p class="w3-large ic-neg15">Ergebnis</p>
+        <pre><code class="language-plaintext">sensor_id  | zeitpunkt           | temperatur
+-----------+---------------------+-----------
+s-001      | 2024-06-01 12:00:00 | 23.4
+s-001      | 2024-06-01 11:00:00 | 22.8
+s-001      | 2024-06-01 10:00:00 | 22.1</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>CQL: Tabelle anlegen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Keyspace erstellen</p>
+        <pre><code class="language-sql">CREATE KEYSPACE mein_ks
+  WITH replication = {
+    'class': 'SimpleStrategy',
+    'replication_factor': 3
+  };</code></pre>
+        <p class="w3-large ic-neg15">Tabelle erstellen</p>
+        <pre><code class="language-sql">CREATE TABLE mein_ks.benutzer (
+  benutzer_id UUID,
+  nachname    TEXT,
+  vorname     TEXT,
+  email       TEXT,
+  erstellt    TIMESTAMP,
+  PRIMARY KEY (benutzer_id)
+);</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Compound Primary Key</p>
+        <pre><code class="language-sql">CREATE TABLE mein_ks.bestellungen (
+  kunden_id   UUID,
+  bestell_ts  TIMESTAMP,
+  produkt_id  UUID,
+  menge       INT,
+  preis       DECIMAL,
+  PRIMARY KEY (kunden_id, bestell_ts)
+) WITH CLUSTERING ORDER BY
+    (bestell_ts DESC);</code></pre>
+        <p class="w3-large ic-neg15">Hinweise</p>
+        <ul class="w3-large">
+            <li>CQL (Cassandra Query Language) ist SQL-ähnlich</li>
+            <li>Keine Fremdschlüssel, keine Joins</li>
+            <li>Schema ist <em>schemagebunden</em> (Spalten definiert), aber Sparse-Speicherung</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>CQL: Schreiben und Lesen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Schreiben</p>
+        <pre><code class="language-sql">INSERT INTO messwerte
+  (sensor_id, zeitpunkt, temperatur)
+VALUES
+  ('s-001', toTimestamp(now()), 23.5);
+
+UPDATE messwerte
+SET temperatur = 24.0
+WHERE sensor_id = 's-001'
+  AND zeitpunkt = '2024-06-01 12:00:00';
+
+DELETE FROM messwerte
+WHERE sensor_id = 's-001'
+  AND zeitpunkt = '2024-06-01 10:00:00';</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Lesen</p>
+        <pre><code class="language-sql">-- Effizient: Partition Key angegeben
+SELECT * FROM messwerte
+WHERE sensor_id = 's-001';
+
+-- Bereichsabfrage auf Clustering Key
+SELECT * FROM messwerte
+WHERE sensor_id = 's-001'
+  AND zeitpunkt > '2024-06-01 00:00:00';
+
+-- Achtung: ALLOW FILTERING → Full Scan
+SELECT * FROM messwerte
+WHERE temperatur > 25.0
+ALLOW FILTERING;</code></pre>
+        <ul class="w3-large">
+            <li>WHERE ohne Partition Key → ineffizient, Warnung</li>
+            <li><code>ALLOW FILTERING</code> explizit erforderlich</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Ring-Architektur</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>Consistent Hashing</strong>: Token-Ring verteilt Daten auf Nodes</li>
+            <li>Jeder Node übernimmt einen Token-Bereich im Ring</li>
+            <li><strong>Peer-to-Peer</strong>: kein Master, jeder Node gleichwertig</li>
+            <li>Client kann jeden Node als <strong>Koordinator</strong> kontaktieren</li>
+            <li>Koordinator leitet Anfragen an die zuständigen Nodes weiter</li>
+        </ul>
+        <p class="w3-large ic-neg15">Virtuelle Nodes (Vnodes)</p>
+        <ul class="w3-large">
+            <li>Jeder physische Node besitzt mehrere Token-Bereiche (Vnodes)</li>
+            <li>Gleichmäßigere Lastverteilung</li>
+            <li>Einfacheres Hinzufügen / Entfernen von Nodes</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c09-ring.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Gossip-Protokoll</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Dezentrales Kommunikationsprotokoll zur Cluster-Koordination</li>
+            <li>Jeder Node tauscht periodisch (1 s) Zustandsinformationen mit 1–3 Peers aus</li>
+            <li>Informationen verbreiten sich exponentiell schnell im Cluster</li>
+        </ul>
+        <p class="w3-large ic-neg15">Inhalte</p>
+        <ul class="w3-large">
+            <li><strong>Node-Discovery</strong>: neue Nodes werden automatisch bekannt</li>
+            <li><strong>Failure Detection</strong>: Phi-Accrual-Algorithmus erkennt ausgefallene Nodes</li>
+            <li><strong>Cluster State</strong>: Token-Bereiche, Rack/Datacenter-Zugehörigkeit, Schema-Version</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c10-gossip.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Replikation</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>Replikationsfaktor (RF)</strong>: Anzahl Kopien jedes Datensatzes</li>
+            <li>Koordinator schreibt auf RF Nodes (Replicas)</li>
+            <li>Replicas werden durch Token-Ring bestimmt (nächste Nodes im Ring)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Strategien</p>
+        <ul class="w3-large">
+            <li><strong>SimpleStrategy</strong>: nächste RF Nodes im Ring, für Single-DC</li>
+            <li><strong>NetworkTopologyStrategy</strong>: RF pro Datacenter, Rack-Awareness</li>
+        </ul>
+        <p class="w3-large ic-neg15">Hinted Handoff</p>
+        <ul class="w3-large">
+            <li>Koordinator speichert Write temporär, wenn Replica nicht erreichbar</li>
+            <li>Übertragung erfolgt, sobald der Replica-Node wieder online ist</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c11-replikation.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Konsistenzlevel</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Konfigurierbar pro Anfrage (Tunable Consistency)</p>
+        <ul class="w3-large">
+            <li><strong>ONE</strong>: Antwort von 1 Replica genügt (niedrige Latenz, schwache Konsistenz)</li>
+            <li><strong>QUORUM</strong>: Mehrheit (RF/2 + 1) muss antworten</li>
+            <li><strong>ALL</strong>: alle Replicas müssen antworten (starke Konsistenz, hohe Latenz)</li>
+            <li><strong>LOCAL_QUORUM</strong>: Quorum nur im lokalen Datacenter</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Starke Konsistenz durch Tuning</p>
+        <ul class="w3-large">
+            <li>Formel: <strong>W + R &gt; RF</strong> → starke Konsistenz garantiert</li>
+            <li>Beispiel RF = 3: QUORUM Write + QUORUM Read → 2 + 2 &gt; 3 ✓</li>
+            <li>Tradeoff: höhere Konsistenz = höhere Latenz = niedrigere Verfügbarkeit</li>
+        </ul>
+        <pre><code class="language-sql">-- Konsistenzlevel in cqlsh setzen
+CONSISTENCY QUORUM;
+
+SELECT * FROM messwerte
+WHERE sensor_id = 's-001';</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Write Path</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>1. CommitLog</strong>: Write wird sequenziell auf Disk geschrieben (Crash-Recovery)</li>
+            <li><strong>2. Memtable</strong>: Write wird in speicherresidenter Struktur gespeichert</li>
+            <li><strong>3. SSTable</strong>: Memtable wird bei Überschreitung eines Schwellwerts auf Disk gespült (Flush)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Eigenschaften</p>
+        <ul class="w3-large">
+            <li>Alle Schreiboperationen sind <strong>append-only</strong> und sequenziell → sehr schnell</li>
+            <li>Kein direktes Überschreiben von Daten auf Disk</li>
+            <li>Updates erzeugen neue Versionen (Timestamp-basiert)</li>
+            <li>Deletes schreiben <strong>Tombstones</strong> (Löschmarkierungen)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c13-writepath.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Read Path</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>1. Memtable</strong>: zuerst wird der aktuelle In-Memory-Puffer geprüft</li>
+            <li><strong>2. Bloom Filter</strong>: probabilistische Struktur – prüft, ob Daten in einer SSTable liegen könnten</li>
+            <li><strong>3. Key Cache</strong>: zwischenspeichert Positionen von Partition Keys in SSTables</li>
+            <li><strong>4. Row Cache</strong>: optionaler Cache für vollständige Partitionen</li>
+            <li><strong>5. SSTable Merge</strong>: Daten aus mehreren SSTables werden zusammengeführt</li>
+        </ul>
+        <p class="w3-large ic-neg15">Merge-Strategie</p>
+        <ul class="w3-large">
+            <li>Neueste Version einer Cell gewinnt (Timestamp)</li>
+            <li>Tombstones überschreiben ältere Werte</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c14-readpath.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Compaction</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>SSTables akkumulieren sich über Zeit → Compaction führt sie zusammen</li>
+            <li>Entfernt veraltete Versionen und abgelaufene Tombstones</li>
+            <li>Reduziert Anzahl der SSTables → schnellere Reads</li>
+        </ul>
+        <p class="w3-large ic-neg15">Strategien</p>
+        <ul class="w3-large">
+            <li><strong>STCS</strong> (Size-Tiered): ähnlich große SSTables werden gemergt, Standard, gut für Writes</li>
+            <li><strong>LCS</strong> (Leveled): mehrere Level, begrenzte SSTable-Größe, gut für Reads</li>
+            <li><strong>TWCS</strong> (Time-Window): für Zeitreihendaten, kompaktiert nach Zeitfenstern</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/cassandra/c15-compaction.svg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Tombstones</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Cassandra <strong>überschreibt Daten nie</strong> direkt – Deletes schreiben einen Tombstone</li>
+            <li>Tombstone = Markierung mit Timestamp, dass Daten gelöscht wurden</li>
+            <li>Replicas, die offline waren, erhalten Tombstone beim nächsten Sync</li>
+        </ul>
+        <p class="w3-large ic-neg15">gc_grace_seconds</p>
+        <ul class="w3-large">
+            <li>Tombstones werden erst nach <code>gc_grace_seconds</code> (Standard: 10 Tage) endgültig entfernt</li>
+            <li>Verhindert, dass gelöschte Daten auf Replicas wieder auftauchen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Problem: zu viele Tombstones</p>
+        <ul class="w3-large">
+            <li>Reads müssen viele Tombstones überspringen → Latenzprobleme</li>
+            <li>Lösungen: TTL statt manuelles Löschen, TWCS, richtiges Partitionierungsschema</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-sql">-- TTL beim Schreiben setzen
+INSERT INTO messwerte
+  (sensor_id, zeitpunkt, temperatur)
+VALUES
+  ('s-001', toTimestamp(now()), 23.5)
+USING TTL 86400;  -- 1 Tag in Sekunden
+
+-- TTL pro Tabelle konfigurieren
+CREATE TABLE logs (
+  id    UUID,
+  ts    TIMESTAMP,
+  msg   TEXT,
+  PRIMARY KEY (id, ts)
+) WITH default_time_to_live = 604800;
+  -- 7 Tage</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>Datenmodellierung: Query-First</h1>
+<ul class="w3-large">
+    <li><strong>Kein Join-Support</strong>: Daten müssen bereits in der richtigen Form gespeichert sein</li>
+    <li><strong>Kein ad-hoc Querying</strong>: beliebige WHERE-Bedingungen nicht möglich ohne ALLOW FILTERING</li>
+    <li><strong>Modell an Zugriffsmustern ausrichten</strong>: zuerst definieren, welche Abfragen gestellt werden, dann Tabellen entwerfen</li>
+    <li><strong>Denormalisierung</strong>: Daten werden bewusst dupliziert, um Joins zu vermeiden</li>
+    <li>Eine Abfrage = eine Tabelle: für jedes Zugriffsmuster ggf. eigene Tabelle</li>
+</ul>
+<p class="w3-large ic-neg15">Vorgehen</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="language-plaintext">1. Anforderungen erfassen
+   → Welche Abfragen werden gestellt?
+   → Welche Filter? Welche Sortierung?
+
+2. Zugriffsmuster auflisten
+   → GET sensor by ID
+   → GET latest readings for sensor
+   → GET all sensors in region
+
+3. Tabellen entwerfen
+   → Partition Key aus Filterbedingung
+   → Clustering Key aus Sortierung</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <pre><code class="language-plaintext">Anti-Pattern:
+  SELECT * FROM sensoren
+  WHERE region = 'Berlin'
+  AND typ = 'Temperatur'
+  ORDER BY wert DESC
+  → Mehrere Nicht-PK-Filter: ALLOW FILTERING
+
+Lösung: eigene Tabelle für diesen Query
+  CREATE TABLE sensoren_by_region_typ (
+    region TEXT,
+    typ    TEXT,
+    wert   DOUBLE,
+    id     UUID,
+    PRIMARY KEY ((region, typ), wert)
+  ) WITH CLUSTERING ORDER BY (wert DESC);</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>Datenmodellierung: Beispiel Zeitreihendaten</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Anforderung</p>
+        <ul class="w3-large">
+            <li>Sensormesswerte speichern: Temperatur, Luftfeuchtigkeit</li>
+            <li>Abfrage: alle Messwerte eines Sensors der letzten Stunde</li>
+            <li>Viele Sensoren, hohe Schreibrate (1 Wert/s pro Sensor)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Schema-Design</p>
+        <pre><code class="language-sql">CREATE TABLE messwerte_stündlich (
+  sensor_id   TEXT,
+  stunde      TEXT,        -- 'YYYY-MM-DD-HH'
+  zeitpunkt   TIMESTAMP,
+  temperatur  DOUBLE,
+  luftfeucht  DOUBLE,
+  PRIMARY KEY ((sensor_id, stunde), zeitpunkt)
+) WITH CLUSTERING ORDER BY
+    (zeitpunkt DESC)
+  AND default_time_to_live = 2592000;
+  -- 30 Tage TTL</code></pre>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Abfragen</p>
+        <pre><code class="language-sql">-- Letzte Stunde eines Sensors
+SELECT * FROM messwerte_stündlich
+WHERE sensor_id = 's-001'
+  AND stunde = '2024-06-01-12';
+
+-- Einfügen (Batch für Atomarität)
+BEGIN BATCH
+  INSERT INTO messwerte_stündlich
+    (sensor_id, stunde, zeitpunkt,
+     temperatur, luftfeucht)
+  VALUES
+    ('s-001', '2024-06-01-12',
+     '2024-06-01 12:05:00', 23.5, 61.2);
+APPLY BATCH;</code></pre>
+        <p class="w3-large ic-neg15">Partitionsgröße kontrollieren</p>
+        <ul class="w3-large">
+            <li>Compound Partition Key <code>(sensor_id, stunde)</code> begrenzt Partition auf 3.600 Rows/h</li>
+            <li>Verhindert unbegrenzt wachsende Partitionen</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>Cassandra vs. Relationale DB</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Stärken Cassandra</p>
+        <ul class="w3-large">
+            <li>Lineare horizontale Skalierbarkeit (Schreiben und Lesen)</li>
+            <li>Keine Single Point of Failure, masterlose Architektur</li>
+            <li>Extrem hohe Schreibdurchsatz (append-only, CommitLog)</li>
+            <li>Multi-Datacenter-Replikation nativ unterstützt</li>
+            <li>Tunable Consistency: Tradeoff zwischen Konsistenz und Verfügbarkeit</li>
+            <li>Ideal für Zeitreihendaten, IoT, hohe Schreiblast</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Stärken Relationale DB</p>
+        <ul class="w3-large">
+            <li>Volle ACID-Transaktionen über mehrere Tabellen</li>
+            <li>Flexible ad-hoc-Abfragen mit Joins und komplexem SQL</li>
+            <li>Normalisierung verhindert Datenduplikation</li>
+            <li>Starke Konsistenz standardmäßig</li>
+            <li>Reifes Ökosystem, breite Tool-Unterstützung</li>
+        </ul>
+        <p class="w3-large ic-neg15">Schwächen Cassandra</p>
+        <ul class="w3-large">
+            <li>Kein Joins, kein flexibles Querying</li>
+            <li>Modellierung komplex (Query-First, Denormalisierung)</li>
+            <li>Keine starken Transaktionen über Partitionen (nur Lightweight Transactions)</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>Anwendungsfälle</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Typische Einsatzgebiete</p>
+        <ul class="w3-large">
+            <li><strong>IoT / Zeitreihendaten</strong>: Sensordaten, Messwerte, Metriken</li>
+            <li><strong>Messaging</strong>: Inbox-Verwaltung, Chat-Verläufe (WhatsApp nutzte Cassandra)</li>
+            <li><strong>Empfehlungssysteme</strong>: User-Activity-Logs, Click-Streams</li>
+            <li><strong>Content-Delivery</strong>: User-Profile, Session-Daten</li>
+            <li><strong>Finanzdaten</strong>: Transaktionshistorie, Audit-Logs</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Cassandra in der Praxis</p>
+        <ul class="w3-large">
+            <li><strong>Netflix</strong>: Viewing-History, User-Profile (Billionen von Rows)</li>
+            <li><strong>Apple</strong>: iCloud-Dienste, über 75.000 Cassandra-Nodes</li>
+            <li><strong>Instagram</strong>: Direct Messages, Aktivitäts-Feed</li>
+            <li><strong>Uber</strong>: Fahrthistorie, Geo-Daten</li>
+            <li><strong>Discord</strong>: Message-Speicherung (Billionen von Nachrichten)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Managed Angebote</p>
+        <ul class="w3-large">
+            <li>DataStax Astra DB (DBaaS auf Basis von Cassandra)</li>
+            <li>Amazon Keyspaces (Cassandra-kompatibel, serverless)</li>
+            <li>Azure Managed Instance for Apache Cassandra</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>

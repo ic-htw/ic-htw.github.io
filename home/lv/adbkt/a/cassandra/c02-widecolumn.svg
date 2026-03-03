@@ -1,0 +1,87 @@
+<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Relational -->
+  <text x="90" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Relational</text>
+  <rect x="15" y="30" width="155" height="22" rx="3" fill="#1565C0"/>
+  <text x="40" y="45" font-size="11" font-weight="bold" fill="white">id</text>
+  <text x="75" y="45" font-size="11" font-weight="bold" fill="white">name</text>
+  <text x="120" y="45" font-size="11" font-weight="bold" fill="white">email</text>
+  <rect x="15" y="52" width="155" height="20" rx="0" fill="#E3F2FD" stroke="#90CAF9" stroke-width="0.5"/>
+  <text x="40" y="66" font-size="11" fill="#333">1</text>
+  <text x="65" y="66" font-size="11" fill="#333">Alice</text>
+  <text x="110" y="66" font-size="11" fill="#333">a@b.de</text>
+  <rect x="15" y="72" width="155" height="20" rx="0" fill="white" stroke="#90CAF9" stroke-width="0.5"/>
+  <text x="40" y="86" font-size="11" fill="#333">2</text>
+  <text x="65" y="86" font-size="11" fill="#333">Bob</text>
+  <text x="110" y="86" font-size="11" fill="#333">b@b.de</text>
+  <rect x="15" y="92" width="155" height="20" rx="0" fill="#E3F2FD" stroke="#90CAF9" stroke-width="0.5"/>
+  <text x="40" y="106" font-size="11" fill="#333">3</text>
+  <text x="65" y="106" font-size="11" fill="#333">Carol</text>
+  <text x="110" y="106" font-size="11" fill="#333">c@b.de</text>
+  <text x="90" y="128" text-anchor="middle" font-size="10" fill="#555">Festes Schema, alle Zeilen gleich</text>
+
+  <!-- Key-Value -->
+  <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#388E3C">Key-Value</text>
+  <rect x="205" y="34" width="155" height="24" rx="4" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="255" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#1B5E20">"user:1"</text>
+  <text x="336" y="50" text-anchor="middle" font-size="11" fill="#333">"{name:Alice,...}"</text>
+  <line x1="293" y1="50" x2="299" y2="50" stroke="#555" stroke-width="1"/>
+  <text x="285" y="50" text-anchor="middle" font-size="14" fill="#555">→</text>
+  <rect x="205" y="62" width="155" height="24" rx="4" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="255" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#1B5E20">"user:2"</text>
+  <text x="285" y="78" text-anchor="middle" font-size="14" fill="#555">→</text>
+  <text x="336" y="78" text-anchor="middle" font-size="11" fill="#333">"{name:Bob,...}"</text>
+  <rect x="205" y="90" width="155" height="24" rx="4" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="255" y="106" text-anchor="middle" font-size="11" font-weight="bold" fill="#1B5E20">"user:3"</text>
+  <text x="285" y="106" text-anchor="middle" font-size="14" fill="#555">→</text>
+  <text x="336" y="106" text-anchor="middle" font-size="11" fill="#333">"{name:Carol,...}"</text>
+  <text x="280" y="128" text-anchor="middle" font-size="10" fill="#555">Kein Schema, opaker Wert</text>
+
+  <!-- Divider -->
+  <line x1="10" y1="145" x2="510" y2="145" stroke="#CCC" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="260" y="162" text-anchor="middle" font-size="14" font-weight="bold" fill="#E65100">Wide Column Store (Cassandra)</text>
+
+  <!-- Wide Column table visual -->
+  <!-- Row 1: Alice - many columns -->
+  <text x="25" y="185" font-size="11" font-weight="bold" fill="#1565C0">Partition Key</text>
+  <rect x="15" y="192" width="85" height="26" rx="4" fill="#FFF9C4" stroke="#F57F17" stroke-width="2"/>
+  <text x="57" y="209" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">user:1</text>
+  <rect x="108" y="192" width="60" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="138" y="209" text-anchor="middle" font-size="10" fill="#333">name=Alice</text>
+  <rect x="175" y="192" width="65" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="207" y="209" text-anchor="middle" font-size="10" fill="#333">email=a@b</text>
+  <rect x="247" y="192" width="60" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="277" y="209" text-anchor="middle" font-size="10" fill="#333">age=30</text>
+  <rect x="314" y="192" width="75" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="351" y="209" text-anchor="middle" font-size="10" fill="#333">city=Berlin</text>
+  <rect x="396" y="192" width="75" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="433" y="209" text-anchor="middle" font-size="10" fill="#333">role=admin</text>
+
+  <!-- Row 2: Bob - fewer columns -->
+  <rect x="15" y="227" width="85" height="26" rx="4" fill="#FFF9C4" stroke="#F57F17" stroke-width="2"/>
+  <text x="57" y="244" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">user:2</text>
+  <rect x="108" y="227" width="60" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="138" y="244" text-anchor="middle" font-size="10" fill="#333">name=Bob</text>
+  <rect x="175" y="227" width="65" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="207" y="244" text-anchor="middle" font-size="10" fill="#333">email=b@b</text>
+  <!-- sparse: no age, no city, no role for Bob -->
+  <text x="280" y="244" font-size="10" fill="#AAA" font-style="italic">— (sparse) —</text>
+
+  <!-- Row 3: Carol - different columns -->
+  <rect x="15" y="262" width="85" height="26" rx="4" fill="#FFF9C4" stroke="#F57F17" stroke-width="2"/>
+  <text x="57" y="279" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">user:3</text>
+  <rect x="108" y="262" width="60" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="138" y="279" text-anchor="middle" font-size="10" fill="#333">name=Carol</text>
+  <rect x="175" y="262" width="65" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="207" y="279" text-anchor="middle" font-size="10" fill="#333">age=25</text>
+  <rect x="247" y="262" width="90" height="26" rx="3" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="292" y="279" text-anchor="middle" font-size="10" fill="#333">company=Acme</text>
+
+  <text x="260" y="313" text-anchor="middle" font-size="10" fill="#555">Spalten pro Row variabel — fehlende Spalten belegen keinen Speicher (sparse)</text>
+  <text x="260" y="327" text-anchor="middle" font-size="10" fill="#1565C0">Sortierung innerhalb einer Partition durch Clustering Key</text>
+</svg>

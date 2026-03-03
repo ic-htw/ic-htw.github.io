@@ -1,0 +1,96 @@
+<svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="260" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">Tabelle: messwerte</text>
+
+  <!-- Table header -->
+  <rect x="15" y="30" width="490" height="26" rx="3" fill="#1565C0"/>
+  <!-- PK label -->
+  <rect x="15" y="30" width="100" height="26" rx="3" fill="#E65100"/>
+  <text x="65" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="white">sensor_id</text>
+  <!-- CK label -->
+  <rect x="118" y="30" width="105" height="26" rx="0" fill="#388E3C"/>
+  <text x="170" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="white">zeitpunkt</text>
+  <!-- regular columns -->
+  <text x="300" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="white">temperatur</text>
+  <text x="420" y="48" text-anchor="middle" font-size="12" font-weight="bold" fill="white">luftfeucht</text>
+
+  <!-- Legend labels -->
+  <rect x="15" y="60" width="100" height="16" rx="2" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="65" y="72" text-anchor="middle" font-size="10" fill="#E65100" font-weight="bold">Partition Key</text>
+  <rect x="118" y="60" width="105" height="16" rx="2" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="170" y="72" text-anchor="middle" font-size="10" fill="#388E3C" font-weight="bold">Clustering Key</text>
+  <text x="300" y="72" text-anchor="middle" font-size="10" fill="#555">reguläre Spalte</text>
+  <text x="420" y="72" text-anchor="middle" font-size="10" fill="#555">reguläre Spalte</text>
+
+  <!-- Partition 1 bracket -->
+  <rect x="8" y="90" width="6" height="66" fill="none" stroke="#E65100" stroke-width="2.5"/>
+  <text x="6" y="127" text-anchor="middle" font-size="10" fill="#E65100" transform="rotate(-90,6,127)">Partition s-001</text>
+
+  <!-- Row 1 -->
+  <rect x="15" y="90" width="490" height="22" rx="0" fill="#FFF9C4" stroke="#ddd" stroke-width="0.5"/>
+  <rect x="15" y="90" width="100" height="22" rx="0" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="65" y="105" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">s-001</text>
+  <rect x="118" y="90" width="105" height="22" rx="0" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <text x="170" y="105" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 12:00</text>
+  <text x="300" y="105" text-anchor="middle" font-size="11" fill="#333">23.4</text>
+  <text x="420" y="105" text-anchor="middle" font-size="11" fill="#333">61.0</text>
+
+  <!-- Row 2 -->
+  <rect x="15" y="112" width="490" height="22" rx="0" fill="#FFF9C4" stroke="#ddd" stroke-width="0.5"/>
+  <rect x="15" y="112" width="100" height="22" rx="0" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="65" y="127" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">s-001</text>
+  <rect x="118" y="112" width="105" height="22" rx="0" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <text x="170" y="127" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 11:00</text>
+  <text x="300" y="127" text-anchor="middle" font-size="11" fill="#333">22.8</text>
+  <text x="420" y="127" text-anchor="middle" font-size="11" fill="#333">60.5</text>
+
+  <!-- Row 3 -->
+  <rect x="15" y="134" width="490" height="22" rx="0" fill="#FFF9C4" stroke="#ddd" stroke-width="0.5"/>
+  <rect x="15" y="134" width="100" height="22" rx="0" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="65" y="149" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">s-001</text>
+  <rect x="118" y="134" width="105" height="22" rx="0" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <text x="170" y="149" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 10:00</text>
+  <text x="300" y="149" text-anchor="middle" font-size="11" fill="#333">22.1</text>
+  <text x="420" y="149" text-anchor="middle" font-size="11" fill="#333">59.8</text>
+
+  <!-- Partition 2 bracket -->
+  <rect x="8" y="162" width="6" height="44" fill="none" stroke="#E65100" stroke-width="2.5"/>
+  <text x="6" y="185" text-anchor="middle" font-size="10" fill="#E65100" transform="rotate(-90,6,185)">Partition s-002</text>
+
+  <!-- Row 4 - different partition -->
+  <rect x="15" y="162" width="490" height="22" rx="0" fill="#E3F2FD" stroke="#ddd" stroke-width="0.5"/>
+  <rect x="15" y="162" width="100" height="22" rx="0" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="65" y="177" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">s-002</text>
+  <rect x="118" y="162" width="105" height="22" rx="0" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <text x="170" y="177" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 12:00</text>
+  <text x="300" y="177" text-anchor="middle" font-size="11" fill="#333">18.2</text>
+  <text x="420" y="177" text-anchor="middle" font-size="11" fill="#333">55.3</text>
+
+  <!-- Row 5 -->
+  <rect x="15" y="184" width="490" height="22" rx="0" fill="#E3F2FD" stroke="#ddd" stroke-width="0.5"/>
+  <rect x="15" y="184" width="100" height="22" rx="0" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+  <text x="65" y="199" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">s-002</text>
+  <rect x="118" y="184" width="105" height="22" rx="0" fill="#E8F5E9" stroke="#388E3C" stroke-width="1"/>
+  <text x="170" y="199" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 11:00</text>
+  <text x="300" y="199" text-anchor="middle" font-size="11" fill="#333">17.9</text>
+  <text x="420" y="199" text-anchor="middle" font-size="11" fill="#333">54.0</text>
+
+  <!-- Legend box -->
+  <rect x="15" y="225" width="490" height="80" rx="5" fill="#F9F9F9" stroke="#CCC" stroke-width="1"/>
+  <text x="260" y="243" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Primary Key = (Partition Key, Clustering Key)</text>
+
+  <rect x="30" y="252" width="12" height="12" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+  <text x="48" y="263" font-size="11" fill="#333">Partition Key: physische Verteilung im Cluster (Hash)</text>
+
+  <rect x="30" y="270" width="12" height="12" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="48" y="281" font-size="11" fill="#333">Clustering Key: Sortierung innerhalb einer Partition</text>
+
+  <rect x="30" y="288" width="12" height="12" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
+  <text x="48" y="299" font-size="11" fill="#333">Reguläre Spalten: Datenwerte</text>
+</svg>

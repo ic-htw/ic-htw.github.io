@@ -1,0 +1,777 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Konsistenzmodelle - ADBKT
+is_slide: 1
+n: 16
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Motivation: Konsistenz in verteilten Systemen</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Das Problem</p>
+        <ul class="w3-large">
+            <li>Daten werden auf mehrere Knoten repliziert</li>
+            <li>Schreibvorgänge müssen auf alle Replicas übertragen werden</li>
+            <li>Netzwerklatenz und Ausfälle verhindern sofortige Synchronisation</li>
+            <li>Zwei Clients lesen denselben Schlüssel – und erhalten unterschiedliche Werte</li>
+        </ul>
+        <p class="w3-large ic-neg15">Warum nicht einfach stark konsistent?</p>
+        <ul class="w3-large">
+            <li>Starke Konsistenz erfordert Koordination aller Replicas</li>
+            <li>Koordination kostet Latenz und Verfügbarkeit</li>
+            <li>Tradeoff: Konsistenz ↔ Verfügbarkeit ↔ Leistung</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel: Banküberweisung</p>
+        <pre><code class="language-plaintext">Node A (EU):  Konto = 100 €
+Node B (US):  Konto = 100 €  (Replik)
+
+Client schreibt auf Node A:
+  Konto = Konto - 50 €  →  50 €
+
+Client liest sofort von Node B:
+  Konto = 100 €  ← veralteter Wert!
+
+Frage: Wann ist Node B synchron?
+→ Sofort?  (starke Konsistenz)
+→ Irgendwann?  (Eventual Consistency)
+→ Nur bei Quorum?  (Tunable Consistency)</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>CAP-Theorem</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Drei Garantien – nur zwei gleichzeitig möglich</p>
+        <ul class="w3-large">
+            <li><strong>C – Consistency</strong>: jeder Read liefert den aktuellsten Write oder einen Fehler</li>
+            <li><strong>A – Availability</strong>: jede Anfrage erhält eine Antwort (kein Fehler, ggf. veraltet)</li>
+            <li><strong>P – Partition Tolerance</strong>: System funktioniert trotz Netzwerkpartition</li>
+        </ul>
+        <p class="w3-large ic-neg15">Konsequenz</p>
+        <ul class="w3-large">
+            <li>Netzwerkpartitionen sind in verteilten Systemen unvermeidlich</li>
+            <li>→ P muss gewählt werden</li>
+            <li>→ Wahl zwischen C und A bei Partition</li>
+            <li><strong>CP-Systeme</strong>: Konsistenz bevorzugt (z.B. HBase, Zookeeper)</li>
+            <li><strong>AP-Systeme</strong>: Verfügbarkeit bevorzugt (z.B. Cassandra, DynamoDB)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Netzwerkpartition tritt auf</p>
+        <pre><code class="language-plaintext">Node A ──✗── Node B
+   ↑               ↑
+Client 1       Client 2
+
+CP: Node B lehnt Reads ab
+    bis Partition geheilt
+    → Fehler, aber konsistent
+
+AP: Node B antwortet mit
+    möglicherweise veraltetem Wert
+    → verfügbar, aber inkonsistent</code></pre>
+        <p class="w3-large ic-neg15">Kritik am CAP-Theorem</p>
+        <ul class="w3-large">
+            <li>Binäres Modell – Praxis ist ein Spektrum</li>
+            <li>PACELC-Modell erweitert CAP um Latenz-Tradeoff</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>PACELC-Modell</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Erweiterung von CAP durch Daniel Abadi (2012)</li>
+            <li><strong>P</strong>artition → <strong>A</strong>vailability vs. <strong>C</strong>onsistency</li>
+            <li><strong>E</strong>lse (kein Partition) → <strong>L</strong>atency vs. <strong>C</strong>onsistency</li>
+            <li>Auch im Normalbetrieb gibt es einen Tradeoff: schnelle Antwort vs. Koordinationsaufwand</li>
+        </ul>
+        <p class="w3-large ic-neg15">Kategorien</p>
+        <ul class="w3-large">
+            <li><strong>PA/EL</strong>: Verfügbarkeit + niedrige Latenz (DynamoDB, Cassandra)</li>
+            <li><strong>PC/EC</strong>: Konsistenz auch im Normalbetrieb (Spanner, HBase)</li>
+            <li><strong>PA/EC</strong>: Verfügbarkeit bei Partition, Konsistenz sonst (MongoDB)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <table class="w3-table-all">
+            <tr>
+                <th>System</th>
+                <th>Partition</th>
+                <th>Normal</th>
+            </tr>
+            <tr>
+                <td>Cassandra</td>
+                <td>PA</td>
+                <td>EL</td>
+            </tr>
+            <tr>
+                <td>DynamoDB</td>
+                <td>PA</td>
+                <td>EL</td>
+            </tr>
+            <tr>
+                <td>Spanner</td>
+                <td>PC</td>
+                <td>EC</td>
+            </tr>
+            <tr>
+                <td>HBase</td>
+                <td>PC</td>
+                <td>EC</td>
+            </tr>
+            <tr>
+                <td>MongoDB</td>
+                <td>PA</td>
+                <td>EC</td>
+            </tr>
+            <tr>
+                <td>ZooKeeper</td>
+                <td>PC</td>
+                <td>EC</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>ACID vs. BASE</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">ACID – relationale Datenbanken</p>
+        <ul class="w3-large">
+            <li><strong>A</strong>tomicity: Transaktion ganz oder gar nicht</li>
+            <li><strong>C</strong>onsistency: DB bleibt in gültigem Zustand</li>
+            <li><strong>I</strong>solation: parallele Transaktionen sehen sich nicht</li>
+            <li><strong>D</strong>urability: nach Commit dauerhaft gespeichert</li>
+        </ul>
+        <ul class="w3-large">
+            <li>Starke Garantien, aber schwer skalierbar</li>
+            <li>Koordination zwischen Knoten kostet Latenz</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">BASE – NoSQL-Systeme</p>
+        <ul class="w3-large">
+            <li><strong>BA</strong>sically Available: System antwortet immer</li>
+            <li><strong>S</strong>oft State: Zustand kann sich ohne Schreibvorgang ändern (Replikation)</li>
+            <li><strong>E</strong>ventually Consistent: irgendwann konsistent</li>
+        </ul>
+        <ul class="w3-large">
+            <li>Schwächere Garantien, hohe Verfügbarkeit und Skalierbarkeit</li>
+            <li>Applikation muss Konflikte tolerieren oder auflösen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Fazit</p>
+        <ul class="w3-large">
+            <li>ACID und BASE sind kein Widerspruch – sie sind Designziele</li>
+            <li>Viele Systeme bieten Tuning: von ACID bis BASE</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Konsistenzspektrum – Übersicht</h1>
+<p class="w3-large ic-neg15">Von stark nach schwach (abnehmende Garantien, zunehmende Verfügbarkeit)</p>
+<table class="w3-table-all">
+    <tr>
+        <th>Modell</th>
+        <th>Garantie</th>
+        <th>Latenz</th>
+        <th>Systeme</th>
+    </tr>
+    <tr>
+        <td><strong>Linearisierbarkeit</strong></td>
+        <td>Reads sehen zuletzt geschriebenen Wert, global geordnet</td>
+        <td>hoch</td>
+        <td>Spanner, etcd, Zookeeper</td>
+    </tr>
+    <tr>
+        <td><strong>Sequentielle Konsistenz</strong></td>
+        <td>Alle sehen gleiche Reihenfolge, aber nicht Echtzeit</td>
+        <td>mittel</td>
+        <td>viele ACID-Systeme</td>
+    </tr>
+    <tr>
+        <td><strong>Kausale Konsistenz</strong></td>
+        <td>Kausal abhängige Ops in richtiger Reihenfolge sichtbar</td>
+        <td>mittel</td>
+        <td>MongoDB (causal sessions)</td>
+    </tr>
+    <tr>
+        <td><strong>Read-your-writes</strong></td>
+        <td>Ein Client sieht eigene Writes</td>
+        <td>niedrig</td>
+        <td>DynamoDB, Cassandra (session)</td>
+    </tr>
+    <tr>
+        <td><strong>Eventual Consistency</strong></td>
+        <td>Irgendwann konsistent – keine Zeitgarantie</td>
+        <td>minimal</td>
+        <td>Cassandra ONE, DNS</td>
+    </tr>
+</table>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Linearisierbarkeit</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Stärkstes Konsistenzmodell für einzelne Operationen</li>
+            <li>Jede Operation erscheint <strong>atomar und sofort</strong> an einem einzigen Zeitpunkt</li>
+            <li>Reads sehen stets den aktuellsten abgeschlossenen Write</li>
+            <li>Globale, totale Ordnung aller Operationen</li>
+            <li>Entspricht dem Verhalten eines einzelnen Servers</li>
+        </ul>
+        <p class="w3-large ic-neg15">Umsetzung</p>
+        <ul class="w3-large">
+            <li>Konsensprotokoll: Paxos, Raft</li>
+            <li>Alle Replicas stimmen vor Rückantwort ab</li>
+            <li>Kostet: hohe Latenz, eingeschränkte Verfügbarkeit bei Partition</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel</p>
+        <pre><code class="language-plaintext">Zeit →
+
+Client A:  Write(x=1) ────────────────▶ OK
+Client B:             Read(x) ────────▶ 1  ✓
+
+Linearisierbar:
+  Read nach abgeschlossenem Write
+  muss neuen Wert liefern
+
+Nicht linearisierbar:
+Client A:  Write(x=1) ──────────────▶ OK
+Client B:      Read(x) ──────▶ 0  ✗
+  (Write abgeschlossen, aber 0 gelesen)</code></pre>
+        <p class="w3-large ic-neg15">Systeme</p>
+        <ul class="w3-large">
+            <li>Google Spanner (TrueTime)</li>
+            <li>etcd, ZooKeeper (Linearizable reads)</li>
+            <li>Cassandra: <code>CONSISTENCY ALL</code></li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Sequentielle Konsistenz</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Alle Prozesse sehen Operationen in <strong>derselben globalen Reihenfolge</strong></li>
+            <li>Die Reihenfolge muss mit der lokalen Programmreihenfolge eines jeden Prozesses verträglich sein</li>
+            <li>Keine Echtzeit-Garantie: Reihenfolge muss nicht der Wanduhr entsprechen</li>
+            <li>Schwächer als Linearisierbarkeit, aber stärker als Kausalkonsistenz</li>
+        </ul>
+        <p class="w3-large ic-neg15">Unterschied zur Linearisierbarkeit</p>
+        <ul class="w3-large">
+            <li>Linearisierbarkeit: Echtzeitordnung der Operationen</li>
+            <li>Sequentielle Konsistenz: nur Programm-Reihenfolge innerhalb eines Prozesses</li>
+            <li>→ Nicht-überlappende Ops können in beliebiger Reihenfolge erscheinen</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel: sequentiell konsistent, aber nicht linearisierbar</p>
+        <pre><code class="language-plaintext">Prozess P1:  Write(x=1)
+Prozess P2:  Write(x=2)
+
+Prozess P3 sieht:  x=1, dann x=2  ✓
+Prozess P4 sieht:  x=1, dann x=2  ✓
+→ alle sehen gleiche Reihenfolge ✓
+
+Aber: P2 schrieb x=2 vor P1 (Wanduhr)
+→ Reihenfolge entspricht nicht Realzeit
+→ nicht linearisierbar, aber
+  sequentiell konsistent ✓</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Kausale Konsistenz</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Operationen, die <strong>kausal voneinander abhängen</strong>, werden von allen Prozessen in der richtigen Reihenfolge gesehen</li>
+            <li>Kausalität: A → B, wenn B A „gesehen" hat (Happens-Before-Relation)</li>
+            <li>Nebenläufige (nicht-kausale) Ops dürfen in beliebiger Reihenfolge sichtbar werden</li>
+            <li>Schwächer als sequentielle Konsistenz, besser skalierbar</li>
+        </ul>
+        <p class="w3-large ic-neg15">Happens-Before (→)</p>
+        <ul class="w3-large">
+            <li>Innerhalb eines Prozesses: alle Ops in Programmreihenfolge</li>
+            <li>Nachricht: Senden → Empfangen</li>
+            <li>Transitiv: wenn A→B und B→C, dann A→C</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel</p>
+        <pre><code class="language-plaintext">P1:  Post("Frage?")          Write(x=1)
+P2:  Read(x=1) → Reply("Antwort!")
+P3:  ?
+
+Kausal konsistent:
+  P3 sieht erst "Frage?", dann "Antwort!"
+  (weil Reply kausal von Post abhängt) ✓
+
+Nicht kausal konsistent:
+  P3 sieht erst "Antwort!", dann "Frage?"
+  → Ursache kommt nach Wirkung ✗</code></pre>
+        <p class="w3-large ic-neg15">Implementierung</p>
+        <ul class="w3-large">
+            <li>Vektoruhren oder logische Zeitstempel</li>
+            <li>MongoDB Causal Consistency Sessions</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Eventual Consistency</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Schwächstes praktisch relevantes Konsistenzmodell</li>
+            <li>Wenn keine neuen Writes erfolgen, konvergieren <strong>irgendwann</strong> alle Replicas</li>
+            <li>Keine Garantie über Zeitpunkt oder Reihenfolge der Konvergenz</li>
+            <li>Liest können veraltete Werte liefern</li>
+        </ul>
+        <p class="w3-large ic-neg15">Vorteile</p>
+        <ul class="w3-large">
+            <li>Maximale Verfügbarkeit: kein Warten auf Koordination</li>
+            <li>Minimale Latenz: sofortige lokale Antwort</li>
+            <li>Geeignet für: Shopping-Carts, DNS, Social Feeds, Sensor-Daten</li>
+        </ul>
+        <p class="w3-large ic-neg15">Herausforderungen</p>
+        <ul class="w3-large">
+            <li>Anwendung muss mit veralteten Daten umgehen können</li>
+            <li>Konfliktauflösung bei konkurrierenden Writes notwendig</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel: DNS</p>
+        <pre><code class="language-plaintext">DNS-Eintrag geändert:
+  example.com → neue IP
+
+Nameserver A:  kennt neue IP sofort
+Nameserver B:  liefert noch alte IP
+Nameserver C:  liefert noch alte IP
+
+Nach TTL (z.B. 300 s):
+  alle Nameserver: neue IP ✓
+
+→ Eventual Consistency</code></pre>
+        <p class="w3-large ic-neg15">Cassandra Beispiel</p>
+        <pre><code class="language-sql">-- Konsistenzlevel ONE:
+-- antwortet nach 1 Replica
+-- möglicherweise veraltet
+CONSISTENCY ONE;
+SELECT * FROM sensor_data
+WHERE id = 's-001';</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Session Guarantees</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Vier Session-Guarantees (Terry et al. 1994)</p>
+        <ul class="w3-large">
+            <li><strong>Read-your-writes (RYW)</strong>: ein Client sieht immer seine eigenen Writes</li>
+            <li><strong>Monotonic Reads (MR)</strong>: Reads werden nie „zurückgedreht" – kein älterer Wert nach neuerem</li>
+            <li><strong>Writes Follow Reads (WFR)</strong>: ein Write nach einem Read wird hinter dem gelesenen Wert eingeordnet</li>
+            <li><strong>Monotonic Writes (MW)</strong>: Writes eines Clients erscheinen in Reihenfolge</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Read-your-writes (häufigste Anforderung)</p>
+        <pre><code class="language-plaintext">Client schreibt: Profil-Update
+Client liest sofort: eigenes Profil
+
+Ohne RYW:
+  → Client sieht altes Profil ✗
+  → frustrierend!
+
+Mit RYW:
+  → Client wird immer zu Replica
+     geleitet, die seinen Write kennt ✓
+
+Implementierung:
+  - Sticky Session (immer gleicher Node)
+  - Session Token mit Versions-Info</code></pre>
+        <p class="w3-large ic-neg15">Monotonic Reads</p>
+        <pre><code class="language-plaintext">Read 1:  Konto = 150 €
+Read 2:  Konto = 100 €  ✗ (älter!)
+
+Mit MR:  nie rückwärts in der Zeit</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Quorum-Konsistenz</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li><strong>N</strong>: Replikationsfaktor (Anzahl Kopien)</li>
+            <li><strong>W</strong>: Anzahl Bestätigungen beim Schreiben</li>
+            <li><strong>R</strong>: Anzahl Antworten beim Lesen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Starke Konsistenz: W + R &gt; N</p>
+        <ul class="w3-large">
+            <li>Lese- und Schreib-Quorum überlappen sich → mindestens eine Replica ist aktuell</li>
+            <li>Typisch: N=3, W=2, R=2 → QUORUM</li>
+        </ul>
+        <p class="w3-large ic-neg15">Schwache Konsistenz: W + R ≤ N</p>
+        <ul class="w3-large">
+            <li>Keine Überlappung garantiert → Reads können veraltet sein</li>
+            <li>Typisch: N=3, W=1, R=1 → ONE (Eventual Consistency)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Konfigurationen (N = 3)</p>
+        <table class="w3-table-all">
+            <tr>
+                <th>W</th>
+                <th>R</th>
+                <th>W+R</th>
+                <th>Konsistenz</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>4 &gt; 3</td>
+                <td>stark (ALL/ONE)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>4 &gt; 3</td>
+                <td>stark (QUORUM)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>4 &gt; 3</td>
+                <td>stark (ONE/ALL)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>2 ≤ 3</td>
+                <td>eventual</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3 ≤ 3</td>
+                <td>eventual</td>
+            </tr>
+        </table>
+        <p class="w3-large ic-neg15">Tradeoff</p>
+        <ul class="w3-large">
+            <li>Hohe W → schreiblastige Systeme langsamer</li>
+            <li>Hohe R → leselastige Systeme langsamer</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Vektoruhren</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Mechanismus zur Erfassung von <strong>Kausalität</strong> ohne globale Uhr</li>
+            <li>Jeder Knoten hält einen Zähler pro Knoten im System</li>
+            <li>Bei Ereignis: eigener Zähler wird inkrementiert</li>
+            <li>Bei Nachricht: Vektoren werden komponentenweise per Max gemergt</li>
+        </ul>
+        <p class="w3-large ic-neg15">Vergleich</p>
+        <ul class="w3-large">
+            <li>V(A) &lt; V(B) → A happened-before B (kausal abhängig)</li>
+            <li>V(A) und V(B) unvergleichbar → nebenläufig (Konflikt möglich)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Beispiel (3 Knoten: A, B, C)</p>
+        <pre><code class="language-plaintext">Initial:  A=[0,0,0]  B=[0,0,0]  C=[0,0,0]
+
+A schreibt x=1:
+  A=[1,0,0]  → sendet an B
+
+B empfängt, schreibt x=2:
+  B=max([0,0,0],[1,0,0])+1B
+  B=[1,1,0]  → sendet an C
+
+C empfängt, schreibt x=3:
+  C=[1,1,1]
+
+Nebenläufig (Konflikt):
+A schreibt x=4:  A=[2,0,0]
+B schreibt x=5:  B=[1,2,0]
+→ [2,0,0] und [1,2,0] unvergleichbar
+  → Konflikt! Auflösung notwendig</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Konflikterkennung und -auflösung</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Wann entstehen Konflikte?</p>
+        <ul class="w3-large">
+            <li>Zwei Clients schreiben denselben Schlüssel nebenläufig auf verschiedene Replicas</li>
+            <li>Netzwerkpartition: Writes auf isolierten Partitionen</li>
+            <li>Eventual-Consistency-Systeme akzeptieren solche Writes</li>
+        </ul>
+        <p class="w3-large ic-neg15">Auflösungsstrategien</p>
+        <ul class="w3-large">
+            <li><strong>Last-Write-Wins (LWW)</strong>: Timestamp entscheidet – einfach, aber Writes können verloren gehen</li>
+            <li><strong>Multi-Version</strong>: alle Versionen aufbewahren, Client löst auf (Amazon Dynamo)</li>
+            <li><strong>Merge-Funktion</strong>: domänenspezifische Zusammenführung (z.B. Sets vereinigen)</li>
+            <li><strong>CRDT</strong>: konfliktfreie Datenstrukturen (automatische Auflösung)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Last-Write-Wins (LWW)</p>
+        <pre><code class="language-plaintext">Node A:  x = "Alice"  ts=1000
+Node B:  x = "Bob"    ts=1001
+
+Sync: ts=1001 gewinnt → x = "Bob"
+"Alice" geht verloren!
+
+Problem: Clock Skew (Uhren laufen unterschiedlich)
+→ ts=1000 auf A könnte real später sein
+→ NTP hilft, garantiert aber nichts</code></pre>
+        <p class="w3-large ic-neg15">Multi-Version (Dynamo-Stil)</p>
+        <pre><code class="language-plaintext">Shopping Cart:
+  v1: ["Buch"]            VC=[1,0]
+  v2: ["Buch","Stift"]    VC=[1,1]
+  v3: ["Buch","Heft"]     VC=[2,0]
+
+v2 und v3 nebenläufig → beide behalten
+Client sieht beide → wählt Vereinigung:
+  ["Buch","Stift","Heft"]</code></pre>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>CRDTs – Conflict-free Replicated Data Types</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Datenstrukturen, bei denen nebenläufige Updates <strong>automatisch und deterministisch</strong> zusammengeführt werden</li>
+            <li>Merge-Funktion ist kommutativ, assoziativ und idempotent</li>
+            <li>Keine Koordination notwendig – immer verfügbar</li>
+            <li>Zwei Varianten: State-based (CvRDT) und Op-based (CmRDT)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Beispiele</p>
+        <ul class="w3-large">
+            <li><strong>G-Counter</strong>: wächst nur (verteilter Zähler, nur Inkrement)</li>
+            <li><strong>PN-Counter</strong>: Inkrement + Dekrement</li>
+            <li><strong>G-Set</strong>: Set, nur Hinzufügen (kein Löschen)</li>
+            <li><strong>LWW-Register</strong>: Last-Write-Wins Register</li>
+            <li><strong>OR-Set</strong>: Observed-Remove Set (Löschen möglich)</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">G-Counter (Grow-only Counter)</p>
+        <pre><code class="language-plaintext">Node A zählt: +2  →  A=[2, 0, 0]
+Node B zählt: +3  →  B=[0, 3, 0]
+Node C zählt: +1  →  C=[0, 0, 1]
+
+Merge (komponentenweises Maximum):
+  Max([2,0,0],[0,3,0],[0,0,1])
+  = [2, 3, 1]
+
+Gesamtwert = Summe = 6
+→ kein Konflikt, kein Koordinationsbedarf</code></pre>
+        <p class="w3-large ic-neg15">Einsatz</p>
+        <ul class="w3-large">
+            <li>Riak: CRDT-basierte Datentypen</li>
+            <li>Redis: CRDT-Erweiterungen</li>
+            <li>Figma, SoundCloud: kollaborative Echtzeit-Anwendungen</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Replikationsprotokolle</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Synchrone Replikation</p>
+        <ul class="w3-large">
+            <li>Alle Replicas müssen Write bestätigen, bevor Client Antwort erhält</li>
+            <li>Starke Konsistenz: alle Replicas immer aktuell</li>
+            <li>Hohe Schreiblatenz (= Latenz des langsamsten Replica)</li>
+            <li>Verfügbarkeit leidet bei Replica-Ausfall</li>
+        </ul>
+        <p class="w3-large ic-neg15">Asynchrone Replikation</p>
+        <ul class="w3-large">
+            <li>Client erhält sofort Antwort; Replikation im Hintergrund</li>
+            <li>Niedrige Schreiblatenz</li>
+            <li>Replica kann zeitweise veraltet sein (Replikationsverzögerung)</li>
+            <li>Bei Primärausfall: Datenverlust möglich</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Konsensbasierte Replikation (Raft/Paxos)</p>
+        <ul class="w3-large">
+            <li>Mehrheitsbeschluss: Write gilt, wenn Mehrheit (Quorum) bestätigt</li>
+            <li>Starke Konsistenz + Fehlertoleranz</li>
+            <li>Höhere Latenz als async, besser als sync zu allen Replicas</li>
+            <li>Leader koordiniert alle Writes</li>
+        </ul>
+        <p class="w3-large ic-neg15">Vergleich</p>
+        <table class="w3-table-all">
+            <tr>
+                <th>Protokoll</th>
+                <th>Konsistenz</th>
+                <th>Latenz</th>
+                <th>Verlust</th>
+            </tr>
+            <tr>
+                <td>Synchron</td>
+                <td>stark</td>
+                <td>hoch</td>
+                <td>kein</td>
+            </tr>
+            <tr>
+                <td>Asynchron</td>
+                <td>eventual</td>
+                <td>niedrig</td>
+                <td>möglich</td>
+            </tr>
+            <tr>
+                <td>Raft/Paxos</td>
+                <td>stark</td>
+                <td>mittel</td>
+                <td>kein</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Konsistenz in der Praxis</h1>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">Cassandra – Tunable Consistency</p>
+        <ul class="w3-large">
+            <li>Konsistenzlevel pro Anfrage konfigurierbar</li>
+            <li>ONE → Eventual Consistency</li>
+            <li>QUORUM + QUORUM (W+R &gt; N) → starke Konsistenz</li>
+            <li>LOCAL_QUORUM für Multi-Datacenter</li>
+        </ul>
+        <p class="w3-large ic-neg15">Google Spanner – Externe Konsistenz</p>
+        <ul class="w3-large">
+            <li>Linearisierbarkeit global, über Datacenter hinweg</li>
+            <li>TrueTime-API: GPS + Atomuhren, bekanntes Zeitfenster</li>
+            <li>Commits warten auf Ablauf des Unsicherheitsintervalls</li>
+            <li>Stärkstes Konsistenzmodell in einem verteilten System</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+        <p class="w3-large ic-neg15">ZooKeeper – Sequentielle Konsistenz</p>
+        <ul class="w3-large">
+            <li>Alle Writes werden linear über Leader abgewickelt (ZAB-Protokoll)</li>
+            <li>Clients sehen Writes in derselben Reihenfolge</li>
+            <li>Reads können von Follower-Nodes beantwortet werden (veraltet möglich)</li>
+            <li><code>sync()</code> erzwingt Aktualität vor Read</li>
+        </ul>
+        <p class="w3-large ic-neg15">DynamoDB</p>
+        <ul class="w3-large">
+            <li>Standard: Eventually Consistent Reads (niedriger Preis)</li>
+            <li>Option: Strongly Consistent Reads (2× RCU)</li>
+            <li>Transaktionen: ACID über mehrere Items/Tabellen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Fazit</p>
+        <ul class="w3-large">
+            <li>Kein Modell ist universell besser – Wahl hängt vom Anwendungsfall ab</li>
+            <li>Kritische Daten (Finanzen, Reservierungen) → starke Konsistenz</li>
+            <li>Skalierung, Verfügbarkeit priorisiert → Eventual Consistency</li>
+        </ul>
+    </div>
+</div>
+<div class="ic-gap"></div>

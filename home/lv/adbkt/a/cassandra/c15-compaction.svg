@@ -1,0 +1,67 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrg" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#388E3C"/>
+    </marker>
+  </defs>
+
+  <!-- Title: Before compaction -->
+  <text x="200" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#C62828">Vor Compaction</text>
+
+  <!-- SSTable 1 -->
+  <rect x="15" y="30" width="110" height="90" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="70" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 1</text>
+  <text x="70" y="68" text-anchor="middle" font-size="10" fill="#333">key=A  v=1  ts=10</text>
+  <text x="70" y="83" text-anchor="middle" font-size="10" fill="#333">key=B  v=5  ts=10</text>
+  <text x="70" y="98" text-anchor="middle" font-size="10" fill="#C62828">key=C  ✝  ts=10</text>
+  <text x="70" y="113" text-anchor="middle" font-size="9" fill="#888">(Tombstone)</text>
+
+  <!-- SSTable 2 -->
+  <rect x="135" y="30" width="110" height="90" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="190" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 2</text>
+  <text x="190" y="68" text-anchor="middle" font-size="10" fill="#333">key=A  v=2  ts=20</text>
+  <text x="190" y="83" text-anchor="middle" font-size="10" fill="#333">key=D  v=9  ts=20</text>
+
+  <!-- SSTable 3 -->
+  <rect x="255" y="30" width="110" height="90" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="310" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 3</text>
+  <text x="310" y="68" text-anchor="middle" font-size="10" fill="#333">key=A  v=3  ts=30</text>
+  <text x="310" y="83" text-anchor="middle" font-size="10" fill="#333">key=B  v=7  ts=30</text>
+  <text x="310" y="98" text-anchor="middle" font-size="10" fill="#333">key=E  v=4  ts=30</text>
+
+  <!-- Compaction arrow -->
+  <rect x="385" y="55" width="120" height="40" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="445" y="73" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Compaction</text>
+  <text x="445" y="88" text-anchor="middle" font-size="9" fill="#555">Merge + Bereinigung</text>
+
+  <!-- Big down arrow -->
+  <line x1="200" y1="130" x2="200" y2="158" stroke="#555" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="215" y="148" font-size="9" fill="#555">kompaktiert</text>
+
+  <!-- Result SSTable (compacted) -->
+  <rect x="15" y="162" width="380" height="50" rx="5" fill="#FFF9C4" stroke="#E65100" stroke-width="2.5"/>
+  <text x="205" y="182" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Kompaktierte SSTable</text>
+  <text x="205" y="200" text-anchor="middle" font-size="10" fill="#333">key=A v=3 ts=30  |  key=B v=7 ts=30  |  key=D v=9 ts=20  |  key=E v=4 ts=30</text>
+
+  <!-- Removed note -->
+  <text x="205" y="228" text-anchor="middle" font-size="10" fill="#C62828">Entfernt: veraltete Versionen (key=A v=1, v=2) und Tombstone (key=C)</text>
+
+  <!-- Three strategy boxes -->
+  <rect x="15" y="242" width="155" height="50" rx="4" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="92" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">STCS</text>
+  <text x="92" y="275" text-anchor="middle" font-size="10" fill="#555">Size-Tiered: gleich-</text>
+  <text x="92" y="288" text-anchor="middle" font-size="10" fill="#555">große SSTables</text>
+
+  <rect x="182" y="242" width="155" height="50" rx="4" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="259" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">LCS</text>
+  <text x="259" y="275" text-anchor="middle" font-size="10" fill="#555">Leveled: Level-Struktur,</text>
+  <text x="259" y="288" text-anchor="middle" font-size="10" fill="#555">gut für Reads</text>
+
+  <rect x="349" y="242" width="155" height="50" rx="4" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="426" y="260" text-anchor="middle" font-size="11" font-weight="bold" fill="#7B1FA2">TWCS</text>
+  <text x="426" y="275" text-anchor="middle" font-size="10" fill="#555">Time-Window: Zeitfenster</text>
+  <text x="426" y="288" text-anchor="middle" font-size="10" fill="#555">für Zeitreihendaten</text>
+</svg>

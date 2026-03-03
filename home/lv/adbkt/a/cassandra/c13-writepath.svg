@@ -1,0 +1,67 @@
+<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arro" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E65100"/>
+    </marker>
+  </defs>
+
+  <!-- Write request -->
+  <rect x="15" y="110" width="60" height="40" rx="5" fill="#FFF9C4" stroke="#E65100" stroke-width="2"/>
+  <text x="45" y="128" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">Write</text>
+  <text x="45" y="142" text-anchor="middle" font-size="9" fill="#555">Request</text>
+
+  <!-- Arrow to CommitLog -->
+  <line x1="76" y1="130" x2="108" y2="130" stroke="#E65100" stroke-width="2.5" marker-end="url(#arro)"/>
+
+  <!-- Step 1: CommitLog -->
+  <rect x="110" y="90" width="95" height="80" rx="6" fill="#FCE4EC" stroke="#C62828" stroke-width="2"/>
+  <text x="157" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#C62828">CommitLog</text>
+  <line x1="120" y1="125" x2="195" y2="125" stroke="#ddd" stroke-width="0.5"/>
+  <text x="157" y="140" text-anchor="middle" font-size="9" fill="#555">Sequenziell</text>
+  <text x="157" y="154" text-anchor="middle" font-size="9" fill="#555">auf Disk</text>
+  <text x="157" y="182" text-anchor="middle" font-size="9" fill="#C62828">Crash-Recovery</text>
+
+  <!-- Arrow to Memtable -->
+  <line x1="206" y1="130" x2="236" y2="130" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Memtable -->
+  <rect x="238" y="90" width="95" height="80" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="285" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Memtable</text>
+  <line x1="248" y1="125" x2="323" y2="125" stroke="#ddd" stroke-width="0.5"/>
+  <text x="285" y="140" text-anchor="middle" font-size="9" fill="#555">In-Memory</text>
+  <text x="285" y="154" text-anchor="middle" font-size="9" fill="#555">(RAM)</text>
+  <text x="285" y="182" text-anchor="middle" font-size="9" fill="#1565C0">schneller Zugriff</text>
+
+  <!-- Arrow (flush) to SSTable -->
+  <line x1="334" y1="130" x2="362" y2="130" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="348" y="122" text-anchor="middle" font-size="9" fill="#555">Flush</text>
+
+  <!-- Step 3: SSTable -->
+  <rect x="364" y="70" width="95" height="45" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="411" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 1</text>
+  <text x="411" y="103" text-anchor="middle" font-size="9" fill="#555">immutable</text>
+
+  <rect x="364" y="120" width="95" height="45" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="411" y="138" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 2</text>
+  <text x="411" y="153" text-anchor="middle" font-size="9" fill="#555">immutable</text>
+
+  <rect x="364" y="170" width="95" height="45" rx="5" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="411" y="188" text-anchor="middle" font-size="11" font-weight="bold" fill="#388E3C">SSTable 3</text>
+  <text x="411" y="203" text-anchor="middle" font-size="9" fill="#555">immutable</text>
+
+  <text x="411" y="230" text-anchor="middle" font-size="9" fill="#388E3C">auf Disk (append-only)</text>
+
+  <!-- Bottom legend / properties -->
+  <rect x="15" y="215" width="330" height="55" rx="5" fill="#F9F9F9" stroke="#CCC" stroke-width="1"/>
+  <text x="175" y="233" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Eigenschaften des Write Path</text>
+  <text x="25" y="250" font-size="10" fill="#C62828">● CommitLog: Dauerhaftigkeitsgarantie (WAL)</text>
+  <text x="25" y="264" font-size="10" fill="#388E3C">● Append-only: keine Random-Writes → sehr hoher Durchsatz</text>
+
+  <!-- Labels under boxes -->
+  <text x="157" y="185" text-anchor="middle" font-size="9" fill="#555">① Sofort</text>
+  <text x="285" y="185" text-anchor="middle" font-size="9" fill="#555">② Sofort</text>
+  <text x="411" y="60" text-anchor="middle" font-size="9" fill="#388E3C">③ bei Schwellwert</text>
+</svg>

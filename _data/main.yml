@@ -220,10 +220,16 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/intro-nosql.html
                   - t: Cassandra
                     ts: Cassandra
+                    url: /home/lv/adbkt/vorlesungen/cassandra.html
+                  - t: Cassandra1
+                    ts: Cassandra1
                     url: /home/lv/adbkt/vorlesungen/cas.html
                   - t: Replikation / Partitionierung
                     ts: Replikation / Partitionierung
                     url: /home/lv/adbkt/vorlesungen/repl-part.html
+                  - t: Konsistenzmodelle
+                    ts: Konsistenzmodelle
+                    url: /home/lv/adbkt/vorlesungen/cmodels.html
                   - t: Konsistenz
                     ts: Konsistenz
                     url: /home/lv/adbkt/vorlesungen/consistency.html
@@ -235,6 +241,9 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/serverless.html
                   - t: DynamoDB
                     ts: DynamoDB
+                    url: /home/lv/adbkt/vorlesungen/dyndb.html
+                  - t: DynamoDB1
+                    ts: DynamoDB1
                     url: /home/lv/adbkt/vorlesungen/dynamodb.html
                   - t: Transaktionen
                     ts: Transaktionen
