@@ -12,33 +12,35 @@ n: 20
 <h1>Stack im Portainer anlegen</h1>
 <p class="w3-large">Stacks entsprechen <code>docker-compose</code>.</p>
 
-<p class="w3-large ic-neg15">Einloggen</p>
+<h2>Einloggen</h2>
 <ul class="w3-large">
-    <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
-    <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
-    <li><code>https://xxx.f4.htw-berlin.de:9443</code></li>
+  <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
+  <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
+  <li><code>https://xxx.f4.htw-berlin.de:9443/</code></li>
 </ul>
+<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/100-100.png">
 
-<p class="w3-large ic-neg15">Environment "local" auswählen</p>
+<h2>Environment "local" auswählen</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/110-100.png">
+
+<h2>Dashboard wird angezeigt</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/120-100.png">
+
+<h2>Stack-Formular öffnen</h2>
 <ul class="w3-large">
-    <li>Dashboard wird angezeigt</li>
+  <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+  <li>Auf Button "Add stack" klicken</li>
 </ul>
+<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/130-100.png">
 
-
-
-<p class="w3-large ic-neg15">Stack-Formular öffnen</p>
+<h2>Stack bereitstellen</h2>
 <ul class="w3-large">
-    <li>In der Navigationsleiste links auf "Stacks" klicken</li>
-    <li>Auf Button "Add stack" klicken</li>
+  <li>Name für Stack vergeben</li>
+  <li>Docker-Compose-Code in Web-Editor eingeben</li>
+  <li>Auf "Deploy the stack" klicken</li>
 </ul>
+<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/140-100.png">
 
-
-<p class="w3-large ic-neg15">Stack bereitstellen</p>
-<ul class="w3-large">
-    <li>Name für Stack vergeben</li>
-    <li>Docker-Compose-Code in Web-Editor eingeben</li>
-    <li>Auf "Deploy the stack" klicken</li>
-</ul>
 
 
 <div class="ic-gap"></div>
@@ -82,7 +84,98 @@ services:
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>xxx</h1>
+<h1>Drei Cassandra Container anlegen</h1>
+
+<h2 class="ic-neg15">Stack <code>cas1</code> anlegen</h2>
+
+<pre><code class="language-yaml">networks:
+  ncas:
+    name: ncas
+
+services:
+  cas1:
+    container_name: cas1
+    image: cassandra:latest
+    ports:
+      - 9042:9042
+    environment:
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - ncas</code></pre>
+
+
+<h2 class="ic-neg15">Keyspace und Tabelle anlegen</h2>
+<p class="w3-large">
+  Konsole in Container <code>cas1</code> öffnen und dort die Cassandra Query Language Shell starten (<code>cqlsh</code>).  
+</p>
+
+
+<pre><code class="language-sql">create keyspace test with replication = {
+  'class': 'SimpleStrategy', 'replication_factor' : 1
+};
+
+use test;
+
+create table t (
+  pk int, 
+  sk int, 
+  v int, 
+  primary key (pk, sk)
+);
+
+insert into t(pk, sk, v) values (1, 1, 100);
+insert into t(pk, sk, v) values (1, 2, 200);
+
+select * from t where pk=1;</code></pre>
+
+
+<h2 class="ic-neg15">Stack <code>cas2</code> anlegen</h2>
+<p class="w3-large">
+  Wichtig: Container cas1 muss bereits laufen.
+</p>
+
+<pre><code class="language-yaml">networks:
+  ncas:
+    name: ncas
+
+services:
+  cas1:
+    container_name: cas2
+    image: cassandra:latest
+    ports:
+      - 9043:9042
+    environment:
+      - CASSANDRA_SEEDS=cas1
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - ncas</code></pre>
+
+<h2 class="ic-neg15">Stack <code>cas3</code> anlegen</h2>
+<p class="w3-large">
+  Wichtig: Container cas1 muss bereits laufen.
+</p>
+<pre><code class="language-yaml">networks:
+  ncas:
+    name: ncas
+
+services:
+  cas1:
+    container_name: cas3
+    image: cassandra:latest
+    ports:
+      - 9044:9042
+    environment:
+      - CASSANDRA_SEEDS=cas1
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - ncas</code></pre>
+            
 <div class="ic-gap"></div>
 
 
@@ -90,7 +183,19 @@ services:
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>Postgres Container anlegen</h1>
+<h2 class="ic-neg15">Stack <code>pg</code> anlegen</h2>
+<pre><code class="language-yaml">services:
+  pg1:
+    container_name: pg
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: htw-bln-pg</code></pre>
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -98,7 +203,28 @@ services:
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>xxx</h1>
+<h1>Zwei Postgres Container anlegen</h1>
+<h2 class="ic-neg15">Stack <code>pg1</code> anlegen</h2>
+<pre><code class="language-yaml">services:
+  pg1:
+    container_name: pg1
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: htw-bln-pg</code></pre>
+
+<h2 class="ic-neg15">Stack <code>pg2</code> anlegen</h2>
+<p class="w3-large">Wichtig: Port 5433 wird nach außen gereicht</p>
+
+<pre><code class="language-yaml">services:
+  pg2:
+    container_name: pg2
+    image: postgres
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: htw-bln-pg</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -106,7 +232,52 @@ services:
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>xxx</h1>
+
+<h1>Neo4j-Container anlegen / Python-Zugriff</h1>
+
+<h2 class="ic-neg15">Stack anlegen - Name: neo4j</h2>
+
+<pre><code class="language-yaml">services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=neo4j/htw-bln-neo4j
+      - NEO4J_server_memory_heap_initial__size=500M 
+      - NEO4J_server_memory_heap_max__size=500M 
+      - NEO4J_server_memory_pagecache_size=500M 
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+      - NEO4J_dbms_security_allow__csv__import__from__file__urls=true
+      - NEO4J_server_directories_import=/data/csv</code></pre>
+
+<h2>Auf Neo4j-Browser zugreifen</h2>
+<p class="w3-large">Wert von "aaa" ist ihr Container</p>
+<p class="w3-large">
+  <code>http://aaa.f4.htw-berlin.de:7474</code>
+</p>
+
+<h2 class="ic-neg15">Credentials</h2>
+<p class="w3-large">Datei <code>cred-neo4j.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>neo4j_userid='neo4j'
+neo4j_password='adbktneo4j'
+neo4j_host='neo4j://aaa.f4.htw-berlin.de:7687'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -114,7 +285,50 @@ services:
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>xxx</h1>
+<h1>Konfiguration DBeaver</h1>
+<p class="w3-large"><a href="https://dbeaver.io/download/">DBeaver Download</a></p>
+
+
+<h2>DBeaver starten - neue Verbindung anlegen</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/100.png">
+
+<h2>PostgreSQL auswählen - "Next" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/110.png">
+
+<h2>Credentials eingeben - "Test Connection ..." klicken</h2>
+<p class="w3-large">Ggf. öffnet sich ein Download-Dialog für den Treiber. Treiber downloaden.</p>
+<p class="w3-large">Username und Password durch eigene Werte ersetzen!</p>
+
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/120.png">
+
+<h2>"OK" klicken, "Finish" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/130.png">
+
+<h2>Verbindung mit Name "adbkt" wurde angelegt</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/140.png">
+
+<h2>Rechte Maustaste - "Rename" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/150.png">
+
+<h2>Umbenennen</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/160.png">
+
+<h2>Rechte Maustaste - "Edit Connection" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/170.png">
+
+<h2>"Initialization" auswählen - "Configure ..." klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/180.png">
+
+<h2>"Add" klicken</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/190.png">
+
+<h2>Search Path einstellen - 3x "OK" klicken - fertig</h2>
+<pre><code class="language-sql">set search_path to ${user},ugeobln,ugm,uinsta,umisc,umobility,usozmed,public;</code></pre>
+
+<img class="w3-image" src="/home/lv/adbkt/a/dbeaver/200.png">
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -122,7 +336,13 @@ services:
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>xxx</h1>
+<h1>Installation von Python-Moduen</h1>
+<p class="w3-large">Dieser Container verwendet "uv" als Paketmanager. D.h., statt</p>
+<pre><code>pip install something</code></pre>
+<p class="w3-large">muss</p>
+<pre><code>uv pip install something</code></pre>
+<p class="w3-large">verwendet werden</p>
+
 <div class="ic-gap"></div>
 
 
@@ -130,7 +350,28 @@ services:
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Globale Postgres-Datenbank</h1>
+
+<h2>Credentials</h2>
+<p class="w3-large">
+  Datei <code>cred-pg.txt</code> anlegen.
+  Die Werte für "aaa" wie bei DBeaver.</p>
+<pre><code>user='aaa'
+password='aaa'
+host='aaa.f4.htw-berlin.de'
+port=5432
+dbname='adbkt'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/pg-py.ipynb">pg-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/pg-py.ipynb">pg-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -138,7 +379,37 @@ services:
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Lokale Postgres-Datenbanken</h1>
+
+<h2 class="ic-neg15">Credentials 1</h2>
+<p class="w3-large">Datei <code>cred-pg1.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5432
+dbname='postgres'</code></pre>
+
+<h2 class="ic-neg15">Credentials 2</h2>
+<p class="w3-large">Datei <code>cred-pg2.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<p class="w3-large">Wichtig: Auf Port 5433 zugreifen</p>
+<pre><code>user='postgres'
+password='adbktpg'
+host='aaa.f4.htw-berlin.de'
+port=5433
+dbname='postgres'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/pg1-py.ipynb">pg1-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/pg1-py.ipynb">pg1-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
 <div class="ic-gap"></div>
 
 
@@ -146,7 +417,19 @@ services:
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1>Cassandra</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
 <div class="ic-gap"></div>
 
 
@@ -154,7 +437,25 @@ services:
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>Neo4j</h1>
+<h2 class="ic-neg15">Credentials</h2>
+<p class="w3-large">Datei <code>cred-neo4j.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
+<pre><code>neo4j_userid='neo4j'
+neo4j_password='adbktneo4j'
+neo4j_host='neo4j://aaa.f4.htw-berlin.de:7687'</code></pre>
+
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
 <div class="ic-gap"></div>
 
 
@@ -162,7 +463,19 @@ services:
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1>Zugriffskontrolle</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb">neo4j-auth.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb">neo4j-auth.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
 <div class="ic-gap"></div>
 
 
@@ -170,7 +483,19 @@ services:
     14 ******************************************************************
 -->
 {% include padding-id.html id=14 %}
-<h1>xxx</h1>
+<h1>Transfer Mobilitätsdaten</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb">neo4j-fill-mobility.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb">neo4j-fill-mobility.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+
 <div class="ic-gap"></div>
 
 
@@ -178,7 +503,17 @@ services:
     15 ******************************************************************
 -->
 {% include padding-id.html id=15 %}
-<h1>xxx</h1>
+<h1>Geodaten</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/geo.ipynb">geo.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/geo.ipynb">geo.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -186,7 +521,17 @@ services:
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>xxx</h1>
+<h1>ER-Diagramm</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/er-diagramm.ipynb">er-diagramm.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/er-diagramm.ipynb">er-diagramm.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -194,7 +539,17 @@ services:
     17 ******************************************************************
 -->
 {% include padding-id.html id=17 %}
-<h1>xxx</h1>
+<h1>Transaktionen</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/transaktionen.ipynb">transaktionen.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/transaktionen.ipynb">transaktionen.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -202,7 +557,17 @@ services:
     18 ******************************************************************
 -->
 {% include padding-id.html id=18 %}
-<h1>xxx</h1>
+<h1>Verteilte Transaktionen</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
 <div class="ic-gap"></div>
 
 
@@ -210,7 +575,18 @@ services:
     19 ******************************************************************
 -->
 {% include padding-id.html id=19 %}
-<h1>xxx</h1>
+<h1>GraphQL</h1>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/graph-ql.ipynb">graph-ql.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/graph-ql.ipynb">graph-ql.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 
@@ -218,7 +594,44 @@ services:
     20 ******************************************************************
 -->
 {% include padding-id.html id=20 %}
-<h1>xxx</h1>
+<h1>Weiteres</h1>
+
+<h2>DynamoDB</h2>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/dynamodb.ipynb">dynamodb.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/dynamodb.ipynb">dynamodb.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+<h2>Indizes auf Vektordatenbanken</h2>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/vectordb-index.ipynb">vectordb-index.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/vectordb-index.ipynb">vectordb-index.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
+<h2>Retail Sales</h2>
+<h2>Notebook Preview</h2>
+<ul class="w3-large">
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/retail-sales.ipynb">retail-sales.ipynb</a>)</li>
+</ul>
+
+<h2>Notebook</h2>
+<ul class="w3-large">
+  <li>Download (<a href="/home/lv/adbkt/a-ipynb/retail-sales.ipynb">retail-sales.ipynb</a>)</li>
+  <li>Upload</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 

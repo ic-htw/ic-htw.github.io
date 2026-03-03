@@ -236,44 +236,43 @@ home: &r
                   - t: DynamoDB
                     ts: DynamoDB
                     url: /home/lv/adbkt/vorlesungen/dynamodb.html
-              - t: Infrastruktur
-                ts: Infrastruktur
-                url: /home/lv/adbkt/infrastruktur/1-infrastruktur.html
-                sub:
-                  - t: Konfiguration DBeaver
-                    ts: Konfiguration DBeaver
-                    url: /home/lv/adbkt/infrastruktur/infra-dbeaver.html
-                  - t: Jupyter Lab
-                    ts: Jupyter Lab
-                    url: /home/lv/adbkt/infrastruktur/infra-jupyterlab.html
-                  - t: Stack anlegen
-                    ts: Stack anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-stack.html
-                  - t: Postgres Container anlegen
-                    ts: Postgres Container anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-pg-cont.html
-                  - t: Cassandra Container anlegen
-                    ts: Cassandra Container anlegen
-                    url: /home/lv/adbkt/infrastruktur/infra-cas-cont.html
-                  - t: Neo4j Container / Python-Zugriff
-                    ts: Neo4j Container / Python-Zugriff
-                    url: /home/lv/adbkt/infrastruktur/infra-neo4j-cont.html
+                  - t: Transaktionen
+                    ts: Transaktionen
+                    url: /home/lv/adbkt/vorlesungen/trans.html
+                  - t: Transaktionen in Postgres
+                    ts: Transaktionen in Postgres
+                    url: /home/lv/adbkt/vorlesungen/trans-pg.html
+                  - t: Verteilte Transaktionen
+                    ts: Verteilte Transaktionen
+                    url: /home/lv/adbkt/vorlesungen/trans-dist.html
+                  - t: Neo4j
+                    ts: Neo4j
+                    url: /home/lv/adbkt/vorlesungen/neo4j.html
+                  - t: Graph-Datenmodelle
+                    ts: Graph-Datenmodelle
+                    url: /home/lv/adbkt/vorlesungen/graph-dm.html
+                  - t: Cypher Knoten Matching
+                    ts: Cypher Knoten Matching
+                    url: /home/lv/adbkt/vorlesungen/cypher-knoten.html
+                  - t: Cypher Pfade fester Länge
+                    ts: Cypher Pfade fester Länge
+                    url: /home/lv/adbkt/vorlesungen/cypher-pfad1.html
+                  - t: Cypher Pfade variabler Länge
+                    ts: Cypher Pfade variabler Länge
+                    url: /home/lv/adbkt/vorlesungen/cypher-pfad2.html
+                  - t: Cypher kürzeste Pfade
+                    ts: Cypher kürzeste Pfade
+                    url: /home/lv/adbkt/vorlesungen/cypher-sp.html
+                  - t:  Graph-Data-Science
+                    ts:  Graph-Data-Science
+                    url: /home/lv/adbkt/a/graph/gds.pdf
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html
                 sub:
-                  - t: Transaktionen
-                    ts: Transaktionen
-                    url: /home/lv/adbkt/transaktionen/trans.html
-                  - t: Transaktionen in Postgres
-                    ts: Transaktionen in Postgres
-                    url: /home/lv/adbkt/transaktionen/trans-pg.html
                   - t: "Ü: Multi Version Concurrency Control"
                     ts: "Ü: MVCC"
                     url: /home/lv/adbkt/transaktionen/ueb-mvcc.html
-                  - t: Verteilte Transaktionen
-                    ts: Verteilte Transaktionen
-                    url: /home/lv/adbkt/transaktionen/trans-dist.html
                   - t: "Ü: Verteilte Transaktionen"
                     ts: "Ü: Verteilte Transaktionen"
                     url: /home/lv/adbkt/transaktionen/ueb-dist-trans.html
@@ -288,27 +287,6 @@ home: &r
                 ts: Graph-Datenbanken
                 url: /home/lv/adbkt/graphdb/1-graphdb.html
                 sub:
-                  - t: Neo4j
-                    ts: Neo4j
-                    url: /home/lv/adbkt/graphdb/neo4j.html
-                  - t: Graph-Datenmodelle
-                    ts: Graph-Datenmodelle
-                    url: /home/lv/adbkt/graphdb/graph-dm.html
-                  - t: Cypher Knoten Matching
-                    ts: Cypher Knoten Matching
-                    url: /home/lv/adbkt/graphdb/cypher-knoten.html
-                  - t: Cypher Pfade fester Länge
-                    ts: Cypher Pfade fester Länge
-                    url: /home/lv/adbkt/graphdb/cypher-pfad1.html
-                  - t: Cypher Pfade variabler Länge
-                    ts: Cypher Pfade variabler Länge
-                    url: /home/lv/adbkt/graphdb/cypher-pfad2.html
-                  - t: Cypher kürzeste Pfade
-                    ts: Cypher kürzeste Pfade
-                    url: /home/lv/adbkt/graphdb/cypher-sp.html
-                  - t:  Graph-Data-Science
-                    ts:  Graph-Data-Science
-                    url: /home/lv/adbkt/a/graph/gds.pdf
                   - t: "Ü: Cypher-Abfragen 1"
                     ts: "Ü: Cypher-Abfragen 1"
                     url: /home/lv/adbkt/graphdb/ueb1-cypher.html
