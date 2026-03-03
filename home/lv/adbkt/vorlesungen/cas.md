@@ -1,7 +1,7 @@
 ---
 layout: default1
-nav: adbkt-nosql
-title: Überblick Cassandra
+nav: adbkt-vorlesungen
+title: Cassandra - ADBKT
 is_slide: 0
 ---
 

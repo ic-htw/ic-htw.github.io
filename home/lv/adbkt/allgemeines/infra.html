@@ -1,0 +1,224 @@
+---
+layout: default1
+nav: adbkt-allgemeines
+title: Infrastruktur - ADBKT
+is_slide: 1
+n: 20
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Stack im Portainer anlegen</h1>
+<p class="w3-large">Stacks entsprechen <code>docker-compose</code>.</p>
+
+<p class="w3-large ic-neg15">Einloggen</p>
+<ul class="w3-large">
+    <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
+    <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
+    <li><code>https://xxx.f4.htw-berlin.de:9443</code></li>
+</ul>
+
+<p class="w3-large ic-neg15">Environment "local" auswählen</p>
+<ul class="w3-large">
+    <li>Dashboard wird angezeigt</li>
+</ul>
+
+
+
+<p class="w3-large ic-neg15">Stack-Formular öffnen</p>
+<ul class="w3-large">
+    <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+    <li>Auf Button "Add stack" klicken</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Stack bereitstellen</p>
+<ul class="w3-large">
+    <li>Name für Stack vergeben</li>
+    <li>Docker-Compose-Code in Web-Editor eingeben</li>
+    <li>Auf "Deploy the stack" klicken</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Cassandra Container anlegen</h1>
+
+<h2 class="ic-neg15">Stack <code>cas</code> anlegen</h2>
+
+<pre><code class="language-yaml">networks:
+services:
+  cas:
+    container_name: cas
+    image: cassandra:latest
+    ports:
+      - 9042:9042
+    environment:
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M</code></pre>
+
+
+<h2 class="ic-neg15">Keyspace erstellen</h2>
+<p class="w3-large">
+  Konsole in Container <code>cas</code> öffnen und dort die 
+  Cassandra Query Language Shell starten (<code>cqlsh</code>).  
+</p>
+
+
+<pre><code class="language-sql">create keyspace tour_delight with replication = {
+  'class': 'SimpleStrategy', 'replication_factor' : 1
+};</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+

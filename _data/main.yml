@@ -192,25 +192,50 @@ home: &r
             ts: ADBKT
             url: /home/lv/adbkt/adbkt.html
             sub: &adbkt
-              - t: Intro
-                ts: Intro
-                url: /home/lv/adbkt/intro/1-intro.html
+              - t: Allgemeines
+                ts: Allgemeines
+                url: /home/lv/adbkt/allgemeines/1-allgemeines.html
                 sub:
                   - t: Überblick
                     ts: Überblick
-                    url: /home/lv/adbkt/intro/ueberblick.html
-                  - t: Historischer Überblick DB-Systeme
-                    ts: Historischer Überblick DB-Systeme
-                    url: /home/lv/adbkt/intro/history.html
-                  - t: "Ü: Präsentation von Fallbeispielen"
-                    ts: "Ü: Präsentation von Fallbeispielen"
-                    url: /home/lv/adbkt/intro/ueb-pres-case.html
+                    url: /home/lv/adbkt/allgemeines/ueberblick.html
                   - t: Plan
                     ts: Plan
-                    url: /home/lv/adbkt/intro/plan.html
+                    url: /home/lv/adbkt/allgemeines/plan.html
                   - t: Ressourcen
                     ts: Ressourcen
-                    url: /home/lv/adbkt/intro/res.html
+                    url: /home/lv/adbkt/allgemeines/res.html
+                  - t: Infrastruktur
+                    ts: Infrastruktur
+                    url: /home/lv/adbkt/allgemeines/infra.html
+              - t: Vorlesungen
+                ts: Vorlesungen
+                url: /home/lv/adbkt/vorlesungen/1-vorlesungen.html
+                sub:
+                  - t:  Historischer Überblick DB-Systeme
+                    ts: Historie DB-Systeme
+                    url: /home/lv/adbkt/vorlesungen/history.html
+                  - t:  Einführung NOSQL
+                    ts:  Einführung NOSQL
+                    url: /home/lv/adbkt/vorlesungen/intro-nosql.html
+                  - t: Cassandra
+                    ts: Cassandra
+                    url: /home/lv/adbkt/vorlesungen/cas.html
+                  - t: Replikation / Partitionierung
+                    ts: Replikation / Partitionierung
+                    url: /home/lv/adbkt/vorlesungen/repl-part.html
+                  - t: Konsistenz
+                    ts: Konsistenz
+                    url: /home/lv/adbkt/vorlesungen/consistency.html
+                  - t: Log Structured Merge Trees
+                    ts: Log Structured Merge Trees
+                    url: /home/lv/adbkt/vorlesungen/lsm.html
+                  - t: Serverlose DB
+                    ts: Serverlose DB
+                    url: /home/lv/adbkt/vorlesungen/serverless.html
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/vorlesungen/dynamodb.html
               - t: Infrastruktur
                 ts: Infrastruktur
                 url: /home/lv/adbkt/infrastruktur/1-infrastruktur.html
@@ -256,21 +281,6 @@ home: &r
                 ts: NoSQL
                 url: /home/lv/adbkt/nosql/1-nosql.html
                 sub:
-                  - t:  Einführung
-                    ts:  Einführung
-                    url: /home/lv/adbkt/nosql/intro-nosql.html
-                  - t: Replikation / Partitionierung
-                    ts: Replikation / Partitionierung
-                    url: /home/lv/adbkt/nosql/repl-part.html
-                  - t: Konsistenz
-                    ts: Konsistenz
-                    url: /home/lv/adbkt/nosql/consistency.html
-                  - t: Log Structured Merge Trees
-                    ts: Log Structured Merge Trees
-                    url: /home/lv/adbkt/nosql/lsm.html
-                  - t: Überblick Cassandra
-                    ts: Überblick Cassandra
-                    url: /home/lv/adbkt/nosql/cas.html
                   - t: "Ü: Cassandra Replikation"
                     ts: "Ü: Cassandra Replikation"
                     url: /home/lv/adbkt/nosql/ueb-cas-repl.html
@@ -331,19 +341,6 @@ home: &r
                   - t: "Ü: Rekursives SQL"
                     ts: "Ü: Rekursives SQL"
                     url: /home/lv/adbkt/recsql/ueb-recsql.html
-              - t: Cloud DB
-                ts: Cloud DB
-                url: /home/lv/adbkt/clouddb/1-clouddb.html
-                sub:
-                  - t: Serverlose DB
-                    ts: Serverlose DB
-                    url: /home/lv/adbkt/clouddb/serverless.html
-                  - t: DynamoDB
-                    ts: DynamoDB
-                    url: /home/lv/adbkt/clouddb/dynamodb.html
-                  - t: "Ü: DynamoDB"
-                    ts: "Ü: DynamoDB"
-                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
               - t: KI und DB
                 ts: KI und DB
                 url: /home/lv/adbkt/kidb/1-kidb.html
@@ -430,6 +427,12 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: "Ü: Präsentation von Fallbeispielen"
+                    ts: "Ü: Präsentation von Fallbeispielen"
+                    url: /home/lv/adbkt/intro/ueb-pres-case.html
+                  - t: "Ü: DynamoDB"
+                    ts: "Ü: DynamoDB"
+                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
                   - t:  tsdb-links
                     ts:  tsdb-links
                     url: /home/lv/adbkt/zzz/tsdb-links.html

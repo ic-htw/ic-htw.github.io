@@ -1,7 +1,7 @@
 ---
 layout: default1
-nav: adbkt-clouddb
-title: "DynamoDB"
+nav: adbkt-vorlesungen
+title: DynamoDB  - ADBKT
 
 is_slide: 0
 ---

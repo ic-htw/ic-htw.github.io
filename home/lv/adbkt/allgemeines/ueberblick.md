@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-intro
+nav: adbkt-allgemeines
 title: Überblick - ADBKT
 is_slide: 0
 ---
@@ -24,26 +24,15 @@ Dann könnte diese Lehrveranstaltung für sie von Interesse sein.
 - Verständnis von Datenbanktechnologien anhand ausgewählter Beispielsysteme
 - Praktische Nutzung von Datenbankfunktionalität auf Grundlage von Fallbeispielen
 
-## Aspekte die im Modul behandelt werden
-- Datenbank-Abfrage-Sprachen (SQL, JSON Path Language, Cypher)
-- Nebenläufigkeit als Teil der Transaktionsverabeitung
-- NoSQL-Datenbanksysteme
-- Graph-Datenverarbeitung
-- Geo-Datenverarbeitung
-- JSON-Datenverarbeitung
-- Vektor-Dateverarbeitung
 
 Die Veranstaltung hat einen technologischen Charakter verbunden mit Entwicklungstätigkeiten,
 d.h. Abfragen und Programmierung sind wesentliche Bestandteile.
-Programmentwicklung findet in Python auf Grundlage von Jupyter Notebooks satt.
 
 ## Prüfung
-- Bearbeitung von Übungsaufgaben
-- Präsentation von Arbeitsergebnissen
-- Keine Klausur
+- Modulbegleitend (70%)
+  - Bearbeitung von Übungsaufgaben
+  - Präsentation von Arbeitsergebnissen
+- Klausur (30%)
 
-## Share
-- Seite zum interaktiven Code-Sharing
-- Zu Nutzung während der Lehrveranstaltung
-- [Link](https://github.com/ic-htw/ic-htw.github.io/blob/master/share.md)
+
 

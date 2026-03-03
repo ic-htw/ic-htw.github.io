@@ -1,6 +1,6 @@
 ---
 layout: default1
-nav: adbkt-intro
+nav: adbkt-allgemeines
 is_slide: 0
 title: Ressourcen - ADBKT
 ---
