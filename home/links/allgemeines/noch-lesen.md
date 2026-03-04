@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- This Newly Released Anthropic Agentic Coding Trends Report (Is a Must-Read)
+[(link)](https://medium.com/ai-software-engineer/this-newly-released-anthropic-agentic-coding-trends-report-is-a-must-read-0701af881148)
+
+- 5 OpenClaw Alternatives That Are Getting Better By the Day
+[(link)](https://medium.com/ai-software-engineer/5-openclaw-alternatives-that-are-getting-better-by-the-day-4d1e5e164c00)
+
+- Claude Just Launched Memory Import (Now You Can Cancel ChatGPT Faster)
+[(link)](https://medium.com/ai-software-engineer/claude-just-launched-memory-import-now-you-can-cancel-chatgpt-faster-67d53ebacddb)
+
+- How I’m Running Claude Code Subagents & Web Search (At No Cost)
+[(link)](https://medium.com/@joe.njenga/how-im-running-claude-code-subagents-web-search-at-no-cost-4cd945d382bd)
+
 - How I’m Using Claude Code (New) /simplify & /batch (To x10 My Code Reviews)
 [(link)](https://medium.com/@joe.njenga/how-im-using-claude-code-new-simplify-batch-to-x10-my-code-reviews-888780a6a42a)
 
