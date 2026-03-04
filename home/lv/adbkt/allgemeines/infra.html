@@ -3,7 +3,7 @@ layout: default1
 nav: adbkt-allgemeines
 title: Infrastruktur - ADBKT
 is_slide: 1
-n: 20
+n: 11
 ---
 <!--
     01 ******************************************************************
@@ -55,6 +55,9 @@ n: 20
 <h2 class="ic-neg15">Stack <code>cas</code> anlegen</h2>
 
 <pre><code class="language-yaml">networks:
+  ncas:
+    name: ncas
+
 services:
   cas:
     container_name: cas
@@ -64,7 +67,10 @@ services:
     environment:
       - JVM_OPTS=-Xms1024M -Xmx1024M
       - HEAP_NEWSIZE=1024M
-      - MAX_HEAP_SIZE=1024M</code></pre>
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - ncas</code></pre>
+
 
 
 <h2 class="ic-neg15">Keyspace erstellen</h2>
@@ -233,7 +239,7 @@ services:
 -->
 {% include padding-id.html id=6 %}
 
-<h1>Neo4j-Container anlegen / Python-Zugriff</h1>
+<h1>Neo4j-Container anlegen</h1>
 
 <h2 class="ic-neg15">Stack anlegen - Name: neo4j</h2>
 
@@ -259,22 +265,6 @@ services:
   <code>http://aaa.f4.htw-berlin.de:7474</code>
 </p>
 
-<h2 class="ic-neg15">Credentials</h2>
-<p class="w3-large">Datei <code>cred-neo4j.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
-<pre><code>neo4j_userid='neo4j'
-neo4j_password='adbktneo4j'
-neo4j_host='neo4j://aaa.f4.htw-berlin.de:7687'</code></pre>
-
-<h2>Notebook Preview</h2>
-<ul class="w3-large">
-  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
-  <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
-  <li>Upload</li>
-</ul>
 
 
 
@@ -417,219 +407,85 @@ dbname='postgres'</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>Cassandra</h1>
-<h2>Notebook Preview</h2>
+<h1>Code Beispiele</h1>
+
+<h2>Cassandra</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/cas-py.ipynb">cas-py.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
-
-<div class="ic-gap"></div>
-
-
-<!--
-    12 ******************************************************************
--->
-{% include padding-id.html id=12 %}
-<h1>Neo4j</h1>
-<h2 class="ic-neg15">Credentials</h2>
+<h2>Neo4j</h2>
 <p class="w3-large">Datei <code>cred-neo4j.txt</code> anlegen. Wert von "aaa" ist ihr Container</p>
 <pre><code>neo4j_userid='neo4j'
 neo4j_password='adbktneo4j'
 neo4j_host='neo4j://aaa.f4.htw-berlin.de:7687'</code></pre>
 
-<h2>Notebook Preview</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-py.ipynb">neo4j-py.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
-
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>Zugriffskontrolle</h1>
-<h2>Notebook Preview</h2>
+<h2>Zugriffskontrolle</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb">neo4j-auth.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-auth.ipynb">neo4j-auth.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
-
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>Transfer Mobilitätsdaten</h1>
-<h2>Notebook Preview</h2>
+<h2>Transfer Mobilitätsdaten</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb">neo4j-fill-mobility.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb">neo4j-fill-mobility.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
-
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>Geodaten</h1>
-<h2>Notebook Preview</h2>
+<h2>Geodaten</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/geo.ipynb">geo.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/geo.ipynb">geo.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
-<div class="ic-gap"></div>
 
 
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>ER-Diagramm</h1>
-<h2>Notebook Preview</h2>
+<h2>ER-Diagramm</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/er-diagramm.ipynb">er-diagramm.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/er-diagramm.ipynb">er-diagramm.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
-<div class="ic-gap"></div>
 
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
-<h1>Transaktionen</h1>
-<h2>Notebook Preview</h2>
+<h2>Transaktionen</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/transaktionen.ipynb">transaktionen.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/transaktionen.ipynb">transaktionen.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
-<div class="ic-gap"></div>
 
-
-<!--
-    18 ******************************************************************
--->
-{% include padding-id.html id=18 %}
-<h1>Verteilte Transaktionen</h1>
-<h2>Notebook Preview</h2>
+<h2>Verteilte Transaktionen</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/trans-dist.ipynb">trans-dist.ipynb</a>)</li>
   <li>Upload</li>
 </ul>
-<div class="ic-gap"></div>
 
-
-<!--
-    19 ******************************************************************
--->
-{% include padding-id.html id=19 %}
-<h1>GraphQL</h1>
-<h2>Notebook Preview</h2>
+<h2>GraphQL</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/graph-ql.ipynb">graph-ql.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/graph-ql.ipynb">graph-ql.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    20 ******************************************************************
--->
-{% include padding-id.html id=20 %}
-<h1>Weiteres</h1>
 
 <h2>DynamoDB</h2>
-<h2>Notebook Preview</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/dynamodb.ipynb">dynamodb.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/dynamodb.ipynb">dynamodb.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
 <h2>Indizes auf Vektordatenbanken</h2>
-<h2>Notebook Preview</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/vectordb-index.ipynb">vectordb-index.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/vectordb-index.ipynb">vectordb-index.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
 <h2>Retail Sales</h2>
-<h2>Notebook Preview</h2>
 <ul class="w3-large">
   <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/retail-sales.ipynb">retail-sales.ipynb</a>)</li>
-</ul>
-
-<h2>Notebook</h2>
-<ul class="w3-large">
   <li>Download (<a href="/home/lv/adbkt/a-ipynb/retail-sales.ipynb">retail-sales.ipynb</a>)</li>
-  <li>Upload</li>
 </ul>
 
 <div class="ic-gap"></div>

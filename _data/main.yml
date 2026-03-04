@@ -220,10 +220,10 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/intro-nosql.html
                   - t: Cassandra
                     ts: Cassandra
-                    url: /home/lv/adbkt/vorlesungen/cassandra.html
-                  - t: Cassandra1
-                    ts: Cassandra1
-                    url: /home/lv/adbkt/vorlesungen/cas.html
+                    url: /home/lv/adbkt/vorlesungen/cassandra1.html
+                  - t: Cassandra - Technologie
+                    ts: Cassandra - Technologie
+                    url: /home/lv/adbkt/vorlesungen/cassandra2.html
                   - t: Replikation / Partitionierung
                     ts: Replikation / Partitionierung
                     url: /home/lv/adbkt/vorlesungen/repl-part.html
@@ -275,6 +275,13 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
+              - t: Übungen
+                ts: Übungen
+                url: /home/lv/adbkt/vorlesungen/1-uebungen.html
+                sub:
+                  - t:  Cassandra - TourDelight
+                    ts: Cassandra - TourDelight
+                    url: /home/lv/adbkt/uebungen/tour-delight.html
               - t: Transaktionen
                 ts: Transaktionen
                 url: /home/lv/adbkt/transaktionen/1-transaktionen.html

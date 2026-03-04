@@ -26,7 +26,9 @@ Dann könnte diese Lehrveranstaltung für sie von Interesse sein.
 
 
 Die Veranstaltung hat einen technologischen Charakter verbunden mit Entwicklungstätigkeiten,
-d.h. Abfragen und Programmierung sind wesentliche Bestandteile.
+d.h. Abfragen und Programmierung sind wesentliche Bestandteile. 
+Alle Entwicklungsaktivitäten sollen ausdrücklich unter Verwendung einer **KI** erfolgen.
+Der Umfang der Aufgaben ist so konzipiert, dass das notwendig ist.
 
 ## Prüfung
 - Modulbegleitend (70%)
