@@ -275,6 +275,27 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/a/graph/gds.pdf
+                  - t:  JSON in Postgres
+                    ts:  JSON in Postgres
+                    url: /home/lv/adbkt/a/json/json-pg.pdf
+                  - t: Rekursive Abfragen
+                    ts: Rekursive Abfragen
+                    url: /home/lv/adbkt/a/sql/rec.pdf
+                  - t:  Geo-Datenverarbeitung
+                    ts:  Geo-Datenverarbeitung
+                    url: /home/lv/adbkt/geo/geo.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/recsql/recsql.html
+                  - t: LLMs
+                    ts: Large Language Models
+                    url: /home/lv/adbkt/kidb/llms.html
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/kidb/vectordb.html
+                  - t: Zeitreihendatenbanken
+                    ts: Zeitreihendatenbanken
+                    url: /home/lv/adbkt/tsdb/tsdb.html
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/vorlesungen/1-uebungen.html
@@ -282,27 +303,6 @@ home: &r
                   - t:  Cassandra - TourDelight
                     ts: Cassandra - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight.html
-              - t: Transaktionen
-                ts: Transaktionen
-                url: /home/lv/adbkt/transaktionen/1-transaktionen.html
-                sub:
-                  - t: "Ü: Multi Version Concurrency Control"
-                    ts: "Ü: MVCC"
-                    url: /home/lv/adbkt/transaktionen/ueb-mvcc.html
-                  - t: "Ü: Verteilte Transaktionen"
-                    ts: "Ü: Verteilte Transaktionen"
-                    url: /home/lv/adbkt/transaktionen/ueb-dist-trans.html
-              - t: NoSQL
-                ts: NoSQL
-                url: /home/lv/adbkt/nosql/1-nosql.html
-                sub:
-                  - t: "Ü: Cassandra Replikation"
-                    ts: "Ü: Cassandra Replikation"
-                    url: /home/lv/adbkt/nosql/ueb-cas-repl.html
-              - t: Graph-Datenbanken
-                ts: Graph-Datenbanken
-                url: /home/lv/adbkt/graphdb/1-graphdb.html
-                sub:
                   - t: "Ü: Cypher-Abfragen 1"
                     ts: "Ü: Cypher-Abfragen 1"
                     url: /home/lv/adbkt/graphdb/ueb1-cypher.html
@@ -312,65 +312,64 @@ home: &r
                   - t:  "Ü: Graph-Data-Science"
                     ts: "Ü: Graph-Data-Science"
                     url: /home/lv/adbkt/graphdb/ueb-gds.html
-              - t: Geo-Datenverarbeitung
-                ts: Geo-Datenverarbeitung
-                url: /home/lv/adbkt/geo/1-geo.html
-                sub:
-                  - t:  Geo-Datenverarbeitung
-                    ts:  Geo-Datenverarbeitung
-                    url: /home/lv/adbkt/geo/geo.html
-                  - t: "Ü: Geo-Abfragen"
-                    ts: "Ü: Geo-Abfragen"
-                    url: /home/lv/adbkt/geo/ueb-geo-sql.html
-                  # - t: "Ü: pgRouting"
-                  #   ts: "Ü: pgRouting"
-                  #   url: /home/lv/adbkt/geo/ueb-pgrouting.html
-              - t: Rekursives SQL
-                ts: Rekursives SQL
-                url: /home/lv/adbkt/recsql/1-recsql.html
-                sub:
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/recsql/recsql.html
                   - t: "Ü: Rekursives SQL"
                     ts: "Ü: Rekursives SQL"
                     url: /home/lv/adbkt/recsql/ueb-recsql.html
-              - t: KI und DB
-                ts: KI und DB
-                url: /home/lv/adbkt/kidb/1-kidb.html
+              - t: zzz
+                ts: zzz
+                url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
-                  - t: LLMs
-                    ts: Large Language Models
-                    url: /home/lv/adbkt/kidb/llms.html
-                  - t: Vektordatenbanken
-                    ts: Vektordatenbanken
-                    url: /home/lv/adbkt/kidb/vectordb.html
+                  - t: "Ü: Rekursive Abfrage"
+                    ts: "Ü: Rekursive Abfrage"
+                    url: /home/lv/adbkt/recsql/ueb-recsql.html
                   - t:  "Ü: Vektordatenbanken"
                     ts:  "Ü: Vektordatenbanken"
                     url: /home/lv/adbkt/kidb/ueb-vectordb.html
-              - t: Zeitreihendatenbanken
-                ts: Zeitreihendatenbanken
-                url: /home/lv/adbkt/tsdb/1-tsdb.html
-                sub:
-                  - t: Zeitreihendatenbanken
-                    ts: Zeitreihendatenbanken
-                    url: /home/lv/adbkt/tsdb/tsdb.html
-                  - t: "Ü: Zeitreihendatenbanken"
-                    ts: "Ü: Zeitreihendatenbanken"
-                    url: /home/lv/adbkt/tsdb/ueb-tsdb.html
-              - t: Sonstiges
-                ts: Sonstiges
-                url: /home/lv/adbkt/sonstiges/1-sonstiges.html
-                sub:
-                  - t:  JSON in Postgres
-                    ts:  JSON in Postgres
-                    url: /home/lv/adbkt/a/json/json-pg.pdf
+                  - t: "Ü: Geo-Abfragen"
+                    ts: "Ü: Geo-Abfragen"
+                    url: /home/lv/adbkt/geo/ueb-geo-sql.html
+                  - t: "Ü: pgRouting"
+                    ts: "Ü: pgRouting"
+                    url: /home/lv/adbkt/geo/ueb-pgrouting.html
+                  - t: "Ü: Cassandra Replikation"
+                    ts: "Ü: Cassandra Replikation"
+                    url: /home/lv/adbkt/nosql/ueb-cas-repl.html
+                  - t: "Ü: Multi Version Concurrency Control"
+                    ts: "Ü: MVCC"
+                    url: /home/lv/adbkt/transaktionen/ueb-mvcc.html
+                  - t: "Ü: Verteilte Transaktionen"
+                    ts: "Ü: Verteilte Transaktionen"
+                    url: /home/lv/adbkt/transaktionen/ueb-dist-trans.html
+                  - t: "Ü: Präsentation von Fallbeispielen"
+                    ts: "Ü: Präsentation von Fallbeispielen"
+                    url: /home/lv/adbkt/intro/ueb-pres-case.html
+                  - t: "Ü: DynamoDB"
+                    ts: "Ü: DynamoDB"
+                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
+                  - t: "Ü: Text2SQL"
+                    ts: "Ü: Text2SQL"
+                    url: /home/lv/adbkt/pruefungen/sql-llm.html
+                  - t:  "Ü: SQL mit ChatGPT"
+                    ts:  "Ü: SQL mit ChatGPT"
+                    url: /home/lv/adbkt/sonstiges/sql-chatgpt.html
+                  - t: "Ü:Trans in Systemen "
+                    ts: "Ü: Trans in Systemen "
+                    url: /home/lv/adbkt/pruefungen/trans-sys.html
+                  - t: "Ü: TourDelight"
+                    ts: "Ü: TourDelight"
+                    url: /home/lv/adbkt/pruefungen/tour-delight.html
+                  - t: "Ü: Zugriffskontrolle in Cypher"
+                    ts: "Ü: Zugriffskontrolle in Cypher"
+                    url: /home/lv/adbkt/pruefungen/auth.html
+                  - t: "Ü: Fahrverbindung"
+                    ts: "Ü: Fahrverbindung"
+                    url: /home/lv/adbkt/pruefungen/sched.html
+                  - t: "Ü: GraphQL"
+                    ts: "Ü: GraphQL"
+                    url: /home/lv/adbkt/pruefungen/graphql.html
                   - t: Window-Funktionen in SQL
                     ts: Window-Funktionen in SQL
                     url: /home/lv/adbkt/sonstiges/window-sql.html
-                  - t: Rekursive Abfragen
-                    ts: Rekursive Abfragen
-                    url: /home/lv/adbkt/a/sql/rec.pdf
                   - t: SAP Hana
                     ts: SAP Hana
                     url: /home/lv/adbkt/a/hana/hana.pdf
@@ -380,12 +379,6 @@ home: &r
                   - t:  "Ü: Retail Sales"
                     ts:  "Ü: Retail Sales"
                     url: /home/lv/adbkt/sonstiges/retail.html
-                  - t: "Ü: Rekursive Abfrage"
-                    ts: "Ü: Rekursive Abfrage"
-                    url: /home/lv/adbkt/sonstiges/rec-sql.html
-                  - t:  "Ü: SQL mit ChatGPT"
-                    ts:  "Ü: SQL mit ChatGPT"
-                    url: /home/lv/adbkt/sonstiges/sql-chatgpt.html
                   - t:  "Ü: Hana, BTP Account"
                     ts:  "Ü: Hana, BTP Account"
                     url: /home/lv/adbkt/sonstiges/hana-btp-account.html
@@ -395,38 +388,6 @@ home: &r
                   - t: "Ü: Closeness Centrality in SAP Hana"
                     ts: "Ü: Closeness Centrality in SAP Hana"
                     url: /home/lv/adbkt/sonstiges/hana-cc.html
-              - t: Prüfungsleistungen
-                ts: Prüfungsleistungen
-                url: /home/lv/adbkt/pruefungen/1-pruefungen.html
-                sub:
-                  - t: P1 (15 Punkte)
-                    ts: P1 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/sql-llm.html
-                  - t: P2 (15 Punkte)
-                    ts: P2 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/trans-sys.html
-                  - t: P3 (15 Punkte)
-                    ts: P3 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/tour-delight.html
-                  - t: P4 (15 Punkte)
-                    ts: P4 (15 Punkte)
-                    url: /home/lv/adbkt/pruefungen/auth.html
-                  - t: P5 (20 Punkte)
-                    ts: P5 (20 Punkte)
-                    url: /home/lv/adbkt/pruefungen/sched.html
-                  - t: P6 (20 Punkte)
-                    ts: P6 (20 Punkte)
-                    url: /home/lv/adbkt/pruefungen/graphql.html
-              - t: zzz
-                ts: zzz
-                url: /home/lv/adbkt/zzz/1-zzz.html
-                sub:
-                  - t: "Ü: Präsentation von Fallbeispielen"
-                    ts: "Ü: Präsentation von Fallbeispielen"
-                    url: /home/lv/adbkt/intro/ueb-pres-case.html
-                  - t: "Ü: DynamoDB"
-                    ts: "Ü: DynamoDB"
-                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
                   - t:  tsdb-links
                     ts:  tsdb-links
                     url: /home/lv/adbkt/zzz/tsdb-links.html
