@@ -215,6 +215,15 @@ home: &r
                   - t:  Historischer Überblick DB-Systeme
                     ts: Historie DB-Systeme
                     url: /home/lv/adbkt/vorlesungen/history.html
+                  - t: Transaktionen
+                    ts: Transaktionen
+                    url: /home/lv/adbkt/vorlesungen/trans.html
+                  - t: Transaktionen in Postgres
+                    ts: Transaktionen in Postgres
+                    url: /home/lv/adbkt/vorlesungen/trans-pg.html
+                  - t: Verteilte Transaktionen
+                    ts: Verteilte Transaktionen
+                    url: /home/lv/adbkt/vorlesungen/trans-dist.html
                   - t:  Einführung NOSQL
                     ts:  Einführung NOSQL
                     url: /home/lv/adbkt/vorlesungen/intro-nosql.html
@@ -245,15 +254,6 @@ home: &r
                   - t: DynamoDB1
                     ts: DynamoDB1
                     url: /home/lv/adbkt/vorlesungen/dynamodb.html
-                  - t: Transaktionen
-                    ts: Transaktionen
-                    url: /home/lv/adbkt/vorlesungen/trans.html
-                  - t: Transaktionen in Postgres
-                    ts: Transaktionen in Postgres
-                    url: /home/lv/adbkt/vorlesungen/trans-pg.html
-                  - t: Verteilte Transaktionen
-                    ts: Verteilte Transaktionen
-                    url: /home/lv/adbkt/vorlesungen/trans-dist.html
                   - t: Neo4j
                     ts: Neo4j
                     url: /home/lv/adbkt/vorlesungen/neo4j.html
@@ -298,8 +298,20 @@ home: &r
                     url: /home/lv/adbkt/tsdb/tsdb.html
               - t: Übungen
                 ts: Übungen
-                url: /home/lv/adbkt/vorlesungen/1-uebungen.html
+                url: /home/lv/adbkt/uebungen/1-uebungen.html
                 sub:
+                  - t: Anforderungen an DB-Systeme
+                    ts: Anforderungen an DB-Systeme
+                    url: /home/lv/adbkt/uebungen/db-cases.html
+                  - t: Multi Version Concurrency Control 1
+                    ts: MVCC 1
+                    url: /home/lv/adbkt/uebungen/mvcc1.html
+                  - t:  Verteilte Transaktionen
+                    ts:  Verteilte Transaktionen
+                    url: /home/lv/adbkt/uebungen/dist-trans.html
+                  - t: Multi Version Concurrency Control 2
+                    ts: MVCC 2
+                    url: /home/lv/adbkt/uebungen/mvcc2.html
                   - t:  Cassandra - TourDelight
                     ts: Cassandra - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight.html
@@ -334,15 +346,6 @@ home: &r
                   - t: "Ü: Cassandra Replikation"
                     ts: "Ü: Cassandra Replikation"
                     url: /home/lv/adbkt/nosql/ueb-cas-repl.html
-                  - t: "Ü: Multi Version Concurrency Control"
-                    ts: "Ü: MVCC"
-                    url: /home/lv/adbkt/transaktionen/ueb-mvcc.html
-                  - t: "Ü: Verteilte Transaktionen"
-                    ts: "Ü: Verteilte Transaktionen"
-                    url: /home/lv/adbkt/transaktionen/ueb-dist-trans.html
-                  - t: "Ü: Präsentation von Fallbeispielen"
-                    ts: "Ü: Präsentation von Fallbeispielen"
-                    url: /home/lv/adbkt/intro/ueb-pres-case.html
                   - t: "Ü: DynamoDB"
                     ts: "Ü: DynamoDB"
                     url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
