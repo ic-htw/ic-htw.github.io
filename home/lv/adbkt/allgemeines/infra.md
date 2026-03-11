@@ -39,7 +39,7 @@ networks:
 services:
   pg:
     container_name: pg
-    image: postgres
+    image: postgres:latest
     ports:
       - 5432:5432
     environment:
@@ -59,7 +59,7 @@ networks:
 services:
   py:
     container_name: py
-    image: iclassen/ubu-py-uv
+    image: iclassen/ubu-py-uv:latest
     entrypoint: ["/root/entrypoint.sh"]
     user: root
     ports:
@@ -88,7 +88,7 @@ Port ggf. anpassen: 10001 oder 10002, Host anpassen.
 http://aaa.f4.htw-berlin.de:10000/lab
 ```
 
-## Bibliotheken installieren
+## Bibliothek installieren
 Terminal in JupyterLab öffnen. Code kopieren.
 ```
 uv pip install -U psycopg[binary,pool]
@@ -128,6 +128,79 @@ with psycopg.connect(conninfo) as conn:
 
 print(rs)
 ```
+
+# Cassandra
+## Container erstellen
+```yaml
+networks:
+  adbkt:
+    external: true
+
+services:
+  cas:
+    container_name: cas
+    image: cassandra:latest
+    ports:
+      - 9042:9042
+    environment:
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - adbkt
+```
+
+## Keyspace erstellen
+- Konsole in Container ```cas``` öffnen 
+-  Cassandra Query Language Shell starten (```cqlsh```). 
+- Code ausführen:
+  ```sql
+  create keyspace test with replication = {
+    'class': 'SimpleStrategy', 'replication_factor' : 1
+  };
+
+  use test;
+
+  create table t (
+    pk int, 
+    sk int, 
+    v int, 
+    primary key (pk, sk)
+  );
+  
+  insert into t(pk, sk, v) values (1, 1, 100);
+  insert into t(pk, sk, v) values (1, 2, 200);
+  
+  select * from t where pk=1;
+  ```
+
+## Bibliothek installieren
+Terminal in JupyterLab öffnen. Code kopieren.
+```
+uv pip install -U cassandra-driver
+```
+Paste mit CTRL-SHIFT-V
+
+
+## Per Python auf Cassandra zugreifen
+Neues Notebook anlegen. Code in erste Zelle kopieren.
+```python
+from cassandra.cluster import Cluster
+
+cluster = Cluster(["cas"], port=9042)
+session = cluster.connect('test')
+
+print(session.execute("SELECT release_version FROM system.local").one())
+
+rows = session.execute("select * from t where pk=1")
+for r in rows:
+    print(f"{r.pk}|{r.sk}|{r.v}")
+
+session.shutdown()
+cluster.shutdown()
+```
+
+
 
 # MD
 ```xxx```
