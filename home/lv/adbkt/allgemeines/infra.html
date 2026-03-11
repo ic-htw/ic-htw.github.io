@@ -3,53 +3,123 @@ layout: default1
 nav: adbkt-allgemeines
 title: Infrastruktur - ADBKT
 is_slide: 1
-n: 11
+n: 12
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Stack im Portainer anlegen</h1>
-<p class="w3-large">Stacks entsprechen <code>docker-compose</code>.</p>
+<h1>Arbeiten mit dem Portainer</h1>
 
 <h2>Einloggen</h2>
 <ul class="w3-large">
-  <li>In Portainer einloggen (nur im Intranet: entweder an der HTW oder über VPN)</li>
+  <li>Nur im Intranet: entweder an der HTW oder über VPN</li>
   <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
   <li><code>https://xxx.f4.htw-berlin.de:9443/</code></li>
 </ul>
-<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/100-100.png">
 
 <h2>Environment "local" auswählen</h2>
-<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/110-100.png">
-
-<h2>Dashboard wird angezeigt</h2>
-<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/120-100.png">
-
-<h2>Stack-Formular öffnen</h2>
 <ul class="w3-large">
+    <li>Auf "local" klicken</li>
+    <li>Dashboard wird angezeigt</li>
+</ul>
+
+<h2>Netzwerk anlegen</h2>
+<ul class="w3-large">
+  <li>In der Navigationsleiste links auf "Networks" klicken</li>
+  <li>Auf Button "Add network" klicken</li>
+  <li>Name "adbkt" eintragen</li>
+</ul>
+
+<h2>Stack anlegen</h2>
+<ul class="w3-large">
+  <li>Stacks entsprechen <code>docker-compose</code></li>
   <li>In der Navigationsleiste links auf "Stacks" klicken</li>
   <li>Auf Button "Add stack" klicken</li>
-</ul>
-<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/130-100.png">
-
-<h2>Stack bereitstellen</h2>
-<ul class="w3-large">
-  <li>Name für Stack vergeben</li>
   <li>Docker-Compose-Code in Web-Editor eingeben</li>
   <li>Auf "Deploy the stack" klicken</li>
 </ul>
-<img class="w3-image" src="/home/lv/adbkt/a/portainer-stack/140-100.png">
-
-
-
 <div class="ic-gap"></div>
-
 
 <!--
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
+<h1>Postgres Container anlegen</h1>
+<h2 class="ic-neg15">Stack <code>pg</code> anlegen</h2>
+<pre><code class="language-yaml">networks:
+  adbkt:
+    external: true
+    
+services:
+  pg:
+    container_name: pg
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: htw-bln-pg
+    networks:
+      - adbkt</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Python Container anlegen</h1>
+
+<h2 class="ic-neg15">Stack <code>py</code> anlegen</h2>
+<p class="w3-large">
+  Ein Container pro Gruppenmitglied, dh. py1 und py2 bei zwei Gruppenmitgliedern. Die Host-Ports entsprechend anpassen:
+  <ul class="w3-large">
+    <li>10001:8888 für py1 und 10002:8888 für py2</li>
+    <li>20001:22 für py1 und 20002:22 für py2</li>
+    <li>30001:3000 für py1 und 30002:3000 für py2</li>
+    <li>usw.</li>
+</ul>
+</p>
+
+
+<pre><code class="language-yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  py:
+    container_name: py
+    image: iclassen/ubu-py-uv
+    entrypoint: ["/usr/sbin/sshd", "-D"]
+    user: root
+    ports:
+      - 10000:8888
+      - "20000:22"
+      - 30000:3000
+      - 40000:4000
+      - 50000:5000
+      - 60000:6000
+    networks:
+      - adbkt</code></pre>
+
+<h2>JupyterLab starten</h2>
+
+<ul class="w3-large">
+    <li>Console in Container öffnen</li>
+    <li><code>su du </code> ausführen</li>
+    <li><code>source .py314/bin/activate </code> ausführen</li>
+    <li><code>jupyter notebook --ip='*' --port=8888 --no-browser & </code> ausführen</li>
+    <li><code>jupyter notebook list </code> ausführen</li>
+    <li>Token kopieren</li>
+    <li><code>http://xxx.f4.htw-berlin.de:1000x/lab </code>aufrufen</li>
+    <li>Token einfügen</li>
+</ul>
+<div class="ic-gap"></div>
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
 <h1>Cassandra Container anlegen</h1>
 
 <h2 class="ic-neg15">Stack <code>cas</code> anlegen</h2>
@@ -87,9 +157,9 @@ services:
 
 
 <!--
-    03 ******************************************************************
+    05 ******************************************************************
 -->
-{% include padding-id.html id=3 %}
+{% include padding-id.html id=5 %}
 <h1>Drei Cassandra Container anlegen</h1>
 
 <h2 class="ic-neg15">Stack <code>cas1</code> anlegen</h2>
@@ -185,30 +255,12 @@ services:
 <div class="ic-gap"></div>
 
 
-<!--
-    04 ******************************************************************
--->
-{% include padding-id.html id=4 %}
-<h1>Postgres Container anlegen</h1>
-<h2 class="ic-neg15">Stack <code>pg</code> anlegen</h2>
-<pre><code class="language-yaml">services:
-  pg1:
-    container_name: pg
-    image: postgres
-    ports:
-      - 5432:5432
-    environment:
-      POSTGRES_PASSWORD: htw-bln-pg</code></pre>
-
-
-
-<div class="ic-gap"></div>
 
 
 <!--
-    05 ******************************************************************
+  06 ******************************************************************
 -->
-{% include padding-id.html id=5 %}
+{% include padding-id.html id=6 %}
 <h1>Zwei Postgres Container anlegen</h1>
 <h2 class="ic-neg15">Stack <code>pg1</code> anlegen</h2>
 <pre><code class="language-yaml">services:
@@ -235,9 +287,9 @@ services:
 
 
 <!--
-    06 ******************************************************************
+    07 ******************************************************************
 -->
-{% include padding-id.html id=6 %}
+{% include padding-id.html id=7 %}
 
 <h1>Neo4j-Container anlegen</h1>
 
@@ -265,16 +317,13 @@ services:
   <code>http://aaa.f4.htw-berlin.de:7474</code>
 </p>
 
-
-
-
 <div class="ic-gap"></div>
 
 
 <!--
-    07 ******************************************************************
+    08 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
+{% include padding-id.html id=8 %}
 <h1>Konfiguration DBeaver</h1>
 <p class="w3-large"><a href="https://dbeaver.io/download/">DBeaver Download</a></p>
 
@@ -323,9 +372,9 @@ services:
 
 
 <!--
-    08 ******************************************************************
+    09 ******************************************************************
 -->
-{% include padding-id.html id=8 %}
+{% include padding-id.html id=9 %}
 <h1>Installation von Python-Moduen</h1>
 <p class="w3-large">Dieser Container verwendet "uv" als Paketmanager. D.h., statt</p>
 <pre><code>pip install something</code></pre>
@@ -337,9 +386,9 @@ services:
 
 
 <!--
-    09 ******************************************************************
+    10 ******************************************************************
 -->
-{% include padding-id.html id=9 %}
+{% include padding-id.html id=10 %}
 <h1>Globale Postgres-Datenbank</h1>
 
 <h2>Credentials</h2>
@@ -366,9 +415,9 @@ dbname='adbkt'</code></pre>
 
 
 <!--
-    10 ******************************************************************
+    11 ******************************************************************
 -->
-{% include padding-id.html id=10 %}
+{% include padding-id.html id=11 %}
 <h1>Lokale Postgres-Datenbanken</h1>
 
 <h2 class="ic-neg15">Credentials 1</h2>
@@ -404,9 +453,9 @@ dbname='postgres'</code></pre>
 
 
 <!--
-    11 ******************************************************************
+    12 ******************************************************************
 -->
-{% include padding-id.html id=11 %}
+{% include padding-id.html id=12 %}
 <h1>Code Beispiele</h1>
 
 <h2>Cassandra</h2>
