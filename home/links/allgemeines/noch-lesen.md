@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- GPT-5.4 Came for Claude Code. The Real Story Is Bigger Than Both
+[(link)](https://medium.com/@han.heloir/gpt-5-4-came-for-claude-code-the-real-story-is-bigger-than-both-927059667584)
+
+- Andrej Karpathy’s New Project Just Turned One GPU Into a Research Lab
+[(link)](https://www.towardsdeeplearning.com/andrej-karpathys-new-project-just-turned-one-gpu-into-a-research-lab-6a99cc2e3c81)
+
+- 99% Don’t Know These Free Google AI Tools
+[(link)](https://medium.com/write-a-catalyst/99-dont-know-these-free-google-ai-tools-4dc12b8d8d0d)
+
+- Tiny Behaviour Changes That Make You 10x More Effective With Claude Code & Cursor
+[(link)](https://medium.com/realworld-ai-use-cases/tiny-behaviour-changes-that-make-you-10x-more-effective-with-claude-code-cursor-6a771a09ce51)
+
 - This Newly Released Anthropic Agentic Coding Trends Report (Is a Must-Read)
 [(link)](https://medium.com/ai-software-engineer/this-newly-released-anthropic-agentic-coding-trends-report-is-a-must-read-0701af881148)
 
