@@ -5,6 +5,9 @@ title: Postgres
 is_slide: 0
 ---
 # check
+- pgconsole - Minimal Postgres editor for speed and collaboration
+[(link)](https://www.pgconsole.com/)
+
 - pgcalendar - Infinite Calendar Extension for PostgreSQL
 [(link)](https://github.com/h4kbas/pgcalendar)
 
