@@ -1,79 +1,58 @@
 ---
 layout: default1
-nav: adbkt-nosql
-title: "Ü: Cassandra Replikation - ADBKT"
+nav: adbkt-uebungen
+title: Cassandra Replikation - ADBKT
 is_slide: 0
 ---
 
 <h1>Übung Cassandra Replikation</h1>
 
-<h2>Stack <code>cas1</code> anlegen</h2>
-<pre><code class="language-yaml">networks:
-  ncas:
-    name: ncas
-
-services:
-  cas1:
-    container_name: cas1
-    image: cassandra:latest
-    environment:
-      - JVM_OPTS=-Xms1024M -Xmx1024M
-      - HEAP_NEWSIZE=1024M
-      - MAX_HEAP_SIZE=1024M
-    networks:
-      - ncas
-</code></pre>
-
-<p class="w3-large">Etwas warten, bis <code>cas1</code> up ist</p>
-
-
 <h2>Stack <code>cas2</code> anlegen</h2>
 <pre><code class="language-yaml">networks:
-  ncas:
-    name: ncas
+  adbkt:
+    external: true
 
 services:
   cas2:
     container_name: cas2
     image: cassandra:latest
     environment:
-      - CASSANDRA_SEEDS=cas1
+      - CASSANDRA_SEEDS=cas
       - JVM_OPTS=-Xms1024M -Xmx1024M
       - HEAP_NEWSIZE=1024M
       - MAX_HEAP_SIZE=1024M
     networks:
-      - ncas
-</code></pre>
+      - adbkt</code></pre>
 
 
 
 <h2>Stack <code>cas3</code> anlegen</h2>
 <pre><code class="language-yaml">networks:
-  ncas:
-    name: ncas
+  adbkt:
+    external: true
 
 services:
   cas3:
     container_name: cas3
     image: cassandra:latest
     environment:
-      - CASSANDRA_SEEDS=cas1
+      - CASSANDRA_SEEDS=cas
       - JVM_OPTS=-Xms1024M -Xmx1024M
       - HEAP_NEWSIZE=1024M
       - MAX_HEAP_SIZE=1024M
     networks:
-      - ncas
+      - adbkt
 </code></pre>
 
 
 
 <h2>Code ausführen</h2>
 <p class="w3-large ic-neg15">
-  Erst cas1 starten und dann etwas warten, dann erst cas2 und cas3 
+  Container <code>cas</code> muss healthy sein, bevor die anderen Container gestartet werden können.
 </p>
 
 <p class="w3-large ic-neg15">
-  In cas1, cas2 und cas3 ausführen
+  In cas, cas2 und cas3 ausführen
 </p>
 <ul class="w3-large">
   <li><code>exec console</code>, jeweils in einem neuen Tab</li>
@@ -81,7 +60,7 @@ services:
 </ul>
 
 <p class="w3-large ic-neg15">
-  In cas1 ausführen
+  In cas ausführen
 </p>
 <pre><code class="language-sql">create keyspace k1 with replication = {
   'class': 'SimpleStrategy', 'replication_factor' : 3
@@ -97,7 +76,7 @@ insert into t(pk, sk, v) values (1, 1, 100);
 </code></pre>
 
 <p class="w3-large ic-neg15">
-  In cas1, cas2 und cas3 ausführen
+  In cas, cas2 und cas3 ausführen
 </p>
 <pre><code class="language-sql">use k1;
 consistency quorum;
@@ -105,9 +84,9 @@ select * from t where pk=1;
 </code></pre>
 
 <p class="w3-large ic-neg15">
-  Weitere Schritte
+  Weitere Schritte - Verhalten beobacten
 </p>
-<pre><code class="language-sql">auf cas1
+<pre><code class="language-sql">auf cas
   insert into t(pk, sk, v) values (1, 1, 200);
 auf allen Servern: 
   select * from t where pk=1;
@@ -118,13 +97,11 @@ auf cas3:
   consistency one;
 auf cas3: 
   select * from t where pk=1;
-auf cas1: 
+auf cas: 
   insert into t(pk, sk, v) values (1, 1, 300);
 auf allen Servern: 
   select * from t where pk=1;
 (Wieder-)Hereinnehmen von cas3 ins Netzwerk ncas
-auf cas3: 
-  consistency quorum;
 auf cas3: 
   select * from t where pk=1;
 </code></pre>

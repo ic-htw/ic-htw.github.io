@@ -80,17 +80,4 @@
   <text x="170" y="199" text-anchor="middle" font-size="11" fill="#388E3C">2024-06-01 11:00</text>
   <text x="300" y="199" text-anchor="middle" font-size="11" fill="#333">17.9</text>
   <text x="420" y="199" text-anchor="middle" font-size="11" fill="#333">54.0</text>
-
-  <!-- Legend box -->
-  <rect x="15" y="225" width="490" height="80" rx="5" fill="#F9F9F9" stroke="#CCC" stroke-width="1"/>
-  <text x="260" y="243" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Primary Key = (Partition Key, Clustering Key)</text>
-
-  <rect x="30" y="252" width="12" height="12" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
-  <text x="48" y="263" font-size="11" fill="#333">Partition Key: physische Verteilung im Cluster (Hash)</text>
-
-  <rect x="30" y="270" width="12" height="12" fill="#E8F5E9" stroke="#388E3C" stroke-width="1.5"/>
-  <text x="48" y="281" font-size="11" fill="#333">Clustering Key: Sortierung innerhalb einer Partition</text>
-
-  <rect x="30" y="288" width="12" height="12" fill="#E3F2FD" stroke="#42A5F5" stroke-width="1"/>
-  <text x="48" y="299" font-size="11" fill="#333">Reguläre Spalten: Datenwerte</text>
 </svg>

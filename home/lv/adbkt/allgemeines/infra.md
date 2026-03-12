@@ -5,6 +5,7 @@ title: Infrastruktur - ADBKT
 is_slide: 0
 ---
 
+---
 # Arbeiten mit dem Portainer
 
 ## Einloggen
@@ -28,7 +29,7 @@ is_slide: 0
 - Docker-Compose-Code in Web-Editor eingeben
 - Auf "Deploy the stack" klicken
 
-
+---
 # Postgres 
 ## Container erstellen
 ```yaml
@@ -48,6 +49,7 @@ services:
       - adbkt
 ```
 
+---
 # Python 
 ## Container erstellen
 Das ist die Version für die Einzelgruppe. Siehe unten bzgl. Anpassung an andere Gruppengrößen.
@@ -128,7 +130,7 @@ with psycopg.connect(conninfo) as conn:
 
 print(rs)
 ```
-
+---
 # Cassandra
 ## Container erstellen
 ```yaml
@@ -148,6 +150,12 @@ services:
       - MAX_HEAP_SIZE=1024M
     networks:
       - adbkt
+    healthcheck:
+      test: ["CMD", "cqlsh", "-e", "describe keyspaces"]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+      start_period: 60s
 ```
 
 ## Keyspace erstellen

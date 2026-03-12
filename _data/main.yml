@@ -309,6 +309,9 @@ home: &r
                   - t: Multi Version Concurrency Control 2
                     ts: MVCC 2
                     url: /home/lv/adbkt/uebungen/mvcc2.html
+                  - t: Cassandra Replikation
+                    ts: Cassandra Replikation
+                    url: /home/lv/adbkt/uebungen/cas-repl.html
                   - t:  Cassandra - TourDelight
                     ts: Cassandra - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight.html
@@ -343,9 +346,6 @@ home: &r
                   - t: "Ü: pgRouting"
                     ts: "Ü: pgRouting"
                     url: /home/lv/adbkt/geo/ueb-pgrouting.html
-                  - t: "Ü: Cassandra Replikation"
-                    ts: "Ü: Cassandra Replikation"
-                    url: /home/lv/adbkt/nosql/ueb-cas-repl.html
                   - t: "Ü: DynamoDB"
                     ts: "Ü: DynamoDB"
                     url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
