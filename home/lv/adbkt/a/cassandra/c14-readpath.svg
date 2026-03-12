@@ -25,10 +25,10 @@
   <line x1="96" y1="136" x2="156" y2="136" stroke="#ddd" stroke-width="0.5"/>
   <text x="126" y="150" text-anchor="middle" font-size="9" fill="#555">In-Memory</text>
   <text x="126" y="163" text-anchor="middle" font-size="9" fill="#555">prüfen</text>
-  <text x="126" y="190" text-anchor="middle" font-size="9" fill="#555">① zuerst</text>
+  <text x="100" y="190" text-anchor="middle" font-size="9" fill="#555">① zuerst</text>
 
   <!-- Arrow to Bloom Filter -->
-  <text x="198" y="138" text-anchor="middle" font-size="9" fill="#555">miss?</text>
+  <text x="188" y="130" text-anchor="middle" font-size="9" fill="#555">miss?</text>
   <line x1="167" y1="143" x2="204" y2="143" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
 
   <!-- 2. Bloom Filter -->
@@ -71,18 +71,17 @@
   <line x1="483" y1="240" x2="420" y2="260" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Merge -->
-  <rect x="300" y="262" width="145" height="28" rx="4" fill="#FCE4EC" stroke="#C62828" stroke-width="2"/>
-  <text x="372" y="280" text-anchor="middle" font-size="11" font-weight="bold" fill="#C62828">Merge + Timestamp</text>
+  <rect x="310" y="262" width="145" height="28" rx="4" fill="#FCE4EC" stroke="#C62828" stroke-width="2"/>
+  <text x="382" y="280" text-anchor="middle" font-size="11" font-weight="bold" fill="#C62828">Merge + Timestamp</text>
 
   <!-- Result arrow -->
-  <line x1="299" y1="275" x2="200" y2="275" stroke="#388E3C" stroke-width="2" marker-end="url(#arrg)"/>
+  <line x1="309" y1="275" x2="200" y2="275" stroke="#388E3C" stroke-width="2" marker-end="url(#arrg)"/>
   <line x1="126" y1="275" x2="126" y2="180" stroke="#388E3C" stroke-width="2" marker-end="url(#arrg)"/>
-  <text x="230" y="270" font-size="9" fill="#388E3C">neueste Version</text>
+  <text x="240" y="270" font-size="9" fill="#388E3C">neueste Version</text>
 
   <!-- Bottom note -->
-  <rect x="10" y="218" width="280" height="60" rx="5" fill="#F9F9F9" stroke="#CCC" stroke-width="1"/>
+  <rect x="0" y="220" width="230" height="70" rx="5" fill="#F9F9F9" stroke="#CCC" stroke-width="1"/>
   <text x="150" y="237" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Read-Optimierungen</text>
-  <text x="20" y="253" font-size="10" fill="#7B1FA2">● Bloom Filter: schließt SSTables aus (keine FN)</text>
-  <text x="20" y="267" font-size="10" fill="#E65100">● Key Cache: vermeidet Index-Scan in SSTable</text>
-  <text x="20" y="281" font-size="10" fill="#555">● Row Cache: cached komplette Partitionen</text>
+  <text x="10" y="253" font-size="10" fill="#7B1FA2">● Bloom Filter: schließt SSTables aus (keine FN)</text>
+  <text x="10" y="267" font-size="10" fill="#E65100">● Key Cache: vermeidet Index-Scan in SSTable</text>
 </svg>

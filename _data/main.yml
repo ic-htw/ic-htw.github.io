@@ -230,21 +230,18 @@ home: &r
                   - t: Cassandra
                     ts: Cassandra
                     url: /home/lv/adbkt/vorlesungen/cassandra1.html
-                  - t: Cassandra - Technologie
-                    ts: Cassandra - Technologie
-                    url: /home/lv/adbkt/vorlesungen/cassandra2.html
                   - t: Replikation / Partitionierung
                     ts: Replikation / Partitionierung
                     url: /home/lv/adbkt/vorlesungen/repl-part.html
+                  - t: Cassandra - Technologie
+                    ts: Cassandra - Technologie
+                    url: /home/lv/adbkt/vorlesungen/cassandra2.html
                   - t: Konsistenzmodelle
                     ts: Konsistenzmodelle
                     url: /home/lv/adbkt/vorlesungen/cmodels.html
                   - t: Konsistenz
                     ts: Konsistenz
                     url: /home/lv/adbkt/vorlesungen/consistency.html
-                  - t: Log Structured Merge Trees
-                    ts: Log Structured Merge Trees
-                    url: /home/lv/adbkt/vorlesungen/lsm.html
                   - t: Serverlose DB
                     ts: Serverlose DB
                     url: /home/lv/adbkt/vorlesungen/serverless.html
@@ -331,6 +328,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: Log Structured Merge Trees
+                    ts: Log Structured Merge Trees
+                    url: /home/lv/adbkt/zzz/lsm.html
                   - t:  Verteilte Transaktionen
                     ts:  Verteilte Transaktionen
                     url: /home/lv/adbkt/zzz/dist-trans.html

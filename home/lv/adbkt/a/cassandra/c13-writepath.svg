@@ -61,7 +61,7 @@
   <text x="25" y="264" font-size="10" fill="#388E3C">● Append-only: keine Random-Writes → sehr hoher Durchsatz</text>
 
   <!-- Labels under boxes -->
-  <text x="157" y="185" text-anchor="middle" font-size="9" fill="#555">① Sofort</text>
-  <text x="285" y="185" text-anchor="middle" font-size="9" fill="#555">② Sofort</text>
+  <text x="157" y="192" text-anchor="middle" font-size="9" fill="#555">① Sofort</text>
+  <text x="285" y="192" text-anchor="middle" font-size="9" fill="#555">② Sofort</text>
   <text x="411" y="60" text-anchor="middle" font-size="9" fill="#388E3C">③ bei Schwellwert</text>
 </svg>
