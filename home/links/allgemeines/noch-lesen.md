@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The 110-Millisecond Spy (and Why This Should Scare Every Tech Company)
+[(link)](https://medium.com/techx-official/the-110-millisecond-spy-and-why-this-should-scare-every-tech-company-4ad0914ba2be)
+
 - GPT-5.4 Came for Claude Code. The Real Story Is Bigger Than Both
 [(link)](https://medium.com/@han.heloir/gpt-5-4-came-for-claude-code-the-real-story-is-bigger-than-both-927059667584)
 
