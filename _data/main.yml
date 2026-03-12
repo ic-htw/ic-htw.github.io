@@ -306,9 +306,6 @@ home: &r
                   - t: Multi Version Concurrency Control 1
                     ts: MVCC 1
                     url: /home/lv/adbkt/uebungen/mvcc1.html
-                  - t:  Verteilte Transaktionen
-                    ts:  Verteilte Transaktionen
-                    url: /home/lv/adbkt/uebungen/dist-trans.html
                   - t: Multi Version Concurrency Control 2
                     ts: MVCC 2
                     url: /home/lv/adbkt/uebungen/mvcc2.html
@@ -331,6 +328,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t:  Verteilte Transaktionen
+                    ts:  Verteilte Transaktionen
+                    url: /home/lv/adbkt/zzz/dist-trans.html
                   - t: "Ü: Rekursive Abfrage"
                     ts: "Ü: Rekursive Abfrage"
                     url: /home/lv/adbkt/recsql/ueb-recsql.html
