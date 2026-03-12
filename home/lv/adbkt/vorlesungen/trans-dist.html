@@ -3,7 +3,7 @@ layout: default1
 nav: adbkt-vorlesungen
 title: Verteilte Transaktionen - ADBKT
 is_slide: 1
-n: 9
+n: 16
 ---
 
 <!--
@@ -194,5 +194,263 @@ n: 9
     <li>In diesem Fall muss ggf. manuell wieder ein konsistenter
         Gesamtzustand des Systems hergestellt werden</li>
 </ul>
+<div class="ic-gap"></div>
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>2PC in Postgres</h1>
+<p class="w3-large ic-neg15">
+  Überweisungs-Szenarien, in dem zwei Postgres-Datenbanken in einer Transaktion zusammenspielen. 
+</p>
+<p class="w3-large ic-neg15">Szenario 1</p>
+<ul class="w3-large">
+  <li>Abbuchen 100 Euro von Konto 1001 auf Server "pg"</li>
+  <li>Zubuchen 100 Euro auf Konto 1002 auf Server "pg2"</li>
+  <li>Erfolgreicher Abschluss</li>
+</ul>
+
+<p class="w3-large ic-neg15">Szenario 2</p>
+<ul class="w3-large">
+  <li>Abbuchen 100 Euro von Konto 1001 auf Server "pg"</li>
+  <li>Zubuchen 100 Euro auf Konto 1002 auf Server "pg2"</li>
+  <li>Abbruch</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">
+  Informationen dazu in der <code>psycopg</code>-Dokumentation.
+</p>
+<ul class="w3-large">
+    <li>Two-Phase Commit protocol support (<a href="https://www.psycopg.org/psycopg3/docs/basic/transactions.html#two-phase-commit-protocol-support">link</a>)</li>
+    <li>Two-Phase Commit support methods (<a href="https://www.psycopg.org/psycopg3/docs/api/connections.html#tpc-methods">link</a>)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Zweiter Postgres-Server</h1>
+
+<p class="w3-large ic-neg15">Wichtig, um Konflikte mit dem ersten Server zu vermeiden:</p>
+<ul class="w3-large">
+    <li>Neuer Service- und Container-Name: pg2</li>
+    <li>Port 5432 wird als 5433 nach außen gereicht</li>
+</ul>
+
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+    
+services:
+  pg2:
+    container_name: pg2
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: htw-bln-pg
+    networks:
+      - adbkt</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Technische Vorbereitungen</h1>
+<h2>Datenbankserver konfigurieren</h2>
+<p class="w3-large">In pg und pg2 durchführen</p>
+
+<pre><code class="language-sql">su postgres
+psql postgres
+
+ALTER SYSTEM SET max_prepared_transactions = 100;</code></pre>
+<p class="w3-large">Container stoppen und starten (restart)</p>
+
+
+<pre><code class="language-sql">SHOW max_prepared_transactions;</code></pre>
+
+<h2>Befehl zum Anzeigen der gesetzten Sperren</h2>
+<pre><code class="language-sql">select relation::regclass, mode from pg_locks;</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Hilfsfunktionen</h1>
+<pre><code class="python">def create_kto(conninfo):
+    sql1 = "drop table if exists kto"
+    sql2 = """ 
+    create table kto (
+      kid integer not null,
+      val integer not null
+    )
+    """
+    with psycopg.connect(conninfo) as conn:
+        conn.execute(sql1) 
+        conn.execute(sql2) 
+
+def reset_kto(conninfo, kid, val):
+    sql1 = "delete from kto"
+    sql2 = f"insert into kto values ({kid}, {val})"
+    with psycopg.connect(conninfo) as conn:
+        conn.execute(sql1)
+        conn.execute(sql2)
+
+def show_kto(conninfo):
+    sql = "select * from kto"
+    with psycopg.connect(conninfo) as conn:
+        rs = conn.execute(sql).fetchall()
+        return rs
+
+def print_all():
+    print(f"pg1: {show_kto(conninfo1)}")
+    print(f"pg2: {show_kto(conninfo2)}")
+
+def prepare(db, conninfo, xid, kid, mode, updval):
+    sql = f"update kto set val = val {mode} {updval} where kid={kid}"
+    print(f"{db}: {sql}")
+    conn = psycopg.connect(conninfo)
+    conn.tpc_begin(xid)
+    conn.execute(sql)
+    conn.tpc_prepare()
+    conn.close()
+
+def commit(conninfo, db, xid):
+    print(f"{db}: commit")
+    with psycopg.connect(conninfo) as conn:
+        conn.tpc_commit(xid) 
+
+def rollback(conninfo, db, xid):
+    print(f"{db}: rollback")
+    with psycopg.connect(conninfo) as conn:
+        conn.tpc_rollback(xid)</code></pre>
+
+<div class="ic-gap"></div>
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Initialisierung</h1>
+<pre><code class="python">import psycopg
+
+conninfo1 = " ".join([
+"user='postgres'",
+"password='htw-bln-pg'",
+"host='pg'",
+"port=5432",
+"dbname='postgres'"])
+print(conninfo1)
+
+conninfo2 = " ".join([
+"user='postgres'",
+"password='htw-bln-pg'",
+"host='pg2'",
+"port=5432",
+"dbname='postgres'"])
+print(conninfo2)
+
+xid = "txn1"
+
+create_kto(conninfo1)
+create_kto(conninfo2)
+
+reset_kto(conninfo1, 1001, 200)
+reset_kto(conninfo2, 1002, 500)
+
+print_all()
+</code></pre>
+
+<pre><code class="language-plaintext">user='postgres' password='htw-bln-pg' host='pg' port=5432 dbname='postgres'
+user='postgres' password='htw-bln-pg' host='pg2' port=5432 dbname='postgres'
+pg1: [(1001, 200)]
+pg2: [(1002, 500)]</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Szenario 1</h1>
+
+<h2>Daten verändern aber noch nicht betätigen</h2>
+<pre><code class="python">reset_kto(conninfo1, 1001, 200)
+reset_kto(conninfo2, 1002, 500)
+
+prepare("pg1", conninfo1, xid, 1001, "-", 100)
+prepare("pg2", conninfo2, xid, 1002, "+", 100)
+print_all()</code></pre>
+
+<pre><code class="language-plaintext">pg1: update kto set val = val - 100 where kid=1001
+pg2: update kto set val = val + 100 where kid=1002
+pg1: [(1001, 200)]
+pg2: [(1002, 500)]</code></pre>
+
+
+<p class="w3-large">
+    Durch das "prepare" sind beide Datenbanken bereit für "commit" oder "rollback". Die Daten sind aber noch nicht verändert, da die Transaktion noch nicht betätigt wurde.
+</p>
+
+
+<p class="w3-large">Das print_all() öffnet eine neue Verbindung und sieht daher die unveränderten Daten (Snapshot).</p>
+
+<h2>Erfolgreicher Abschluss</h2>
+<pre><code class="python">commit(conninfo1, "pg1", xid)
+commit(conninfo2, "pg2", xid)
+print_all()</code></pre>
+
+<pre><code class="language-plaintext">pg1: commit
+pg2: commit
+pg1: [(1001, 100)]
+pg2: [(1002, 600)]</code></pre>
+
+<p class="w3-large">
+    Das "commit" kann auch dann noch erfolgreich durchgeführt werden, wenn der Server zwischenzeitlich abstürzt.
+</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Szenario 2</h1>
+<h2>Daten verändern aber noch nicht betätigen</h2>
+<pre><code class="python">reset_kto(conninfo1, 1001, 200)
+reset_kto(conninfo2, 1002, 500)
+
+prepare("pg1", conninfo1, xid, 1001, "-", 100)
+prepare("pg2", conninfo2, xid, 1002, "+", 100)
+print_all()</code></pre>
+
+<pre><code class="language-plaintext">pg1: update kto set val = val - 100 where kid=1001
+pg2: update kto set val = val + 100 where kid=1002
+pg1: [(1001, 200)]
+pg2: [(1002, 500)]</code></pre>
+
+<h2>Abbruch</h2>
+<pre><code class="python">rollback(conninfo1, "pg1", xid)
+rollback(conninfo2, "pg2", xid)
+print_all()</code></pre>
+
+<pre><code class="language-plaintext">pg1: rollback
+pg2: rollback
+pg1: [(1001, 200)]
+pg2: [(1002, 500)]</code></pre>
 <div class="ic-gap"></div>
 
