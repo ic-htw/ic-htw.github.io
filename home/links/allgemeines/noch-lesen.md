@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Do you truly need to read the code from Cursor or Claude Code anymore?
+[(link)](https://medium.com/realworld-ai-use-cases/do-you-truly-need-to-read-the-code-from-cursor-or-claude-code-anymore-87cf39abe54f)
+
 - The 110-Millisecond Spy (and Why This Should Scare Every Tech Company)
 [(link)](https://medium.com/techx-official/the-110-millisecond-spy-and-why-this-should-scare-every-tech-company-4ad0914ba2be)
 
