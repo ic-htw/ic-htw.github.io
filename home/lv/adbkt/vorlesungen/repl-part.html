@@ -235,12 +235,50 @@ n: 12
 </div>
 <div class="ic-gap"></div>
 
-
-
 <!--
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
+<h1>Konflikterkennung und -auflösung</h1>
+        <p class="w3-large ic-neg15">Wann entstehen Konflikte?</p>
+        <ul class="w3-large">
+            <li>Zwei Clients schreiben denselben Schlüssel nebenläufig auf verschiedene Replicas</li>
+            <li>Netzwerkpartition: Writes auf isolierten Partitionen</li>
+            <li>Eventual-Consistency-Systeme akzeptieren solche Writes</li>
+        </ul>
+        <p class="w3-large ic-neg15">Auflösungsstrategien</p>
+        <ul class="w3-large">
+            <li><strong>Last-Write-Wins (LWW)</strong>: Timestamp entscheidet – einfach, aber Writes können verloren gehen</li>
+            <li><strong>Multi-Version</strong>: alle Versionen aufbewahren, Client löst auf</li>
+            <li><strong>Merge-Funktion</strong>: domänenspezifische Zusammenführung (z.B. Sets vereinigen)</li>
+        </ul>
+        <p class="w3-large ic-neg15">Last-Write-Wins (LWW)</p>
+        <pre><code class="language-plaintext">Node A:  x = "Alice"  ts=1000
+Node B:  x = "Bob"    ts=1001
+
+Sync: ts=1001 gewinnt → x = "Bob"
+"Alice" geht verloren!
+
+Problem: Clock Skew (Uhren laufen unterschiedlich)
+→ ts=1000 auf A könnte real später sein
+→ NTP hilft, garantiert aber nichts</code></pre>
+        <p class="w3-large ic-neg15">Multi-Version (VC - Vector Clock)</p>
+        <pre><code class="language-plaintext">Shopping Cart:
+  v1: ["Buch"]            VC=[1,0]
+  v2: ["Buch","Stift"]    VC=[1,1]
+  v3: ["Buch","Heft"]     VC=[2,0]
+
+v2 und v3 nebenläufig → beide behalten
+Client sieht beide → wählt Vereinigung:
+  ["Buch","Stift","Heft"]</code></pre>
+<div class="ic-gap"></div>
+
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
 <h1>Partitionierung (Sharding)</h1>
 <ul class="w3-large">
     <li>Daten auf verschiedenen Knoten verteilen</li>
@@ -252,9 +290,9 @@ n: 12
 
 
 <!--
-    12 ******************************************************************
+    13 ******************************************************************
 -->
-{% include padding-id.html id=12 %}
+{% include padding-id.html id=13 %}
 <h1>Partitionierung + Replikation</h1>
 <ul class="w3-large">
     <li>Datenelemente A, B und C landen in verschiedenen (primären) Partitionen</li>

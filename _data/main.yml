@@ -239,9 +239,6 @@ home: &r
                   - t: Konsistenzmodelle
                     ts: Konsistenzmodelle
                     url: /home/lv/adbkt/vorlesungen/cmodels.html
-                  - t: Konsistenz
-                    ts: Konsistenz
-                    url: /home/lv/adbkt/vorlesungen/consistency.html
                   - t: Serverlose DB
                     ts: Serverlose DB
                     url: /home/lv/adbkt/vorlesungen/serverless.html
@@ -328,6 +325,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: Konsistenz
+                    ts: Konsistenz
+                    url: /home/lv/adbkt/zzz/consistency.html
                   - t: Log Structured Merge Trees
                     ts: Log Structured Merge Trees
                     url: /home/lv/adbkt/zzz/lsm.html
