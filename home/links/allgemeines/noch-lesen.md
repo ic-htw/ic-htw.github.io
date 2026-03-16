@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Claude Can Now Create Complex Diagrams — I Tested 21 Prompts (Goodbye Canva!)
+[(link)](https://medium.com/ai-software-engineer/claude-can-now-create-sophisticated-diagrams-charts-goodbye-canva-600d8c524b1c)
+
+- Database Indexing: The Performance Trick Nobody Explained Properly
+[(link)](https://medium.com/@anas-issath/83f4939a8441)
+
 - Do you truly need to read the code from Cursor or Claude Code anymore?
 [(link)](https://medium.com/realworld-ai-use-cases/do-you-truly-need-to-read-the-code-from-cursor-or-claude-code-anymore-87cf39abe54f)
 
