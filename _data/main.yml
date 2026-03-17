@@ -248,6 +248,9 @@ home: &r
                   - t: Single Table Design
                     ts: Single Table Design
                     url: /home/lv/adbkt/vorlesungen/single-table-design.html
+                  - t: Dokumentendatenbanken
+                    ts: Dokumentendatenbanken
+                    url: /home/lv/adbkt/vorlesungen/docdb.html
                   - t: Neo4j
                     ts: Neo4j
                     url: /home/lv/adbkt/vorlesungen/neo4j.html

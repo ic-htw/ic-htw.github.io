@@ -1,0 +1,283 @@
+---
+layout: default1
+nav: adbkt-xxx
+title: Dokumentendatenbanken - ADBKT
+is_slide: 1
+n: 8
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Dokumentendatenbanken – Einordnung</h1>
+<h2>Übersicht</h2>
+<ul class="w3-large">
+    <li>Dokumentendatenbanken speichern Daten als <strong>semi-strukturierte Dokumente</strong> (JSON, BSON, XML)</li>
+    <li>Jedes Dokument ist ein eigenständiges Objekt mit beliebig tiefer Verschachtelung</li>
+    <li>Kein festes Schema – verschiedene Dokumente in einer Collection können unterschiedliche Felder haben</li>
+    <li>Bekannte Systeme: MongoDB, CouchDB, Couchbase, Amazon DocumentDB, Firebase Firestore</li>
+    <li>Dokumentenstrukturen werden inzwischen von relationalen Datebanken unterstützt (z.B. PostgreSQL mit JSONB-Typ)</li>
+</ul>
+
+<h2>Dokumentenorientierte Datenbank</h2>
+<p class="w3-large">Datenbank = Menge von Kollektionen</p>
+
+<p class="w3-large ic-neg15">Kollektion</p>
+<ul class="w3-large">
+    <li>Menge von Dokumenten</li>
+    <li>Entspricht Tabelle</li>
+    <li>Flexibles Schema</li>
+</ul>
+
+<p class="w3-large ic-neg15">Dokument</p>
+<ul class="w3-large">
+    <li>Entspricht einer Zeile in einer Tabelle</li>
+    <li>Ähnliche Dokumente in einer Kollektion</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Dokumentenstruktur</h1>
+<p class="w3-large">Typischerweise JSON</p>
+
+<pre><code class="language-plaintext">{
+  "name":     "Alice Meier",
+  "age":      28,
+  "active":   true,
+  "address": {
+    "street": "Unter den Linden 1",
+    "city":   "Berlin",
+    "zip":    "10117"
+  },
+  "tags":     ["premium", "newsletter"],
+  "orders": [
+    { "id": "o1", "total": 99.90, "date": ISODate("2024-01-10") },
+    { "id": "o2", "total": 49.50, "date": ISODate("2024-03-02") }
+  ],
+  "meta": null
+}</code></pre>
+<div class="ic-gap"></div>
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Anwendungsbereiche </h1>
+<h2>Übersicht</h2>
+<ul class="w3-large">
+    <li>Anwendungen mit reichhaltigen Domänenmodellen</li>
+    <li>Web-Anwendungen mit großer Nutzeranzahl</li>
+    <li>Anwendungen mit starker horizontaler Skalierung</li>
+    <li>CRM-Systeme</li>
+    <li>Katalogsysteme</li>
+    <li>Portale, News, Wiki, Foren, Blogs</li>
+</ul>
+
+<h2>Gut geeignet wenn...</h2>
+        <ul class="w3-large">
+            <li>Datenstruktur variiert pro Eintrag (Produktkatalog, CMS)</li>
+            <li>Schnelle Schema-Evolution während Entwicklung</li>
+            <li>Daten natürlich als hierarchische Objekte modellierbar</li>
+            <li>Horizontale Skalierung auf viele Schreibvorgänge nötig</li>
+            <li>Dokumente werden typischerweise als Ganzes gelesen/geschrieben</li>
+            <li>Semi-strukturierte oder unstrukturierte Daten (Logs, Events)</li>
+        </ul>
+
+<h2>Weniger geeignet wenn...</h2>
+        <ul class="w3-large">
+            <li>Stark vernetzte Daten mit vielen Beziehungen (eher Graph-DB)</li>
+            <li>Komplexe Multi-Tabellen-Transaktionen häufig nötig</li>
+            <li>Strenge referentielle Integrität gefordert</li>
+            <li>Komplexe analytische SQL-Abfragen</li>
+        </ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Bekannte Systeme</h1>
+<p class="w3-large ic-neg15">MongoDB</p>
+<ul class="w3-large">
+    <li>Speichert Daten als BSON (ähnlich JSON)</li>
+    <li>Schemafrei (flexible Datenstruktur)</li>
+    <li>Horizontale Skalierung (Sharding)</li>
+    <li>Sehr verbreitet, großes Ökosystem</li>
+</ul>
+
+<p class="w3-large ic-neg15">CouchDB</p>
+<ul class="w3-large">
+    <li>JSON-Dokumente + HTTP/REST API</li>
+    <li>Multi-Master-Replikation</li>
+    <li>Offline-Synchronisation möglich</li>
+    <li>Fokus auf Verfügbarkeit und einfache Integration</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Couchbase</p>
+<ul class="w3-large">
+    <li>Kombination aus Key-Value und Dokumenten-DB</li>
+    <li>Hohe Performance (In-Memory)</li>
+    <li>SQL-ähnliche Abfragesprache (N1QL)</li>
+    <li>Gute Skalierbarkeit</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Amazon DocumentDB</p>
+<ul class="w3-large">
+    <li>Voll gemanagter Service (AWS)</li>
+    <li>MongoDB-kompatibel</li>
+    <li>Automatische Skalierung & Backups</li>
+    <li>Stark integriert ins AWS-Ökosystem</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Azure Cosmos DB</p>
+<ul class="w3-large">
+    <li>Multi-Modell-Datenbank (inkl. Dokumente)</li>
+    <li>Globale Verteilung (Multi-Region)</li>
+    <li>Niedrige Latenz weltweit</li>
+    <li>Verschiedene APIs (SQL, MongoDB, Cassandra)</li>
+</ul>
+
+
+<p class="w3-large ic-neg15">Firestore</p>
+<ul class="w3-large">
+    <li>Dokumentenorientierte Cloud-Datenbank</li>
+    <li>Echtzeit-Synchronisation</li>
+    <li>Starke Integration mit Firebase</li>
+    <li>Automatische Skalierung</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Datenmodell: Dokument vs. Relation</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/docdb/10.png">
+<p>Bild: Sadalage, Fowler: NoSql Distilled</p>
+<p class="w3-large ic-neg15">Kernunterschiede</p>
+<ul class="w3-large">
+    <li><strong>Relationales DBMS</strong>: normalisierte Tabellen, Joins erforderlich</li>
+    <li><strong>Dokument-DB</strong>: verwandte Daten in einem Dokument – kein Join nötig</li>
+    <li>Dokumente entsprechen oft direkt den <strong>Anwendungsobjekten</strong> (z.B. Java-Klassen)</li>
+    <li>Arrays und verschachtelte Objekte nativ unterstützt</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Unterschiedliche Aggregate</h1>
+<ul class="w3-large">
+    <li>Dokumente sind Einheiten des Datentransfers</li>
+    <li>Entscheidung über die Struktur der Aggregate</li>
+    <li>Redundanz</li>
+    <li>Anzahl Roundtrips</li>
+    <li>Änderungsumfang</li>
+    <li>Atomarität</li>
+</ul>
+<h2>Ein Aggregat</h2>
+<p class="w3-large">Redundante Speicherung von Kundendaten</p>
+
+<img class="w3-image" src="/home/lv/adbkt/a/docdb/60.png">
+
+
+<h2>Zwei Aggregate</h2>
+<p class="w3-large">Trennung von Kundendaten und Bestellinformationen</p>
+<p class="w3-large">Lookup erforderlich, zweiter Roundtrip</p>
+
+
+<img class="w3-image" src="/home/lv/adbkt/a/docdb/70.png">
+
+
+<p>Bilder: Sadalage, Fowler: NoSql Distilled</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Anwendungsfall: E-Commerce-Produktkatalog</h1>
+<pre><code class="language-plaintext">{
+  "sku":      "LAPTOP-PRO-15",
+  "name":     "Laptop Pro 15",
+  "price":    1299.00,
+  "category": "electronics",
+  "brand":    "TechCo",
+  "stock":    42,
+  "images":   ["img1.jpg", "img2.jpg"],
+  "specs": {
+    "ram_gb":      16,
+    "ssd_gb":      512,
+    "screen_inch": 15.6,
+    "cpu":         "Intel i7-13700H"
+  },
+  "variants": [
+    { "color": "silver", "sku": "…-S" },
+    { "color": "black",  "sku": "…-B" }
+  ],
+  "ratings": {
+    "avg": 4.7, "count": 312
+  }
+}</code></pre>
+
+        <p class="w3-large ic-neg15">Produktkatalog</p>
+        <ul class="w3-large">
+            <li>Verschiedene Produktkategorien haben völlig unterschiedliche Attribute</li>
+            <li>Kein Schema-Change bei neuen Produkttypen</li>
+            <li>Verschachtelte Spezifikationen und Varianten nativ unterstützt</li>
+            <li>Bewertungen direkt eingebettet – kein JOIN für Durchschnitt</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Anwendungsfall: Content Management System</h1>
+<pre><code class="language-plaintext">{
+  "title":     "Einführung in MongoDB",
+  "status":    "published",
+  "author":    { "id": "u1", "name": "Alice" },
+  "tags":      ["mongodb", "nosql", "tutorial"],
+  "createdAt": ISODate("2024-02-01"),
+  "updatedAt": ISODate("2024-03-10"),
+  "content":   "# MongoDB\n\nMongoDB ist…",
+  "seo": {
+    "metaTitle": "…",
+    "metaDesc":  "…",
+    "canonical": "/blog/einfuehrung-mongodb"
+  },
+  "locales": {
+    "de": { "title": "Einführung …" },
+    "en": { "title": "Introduction …" }
+  },
+  "comments": [
+    { "user": "bob", "text": "Super!",
+      "date": ISODate("2024-02-05") }
+  ]
+}</code></pre>
+
+        <p class="w3-large ic-neg15">CMS</p>
+        <ul class="w3-large">
+            <li>Flexibles Content-Schema</li>
+            <li>Mehrsprachigkeit direkt im Dokument</li>
+            <li>SEO-Daten, Kommentare eingebettet</li>
+        </ul>
+<div class="ic-gap"></div>
