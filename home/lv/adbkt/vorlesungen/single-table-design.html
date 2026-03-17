@@ -1,0 +1,300 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Single Table Design in DynamoDB - ADBKT
+is_slide: 1
+n: 10
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Single Table Design: Einordnung</h1>
+<h2>Überblick</h2>
+<ul class="w3-large">
+    <li><strong>Single Table Design (STD)</strong>: alle Entitätstypen in einer einzigen DynamoDB-Tabelle</li>
+    <li>DynamoDB bietet keinen JOIN-Support → STD als Lösungsstrategie</li>
+    <li>Ziel: alle Zugriffsmuster mit einem einzigen Roundtrip abbilden</li>
+    <li>PK und SK werden „überladen" (Key Overloading) – gleichnamige Spalten, verschiedene Semantik</li>
+    <li>Entgegengesetzt zu relationalen Prinzipien: Denormalisierung statt Normalisierung</li>
+    <li>Kernprinzip: <strong>Zugriffsmuster zuerst definieren</strong>, dann Datenmodell ableiten</li>
+</ul>
+
+<h2>Mehrere Entitätstypen in einer Tabelle</h2>
+<ul class="w3-large">
+    <li>PK und SK bekommen generische Namen: <code>PK</code>, <code>SK</code></li>
+    <li>Statt spezifischer Namen wie <code>userId</code>, <code>orderId</code></li>
+    <li>Typ-Präfix im Wert identifiziert die Entität: <code>USER#</code>, <code>ORDER#</code></li>
+    <li>Zusätzliches Attribut <code>Type</code> für explizite Kennzeichnung</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>One-to-Many: Konzept</h1>
+<p class="w3-large ic-neg15">Grundprinzip</p>
+<ul class="w3-large">
+    <li>Parent-Item und Child-Items teilen denselben PK</li>
+    <li>SK unterscheidet die Items innerhalb der Partition</li>
+    <li>SK wird so gewählt, dass sinnvolle Sortierung entsteht</li>
+    <li>Zeitstempel im SK → chronologische Sortierung automatisch</li>
+</ul>
+<p class="w3-large ic-neg15">One-to-Many: User mit Bestellungen</p>
+<img class="w3-image" src="/home/lv/adbkt/a/single-table-design/d03-onetomany.svg">
+
+
+<p class="w3-large ic-neg15">Abfragemuster</p>
+<ul class="w3-large">
+    <li><strong>Alles auf einmal</strong>: Query PK = "USER#Alice" → Parent + alle Children</li>
+    <li><strong>Nur Children</strong>: Query PK + SK begins_with "ORDER#"</li>
+    <li><strong>Zeitbereich</strong>: Query PK + SK BETWEEN "ORDER#2024-01" AND "ORDER#2024-06"</li>
+</ul>
+<p class="w3-large ic-neg15">Vorteile</p>
+<ul class="w3-large">
+    <li>1 Query statt mehrerer JOINs</li>
+    <li>Zusammengehörige Daten physisch benachbart im Storage</li>
+    <li>Horizontale Skalierung durch Partition-basiertes Sharding</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>E-Commerce: Überblick Single Table</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/single-table-design/d04-ecommerce.svg">
+
+
+        <p class="w3-large ic-neg15">Abfragemuster &amp; ihre Queries</p>
+        <pre><code class="language-plaintext">// AP-01: User-Profil
+GetItem: PK="USER#U-001", SK="PROFILE"
+
+// AP-02: Alle Bestellungen eines Users
+Query:  PK = "USER#U-001"
+        SK begins_with "ORDER#"
+
+// AP-03: Items einer Bestellung
+Query:  PK = "ORDER#2024-01-15"
+        SK begins_with "ITEM#"
+
+// AP-04: User + alle Bestellungen
+Query:  PK = "USER#U-001"
+// → liefert PROFILE + alle ORDER#-Items
+
+Bestellungen Januar 2024
+Query:
+  PK = "USER#U-001"
+  SK BETWEEN "ORDER#2024-01-01"
+         AND "ORDER#2024-01-31"
+
+// Bestellungen ganzes Jahr 2024
+Query:
+  PK = "USER#U-001"
+  SK begins_with "ORDER#2024"
+
+// Neueste 5 Bestellungen (absteigend)
+Query:
+  PK = "USER#U-001"
+  SK begins_with "ORDER#"
+  ScanIndexForward = false
+  Limit = 5</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>GSI: Sekundäre Zugriffsmuster</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/single-table-design/d06-gsi.svg">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>GSI: Konzept &amp; Anwendung</h1>
+        <p class="w3-large ic-neg15">GSI-Grundlagen</p>
+        <ul class="w3-large">
+            <li>Global Secondary Index: eigener PK/SK, eigene Sortierung</li>
+            <li>Bis zu 20 GSIs pro Tabelle</li>
+            <li>Eigene Lese-/Schreibkapazität (oder On-Demand)</li>
+            <li>Nur Eventually Consistent Reads</li>
+            <li>Projection: KEYS_ONLY, INCLUDE, ALL</li>
+        </ul>
+        <p class="w3-large ic-neg15">GSI-Overloading</p>
+        <ul class="w3-large">
+            <li>Generische GSI-Attribute: <code>GSI1PK</code>, <code>GSI1SK</code></li>
+            <li>Verschiedene Entitätstypen nutzen denselben GSI für unterschiedliche Zwecke</li>
+            <li>Spart GSI-Slots (Limit: 20)</li>
+        </ul>
+        <pre><code class="language-plaintext">// Item: User-Profil
+{
+  PK:     "USER#U-001",
+  SK:     "PROFILE",
+  GSI1PK: "EMAIL#alice@x.de", 
+  GSI1SK: "USER#U-001"
+}
+
+// Item: Bestellung
+{
+  PK:     "USER#U-001",
+  SK:     "ORDER#2024-01-15",
+  GSI1PK: "STATUS#PENDING", 
+  GSI1SK: "2024-01-15"
+}
+
+// Query AP-06: User nach E-Mail
+Query GSI1:
+  GSI1PK = "EMAIL#alice@x.de"</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>E-Commerce: Umsetzung</h1>
+<p class="w3-large">Die Links verweisen auf die AWS-DynamoDB-Dokumentation</p>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Struktur</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>Basistabelle</td>
+        <td><a href="https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-17-Final-BaseTable.png">link</a></td>
+    </tr>
+    <tr>
+        <td>GSI1</td>
+        <td><a href="https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-18-Final-GSI1.png">link</a></td>
+    </tr>
+    <tr>
+        <td>GSI2</td>
+        <td><a href="https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/DataModeling/OnlineShop-19-Final-GSI2.png">link</a></td>
+    </tr>
+</table>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Composite Sort Key: Hierarchische Abfragen</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/single-table-design/d07-compositesk.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Sparse Index</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/single-table-design/d08-sparse.svg">
+        <p class="w3-large ic-neg15">Konzept</p>
+        <ul class="w3-large">
+            <li>GSI-Attribut nur bei bestimmten Items vorhanden</li>
+            <li>DynamoDB indiziert nur Items, bei denen der GSI-Key existiert</li>
+            <li>Effiziente Suche über eine kleine Teilmenge der Tabelle</li>
+        </ul>
+        <p class="w3-large ic-neg15">Anwendungsfälle</p>
+        <ul class="w3-large">
+            <li>Alle offenen Bestellungen (Status = PENDING)</li>
+            <li>Alle ablaufenden Sessions (ExpiresAt vorhanden)</li>
+            <li>Alle VIP-Nutzer (VIP-Attribut gesetzt)</li>
+            <li>Alle fehlgeschlagenen Jobs (ErrorCode gesetzt)</li>
+        </ul>
+        <pre><code class="language-plaintext">// Nur PENDING-Orders haben GSI1PK
+{
+  PK: "USER#Alice",
+  SK: "ORDER#O-001",
+  GSI1PK: "STATUS#PENDING"  // gesetzt
+}
+// Abgeschlossene Orders: kein GSI1PK
+{
+  PK: "USER#Alice",
+  SK: "ORDER#O-002"
+  // kein GSI1PK → nicht im Sparse GSI
+}</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Many-to-Many - Soziale Netzwerke</h1>
+<p class="w3-large ic-neg15">Die Follower-Beziehung ist many-to-many</p>
+<ul class="w3-large">
+    <li>Eine Person kann mehrere Follower haben</li>
+    <li>Eine Person kann mehrere Personen folgen</li>
+</ul>
+
+
+<p class="w3-large">Der Link verweist auf die AWS-DynamoDB-Dokumentation: <a href="https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/DataModeling/SocialNetwork8.png">link</a></p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Single Table Design vs. Multi-Table Design</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Aspekt</th>
+        <th>Single Table Design</th>
+        <th>Multi-Table Design</th>
+    </tr>
+    <tr>
+        <td><strong>Queries</strong></td>
+        <td>1 Query für alle Daten (1 Roundtrip)</td>
+        <td>Mehrere Queries + App-seitige JOINs</td>
+    </tr>
+    <tr>
+        <td><strong>Effizienz</strong></td>
+        <td>Maximal bei richtigem Modell</td>
+        <td>Mehr Roundtrips, höhere Latenz</td>
+    </tr>
+    <tr>
+        <td><strong>Komplexität</strong></td>
+        <td>Modellierung komplex, Betrieb einfach</td>
+        <td>Modellierung einfach, Betrieb komplexer</td>
+    </tr>
+    <tr>
+        <td><strong>Lesbarkeit</strong></td>
+        <td>Niedrig (generische Keys)</td>
+        <td>Hoch (sprechende Tabellen/Spalten)</td>
+    </tr>
+    <tr>
+        <td><strong>Schema-Änderungen</strong></td>
+        <td>Aufwendig (Schlüsselstruktur ändern)</td>
+        <td>Einfacher (neue Tabelle hinzufügen)</td>
+    </tr>
+    <tr>
+        <td><strong>Monitoring</strong></td>
+        <td>Schwieriger (alles in einer Tabelle)</td>
+        <td>Einfacher (pro Tabelle)</td>
+    </tr>
+    <tr>
+        <td><strong>Einsatz</strong></td>
+        <td>Bekannte, stabile Zugriffsmuster</td>
+        <td>Explorative, sich ändernde Abfragen</td>
+    </tr>
+</table>
+
+<div class="ic-gap"></div>
+

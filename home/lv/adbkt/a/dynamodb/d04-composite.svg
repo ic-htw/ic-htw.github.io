@@ -44,6 +44,6 @@
 <text x="425" y="272" text-anchor="middle" font-size="12" font-weight="normal" fill="#212121">Total: 9.99</text>
 <line x1="195" y1="247" x2="195" y2="292" stroke="#BBDEFB" stroke-width="1.5"/>
 <line x1="355" y1="247" x2="355" y2="292" stroke="#BBDEFB" stroke-width="1.5"/>
-<rect x="200" y="80" width="135" height="152" rx="3" fill="none" stroke="#FF6F00" stroke-width="2"/>
+<rect x="200" y="80" width="135" height="120" rx="3" fill="none" stroke="#FF6F00" stroke-width="2"/>
 <text x="268" y="75" text-anchor="middle" font-size="12" font-weight="bold" fill="#FF6F00">Range Query</text>
 </svg>

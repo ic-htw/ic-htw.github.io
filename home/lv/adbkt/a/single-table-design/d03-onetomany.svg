@@ -1,0 +1,27 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<!-- Table header -->
+<rect x="60" y="35" width="440" height="22" rx="5" fill="#455A64"/>
+<text x="170" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">PK (Partition Key)</text>
+<text x="380" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">SK (Sort Key)</text>
+<line x1="280" y1="35" x2="280" y2="205" stroke="#CCC" stroke-width="1"/>
+<!-- Row 1: User Profile (blue) -->
+<rect x="60" y="57" width="440" height="30" fill="#E3F2FD" stroke="#1565C0" stroke-width="0.5"/>
+<text x="170" y="77" text-anchor="middle" font-size="11" fill="#1565C0" font-weight="bold">USER#Alice</text>
+<text x="380" y="77" text-anchor="middle" font-size="11" fill="#1565C0" font-weight="bold">PROFILE</text>
+<!-- Row 2: Order 1 (green) -->
+<rect x="60" y="87" width="440" height="30" fill="#E8F5E9" stroke="#2E7D32" stroke-width="0.5"/>
+<text x="170" y="107" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">USER#Alice</text>
+<text x="380" y="107" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">ORDER#2024-01-15</text>
+<!-- Row 3: Order 2 (green) -->
+<rect x="60" y="117" width="440" height="30" fill="#E8F5E9" stroke="#2E7D32" stroke-width="0.5"/>
+<text x="170" y="137" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">USER#Alice</text>
+<text x="380" y="137" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">ORDER#2024-02-03</text>
+<!-- Row 4: Order 3 (green) -->
+<rect x="60" y="147" width="440" height="30" fill="#E8F5E9" stroke="#2E7D32" stroke-width="0.5"/>
+<text x="170" y="167" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">USER#Alice</text>
+<text x="380" y="167" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">ORDER#2024-03-22</text>
+<!-- Row 5: Order 4 (green) -->
+<rect x="60" y="177" width="440" height="28" fill="#E8F5E9" stroke="#2E7D32" stroke-width="0.5"/>
+<text x="170" y="196" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">USER#Alice</text>
+<text x="380" y="196" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">ORDER#2024-04-10</text>
+</svg>

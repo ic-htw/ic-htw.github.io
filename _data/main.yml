@@ -244,10 +244,10 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/serverless.html
                   - t: DynamoDB
                     ts: DynamoDB
-                    url: /home/lv/adbkt/vorlesungen/dyndb.html
-                  - t: DynamoDB1
-                    ts: DynamoDB1
                     url: /home/lv/adbkt/vorlesungen/dynamodb.html
+                  - t: Single Table Design
+                    ts: Single Table Design
+                    url: /home/lv/adbkt/vorlesungen/single-table-design.html
                   - t: Neo4j
                     ts: Neo4j
                     url: /home/lv/adbkt/vorlesungen/neo4j.html

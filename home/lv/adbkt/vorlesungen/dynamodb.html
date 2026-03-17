@@ -1,0 +1,247 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: DynamoDB - ADBKT
+is_slide: 1
+n: 13
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>DynamoDB Einordnung</h1>
+<ul class="w3-large">
+    <li>Managed Service von AWS</li>
+    <li>NoSQL-Datenbank - unterstützt Key-Value und Dokumentendaten</li>
+    <li>Serverless: keine Serververwaltung notwendig</li>
+    <li>Automatische Skalierung und hohe Verfügbarkeit</li>
+    <li>Multi-Region-Replikation möglich (Global Tables)</li>
+    <li>SLA: 99,999 % Verfügbarkeit</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Tabellen, Items, Attribute</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d02-structure.svg">
+<p class="w3-large ic-neg15">Grundstruktur</p>
+<ul class="w3-large">
+    <li><strong>Tabelle</strong>: Sammlung von Items (kein festes Schema)</li>
+    <li><strong>Item</strong>: einzelner Datensatz, schemalos</li>
+    <li><strong>Attribut</strong>: typisiertes Feld (String, Number, Binary, List, Map, …)</li>
+    <li>JSON-ähnliche Struktur</li>
+    <li>Maximale Item-Größe: 400 KB</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Primärschlüssel: Partition Key</h1>
+<ul class="w3-large">
+    <li>Einfacher Primärschlüssel aus einem einzigen Attribut</li>
+    <li>DynamoDB berechnet einen Hash-Wert → bestimmt physische Partition</li>
+    <li>Jedes Item muss einen eindeutigen Partition Key besitzen</li>
+</ul>
+<pre><code class="language-plaintext">{
+  "UserId": "U-1001",   &lt;-- PK
+  "Name": "Alice",
+  "Email": "alice@example.com"
+}</code></pre>
+        <img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d03-partition.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Primärschlüssel: Composite Key</h1>
+<ul class="w3-large">
+    <li>Partition Key + Sort Key</li>
+    <li>Mehrere Items mit gleichem Partition Key möglich</li>
+    <li>Sort Key ermöglicht Bereichsabfragen (begins_with, between, &lt;, &gt;, …)</li>
+</ul>
+<pre><code class="language-plaintext">{
+  "UserId":  "U-1001",    &lt;-- PK
+  "OrderId": "O-2024-01", &lt;-- SK
+  "Total":   149.99
+}</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d04-composite.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Local Secondary Index (LSI)</h1>
+<ul class="w3-large">
+    <li>Gleicher Partition Key wie Basistabelle, aber anderer Sort Key</li>
+    <li>Alternative Sortierung und Filterung innerhalb einer Partition</li>
+    <li>Muss beim Erstellen der Tabelle definiert werden</li>
+    <li>Maximal 5 LSIs pro Tabelle</li>
+    <li>Starke Konsistenz möglich</li>
+    <li>Teilt Kapazität mit der Basistabelle</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d05-lsi.svg" style="width:700px;">
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Global Secondary Index (GSI)</h1>
+<ul class="w3-large">
+    <li>Eigener Partition Key und optionaler Sort Key</li>
+    <li>Abfragen nach beliebigen Attributen möglich</li>
+    <li>Kann jederzeit erstellt oder gelöscht werden</li>
+    <li>Eigene Lese- und Schreibkapazität</li>
+    <li>Nur Eventually Consistent Reads</li>
+    <li>Maximal 20 GSIs pro Tabelle (Standard-Limit)</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d06-gsi.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Kapazitätsmodi</h1>
+<p class="w3-large ic-neg15">Provisioned</p>
+<ul class="w3-large">
+    <li>Feste Anzahl Read Capacity Units (RCU) und Write Capacity Units (WCU)</li>
+    <li>1 RCU = 1 strongly consistent Read (4 KB) oder 2 eventually consistent Reads</li>
+    <li>1 WCU = 1 Write bis 1 KB</li>
+    <li>Auto-Scaling möglich</li>
+    <li>Günstiger bei vorhersehbarer Last</li>
+</ul>
+<p class="w3-large ic-neg15">On-Demand</p>
+<ul class="w3-large">
+    <li>Keine Kapazitätsplanung notwendig</li>
+    <li>Bezahlung pro Request (Pay-per-request)</li>
+    <li>Automatische Skalierung auf jede Last</li>
+    <li>Geeignet für unbekannte oder stark schwankende Last</li>
+    <li>Höhere Kosten pro Request als Provisioned</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Lese- und Schreiboperationen</h1>
+<ul class="w3-large">
+    <li><strong>GetItem</strong>: einzelnes Item über Primary Key abrufen</li>
+    <li><strong>PutItem</strong>: Item einfügen oder vollständig ersetzen</li>
+    <li><strong>UpdateItem</strong>: einzelne Attribute eines Items ändern</li>
+    <li><strong>DeleteItem</strong>: einzelnes Item löschen</li>
+    <li><strong>Query</strong>: effiziente Abfrage über Partition Key (+ optionaler Sort Key Bedingung)</li>
+    <li><strong>Scan</strong>: vollständiger Tabellen-Scan, alle Items werden gelesen (ineffizient)</li>
+    <li><strong>BatchGetItem / BatchWriteItem</strong>: mehrere Items auf einmal lesen / schreiben</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Konsistenz</h1>
+<ul class="w3-large">
+    <li><strong>Eventually Consistent Read</strong> (Standard): geringere Kosten (0,5× RCU), Daten ggf. kurz veraltet</li>
+    <li><strong>Strongly Consistent Read</strong>: aktuellste Daten, 1× RCU, höhere Latenz</li>
+    <li>GSI-Lesezugriffe sind immer eventually consistent</li>
+    <li>Transaktionen möglich für ACID-Anforderungen</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Transaktionen</h1>
+<ul class="w3-large">
+    <li><strong>TransactWriteItems</strong>: atomares Schreiben über mehrere Items / Tabellen</li>
+    <li><strong>TransactGetItems</strong>: konsistentes Lesen mehrerer Items in einer Operation</li>
+    <li>ACID-Garantien: Atomarität, Konsistenz, Isolation, Dauerhaftigkeit</li>
+    <li>Bis zu 100 Items oder 4 MB pro Transaktion</li>
+    <li>Kosten: 2× WCU bzw. 2× RCU im Vergleich zu nicht-transaktionalen Operationen</li>
+    <li>Kein Cross-Region-Support (nur innerhalb einer Region)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>DynamoDB Streams</h1>
+<ul class="w3-large">
+    <li>Change Data Capture (CDC): Protokoll aller Änderungen</li>
+    <li>Ereignisse: INSERT, MODIFY, REMOVE</li>
+    <li>Aufbewahrungsdauer: 24 Stunden</li>
+    <li>Integration mit AWS Lambda</li>
+    <li>TTL (Time to Live): automatisches Löschen abgelaufener Items</li>
+    <li>Grundlage für Global Tables</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d11-streams.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Global Tables</h1>
+<ul class="w3-large">
+    <li>Multi-Region-Replikation: Tabelle in mehreren AWS-Regionen aktiv</li>
+    <li>Active-Active: Lese- und Schreibzugriffe in jeder Region</li>
+    <li>Eventual Consistency zwischen Regionen (&lt; 1 Sekunde)</li>
+    <li>Konfliktauflösung: Last-Write-Wins</li>
+    <li>Basiert auf DynamoDB Streams</li>
+    <li>Niedrige Latenz für globale Nutzer</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/dynamodb/d12-global.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Links zu AWS Videos</h1>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Präsentation</th>
+        <th>Seiten im PDF</th>
+        <th>Link PDF</th>
+        <th>Link Video</th>
+    </tr>
+    <tr>
+        <td>DeBrie, Kumar</td>
+        <td>17-105</td>
+        <td><a href="https://d1.awsstatic.com/events/Summits/reinvent2022/DAT320_Deploy-modern-and-effective-data-models-with-Amazon-DynamoDB.pdf">link</a></td>
+        <td><a href="https://youtu.be/SC-YAPgJpms?list=PL9rvxJNs9la4FbZENFe9tdE5Wj55wkRxn">link</a></td>
+    </tr>
+    <tr>
+        <td>Hunter </td>
+        <td>1-18</td>
+        <td><a href="https://pages.awscloud.com/rs/112-TZM-766/images/DMWQ1D4S1T1%20Building%20modern_%20high%20performance%20applications%20at%20any%20scale%20with%20Amazon%20DynamoDB%20Part%201%20and%202%20(1).pdf">link</a></td>
+        <td><a href="https://youtu.be/ummOosOW4lE">link1</a>, <a href="https://youtu.be/0iGR8GnIItQ">link2</a></td>
+    </tr>
+</table>
+
+<div class="ic-gap"></div>
+

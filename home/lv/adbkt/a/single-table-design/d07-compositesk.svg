@@ -1,0 +1,51 @@
+<svg viewBox="0 0 520 275" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<!-- Table -->
+<rect x="10" y="35" width="505" height="155" rx="5" fill="#FAFAFA" stroke="#888" stroke-width="1.5"/>
+<!-- Header -->
+<rect x="10" y="35" width="505" height="22" rx="5" fill="#455A64"/>
+<text x="95" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">PK</text>
+<text x="290" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">SK (Composite Sort Key)</text>
+<text x="468" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Attribute</text>
+<line x1="180" y1="35" x2="180" y2="190" stroke="#CCC" stroke-width="1"/>
+<line x1="400" y1="35" x2="400" y2="190" stroke="#CCC" stroke-width="1"/>
+<!-- Rows - country level -->
+<rect x="10" y="57" width="505" height="24" fill="#FFF9C4"/>
+<text x="95" y="74" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">COUNTRY#US</text>
+<text x="290" y="74" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">META</text>
+<text x="468" y="74" text-anchor="middle" font-size="10" fill="#555">Population=331M</text>
+<!-- State level -->
+<rect x="10" y="81" width="505" height="24" fill="#E3F2FD"/>
+<text x="95" y="98" text-anchor="middle" font-size="10" fill="#1565C0" font-weight="bold">COUNTRY#US</text>
+<text x="290" y="98" text-anchor="middle" font-size="10" fill="#1565C0" font-weight="bold">STATE#CA</text>
+<text x="468" y="98" text-anchor="middle" font-size="10" fill="#555">Name=California</text>
+<rect x="10" y="105" width="505" height="24" fill="#E3F2FD"/>
+<text x="95" y="122" text-anchor="middle" font-size="10" fill="#1565C0" font-weight="bold">COUNTRY#US</text>
+<text x="290" y="122" text-anchor="middle" font-size="10" fill="#1565C0" font-weight="bold">STATE#TX</text>
+<text x="468" y="122" text-anchor="middle" font-size="10" fill="#555">Name=Texas</text>
+<!-- City level -->
+<rect x="10" y="129" width="505" height="24" fill="#E8F5E9"/>
+<text x="95" y="146" text-anchor="middle" font-size="10" fill="#2E7D32" font-weight="bold">COUNTRY#US</text>
+<text x="290" y="146" text-anchor="middle" font-size="10" fill="#2E7D32" font-weight="bold">STATE#CA#CITY#LA</text>
+<text x="468" y="146" text-anchor="middle" font-size="10" fill="#555">Name=Los Angeles</text>
+<rect x="10" y="153" width="505" height="24" fill="#E8F5E9"/>
+<text x="95" y="170" text-anchor="middle" font-size="10" fill="#2E7D32" font-weight="bold">COUNTRY#US</text>
+<text x="290" y="170" text-anchor="middle" font-size="10" fill="#2E7D32" font-weight="bold">STATE#CA#CITY#SF</text>
+<text x="468" y="170" text-anchor="middle" font-size="10" fill="#555">Name=San Francisco</text>
+<!-- Query patterns below the table -->
+<text x="260" y="207" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Abfragemuster mit begins_with</text>
+<!-- Query 1 -->
+<rect x="10" y="215" width="153" height="52" rx="4" fill="#FFF9C4" stroke="#F9A825" stroke-width="1.5"/>
+<text x="86" y="231" text-anchor="middle" font-size="10" fill="#F57F17" font-weight="bold">Alle Daten: Land US</text>
+<text x="86" y="246" text-anchor="middle" font-size="9" fill="#333">PK = "COUNTRY#US"</text>
+<text x="86" y="260" text-anchor="middle" font-size="9" fill="#555">→ alle Ebenen</text>
+<!-- Query 2 -->
+<rect x="175" y="215" width="170" height="52" rx="4" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+<text x="260" y="231" text-anchor="middle" font-size="10" fill="#1565C0" font-weight="bold">Alle Bundesstaaten</text>
+<text x="260" y="246" text-anchor="middle" font-size="9" fill="#333">SK begins_with "STATE#"</text>
+<text x="260" y="260" text-anchor="middle" font-size="9" fill="#555">→ CA + TX (keine Städte)</text>
+<!-- Query 3 -->
+<rect x="357" y="215" width="158" height="52" rx="4" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="436" y="231" text-anchor="middle" font-size="10" fill="#2E7D32" font-weight="bold">Nur CA-Städte</text>
+<text x="436" y="246" text-anchor="middle" font-size="9" fill="#333">SK begins_with</text>
+<text x="436" y="260" text-anchor="middle" font-size="9" fill="#333">"STATE#CA#CITY#"</text>
+</svg>

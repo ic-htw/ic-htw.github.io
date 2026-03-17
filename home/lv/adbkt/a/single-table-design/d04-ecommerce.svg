@@ -1,0 +1,63 @@
+<svg viewBox="0 0 520 285" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<!-- Table -->
+<rect x="8" y="35" width="504" height="215" rx="5" fill="#FAFAFA" stroke="#888" stroke-width="1.5"/>
+<!-- Header -->
+<rect x="8" y="35" width="504" height="22" rx="5" fill="#37474F"/>
+<text x="90" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">PK</text>
+<text x="230" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">SK</text>
+<text x="340" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Entity</text>
+<text x="455" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Attribute (Auswahl)</text>
+<line x1="165" y1="35" x2="165" y2="250" stroke="#CCC" stroke-width="1"/>
+<line x1="300" y1="35" x2="300" y2="250" stroke="#CCC" stroke-width="1"/>
+<line x1="385" y1="35" x2="385" y2="250" stroke="#CCC" stroke-width="1"/>
+<!-- User row -->
+<rect x="8" y="57" width="504" height="22" fill="#E3F2FD"/>
+<text x="86" y="72" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">USER#U-001</text>
+<text x="232" y="72" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">PROFILE</text>
+<text x="342" y="72" text-anchor="middle" font-size="9" fill="#1565C0">User</text>
+<text x="455" y="72" text-anchor="middle" font-size="9" fill="#555">Name="Alice", Email="a@x.de"</text>
+<!-- Order rows -->
+<rect x="8" y="79" width="504" height="22" fill="#E8F5E9"/>
+<text x="86" y="94" text-anchor="middle" font-size="9" fill="#2E7D32" font-weight="bold">USER#U-001</text>
+<text x="232" y="94" text-anchor="middle" font-size="9" fill="#2E7D32" font-weight="bold">ORDER#2024-01-15</text>
+<text x="342" y="94" text-anchor="middle" font-size="9" fill="#2E7D32">Order</text>
+<text x="455" y="94" text-anchor="middle" font-size="9" fill="#555">Total=149.99, Status=SHIPPED</text>
+<rect x="8" y="101" width="504" height="22" fill="#E8F5E9"/>
+<text x="86" y="116" text-anchor="middle" font-size="9" fill="#2E7D32" font-weight="bold">USER#U-001</text>
+<text x="232" y="116" text-anchor="middle" font-size="9" fill="#2E7D32" font-weight="bold">ORDER#2024-02-03</text>
+<text x="342" y="116" text-anchor="middle" font-size="9" fill="#2E7D32">Order</text>
+<text x="455" y="116" text-anchor="middle" font-size="9" fill="#555">Total=89.00, Status=PENDING</text>
+<!-- OrderItem rows -->
+<rect x="8" y="123" width="504" height="22" fill="#FFF3E0"/>
+<text x="86" y="138" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">ORDER#2024-01-15</text>
+<text x="232" y="138" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">ITEM#I-001</text>
+<text x="342" y="138" text-anchor="middle" font-size="9" fill="#E65100">OrderItem</text>
+<text x="455" y="138" text-anchor="middle" font-size="9" fill="#555">Qty=1, ProductId=P-01</text>
+<rect x="8" y="145" width="504" height="22" fill="#FFF3E0"/>
+<text x="86" y="160" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">ORDER#2024-01-15</text>
+<text x="232" y="160" text-anchor="middle" font-size="9" fill="#E65100" font-weight="bold">ITEM#I-002</text>
+<text x="342" y="160" text-anchor="middle" font-size="9" fill="#E65100">OrderItem</text>
+<text x="455" y="160" text-anchor="middle" font-size="9" fill="#555">Qty=2, ProductId=P-03</text>
+<!-- Product rows -->
+<rect x="8" y="167" width="504" height="22" fill="#F3E5F5"/>
+<text x="86" y="182" text-anchor="middle" font-size="9" fill="#7B1FA2" font-weight="bold">PRODUCT#P-01</text>
+<text x="232" y="182" text-anchor="middle" font-size="9" fill="#7B1FA2" font-weight="bold">META</text>
+<text x="342" y="182" text-anchor="middle" font-size="9" fill="#7B1FA2">Produkt</text>
+<text x="455" y="182" text-anchor="middle" font-size="9" fill="#555">Name="Laptop", Price=999</text>
+<rect x="8" y="189" width="504" height="22" fill="#F3E5F5"/>
+<text x="86" y="204" text-anchor="middle" font-size="9" fill="#7B1FA2" font-weight="bold">PRODUCT#P-03</text>
+<text x="232" y="204" text-anchor="middle" font-size="9" fill="#7B1FA2" font-weight="bold">META</text>
+<text x="342" y="204" text-anchor="middle" font-size="9" fill="#7B1FA2">Produkt</text>
+<text x="455" y="204" text-anchor="middle" font-size="9" fill="#555">Name="USB-Kabel", Price=12</text>
+<!-- More -->
+<text x="260" y="235" text-anchor="middle" font-size="12" fill="#AAA">...</text>
+<!-- Legend -->
+<rect x="8" y="258" width="60" height="16" rx="2" fill="#E3F2FD" stroke="#1565C0" stroke-width="1"/>
+<text x="38" y="270" text-anchor="middle" font-size="9" fill="#1565C0">User</text>
+<rect x="78" y="258" width="60" height="16" rx="2" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+<text x="108" y="270" text-anchor="middle" font-size="9" fill="#2E7D32">Order</text>
+<rect x="148" y="258" width="70" height="16" rx="2" fill="#FFF3E0" stroke="#E65100" stroke-width="1"/>
+<text x="183" y="270" text-anchor="middle" font-size="9" fill="#E65100">OrderItem</text>
+<rect x="228" y="258" width="65" height="16" rx="2" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1"/>
+<text x="260" y="270" text-anchor="middle" font-size="9" fill="#7B1FA2">Produkt</text>
+</svg>
