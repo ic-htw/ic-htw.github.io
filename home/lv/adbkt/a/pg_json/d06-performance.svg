@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="350" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="400" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#212121">Performance-Vergleich: Lesen und Schreiben</text>
+
+  <!-- === READ PERFORMANCE === -->
+  <text x="40" y="52" font-size="14" font-weight="bold" fill="#333">Abfrage-Performance (relativ)</text>
+
+  <!-- Y-axis label -->
+  <text x="30" y="155" text-anchor="middle" font-size="11" fill="#666" transform="rotate(-90,30,155)">schneller ←</text>
+
+  <!-- Bars (horizontal) - Read -->
+  <!-- Relationale Spalte: fastest (bar length 520) -->
+  <rect x="200" y="62" width="520" height="32" rx="4" fill="#4CAF50"/>
+  <text x="192" y="83" text-anchor="end" font-size="12" fill="#333">Rel. Spalte</text>
+  <text x="728" y="83" font-size="12" fill="#1B5E20" font-weight="bold">~1 ms</text>
+
+  <!-- JSONB + GIN: similar (bar length 490) -->
+  <rect x="200" y="104" width="490" height="32" rx="4" fill="#0288D1"/>
+  <text x="192" y="125" text-anchor="end" font-size="12" fill="#333">JSONB + GIN</text>
+  <text x="698" y="125" font-size="12" fill="#01579B" font-weight="bold">~2 ms</text>
+
+  <!-- JSONB ohne Index: slow (bar length 180) -->
+  <rect x="200" y="146" width="180" height="32" rx="4" fill="#FF9800"/>
+  <text x="192" y="167" text-anchor="end" font-size="12" fill="#333">JSONB o. Index</text>
+  <text x="388" y="167" font-size="12" fill="#E65100" font-weight="bold">~80 ms</text>
+
+  <!-- json (text): very slow (bar length 60) -->
+  <rect x="200" y="188" width="60" height="32" rx="4" fill="#EF5350"/>
+  <text x="192" y="209" text-anchor="end" font-size="12" fill="#333">json (Text)</text>
+  <text x="268" y="209" font-size="12" fill="#B71C1C" font-weight="bold">~120 ms</text>
+
+  <!-- Vertical axis line -->
+  <line x1="200" y1="55" x2="200" y2="230" stroke="#9E9E9E" stroke-width="1.5"/>
+  <line x1="200" y1="230" x2="750" y2="230" stroke="#9E9E9E" stroke-width="1.5"/>
+
+  <!-- Seq. Scan label -->
+  <line x1="383" y1="220" x2="383" y2="232" stroke="#9E9E9E" stroke-width="1"/>
+  <text x="383" y="244" text-anchor="middle" font-size="10" fill="#9E9E9E">Seq. Scan Grenze</text>
+
+  <!-- === WRITE PERFORMANCE === -->
+  <text x="40" y="268" font-size="14" font-weight="bold" fill="#333">Schreib-Performance (relativ)</text>
+
+  <!-- Write bars (horizontal) -->
+  <!-- Relationale Spalte -->
+  <rect x="200" y="278" width="480" height="22" rx="3" fill="#4CAF50" opacity="0.8"/>
+  <text x="192" y="293" text-anchor="end" font-size="11" fill="#333">Rel. Spalte</text>
+  <text x="688" y="294" font-size="11" fill="#1B5E20">schnell</text>
+
+  <!-- json -->
+  <rect x="200" y="306" width="460" height="22" rx="3" fill="#78909C" opacity="0.8"/>
+  <text x="192" y="321" text-anchor="end" font-size="11" fill="#333">json</text>
+  <text x="668" y="322" font-size="11" fill="#546E7A">schnell</text>
+
+  <!-- jsonb -->
+  <rect x="200" y="334" width="380" height="22" rx="3" fill="#0288D1" opacity="0.8"/>
+  <text x="192" y="349" text-anchor="end" font-size="11" fill="#333">jsonb</text>
+  <text x="588" y="350" font-size="11" fill="#01579B">mittel (Parsing-Overhead)</text>
+
+  <!-- Write axis line -->
+  <line x1="200" y1="274" x2="200" y2="360" stroke="#9E9E9E" stroke-width="1"/>
+
+  <!-- Note -->
+  <text x="760" y="270" text-anchor="end" font-size="11" fill="#78909C" font-style="italic">* Richtwerte, abhängig von</text>
+  <text x="760" y="284" text-anchor="end" font-size="11" fill="#78909C" font-style="italic">  Datengröße und Hardware</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="350" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#212121">JSON-Zugriffs-Operatoren</text>
+
+  <!-- JSON Document box -->
+  <rect x="40" y="48" width="300" height="130" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="190" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565C0">JSON-Dokument</text>
+  <text x="58" y="90" font-size="13" font-family="monospace" fill="#212121">{</text>
+  <text x="68" y="108" font-size="13" font-family="monospace" fill="#0288D1">  "user"</text>
+  <text x="140" y="108" font-size="13" font-family="monospace" fill="#212121">: "alice",</text>
+  <text x="68" y="126" font-size="13" font-family="monospace" fill="#0288D1">  "items"</text>
+  <text x="143" y="126" font-size="13" font-family="monospace" fill="#212121">: [1, 2, 3],</text>
+  <text x="68" y="144" font-size="13" font-family="monospace" fill="#0288D1">  "total"</text>
+  <text x="143" y="144" font-size="13" font-family="monospace" fill="#212121">: 49.90</text>
+  <text x="58" y="162" font-size="13" font-family="monospace" fill="#212121">}</text>
+
+  <!-- Operators area -->
+  <!-- -> operator -->
+  <rect x="390" y="50" width="370" height="54" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="400" y="71" font-size="13" font-family="monospace" font-weight="bold" fill="#1B5E20">payload -&gt; 'user'</text>
+  <text x="400" y="89" font-size="12" fill="#333">→ "alice"  (jsonb – mit Anführungszeichen)</text>
+  <line x1="340" y1="103" x2="390" y2="77" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ->> operator -->
+  <rect x="390" y="116" width="370" height="54" rx="6" fill="#F3E5F5" stroke="#9C27B0" stroke-width="1.5"/>
+  <text x="400" y="137" font-size="13" font-family="monospace" font-weight="bold" fill="#6A1B9A">payload -&gt;&gt; 'user'</text>
+  <text x="400" y="155" font-size="12" fill="#333">→ alice  (text – ohne Anführungszeichen)</text>
+  <line x1="340" y1="108" x2="390" y2="143" stroke="#9C27B0" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- #> operator -->
+  <rect x="390" y="182" width="370" height="54" rx="6" fill="#FFF3E0" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="400" y="203" font-size="13" font-family="monospace" font-weight="bold" fill="#E65100">payload #&gt; '{items,0}'</text>
+  <text x="400" y="221" font-size="12" fill="#333">→ 1  (jsonb – erstes Array-Element)</text>
+  <line x1="340" y1="126" x2="390" y2="209" stroke="#FF9800" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- @> operator -->
+  <rect x="390" y="248" width="370" height="54" rx="6" fill="#FFEBEE" stroke="#EF5350" stroke-width="1.5"/>
+  <text x="400" y="269" font-size="13" font-family="monospace" font-weight="bold" fill="#B71C1C">payload @&gt; '{"user":"alice"}'</text>
+  <text x="400" y="287" font-size="12" fill="#333">→ true/false  (Containment-Check)</text>
+  <line x1="340" y1="140" x2="390" y2="275" stroke="#EF5350" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ? operator -->
+  <rect x="40" y="198" width="300" height="44" rx="6" fill="#E0F7FA" stroke="#0288D1" stroke-width="1.5"/>
+  <text x="55" y="216" font-size="13" font-family="monospace" font-weight="bold" fill="#006064">payload ? 'items'</text>
+  <text x="55" y="234" font-size="12" fill="#333">→ true  (Key-Existenz)</text>
+
+  <!-- #>> operator -->
+  <rect x="40" y="254" width="300" height="44" rx="6" fill="#F9FBE7" stroke="#9E9D24" stroke-width="1.5"/>
+  <text x="55" y="272" font-size="13" font-family="monospace" font-weight="bold" fill="#827717">payload #&gt;&gt; '{items,0}'</text>
+  <text x="55" y="290" font-size="12" fill="#333">→ "1"  (Pfad als Text)</text>
+</svg>

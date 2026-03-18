@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <!-- json box -->
+  <rect x="40" y="55" width="330" height="220" rx="10" fill="#FFE0B2" stroke="#FF9800" stroke-width="2"/>
+  <text x="205" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#E65100">json</text>
+
+  <!-- json content representation -->
+  <rect x="60" y="94" width="290" height="52" rx="5" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1"/>
+  <text x="70" y="112" font-size="12" font-family="monospace" fill="#333">{"b": 2, "a": 1, "b": 99}</text>
+  <text x="70" y="132" font-size="11" fill="#666">Text exakt wie eingegeben</text>
+
+  <!-- json labels -->
+  <circle cx="72" cy="162" r="5" fill="#FF9800"/>
+  <text x="86" y="167" font-size="13" fill="#333">Textspeicherung</text>
+  <circle cx="72" cy="186" r="5" fill="#FF9800"/>
+  <text x="86" y="191" font-size="13" fill="#333">Reihenfolge der Keys erhalten</text>
+  <circle cx="72" cy="210" r="5" fill="#FF9800"/>
+  <text x="86" y="215" font-size="13" fill="#333">Duplikate möglich</text>
+  <circle cx="72" cy="234" r="5" fill="#EF5350"/>
+  <text x="86" y="239" font-size="13" fill="#EF5350">Kein GIN-Index möglich</text>
+
+  <!-- jsonb box -->
+  <rect x="430" y="55" width="330" height="220" rx="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="595" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">jsonb</text>
+
+  <!-- jsonb binary tree representation -->
+  <rect x="450" y="94" width="290" height="52" rx="5" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+  <!-- mini tree -->
+  <circle cx="595" cy="108" r="10" fill="#4CAF50"/>
+  <text x="595" y="112" text-anchor="middle" font-size="9" fill="white" font-weight="bold">a</text>
+  <circle cx="555" cy="132" r="10" fill="#4CAF50"/>
+  <text x="555" y="136" text-anchor="middle" font-size="9" fill="white" font-weight="bold">b</text>
+  <circle cx="635" cy="132" r="10" fill="#4CAF50"/>
+  <text x="635" y="136" text-anchor="middle" font-size="9" fill="white" font-weight="bold">c</text>
+  <line x1="589" y1="117" x2="563" y2="123" stroke="#2E7D32" stroke-width="1.5"/>
+  <line x1="601" y1="117" x2="627" y2="123" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="680" y="112" font-size="10" fill="#555">Binär</text>
+  <text x="680" y="130" font-size="10" fill="#555">sortiert</text>
+
+  <!-- jsonb labels -->
+  <circle cx="462" cy="162" r="5" fill="#4CAF50"/>
+  <text x="476" y="167" font-size="13" fill="#333">Binärspeicherung</text>
+  <circle cx="462" cy="186" r="5" fill="#4CAF50"/>
+  <text x="476" y="191" font-size="13" fill="#333">Keys sortiert, Duplikate entfernt</text>
+  <circle cx="462" cy="210" r="5" fill="#4CAF50"/>
+  <text x="476" y="215" font-size="13" fill="#333">Schneller beim Lesen/Suchen</text>
+  <circle cx="462" cy="234" r="5" fill="#4CAF50"/>
+  <text x="476" y="239" font-size="13" fill="#1B5E20">GIN-Index möglich ✓</text>
+
+</svg>

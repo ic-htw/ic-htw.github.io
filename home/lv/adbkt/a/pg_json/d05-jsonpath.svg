@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#F5F5F5"/>
+
+  <!-- Title -->
+  <text x="400" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#212121">JSONPath-Ausdrücke – Anatomie</text>
+
+  <!-- JSONPath expression display -->
+  <rect x="40" y="44" width="720" height="52" rx="8" fill="#212121"/>
+
+  <!-- Colored parts of the expression -->
+  <!-- $ -->
+  <rect x="55" y="54" width="28" height="32" rx="4" fill="#EF5350"/>
+  <text x="69" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">$</text>
+  <!-- .orders -->
+  <rect x="88" y="54" width="82" height="32" rx="4" fill="#1565C0"/>
+  <text x="129" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">.orders</text>
+  <!-- [*] -->
+  <rect x="175" y="54" width="44" height="32" rx="4" fill="#FF9800"/>
+  <text x="197" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">[*]</text>
+  <!-- space -->
+  <text x="226" y="75" font-size="18" font-family="monospace" fill="#EEEEEE"> </text>
+  <!-- ? -->
+  <rect x="228" y="54" width="24" height="32" rx="4" fill="#4CAF50"/>
+  <text x="240" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">?</text>
+  <!-- ( -->
+  <text x="258" y="75" font-size="18" font-family="monospace" fill="#EEEEEE">(</text>
+  <!-- @.val -->
+  <rect x="272" y="54" width="62" height="32" rx="4" fill="#9C27B0"/>
+  <text x="303" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">@.val</text>
+  <!-- > 100 -->
+  <rect x="339" y="54" width="76" height="32" rx="4" fill="#78909C"/>
+  <text x="377" y="75" text-anchor="middle" font-size="18" font-weight="bold" font-family="monospace" fill="white">&gt; 100</text>
+  <!-- ) -->
+  <text x="421" y="75" font-size="18" font-family="monospace" fill="#EEEEEE">)</text>
+
+  <!-- Annotations below the expression -->
+  <!-- $ annotation -->
+  <line x1="69" y1="88" x2="69" y2="115" stroke="#EF5350" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="20" y="116" width="98" height="30" rx="4" fill="#EF5350"/>
+  <text x="69" y="135" text-anchor="middle" font-size="11" fill="white" font-weight="bold">$ = Root-Element</text>
+
+  <!-- .orders annotation -->
+  <line x1="129" y1="88" x2="129" y2="155" stroke="#1565C0" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="84" y="156" width="90" height="30" rx="4" fill="#1565C0"/>
+  <text x="129" y="175" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Objektzugriff</text>
+
+  <!-- [*] annotation -->
+  <line x1="197" y1="88" x2="197" y2="115" stroke="#FF9800" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="154" y="116" width="86" height="30" rx="4" fill="#FF9800"/>
+  <text x="197" y="135" text-anchor="middle" font-size="11" fill="white" font-weight="bold">alle Array-Elemente</text>
+
+  <!-- ? annotation -->
+  <line x1="240" y1="88" x2="240" y2="155" stroke="#4CAF50" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="201" y="156" width="78" height="30" rx="4" fill="#4CAF50"/>
+  <text x="240" y="175" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Filter-Operator</text>
+
+  <!-- @.val annotation -->
+  <line x1="303" y1="88" x2="303" y2="115" stroke="#9C27B0" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="252" y="116" width="102" height="30" rx="4" fill="#9C27B0"/>
+  <text x="303" y="135" text-anchor="middle" font-size="11" fill="white" font-weight="bold">@ = akt. Element</text>
+
+  <!-- > 100 annotation -->
+  <line x1="377" y1="88" x2="377" y2="155" stroke="#78909C" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="330" y="156" width="94" height="30" rx="4" fill="#78909C"/>
+  <text x="377" y="175" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Vergleichsausdruck</text>
+
+  <!-- JSON Document example -->
+  <rect x="480" y="44" width="285" height="130" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="622" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Beispiel-Dokument</text>
+  <text x="493" y="80" font-size="11" font-family="monospace" fill="#212121">{"orders": [</text>
+  <text x="503" y="97" font-size="11" font-family="monospace" fill="#333">  {"id": 1, "val": 120},</text>
+  <text x="503" y="114" font-size="11" font-family="monospace" fill="#333">  {"id": 2, "val": 80}</text>
+  <text x="493" y="131" font-size="11" font-family="monospace" fill="#212121">]}</text>
+
+  <!-- Result -->
+  <rect x="493" y="144" width="260" height="24" rx="4" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="503" y="160" font-size="12" font-family="monospace" fill="#1B5E20">→ [{"id": 1, "val": 120}]</text>
+
+  <!-- Result boxes -->
+  <rect x="40" y="210" width="720" height="74" rx="8" fill="white" stroke="#CFD8DC" stroke-width="1.5"/>
+  <text x="60" y="230" font-size="13" font-weight="bold" fill="#333">JSONPath-Funktionen:</text>
+  <text x="60" y="252" font-size="12" font-family="monospace" fill="#1565C0">jsonb_path_query(doc, path)</text>
+  <text x="310" y="252" font-size="12" fill="#555">→ alle passenden Elemente als Zeilen</text>
+  <text x="60" y="272" font-size="12" font-family="monospace" fill="#FF9800">jsonb_path_query_array(doc, path)</text>
+  <text x="310" y="272" font-size="12" fill="#555">→ alle Ergebnisse als JSON-Array</text>
+  <text x="555" y="252" font-size="12" font-family="monospace" fill="#4CAF50">jsonb_path_exists()</text>
+  <text x="555" y="272" font-size="12" font-family="monospace" fill="#9C27B0">jsonb_path_query_first()</text>
+</svg>
