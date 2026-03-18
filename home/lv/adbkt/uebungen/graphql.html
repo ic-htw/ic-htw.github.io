@@ -18,7 +18,7 @@ is_slide: 0
 <div class="w3-center"><img  class="w3-image" src="/home/lv/adbkt/a/graph-ql/100-100.png"></div>
 
 <p class="w3-large">
-    Konkret besteht ihr Aufgabe darin, in Python folgende Funktion zu implementieren:
+    Konkret besteht ihre Aufgabe darin, in Python folgende Funktion zu implementieren:
     <pre><code class="python">def gql_to_json(gql: AST) -> str</code></pre>
 </p>
 <p class="w3-large">
@@ -49,109 +49,14 @@ class AST():
     </tr>
 </table>
   
-<h2>Notebook Preview</h2>
-<ul class="w3-large">
-  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
-</ul>
-
 <h2>Notebook</h2>
 <ul class="w3-large">
-  <li>Download (<a href="/home/lv/adbkt/a-ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
-  <li>Upload</li>
+  <li>Render (<a href="https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a_ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
+  <li>Download (<a href="/home/lv/adbkt/a_ipynb/graphql.ipynb">graphql.ipynb</a>)</li>
 </ul>
 
-<h2>Beispielabfragen</h2>
-<p class="w3-large">
-    Im Folgenden finden sie eine Reihe von Beispielabfragen, die für ihren Code als Test dienen sollen.
-</p>
-
-
-<table class="w3-table-all">
-  <tr>
-      <th>Abfrage</th>
-      <th>Bedeutung</th>
-  </tr>
-  <tr>
-      <td>Beispiel 01
-      <pre><code class="graphql">t1 {
-    a
-}</code></pre></td>
-      <td>Alle Objekte aus Tabelle "t1". Es soll nur Spalte "a" ausgegeben werden.</td>
-  </tr>
-
-<tr>
-    <td>Beispiel 02
-    <pre><code class="graphql">t1 (a: 'a1') {
-    a
-    b
-}</code></pre></td>
-    <td>Wie Beispiel 01. Es sollen aber nur Objekte ausgegeben werden, bei denen die Spalte "a" den Wert 'a1' hat.</td>
-</tr>
-
-<tr>
-  <td>Beispiel 03
-  <pre><code class="graphql">t1 (a: 'a1') {
-    a
-    b
-    t2 {
-        c
-        d
-    }
-}</code></pre></td>
-  <td>Wie Beispiel 02. Es sollen zusätzlich alle "t2"-Objekte ausgegeben  werden, die mit den "t1"-Objekten verbunden sind.</td>
-</tr>
-
-<tr>
-  <td>Beispiel 04
-  <pre><code class="graphql">t1 (a: 'a1') {
-    a
-    b
-    t2 (d: 'd12') {
-        c
-        d
-    }
-}</code></pre></td>
-  <td>Wie Beispiel 03. Die verbundenen Objekte sollen gefiltert werden, die Spalte "d" soll den Wert 'd12' haben.</td>
-</tr>
-
-<tr>
-  <td>Beispiel 05
-  <pre><code class="graphql">t1 (a: 'a1') {
-    a
-    b
-    t2 (d: 'd12') {
-        c
-        d
-        t3 {
-            e
-            f
-        }
-    }
-}</code></pre></td>
-  <td>Wie Beispiel 04. Es soll eine weitere Ebene mit den verbundenen "t3"-Objekten ausgegeben werden</td>
-</tr>
-
-<tr>
-  <td>Beispiel 06
-  <pre><code class="graphql">t1 (a: 'a1') {
-    a
-    b
-    t2 (d: 'd12') {
-        c
-        d
-        t3 (f: 'f103') {
-            e
-            f
-        }
-    }
-}</code></pre></td>
-  <td>Wie Beispiel 05. Die verbundenen "t3"-Objekte sollen gefiltert werden, die Spalte "f" soll den Wert 'f103' haben.</td>
-</tr>
-</table>
-
-
 <h2>Tabellen</h2>
-<p class="w3-large">Zum Testen werde folgenden Beispieldaten bereitgestellt.</p>
+<p class="w3-large">Zum Testen werden folgenden Beispieldaten bereitgestellt.</p>
 
 <table class="w3-table-all">
   <tr>
@@ -166,13 +71,16 @@ class AST():
   </tr>
 </table>
 
-<h2>Auswertungsbeispiele</h2>
-<p class="w3-large">Hier werden die Ergebnisse angegeben, die ihr Code bei der jeweiligen Abfrage liefern soll.</p>
+<h2>Beispielabfragen</h2>
+<p class="w3-large">
+    Im Folgenden finden sie eine Reihe von Beispielabfragen, die für ihren Code als Test dienen sollen.
+</p>
 
 
 <table class="w3-table-all">
   <tr>
       <th>Abfrage</th>
+      <th>Bedeutung</th>
       <th>Erwartetes JSON-Ergebnis</th>
   </tr>
   <tr>
@@ -180,6 +88,7 @@ class AST():
       <pre><code class="graphql">t1 {
     a
 }</code></pre></td>
+      <td>Alle Objekte aus Tabelle "t1". Es soll nur Spalte "a" ausgegeben werden.</td>
       <td>    <pre><code class="json">[
       {
           "a": "a1"
@@ -196,6 +105,9 @@ class AST():
     a
     b
 }</code></pre></td>
+    <td>Alle Objekte aus Tabelle "t1", bei denen die Spalte "a" den Wert 'a1' hat.
+Es sollen die Spalten "a" und "b" ausgegeben werden.
+    </td>
     <td>    <pre><code class="json">[
     {
         "a": "a1",
@@ -214,6 +126,7 @@ class AST():
         d
     }
 }</code></pre></td>
+  <td>Wie Beispiel 02. Es sollen zusätzlich alle "t2"-Objekte ausgegeben  werden, die mit den "t1"-Objekten verbunden sind.</td>
   <td>    <pre><code class="json">[
     {
         "a": "a1",
@@ -242,6 +155,7 @@ class AST():
         d
     }
 }</code></pre></td>
+  <td>Wie Beispiel 03. Die verbundenen Objekte sollen gefiltert werden, die Spalte "d" soll den Wert 'd12' haben.</td>
   <td>    <pre><code class="json">[
     {
         "a": "a1",
@@ -270,6 +184,7 @@ class AST():
         }
     }
 }</code></pre></td>
+  <td>Wie Beispiel 04. Es soll eine weitere Ebene mit den verbundenen "t3"-Objekten ausgegeben werden</td>
   <td>    <pre><code class="json">[
     {
         "a": "a1",
@@ -308,6 +223,7 @@ class AST():
         }
     }
 }</code></pre></td>
+  <td>Wie Beispiel 05. Die verbundenen "t3"-Objekte sollen gefiltert werden, die Spalte "f" soll den Wert 'f103' haben.</td>
   <td>    <pre><code class="json">[
     {
         "a": "a1",
@@ -328,6 +244,7 @@ class AST():
 ]</code></pre></td>
 </tr>
 </table>
+
 
 <h2>Hinweise zur Lösung</h2>
 <p class="w3-large ic-neg15">Gehen sie bei der Implementierung wie folgt vor:</p>
