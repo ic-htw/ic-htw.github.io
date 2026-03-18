@@ -6,12 +6,15 @@ is_slide: 0
 ---
 
 ---
+# Vorbemerkung
+Alle Zugriffe nur im Intranet: entweder an der HTW oder über VPN
+
+---
 # Arbeiten mit dem Portainer
 
 ## Einloggen
-- Nur im Intranet: entweder an der HTW oder über VPN
 - Host, Userid und Passwort werden in der LV bekannt gegeben
-- <code>https://xxx.f4.htw-berlin.de:9443/</code>
+- <code>https://aaa.f4.htw-berlin.de:9443/</code>
 
 ## Environment "local" auswählen
 - Auf "local" klicken
@@ -32,6 +35,7 @@ is_slide: 0
 ---
 # Postgres 
 ## Container erstellen
+Achtung: Passwort vergeben
 ```yaml
 networks:
   adbkt:
@@ -44,10 +48,19 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: htw-bln-pg
+      POSTGRES_PASSWORD: 
     networks:
       - adbkt
 ```
+
+## Per DBeaver auf Datenbank zugreifen
+- DBeaver Download [(link)](https://dbeaver.io/download/)
+- Passwort wie vorher vergeben
+- Creds
+  - user: postgres
+  - password: 
+  - host: aaa.f4.htw-berlin.de:5432
+  - database: postgres
 
 ---
 # Python 
@@ -99,12 +112,15 @@ Paste mit CTRL-SHIFT-V
 
 ## Per Python auf Postgres zugreifen
 Neues Notebook anlegen. Code in erste Zelle kopieren.
+
+Achtung: Passwort eintragen, wie vorher vergeben
+
 ```python
 import psycopg
 
 conninfo = " ".join([
 "user='postgres'",
-"password='htw-bln-pg'",
+"password=''",
 "host='pg'",
 "port=5432",
 "dbname='postgres'"])
