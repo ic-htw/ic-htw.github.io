@@ -1,0 +1,296 @@
+---
+layout: default1
+nav: adbkt-uebungen
+title: Übung Postgres JSON - ADBKT
+is_slide: 0
+---
+
+<h1>Übung Postgres JSON</h1>
+
+
+<h2>Tabellendefinition</h2>
+<pre><code class="language-sql">CREATE TABLE bestellungen (
+  id       SERIAL PRIMARY KEY,
+  erstellt TIMESTAMPTZ DEFAULT now(),
+  daten    JSONB
+);</code></pre>
+
+<h2>Testdaten</h2>
+<pre><code class="language-sql">INSERT INTO bestellungen (daten) VALUES
+  ('{"kunde":"Alice","stadt":"Wien",
+    "artikel":[
+      {"name":"Laptop",    "preis":999.00, "menge":1},
+      {"name":"Maus",      "preis":29.90,  "menge":2}
+    ],
+    "status":"geliefert","gesamt":1058.80}');
+
+INSERT INTO bestellungen (daten) VALUES
+  ('{"kunde":"Bob","stadt":"Berlin",
+    "artikel":[
+      {"name":"Monitor",   "preis":349.00, "menge":1}
+    ],
+    "status":"offen","gesamt":349.00,"gutschein":true}');
+
+INSERT INTO bestellungen (daten) VALUES
+  ('{"kunde":"Clara","stadt":"Wien",
+    "artikel":[
+      {"name":"Tastatur",  "preis":89.90,  "menge":1},
+      {"name":"Headset",   "preis":59.90,  "menge":1}
+    ],
+    "status":"geliefert","gesamt":149.80}');
+
+INSERT INTO bestellungen (daten) VALUES
+  ('{"kunde":"David","stadt":"Hamburg",
+    "artikel":[
+      {"name":"Laptop",    "preis":1199.00,"menge":1},
+      {"name":"Laptop-Tasche","preis":49.90,"menge":1}
+    ],
+    "status":"storniert","gesamt":1248.90}');
+
+INSERT INTO bestellungen (daten) VALUES
+  ('{"kunde":"Eva","stadt":"Berlin",
+    "artikel":[
+      {"name":"Maus",      "preis":29.90,  "menge":3}
+    ],
+    "status":"offen","gesamt":89.70,"gutschein":false}');</code></pre>
+
+<hr>
+
+<h2>Aufgaben</h2>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #1565C0">
+<h3 style="color:#1565C0">Aufgabe 1 &nbsp;·&nbsp; Kundennamen ausgeben</h3>
+<p class="w3-large">
+    Gib für alle Bestellungen die <strong>id</strong> und den <strong>Kundennamen</strong>
+    als einfachen Textwert aus.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis (Ausschnitt):</strong></p>
+<pre><code class="language-plaintext"> id | kunde
+----+-------
+  1 | Alice
+  2 | Bob
+  ...</code></pre>
+<p><em>Hinweis: Welcher Operator liefert einen Textwert statt eines JSON-Werts?</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #2E7D32">
+<h3 style="color:#2E7D32">Aufgabe 2 &nbsp;·&nbsp; Artikel-Array lesen</h3>
+<p class="w3-large">
+    Gib für jede Bestellung die <strong>id</strong> und den Wert des Feldes
+    <code>artikel</code> als <strong>JSONB-Wert</strong> aus.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis (Ausschnitt):</strong></p>
+<pre><code class="language-plaintext"> id | artikel
+----+----------------------------------------------------------
+  1 | [{"menge": 1, "name": "Laptop", "preis": 999.00}, ...]
+  ...</code></pre>
+<p><em>Hinweis: <code>-&gt;</code> gibt JSON/JSONB zurück, <code>-&gt;&gt;</code> gibt Text zurück.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #E65100">
+<h3 style="color:#E65100">Aufgabe 3 &nbsp;·&nbsp; Ersten Artikelnamen lesen</h3>
+<p class="w3-large">
+    Gib für jede Bestellung den <strong>Namen des ersten Artikels</strong>
+    (Index 0) als Text aus.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> id | erster_artikel
+----+----------------
+  1 | Laptop
+  2 | Monitor
+  3 | Tastatur
+  4 | Laptop
+  5 | Maus</code></pre>
+<p><em>Hinweis: Nutze den Pfad-Operator <code>#&gt;&gt;</code> mit dem Pfad-Array <code>'{artikel,0,name}'</code>.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #7B1FA2">
+<h3 style="color:#7B1FA2">Aufgabe 4 &nbsp;·&nbsp; Offene Bestellungen filtern</h3>
+<p class="w3-large">
+    Gib alle Bestellungen aus, deren <strong>Status</strong> gleich
+    <code>'offen'</code> ist.
+    Zeige Kundename und Gesamtbetrag.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> kunde | gesamt
+-------+--------
+ Bob   | 349.00
+ Eva   |  89.70</code></pre>
+<p><em>Hinweis: <code>-&gt;&gt;</code> in der WHERE-Klausel vergleicht als Text.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #00695C">
+<h3 style="color:#00695C">Aufgabe 5 &nbsp;·&nbsp; Bestellungen aus Wien (Containment)</h3>
+<p class="w3-large">
+    Gib alle Bestellungen aus, die aus der Stadt <strong>Wien</strong> stammen.
+    Verwende den <strong>Containment-Operator</strong> <code>@&gt;</code>.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> id | kunde
+----+-------
+  1 | Alice
+  3 | Clara</code></pre>
+<p><em>Hinweis: <code>daten @&gt; '{"stadt":"Wien"}'</code> prüft ob das JSON-Objekt dieses Key-Value-Paar enthält.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #F57F17">
+<h3 style="color:#F57F17">Aufgabe 6 &nbsp;·&nbsp; Bestellungen mit Gutschein-Feld</h3>
+<p class="w3-large">
+    Gib alle Bestellungen aus, in denen das Feld <code>gutschein</code>
+    <strong>vorhanden</strong> ist (unabhängig vom Wert true/false).
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> id | kunde | gutschein
+----+-------+-----------
+  2 | Bob   | true
+  5 | Eva   | false</code></pre>
+<p><em>Hinweis: Der Operator <code>?</code> prüft, ob ein Key im JSON-Objekt existiert.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #880E4F">
+<h3 style="color:#880E4F">Aufgabe 7 &nbsp;·&nbsp; Hohe Bestellsummen</h3>
+<p class="w3-large">
+    Gib alle Bestellungen aus, bei denen der Gesamtbetrag
+    <strong>größer als 500</strong> ist.
+    Sortiere absteigend nach Gesamtbetrag.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> kunde | gesamt
+-------+---------
+ David | 1248.90
+ Alice | 1058.80</code></pre>
+<p><em>Hinweis: Das Feld <code>gesamt</code> ist ein JSON-Textwert – für numerische Vergleiche muss ein Cast auf <code>::numeric</code> erfolgen.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #4A148C">
+<h3 style="color:#4A148C">Aufgabe 8 &nbsp;·&nbsp; Status aktualisieren</h3>
+<p class="w3-large">
+    Setze den Status der Bestellung von <strong>Bob</strong> (id = 2)
+    auf <code>'versendet'</code>.
+    Verwende <code>jsonb_set</code>.
+    Prüfe danach das Ergebnis mit einer SELECT-Abfrage.
+</p>
+<p class="w3-large"><strong>Ergebnis nach dem UPDATE:</strong></p>
+<pre><code class="language-plaintext"> id | status
+----+-----------
+  2 | versendet</code></pre>
+<p><em>Hinweis: <code>jsonb_set(daten, '{status}', '"versendet"')</code> – der neue Wert muss gültiges JSON sein, also mit inneren Anführungszeichen für Strings.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #01579B">
+<h3 style="color:#01579B">Aufgabe 9 &nbsp;·&nbsp; Artikel-Array entpacken</h3>
+<p class="w3-large">
+    Gib alle Artikel aus <strong>allen Bestellungen</strong> als einzelne Zeilen aus.
+    Zeige den Bestellungs-<code>id</code>, Artikelname, Preis und Menge.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis (Ausschnitt):</strong></p>
+<pre><code class="language-plaintext"> id | name          | preis   | menge
+----+---------------+---------+-------
+  1 | Laptop        |  999.00 |     1
+  1 | Maus          |   29.90 |     2
+  2 | Monitor       |  349.00 |     1
+  ...</code></pre>
+<p><em>Hinweis: <code>jsonb_array_elements(daten-&gt;'artikel')</code> liefert jedes Array-Element als eigene Zeile.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<div class="w3-card w3-round w3-margin-top w3-padding" style="border-left: 6px solid #BF360C">
+<h3 style="color:#BF360C">Aufgabe 10 &nbsp;·&nbsp; Anzahl Bestellungen pro Stadt</h3>
+<p class="w3-large">
+    Zähle, wie viele Bestellungen pro <strong>Stadt</strong> vorliegen.
+    Sortiere absteigend nach Anzahl.
+</p>
+<p class="w3-large"><strong>Erwartetes Ergebnis:</strong></p>
+<pre><code class="language-plaintext"> stadt   | anzahl
+---------+--------
+ Wien    |      2
+ Berlin  |      2
+ Hamburg |      1</code></pre>
+<p><em>Hinweis: <code>daten-&gt;&gt;'stadt'</code> extrahiert den Stadtnamen als Text – dann kann darauf gruppiert werden.</em></p>
+</div>
+
+<!--
+<hr>
+
+<h2>Musterlösungen</h2>
+
+<div class="w3-panel w3-pale-yellow w3-round">
+    <p class="w3-large"><strong>Hinweis:</strong> Erst selbst versuchen, dann Lösung aufklappen!</p>
+</div>
+
+<details>
+<summary class="w3-large w3-btn w3-blue-gray" style="cursor:pointer; padding:8px 16px">
+    Musterlösungen anzeigen
+</summary>
+
+<pre><code class="language-sql">-- Aufgabe 1: Kundennamen als Text
+SELECT id, daten->>'kunde' AS kunde
+FROM bestellungen;
+
+-- Aufgabe 2: Artikel-Array als JSONB
+SELECT id, daten->'artikel' AS artikel
+FROM bestellungen;
+
+-- Aufgabe 3: Name des ersten Artikels
+SELECT id, daten #>> '{artikel,0,name}' AS erster_artikel
+FROM bestellungen;
+
+-- Aufgabe 4: Offene Bestellungen
+SELECT daten->>'kunde' AS kunde,
+       (daten->>'gesamt')::numeric AS gesamt
+FROM bestellungen
+WHERE daten->>'status' = 'offen';
+
+-- Aufgabe 5: Bestellungen aus Wien (Containment)
+SELECT id, daten->>'kunde' AS kunde
+FROM bestellungen
+WHERE daten @> '{"stadt":"Wien"}';
+
+-- Aufgabe 6: Bestellungen mit Gutschein-Feld
+SELECT id,
+       daten->>'kunde'   AS kunde,
+       daten->>'gutschein' AS gutschein
+FROM bestellungen
+WHERE daten ? 'gutschein';
+
+-- Aufgabe 7: Gesamtbetrag > 500
+SELECT daten->>'kunde'          AS kunde,
+       (daten->>'gesamt')::numeric AS gesamt
+FROM bestellungen
+WHERE (daten->>'gesamt')::numeric > 500
+ORDER BY gesamt DESC;
+
+-- Aufgabe 8: Status aktualisieren
+UPDATE bestellungen
+SET daten = jsonb_set(daten, '{status}', '"versendet"')
+WHERE id = 2;
+
+SELECT id, daten->>'status' AS status
+FROM bestellungen WHERE id = 2;
+
+-- Aufgabe 9: Artikel entpacken
+SELECT b.id,
+       a->>'name'             AS name,
+       (a->>'preis')::numeric AS preis,
+       (a->>'menge')::int     AS menge
+FROM bestellungen b,
+     jsonb_array_elements(b.daten->'artikel') AS a;
+
+-- Aufgabe 10: Bestellungen pro Stadt
+SELECT daten->>'stadt' AS stadt,
+       count(*)        AS anzahl
+FROM bestellungen
+GROUP BY stadt
+ORDER BY anzahl DESC;</code></pre>
+
+</details>
+-->

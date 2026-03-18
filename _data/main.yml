@@ -315,6 +315,9 @@ home: &r
                   - t:  DynamoDB - TourDelight
                     ts: DynamoDB - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight-dynamodb.html
+                  - t: Postgres JSON
+                    ts: Postgres JSON
+                    url: /home/lv/adbkt/uebungen/pg-json.html
                   - t: GraphQL
                     ts: GraphQL
                     url: /home/lv/adbkt/uebungen/graphql.html
