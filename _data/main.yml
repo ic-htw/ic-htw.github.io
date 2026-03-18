@@ -251,8 +251,8 @@ home: &r
                   - t: Dokumentendatenbanken
                     ts: Dokumentendatenbanken
                     url: /home/lv/adbkt/vorlesungen/docdb.html
-                  - t:  PostgreSQL JSON
-                    ts:  PostgreSQL JSON
+                  - t:  Postgres JSON
+                    ts:  Postgres JSON
                     url: /home/lv/adbkt/vorlesungen/pg_json.html
                   - t: Neo4j
                     ts: Neo4j
