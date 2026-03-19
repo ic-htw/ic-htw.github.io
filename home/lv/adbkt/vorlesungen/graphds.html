@@ -1,0 +1,286 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Neo4j GDS Algorithmen - ADBKT
+is_slide: 1
+n: 15
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Graph Data Science</h1>
+<h2>Graph Data Science: Pipeline</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/d01-gds-overview.svg">
+
+<h2>Neo4j Graph Data Science</h2>
+<p class="w3-large ic-neg15">Algorithmen-Ausprägungen</p>
+<ul class="w3-large">
+    <li><strong>stream</strong> &ndash; Liefert ein Ergebnis wie eine normale Cypher Query</li>
+    <li><strong>mutate</strong> &ndash; Schreibt Ergebnisse in den In-Memory Graph</li>
+    <li><strong>write</strong> &ndash; Schreibt Ergebnisse in die Neo4j-Datenbank</li>
+</ul>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p1_1.jpeg">
+</div>
+
+<p class="w3-large">(<a href="https://neo4j.com/docs/graph-data-science/current/">Neo4j-Dokumentation</a>)</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Shortest Path &ndash; Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p2_1.jpeg">
+<p class="w3-large">(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/">Dijkstra Source-Target</a>)</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Shortest Path &ndash; Hops</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p3_1.jpeg">
+
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (n1:Node {l: '101'}), (n2:Node {l: '107'})
+CALL gds.shortestPath.dijkstra.stream('g', {
+   sourceNode: n1,
+   targetNode: n2
+})
+YIELD index, sourceNode, targetNode,
+      totalCost, nodeIds, costs, path
+WITH [nodeId IN nodeIds |
+      gds.util.asNode(nodeId).nid] AS p
+UNWIND p AS nid
+RETURN nid;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <p class="w3-small">&nbsp;</p>
+        <table class="w3-table-all w3-small" style="width:auto">
+            <tr><th>nid</th></tr>
+            <tr><td>101</td></tr>
+            <tr><td>102</td></tr>
+            <tr><td>108</td></tr>
+            <tr><td>109</td></tr>
+            <tr><td>106</td></tr>
+            <tr><td>107</td></tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Shortest Path &ndash; Weight</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p4_1.jpeg">
+<div class="w3-row-padding">
+    <div class="w3-col m8">
+        <pre><code class="cypher">MATCH (n1:Node {l: '101'}), (n2:Node {l: '107'})
+CALL gds.shortestPath.dijkstra.stream('g', {
+   sourceNode: n1,
+   targetNode: n2,
+   relationshipWeightProperty: 'w'
+})
+YIELD index, sourceNode, targetNode,
+      totalCost, nodeIds, costs, path
+WITH [nodeId IN nodeIds |
+      gds.util.asNode(nodeId).nid] AS p
+UNWIND p AS nid
+RETURN nid;</code></pre>
+    </div>
+    <div class="w3-col m4">
+        <table class="w3-table-all w3-small" style="width:auto">
+            <tr><th>nid</th></tr>
+            <tr><td>101</td></tr>
+            <tr><td>102</td></tr>
+            <tr><td>110</td></tr>
+            <tr><td>111</td></tr>
+            <tr><td>103</td></tr>
+            <tr><td>104</td></tr>
+            <tr><td>105</td></tr>
+            <tr><td>106</td></tr>
+            <tr><td>107</td></tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Minimum Weight Spanning Tree &ndash; Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p5_1.jpeg">
+<p class="w3-large">(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/minimum-weight-spanning-tree/">Dokumentation</a>)</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Minimum Weight Spanning Tree &ndash; Solution</h1>
+<ul class="w3-large">
+    <li>Ursprungsgraph hat Kantentyp <code>Edge</code></li>
+    <li>Neue Kanten zum Kantentyp <code>Edge1</code> werden angelegt (schreibt in den Graphen)</li>
+</ul>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <pre><code class="cypher">MATCH (n:Node {nid: 201})
+CALL gds.alpha.spanningTree.minimum.write('g', {
+   startNodeId: id(n),
+   relationshipWeightProperty: 'w',
+   writeProperty: 'Edge1',
+   weightWriteProperty: 'w'
+})
+YIELD effectiveNodeCount
+RETURN effectiveNodeCount;</code></pre>
+        <p class="w3-large">Graph mit <code>Edge1</code> wird ausgelesen und angezeigt.</p>
+    </div>
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p6_1.jpeg">
+    </div>
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Centrality &ndash; Graph</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p7_1.jpeg">
+        <p class="w3-large"><strong>Closeness Centrality</strong>
+            (<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/closeness-centrality/">Doku</a>)</p>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p7_2.jpeg">
+        <ul class="w3-large">
+            <li><code>u</code> &ndash; Knoten</li>
+            <li><code>n</code> &ndash; Anzahl Knoten</li>
+            <li><code>d(u,v)</code> &ndash; Distanz des kürzesten Pfades zwischen u und v</li>
+        </ul>
+        <p class="w3-large"><strong>Betweenness Centrality</strong>
+            (<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/betweenness-centrality/">Doku</a>)</p>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p7_3.jpeg">
+        <ul class="w3-large">
+            <li><code>u</code> &ndash; Knoten</li>
+            <li><code>p</code> &ndash; Anzahl der kürzesten Pfade zwischen s und t</li>
+            <li><code>p(u)</code> &ndash; Anzahl der kürzesten Pfade zwischen s und t, die u enthalten</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Closeness Centrality &ndash; Solution</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p8_1.jpeg">
+        <pre><code class="cypher">CALL gds.alpha.closeness.stream('g')
+YIELD nodeId, centrality
+RETURN gds.util.asNode(nodeId).nid AS nid,
+       centrality AS cc
+ORDER BY cc DESC;</code></pre>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p8_2.jpeg">
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Betweenness Centrality &ndash; Solution</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p9_1.jpeg">
+        <pre><code class="cypher">CALL gds.betweenness.stream('g')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).nid AS nid,
+       score AS bc
+ORDER BY score DESC;</code></pre>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p9_2.jpeg">
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Pagerank &ndash; Graph 1</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p10_1.jpeg">
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p10_2.jpeg">
+<p class="w3-large">(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/page-rank/">Dokumentation</a>)</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Pagerank &ndash; Solution 1</h1>
+        <pre><code class="cypher">CALL gds.pageRank.stream('g')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).nid AS nid,
+       score
+ORDER BY score DESC;</code></pre>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p11_1.jpeg">
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Pagerank &ndash; Graph 2</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p12_1.jpeg">
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Pagerank &ndash; Solution 2</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p13_1.jpeg">
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Strongly Connected Components &ndash; Graph</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p14_1.jpeg">
+<p class="w3-large">(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/strongly-connected-components/">Dokumentation</a>)</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Strongly Connected Components &ndash; Solution</h1>
+        <pre><code class="cypher">CALL gds.alpha.scc.stream('g')
+YIELD nodeId, componentId
+RETURN gds.util.asNode(nodeId).nid AS nid,
+       componentId AS cid
+ORDER BY cid;</code></pre>
+        <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p15_1.jpeg">
+<div class="ic-gap"></div>

@@ -274,7 +274,7 @@ home: &r
                     url: /home/lv/adbkt/vorlesungen/cypher-sp.html
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
-                    url: /home/lv/adbkt/a/graph/gds.pdf
+                    url: /home/lv/adbkt/vorlesungen/graphds.html
                   - t: Rekursive Abfragen
                     ts: Rekursive Abfragen
                     url: /home/lv/adbkt/a/sql/rec.pdf
