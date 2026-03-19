@@ -224,6 +224,140 @@ session.shutdown()
 cluster.shutdown()
 ```
 
+# Neo4j
+## Container erstellen
+Achtung: Passwort vergeben, siehe Code: ```NEO4J_AUTH=neo4j/<---hier das passwort```
+
+```yaml
+networks:
+  adbkt:
+    external: true
+
+services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=neo4j/
+      - NEO4J_server_memory_heap_initial__size=500M 
+      - NEO4J_server_memory_heap_max__size=500M 
+      - NEO4J_server_memory_pagecache_size=500M 
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+```
+
+## Auf Neo4j-Browser zugreifen
+```
+http://aaa.f4.htw-berlin.de:7474
+```
+
+## Alle Daten löschen
+```cypher
+MATCH (x) DETACH DELETE x;
+```
+
+## UBahn-Daten laden
+Passwort setzen, siehe Code: ```neo4j_auth = ("neo4j", "hier das passwort")```
+
+```python
+import duckdb
+from neo4j import GraphDatabase
+
+parquet_url = "https://raw.githubusercontent.com/ic-htw/data/main/parquet/bubahn"
+
+def load_df(table_name):
+    return duckdb.query(f"SELECT * FROM '{parquet_url}/{table_name}.parquet'").to_df()
+
+df_haltestelle = load_df("haltestelle")
+df_segment = load_df("segment")
+df_linie = load_df("linie")
+df_unterlinie = load_df("unterlinie")
+df_abschnitt = load_df("abschnitt")
+
+neo4j_host = "neo4j://widb000l.f4.htw-berlin.de:7687"
+neo4j_auth = ("neo4j", "")
+
+cypher_create_stop = 'CREATE (h:Haltestelle {hid: $hid, bez: $bez, lat:$lat, lng:$lng})'
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_haltestelle.itertuples(index=False):
+            session.run(cypher_create_stop, hid=r.HID, bez=r.BEZ, lat=r.LAT, lng=r.LNG)
+
+cypher_create_linie = 'CREATE (l:Linie {lid: $lid, bez: $bez})'
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_linie.itertuples(index=False):
+            session.run(cypher_create_linie, lid=r.LID, bez=r.BEZ)
+
+cypher_create_segment = '''
+MATCH (ha:Haltestelle), (hb:Haltestelle)
+WHERE ha.hid=$hid_a AND hb.hid=$hid_b
+CREATE (s:Segment {hid_a: ha.hid, hid_b: hb.hid, laengeInMeter: $laengeInMeter})
+CREATE (s) -[:ProjSegA]-> (ha)
+CREATE (s) -[:ProjSegB]-> (hb)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_segment.itertuples(index=False):
+            session.run(cypher_create_segment, hid_a=r.hid_a, hid_b=r.hid_b, laengeInMeter=r.laenge_in_meter)
+
+
+cypher_create_unterlinie = '''
+MATCH (l:Linie)
+WHERE l.lid=$lid
+CREATE (ul:Unterlinie {ulid: $ulid})
+CREATE (ul) -[:InL]-> (l)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_unterlinie.itertuples(index=False):
+            session.run(cypher_create_unterlinie, ulid=r.ULID, lid=r.LID)
+
+
+cypher_create_abschnitt = '''
+MATCH (ha:Haltestelle), (hb:Haltestelle), (ul:Unterlinie)
+WHERE ha.hid=$hid_a AND hb.hid=$hid_b AND ul.ulid=$ulid
+CREATE (a:Abschnitt {nr: $nr, haelt: $haelt})
+CREATE (a) -[:InUL]-> (ul)
+CREATE (a) -[:ProjAbA]-> (ha)
+CREATE (a) -[:ProjAbB]-> (hb)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_abschnitt.itertuples(index=False):
+            session.run(cypher_create_abschnitt, ulid=r.ULID, nr=r.NR, hid_a=r.HID_A, hid_b=r.HID_B, haelt=r.HAELT)
+
+```
+
+## Graphprojektion
+### Anlegen
+
+```cypher
+MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-(hb:Haltestelle)
+WITH gds.graph.project(
+    'bubahn',
+    ha,
+    hb,
+    {relationshipProperties: s{.laengeInMeter}},
+    {undirectedRelationshipTypes: ['*']}) AS g
+RETURN
+  g.graphName AS graph, g.nodeCount AS nodes, g.relationshipCount AS rels
+```
+
+### Auflisten
+
+```cypher
+call gds.graph.list()
+```
+
+### Löschen
+
+```cypher
+CALL gds.graph.drop('bubahn') YIELD graphName;
+```
+
 
 
 # MD
