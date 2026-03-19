@@ -254,9 +254,9 @@ home: &r
                   - t:  Postgres JSON
                     ts:  Postgres JSON
                     url: /home/lv/adbkt/vorlesungen/pg_json.html
-                  - t: Neo4j
-                    ts: Neo4j
-                    url: /home/lv/adbkt/vorlesungen/neo4j.html
+                  - t: Graphdatenbanken
+                    ts: Graphdatenbanken
+                    url: /home/lv/adbkt/vorlesungen/graphdb.html
                   - t: Graph-Datenmodelle
                     ts: Graph-Datenmodelle
                     url: /home/lv/adbkt/vorlesungen/graph-dm.html
@@ -321,15 +321,15 @@ home: &r
                   - t: GraphQL
                     ts: GraphQL
                     url: /home/lv/adbkt/uebungen/graphql.html
-                  - t: "Ü: Cypher-Abfragen 1"
-                    ts: "Ü: Cypher-Abfragen 1"
-                    url: /home/lv/adbkt/graphdb/ueb1-cypher.html
-                  - t:  "Ü: Cypher-Abfragen 2"
-                    ts:  "Ü: Cypher-Abfragen 2"
-                    url: /home/lv/adbkt/graphdb/ueb2-cypher.html
-                  - t:  "Ü: Graph-Data-Science"
-                    ts: "Ü: Graph-Data-Science"
-                    url: /home/lv/adbkt/graphdb/ueb-gds.html
+                  - t: Cypher-Abfragen 1
+                    ts: Cypher-Abfragen 1
+                    url: /home/lv/adbkt/uebungen/cypher1.html
+                  - t:  Cypher-Abfragen 2
+                    ts: Cypher-Abfragen 2
+                    url: /home/lv/adbkt/uebungen/cypher2.html
+                  - t:  Graph-Data-Science
+                    ts: Graph-Data-Science
+                    url: /home/lv/adbkt/uebungen/gds.html
                   - t: "Ü: Rekursives SQL"
                     ts: "Ü: Rekursives SQL"
                     url: /home/lv/adbkt/recsql/ueb-recsql.html

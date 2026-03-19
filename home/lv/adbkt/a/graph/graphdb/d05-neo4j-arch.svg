@@ -1,0 +1,48 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<text x="260" y="20" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565C0">Neo4j Architektur</text>
+
+<!-- Layer 1: Clients -->
+<rect x="30" y="35" width="460" height="36" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5"/>
+<text x="260" y="51" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565C0">Clients &amp; Anwendungen</text>
+<text x="260" y="64" text-anchor="middle" font-size="10" fill="#1565C0">Browser · Java Driver · Python Driver · JavaScript Driver · REST API</text>
+
+<!-- Arrow -->
+<line x1="260" y1="71" x2="260" y2="83" stroke="#546E7A" stroke-width="2"/>
+<polygon points="255,83 265,83 260,91" fill="#546E7A"/>
+
+<!-- Layer 2: Bolt Protocol -->
+<rect x="30" y="91" width="460" height="28" rx="6" fill="#1565C0" stroke="#0D47A1" stroke-width="1.5"/>
+<text x="260" y="109" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Bolt-Protokoll (Binary, Port 7687)</text>
+
+<!-- Arrow -->
+<line x1="260" y1="119" x2="260" y2="131" stroke="#546E7A" stroke-width="2"/>
+<polygon points="255,131 265,131 260,139" fill="#546E7A"/>
+
+<!-- Layer 3: Query Engine -->
+<rect x="30" y="139" width="460" height="36" rx="6" fill="#0D47A1" stroke="#01579B" stroke-width="1.5"/>
+<text x="260" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Cypher Query Engine</text>
+<text x="260" y="168" text-anchor="middle" font-size="10" fill="#BBDEFB">Parser → Planner → Optimizer → Executor</text>
+
+<!-- Arrow -->
+<line x1="260" y1="175" x2="260" y2="187" stroke="#546E7A" stroke-width="2"/>
+<polygon points="255,187 265,187 260,195" fill="#546E7A"/>
+
+<!-- Layer 4: Graph Engine & Cache -->
+<rect x="30" y="195" width="225" height="40" rx="6" fill="#1B5E20" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="142" y="213" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Graph Engine</text>
+<text x="142" y="227" text-anchor="middle" font-size="10" fill="#C8E6C9">Traversal · Index · Locks</text>
+
+<rect x="265" y="195" width="225" height="40" rx="6" fill="#004D40" stroke="#00695C" stroke-width="1.5"/>
+<text x="377" y="213" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Page Cache</text>
+<text x="377" y="227" text-anchor="middle" font-size="10" fill="#B2DFDB">Knoten / Kanten im RAM</text>
+
+<!-- Arrow -->
+<line x1="142" y1="235" x2="142" y2="247" stroke="#546E7A" stroke-width="2"/>
+<polygon points="137,247 147,247 142,255" fill="#546E7A"/>
+<line x1="377" y1="235" x2="377" y2="247" stroke="#546E7A" stroke-width="2"/>
+<polygon points="372,247 382,247 377,255" fill="#546E7A"/>
+
+<!-- Layer 5: Storage -->
+<rect x="30" y="255" width="460" height="12" rx="4" fill="#37474F" stroke="#263238" stroke-width="1.5"/>
+<text x="260" y="265" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Native Graph Storage (Record-Dateien: nodes.db, rels.db, props.db)</text>
+</svg>

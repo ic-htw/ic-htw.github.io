@@ -1,0 +1,65 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<!-- Edges (drawn first, behind nodes) -->
+<!-- Alice KNOWS Bob -->
+<line x1="130" y1="110" x2="240" y2="90" stroke="#546E7A" stroke-width="2"/>
+<text x="178" y="88" text-anchor="middle" font-size="10" fill="#37474F" font-weight="bold">KENNT</text>
+<text x="178" y="99" text-anchor="middle" font-size="9" fill="#607D8B">seit: 2018</text>
+
+<!-- Alice WORKS_AT TechCorp -->
+<line x1="115" y1="135" x2="140" y2="195" stroke="#546E7A" stroke-width="2"/>
+<text x="108" y="170" text-anchor="middle" font-size="10" fill="#37474F" font-weight="bold">ARBEITET_BEI</text>
+<text x="108" y="181" text-anchor="middle" font-size="9" fill="#607D8B">seit: 2020</text>
+
+<!-- Bob WORKS_AT TechCorp -->
+<line x1="255" y1="105" x2="178" y2="193" stroke="#546E7A" stroke-width="2"/>
+<text x="237" y="155" text-anchor="middle" font-size="10" fill="#37474F" font-weight="bold">ARBEITET_BEI</text>
+
+<!-- Bob KNOWS Charlie -->
+<line x1="280" y1="87" x2="380" y2="110" stroke="#546E7A" stroke-width="2"/>
+<text x="332" y="88" text-anchor="middle" font-size="10" fill="#37474F" font-weight="bold">KENNT</text>
+
+<!-- Charlie LIKES Python -->
+<line x1="400" y1="130" x2="400" y2="195" stroke="#546E7A" stroke-width="2"/>
+<text x="418" y="166" text-anchor="middle" font-size="10" fill="#37474F" font-weight="bold">MAG</text>
+
+<!-- Person nodes -->
+<!-- Alice -->
+<circle cx="115" cy="110" r="30" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+<text x="115" y="107" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Person</text>
+<text x="115" y="121" text-anchor="middle" font-size="10" fill="#BBDEFB">Alice</text>
+<!-- Alice properties -->
+<rect x="20" y="45" width="80" height="35" rx="4" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+<text x="60" y="59" text-anchor="middle" font-size="9" fill="#1565C0" font-weight="bold">name: Alice</text>
+<text x="60" y="71" text-anchor="middle" font-size="9" fill="#1565C0">alter: 32</text>
+<line x1="60" y1="80" x2="90" y2="100" stroke="#90CAF9" stroke-width="1" stroke-dasharray="3,2"/>
+
+<!-- Bob -->
+<circle cx="260" cy="85" r="30" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+<text x="260" y="82" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Person</text>
+<text x="260" y="96" text-anchor="middle" font-size="10" fill="#BBDEFB">Bob</text>
+
+<!-- Charlie -->
+<circle cx="400" cy="110" r="30" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+<text x="400" y="107" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Person</text>
+<text x="400" y="121" text-anchor="middle" font-size="10" fill="#BBDEFB">Charlie</text>
+
+<!-- TechCorp -->
+<rect x="130" y="195" width="90" height="40" rx="6" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+<text x="175" y="213" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Unternehmen</text>
+<text x="175" y="227" text-anchor="middle" font-size="10" fill="#C8E6C9">TechCorp</text>
+
+<!-- Python (Technologie) -->
+<rect x="355" y="195" width="90" height="40" rx="6" fill="#E65100" stroke="#BF360C" stroke-width="2"/>
+<text x="400" y="213" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Technologie</text>
+<text x="400" y="227" text-anchor="middle" font-size="10" fill="#FFE0B2">Python</text>
+
+<!-- Legend -->
+<rect x="30" y="240" width="12" height="12" rx="6" fill="#1565C0"/>
+<text x="47" y="251" font-size="10" fill="#333">Knoten (Node)</text>
+<rect x="140" y="240" width="12" height="12" rx="2" fill="#2E7D32"/>
+<text x="157" y="251" font-size="10" fill="#333">Knoten mit Labels</text>
+<line x1="270" y1="246" x2="300" y2="246" stroke="#546E7A" stroke-width="2"/>
+<text x="307" y="251" font-size="10" fill="#333">Kante (Relationship)</text>
+<rect x="400" y="240" width="60" height="14" rx="3" fill="#E3F2FD" stroke="#90CAF9"/>
+<text x="430" y="251" text-anchor="middle" font-size="9" fill="#1565C0">Properties</text>
+</svg>

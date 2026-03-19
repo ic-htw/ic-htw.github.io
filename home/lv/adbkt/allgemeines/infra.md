@@ -331,6 +331,12 @@ with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
 
 ```
 
+## Schema anzeigen
+```cypher
+call db.schema.visualization()
+```
+
+
 ## Graphprojektion
 ### Anlegen
 
