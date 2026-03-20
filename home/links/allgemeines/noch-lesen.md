@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Claude Code is Great
+[(link)](https://leo-godin.medium.com/claude-code-is-great-6db35d8685f0)
+
 - Claude Can Now Create Complex Diagrams — I Tested 21 Prompts (Goodbye Canva!)
 [(link)](https://medium.com/ai-software-engineer/claude-can-now-create-sophisticated-diagrams-charts-goodbye-canva-600d8c524b1c)
 
