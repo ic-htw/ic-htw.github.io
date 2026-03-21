@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- LangChain Deep Agents: The Open-Source Claude Code Alternative That Works With Any Model
+[(link)](https://pub.towardsai.net/langchain-deep-agents-the-open-source-claude-code-alternative-that-works-with-any-model-2477aba5cb96)
+
 - Claude Code is Great
 [(link)](https://leo-godin.medium.com/claude-code-is-great-6db35d8685f0)
 
