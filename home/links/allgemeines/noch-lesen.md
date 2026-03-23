@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Joe Njenga
+[(link)](https://medium.com/@joe.njenga)
+
+- 5 Agent Frameworks. One Pattern Won
+[(link)](https://levelup.gitconnected.com/5-agent-frameworks-one-pattern-won-54cc0eedf027)
+
 - LangChain Deep Agents: The Open-Source Claude Code Alternative That Works With Any Model
 [(link)](https://pub.towardsai.net/langchain-deep-agents-the-open-source-claude-code-alternative-that-works-with-any-model-2477aba5cb96)
 
