@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- MiniMax M2.7 Shouldn’t Be This Close to Opus 4.6
+[(link)](https://agentnativedev.medium.com/minimax-m2-7-shouldnt-be-this-close-to-opus-4-6-31a07b6dee27)
+
 - Joe Njenga
 [(link)](https://medium.com/@joe.njenga)
 

@@ -80,6 +80,8 @@ is_slide: 0
 
 
 # Misc
+- Backpropagation is simpler than you think (once you see this)
+[(link)](https://ai.gopubby.com/the-most-intuitive-guide-to-backpropagation-youll-ever-read-1b2cc748a4e9)
 - Document Denoising Using Deep Learning
 [(link)](https://medium.com/ai-techsystems/document-denoising-using-deep-learning-a114302b4b1f)
 - Few shot learning — learning to learn from a few examples
