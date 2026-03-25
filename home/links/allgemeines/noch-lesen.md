@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How We Cut LLM Token Usage by 90% in SQL Migration Using AST Compression
+[(link)](https://reliable-data-engineering.netlify.app/posts/article_toon_sql_migration/)
+
 - MiniMax M2.7 Shouldn’t Be This Close to Opus 4.6
 [(link)](https://agentnativedev.medium.com/minimax-m2-7-shouldnt-be-this-close-to-opus-4-6-31a07b6dee27)
 
