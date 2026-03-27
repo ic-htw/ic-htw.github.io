@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 298" font-family="Arial, sans-serif">
+
+  <!-- ── Backgrounds ── -->
+  <rect x="0" y="3"   width="700" height="140" fill="#dbeafe" rx="6"/>
+  <rect x="0" y="155" width="700" height="140" fill="#fee2e2" rx="6"/>
+
+  <!-- ── Labels ── -->
+  <text x="12" y="28"  font-size="13" font-weight="bold" fill="#1d4ed8">Metrics (Regular)</text>
+  <text x="12" y="46"  font-size="10.5" fill="#374151">Messungen in gleich-</text>
+  <text x="12" y="60"  font-size="10.5" fill="#374151">mäßigen Zeitabständen</text>
+
+  <text x="12" y="180" font-size="13" font-weight="bold" fill="#b91c1c">Events (Irregular)</text>
+  <text x="12" y="198" font-size="10.5" fill="#374151">Messungen in ungleich-</text>
+  <text x="12" y="212" font-size="10.5" fill="#374151">mäßigen Zeitabständen</text>
+
+  <!-- Separator verticals -->
+  <line x1="178" y1="8"   x2="178" y2="137" stroke="#93c5fd" stroke-width="1"/>
+  <line x1="178" y1="160" x2="178" y2="289" stroke="#fca5a5" stroke-width="1"/>
+
+  <!-- ── Regular: x positions spaced 30px, 17 pts: 195–675 ── -->
+  <!-- Upper line  y: 74,74,72,64,52,40,34,40,52,64,72,74,74,74,74,74,74 -->
+  <polyline fill="none" stroke="#2563eb" stroke-width="2.5"
+    points="195,74 225,74 255,72 285,64 315,52 345,40 375,34 405,40 435,52 465,64 495,72 525,74 555,74 585,74 615,74 645,74 675,74"/>
+  <circle cx="195" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="225" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="255" cy="72"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="285" cy="64"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="315" cy="52"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="345" cy="40"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="375" cy="34"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="405" cy="40"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="435" cy="52"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="465" cy="64"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="495" cy="72"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="525" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="555" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="585" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="615" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="645" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="675" cy="74"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+
+  <!-- Lower line y: 116,116,115,110,103,96,92,96,103,110,115,116,116,116,116,116,116 -->
+  <polyline fill="none" stroke="#2563eb" stroke-width="2.5"
+    points="195,116 225,116 255,115 285,110 315,103 345,96 375,92 405,96 435,103 465,110 495,115 525,116 555,116 585,116 615,116 645,116 675,116"/>
+  <circle cx="195" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="225" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="255" cy="115" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="285" cy="110" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="315" cy="103" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="345" cy="96"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="375" cy="92"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="405" cy="96"  r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="435" cy="103" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="465" cy="110" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="495" cy="115" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="525" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="555" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="585" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="615" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="645" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="675" cy="116" r="4" fill="white" stroke="#2563eb" stroke-width="2.5"/>
+
+  <!-- Regular time-axis ticks (even spacing) -->
+  <line x1="195" y1="135" x2="675" y2="135" stroke="#93c5fd" stroke-width="1"/>
+  <line x1="195" y1="131" x2="195" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="225" y1="131" x2="225" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="255" y1="131" x2="255" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="285" y1="131" x2="285" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="315" y1="131" x2="315" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="345" y1="131" x2="345" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="375" y1="131" x2="375" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="405" y1="131" x2="405" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="435" y1="131" x2="435" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="465" y1="131" x2="465" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="495" y1="131" x2="495" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="525" y1="131" x2="525" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="555" y1="131" x2="555" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="585" y1="131" x2="585" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="615" y1="131" x2="615" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="645" y1="131" x2="645" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="675" y1="131" x2="675" y2="139" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="676" y="141" font-size="9" fill="#2563eb">→ Zeit</text>
+
+  <!-- ── Irregular: x positions variable, same start 195 end 675 ── -->
+  <!-- x: 195,208,224,258,284,306,328,353,390,436,482,521,557,590,621,648,675 -->
+  <!-- Upper y (same profile +150): 224,224,222,214,202,190,184,190,202,214,222,224,224,224,224,224,224 -->
+  <polyline fill="none" stroke="#dc2626" stroke-width="2.5"
+    points="195,224 208,224 224,222 258,214 284,202 306,190 328,184 353,190 390,202 436,214 482,222 521,224 557,224 590,224 621,224 648,224 675,224"/>
+  <circle cx="195" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="208" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="224" cy="222" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="258" cy="214" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="284" cy="202" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="306" cy="190" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="328" cy="184" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="353" cy="190" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="390" cy="202" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="436" cy="214" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="482" cy="222" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="521" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="557" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="590" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="621" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="648" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="675" cy="224" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+
+  <!-- Lower irregular line y (same profile +150): 266,266,265,260,253,246,242,246,253,260,265,266,266,266,266,266,266 -->
+  <polyline fill="none" stroke="#dc2626" stroke-width="2.5"
+    points="195,266 208,266 224,265 258,260 284,253 306,246 328,242 353,246 390,253 436,260 482,265 521,266 557,266 590,266 621,266 648,266 675,266"/>
+  <circle cx="195" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="208" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="224" cy="265" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="258" cy="260" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="284" cy="253" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="306" cy="246" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="328" cy="242" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="353" cy="246" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="390" cy="253" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="436" cy="260" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="482" cy="265" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="521" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="557" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="590" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="621" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="648" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="675" cy="266" r="4" fill="white" stroke="#dc2626" stroke-width="2.5"/>
+
+  <!-- Irregular time-axis ticks (uneven spacing) -->
+  <line x1="195" y1="285" x2="675" y2="285" stroke="#fca5a5" stroke-width="1"/>
+  <line x1="195" y1="281" x2="195" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="208" y1="281" x2="208" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="224" y1="281" x2="224" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="258" y1="281" x2="258" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="284" y1="281" x2="284" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="306" y1="281" x2="306" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="328" y1="281" x2="328" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="353" y1="281" x2="353" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="390" y1="281" x2="390" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="436" y1="281" x2="436" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="482" y1="281" x2="482" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="521" y1="281" x2="521" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="557" y1="281" x2="557" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="590" y1="281" x2="590" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="621" y1="281" x2="621" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="648" y1="281" x2="648" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <line x1="675" y1="281" x2="675" y2="289" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="676" y="291" font-size="9" fill="#dc2626">→ Zeit</text>
+
+</svg>

@@ -1,0 +1,275 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Zeitreihendatenbanken - ADBKT
+is_slide: 1
+n: 14
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Zeitreihendaten</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d01-timeseries.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Warum Zeitreihendatenbanken</h1>
+<ul class="w3-large">
+    <li>Erfassung von Ereignissen, die in hoher Frequenz auftreten</li>
+    <li>Hohe Schreibrate, Millionen Punkte/Sekunde möglich</li>
+    <li>Append-only: neue Daten werden angehängt, nicht geändert</li>
+    <li>Effizientes Speichermanagement notwendig, Kompression</li>
+    <li>Abfrage einer sehr großen Anzahl von Zeitreihen</li>
+    <li>Zeit als primärer Schlüssel</li>
+    <li>Optimiert für sequentielle Daten</li>
+    <li>Neueste Daten werden am häufigsten gelesen (Hot Data)</li>
+    <li>Automatische Löschung/Komprimierung alter Daten, Downsampling</li>
+    <li>Optimiert für zeitbasierte Abfragen</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Anwendungsfälle</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d02-usecases.svg">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Hohe Kardinalität</h1>
+<h2>Kardinalität</h2>
+<ul class="w3-large">
+    <li>Kardinalität = Anzahl eindeutiger Werte in einer Kennung</li>
+    <li>Jede Kennungs-Kombination = eine eigene Zeitreihe</li>
+</ul>
+
+<h2>Beispiel IOT</h2>
+<ul class="w3-large">
+    <li>10.000 Smarthomes (Kennung = Smarthome-ID)</li>
+    <li>10 Sensoren pro Smarthome (Kennung = Sensor-ID)</li>
+    <li>10.000 × 10 = 100.000 Zeitreihen</li>
+</ul>
+
+<h2>Möglichst vermeiden</h2>
+<ul class="w3-large">
+    <li>User-ID, Session-ID, Request-ID als Kennung → Millionen Zeitreihen</li>
+    <li>Präzise GPS-Koordinaten als Kennung → ∞ Zeitreihen</li>
+    <li>Faustregel: &lt; 10.000 eindeutige Werte je Kennung</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Typen von Zeitreihendaten</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d11-types.svg">
+<p class="w3-large ic-neg15">Metrics (Regular)</p>
+<ul class="w3-large">
+    <li>Gleichmäßige Zeitabstände (z.B. alle 15&thinsp;s)</li>
+    <li>Polling-/Scraping-Modell (Pull)</li>
+    <li>Beispiele: CPU-Auslastung, Temperatur, Netzwerkdurchsatz</li>
+    <li>Einfach zu speichern und zu aggregieren</li>
+</ul>
+<p class="w3-large ic-neg15">Events (Irregular)</p>
+<ul class="w3-large">
+    <li>Ungleichmäßige, ereignisgesteuerte Abstände</li>
+    <li>Push-Modell: Datenpunkt bei jedem Ereignis</li>
+    <li>Beispiele: HTTP-Anfragen, Transaktionen, Fehler</li>
+    <li>Erfordern Interpolation oder Bucketing für Aggregationen</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Zeitreihendatenbanken</h1>
+<p class="w3-large ic-neg15">InfluxDB</p>
+<ul class="w3-large">
+    <li>Speziell für Zeitreihendaten entwickelt, sehr effizient bei hoher Schreiblast</li>
+    <li>Version 3 basiert auf Apache Datafusion, SQL</li>
+    <li>Integrierte Funktionen für Retention Policies und Downsampling</li>
+</ul>
+
+<p class="w3-large ic-neg15">Prometheus</p>
+<ul class="w3-large">
+    <li>Open-Source Monitoring- und Alerting-System, stark im DevOps-Umfeld</li>
+    <li>Pull-basiertes Modell (scraped Metriken über HTTP)</li>
+    <li>Eigene Query-Sprache (PromQL) für flexible Auswertungen</li>
+</ul>
+
+<p class="w3-large ic-neg15">kdb+</p>
+<ul class="w3-large">
+    <li>Hochperformante, spaltenorientierte Zeitreihendatenbank, oft im Finanzbereich eingesetzt</li>
+    <li>Sehr schnelle In-Memory-Analysen großer Datenmengen</li>
+    <li>Verwendet die kompakte Programmiersprache q für Abfragen und Analysen</li>
+</ul>
+
+<p class="w3-large ic-neg15">TimescaleDB</p>
+<ul class="w3-large">
+    <li>Erweiterung für PostgreSQL, kombiniert SQL mit Zeitreihenfunktionen</li>
+    <li>Automatische Partitionierung (Hypertables) für skalierbare Speicherung</li>
+    <li>Gut integrierbar in bestehende SQL-Ökosysteme und Tools</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Zeitbasierte Abfragen</h1>
+<ul class="w3-large">
+    <li>Zeitbereichsabfragen: <code>WHERE time >= now() - 1h</code></li>
+    <li>Aggregationen über Zeitfenster, Bucketing</li>
+    <li>Fensterarten</li>
+    <ul class="w3-large">
+        <li>Tumbling Window</li>
+        <li>Hopping Window</li>
+        <li>Sliding Window</li>
+        <li>Session Window</li>
+    </ul>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Tumbling Window</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d12-tumbling.svg">
+<ul class="w3-large">
+    <li><strong>Feste Größe</strong>: gleichlange, nicht-überlappende Zeitfenster</li>
+    <li>Jedes Ereignis gehört zu <strong>genau einem</strong> Fenster</li>
+    <li>Lückenlose Abdeckung: kein Ereignis wird übersprungen</li>
+    <li>Pro Fenster wird <strong>genau ein Ergebnis</strong> ausgegeben</li>
+    <li>Typische Anwendung: Zählen, Summieren, Durchschnitt je Periode</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Hopping Window</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d13-hopping.svg">
+<ul class="w3-large">
+    <li><strong>Fenstergröße</strong> und <strong>Hop-Größe</strong> sind unabhängig</li>
+    <li>Hop &lt; Fenstergröße → <strong>überlappende</strong> Fenster</li>
+    <li>Ereignisse im Überlappungsbereich werden in <strong>mehreren Fenstern</strong> gezählt</li>
+    <li>Hop = Fenstergröße → entspricht Tumbling Window</li>
+    <li>Anwendung: gleitende Statistiken mit fester Auflösung</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Sliding Window</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d14-sliding.svg">
+<ul class="w3-large">
+    <li>Fenster gleitet über den Ereignisstrom</li>
+    <li>Neuberechnung Fensterinhalt nur, wenn ein neues Ereignis eintritt oder ein altes Ereignis  das Fenster verlässt</li>
+    <li>Ausgabe bei Beispiel, wenn 3 Einheiten im Fenster sind</li>
+    <li>Kein fixes Raster – Ausgabe <strong>ereignisgesteuert</strong></li>
+    <li>Jedes Ereignis kann in <strong>vielen</strong> Fenstern enthalten sein</li>
+    <li>Anwendung: Anomalieerkennung, gleitende Schwellwerte</li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Session Window</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d15-session.svg">
+<ul class="w3-large">
+    <li><strong>Keine feste Größe</strong>: das Fenster passt sich der Aktivität an</li>
+    <li>Fenster öffnet sich beim ersten Ereignis einer Aktivitätsserie</li>
+    <li>Fenster schließt, wenn für <strong>≥ Timeout</strong> kein Ereignis eintrifft</li>
+    <li>Optional: maximale Fensterdauer (max. duration)</li>
+    <li>Anwendung: Benutzer-Sessions, Geräteaktivität, Log-Cluster</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Retention Policies &amp; Downsampling</h1>
+<h2>Retention Policy</h2>
+<ul class="w3-large">
+    <li>Automatisches Löschen nach definierter Zeitdauer</li>
+    <li>Mehrere Policies pro Datenbank möglich</li>
+    <li>Beispiel: Raw 7 Tage, Aggregiert 1 Jahr</li>
+</ul>
+
+<h2>Downsampling</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d09-retention.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>Horizontale Skalierung</h1>
+<p class="w3-large ic-neg15">Strategien</p>
+<ul class="w3-large">
+    <li><strong>Sharding nach Zeit</strong>: jeder Knoten verwaltet Zeitbereich</li>
+    <li><strong>Sharding nach Metrik</strong>: Metriken aufgeteilt auf Knoten</li>
+    <li><strong>Replikation</strong>: Faktor 2–3 für Ausfallsicherheit</li>
+    <li><strong>Object Storage</strong>: Langzeitarchiv in S3 / GCS / Azure</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d10-scaling.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Zeitreihen-Komprimierung</h1>
+<p class="w3-large ic-neg15">Methoden</p>
+<ul class="w3-large">
+    <li><strong>Delta-Encoding</strong>: Differenz zum Vorgänger speichern</li>
+    <li><strong>Delta-of-Delta</strong>: bei gleichmäßigen Zeitstempeln</li>
+    <li><strong>Gorilla XOR</strong>: XOR aufeinanderfolgender Floats</li>
+    <li><strong>Simple8b</strong>: Bit-Packing für Integer-Werte</li>
+    <li><strong>Run-Length Encoding</strong>: für Duplikate</li>
+</ul>
+<p class="w3-large">Kompressionsrate: 10–100× je nach Datenmuste</p>
+<img class="w3-image" src="/home/lv/adbkt/a/tsdb/d08-compression.svg">
+
+<div class="ic-gap"></div>
+

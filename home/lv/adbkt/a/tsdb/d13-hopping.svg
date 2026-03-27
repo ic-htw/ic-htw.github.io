@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 228" font-family="Arial, sans-serif">
+
+  <!-- ── Overlap region highlights on event band ── -->
+  <rect x="223" y="10" width="142" height="20" fill="#fef08a" opacity="0.8"/>
+  <rect x="365" y="10" width="143" height="20" fill="#fef08a" opacity="0.8"/>
+
+  <!-- ── Vertical grid lines ── -->
+  <line x1="80"  y1="10" x2="80"  y2="178" stroke="#e5e7eb" stroke-width="0.8"/>
+  <line x1="223" y1="10" x2="223" y2="178" stroke="#d1d5db" stroke-width="1"   stroke-dasharray="4,3"/>
+  <line x1="365" y1="10" x2="365" y2="178" stroke="#d1d5db" stroke-width="1"   stroke-dasharray="4,3"/>
+  <line x1="508" y1="10" x2="508" y2="178" stroke="#d1d5db" stroke-width="1"   stroke-dasharray="4,3"/>
+  <line x1="650" y1="10" x2="650" y2="178" stroke="#e5e7eb" stroke-width="0.8"/>
+
+  <!-- ── Event stream ── -->
+  <line x1="80" y1="22" x2="662" y2="22" stroke="#9ca3af" stroke-width="1.5"/>
+  <polygon points="662,17 672,22 662,27" fill="#9ca3af"/>
+  <text x="10" y="26" font-size="9.5" fill="#6b7280">Strom</text>
+
+  <!-- Events – W1 only (0–10 s): green -->
+  <rect x="104" y="16" width="9" height="9" fill="#2e7d32" rx="1"/>
+  <rect x="147" y="16" width="9" height="9" fill="#2e7d32" rx="1"/>
+  <rect x="190" y="16" width="9" height="9" fill="#2e7d32" rx="1"/>
+  <!-- Events – overlap W1∩W2 (10–20 s): gold -->
+  <rect x="261" y="16" width="9" height="9" fill="#d97706" rx="1"/>
+  <rect x="304" y="16" width="9" height="9" fill="#d97706" rx="1"/>
+  <!-- Events – overlap W2∩W3 (20–30 s): gold -->
+  <rect x="389" y="16" width="9" height="9" fill="#d97706" rx="1"/>
+  <rect x="461" y="16" width="9" height="9" fill="#d97706" rx="1"/>
+  <!-- Events – W3 only (30–40 s): blue -->
+  <rect x="518" y="16" width="9" height="9" fill="#1565c0" rx="1"/>
+  <rect x="575" y="16" width="9" height="9" fill="#1565c0" rx="1"/>
+  <rect x="618" y="16" width="9" height="9" fill="#1565c0" rx="1"/>
+
+  <!-- Overlap labels in event band -->
+  <text x="294" y="11" text-anchor="middle" font-size="8.5" fill="#b45309">W1+W2</text>
+  <text x="436" y="11" text-anchor="middle" font-size="8.5" fill="#b45309">W2+W3</text>
+
+  <!-- ── Window bars ── -->
+  <!-- W1: 0–20 s,  x=80..365, width=285 -->
+  <rect x="80"  y="42" width="285" height="33" fill="#43a047" rx="4" opacity="0.9"/>
+  <text x="222" y="63" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Fenster 1  (0–20 s)   COUNT = 5</text>
+
+  <!-- W2: 10–30 s, x=223..508, width=285 -->
+  <rect x="223" y="84" width="285" height="33" fill="#00897b" rx="4" opacity="0.9"/>
+  <text x="365" y="105" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Fenster 2  (10–30 s)   COUNT = 4</text>
+
+  <!-- W3: 20–40 s, x=365..650, width=285 -->
+  <rect x="365" y="126" width="285" height="33" fill="#1e88e5" rx="4" opacity="0.9"/>
+  <text x="507" y="147" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Fenster 3  (20–40 s)   COUNT = 5</text>
+
+  <!-- ── Hop annotations ── -->
+  <!-- Hop 1: x=80 → x=223 -->
+  <line x1="80"  y1="168" x2="219" y2="168" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="80,164 71,168 80,172"   fill="#6b7280"/>
+  <polygon points="223,164 232,168 223,172" fill="#6b7280"/>
+  <text x="151" y="164" text-anchor="middle" font-size="9.5" fill="#4b5563">Hop = 10 s</text>
+
+  <!-- Hop 2: x=223 → x=365 -->
+  <line x1="227" y1="168" x2="361" y2="168" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="223,164 214,168 223,172" fill="#6b7280"/>
+  <polygon points="365,164 374,168 365,172" fill="#6b7280"/>
+  <text x="294" y="164" text-anchor="middle" font-size="9.5" fill="#4b5563">Hop = 10 s</text>
+
+  <!-- ── Window-size annotation (W1) ── -->
+  <line x1="80"  y1="187" x2="365" y2="187" stroke="#43a047" stroke-width="1.5"/>
+  <polygon points="80,183 71,187 80,191"   fill="#43a047"/>
+  <polygon points="365,183 374,187 365,191" fill="#43a047"/>
+  <text x="222" y="202" text-anchor="middle" font-size="9.5" fill="#2e7d32">Fenstergröße = 20 s</text>
+
+  <!-- ── Time axis ── -->
+  <line x1="80" y1="212" x2="665" y2="212" stroke="#374151" stroke-width="1.5"/>
+  <polygon points="665,207 675,212 665,217" fill="#374151"/>
+
+  <line x1="80"  y1="208" x2="80"  y2="216" stroke="#374151" stroke-width="1.5"/>
+  <line x1="223" y1="208" x2="223" y2="216" stroke="#374151" stroke-width="1.5"/>
+  <line x1="365" y1="208" x2="365" y2="216" stroke="#374151" stroke-width="1.5"/>
+  <line x1="508" y1="208" x2="508" y2="216" stroke="#374151" stroke-width="1.5"/>
+  <line x1="650" y1="208" x2="650" y2="216" stroke="#374151" stroke-width="1.5"/>
+
+  <text x="80"  y="226" text-anchor="middle" font-size="10" fill="#374151">0 s</text>
+  <text x="223" y="226" text-anchor="middle" font-size="10" fill="#374151">10 s</text>
+  <text x="365" y="226" text-anchor="middle" font-size="10" fill="#374151">20 s</text>
+  <text x="508" y="226" text-anchor="middle" font-size="10" fill="#374151">30 s</text>
+  <text x="650" y="226" text-anchor="middle" font-size="10" fill="#374151">40 s</text>
+  <text x="678" y="216" font-size="10" fill="#374151">Zeit</text>
+
+</svg>

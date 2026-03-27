@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 218" font-family="Arial, sans-serif">
+
+  <!-- ── Vertical guides at event positions ── -->
+  <line x1="105" y1="10" x2="105" y2="178" stroke="#e5e7eb" stroke-width="0.8"/>
+  <line x1="165" y1="10" x2="165" y2="178" stroke="#e5e7eb" stroke-width="0.8"/>
+  <line x1="240" y1="10" x2="240" y2="178" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="360" y1="10" x2="360" y2="178" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="435" y1="10" x2="435" y2="178" stroke="#d1d5db" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ── Event stream ── -->
+  <line x1="60" y1="22" x2="522" y2="22" stroke="#9ca3af" stroke-width="1.5"/>
+  <polygon points="522,17 532,22 522,27" fill="#9ca3af"/>
+  <text x="10" y="26" font-size="9.5" fill="#6b7280">Strom</text>
+
+  <!-- Events as squares (all dark, neutral) -->
+  <rect x="100" y="16" width="9" height="9" fill="#374151" rx="1"/>
+  <rect x="160" y="16" width="9" height="9" fill="#374151" rx="1"/>
+  <rect x="235" y="16" width="9" height="9" fill="#374151" rx="1"/>
+  <rect x="355" y="16" width="9" height="9" fill="#374151" rx="1"/>
+  <rect x="430" y="16" width="9" height="9" fill="#374151" rx="1"/>
+
+  <!-- Event time labels -->
+  <text x="105" y="10" text-anchor="middle" font-size="8.5" fill="#6b7280">t=3</text>
+  <text x="165" y="10" text-anchor="middle" font-size="8.5" fill="#6b7280">t=7</text>
+  <text x="240" y="10" text-anchor="middle" font-size="8.5" fill="#374151" font-weight="bold">t=12</text>
+  <text x="360" y="10" text-anchor="middle" font-size="8.5" fill="#374151" font-weight="bold">t=20</text>
+  <text x="435" y="10" text-anchor="middle" font-size="8.5" fill="#374151" font-weight="bold">t=25</text>
+
+  <!-- ── Window snapshots ── -->
+  <!-- Output arrows (↓) at right edge of each window = event trigger point -->
+
+  <!-- Window 1: [2–12 s], x=90–240, triggered when t=12 enters -->
+  <rect x="90"  y="42" width="150" height="33" fill="#43a047" rx="4" opacity="0.88"/>
+  <text x="165" y="63" text-anchor="middle" font-size="11.5" fill="white" font-weight="bold">Fenster [2–12 s]   COUNT = 3</text>
+  <!-- Events inside: circles at x=105,165,240 -->
+  <circle cx="105" cy="58" r="5" fill="white" opacity="0.6"/>
+  <circle cx="165" cy="58" r="5" fill="white" opacity="0.6"/>
+  <circle cx="235" cy="58" r="5" fill="white" opacity="0.6"/>
+  <!-- Output marker -->
+  <polygon points="237,75 240,85 243,75" fill="#2e7d32"/>
+  <text x="240" y="96" text-anchor="middle" font-size="9" fill="#2e7d32" font-weight="bold">Ausgabe</text>
+
+  <!-- Window 2: [10–20 s], x=210–360, triggered when t=20 enters -->
+  <rect x="210" y="104" width="150" height="33" fill="#00897b" rx="4" opacity="0.88"/>
+  <text x="285" y="125" text-anchor="middle" font-size="11.5" fill="white" font-weight="bold">Fenster [10–20 s]   COUNT = 2</text>
+  <!-- Events inside: x=240, 360 -->
+  <circle cx="240" cy="120" r="5" fill="white" opacity="0.6"/>
+  <circle cx="355" cy="120" r="5" fill="white" opacity="0.6"/>
+  <!-- Output marker -->
+  <polygon points="357,137 360,147 363,137" fill="#00695c"/>
+  <text x="360" y="158" text-anchor="middle" font-size="9" fill="#00695c" font-weight="bold">Ausgabe</text>
+
+  <!-- Window 3: [15–25 s], x=285–435, triggered when t=25 enters -->
+  <rect x="285" y="166" width="150" height="33" fill="#1e88e5" rx="4" opacity="0.88"/>
+  <text x="360" y="187" text-anchor="middle" font-size="11.5" fill="white" font-weight="bold">Fenster [15–25 s]   COUNT = 2</text>
+  <!-- Events inside: x=360, 435 -->
+  <circle cx="360" cy="182" r="5" fill="white" opacity="0.6"/>
+  <circle cx="430" cy="182" r="5" fill="white" opacity="0.6"/>
+
+  <!-- ── Window-size annotation ── -->
+  <line x1="90"  y1="203" x2="240" y2="203" stroke="#43a047" stroke-width="1.5"/>
+  <polygon points="90,199 81,203 90,207"   fill="#43a047"/>
+  <polygon points="240,199 249,203 240,207" fill="#43a047"/>
+  <text x="165" y="215" text-anchor="middle" font-size="9.5" fill="#2e7d32">Fenstergröße = 10 s</text>
+
+  <!-- ── Time axis ── -->
+  <line x1="60" y1="200" x2="532" y2="200" stroke="#374151" stroke-width="1.5" transform="translate(0,5)"/>
+  <polygon points="532,200 542,205 532,210" fill="#374151"/>
+
+  <line x1="60"  y1="201" x2="60"  y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="135" y1="201" x2="135" y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="210" y1="201" x2="210" y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="285" y1="201" x2="285" y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="360" y1="201" x2="360" y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="435" y1="201" x2="435" y2="209" stroke="#374151" stroke-width="1.5"/>
+  <line x1="510" y1="201" x2="510" y2="209" stroke="#374151" stroke-width="1.5"/>
+
+  <text x="60"  y="217" text-anchor="middle" font-size="10" fill="#374151">0 s</text>
+  <text x="135" y="217" text-anchor="middle" font-size="10" fill="#374151">5 s</text>
+  <text x="210" y="217" text-anchor="middle" font-size="10" fill="#374151">10 s</text>
+  <text x="285" y="217" text-anchor="middle" font-size="10" fill="#374151">15 s</text>
+  <text x="360" y="217" text-anchor="middle" font-size="10" fill="#374151">20 s</text>
+  <text x="435" y="217" text-anchor="middle" font-size="10" fill="#374151">25 s</text>
+  <text x="510" y="217" text-anchor="middle" font-size="10" fill="#374151">30 s</text>
+  <text x="544" y="209" font-size="10" fill="#374151">Zeit</text>
+
+</svg>

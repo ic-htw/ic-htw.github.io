@@ -1,0 +1,136 @@
+---
+layout: default1
+nav: adbkt-uebungen
+title: Übung Zeitreihendatenbanken - ADBKT
+is_slide: 0
+---
+
+<h1>Übung Zeitreihendatenbanken</h1>
+
+<h2>Aufgabenstellung</h2>
+<p class="w3-large">
+ In dieser Übung soll eine Zeitreihendatenbank in Echtzeit mit Sensordaten gefüllt werden, um die Auswirkungen von Ausfällen und reduzierter Leistung zu simulieren. Anwendungsbeispiel ist ein Windpark mit Windrädern. Ein Monitoring-Dashboard soll die aktuellen Leistungswerte der Windräder anzeigen und Ausfälle oder reduzierte Leistung hervorheben. Die Daten werden von einem K6-Skript generiert, das die Sensordaten simuliert und an die Zeitreihendatenbank sendet.
+</p>
+
+<p class="w3-large ic-neg15">Folgende Teilaufgaben sollen bearbeitet werden:</p>
+<ul class="w3-large">
+    <li>Stack "idb" mit "influxdb:3-core" anlegen. Siehe InfluxDB-Dokumentation</li>
+    <li>Admintoken generieren</li>
+    <li>Stack "grafana" mit "grafana/grafana:12.1-ubuntu" anlegen. Siehe Grafana-Dokumentation</li>
+    <li>K6-Skript (s.u.) anpassen</li>
+    <li>Grafana-Dashboard erstellen</li>
+    <ul class="w3-large">
+      <li>Zeitreihen in Grafana-Dashboard visualisieren</li>
+      <li>Im 5-Sekundentakt aktualisieren</li>
+    </ul>
+    <li>Erstellung einer Alerting-Komponente</li>
+    <ul class="w3-large">
+        <li>In Grafana oder als eigenständige Lösung</li>
+        <li>Hopping Window: Hop-Größe 5 Sekunden, Fenstergröße 10 Sekunden</li>
+        <li>Alert wenn Ausfall im kompletten Fenster</li>
+        <li>Alert wenn Mittelwert Leistung im Fenster kleiner 3MW</li>
+      </ul>
+</ul>
+
+<h2>Sensordaten schreiben</h2>
+<p class="w3-large">Konsole im K6-Container öffnen. Achtung User "du". In der Konsole dann Folgendes ausführen:</p>
+<pre><code class="bash">vi idb.js
+# i eintippen -> vi geht in den Insert-Modus 
+i
+# Code (s.u.) kopieren und mit rechter Maustaste einfügen 
+# ESC drücken, um den Insert-Modus zu verlassen
+ESC 
+# SHIFT festhalten und zweimal z eintippen um zu speichern und vi zu beenden
+SHIFT zz
+
+# Danach k6 starten
+k6 run idb.js
+</code></pre>
+
+
+<h2>Code</h2>
+<p class="w3-large">
+  Der Code sendet für jedes Windrad (10001, 10002, ...) einen Leistungswert in MW an die Zeitreihendatenbank. Der Leistungswert wird normalverteilt um 4 MW mit einer Standardabweichung von 0.4 MW generiert. 
+</p>
+
+<p class="w3-large">
+  Es werden 10 Anfragen pro Sekunde für 30 Sekunden gesendet. Je nach Windrad und Iteration können Ausfälle oder reduzierte Leistung simuliert werden. Diese werden in der setup-Funktion definiert. In diesem Beispiel hat Windrad 10003 einen Ausfall ab Iteration 10, Windrad 10006 hat Ausfälle von Iteration 8 bis 18, Windrad 10007 hat Ausfälle von Iteration 5 bis 7 und Windrad 10008 hat reduzierte Leistung von Iteration 10 bis 16. Die gesendeten Daten werden im Line Protocol Format an die Zeitreihendatenbank gesendet.
+</p>
+
+<p class="w3-large">
+  Aktuell sind die http.post-Aufrufe auskommentiert, damit die Daten nicht tatsächlich an die Datenbank gesendet werden. Stattdessen werden die generierten Line-Protocol-Zeilen und Informationen über Ausfälle und reduzierte Leistung in der Konsole ausgegeben. Um die Daten tatsächlich zu senden, müssen die Kommentare vor den http.post-Aufrufen entfernt werden.
+</p>
+
+<p class="w3-large">
+  Damit der Code funktioniert, muss die Zeitreihendatenbank unter http://idb:8181 erreichbar sein. Außerdem muss ein gültiger Bearer-Token für die Authentifizierung verwendet werden.
+</p>
+<pre><code class="javascript">import exec from 'k6/execution';
+import http from 'k6/http';
+
+export const options = {
+    discardResponseBodies: true,
+    scenarios: {
+        contacts: {
+            executor: 'constant-arrival-rate',
+            duration: '30s',
+            rate: 10,
+            timeUnit: '1s',
+            preAllocatedVUs: 10,
+        },
+    },
+};
+
+function normal(mu, sigma, nsamples) {
+    if (!nsamples) nsamples = 20
+    if (!sigma) sigma = 1
+    if (!mu) mu = 0
+
+    var run_total = 0
+    for (var i = 0; i < nsamples; i++) {
+        run_total += Math.random()
+    }
+
+    return sigma * (run_total - nsamples / 2) / (nsamples / 2) + mu
+}
+
+export function setup() {
+    return {
+        10003: { crash: 10, outages: [], reduced: [] },
+        10006: { crash: 10000, outages: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], reduced: [] },
+        10007: { crash: 10000, outages: [5, 6, 7], reduced: [] },
+        10008: { crash: 10000, outages: [], reduced: [10, 11, 12, 13, 14, 15, 16, 17] }
+    };
+}
+
+const url = "http://idb:8181/api/v3/write_lp?db=windpark"
+const headers = {
+    headers: {
+        'Authorization': 'Bearer my-token',
+        'Content-Type': 'text/plain'
+    }
+}
+
+export default function (data) {
+    let vuid = exec.vu.idInTest;
+    let iter = exec.vu.iterationInInstance;
+    let wr = `${10000 + vuid}`;
+    let mv = normal(4, 0.4);
+    let lp = `windrad,id=${wr} mw=${mv},iter=${iter}`;
+
+    if (!(wr in data)) {
+        console.log(lp);
+        // http.post(url, lp, headers)
+    } else {
+        let { crash, outages, reduced } = data[wr];
+        if (iter >= crash || outages.includes(iter)) {
+            console.log(`outage: ${wr}, ${iter}`);
+        } else if (reduced.includes(iter)) {
+            lp = `windrad,id=${wr} mw=${mv - 2},iter=${iter}`;
+            console.log(`reduced: ${wr}, ${iter}`);
+            // http.post(url, lp, headers)
+        } else {
+            console.log(lp);
+            // http.post(url, lp, headers)
+        }
+    }
+}</code></pre>

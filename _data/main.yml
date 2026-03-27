@@ -275,24 +275,24 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/vorlesungen/graphds.html
-                  - t: Rekursive Abfragen
-                    ts: Rekursive Abfragen
-                    url: /home/lv/adbkt/a/sql/rec.pdf
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
-                    url: /home/lv/adbkt/geo/geo.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/recsql/recsql.html
+                    url: /home/lv/adbkt/vorlesungen/geo.html
+                  - t: Zeitreihendatenbanken
+                    ts: Zeitreihendatenbanken
+                    url: /home/lv/adbkt/vorlesungen/tsdb.html
                   - t: LLMs
                     ts: Large Language Models
                     url: /home/lv/adbkt/kidb/llms.html
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
                     url: /home/lv/adbkt/kidb/vectordb.html
-                  - t: Zeitreihendatenbanken
-                    ts: Zeitreihendatenbanken
-                    url: /home/lv/adbkt/tsdb/tsdb.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/recsql/recsql.html
+                  - t: Rekursive Abfragen
+                    ts: Rekursive Abfragen
+                    url: /home/lv/adbkt/a/sql/rec.pdf
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
@@ -330,13 +330,19 @@ home: &r
                   - t:  Graph-Data-Science
                     ts: Graph-Data-Science
                     url: /home/lv/adbkt/uebungen/gds.html
-                  - t: "Ü: Rekursives SQL"
-                    ts: "Ü: Rekursives SQL"
-                    url: /home/lv/adbkt/recsql/ueb-recsql.html
+                  - t:  Zeitreihendatenbanken
+                    ts: Zeitreihendatenbanken
+                    url: /home/lv/adbkt/uebungen/zeitreihendb.html
               - t: zzz
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: Zeitreihendatenbanken
+                    ts: Zeitreihendatenbanken
+                    url: /home/lv/adbkt/tsdb/tsdb.html
+                  - t: "Ü: Rekursives SQL"
+                    ts: "Ü: Rekursives SQL"
+                    url: /home/lv/adbkt/recsql/ueb-recsql.html
                   - t: Konsistenz
                     ts: Konsistenz
                     url: /home/lv/adbkt/zzz/consistency.html
