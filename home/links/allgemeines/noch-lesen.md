@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Claude Code Has 50+ Commands. Most Developers Use Only 5.
+[(link)](https://pub.towardsai.net/claude-code-has-50-commands-most-developers-use-only-5-b675387ea2ce)
+
+- 10 Most(ly Dead) Influential Programming Languages
+[(link)](https://blog.stackademic.com/10-most-ly-dead-influential-programming-languages-6b778b7afe34)
+
 - How We Cut LLM Token Usage by 90% in SQL Migration Using AST Compression
 [(link)](https://reliable-data-engineering.netlify.app/posts/article_toon_sql_migration/)
 
