@@ -289,10 +289,7 @@ home: &r
                     url: /home/lv/adbkt/kidb/vectordb.html
                   - t: Rekursives SQL
                     ts: Rekursives SQL
-                    url: /home/lv/adbkt/recsql/recsql.html
-                  - t: Rekursive Abfragen
-                    ts: Rekursive Abfragen
-                    url: /home/lv/adbkt/a/sql/rec.pdf
+                    url: /home/lv/adbkt/vorlesungen/recsql.html
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
@@ -333,6 +330,9 @@ home: &r
                   - t:  Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/uebungen/zeitreihendb.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/uebungen/recsql.html
               - t: zzz
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
@@ -340,9 +340,6 @@ home: &r
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html
-                  - t: "Ü: Rekursives SQL"
-                    ts: "Ü: Rekursives SQL"
-                    url: /home/lv/adbkt/recsql/ueb-recsql.html
                   - t: Konsistenz
                     ts: Konsistenz
                     url: /home/lv/adbkt/zzz/consistency.html
@@ -352,9 +349,6 @@ home: &r
                   - t:  Verteilte Transaktionen
                     ts:  Verteilte Transaktionen
                     url: /home/lv/adbkt/zzz/dist-trans.html
-                  - t: "Ü: Rekursive Abfrage"
-                    ts: "Ü: Rekursive Abfrage"
-                    url: /home/lv/adbkt/recsql/ueb-recsql.html
                   - t:  "Ü: Vektordatenbanken"
                     ts:  "Ü: Vektordatenbanken"
                     url: /home/lv/adbkt/kidb/ueb-vectordb.html

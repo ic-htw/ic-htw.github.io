@@ -364,6 +364,64 @@ call gds.graph.list()
 CALL gds.graph.drop('bubahn') YIELD graphName;
 ```
 
+# K6
+```yaml
+networks:
+  adbkt:
+    external: true
+
+services:
+  k6:
+    container_name: k6
+    image:  iclassen/ubu-k6
+    networks:
+      - adbkt
+```
+
+
+# InfluxDB
+```yaml
+networks:
+  adbkt:
+    external: true
+
+services:
+  idb:
+    container_name: idb
+    image: influxdb:3-core
+    ports:
+      - 8181:8181
+    command:
+      - influxdb3
+      - serve
+      - --node-id=node0
+      - --object-store=file
+      - --data-dir=/var/lib/influxdb3/data
+      - --plugin-dir=/var/lib/influxdb3/plugins
+    networks:
+      - adbkt
+```
+
+Grafana
+```yaml
+networks:
+  adbkt:
+    external: true
+
+services:
+  grafana:
+    container_name: grafana
+    image:  grafana/grafana:12.1-ubuntu
+    ports:
+      - 3000:3000
+    networks:
+      - adbkt
+```
+
+
+
+
+
 
 
 # MD
