@@ -40,10 +40,10 @@ In dieser Aufgabe sollen Sie Geo-Daten mit Graph-Daten kombinieren, um eine Fahr
 
 ## Code
 - Transfer Mobility-Daten 
-[(link)](/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb) 
+[(link)](/home/lv/adbkt/a_ipynb/neo4j-fill-mobility.ipynb) 
 [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/neo4j-fill-mobility.ipynb)
 - Basiscode für die Lösung 
-[(link)](/home/lv/adbkt/a-ipynb/shed.ipynb) 
+[(link)](/home/lv/adbkt/a_ipynb/shed.ipynb) 
 [(render)](https://github.com/ic-htw/ic-htw.github.io/blob/master/home/lv/adbkt/a-ipynb/shed.ipynb)
 
 
