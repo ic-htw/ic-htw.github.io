@@ -1,12 +1,11 @@
 ---
 layout: default1
-nav: adbkt-pruefungen
-title: P4
+nav: adbkt-uebungen
+title: Übung Zugriffskontrolle in Cypher - ADBKT
 is_slide: 0
 ---
 
-# Zugriffskontrolle mit Graphdatenbanken
-
+# Zugriffskontrolle in Cypher
 ## Aufgabestellung
 - In einer Graphdatenbank werden folgende Daten gespeichert
   - Unternehmensstruktur<br>

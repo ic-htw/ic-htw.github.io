@@ -333,6 +333,18 @@ home: &r
                   - t: Rekursives SQL
                     ts: Rekursives SQL
                     url: /home/lv/adbkt/uebungen/recsql.html
+                  - t: Zugriffskontrolle in Cypher
+                    ts: Zugriffskontrolle in Cypher
+                    url: /home/lv/adbkt/uebungen/auth.html
+                  - t: Geo-Abfragen
+                    ts: Geo-Abfragen
+                    url: /home/lv/adbkt/uebungen/geo-sql.html
+                  - t: pgRouting
+                    ts: pgRouting
+                    url: /home/lv/adbkt/uebungen/pgrouting.html
+                  - t: ER-Diagramm
+                    ts: ER-Diagramm
+                    url: /home/lv/adbkt/uebungen/er-dia.html
               - t: zzz
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
@@ -352,12 +364,6 @@ home: &r
                   - t:  "Ü: Vektordatenbanken"
                     ts:  "Ü: Vektordatenbanken"
                     url: /home/lv/adbkt/kidb/ueb-vectordb.html
-                  - t: "Ü: Geo-Abfragen"
-                    ts: "Ü: Geo-Abfragen"
-                    url: /home/lv/adbkt/geo/ueb-geo-sql.html
-                  - t: "Ü: pgRouting"
-                    ts: "Ü: pgRouting"
-                    url: /home/lv/adbkt/geo/ueb-pgrouting.html
                   - t: "Ü: DynamoDB"
                     ts: "Ü: DynamoDB"
                     url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
@@ -373,9 +379,6 @@ home: &r
                   - t: "Ü: TourDelight"
                     ts: "Ü: TourDelight"
                     url: /home/lv/adbkt/pruefungen/tour-delight.html
-                  - t: "Ü: Zugriffskontrolle in Cypher"
-                    ts: "Ü: Zugriffskontrolle in Cypher"
-                    url: /home/lv/adbkt/pruefungen/auth.html
                   - t: "Ü: Fahrverbindung"
                     ts: "Ü: Fahrverbindung"
                     url: /home/lv/adbkt/pruefungen/sched.html

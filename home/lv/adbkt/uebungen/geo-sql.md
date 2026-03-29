@@ -1,7 +1,7 @@
 ---
 layout: default1
-nav: adbkt-geo
-title: "Ü: Geo-Abfragen"
+nav: adbkt-uebungen
+title: Übung Geo-Abfragen - ADBKT
 is_slide: 0
 ---
 
