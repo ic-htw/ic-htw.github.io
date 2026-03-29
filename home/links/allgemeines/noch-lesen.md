@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Google Stitch
+[(link)](https://stitch.withgoogle.com/)
+
+- Google Maps Update
+[(link)](https://www.mayhemcode.com/2026/03/google-maps-2026-update-what-is-ask.html)
+
 - Claude Code Has 50+ Commands. Most Developers Use Only 5.
 [(link)](https://pub.towardsai.net/claude-code-has-50-commands-most-developers-use-only-5-b675387ea2ce)
 
