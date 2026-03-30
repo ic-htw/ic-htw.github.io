@@ -324,15 +324,18 @@ home: &r
                   - t:  Graph-Data-Science
                     ts: Graph-Data-Science
                     url: /home/lv/adbkt/uebungen/gds.html
-                  - t:  Zeitreihendatenbanken
-                    ts: Zeitreihendatenbanken
-                    url: /home/lv/adbkt/uebungen/zeitreihendb.html
+                  - t: Graphdatenbanken - Zugriffskontrolle
+                    ts: Graphdatenbanken - Zugriffskontrolle
+                    url: /home/lv/adbkt/uebungen/auth.html
+                  - t:  Zeitreihendatenbanken - Monitoring
+                    ts: Zeitreihendatenbanken- Monitoring
+                    url: /home/lv/adbkt/uebungen/monitoring.html
+                  - t:  Vektordatenbanken / RAG
+                    ts: Vektordatenbanken / RAG
+                    url: /home/lv/adbkt/uebungen/vectordb-rag.html
                   - t: Rekursives SQL
                     ts: Rekursives SQL
                     url: /home/lv/adbkt/uebungen/recsql.html
-                  - t: Zugriffskontrolle in Cypher
-                    ts: Zugriffskontrolle in Cypher
-                    url: /home/lv/adbkt/uebungen/auth.html
                   - t: Geo-Abfragen
                     ts: Geo-Abfragen
                     url: /home/lv/adbkt/uebungen/geo-sql.html
