@@ -1,0 +1,53 @@
+<svg viewBox="0 0 580 180" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs>
+  <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#888"/>
+  </marker>
+</defs>
+<!-- Box 1: Daten -->
+<rect x="10" y="38" width="95" height="80" rx="6" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="57" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Daten</text>
+<line x1="10" y1="66" x2="105" y2="66" stroke="#1565C0" stroke-width="1" opacity="0.4"/>
+<text x="57" y="84" text-anchor="middle" font-size="10" fill="#444">Dokument</text>
+<text x="57" y="98" text-anchor="middle" font-size="10" fill="#444">Bild · Audio</text>
+<text x="57" y="112" text-anchor="middle" font-size="10" fill="#444">Code · Video</text>
+<!-- Arrow 1 -->
+<line x1="105" y1="78" x2="124" y2="78" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<!-- Box 2: Embedding-Modell -->
+<rect x="126" y="38" width="105" height="80" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+<text x="178" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Embedding</text>
+<text x="178" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#2E7D32">Modell</text>
+<line x1="126" y1="80" x2="231" y2="80" stroke="#2E7D32" stroke-width="1" opacity="0.4"/>
+<text x="178" y="96" text-anchor="middle" font-size="10" fill="#444">BERT · CLIP</text>
+<text x="178" y="110" text-anchor="middle" font-size="10" fill="#444">OpenAI · E5</text>
+<!-- Arrow 2 -->
+<line x1="231" y1="78" x2="250" y2="78" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<!-- Box 3: Vektor -->
+<rect x="252" y="38" width="105" height="80" rx="6" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="304" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Vektor</text>
+<line x1="252" y1="66" x2="357" y2="66" stroke="#E65100" stroke-width="1" opacity="0.4"/>
+<text x="304" y="82" text-anchor="middle" font-size="9" fill="#444">[0.21, -0.07,</text>
+<text x="304" y="95" text-anchor="middle" font-size="9" fill="#444"> 0.83,  0.14,</text>
+<text x="304" y="108" text-anchor="middle" font-size="9" fill="#888"> ... 768 dim]</text>
+<!-- Arrow 3 -->
+<line x1="357" y1="78" x2="376" y2="78" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<!-- Box 4: VectorDB -->
+<rect x="378" y="38" width="95" height="80" rx="6" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+<text x="425" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#7B1FA2">VectorDB</text>
+<line x1="378" y1="66" x2="473" y2="66" stroke="#7B1FA2" stroke-width="1" opacity="0.4"/>
+<text x="425" y="82" text-anchor="middle" font-size="10" fill="#444">HNSW-Index</text>
+<text x="425" y="96" text-anchor="middle" font-size="10" fill="#444">Metadaten</text>
+<text x="425" y="110" text-anchor="middle" font-size="10" fill="#444">ANN-Suche</text>
+<!-- Arrow 4 -->
+<line x1="473" y1="78" x2="492" y2="78" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<!-- Box 5: Top-k -->
+<rect x="494" y="38" width="78" height="80" rx="6" fill="#E0F7FA" stroke="#00695C" stroke-width="2"/>
+<text x="533" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#00695C">Top-k</text>
+<line x1="494" y1="66" x2="572" y2="66" stroke="#00695C" stroke-width="1" opacity="0.4"/>
+<text x="533" y="82" text-anchor="middle" font-size="10" fill="#444">ähnliche</text>
+<text x="533" y="96" text-anchor="middle" font-size="10" fill="#444">Ergebnisse</text>
+<text x="533" y="110" text-anchor="middle" font-size="10" fill="#444">gerankt</text>
+<!-- Query annotation below -->
+<text x="290" y="148" text-anchor="middle" font-size="11" fill="#333">Query: "Hauptstadt von Frankreich"  →  ähnliche Dokumente über Paris, Frankreich, ...</text>
+<text x="290" y="165" text-anchor="middle" font-size="10" fill="#888">Semantische Suche findet Bedeutung – nicht nur Schlüsselwörter</text>
+</svg>

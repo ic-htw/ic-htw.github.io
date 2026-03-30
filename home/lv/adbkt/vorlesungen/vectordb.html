@@ -1,0 +1,719 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Vektordatenbanken - ADBKT
+is_slide: 1
+n: 17
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Vektordatenbanken</h1>
+<ul class="w3-large">
+    <li>Speicherung und Verwaltung von Vektordaten</li>
+    <li>Effiziente Suche nächstgelegener Nachbarn</li>
+    <li>Ähnlichkeitssuche (ANN) statt exakter Gleichheit</li>
+    <ul class="w3-large">
+        <li>ANN - Approximate Nearest Neighbors</li>
+        <li>Semantische Suche</li>
+    </ul>
+    <li>Distanzmaße</li>
+    <li>Index-Strukturen</li>
+    <li>Auch in hochdimensionalen Vektorräumen</li>
+    <li>Anwendung in Zusammenhang mit </li>
+    <ul>
+        <li>Semantischen Vektoreinbettungen (Embeddings) </li>
+        <li>Großen Sprachmodellen (Large Language Models, LLM)</li>
+        <li>Retrieval Augmented Generation (RAG)</li>
+    </ul>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Das Grundprinzip</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d01-concept.svg">
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Vektoreinbettungen</h1>
+
+        <ul class="w3-large">
+            <li>Vektor = Zahlenfeld fester Länge</li>
+            <ul>
+                <li>Zweidimensional: (3, 5): Vektor der in der Ebene</li>
+                <li>Dreidimensional: (3, 5, 1): Vektor im Raum</li>
+                <li>1536-dimensional: (1.7, 2.9, 0.9, ..., 3.4, 4,7): OpenAI-Texteinbettung</li>
+            </ul>
+            <li>Einbettungen: Umwandlung von Datenobjekten in Vektoren</li>
+            <ul>
+                <li>Texte, Bilder, Audio, Video</li>
+                <li>Erfassung der Bedeutung der Objekte</li>
+                <li>Ähnlichkeiten von Wörtern, Bildern usw.</li>
+            </ul>
+        </ul>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d120-100.png"><br>
+        (<a href="https://partee.io/2022/08/11/vector-embeddings">Quelle</a>)
+
+        <ul class="w3-large">
+            <li>Mathematische Repräsentation von Datenobjekten</li>
+            <li>Komprimierte, einheitliche Darstellung</li>
+            <li>Bewahren Beziehungen in den Daten</li>
+            <li>Ergebnis tiefer neuronaler Netze (Deep Learning)</li>
+        </ul>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d100-100.png"><br>
+        (<a href="https://arize.com/blog-course/embeddings-meaning-examples-and-how-to-compute">Quelle</a>)
+
+        <p class="w3-large ic-neg15">Was ist ein Embedding?</p>
+        <ul class="w3-large">
+            <li>Neuronales Netz kodiert Daten als Zahlenvektoren (dense representation)</li>
+            <li>Semantisch ähnliche Inhalte → nahe beieinander im Vektorraum</li>
+            <li>Dimensionen: 384 (sentence-transformers) bis 3072 (text-embedding-3-large)</li>
+            <li>Jede Dimension repräsentiert ein abstraktes Merkmal</li>
+        </ul>
+        <p class="w3-large ic-neg15">Bekannte Modelle</p>
+        <ul class="w3-large">
+            <li><strong>Text</strong>: OpenAI text-embedding-3-*, sentence-transformers, E5, GTE</li>
+            <li><strong>Bilder</strong>: CLIP, ViT, ResNet-Features</li>
+            <li><strong>Code</strong>: CodeBERT, StarCoder-Embeddings</li>
+            <li><strong>Multimodal</strong>: CLIP (Text + Bild in gleichem Raum)</li>
+        </ul>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d02-embedding.svg">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Beispiel Satzeinbettungen</h1>
+<h2>Sentence Transformers</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d130-100.png">
+
+<p class="w3-large">
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d140-100.png"><br>
+(<a href="https://partee.io/2022/08/11/vector-embeddings/">Quelle</a>)
+</p>
+
+<p class="w3-large">
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d150-100.png">
+</p>
+
+<p class="w3-large">
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d160-100.png"><br>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d170-100.png">    
+</p>
+
+    <p class="w3-large">
+        Explained: Tokens and Embeddings in LLMs (<a href="https://medium.com/the-research-nest/explained-tokens-and-embeddings-in-llms-69a16ba5db33">link</a>)
+    </p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Distanzmetriken</h1>
+<h2>Ähnlichkeiten / Distanzen</h2>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d03-metrics.svg">
+        <p class="w3-large ic-neg15">Cosinus-Ähnlichkeit</p>
+        <ul class="w3-large">
+            <li>Misst den <strong>Winkel</strong> zwischen zwei Vektoren (0° = identisch)</li>
+            <li>Unabhängig von der Länge (Magnitude) der Vektoren</li>
+            <li>Wertebereich: −1 (entgegengesetzt) bis +1 (identisch)</li>
+            <li>Standard für Text-Embeddings</li>
+        </ul>
+        <p class="w3-large ic-neg15">Euklidischer Abstand (L2)</p>
+        <ul class="w3-large">
+            <li>Gerade Linie im hochdimensionalen Raum</li>
+            <li>Sensitiv gegenüber der Vektorgröße</li>
+            <li>Geeignet für normalisierte Vektoren und Bildsuche</li>
+        </ul>
+        <p class="w3-large ic-neg15">Dot Product (Skalarprodukt)</p>
+        <ul class="w3-large">
+            <li>Kombiniert Richtung und Magnitude</li>
+            <li>Bei normierten Vektoren identisch mit Cosinus</li>
+            <li>Sehr schnell berechenbar (SIMD-optimiert)</li>
+        </ul>
+<h2>Berechnung</h2>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d320-100.png"><br>
+        <!--
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d311-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)
+-->
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Verteilung im n-dimensionalen Raum</h1>
+<h2>Parameter</h2>
+<ul class="w3-large">
+    <li>Verteilung von 50 Datenpunkten</li>
+    <li>Seitenlänge eines Teilwürfels: 0.2 Einheiten</li>
+    <li>Füllgrad der Teilwürfel nimmt drastisch ab</li>
+</ul>
+
+<h2>Ein-dimensional</h2>
+<img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d350-100.png">
+<p class="w3-large">Füllgrad Teilwürfel: 20%</p>
+
+<h2>Zwei-dimensional</h2>
+<img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d360-100.png">
+<p class="w3-large">Füllgrad Teilwürfel: 4%</p>
+<h2>Drei-dimensional</h2>
+<img class="w3-image ic-pos25" src="/home/lv/adbkt/a/vectordb/d370-100.png">
+<p class="w3-large">Füllgrad Teilwürfel: 0.8%</p>
+
+<h2>Allgemeines Verhalten</h2>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d380-100.png"><br>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d390-100.png"><br>
+<p class="w3-large ic-neg15">Verhalten der Verteilung bei 20% Seitenlänge</p>
+<ul class="w3-large">
+    <li>Ein-dimensional: ca. 20% Datenpunkte</li>
+    <li>Zwei-dimensional: ca. 4% Datenpunkte</li>
+    <li>Drei-dimensional: ca. 0.8% Datenpunkte</li>
+    <li>n>10-dimensional: sehr dünn besiedelter Datenraum</li>
+</ul>
+<p class="w3-large">784-dimensional: für 20% der Datenpunkte ist über 99,9% Seitenlänge erforderlich</p>
+
+<h2>Distanzen im n-dimensinalen Raum</h2>
+        <img class="w3-image ic-pos20" src="/home/lv/adbkt/a/vectordb/d400-100.png"><br>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d410-100.png"><br>
+        <p class="w3-large ic-neg15">Je mehr Dimensionen, desto</p>
+        <ul class="w3-large">
+            <li>größer die Abstände</li>
+            <li>ähnlicher die Abstände</li>
+        </ul>
+        <p class="w3-large">
+            Fluch der Dimensionalität<br>
+            Euklidische Distanz verliert an Bedeutung</p>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Suchstrategien in Vektordatenbanken</h1>
+<p class="w3-large ic-neg15">Exakte Suche (Brute Force)</p>
+<ul class="w3-large">
+    <li>Vergleich des Query-Vektors mit <strong>allen</strong> n Vektoren</li>
+    <li>Komplexität: O(n · d) – linear in Datenmenge und Dimension</li>
+    <li>Korrekt, aber bei n = 10 Mio. Vektoren zu langsam</li>
+    <li>Einsatz: kleine Datenmengen (&lt; 10.000 Vektoren), Prototyping</li>
+</ul>
+<p class="w3-large ic-neg15">Approximate Nearest Neighbor (ANN)</p>
+<ul class="w3-large">
+    <li>Findet <em>nahezu exakte</em> Nachbarn sehr viel schneller</li>
+    <li>Genauigkeit: Recall@10</li>
+    <ul class="w3-large">
+        <li>Nimm die 10 nächsten approximierten Nachbarn</li>
+        <li>Vergleich diese mit den tatsächlich 10 nächsten Nachbarn</li>
+        <li>Prozent der approximierten Nachbarn in tatsächlich nächsten Nachbarn</li>
+    </ul>
+    <li>Ziel: Maximierung des Recall@10</li>
+    <li>In RAG</li>
+    <ul class="w3-large">
+        <li>Minimum brauchbar: 80%</li>
+        <li>Gut: 90%</li>
+        <li>Sehr gut: 95%</li>
+    </ul>
+    <li>Index muss einmalig gebaut werden (Preprocessing, Finetuning)</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Lineare Suche</h1>
+<p class="w3-large ic-neg15">Lineare Suche</p>
+<ul class="w3-large">
+    <li>Berechne Distanz des Query-Vektors zu allen Vektoren in der DB</li>
+    <li>Liefere Vektor mit geringstem Abstand</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d503-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)<br>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Inverted File Index</h1>
+<ul class="w3-large">
+    <li>Partitionierung des Datenraums auf Basis von Clustering, z.B 256 Cluster</li>
+    <li>256 Zentroide </li>
+    <li>Berechne Distanz des Query-Vektors zu allen Zentroiden</li>
+    <li>Lineare Suche in der Partition des gefundenen Zentroiden</li>
+    <li>Liefert Näherungswerte</li>
+    <li>Drastische Reduktion der Suchvorgänge</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d501-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)<br>
+
+<ul class="w3-large">
+    <li>Verbesserung der Genauigkeit: mehrere nächste Zentroide, nprobe</li>
+    <li>Tradeoff: je größer nprobe, desto genauer aber auch langsamer</li>
+    <li>Effizient für sehr große Datenmengen (100 Mio.+ Vektoren)</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d06-ivf.svg"><br>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Skalare Quantitisierung</h1>
+<ul class="w3-large">
+    <li>Reduzierung der Genauigkeit der Vektoren</li>
+    <li>Spart Speicherplatz, z.B. 8-fach bei float64 zu int8 </li>
+    <li>Schnellere Abstandsberechnungen auf int8 als auf float64</li>
+    <li>Mehr Vektoren passen in RAM</li>
+    <li>Kleinere Indices</li>
+</ul>
+
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d510-100.png"><br>
+(<a href="https://www.quora.com/What-does-quantisation-mean">Quelle</a>)<br>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Produkt-Quantitisierung</h1>
+
+<ul class="w3-large">
+    <li>Zerlegung in Subvektoren - Unterräume</li>
+    <li>Clustering auf Unterräume</li>
+    <li>Kodierung der Subvektoren durch ID des Zentroiden, reproduction value</li>
+    <li>Speicherung der Koordinaten der Zentroide</li>
+    <li>Kompression</li>
+    <ul class="w3-large">
+        <li>Originalvektor: 1024 * 32 bits = 4096 bytes</li>
+        <li>8 Subvektoren, 256 Zentroide</li>
+        <li>Kodierter Vektor: 8 * 8 bits = 8 bytes</li>
+        <li>Faktor 512x Speichersparnis</li>
+    </ul>
+    <li>Inferenz siehe Quelle</li>
+</ul>
+
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d521-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-product-quantization-b2a1a6397701">Quelle</a>)<br>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>Hierarchical Navigable Small Worlds (HNSW)</h1>
+
+<ul class="w3-large">
+    <li>Umwandlung der Vektoren in einen Graph</li>
+    <li>Abstände zwischen Vektoren als Kanten</li>
+    <li>Multi-Ebenen-Graph</li>
+    <li>Hierarchische Suche im Graphen</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d531-100.png"><br>
+(<a href="https://towardsdatascience.com/similarity-search-part-4-hierarchical-navigable-small-world-hnsw-2aad4fe87d37">Quelle</a>)
+
+
+<ul class="w3-large">
+    <li>Mehrschichtiger Graph: oben grob, unten fein</li>
+    <li><strong>Obere Layer</strong>: wenige Knoten, Langstreckenverbindungen (Navigation)</li>
+    <li><strong>Untere Layer</strong>: alle Knoten, dichte lokale Verbindungen (Präzision)</li>
+    <li>Suche startet am Entry Point ganz oben und navigiert nach unten</li>
+    <li>Suchkomplexität: O(log n)</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+    <h1>RAG: Retrieval-Augmented Generation</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d09-rag.svg">
+</div>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Hybride Suche</h1>
+
+<p class="w3-large">Kombination von Vektorsuche und klassischen Suchalgorithmen wie BM25, wie sie in Suchmaschinen verwendet wird.</p>
+
+<p class="w3-large ic-neg15">BM25 bewertet ein Dokument bzgl. seiner Relevanz für die Suchanfrage</p>
+<ul class="w3-large">
+    <li>Wie oft ein Wort in einem Dokument vorkommt</li>
+    <li>Wie selten ein Wort in der gesamten Dokumentensammlung vorkommt</li>
+    <li>Wie lang das Dokument ist</li>
+</ul>
+<p class="w3-large ic-neg15">Favorisiert</p>
+<ul class="w3-large">
+    <li>Dokumente die das Wort enthalten</li>
+    <li>Dokumente, die das Wort häufiger enthalten, aber mit Kappung, d.h. 10 Auftreten ist nicht 10mal besser</li>
+    <li>Dokumente die Worte enthalten, die selten in der Dokumentensammlung vorkommen</li>
+</ul>
+
+<p class="w3-large ic-neg15">Idee</p>
+<ul class="w3-large">
+    <li>Vektorsuche allein: brücksichtigt Semantik aber nicht unbedingt Schlüsselwörter</li>
+    <li>BM25 Gut bzgl. Schlüsselwörter, kann aber nicht Semantik berücksichtigen</li>
+    <li><strong>Hybrid</strong>: Kombination beider Verfahren</li>
+</ul>
+
+<p class="w3-large">Kombination der Ergebnisse</p>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d10-hybrid.svg">
+
+<ul class="w3-large">
+    <li>BM25 liefert Ranking A</li>
+    <li>Vektorsuche liefert Ranking B</li>
+    <li>Beide Rankings werden fusioniert, z.B. mittels Reciprocal Rank Fusion (RRF)</li>
+</ul>
+
+<p class="w3-large ic-neg15">Reciprocal Rank Fusion (RRF)</p>
+<ul class="w3-large">
+    <li>Dokumente mit hohem Rang (kleine Zahl) bekommen viel Score</li>
+    <li>Dokumente, die in beiden Rankings vorkommen, werden bevorzugt</li>
+    <li>Ranglistenfusion: jede Methode liefert eine Rangliste</li>
+    <li>RRF(d) = 1/(k + rank-bm25(d)) + 1/(k + rank-vectors(d))</li>
+    <ul class="w3-large">
+        <li>k = 60 (Typischer Wert), Normalisierungsparameter</li>
+        <li>n = Länge der Rangliste, z.B. 100</li>
+        <li>rank-bm25(d) = Rang von Dokument d in der BM25-Rangliste oder &infin; falls nicht gefunden</li>
+        <li>rank-vectors(d) = Rang von Dokument d in der Vektorsuche-Rangliste oder &infin; falls nicht gefunden</li>
+    </ul>
+    <li>Rechenbeispiele
+    <table class="w3-table-all">
+        <tr>
+            <th>Dokument</th>
+            <th>rank-bm25(d)</th>
+            <th>rank-vectors(d)</th>
+            <th>RRF(d)</th>
+            <th>Platz</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0,032786885</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>5</td>
+            <td>5</td>
+            <td>0,030769231</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>1</td>
+            <td>10</td>
+            <td>0,030679157</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>1</td>
+            <td>&infin;</td>
+            <td>0,016394443</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>&infin;</td>
+            <td>&infin;</td>
+            <td>0</td>
+            <td>5</td>
+        </tr>
+    </table></li>
+    <li>Methode robust gegenüber Ausreißer</li>
+    <li>Funktioniert gut in praktischen Anwendungen</li>
+</ul>
+<p class="w3-large ic-neg15">Anwendungsfälle</p>
+<ul class="w3-large">
+    <li>E-Commerce: Produktname (BM25) + Stil (Vektor)</li>
+    <li>Code-Suche: Funktionsname (BM25) + Logik (Vektor)</li>
+    <li>Rechtliche Suche: Paragraphennummer + semantischer Kontext</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>Metadaten-Filterung</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d08-filtering.svg">
+        <p class="w3-large ic-neg15">Warum Filterung?</p>
+        <ul class="w3-large">
+            <li>Vektoren haben Metadaten: Sprache, Datum, Kategorie, Autor</li>
+            <li>Beispiel: "ähnliche Artikel WHERE sprache='de' AND jahr=2024"</li>
+        </ul>
+        <p class="w3-large ic-neg15">Pre-Filtering</p>
+        <ul class="w3-large">
+            <li>Erst Metadaten filtern, dann ANN auf dem Subset</li>
+            <li>Vorteil: präzise, kein Ergebnis außerhalb des Filters</li>
+            <li>Nachteil: kleines Subset kann ANN-Qualität reduzieren</li>
+        </ul>
+        <p class="w3-large ic-neg15">Post-Filtering</p>
+        <ul class="w3-large">
+            <li>Erst ANN (Top-k*), dann Metadaten filtern</li>
+            <li>Vorteil: ANN auf vollem Index → hohe Qualität</li>
+            <li>Nachteil: evtl. weniger als k Ergebnisse nach Filter</li>
+        </ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>Vektordatenbanksysteme</h1>
+<h2>Pinecone</h2>
+        <ul class="w3-large">
+            <li>Managed Cloud VectorDB (Serverless &amp; Pod-basiert)</li>
+            <li>Serverless: automatisches Skalieren, Pay-per-Use</li>
+            <li>Namespaces: logische Trennung von Datensätzen</li>
+            <li>Metadaten-Filter direkt bei der Suche</li>
+            <li>REST API + Python/JS/Java SDK</li>
+            <li>Hybrid Search: Dense + Sparse Vektoren (BM25)</li>
+        </ul>
+        <pre><code class="python">from pinecone import Pinecone, ServerlessSpec
+
+pc = Pinecone(api_key="...")
+pc.create_index("docs",
+    dimension=1536,
+    metric="cosine",
+    spec=ServerlessSpec(cloud="aws",
+                        region="us-east-1"))
+idx = pc.Index("docs")
+
+# Vektoren speichern
+idx.upsert(vectors=[
+    {"id": "v1",
+     "values": [0.1, 0.7, ...],
+     "metadata": {"lang": "de"}}])
+
+# Suchen
+res = idx.query(
+    vector=[0.3, 0.5, ...], top_k=5,
+    filter={"lang": {"$eq": "de"}})</code></pre>
+
+
+<h2>Weaviate</h2>
+        <ul class="w3-large">
+            <li>Open-Source, selbst gehostet oder Weaviate Cloud</li>
+            <li><strong>Module</strong>: eingebaute Vektorisierung (text2vec, img2vec, CLIP)</li>
+            <li><strong>Hybrid Search</strong>: BM25 + Vektorsuche kombiniert</li>
+            <li>GraphQL &amp; REST &amp; gRPC API</li>
+            <li>Multi-Tenancy: isolierte Mandanten auf einer Instanz</li>
+            <li>Generative Module: direkte LLM-Integration</li>
+        </ul>
+        <pre><code class="python">import weaviate
+
+client = weaviate.connect_to_local()
+collection = client.collections.get(
+    "Article")
+
+# Hybrid-Suche (BM25 + Vektor)
+results = collection.query.hybrid(
+    query="Vektordatenbank Einführung",
+    alpha=0.75,   # 0=BM25, 1=Vektor
+    limit=5,
+    return_properties=["title", "content"])
+
+# Vektorsuche mit Filter
+results = collection.query.near_text(
+    query="semantische Suche",
+    filters=weaviate.classes.query.Filter
+        .by_property("lang").equal("de"),
+    limit=5)</code></pre>
+
+<h2>Chroma</h2>
+        <ul class="w3-large">
+            <li>Leichtgewichtig: eingebettet in Python (SQLite + HNSW)</li>
+            <li>Oder als persistenter Server betreibbar</li>
+            <li>Ideal für Prototypen, LangChain-/LlamaIndex-Integration</li>
+            <li>Automatische Vektorisierung über Embedding-Funktion</li>
+            <li>Metadaten-Filter mit <code>where</code>-Klausel</li>
+            <li>Kein eigenes Schema erforderlich</li>
+        </ul>
+        <pre><code class="python">import chromadb
+
+client = chromadb.PersistentClient(
+    path="./vectordb")
+
+col = client.get_or_create_collection(
+    "docs")
+
+col.add(
+    documents=["Paris ist die Hauptstadt Frankreichs",
+               "Berlin ist in Deutschland"],
+    metadatas=[{"lang": "de"},
+               {"lang": "de"}],
+    ids=["doc1", "doc2"])
+
+results = col.query(
+    query_texts=["Frankreich Hauptstadt"],
+    n_results=2,
+    where={"lang": "de"})</code></pre>
+
+<h2>Qdrant</h2>
+        <ul class="w3-large">
+            <li>In Rust geschrieben – hohe Performance, geringer Speicherverbrauch</li>
+            <li>Reichhaltiges Payload-Filtering: Nested-Strukturen, Geo, Volltextsuche</li>
+            <li><strong>Quantisierung</strong>: Scalar (SQ8), Binary (BQ), Product (PQ)</li>
+            <li>On-Disk-Indexierung für sehr große Collections</li>
+            <li>GRPC + REST API, Python/JS/Rust/Go SDK</li>
+            <li>Cloud-Angebot: Qdrant Cloud</li>
+        </ul>
+        <pre><code class="python">from qdrant_client import QdrantClient
+from qdrant_client.models import (
+    Distance, VectorParams,
+    PointStruct, Filter, FieldCondition,
+    MatchValue)
+
+client = QdrantClient(":memory:")
+client.create_collection("docs",
+    vectors_config=VectorParams(
+        size=768,
+        distance=Distance.COSINE))
+
+client.upsert("docs", points=[
+    PointStruct(id=1, vector=[...],
+        payload={"lang": "de",
+                 "year": 2024})])
+
+results = client.search("docs",
+    query_vector=[...], limit=5,
+    query_filter=Filter(must=[
+        FieldCondition(key="lang",
+            match=MatchValue(value="de"))
+    ]))</code></pre>
+
+<h2>pgvector: Vektoren in PostgreSQL</h2>
+        <ul class="w3-large">
+            <li>PostgreSQL-Extension: Vektoren als nativer Spaltentyp</li>
+            <li>Volle SQL-Unterstützung: JOINs, Transaktionen, ACID</li>
+            <li>Indizes: <strong>IVFFlat</strong> und <strong>HNSW</strong></li>
+            <li>Distanzoperatoren: <code>&lt;=&gt;</code> Cosine, <code>&lt;-&gt;</code> L2, <code>&lt;#&gt;</code> Inner Product</li>
+            <li>pgvectorscale: höhere Skalierung mit DiskANN</li>
+            <li>Ideal: bestehende PostgreSQL-Infrastruktur wiederverwenden</li>
+        </ul>
+        <pre><code class="language-sql">-- Extension aktivieren
+CREATE EXTENSION vector;
+
+-- Tabelle mit Vektorfeld
+CREATE TABLE docs (
+  id    SERIAL PRIMARY KEY,
+  content TEXT,
+  embedding vector(1536)
+);
+
+-- HNSW-Index (Cosine)
+CREATE INDEX ON docs
+  USING hnsw (embedding vector_cosine_ops)
+  WITH (m = 16, ef_construction = 64);
+
+-- Ähnlichkeitssuche Top-5
+SELECT content,
+  embedding &lt;=&gt; '[0.1, 0.7, ...]' AS dist
+FROM docs
+ORDER BY dist
+LIMIT 5;</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>LangChain: VectorStore-Integration</h1>
+        <p class="w3-large ic-neg15">Dokumente indexieren</p>
+        <pre><code class="python">from langchain_openai import OpenAIEmbeddings
+from langchain_chroma import Chroma
+from langchain.text_splitter import (
+    RecursiveCharacterTextSplitter)
+
+# Dokumente aufteilen
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=500, chunk_overlap=50)
+chunks = splitter.split_documents(docs)
+
+# Einbetten &amp; in VectorDB speichern
+embeddings = OpenAIEmbeddings()
+vectorstore = Chroma.from_documents(
+    documents=chunks,
+    embedding=embeddings,
+    persist_directory="./db")</code></pre>
+        <p class="w3-large ic-neg15">Suchen &amp; RAG</p>
+        <pre><code class="python">from langchain.chains import RetrievalQA
+from langchain_openai import ChatOpenAI
+
+# Ähnlichkeitssuche
+results = vectorstore.similarity_search(
+    "Was ist HNSW?", k=5)
+
+# RAG-Chain aufbauen
+from langchain_openai import ChatOpenAI
+from langchain.chains import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_core.prompts import ChatPromptTemplate
+
+llm = ChatOpenAI(model="gpt-4o")
+
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+
+prompt = ChatPromptTemplate.from_template(
+    "Beantworte die Frage basierend auf dem Kontext:\n\n{context}\n\nFrage: {input}"
+)
+
+qa_chain = create_stuff_documents_chain(llm, prompt)
+rag_chain = create_retrieval_chain(retriever, qa_chain)
+
+result = rag_chain.invoke({"input": "Was ist ein Vektorindex?"})
+
+print(result["answer"])</code></pre>
+
+<div class="ic-gap"></div>
+

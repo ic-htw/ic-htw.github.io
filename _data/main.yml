@@ -281,12 +281,9 @@ home: &r
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/vorlesungen/tsdb.html
-                  - t: LLMs
-                    ts: Large Language Models
-                    url: /home/lv/adbkt/kidb/llms.html
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
-                    url: /home/lv/adbkt/kidb/vectordb.html
+                    url: /home/lv/adbkt/vorlesungen/vectordb.html
                   - t: Rekursives SQL
                     ts: Rekursives SQL
                     url: /home/lv/adbkt/vorlesungen/recsql.html
@@ -352,6 +349,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: LLMs
+                    ts: Large Language Models
+                    url: /home/lv/adbkt/kidb/llms.html
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<text x="260" y="20" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565C0">Embedding-Raum: Semantische Gruppen</text>
+<!-- Axes -->
+<line x1="50" y1="240" x2="500" y2="240" stroke="#bbb" stroke-width="1.5"/>
+<line x1="50" y1="240" x2="50" y2="30" stroke="#bbb" stroke-width="1.5"/>
+<text x="505" y="243" font-size="10" fill="#999">dim 1</text>
+<text x="35" y="28" font-size="10" fill="#999">dim 2</text>
+<text x="270" y="258" text-anchor="middle" font-size="10" fill="#999">(2D-Projektion eines 768-dimensionalen Raums)</text>
+<!-- Cluster 1: Tiere (blau) -->
+<ellipse cx="140" cy="90" rx="55" ry="38" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5" opacity="0.7"/>
+<circle cx="115" cy="80" r="5" fill="#1565C0"/>
+<circle cx="135" cy="100" r="5" fill="#1565C0"/>
+<circle cx="155" cy="75" r="5" fill="#1565C0"/>
+<circle cx="160" cy="105" r="5" fill="#1565C0"/>
+<circle cx="125" cy="58" r="5" fill="#1565C0"/>
+<text x="113" y="78" font-size="10" fill="#1565C0" font-weight="bold">Katze</text>
+<text x="133" y="98" font-size="10" fill="#1565C0" font-weight="bold">Hund</text>
+<text x="153" y="73" font-size="10" fill="#1565C0">Tier</text>
+<text x="158" y="103" font-size="10" fill="#1565C0">Vogel</text>
+<text x="100" y="128" text-anchor="middle" font-size="11" fill="#1565C0" font-weight="bold">Tiere</text>
+<!-- Cluster 2: Fahrzeuge (grün) -->
+<ellipse cx="390" cy="85" rx="60" ry="40" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" opacity="0.7"/>
+<circle cx="360" cy="75" r="5" fill="#2E7D32"/>
+<circle cx="385" cy="95" r="5" fill="#2E7D32"/>
+<circle cx="410" cy="70" r="5" fill="#2E7D32"/>
+<circle cx="415" cy="100" r="5" fill="#2E7D32"/>
+<circle cx="370" cy="55" r="5" fill="#2E7D32"/>
+<text x="358" y="73" font-size="10" fill="#2E7D32" font-weight="bold">Auto</text>
+<text x="383" y="93" font-size="10" fill="#2E7D32" font-weight="bold">LKW</text>
+<text x="408" y="68" font-size="10" fill="#2E7D32">Bus</text>
+<text x="413" y="98" font-size="10" fill="#2E7D32">Zug</text>
+<text x="390" y="130" text-anchor="middle" font-size="11" fill="#2E7D32" font-weight="bold">Fahrzeuge</text>
+<!-- Cluster 3: Essen (orange) -->
+<ellipse cx="160" cy="195" rx="58" ry="35" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5" opacity="0.7"/>
+<circle cx="130" cy="190" r="5" fill="#E65100"/>
+<circle cx="155" cy="210" r="5" fill="#E65100"/>
+<circle cx="178" cy="185" r="5" fill="#E65100"/>
+<circle cx="185" cy="205" r="5" fill="#E65100"/>
+<circle cx="140" cy="175" r="5" fill="#E65100"/>
+<text x="128" y="188" font-size="10" fill="#E65100" font-weight="bold">Apfel</text>
+<text x="153" y="208" font-size="10" fill="#E65100" font-weight="bold">Banane</text>
+<text x="152" y="183" font-size="10" fill="#E65100">Brot</text>
+<text x="183" y="203" font-size="10" fill="#E65100">Käse</text>
+<text x="155" y="235" text-anchor="middle" font-size="11" fill="#E65100" font-weight="bold">Essen</text>
+<!-- Cluster 4: Technik (lila) -->
+<ellipse cx="390" cy="185" rx="60" ry="38" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5" opacity="0.7"/>
+<circle cx="360" cy="175" r="5" fill="#7B1FA2"/>
+<circle cx="385" cy="198" r="5" fill="#7B1FA2"/>
+<circle cx="408" cy="170" r="5" fill="#7B1FA2"/>
+<circle cx="415" cy="195" r="5" fill="#7B1FA2"/>
+<circle cx="370" cy="160" r="5" fill="#7B1FA2"/>
+<text x="356" y="173" font-size="10" fill="#7B1FA2" font-weight="bold">Python</text>
+<text x="382" y="196" font-size="10" fill="#7B1FA2" font-weight="bold">SQL</text>
+<text x="406" y="168" font-size="10" fill="#7B1FA2">HNSW</text>
+<text x="413" y="193" font-size="10" fill="#7B1FA2">API</text>
+<text x="390" y="232" text-anchor="middle" font-size="11" fill="#7B1FA2" font-weight="bold">Technik</text>
+<!-- Distance indicator between Tiere and Fahrzeuge -->
+<line x1="195" y1="90" x2="330" y2="85" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="263" y="80" text-anchor="middle" font-size="9" fill="#888">große Distanz</text>
+<!-- Distance indicator within Tiere cluster -->
+<line x1="115" y1="80" x2="135" y2="100" stroke="#1565C0" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="108" y="115" font-size="9" fill="#1565C0">geringe Distanz</text>
+</svg>

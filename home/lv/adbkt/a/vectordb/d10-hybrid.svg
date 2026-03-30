@@ -1,0 +1,47 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12">
+<defs>
+  <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#888"/>
+  </marker>
+</defs>
+<text x="260" y="20" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565C0">Hybrid Search: BM25 + Vektor</text>
+
+<!-- Query -->
+<rect x="195" y="32" width="130" height="34" rx="5" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="260" y="53" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Query</text>
+
+<!-- Two arrows down -->
+<line x1="220" y1="66" x2="140" y2="90" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="300" y1="66" x2="380" y2="90" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- BM25 box -->
+<rect x="55" y="92" width="160" height="55" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5"/>
+<text x="135" y="113" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">BM25 (Sparse)</text>
+<text x="135" y="128" text-anchor="middle" font-size="10" fill="#555">Keyword-Matching</text>
+<text x="135" y="141" text-anchor="middle" font-size="9" fill="#888">TF-IDF Gewichtung</text>
+
+<!-- Vector box -->
+<rect x="305" y="92" width="160" height="55" rx="5" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5"/>
+<text x="385" y="113" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Vektor (Dense)</text>
+<text x="385" y="128" text-anchor="middle" font-size="10" fill="#555">Semantische Nähe</text>
+<text x="385" y="141" text-anchor="middle" font-size="9" fill="#888">HNSW ANN-Suche</text>
+
+<!-- Result lists -->
+<rect x="55" y="165" width="160" height="60" rx="4" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+<text x="135" y="182" text-anchor="middle" font-size="11" fill="#555">1. "Datenbank Index"</text>
+<text x="135" y="197" text-anchor="middle" font-size="11" fill="#555">2. "SQL-Abfrage"</text>
+<text x="135" y="212" text-anchor="middle" font-size="11" fill="#555">3. "B-Tree Struktur"</text>
+
+<rect x="305" y="165" width="160" height="60" rx="4" fill="#FFF9C4" stroke="#F9A825" stroke-width="1"/>
+<text x="385" y="182" text-anchor="middle" font-size="11" fill="#555">1. "Vektorindex HNSW"</text>
+<text x="385" y="197" text-anchor="middle" font-size="11" fill="#555">2. "Embedding-Raum"</text>
+<text x="385" y="212" text-anchor="middle" font-size="11" fill="#555">3. "Nearest Neighbor"</text>
+
+<!-- Arrows to RRF -->
+<line x1="135" y1="225" x2="220" y2="244" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="385" y1="225" x2="300" y2="244" stroke="#888" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- RRF -->
+<rect x="170" y="246" width="180" height="18" rx="4" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5"/>
+<text x="260" y="259" text-anchor="middle" font-size="11" fill="#7B1FA2" font-weight="bold">RRF: Fusionierte Rangliste</text>
+</svg>
