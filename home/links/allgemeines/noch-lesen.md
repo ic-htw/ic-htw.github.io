@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- PageIndex git
+[(link)](https://github.com/VectifyAI/PageIndex)
+
 - Google Stitch
 [(link)](https://stitch.withgoogle.com/)
 
