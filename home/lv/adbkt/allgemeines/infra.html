@@ -1,0 +1,526 @@
+---
+layout: default1
+nav: adbkt-allgemeines
+title: Infrastruktur - ADBKT
+is_slide: 1
+n: 11
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Vorbemerkung</h1>
+<p class="w3-large">Alle Zugriffe nur im Intranet. An der HTW oder über VPN.</p>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Arbeiten mit dem Portainer</h1>
+<h2>Einloggen</h2>
+<ul class="w3-large">
+    <li>Host, Userid und Passwort werden in der LV bekannt gegeben</li>
+    <li>URL: <code>https://aaa.f4.htw-berlin.de:9443/</code></li>
+</ul>
+
+<h2>Environment “local” auswählen</h2>
+<ul class="w3-large">
+    <li>Auf "local" klicken</li>
+    <li>Dashboard wird angezeigt</li>
+</ul>
+
+<h2>Netzwerk</h2>
+        <ul class="w3-large">
+            <li>In der Navigationsleiste links auf "Networks" klicken</li>
+            <li>Auf Button "Add network" klicken</li>
+            <li>Name <code>adbkt</code> eintragen</li>
+        </ul>
+
+<h2>Stack anlegen</h2>
+        <ul class="w3-large">
+            <li>Stacks entsprechen <code>docker-compose</code></li>
+            <li>In der Navigationsleiste links auf "Stacks" klicken</li>
+            <li>Auf Button "Add stack" klicken</li>
+            <li>Docker-Compose-Code in Web-Editor eingeben</li>
+            <li>Auf "Deploy the stack" klicken</li>
+        </ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Postgres</h1>
+
+<h2>Container erstellen</h2>
+<p class="w3-large">Achtung: Passwort eintragen.</p>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+    
+services:
+  pg:
+    container_name: pg
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: #<-- hier Passwort eintragen
+    networks:
+      - adbkt
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 3</code></pre>
+
+<h2>Zugriff per DBeaver</h2>
+<ul class="w3-large">
+    <li>DBeaver Download (<a href="https://dbeaver.io/download/">link</a>)</li>
+    <li>Passwort wie vorher vergeben</li>
+    <li>Verbindungsdaten
+        <ul>
+            <li>user: <code>postgres</code></li>
+            <li>password: <em>(wie vergeben)</em></li>
+            <li>host: <code>aaa.f4.htw-berlin.de:5432</code></li>
+            <li>database: <code>postgres</code></li>
+        </ul>
+    </li>
+</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Python</h1>
+
+<h2>Container erstellen</h2>
+<p class="w3-large">
+    Version für eine Gruppe, die aus einer Person besteht.
+    Sollten mehrere Personen in der Gruppe sein, müssen Namen und Ports angepasst werden, siehe weiter unten.
+</p>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  py:
+    container_name: py
+    image: iclassen/ubu-py-uv:latest
+    entrypoint: ["/root/entrypoint.sh"]
+    user: root
+    ports:
+      - 10000:8888
+      - "20000:22"
+      - 30000:3000
+      - 40000:4000
+      - 50000:5000
+      - 60000:6000
+    networks:
+      - adbkt</code></pre>
+    
+<h2>Anpassungen für Gruppen mit mehreren Personen</h2>
+
+<p class="w3-large ic-neg15">Zweiergruppe:</p>
+<ul class="w3-large">
+    <li>Zwei Container <code>py1</code> und <code>py2</code></li>
+    <li>Eintrag <code>py</code> in <code>py1</code> bzw. <code>py2</code> im Docker-Compose-Code ändern</li>
+    <li>Portanpassungen entsprechend folgender Tabelle</li>
+</ul>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Port</th>
+        <th>py1</th>
+        <th>py2</th>
+    </tr>
+    <tr>
+        <td>JupyterLab (8888)</td>
+        <td>10001:8888</td>
+        <td>10002:8888</td>
+    </tr>
+    <tr>
+        <td>SSH (22)</td>
+        <td>20001:22</td>
+        <td>20002:22</td>
+    </tr>
+    <tr>
+        <td>Port 3000</td>
+        <td>30001:3000</td>
+        <td>30002:3000</td>
+    </tr>
+    <tr>
+        <td>usw.</td>
+        <td>x0001:x000</td>
+        <td>x0002:x000</td>
+    </tr>
+</table>
+
+<p class="w3-large">
+    Entsprechend für Gruppen mit 3 Personen.
+</p>
+
+
+<h2>Auf JupyterLab zugreifen</h2>
+<ul class="w3-large">
+    <li>Host anpassen</li>
+    <li>Port ggf. anpassen: 10001, 10002, ...</li>
+</ul>
+
+<pre><code class="language-plaintext">http://aaa.f4.htw-berlin.de:10000/lab</code></pre>
+
+<h2>Bibliothek installieren</h2>
+<ul class="w3-large">
+    <li>Terminal in JupyterLab öffnen</li>
+    <li>Code kopieren (Paste mit CTRL-SHIFT-V)</li>
+</ul>
+
+<pre><code class="language-plaintext">uv pip install -U psycopg[binary,pool]</code></pre>
+
+<h2>Per Python auf Postgres zugreifen</h2>
+<ul class="w3-large">
+    <li>Neues Notebook anlegen</li>
+    <li>Achtung: Passwort eintragen</li>
+</ul>
+
+<pre><code class="python">import psycopg
+
+conninfo = " ".join([
+"user='postgres'",
+"password=''",   #<-- hier Passwort eintragen
+"host='pg'",
+"port=5432",
+"dbname='postgres'"])
+print(conninfo)
+
+sql1 = "drop table if exists kv"
+sql2 = """
+create table kv (
+  k integer not null,
+  v varchar not null
+)
+"""
+sql3 = "insert into kv values (1, 'hallo'), (2, 'hi')"
+
+with psycopg.connect(conninfo) as conn:
+    conn.execute(sql1)
+    conn.execute(sql2)
+    conn.execute(sql3)
+
+sql = "select * from kv"
+with psycopg.connect(conninfo) as conn:
+    rs = conn.execute(sql).fetchall()
+
+print(rs)</code></pre>
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Cassandra</h1>
+
+<h2>Container erstellen</h2>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  cas:
+    container_name: cas
+    image: cassandra:latest
+    ports:
+      - 9042:9042
+    environment:
+      - JVM_OPTS=-Xms1024M -Xmx1024M
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=1024M
+    networks:
+      - adbkt
+    healthcheck:
+      test: ["CMD", "cqlsh", "-e", "describe keyspaces"]
+      interval: 20s
+      timeout: 10s
+      retries: 3
+      start_period: 60s</code></pre>
+
+<h2>Keyspace erstellen</h2>
+<ul class="w3-large">
+    <li>Konsole in Container <code>cas</code> öffnen</li>
+    <li>Cassandra Query Language Shell starten (<code>cqlsh</code>)</li>
+    <li>Code ausführen:</li>
+</ul>
+<pre><code class="language-sql">create keyspace test with replication = {
+  'class': 'SimpleStrategy', 'replication_factor' : 1
+};
+
+use test;
+
+create table t (
+  pk int,
+  sk int,
+  v int,
+  primary key (pk, sk)
+);
+
+insert into t(pk, sk, v) values (1, 1, 100);
+insert into t(pk, sk, v) values (1, 2, 200);
+
+select * from t where pk=1;</code></pre>
+
+<h2>Bibliothek installieren</h2>
+<ul class="w3-large">
+    <li>Terminal in JupyterLab öffnen</li>
+    <li>Code kopieren (Paste mit CTRL-SHIFT-V)</li>
+</ul>
+<pre><code class="language-plaintext">uv pip install -U cassandra-driver</code></pre>
+
+<h2>Per Python auf Cassandra zugreifen</h2>
+
+<p class="w3-large">Neues Notebook anlegen. Code in erste Zelle kopieren.</p>
+<pre><code class="python">from cassandra.cluster import Cluster
+
+cluster = Cluster(["cas"], port=9042)
+session = cluster.connect('test')
+
+print(session.execute("SELECT release_version FROM system.local").one())
+
+rows = session.execute("select * from t where pk=1")
+for r in rows:
+    print(f"{r.pk}|{r.sk}|{r.v}")
+
+session.shutdown()
+cluster.shutdown()</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Neo4j</h1>
+
+<h2>Container erstellen</h2>
+<p class="w3-large">Achtung: Passwort eintragen.</p>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      - NEO4J_AUTH=neo4j/ #<-- hier Passwort eintragen
+      - NEO4J_server_memory_heap_initial__size=500M
+      - NEO4J_server_memory_heap_max__size=500M
+      - NEO4J_server_memory_pagecache_size=500M
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "", "RETURN 1"] #<-- hier Passwort eintragen
+      interval: 10s
+      timeout: 10s
+      retries: 3
+      start_period: 30s</code></pre>
+
+<h2>Auf Neo4j-Browser zugreifen</h2>
+<pre><code class="language-plaintext">http://aaa.f4.htw-berlin.de:7474</code></pre>
+
+<h2>Alle Daten löschen</h2>
+<pre><code class="cypher">MATCH (x) DETACH DELETE x;</code></pre>
+
+<h2>Schema anzeigen</h2>
+<pre><code class="cypher">call db.schema.visualization()</code></pre>
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Neo4j - UBahn-Daten laden</h1>
+<p class="w3-large">Achtung: Passwort eintragen.</p>
+<pre><code class="python">import duckdb
+from neo4j import GraphDatabase
+
+parquet_url = "https://raw.githubusercontent.com/ic-htw/data/main/parquet/bubahn"
+
+def load_df(table_name):
+    return duckdb.query(f"SELECT * FROM '{parquet_url}/{table_name}.parquet'").to_df()
+
+df_haltestelle = load_df("haltestelle")
+df_segment = load_df("segment")
+df_linie = load_df("linie")
+df_unterlinie = load_df("unterlinie")
+df_abschnitt = load_df("abschnitt")
+
+neo4j_host = "neo4j://widb000l.f4.htw-berlin.de:7687"
+neo4j_auth = ("neo4j", "") #<-- hier Passwort eintragen
+
+cypher_create_stop = 'CREATE (h:Haltestelle {hid: $hid, bez: $bez, lat:$lat, lng:$lng})'
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_haltestelle.itertuples(index=False):
+            session.run(cypher_create_stop, hid=r.HID, bez=r.BEZ, lat=r.LAT, lng=r.LNG)
+
+cypher_create_linie = 'CREATE (l:Linie {lid: $lid, bez: $bez})'
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_linie.itertuples(index=False):
+            session.run(cypher_create_linie, lid=r.LID, bez=r.BEZ)
+
+cypher_create_segment = '''
+MATCH (ha:Haltestelle), (hb:Haltestelle)
+WHERE ha.hid=$hid_a AND hb.hid=$hid_b
+CREATE (s:Segment {hid_a: ha.hid, hid_b: hb.hid, laengeInMeter: $laengeInMeter})
+CREATE (s) -[:ProjSegA]-> (ha)
+CREATE (s) -[:ProjSegB]-> (hb)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_segment.itertuples(index=False):
+            session.run(cypher_create_segment, hid_a=r.hid_a, hid_b=r.hid_b, laengeInMeter=r.laenge_in_meter)
+
+
+cypher_create_unterlinie = '''
+MATCH (l:Linie)
+WHERE l.lid=$lid
+CREATE (ul:Unterlinie {ulid: $ulid})
+CREATE (ul) -[:InL]-> (l)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_unterlinie.itertuples(index=False):
+            session.run(cypher_create_unterlinie, ulid=r.ULID, lid=r.LID)
+
+
+cypher_create_abschnitt = '''
+MATCH (ha:Haltestelle), (hb:Haltestelle), (ul:Unterlinie)
+WHERE ha.hid=$hid_a AND hb.hid=$hid_b AND ul.ulid=$ulid
+CREATE (a:Abschnitt {nr: $nr, haelt: $haelt})
+CREATE (a) -[:InUL]-> (ul)
+CREATE (a) -[:ProjAbA]-> (ha)
+CREATE (a) -[:ProjAbB]-> (hb)
+'''
+with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
+    with driver.session() as session:
+        for r in df_abschnitt.itertuples(index=False):
+            session.run(cypher_create_abschnitt, ulid=r.ULID, nr=r.NR, hid_a=r.HID_A, hid_b=r.HID_B, haelt=r.HAELT)
+</code></pre>
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Neo4j - Graphprojektion</h1>
+<p class="w3-large">Anlegen:</p>
+<pre><code class="cypher">MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-(hb:Haltestelle)
+WITH gds.graph.project(
+    'bubahn',
+    ha,
+    hb,
+    {relationshipProperties: s{.laengeInMeter}},
+    {undirectedRelationshipTypes: ['*']}) AS g
+RETURN
+  g.graphName AS graph, g.nodeCount AS nodes, g.relationshipCount AS rels</code></pre>
+<p class="w3-large">Auflisten:</p>
+<pre><code class="cypher">call gds.graph.list()</code></pre>
+<p class="w3-large">Löschen:</p>
+<pre><code class="cypher">CALL gds.graph.drop('bubahn') YIELD graphName;</code></pre>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>K6</h1>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  k6:
+    container_name: k6
+    image:  iclassen/ubu-k6
+    networks:
+      - adbkt</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>InfluxDB</h1>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  idb:
+    container_name: idb
+    image: influxdb:3-core
+    ports:
+      - 8181:8181
+    command:
+      - influxdb3
+      - serve
+      - --node-id=node0
+      - --object-store=file
+      - --data-dir=/var/lib/influxdb3/data
+      - --plugin-dir=/var/lib/influxdb3/plugins
+    networks:
+      - adbkt</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Grafana</h1>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  grafana:
+    container_name: grafana
+    image:  grafana/grafana:12.1-ubuntu
+    ports:
+      - 3000:3000
+    networks:
+      - adbkt</code></pre>
+
+<div class="ic-gap"></div>
+
