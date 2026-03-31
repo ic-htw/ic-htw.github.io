@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="monospace, sans-serif">
+  <rect width="800" height="350" fill="#f8f9fa" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">depends_on &amp; Healthcheck: Startordnung</text>
+
+  <!-- Timeline -->
+  <line x1="60" y1="200" x2="760" y2="200" stroke="#adb5bd" stroke-width="2"/>
+  <text x="60" y="220" font-size="11" fill="#6c757d">t=0</text>
+  <text x="755" y="220" font-size="11" fill="#6c757d">t →</text>
+
+  <!-- postgres bar -->
+  <rect x="80" y="100" width="180" height="40" rx="6" fill="#dc3545"/>
+  <text x="170" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="white">postgres</text>
+  <!-- healthcheck ok marker -->
+  <circle cx="270" cy="120" r="10" fill="#198754"/>
+  <text x="270" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="white">✓</text>
+  <text x="270" y="155" text-anchor="middle" font-size="10" fill="#198754">healthy</text>
+  <line x1="270" y1="165" x2="270" y2="200" stroke="#198754" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- redis bar -->
+  <rect x="80" y="55" width="140" height="40" rx="6" fill="#fd7e14"/>
+  <text x="150" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="white">redis</text>
+  <circle cx="228" cy="75" r="10" fill="#198754"/>
+  <text x="228" y="80" text-anchor="middle" font-size="12" font-weight="bold" fill="white">✓</text>
+  <text x="228" y="45" text-anchor="middle" font-size="10" fill="#198754">healthy</text>
+  <line x1="228" y1="85" x2="228" y2="200" stroke="#198754" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- api bar (starts after postgres healthy) -->
+  <rect x="290" y="100" width="200" height="40" rx="6" fill="#198754"/>
+  <text x="390" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="white">api</text>
+  <text x="285" y="92" font-size="9" fill="#555">wartet auf postgres</text>
+
+  <!-- nginx bar (starts after api) -->
+  <rect x="510" y="100" width="200" height="40" rx="6" fill="#0d6efd"/>
+  <text x="610" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="white">nginx</text>
+  <text x="505" y="92" font-size="9" fill="#555">wartet auf api</text>
+
+  <!-- Dependency arrows -->
+  <line x1="270" y1="120" x2="290" y2="120" stroke="#198754" stroke-width="2" marker-end="url(#a6)"/>
+  <line x1="490" y1="120" x2="510" y2="120" stroke="#0d6efd" stroke-width="2" marker-end="url(#a6)"/>
+  <line x1="228" y1="75" x2="290" y2="115" stroke="#fd7e14" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#a6)"/>
+
+  <!-- Code snippet -->
+  <rect x="60" y="235" width="680" height="95" rx="8" fill="#1e1e2e"/>
+  <text x="400" y="256" text-anchor="middle" font-size="11" fill="#cdd6f4">docker-compose.yml</text>
+  <text x="80" y="272" font-size="11" fill="#89dceb">  api:</text>
+  <text x="80" y="288" font-size="11" fill="#cdd6f4">    depends_on:</text>
+  <text x="80" y="304" font-size="11" fill="#a6e3a1">      postgres: </text><text x="230" y="304" font-size="11" fill="#fab387">{ condition: service_healthy }</text>
+  <text x="80" y="320" font-size="11" fill="#a6e3a1">      redis:    </text><text x="230" y="320" font-size="11" fill="#fab387">{ condition: service_healthy }</text>
+
+  <defs>
+    <marker id="a6" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,721 @@
+---
+layout: default1
+nav: adbkt-vorlesungen
+title: Docker Compose - ADBKT
+is_slide: 1
+n: 11
+---
+
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Docker Compose</h1>
+<ul class="w3-large">
+    <li>Tool zur Definition und Ausführung mehrerer Container als eine Anwendung</li>
+    <li>Konfiguration in einer einzigen Datei: <code>docker-compose.yml</code> (YAML-Format)</li>
+    <li>Orchestriert Services, Netzwerke und Volumes deklarativ</li>
+    <li>Ziel: reproduzierbare Entwicklungs- und Testumgebungen mit einem einzigen Befehl</li>
+    <li>Typische Anwendung: Web-App + Datenbank + Cache + Message Broker lokal starten</li>
+</ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Grundprinzip</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/docker/d01-concept.svg">
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>docker-compose.yml – Grundstruktur</h1>
+        <p class="w3-large ic-neg15">Aufbau der Datei</p>
+        <ul class="w3-large">
+            <li><strong>services</strong>: ein Eintrag pro Container-Typ</li>
+            <li><strong>networks</strong>: virtuelle Netzwerke (optional, Standard: bridge)</li>
+            <li><strong>volumes</strong>: persistente Datenspeicher</li>
+            <li><strong>configs</strong> / <strong>secrets</strong>: Konfiguration &amp; Geheimnisse</li>
+            <li>Jeder Service entspricht einem Docker-Image</li>
+            <li>Compose erstellt alle Ressourcen im selben Projekt-Namespace</li>
+        </ul>
+        <pre><code class="yaml">services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    depends_on:
+      - api
+
+  api:
+    build: ./api
+    environment:
+      - DB_URL=postgres://db/myapp
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: myapp
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  pgdata:
+
+networks:
+  default:
+    driver: bridge</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Services: Images &amp; Build</h1>
+        <p class="w3-large ic-neg15">Fertiges Image verwenden</p>
+        <pre><code class="yaml">services:
+  db:
+    image: postgres:16-alpine
+    # Registry: docker.io (Standard)
+    # oder: ghcr.io/org/image:tag
+
+  cache:
+    image: redis:7-alpine</code></pre>
+        <p class="w3-large ic-neg15">Image lokal bauen</p>
+        <pre><code class="yaml">services:
+  api:
+    build:
+      context: ./api      # Verzeichnis
+      dockerfile: Dockerfile
+      args:
+        - APP_ENV=production
+      target: runtime     # Multi-Stage</code></pre>
+        <p class="w3-large ic-neg15">Build + Image kombinieren</p>
+        <pre><code class="yaml">services:
+  api:
+    build: ./api          # kurze Form
+    image: myorg/api:1.0  # Name für Push
+
+  # Rebuild erzwingen:
+  # docker compose build --no-cache
+  # docker compose up --build</code></pre>
+        <p class="w3-large ic-neg15">Wichtige Build-Befehle</p>
+        <ul class="w3-large">
+            <li><code>docker compose build</code> – alle Images bauen</li>
+            <li><code>docker compose pull</code> – Images aktualisieren</li>
+            <li><code>docker compose push</code> – Images in Registry pushen</li>
+            <li><code>--build</code>-Flag bei <code>up</code>: Rebuild vor Start</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Netzwerke</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/docker/d02-network.svg">
+        <p class="w3-large ic-neg15">Standard-Netzwerk</p>
+        <ul class="w3-large">
+            <li>Compose erstellt automatisch ein <code>bridge</code>-Netzwerk</li>
+            <li>Service-Name dient als DNS-Name innerhalb des Netzwerks</li>
+            <li>Container sehen sich gegenseitig per Namen: <code>http://api:8000</code></li>
+        </ul>
+        <p class="w3-large ic-neg15">Mehrere Netzwerke</p>
+        <pre><code class="yaml">services:
+  nginx:
+    networks:
+      - frontend
+      - backend
+  api:
+    networks:
+      - backend
+  db:
+    networks:
+      - backend
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+    internal: true  # kein Internetzugang</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Volumes</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/docker/d03-volumes.svg">
+</div>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Volumes: Konfiguration</h1>
+        <p class="w3-large ic-neg15">Named Volume</p>
+        <pre><code class="yaml">services:
+  db:
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+    driver: local
+    # Daten bleiben bei 'down' erhalten
+    # 'down -v' entfernt sie</code></pre>
+        <p class="w3-large ic-neg15">Bind Mount</p>
+        <pre><code class="yaml">services:
+  api:
+    volumes:
+      - ./src:/app/src        # Dev
+      - ./config:/etc/config:ro  # readonly</code></pre>
+        <p class="w3-large ic-neg15">tmpfs (RAM-Disk)</p>
+        <pre><code class="yaml">services:
+  api:
+    tmpfs:
+      - /tmp
+      - /run/secrets:size=1m</code></pre>
+        <p class="w3-large ic-neg15">Volume-Befehle</p>
+        <ul class="w3-large">
+            <li><code>docker volume ls</code> – alle Volumes anzeigen</li>
+            <li><code>docker volume inspect pgdata</code> – Details</li>
+            <li><code>docker compose down -v</code> – Volumes löschen</li>
+            <li><code>docker volume prune</code> – ungenutzte löschen</li>
+        </ul>
+        <p class="w3-large ic-neg15">Externes Volume</p>
+        <pre><code class="yaml">volumes:
+  pgdata:
+    external: true  # vorher angelegt</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>Umgebungsvariablen &amp; Secrets</h1>
+        <p class="w3-large ic-neg15">Variablen definieren</p>
+        <pre><code class="yaml">services:
+  api:
+    environment:
+      # direkt
+      - APP_ENV=production
+      # aus Shell-Umgebung
+      - SECRET_KEY
+      # als Map
+      DB_HOST: db
+      DB_PORT: 5432</code></pre>
+        <p class="w3-large ic-neg15">.env-Datei (Standard)</p>
+        <pre><code class="language-plaintext"># .env
+DB_PASSWORD=geheim123
+API_KEY=abc-xyz
+IMAGE_TAG=1.2.0</code></pre>
+        <pre><code class="yaml">services:
+  api:
+    image: myapp:${IMAGE_TAG}
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD}</code></pre>
+        <p class="w3-large ic-neg15">env_file</p>
+        <pre><code class="yaml">services:
+  api:
+    env_file:
+      - .env.base
+      - .env.local   # überschreibt</code></pre>
+        <p class="w3-large ic-neg15">Secrets (Swarm-kompatibel)</p>
+        <pre><code class="yaml">services:
+  api:
+    secrets:
+      - db_password
+
+secrets:
+  db_password:
+    file: ./secrets/db_password.txt
+    # oder: external: true</code></pre>
+        <ul class="w3-large">
+            <li>Secret wird als Datei in <code>/run/secrets/</code> gemountet</li>
+            <li><code>.env</code> niemals in Git committen → <code>.gitignore</code></li>
+            <li><code>.env.example</code> mit Platzhaltern bereitstellen</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>Port-Mapping &amp; Expose</h1>
+        <p class="w3-large ic-neg15">ports: Host ↔ Container</p>
+        <pre><code class="yaml">services:
+  web:
+    ports:
+      # HOST:CONTAINER
+      - "80:80"
+      - "443:443"
+      # nur localhost
+      - "127.0.0.1:8080:80"
+      # zufälliger Host-Port
+      - "8000"
+      # UDP
+      - "5353:5353/udp"</code></pre>
+        <p class="w3-large ic-neg15">expose: nur intern sichtbar</p>
+        <pre><code class="yaml">services:
+  api:
+    expose:
+      - "8000"   # nur im Docker-Netz
+      # kein Host-Port → sicherer</code></pre>
+        <p class="w3-large ic-neg15">Port-Strategie</p>
+        <ul class="w3-large">
+            <li><strong>ports</strong>: Port wird am Host gebunden → von außen erreichbar</li>
+            <li><strong>expose</strong>: nur für andere Services sichtbar, nicht am Host</li>
+            <li>Datenbank-Ports in Produktion <em>nicht</em> exponieren</li>
+            <li>Mehrere Ports eines Services können unterschiedlich behandelt werden</li>
+        </ul>
+        <p class="w3-large">Sicherheitsempfehlung</p>
+        <table class="w3-table-all">
+            <tr>
+                <th>Service</th>
+                <th>Ansatz</th>
+            </tr>
+            <tr>
+                <td>nginx / Proxy</td>
+                <td>ports: 80, 443</td>
+            </tr>
+            <tr>
+                <td>api, worker</td>
+                <td>expose (intern)</td>
+            </tr>
+            <tr>
+                <td>db, redis</td>
+                <td>expose / kein Port</td>
+            </tr>
+        </table>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>depends_on &amp; Healthchecks</h1>
+        <img class="w3-image" src="/home/lv/adbkt/a/docker/d06-dependson.svg">
+        <p class="w3-large ic-neg15">depends_on-Bedingungen</p>
+        <pre><code class="yaml">services:
+  api:
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started  # Standard
+      migrations:
+        condition: service_completed_successfully</code></pre>
+        <p class="w3-large ic-neg15">Healthcheck definieren</p>
+        <pre><code class="yaml">  db:
+    image: postgres:16
+    healthcheck:
+      test: ["CMD-SHELL",
+             "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s</code></pre>
+        <ul class="w3-large">
+            <li><code>service_started</code>: Container läuft (default)</li>
+            <li><code>service_healthy</code>: Healthcheck OK</li>
+            <li><code>service_completed_successfully</code>: Exit-Code 0</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Restart-Policies &amp; Ressourcen</h1>
+        <p class="w3-large ic-neg15">Restart-Policies</p>
+        <pre><code class="yaml">services:
+  api:
+    restart: unless-stopped
+    # Optionen:
+    # no         – kein Neustart (default)
+    # always     – immer neu starten
+    # on-failure – nur bei Fehler
+    # unless-stopped – bis manuell gestoppt</code></pre>
+        <p class="w3-large ic-neg15">Ressourcen begrenzen</p>
+        <pre><code class="yaml">  api:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 128M</code></pre>
+        <p class="w3-large ic-neg15">Replicas (horizontale Skalierung)</p>
+        <pre><code class="yaml">  api:
+    deploy:
+      replicas: 3
+      # docker compose up --scale api=3</code></pre>
+        <p class="w3-large ic-neg15">Logging-Konfiguration</p>
+        <pre><code class="yaml">  api:
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # Alternativen: syslog, journald,
+    # fluentd, gelf, awslogs</code></pre>
+        <p class="w3-large ic-neg15">Empfehlungen</p>
+        <ul class="w3-large">
+            <li>Produktion: <code>restart: unless-stopped</code></li>
+            <li>Entwicklung: <code>restart: no</code> (Fehler direkt sehen)</li>
+            <li>Ressourcenlimits schützen den Host vor Überlast</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+{% include padding-id.html id=12 %}
+<h1>Profiles: Optionale Services</h1>
+        <p class="w3-large ic-neg15">Konzept</p>
+        <ul class="w3-large">
+            <li>Services können einem oder mehreren Profilen zugeordnet werden</li>
+            <li>Ohne Profil: Service startet immer</li>
+            <li>Mit Profil: Service startet nur bei expliziter Aktivierung</li>
+            <li>Typisch: Debug-Tools, Adminer, Monitoring nur bei Bedarf</li>
+        </ul>
+        <pre><code class="yaml">services:
+  db:
+    image: postgres:16
+    # kein Profil → startet immer
+
+  adminer:
+    image: adminer
+    profiles:
+      - tools
+    ports:
+      - "8080:8080"
+
+  mailhog:
+    image: mailhog/mailhog
+    profiles:
+      - tools
+      - debug</code></pre>
+        <p class="w3-large ic-neg15">Profile aktivieren</p>
+        <pre><code class="language-plaintext"># Nur Basisdienste
+docker compose up
+
+# Mit tools-Profil
+docker compose --profile tools up
+
+# Mehrere Profile
+docker compose \
+  --profile tools \
+  --profile debug up
+
+# Über Umgebungsvariable
+COMPOSE_PROFILES=tools,debug \
+  docker compose up</code></pre>
+        <p class="w3-large ic-neg15">Typische Profile</p>
+        <ul class="w3-large">
+            <li><strong>tools</strong>: Adminer, Redis Commander, pgAdmin</li>
+            <li><strong>debug</strong>: Zusätzliche Ports, Verbose Logging</li>
+            <li><strong>test</strong>: Test-Datenbank, Mock-Services</li>
+            <li><strong>monitoring</strong>: Prometheus, Grafana</li>
+        </ul>
+<div class="ic-gap"></div>
+-->
+
+
+<!--
+    13 ******************************************************************
+{% include padding-id.html id=13 %}
+<h1>Override-Dateien: Dev vs. Prod</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/docker/d05-devprod.svg">
+</div>
+<div class="ic-gap"></div>
+-->
+
+
+<!--
+    14 ******************************************************************
+{% include padding-id.html id=14 %}
+<h1>Override-Dateien: Konfiguration</h1>
+        <p class="w3-large ic-neg15">docker-compose.yml (Basis)</p>
+        <pre><code class="yaml">services:
+  api:
+    image: myapp/api:${TAG:-latest}
+    environment:
+      - DATABASE_URL
+    networks:
+      - backend</code></pre>
+        <p class="w3-large ic-neg15">docker-compose.override.yml (Dev)</p>
+        <pre><code class="yaml">services:
+  api:
+    build: ./api         # lokal bauen
+    volumes:
+      - ./api:/app       # Hot Reload
+    environment:
+      - DEBUG=true
+    ports:
+      - "5678:5678"      # Debugger</code></pre>
+        <p class="w3-large ic-neg15">docker-compose.prod.yml</p>
+        <pre><code class="yaml">services:
+  api:
+    restart: always
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          memory: 512M
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"</code></pre>
+        <p class="w3-large ic-neg15">Anwendung</p>
+        <pre><code class="language-plaintext"># Entwicklung (automatisch)
+docker compose up
+
+# Produktion (explizit)
+docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.prod.yml \
+  up -d</code></pre>
+        <ul class="w3-large">
+            <li>Merge-Reihenfolge: spätere Datei überschreibt</li>
+            <li>Listen werden zusammengeführt, nicht ersetzt</li>
+        </ul>
+<div class="ic-gap"></div>
+-->
+
+
+<!--
+    15 ******************************************************************
+{% include padding-id.html id=15 %}
+<h1>CLI-Referenz</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Befehl</th>
+        <th>Beschreibung</th>
+        <th>Wichtige Flags</th>
+    </tr>
+    <tr>
+        <td><code>docker compose up</code></td>
+        <td>Services starten (Vordergrund)</td>
+        <td><code>-d</code> (detach), <code>--build</code>, <code>--scale svc=N</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose down</code></td>
+        <td>Stop + Container/Netzwerke entfernen</td>
+        <td><code>-v</code> (Volumes löschen), <code>--rmi all</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose ps</code></td>
+        <td>Status aller Services anzeigen</td>
+        <td><code>-a</code> (auch gestoppte)</td>
+    </tr>
+    <tr>
+        <td><code>docker compose logs</code></td>
+        <td>Log-Ausgabe der Services</td>
+        <td><code>-f</code> (follow), <code>--tail=100</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose exec</code></td>
+        <td>Befehl in laufendem Container</td>
+        <td><code>exec api bash</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose run</code></td>
+        <td>Einmaliger Container-Start</td>
+        <td><code>--rm</code> (cleanup), <code>--no-deps</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose build</code></td>
+        <td>Images neu bauen</td>
+        <td><code>--no-cache</code>, <code>--parallel</code></td>
+    </tr>
+    <tr>
+        <td><code>docker compose restart</code></td>
+        <td>Services neu starten</td>
+        <td><code>api db</code> (einzelne Services)</td>
+    </tr>
+    <tr>
+        <td><code>docker compose config</code></td>
+        <td>Konfiguration validieren &amp; anzeigen</td>
+        <td><code>--quiet</code> (nur Fehler)</td>
+    </tr>
+    <tr>
+        <td><code>docker compose top</code></td>
+        <td>Prozesse in Containern anzeigen</td>
+        <td>–</td>
+    </tr>
+</table>
+<div class="ic-gap"></div>
+
+-->
+
+<!--
+    16 ******************************************************************
+{% include padding-id.html id=16 %}
+<h1>Lifecycle</h1>
+<div class="w3-center">
+    <img class="w3-image" src="/home/lv/adbkt/a/docker/d04-lifecycle.svg">
+</div>
+<div class="ic-gap"></div>
+-->
+
+
+<!--
+    17 ******************************************************************
+--
+{% include padding-id.html id=17 %}
+<h1>Entwicklungsworkflow</h1>
+        <p class="w3-large ic-neg15">Typischer Ablauf</p>
+        <ul class="w3-large">
+            <li><strong>1.</strong> <code>docker compose up --build -d</code> – Umgebung starten</li>
+            <li><strong>2.</strong> Code editieren (Bind Mount → sofort aktiv)</li>
+            <li><strong>3.</strong> <code>docker compose logs -f api</code> – Logs beobachten</li>
+            <li><strong>4.</strong> <code>docker compose exec api python manage.py migrate</code></li>
+            <li><strong>5.</strong> <code>docker compose restart api</code> – wenn nötig</li>
+            <li><strong>6.</strong> <code>docker compose down</code> – Aufräumen</li>
+        </ul>
+        <p class="w3-large ic-neg15">One-Shot-Tasks</p>
+        <pre><code class="language-plaintext"># Migrations ausführen
+docker compose run --rm api \
+  python manage.py migrate
+
+# Tests ausführen
+docker compose run --rm api \
+  pytest -v</code></pre>
+        <p class="w3-large ic-neg15">Datenbank initialisieren</p>
+        <pre><code class="yaml">services:
+  db:
+    image: postgres:16
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Init-Skripte (nur bei leerem Volume)
+      - ./init-sql:/docker-entrypoint-initdb.d</code></pre>
+        <p class="w3-large ic-neg15">Watcher / Hot Reload</p>
+        <pre><code class="yaml">services:
+  api:
+    develop:
+      watch:
+        - action: sync       # Dateien kopieren
+          path: ./src
+          target: /app/src
+        - action: rebuild    # Image neu bauen
+          path: requirements.txt</code></pre>
+        <ul class="w3-large">
+            <li><code>docker compose watch</code> – automatisches Sync/Rebuild</li>
+            <li>Compose Watch: ab Docker Compose v2.22</li>
+        </ul>
+<div class="ic-gap"></div>
+
+
+--
+    18 ******************************************************************
+--
+{% include padding-id.html id=18 %}
+<h1>Multi-Stage Builds mit Compose</h1>
+        <p class="w3-large ic-neg15">Dockerfile (Multi-Stage)</p>
+        <pre><code class="language-plaintext"># Stufe 1: Build-Abhängigkeiten
+FROM python:3.12 AS builder
+WORKDIR /build
+COPY requirements.txt .
+RUN pip install --user -r requirements.txt
+
+# Stufe 2: Runtime (schlank)
+FROM python:3.12-slim AS runtime
+WORKDIR /app
+COPY --from=builder /root/.local /root/.local
+COPY ./src .
+CMD ["python", "main.py"]</code></pre>
+        <p class="w3-large ic-neg15">Compose: Ziel-Stage wählen</p>
+        <pre><code class="yaml">services:
+  api:
+    build:
+      context: .
+      target: runtime    # Prod: schlank
+
+  api-dev:
+    build:
+      context: .
+      target: builder    # Dev: mit Tools
+    volumes:
+      - ./src:/app/src</code></pre>
+        <p class="w3-large ic-neg15">Vorteile</p>
+        <ul class="w3-large">
+            <li>Produktions-Image enthält keine Build-Tools</li>
+            <li>Kleinere Images → schnelleres Deployment</li>
+            <li>Layer-Caching: <code>requirements.txt</code> nur bei Änderung neu</li>
+            <li>Dieselbe <code>docker-compose.yml</code> für Dev &amp; Prod</li>
+        </ul>
+<div class="ic-gap"></div>
+
+    -->
+
+
+<!--
+    17 ******************************************************************
+{% include padding-id.html id=17 %}
+<h1>Zusammenfassung</h1>
+        <p class="w3-large ic-neg15">Kernkonzepte</p>
+        <ul class="w3-large">
+            <li><strong>services</strong>: Container-Definitionen (Image, Build, Ports, Volumes)</li>
+            <li><strong>networks</strong>: Isolation &amp; DNS-basierte Kommunikation</li>
+            <li><strong>volumes</strong>: named (Prod), bind mount (Dev), tmpfs (RAM)</li>
+            <li><strong>depends_on</strong> + <strong>healthcheck</strong>: kontrollierte Startreihenfolge</li>
+            <li><strong>profiles</strong>: optionale Services (Tools, Debug, Monitoring)</li>
+            <li><strong>override</strong>: Trennung von Dev- und Prod-Konfiguration</li>
+        </ul>
+        <p class="w3-large ic-neg15">Sicherheit</p>
+        <ul class="w3-large">
+            <li>Datenbank-Ports nicht am Host exponieren</li>
+            <li><code>.env</code> in <code>.gitignore</code> aufnehmen</li>
+            <li>Secrets als Dateien, nicht als ENV-Vars</li>
+        </ul>
+        <p class="w3-large ic-neg15">Wichtige Befehle</p>
+        <ul class="w3-large">
+            <li><code>docker compose up --build -d</code> – starten</li>
+            <li><code>docker compose down -v</code> – vollständig aufräumen</li>
+            <li><code>docker compose logs -f</code> – Logs beobachten</li>
+            <li><code>docker compose exec svc bash</code> – Shell öffnen</li>
+            <li><code>docker compose config</code> – YAML validieren</li>
+        </ul>
+        <p class="w3-large ic-neg15">Best Practices</p>
+        <ul class="w3-large">
+            <li>Multi-Stage Builds für schlanke Produktions-Images</li>
+            <li>Named Volumes für persistente Daten, Bind Mounts für Entwicklung</li>
+            <li>Ressourcen-Limits in Produktion setzen</li>
+            <li><code>restart: unless-stopped</code> für langlebige Services</li>
+            <li>Compose Watch für automatisches Hot Reload</li>
+        </ul>
+<div class="ic-gap"></div>
+-->

@@ -215,6 +215,9 @@ home: &r
                   - t:  Historischer Überblick DB-Systeme
                     ts: Historie DB-Systeme
                     url: /home/lv/adbkt/vorlesungen/history.html
+                  - t: Docker Compose
+                    ts: Docker Compose
+                    url: /home/lv/adbkt/vorlesungen/docker-compose.html
                   - t: Transaktionen
                     ts: Transaktionen
                     url: /home/lv/adbkt/vorlesungen/trans.html
@@ -324,14 +327,17 @@ home: &r
                   - t:  Graph-Data-Science
                     ts: Graph-Data-Science
                     url: /home/lv/adbkt/uebungen/gds.html
+                  - t: Graphdatenbanken - IT-Infrastruktur
+                    ts: Graphdatenbanken - IT-Infrastruktur
+                    url: /home/lv/adbkt/uebungen/it-infra.html
                   - t: Graphdatenbanken - Zugriffskontrolle
                     ts: Graphdatenbanken - Zugriffskontrolle
                     url: /home/lv/adbkt/uebungen/auth.html
                   - t:  Zeitreihendatenbanken - Monitoring
-                    ts: Zeitreihendatenbanken- Monitoring
+                    ts: Zeitreihendatenbanken - Monitoring
                     url: /home/lv/adbkt/uebungen/monitoring.html
-                  - t:  Vektordatenbanken / RAG
-                    ts: Vektordatenbanken / RAG
+                  - t:  Vektordatenbanken - RAG
+                    ts: Vektordatenbanken - RAG
                     url: /home/lv/adbkt/uebungen/vectordb-rag.html
                   - t: Rekursives SQL
                     ts: Rekursives SQL

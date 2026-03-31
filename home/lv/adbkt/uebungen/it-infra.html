@@ -1,0 +1,152 @@
+---
+layout: default1
+nav: adbkt-uebungen
+title: Übung Graphdatenbanken - IT-Infrastruktur- ADBKT
+is_slide: 0
+---
+
+<h1>Übung Graphdatenbanken - IT-Infrastruktur</h1>
+
+<h2>Aufgabenstellung</h2>
+<p class="w3-large">
+  Ein Unternehmen betreibt eine IT-Infrastruktur: Dutzende Services hängen voneinander ab, teilen Datenbanken, kommunizieren über Message Queues und laufen auf verschiedenen Servern. Entwickeln sie ein Infrastruktur-Inventar auf Basis von Neo4j, das Abhängigkeitsanalysen in Echtzeit beantwortet.
+</p>
+
+<h2>Infrastruktur</h2>
+<p class="w3-large">Der Graph modelliert eine IT-Infrastruktur mit folgenden Knoten und Kanten:</p>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Knoten</th>
+        <th>Eigenschaften</th>
+    </tr>
+    <tr>
+        <td>Service</td>
+        <td>id, name, version, status (up/down/degraded), is_replica</td>
+    </tr>
+    <tr>
+        <td>Team</td>
+        <td>id, name, members</td>
+    </tr>
+    <tr>
+        <td>Server</td>
+        <td>id, hostname, datacenter, cpu_cores, ram_gb</td>
+    </tr>
+    <tr>
+        <td>Database</td>
+        <td>	id, name, type (postgres/cassandra/neo4j)</td>
+    </tr>
+    <tr>
+        <td>Message Queue</td>
+        <td>id, name, type (kafka/rabbitmq)</td>
+    </tr>
+</table>
+<br>
+<table class="w3-table-all">
+    <tr>
+        <th>Kanten</th>
+        <th>Beziehung</th>
+        <th>Eigenschaften</th>
+    </tr>
+    <tr>
+        <td>DEPENDS_ON</td>
+        <td>Service → Service</td>
+        <td>criticality (hard/soft), timeout_ms</td>
+    </tr>
+    <tr>
+        <td>DEPLOYED_ON</td>
+        <td>Service → Server</td>
+        <td>–</td>
+    </tr>
+    <tr>
+        <td>USES_DB</td>
+        <td>Service → Database</td>
+        <td>access (read/write/readwrite)</td>
+    </tr>
+    <tr>
+        <td>PUBLISHES_TO</td>
+        <td>Service → MessageQueue</td>
+        <td>–</td>
+    </tr>
+    <tr>
+        <td>CONSUMES_FROM</td>
+        <td>Service → MessageQueue</td>
+        <td>–</td>
+    </tr>
+    <tr>
+        <td>OWNS</td>
+        <td>Team → Service</td>
+        <td>–</td>
+    </tr>
+</table>
+
+<h2>Datenerzeugung</h2>
+<p class="w3-large">Nutzen sie ein LLM, um die Graphdaten zu generieren. Die angegebenen Werte sind Beispiele und können angepasst werden.</p>
+<table class="w3-table-all">
+    <tr>
+        <th>Element</th>
+        <th>Anzahl</th>
+    </tr>
+    <tr>
+        <td>Teams</td>
+        <td>Team1, Team2, ... Team8</td>
+    </tr>
+    <tr>
+        <td>Servers</td>
+        <td>5 (verteilt auf 2 Rechenzentren: „eu-west", „eu-central")</td>
+    </tr>
+    <tr>
+        <td>Databases</td>
+        <td>4 Postgres, 2 Cassandra, 1 Neo4j</td>
+    </tr>
+    <tr>
+        <td>MessageQueues</td>
+        <td>3 Kafka, 2 RabbitMQ</td>
+    </tr>
+    <tr>
+        <td>Services</td>
+        <td>50 (je einem Team zugeordnet)</td>
+    </tr>
+    <tr>
+        <td>DEPENDS_ON</td>
+        <td>120 (jeder Service auf 2–3 Services)</td>
+    </tr>
+    <tr>
+        <td>DEPLOYED_ON</td>
+        <td>70 (jeder Service auf 1–2 Servern)</td>
+    </tr>
+    <tr>
+        <td>USES_DB</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>PUBLISHES_TO</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>CONSUMES_FROM</td>
+        <td>20</td>
+    </tr>
+</table>
+
+
+<h2>Analyse</h2>
+<p class="w3-large ic-neg15">Cypher-Abfragen</p>
+<ul class="w3-large">
+    <li>Q1: Alle direkten Abhängigkeiten von Service X</li>
+    <li>Q2: Transitiver Ausfall-Impact: alle Services, die bei Ausfall von X betroffen sind</li>
+    <li>Q3: Alle Services eines Teams mit ihrem Status</li>
+    <li>Q4: Datenbankinstanzen, auf die mehr als 5 Services zugreifen (Hotspots)</li>
+    <li>Q5: Services ohne Redundanz: deployed auf genau einem Server</li>
+    <li>Q6: Services, die sowohl Daten in eine Queue schreiben als auch aus einer anderen lesen</li>
+    <li>Q7: Anzahl Service-Replicas auf jedem Server</li>
+    <li>Q8: Server, auf denen ausgefallene Services (status: "down") laufen</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pfadanalyse und Zyklenerkennung</p>
+<ul class="w3-large">
+    <li>Längste Abhängigkeitskette (Critical Path): Finden Sie den Service mit der tiefsten transitiven Abhängigkeitskette</li>
+    <li> Zirkuläre Abhängigkeiten erkennen: Prüfen Sie, ob Ihr generierter Graph zyklenfrei ist</li>
+    <li>Kürzester Pfad zwischen zwei Services: Finden Sie den kürzesten Pfad zwischen zwei Services über beliebige Kanten</li>
+</ul>
+

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="monospace, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="420" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">Docker Compose: Orchestrierung mehrerer Container</text>
+
+  <!-- docker-compose.yml box -->
+  <rect x="30" y="55" width="180" height="120" rx="8" fill="#0d6efd" opacity="0.9"/>
+  <text x="120" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="white">docker-compose.yml</text>
+  <text x="120" y="100" text-anchor="middle" font-size="11" fill="#cce0ff">services:</text>
+  <text x="120" y="116" text-anchor="middle" font-size="11" fill="#cce0ff">  web: ...</text>
+  <text x="120" y="132" text-anchor="middle" font-size="11" fill="#cce0ff">  db: ...</text>
+  <text x="120" y="148" text-anchor="middle" font-size="11" fill="#cce0ff">networks: ...</text>
+  <text x="120" y="164" text-anchor="middle" font-size="11" fill="#cce0ff">volumes: ...</text>
+
+  <!-- Arrow from yml to compose engine -->
+  <line x1="210" y1="115" x2="275" y2="115" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Compose Engine -->
+  <rect x="275" y="75" width="130" height="80" rx="8" fill="#198754"/>
+  <text x="340" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Compose</text>
+  <text x="340" y="123" text-anchor="middle" font-size="12" fill="#c3e6cb">Engine</text>
+  <text x="340" y="141" text-anchor="middle" font-size="10" fill="#c3e6cb">docker CLI</text>
+
+  <!-- Arrows to containers -->
+  <line x1="405" y1="95" x2="475" y2="70" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="405" y1="115" x2="475" y2="180" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="405" y1="135" x2="475" y2="290" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Container: web -->
+  <rect x="475" y="40" width="140" height="70" rx="8" fill="#0dcaf0" opacity="0.85"/>
+  <text x="545" y="64" text-anchor="middle" font-size="13" font-weight="bold" fill="#0a2030">web</text>
+  <text x="545" y="82" text-anchor="middle" font-size="11" fill="#0a3040">nginx:alpine</text>
+  <text x="545" y="98" text-anchor="middle" font-size="10" fill="#0a3040">Port 80:80</text>
+
+  <!-- Container: api -->
+  <rect x="475" y="150" width="140" height="70" rx="8" fill="#ffc107" opacity="0.85"/>
+  <text x="545" y="174" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1200">api</text>
+  <text x="545" y="192" text-anchor="middle" font-size="11" fill="#1a1200">python:3.12</text>
+  <text x="545" y="208" text-anchor="middle" font-size="10" fill="#1a1200">Port 8000:8000</text>
+
+  <!-- Container: db -->
+  <rect x="475" y="260" width="140" height="70" rx="8" fill="#dc3545" opacity="0.85"/>
+  <text x="545" y="284" text-anchor="middle" font-size="13" font-weight="bold" fill="white">db</text>
+  <text x="545" y="302" text-anchor="middle" font-size="11" fill="#ffc0c5">postgres:16</text>
+  <text x="545" y="318" text-anchor="middle" font-size="10" fill="#ffc0c5">Port 5432</text>
+
+  <!-- Network bar -->
+  <rect x="460" y="340" width="180" height="30" rx="6" fill="#6f42c1" opacity="0.8"/>
+  <text x="550" y="360" text-anchor="middle" font-size="12" fill="white">myapp (bridge)</text>
+  <!-- Network lines -->
+  <line x1="490" y1="110" x2="490" y2="340" stroke="#6f42c1" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="600" y1="220" x2="600" y2="340" stroke="#6f42c1" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="565" y1="330" x2="565" y2="340" stroke="#6f42c1" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Volume -->
+  <rect x="650" y="250" width="120" height="50" rx="6" fill="#e9ecef" stroke="#adb5bd" stroke-width="1.5"/>
+  <text x="710" y="271" text-anchor="middle" font-size="12" font-weight="bold" fill="#495057">pgdata</text>
+  <text x="710" y="289" text-anchor="middle" font-size="11" fill="#6c757d">named volume</text>
+  <line x1="615" y1="285" x2="650" y2="285" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Legend -->
+  <rect x="110" y="360" width="300" height="45" rx="6" fill="white" stroke="#dee2e6"/>
+  <!-- 
+  <rect x="45" y="376" width="14" height="14" fill="#0dcaf0"/> 
+  <text x="65" y="387" font-size="11" fill="#333">Container</text> 
+  -->
+  <rect x="145" y="376" width="14" height="14" fill="#6f42c1"/>
+  <text x="165" y="387" font-size="11" fill="#333">Netzwerk</text>
+  <rect x="250" y="376" width="14" height="14" fill="#e9ecef" stroke="#adb5bd"/>
+  <text x="270" y="387" font-size="11" fill="#333">Volume</text>
+  <rect x="335" y="376" width="14" height="14" fill="#198754"/>
+  <text x="355" y="387" font-size="11" fill="#333">Engine</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="monospace, sans-serif">
+  <rect width="800" height="400" fill="#f8f9fa" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">Docker Netzwerk-Topologie</text>
+
+  <!-- Host -->
+  <rect x="20" y="50" width="760" height="330" rx="10" fill="white" stroke="#adb5bd" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="50" y="72" font-size="13" fill="#6c757d">Host-System</text>
+
+  <!-- frontend network -->
+  <rect x="40" y="85" width="330" height="270" rx="8" fill="#cfe2ff" stroke="#0d6efd" stroke-width="1.5"/>
+  <text x="205" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d6efd">frontend (bridge)</text>
+
+  <!-- backend network -->
+  <rect x="420" y="85" width="340" height="270" rx="8" fill="#d1e7dd" stroke="#198754" stroke-width="1.5"/>
+  <text x="590" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#198754">backend (bridge)</text>
+
+  <!-- nginx container (both networks) -->
+  <rect x="120" y="130" width="140" height="65" rx="7" fill="#0d6efd"/>
+  <text x="190" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="white">nginx</text>
+  <text x="190" y="175" text-anchor="middle" font-size="11" fill="#cce0ff">:80 → Host:80</text>
+  <text x="190" y="190" text-anchor="middle" font-size="10" fill="#cce0ff">frontend + backend</text>
+
+  <!-- api container (backend) -->
+  <rect x="440" y="130" width="140" height="65" rx="7" fill="#198754"/>
+  <text x="510" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="white">api</text>
+  <text x="510" y="175" text-anchor="middle" font-size="11" fill="#c3e6cb">:8000 (intern)</text>
+  <text x="510" y="190" text-anchor="middle" font-size="10" fill="#c3e6cb">backend only</text>
+
+  <!-- db container (backend) -->
+  <rect x="610" y="130" width="130" height="65" rx="7" fill="#dc3545"/>
+  <text x="675" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="white">postgres</text>
+  <text x="675" y="175" text-anchor="middle" font-size="11" fill="#ffc0c5">:5432 (intern)</text>
+  <text x="675" y="190" text-anchor="middle" font-size="10" fill="#ffc0c5">backend only</text>
+
+  <!-- worker (backend) -->
+  <rect x="440" y="250" width="140" height="60" rx="7" fill="#6f42c1"/>
+  <text x="510" y="275" text-anchor="middle" font-size="13" font-weight="bold" fill="white">worker</text>
+  <text x="510" y="292" text-anchor="middle" font-size="11" fill="#d4b3ff">backend only</text>
+
+  <!-- redis (backend) -->
+  <rect x="610" y="250" width="130" height="60" rx="7" fill="#fd7e14"/>
+  <text x="675" y="275" text-anchor="middle" font-size="13" font-weight="bold" fill="white">redis</text>
+  <text x="675" y="292" text-anchor="middle" font-size="11" fill="#ffe8cc">:6379 (intern)</text>
+
+  <!-- Connection: nginx -> api -->
+  <line x1="260" y1="162" x2="440" y2="162" stroke="#0d6efd" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="350" y="155" text-anchor="middle" font-size="10" fill="#0d6efd">HTTP</text>
+
+  <!-- Connection: api -> db -->
+  <line x1="580" y1="162" x2="610" y2="162" stroke="#198754" stroke-width="2"/>
+
+  <!-- Connection: api -> redis -->
+  <line x1="510" y1="195" x2="510" y2="250" stroke="#198754" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="510" y1="280" x2="610" y2="280" stroke="#fd7e14" stroke-width="1.5"/>
+
+  <!-- Host port label -->
+  <rect x="100" y="340" width="120" height="25" rx="5" fill="#e9ecef" stroke="#adb5bd"/>
+  <text x="160" y="357" text-anchor="middle" font-size="11" fill="#495057">Host: 0.0.0.0:80</text>
+
+  <!-- Arrow from host port to nginx -->
+  <line x1="190" y1="340" x2="190" y2="195" stroke="#333" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arr2)"/>
+
+  <!-- Legend note -->
+  <text x="40" y="390" font-size="10" fill="#6c757d">Isolierung: db und redis sind NICHT vom Host erreichbar · nginx ist Eintrittspunkt</text>
+
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
