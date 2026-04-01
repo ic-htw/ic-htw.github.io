@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- FastLanes
+[(link)](bhttps://github.com/cwida/FastLanesbb)
+
+- F3
+[(link)](https://github.com/future-file-format/f3)
+
+- Lance
+[(link)](https://lance.org/)
+
 - PageIndex git
 [(link)](https://github.com/VectifyAI/PageIndex)
 
