@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- pg_textsearch 1.0: How We Built a BM25 Search Engine on Postgres Pages
+[(link)](https://www.tigerdata.com/blog/pg-textsearch-bm25-full-text-search-postgres)
+
 - FastLanes
 [(link)](bhttps://github.com/cwida/FastLanesbb)
 
