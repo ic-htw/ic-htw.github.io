@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t
+[(link)](https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553)
+
+- Monolith vs. Microservices: The Brutal Truth About Scaling in 2026
+[(link)](https://medium.com/expocomputing/monolith-vs-microservices-architecture-e8856e25aeb6)
+
 - pg_textsearch 1.0: How We Built a BM25 Search Engine on Postgres Pages
 [(link)](https://www.tigerdata.com/blog/pg-textsearch-bm25-full-text-search-postgres)
 
