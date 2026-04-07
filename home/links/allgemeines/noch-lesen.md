@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Google’s Gemma 4 Changes Everything for Open Source AI
+[(link)](https://www.towardsdeeplearning.com/googles-gemma-4-changes-everything-for-open-source-ai-ecd91934458f)
+
+- Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
+[(link)](https://medium.com/data-science-collective/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622)
+
+- Gemma 4: Google Just Dropped Its Open Source Nuclear Option And Community Went Feral With It
+[(link)](https://pub.towardsai.net/gemma-4-google-just-dropped-its-open-source-nuclear-option-and-community-went-feral-with-it-0a7af52c5dd4)
+
 - Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t
 [(link)](https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553)
 
