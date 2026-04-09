@@ -118,6 +118,8 @@ is_slide: 0
 
 
 # text to sql
+- How We Cut LLM Token Usage by 90% in SQL Migration Using AST Compression
+[(link)](https://reliable-data-engineering.netlify.app/posts/article_toon_sql_migration/)
 - Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly
 [(link)](https://www.snowflake.com/en/engineering-blog/arctic-text2sql-r1-sql-generation-benchmark/)
 - Text2SQL Leaderboard

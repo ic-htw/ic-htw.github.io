@@ -6,6 +6,10 @@ is_slide: 0
 ---
 
 # agents
+- 5 Agent Frameworks. One Pattern Won
+[(link)](https://levelup.gitconnected.com/5-agent-frameworks-one-pattern-won-54cc0eedf027)
+- LangChain Deep Agents: The Open-Source Claude Code Alternative That Works With Any Model
+[(link)](https://pub.towardsai.net/langchain-deep-agents-the-open-source-claude-code-alternative-that-works-with-any-model-2477aba5cb96)
 - Agent Lightning
 [(link)](https://github.com/microsoft/agent-lightning)
 - The guide to OpenAI Codex CLI
@@ -99,6 +103,8 @@ is_slide: 0
 
 
 # divers
+- PageIndex git
+[(link)](https://github.com/VectifyAI/PageIndex)
 - How to Train Your LLM
 [(link)](https://medium.com/@damianvtran/how-to-train-your-llm-532c06925494)
 - Awesome LLM Books

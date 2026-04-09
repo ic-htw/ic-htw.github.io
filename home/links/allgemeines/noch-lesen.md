@@ -25,80 +25,17 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- Google’s Gemma 4 Changes Everything for Open Source AI
-[(link)](https://www.towardsdeeplearning.com/googles-gemma-4-changes-everything-for-open-source-ai-ecd91934458f)
+- Claude Code Unpacked
+[(link)](https://ccunpacked.dev/)
 
-- Everyone Analyzed Claude Code’s Features. Nobody Analyzed Its Architecture.
-[(link)](https://medium.com/data-science-collective/everyone-analyzed-claude-codes-features-nobody-analyzed-its-architecture-1173470ab622)
-
-- Gemma 4: Google Just Dropped Its Open Source Nuclear Option And Community Went Feral With It
-[(link)](https://pub.towardsai.net/gemma-4-google-just-dropped-its-open-source-nuclear-option-and-community-went-feral-with-it-0a7af52c5dd4)
-
-- Concurrency, Parallelism, and Async: Three Ideas That Sound the Same But Aren’t
-[(link)](https://code.likeagirl.io/concurrency-parallelism-async-47312e0be553)
-
-- Monolith vs. Microservices: The Brutal Truth About Scaling in 2026
-[(link)](https://medium.com/expocomputing/monolith-vs-microservices-architecture-e8856e25aeb6)
-
-- pg_textsearch 1.0: How We Built a BM25 Search Engine on Postgres Pages
-[(link)](https://www.tigerdata.com/blog/pg-textsearch-bm25-full-text-search-postgres)
-
-- FastLanes
-[(link)](bhttps://github.com/cwida/FastLanesbb)
-
-- F3
-[(link)](https://github.com/future-file-format/f3)
-
-- Lance
-[(link)](https://lance.org/)
-
-- PageIndex git
-[(link)](https://github.com/VectifyAI/PageIndex)
-
-- Google Stitch
-[(link)](https://stitch.withgoogle.com/)
-
-- Google Maps Update
-[(link)](https://www.mayhemcode.com/2026/03/google-maps-2026-update-what-is-ask.html)
-
-- Claude Code Has 50+ Commands. Most Developers Use Only 5.
-[(link)](https://pub.towardsai.net/claude-code-has-50-commands-most-developers-use-only-5-b675387ea2ce)
-
-- 10 Most(ly Dead) Influential Programming Languages
-[(link)](https://blog.stackademic.com/10-most-ly-dead-influential-programming-languages-6b778b7afe34)
-
-- How We Cut LLM Token Usage by 90% in SQL Migration Using AST Compression
-[(link)](https://reliable-data-engineering.netlify.app/posts/article_toon_sql_migration/)
-
-- MiniMax M2.7 Shouldn’t Be This Close to Opus 4.6
-[(link)](https://agentnativedev.medium.com/minimax-m2-7-shouldnt-be-this-close-to-opus-4-6-31a07b6dee27)
+- rpg — modern Postgres terminal written in Rust
+[(link)](https://github.com/NikolayS/rpg)
 
 - Joe Njenga
 [(link)](https://medium.com/@joe.njenga)
 
-- 5 Agent Frameworks. One Pattern Won
-[(link)](https://levelup.gitconnected.com/5-agent-frameworks-one-pattern-won-54cc0eedf027)
-
-- LangChain Deep Agents: The Open-Source Claude Code Alternative That Works With Any Model
-[(link)](https://pub.towardsai.net/langchain-deep-agents-the-open-source-claude-code-alternative-that-works-with-any-model-2477aba5cb96)
-
-- Claude Code is Great
-[(link)](https://leo-godin.medium.com/claude-code-is-great-6db35d8685f0)
-
 - Claude Can Now Create Complex Diagrams — I Tested 21 Prompts (Goodbye Canva!)
 [(link)](https://medium.com/ai-software-engineer/claude-can-now-create-sophisticated-diagrams-charts-goodbye-canva-600d8c524b1c)
-
-- Database Indexing: The Performance Trick Nobody Explained Properly
-[(link)](https://medium.com/@anas-issath/83f4939a8441)
-
-- Do you truly need to read the code from Cursor or Claude Code anymore?
-[(link)](https://medium.com/realworld-ai-use-cases/do-you-truly-need-to-read-the-code-from-cursor-or-claude-code-anymore-87cf39abe54f)
-
-- The 110-Millisecond Spy (and Why This Should Scare Every Tech Company)
-[(link)](https://medium.com/techx-official/the-110-millisecond-spy-and-why-this-should-scare-every-tech-company-4ad0914ba2be)
-
-- GPT-5.4 Came for Claude Code. The Real Story Is Bigger Than Both
-[(link)](https://medium.com/@han.heloir/gpt-5-4-came-for-claude-code-the-real-story-is-bigger-than-both-927059667584)
 
 - Andrej Karpathy’s New Project Just Turned One GPU Into a Research Lab
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathys-new-project-just-turned-one-gpu-into-a-research-lab-6a99cc2e3c81)
