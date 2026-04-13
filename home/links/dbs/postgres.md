@@ -20,6 +20,9 @@ is_slide: 0
 - VS Code IDE for Postgres
 [(link)](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql)
 
+- rpg — modern Postgres terminal written in Rust
+[(link)](https://github.com/NikolayS/rpg)
+
 
 
 # official

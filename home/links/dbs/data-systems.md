@@ -56,6 +56,9 @@ is_slide: 0
 [(link)](https://datafusion.apache.org/)
 - Graphs, Algorithms, and My First Impression of DataFusion
 [(link)](https://semyonsinchenko.github.io/ssinchenko/post/datafusion-graphs-cc/)
+- Building A Distributed SQL Database in 30 Days with AI
+[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
+
 
 # apache flight
 - Porter

@@ -25,65 +25,8 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- Claude Code Unpacked
-[(link)](https://ccunpacked.dev/)
-
-- rpg — modern Postgres terminal written in Rust
-[(link)](https://github.com/NikolayS/rpg)
-
-- Joe Njenga
-[(link)](https://medium.com/@joe.njenga)
-
-- Claude Can Now Create Complex Diagrams — I Tested 21 Prompts (Goodbye Canva!)
-[(link)](https://medium.com/ai-software-engineer/claude-can-now-create-sophisticated-diagrams-charts-goodbye-canva-600d8c524b1c)
-
-- Andrej Karpathy’s New Project Just Turned One GPU Into a Research Lab
-[(link)](https://www.towardsdeeplearning.com/andrej-karpathys-new-project-just-turned-one-gpu-into-a-research-lab-6a99cc2e3c81)
-
-- 99% Don’t Know These Free Google AI Tools
-[(link)](https://medium.com/write-a-catalyst/99-dont-know-these-free-google-ai-tools-4dc12b8d8d0d)
-
-- Tiny Behaviour Changes That Make You 10x More Effective With Claude Code & Cursor
-[(link)](https://medium.com/realworld-ai-use-cases/tiny-behaviour-changes-that-make-you-10x-more-effective-with-claude-code-cursor-6a771a09ce51)
-
-- This Newly Released Anthropic Agentic Coding Trends Report (Is a Must-Read)
-[(link)](https://medium.com/ai-software-engineer/this-newly-released-anthropic-agentic-coding-trends-report-is-a-must-read-0701af881148)
-
-- 5 OpenClaw Alternatives That Are Getting Better By the Day
-[(link)](https://medium.com/ai-software-engineer/5-openclaw-alternatives-that-are-getting-better-by-the-day-4d1e5e164c00)
-
-- Claude Just Launched Memory Import (Now You Can Cancel ChatGPT Faster)
-[(link)](https://medium.com/ai-software-engineer/claude-just-launched-memory-import-now-you-can-cancel-chatgpt-faster-67d53ebacddb)
-
-- How I’m Running Claude Code Subagents & Web Search (At No Cost)
-[(link)](https://medium.com/@joe.njenga/how-im-running-claude-code-subagents-web-search-at-no-cost-4cd945d382bd)
-
-- How I’m Using Claude Code (New) /simplify & /batch (To x10 My Code Reviews)
-[(link)](https://medium.com/@joe.njenga/how-im-using-claude-code-new-simplify-batch-to-x10-my-code-reviews-888780a6a42a)
-
-- A Senior Engineer’s Concern That Revealed the Most Important Role in Tech Right Now
-[(link)](https://medium.com/data-science-collective/i-just-watch-ai-write-code-all-day-f0f3fad2d857)
-
-- I Tried (New) Claude Code Git Worktree (I Now Run Smooth Parallel Agents)
-[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-git-worktree-i-now-run-smooth-parallel-agents-8e21627167b7)
-
-- JSON Is Dying in the AI Era
-[(link)](https://medium.com/javarevisited/json-is-dying-in-the-ai-era-e616271444be)
-
-- I Tried (New) Claude Code Remote-Control (Before You Waste Your Time)
-[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-remote-control-before-you-waste-your-time-c829a83417f7)
-
 - GA of Oracle AI Database 26ai for Linux x86-64 on-premises platforms
 [(link)](https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms)
-
-- Detecting and preventing distillation attacks 
-[(link)](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks)
-
-- Apache DataFusion: A Data Engineer's Guide to the Query Engine Reshaping How We Build Data Systems
-[(link)](https://www.linkedin.com/pulse/apache-datafusion-data-engineers-guide-query-engine-reshaping-madson-lojrc/)
-
-- Building A Distributed SQL Database in 30 Days with AI
-[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
 
 - The Day a Google L7 Engineer Tore My System Design to Shreds
 [(link)](https://medium.com/expocomputing/google-l7-system-design-interview-lessons-0b3834fded07)
@@ -94,23 +37,11 @@ is_slide: 0
 - Entire
 [(link)](https://entire.io/)
 
-- The February Reset: Three Labs, Four Models, and the End of “One Best AI”
-[(link)](https://medium.com/data-science-collective/the-february-reset-three-labs-four-models-and-the-end-of-one-best-ai-7a9755eccdcc)
-
-- Anthropic Just Fixed the Biggest Hidden Cost in AI Agents (Automatic Prompt Caching)
-[(link)](https://medium.com/ai-software-engineer/anthropic-just-fixed-the-biggest-hidden-cost-in-ai-agents-using-automatic-prompt-caching-9d47c95903c5)
-
-- Building an AI Agent from Scratch with pure Python
-[(link)](https://levelup.gitconnected.com/building-an-ai-agent-from-scratch-with-pure-python-7d4532202637)
-
 - LangExtract Google
 [(link)](https://github.com/google/langextract)
 
 - 9 Agentic AI Projects I’d Build in 2026 to Learn What Agents Really Are
 [(link)](https://pub.towardsai.net/9-agentic-ai-projects-id-build-in-2026-to-learn-what-agents-really-are-e8b875892320)
-
-- Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
-[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
 
 - Everything You Can Do with Chrome’s Built-In AI Assistant (2025)
 [(link)](https://generativeai.pub/everything-you-can-do-with-chromes-built-in-ai-assistant-2025-9307e962deb4)
@@ -118,39 +49,11 @@ is_slide: 0
 - Google Is Quietly Dismantling Everything OpenAI Built
 [(link)](https://medium.com/@teja.kusireddy23/google-is-quietly-dismantling-everything-openai-built-4edc406f572d)
 
-- My friend tried Claude Code and wants to quit his job. Here is what I said.
-[(link)](https://medium.com/realworld-ai-use-cases/my-friend-tried-claude-code-and-wants-to-quit-his-job-here-is-what-i-said-f5bee10ed8e7)
-
-- How to Choose a Database for your Project in 2026?
-[(link)](https://medium.com/@khushbu.shah_661/how-to-choose-a-database-for-your-project-in-2026-4b5cfb8845bf)
-
-- LEANN: The World’s Smallest Vector Index That Could Redefine RAG
-[(link)](https://www.towardsdeeplearning.com/leann-the-worlds-smallest-vector-index-that-could-redefine-rag-75d5aa3708c8)
-
-- DuckDB and Cloud Data Warehouses: How to Choose For Your Project
-[(link)](https://blog.dataengineerthings.org/duckdb-and-cloud-data-warehouses-how-to-choose-for-your-project-54c7576496ae)
-
 - The Prompt Language Microsoft’s AI Team Uses 
 [(link)](https://medium.com/vibe-coding/the-prompt-language-microsofts-ai-team-uses-they-finally-released-it-bc62eafd79e6)
 
 - DeepSite v2: The Free, Open-Source AI Website Builder That Actually Ships
 [(link)](https://www.towardsdeeplearning.com/deepsite-v2-the-free-open-source-ai-website-builder-that-actually-ships-6f5985156ae9)
-
-
-- Federated Learning, Part 1: The Basics of training models where the data lives
-[(link)](https://pandeyparul.medium.com/federated-learning-part-1-the-basics-of-training-models-where-the-data-lives-a6d40469c898)
-
-- I Tested Opus 4.6 In Claude Code: How to Use Opus 4.6 in Claude Code
-[(link)](https://medium.com/@joe.njenga/i-tested-opus-4-6-in-claude-code-how-to-use-opus-4-6-in-claude-code-f5e289956f8f)
-
-- 25 LLM Best Practices I Believe Every Engineer Should Learn Early
-[(link)](https://pub.towardsai.net/25-llm-best-practices-i-believe-every-engineer-should-learn-early-259ce970e06c)
-
-- Finally, I Switched to Gemini From ChatGPT
-[(link)](https://medium.com/lets-code-future/finally-i-switched-to-gemini-from-chatgpt-heres-why-b35d47fb8629)
-
-- Stop Using Notion for Everything: How Google Keep Became My Productivity Multiplier
-[(link)](https://medium.com/@InsightfulEdge/google-keep-isnt-a-note-app-it-s-your-brain-s-operating-system-d797ea665585)
 
 - roborev
 [(link)](https://www.roborev.io/)
@@ -164,36 +67,14 @@ is_slide: 0
 - My Team Asked Why I’m ‘Wasting $100/Month’ on Claude When Copilot Is $10! 
 [(link)](https://isitvritra101.medium.com/claude-opus-vs-github-copilot-net-developer-cost-8f50da6a1467)
 
-- I Tested Antigravity Claude Opus 4.6 
-[(link)](https://medium.com/ai-software-engineer/i-tested-antigravity-claude-opus-4-6-agentic-workflow-i-didnt-expect-36c04ab6b25e)
-
-- Top Industries Using AI in 2025-The Real Game Changers
-[(link)](https://medium.com/illumination/top-industries-using-ai-in-2025-the-real-game-changers-bca143bbc2a7)
-
-
 - Understanding RLHF from First Principles
 [(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
-
-- Claude Opus 4.6: What Actually Changed and Why It Matters
-[(link)](https://medium.com/data-science-collective/claude-opus-4-6-what-actually-changed-and-why-it-matters-1c81baeea0c9)
-
-- I Tried (New) Claude Code Agent Teams 
-[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-agent-teams-and-discovered-new-way-to-swarm-28a6cd72adb8)
-
-- GPT-5.3-Codex: The Model That Built Itself
-[(link)](https://medium.com/data-science-collective/gpt-5-3-codex-the-model-that-built-itself-6946670037f9)
-
-- 9 Free Google AI Trainings
-[(link)](https://osintteam.blog/9-free-google-ai-trainings-the-opportunity-you-cant-afford-to-miss-in-2026-d0e1d85afc3d)
 
 - Why Pandas 3.0 Feels Like a Whole New Library
 [(link)](https://techwithram.medium.com/why-pandas-3-0-feels-like-a-whole-new-library-487d8f20ef1a)
 
 - Why Time-Series Recursion in SQL Is More Powerful Than You Think 
 [(link)](https://medium.com/@Rohan_Dutt/why-time-series-recursion-in-sql-is-more-powerful-than-you-think-and-how-to-master-it-1e0599a46fc3)
-
-- I Tested (New) Claude Code /Insights
-[(link)](https://medium.com/@joe.njenga/i-tested-claude-code-insights-it-roasted-my-coding-habits-e38c642e1642)
 
 - Memgraph: Real-Time Graph Computing for Modern Data Systems
 [(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
@@ -204,17 +85,8 @@ is_slide: 0
 - How to Build a Medallion Architecture Locally with dbt and DuckDB
 [(link)](https://blog.dataengineerthings.org/how-to-build-a-medallion-architecture-locally-with-dbt-and-duckdb-e8e5e9270a72)
 
-- How Agent Skills Became AI’s Most Important Standard in 90 Days
-[(link)](https://ai.gopubby.com/how-agent-skills-became-ais-most-important-standard-in-90-days-a66b6369b1b7)
-
 - 10 Regression Estimators That Don’t Collapse When Outliers Slip Into Production Data
 [(link)](https://medium.com/@Rohan_Dutt/10-regression-estimators-that-dont-collapse-when-outliers-slip-into-production-data-544120d3093a)
-
-- The Concept Every AI Coder Learns Too Late
-[(link)](https://medium.com/vibe-coding/the-concept-every-ai-coder-learns-too-late-c63dd872f923)
-
-- I Tested Kimi K2.5 with Claude Code (1-Trillion Parameters, 8x Cheaper Than Opus)
-[(link)](https://medium.com/@joe.njenga/i-tested-kimi-k2-5-with-claude-code-1-trillion-parameters-8x-cheaper-than-opus-8d4f9e9c7b4d)
 
 - Zero ETL Is the Reality Check Every Data Engineer Needs in 2026
 [(link)](https://aws.plainenglish.io/zero-etl-is-the-reality-check-every-data-engineer-needs-in-2026-c4623d7df460)
@@ -222,23 +94,8 @@ is_slide: 0
 - Agentic AI with DuckDB and smolagents
 [(link)](https://buckenhofer.com/2025/11/agentic-ai-with-duckdb-and-smolagents-natural-language-queries-for-analytics/)
 
-- I Tested Clawdbot: The Most Powerful AI Assistant You Have Ever Seen (And It’s Free)
-[(link)](https://medium.com/ai-software-engineer/i-tested-clawdbot-the-most-powerful-ai-assistant-you-have-ever-seen-and-its-free-b5b803771637)
-
 - Our JetBrains Devs Switched to VSCode. They Hate VSCode.
 [(link)](https://medium.com/vibe-coding/our-jetbrains-devs-switched-to-vscode-they-hate-vscode-771a2a4a63d1)
-
-- I Tried New Claude Code Ollama Workflow ( It’s Wild & Free)
-[(link)](https://medium.com/@joe.njenga/i-tried-new-claude-code-ollama-workflow-its-wild-free-cb7a12b733b5)
-
-- Claude Code Just Cut MCP Context Bloat by 46.9% — 51K Tokens Down to 8.5K With Tool Search
-[(link)](https://medium.com/@joe.njenga/claude-code-just-cut-mcp-context-bloat-by-46-9-51k-tokens-down-to-8-5k-with-new-tool-search-ddf9e905f734)
-
-- Claude Code’s Creator, 100 PRs a Week — His Setup Will Surprise You
-[(link)](https://medium.com/vibe-coding/claude-codes-creator-100-prs-a-week-his-setup-will-surprise-you-7d6939c99f2b)
-
-- Opencode - I Finally Tried It
-[(link)](https://medium.com/vibe-coding/this-tool-gained-30k-github-stars-in-one-month-i-finally-tried-it-1294a47f41b7)
 
 - Every Python Concept Explained
 [(link)](https://medium.com/@tricky16122000/every-python-concept-explained-60f3a2d40736)
@@ -249,17 +106,8 @@ is_slide: 0
 - SQL - Why Hypothesis Testing Using SQL Aggregations Is Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-hypothesis-testing-using-sql-aggregations-is-more-powerful-than-you-think-and-how-to-master-f0e66908c17c)
 
-- Why Every Python Developer Should Build Their Own MCP Server in 2026
-[(link)](https://medium.com/@tricky16122000/why-every-python-developer-should-build-their-own-mcp-server-in-2026-9c7505214792)
-
 - XGBoost Finally Explained: The Simple Breakdown That Most Tutorials Skip
 [(link)](https://pub.towardsai.net/xgboost-finally-explained-the-simple-breakdown-that-most-tutorials-skip-54c655b3143b)
-
-- Creating an Advanced AI Agent From Scratch with Python in 2026: Part 1
-[(link)](https://pub.towardsai.net/creating-an-advanced-ai-agent-from-scratch-with-python-in-2025-part-1-ce74a23f6514)
-
-- Stop Burning Snowflake Credits: I Built a Local Snowflake Emulator with DuckDB
-[(link)](https://medium.com/towards-data-engineering/stop-burning-snowflake-credits-i-built-a-local-emulator-with-duckdb-d657bd68d212)
 
 - Exploratory Data Analysis Checklist: What to Look for Every Time
 [(link)](https://medium.com/codetodeploy/exploratory-data-analysis-checklist-what-to-look-for-every-time-b922da6090ed)
@@ -269,12 +117,6 @@ is_slide: 0
 
 - The RAG Layer Nobody Talks About
 [(link)](https://ai.gopubby.com/the-rag-layer-nobody-talks-about-7580d2f59f6f)
-
-- OpenCode
-[(link)](https://opencode.ai/)
-
-- You’re Using AI to Write Code. You’re Not Using It to Review Code.
-[(link)](https://medium.com/data-science-collective/youre-using-ai-to-write-code-you-re-not-using-it-to-review-code-728e5ec2576e)
 
 - “OpenRAG” From Documents to Agentic Search in Minutes (from IBM research open source)
 [(link)](https://alain-airom.medium.com/openrag-from-documents-to-agentic-search-in-minutes-from-ibm-research-open-source-ed6bf506507b)
@@ -288,12 +130,8 @@ is_slide: 0
 - How to Build a High-Performance, Free ELT Pipeline Locally using DuckDB
 [(link)](https://levelup.gitconnected.com/how-to-build-a-high-performance-free-elt-pipeline-locally-using-duckdb-8fe9d7235079)
 
-- Why the Transformer Architecture Changed the World — A Historical Story from Origins to Impact
-[(link)](https://blog.stackademic.com/why-the-transformer-architecture-changed-the-world-a-historical-story-from-origins-to-impact-5b20e6f18a95)
-
 - sqlit
 [(link)](https://github.com/Maxteabag/sqlit)
-
 
 - 10 SQL Time Zone Mistakes Most Teams Discover Only After Numbers Are Escalated by Executives
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-time-zone-mistakes-most-teams-discover-only-after-numbers-are-challenged-a0f58beca404)
@@ -319,20 +157,11 @@ is_slide: 0
 - How to Scrape a Website to Markdown: 2026 Guide
 [(link)](https://medium.com/@datajournal/how-to-scrape-a-website-to-markdown-f03345cc6ee3)
 
-- I Built a Claude Skill for Knowledge Extraction & Report Writing
-[(link)](https://medium.com/data-science-collective/i-created-a-claude-skill-that-turns-piles-of-messy-documents-media-into-a-structured-report-19e9950f93b2)
-
-- Building a Scalable, Production-Grade Agentic RAG Pipeline
-[(link)](https://levelup.gitconnected.com/building-a-scalable-production-grade-agentic-rag-pipeline-1168dcd36260)
-
 - Django vs FastAPI: I Built the Same App Twice
 [(link)](https://medium.com/engineering-playbook/django-vs-fastapi-i-built-the-same-app-twice-25a1ceb477eb)
 
 - How to Build a Local ELT Pipeline with DuckDB and DBT
 [(link)](https://blog.dataengineerthings.org/how-to-build-a-local-elt-pipeline-with-duckdb-and-dbt-c8080ee89036)
-
-- How the Creator of Claude Code Actually Uses It: 13 Practical Moves
-[(link)](https://blog.devgenius.io/how-the-creator-of-claude-code-actually-uses-it-13-practical-moves-2bf02eec032a)
 
 - NumPy + Pandas: The Only Guide You Need
 [(link)](https://medium.com/activated-thinker/numpy-pandas-the-only-guide-you-need-7595c0461b30)
@@ -346,21 +175,11 @@ is_slide: 0
 - The 2026 Data Engineering Roadmap: Building Data Systems for the Agentic AI Era
 [(link)](https://medium.com/@sanjeebmeister/the-2026-data-engineering-roadmap-building-data-systems-for-the-agentic-ai-era-8e7064c2cf55)
 
-- Why Everyone is Talking about Google Antigravity: The Era of Agentic AI Coding
-[(link)](https://pub.towardsai.net/why-everyone-is-talking-about-google-antigravity-the-era-of-agentic-ai-coding-bad5e9e78326)
-
-
 - 10 Business-Centric Data Metrics Analysts Ignore (Until They’re Replaced)
 [(link)](https://medium.com/@Rohan_Dutt/10-business-centric-data-metrics-analysts-ignore-until-theyre-replaced-d8b8e39b3f7b)
 
 - 10 dbt Macros That Saved Us 100+ Hours (With Copy-Paste Code)
 [(link)](https://medium.com/@reliabledataengineering/10-dbt-macros-that-saved-us-100-hours-with-copy-paste-code-55b4bd7051ba)
-
-- Learn MCP Fast: 6 Free Must-Have Resources
-[(link)](https://levelup.gitconnected.com/learn-mcp-fast-6-free-must-have-resources-e8639adf0365)
-
-- Microsoft’s Power BI Modeling MCP Server: What It Actually Means for Your BI Workflow
-[(link)](https://medium.com/@michael.hannecke/microsofts-power-bi-modeling-mcp-server-what-it-actually-means-for-your-bi-workflow-b7afe99eef80)
 
 - Probability Theory for Machine Learning: A Beginner’s Tutorial
 [(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
@@ -371,8 +190,6 @@ is_slide: 0
 - Bayesian Statistics: An introductory course
 [(link)](https://medium.com/@kdwaMachineLearning/bayesian-statistics-an-introductory-course-1059672505c5)
 
-- Building the 7 Layers of a Production-Grade Agentic AI System
-[(link)](https://levelup.gitconnected.com/building-the-7-layers-of-a-production-grade-agentic-ai-system-37ee5d941f1c)
 - 10 Data Models Every Data Engineer Must Know
 [(link)](https://medium.com/@Rohan_Dutt/10-data-models-every-data-engineer-must-know-before-they-break-production-11a020e87e31)
 
@@ -385,23 +202,8 @@ is_slide: 0
 - Beyond the Prompt: Why Context Engineering is the Future of Production AI
 [(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
 
-- Why Yann LeCun Bet $3.5 Billion on World Models Over LLMs
-[(link)](https://ai.gopubby.com/yann-lecun-ami-labs-world-models-2025-e26eefdd900e)
-
-- All You Need To Know About Retrieval-Augmented Generation (RAG) in 2025
-[(link)](https://pub.towardsai.net/all-you-need-to-know-about-retrieval-augmented-generation-rag-in-2025-04c386284c18)
-
 - Eigenvectors Explained: The Magic Directions That Never Change
 [(link)](https://medium.com/data-science-collective/eigenvectors-explained-the-magic-directions-that-never-change-e0c45c7721e8)
-
-- Google Just Dropped Gemini 3 Flash, and Honestly? The Economics Just Changed.
-[(link)](https://ai.plainenglish.io/google-just-dropped-gemini-3-flash-and-honestly-the-economics-just-changed-a303e25472f4)
-
-- How I Virtualized a Unified Star Schema Using LLM
-[(link)](https://medium.com/@irregularbi/how-i-virtualized-a-unified-star-schema-using-llm-7e69cd40a734)
-
-- Six Weeks After Writing About AI Agents, I’m Watching Them Fail Everywhere
-[(link)](https://medium.com/analysts-corner/six-weeks-after-writing-about-ai-agents-im-watching-them-fail-everywhere-fb6636a4568e)
 
 - How to Write SQL Queries That Use Window Frames to Transform Your Data Analysis
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-use-window-frames-to-transform-your-data-analysis-2d18e932aab3)
@@ -429,9 +231,6 @@ is_slide: 0
 
 - Why Semi-Joins in SQL Are More Powerful Than You Think (And How to Master Them)
 [(link)](https://medium.com/@Rohan_Dutt/why-semi-joins-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84030dc523a6)
-
-- Why I’m Making the Switch to marimo Notebooks
-[(link)](https://pandeyparul.medium.com/why-im-making-the-switch-to-marimo-notebooks-6e2218b5c98d)
 
 - Handling Imbalanced Data: The Complete Guide Every Data Scientist Must Know
 [(link)](https://pub.towardsai.net/handling-imbalanced-data-the-complete-guide-every-data-scientist-must-know-96dda53fb62b)
@@ -469,9 +268,6 @@ is_slide: 0
 - The Semantic Layer Revolution: How dbt and Databricks Built the Universal Language of Business Data
 [(link)](https://medium.com/@aminsiddique95/the-semantic-layer-revolution-how-dbt-and-databricks-built-the-universal-language-of-business-data-e060f2a65990)
 
-- GPT-5.2 Prompting Guide
-[(link)](https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/gpt-5-2_prompting_guide.ipynb)
-
 - The Truth About Data Modeling: What You Learn Only After Real Projects
 [(link)](https://medium.com/predict/the-truth-about-data-modeling-what-you-learn-after-real-projects-8932c4ea3db5)
 
@@ -490,20 +286,8 @@ is_slide: 0
 - We Spent 2 Years Building a Data Mesh. It Was a $4M Disaster.
 [(link)](https://medium.com/@aminsiddique95/we-spent-2-years-building-a-data-mesh-it-was-a-4m-disaster-a2667a80edc3)
 
-- We Spent $500K on dbt. Now Everything Takes Longer.
-[(link)](https://medium.com/@aminsiddique95/we-spent-500k-on-dbt-now-everything-takes-longer-2be4f00103d3)
-
 - Mastering Hyperparameter Tuning
 [(link)](https://medium.com/ai-ml-interview-playbook/mastering-hyperparameter-tuning-the-secret-sauce-behind-smarter-models-d2522f18ccf3)
-
-- Running LLMs Locally: Getting Started with Ollama
-[(link)](https://en.paradigmadigital.com/dev/running-llms-locally-getting-started-ollama/)
-
-- We Deleted 1,200 Dashboards. No One Noticed.
-[(link)](https://medium.com/@aminsiddique95/i-deleted-1-200-dashboards-no-one-noticed-c559ff5d3d85)
-
-- 10 Future Trends in GenAI for Data Engineering Pipelines
-[(link)](https://medium.com/@Rohan_Dutt/10-future-trends-in-genai-for-data-engineering-pipelines-2dc1a6aba8c9)
 
 - What is Microsoft MarkItDown and Why It Matters?
 [(link)](https://blog.xeynergy.com/what-is-microsoft-markitdown-and-why-it-matters-da775f74bdaa)
@@ -526,19 +310,8 @@ is_slide: 0
 - The Serverless Illusion: Why Everyone Is Quietly Moving Back to VMs
 [(link)](https://medium.com/@maahisoft20/the-serverless-illusion-why-everyone-is-quietly-moving-back-to-vms-cbc649048540)
 
-
-
-- The Best Way to Use AI for Learning
-[(link)](https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1)
-
 - How I Built an AI That Talks to Your Database: A Journey into RAG
 [(link)](https://pub.towardsai.net/how-i-built-an-ai-that-talks-to-your-database-a-journey-into-rag-c21880cbc67a)
-
-- Agentic AI Project: Build a Multi-Agent Text2SQL Chatbot for E-commerce Database
-[(link)](https://pub.towardsai.net/agentic-ai-project-build-multi-agent-text2sql-chatbot-for-ecommerce-database-c8d0e294ec94)
-
-- Agentic AI Project: Build a Multi-Agent System With LangGraph
-[(link)](https://pub.towardsai.net/agentic-ai-project-build-a-multi-agent-system-with-langgraph-and-open-ai-344ab768caac)
 
 - What Makes dbt So Popular in Modern Data Teams?
 [(link)](https://medium.com/@workwithalam/what-makes-dbt-so-popular-in-modern-data-teams-b775655c48e8)
@@ -548,21 +321,6 @@ is_slide: 0
 
 - UV in Python: The Fastest Package & Project Manager (Complete Guide + Example Project)
 [(link)](https://blog.stackademic.com/uv-in-python-the-fastest-package-project-manager-complete-guide-example-project-91e6a6048e80)
-
-- Google’s Antigravity Just Ended the Cursor IDE. Here’s How.
-[(link)](https://levelup.gitconnected.com/googles-antigravity-just-ended-the-cursor-ide-here-s-how-749aa0442260)
-
-- All Colab users now get access to Gemini and Gemma 
-[(link)](https://medium.com/google-colab/all-colab-users-now-get-access-to-gemini-and-gemma-models-via-colab-python-library-at-no-cost-a392599977c4)
-
-- Introducing Gemini 3: Google’s Most Advanced AI Model, Now Available in Colab
-[(link)](https://medium.com/google-colab/introducing-gemini-3-googles-most-advanced-ai-model-now-available-in-colab-4f97e26d53a7)
-
-- The Final Voyage of the Modern Data Stack
-[(link)](https://www.getorchestra.io/blog/the-final-voyage-of-the-modern-data-stack)
-
-- The Era of Action Model with Gemini 3 Pro & Google Antigravity
-[(link)](https://medium.com/google-cloud/the-era-of-action-with-gemini-3-pro-google-antigravity-853b935c5df0)
 
 - HTMX Murdered React: Why Nobody Needs JavaScript Frameworks Anymore
 [(link)](https://medium.com/@sonampatel_97163/htmx-murdered-react-why-nobody-needs-javascript-frameworks-anymore-4c2d58ffc516)
@@ -585,7 +343,6 @@ is_slide: 0
 - Meet TOON — The Fresh Data Format That Could Replace JSON in the AI Era
 [(link)](https://ai.plainenglish.io/meet-toon-the-fresh-data-format-that-could-replace-json-in-the-ai-era-d93874066abd)
 
-
 - Storing products, prices and orders in PostgreSQL
 [(link)](https://www.cybertec-postgresql.com/en/storing-products-prices-and-orders-in-postgresql/)
 
@@ -595,32 +352,8 @@ is_slide: 0
 - Your Database Is Slow Because You’re Using UUIDs
 [(link)](https://medium.com/@jamauriceholt.com/your-database-is-slow-because-youre-using-uuids-and-how-i-made-it-500x-faster-e57270d9b294)
 
-- I Replaced Half My Coding Time With AI Agents. Here’s The Exact Workflow I Use In 2025
-[(link)](https://medium.com/@the_atomic_architect/ai-agents-cut-coding-time-half-workflow-2025-e1ff5ab28b5f)
-
-- Goodbye PyCharm Pro, Hello VS Code: How We Rebuilt Our Python Setup for Free
-[(link)](https://blog.stackademic.com/goodbye-pycharm-pro-hello-vs-code-how-we-rebuilt-our-python-setup-for-free-98c46ef85db8)
-
-- Stanford Just Ended Prompt Engineering With a Single Sentence….
-[(link)](https://medium.com/@kirantechblog/stanford-just-ended-prompt-engineering-with-a-single-sentence-9bfe702eb82c)
-
-- I Built Everything in Streamlit Until It Broke Me
-[(link)](https://python.plainenglish.io/i-built-everything-in-streamlit-until-it-broke-me-d0f54fa43d62)
-
-- All Colab users now get access to Gemini and Gemma models via Colab Python library at no cost
-[(link)](https://medium.com/google-colab/all-colab-users-now-get-access-to-gemini-and-gemma-models-via-colab-python-library-at-no-cost-a392599977c4)
-
-- I Analyzed 2,500 YouTube Videos to Understand Why RedLetterMedia Are Internet Darlings
-[(link)](https://python.plainenglish.io/i-analyzed-2-500-youtube-videos-to-understand-why-redlettermedia-are-internet-darlings-e4610cf17143)
-
 - Solving Many-to-Many & Drill-Across with the Unified Star Schema
 [(link)](https://medium.com/model-driven-data-engineering/solving-many-to-many-drill-across-with-the-unified-star-schema-2559bc152947)
-
-- SQL Agents Need Compilers
-[(link)](https://blog.waii.ai/sql-agents-need-compilers-7d52cc284408)
-
-- Stop Building Pipelines Manually: The Rise of Data Engineering Automation
-[(link)](https://medium.com/@sauravkumarrajjoli/metadata-driven-pipelines-the-future-of-data-engineering-1e6d7c8d9265)
 
 - Why Scalar Subqueries in SQL Are More Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-scalar-subqueries-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84386e82d669)
@@ -634,12 +367,6 @@ is_slide: 0
 - Designing the Open Metadata Modeling Platform
 [(link)](https://medium.com/@jacovanderlaan/designing-the-open-metadata-modeling-platform-708581393a05)
 
-- Beyond a Single AI: A Step-by-Step Guide to Building a Team of AI Agents (LangChain, LangGraph)
-[(link)](https://python.plainenglish.io/beyond-a-single-ai-a-step-by-step-guide-to-building-a-team-of-ai-agents-langchain-langgraph-a86c974fa52d)
-
-- Automating Dimensional Models with Metadata & dbt
-[(link)](https://medium.com/model-driven-data-engineering/automating-dimensional-models-with-metadata-dbt-5f1c7ad1397b)
-
 - Self-Describing SQL: Embedding Metadata as YAML Front-Matter in Generated Objects
 [(link)](https://medium.com/towards-data-engineering/self-describing-sql-embedding-metadata-as-yaml-front-matter-in-generated-objects-623bff8d1614)
 
@@ -648,12 +375,6 @@ is_slide: 0
 
 - Islands and Gaps with Recursive CTE
 [(link)](https://medium.com/@mlasala1964/islands-and-gaps-with-recursive-cte-32fa8c0388b1)
-
-- 7 AI Agents Every Data Analyst Should Use
-[(link)](https://medium.com/ai-analytics-diaries/7-ai-agents-every-data-analyst-should-use-e12cf625e376)
-
-- Introducing Oracle AI Database 26ai: Next-Gen AI-Native Database for All Your Data
-[(link)](https://blogs.oracle.com/database/post/oracle-announces-oracle-ai-database-26ai)
 
 - Graph Analytics for All of Your Data - Oracle
 [(link)](https://blogs.oracle.com/database/post/graph-analytics-for-all-of-your-data)
@@ -670,35 +391,17 @@ is_slide: 0
 - Dual SCD2: The Foundation for True History in Data Warehousing
 [(link)](https://medium.com/towards-data-engineering/dual-scd2-the-foundation-for-true-history-in-data-warehousing-a61ec17ee808)
 
-- How I’m Using Claude Skills (New Feature) To Blow Up My Claude Code Workflows
-[(link)](https://medium.com/@joe.njenga/how-im-using-claude-skills-new-feature-to-blow-up-my-claude-code-workflows-9010c16292ca)
-
-- Is dbt tbd? Everything you need to know post-Coalesce 2025
-[(link)](https://medium.com/@hugolu87/is-dbt-%EF%B8%8F-tbd-everything-you-need-to-know-post-coalesce-2025-02f93cbc19cc)
-
 - Time-Based SQL Questions: Gaps, Overlaps, and Intervals
 [(link)](https://medium.com/@Rohan_Dutt/time-based-sql-interview-questions-gaps-overlaps-and-intervals-4c83581e98bf)
 
 - Resampling Imbalanced Datasets for Binary Classification
 [(link)](https://medium.com/@josemanuelalbornoz/resampling-imbalanced-datasets-for-binary-classification-d216d1685aec)
 
-- n8n - Secure Workflow Automation for Technical Teams - git
-[(link)](https://github.com/n8n-io/n8n)
-
-- Understanding Data Lineage
-[(link)](https://medium.com/@sajidkhan.sjic/data-lineage-and-the-rise-of-metadata-driven-data-engineering-834684df1797)
-
 - Robust methods to generate synthetic table data
 [(link)](https://ai.gopubby.com/robust-methods-to-generate-synthetic-table-data-91962bcf8466)
 
-- Vibe coding: the antidote
-[(link)](https://medium.com/meetcyber/vibe-coding-the-antidote-104530b856a7)
-
 - A Marketer’s Guide to Calculus
 [(link)](https://blog.marketingdatascience.ai/a-marketers-guide-to-calculus-9ced95758447)
-
-- Async != Concurrent: Why 90% of Python Developers Get Concurrency Wrong 
-[(link)](https://medium.com/@dhruvahuja2330/async-concurrent-why-90-of-python-developers-get-concurrency-wrong-0a79dfae362e)
 
 - Cosine Distance vs Dot Product vs Euclidean in vector similarity search
 [(link)](https://medium.com/data-science-collective/cosine-distance-vs-dot-product-vs-euclidean-in-vector-similarity-search-227a6db32edb)

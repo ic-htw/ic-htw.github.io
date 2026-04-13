@@ -5,7 +5,20 @@ title: LLMs
 is_slide: 0
 ---
 
+# aaa
+- Joe Njenga
+[(link)](https://medium.com/@joe.njenga)
+- Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
+[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
+
+
+
+
 # agents
+- Creating an Advanced AI Agent From Scratch with Python in 2026: Part 1
+[(link)](https://pub.towardsai.net/creating-an-advanced-ai-agent-from-scratch-with-python-in-2025-part-1-ce74a23f6514)
+- Building an AI Agent from Scratch with pure Python
+[(link)](https://levelup.gitconnected.com/building-an-ai-agent-from-scratch-with-pure-python-7d4532202637)
 - 5 Agent Frameworks. One Pattern Won
 [(link)](https://levelup.gitconnected.com/5-agent-frameworks-one-pattern-won-54cc0eedf027)
 - LangChain Deep Agents: The Open-Source Claude Code Alternative That Works With Any Model
@@ -70,6 +83,9 @@ is_slide: 0
 - Open Computer
 [(link)](https://huggingface.co/spaces/smolagents/computer-agent)
 
+# claude
+- Claude Code Unpacked
+[(link)](https://ccunpacked.dev/)
 
 
 # coding
