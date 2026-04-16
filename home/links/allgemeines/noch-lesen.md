@@ -25,33 +25,6 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- GA of Oracle AI Database 26ai for Linux x86-64 on-premises platforms
-[(link)](https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms)
-
-- The Day a Google L7 Engineer Tore My System Design to Shreds
-[(link)](https://medium.com/expocomputing/google-l7-system-design-interview-lessons-0b3834fded07)
-
-- The “AI Kills SaaS” Take Is Lazy. Here’s What’s Actually Happening
-[(link)](https://medium.com/realworld-ai-use-cases/the-ai-kills-saas-take-is-lazy-heres-what-s-actually-happening-28ae945b7832)
-
-- Entire
-[(link)](https://entire.io/)
-
-- LangExtract Google
-[(link)](https://github.com/google/langextract)
-
-- 9 Agentic AI Projects I’d Build in 2026 to Learn What Agents Really Are
-[(link)](https://pub.towardsai.net/9-agentic-ai-projects-id-build-in-2026-to-learn-what-agents-really-are-e8b875892320)
-
-- Everything You Can Do with Chrome’s Built-In AI Assistant (2025)
-[(link)](https://generativeai.pub/everything-you-can-do-with-chromes-built-in-ai-assistant-2025-9307e962deb4)
-
-- Google Is Quietly Dismantling Everything OpenAI Built
-[(link)](https://medium.com/@teja.kusireddy23/google-is-quietly-dismantling-everything-openai-built-4edc406f572d)
-
-- The Prompt Language Microsoft’s AI Team Uses 
-[(link)](https://medium.com/vibe-coding/the-prompt-language-microsofts-ai-team-uses-they-finally-released-it-bc62eafd79e6)
-
 - DeepSite v2: The Free, Open-Source AI Website Builder That Actually Ships
 [(link)](https://www.towardsdeeplearning.com/deepsite-v2-the-free-open-source-ai-website-builder-that-actually-ships-6f5985156ae9)
 
@@ -70,20 +43,8 @@ is_slide: 0
 - Understanding RLHF from First Principles
 [(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
 
-- Why Pandas 3.0 Feels Like a Whole New Library
-[(link)](https://techwithram.medium.com/why-pandas-3-0-feels-like-a-whole-new-library-487d8f20ef1a)
-
-- Why Time-Series Recursion in SQL Is More Powerful Than You Think 
-[(link)](https://medium.com/@Rohan_Dutt/why-time-series-recursion-in-sql-is-more-powerful-than-you-think-and-how-to-master-it-1e0599a46fc3)
-
 - Memgraph: Real-Time Graph Computing for Modern Data Systems
 [(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
-
-- Apache Airflow vs NiFi: Which is the Right Tool for Data Logistics?
-[(link)](https://medium.com/towards-data-engineering/apache-airflow-vs-nifi-which-is-the-right-tool-for-data-logistics-48625c2bcd2d)
-
-- How to Build a Medallion Architecture Locally with dbt and DuckDB
-[(link)](https://blog.dataengineerthings.org/how-to-build-a-medallion-architecture-locally-with-dbt-and-duckdb-e8e5e9270a72)
 
 - 10 Regression Estimators That Don’t Collapse When Outliers Slip Into Production Data
 [(link)](https://medium.com/@Rohan_Dutt/10-regression-estimators-that-dont-collapse-when-outliers-slip-into-production-data-544120d3093a)
@@ -100,15 +61,6 @@ is_slide: 0
 - Every Python Concept Explained
 [(link)](https://medium.com/@tricky16122000/every-python-concept-explained-60f3a2d40736)
 
-- SQL - Why Probability Mass Functions in SQL Are More Powerful Than You Think
-[(link)](https://medium.com/@Rohan_Dutt/why-probability-mass-functions-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-de6412d88a57)
-
-- SQL - Why Hypothesis Testing Using SQL Aggregations Is Powerful Than You Think
-[(link)](https://medium.com/@Rohan_Dutt/why-hypothesis-testing-using-sql-aggregations-is-more-powerful-than-you-think-and-how-to-master-f0e66908c17c)
-
-- XGBoost Finally Explained: The Simple Breakdown That Most Tutorials Skip
-[(link)](https://pub.towardsai.net/xgboost-finally-explained-the-simple-breakdown-that-most-tutorials-skip-54c655b3143b)
-
 - Exploratory Data Analysis Checklist: What to Look for Every Time
 [(link)](https://medium.com/codetodeploy/exploratory-data-analysis-checklist-what-to-look-for-every-time-b922da6090ed)
 
@@ -121,8 +73,6 @@ is_slide: 0
 - “OpenRAG” From Documents to Agentic Search in Minutes (from IBM research open source)
 [(link)](https://alain-airom.medium.com/openrag-from-documents-to-agentic-search-in-minutes-from-ibm-research-open-source-ed6bf506507b)
 
-- Eigenvectors and Eigenfunctions in Differential Systems: An Exploratory Analysis
-[(link)](https://medium.com/@tomkob99_89317/eigenvectors-and-eigenfunctions-in-differential-systems-an-exploratory-analysis-e11b5d5bf251)
 
 - End-to-End Data Engineering Project (by Free Tools)
 [(link)](https://fhattat.medium.com/end-to-end-data-engineering-project-by-free-tools-cd5810372588)
@@ -138,9 +88,6 @@ is_slide: 0
 
 - 10 Critical Data Quality Queries Every Data Engineer Should Implement (Before Trust Is Lost)
 [(link)](https://medium.com/@Rohan_Dutt/10-critical-data-quality-queries-every-data-engineer-should-implement-before-trust-is-lost-0b80d770a9ff)
-
-- How NotebookLM Analyzes 20,000 Documents in 48 Hours
-[(link)](https://medium.com/@kombib/notebooklm-analyze-20k-documents-fast-4dc84a33fcf5)
 
 - Google Finally Solved The Fragile Text-to-SQL Systems
 [(link)](https://medium.com/coding-nexus/google-finally-solved-the-fragile-text-to-sql-systems-63ce09c20670)
@@ -202,8 +149,6 @@ is_slide: 0
 - Beyond the Prompt: Why Context Engineering is the Future of Production AI
 [(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
 
-- Eigenvectors Explained: The Magic Directions That Never Change
-[(link)](https://medium.com/data-science-collective/eigenvectors-explained-the-magic-directions-that-never-change-e0c45c7721e8)
 
 - How to Write SQL Queries That Use Window Frames to Transform Your Data Analysis
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-use-window-frames-to-transform-your-data-analysis-2d18e932aab3)
@@ -223,8 +168,6 @@ is_slide: 0
 - 10 Powerful ChatGPT Prompts to Learn Coding Faster 
 [(link)](https://javascript.plainenglish.io/10-powerful-chatgpt-prompts-to-learn-coding-faster-00d13c0a6a40)
 
-- Eigenfunction: The Mathematical Puppy Often Seen as a Monster. So Says Fourier… Maybe
-[(link)](https://medium.com/@tomkob99_89317/eigenfunction-the-mathematical-puppy-often-seen-as-a-noble-monster-so-says-fourier-maybe-1526be266e66)
 
 - Ollama Enshittification — the Early Signs
 [(link)](https://medium.com/@rosgluk/ollama-enshittification-the-early-signs-f074ebd94ea7)

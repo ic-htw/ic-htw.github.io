@@ -274,6 +274,11 @@ is_slide: 0
 - ipython-sql
 [(link)](https://github.com/catherinedevlin/ipython-sql)
 
+# LangExtract Google
+- git
+[(link)](https://github.com/google/langextract)
+
+
 # linux container
 - Container and virtualization tools
 [(link)](https://linuxcontainers.org/)

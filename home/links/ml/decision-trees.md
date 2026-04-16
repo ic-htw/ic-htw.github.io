@@ -58,6 +58,9 @@ is_slide: 0
 [(link)](https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html)
 - XGBoost Algorithm: Long May She Reign!
 [(link)](https://towardsdatascience.com/https-medium-com-vishalmorde-xgboost-algorithm-long-she-may-rein-edd9f99be63d)
+- XGBoost Finally Explained: The Simple Breakdown That Most Tutorials Skip
+[(link)](https://pub.towardsai.net/xgboost-finally-explained-the-simple-breakdown-that-most-tutorials-skip-54c655b3143b)
+
 
 
 

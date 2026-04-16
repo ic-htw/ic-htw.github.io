@@ -10,6 +10,9 @@ is_slide: 0
 [(link)](https://medium.com/@joe.njenga)
 - Andrej Karpathy Just Built an Entire GPT in 243 Lines of Python
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
+- The Prompt Language Microsoft’s AI Team Uses 
+[(link)](https://medium.com/vibe-coding/the-prompt-language-microsofts-ai-team-uses-they-finally-released-it-bc62eafd79e6)
+
 
 
 
@@ -86,6 +89,9 @@ is_slide: 0
 # claude
 - Claude Code Unpacked
 [(link)](https://ccunpacked.dev/)
+- What Is Andrej Karpathy’s CLAUDE.md File?
+[(link)](https://medium.com/@coustom.no.03/7ca12ef0ecec)
+
 
 
 # coding

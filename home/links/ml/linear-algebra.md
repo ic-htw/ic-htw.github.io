@@ -28,5 +28,12 @@ is_slide: 0
 [(link)](https://ai.gopubby.com/why-ai-loves-eigenvectors-and-you-should-too-d82e8c428875)
 
 
+# Eigenvector
+- Eigenvectors and Eigenfunctions in Differential Systems: An Exploratory Analysis
+[(link)](https://medium.com/@tomkob99_89317/eigenvectors-and-eigenfunctions-in-differential-systems-an-exploratory-analysis-e11b5d5bf251)
+- Eigenvectors Explained: The Magic Directions That Never Change
+[(link)](https://medium.com/data-science-collective/eigenvectors-explained-the-magic-directions-that-never-change-e0c45c7721e8)
+- Eigenfunction: The Mathematical Puppy Often Seen as a Monster. So Says Fourier… Maybe
+[(link)](https://medium.com/@tomkob99_89317/eigenfunction-the-mathematical-puppy-often-seen-as-a-noble-monster-so-says-fourier-maybe-1526be266e66)
 
  

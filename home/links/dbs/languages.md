@@ -50,22 +50,11 @@ is_slide: 0
 
 
 
-
-
-
-
-
-
-
-
-
-
 # sql - ml
 - Boosting E-Commerce Recommendations with SQL-Based Learning-to-Rank — Part 1
 [(link)](https://medium.com/data-science-collective/learning-to-rank-advancing-e-commerce-recommendations-with-sql-based-machine-learning-part-1-6ef4c999f034)
 - Propensity-Scoring Matching (PSM) using Machine learning in SQL
 [(link)](https://medium.com/data-science-collective/propensity-scoring-matching-psm-using-machine-learning-in-sql-339b7fcc24e7)
-
 
 
 
@@ -82,12 +71,7 @@ is_slide: 0
 [(link)](https://medium.com/@mtrentz/is-this-the-future-of-sql-exploring-the-pipe-syntax-6122abb1f2a4)
 
 
-
-
-
-
-
-# window functions
+# sql window functions
 - SQL Window Functions: Ranking
 [(link)](https://antonz.org/sql-window-functions-ranking/)
 - Anatomy of SQL Window Functions
@@ -95,6 +79,13 @@ is_slide: 0
 - Understand SQL Window Functions Once and For All
 [(link)](https://towardsdatascience.com/understand-sql-window-functions-once-and-for-all-4447824c1cb4)
 
+# sql complex examples
+- Why Time-Series Recursion in SQL Is More Powerful Than You Think 
+[(link)](https://medium.com/@Rohan_Dutt/why-time-series-recursion-in-sql-is-more-powerful-than-you-think-and-how-to-master-it-1e0599a46fc3)
+- SQL - Why Probability Mass Functions in SQL Are More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-probability-mass-functions-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-de6412d88a57)
+- SQL - Why Hypothesis Testing Using SQL Aggregations Is Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-hypothesis-testing-using-sql-aggregations-is-more-powerful-than-you-think-and-how-to-master-f0e66908c17c)
 
 # cypher
 - openCypher
