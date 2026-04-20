@@ -25,29 +25,29 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- DeepSite v2: The Free, Open-Source AI Website Builder That Actually Ships
-[(link)](https://www.towardsdeeplearning.com/deepsite-v2-the-free-open-source-ai-website-builder-that-actually-ships-6f5985156ae9)
+- sqlit
+[(link)](https://github.com/Maxteabag/sqlit)
 
-- roborev
-[(link)](https://www.roborev.io/)
-
-- VS Code Agent updates
-[(link)](https://code.visualstudio.com/updates/v1_109)
-
-- 9 Things Every Python Script Should Have
-[(link)](https://meetcyber.net/9-things-every-python-script-should-have-2b1717381bcb)
-
-- My Team Asked Why I’m ‘Wasting $100/Month’ on Claude When Copilot Is $10! 
-[(link)](https://isitvritra101.medium.com/claude-opus-vs-github-copilot-net-developer-cost-8f50da6a1467)
+- rainfrog - terminal ui for postgres
+[(link)](https://github.com/achristmascarl/rainfrog)
 
 - Understanding RLHF from First Principles
 [(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
 
-- Memgraph: Real-Time Graph Computing for Modern Data Systems
-[(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
+- RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark
+[(link)](https://www.towardsdeeplearning.com/rip-commercial-ocr-an-open-source-model-just-topped-every-benchmark-351bf9d6be10)
 
-- 10 Regression Estimators That Don’t Collapse When Outliers Slip Into Production Data
-[(link)](https://medium.com/@Rohan_Dutt/10-regression-estimators-that-dont-collapse-when-outliers-slip-into-production-data-544120d3093a)
+- Why Agentic AI Is the #1 Skill To Learn
+[(link)](https://medium.com/activated-thinker/why-agentic-ai-is-the-1-skill-to-learn-ffc1337501a8)
+
+- Everyone Said AI Would Take Engineering Jobs. They Were Right.
+[(link)](https://medium.com/vibe-coding/everyone-said-ai-would-take-engineering-jobs-they-were-right-3a3ae50c62f6)
+
+- The YC CEO Ships 10,000 Lines a Day. Here’s His Exact Setup
+[(link)](https://medium.com/vibe-coding/the-yc-ceo-ships-10-000-lines-a-day-heres-his-exact-setup-8a997e47b792)
+
+- 9 Things Every Python Script Should Have
+[(link)](https://meetcyber.net/9-things-every-python-script-should-have-2b1717381bcb)
 
 - Zero ETL Is the Reality Check Every Data Engineer Needs in 2026
 [(link)](https://aws.plainenglish.io/zero-etl-is-the-reality-check-every-data-engineer-needs-in-2026-c4623d7df460)
@@ -79,9 +79,6 @@ is_slide: 0
 
 - How to Build a High-Performance, Free ELT Pipeline Locally using DuckDB
 [(link)](https://levelup.gitconnected.com/how-to-build-a-high-performance-free-elt-pipeline-locally-using-duckdb-8fe9d7235079)
-
-- sqlit
-[(link)](https://github.com/Maxteabag/sqlit)
 
 - 10 SQL Time Zone Mistakes Most Teams Discover Only After Numbers Are Escalated by Executives
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-time-zone-mistakes-most-teams-discover-only-after-numbers-are-challenged-a0f58beca404)
@@ -128,27 +125,14 @@ is_slide: 0
 - 10 dbt Macros That Saved Us 100+ Hours (With Copy-Paste Code)
 [(link)](https://medium.com/@reliabledataengineering/10-dbt-macros-that-saved-us-100-hours-with-copy-paste-code-55b4bd7051ba)
 
-- Probability Theory for Machine Learning: A Beginner’s Tutorial
-[(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
-
 - The Power of PyTorch and vLLM Together
 [(link)](https://medium.com/@pankaj_pandey/the-power-of-pytorch-and-vllm-together-3cb03c35f349)
-
-- Bayesian Statistics: An introductory course
-[(link)](https://medium.com/@kdwaMachineLearning/bayesian-statistics-an-introductory-course-1059672505c5)
 
 - 10 Data Models Every Data Engineer Must Know
 [(link)](https://medium.com/@Rohan_Dutt/10-data-models-every-data-engineer-must-know-before-they-break-production-11a020e87e31)
 
 - The First Nmap Scan That Makes You Realize How the Internet Actually Works
 [(link)](https://medium.com/@fatihaali093/the-first-nmap-scan-that-makes-you-realize-how-the-internet-actually-works-4f7de267d72a)
-
-- Read this and you will finally understand how ChatGPT actually works
-[(link)](https://medium.com/@chrisdunlop_37984/read-this-and-you-will-finally-understand-how-chatgpt-actually-works-cda50dcf7c29)
-
-- Beyond the Prompt: Why Context Engineering is the Future of Production AI
-[(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
-
 
 - How to Write SQL Queries That Use Window Frames to Transform Your Data Analysis
 [(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-use-window-frames-to-transform-your-data-analysis-2d18e932aab3)
@@ -161,16 +145,6 @@ is_slide: 0
 
 - SQL Performance Mastery: 10 High-Impact Aggregation Strategies for Sub-Second Queries
 [(link)](https://systemweakness.com/10-sql-aggregation-query-design-tips-for-fast-and-scalable-data-workflows-c734309f8dd4)
-
-- My Local/Remote LLM Studio — watsonx.ai and Ollama (part 1)
-[(link)](https://alain-airom.medium.com/my-local-remote-llm-studio-watsonx-ai-and-ollama-part-1-4a016aae9806)
-
-- 10 Powerful ChatGPT Prompts to Learn Coding Faster 
-[(link)](https://javascript.plainenglish.io/10-powerful-chatgpt-prompts-to-learn-coding-faster-00d13c0a6a40)
-
-
-- Ollama Enshittification — the Early Signs
-[(link)](https://medium.com/@rosgluk/ollama-enshittification-the-early-signs-f074ebd94ea7)
 
 - Why Semi-Joins in SQL Are More Powerful Than You Think (And How to Master Them)
 [(link)](https://medium.com/@Rohan_Dutt/why-semi-joins-in-sql-are-more-powerful-than-you-think-and-how-to-master-them-84030dc523a6)
@@ -186,9 +160,6 @@ is_slide: 0
 
 - Why Gradient Boosting Often Beats Deep Learning on Tabular Data (And How to Tune It)
 [(link)](https://medium.com/@Rohan_Dutt/why-gradient-boosting-often-beats-deep-learning-on-tabular-data-and-how-to-tune-it-17c4c59b1782)
-
-- Vibe coding is dead (Learn this instead)
-[(link)](https://surendrapandar.medium.com/vibe-coding-is-dead-learn-this-instead-879c89577c9f)
 
 - Why Exponentials and Logarithms Dominate Statistics and Information Theory: The Fundamental Properties
 [(link)](https://medium.com/@tomkob99_89317/why-exponentials-and-logarithms-dominate-statistics-and-information-theory-the-fundamental-abc3cbb71bb6)
@@ -431,9 +402,6 @@ is_slide: 0
 
 - Integrating LLMs and AI Agents into Data Engineering Workflows
 [(link)](https://medium.com/@ritam378/f0fb05eedb09)
-
-- Random Variables & Probability Distributions explained
-[(link)](https://medium.com/data-science-collective/random-variables-probability-distributions-explained-08903a825da6)
 
 - Memory Management in Python
 [(link)](https://medium.com/@aliyannshaikhh/aefd9e4c6542)
@@ -701,17 +669,11 @@ is_slide: 0
 - DuckDB vs Databricks SQL Warehouse: Can We Save on Compute?
 [(link)](https://medium.com/@pablo.lopez.santori/duckdb-vs-databricks-sql-warehouse-can-we-save-on-compute-9d7e0836fdfe)
 
-- Most Developers Get This Wrong in Docker Networking!
-[(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
-
 - Dynamic Data Source Routing in Spring Boot: Master Multi-Tenancy & Read-Write Separation
 [(link)](https://blog.devgenius.io/dynamic-data-source-routing-in-spring-boot-master-multi-tenancy-read-write-separation-ea45811f6e65)
 
 - Documents to Markdown Beyond Conventional Limits with gpt4.1 | ExtractThinker
 [(link)](https://pub.towardsai.net/documents-to-markdown-beyond-conventional-limits-with-gpt4-1-extractthinker-cc71ead1c87b)
-
-- Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
-[(link)](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579)
 
 - GPT-4.1 just PERMANENTLY transformed how the world will interact with data
 [(link)](https://medium.com/@austin-starks/gpt-4-1-just-permanently-transformed-how-the-world-will-interact-with-data-a788cbbf1b0d)
@@ -1192,9 +1154,6 @@ is_slide: 0
 - Implementing Hybrid Search with Postgres and pgvector
 [(link)](https://jkatz05.com/post/postgres/hybrid-search-postgres-pgvector/)
 
-- rainfrog - terminal ui for postgres
-[(link)](https://github.com/achristmascarl/rainfrog)
-
 - How SELECT FOR UPDATE Works
 [(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
 
@@ -1204,14 +1163,8 @@ is_slide: 0
 - Implementing Filtered Semantic Search Using Pgvector and JavaScript
 [(link)](https://www.timescale.com/blog/implementing-filtered-semantic-search-using-pgvector-and-javascript/)
 
-- Open-Source Visual ETL Tools in 2024
-[(link)](https://medium.com/@thibaut_gourdel/open-source-visual-etl-tools-in-2024-1d3ef4ef6f15)
-
 - 4 SQLAlchemy Features For Data Engineering
 [(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
-
-- Navigating the New Types of LLM Agents and Architectures
-[(link)](https://towardsdatascience.com/navigating-the-new-types-of-llm-agents-and-architectures-309382ce9f88)
 
 - Extracting Meaning from Tables in Financial Statements With LLMs and Chatbots
 [(link)](https://ai.gopubby.com/extracting-meaning-from-tables-in-financial-statements-with-llms-and-chatbots-using-unstructured-io-e3a8537930bf)
@@ -1225,44 +1178,16 @@ is_slide: 0
 - Quantization of LLMs with llama.cpp
 [(link)](https://medium.com/@ingridwickstevens/quantization-of-llms-with-llama-cpp-9bbf59deda35)
 
-- Why I Use Open Weights LLMs Locally
-[(link)](https://medium.com/thedeephub/why-i-use-locally-hosted-llms-9146e1fd55fa)
-
-- Build your own Large Language Model (LLM) From Scratch Using PyTorch
-[(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
-
-- What We Learned from a Year of Building with LLMs (Part I)
-[(link)](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
-
-- IDE in the Web Browser? Let me show you Project IDX by Google
-[(link)](https://levelup.gitconnected.com/ide-in-the-web-browser-let-me-show-you-project-idx-by-google-e9c38de046fe)
-
 - A Practical Guide to using Pydantic
 [(link)](https://medium.com/@marcnealer/a-practical-guide-to-using-pydantic-8aafa7feebf6)
 
-- Build Your Own Llama 3 Architecture from Scratch Using PyTorch
-[(link)](https://pub.towardsai.net/build-your-own-llama-3-architecture-from-scratch-using-pytorch-2ce1ecaa901c)
-
 - Running Ollama on Google Colab (Free Tier): A Step-by-Step Guide
 [(link)](https://pub.towardsai.net/running-ollama-on-google-colab-free-tier-a-step-by-step-guide-9ef74b1f8f7a)
-
-- Using docker init to write Dockerfile and docker-compose configs
-[(link)](https://livingdevops.com/devops/docker-init-to-write-dockerfile-docker-compose/)
-
-
-- 6 Best Practices for Writing Dockerfiles
-[(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
-
-- Document Extraction Is GenAI’s Killer App
-[(link)](https://towardsdatascience.com/document-extraction-is-genais-killer-app-9e9c816e6caf)
 
 
 - DuckDB & PyArrow: Lightweight and Speed Data Analysis
 [(link)](https://medium.com/aimonks/duckdb-pyarrow-lightweight-and-speed-data-analysis-666fdfbac2bf)
 
-
-- Improving Performance for Data Visualization AI Agent
-[(link)](https://medium.com/firebird-technologies/improving-performance-for-data-visualization-ai-agent-d677ccb71e81)
 
 - The new “window.ai” API will blow your mind.
 [(link)](https://javascript.plainenglish.io/the-new-window-ai-api-will-blow-your-mind-3eb8b4704ca0)

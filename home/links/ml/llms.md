@@ -12,6 +12,15 @@ is_slide: 0
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathy-just-built-an-entire-gpt-in-243-lines-of-python-7d66cfdfa301)
 - The Prompt Language Microsoft’s AI Team Uses 
 [(link)](https://medium.com/vibe-coding/the-prompt-language-microsofts-ai-team-uses-they-finally-released-it-bc62eafd79e6)
+- Read this and you will finally understand how ChatGPT actually works
+[(link)](https://medium.com/@chrisdunlop_37984/read-this-and-you-will-finally-understand-how-chatgpt-actually-works-cda50dcf7c29)
+- Beyond the Prompt: Why Context Engineering is the Future of Production AI
+[(link)](https://ai.gopubby.com/beyond-the-prompt-why-context-engineering-is-the-future-of-production-ai-1625c94194e4)
+- Build your own Large Language Model (LLM) From Scratch Using PyTorch
+[(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
+
+
+
 
 
 

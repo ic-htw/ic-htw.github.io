@@ -270,6 +270,9 @@ is_slide: 0
 [(link)](https://memgraph.com/)
 - playground
 [(link)](https://playground.memgraph.com/)
+- Memgraph: Real-Time Graph Computing for Modern Data Systems
+[(link)](https://python.plainenglish.io/memgraph-real-time-graph-computing-for-modern-data-systems-1ae9788edef6)
+
 
 # mongodb
 - home

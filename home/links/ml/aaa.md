@@ -5,6 +5,8 @@ title: AAA
 is_slide: 0
 ---
 # aaa
+- 10 Regression Estimators That Don’t Collapse When Outliers Slip Into Production Data
+[(link)](https://medium.com/@Rohan_Dutt/10-regression-estimators-that-dont-collapse-when-outliers-slip-into-production-data-544120d3093a)
 - Understanding Gradient Descent
 [(link)](https://medium.com/@arnanbonny/001-understanding-gradient-descent-bcc3387f9610)
 - Marketing Data Science with Joe Domaleski
@@ -389,4 +391,13 @@ is_slide: 0
 [(link)](https://www.cantorsparadise.com/transforming-scores-into-probability-fb4d4be7deab)
 - Probability vs Likelihood
 [(link)](https://medium.com/analytics-vidhya/probability-vs-likelihood-873dcfe15df8)
+- Random Variables & Probability Distributions explained
+[(link)](https://medium.com/data-science-collective/random-variables-probability-distributions-explained-08903a825da6)
+- Probability Theory for Machine Learning: A Beginner’s Tutorial
+[(link)](https://medium.com/@kdwaMachineLearning/probability-theory-for-machine-learning-a-beginners-tutorial-b01032116ad1)
+- Bayesian Statistics: An introductory course
+[(link)](https://medium.com/@kdwaMachineLearning/bayesian-statistics-an-introductory-course-1059672505c5)
+
+
+
 

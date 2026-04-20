@@ -129,6 +129,20 @@ is_slide: 0
 [(link)](https://medium.com/@devlink/the-end-of-docker-the-reasons-behind-developers-changing-their-runtimes-4b7697846f6f)
 - A Step-by-Step Guide to Docker Image Optimisation: Reduce Size by Over 95%
 [(link)](https://blog.prateekjain.dev/a-step-by-step-guide-to-docker-image-optimisation-reduce-size-by-over-95-d90bcab3819d)
+- 6 Best Practices for Writing Dockerfiles
+[(link)](https://blog.stackademic.com/6-best-practices-for-writing-dockerfiles-e200a5a0185b)
+- Using docker init to write Dockerfile and docker-compose configs
+[(link)](https://livingdevops.com/devops/docker-init-to-write-dockerfile-docker-compose/)
+- Most Developers Get This Wrong in Docker Networking!
+[(link)](https://blog.devops.dev/most-developers-get-this-wrong-in-docker-networking-359dbb3eac16)
+- Deep Dive into uv Dockerfiles by Astral: Image Size, Performance & Best Practices
+[(link)](https://medium.com/@benitomartin/deep-dive-into-uv-dockerfiles-by-astral-image-size-performance-best-practices-5790974b9579)
+
+
+
+
+
+
 
 # docETL
 - DocETL: Powering Complex Document Processing Pipelines
@@ -378,6 +392,9 @@ is_slide: 0
 - Microsoft.PowerShell.Management 
 [(link)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/?view=powershell-7.4)
 
+# roborev
+- roborev
+[(link)](https://www.roborev.io/)
 
 # rsql
 - rsql
