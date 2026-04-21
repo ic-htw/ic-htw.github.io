@@ -522,6 +522,9 @@ loring the Microsoft Phi3 Vision Language model as OCR for document data extract
 # RLHF
 - Reinforcement Learning from Human Feedback - Book
 [(link)](https://rlhfbook.com/)
+- Understanding RLHF from First Principles
+[(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
+
 
 
 

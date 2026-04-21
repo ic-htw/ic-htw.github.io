@@ -25,14 +25,17 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Anthropic Is Giving Away 13 Free Courses That Others Charge Thousands For
+[(link)](https://pixicstudio.medium.com/free-anthropic-ai-courses-with-certificates-2f1c8f2aea10)
+
+- I Tested 5 Python ORMs. One Replaced SQLAlchemy Completely.
+[(link)](https://medium.com/@inprogrammer/i-tested-5-python-orms-one-replaced-sqlalchemy-completely-e423699a1ac8)
+
 - sqlit
 [(link)](https://github.com/Maxteabag/sqlit)
 
 - rainfrog - terminal ui for postgres
 [(link)](https://github.com/achristmascarl/rainfrog)
-
-- Understanding RLHF from First Principles
-[(link)](https://medium.com/fundamentals-of-artificial-intelligence/understanding-rlhf-from-first-principles-51a928970003)
 
 - RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark
 [(link)](https://www.towardsdeeplearning.com/rip-commercial-ocr-an-open-source-model-just-topped-every-benchmark-351bf9d6be10)
