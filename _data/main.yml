@@ -309,9 +309,9 @@ home: &r
                   - t:  Cassandra - TourDelight
                     ts: Cassandra - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
-                  - t:  DynamoDB - NoSQL Workbench
-                    ts: DynamoDB - NoSQL Workbench
-                    url: /home/lv/adbkt/uebungen/dynamodb-nosqlwb.html
+                  - t:  DynamoDB - Site Specific Crop Management
+                    ts: DynamoDB - SSCM
+                    url: /home/lv/adbkt/uebungen/sscm.html
                   - t:  DynamoDB - TourDelight
                     ts: DynamoDB - TourDelight
                     url: /home/lv/adbkt/uebungen/tour-delight-dynamodb.html
