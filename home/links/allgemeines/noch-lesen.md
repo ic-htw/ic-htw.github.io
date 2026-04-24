@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Best SQL Hacks I Wouldn’t Have Believed If I Hadn’t Used Them Myself
+[(link)](https://medium.com/@anchitgupt2012/best-sql-hacks-i-wouldnt-have-believed-if-i-hadn-t-used-them-myself-2511e18f15a1)
+
+- Java 26 Is Here — Here’s What Actually Matters
+[(link)](https://medium.com/@knowledge.cafe/java-26-is-here-heres-what-actually-matters-cd7cb259295e)
+
 - Anthropic Is Giving Away 13 Free Courses That Others Charge Thousands For
 [(link)](https://pixicstudio.medium.com/free-anthropic-ai-courses-with-certificates-2f1c8f2aea10)
 
