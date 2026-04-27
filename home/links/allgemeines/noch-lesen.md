@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Proven Ways I Instantly Spot Bad AI-Generated Code
+[(link)](https://medium.com/@vndpal/10-proven-ways-i-instantly-spot-bad-ai-generated-code-8bb671dce517)
+
+- The 4 Lines Every CLAUDE.md Needs
+[(link)](https://levelup.gitconnected.com/the-4-lines-every-claude-md-needs-2717a46866f6)
+
 - Best SQL Hacks I Wouldn’t Have Believed If I Hadn’t Used Them Myself
 [(link)](https://medium.com/@anchitgupt2012/best-sql-hacks-i-wouldnt-have-believed-if-i-hadn-t-used-them-myself-2511e18f15a1)
 
