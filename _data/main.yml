@@ -278,18 +278,21 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/vorlesungen/graphds.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/vorlesungen/recsql.html
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
                     url: /home/lv/adbkt/vorlesungen/geo.html
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/vorlesungen/tsdb.html
+                  - t: Large Language Models
+                    ts: LLMs
+                    url: /home/lv/adbkt/vorlesungen/llms.html
                   - t: Vektordatenbanken
                     ts: Vektordatenbanken
                     url: /home/lv/adbkt/vorlesungen/vectordb.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/vorlesungen/recsql.html
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
@@ -336,21 +339,21 @@ home: &r
                   - t: Graphdatenbanken - Zugriffskontrolle
                     ts: Graphdatenbanken - Zugriffskontrolle
                     url: /home/lv/adbkt/uebungen/auth.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/uebungen/recsql.html
+                  - t: pgRouting
+                    ts: pgRouting
+                    url: /home/lv/adbkt/uebungen/pgrouting.html
+                  - t: Geo-Abfragen
+                    ts: Geo-Abfragen
+                    url: /home/lv/adbkt/uebungen/geo-sql.html
                   - t:  Zeitreihendatenbanken - Monitoring
                     ts: Zeitreihendatenbanken - Monitoring
                     url: /home/lv/adbkt/uebungen/monitoring.html
                   - t:  Vektordatenbanken - RAG
                     ts: Vektordatenbanken - RAG
                     url: /home/lv/adbkt/uebungen/vectordb-rag.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/uebungen/recsql.html
-                  - t: Geo-Abfragen
-                    ts: Geo-Abfragen
-                    url: /home/lv/adbkt/uebungen/geo-sql.html
-                  - t: pgRouting
-                    ts: pgRouting
-                    url: /home/lv/adbkt/uebungen/pgrouting.html
                   - t: ER-Diagramm
                     ts: ER-Diagramm
                     url: /home/lv/adbkt/uebungen/er-dia.html
@@ -361,9 +364,6 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
-                  - t: LLMs
-                    ts: Large Language Models
-                    url: /home/lv/adbkt/kidb/llms.html
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html
