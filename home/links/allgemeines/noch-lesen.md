@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- AWS CEO Explains Why AI Still Can’t Replace Junior Developers
+[(link)](https://medium.com/@Deep-concept/aws-ceo-explains-why-ai-still-cant-replace-junior-developers-3f3e08fb24d0)
+
+- Stop Memorizing Design Patterns: Use This Decision Tree Instead
+[(link)](https://medium.com/womenintechnology/stop-memorizing-design-patterns-use-this-decision-tree-instead-e84f22fca9fa)
+
 - 10 Proven Ways I Instantly Spot Bad AI-Generated Code
 [(link)](https://medium.com/@vndpal/10-proven-ways-i-instantly-spot-bad-ai-generated-code-8bb671dce517)
 
