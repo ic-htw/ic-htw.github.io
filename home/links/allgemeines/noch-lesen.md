@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The Best RAG Architectures for AI Agents Every Developer Must Know
+[(link)](https://medium.com/@pankaj_pandey/the-best-rag-architectures-for-ai-agents-every-developer-must-know-434c97cf1645)
+
+- Agentic AI Project: Build a Customer Service Chatbot for a Clinic
+[(link)](https://pub.towardsai.net/agentic-ai-project-build-a-customer-service-chatbot-for-a-clinic-9744ef4a5b25)
+
+- Google Research: LLM can never achieve consciousness (not even in 100years)
+[(link)](https://medium.com/techx-official/google-research-llm-can-never-achieve-consciousness-not-even-in-100years-10c117cf4643)
+
 - AWS CEO Explains Why AI Still Can’t Replace Junior Developers
 [(link)](https://medium.com/@Deep-concept/aws-ceo-explains-why-ai-still-cant-replace-junior-developers-3f3e08fb24d0)
 
