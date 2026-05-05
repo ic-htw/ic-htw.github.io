@@ -158,8 +158,71 @@ Die Abbildung zeigt ein einfaches Entity-Relationship-Diagramm (ER) mit zwei Ent
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Interaktion Beziehungstypen</h1>
-<p class="w3-large">Graphikdatei öffnen</p>
+<h1>Kardinalitäten - Bedeutung</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er1/d30.png"
+alt='
+Die Abbildung zeigt ein einfaches Entity-Relationship-Diagramm (ER) mit zwei Entitäten, die durch eine Beziehung verbunden sind. Die linke Entität ist mit "Lehrperson" beschriftet und enthält drei Attribute: ein Primärschlüsselattribut "LPID", sowie die Attribute "Name" und "EMail". Die rechte Entität ist mit "Gebäude" beschriftet und enthält zwei Attribute: ein Primärschlüsselattribut "GID" und das Attribut "Bez". Zwischen den beiden Entitäten besteht eine Beziehung, die durch eine gestrichelte Linie dargestellt wird und mit "hat Büro in" beschriftet ist. Diese Beziehung deutet an, dass eine Lehrperson ein Büro in einem Gebäude hat.
+'>
+
+<h2>Min-Max-Notation</h2>
+<table class="w3-table-all">
+    <tr>
+        <th>Entitätstyp</th>
+        <th>Min..Max</th>
+        <th>Beschreibung</th>
+        <th>Bedeutung</th>
+    </tr>
+    <tr>
+        <td>Lehrperson</td>
+        <td>0..*</td>
+        <td>
+          Eine Lehrperson kann minimal mit 0 Gebäuden verbunden sein<br>
+          Maximal N Lehrpersonen können mit einem Gebäude verbunden sein
+        </td>
+        <td>
+          Eine Lehrperson muss kein Büro in einem Gebäude haben<br>
+          Viele Lehrpersonen können ein Büro im selben Gebäude haben
+        </td>
+    </tr>
+    <tr>
+        <td>Lehrperson</td>
+        <td>1..*</td>
+        <td>
+          Eine Lehrperson muss minimal mit 1 Gebäuden verbunden sein<br>
+          Maximal N Lehrpersonen können mit einem Gebäude verbunden sein
+        </td>
+        <td>
+          Eine Lehrperson muss ein Büro in einem Gebäude haben<br>
+          Viele Lehrpersonen können ein Büro im selben Gebäude haben
+        </td>
+    </tr>
+    <tr>
+        <td>Gebaeude</td>
+        <td>0..1</td>
+        <td>
+          Ein Gebäude kann minimal mit 0 Lehrpersonen verbunden sein<br>
+          Maximal 1 Gebäude kann mit einer Lehrpersonen verbunden sein
+        </td>
+        <td>
+          Ein Gebäude muss kein Büro für eine Lehrperson haben<br>
+          Eine Lehrperson kann nicht Büros in mehreren Gebäuden haben
+        </td>
+    </tr>
+    <tr>
+        <td>Gebaeude</td>
+        <td>1</td>
+        <td>
+          Ein Gebäude muss minimal mit 1 Lehrpersonen verbunden sein<br>
+          Maximal 1 Gebäude kann mit einer Lehrpersonen verbunden sein
+        </td>
+       <td>
+          Ein Gebäude muss ein Büro für mindestens eine Lehrperson haben<br>
+          Eine Lehrperson kann nicht Büros in mehreren Gebäuden haben
+        </td>
+    </tr>
+</table>
+
+<p class="w3-large"><strong>Interaktiv diskutieren - Beispiel-Datei öffnen</strong></p>
 <div class="ic-gap"></div>
 
 
@@ -167,7 +230,7 @@ Die Abbildung zeigt ein einfaches Entity-Relationship-Diagramm (ER) mit zwei Ent
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>Kardinalitäten</h1>
+<h1>Kardinalitäten - Beispiele</h1>
 <table class="w3-table-all">
     <tr>
         <th>one-to-one</th>
