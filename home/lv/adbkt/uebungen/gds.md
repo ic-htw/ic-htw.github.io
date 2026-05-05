@@ -8,9 +8,9 @@ is_slide: 0
 # Übung Graph Data Science
 
 - Laden der U-Bahn-Daten
-[(link)](http://localhost:4000/home/lv/adbkt/allgemeines/infra.html#ubahn-daten-laden)
+[(link)](http://localhost:4000/home/lv/adbkt/allgemeines/infra.html#7)
 - Graphprojektion anlegen
-[(link)](http://localhost:4000/home/lv/adbkt/allgemeines/infra.html#graphprojektion)
+[(link)](http://localhost:4000/home/lv/adbkt/allgemeines/infra.html#8)
 
   
 
