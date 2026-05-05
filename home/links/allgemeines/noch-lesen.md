@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Used the Terminal Wrong for Years
+[(link)](https://medium.com/@TusharKanjariya/i-used-the-terminal-wrong-for-years-5557b10c0b85)
+
 - The Best RAG Architectures for AI Agents Every Developer Must Know
 [(link)](https://medium.com/@pankaj_pandey/the-best-rag-architectures-for-ai-agents-every-developer-must-know-434c97cf1645)
 
