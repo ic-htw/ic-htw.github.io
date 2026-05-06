@@ -113,24 +113,17 @@ INSERT INTO Note
 -->
 {% include padding-id.html id=6 %}
 <h1>Identizierende Beziehungstypen 2</h1>
-<div class="w3-row-padding ic-neg15">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d60-130.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d70-130.png">
-    </div>
-    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d30.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d31.png">
         <p class="w3-large ic-neg10">Kein Konsistenzproblem</p>
         <pre><code class="language-sql">INSERT INTO Note 
   VALUES (2.3, 1, 1);</code></pre>
   <p class="w3-large ic-neg10">Nicht möglich</p>
         <pre><code class="language-sql">INSERT INTO Note 
   VALUES (3.7, 1, 1);</code></pre>
-    </div>
-</div>
 <ul class="w3-large">
-    <li><b>Senkrechter Strich</b>: Identizierender Beziehungstyp</li>
     <li>Primärschlüsselbestandteil wird erzeugt</li>
-    <li>SID UND MID bilden einen zusammengestzte Primärschlüssel</li>
+    <li>SID UND MID bilden einen zusammengesetzte Primärschlüssel</li>
 </ul>
 <div class="ic-gap"></div>
 
@@ -140,12 +133,8 @@ INSERT INTO Note
 -->
 {% include padding-id.html id=7 %}
 <h1>Nichttransferierbarkeit 1</h1>
-<div class="w3-row-padding ic-neg15">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d80-130.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d90-130.png">
-    </div>
-    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d40.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d41.png">
         <p class="w3-large ic-neg10">Konsistenzproblem</p>
         <pre><code class="language-sql">UPDATE Raum 
   set GID=99
@@ -153,10 +142,8 @@ WHERE RID=1;</code></pre>
         <ul class="w3-large">
             <li>Raum wird in ein anderes Gebäude transferiert</li>
             <li>Das ist inhaltlich inkonsistent</li>
+            <li>Fremdschüssel auf Raum 1 bleiben gültig</li>
         </ul>
-    </div>
-</div>
-<p class="w3-large">Fremdschüssel auf Raum 1 bleiben gültig</p>
 <div class="ic-gap"></div>
 
 
@@ -165,12 +152,8 @@ WHERE RID=1;</code></pre>
 -->
 {% include padding-id.html id=8 %}
 <h1>Nichttransferierbarkeit 2</h1>
-<div class="w3-row-padding ic-neg15">
-    <div class="w3-col m7">
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d100-130.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d110-130.png">
-    </div>
-    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d50.png"><br><hr>
+        <img class="w3-image" src="/home/lv/dmdb/a/er2/d51.png">
         <p class="w3-large ic-neg10">Identifizierender Beziehungstyp, zusammengesetzter Primärschlüssel</p>
         <pre><code class="language-sql">UPDATE Raum 
   set GID=99
@@ -179,8 +162,6 @@ WHERE RID=1;</code></pre>
             <li>Raum erhält neue Identität - ist somit ein neuer Raum</li>
             <li>Update nur möglich, wenn kein Fremdschüssel auf Raum 1 zeigt</li>
         </ul>
-    </div>
-</div>
 <p class="w3-large">Fremdschüssel auf Raum 1 müssen vorher gelöscht werden</p>
 <div class="ic-gap"></div>
 
@@ -190,7 +171,7 @@ WHERE RID=1;</code></pre>
 -->
 {% include padding-id.html id=9 %}
 <h1>Existenzabhängigkeit</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d100-130.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d50.png">
  <pre><code class="language-sql">DELETE FROM Gebaeude 
 WHERE GID=1;</code></pre>
 <ul class="w3-large">
@@ -271,7 +252,7 @@ WHERE GID=1;</code></pre>
 -->
 {% include padding-id.html id=14 %}
 <h1>Zweistellige Beziehungstypen mit Attributen</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d60-130.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d30.png">
 <ul class="w3-large">
     <li>Note verbindet Studierende mit Modulen</li>
     <li>Ist Assoziationstyp</li>
