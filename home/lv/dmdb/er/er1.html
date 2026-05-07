@@ -293,14 +293,14 @@ Die Abbildung zeigt ein Relationsmodell mit zwei Entitäten: "Lehrperson" und "G
 
 <pre><code class="language-sql">CREATE TABLE Lehrperson (
   LPID INTEGER NOT NULL,
-  Name TEXT NOT NULL,
-  EMail TEXT,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
   GID INTEGER,
   PRIMARY KEY (LPID)
 );
 CREATE TABLE Gebaeude (
   GID INTEGER NOT NULL,
-  Bez TEXT NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
   PRIMARY KEY (GID)
 );
 ALTER TABLE Lehrperson
@@ -326,14 +326,14 @@ Die Abbildung zeigt ein Relationsmodell mit zwei Entitäten: "Lehrperson" und "G
 
 <pre><code class="language-sql">CREATE TABLE Lehrperson (
   LPID INTEGER NOT NULL,
-  Name TEXT NOT NULL,
-  EMail TEXT,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
   GID INTEGER NOT NULL,
   PRIMARY KEY (LPID)
 );
 CREATE TABLE Gebaeude (
   GID INTEGER NOT NULL,
-  Bez TEXT NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
   PRIMARY KEY (GID)
 );
 ALTER TABLE Lehrperson
@@ -359,13 +359,13 @@ Die Abbildung zeigt ein Relationsmodell mit zwei Entitäten: "Lehrperson" und "G
 
 <pre><code class="language-sql">CREATE TABLE Lehrperson (
   LPID INTEGER NOT NULL,
-  Name TEXT NOT NULL,
-  EMail TEXT,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
   PRIMARY KEY (LPID)
 );
 CREATE TABLE Gebaeude (
   GID INTEGER NOT NULL,
-  Bez TEXT NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
   PRIMARY KEY (GID)
 );
 CREATE TABLE hat_buero_in (

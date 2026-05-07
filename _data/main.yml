@@ -59,6 +59,9 @@ home: &r
                   - t: ER-Modelle 4
                     ts: ER-Modelle 4
                     url: /home/lv/dmdb/er/er4.html
+                  - t: ER-Modelle Code
+                    ts: ER-Modelle Code
+                    url: /home/lv/dmdb/er/er-code.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dmdb/sql/1-sql.html

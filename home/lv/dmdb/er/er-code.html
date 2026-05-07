@@ -1,0 +1,550 @@
+---
+layout: default1
+nav: dmdb-er
+title: ER-Modelle Code - DMDB
+is_slide: 1
+n: 20
+---
+<!--
+    01 ******************************************************************
+-->
+{% include padding-id.html id=1 %}
+<h1>Installation / Import</h1>
+
+<h2>Installation von Edurel</h2>
+<pre><code class="python">!pip install edurel</code></pre>
+
+<h2>Import von Edurel (ohne KI)</h2>
+<pre><code class="python">from edurel.core.er_schema_man import ERSchemaMan
+from edurel.core.rel_schema_man import RelSchemaMan
+from edurel.core.duckdb_man import DuckDbMan
+from edurel.utils.md import display_sql, display_md, display_yaml
+from edurel.utils.sql import transpile_postgres_sql, validate_postgres_sql</code></pre>
+
+<h2>Import von Edurel (mit KI)</h2>
+<p class="w3-large">kommt noch</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
+<h1>Entitätstyp</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Lehrperson
+  key: LPID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+  - attributename: EMail
+    type: VARCHAR(100)
+    nullable: True
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="LR", height="200px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+relman.display_mermaid_diagram(direction="LR", height="300px")
+display_sql(relman.get_sql())</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/et1.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/et2.png">
+<hr>
+<pre><code class="language-sql">CREATE TABLE Lehrperson (
+  LPID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
+  PRIMARY KEY (LPID)
+);</code></pre>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Beziehungstyp</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Lehrperson
+  key: LPID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+  - attributename: EMail
+    type: VARCHAR(100)
+    nullable: True
+
+- entityname: Gebaeude
+  key: GID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+
+relationships:
+- relationshipname: hat_buero_in
+  entities:
+  - targetentity: Lehrperson
+    cardinality: OPTIONAL_MANY
+  - targetentity: Gebaeude
+    cardinality: OPTIONAL_ONE
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="LR", height="200px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+relman.display_mermaid_diagram(direction="LR", height="300px")
+display_sql(relman.get_sql())</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/rt1.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/rt2.png">
+<hr>
+<pre><code class="language-sql">CREATE TABLE Lehrperson (
+  LPID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
+  GID INTEGER,
+  PRIMARY KEY (LPID)
+);
+CREATE TABLE Gebaeude (
+  GID INTEGER NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
+  PRIMARY KEY (GID)
+);
+ALTER TABLE Lehrperson
+  ADD CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID);</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
+<h1>Werteliste</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Modul
+  key: MID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+valuelists:
+- valuelistname: Modulart
+  values:
+  - Pflicht
+  - Wahlpflicht
+  - Wahl
+  many_to_one_from_entities:
+  - sourceentity: Modul
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="TB", height="200px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+relman.display_mermaid_diagram(direction="LR", height="300px")
+display_sql(relman.get_sql())</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/wl1.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/wl2.png">
+<hr>
+<pre><code class="language-sql">CREATE TABLE Modul (
+  MID INTEGER NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
+  ModulartID INTEGER NOT NULL,
+  PRIMARY KEY (MID)
+);
+CREATE TABLE Modulart (
+  ID INTEGER NOT NULL,
+  Description VARCHAR(100) NOT NULL,
+  IsValid INTEGER NOT NULL,
+  SortOrder INTEGER NOT NULL,
+  PRIMARY KEY (ID)
+);
+ALTER TABLE Modul
+  ADD CONSTRAINT fk_Modul_Modulart FOREIGN KEY (ModulartID) REFERENCES Modulart (ID);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (1, 'Pflicht', 1, 1);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (2, 'Wahlpflicht', 1, 2);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (3, 'Wahl', 1, 3);</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    05 ******************************************************************
+-->
+{% include padding-id.html id=5 %}
+<h1>Assoziationstypen</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Kunde
+  key: KID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+
+- entityname: Kundenkategorie
+  key: KKID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(30)
+  - attributename: BeginGueltig
+    type: DATE
+  - attributename: EndeGueltig
+    type: DATE
+
+- entityname: Lieferant
+  key: LID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+
+- entityname: Artikel
+  key: AID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(200)
+
+
+associative_entities:
+- associationname: Bestellung
+  identification:
+    localkey: BID
+    keytype: INTEGER
+  associations:
+    - targetentity: Kunde
+      cardinality: OPTIONAL_ONE
+  attributes:
+  - attributename: BestellDatum
+    type: DATE
+
+- associationname: Bestellposition
+  identification:
+    localkey: LfdNr
+    keytype: INTEGER
+    global:
+    - targetentity: Bestellung
+  associations:
+    - targetentity: Artikel
+      cardinality: OPTIONAL_ONE
+  attributes:
+  - attributename: Menge
+    type: INTEGER
+
+- associationname: Verkaufkondition
+  identification:
+    global:
+    - targetentity: Kundenkategorie
+      role: fuer_KK
+    - targetentity: Artikel
+      role: VK_Artikel
+  attributes:
+  - attributename: Preis
+    type: DECIMAL(9,2)
+
+- associationname: Einkaufskondition
+  identification:
+    global:
+    - targetentity: Lieferant
+      role: fuer_Lieferant
+    - targetentity: Artikel
+      role: EK_Artikel
+  attributes:
+  - attributename: DauerInTagen
+    type: INTEGER
+  - attributename: Preis
+    type: DECIMAL(9,2)
+
+relationships:
+- relationshipname: hat_Kategorie
+  entities:
+  - targetentity: Kunde
+    cardinality: MANY
+  - targetentity: Kundenkategorie
+    cardinality: OPTIONAL_ONE
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="RL", height="600px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+relman.display_mermaid_diagram(direction="RL", height="700px")
+display_sql(relman.get_sql())</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/at1.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er-code/at2.png">
+<hr>
+<pre><code class="language-sql">CCREATE TABLE Kunde (
+  KID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  KKID INTEGER NOT NULL,
+  PRIMARY KEY (KID)
+);
+CREATE TABLE Kundenkategorie (
+  KKID INTEGER NOT NULL,
+  Bez VARCHAR(30) NOT NULL,
+  BeginGueltig DATE NOT NULL,
+  EndeGueltig DATE NOT NULL,
+  PRIMARY KEY (KKID)
+);
+CREATE TABLE Lieferant (
+  LID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (LID)
+);
+CREATE TABLE Artikel (
+  AID INTEGER NOT NULL,
+  Bez VARCHAR(200) NOT NULL,
+  PRIMARY KEY (AID)
+);
+CREATE TABLE Bestellung (
+  BID INTEGER NOT NULL,
+  BestellDatum DATE NOT NULL,
+  KID INTEGER NOT NULL,
+  PRIMARY KEY (BID)
+);
+CREATE TABLE Bestellposition (
+  LfdNr INTEGER NOT NULL,
+  BID INTEGER NOT NULL,
+  Menge INTEGER NOT NULL,
+  AID INTEGER NOT NULL,
+  PRIMARY KEY (LfdNr, BID)
+);
+CREATE TABLE Verkaufkondition (
+  fuer_KKID INTEGER NOT NULL,
+  VK_ArtikelID INTEGER NOT NULL,
+  Preis DECIMAL(9,2) NOT NULL,
+  PRIMARY KEY (fuer_KKID, VK_ArtikelID)
+);
+CREATE TABLE Einkaufskondition (
+  fuer_LieferantID INTEGER NOT NULL,
+  EK_ArtikelID INTEGER NOT NULL,
+  DauerInTagen INTEGER NOT NULL,
+  Preis DECIMAL(9,2) NOT NULL,
+  PRIMARY KEY (fuer_LieferantID, EK_ArtikelID)
+);
+ALTER TABLE Kunde
+  ADD CONSTRAINT fk_hat_Kategorie FOREIGN KEY (KKID) REFERENCES Kundenkategorie (KKID);
+ALTER TABLE Bestellung
+  ADD CONSTRAINT fk_Bestellung_Kunde_assoc FOREIGN KEY (KID) REFERENCES Kunde (KID);
+ALTER TABLE Bestellposition
+  ADD CONSTRAINT fk_Bestellposition_Bestellung FOREIGN KEY (BID) REFERENCES Bestellung (BID);
+ALTER TABLE Bestellposition
+  ADD CONSTRAINT fk_Bestellposition_Artikel_assoc FOREIGN KEY (AID) REFERENCES Artikel (AID);
+ALTER TABLE Verkaufkondition
+  ADD CONSTRAINT fk_Verkaufkondition_fuer_KK FOREIGN KEY (fuer_KKID) REFERENCES Kundenkategorie (KKID);
+ALTER TABLE Verkaufkondition
+  ADD CONSTRAINT fk_Verkaufkondition_VK_Artikel FOREIGN KEY (VK_ArtikelID) REFERENCES Artikel (AID);
+ALTER TABLE Einkaufskondition
+  ADD CONSTRAINT fk_Einkaufskondition_fuer_Lieferant FOREIGN KEY (fuer_LieferantID) REFERENCES Lieferant (LID);
+ALTER TABLE Einkaufskondition
+  ADD CONSTRAINT fk_Einkaufskondition_EK_Artikel FOREIGN KEY (EK_ArtikelID) REFERENCES Artikel (AID);</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
+<h1>Erzeugung von Oracle-Code</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Lehrperson
+  key: LPID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+  - attributename: EMail
+    type: VARCHAR(100)
+    nullable: True
+
+- entityname: Gebaeude
+  key: GID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+
+relationships:
+- relationshipname: hat_buero_in
+  entities:
+  - targetentity: Lehrperson
+    cardinality: OPTIONAL_MANY
+  - targetentity: Gebaeude
+    cardinality: OPTIONAL_ONE
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+# erman.display_mermaid_diagram(direction="LR", height="200px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+# relman.display_mermaid_diagram(direction="LR", height="300px")
+sql = relman.get_sql()
+osql = transpile_postgres_sql(sql, target_dialect="oracle")
+display_sql(osql)</code></pre>
+<hr>
+<pre><code class="language-sql">CREATE TABLE Lehrperson (LPID NUMBER NOT NULL, Name VARCHAR2(100) NOT NULL, EMail VARCHAR2(100), GID NUMBER, PRIMARY KEY (LPID));
+CREATE TABLE Gebaeude (GID NUMBER NOT NULL, Bez VARCHAR2(50) NOT NULL, PRIMARY KEY (GID));
+ALTER TABLE Lehrperson ADD CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID)</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Erzeugung von DuckDB-Code</h1>
+<p class="w3-large">
+    DuckDB unterstützt kein <code>ALTER TABLE</code> für Fremdschlüssel. 
+    Daher werden Fremdschlüssel in der CREATE TABLE-Anweisung definiert.
+Das erfolgt durch durch den Parameter <code>fk_external=False</code> bei der SQL-Code-Erzeugung</p>
+
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Lehrperson
+  key: LPID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+  - attributename: EMail
+    type: VARCHAR(100)
+    nullable: True
+
+- entityname: Gebaeude
+  key: GID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+
+relationships:
+- relationshipname: hat_buero_in
+  entities:
+  - targetentity: Lehrperson
+    cardinality: OPTIONAL_MANY
+  - targetentity: Gebaeude
+    cardinality: OPTIONAL_ONE
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+# erman.display_mermaid_diagram(direction="LR", height="200px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+# relman.display_mermaid_diagram(direction="LR", height="300px")
+display_sql(relman.get_sql(fk_external=False))</code></pre>
+<hr>
+<pre><code class="language-sql"> CREATE TABLE Gebaeude (
+  GID INTEGER NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
+  PRIMARY KEY (GID)
+);
+CREATE TABLE Lehrperson (
+  LPID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
+  GID INTEGER,
+  PRIMARY KEY (LPID),
+  CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID)
+);</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    08 ******************************************************************
+-->
+{% include padding-id.html id=8 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    09 ******************************************************************
+-->
+{% include padding-id.html id=9 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    12 ******************************************************************
+-->
+{% include padding-id.html id=12 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    13 ******************************************************************
+-->
+{% include padding-id.html id=13 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    15 ******************************************************************
+-->
+{% include padding-id.html id=15 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    16 ******************************************************************
+-->
+{% include padding-id.html id=16 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    18 ******************************************************************
+-->
+{% include padding-id.html id=18 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
