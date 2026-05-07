@@ -361,7 +361,6 @@ Die Abbildung zeigt ein Relationsmodell mit zwei Entitäten: "Lehrperson" und "G
   LPID INTEGER NOT NULL,
   Name TEXT NOT NULL,
   EMail TEXT,
-  GID INTEGER,
   PRIMARY KEY (LPID)
 );
 CREATE TABLE Gebaeude (
@@ -369,8 +368,15 @@ CREATE TABLE Gebaeude (
   Bez TEXT NOT NULL,
   PRIMARY KEY (GID)
 );
-ALTER TABLE Lehrperson
-  ADD CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID);</code></pre>
+CREATE TABLE hat_buero_in (
+  LPID INTEGER NOT NULL,
+  GID INTEGER NOT NULL,
+  PRIMARY KEY (LPID, GID)
+);
+ALTER TABLE hat_buero_in
+  ADD CONSTRAINT fk_hat_buero_in_Lehrperson FOREIGN KEY (LPID) REFERENCES Lehrperson (LPID);
+ALTER TABLE hat_buero_in
+  ADD CONSTRAINT fk_hat_buero_in_Gebaeude FOREIGN KEY (GID) REFERENCES Gebaeude (GID);</code></pre>
 <div class="ic-gap"></div>
 
 
