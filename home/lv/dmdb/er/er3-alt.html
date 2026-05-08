@@ -10,14 +10,19 @@ n: 18
 -->
 {% include padding-id.html id=1 %}
 <h1>Generalisierung</h1>
-<ul class="w3-large">
-    <li>Gemeinsamkeiten in Obertyp</li>
-    <li>Spezialisierungen im Untertyp</li>
-    <li>Ist-Ein-Beziehung (1-zu-1)</li>
-    <li>Vererbung von Attributen</li>
-</ul>
-<hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d010.png">
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010-130.png">
+    </div>
+    <div class="w3-col m7">
+        <ul class="w3-large">
+            <li>Gemeinsamkeiten in Obertyp</li>
+            <li>Spezialisierungen im Untertyp</li>
+            <li>Ist-Ein-Beziehung (1-zu-1)</li>
+            <li>Vererbung von Attributen</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -26,14 +31,19 @@ n: 18
 -->
 {% include padding-id.html id=2 %}
 <h1>Generalisierung - Extension</h1>
-<ul class="w3-large">
-    <li>Element der Extension StudentIn ist Element der Extension Person</li>
-    <li>Extension StudentIn ist Teilmenge von Extension Person</li>
-    <li>Person kann weder StudentIn noch Lehrperson sein</li>
-    <li>Person kann gleichzeitig StudentIn und Lehrperson sein</li>
-</ul>
-<hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d011-100.png">
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d020-100.png">
+    </div>
+    <div class="w3-col m6">
+        <ul class="w3-large">
+            <li>Element der Extension StudentIn ist Element der Extension Person</li>
+            <li>Extension StudentIn ist Teilmenge von Extension Person</li>
+            <li>Person kann weder StudentIn noch Lehrperson sein</li>
+            <li>Person kann gleichzeitig StudentIn und Lehrperson sein</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -42,11 +52,16 @@ n: 18
 -->
 {% include padding-id.html id=3 %}
 <h1>Attributvererbung</h1>
-<ul class="w3-large">
-    <li>StudentIn und Lehrperson erben PID und Name</li>
-</ul>
-<hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d012.png">
+<div class="w3-row-padding">
+    <div class="w3-col m7">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d040-100.png">
+    </div>
+    <div class="w3-col m5">
+        <ul class="w3-large">
+            <li>StudentIn und Lehrperson erben PID und Name</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -55,14 +70,19 @@ n: 18
 -->
 {% include padding-id.html id=4 %}
 <h1>Relationale Umsetzung</h1>
-<ul class="w3-large">
-    <li>Obertyp und Untertypen werden zu Tabellen</li>
-    <li>Primärschlüssel Obertyp wird zu Primär- und Fremdschlüssel in Untertyp</li>
-    <li>Gemeinsame Attribute in Tabelle für Obertyp</li>
-    <li>Spezialisierte Attribute in Untertypen</li>
-</ul>
-<hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d013.png">
+<div class="w3-row-padding">
+    <div class="w3-col m5">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d030-130.png">
+    </div>
+    <div class="w3-col m7">
+        <ul class="w3-large">
+            <li>Obertyp und Untertypen werden zu Tabellen</li>
+            <li>Primärschlüssel Obertyp wird zu Primär- und Fremdschlüssel in Untertyp</li>
+            <li>Gemeinsame Attribute in Tabelle für Obertyp</li>
+            <li>Spezialisierte Attribute in Untertypen</li>
+        </ul>
+    </div>
+</div>
 <div class="ic-gap"></div>
 
 
@@ -71,7 +91,7 @@ n: 18
 -->
 {% include padding-id.html id=5 %}
 <h1>Relationale Umsetzung - Daten</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d014.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d050-100.png">
 <div class="ic-gap"></div>
 
 
@@ -82,7 +102,7 @@ n: 18
 <h1>Vererbung von Beziehungstypen</h1>
 <div class="w3-row-padding">
     <div class="w3-col m8">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d020.png"><br>
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d060-100.png"><br>
         <img class="w3-image" src="/home/lv/dmdb/a/er3/d070-100.png">
     </div>
     <div class="w3-col m4">
@@ -246,14 +266,14 @@ public class Rechteck extends Quadrat {
 <h1 class="ic-neg10">Übersetzungstrategien ER nach Rel</h1>
 <div class="w3-row-padding">
     <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010.png">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010-130.png">
         <ul class="w3-large">
             <li>Eine Tabelle pro Entitätstyp</li>
             <li>Eine Tabelle für die gesamte Hierarchie</li>
         </ul>
     </div>
     <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d013.png"><br><hr class="ic-hr">
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d030-130.png"><br><hr class="ic-hr">
         <img class="w3-image" src="/home/lv/dmdb/a/er3/d140-130.png">
     </div>
 </div>

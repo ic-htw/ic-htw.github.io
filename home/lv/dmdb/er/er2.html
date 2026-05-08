@@ -3,13 +3,14 @@ layout: default1
 nav: dmdb-er
 title: ER-Modelle 2 - DMDB
 is_slide: 1
-n: 17
+n: 12
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Auswahlfelder</h1>
+<h1>Wertelisten</h1>
+<h2>Auswahlfelder</h2>
 <ul class="w3-large">
     <li>Liste mit einer festgelegten Menge von Werten  </li>
     <li>Z.B. für Drop-Down-Menü</li>
@@ -23,14 +24,8 @@ n: 17
     </div>
 </div>
 
-<div class="ic-gap"></div>
-
-
-<!--
-    02 ******************************************************************
--->
-{% include padding-id.html id=2 %}
-<h1>Implementierung durch Check-Constrains</h1>
+<hr>
+<h2>Implementierung durch Check-Constrains</h2>
 <pre><code class="language-sql">CREATE TABLE Modul (
   MID INTEGER NOT NULL PRIMARY KEY,
   Bez VARCHAR(100) NOT NULL,
@@ -40,21 +35,31 @@ n: 17
 ); </code></pre>
 
 <ul class="w3-large">
+    <li>Liste der Werte nicht explizit in den Daten repräsentiert</li>
     <li>Änderung an Werteliste erfordert Änderung des Datenmodells</li>
     <li>Änderung am Code, d.h. Entwicklungstätigkeit</li>
 </ul>
+
 
 <div class="ic-gap"></div>
 
 
 <!--
-    03 ******************************************************************
+    02 ******************************************************************
 -->
-{% include padding-id.html id=3 %}
-<h1 class="ic-neg10">Wertelisten</h1>
+{% include padding-id.html id=2 %}
+<h1>Wertelisten im ER-Modell</h1>
 <img class="w3-image" src="/home/lv/dmdb/a/er2/d10.png">
 <hr>
 <img class="w3-image" src="/home/lv/dmdb/a/er2/d11.png">
+<hr>
+<ul class="w3-large">
+    <li>Änderung an Werteliste erfordert neuen Eintrag in der Tabelle</li>
+    <li>Keine Änderung am Code, lediglich Dateningabe</li>
+    <li>Verbund erforderlich</li>
+    <li><b>IsValid</b>: Ausblenden von nicht mehr nutzbaren Werten</li>
+    <li><b>SortOrder</b>: Sortierreihenfolge bei der Ausgabe</li>
+</ul>
 <hr>
 <pre><code class="language-sql">CREATE TABLE Modul (
   MID INTEGER NOT NULL,
@@ -75,13 +80,24 @@ ALTER TABLE Modul
 INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (1, 'Pflicht', 1, 1);
 INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (2, 'Wahlpflicht', 1, 2);
 INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (3, 'Wahl', 1, 3);</code></pre>
-<ul class="w3-large">
-    <li>Änderung an Werteliste erfordert neuen Eintrag in die Tabelle</li>
-    <li>Keine Änderung am Code, lediglich Dateningabe</li>
-    <li>Verbund erforderlich</li>
-    <li><b>IsValid</b>: Ausblenden von nicht mehr nutzbaren Werten</li>
-    <li><b>SortOrder</b>: Sortierreihenfolge bei der Ausgabe</li>
-</ul>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    03 ******************************************************************
+-->
+{% include padding-id.html id=3 %}
+<h1>Problem: Lokale Schlüssel</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d20.png">
+<hr>
+<p class="w3-large">Konsistenzproblem</p>
+<pre><code class="language-sql">INSERT INTO Note 
+  VALUES (1, 2.3, 1, 1);
+INSERT INTO Note 
+  VALUES (2, 3.7, 1, 1);</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d21.png">
 <div class="ic-gap"></div>
 
 
@@ -89,7 +105,21 @@ INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (3, 'Wahl', 1,
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>xxx</h1>
+<h1>Problem: Transferierbarkeit</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d40.png">
+<hr>
+<p class="w3-large ic-neg10">Konsistenzproblem</p>
+<pre><code class="language-sql">UPDATE Raum 
+  set GID=99
+WHERE RID=1;</code></pre>
+<ul class="w3-large">
+    <li>Raum wird in ein anderes Gebäude transferiert</li>
+    <li>Das ist inhaltlich inkonsistent</li>
+    <li>Fremdschüssel auf Raum-Datensatz mit <code>RID=1</code> ggfs. nicht mehr gültig im neuen Gebäude</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d41.png">
+
 <div class="ic-gap"></div>
 
 
@@ -97,14 +127,19 @@ INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (3, 'Wahl', 1,
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Identizierende Beziehungstypen 1</h1>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d20.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d21.png">
-        <p class="w3-large">Konsistenzproblem</p>
-        <pre><code class="language-sql">INSERT INTO Note 
-  VALUES (1, 2.3, 1, 1);
-INSERT INTO Note 
-  VALUES (2, 3.7, 1, 1);</code></pre>
+<h1>Problem: Mehrstellige Beziehungstypen</h1>
+<ul class="w3-large">
+    <li>Personen können mehrere Adressen haben</li>
+    <li>Einer Adresse können mehrere Personen zugeordnet werden</li>
+    <li>Personen können mehrere Adressarten haben</li>
+    <li>Einer Adressart können mehrere Personen zugeordnet sein</li>
+    <li>Eine Adresse kann mehrere Adressarten haben</li>
+    <li>Einer Adressart können mehrere Adressen zugeordnet sein</li>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d60.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d61-80.png">
+<p class="w3-large">Nicht möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
 <div class="ic-gap"></div>
 
 
@@ -112,11 +147,32 @@ INSERT INTO Note
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Identizierende Beziehungstypen 2</h1>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d30.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d31.png">
-        <p class="w3-large ic-neg10">Kein Konsistenzproblem</p>
-        <pre><code class="language-sql">INSERT INTO Note 
+<h1>Assoziationstypen</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d70.png">
+<ul class="w3-large">
+    <li>Personenadresse hat Doppelnatur</li>
+    <li>Wird daher Assoziationstyp genannt</li>
+    <li>Ist Entitätstyp</li>
+    <li>Ist aber auch Beziehungstyp: verbindet Entitätstypen</li>
+    <li>Dreistelliger Beziehungstyp</li>
+    <li>Globale Schlüssel</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d71-80.png">
+<p class="w3-large">Nun möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
+
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
+<h1>Globale Schlüssel</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d30.png"><br><hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d31.png">
+<p class="w3-large ic-neg10">Kein Konsistenzproblem</p>
+<pre><code class="language-sql">INSERT INTO Note 
   VALUES (2.3, 1, 1);</code></pre>
   <p class="w3-large ic-neg10">Nicht möglich</p>
         <pre><code class="language-sql">INSERT INTO Note 
@@ -129,40 +185,23 @@ INSERT INTO Note
 
 
 <!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
-<h1>Nichttransferierbarkeit 1</h1>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d40.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d41.png">
-        <p class="w3-large ic-neg10">Konsistenzproblem</p>
-        <pre><code class="language-sql">UPDATE Raum 
-  set GID=99
-WHERE RID=1;</code></pre>
-        <ul class="w3-large">
-            <li>Raum wird in ein anderes Gebäude transferiert</li>
-            <li>Das ist inhaltlich inkonsistent</li>
-            <li>Fremdschüssel auf Raum 1 bleiben gültig</li>
-        </ul>
-<div class="ic-gap"></div>
-
-
-<!--
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>Nichttransferierbarkeit 2</h1>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d50.png"><br><hr>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d51.png">
-        <p class="w3-large ic-neg10">Identifizierender Beziehungstyp, zusammengesetzter Primärschlüssel</p>
-        <pre><code class="language-sql">UPDATE Raum 
-  set GID=99
+<h1>Nichttransferierbarkeit</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d50.png">
+<hr>
+<p class="w3-large ic-neg10">Zusammengesetzter Primärschlüssel</p>
+<pre><code class="language-sql">UPDATE Raum 
+  set befindet_sich_inID=99
 WHERE RID=1;</code></pre>
-        <ul class="w3-large">
-            <li>Raum erhält neue Identität - ist somit ein neuer Raum</li>
-            <li>Update nur möglich, wenn kein Fremdschüssel auf Raum 1 zeigt</li>
-        </ul>
-<p class="w3-large">Fremdschüssel auf Raum 1 müssen vorher gelöscht werden</p>
+<ul class="w3-large">
+    <li>Raum erhält neue Identität - ist somit ein neuer Raum</li>
+    <li>Update nur möglich, wenn kein Fremdschüssel auf Raum mit <code>RID=1</code> zeigt</li>
+    <li>Fremdschüssel auf Raum mit <code>RID=1</code> müssen vorher gelöscht werden</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d51.png">
 <div class="ic-gap"></div>
 
 
@@ -172,7 +211,7 @@ WHERE RID=1;</code></pre>
 {% include padding-id.html id=9 %}
 <h1>Existenzabhängigkeit</h1>
 <img class="w3-image" src="/home/lv/dmdb/a/er2/d50.png">
- <pre><code class="language-sql">DELETE FROM Gebaeude 
+<pre><code class="language-sql">DELETE FROM Gebaeude 
 WHERE GID=1;</code></pre>
 <ul class="w3-large">
     <li>Raum kann nicht verschoben werden (Nichttransferierbarkeit)</li>
@@ -186,26 +225,18 @@ WHERE GID=1;</code></pre>
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>Problem zweistelliger Beziehungstypen 1</h1>
-        <ul class="w3-large">
-            <li>Personen können mehrere Adressen haben</li>
-            <li>Einer Adresse können mehrere Personen zugeordnet werden</li>
-            <li>Personen können mehrere Adressarten haben</li>
-            <li>Einer Adressart können mehrere Personen zugeordnet sein</li>
-            <li>Eine Adresse kann mehrere Adressarten haben</li>
-            <li>Einer Adressart können mehrere Adressen zugeordnet sein</li>
-        </ul>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d60.png">
+<h1>Note mit Werteliste</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d32.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d33.png">
 <div class="ic-gap"></div>
-
 
 <!--
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>Problem zweistelliger Beziehungstypen 2</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d61-80.png">
-<p class="w3-large">Nicht möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
+<h1>Beispiel Handelsunternehmen</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/er2/d80.png">
 <div class="ic-gap"></div>
 
 
@@ -213,68 +244,6 @@ WHERE GID=1;</code></pre>
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>Assoziationstypen</h1>
-        <img class="w3-image" src="/home/lv/dmdb/a/er2/d70.png">
-        <ul class="w3-large">
-            <li>Personenadresse hat Doppelnatur</li>
-            <li>Wird daher Assoziationstyp genannt</li>
-            <li>Ist Entitätstyp</li>
-            <li>Ist aber auch Beziehungstyp: verbindet Entitätstypen</li>
-            <li>Dreistelliger Beziehungstyp</li>
-        </ul>
-<div class="ic-gap"></div>
-
-
-<!--
-    13 ******************************************************************
--->
-{% include padding-id.html id=13 %}
-<h1>Auflösung Problem</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d71-80.png">
-<p class="w3-large">Nun möglich festzustellen, welche Adresse von Özdem privat oder geschäftlich ist</p>
-<div class="ic-gap"></div>
-
-
-<!--
-    14 ******************************************************************
--->
-{% include padding-id.html id=14 %}
-<h1>Zweistellige Beziehungstypen mit Attributen</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d30.png">
-<ul class="w3-large">
-    <li>Note verbindet Studierende mit Modulen</li>
-    <li>Ist Assoziationstyp</li>
-    <li>Als Beziehungstyp ist er zweistellig, hat aber ein Attribut, den Notenwert</li>
-    <li>Kann daher nicht als N-zu-M-Beziehungstyp modelliert werden</li>
-</ul>
-<div class="ic-gap"></div>
-
-
-<!--
-    15 ******************************************************************
--->
-{% include padding-id.html id=15 %}
-<h1>Note mit Werteliste</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d32.png">
-<hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d33.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    16 ******************************************************************
--->
-{% include padding-id.html id=16 %}
-<h1>Beispiel Handelsunternehmen</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er2/d80.png">
-<div class="ic-gap"></div>
-
-
-<!--
-    17 ******************************************************************
--->
-{% include padding-id.html id=17 %}
 <h1>Assoziationstypen in HVS</h1>
 <img class="w3-image" src="/home/lv/dmdb/a/er2/d90.png">
 <div class="ic-gap"></div>
-
