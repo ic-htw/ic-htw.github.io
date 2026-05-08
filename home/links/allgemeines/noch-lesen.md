@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I Built Claude OS — A System That Turns Claude into an Execution Engine
+[(link)](https://pub.towardsai.net/i-built-claude-os-a-system-that-turns-claude-into-an-execution-engine-2193d43603b7)
+
+- The Real Difference Between git fetch, git pull, and git pull --rebase
+[(link)](https://blog.stackademic.com/the-real-difference-between-git-fetch-git-pull-and-git-pull-rebase-991514cb5bd6)
+
+- I Compared 4 Python HTTP Libraries. One Shocked Me Completely.
+[(link)](https://ai.plainenglish.io/i-compared-4-python-http-libraries-one-shocked-me-completely-b2c4eab473bc)
+
 - I Used the Terminal Wrong for Years
 [(link)](https://medium.com/@TusharKanjariya/i-used-the-terminal-wrong-for-years-5557b10c0b85)
 
