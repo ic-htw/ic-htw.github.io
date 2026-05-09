@@ -80,20 +80,17 @@ n: 18
 -->
 {% include padding-id.html id=6 %}
 <h1>Vererbung von Beziehungstypen</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m8">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d020.png"><br>
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d070-100.png">
-    </div>
-    <div class="w3-col m4">
-        <ul class="w3-large">
-            <li>Beziehungstyp geht auf Obertyp</li>
-            <li>Instanzen der Untertypen können an diesem Beziehungstyp teilnehmen</li>
-            <li>StudentIn und Lehrperson können Adresse haben</li>
-        </ul>
-    </div>
-</div>
+<ul class="w3-large">
+    <li>Beziehungstyp geht auf Obertyp</li>
+    <li>Instanzen der Untertypen können an diesem Beziehungstyp teilnehmen</li>
+    <li>StudentIn und Lehrperson können Adresse haben</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d020.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d021.png">
 <div class="ic-gap"></div>
+
 
 
 <!--
@@ -101,18 +98,13 @@ n: 18
 -->
 {% include padding-id.html id=7 %}
 <h1>Vollständigkeit der Generalisierung</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d080-100.png">
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Keine Instanzen im Obertyp möglich</li>
-            <li>Weitere Untertypen zum Modell hinzufügen</li>
-            <li>Im Extremfall "Sonstige"</li>
-        </ul>
-    </div>
-</div>
+<ul class="w3-large">
+    <li>Keine Instanzen im Obertyp möglich</li>
+    <li>Weitere Untertypen zum Modell hinzufügen</li>
+    <li>Im Extremfall "Sonstige"</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d030.png">
 <div class="ic-gap"></div>
 
 
@@ -121,17 +113,12 @@ n: 18
 -->
 {% include padding-id.html id=8 %}
 <h1>Disjunktheit der Generalisierung</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d090-100.png">
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Keine gemeinsamen Instanzen in zwei Untertypen</li>
-            <li>Erfordert anderes Modell</li>
-        </ul>
-    </div>
-</div>
+<ul class="w3-large">
+    <li>Keine gemeinsamen Instanzen in zwei Untertypen</li>
+    <li>Erfordert anderes Modell</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d031.png">
 <div class="ic-gap"></div>
 
 
@@ -140,7 +127,7 @@ n: 18
 -->
 {% include padding-id.html id=9 %}
 <h1>Vorteile vollständiger, disjunkter Generalisierungen</h1>
-<p class="w3-large ic-neg15">Bei Implementierung in einer objektorientierten Sprache wie Java</p>
+<p class="w3-large ic-neg15">Bei Implementierung in einer objektorientierten Sprache</p>
 <ul class="w3-large">
     <li>Abstrakte Oberklassen - verhindert versehentliche Objekterzeugung für Oberklasse</li>
     <li>Komplexere Umsetzung nichtdisjunkter Generalisierungen in Sprachen mit Einfachvererbung (wie Java)</li>
@@ -153,23 +140,16 @@ n: 18
 -->
 {% include padding-id.html id=10 %}
 <h1>Rollenmodell</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d100-100.png">
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Rolle "Sonstige" für Vollständigkeit</li>
-            <li>Keine Generalisierung auf Personen</li>
-            <li>Generalisierung auf Rollen</li>
-        </ul>
-    </div>
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Rollen sind disjunkt</li>
-            <li>Daher vollständiges und disjunktes Modell</li>
-            <li>Dynamische Domäne "Rolle" - explizite Typinformation im Modell</li>
-        </ul>
-    </div>
-</div>
+<ul class="w3-large">
+    <li>Generalisierung auf PersonenRollen</li>
+    <li>Keine Generalisierung auf Personen</li>
+    <li>Rollen sind disjunkt</li>
+    <li>Rolle <code>Sonstige</code> für Vollständigkeit</li>
+    <li>Daher vollständiges und disjunktes Modell</li>
+    <li>Werteliste <code>Rolle</code> - explizite Typinformation im Modell</li>
+</ul>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d040.png">
 <div class="ic-gap"></div>
 
 
@@ -177,8 +157,11 @@ n: 18
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>Rollemnmodell - Extension</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d110-80.png">
+<h1>Rollenmodell - Extension</h1>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d041.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d042-80.png">
 <div class="ic-gap"></div>
 
 
@@ -187,13 +170,16 @@ n: 18
 -->
 {% include padding-id.html id=12 %}
 <h1>Generalisierung - Fehlerbeispiel</h1>
+
 <div class="w3-row-padding">
-    <div class="w3-col m5">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d120a-130.png"><br>
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d130-130.png">
+    <div class="w3-col m6">
+        <h2>Fehlerhafte Modellierung</h2>
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d050.png">
+        <p class="w3-large">Verletzung Substitutionsprinzip</p>
     </div>
-    <div class="w3-col m7">
-        <p class="w3-large ic-neg15">Verletzung Substitutionsprinzip</p>
+    <div class="w3-col m6">
+        <h2>Richtiges Modell</h2>
+        <img class="w3-image" src="/home/lv/dmdb/a/er3/d051.png">
     </div>
 </div>
 <div class="ic-gap"></div>
@@ -244,19 +230,14 @@ public class Rechteck extends Quadrat {
 -->
 {% include padding-id.html id=14 %}
 <h1 class="ic-neg10">Übersetzungstrategien ER nach Rel</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d010.png">
-        <ul class="w3-large">
-            <li>Eine Tabelle pro Entitätstyp</li>
-            <li>Eine Tabelle für die gesamte Hierarchie</li>
-        </ul>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d013.png"><br><hr class="ic-hr">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d140-130.png">
-    </div>
-</div>
+<h2>Generalisierung</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d010.png">
+
+<h2>Übersetzung: Eine Tabelle pro Entitätstyp</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d013.png">
+
+<h2>Übersetzung: Eine Tabelle für die gesamte Hierarchie</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d060.png">
 <div class="ic-gap"></div>
 
 
@@ -265,25 +246,19 @@ public class Rechteck extends Quadrat {
 -->
 {% include padding-id.html id=15 %}
 <h1>Bewertung Übersetzungstrategien</h1>
-<div class="w3-row-padding">
-    <div class="w3-col m6">
-        <ul class="w3-large">
-            <li>Eine Tabelle pro Entitätstyp</li>
-            <ul>
-                <li>Not-NULL-Constraints für Untertypen bleiben erhalten</li>
-                <li>Verbund erforderlich</li>
-            </ul>
-            <li>Eine Tabelle für die gesamte Hierarchie</li>
-            <ul>
-                <li>Keine Not-NULL-Constraints in Untertypen</li>
-                <li>Kein Verbund erforderlich</li>
-            </ul>
-        </ul>
-    </div>
-    <div class="w3-col m6">
-        <img class="w3-image" src="/home/lv/dmdb/a/er3/d150-100.png">
-    </div>
-        </div>
+<ul class="w3-large">
+    <li>Eine Tabelle pro Entitätstyp</li>
+    <ul>
+        <li>Not-NULL-Constraints für Untertypen bleiben erhalten</li>
+        <li>Verbund erforderlich</li>
+    </ul>
+    <li>Eine Tabelle für die gesamte Hierarchie</li>
+    <ul>
+        <li>Keine Not-NULL-Constraints in Untertypen</li>
+        <li>Kein Verbund erforderlich</li>
+    </ul>
+</ul>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d061.png">
 <div class="ic-gap"></div>
 
 
@@ -292,7 +267,9 @@ public class Rechteck extends Quadrat {
 -->
 {% include padding-id.html id=16 %}
 <h1 class="ic-neg10">Bibliothek - Nutzer</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d160-130.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d070.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d071.png">
 <div class="ic-gap"></div>
 
 
@@ -301,7 +278,7 @@ public class Rechteck extends Quadrat {
 -->
 {% include padding-id.html id=17 %}
 <h1 class="ic-neg10">Bibliothek - Medien</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d170-130.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d072.png">
 <div class="ic-gap"></div>
 
 
@@ -310,7 +287,7 @@ public class Rechteck extends Quadrat {
 -->
 {% include padding-id.html id=18 %}
 <h1 class="ic-neg10">Bibliothek - Ausleihe</h1>
-<img class="w3-image" src="/home/lv/dmdb/a/er3/d180-130.png">
+<img class="w3-image" src="/home/lv/dmdb/a/er3/d073.png">
 <div class="ic-gap"></div>
 
 
