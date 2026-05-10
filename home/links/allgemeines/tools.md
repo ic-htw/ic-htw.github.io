@@ -199,6 +199,12 @@ is_slide: 0
 [(link)](https://blog.prateekjain.dev/the-ultimate-guide-to-git-branching-strategies-6324f1aceac2)
 - What does git for Data even look like anymore?
 [(link)](https://dataopsleadership.substack.com/p/what-does-git-for-data-even-look)
+- 7 Git Mistakes Even Senior Engineers Make (And How to Fix Them)
+[(link)](https://medium.com/javarevisited/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f)
+- The Real Difference Between git fetch, git pull, and git pull --rebase
+[(link)](https://blog.stackademic.com/the-real-difference-between-git-fetch-git-pull-and-git-pull-rebase-991514cb5bd6)
+
+
 
 # github
 - Get started with GitHub

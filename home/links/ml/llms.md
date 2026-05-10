@@ -19,14 +19,34 @@ is_slide: 0
 - Build your own Large Language Model (LLM) From Scratch Using PyTorch
 [(link)](https://pub.towardsai.net/build-your-own-large-language-model-llm-from-scratch-using-pytorch-9e9945c24858)
 
+# ai provider
+## anthropic
+- Claude Code Unpacked
+[(link)](https://ccunpacked.dev/)
+- What Is Andrej Karpathy’s CLAUDE.md File?
+[(link)](https://medium.com/@coustom.no.03/7ca12ef0ecec)
+- Claude OS git
+[(link)](https://github.com/rohanmistry231/Claude-OS)
+- If You’re Not Using These 20 Repos, Delete CLAUDE CODE
+[(link)](https://medium.com/@hii_mohit/if-youre-not-using-these-20-repos-delete-claude-code-eb859f5dda32)
+- I’m very impressed by Codex by OpenAI — you should try it
+[(link)](https://medium.com/realworld-ai-use-cases/im-very-impressed-by-codex-by-openai-you-should-try-it-1795ee95b468)
+- The Complete Guide to Claude Code: Understanding CLAUDE.md
+[(link)](https://ai.plainenglish.io/the-complete-guide-to-claude-code-understanding-claude-md-d3d592b9ed4e)
+- The 4 Lines Every CLAUDE.md Needs
+[(link)](https://levelup.gitconnected.com/the-4-lines-every-claude-md-needs-2717a46866f6)
 
 
+
+## openai
 
 
 
 
 
 # agents
+- OpenAI Symphony vs Claude Managed Agents vs CrewAI: Which Agent Orchestration Pattern Wins
+[(link)](https://ai.gopubby.com/openai-symphony-vs-claude-managed-agents-vs-crewai-which-agent-orchestration-pattern-wins-43141fd7b944)
 - Creating an Advanced AI Agent From Scratch with Python in 2026: Part 1
 [(link)](https://pub.towardsai.net/creating-an-advanced-ai-agent-from-scratch-with-python-in-2025-part-1-ce74a23f6514)
 - Building an AI Agent from Scratch with pure Python
@@ -95,11 +115,7 @@ is_slide: 0
 - Open Computer
 [(link)](https://huggingface.co/spaces/smolagents/computer-agent)
 
-# claude
-- Claude Code Unpacked
-[(link)](https://ccunpacked.dev/)
-- What Is Andrej Karpathy’s CLAUDE.md File?
-[(link)](https://medium.com/@coustom.no.03/7ca12ef0ecec)
+
 
 
 

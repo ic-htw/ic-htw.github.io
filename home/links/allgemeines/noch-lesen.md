@@ -25,12 +25,6 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- I Built Claude OS — A System That Turns Claude into an Execution Engine
-[(link)](https://pub.towardsai.net/i-built-claude-os-a-system-that-turns-claude-into-an-execution-engine-2193d43603b7)
-
-- The Real Difference Between git fetch, git pull, and git pull --rebase
-[(link)](https://blog.stackademic.com/the-real-difference-between-git-fetch-git-pull-and-git-pull-rebase-991514cb5bd6)
-
 - I Compared 4 Python HTTP Libraries. One Shocked Me Completely.
 [(link)](https://ai.plainenglish.io/i-compared-4-python-http-libraries-one-shocked-me-completely-b2c4eab473bc)
 
@@ -55,8 +49,6 @@ is_slide: 0
 - 10 Proven Ways I Instantly Spot Bad AI-Generated Code
 [(link)](https://medium.com/@vndpal/10-proven-ways-i-instantly-spot-bad-ai-generated-code-8bb671dce517)
 
-- The 4 Lines Every CLAUDE.md Needs
-[(link)](https://levelup.gitconnected.com/the-4-lines-every-claude-md-needs-2717a46866f6)
 
 - Best SQL Hacks I Wouldn’t Have Believed If I Hadn’t Used Them Myself
 [(link)](https://medium.com/@anchitgupt2012/best-sql-hacks-i-wouldnt-have-believed-if-i-hadn-t-used-them-myself-2511e18f15a1)
@@ -377,8 +369,6 @@ is_slide: 0
 - Synthetic Data: What It Is and How to Use It
 [(link)](https://medium.com/@francescofranco_39234/synthetic-data-overcoming-the-limitations-of-real-world-datasets-in-machine-learning-ae95329d6063)
 
-- 5 Essential MCP Servers That Give Claude & Cursor Real Superpowers (2025)
-[(link)](bbb)
 
 - The Only 15 SQL Questions I Ask in Every Junior Data Scientist Interview
 [(link)](https://medium.com/@9-5-datascientist/the-only-15-sql-questions-i-ask-in-every-junior-data-scientist-interview-beea5f58b3e5)
@@ -497,9 +487,6 @@ is_slide: 0
 
 - A decade of database innovation: The Amazon Aurora story
 [(link)](https://www.amazon.science/blog/a-decade-of-database-innovation-the-amazon-aurora-story)
-
-- Claude Sonnet 4 vs Kimi K2 vs Gemini 2.5 Pro: Which AI actually ships production code?
-[(link)](https://generativeai.pub/claude-sonnet-4-vs-kimi-k2-vs-gemini-2-5-pro-which-ai-actually-ships-production-code-682485e5b6e8)
 
 - 5 SQL Questions That Stump Even Senior Analysts 
 [(link)](https://medium.com/ai-analytics-diaries/5-sql-questions-that-stump-even-senior-analysts-with-answers-69cc46a4a401)
@@ -625,9 +612,6 @@ is_slide: 0
 
 - Why Your Data Lake Needs BLM, Not LLM
 [(link)](https://pub.towardsai.net/why-your-data-lake-needs-blm-not-llm-f0191aeca494)
-
-- Chat with your documents tool — RAG (vector DBs + cosine sim.) & Claude API implementation
-[(link)](https://medium.com/@lucascarrasquillaparra/chat-with-your-documents-tool-rag-vector-dbs-cosine-sim-claude-api-implementation-2312cf14c67a)
 
 - Implementing 9 Techniques to Optimize AI Agent Memory
 [(link)](https://levelup.gitconnected.com/implementing-9-techniques-to-optimize-ai-agent-memory-67d813e3d796)
@@ -1039,9 +1023,6 @@ is_slide: 0
 
 - Ollama vs vLLM: which framework is better for inference?  (Part II)
 [(link)](https://henrynavarro.org/ollama-vs-vllm-which-framework-is-better-for-inference-part-ii-37f7e24d3899)
-
-- Automating Data Summarization in PostgreSQL With Claude
-[(link)](https://www.timescale.com/blog/automating-data-summarization-in-postgresql-with-claude)
 
 - RunSQL
 [(link)](https://runsql.com/)
