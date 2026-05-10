@@ -24,6 +24,9 @@ home: &r
                   - t: Konfiguration SQL-Developer
                     ts: Konfiguration SQL-Developer
                     url: /home/sonstiges/p/sqldeveloper.html
+                  - t: Edurel Code
+                    ts: Edurel Code
+                    url: /home/lv/dmdb/allgemeines/edurel-code.html
                   - t: Video
                     ts: Video
                     url: https://www.youtube.com/playlist?list=PL9rvxJNs9la68A4nX7sP0sOW_OlQDylLV
@@ -59,9 +62,6 @@ home: &r
                   - t: ER-Modelle 4
                     ts: ER-Modelle 4
                     url: /home/lv/dmdb/er/er4.html
-                  - t: ER-Modelle Code
-                    ts: ER-Modelle Code
-                    url: /home/lv/dmdb/er/er-code.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dmdb/sql/1-sql.html
@@ -135,9 +135,9 @@ home: &r
                 ts: Datenmodelle - ER
                 url: /home/lv/dmdb/dm-er/1-dm-er.html
                 sub:
-                  - t: Hochschule
-                    ts: Hochschule
-                    url: /home/lv/dmdb/dm-er/er-hochschule.html
+                  - t: HVS
+                    ts: HVS
+                    url: /home/lv/dmdb/dm-er/hvs.html
                   - t: ER Übungsbeispiele
                     ts: ER Übungsbeispiele
                     url: /home/lv/dmdb/dm-er/er-ueb.html

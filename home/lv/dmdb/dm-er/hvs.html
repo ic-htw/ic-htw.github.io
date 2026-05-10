@@ -1,0 +1,216 @@
+---
+layout: default1
+nav: dmdb-dm-er
+title: ER-Modell HVS - DMDB
+is_slide: 0
+---
+
+<h1>ER-Modell HVS</h1>
+
+<h2>Diagramm</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/hvs_er.png">
+
+<h2>YAML</h2>
+<pre><code class="yaml">entities:
+- entityname: Person
+  key: PID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+
+- entityname: Semester
+  key: SID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(100)
+  - attributename: Beginn
+    type: DATE
+  - attributename: Ende
+    type: DATE
+  - attributename: VLBeginn
+    type: DATE
+  - attributename: VLEnde
+    type: DATE
+
+- entityname: Modul
+  key: MID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+  - attributename: CP
+    type: INTEGER
+  - attributename: Regelsemester
+    type: INTEGER
+
+- entityname: Raum
+  key: RID
+  attributes:
+  - attributename: RaumNr
+    type: VARCHAR(20)
+
+- entityname: Termin
+  key: TID
+
+- entityname: Einzeltermin
+  attributes:
+  - attributename: DatumUhrzeitVon
+    type: DATE
+  - attributename: DatumUhrzeitBis
+    type: DATE
+
+- entityname: Zeitblock
+  key: ZBID
+  attributes:
+  - attributename: UhrzeitVon
+    type: DATE
+  - attributename: UhrzeitBis
+    type: DATE
+
+
+associative_entities:
+- associationname: Wochentermin
+  associations:
+  - targetentity: Zeitblock
+    cardinality: ONE
+
+
+- associationname: PersonRolle
+  identification:
+    localkey: PersonRolleID
+  associations:
+  - targetentity: Person
+    cardinality: ONE
+  attributes:
+  - attributename: DatumBeginn
+    type: DATE
+  - attributename: DatumEnde
+    type: DATE
+    nullable: TRUE
+
+- associationname: Lehrperson
+  attributes:
+  - attributename: Steuernummer
+    type: VARCHAR(20)
+
+- associationname: StudentIn
+  attributes:
+  - attributename: MatrNo
+    type: VARCHAR(20)
+
+- associationname: Sonstige
+
+- associationname: ModulBT
+  identification:
+    localkey: ModulBTID
+  associations:
+  - targetentity: Modul
+    cardinality: ONE
+    role: gehoert_zu
+  attributes:
+  - attributename: SWS
+    type: INTEGER
+
+- associationname: Kurs
+  identification:
+    localkey: KursID
+  associations:
+  - targetentity: Semester
+    cardinality: ONE
+    role: in_Semester
+  - targetentity: Modul
+    cardinality: ONE
+    role: basiert_auf
+  attributes:
+  - attributename: KursInfo
+    type: VARCHAR(200)
+
+- associationname: KursBT
+  identification:
+    localkey: KursBTID
+  associations:
+  - targetentity: Kurs
+    cardinality: ONE
+    role: Teil_von
+  - targetentity: ModulBT
+    cardinality: ONE
+    role: ist_Instanz_von
+  - targetentity: Raum
+    cardinality: ONE
+    role: findet_statt_in
+  - targetentity: Lehrperson
+    cardinality: ONE
+    role: wird_durchgefuehrt_von
+  - targetentity: Termin
+    cardinality: ONE
+  attributes:
+  - attributename: KursBTInfo
+    type: VARCHAR(200)
+
+- associationname: Belegung
+  identification:
+    global:
+      - targetentity: KursBT
+      - targetentity: StudentIn
+  attributes:
+  - attributename: ErstelltAm
+    type: DATE
+
+inheritances:
+- superentity: PersonRolle
+  subentities:
+  - Lehrperson
+  - StudentIn
+  - Sonstige
+
+- superentity: Termin
+  subentities:
+  - Einzeltermin
+  - Wochentermin
+
+valuelists:
+- valuelistname: Rolle
+  values:
+  - StudentIn
+  - Lehrperson
+  - Verwaltung
+  - Technik
+  many_to_one_from_entities:
+  - sourceentity: PersonRolle
+
+- valuelistname: Modulart
+  values:
+  - Pflicht
+  - Wahlpflicht
+  - Wahl
+  many_to_one_from_entities:
+  - sourceentity: Modul
+
+- valuelistname: ModulBTArt
+  values:
+  - SL
+  - PCÜ
+  - Ü
+  many_to_one_from_entities:
+  - sourceentity: ModulBT
+
+- valuelistname: Belegungsstatus
+  values:
+  - Angemeldet
+  - Abgemeldet
+  - Zugelassen
+  - Abgelehnt
+  many_to_one_from_entities:
+  - sourceentity: Belegung
+
+- valuelistname: Tag
+  values:
+  - Mo
+  - Di
+  - Mi
+  - Do
+  - Fr
+  - Sa
+  - So
+  many_to_one_from_entities:
+  - sourceentity: Wochentermin
+"""

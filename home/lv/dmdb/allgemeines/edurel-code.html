@@ -1,7 +1,7 @@
 ---
 layout: default1
-nav: dmdb-er
-title: ER-Modelle Code - DMDB
+nav: dmdb-allgemeines
+title: Edurel Code - DMDB
 is_slide: 1
 n: 20
 ---
@@ -46,12 +46,12 @@ entities:
 erman = ERSchemaMan.fromStr(er_yaml)
 erman.display_mermaid_diagram(direction="LR", height="200px")
 relman = RelSchemaMan.fromAST(erman.get_rel())
-relman.display_mermaid_diagram(direction="LR", height="300px")
+relman.display_mermaid_diagram(direction="LR", height="200px")
 display_sql(relman.get_sql())</code></pre>
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/et1.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/et1.png">
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/et2.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/et2.png">
 <hr>
 <pre><code class="language-sql">CREATE TABLE Lehrperson (
   LPID INTEGER NOT NULL,
@@ -99,9 +99,9 @@ relman = RelSchemaMan.fromAST(erman.get_rel())
 relman.display_mermaid_diagram(direction="LR", height="300px")
 display_sql(relman.get_sql())</code></pre>
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/rt1.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/rt1.png">
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/rt2.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/rt2.png">
 <hr>
 <pre><code class="language-sql">CREATE TABLE Lehrperson (
   LPID INTEGER NOT NULL,
@@ -144,12 +144,12 @@ valuelists:
 erman = ERSchemaMan.fromStr(er_yaml)
 erman.display_mermaid_diagram(direction="TB", height="200px")
 relman = RelSchemaMan.fromAST(erman.get_rel())
-relman.display_mermaid_diagram(direction="LR", height="300px")
+relman.display_mermaid_diagram(direction="LR", height="250px")
 display_sql(relman.get_sql())</code></pre>
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/wl1.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/wl1.png">
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/wl2.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/wl2.png">
 <hr>
 <pre><code class="language-sql">CREATE TABLE Modul (
   MID INTEGER NOT NULL,
@@ -271,9 +271,9 @@ relman = RelSchemaMan.fromAST(erman.get_rel())
 relman.display_mermaid_diagram(direction="RL", height="700px")
 display_sql(relman.get_sql())</code></pre>
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/at1.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/at1.png">
 <hr>
-<img class="w3-image" src="/home/lv/dmdb/a/er-code/at2.png">
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/at2.png">
 <hr>
 <pre><code class="language-sql">CCREATE TABLE Kunde (
   KID INTEGER NOT NULL,
@@ -347,6 +347,67 @@ ALTER TABLE Einkaufskondition
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
+<h1>Generalisierung</h1>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Person
+  key: PID
+  attributes:
+  - attributename: Name
+    type: VARCHAR(100)
+
+- entityname: Lehrperson
+  attributes:
+  - attributename: Steuernummer
+    type: VARCHAR(20)
+
+- entityname: StudentIn
+  attributes:
+  - attributename: MatrNr
+    type: VARCHAR(10)
+
+inheritances:
+- superentity: Person
+  subentities:
+  - Lehrperson
+  - StudentIn
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="TB", height="400px")
+relman = RelSchemaMan.fromAST(erman.get_rel())
+relman.display_mermaid_diagram(direction="BT", height="500px")
+display_sql(relman.get_sql())</code></pre>
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/gen1.png">
+<hr>
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/gen2.png">
+<hr>
+<pre><code class="language-sql">CREATE TABLE Person (
+  PID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (PID)
+);
+CREATE TABLE Lehrperson (
+  PID INTEGER NOT NULL,
+  Steuernummer VARCHAR(20) NOT NULL,
+  PRIMARY KEY (PID)
+);
+CREATE TABLE StudentIn (
+  PID INTEGER NOT NULL,
+  MatrNr VARCHAR(10) NOT NULL,
+  PRIMARY KEY (PID)
+);
+ALTER TABLE Lehrperson
+  ADD CONSTRAINT fk_Lehrperson_Person FOREIGN KEY (PID) REFERENCES Person (PID);
+ALTER TABLE StudentIn
+  ADD CONSTRAINT fk_StudentIn_Person FOREIGN KEY (PID) REFERENCES Person (PID);</code></pre>
+<div class="ic-gap"></div>
+
+
+<!--
+    07 ******************************************************************
+-->
+{% include padding-id.html id=7 %}
 <h1>Erzeugung von Oracle-Code</h1>
 <pre><code class="python">er_yaml = """
 entities:
@@ -388,9 +449,9 @@ ALTER TABLE Lehrperson ADD CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENC
 
 
 <!--
-    07 ******************************************************************
+    08 ******************************************************************
 -->
-{% include padding-id.html id=7 %}
+{% include padding-id.html id=8 %}
 <h1>Erzeugung von DuckDB-Code</h1>
 <p class="w3-large">
     DuckDB unterstützt kein <code>ALTER TABLE</code> für Fremdschlüssel. 
@@ -441,14 +502,6 @@ CREATE TABLE Lehrperson (
   PRIMARY KEY (LPID),
   CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID)
 );</code></pre>
-<div class="ic-gap"></div>
-
-
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
-<h1>xxx</h1>
 <div class="ic-gap"></div>
 
 
