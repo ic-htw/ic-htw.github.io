@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Git Commands That Separate Senior Developers From Everyone Else
+[(link)](https://blog.stackademic.com/10-git-commands-that-separate-senior-developers-from-everyone-else-dda9ca5641a7)
+
+- Understanding Linux Networking Without Reading a 500-Page Book
+[(link)](https://medium.com/codex/understanding-linux-networking-without-reading-a-500-page-book-14c756494464)
+
+- GitHub Copilot Code Review: Guidelines, Best Practices, and How to Integrate It into Your PR Workflow
+[(link)](bhttps://blog.mrinalmaheshwari.com/github-copilot-code-review-guidelines-best-practices-pr-workflow-b4518073b4c9bb)
+
 - I Compared 4 Python HTTP Libraries. One Shocked Me Completely.
 [(link)](https://ai.plainenglish.io/i-compared-4-python-http-libraries-one-shocked-me-completely-b2c4eab473bc)
 
