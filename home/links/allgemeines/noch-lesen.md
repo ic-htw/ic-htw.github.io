@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The First 10 Shell Tricks That Make You Look Like a Wizard
+[(link)](https://medium.com/@fatihaali093/the-first-10-shell-tricks-that-make-you-look-like-a-wizard-6325a363b8ff)
+
 - 10 Git Commands That Separate Senior Developers From Everyone Else
 [(link)](https://blog.stackademic.com/10-git-commands-that-separate-senior-developers-from-everyone-else-dda9ca5641a7)
 
