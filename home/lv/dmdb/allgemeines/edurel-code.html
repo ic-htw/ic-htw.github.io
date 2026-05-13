@@ -21,8 +21,11 @@ from edurel.core.duckdb_man import DuckDbMan
 from edurel.utils.md import display_sql, display_md, display_yaml
 from edurel.utils.sql import transpile_postgres_sql, validate_postgres_sql</code></pre>
 
-<h2>Import von Edurel (mit KI)</h2>
-<p class="w3-large">kommt noch</p>
+<h2>Import von Edurel (KI)</h2>
+<pre><code class="python">from edurel.llm.conversation_rel import DataGenConversation, SQLGenConversation
+from edurel.llm.conversation_er import ERRequirementsConversation, ERDesignConversation</code></pre>
+
+
 
 <div class="ic-gap"></div>
 
@@ -489,7 +492,7 @@ relman = RelSchemaMan.fromAST(erman.get_rel())
 # relman.display_mermaid_diagram(direction="LR", height="300px")
 display_sql(relman.get_sql(fk_external=False))</code></pre>
 <hr>
-<pre><code class="language-sql"> CREATE TABLE Gebaeude (
+<pre><code class="language-sql">CREATE TABLE Gebaeude (
   GID INTEGER NOT NULL,
   Bez VARCHAR(50) NOT NULL,
   PRIMARY KEY (GID)
@@ -509,7 +512,56 @@ CREATE TABLE Lehrperson (
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>xxx</h1>
+<h1>Verwendung von DuckDB</h1>
+<p class="w3-large">Erzeugung einer in-memory DuckDB-Instanz.</p>
+<pre><code class="python">dbman = DuckDbMan.fromMem()</code></pre>
+
+<p class="w3-large">
+  Ausführung des SQL-Codes zur Erstellung der Tabellen.
+  Der SQL-Code kommt von <a href="/home/lv/dmdb/allgemeines/edurel-code.html#8">link</a>
+</p>
+<pre><code class="python">sql = """
+CREATE TABLE Gebaeude (
+  GID INTEGER NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
+  PRIMARY KEY (GID)
+);
+CREATE TABLE Lehrperson (
+  LPID INTEGER NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  EMail VARCHAR(100),
+  GID INTEGER,
+  PRIMARY KEY (LPID),
+  CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID)
+);
+"""
+dbman.execute(sql)</code></pre>
+
+<p class="w3-large">Ausführung des SQL-Codes zum Einfügen von Daten.</p>
+<pre><code class="python">sql = """
+insert into Gebaeude values (1, 'C');
+insert into Lehrperson values (1, 'Claßen', 'ingo.classen@htw-berlin.de', 1);
+insert into Lehrperson values (2, 'Kempa', 'martin.kempa@htw-berlin.de', 1);
+"""
+dbman.execute(sql)</code></pre>
+
+
+<p class="w3-large">Ausführen und Anzeigen der Ergebnisse einer Abfrage.</p>
+<pre><code class="python">sql = """
+select g.Bez as Gebaeude, lp.Name as Lehrperson, lp.EMail
+from Gebaeude g
+     join Lehrperson lp on g.GID = lp.GID
+"""
+
+dbman.print(sql)</code></pre>
+<pre><code class="language-plaintext">┌──────────┬────────────┬────────────────────────────┐
+│ Gebaeude │ Lehrperson │           EMail            │
+│ varchar  │  varchar   │          varchar           │
+├──────────┼────────────┼────────────────────────────┤
+│ C        │ Claßen     │ ingo.classen@htw-berlin.de │
+│ C        │ Kempa      │ martin.kempa@htw-berlin.de │
+└──────────┴────────────┴────────────────────────────┘</code></pre>
+
 <div class="ic-gap"></div>
 
 
@@ -517,7 +569,137 @@ CREATE TABLE Lehrperson (
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>xxx</h1>
+<h1>Datengenerierung mit der KI</h1>
+
+<p class="w3-large">
+  Erstellung eines Relationship-Managers (relman).
+  Der wir benötigt, um das Datenbankschema im YAML-Format zu definieren.
+</p>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Modul
+  key: MID
+  attributes:
+  - attributename: Bez
+    type: VARCHAR(50)
+valuelists:
+- valuelistname: Modulart
+  values:
+  - Pflicht
+  - Wahlpflicht
+  - Wahl
+  many_to_one_from_entities:
+  - sourceentity: Modul
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+relman = RelSchemaMan.fromAST(erman.get_rel())</code></pre>
+
+<p class="w3-large">Anlegen einer DataGenConversation. Das ist die Grundlage für die Prompt-Generierung.</p>
+<pre><code class="python">datagen_conv = DataGenConversation()</code></pre>
+
+<p class="w3-large">
+  Setzen des Datenbankschemas. 
+  Hier kommt die YAML-Generierung von <code>relman</code> ins Spile.
+</p>
+<pre><code class="python">datagen_conv.set_database_schema(relman.get_yaml())
+</code></pre>
+
+<p class="w3-large">
+  Einfügen einer Datengenerierungs-Nachricht in die Konversation.
+  Hier werden die Anzahl der zu generierenden Datensätze pro Tabelle und 
+  ggfs. auszuschließende Tabellen angegeben.
+</p>
+<pre><code class="python">datagen_conv.insert_datagen_message(
+    no_of_records_per_table=5, 
+    exclude_tables=["Modulart"]
+    ))
+</code></pre>
+
+<p class="w3-large">Erzeugen des Prompts für die KI der Wahl (ChatGPT, Claude, usw.)</p>
+<pre><code class="python">print(datagen_conv.gen_prompt())</code></pre>
+<pre><code class="language-plaintext">You are a helpful assistant for generating synthetic data for SQL tables.
+You will be given a YAML description of the tables and their relationships.
+Your task is to generate SQL insert statements to create synthetic data 
+for the tables, while respecting the relationships and constraints described in the YAML.
+
+The following tables are given:
+```yaml
+tables:
+- tablename: Modul
+  columns:
+  - columnname: MID
+    type: INTEGER
+  - columnname: Bez
+    type: VARCHAR(50)
+  - columnname: ModulartID
+    type: INTEGER
+  primary_key:
+  - MID
+  foreign_keys:
+  -
+    fkname: fk_Modul_Modulart
+    sourcecolumns:
+    - ModulartID
+    targettable: Modulart
+    targetcolumns:
+    - ID
+- tablename: Modulart
+  columns:
+  - columnname: ID
+    type: INTEGER
+  - columnname: Description
+    type: VARCHAR(100)
+  - columnname: IsValid
+    type: INTEGER
+  - columnname: SortOrder
+    type: INTEGER
+  primary_key:
+  - ID
+datalists:
+- tablename: Modulart
+  values:
+  - Pflicht
+  - Wahlpflicht
+  - Wahl
+```
+Future request will be based on this schema.
+
+Create at least 5 insert statements for each table.
+Don't repeat already given data.
+
+Don'create insert statements for the following tables: 'Modulart'.</code></pre>
+
+
+<p class="w3-large">
+  Kopieren des Prompts in die KI (hier ChatGPT)<br>
+  <img class="w3-image" src="/home/lv/dmdb/a/edurel-code/chatgpt1.png">
+</p>
+
+
+
+<p class="w3-large">DuckDB-Instanz erstellen und mit Schema und Valuelist befüllen.</p>
+<pre><code class="python">dbman = DuckDbMan.fromMem()
+dbman.execute(relman.get_sql(fk_external=False))
+dbman.print("select * from Modulart")</code></pre>
+<pre><code class="language-plaintext">┌───────┬─────────────┬─────────┬───────────┐
+│  ID   │ Description │ IsValid │ SortOrder │
+│ int32 │   varchar   │  int32  │   int32   │
+├───────┼─────────────┼─────────┼───────────┤
+│     1 │ Pflicht     │       1 │         1 │
+│     2 │ Wahlpflicht │       1 │         2 │
+│     3 │ Wahl        │       1 │         3 │
+└───────┴─────────────┴─────────┴───────────┘</code></pre>
+
+
+<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
+<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
+<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
+
+
+<p class="w3-large">xxxxxxxxxxxxxxxxxx</p>
+<p class="w3-large">xxxxxxxxxxxxxxxxxx</p>
+
+
 <div class="ic-gap"></div>
 
 
