@@ -513,14 +513,15 @@ CREATE TABLE Lehrperson (
 -->
 {% include padding-id.html id=9 %}
 <h1>Verwendung von DuckDB</h1>
-<p class="w3-large">Erzeugung einer in-memory DuckDB-Instanz.</p>
-<pre><code class="python">dbman = DuckDbMan.fromMem()</code></pre>
-
-<p class="w3-large">
-  Ausführung des SQL-Codes zur Erstellung der Tabellen.
-  Der SQL-Code kommt von <a href="/home/lv/dmdb/allgemeines/edurel-code.html#8">link</a>
-</p>
-<pre><code class="python">sql = """
+<ul class="w3-large">
+    <li>Erzeugung einer in-memory DuckDB-Instanz</li>
+    <li>Ausführung von SQL-Code zur Erstellung der Tabellen</li>
+    <li>Ausführung von SQL-Code zum Einfügen von Daten</li>
+    <li>Ausführen und Anzeigen der Ergebnisse einer Abfrage</li>
+</ul>
+<pre><code class="python">dbman = DuckDbMan.fromMem()
+  
+sql = """
 CREATE TABLE Gebaeude (
   GID INTEGER NOT NULL,
   Bez VARCHAR(50) NOT NULL,
@@ -535,24 +536,20 @@ CREATE TABLE Lehrperson (
   CONSTRAINT fk_hat_buero_in FOREIGN KEY (GID) REFERENCES Gebaeude (GID)
 );
 """
-dbman.execute(sql)</code></pre>
+dbman.execute(sql)
 
-<p class="w3-large">Ausführung des SQL-Codes zum Einfügen von Daten.</p>
-<pre><code class="python">sql = """
+sql = """
 insert into Gebaeude values (1, 'C');
 insert into Lehrperson values (1, 'Claßen', 'ingo.classen@htw-berlin.de', 1);
 insert into Lehrperson values (2, 'Kempa', 'martin.kempa@htw-berlin.de', 1);
 """
-dbman.execute(sql)</code></pre>
+dbman.execute(sql)
 
-
-<p class="w3-large">Ausführen und Anzeigen der Ergebnisse einer Abfrage.</p>
-<pre><code class="python">sql = """
+sql = """
 select g.Bez as Gebaeude, lp.Name as Lehrperson, lp.EMail
 from Gebaeude g
      join Lehrperson lp on g.GID = lp.GID
 """
-
 dbman.print(sql)</code></pre>
 <pre><code class="language-plaintext">┌──────────┬────────────┬────────────────────────────┐
 │ Gebaeude │ Lehrperson │           EMail            │
@@ -570,10 +567,16 @@ dbman.print(sql)</code></pre>
 -->
 {% include padding-id.html id=10 %}
 <h1>Datengenerierung mit der KI</h1>
-
+<ul class="w3-large">
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+</ul>
 <p class="w3-large">
-  Erstellung eines Relationship-Managers (relman).
-  Der wir benötigt, um das Datenbankschema im YAML-Format zu definieren.
+  Erstellung eines Relationship-Managers (relman) aus einem ER-Schema.<br>
+  Der wird benötigt, um das Datenbankschema im YAML-Format zu definieren.
 </p>
 <pre><code class="python">er_yaml = """
 entities:
@@ -594,28 +597,43 @@ valuelists:
 erman = ERSchemaMan.fromStr(er_yaml)
 relman = RelSchemaMan.fromAST(erman.get_rel())</code></pre>
 
-<p class="w3-large">Anlegen einer DataGenConversation. Das ist die Grundlage für die Prompt-Generierung.</p>
+<p class="w3-large">
+  Anlegen einer DataGenConversation.<br>
+  Das ist die Grundlage für die Prompt-Generierung.
+</p>
 <pre><code class="python">datagen_conv = DataGenConversation()</code></pre>
 
 <p class="w3-large">
-  Setzen des Datenbankschemas. 
-  Hier kommt die YAML-Generierung von <code>relman</code> ins Spile.
+  Setzen des Datenbankschemas.<br>
+  Hier kommt die YAML-Generierung von <code>relman</code> ins Spiel.
 </p>
 <pre><code class="python">datagen_conv.set_database_schema(relman.get_yaml())
 </code></pre>
 
-<p class="w3-large">
-  Einfügen einer Datengenerierungs-Nachricht in die Konversation.
-  Hier werden die Anzahl der zu generierenden Datensätze pro Tabelle und 
-  ggfs. auszuschließende Tabellen angegeben.
+<p class="w3-large ic-neg15">
+  Einfügen einer Datengenerierungs-Nachricht in die Konversation.<br>
+  Angabe von:
 </p>
+<ul class="w3-large">
+    <li>Anzahl der zu generierenden Datensätze pro Tabelle</li>
+    <li>Tabellen zum Ausschließen</li>
+</ul>
+
 <pre><code class="python">datagen_conv.insert_datagen_message(
     no_of_records_per_table=5, 
     exclude_tables=["Modulart"]
     ))
 </code></pre>
 
-<p class="w3-large">Erzeugen des Prompts für die KI der Wahl (ChatGPT, Claude, usw.)</p>
+<p class="w3-large">
+  Tabelle <code>Modulart</code> wird ausgeschlossen.<br>
+  Die Insert-Statements für die Tabelle werden bereits über die Valuelist generiert.
+</p>
+
+
+<p class="w3-large">
+  Erzeugen des Prompts für die KI der Wahl (ChatGPT, Claude, usw.)
+</p>
 <pre><code class="python">print(datagen_conv.gen_prompt())</code></pre>
 <pre><code class="language-plaintext">You are a helpful assistant for generating synthetic data for SQL tables.
 You will be given a YAML description of the tables and their relationships.
@@ -671,13 +689,21 @@ Don'create insert statements for the following tables: 'Modulart'.</code></pre>
 
 
 <p class="w3-large">
-  Kopieren des Prompts in die KI (hier ChatGPT)<br>
-  <img class="w3-image" src="/home/lv/dmdb/a/edurel-code/chatgpt1.png">
+  Kopieren des Prompts in die KI (hier ChatGPT).<br> 
+  Hier der Screenshot:
+</p>
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/chatgpt1.png">
+<p class="w3-large">
+  Rechts oben ist des Ende des Prompts zu sehen.<br>
+  Darunter die generierten SQL-Insert-Statements.<br>
+  Achtung: Die tatsächlichen generierten Daten können bei jedem Durchlauf anders sein.
 </p>
 
 
 
-<p class="w3-large">DuckDB-Instanz erstellen und mit Schema und Valuelist befüllen.</p>
+<p class="w3-large">
+  DuckDB-Instanz erstellen und mit Schema und Valuelist befüllen.
+</p>
 <pre><code class="python">dbman = DuckDbMan.fromMem()
 dbman.execute(relman.get_sql(fk_external=False))
 dbman.print("select * from Modulart")</code></pre>
@@ -690,14 +716,57 @@ dbman.print("select * from Modulart")</code></pre>
 │     3 │ Wahl        │       1 │         3 │
 └───────┴─────────────┴─────────┴───────────┘</code></pre>
 
+<p class="w3-large">
+  Kopieren der generierten SQL-Insert-Statements aus der KI.<br> 
+  Ausführen in DuckDB.
+</p>
+<pre><code class="python">sql = """
+-- Insert statements for table: Modul
+-- Assumption:
+-- Modulart IDs already exist in table Modulart
+-- 1 = Pflicht
+-- 2 = Wahlpflicht
+-- 3 = Wahl
 
-<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
-<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
-<pre><code class="python">xxxxxxxxxxxxxxxxxx</code></pre>
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (101, 'Datenbanksysteme', 1);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (102, 'Software Engineering', 1);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (103, 'Künstliche Intelligenz', 2);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (104, 'Webentwicklung', 2);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (105, 'IT-Sicherheit', 3);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (106, 'Cloud Computing', 3);
+"""
+dbman.execute(sql)</code></pre>
 
 
-<p class="w3-large">xxxxxxxxxxxxxxxxxx</p>
-<p class="w3-large">xxxxxxxxxxxxxxxxxx</p>
+<p class="w3-large">Ausführen einer SQL-Abfrage</p>
+<pre><code class="python">sql = """
+select m.bez as Modul, ma.description as Modulart
+from Modul m
+join Modulart ma on m.ModulartID = ma.ID
+"""
+dbman.print(sql)</code></pre>
+<pre><code class="language-plaintext">┌────────────────────────┬─────────────┐
+│         Modul          │  Modulart   │
+│        varchar         │   varchar   │
+├────────────────────────┼─────────────┤
+│ Datenbanksysteme       │ Pflicht     │
+│ Software Engineering   │ Pflicht     │
+│ Künstliche Intelligenz │ Wahlpflicht │
+│ Webentwicklung         │ Wahlpflicht │
+│ IT-Sicherheit          │ Wahl        │
+│ Cloud Computing        │ Wahl        │
+└────────────────────────┴─────────────┘</code></pre>
 
 
 <div class="ic-gap"></div>
@@ -707,7 +776,101 @@ dbman.print("select * from Modulart")</code></pre>
     11 ******************************************************************
 -->
 {% include padding-id.html id=11 %}
-<h1>xxx</h1>
+<h1>ER-Modell-Generierung mit der KI</h1>
+<ul class="w3-large">
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+</ul><p class="w3-large">
+  Anlegen einer ERDesignConversation.<br>
+  Das ist die Grundlage für die Prompt-Generierung.
+</p>
+<pre><code class="python">er_conv = ERDesignConversation()</code></pre>
+
+
+<p class="w3-large">
+  Einfügen einer Design-Nachricht.<br>
+  Hier wird die Anforderung an die KI formuliert, ein ER-Diagramm zu entwerfen.
+</p>
+<pre><code class="python">design_msg = """
+Entwirf ein einfaches ER-Diagramm für ein Krankenhaussystem. 
+Es soll Informationen über Patienten, Ärzte und Behandlungen speichern. 
+Jede Behandlung hat ein Datum und eine Beschreibung.
+"""
+er_conv.insert_design_message(design_msg)</code></pre>
+
+
+<p class="w3-large">
+  Generieren des Prompts für die KI.
+</p>
+<pre><code class="python">print(er_conv.gen_prompt())</code></pre>
+<p class="w3-large">
+  Den erzeugten Prompt in die KI (z.B. ChatGPT) kopieren und die Antwort abwarten.<br>
+  Der Prompt wird hier nicht gezeigt, da er sehr lang ist.
+</p>
+
+<p class="w3-large">
+  Den Output der KI (ER-Diagramm im YAML-Format) kopieren.<br>
+   In den Code einfügen.<br>
+   Er-Schema-Manager aus dem YAML erstellen.<br>
+   ER-Diagramm anzeigen lassen.
+</p>
+<pre><code class="python">er_yaml = """
+entities:
+- entityname: Patient
+  key: PatientID
+  attributes:
+  - attributename: Vorname
+    type: TEXT
+  - attributename: Nachname
+    type: TEXT
+  - attributename: Geburtsdatum
+    type: DATE
+    nullable: True
+
+- entityname: Arzt
+  key: ArztID
+  attributes:
+  - attributename: Vorname
+    type: TEXT
+  - attributename: Nachname
+    type: TEXT
+  - attributename: Fachgebiet
+    type: TEXT
+    nullable: True
+
+associative_entities:
+- associationname: Behandlung
+  identification:
+    localkey: BehandlungID
+  associations:
+  - targetentity: Patient
+    role: Patient
+    cardinality: ONE
+  - targetentity: Arzt
+    role: Arzt
+    cardinality: ONE
+  attributes:
+  - attributename: Behandlungsdatum
+    type: DATE
+  - attributename: Beschreibung
+    type: TEXT
+"""
+erman = ERSchemaMan.fromStr(er_yaml)
+erman.display_mermaid_diagram(direction="LR", height="200px")</code></pre>
+
+<img class="w3-image" src="/home/lv/dmdb/a/edurel-code/er_ki.png">
+
+<p class="w3-large">
+  Achtung: Das tatsächlich generierte Modell kann bei jedem Durchlauf anders sein.<br>
+  Der YAML-Output der KI muss nicht perfekt sein.<br>
+  Er kann manuell weiterbearbeitet werden.
+</p>
+
+
+
 <div class="ic-gap"></div>
 
 
@@ -715,7 +878,348 @@ dbman.print("select * from Modulart")</code></pre>
     12 ******************************************************************
 -->
 {% include padding-id.html id=12 %}
-<h1>xxx</h1>
+<h1>Requirements-Generierung mit der KI</h1>
+<ul class="w3-large">
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>xxxxxxxxxxxxxxxxxx</li>
+</ul>
+<p class="w3-large">
+  Anlegen einer ERRequirementsConversation.<br>
+  Das ist die Grundlage für die Prompt-Generierung.
+</p>
+<pre><code class="python">er_conv = ERRequirementsConversation()</code></pre>
+
+
+<p class="w3-large">
+  Einfügen einer Requirements-Nachricht.<br>
+  Hier wird die Anforderung an die KI formuliert, ein Requirements-Dokument zu erstellen.
+</p>
+<pre><code class="python">req_msg = """
+Beschreibe die Anforderungen für ein Krankhaussystem.
+"""
+er_conv.insert_requirements_message(req_msg)</code></pre>
+
+
+<p class="w3-large">
+  Generieren des Prompts für die KI.
+</p>
+<pre><code class="python">print(er_conv.gen_prompt())</code></pre>
+<p class="w3-large">
+  Den erzeugten Prompt in die KI (z.B. ChatGPT) kopieren und die Antwort abwarten.<br>
+  Der Prompt wird hier nicht gezeigt, da er sehr lang ist.
+</p>
+
+<p class="w3-large">
+  Den Output der KI (Requirements-Dokument im Markdown-Format) kopieren.<br>
+   In den Code einfügen.<br>
+   Anzeigen lassen.
+</p>
+<pre><code class="python">req_md = """
+# Domain Description
+
+Das Krankhaussystem dient der Verwaltung und Unterstützung zentraler Prozesse eines Krankenhauses. Dazu gehören die Verwaltung von Patienten, Mitarbeitenden, Stationen, Räumen, medizinischen Behandlungen, Terminen, Diagnosen, Medikamenten, Abrechnungen und medizinischen Ressourcen. Das System unterstützt sowohl administrative als auch medizinische Abläufe und stellt sicher, dass Informationen konsistent, nachvollziehbar und strukturiert verwaltet werden.
+
+# Key Entities
+
+* **Patient**
+
+  * Repräsentiert eine Person, die medizinisch behandelt wird.
+  * Enthält Stammdaten wie Name, Geburtsdatum, Kontaktinformationen und Versicherungsdaten.
+
+* **Mitarbeiter**
+
+  * Repräsentiert Personen, die im Krankenhaus arbeiten.
+  * Enthält allgemeine Informationen wie Personalnummer, Name, Kontaktdaten und Beschäftigungsinformationen.
+
+* **Arzt**
+
+  * Repräsentiert medizinisches Fachpersonal zur Diagnose und Behandlung von Patienten.
+
+* **Pflegekraft**
+
+  * Repräsentiert Pflegepersonal, das Patienten betreut.
+
+* **Abteilung**
+
+  * Repräsentiert organisatorische Einheiten wie Kardiologie, Radiologie oder Notaufnahme.
+
+* **Station**
+
+  * Repräsentiert eine organisatorische Untereinheit einer Abteilung zur Unterbringung von Patienten.
+
+* **Gebäude**
+
+  * Repräsentiert physische Krankenhausgebäude.
+
+* **Raum**
+
+  * Repräsentiert einzelne Räume innerhalb eines Gebäudes oder einer Station.
+
+* **Termin**
+
+  * Repräsentiert geplante medizinische oder organisatorische Termine.
+
+* **Diagnose**
+
+  * Repräsentiert medizinische Diagnosen, die bei Patienten festgestellt werden.
+
+* **Behandlung**
+
+  * Repräsentiert medizinische Maßnahmen oder Therapien.
+
+* **Medikament**
+
+  * Repräsentiert Arzneimittel, die im Krankenhaus verwendet werden.
+
+* **Laboruntersuchung**
+
+  * Repräsentiert medizinische Tests und Laboranalysen.
+
+* **MedizinischesGerät**
+
+  * Repräsentiert technische Geräte wie MRT, CT oder Ultraschallgeräte.
+
+* **Versicherung**
+
+  * Repräsentiert Krankenversicherungen oder Kostenträger.
+
+* **Rechnung**
+
+  * Repräsentiert abrechnungsrelevante Dokumente für Leistungen.
+
+* **Besucher**
+
+  * Repräsentiert Personen, die Patienten besuchen.
+
+# Key Associative Entities
+
+* **Patientenaufnahme**
+
+  * Assoziiert Patient, Station und Raum.
+  * Repräsentiert die stationäre Aufnahme eines Patienten inklusive Aufnahme- und Entlassungsdatum.
+
+* **Terminzuweisung**
+
+  * Assoziiert Patient, Arzt und Termin.
+  * Repräsentiert die Zuordnung eines medizinischen Termins zu einem Patienten und einem behandelnden Arzt.
+
+* **Patientendiagnose**
+
+  * Assoziiert Patient, Diagnose und Arzt.
+  * Repräsentiert die ärztliche Feststellung einer Diagnose bei einem Patienten inklusive Diagnosezeitpunkt.
+
+* **Patientenbehandlung**
+
+  * Assoziiert Patient, Behandlung und Arzt.
+  * Repräsentiert durchgeführte medizinische Maßnahmen inklusive Behandlungsdatum und Ergebnissen.
+
+* **Medikationsverordnung**
+
+  * Assoziiert Patient, Medikament und Arzt.
+  * Repräsentiert die Verordnung eines Medikaments inklusive Dosierung und Einnahmedauer.
+
+* **Laborauftrag**
+
+  * Assoziiert Patient, Laboruntersuchung und Arzt.
+  * Repräsentiert die Anforderung und Durchführung einer Laboruntersuchung.
+
+* **Gerätenutzung**
+
+  * Assoziiert MedizinischesGerät, Raum und Termin.
+  * Repräsentiert die Nutzung eines medizinischen Geräts zu einem bestimmten Zeitpunkt.
+
+* **Mitarbeiterzuweisung**
+
+  * Assoziiert Mitarbeiter, Abteilung und Station.
+  * Repräsentiert die organisatorische Zuordnung eines Mitarbeiters.
+
+* **Besuch**
+
+  * Assoziiert Besucher und Patient.
+  * Repräsentiert einen Patientenbesuch inklusive Besuchszeitraum.
+
+* **Rechnungsposition**
+
+  * Assoziiert Rechnung, Behandlung und Medikament.
+  * Repräsentiert einzelne abrechenbare Leistungen oder Produkte innerhalb einer Rechnung.
+
+# Key Relationships
+
+* **Abteilung — verwaltet — Station**
+
+  * Eine Abteilung verwaltet mehrere Stationen.
+
+* **Gebäude — enthält — Raum**
+
+  * Ein Gebäude enthält mehrere Räume.
+
+* **Station — nutzt — Raum**
+
+  * Eine Station nutzt bestimmte Räume.
+
+* **Versicherung — deckt — Patient**
+
+  * Eine Versicherung ist einem oder mehreren Patienten zugeordnet.
+
+* **Abteilung — beschäftigt — Mitarbeiter**
+
+  * Eine Abteilung beschäftigt Mitarbeitende.
+
+* **Arzt — arbeitet in — Abteilung**
+
+  * Ein Arzt arbeitet typischerweise in einer bestimmten Fachabteilung.
+
+* **Pflegekraft — arbeitet in — Station**
+
+  * Pflegekräfte sind typischerweise bestimmten Stationen zugeordnet.
+
+* **Rechnung — gehört zu — Patient**
+
+  * Eine Rechnung wird für einen Patienten erstellt.
+
+* **MedizinischesGerät — befindet sich in — Raum**
+
+  * Medizinische Geräte sind bestimmten Räumen zugeordnet.
+
+# Inheritances
+
+* **Mitarbeiter**
+
+  * Superentity für:
+
+    * **Arzt**
+    * **Pflegekraft**
+    * **Verwaltungsmitarbeiter**
+    * **Labormitarbeiter**
+  * Alle Subtypen teilen gemeinsame Personaldaten, besitzen jedoch unterschiedliche fachliche Eigenschaften.
+
+* **Behandlung**
+
+  * Superentity für:
+
+    * **Operation**
+    * **Therapie**
+    * **Untersuchung**
+  * Unterschiedliche Arten medizinischer Maßnahmen mit gemeinsamen Grundinformationen.
+
+* **MedizinischesGerät**
+
+  * Superentity für:
+
+    * **Diagnosegerät**
+    * **Therapiegerät**
+  * Geräte unterscheiden sich nach medizinischem Einsatzzweck.
+
+* **Raum**
+
+  * Superentity für:
+
+    * **Patientenzimmer**
+    * **Operationssaal**
+    * **Laborraum**
+    * **Behandlungsraum**
+  * Verschiedene Raumarten mit spezifischen Eigenschaften.
+
+# Valuelists
+
+* **Patientenstatus**
+
+  * Werte wie:
+
+    * Aktiv
+    * Entlassen
+    * Verlegt
+    * Verstorben
+
+* **Terminstatus**
+
+  * Werte wie:
+
+    * Geplant
+    * Bestätigt
+    * Abgeschlossen
+    * Abgesagt
+
+* **Diagnoseschweregrad**
+
+  * Werte wie:
+
+    * Leicht
+    * Mittel
+    * Schwer
+    * Kritisch
+
+* **Versicherungsart**
+
+  * Werte wie:
+
+    * Gesetzlich
+    * Privat
+    * Selbstzahler
+
+* **Geschlecht**
+
+  * Werte wie:
+
+    * Weiblich
+    * Männlich
+    * Divers
+
+* **Raumstatus**
+
+  * Werte wie:
+
+    * Verfügbar
+    * Belegt
+    * Gesperrt
+    * Reinigung
+
+* **Beschäftigungsstatus**
+
+  * Werte wie:
+
+    * Aktiv
+    * Beurlaubt
+    * Ausgeschieden
+
+* **Rechnungsstatus**
+
+  * Werte wie:
+
+    * Offen
+    * Bezahlt
+    * TeilweiseBezahlt
+    * Storniert
+
+* **Medikationsform**
+
+  * Werte wie:
+
+    * Tablette
+    * Infusion
+    * Injektion
+    * Salbe
+
+* **Laborstatus**
+
+  * Werte wie:
+
+    * Angefordert
+    * InBearbeitung
+    * Abgeschlossen
+    * Storniert
+"""
+display_md(req_md)</code></pre>
+
+<p class="w3-large">
+  Der Output wird hier nicht abgebildet, da er sehr lang ist.<br>
+  Dieses Dokument kann als Grundlage für die <code>ERDesignConversation</code> sein.
+</p>
+
+
 <div class="ic-gap"></div>
 
 
@@ -723,7 +1227,143 @@ dbman.print("select * from Modulart")</code></pre>
     13 ******************************************************************
 -->
 {% include padding-id.html id=13 %}
-<h1>xxx</h1>
+<h1>SQL-Generierung mit der KI</h1>
+
+
+<ul class="w3-large">
+    <li>Anlegen einer DuckDB-Instanz</li>
+    <li>Erstellen der Tabellen</li>
+    <li>Einfügen von Daten</li>
+</ul>
+
+<pre><code class="python">dbman = DuckDbMan.fromMem()
+
+sql = """
+CREATE TABLE Modulart (
+  ID INTEGER NOT NULL,
+  Description VARCHAR(100) NOT NULL,
+  IsValid INTEGER NOT NULL,
+  SortOrder INTEGER NOT NULL,
+  PRIMARY KEY (ID)
+);
+CREATE TABLE Modul (
+  MID INTEGER NOT NULL,
+  Bez VARCHAR(50) NOT NULL,
+  ModulartID INTEGER NOT NULL,
+  PRIMARY KEY (MID),
+  CONSTRAINT fk_Modul_Modulart FOREIGN KEY (ModulartID) REFERENCES Modulart (ID)
+);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (1, 'Pflicht', 1, 1);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (2, 'Wahlpflicht', 1, 2);
+INSERT INTO Modulart (ID, Description, IsValid, SortOrder) VALUES (3, 'Wahl', 1, 3);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (101, 'Datenbanksysteme', 1);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (102, 'Software Engineering', 1);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (103, 'Künstliche Intelligenz', 2);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (104, 'Webentwicklung', 2);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (105, 'IT-Sicherheit', 3);
+
+INSERT INTO Modul (MID, Bez, ModulartID)
+VALUES (106, 'Cloud Computing', 3);
+"""
+dbman.execute(sql)</code></pre>
+
+<hr>
+
+<ul class="w3-large">
+    <li>Anlegen einer SQLGenConversation </li>
+    <li>Datenbank-Schema festlegen</li>
+    <li>Frage stellen</li>
+    <li>Prompt generieren</li>
+</ul>
+<pre><code class="python">sql_conv = SQLGenConversation()
+sql_conv.set_database_schema(dbman.get_yaml())
+sql_conv.insert_question_message("Anzahl Module pro Modulart")
+print(sql_conv.gen_prompt())</code></pre>
+<pre><code class="language-plaintext">You are an expert SQL query generator. 
+Convert natural language questions into valid SQL queries. 
+
+The following database schema is given:
+tables:
+- tablename: Modul
+  columns:
+  - columnname: MID
+    type: INTEGER
+    nullable: false
+  - columnname: Bez
+    type: VARCHAR
+    nullable: false
+  - columnname: ModulartID
+    type: INTEGER
+    nullable: false
+  primary_key:
+  - MID
+  foreign_keys:
+  - fkname: fk_Modul_Modulart_ModulartID_1
+    sourcecolumns:
+    - ModulartID
+    targettable: Modulart
+    targetcolumns:
+    - ID
+- tablename: Modulart
+  columns:
+  - columnname: ID
+    type: INTEGER
+    nullable: false
+  - columnname: Description
+    type: VARCHAR
+    nullable: false
+  - columnname: IsValid
+    type: INTEGER
+    nullable: false
+  - columnname: SortOrder
+    type: INTEGER
+    nullable: false
+  primary_key:
+  - ID
+
+
+Future request will be based on this schema.
+The user's question is:
+Anzahl Module pro Modulart
+Turn this question into a valid postgres SQL query based on the given database schema.
+Return the SQL query only, without any explanation or additional text.</code></pre>
+
+<hr>
+<ul class="w3-large">
+    <li>Prompt in die KI einfügen</li>
+    <li>Output der KI (SQL-Anweisung) in den Python-Code kopieren</li>
+    <li>In der DuckDB-Instanz ausführen</li>
+</ul>
+<pre><code class="python">sql = """
+SELECT 
+    ma.Description AS modulart,
+    COUNT(m.MID) AS anzahl_module
+FROM Modul m
+JOIN Modulart ma ON m.ModulartID = ma.ID
+GROUP BY ma.Description
+ORDER BY anzahl_module DESC;
+"""
+dbman.print(sql)</code></pre>
+<pre><code class="language-plaintext">┌─────────────┬───────────────┐
+│  modulart   │ anzahl_module │
+│   varchar   │     int64     │
+├─────────────┼───────────────┤
+│ Wahl        │             2 │
+│ Wahlpflicht │             2 │
+│ Pflicht     │             2 │
+└─────────────┴───────────────┘</code></pre>
+
+
 <div class="ic-gap"></div>
 
 
