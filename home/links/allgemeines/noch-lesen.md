@@ -25,6 +25,27 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Making JSONB More Queryable with Generated Columns
+[(link)](https://richyen.com/postgres/2026/05/11/generated_columns_jsonb.html)
+
+- Open Source LLM Platforms in 2026: Ollama, OpenRouter, Groq, NVIDIA NIM — Which One Should You Use?
+[(link)](https://medium.com/codex/open-source-llm-platforms-in-2026-ollama-openrouter-groq-nvidia-nim-which-one-should-you-use-2f11c7ba60bc)
+
+- Using Claude Code to Build Production-Ready System
+[(link)](https://ai.plainenglish.io/using-claude-code-to-build-production-ready-system-c52929ca04eb)
+
+- 9 Linux Tricks
+[(link)](https://medium.com/the-tech-notes/9-linux-tricks-ab64b595cb75)
+
+- Multi-Agent Systems: When 2 Agents Beat 1 (and When They Don’t)
+[(link)](https://medium.com/data-science-collective/multi-agent-systems-when-2-agents-beat-1-and-when-they-dont-f4e352541695)
+
+- I Used Git Wrong for Years
+[(link)](https://medium.com/@TusharKanjariya/i-used-git-wrong-for-years-8c8307402640)
+
+- My Practical Approach for Reviewing AI-Generated Code
+[(link)](https://medium.com/javarevisited/my-practical-approach-for-reviewing-ai-generated-code-268db27f3af8)
+
 - The First 10 Shell Tricks That Make You Look Like a Wizard
 [(link)](https://medium.com/@fatihaali093/the-first-10-shell-tricks-that-make-you-look-like-a-wizard-6325a363b8ff)
 
