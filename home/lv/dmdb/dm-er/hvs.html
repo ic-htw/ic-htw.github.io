@@ -71,8 +71,6 @@ associative_entities:
 - associationname: Wochentermin
   associations:
   - targetentity: Zeitblock
-    cardinality: ONE
-
 
 - associationname: PersonRolle
   identification:
@@ -201,6 +199,13 @@ valuelists:
   - Abgelehnt
   many_to_one_from_entities:
   - sourceentity: Belegung
+
+- valuelistname: Terminart
+  values:
+  - Einzeltermin
+  - Wochentermin
+  many_to_one_from_entities:
+  - sourceentity: Termin
 
 - valuelistname: Tag
   values:
