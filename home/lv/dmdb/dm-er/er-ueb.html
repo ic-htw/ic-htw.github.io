@@ -6,7 +6,6 @@ is_slide: 1
 n: 6
 ---
 <ul class="w3-large">
-  <li>Bank (<a href="/home/lv/dmdb/a/er-ueb/er-bank.pdf">pdf</a>)</li>
   <li>Hausverwaltung (<a href="/home/lv/dmdb/a/er-ueb/er-hausverwaltung.pdf">pdf</a>)</li>
   <li>Transportunternehmen (<a href="/home/lv/dmdb/a/er-ueb/er-transport.pdf">pdf</a>)</li>
 </ul>
@@ -15,16 +14,12 @@ n: 6
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Bank</h1>
+<h1>Wertpapiere</h1>
 <p class="w3-large">
-In dieser Aufgabe sollen Sie ein ER-Modell für eine Bank erstellen. Die Bank hat eine IBAN
-und einen Namen. Sie unterhält Filialen, die eine Bezeichnung haben. Kunden sind genau
-einer Filiale zugeordnet und haben einen Namen.
-</p>
-<p class="w3-large">
-Die Bank unterhält Depots, in denen Wertpapiere verwahrt werden. Jedes Depot ist genau
-einem Kunden zugeordnet und hat eine jährliche Grundgebühr. Für jedes Depot existiert ein
-Ertragskonto, auf dem Dividenden und Zinsen gesammelt werden.
+In dieser Aufgabe sollen sie ein sehr vereinfachtes ER-Modell für die Verwahrung 
+von Wertpapieren erstellen. 
+Banken unterhalten Depots, in denen Wertpapiere verwahrt werden. Jedes Depot ist genau
+einem Ertragskonto zugeordnet, auf dem z.B. Dividenden gesammelt werden.
 </p>
 <p class="w3-large">
 Wertpapiere unterteilen sich in Aktien und Investmentfonds (weitere Anlageformen werden
@@ -33,11 +28,13 @@ Bezeichnung. Zur Verwaltung der Stimmrechte wird darüber hinaus für jede Aktie
 ob es sich um eine Stammaktie handelt (im Gegensatz zu Vorzugsaktien). Investmentfonds
 haben einen Ausgabeaufschlag.
 </p>
+
 <p class="w3-large">
-Jede Verwahrung eines Wertpapiers wird durch das zugehörige Depot und das verwahrte
-Wertpapier identifiziert. Des Weiteren muss die Anzahl jedes Wertpapiers gespeichert
-werden.
+Jede Verwahrung eines Wertpapiers hat ein Kaufdatum und die Anzahl der gekauften Einheiten.
+Kunden haben einen Namen. Konten sind genau einem Kunden 
+zugeordnet und haben eine IBAN und einen Kontostand.
 </p>
+
 <p class="w3-large">
 Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.
 </p>
@@ -57,7 +54,8 @@ Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.
     02 ******************************************************************
 -->
 {% include padding-id.html id=2 %}
-<h1>Bank Lösung</h1>
+<h1>Wertpapiere Lösung</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/wertpapiere_er.png">
 <div class="ic-gap"></div>
 
 
