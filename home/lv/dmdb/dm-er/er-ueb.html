@@ -3,19 +3,43 @@ layout: default1
 nav: dmdb-dm-er
 title: ER Übungsbeispiele - DMDB
 is_slide: 1
-n: 6
+n: 7
 ---
-<ul class="w3-large">
-  <li>Hausverwaltung (<a href="/home/lv/dmdb/a/er-ueb/er-hausverwaltung.pdf">pdf</a>)</li>
-  <li>Transportunternehmen (<a href="/home/lv/dmdb/a/er-ueb/er-transport.pdf">pdf</a>)</li>
-</ul>
 
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
+<h1>ER Übungsbeispiele</h1>
+
+<p class="w3-large">
+Die folgenden Aufgaben sollen ihnen die Möglichkeit geben, 
+das Erstellen von ER-Modellen zu üben. 
+Es handelt sich dabei um stark vereinfachte Szenarien, die im Rahmen von 
+Klausuraufgaben vorkommen können. 
+Es geht darum, die wesentlichen Entitäts- und Beziehungstypen zu erfassen.
+Attribute werden nur sehr unvollständig aufgeführt. 
+In der Realität würde es wesentlich mehr Attribute geben.
+</p>
+<p class="w3-large">
+In den Beispielen werden Identifikatoren nicht explizit genannt, 
+sollen aber von ihnen vergeben werden.
+</p>
+
+<p class="w3-large">
+Da diverse Datenbanksysteme den Datentyp "Boolean" nicht direkt unterstützen, 
+soll für die Angabe von Wahrheitswerten 
+der Datentyp <code>INTEGER</code> verwendet werden.
+Der Wert 1 in den Datensätzen würde <code>true</code> entsprechen und der Wert 0  <code>false</code>.
+</p>
+
+<div class="ic-gap"></div>
+
+<!--
+    02 ******************************************************************
+-->
+{% include padding-id.html id=2 %}
 <h1>Wertpapiere</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
 
 <p class="w3-large">
 In dieser Aufgabe sollen sie ein sehr vereinfachtes ER-Modell für die Verwahrung 
@@ -37,19 +61,6 @@ Kunden haben einen Namen. Konten sind genau einem Kunden
 zugeordnet und haben eine IBAN und einen Kontostand.
 </p>
 
-<p class="w3-large">
-Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.
-</p>
-<div class="ic-gap"></div>
-
-
-<!--
-    02 ******************************************************************
--->
-{% include padding-id.html id=2 %}
-<h1>Wertpapiere Lösung</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
-<img class="w3-image" src="/home/lv/dmdb/a/dm-er/wertpapiere_er.png">
 <div class="ic-gap"></div>
 
 
@@ -57,82 +68,73 @@ Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Hausverwaltung</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
-
-<p class="w3-large">
-  In dieser Aufgabe sollen Sie ein ER-Modell für eine Hausverwaltung erstellen. Es gibt
-verschiedene Parteien, wie Mieter, Hausmeister, Dienstleister (für die Durchführung von
-Reparaturen) und die Hausverwaltung selbst. Alle Parteien haben jeweils einen Namen und
-beliebig viele Adressen. Adressen können beliebig vielen Parteien aber auch Gebäuden
-zugeordnet sein.
-</p>
-<p class="w3-large">
-  Jedes Gebäude besteht aus Wohnungen, hat genau einen Hausmeister und ist genau einer
-Hausverwaltung zugeordnet. Eine Wohnung gehört zu genau einem Gebäude und hat eine
-Anzahl von Zimmern.
-</p>
-<p class="w3-large">
-  Eine Wohnung kann im Laufe der Zeit verschiedene Vermietungen haben. Zu jeder
-Vermietung gehört eine Mietvertragsnummer, das Einzugsdatum und ein Auszugsdatum,
-wobei letzteres solange einen Nullwert hat, solange der Vertrag besteht. Jede Vermietung
-bezieht sich auf mindestens einen Mieter bzw. eine Mieterin und genau eine Wohnung.
-</p>
-<p class="w3-large">
-  Zur Durchführung von Reparaturen hat die Hausverwaltung mit verschiedenen Dienstleistern
-(Elektro-, Sanitärunternehmen, Tischler, Schlüsseldienst) Verträge abgeschlossen. Jeder
-Dienstleister betreut verschiedene Gebäude und hat eine Service-Telefonnummer unter der
-angerufen werden kann, wenn etwas in der Wohnung oder im Gebäude defekt ist. Ein
-Dienstleister kann mehrere Dienstleistungsarten anbieten (Heizungsreparatur, Beseitigung
-von Rohrbrüchen usw.) und eine Dienstleistungsart kann von mehreren Dienstleistern
-angeboten werden. Dienstleistungsarten sollen als dynamische Domäne modelliert werden.
-</p>
-<p class="w3-large">
-  Die Hausverwaltung und der Hausmeister haben ebenfalls eine Telefonnummer.
-</p>
-<p class="w3-large">Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.</p>
+<h1>Lösung Wertpapiere</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/wertpapiere_er.png">
 <div class="ic-gap"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Hausverwaltung Lösung</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
+<h1>Hausverwaltung</h1>
+<p class="w3-large">
+Es gibt
+verschiedene Parteien, wie Mieter, Hausmeister, Dienstleister (für die Durchführung von
+Reparaturen) und die Hausverwaltung selbst. Alle Parteien haben jeweils einen Namen optional 
+Telefonnummer und EMail sowie
+beliebig viele Adressen. Adressen können beliebig vielen Parteien aber auch Gebäuden
+zugeordnet sein.
+</p>
+<p class="w3-large">
+Jedes Gebäude besteht aus Wohnungen, hat genau einen Hausmeister und ist genau einer
+Hausverwaltung zugeordnet. Eine Wohnung gehört zu genau einem Gebäude und hat eine
+Anzahl von Zimmern.
+</p>
+<p class="w3-large">
+Eine Wohnung kann im Laufe der Zeit verschiedene Vermietungen haben. Zu jeder
+Vermietung gehört eine Mietvertragsnummer, das Einzugsdatum und ein Auszugsdatum,
+wobei letzteres solange einen Nullwert hat, solange der Vertrag besteht. Jede Vermietung
+bezieht sich auf mindestens einen Mieter bzw. eine Mieterin und genau eine Wohnung.
+</p>
+<p class="w3-large">
+Zur Durchführung von Reparaturen hat die Hausverwaltung mit verschiedenen Dienstleistern
+(Elektro-, Sanitärunternehmen, Tischler, Schlüsseldienst) Verträge abgeschlossen. Jeder
+Dienstleister betreut verschiedene Gebäude.  
+Dort kann angerufen werden, wenn etwas in der Wohnung oder im Gebäude defekt ist. 
+</p>
 
 <div class="ic-gap"></div>
-
 
 <!--
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
+<h1>Lösung Hausverwaltung</h1>
+<p class="w3-large">
+  Aus Gründen der Übersichtlichkeit wurde die Lösung in zwei Teile aufgeteilt.
+  Es handelt sich aber in beiden Teilen um dasselbe ER-Modell, welches nur aufgeteilt dargestellt wird.
+</p>
+
+<h2>Teil 1 der Lösung: Parteien und Adressen</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/hausverwaltung1_er.png">
+
+<h2>Teil 2 der Lösung: Gebäude, Wohnungen und Vermietungen</h2>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/hausverwaltung2_er.png">
+
+<div class="ic-gap"></div>
+
+
+<!--
+    06 ******************************************************************
+-->
+{% include padding-id.html id=6 %}
 <h1>Transportunternehmen</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
 
 <p class="w3-large">
-  Erstellen Sie ein ER-Modell, das Grundlage einer Datenbanklösung für ein Transport-
-unternehmen sein soll.
-</p>
-<p class="w3-large">
-  Das Unternehmen hat mehrere Lastkraftwagen (LKW) im Einsatz, welche zu verschiedenen
-Zeiträumen (Beginn-/Endedatum) von verschiedenen Fahrern bzw. Fahrerinnen gefahren
-werden. Die Fahrten werden durch den Fahrenden, den LKW und das Beginndatum
-identifiziert. Für Fahrer/innen soll das Datum des Führscheins gespeichert werden und für
+Das Unternehmen hat mehrere Lastkraftwagen (LKW) im Einsatz, welche zu verschiedenen
+Zeiträumen (DatumVon/DatumBis) von verschiedenen Fahrern bzw. Fahrerinnen gefahren
+werden. Für Fahrer/innen soll das Datum des Führscheins gespeichert werden und für
 LKWs das Datum der Erstzulassung.
 </p>
 <p class="w3-large">
@@ -141,31 +143,27 @@ Mechaniker/innen. Diese sind genau einer Werkstatt zugeordnet und können einen
 Schweißerschein haben oder nicht. Eine Werkstatt kann eine Hebebühne haben oder nicht.
 </p>
 <p class="w3-large">
-  Für alle Mitarbeiter bzw. Mitarbeiterinnen werden Name und Einstellungsdatum in
+Für alle Mitarbeiter bzw. Mitarbeiterinnen werden Name und Einstellungsdatum in
 entsprechenden Attributen gespeichert.
 </p>
 <p class="w3-large">
-  Im Reparaturfall wird ein LKW von mindestens einem Mechanikern bzw. Mechanikerin
-repariert. Es können aber auch mehrere an der Reparatur beteiligt sein. Ein LKW muss nicht
-immer in der gleichen Werkstatt repariert werden. In der Datenbank soll als dynamische
-Domäne ein Liste von möglichen Reparaturarbeiten hinterlegt werden, die Arten wie
-„Motor“, „Elektrik“, „Fahrgestell“ usw. umfasst.
+Im Reparaturfall kann ein LKW von mehreren Mechanikern repariert werden. 
+Ein LKW muss nicht immer in der gleichen Werkstatt repariert werden. 
 </p>
 <p class="w3-large ic-neg15">Mit der Datenbank sollen folgende Informationen ermittelt werden können:</p>
 <ul class="w3-large">
     <li>Welcher Fahrer bzw. Fahrerin hat welchen LKW wann gefahren</li>
     <li>Wo wird ein bestimmter LKW gerade repariert</li>
-    <li>Wer hat einen LKW wann repariert und welche Arten von Arbeiten wurden an diesem LKW durchgeführt</li>
+    <li>Wer hat einen LKW wann repariert</li>
 </ul>
-<p class="w3-large">Vergeben Sie sinnvolle Identifikatoren für alle Entitätstypen.</p>
 <div class="ic-gap"></div>
 
 
 <!--
-    06 ******************************************************************
+    07 ******************************************************************
 -->
-{% include padding-id.html id=6 %}
-<h1>Transportunternehmen Lösung</h1>
-<p class="w3-large"><strong>Achtung: noch in Arbeit</strong></p>
+{% include padding-id.html id=7 %}
+<h1>Lösung Transportunternehmen</h1>
+<img class="w3-image" src="/home/lv/dmdb/a/dm-er/transportunternehmen_er.png">
 
 <div class="ic-gap"></div>
