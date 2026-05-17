@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Python f-Strings: 7 Tricks You Didn’t Know
+[(link)](https://python.plainenglish.io/python-f-strings-7-tricks-you-didnt-know-782ac8dab0cb)
+
+- Anthropic’s Engineer Said Kill Markdown. Here’s What He Actually Meant.
+[(link)](https://generativeai.pub/anthropics-engineer-said-kill-markdown-here-s-what-he-actually-meant-36bee00c0ca2)
+
 - Making JSONB More Queryable with Generated Columns
 [(link)](https://richyen.com/postgres/2026/05/11/generated_columns_jsonb.html)
 
