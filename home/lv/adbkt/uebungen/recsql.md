@@ -41,7 +41,7 @@ CREATE
 ## Summierung mit Cypher
 
 <pre><code class="cypher">MATCH (p:Node)
-OPTIONAL MATCH (c:Node)-[:S*0..]->(p)
+OPTIONAL MATCH (c:Node) ((:Node)-[:S]->(:Node))* (p:Node)
 WITH p, sum(coalesce(c.v, 0)) AS sum
 RETURN p.id AS node_id, sum
 ORDER BY node_id</code></pre>
