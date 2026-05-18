@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- If You Don’t Understand DNS, You Don’t Really Understand the Internet
+[(link)](https://systemweakness.com/if-you-dont-understand-dns-you-don-t-really-understand-the-internet-dc437f68f2d8)
+
+- Monolith vs Microservices: The Big Mistake Junior Developers Often Make
+[(link)](https://medium.com/codex/monolith-vs-microservices-the-big-mistake-junior-developers-often-make-d914642667a1)
+
+- How to Write SQL Queries That Survive Out-of-Order Replays (Before ETL Testing Exposes Bugs)
+[(link)](https://medium.com/@Rohan_Dutt/how-to-write-sql-queries-that-survive-out-of-order-replays-before-etl-testing-exposes-bugs-efe623780fc0)
+
 - Python f-Strings: 7 Tricks You Didn’t Know
 [(link)](https://python.plainenglish.io/python-f-strings-7-tricks-you-didnt-know-782ac8dab0cb)
 
