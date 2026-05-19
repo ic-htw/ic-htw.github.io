@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- If You Use Git Every Day, These 10 Commands Will Change Your Life
+[(link)](https://medium.com/@gaddamnaveen192/if-you-use-git-every-day-these-10-commands-will-change-your-life-f5810d3c5ebe)
+
+- How PostgreSQL Can Replace 200 WHERE Clauses in Your Codebase (Row Level Security)?
+[(link)](https://medium.com/javarevisited/how-postgresql-can-replace-200-where-clauses-in-your-codebase-row-level-security-d3bd68fbf207)
+
+- Git Merge vs Rebase vs Squash
+[(link)](https://blog.mrinalmaheshwari.com/git-merge-vs-rebase-vs-squash-explained-caad9d69888f)
+
 - If You Don’t Understand DNS, You Don’t Really Understand the Internet
 [(link)](https://systemweakness.com/if-you-dont-understand-dns-you-don-t-really-understand-the-internet-dc437f68f2d8)
 
