@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Bash Shell Scripting—DAY 1
+[(link)](https://medium.com/devsecops-community/bash-shell-scripting-complete-beginner-friendly-guide-with-notes-practical-scripts-7c4a304b8897)
+
+- The Expert Way to Decide the Data Model for Any Data Engineering Problem
+[(link)](https://medium.com/@anchitgupt/the-expert-way-to-decide-the-data-model-for-any-data-engineering-problem-5ff383ba8bca)
+
+- Forward Proxy vs Reverse Proxy: The Deep Dive Every Engineer Must Understand
+[(link)](https://codefarm0.medium.com/forward-proxy-vs-reverse-proxy-the-deep-dive-every-engineer-must-understand-5e7216231af0)
+
 - If You Use Git Every Day, These 10 Commands Will Change Your Life
 [(link)](https://medium.com/@gaddamnaveen192/if-you-use-git-every-day-these-10-commands-will-change-your-life-f5810d3c5ebe)
 
