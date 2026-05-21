@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- If You Had To Read Only 5 AI Papers, This Should Be It.
+[(link)](https://medium.com/@anubhavgoyal101/ea54f535682c)
+
 - Bash Shell Scripting—DAY 1
 [(link)](https://medium.com/devsecops-community/bash-shell-scripting-complete-beginner-friendly-guide-with-notes-practical-scripts-7c4a304b8897)
 
