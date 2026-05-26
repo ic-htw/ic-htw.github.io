@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Must-Know Java Fundamentals That Even Seniors Forget
+[(link)](https://medium.com/javarevisited/10-must-know-java-fundamentals-that-even-seniors-forget-ab38e67d64dc)
+
+- The 6 Most Common Design Patterns in Java Projects (With Examples)
+[(link)](https://blog.stackademic.com/the-6-most-common-design-patterns-in-java-projects-with-examples-e3c8b0071c01)
+
 - If You Had To Read Only 5 AI Papers, This Should Be It.
 [(link)](https://medium.com/@anubhavgoyal101/ea54f535682c)
 
