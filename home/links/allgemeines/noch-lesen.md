@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The Real Reason Data Teams Are Quietly Replacing Their Data Warehouses
+[(link)](https://medium.com/@sauravsinghsisodiya/why-data-teams-are-quietly-replacing-their-data-warehouses-in-2026-92955af104ac)
+
+- Day 9: Still Editing Text Manually? These 6 Linux Commands Will Save You Hours
+[(link)](https://medium.com/codex/day-9-still-editing-text-manually-these-6-linux-commands-will-save-you-hours-ceabc23e41c0)
+
 - 10 Must-Know Java Fundamentals That Even Seniors Forget
 [(link)](https://medium.com/javarevisited/10-must-know-java-fundamentals-that-even-seniors-forget-ab38e67d64dc)
 
