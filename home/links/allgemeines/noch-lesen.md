@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- This Is Why AI Still Can’t Replace You
+[(link)](https://medium.com/@gaddamnaveen192/this-is-why-ai-still-cant-replace-you-and-it-s-not-what-you-think-3149380159e7)
+
+- Something Weird Is Happening in the Software Industry
+[(link)](https://medium.com/realworld-ai-use-cases/something-weird-is-happening-in-the-software-industry-ed9947230ce1)
+
+- 5 jobs AI can’t replace (according to Microsoft)
+[(link)](https://medium.com/@gaddamnaveen192/5-jobs-ai-cant-replace-according-to-microsoft-5f1a7a2fbcad)
+
 - The Real Reason Data Teams Are Quietly Replacing Their Data Warehouses
 [(link)](https://medium.com/@sauravsinghsisodiya/why-data-teams-are-quietly-replacing-their-data-warehouses-in-2026-92955af104ac)
 
