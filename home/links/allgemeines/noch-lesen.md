@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- What Anthropic Didn’t Say About Opus 4.8: It’s Anthropic Absorbing Your Harness
+[(link)](https://medium.com/data-science-collective/what-anthropic-didnt-say-about-opus-4-8-it-s-anthropic-absorbing-your-harness-6d4ea10bf66d)
+
+- 10 Modern Java Features That Prove Java Is Not Verbose Anymore
+[(link)](https://codefarm0.medium.com/10-modern-java-features-that-prove-java-is-not-verbose-anymore-deef6d814915)
+
+- Building a Seat Reservation System: Deadlock Avoidance and Transaction Isolation Levels
+[(link)](https://medium.com/womenintechnology/building-a-seat-reservation-system-deadlock-avoidance-and-transaction-isolation-levels-cad7186eb589)
+
 - This Is Why AI Still Can’t Replace You
 [(link)](https://medium.com/@gaddamnaveen192/this-is-why-ai-still-cant-replace-you-and-it-s-not-what-you-think-3149380159e7)
 
