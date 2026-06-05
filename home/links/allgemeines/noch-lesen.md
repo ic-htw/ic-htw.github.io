@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- NVIDIA’s 3B Model Just Embarrassed 30B Vision Models
+[(link)](https://www.towardsdeeplearning.com/nvidias-3b-model-just-embarrassed-30b-vision-models-151b3db5d3fc)
+
+- Top 10 Database Scaling Strategies Every Engineer Should Know
+[(link)](https://codefarm0.medium.com/top-10-database-scaling-strategies-every-engineer-should-know-70c22008936f)
+
+- ConcurrentHashMap Deep Dive: Internal Working, Concurrency Model & How It Differs from HashMap
+[(link)](https://codefarm0.medium.com/concurrenthashmap-deep-dive-internal-working-concurrency-model-how-it-differs-from-hashmap-bf150f6eabdd)
+
+- If AI Is the Future, Linux Is the Engine
+[(link)](https://aws.plainenglish.io/if-ai-is-the-future-linux-is-the-engine-d72f0489fb1e)
+
 - Handling graphs with SQL/PGQ in PostgreSQL
 [(link)](https://www.cybertec-postgresql.com/en/handling-graphs-with-sql-pgq-in-postgresql/)
 
