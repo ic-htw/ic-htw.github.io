@@ -153,10 +153,10 @@ home: &r
                     url: /home/lv/dmdb/ab/ab-02.html
                   - t: Arbeitsblatt 3
                     ts: Arbeitsblatt 3
-                    url: /home/lv/dmdb/ab/ab-03.html
-                  - t: Arbeitsblatt 4
-                    ts: Arbeitsblatt 4
-                    url: /home/lv/dmdb/ab/ab-04.html
+                    url: /home/lv/dmdb/ab/ab-03-neu.html
+                  # - t: Arbeitsblatt 4
+                  #   ts: Arbeitsblatt 4
+                  #   url: /home/lv/dmdb/ab/ab-04.html
           - t: Datenbanktechnologien
             ts: DBTECH
             url: /home/lv/dbtech/dbtech.html
