@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Handling graphs with SQL/PGQ in PostgreSQL
+[(link)](https://www.cybertec-postgresql.com/en/handling-graphs-with-sql-pgq-in-postgresql/)
+
+- DeltaX - Fast time-series extension for PostgreSQL
+[(link)](https://github.com/xataio/deltax)
+
+- pg_textsearch
+[(link)](https://github.com/timescale/pg_textsearch)
+
+- Stop Blindly Typing git pull: The Ultimate Guide to Git Pull Strategies
+[(link)](https://aws.plainenglish.io/stop-blindly-typing-git-pull-the-ultimate-guide-to-git-pull-strategies-6f9989349f49)
+
 - What Anthropic Didn’t Say About Opus 4.8: It’s Anthropic Absorbing Your Harness
 [(link)](https://medium.com/data-science-collective/what-anthropic-didnt-say-about-opus-4-8-it-s-anthropic-absorbing-your-harness-6d4ea10bf66d)
 
