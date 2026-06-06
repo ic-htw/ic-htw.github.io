@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Linux Networking Commands Explained
+[(link)](https://blog.stackademic.com/linux-networking-commands-explained-622a09dbd07a)
+
+- 10 Database Mistakes I Made
+[(link)](https://medium.com/skillstuff/10-database-mistakes-i-made-a1d6e116633e)
+
+- The Day Wireshark Made Me Question My Own Network
+[(link)](https://blog.stackademic.com/the-day-wireshark-made-me-question-my-own-network-bdeaea7fe128)
+
+- Stop Guessing HTTP Errors: Learn What 404, 500, and 403 Really Mean
+[(link)](https://aws.plainenglish.io/stop-guessing-http-errors-learn-what-404-500-and-403-really-mean-734d6083651c)
+
 - NVIDIA’s 3B Model Just Embarrassed 30B Vision Models
 [(link)](https://www.towardsdeeplearning.com/nvidias-3b-model-just-embarrassed-30b-vision-models-151b3db5d3fc)
 
