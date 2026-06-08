@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Linux Networking Basic Part 3: 5 Commands Every Linux User Must Know
+[(link)](https://aws.plainenglish.io/linux-networking-basic-part-3-5-commands-every-linux-user-must-know-9a89d646167f)
+
+- Fix LVM Issues on Linux + Logical Volume Guide with Commands
+[(link)](https://blog.stackademic.com/a-practical-guide-to-linux-lvm-logical-volume-management-13ee759081b9)
+
+- The Complete Guide to API Authentication
+[(link)](https://vijayasekhar-deepak.medium.com/the-complete-guide-to-api-authentication-be64f477adf4)
+
 - Linux Networking Commands Explained
 [(link)](https://blog.stackademic.com/linux-networking-commands-explained-622a09dbd07a)
 
