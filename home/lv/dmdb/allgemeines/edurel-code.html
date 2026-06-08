@@ -3,7 +3,7 @@ layout: default1
 nav: dmdb-allgemeines
 title: Edurel Code - DMDB
 is_slide: 1
-n: 13
+n: 14
 ---
 <!--
     01 ******************************************************************
@@ -511,6 +511,7 @@ CREATE TABLE Lehrperson (
 -->
 {% include padding-id.html id=9 %}
 <h1>Verwendung von DuckDB</h1>
+<h2>In-Memory-Datenbank</h2>
 <ul class="w3-large">
     <li>Erzeugung einer in-memory DuckDB-Instanz</li>
     <li>Ausführung von SQL-Code zur Erstellung der Tabellen</li>
@@ -556,6 +557,21 @@ dbman.print(sql)</code></pre>
 │ C        │ Claßen     │ ingo.classen@htw-berlin.de │
 │ C        │ Kempa      │ martin.kempa@htw-berlin.de │
 └──────────┴────────────┴────────────────────────────┘</code></pre>
+
+<h2>Persistente Datenbank</h2>
+<p class="w3-large">
+  Github-Repository mit DuckDB-Datenbanken:
+  <a href="https://github.com/ic-htw/data/tree/main/duckdb">link</a>
+</p>
+
+<pre><code class="python">base_url = "https://raw.githubusercontent.com/ic-htw/data/main/duckdb"
+dbman = DuckDbMan.fromURL("company_de.duckdb", base_url, "/content")
+
+sql = """
+select * from projekt;
+"""
+dbman.print(sql)</code></pre>
+
 
 <div class="ic-gap"></div>
 
@@ -1053,6 +1069,22 @@ dbman.print(sql)</code></pre>
 │ Pflicht     │             2 │
 └─────────────┴───────────────┘</code></pre>
 
+
+<div class="ic-gap"></div>
+
+<!--
+    14 ******************************************************************
+-->
+{% include padding-id.html id=14 %}
+<h1>Relationales Modell in YAML</h1>
+<p class="w3-large">
+  Github-Repository mit relationalen Modellen in YAML-Format:
+  <a href="https://github.com/ic-htw/data/tree/main/yaml/rel">link</a>
+</p>
+
+<pre><code class="python">rel_yaml_base_url = "https://raw.githubusercontent.com/ic-htw/data/refs/heads/main/yaml/rel"
+url_unternehmen = f"{rel_yaml_base_url}/company_de.yaml"
+relman = RelSchemaMan.fromURL(url_unternehmen)</code></pre>
 
 <div class="ic-gap"></div>
 
