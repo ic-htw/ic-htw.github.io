@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
+[(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
+
+- gstack
+[(link)](https://github.com/garrytan/gstack)
+
 - Linux Networking Basic Part 3: 5 Commands Every Linux User Must Know
 [(link)](https://aws.plainenglish.io/linux-networking-basic-part-3-5-commands-every-linux-user-must-know-9a89d646167f)
 
