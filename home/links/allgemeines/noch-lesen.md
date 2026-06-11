@@ -25,74 +25,17 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Graph database-ball! Exploring the Game with the graph capabilities of LadybugDB, DuckDB and PostgreSQL
+[(link)](https://theconsensus.dev/p/2026/05/29/ladybug-duckdb-and-postgresql.html)
+
+- Order by Has Come a Long Way
+[(link)](https://modern-sql.com/blog/2026-05/order-by-history)
+
 - Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
 [(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
 
-- gstack
-[(link)](https://github.com/garrytan/gstack)
-
-- Linux Networking Basic Part 3: 5 Commands Every Linux User Must Know
-[(link)](https://aws.plainenglish.io/linux-networking-basic-part-3-5-commands-every-linux-user-must-know-9a89d646167f)
-
-- Fix LVM Issues on Linux + Logical Volume Guide with Commands
-[(link)](https://blog.stackademic.com/a-practical-guide-to-linux-lvm-logical-volume-management-13ee759081b9)
-
-- The Complete Guide to API Authentication
-[(link)](https://vijayasekhar-deepak.medium.com/the-complete-guide-to-api-authentication-be64f477adf4)
-
-- Linux Networking Commands Explained
-[(link)](https://blog.stackademic.com/linux-networking-commands-explained-622a09dbd07a)
-
-- 10 Database Mistakes I Made
-[(link)](https://medium.com/skillstuff/10-database-mistakes-i-made-a1d6e116633e)
-
-- The Day Wireshark Made Me Question My Own Network
-[(link)](https://blog.stackademic.com/the-day-wireshark-made-me-question-my-own-network-bdeaea7fe128)
-
-- Stop Guessing HTTP Errors: Learn What 404, 500, and 403 Really Mean
-[(link)](https://aws.plainenglish.io/stop-guessing-http-errors-learn-what-404-500-and-403-really-mean-734d6083651c)
-
-- NVIDIA’s 3B Model Just Embarrassed 30B Vision Models
-[(link)](https://www.towardsdeeplearning.com/nvidias-3b-model-just-embarrassed-30b-vision-models-151b3db5d3fc)
-
-- Top 10 Database Scaling Strategies Every Engineer Should Know
-[(link)](https://codefarm0.medium.com/top-10-database-scaling-strategies-every-engineer-should-know-70c22008936f)
-
-- ConcurrentHashMap Deep Dive: Internal Working, Concurrency Model & How It Differs from HashMap
-[(link)](https://codefarm0.medium.com/concurrenthashmap-deep-dive-internal-working-concurrency-model-how-it-differs-from-hashmap-bf150f6eabdd)
-
-- If AI Is the Future, Linux Is the Engine
-[(link)](https://aws.plainenglish.io/if-ai-is-the-future-linux-is-the-engine-d72f0489fb1e)
-
-- Handling graphs with SQL/PGQ in PostgreSQL
-[(link)](https://www.cybertec-postgresql.com/en/handling-graphs-with-sql-pgq-in-postgresql/)
-
-- DeltaX - Fast time-series extension for PostgreSQL
-[(link)](https://github.com/xataio/deltax)
-
-- pg_textsearch
-[(link)](https://github.com/timescale/pg_textsearch)
-
-- Stop Blindly Typing git pull: The Ultimate Guide to Git Pull Strategies
-[(link)](https://aws.plainenglish.io/stop-blindly-typing-git-pull-the-ultimate-guide-to-git-pull-strategies-6f9989349f49)
-
-- What Anthropic Didn’t Say About Opus 4.8: It’s Anthropic Absorbing Your Harness
-[(link)](https://medium.com/data-science-collective/what-anthropic-didnt-say-about-opus-4-8-it-s-anthropic-absorbing-your-harness-6d4ea10bf66d)
-
-- 10 Modern Java Features That Prove Java Is Not Verbose Anymore
-[(link)](https://codefarm0.medium.com/10-modern-java-features-that-prove-java-is-not-verbose-anymore-deef6d814915)
-
 - Building a Seat Reservation System: Deadlock Avoidance and Transaction Isolation Levels
 [(link)](https://medium.com/womenintechnology/building-a-seat-reservation-system-deadlock-avoidance-and-transaction-isolation-levels-cad7186eb589)
-
-- This Is Why AI Still Can’t Replace You
-[(link)](https://medium.com/@gaddamnaveen192/this-is-why-ai-still-cant-replace-you-and-it-s-not-what-you-think-3149380159e7)
-
-- Something Weird Is Happening in the Software Industry
-[(link)](https://medium.com/realworld-ai-use-cases/something-weird-is-happening-in-the-software-industry-ed9947230ce1)
-
-- 5 jobs AI can’t replace (according to Microsoft)
-[(link)](https://medium.com/@gaddamnaveen192/5-jobs-ai-cant-replace-according-to-microsoft-5f1a7a2fbcad)
 
 - The Real Reason Data Teams Are Quietly Replacing Their Data Warehouses
 [(link)](https://medium.com/@sauravsinghsisodiya/why-data-teams-are-quietly-replacing-their-data-warehouses-in-2026-92955af104ac)

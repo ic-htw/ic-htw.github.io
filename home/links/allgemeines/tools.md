@@ -203,6 +203,8 @@ is_slide: 0
 [(link)](https://medium.com/javarevisited/7-git-mistakes-even-senior-engineers-make-and-how-to-fix-them-32cbb1b2f90f)
 - The Real Difference Between git fetch, git pull, and git pull --rebase
 [(link)](https://blog.stackademic.com/the-real-difference-between-git-fetch-git-pull-and-git-pull-rebase-991514cb5bd6)
+- Stop Blindly Typing git pull: The Ultimate Guide to Git Pull Strategies
+[(link)](https://aws.plainenglish.io/stop-blindly-typing-git-pull-the-ultimate-guide-to-git-pull-strategies-6f9989349f49)
 
 
 
@@ -297,6 +299,10 @@ is_slide: 0
 # LangExtract Google
 - git
 [(link)](https://github.com/google/langextract)
+
+# linux
+- Fix LVM Issues on Linux + Logical Volume Guide with Commands
+[(link)](https://blog.stackademic.com/a-practical-guide-to-linux-lvm-logical-volume-management-13ee759081b9)
 
 
 # linux container

@@ -35,6 +35,9 @@ is_slide: 0
 [(link)](https://ai.plainenglish.io/the-complete-guide-to-claude-code-understanding-claude-md-d3d592b9ed4e)
 - The 4 Lines Every CLAUDE.md Needs
 [(link)](https://levelup.gitconnected.com/the-4-lines-every-claude-md-needs-2717a46866f6)
+- gstack
+[(link)](https://github.com/garrytan/gstack)
+
 
 
 

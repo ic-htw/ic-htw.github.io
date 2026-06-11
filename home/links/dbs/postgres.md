@@ -191,6 +191,10 @@ is_slide: 0
 
 
 # extensions / tools
+- DeltaX - Fast time-series extension for PostgreSQL
+[(link)](https://github.com/xataio/deltax)
+- pg_textsearch
+[(link)](https://github.com/timescale/pg_textsearch)
 - pg_csv
 [(link)](https://github.com/PostgREST/pg_csv)
 - Announcing a new IDE for PostgreSQL in VS Code from Microsoft
