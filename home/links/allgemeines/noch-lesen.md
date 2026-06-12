@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Stop Using Markdown with Claude Code
+[(link)](https://lazypro.medium.com/stop-using-markdown-with-claude-code-fd7c75d80b19)
+
+- Systemd & Journalctl Cheat Sheet
+[(link)](https://medium.com/the-tech-notes/systemd-journalctl-cheat-sheet-527c4f185198)
+
+- Before You Panic About That Viral AI Article, Read This.
+[(link)](https://medium.com/vibe-coding-chronicles/before-you-panic-about-that-viral-ai-article-read-this-aba9230f79bb)
+
 - Graph database-ball! Exploring the Game with the graph capabilities of LadybugDB, DuckDB and PostgreSQL
 [(link)](https://theconsensus.dev/p/2026/05/29/ladybug-duckdb-and-postgresql.html)
 
