@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Anthropic Looked Inside Claude’s Brain. What They Found Changes Everything.
+[(link)](https://ai.plainenglish.io/anthropic-looked-inside-claudes-brain-what-they-found-changes-everything-08b894577851)
+
+- I Switched from Claude to Kimi K2.5 for a Week — Here’s What Broke and What Got Better
+[(link)](https://ai.plainenglish.io/i-switched-from-claude-to-kimi-k2-5-for-a-week-heres-what-broke-and-what-got-better-8f0eceebec5d)
+
+- I found at least 9 different date formats in one SQL column — Here’s how I detected them
+[(link)](https://code.likeagirl.io/i-found-at-least-9-different-date-formats-in-one-sql-column-heres-how-i-detected-them-635a49786c35)
+
 - Stop Using Markdown with Claude Code
 [(link)](https://lazypro.medium.com/stop-using-markdown-with-claude-code-fd7c75d80b19)
 
