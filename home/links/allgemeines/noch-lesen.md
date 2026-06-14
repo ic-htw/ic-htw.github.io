@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Dynamic Programming: A Handbook
+[(link)](https://medium.com/@tomkob99_89317/dynamic-programming-a-handbook-fbbd39cfb99a)
+
+- Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
+[(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
+
+- The Real Reason Data Teams Are Quietly Replacing Their Data Warehouses
+[(link)](https://medium.com/@sauravsinghsisodiya/why-data-teams-are-quietly-replacing-their-data-warehouses-in-2026-92955af104ac)
+
+- Building A Distributed SQL Database in 30 Days with AI
+[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
+
+- LLMs.txt: The Hidden File That’s Changing How AI Reads the Internet in 2026
+[(link)](https://medium.com/data-science-collective/llms-txt-the-hidden-file-thats-changing-how-ai-reads-the-internet-in-2026-768b1e001106)
+
 - Anthropic Looked Inside Claude’s Brain. What They Found Changes Everything.
 [(link)](https://ai.plainenglish.io/anthropic-looked-inside-claudes-brain-what-they-found-changes-everything-08b894577851)
 
@@ -49,14 +64,8 @@ is_slide: 0
 - Order by Has Come a Long Way
 [(link)](https://modern-sql.com/blog/2026-05/order-by-history)
 
-- Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
-[(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
-
 - Building a Seat Reservation System: Deadlock Avoidance and Transaction Isolation Levels
 [(link)](https://medium.com/womenintechnology/building-a-seat-reservation-system-deadlock-avoidance-and-transaction-isolation-levels-cad7186eb589)
-
-- The Real Reason Data Teams Are Quietly Replacing Their Data Warehouses
-[(link)](https://medium.com/@sauravsinghsisodiya/why-data-teams-are-quietly-replacing-their-data-warehouses-in-2026-92955af104ac)
 
 - Day 9: Still Editing Text Manually? These 6 Linux Commands Will Save You Hours
 [(link)](https://medium.com/codex/day-9-still-editing-text-manually-these-6-linux-commands-will-save-you-hours-ceabc23e41c0)
@@ -236,9 +245,6 @@ is_slide: 0
 
 - F3: The Future-Proof File Format That Finally Gets It Right
 [(link)](https://medium.com/@reliabledataengineering/f3-the-future-proof-file-format-that-finally-gets-it-right-0e7f0ddd2e72)
-
-- Dynamic Programming: A Handbook
-[(link)](https://medium.com/@tomkob99_89317/dynamic-programming-a-handbook-fbbd39cfb99a)
 
 - Automate schema mappings with LLMs
 [(link)](https://medium.com/road-to-full-stack-data-science/automate-schema-mappings-with-llms-637e55988524)
