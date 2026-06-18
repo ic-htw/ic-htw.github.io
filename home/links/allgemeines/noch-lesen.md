@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
+[(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
+
+- From Christmas Outage to #1 App Store Ranking: An Aura Frames Postgres Scaling Retrospective
+[(link)](https://andyatkinson.com/postgresql-rds-scaling-aws-christmas-day-peak)
+
+- An AI-First Approach to Data Engineering with Lakeflow and Agent Bricks
+[(link)](https://www.databricks.com/blog/ai-first-approach-data-engineering-lakeflow-and-agent-bricks)
+
+- I Tried Google NotebookLM as a Developer
+[(link)](https://medium.com/@TusharKanjariya/i-tried-google-notebooklm-as-a-developer-067caa74c9ad)
+
+- Networking for DevOps
+[(link)](https://medium.com/write-a-catalyst/networking-for-devops-the-complete-beginner-to-advanced-guide-for-modern-engineers-2cc5be694140)
+
 - Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
 [(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
 
@@ -829,10 +844,6 @@ is_slide: 0
 - Use PASSING with JSON_TABLE() To Make Calculations
 [(link)](https://stokerpostgresql.blogspot.com/2025/02/use-passing-with-jsontable-to-make.html)
 
-- How PostgreSQL's Aggregate FILTER Will Spoil You
-[(link)](https://stokerpostgresql.blogspot.com/2025/02/how-postgresqls-aggregate-filter-will.html)
-
-- Handling Billions of Rows in PostgreSQL
 [(link)](https://medium.com/timescale/handling-billions-of-rows-in-postgresql-80d3bd24dabb)
 
 - Delta Lake 4.0: Next-Level Big Data Management
@@ -853,23 +864,14 @@ is_slide: 0
 - 10 Advanced Python Concepts You Should Know To Be a Senior Developer
 [(link)](https://levelup.gitconnected.com/10-advanced-python-concepts-you-should-know-to-be-a-senior-developer-a29c12ae9b71)
 
-- ETL, ELT… or Something Better?
-[(link)](https://blog.det.life/etl-elt-or-something-better-470a7082c25c)
-
 - MkDocs
 [(link)](https://www.mkdocs.org/)
 
 - Representing graphs in Postgresql
 [(link)](https://www.richard-towers.com/2025/02/16/representing-graphs-in-postgres.html)
 
-- Expanding Pgai Vectorizer: SQLAlchemy and LiteLLM Make Vector Search Simple
-[(link)](https://www.timescale.com/blog/sqlalchemy-and-litellm-make-vector-search-simple)
-
 - Redis with FastAPI for Lightning-Fast Applications
 [(link)](https://rajansahu713.medium.com/redis-with-fastapi-for-lightning-fast-applications-75a7ba5d13a7)
-
-- Top 8 PostgreSQL Extensions
-[(link)](https://medium.com/timescale/top-8-postgresql-extensions-f72d5de57f1f)
 
 - Building the Modern PostgreSQL GUI With PopSQL
 [(link)](https://medium.com/timescale/building-the-modern-postgresql-gui-with-popsql-ffaf98e7323c)
@@ -883,23 +885,11 @@ is_slide: 0
 - How Uber Handles TRILLIONS of Transactions — The Secret
 [(link)](https://medium.com/@teenageprogrammer/5cc14afcb7ac)
 
-- Data Formulator: Create Rich Visualizations with AI
-[(link)](https://github.com/microsoft/data-formulator)
-
-- Enhancing Text-to-SQL Agents with Step-by-Step Reasoning
-[(link)](https://yia333.medium.com/implementing-reasoning-in-text-to-sql-agents-f979331176b4)
-
-- Let's reproduce GPT-2 (1.6B): one 8XH100 node, 24 hours, $672, in llm.c
-[(link)](https://github.com/karpathy/llm.c/discussions/677)
-
 - Advanced SQL for Data Professionals
 [(link)](https://medium.com/@mariusz_kujawski/advanced-sql-for-data-professionals-875ab725730c)
 
 - Handling Slowly Changing Dimensions (SCD) in Modern Data Pipelines: A Complete Guide with SQL Examples
 [(link)](https://blog.det.life/handling-slowly-changing-dimensions-scd-in-modern-data-pipeline-a-complete-guide-with-sql-fbb95f19a7cf)
-
-- Top 15 Must-Have JavaScript UI Libraries to Elevate Your Web Development
-[(link)](https://javascript.plainenglish.io/top-15-must-have-javascript-ui-libraries-to-elevate-your-web-development-87da115a075f)
 
 - RunSQL
 [(link)](https://runsql.com/)
@@ -913,9 +903,6 @@ is_slide: 0
 - SQLModel
 [(link)](https://sqlmodel.tiangolo.com/)
 
-- Why Choose Caddy Server instead Nginx?
-[(link)](https://blog.9ssi7.dev/why-choose-caddy-server-over-nginx-e49b01c631a1)
-
 - documentdb
 [(link)](https://github.com/microsoft/documentdb)
 
@@ -925,17 +912,8 @@ is_slide: 0
 - Don’t Fear Async: A Friendly Guide to Python’s Most Powerful Tool
 [(link)](https://python.plainenglish.io/dont-fear-async-a-friendly-guide-to-python-s-most-powerful-tool-a45f4a477a81)
 
-- Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
-[(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
-
-- 25 Game-Changing Websites Every Developer Must Bookmark
-[(link)](https://medium.com/@letscodefuture/25-game-changing-websites-every-developer-must-bookmark-bfbb1399e35f)
-
 - How We Built a Content Recommendation System With Pgai and Pgvectorscale 
 [(link)](https://www.timescale.com/blog/how-we-built-a-content-recommendation-system-with-pgai-and-pgvectorscale/)
-
-- SQL Applications using LlamaIndex 
-[(link)](https://medium.com/@avikumart_/building-natural-language-to-sql-applications-using-llamaindex-39280e90d52f)
 
 - A Visual Exploration of Semantic Text Chunking
 [(link)](https://towardsdatascience.com/a-visual-exploration-of-semantic-text-chunking-6bb46f728e30)
@@ -952,41 +930,6 @@ is_slide: 0
 - From query to plot: Exploring GeoParquet Overture Maps with Ibis, DuckDB, and Lonboard
 [(link)](https://ibis-project.org/posts/ibis-overturemaps/)
 
-- PostGIS meets DuckDB: Crunchy Bridge for Analytics goes Spatial
-[(link)](https://www.crunchydata.com/blog/postgis-meets-duckdb-crunchy-bridge-for-analytics-goes-spatial)
-
-- FlockMTL is a DuckDB extension that integrates language model (LLM)
-[(link)](https://github.com/dsg-polymtl/duckdb-flockmtl)
-
-- DuckERD CLI
-[(link)](https://github.com/tobilg/duckerd)
-
 - This is How I Use Swagger to Design REST APIs Before Starting the Development
 [(link)](https://levelup.gitconnected.com/this-is-how-i-use-swagger-to-design-rest-apis-before-starting-the-development-9de19cb1640f)
 
-- The Ultimate Guide to Relational Databases for Backend Developers
-[(link)](https://blog.devgenius.io/the-ultimate-guide-to-relational-databases-for-backend-developers-42b1efb492b0)
-
-- Examples of specialized DB Usage
-[(link)](https://aws.plainenglish.io/why-developers-are-ditching-postgresql-mysql-and-mongodb-b3b953ebe6b6)
-
-- Optimizing Your Database for Analytics
-[(link)](https://karenjex.blogspot.com/2024/09/optimising-your-database-for-analytics.html)
-
-- Implementing Hybrid Search with Postgres and pgvector
-[(link)](https://jkatz05.com/post/postgres/hybrid-search-postgres-pgvector/)
-
-- How SELECT FOR UPDATE Works
-[(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
-
-- Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
-[(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
-
-- 4 SQLAlchemy Features For Data Engineering
-[(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
-
-- LLM Monitoring and Observability: Tools, Tips and Best Practices
-[(link)](https://mlengineering.medium.com/llm-monitoring-and-observability-tools-tips-and-best-practices-98ea16f533a7)
-
-- A Practical Guide to using Pydantic
-[(link)](https://medium.com/@marcnealer/a-practical-guide-to-using-pydantic-8aafa7feebf6)

@@ -126,6 +126,10 @@ is_slide: 0
 
 
 # pg
+- Expanding Pgai Vectorizer: SQLAlchemy and LiteLLM Make Vector Search Simple
+[(link)](https://www.timescale.com/blog/sqlalchemy-and-litellm-make-vector-search-simple)
+- Implementing Hybrid Search with Postgres and pgvector
+[(link)](https://jkatz05.com/post/postgres/hybrid-search-postgres-pgvector/)
 - Pgai Vectorizer Now Works With Any Postgres Database
 [(link)](https://www.timescale.com/blog/pgai-vectorizer-now-works-with-any-postgres-database)
 - pgai: Importing Wikipedia into PostgreSQL

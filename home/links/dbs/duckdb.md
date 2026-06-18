@@ -37,6 +37,8 @@ is_slide: 0
 
 
 # spatial
+- PostGIS meets DuckDB: Crunchy Bridge for Analytics goes Spatial
+[(link)](https://www.crunchydata.com/blog/postgis-meets-duckdb-crunchy-bridge-for-analytics-goes-spatial)
 - DuckDB - Spatial Relationships
 [(link)](https://geog-414.gishub.org/book/duckdb/07_spatial_relationships.html)
 - DuckDB Spatial Extension

@@ -293,6 +293,9 @@ is_slide: 0
 [(link)](https://wiki.postgresql.org/wiki/SSI)
 - Anatomy of table-level locks: Reducing locking impact
 [(link)](https://xata.io/blog/anatomy-of-locks-reduce)
+- How SELECT FOR UPDATE Works
+[(link)](https://haril.dev/en/blog/2024/04/20/select-for-update-in-PostgreSQL)
+
 
 
 

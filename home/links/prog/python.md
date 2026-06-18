@@ -562,6 +562,10 @@ is_slide: 0
 - Multithreading vs. Multiprocessing
 [(link)](https://towardsdatascience.com/multithreading-vs-multiprocessing-in-python-3afeb73e105f)
 
+# SQLAlchemy
+- 4 SQLAlchemy Features For Data Engineering
+[(link)](https://medium.com/@petrica.leuca/efae9a438fe7)
+
 # strings
 - Mastering Python Strings: A Complete Guide
 [(link)](https://medium.com/@aliyannshaikhh/a4a9db97c366)

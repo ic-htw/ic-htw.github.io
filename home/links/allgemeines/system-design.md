@@ -5,6 +5,12 @@ title: System Design
 is_slide: 0
 ---
 
+- Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
+[(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
+
+- The Ultimate Guide to Relational Databases for Backend Developers
+[(link)](https://blog.devgenius.io/the-ultimate-guide-to-relational-databases-for-backend-developers-42b1efb492b0)
+
 - Real-time Distributed score streaming using gRPC and Redis
 [(link)](https://engg.glance.com/real-time-distributed-score-streaming-using-grpc-and-redis-a1565b45c825)
 
