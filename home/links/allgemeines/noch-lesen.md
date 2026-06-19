@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- We Replaced 500 Tomcat Threads with Virtual Threads — The Results Shocked Us
+[(link)](https://medium.com/@gaddamnaveen192/we-replaced-500-tomcat-threads-with-virtual-threads-the-results-shocked-us-12cd9afe4a15)
+
+- These Python One-Liners Replaced 40 Lines of My Code
+[(link)](https://medium.com/@inprogrammer/these-python-one-liners-replaced-40-lines-of-my-code-im-still-mad-9ed79521adfb)
+
+- The Modern Java Developer Roadmap You Need in the AI Era
+[(link)](https://medium.com/javarevisited/the-modern-java-developer-roadmap-you-need-in-the-ai-era-bac60aa24608)
+
+- Linux File System Management Guide (2026)
+[(link)](https://blog.devops.dev/linux-file-system-management-guide-2026-d7b9c245f9fb)
+
+- What Amazon Engineers Actually Use (Internally)
+[(link)](https://blog.stackademic.com/what-amazon-engineers-actually-use-internally-b76d716d06d8)
+
 - Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
 [(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
 
