@@ -384,6 +384,17 @@ is_slide: 0
 - home
 [(link)](https://orbstack.dev/)
 
+# tui for pg
+- pgtui
+[(link)](https://github.com/pgplex/pgtui)
+- rainfrog - terminal ui for postgres
+[(link)](https://github.com/achristmascarl/rainfrog)
+- sqlit
+[(link)](https://github.com/Maxteabag/sqlit)
+
+
+
+
 # pip
 - commands
 [(link)](https://pip.pypa.io/en/stable/cli/index.html)

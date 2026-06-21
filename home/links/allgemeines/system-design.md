@@ -5,6 +5,9 @@ title: System Design
 is_slide: 0
 ---
 
+- Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
+[(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
+
 - Storage Disaggregated Databases and Shared Transaction Log Architecture In Comparison
 [(link)](https://medium.com/@dichenldc/storage-disaggregated-databases-and-shared-log-abstraction-98be44c63fff)
 

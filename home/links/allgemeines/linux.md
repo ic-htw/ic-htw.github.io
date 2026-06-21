@@ -4,6 +4,23 @@ nav: links-allgemeines
 title: Linux
 is_slide: 0
 ---
+# admin
+- Systemd & Journalctl Cheat Sheet
+[(link)](https://medium.com/the-tech-notes/systemd-journalctl-cheat-sheet-527c4f185198)
+
+# bash
+- Bash Shell Scripting—DAY 1
+[(link)](https://medium.com/devsecops-community/bash-shell-scripting-complete-beginner-friendly-guide-with-notes-practical-scripts-7c4a304b8897)
+
+
+
+# network
+- Networking for DevOps
+[(link)](https://medium.com/write-a-catalyst/networking-for-devops-the-complete-beginner-to-advanced-guide-for-modern-engineers-2cc5be694140)
+
+
+
+# misc
 - apt man page
 [(link)](https://manpages.ubuntu.com/manpages/jammy/en/man8/apt.8.html)
 - apt-get man page

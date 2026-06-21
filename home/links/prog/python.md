@@ -20,6 +20,8 @@ is_slide: 0
 
 
 # Allgemein
+- These Python One-Liners Replaced 40 Lines of My Code
+[(link)](https://medium.com/@inprogrammer/these-python-one-liners-replaced-40-lines-of-my-code-im-still-mad-9ed79521adfb)
 - The Python Packaging Hell
 [(link)](https://www.courtbouillon.org/blog/00011-the-python-packaging-hell-the-can-of-worms/)
 - An A-Z of useful Python tricks

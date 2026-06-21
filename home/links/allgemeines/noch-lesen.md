@@ -25,35 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- We Replaced 500 Tomcat Threads with Virtual Threads — The Results Shocked Us
-[(link)](https://medium.com/@gaddamnaveen192/we-replaced-500-tomcat-threads-with-virtual-threads-the-results-shocked-us-12cd9afe4a15)
+- Why GROUPING SETS for Multi-Level Aggregation Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-grouping-sets-for-multi-level-aggregation-powerful-than-you-think-and-how-to-master-them-654ed8f2d651)
 
-- These Python One-Liners Replaced 40 Lines of My Code
-[(link)](https://medium.com/@inprogrammer/these-python-one-liners-replaced-40-lines-of-my-code-im-still-mad-9ed79521adfb)
+- 10 Ways Your REST API Is Abusing SQL (And Slowing Everything Down)
+[(link)](https://medium.com/@Rohan_Dutt/10-ways-your-rest-api-is-abusing-sql-and-slowing-everything-down-505ecc6e97d2)
 
-- The Modern Java Developer Roadmap You Need in the AI Era
-[(link)](https://medium.com/javarevisited/the-modern-java-developer-roadmap-you-need-in-the-ai-era-bac60aa24608)
+- LLM Concepts — A Deep Dive
+[(link)](https://codefarm0.medium.com/llm-concepts-a-deep-dive-eb6d90e20ae3)
 
-- Linux File System Management Guide (2026)
-[(link)](https://blog.devops.dev/linux-file-system-management-guide-2026-d7b9c245f9fb)
-
-- What Amazon Engineers Actually Use (Internally)
-[(link)](https://blog.stackademic.com/what-amazon-engineers-actually-use-internally-b76d716d06d8)
-
-- Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
-[(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
-
-- From Christmas Outage to #1 App Store Ranking: An Aura Frames Postgres Scaling Retrospective
-[(link)](https://andyatkinson.com/postgresql-rds-scaling-aws-christmas-day-peak)
-
-- An AI-First Approach to Data Engineering with Lakeflow and Agent Bricks
-[(link)](https://www.databricks.com/blog/ai-first-approach-data-engineering-lakeflow-and-agent-bricks)
-
-- I Tried Google NotebookLM as a Developer
-[(link)](https://medium.com/@TusharKanjariya/i-tried-google-notebooklm-as-a-developer-067caa74c9ad)
-
-- Networking for DevOps
-[(link)](https://medium.com/write-a-catalyst/networking-for-devops-the-complete-beginner-to-advanced-guide-for-modern-engineers-2cc5be694140)
 
 - Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
 [(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
@@ -82,17 +62,11 @@ is_slide: 0
 - Stop Using Markdown with Claude Code
 [(link)](https://lazypro.medium.com/stop-using-markdown-with-claude-code-fd7c75d80b19)
 
-- Systemd & Journalctl Cheat Sheet
-[(link)](https://medium.com/the-tech-notes/systemd-journalctl-cheat-sheet-527c4f185198)
-
 - Before You Panic About That Viral AI Article, Read This.
 [(link)](https://medium.com/vibe-coding-chronicles/before-you-panic-about-that-viral-ai-article-read-this-aba9230f79bb)
 
 - Graph database-ball! Exploring the Game with the graph capabilities of LadybugDB, DuckDB and PostgreSQL
 [(link)](https://theconsensus.dev/p/2026/05/29/ladybug-duckdb-and-postgresql.html)
-
-- Order by Has Come a Long Way
-[(link)](https://modern-sql.com/blog/2026-05/order-by-history)
 
 - Day 9: Still Editing Text Manually? These 6 Linux Commands Will Save You Hours
 [(link)](https://medium.com/codex/day-9-still-editing-text-manually-these-6-linux-commands-will-save-you-hours-ceabc23e41c0)
@@ -105,9 +79,6 @@ is_slide: 0
 
 - If You Had To Read Only 5 AI Papers, This Should Be It.
 [(link)](https://medium.com/@anubhavgoyal101/ea54f535682c)
-
-- Bash Shell Scripting—DAY 1
-[(link)](https://medium.com/devsecops-community/bash-shell-scripting-complete-beginner-friendly-guide-with-notes-practical-scripts-7c4a304b8897)
 
 - The Expert Way to Decide the Data Model for Any Data Engineering Problem
 [(link)](https://medium.com/@anchitgupt/the-expert-way-to-decide-the-data-model-for-any-data-engineering-problem-5ff383ba8bca)
@@ -187,9 +158,6 @@ is_slide: 0
 - Google Research: LLM can never achieve consciousness (not even in 100years)
 [(link)](https://medium.com/techx-official/google-research-llm-can-never-achieve-consciousness-not-even-in-100years-10c117cf4643)
 
-- AWS CEO Explains Why AI Still Can’t Replace Junior Developers
-[(link)](https://medium.com/@Deep-concept/aws-ceo-explains-why-ai-still-cant-replace-junior-developers-3f3e08fb24d0)
-
 - Stop Memorizing Design Patterns: Use This Decision Tree Instead
 [(link)](https://medium.com/womenintechnology/stop-memorizing-design-patterns-use-this-decision-tree-instead-e84f22fca9fa)
 
@@ -208,21 +176,6 @@ is_slide: 0
 
 - I Tested 5 Python ORMs. One Replaced SQLAlchemy Completely.
 [(link)](https://medium.com/@inprogrammer/i-tested-5-python-orms-one-replaced-sqlalchemy-completely-e423699a1ac8)
-
-- sqlit
-[(link)](https://github.com/Maxteabag/sqlit)
-
-- rainfrog - terminal ui for postgres
-[(link)](https://github.com/achristmascarl/rainfrog)
-
-- RIP Commercial OCR. An Open-Source Model Just Topped Every Benchmark
-[(link)](https://www.towardsdeeplearning.com/rip-commercial-ocr-an-open-source-model-just-topped-every-benchmark-351bf9d6be10)
-
-- Why Agentic AI Is the #1 Skill To Learn
-[(link)](https://medium.com/activated-thinker/why-agentic-ai-is-the-1-skill-to-learn-ffc1337501a8)
-
-- Everyone Said AI Would Take Engineering Jobs. They Were Right.
-[(link)](https://medium.com/vibe-coding/everyone-said-ai-would-take-engineering-jobs-they-were-right-3a3ae50c62f6)
 
 - The YC CEO Ships 10,000 Lines a Day. Here’s His Exact Setup
 [(link)](https://medium.com/vibe-coding/the-yc-ceo-ships-10-000-lines-a-day-heres-his-exact-setup-8a997e47b792)

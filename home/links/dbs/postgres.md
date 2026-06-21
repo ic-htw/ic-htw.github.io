@@ -308,6 +308,8 @@ is_slide: 0
 
 
 # zzz
+- From Christmas Outage to #1 App Store Ranking: An Aura Frames Postgres Scaling Retrospective
+[(link)](https://andyatkinson.com/postgresql-rds-scaling-aws-christmas-day-peak)
 - Postgres in the time of monster hardware
 [(link)](https://www.enterprisedb.com/blog/postgres-time-monster-hardware)
 - The hidden cost of PostgreSQL arrays
