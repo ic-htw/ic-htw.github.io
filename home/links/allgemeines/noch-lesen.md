@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Linux Security Cheat Sheet
+[(link)](https://postgresqlblog.com/posts/2026-01-01_Linux-Security-Cheat-Sheet-0fd019ef4fcf.html)
+
+- Shell Scripting for Beginners 
+[(link)](https://medium.com/@tushar.jadhav29/shell-scripting-for-beginners-complete-guide-with-examples-practice-projects-371ee4908352)
+
+- Docker Cheat Sheet
+[(link)](https://medium.com/the-tech-notes/docker-cheat-sheet-86bcb7e61e54)
+
+- Learning to Code Is Still Worth It in 2026 — Maybe More Than Ever
+[(link)](https://medium.com/lets-code-future/learning-to-code-is-still-worth-it-in-2026-maybe-more-than-ever-8772e9746863)
+
 - Why GROUPING SETS for Multi-Level Aggregation Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-grouping-sets-for-multi-level-aggregation-powerful-than-you-think-and-how-to-master-them-654ed8f2d651)
 
