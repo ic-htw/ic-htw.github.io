@@ -25,6 +25,27 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- A distributed systems reliability glossary
+[(link)](https://antithesis.com/docs/resources/reliability_glossary/)
+
+- Jepsen Redis 1
+[(link)](https://aphyr.com/posts/283-call-me-maybe-redis)
+
+- Jepsen Redis 2
+[(link)](https://aphyr.com/posts/307-call-me-maybe-redis-redux)
+
+- Jepsen Redis 3
+[(link)](https://jepsen.io/analyses/redis-raft-1b3fbf6)
+
+- Jepsen Cassandra 1
+[(link)](https://aphyr.com/posts/294-call-me-maybe-cassandra)
+
+- Jepsen Postgres 1
+[(link)](https://jepsen.io/analyses/postgresql-12.3)
+
+- 11 Linux Commands I Run on Every Fresh Installation
+[(link)](https://systemweakness.com/11-linux-commands-i-run-on-every-fresh-installation-344269910dd6)
+
 - Linux Security Cheat Sheet
 [(link)](https://postgresqlblog.com/posts/2026-01-01_Linux-Security-Cheat-Sheet-0fd019ef4fcf.html)
 
