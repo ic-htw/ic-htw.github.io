@@ -5,6 +5,18 @@ title: System Design
 is_slide: 0
 ---
 
+- Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
+[(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
+
+- Building a Seat Reservation System: Deadlock Avoidance and Transaction Isolation Levels
+[(link)](https://medium.com/womenintechnology/building-a-seat-reservation-system-deadlock-avoidance-and-transaction-isolation-levels-cad7186eb589)
+
+- Building A Distributed SQL Database in 30 Days with AI
+[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
+
+- Designing a UPI Payment System: Real-Time Processing, Bank Integration & Transaction Routing
+[(link)](https://codefarm0.medium.com/designing-a-upi-payment-system-real-time-processing-bank-integration-transaction-routing-0bb4bb93e12a)
+
 - Building an End-to-End Data Lake ELT Pipeline using Modern Data Stack
 [(link)](https://blog.devgenius.io/building-an-end-to-end-data-lake-elt-pipeline-using-modern-data-stack-9588d9e51b0e)
 

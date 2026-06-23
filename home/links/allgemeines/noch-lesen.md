@@ -43,42 +43,8 @@ is_slide: 0
 - Jepsen Postgres 1
 [(link)](https://jepsen.io/analyses/postgresql-12.3)
 
-- 11 Linux Commands I Run on Every Fresh Installation
-[(link)](https://systemweakness.com/11-linux-commands-i-run-on-every-fresh-installation-344269910dd6)
-
-- Linux Security Cheat Sheet
-[(link)](https://postgresqlblog.com/posts/2026-01-01_Linux-Security-Cheat-Sheet-0fd019ef4fcf.html)
-
-- Shell Scripting for Beginners 
-[(link)](https://medium.com/@tushar.jadhav29/shell-scripting-for-beginners-complete-guide-with-examples-practice-projects-371ee4908352)
-
-- Docker Cheat Sheet
-[(link)](https://medium.com/the-tech-notes/docker-cheat-sheet-86bcb7e61e54)
-
-- Learning to Code Is Still Worth It in 2026 — Maybe More Than Ever
-[(link)](https://medium.com/lets-code-future/learning-to-code-is-still-worth-it-in-2026-maybe-more-than-ever-8772e9746863)
-
-- Why GROUPING SETS for Multi-Level Aggregation Powerful Than You Think
-[(link)](https://medium.com/@Rohan_Dutt/why-grouping-sets-for-multi-level-aggregation-powerful-than-you-think-and-how-to-master-them-654ed8f2d651)
-
-- 10 Ways Your REST API Is Abusing SQL (And Slowing Everything Down)
-[(link)](https://medium.com/@Rohan_Dutt/10-ways-your-rest-api-is-abusing-sql-and-slowing-everything-down-505ecc6e97d2)
-
-- LLM Concepts — A Deep Dive
-[(link)](https://codefarm0.medium.com/llm-concepts-a-deep-dive-eb6d90e20ae3)
-
-
-- Building an Inventory System: Overselling, Atomic Decrements, and Stock Reservation Under Load
-[(link)](https://medium.com/womenintechnology/building-an-inventory-system-overselling-atomic-decrements-and-stock-reservation-under-load-77fa06507a54)
-
-- Building a Seat Reservation System: Deadlock Avoidance and Transaction Isolation Levels
-[(link)](https://medium.com/womenintechnology/building-a-seat-reservation-system-deadlock-avoidance-and-transaction-isolation-levels-cad7186eb589)
-
-- Building A Distributed SQL Database in 30 Days with AI
-[(link)](https://kellabyte.substack.com/p/building-a-distributed-sql-database)
-
-- Designing a UPI Payment System: Real-Time Processing, Bank Integration & Transaction Routing
-[(link)](https://codefarm0.medium.com/designing-a-upi-payment-system-real-time-processing-bank-integration-transaction-routing-0bb4bb93e12a)
+- PostgreSQL Backup Strategies
+[(link)](https://postgresqlblog.com/posts/2026-01-02_PostgreSQL-Backup-Strategies-acad0db78622.html)
 
 - What I Learnt Using Claude Code to Build Production-Ready Apps
 [(link)](https://medium.com/data-science-collective/what-i-learnt-using-claude-code-to-build-production-ready-apps-a27272af0c48)
@@ -119,14 +85,8 @@ is_slide: 0
 - Forward Proxy vs Reverse Proxy: The Deep Dive Every Engineer Must Understand
 [(link)](https://codefarm0.medium.com/forward-proxy-vs-reverse-proxy-the-deep-dive-every-engineer-must-understand-5e7216231af0)
 
-- If You Use Git Every Day, These 10 Commands Will Change Your Life
-[(link)](https://medium.com/@gaddamnaveen192/if-you-use-git-every-day-these-10-commands-will-change-your-life-f5810d3c5ebe)
-
 - How PostgreSQL Can Replace 200 WHERE Clauses in Your Codebase (Row Level Security)?
 [(link)](https://medium.com/javarevisited/how-postgresql-can-replace-200-where-clauses-in-your-codebase-row-level-security-d3bd68fbf207)
-
-- Git Merge vs Rebase vs Squash
-[(link)](https://blog.mrinalmaheshwari.com/git-merge-vs-rebase-vs-squash-explained-caad9d69888f)
 
 - If You Don’t Understand DNS, You Don’t Really Understand the Internet
 [(link)](https://systemweakness.com/if-you-dont-understand-dns-you-don-t-really-understand-the-internet-dc437f68f2d8)
@@ -158,17 +118,11 @@ is_slide: 0
 - Multi-Agent Systems: When 2 Agents Beat 1 (and When They Don’t)
 [(link)](https://medium.com/data-science-collective/multi-agent-systems-when-2-agents-beat-1-and-when-they-dont-f4e352541695)
 
-- I Used Git Wrong for Years
-[(link)](https://medium.com/@TusharKanjariya/i-used-git-wrong-for-years-8c8307402640)
-
 - My Practical Approach for Reviewing AI-Generated Code
 [(link)](https://medium.com/javarevisited/my-practical-approach-for-reviewing-ai-generated-code-268db27f3af8)
 
 - The First 10 Shell Tricks That Make You Look Like a Wizard
 [(link)](https://medium.com/@fatihaali093/the-first-10-shell-tricks-that-make-you-look-like-a-wizard-6325a363b8ff)
-
-- 10 Git Commands That Separate Senior Developers From Everyone Else
-[(link)](https://blog.stackademic.com/10-git-commands-that-separate-senior-developers-from-everyone-else-dda9ca5641a7)
 
 - Understanding Linux Networking Without Reading a 500-Page Book
 [(link)](https://medium.com/codex/understanding-linux-networking-without-reading-a-500-page-book-14c756494464)

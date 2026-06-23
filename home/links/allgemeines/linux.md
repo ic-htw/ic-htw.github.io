@@ -5,10 +5,16 @@ title: Linux
 is_slide: 0
 ---
 # admin
+- 11 Linux Commands I Run on Every Fresh Installation
+[(link)](https://systemweakness.com/11-linux-commands-i-run-on-every-fresh-installation-344269910dd6)
+- Linux Security Cheat Sheet
+[(link)](https://postgresqlblog.com/posts/2026-01-01_Linux-Security-Cheat-Sheet-0fd019ef4fcf.html)
 - Systemd & Journalctl Cheat Sheet
 [(link)](https://medium.com/the-tech-notes/systemd-journalctl-cheat-sheet-527c4f185198)
 
 # bash
+- Shell Scripting for Beginners 
+[(link)](https://medium.com/@tushar.jadhav29/shell-scripting-for-beginners-complete-guide-with-examples-practice-projects-371ee4908352)
 - Bash Shell Scripting—DAY 1
 [(link)](https://medium.com/devsecops-community/bash-shell-scripting-complete-beginner-friendly-guide-with-notes-practical-scripts-7c4a304b8897)
 

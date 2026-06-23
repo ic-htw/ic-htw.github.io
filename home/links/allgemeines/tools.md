@@ -205,6 +205,18 @@ is_slide: 0
 [(link)](https://blog.stackademic.com/the-real-difference-between-git-fetch-git-pull-and-git-pull-rebase-991514cb5bd6)
 - Stop Blindly Typing git pull: The Ultimate Guide to Git Pull Strategies
 [(link)](https://aws.plainenglish.io/stop-blindly-typing-git-pull-the-ultimate-guide-to-git-pull-strategies-6f9989349f49)
+- If You Use Git Every Day, These 10 Commands Will Change Your Life
+[(link)](https://medium.com/@gaddamnaveen192/if-you-use-git-every-day-these-10-commands-will-change-your-life-f5810d3c5ebe)
+- Git Merge vs Rebase vs Squash
+[(link)](https://blog.mrinalmaheshwari.com/git-merge-vs-rebase-vs-squash-explained-caad9d69888f)
+- I Used Git Wrong for Years
+[(link)](https://medium.com/@TusharKanjariya/i-used-git-wrong-for-years-8c8307402640)
+- 10 Git Commands That Separate Senior Developers From Everyone Else
+[(link)](https://blog.stackademic.com/10-git-commands-that-separate-senior-developers-from-everyone-else-dda9ca5641a7)
+
+
+
+
 
 
 
