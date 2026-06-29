@@ -25,26 +25,23 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- A distributed systems reliability glossary
-[(link)](https://antithesis.com/docs/resources/reliability_glossary/)
+- How I Built a Safe, Read-Only Natural Language SQL Agent That Even Managers Can Use
+[(link)](https://blog.stackademic.com/how-i-built-a-safe-read-only-natural-language-sql-agent-that-even-managers-can-use-d53b0dff230e)
 
-- Jepsen Redis 1
-[(link)](https://aphyr.com/posts/283-call-me-maybe-redis)
+- Do You Still Need Claude Code? I Tested OpenCode With NVIDIA Nemotron
+[(link)](https://medium.com/lets-code-future/do-you-still-need-claude-code-i-tested-opencode-with-nvidia-nemotron-cd266bc9c700)
 
-- Jepsen Redis 2
-[(link)](https://aphyr.com/posts/307-call-me-maybe-redis-redux)
+- Secure SSH
+[(link)](https://medium.com/swe-insights/secure-ssh-f3ec86fa48d3)
 
-- Jepsen Redis 3
-[(link)](https://jepsen.io/analyses/redis-raft-1b3fbf6)
+- Python. Then These 7 Features
+[(link)](https://python.plainenglish.io/i-thought-i-knew-python-then-these-7-features-humbled-me-completely-8a2c6b5862ce)
 
-- Jepsen Cassandra 1
-[(link)](https://aphyr.com/posts/294-call-me-maybe-cassandra)
+- My Manager Made Me Read the Dynamo Paper: It Changed How I Think About System Design
+[(link)](https://levelup.gitconnected.com/my-manager-made-me-read-the-dynamo-paper-it-changed-how-i-think-about-system-design-1db59f346fe2)
 
-- Jepsen Postgres 1
-[(link)](https://jepsen.io/analyses/postgresql-12.3)
-
-- PostgreSQL Backup Strategies
-[(link)](https://postgresqlblog.com/posts/2026-01-02_PostgreSQL-Backup-Strategies-acad0db78622.html)
+- lsof
+[(link)](https://systemweakness.com/the-most-underrated-linux-tool-for-investigating-systems-a3b5fd6caf4a)
 
 - What I Learnt Using Claude Code to Build Production-Ready Apps
 [(link)](https://medium.com/data-science-collective/what-i-learnt-using-claude-code-to-build-production-ready-apps-a27272af0c48)

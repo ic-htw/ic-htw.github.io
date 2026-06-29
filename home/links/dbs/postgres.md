@@ -215,8 +215,6 @@ is_slide: 0
 [(link)](https://pgxn.github.io/pgxnclient/)
 - pg_dumpbinary
 [(link)](https://github.com/lzlabs/pg_dumpbinary)
-- Introduction to Postgres Backups
-[(link)](https://www.crunchydata.com/blog/introduction-to-postgres-backups)
 - Parquet S3 Foreign Data Wrapper for PostgreSQL
 [(link)](https://github.com/pgspider/parquet_s3_fdw)
 - pg_graphql: A GraphQL extension for PostgreSQL
@@ -254,6 +252,12 @@ is_slide: 0
 - When PostgreSQL Query Planner Goes Rogue: A Deep Dive into Query Optimization
 [(link)](https://blog.devgenius.io/when-postgresql-query-planner-goes-rogue-a-deep-dive-into-query-optimization-d1e8cc3dc4da)
 
+
+# backup
+- PostgreSQL Backup Strategies
+[(link)](https://postgresqlblog.com/posts/2026-01-02_PostgreSQL-Backup-Strategies-acad0db78622.html)
+- Introduction to Postgres Backups
+[(link)](https://www.crunchydata.com/blog/introduction-to-postgres-backups)
 
 
 

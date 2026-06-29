@@ -4,6 +4,26 @@ nav: links-dbs
 title: AAA
 is_slide: 0
 ---
+# consistency in distributed dbs
+- A distributed systems reliability glossary
+[(link)](https://antithesis.com/docs/resources/reliability_glossary/)
+
+- Jepsen Redis 1
+[(link)](https://aphyr.com/posts/283-call-me-maybe-redis)
+
+- Jepsen Redis 2
+[(link)](https://aphyr.com/posts/307-call-me-maybe-redis-redux)
+
+- Jepsen Redis 3
+[(link)](https://jepsen.io/analyses/redis-raft-1b3fbf6)
+
+- Jepsen Cassandra 1
+[(link)](https://aphyr.com/posts/294-call-me-maybe-cassandra)
+
+- Jepsen Postgres 1
+[(link)](https://jepsen.io/analyses/postgresql-12.3)
+
+
 # systems overview
 - db-engines
 [(link)](https://db-engines.com/de/)
