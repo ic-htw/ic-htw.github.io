@@ -118,6 +118,10 @@ is_slide: 0
 
 
 # text to sql
+- Google Finally Solved The Fragile Text-to-SQL Systems
+[(link)](https://medium.com/coding-nexus/google-finally-solved-the-fragile-text-to-sql-systems-63ce09c20670)
+- How I Built a Safe, Read-Only Natural Language SQL Agent That Even Managers Can Use
+[(link)](https://blog.stackademic.com/how-i-built-a-safe-read-only-natural-language-sql-agent-that-even-managers-can-use-d53b0dff230e)
 - How We Cut LLM Token Usage by 90% in SQL Migration Using AST Compression
 [(link)](https://reliable-data-engineering.netlify.app/posts/article_toon_sql_migration/)
 - Smaller Models, Smarter SQL: Arctic-Text2SQL-R1 Tops BIRD and Wins Broadly

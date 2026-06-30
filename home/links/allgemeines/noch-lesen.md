@@ -25,8 +25,8 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- How I Built a Safe, Read-Only Natural Language SQL Agent That Even Managers Can Use
-[(link)](https://blog.stackademic.com/how-i-built-a-safe-read-only-natural-language-sql-agent-that-even-managers-can-use-d53b0dff230e)
+- Open-Source AI Is Becoming Unstoppable
+[(link)](https://medium.com/@pranithnaikpranit/e5436d32f1dc)
 
 - Do You Still Need Claude Code? I Tested OpenCode With NVIDIA Nemotron
 [(link)](https://medium.com/lets-code-future/do-you-still-need-claude-code-i-tested-opencode-with-nvidia-nemotron-cd266bc9c700)
@@ -203,9 +203,6 @@ is_slide: 0
 
 - 10 Critical Data Quality Queries Every Data Engineer Should Implement (Before Trust Is Lost)
 [(link)](https://medium.com/@Rohan_Dutt/10-critical-data-quality-queries-every-data-engineer-should-implement-before-trust-is-lost-0b80d770a9ff)
-
-- Google Finally Solved The Fragile Text-to-SQL Systems
-[(link)](https://medium.com/coding-nexus/google-finally-solved-the-fragile-text-to-sql-systems-63ce09c20670)
 
 - F3: The Future-Proof File Format That Finally Gets It Right
 [(link)](https://medium.com/@reliabledataengineering/f3-the-future-proof-file-format-that-finally-gets-it-right-0e7f0ddd2e72)
