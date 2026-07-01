@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- floci - any cloud locally
+[(link)](https://floci.io/)
+
+- Why Everyone Is Talking About Anthropic’s New AI Tool
+[(link)](https://medium.com/@csvaibhavpasrija/2df1554194e6)
+
+- 10 Hidden IntelliJ IDEA Features Every Java Developer Should Know
+[(link)](https://medium.com/javarevisited/10-hidden-intellij-idea-features-every-java-developer-should-know-b2ddd110f983)
+
 - Open-Source AI Is Becoming Unstoppable
 [(link)](https://medium.com/@pranithnaikpranit/e5436d32f1dc)
 
