@@ -367,6 +367,9 @@ home: &r
                 ts: zzz
                 url: /home/lv/adbkt/zzz/1-zzz.html
                 sub:
+                  - t: redis
+                    ts: redis
+                    url: /home/lv/adbkt/zzz/redis.html
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/tsdb/tsdb.html
