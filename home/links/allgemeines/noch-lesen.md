@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How to make Claude research like a PhD in minutes
+[(link)](https://medium.com/ai-all-in/how-to-make-claude-research-like-a-phd-in-minutes-f226e9c40677)
+
+- Everyone Uses Webhooks — Almost No One Understands Them
+[(link)](https://medium.com/@gaddamnaveen192/everyone-uses-webhooks-almost-no-one-understands-them-da4c76cee376)
+
+- I Built a Web App in 10 Days Using AI 
+[(link)](https://medium.com/@gaurav_krishnan/i-built-a-web-app-in-10-days-using-ai-heres-a-beginners-guide-to-building-a-web-app-anyone-can-3c297c2b6292)
+
+- Build Grafana Dashboards with Claude Code and MCP
+[(link)](https://medium.com/@denishartl/build-grafana-dashboards-with-claude-code-and-mcp-cc6eec2d30c3)
+
 - floci - any cloud locally
 [(link)](https://floci.io/)
 
