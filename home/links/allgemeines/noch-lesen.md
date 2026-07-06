@@ -25,11 +25,17 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- JSON Columns in PostgreSQL: When to Use Them (And When Not To)
+[(link)](https://medium.com/@niteshthakur498/json-columns-in-postgresql-when-to-use-them-and-when-not-to-5bd0457d763a)
+
+- SQL Clean Code Review with /sql-guidelines Claude Skill
+[(link)](https://medium.com/@lorenzouriel/sql-clean-code-review-with-sql-guidelines-claude-skill-6eb9bbad7b14)
+
+- I Tested 5 Python Trends in 2026. Only 2 Are Worth Your Time.
+[(link)](https://blog.stackademic.com/i-tested-5-python-trends-in-2026-only-2-are-worth-your-time-28a5c026508b)
+
 - How to make Claude research like a PhD in minutes
 [(link)](https://medium.com/ai-all-in/how-to-make-claude-research-like-a-phd-in-minutes-f226e9c40677)
-
-- Everyone Uses Webhooks — Almost No One Understands Them
-[(link)](https://medium.com/@gaddamnaveen192/everyone-uses-webhooks-almost-no-one-understands-them-da4c76cee376)
 
 - I Built a Web App in 10 Days Using AI 
 [(link)](https://medium.com/@gaurav_krishnan/i-built-a-web-app-in-10-days-using-ai-heres-a-beginners-guide-to-building-a-web-app-anyone-can-3c297c2b6292)

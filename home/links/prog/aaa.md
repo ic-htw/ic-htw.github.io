@@ -18,6 +18,9 @@ is_slide: 0
 [(link)](https://third-bit.com/sdxpy/)
 - Software Design by Example- a tool-based introduction with JavaScript
 [(link)](https://third-bit.com/sdxjs/)
+- Everyone Uses Webhooks — Almost No One Understands Them
+[(link)](https://medium.com/@gaddamnaveen192/everyone-uses-webhooks-almost-no-one-understands-them-da4c76cee376)
+
 
 
 # dbunit
