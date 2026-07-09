@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Postgres Transactions are a Distributed Systems Superpower
+[(link)](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data)
+
+- The Most Underrated Python Data Structures
+[(link)](https://techwithram.medium.com/the-most-underrated-python-data-structures-26fc586af91c)
+
+-  Database Monitoring Tools Explained: Why Developers Must Use Them
+[(link)](https://vijayasekhar-deepak.medium.com/database-monitoring-tools-explained-why-developers-must-use-them-fc929efb9c20)
+
+- I Tested 5 Python Database Libraries. One Surprised Me Completely.
+[(link)](https://blog.venturemagazine.net/i-tested-5-python-database-libraries-one-surprised-me-completely-ba34aacc11e6)
+
 - JSON Columns in PostgreSQL: When to Use Them (And When Not To)
 [(link)](https://medium.com/@niteshthakur498/json-columns-in-postgresql-when-to-use-them-and-when-not-to-5bd0457d763a)
 
@@ -34,68 +46,20 @@ is_slide: 0
 - I Tested 5 Python Trends in 2026. Only 2 Are Worth Your Time.
 [(link)](https://blog.stackademic.com/i-tested-5-python-trends-in-2026-only-2-are-worth-your-time-28a5c026508b)
 
-- How to make Claude research like a PhD in minutes
-[(link)](https://medium.com/ai-all-in/how-to-make-claude-research-like-a-phd-in-minutes-f226e9c40677)
-
-- I Built a Web App in 10 Days Using AI 
-[(link)](https://medium.com/@gaurav_krishnan/i-built-a-web-app-in-10-days-using-ai-heres-a-beginners-guide-to-building-a-web-app-anyone-can-3c297c2b6292)
-
-- Build Grafana Dashboards with Claude Code and MCP
-[(link)](https://medium.com/@denishartl/build-grafana-dashboards-with-claude-code-and-mcp-cc6eec2d30c3)
-
 - floci - any cloud locally
 [(link)](https://floci.io/)
-
-- Why Everyone Is Talking About Anthropic’s New AI Tool
-[(link)](https://medium.com/@csvaibhavpasrija/2df1554194e6)
-
-- 10 Hidden IntelliJ IDEA Features Every Java Developer Should Know
-[(link)](https://medium.com/javarevisited/10-hidden-intellij-idea-features-every-java-developer-should-know-b2ddd110f983)
-
-- Open-Source AI Is Becoming Unstoppable
-[(link)](https://medium.com/@pranithnaikpranit/e5436d32f1dc)
 
 - Do You Still Need Claude Code? I Tested OpenCode With NVIDIA Nemotron
 [(link)](https://medium.com/lets-code-future/do-you-still-need-claude-code-i-tested-opencode-with-nvidia-nemotron-cd266bc9c700)
 
-- Secure SSH
-[(link)](https://medium.com/swe-insights/secure-ssh-f3ec86fa48d3)
-
-- Python. Then These 7 Features
-[(link)](https://python.plainenglish.io/i-thought-i-knew-python-then-these-7-features-humbled-me-completely-8a2c6b5862ce)
-
-- My Manager Made Me Read the Dynamo Paper: It Changed How I Think About System Design
-[(link)](https://levelup.gitconnected.com/my-manager-made-me-read-the-dynamo-paper-it-changed-how-i-think-about-system-design-1db59f346fe2)
-
-- lsof
-[(link)](https://systemweakness.com/the-most-underrated-linux-tool-for-investigating-systems-a3b5fd6caf4a)
-
 - What I Learnt Using Claude Code to Build Production-Ready Apps
 [(link)](https://medium.com/data-science-collective/what-i-learnt-using-claude-code-to-build-production-ready-apps-a27272af0c48)
-
-- Anthropic Looked Inside Claude’s Brain. What They Found Changes Everything.
-[(link)](https://ai.plainenglish.io/anthropic-looked-inside-claudes-brain-what-they-found-changes-everything-08b894577851)
-
-- I Switched from Claude to Kimi K2.5 for a Week — Here’s What Broke and What Got Better
-[(link)](https://ai.plainenglish.io/i-switched-from-claude-to-kimi-k2-5-for-a-week-heres-what-broke-and-what-got-better-8f0eceebec5d)
-
-- I found at least 9 different date formats in one SQL column — Here’s how I detected them
-[(link)](https://code.likeagirl.io/i-found-at-least-9-different-date-formats-in-one-sql-column-heres-how-i-detected-them-635a49786c35)
-
-- Stop Using Markdown with Claude Code
-[(link)](https://lazypro.medium.com/stop-using-markdown-with-claude-code-fd7c75d80b19)
-
-- Before You Panic About That Viral AI Article, Read This.
-[(link)](https://medium.com/vibe-coding-chronicles/before-you-panic-about-that-viral-ai-article-read-this-aba9230f79bb)
 
 - Graph database-ball! Exploring the Game with the graph capabilities of LadybugDB, DuckDB and PostgreSQL
 [(link)](https://theconsensus.dev/p/2026/05/29/ladybug-duckdb-and-postgresql.html)
 
 - Day 9: Still Editing Text Manually? These 6 Linux Commands Will Save You Hours
 [(link)](https://medium.com/codex/day-9-still-editing-text-manually-these-6-linux-commands-will-save-you-hours-ceabc23e41c0)
-
-- 10 Must-Know Java Fundamentals That Even Seniors Forget
-[(link)](https://medium.com/javarevisited/10-must-know-java-fundamentals-that-even-seniors-forget-ab38e67d64dc)
 
 - The 6 Most Common Design Patterns in Java Projects (With Examples)
 [(link)](https://blog.stackademic.com/the-6-most-common-design-patterns-in-java-projects-with-examples-e3c8b0071c01)

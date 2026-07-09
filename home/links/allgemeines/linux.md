@@ -71,3 +71,6 @@ is_slide: 0
 [(link)](https://askubuntu.com/questions/592537/can-i-access-ubuntu-from-windows-remotely)
 - How to install Ubuntu 20.04 and dual boot alongside Windows 10
 [(link)](https://medium.com/linuxforeveryone/how-to-install-ubuntu-20-04-and-dual-boot-alongside-windows-10-323a85271a73)
+- lsof
+[(link)](https://systemweakness.com/the-most-underrated-linux-tool-for-investigating-systems-a3b5fd6caf4a)
+

@@ -20,6 +20,8 @@ is_slide: 0
 
 
 # Allgemein
+- Python. Then These 7 Features
+[(link)](https://python.plainenglish.io/i-thought-i-knew-python-then-these-7-features-humbled-me-completely-8a2c6b5862ce)
 - These Python One-Liners Replaced 40 Lines of My Code
 [(link)](https://medium.com/@inprogrammer/these-python-one-liners-replaced-40-lines-of-my-code-im-still-mad-9ed79521adfb)
 - The Python Packaging Hell
