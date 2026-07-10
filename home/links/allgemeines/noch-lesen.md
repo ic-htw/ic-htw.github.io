@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- DeepSeek Just Did What the Industry Thought Was Impossible
+[(link)](https://medium.com/no-time/deepseek-just-did-what-the-industry-thought-was-impossible-7321e7bb083d)
+
+- Docker Volumes Explained: From Fundamentals to Production Best Practices
+[(link)](https://medium.com/@gaddamnaveen192/docker-volumes-explained-from-fundamentals-to-production-best-practices-e6c436644329)
+
+- Become a Senior at Git with These 100 Tips
+[(link)](https://medium.com/javarevisited/become-a-senior-at-git-with-these-100-tips-23cfa984a4a0)
+
 - Postgres Transactions are a Distributed Systems Superpower
 [(link)](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data)
 
