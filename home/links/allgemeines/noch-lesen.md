@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Git Complete Practical Guide
+[(link)](https://medium.com/write-a-catalyst/git-complete-practical-guide-simple-real-examples-39021cefed8c)
+
+- Git Has Three Ways to Ignore Files.
+[(link)](https://medium.com/@TusharKanjariya/git-has-three-ways-to-ignore-files-ed08be450233)
+
 - DeepSeek Just Did What the Industry Thought Was Impossible
 [(link)](https://medium.com/no-time/deepseek-just-did-what-the-industry-thought-was-impossible-7321e7bb083d)
 
