@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Beyond RAG: How Google’s Open Knowledge Format (OKF) is Replacing the Vector Database
+[(link)](https://secret-dev.medium.com/beyond-rag-how-googles-open-knowledge-format-okf-is-replacing-the-vector-database-2ffb5bc2f8eb)
+
 - Git Complete Practical Guide
 [(link)](https://medium.com/write-a-catalyst/git-complete-practical-guide-simple-real-examples-39021cefed8c)
 
