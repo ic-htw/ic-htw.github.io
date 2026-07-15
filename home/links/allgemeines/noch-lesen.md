@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Grok 4.5 vs Fable 5 Test — One is 10 times cheaper and faster
+[(link)](https://medium.com/realworld-ai-use-cases/grok-4-5-vs-fable-5-test-one-is-10-times-cheaper-and-faster-54a96bfbcf46)
+
+- Why Star Schema FACT Tables Are More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-star-schema-fact-tables-are-more-powerful-than-you-think-and-how-to-master-them-ac4739124da8)
+
 - Beyond RAG: How Google’s Open Knowledge Format (OKF) is Replacing the Vector Database
 [(link)](https://secret-dev.medium.com/beyond-rag-how-googles-open-knowledge-format-okf-is-replacing-the-vector-database-2ffb5bc2f8eb)
 
