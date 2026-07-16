@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How SQL/PGQ Rewrites to Joins on PostgreSQL 19
+[(link)](https://www.cybertec-postgresql.com/en/how-sql-pgq-rewrites-to-joins-on-postgresql-19/)
+
 - Grok 4.5 vs Fable 5 Test — One is 10 times cheaper and faster
 [(link)](https://medium.com/realworld-ai-use-cases/grok-4-5-vs-fable-5-test-one-is-10-times-cheaper-and-faster-54a96bfbcf46)
 
