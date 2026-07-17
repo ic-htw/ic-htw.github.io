@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The Postgres Maximalist: Building Everything with One Database
+[(link)](https://vijayasekhar-deepak.medium.com/the-postgres-maximalist-building-everything-with-one-database-7af4f2c37abe)
+
+- 10 Window Function Techniques that Eliminate the need for Self-Joins
+[(link)](https://blog.devgenius.io/10-window-function-techniques-that-eliminate-the-need-for-self-joins-0624c9325e0f)
+
+- PostgreSQL Isn’t Slow — It’s Tired Of Covering For Your Design
+[(link)](https://medium.com/@noahblogwriter2025/postgresql-isnt-slow-it-s-tired-of-covering-for-your-design-89611579f32a)
+
+- Vector Databases Exist Because SQL Has One Blind Spot
+[(link)](https://thequantasticjournal.com/vector-databases-exist-because-sql-has-one-blind-spot-aa4bca0ee7b2)
+
 - How SQL/PGQ Rewrites to Joins on PostgreSQL 19
 [(link)](https://www.cybertec-postgresql.com/en/how-sql-pgq-rewrites-to-joins-on-postgresql-19/)
 
