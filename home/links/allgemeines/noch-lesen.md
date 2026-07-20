@@ -25,6 +25,24 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How Databases Turn Your Data Into Bytes on Disk
+[(link)](https://medium.com/javarevisited/how-databases-turn-your-data-into-bytes-on-disk-7e0fee0c4261)
+
+- How Bloom Filters Protect Databases from Millions of Invalid Requests
+[(link)](https://medium.com/@gaddamnaveen192/how-bloom-filters-protect-databases-from-millions-of-invalid-requests-99ffbe27e7f7)
+
+- SQL vs NoSQL in modern times: The Boundaries Are Blurry, But the Trade-offs Aren’t
+[(link)](https://codefarm0.medium.com/sql-vs-nosql-in-modern-times-the-boundaries-are-blurry-but-the-trade-offs-arent-16a0061fb610)
+
+- Difference Between Streaming and Messaging
+[(link)](https://medium.com/but-it-works-on-my-machine/difference-between-streaming-and-messaging-1afd3ebd264f)
+
+- 10 SQL Techniques to Optimize Cross-Partition Queries and Reduce Query Latency
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-to-optimize-cross-partition-queries-and-reduce-query-latency-22c77de3aebf)
+
+- 10 Techniques for Pivoting Rows to Columns Without Dynamic SQL
+[(link)](https://medium.com/@Rohan_Dutt/10-techniques-for-pivoting-rows-to-columns-without-dynamic-sql-e8c1b85b9725)
+
 - The Postgres Maximalist: Building Everything with One Database
 [(link)](https://vijayasekhar-deepak.medium.com/the-postgres-maximalist-building-everything-with-one-database-7af4f2c37abe)
 
