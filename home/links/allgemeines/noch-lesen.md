@@ -25,8 +25,14 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- How Databases Turn Your Data Into Bytes on Disk
-[(link)](https://medium.com/javarevisited/how-databases-turn-your-data-into-bytes-on-disk-7e0fee0c4261)
+- 10 SQL Techniques for Reducing Unnecessary Full Table Scans and Query Execution Time
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-reducing-unnecessary-full-table-scans-and-query-execution-time-fb1cded9cbbd)
+
+- asyncio Was Killing My FastAPI App. Here Is What I Switched To.
+[(link)](https://ai.plainenglish.io/asyncio-was-killing-my-fastapi-app-here-is-what-i-switched-to-96b0a9c22200)
+
+- 10 SQL Techniques for Using the FILTER Clause in Conditional Aggregations
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-using-the-filter-clause-in-conditional-aggregations-09d2db482c2c)
 
 - How Bloom Filters Protect Databases from Millions of Invalid Requests
 [(link)](https://medium.com/@gaddamnaveen192/how-bloom-filters-protect-databases-from-millions-of-invalid-requests-99ffbe27e7f7)
