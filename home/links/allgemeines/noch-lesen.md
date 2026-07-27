@@ -25,35 +25,17 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- 10 SQL Techniques for Reducing Unnecessary Full Table Scans and Query Execution Time
-[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-reducing-unnecessary-full-table-scans-and-query-execution-time-fb1cded9cbbd)
+- Don't add a read replica until you've read this
+[(link)](https://incident.io/blog/dont-add-a-read-replica-until-youve-read-this)
 
-- asyncio Was Killing My FastAPI App. Here Is What I Switched To.
-[(link)](https://ai.plainenglish.io/asyncio-was-killing-my-fastapi-app-here-is-what-i-switched-to-96b0a9c22200)
+- 10 Best Use Cases of Kimi K3 
+[(link)](https://medium.com/no-time/10-best-use-cases-of-kimi-k3-the-model-that-made-us-stocks-fall-yesterday-0be8acc8941a)
 
-- 10 SQL Techniques for Using the FILTER Clause in Conditional Aggregations
-[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-using-the-filter-clause-in-conditional-aggregations-09d2db482c2c)
-
-- How Bloom Filters Protect Databases from Millions of Invalid Requests
-[(link)](https://medium.com/@gaddamnaveen192/how-bloom-filters-protect-databases-from-millions-of-invalid-requests-99ffbe27e7f7)
-
-- SQL vs NoSQL in modern times: The Boundaries Are Blurry, But the Trade-offs Aren’t
-[(link)](https://codefarm0.medium.com/sql-vs-nosql-in-modern-times-the-boundaries-are-blurry-but-the-trade-offs-arent-16a0061fb610)
-
-- Difference Between Streaming and Messaging
-[(link)](https://medium.com/but-it-works-on-my-machine/difference-between-streaming-and-messaging-1afd3ebd264f)
-
-- 10 SQL Techniques to Optimize Cross-Partition Queries and Reduce Query Latency
-[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-to-optimize-cross-partition-queries-and-reduce-query-latency-22c77de3aebf)
+- 10 JSONB Index Optimization Techniques for High-Performance PostgreSQL Workloads
+[(link)](https://medium.com/@Rohan_Dutt/10-jsonb-index-optimization-techniques-for-high-performance-postgresql-workloads-cc35691a6052)
 
 - 10 Techniques for Pivoting Rows to Columns Without Dynamic SQL
 [(link)](https://medium.com/@Rohan_Dutt/10-techniques-for-pivoting-rows-to-columns-without-dynamic-sql-e8c1b85b9725)
-
-- The Postgres Maximalist: Building Everything with One Database
-[(link)](https://vijayasekhar-deepak.medium.com/the-postgres-maximalist-building-everything-with-one-database-7af4f2c37abe)
-
-- 10 Window Function Techniques that Eliminate the need for Self-Joins
-[(link)](https://blog.devgenius.io/10-window-function-techniques-that-eliminate-the-need-for-self-joins-0624c9325e0f)
 
 - PostgreSQL Isn’t Slow — It’s Tired Of Covering For Your Design
 [(link)](https://medium.com/@noahblogwriter2025/postgresql-isnt-slow-it-s-tired-of-covering-for-your-design-89611579f32a)
