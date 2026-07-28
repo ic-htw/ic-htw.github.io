@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- I spent 10 hours learning multithreading and multiprocessing
+[(link)](https://blog.dataengineerthings.org/i-spent-10-hours-learning-multithreading-and-multiprocessing-c137b0a9eef1)
+
 - Don't add a read replica until you've read this
 [(link)](https://incident.io/blog/dont-add-a-read-replica-until-youve-read-this)
 
