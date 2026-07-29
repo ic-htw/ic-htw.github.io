@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- PostgreSQL's MVCC is bad. So is everyone else's.
+[(link)](https://boringsql.com/posts/mvcc-bad-bad/)
+
+- Pagila
+[(link)](https://github.com/devrimgunduz/pagila)
+
+- pgGraph
+[(link)](https://github.com/Evokoa/pgGraph)
+
+- rainfrog
+[(link)](https://github.com/achristmascarl/rainfrog)
+
 - I spent 10 hours learning multithreading and multiprocessing
 [(link)](https://blog.dataengineerthings.org/i-spent-10-hours-learning-multithreading-and-multiprocessing-c137b0a9eef1)
 
