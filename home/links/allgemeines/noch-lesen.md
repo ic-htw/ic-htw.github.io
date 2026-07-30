@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Andrej Karpathy Asked for a Tool. 48 Hours Later, Graphify Went Viral.
+[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-asked-for-a-tool-48-hours-later-graphify-went-viral-10d8ead5f50e)
+
+- Learn dbt for Analytics Engineering
+[(link)](https://levelup.gitconnected.com/learn-dbt-for-analytics-engineering-415ba71805e6)
+
 - PostgreSQL's MVCC is bad. So is everyone else's.
 [(link)](https://boringsql.com/posts/mvcc-bad-bad/)
 
