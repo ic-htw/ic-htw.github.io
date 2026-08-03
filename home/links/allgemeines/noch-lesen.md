@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How to Write SQL Queries That Survive Late-Arriving Data Without Reprocessing Everything
+[(link)](https://blog.devgenius.io/how-to-write-sql-queries-that-survive-late-arriving-data-without-reprocessing-everything-b2d7e76a13c6)
+
+- The Agent Writes 10,000 Lines Before Lunch. Good Luck Reviewing Them
+[(link)](https://thilo-hermann.medium.com/the-agent-writes-10-000-lines-before-lunch-good-luck-reviewing-them-34aa69bf0db1)
+
 - Andrej Karpathy Asked for a Tool. 48 Hours Later, Graphify Went Viral.
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathy-asked-for-a-tool-48-hours-later-graphify-went-viral-10d8ead5f50e)
 
