@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why Spatial Joins Optimization More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-spatial-joins-optimization-more-powerful-than-you-think-and-how-to-master-them-50d0bc5dcaba)
+
+- Modern Java Has Changed More Than You Think
+[(link)](https://cloudwithazeem.medium.com/java-just-got-its-biggest-upgrade-in-decades-459fa70f991a)
+
+- Interview: How to Generate Unique IDs for Billions of Users?
+[(link)](https://medium.com/javarevisited/interview-how-to-generate-unique-ids-for-billions-of-users-ea1a2e8604cb)
+
+- DbPaw
+[(link)](https://github.com/codeErrorSleep/dbpaw)
+
 - How to Write SQL Queries That Survive Late-Arriving Data Without Reprocessing Everything
 [(link)](https://blog.devgenius.io/how-to-write-sql-queries-that-survive-late-arriving-data-without-reprocessing-everything-b2d7e76a13c6)
 
