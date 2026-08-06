@@ -25,6 +25,30 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why H3 Hexagonal Indexing in SQL More Powerful Than You Think 
+[(link)](https://medium.com/@Rohan_Dutt/why-h3-hexagonal-indexing-in-sql-more-powerful-than-you-think-and-how-to-master-them-50a853fccb54)
+
+- What Analytics Engineers Actually Do — and Why They All Use DBT [DBT Series #1]
+[(link)](https://levelup.gitconnected.com/what-analytics-engineers-actually-do-and-why-they-all-use-dbt-dbt-series-1-f184b9c3a54f)
+
+- Mixture-of-Experts (MoE) LLMs
+[(link)](https://cameronrwolfe.substack.com/p/moe-llms)
+
+- Are Tabular Foundation Models Ready to Replace Gradient Boosting Models?
+[(link)](https://pub.towardsai.net/are-tabular-foundation-models-ready-to-replace-gradient-boosting-models-cb039b955162)
+
+- Your COUNT(DISTINCT) Is Too Slow: Approximations and Sampling in Postgres
+[(link)](https://www.snowflake.com/en/blog/engineering/postgres-count-distinct-approximation/)
+
+- Waiting for PostgreSQL 19 – SQL Property Graph Queries (SQL/PGQ)
+[(link)](https://www.depesz.com/2026/07/31/waiting-for-postgresql-19-sql-property-graph-queries-sql-pgq/)
+
+- Andy Pavlo joins ClickHouse to establish ClickHouse Labs
+[(link)](https://clickhouse.com/blog/andy-pavlo-joins-clickhouse)
+
+- Hybrid Search Patterns with Postgres and pgvector
+[(link)](https://www.crunchydata.com/blog/hybrid-vector-search)
+
 - Why Spatial Joins Optimization More Powerful Than You Think
 [(link)](https://medium.com/@Rohan_Dutt/why-spatial-joins-optimization-more-powerful-than-you-think-and-how-to-master-them-50d0bc5dcaba)
 
