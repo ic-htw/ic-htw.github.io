@@ -49,56 +49,8 @@ is_slide: 0
 - Hybrid Search Patterns with Postgres and pgvector
 [(link)](https://www.crunchydata.com/blog/hybrid-vector-search)
 
-- Why Spatial Joins Optimization More Powerful Than You Think
-[(link)](https://medium.com/@Rohan_Dutt/why-spatial-joins-optimization-more-powerful-than-you-think-and-how-to-master-them-50d0bc5dcaba)
-
-- Modern Java Has Changed More Than You Think
-[(link)](https://cloudwithazeem.medium.com/java-just-got-its-biggest-upgrade-in-decades-459fa70f991a)
-
-- Interview: How to Generate Unique IDs for Billions of Users?
-[(link)](https://medium.com/javarevisited/interview-how-to-generate-unique-ids-for-billions-of-users-ea1a2e8604cb)
-
-- DbPaw
-[(link)](https://github.com/codeErrorSleep/dbpaw)
-
-- How to Write SQL Queries That Survive Late-Arriving Data Without Reprocessing Everything
-[(link)](https://blog.devgenius.io/how-to-write-sql-queries-that-survive-late-arriving-data-without-reprocessing-everything-b2d7e76a13c6)
-
-- The Agent Writes 10,000 Lines Before Lunch. Good Luck Reviewing Them
-[(link)](https://thilo-hermann.medium.com/the-agent-writes-10-000-lines-before-lunch-good-luck-reviewing-them-34aa69bf0db1)
-
-- Andrej Karpathy Asked for a Tool. 48 Hours Later, Graphify Went Viral.
-[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-asked-for-a-tool-48-hours-later-graphify-went-viral-10d8ead5f50e)
-
-- Learn dbt for Analytics Engineering
-[(link)](https://levelup.gitconnected.com/learn-dbt-for-analytics-engineering-415ba71805e6)
-
-- PostgreSQL's MVCC is bad. So is everyone else's.
-[(link)](https://boringsql.com/posts/mvcc-bad-bad/)
-
-- Pagila
-[(link)](https://github.com/devrimgunduz/pagila)
-
-- pgGraph
-[(link)](https://github.com/Evokoa/pgGraph)
-
-- rainfrog
-[(link)](https://github.com/achristmascarl/rainfrog)
-
-- I spent 10 hours learning multithreading and multiprocessing
-[(link)](https://blog.dataengineerthings.org/i-spent-10-hours-learning-multithreading-and-multiprocessing-c137b0a9eef1)
-
-- Don't add a read replica until you've read this
-[(link)](https://incident.io/blog/dont-add-a-read-replica-until-youve-read-this)
-
 - 10 Best Use Cases of Kimi K3 
 [(link)](https://medium.com/no-time/10-best-use-cases-of-kimi-k3-the-model-that-made-us-stocks-fall-yesterday-0be8acc8941a)
-
-- 10 JSONB Index Optimization Techniques for High-Performance PostgreSQL Workloads
-[(link)](https://medium.com/@Rohan_Dutt/10-jsonb-index-optimization-techniques-for-high-performance-postgresql-workloads-cc35691a6052)
-
-- 10 Techniques for Pivoting Rows to Columns Without Dynamic SQL
-[(link)](https://medium.com/@Rohan_Dutt/10-techniques-for-pivoting-rows-to-columns-without-dynamic-sql-e8c1b85b9725)
 
 - PostgreSQL Isn’t Slow — It’s Tired Of Covering For Your Design
 [(link)](https://medium.com/@noahblogwriter2025/postgresql-isnt-slow-it-s-tired-of-covering-for-your-design-89611579f32a)
