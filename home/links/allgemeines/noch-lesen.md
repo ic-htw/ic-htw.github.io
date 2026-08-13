@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Setting Up dbt with DuckDB: From Zero to Your First dbt Model [DBT Series #2]
+[(link)](https://levelup.gitconnected.com/setting-up-dbt-with-duckdb-from-zero-to-your-first-dbt-model-dbt-series-2-6037394a8a27)
+
+- Your DBT pipeline ran, but Your Data Was Wrong. Here’s the Fix. [DBT Series #4]
+[(link)](https://levelup.gitconnected.com/your-dbt-pipeline-ran-but-your-data-was-wrong-heres-the-fix-dbt-series-4-2a92c4fda158)
+
+- Database Standards Used by Leading Internet Companies: The Rules That Keep Production Databases Healthy
+[(link)](https://medium.com/@umeshcapg/database-standards-used-by-leading-internet-companies-the-rules-that-keep-production-databases-490ec8516d4f)
+
+- Introducing sqlfmt: an SQL gofmt-style formatter
+[(link)](https://tapoueh.org/blog/2026/08/introducing-sqlfmt-an-sql-gofmt-style-formatter/)
+
+- Rebuilding Postgres for 300x faster analytics: batching, operator fusion, and SIMD
+[(link)](https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/)
+
 - Why H3 Hexagonal Indexing in SQL More Powerful Than You Think 
 [(link)](https://medium.com/@Rohan_Dutt/why-h3-hexagonal-indexing-in-sql-more-powerful-than-you-think-and-how-to-master-them-50a853fccb54)
 
