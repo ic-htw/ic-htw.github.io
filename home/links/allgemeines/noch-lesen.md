@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How Does Redis Handle 100 Million Requests Per Second?
+[(link)](https://medium.com/javarevisited/interview-how-does-redis-handle-100-million-requests-per-second-ac0d3d94bab4)
+
 - Setting Up dbt with DuckDB: From Zero to Your First dbt Model [DBT Series #2]
 [(link)](https://levelup.gitconnected.com/setting-up-dbt-with-duckdb-from-zero-to-your-first-dbt-model-dbt-series-2-6037394a8a27)
 
