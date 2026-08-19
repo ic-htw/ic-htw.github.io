@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Understanding Single-Head Attention in Transformers
+[(link)](https://markelic.de/understanding-single-head-attention-in-transformers/)
+
 - How Does Redis Handle 100 Million Requests Per Second?
 [(link)](https://medium.com/javarevisited/interview-how-does-redis-handle-100-million-requests-per-second-ac0d3d94bab4)
 
