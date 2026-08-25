@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Stanford Just Put an $850K/Year Skill on YouTube
+[(link)](https://medium.com/dare-to-be-better/stanford-just-put-an-850k-year-skill-on-youtube-for-free-2f131d993219?sk=80a3aab9168aba8e761d85b824c23495)
+
+- Introducing TabFM: A zero-shot foundation model for tabular data
+[(link)](https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/)
+
 - Understanding Single-Head Attention in Transformers
 [(link)](https://markelic.de/understanding-single-head-attention-in-transformers/)
 
