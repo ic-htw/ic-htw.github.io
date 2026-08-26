@@ -34,7 +34,7 @@ n: 16
 
 <p class="w3-large ic-neg15">Zwei-Phasen-Commit-Protokoll (2PC)</p>
 <ul class="w3-large">
-    <li>Umgang mit mit Systemfehlern,</li>
+    <li>Umgang mit Systemfehlern,</li>
     <li>z.B. Kommunikationsfehler (Netzwerkunterbrechung)</li>
     <li>TM stürzt ab, RM stürzt ab</li>
     <li>Sicherstellung der Atomarität</li>
@@ -253,7 +253,7 @@ services:
     ports:
       - 5433:5432
     environment:
-      POSTGRES_PASSWORD: htw-bln-pg
+      POSTGRES_PASSWORD: ***
     networks:
       - adbkt</code></pre>
 
@@ -347,7 +347,7 @@ def rollback(conninfo, db, xid):
 
 conninfo1 = " ".join([
 "user='postgres'",
-"password='htw-bln-pg'",
+"password='***'",
 "host='pg'",
 "port=5432",
 "dbname='postgres'"])
@@ -355,7 +355,7 @@ print(conninfo1)
 
 conninfo2 = " ".join([
 "user='postgres'",
-"password='htw-bln-pg'",
+"password='***'",
 "host='pg2'",
 "port=5432",
 "dbname='postgres'"])
@@ -372,8 +372,8 @@ reset_kto(conninfo2, 1002, 500)
 print_all()
 </code></pre>
 
-<pre><code class="language-plaintext">user='postgres' password='htw-bln-pg' host='pg' port=5432 dbname='postgres'
-user='postgres' password='htw-bln-pg' host='pg2' port=5432 dbname='postgres'
+<pre><code class="language-plaintext">user='postgres' password='***' host='pg' port=5432 dbname='postgres'
+user='postgres' password='***' host='pg2' port=5432 dbname='postgres'
 pg1: [(1001, 200)]
 pg2: [(1002, 500)]</code></pre>
 
