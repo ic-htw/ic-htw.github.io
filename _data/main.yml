@@ -236,6 +236,12 @@ home: &r
                   - t: Cassandra
                     ts: Cassandra
                     url: /home/lv/adbkt/vorlesungen/cassandra1.html
+                  - t: DynamoDB
+                    ts: DynamoDB
+                    url: /home/lv/adbkt/vorlesungen/dynamodb.html
+                  - t: Single Table Design
+                    ts: Single Table Design
+                    url: /home/lv/adbkt/vorlesungen/single-table-design.html
                   - t: Replikation / Partitionierung
                     ts: Replikation / Partitionierung
                     url: /home/lv/adbkt/vorlesungen/repl-part.html
@@ -245,15 +251,9 @@ home: &r
                   - t: Konsistenzmodelle
                     ts: Konsistenzmodelle
                     url: /home/lv/adbkt/vorlesungen/cmodels.html
-                  - t: Serverlose DB
-                    ts: Serverlose DB
-                    url: /home/lv/adbkt/vorlesungen/serverless.html
-                  - t: DynamoDB
-                    ts: DynamoDB
-                    url: /home/lv/adbkt/vorlesungen/dynamodb.html
-                  - t: Single Table Design
-                    ts: Single Table Design
-                    url: /home/lv/adbkt/vorlesungen/single-table-design.html
+                  # - t: Serverlose DB
+                  #   ts: Serverlose DB
+                  #   url: /home/lv/adbkt/vorlesungen/serverless.html
                   - t: Dokumentendatenbanken
                     ts: Dokumentendatenbanken
                     url: /home/lv/adbkt/vorlesungen/docdb.html
@@ -363,82 +363,82 @@ home: &r
                   - t: Fahrverbindung
                     ts: Fahrverbindung
                     url: /home/lv/adbkt/uebungen/sched.html
-              - t: zzz
-                ts: zzz
-                url: /home/lv/adbkt/zzz/1-zzz.html
-                sub:
-                  - t: redis
-                    ts: redis
-                    url: /home/lv/adbkt/zzz/redis.html
-                  - t: Zeitreihendatenbanken
-                    ts: Zeitreihendatenbanken
-                    url: /home/lv/adbkt/tsdb/tsdb.html
-                  - t: Konsistenz
-                    ts: Konsistenz
-                    url: /home/lv/adbkt/zzz/consistency.html
-                  - t: Log Structured Merge Trees
-                    ts: Log Structured Merge Trees
-                    url: /home/lv/adbkt/zzz/lsm.html
-                  - t:  Verteilte Transaktionen
-                    ts:  Verteilte Transaktionen
-                    url: /home/lv/adbkt/zzz/dist-trans.html
-                  - t:  "Ü: Vektordatenbanken"
-                    ts:  "Ü: Vektordatenbanken"
-                    url: /home/lv/adbkt/kidb/ueb-vectordb.html
-                  - t: "Ü: DynamoDB"
-                    ts: "Ü: DynamoDB"
-                    url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
-                  - t: "Ü: Text2SQL"
-                    ts: "Ü: Text2SQL"
-                    url: /home/lv/adbkt/pruefungen/sql-llm.html
-                  - t:  "Ü: SQL mit ChatGPT"
-                    ts:  "Ü: SQL mit ChatGPT"
-                    url: /home/lv/adbkt/sonstiges/sql-chatgpt.html
-                  - t: "Ü:Trans in Systemen "
-                    ts: "Ü: Trans in Systemen "
-                    url: /home/lv/adbkt/pruefungen/trans-sys.html
-                  - t: "Ü: TourDelight"
-                    ts: "Ü: TourDelight"
-                    url: /home/lv/adbkt/pruefungen/tour-delight.html
-                  - t: Window-Funktionen in SQL
-                    ts: Window-Funktionen in SQL
-                    url: /home/lv/adbkt/sonstiges/window-sql.html
-                  - t: SAP Hana
-                    ts: SAP Hana
-                    url: /home/lv/adbkt/a/hana/hana.pdf
-                  - t:  Instacart
-                    ts:  Instacart
-                    url: /home/lv/adbkt/a/insta/insta.pdf
-                  - t:  "Ü: Retail Sales"
-                    ts:  "Ü: Retail Sales"
-                    url: /home/lv/adbkt/sonstiges/retail.html
-                  - t:  "Ü: Hana, BTP Account"
-                    ts:  "Ü: Hana, BTP Account"
-                    url: /home/lv/adbkt/sonstiges/hana-btp-account.html
-                  - t: "Ü: Hana Graph"
-                    ts: "Ü: Hana Graph"
-                    url: /home/lv/adbkt/sonstiges/hana-graph.html
-                  - t: "Ü: Closeness Centrality in SAP Hana"
-                    ts: "Ü: Closeness Centrality in SAP Hana"
-                    url: /home/lv/adbkt/sonstiges/hana-cc.html
-                  - t:  tsdb-links
-                    ts:  tsdb-links
-                    url: /home/lv/adbkt/zzz/tsdb-links.html
-                  - t:  tsdb
-                    ts:  tsdb
-                    url: /home/lv/adbkt/zzz/tsdb.html
-                  - t:  cardinality
-                    ts:  cardinality
-                    url: /home/lv/adbkt/zzz/cardinality.html
-                  - t:  timscaledb
-                    ts:  timscaledb
-                    url: /home/lv/adbkt/zzz/timscaledb.html
-                  - t:  zzz01
-                    ts:  zzz01
-                    url: /home/lv/adbkt/zzz/zzz01.html
-                  - t:  zzz02
-                    ts:  zzz02
-                    url: /home/lv/adbkt/zzz/zzz02.html
+              # - t: zzz
+              #   ts: zzz
+              #   url: /home/lv/adbkt/zzz/1-zzz.html
+              #   sub:
+              #     - t: redis
+              #       ts: redis
+              #       url: /home/lv/adbkt/zzz/redis.html
+              #     - t: Zeitreihendatenbanken
+              #       ts: Zeitreihendatenbanken
+              #       url: /home/lv/adbkt/tsdb/tsdb.html
+              #     - t: Konsistenz
+              #       ts: Konsistenz
+              #       url: /home/lv/adbkt/zzz/consistency.html
+              #     - t: Log Structured Merge Trees
+              #       ts: Log Structured Merge Trees
+              #       url: /home/lv/adbkt/zzz/lsm.html
+              #     - t:  Verteilte Transaktionen
+              #       ts:  Verteilte Transaktionen
+              #       url: /home/lv/adbkt/zzz/dist-trans.html
+              #     - t:  "Ü: Vektordatenbanken"
+              #       ts:  "Ü: Vektordatenbanken"
+              #       url: /home/lv/adbkt/kidb/ueb-vectordb.html
+              #     - t: "Ü: DynamoDB"
+              #       ts: "Ü: DynamoDB"
+              #       url: /home/lv/adbkt/clouddb/ueb-dynamodb.html
+              #     - t: "Ü: Text2SQL"
+              #       ts: "Ü: Text2SQL"
+              #       url: /home/lv/adbkt/pruefungen/sql-llm.html
+              #     - t:  "Ü: SQL mit ChatGPT"
+              #       ts:  "Ü: SQL mit ChatGPT"
+              #       url: /home/lv/adbkt/sonstiges/sql-chatgpt.html
+              #     - t: "Ü:Trans in Systemen "
+              #       ts: "Ü: Trans in Systemen "
+              #       url: /home/lv/adbkt/pruefungen/trans-sys.html
+              #     - t: "Ü: TourDelight"
+              #       ts: "Ü: TourDelight"
+              #       url: /home/lv/adbkt/pruefungen/tour-delight.html
+              #     - t: Window-Funktionen in SQL
+              #       ts: Window-Funktionen in SQL
+              #       url: /home/lv/adbkt/sonstiges/window-sql.html
+              #     - t: SAP Hana
+              #       ts: SAP Hana
+              #       url: /home/lv/adbkt/a/hana/hana.pdf
+              #     - t:  Instacart
+              #       ts:  Instacart
+              #       url: /home/lv/adbkt/a/insta/insta.pdf
+              #     - t:  "Ü: Retail Sales"
+              #       ts:  "Ü: Retail Sales"
+              #       url: /home/lv/adbkt/sonstiges/retail.html
+              #     - t:  "Ü: Hana, BTP Account"
+              #       ts:  "Ü: Hana, BTP Account"
+              #       url: /home/lv/adbkt/sonstiges/hana-btp-account.html
+              #     - t: "Ü: Hana Graph"
+              #       ts: "Ü: Hana Graph"
+              #       url: /home/lv/adbkt/sonstiges/hana-graph.html
+              #     - t: "Ü: Closeness Centrality in SAP Hana"
+              #       ts: "Ü: Closeness Centrality in SAP Hana"
+              #       url: /home/lv/adbkt/sonstiges/hana-cc.html
+              #     - t:  tsdb-links
+              #       ts:  tsdb-links
+              #       url: /home/lv/adbkt/zzz/tsdb-links.html
+              #     - t:  tsdb
+              #       ts:  tsdb
+              #       url: /home/lv/adbkt/zzz/tsdb.html
+              #     - t:  cardinality
+              #       ts:  cardinality
+              #       url: /home/lv/adbkt/zzz/cardinality.html
+              #     - t:  timscaledb
+              #       ts:  timscaledb
+              #       url: /home/lv/adbkt/zzz/timscaledb.html
+              #     - t:  zzz01
+              #       ts:  zzz01
+              #       url: /home/lv/adbkt/zzz/zzz01.html
+              #     - t:  zzz02
+              #       ts:  zzz02
+              #       url: /home/lv/adbkt/zzz/zzz02.html
           - t: Data Management and Business Performance Management
             ts: DataMan
             url: /home/lv/dataman/dataman.html
