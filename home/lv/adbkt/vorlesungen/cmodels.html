@@ -24,20 +24,7 @@ n: 10
             <li>Koordination kostet Latenz und Verfügbarkeit</li>
             <li>Tradeoff: Konsistenz ↔ Verfügbarkeit ↔ Leistung</li>
         </ul>
-        <p class="w3-large ic-neg15">Beispiel: Geldabhebung</p>
-        <pre><code class="language-plaintext">Node A (EU):  Konto = 100 €
-Node B (US):  Konto = 100 €  (Replik)
 
-Client schreibt auf Node A:
-  Konto = Konto - 50 €  →  50 €
-
-Client liest sofort von Node B:
-  Konto = 100 €  ← veralteter Wert!
-
-Frage: Wann ist Node B synchron?
-→ Sofort?  (starke Konsistenz)
-→ Irgendwann?  (Eventual Consistency)
-→ Nur bei Quorum?  (Tunable Consistency)</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -88,8 +75,8 @@ AP: Node B antwortet mit
         </ul>
         <p class="w3-large ic-neg15">Kategorien</p>
         <ul class="w3-large">
-            <li><strong>PA/EL</strong>: Verfügbarkeit + niedrige Latenz</li>
             <li><strong>PC/EC</strong>: Konsistenz auch im Normalbetrieb</li>
+            <li><strong>PA/EL</strong>: Verfügbarkeit + niedrige Latenz</li>
             <li><strong>PA/EC</strong>: Verfügbarkeit bei Partition, Konsistenz sonst</li>
         </ul>
 <div class="ic-gap"></div>
@@ -174,20 +161,6 @@ AP: Node B antwortet mit
             <li>Alle Replicas stimmen vor Rückantwort ab</li>
             <li>Kostet: hohe Latenz, eingeschränkte Verfügbarkeit bei Partition</li>
         </ul>
-        <p class="w3-large ic-neg15">Beispiel</p>
-        <pre><code class="language-plaintext">Zeit →
-
-Client A:  Write(x=1) ────────────────▶ OK
-Client B:             Read(x) ────────▶ 1  ✓
-
-Linearisierbar:
-  Read nach abgeschlossenem Write
-  muss neuen Wert liefern
-
-Nicht linearisierbar:
-Client A:  Write(x=1) ──────────────▶ OK
-Client B:      Read(x) ──────▶ 0  ✗
-  (Write abgeschlossen, aber 0 gelesen)</code></pre>
 
 <div class="ic-gap"></div>
 
@@ -209,18 +182,6 @@ Client B:      Read(x) ──────▶ 0  ✗
             <li>Nachricht: Senden → Empfangen</li>
             <li>Transitiv: wenn A→B und B→C, dann A→C</li>
         </ul>
-        <p class="w3-large ic-neg15">Beispiel</p>
-        <pre><code class="language-plaintext">P1:  Post("Frage?")          Write(x=1)
-P2:  Read(x=1) → Reply("Antwort!")
-P3:  ?
-
-Kausal konsistent:
-  P3 sieht erst "Frage?", dann "Antwort!"
-  (weil Reply kausal von Post abhängt) ✓
-
-Nicht kausal konsistent:
-  P3 sieht erst "Antwort!", dann "Frage?"
-  → Ursache kommt nach Wirkung ✗</code></pre>
 <p class="w3-large ic-neg15">Veletzung kann bei Sharding auftreten</p>
 <ul class="w3-large">
     <li>Nutzer 1 und 2 schreiben in unterschiedlichen Shards</li>
@@ -379,31 +340,13 @@ Nicht kausal konsistent:
             <li>Mechanismus zur Erfassung von <strong>Kausalität</strong> ohne globale Uhr</li>
             <li>Jeder Knoten hält einen Zähler pro Knoten im System</li>
             <li>Bei Ereignis: eigener Zähler wird inkrementiert</li>
-            <li>Bei Nachricht: Vektoren werden komponentenweise per Max gemergt</li>
+            <li>Bei Nachricht: Vektoren werden komponentenweise per Max zusammengeführt</li>
         </ul>
         <p class="w3-large ic-neg15">Vergleich</p>
         <ul class="w3-large">
             <li>V(A) &lt; V(B) → A happened-before B (kausal abhängig)</li>
             <li>V(A) und V(B) unvergleichbar → nebenläufig (Konflikt möglich)</li>
         </ul>
-        <p class="w3-large ic-neg15">Beispiel (3 Knoten: A, B, C)</p>
-        <pre><code class="language-plaintext">Initial:  A=[0,0,0]  B=[0,0,0]  C=[0,0,0]
-
-A schreibt x=1:
-  A=[1,0,0]  → sendet an B
-
-B empfängt, schreibt x=2:
-  B=max([0,0,0],[1,0,0])+1B
-  B=[1,1,0]  → sendet an C
-
-C empfängt, schreibt x=3:
-  C=[1,1,1]
-
-Nebenläufig (Konflikt):
-A schreibt x=4:  A=[2,0,0]
-B schreibt x=5:  B=[1,2,0]
-→ [2,0,0] und [1,2,0] unvergleichbar
-  → Konflikt! Auflösung notwendig</code></pre>
 
 <div class="ic-gap"></div>
 
