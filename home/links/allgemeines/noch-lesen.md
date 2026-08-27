@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The New SDLC With Vibe Coding
+[(link)](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
+
+- The Modern Python Project Layout That Saved My Production Code
+[(link)](https://dailypythonpro.medium.com/the-modern-python-project-layout-that-saved-my-production-code-1966ec0237f9)
+
 - Stanford Just Put an $850K/Year Skill on YouTube
 [(link)](https://medium.com/dare-to-be-better/stanford-just-put-an-850k-year-skill-on-youtube-for-free-2f131d993219?sk=80a3aab9168aba8e761d85b824c23495)
 
