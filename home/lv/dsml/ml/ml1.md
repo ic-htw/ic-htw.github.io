@@ -31,17 +31,20 @@ competition = "two-sigma-connect-rental-listing-inquiries"
 target_dir = f"{kaggle_dir}/rent-two-sigma"
 
 !mkdir -p  "{kaggle_dir}"
+```
 
-os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir
+## Set Access Token 
+- Open Kaggle API doc [(link)](https://www.kaggle.com/docs/api)
+- Go to authentication section 
+- Select tab "API Tokens" 
+- Generate new token 
+- Copy token into code below, replace "tbd" by it
+
+```
+os.environ['KAGGLE_API_TOKEN'] = "tbd"
 ```
 
 ## Get Data 
-- Open Kaggle API doc [(link)](https://www.kaggle.com/docs/api)
-- Go to authentication section 
-- Create kaggle.json, download to your computer
-- Upload kaggle.json to kaggle directory on your gdrive
-
-
 
 ```
 !kaggle competitions download -c "{competition}"

@@ -7,25 +7,33 @@ is_slide: 0
 <h1>Rated Exercise 1</h1>
 <ul>
     <li>Via Zoom - Link will be sent by email</li>
-    <li>Start <b>28.11.2025 at 8:00</b> - Intro to exercise</li>
-    <li>End <b>28.11.2025 at 14:00</b> - Submission of solution</li>
+    <li>Start <b>tbd</b> - Intro to exercise</li>
+    <li>End <b>tbd</b> - Submission of solution</li>
     <li>One solution per group</li>
     <li>I will be available during the whole time for video calls</li>
 </ul>
 
 <h2>Machine Learning - Kaggle Competition</h2>
 <ul class="w3-large">
-    <li>g1: <a href="https://www.kaggle.com/competitions/playground-series-s5e10">link</a></li>
-    <li>g2: <a href="https://www.kaggle.com/competitions/playground-series-s5e9">link</a></li>
-    <li>g3: <a href="https://www.kaggle.com/competitions/playground-series-s5e8">link</a></li>
-    <li>g4: <a href="https://www.kaggle.com/competitions/playground-series-s5e7">link</a></li>
-    <li>g5: <a href="https://www.kaggle.com/competitions/playground-series-s5e5">link</a></li>
-    <li>g6: <a href="https://www.kaggle.com/competitions/playground-series-s5e4">link</a></li>
-    <li>g7: <a href="https://www.kaggle.com/competitions/playground-series-s5e3">link</a></li>
+    <li>g01: s5e10: <a href="https://www.kaggle.com/competitions/playground-series-s5e10">link</a></li>
+    <li>g02: s5e9: <a href="https://www.kaggle.com/competitions/playground-series-s5e9">link</a></li>
+    <li>g03: s5e8: <a href="https://www.kaggle.com/competitions/playground-series-s5e8">link</a></li>
+    <li>g04: s5e7: <a href="https://www.kaggle.com/competitions/playground-series-s5e7">link</a></li>
+    <li>g05: s5e5: <a href="https://www.kaggle.com/competitions/playground-series-s5e5">link</a></li>
+    <li>g06: s5e4: <a href="https://www.kaggle.com/competitions/playground-series-s5e4">link</a></li>
+    <li>g07: s5e3: <a href="https://www.kaggle.com/competitions/playground-series-s5e3">link</a></li>
+    <li>g08: s6e1: <a href="https://www.kaggle.com/competitions/playground-series-s6e1">link</a></li>
+    <li>g09: s6e2: <a href="https://www.kaggle.com/competitions/playground-series-s6e2">link</a></li>
+    <li>g10: s6e3: <a href="https://www.kaggle.com/competitions/playground-series-s6e3">link</a></li>
 </ul>
 
 <p class="w3-large">Don't forget to join the competition: "Late Submission"</p>
 
+<h2>Submission of solution</h2>
+<ul class="w3-large">
+    <li>Link to the Colab file on one group member's gdrive</li>
+    <li>Provide screenshot of your result on Kaggle Leaderboard</li>
+</ul>
 
 <h2>Get Data</h2>
 
@@ -39,10 +47,10 @@ drive.mount('/content/drive')</code></pre>
 import os
 
 kaggle_dir = f"/content/drive/My Drive/kaggle"
-competition = "tbd"
+competition = "playground-series-TBD" # Replace TBD with your series name
 target_dir = f"{kaggle_dir}/{competition}"
 
-os.environ['KAGGLE_CONFIG_DIR'] = kaggle_dir</code></pre>
+os.environ['KAGGLE_API_TOKEN'] = "TBD" # Replace TBD with your Kaggle API token</code></pre>
 
 <h3>Download Data</h3>
 <pre><code class="python">!kaggle competitions download -c "{competition}"
