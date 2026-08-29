@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- How to Write Cleaner Python Code (Using Just 5 Built-in Features)
+[(link)](https://medium.com/technology-core/how-to-write-cleaner-python-code-using-just-5-built-in-features-a851b6e443eb)
+
 - The New SDLC With Vibe Coding
 [(link)](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
 
