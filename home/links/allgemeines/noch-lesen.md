@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why Serverless SQL Compute Models More Powerful Than You Think 
+[(link)](https://medium.com/@Rohan_Dutt/why-serverless-sql-compute-models-more-powerful-than-you-think-and-how-to-master-them-cf6deb29514b)
+
 - The New SDLC With Vibe Coding
 [(link)](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
 
