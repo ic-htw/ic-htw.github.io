@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- AWS Acquires DuckLabs: A new future for DuckDB
+[(link)](https://medium.com/@hugolu87/aws-acquires-ducklabs-a-new-future-for-duckdb-fc0ad3a156aa)
+
+- 7 Best AI Coding Agents Every Developer Should Know in 2026
+[(link)](https://towardsdev.com/7-best-ai-coding-agents-every-developer-should-know-in-2026-b0d34257b728?sk=ea913fa19580dbae1b2ea08d63739370)
+
 - Why Serverless SQL Compute Models More Powerful Than You Think 
 [(link)](https://medium.com/@Rohan_Dutt/why-serverless-sql-compute-models-more-powerful-than-you-think-and-how-to-master-them-cf6deb29514b)
 
