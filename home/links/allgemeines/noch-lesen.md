@@ -25,6 +25,24 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- AWS Glue 6.0: The 30% Price Cut Isn’t the Whole Story
+[(link)](https://cloudwithazeem.medium.com/aws-glue-6-0-the-30-price-cut-isnt-the-whole-story-6ef3aa57fd9d)
+
+- Don’t Become a “Data Engineer” in 2026 — At Least Not the Way, We Defined It Before
+[(link)](https://medium.com/towards-data-engineering/dont-become-a-data-engineer-in-2026-at-least-not-the-way-we-defined-it-before-e0a02f7c88df)
+
+- How AI Is Reshaping Data Engineering: A Practical Guide With Examples
+[(link)](https://medium.com/area-21/how-ai-is-reshaping-data-engineering-a-practical-guide-with-examples-5b120dc0c2b4)
+
+- dbt Turned Data Engineers Into Analysts. That Trade Deserves More Scrutiny Than It Gets
+[(link)](https://medium.com/codetodeploy/dbt-turned-data-engineers-into-analysts-that-trade-deserves-more-scrutiny-than-it-gets-54ec3064388c)
+
+- AWS Acquires DuckLabs: A new future for DuckDB
+[(link)](https://medium.com/@hugolu87/aws-acquires-ducklabs-a-new-future-for-duckdb-fc0ad3a156aa)
+
+- 7 Best AI Coding Agents Every Developer Should Know in 2026
+[(link)](https://towardsdev.com/7-best-ai-coding-agents-every-developer-should-know-in-2026-b0d34257b728?sk=ea913fa19580dbae1b2ea08d63739370)
+
 - Why Serverless SQL Compute Models More Powerful Than You Think 
 [(link)](https://medium.com/@Rohan_Dutt/why-serverless-sql-compute-models-more-powerful-than-you-think-and-how-to-master-them-cf6deb29514b)
 
