@@ -25,6 +25,24 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Read your writes: WAIT FOR in PostgreSQL 19
+[(link)](https://clickhouse.com/blog/postgresql-19-wait-for-read-your-writes)
+
+- Read your own writes, off the primary
+[(link)](https://boringsql.com/posts/read-your-own-writes/)
+
+- Introducing YeSQL: Practical PostgreSQL, One Concept at a Time
+[(link)](bhttps://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/bb)
+
+- pg-catalog-almanac
+[(link)](https://richyen.com/postgres/2026/08/31/pg_catalog_almanac.html)
+
+- pgterm
+[(link)](https://pgterm.dev/)
+
+- sabiql - DB TUI 
+[(link)](bbb)
+
 - AWS Glue 6.0: The 30% Price Cut Isn’t the Whole Story
 [(link)](https://cloudwithazeem.medium.com/aws-glue-6-0-the-30-price-cut-isnt-the-whole-story-6ef3aa57fd9d)
 
