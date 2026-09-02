@@ -48,6 +48,7 @@ INSERT INTO events (payload) VALUES
   ('{"type":"order","user":"bob",
      "items":[1,2,3],"total":49.90}');</code></pre>
 
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
 
 <ul class="w3-large">
     <li><strong>number</strong>: Ganzzahlen und Dezimalzahlen</li>
@@ -71,21 +72,22 @@ SELECT '{"a":1}'::jsonb;      -- Objekt</code></pre>
 -->
 {% include padding-id.html id=3 %}
 <h1>Zugriffs-Operatoren</h1>
+
 <ul class="w3-large">
     <li><code>-&gt;</code> &nbsp; gibt JSON-Element zurück (als json/jsonb)</li>
     <li><code>-&gt;&gt;</code> gibt Textwert zurück (als text)</li>
     <li><code>#&gt;</code> &nbsp; navigiert Pfad (Array von Strings)</li>
     <li><code>#&gt;&gt;</code> navigiert Pfad, gibt Text zurück</li>
 </ul>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
        
-<pre><code class="language-sql">SELECT * FROM events;
-
-SELECT 
+<pre><code class="language-sql">SELECT 
   payload -> 'user' as u_jsonb,
   payload ->> 'user' as u_text,
   payload #> '{items,0}' as item_jsonb,
   payload #>> '{items,0}' as item_text
 FROM events WHERE id = 2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1010.png">
 
 <div class="ic-gap"></div>
 
@@ -104,27 +106,37 @@ FROM events WHERE id = 2;</code></pre>
     <li><code>?&amp;</code> &nbsp;&nbsp; alle Keys existieren</li>
 </ul>
 
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
+
 <pre><code class="language-sql">-- Gleichheit ueber ->>
-SELECT id, payload FROM events
-WHERE payload->>'type' = 'order';
+SELECT id, payload 
+FROM events
+WHERE payload->>'type' = 'order';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1020.png">
 
--- Containment @>: enthaelt diesen JSON-Wert
-SELECT id, payload FROM events
-WHERE payload @> '{"type":"login"}';
+<pre><code class="language-sql">-- Containment @>: enthaelt diesen JSON-Wert
+SELECT id, payload 
+FROM events
+WHERE payload @> '{"type":"login"}';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1030.png">
 
--- Key-Existenz ?
-SELECT id, payload FROM events
-WHERE payload ? 'items';
+<pre><code class="language-sql">-- Key-Existenz ?
+SELECT id, payload 
+FROM events
+WHERE payload ? 'items';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1040.png">
 
--- Numerischer Vergleich (cast noetig)
-SELECT id, payload FROM events
-WHERE (payload->>'total')::numeric > 30;
+<pre><code class="language-sql">-- Numerischer Vergleich (cast noetig)
+SELECT id, payload 
+FROM events
+WHERE (payload->>'total')::numeric > 30;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1050.png">
 
--- Array-Element enthaelt
-SELECT id, payload FROM events
+<pre><code class="language-sql">-- Array-Element enthaelt
+SELECT id, payload 
+FROM events
 WHERE payload @> '{"items": [2]}';</code></pre>
-
-
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1060.png">
 <div class="ic-gap"></div>
 
 
@@ -173,25 +185,28 @@ SELECT json_build_object(
   'name', first_name || ' ' || last_name,
   'age',  extract(year from age(birthdate))
 ) 
-FROM users;
+FROM users;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1070.png">
 
--- Zeilen aggregieren zu JSON-Array
+<pre><code class="language-sql">-- Zeilen aggregieren zu JSON-Array
 SELECT json_agg(json_build_object(
   'name', first_name || ' ' || last_name,
   'age',  extract(year from age(birthdate)))
 ) 
 FROM users 
-WHERE active = false;
+WHERE active = false;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1080.png">
 
 
--- Key-Value-Aggregation zu Objekt
+<pre><code class="language-sql">-- Key-Value-Aggregation zu Objekt
 SELECT json_object_agg('name', first_name || ' ' || last_name)
 FROM users
-WHERE active = false;
+WHERE active = false;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1090.png">
 
--- Array aus Werten
+<pre><code class="language-sql">-- Array aus Werten
 SELECT json_build_array(1, 'two', true, null);</code></pre>
-
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1100.png">
 <div class="ic-gap"></div>
 
 
@@ -207,27 +222,27 @@ SELECT json_build_array(1, 'two', true, null);</code></pre>
     <li><code>||</code>-Operator: zwei jsonb-Objekte zusammenführen (shallow merge)</li>
     <li><code>-</code>-Operator: Key entfernen</li>
 </ul>
-<pre><code class="language-sql">-- Wert setzen (erstellt Key wenn nicht vorhanden)
-UPDATE events
-SET payload = jsonb_set(
-  payload, '{status}', '"processed"')
-WHERE id = 2;
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
 
--- Key entfernen
+<pre><code class="language-sql">-- Key entfernen
 UPDATE events
-SET payload = payload - 'ip'
+  SET payload = payload - 'ip'
 WHERE payload->>'type' = 'login';
 
--- Objekte zusammenfuehren (shallow merge)
-SELECT '{"a":1,"b":2}'::jsonb
-     || '{"b":99,"c":3}'::jsonb;
--- -> {"a":1,"b":99,"c":3}
+-- Wert setzen (erstellt Key wenn nicht vorhanden)
+UPDATE events
+  SET payload = jsonb_set(payload, '{status}', '"processed"')
+WHERE id = 2;</code></pre>
 
--- Nulls entfernen
-SELECT jsonb_strip_nulls(
-  '{"a":1,"b":null,"c":null}');
--- -> {"a":1}</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1110.png">
 
+<pre><code class="language-sql">-- Objekte zusammenfuehren (shallow merge)
+SELECT '{"a":1,"b":2}'::jsonb || '{"b":99,"c":3}'::jsonb;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1120.png">
+
+<pre><code class="language-sql">-- Nulls entfernen
+SELECT jsonb_strip_nulls('{"a":1,"b":null,"c":null}');</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1130.png">
 <div class="ic-gap"></div>
 
 
@@ -236,29 +251,25 @@ SELECT jsonb_strip_nulls(
 -->
 {% include padding-id.html id=7 %}
 <h1>JSON-Funktionen: Entpacken</h1>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
+
 <pre><code class="language-sql">-- Objekt-Keys und Werte als Zeilen
 SELECT key, value
-FROM events,
-jsonb_each(payload)
-WHERE id = 1;
--- key: type,  value: "login"
--- key: user,  value: "alice"
--- key: ip,    value: "1.2.3.4"
+FROM events, jsonb_each(payload)
+WHERE id = 1;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1150.png">
 
--- Array-Elemente als Zeilen
+<pre><code class="language-sql">-- Array-Elemente als Zeilen
 SELECT item
-FROM events,
-jsonb_array_elements(
-    payload->'items') AS item
-    WHERE id = 2;
-    -- item: 1, 2, 3
+FROM events, jsonb_array_elements(payload->'items') AS item
+WHERE id = 2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1160.png">
     
-    -- Schluessel als Text
-    SELECT jsonb_object_keys(payload)
-    FROM events WHERE id = 1;</code></pre>
-        
-<img class="w3-image" src="/home/lv/adbkt/a/pg_json/d04-unpack.svg">
-
+<pre><code class="language-sql">-- Schluessel als Text
+SELECT jsonb_object_keys(payload)
+FROM events 
+WHERE id = 1;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1170.png">
 <div class="ic-gap"></div>
 
 
@@ -267,7 +278,6 @@ jsonb_array_elements(
 -->
 {% include padding-id.html id=8 %}
 <h1>JSON zu Zeilen</h1>
-<p class="w3-large ic-neg15">Konzepte</p>
 <ul class="w3-large">
     <li>Wandelt JSON-Objekt in PostgreSQL-Zeilentyp um</li>
     <li>Nützlich für Import und Normalisierung von JSON-Daten</li>
@@ -279,20 +289,21 @@ jsonb_array_elements(
 CREATE TYPE order_rec AS (
   user_name text,
   total     numeric
-);
+);</code></pre>
 
--- JSON in Typ umwandeln
+<pre><code class="language-sql">-- JSON in Typ umwandeln
 SELECT * FROM json_populate_record(
   null::order_rec,
   '{"user_name":"bob","total":49.90}'
-);
+);</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1180.png">
 
--- Array von JSON-Objekten als Tabelle
+<pre><code class="language-sql">-- Array von JSON-Objekten als Tabelle
 SELECT * FROM json_to_recordset(
   '[{"id":1,"name":"Alice"},
     {"id":2,"name":"Bob"}]'
 ) AS t(id int, name text);</code></pre>
-
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1190.png">
 <div class="ic-gap"></div>
 
 
@@ -301,31 +312,33 @@ SELECT * FROM json_to_recordset(
 -->
 {% include padding-id.html id=9 %}
 <h1>JSONPath – Pfadausdrücke</h1>
-<p class="w3-large ic-neg15">JSONPath-Konzepte</p>
 <ul class="w3-large">
-    <li>JSONPath ist Standard SQL/JSON (PostgreSQL 12+)</li>
+    <li>JSONPath ist Standard SQL/JSON</li>
     <li>Ausdrücke starten mit <code>$</code> (Root-Element)</li>
     <li><code>.key</code> für Objektzugriff, <code>[n]</code> für Array-Zugriff</li>
     <li><code>[*]</code> für alle Array-Elemente</li>
     <li>Filter-Ausdrücke: <code>?(@ &gt; 10)</code></li>
     <li>Funktionen: <code>.type()</code>, <code>.size()</code>, <code>.keyvalue()</code></li>
 </ul>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
+
 <pre><code class="language-sql">-- jsonb_path_query: alle passenden Elemente
 SELECT jsonb_path_query(payload, '$.items[*]')
-FROM events WHERE id = 2;
--- -> 1, 2, 3
+FROM events 
+WHERE id = 2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1200.png">
 
--- Filter: items groesser als 1
+<pre><code class="language-sql">-- Filter: items groesser als 1
 SELECT jsonb_path_query(
   payload, '$.items[*] ? (@ > 1)')
-FROM events WHERE id = 2;
--- -> 2, 3
+FROM events 
+WHERE id = 2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1210.png">
 
--- jsonb_path_exists: pruefen ob Pfad existiert
-SELECT * FROM events
-WHERE jsonb_path_exists(
-  payload, '$.type ? (@ == "login")');
-</code></pre>
+<pre><code class="language-sql">-- jsonb_path_exists: pruefen ob Pfad existiert
+SELECT id, payload FROM events
+WHERE jsonb_path_exists(payload, '$.type ? (@ == "login")');</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1220.png">
 
 <div class="ic-gap"></div>
 
@@ -334,29 +347,34 @@ WHERE jsonb_path_exists(
     10 ******************************************************************
 -->
 {% include padding-id.html id=10 %}
-<h1>JSONPath: Erweiterte Abfragen</h1>
-<img class="w3-image" src="/home/lv/adbkt/a/pg_json/d05-jsonpath.svg">
+<h1>JSONPath: Weitere Abfragen</h1>
+
 <pre><code class="language-sql">-- Alle Bestellwerte ueber 100
 SELECT jsonb_path_query_array(
   '{"orders":[
      {"id":1,"val":120},
      {"id":2,"val":80}]}',
   '$.orders[*] ? (@.val > 100)'
-);
--- -> [{"id":1,"val":120}]
+);</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1230.png">
 
--- Erste passende Zeile
+<pre><code class="language-sql">-- Erste passende Zeile
 SELECT jsonb_path_query_first(
   payload,
-  '$.items[*] ? (@ > 2)'
-) FROM events WHERE id = 2;
--- -> 3
+  '$.items[*] ? (@ > 1)'
+) FROM events 
+WHERE id = 2;</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1240.png"><br><br>
 
--- Existenz-Check mit Bedingung
-SELECT * FROM events
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
+
+<pre><code class="language-sql">-- Existenz-Check mit Bedingung
+SELECT id, payload 
+FROM events
 WHERE jsonb_path_exists(
   payload, '$.total ? (@ > 40)'
 );</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1250.png">
 <div class="ic-gap"></div>
 
 
@@ -365,14 +383,13 @@ WHERE jsonb_path_exists(
 -->
 {% include padding-id.html id=11 %}
 <h1>GIN-Indizes</h1>
-        <p class="w3-large ic-neg15">GIN-Index-Konzepte</p>
-        <ul class="w3-large">
-            <li>GIN (Generalized Inverted Index) indexiert alle Keys und Werte</li>
-            <li><code>jsonb_ops</code> (Standard): <code>@&gt;</code>, <code>?</code>, <code>?|</code>, <code>?&amp;</code></li>
-            <li>Automatische Nutzung durch Query Planner</li>
-            <li>Signifikante Beschleunigung bei <code>@&gt;</code> und <code>?</code>-Abfragen</li>
-        </ul>
-        <pre><code class="language-sql">-- Standard GIN-Index
+<ul class="w3-large">
+    <li>GIN (Generalized Inverted Index) indexiert alle Keys und Werte</li>
+    <li><code>jsonb_ops</code> (Standard): <code>@&gt;</code>, <code>?</code>, <code>?|</code>, <code>?&amp;</code></li>
+    <li>Automatische Nutzung durch Query Planner</li>
+    <li>Signifikante Beschleunigung bei <code>@&gt;</code> und <code>?</code>-Abfragen</li>
+</ul>
+<pre><code class="language-sql">-- Standard GIN-Index
 CREATE INDEX idx_events_payload
   ON events USING GIN (payload);
 
@@ -384,22 +401,7 @@ CREATE INDEX idx_events_payload_path
 -- Partieller Index auf Subfeld
 CREATE INDEX idx_events_type
   ON events ((payload->>'type'));</code></pre>
-        <img class="w3-image" src="/home/lv/adbkt/a/pg_json/d03-gin-index.svg">
 
-
-<p class="w3-large ic-neg15">Tipps für Performance</p>
-<ul class="w3-large">
-    <li><code>@&gt;</code> und <code>?</code> nutzen GIN-Index direkt</li>
-    <li><code>-&gt;&gt;</code> mit Cast erzwingt Sequenziellen Scan (ohne Funktionsindex)</li>
-    <li>Für Cast-Vergleiche: Funktionsindex auf <code>(payload-&gt;&gt;'feld')::numeric</code></li>
-    <li>JSONPath-Abfragen können ebenfalls GIN-Index nutzen</li>
-    <li><code>@&gt;</code> ist oft die schnellste Methode für Containment-Checks</li>
-</ul>
-<p class="w3-large ic-neg15">Beispiel Funktionsindex</p>
-<pre><code class="language-sql">CREATE INDEX ON events
-  ((payload->>'type'));
--- Dann: WHERE payload->>'type' = 'order'
--- nutzt den Index!</code></pre>
 <div class="ic-gap"></div>
 
 
@@ -408,7 +410,15 @@ CREATE INDEX idx_events_type
 -->
 {% include padding-id.html id=12 %}
 <h1>JSON-Validierung und Constraints</h1>
-        <pre><code class="language-sql">-- CHECK-Constraint fuer JSON-Struktur
+<ul class="w3-large">
+    <li><strong>CHECK-Constraints</strong>: einfach, direkt in PostgreSQL</li>
+    <li>CHECK auf Key-Existenz (<code>?</code>) ist performant</li>
+    <li>Kombination: relationale NOT NULL + JSON CHECK</li>
+    <li>CHECK-Constraints werden bei INSERT und UPDATE geprüft</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1000.png">
+
+<pre><code class="language-sql">-- CHECK-Constraint fuer JSON-Struktur
 ALTER TABLE events ADD CONSTRAINT chk_type
   CHECK (payload ? 'type');
 
@@ -422,17 +432,6 @@ ALTER TABLE events ADD CONSTRAINT chk_user
   CHECK (payload ? 'user' AND
          payload->>'user' IS NOT NULL);</code></pre>
 
-<p class="w3-large ic-neg15">Validierungsstrategien</p>
-<ul class="w3-large">
-    <li><strong>CHECK-Constraints</strong>: einfach, direkt in PostgreSQL</li>
-    <li><strong>Triggers</strong>: komplexe Validierungslogik möglich</li>
-    <li>CHECK auf Key-Existenz (<code>?</code>) ist performant</li>
-    <li>Kombination: relationale NOT NULL + JSON CHECK</li>
-</ul>
-<p class="w3-large ic-neg15">Hinweis</p>
-<ul class="w3-large">
-    <li>CHECK-Constraints werden bei INSERT und UPDATE geprüft</li>
-</ul>
 
 <div class="ic-gap"></div>
 
@@ -466,7 +465,7 @@ CREATE INDEX ON api_logs
 
 <p class="w3-large ic-neg15">Vorteile</p>
 <ul class="w3-large">
-    <li>Kein Schema-Change bei neuen Log-Feldern nötig</li>
+    <li>Keine Schema-Änderung bei neuen Log-Feldern nötig</li>
     <li>Flexible Struktur: verschiedene Log-Typen in einer Tabelle</li>
     <li>Schnelle GIN-Suche nach beliebigen Feldern</li>
     <li>Aggregationen direkt in SQL möglich</li>
@@ -486,7 +485,7 @@ CREATE INDEX ON api_logs
 -->
 {% include padding-id.html id=14 %}
 <h1>Anwendungsfall: Konfigurationsmanagement</h1>
-        <pre><code class="language-sql">CREATE TABLE app_config (
+<pre><code class="language-sql">CREATE TABLE app_config (
   app     TEXT PRIMARY KEY,
   config  JSONB NOT NULL
 );
@@ -497,29 +496,25 @@ INSERT INTO app_config VALUES (
     "features":{
       "beta":true,
       "newDashboard":false}}'
-);
+);</code></pre>
 
--- Feature-Flag abfragen
-SELECT config #>> '{features,beta}'
-FROM app_config WHERE app = 'frontend';
-
--- Config aktualisieren (ohne Ueberschreiben)
-UPDATE app_config
-SET config = config || '{"timeout": 30}'
+<pre><code class="language-sql">-- Feature-Flag abfragen
+SELECT config #>> '{features,beta}' as beta_enabled
+FROM app_config 
 WHERE app = 'frontend';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1260.png">
+
+<pre><code class="language-sql">-- Config aktualisieren 
+UPDATE app_config
+  SET config = config || '{"timeout": 30}'
+WHERE app = 'frontend';</code></pre>
+<img class="w3-image" src="/home/lv/adbkt/a/pg_json/1270.png">
 
 <p class="w3-large ic-neg15">Vorteile</p>
 <ul class="w3-large">
     <li>Hierarchische Konfigurationen in einem Datensatz</li>
-    <li>Atomares Update einzelner Felder mit <code>jsonb_set</code></li>
-    <li>Shallow merge mit <code>||</code>: nur Top-Level-Keys überschreiben</li>
     <li>Feature-Flags einfach verwaltbar</li>
     <li>Versionierung per Zeitstempel-Spalte möglich</li>
-</ul>
-<p class="w3-large ic-neg15">Hinweis Merge-Tiefe</p>
-<ul class="w3-large">
-    <li><code>||</code> ist nur shallow – verschachtelte Objekte werden überschrieben</li>
-    <li>Für deep merge: <code>jsonb_set</code> mit explizitem Pfad nutzen</li>
 </ul>
 <div class="ic-gap"></div>
 
@@ -529,14 +524,13 @@ WHERE app = 'frontend';</code></pre>
 -->
 {% include padding-id.html id=15 %}
 <h1>Anwendungsfall: Semi-strukturierte Produkte</h1>
-        <p class="w3-large ic-neg15">Motivation</p>
-        <ul class="w3-large">
-            <li>Verschiedene Produktkategorien benötigen unterschiedliche Attribute</li>
-            <li>Gemeinsame Pflichtfelder relational, Extras als JSONB</li>
-            <li>Kein Schema-Change bei neuen Attributen</li>
-            <li>Hybrides Modell: besser als rein dokumentenorientiert</li>
-        </ul>
-        <pre><code class="language-sql">CREATE TABLE products (
+<ul class="w3-large">
+    <li>Verschiedene Produktkategorien benötigen unterschiedliche Attribute</li>
+    <li>Gemeinsame Pflichtfelder relational, Extras als JSONB</li>
+    <li>Keine Schema-Änderung bei neuen Attributen</li>
+    <li>Hybrides Modell: besser als rein dokumentenorientiert</li>
+</ul>
+<pre><code class="language-sql">CREATE TABLE products (
   id       SERIAL PRIMARY KEY,
   name     TEXT NOT NULL,
   price    NUMERIC(10,2),
