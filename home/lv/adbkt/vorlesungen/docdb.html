@@ -9,17 +9,13 @@ n: 8
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Dokumentendatenbanken – Einordnung</h1>
-<h2>Übersicht</h2>
+<h1>Übersicht</h1>
 <ul class="w3-large">
-    <li>Dokumentendatenbanken speichern Daten als semi-strukturierte Dokumente</li>
-    <li>Jedes Dokument ist ein eigenständiges Objekt mit beliebig tiefer Verschachtelung</li>
+    <li>Speicherung semi-strukturierter Dokumente</li>
+    <li>Verschachtelte Strukturen</li>
     <li>Kein festes Schema – verschiedene Dokumente einer Art können unterschiedliche Felder haben</li>
-    <li>Bekannte Systeme: MongoDB, CouchDB, Couchbase, Amazon DocumentDB, Firebase Firestore</li>
-    <li>Dokumentenstrukturen werden inzwischen von relationalen Datebanken unterstützt</li>
 </ul>
 
-<h2>Dokumentenorientierte Datenbank</h2>
 <p class="w3-large">Datenbank = Menge von Kollektionen</p>
 
 <p class="w3-large ic-neg15">Kollektion</p>
@@ -58,7 +54,7 @@ n: 8
     { "id": "o1", "total": 99.90, "date": ISODate("2024-01-10") },
     { "id": "o2", "total": 49.50, "date": ISODate("2024-03-02") }
   ],
-  "meta": null
+  "interaction": "user interaction notes, unstructured text, etc."
 }</code></pre>
 <div class="ic-gap"></div>
 
@@ -67,23 +63,14 @@ n: 8
 -->
 {% include padding-id.html id=3 %}
 <h1>Anwendungsbereiche </h1>
-<h2>Übersicht</h2>
 <ul class="w3-large">
-    <li>Anwendungen mit reichhaltigen Domänenmodellen</li>
-    <li>Web-Anwendungen mit großer Nutzeranzahl</li>
-    <li>Anwendungen mit starker horizontaler Skalierung</li>
-    <li>CRM-Systeme</li>
     <li>Katalogsysteme</li>
-    <li>Portale, News, Wiki, Foren, Blogs</li>
+    <li>Content Management Systeme</li>
+    <li>Wikis</li>
+    <li>Foren</li>
+    <li>Blogs</li>
+    <li>Anwendungen mit reichhaltigen Domänenmodellen</li>
 </ul>
-
-<h2>Gut geeignet wenn...</h2>
-        <ul class="w3-large">
-            <li>Datenstruktur variiert pro Eintrag (Produktkatalog, CMS)</li>
-            <li>Schema-Evolution</li>
-            <li>Daten natürlich als hierarchische Objekte modellierbar</li>
-            <li>Dokumente werden typischerweise als Ganzes gelesen/geschrieben</li>
-        </ul>
 
 
 <div class="ic-gap"></div>
