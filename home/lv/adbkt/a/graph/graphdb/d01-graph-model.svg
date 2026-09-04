@@ -53,13 +53,4 @@
 <text x="400" y="213" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Technologie</text>
 <text x="400" y="227" text-anchor="middle" font-size="10" fill="#FFE0B2">Python</text>
 
-<!-- Legend -->
-<rect x="30" y="240" width="12" height="12" rx="6" fill="#1565C0"/>
-<text x="47" y="251" font-size="10" fill="#333">Knoten (Node)</text>
-<rect x="140" y="240" width="12" height="12" rx="2" fill="#2E7D32"/>
-<text x="157" y="251" font-size="10" fill="#333">Knoten mit Labels</text>
-<line x1="270" y1="246" x2="300" y2="246" stroke="#546E7A" stroke-width="2"/>
-<text x="307" y="251" font-size="10" fill="#333">Kante (Relationship)</text>
-<rect x="400" y="240" width="60" height="14" rx="3" fill="#E3F2FD" stroke="#90CAF9"/>
-<text x="430" y="251" text-anchor="middle" font-size="9" fill="#1565C0">Properties</text>
 </svg>

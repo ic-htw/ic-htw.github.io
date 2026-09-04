@@ -20,7 +20,6 @@ n: 16
         <li>Amazon Neptune</li>
         <li>Apache TinkerPop & JanusGraph</li>
         <li>TigerGraph</li>
-        <li>TigerGraph</li>
         <li>Oracle</li>
         <li>Azure Cosmos DB</li>
         <li>DuckPGQ</li>
@@ -68,21 +67,18 @@ n: 16
 -->
 {% include padding-id.html id=4 %}
 <h1>Knowledge Graphs</h1>
-        <p class="w3-large ic-neg15">Übersicht</p>
-        <ul class="w3-large">
-            <li>Semantisches Netz aus Entitäten, Konzepten und Fakten</li>
-            <li>Basis: RDF-Triples oder Property-Graph</li>
-            <li>Ontologien beschreiben Typen und Relationen</li>
-            <li>Reasoning: automatisches Schlussfolgern aus bekannten Fakten</li>
-        </ul>
-        <p class="w3-large ic-neg15">Bekannte Knowledge Graphs</p>
-        <ul class="w3-large">
-            <li><strong>Google Knowledge Graph</strong>: 500 Mrd. Fakten (Search)</li>
-            <li><strong>Wikidata</strong>: öffentlich, 100 Mio. Entitäten</li>
-            <li><strong>DBpedia</strong>: extrahiert aus Wikipedia</li>
-            <li><strong>Microsoft Satori</strong>: Bing-Suchmaschine</li>
-            <li><strong>Enterprise KGs</strong>: Pharma, Finanzwesen, Medien</li>
-        </ul>
+<ul class="w3-large">
+    <li>Semantisches Netz aus Entitäten, Konzepten und Fakten</li>
+    <li>Resource Description Framework - RDF</li>
+    <li>Rahmenwerk zur Beschreibung von Ressourcen</li>
+    <li>Verwendet zur Darstellung und Speicherung von Wissensgraphen</li>
+    <li>RDF-Triple: Subjekt, Prädikat, Objekt</li>
+    <ul class="w3-large">
+        <li>Subjekt: Berliner Fernsehturm</li>
+        <li>Prädikat: steht in</li>
+        <li>Objekt: Berlin</li>
+    </ul>
+</ul>
 
 <div class="ic-gap"></div>
 
@@ -95,7 +91,7 @@ n: 16
         <ul class="w3-large">
             <li>Erster eigenständiger ISO-Standard für Graphabfragen (ISO/IEC 39075)</li>
             <li>Basiert auf openCypher, PGQL, G-CORE und GSQL</li>
-            <li>Deklarativ, musterbasiert wie Cypher</li>
+            <li>Deklarativ, musterbasiert</li>
             <li>Definiert: Graphtypen, Schemata, Musterabgleich, Komposition</li>
             <li>Unterstützt gerichtete und ungerichtete Kanten, Mehrfachkanten</li>
         </ul>
@@ -177,22 +173,7 @@ WHERE {
           ex:wohntIn ex:Berlin .
   FILTER (?age > 25)
 }
-ORDER BY ?name
-
--- Wikidata: Hauptstädte aller Länder
-SELECT ?land ?hauptstadt WHERE {
-  ?l wdt:P31 wd:Q6256 ;
-     wdt:P36 ?hs .
-}
-
--- Alle Nobelpreisträger aus Deutschland
-SELECT ?person ?name WHERE {
-  ?person wdt:P27  wd:Q183 ;   # Deutsch
-          wdt:P166 ?prize .     # Auszeichnung
-  ?prize  wdt:P31  wd:Q7191 .  # Nobelpreis
-  ?person rdfs:label ?name .
-  FILTER (lang(?name) = "de")
-}</code></pre>
+ORDER BY ?name</code></pre>
 
 <div class="ic-gap"></div>
 
@@ -202,17 +183,16 @@ SELECT ?person ?name WHERE {
 -->
 {% include padding-id.html id=8 %}
 <h1>Abfrage-API Gremlin</h1>
-        <ul class="w3-large">
-            <li>Imperatives Traversal-API von Apache TinkerPop</li>
-            <li>Unterstützt von: JanusGraph, Amazon Neptune, CosmosDB, TigerGraph</li>
-            <li>Pipeline-Stil: Traversal-Schritte verkettet</li>
-            <ul>
-                <li><code>g.V()</code>: alle Knoten</li>
-                <li><code>g.E()</code>: alle Kanten</li>
-            </ul>
-            <li>Einbettbar in Java, Python, JavaScript, Go …</li>
-        </ul>
-        <pre><code class="language-java">// Alle Freunde von Alice
+<ul class="w3-large">
+    <li>Imperatives Traversal-API</li>
+    <li>Pipeline-Stil: Traversal-Schritte verkettet</li>
+    <ul>
+        <li><code>g.V()</code>: alle Knoten</li>
+        <li><code>g.E()</code>: alle Kanten</li>
+    </ul>
+    <li>Einbettbar in Java, Python, JavaScript, Go …</li>
+</ul>
+<pre><code class="language-java">// Alle Freunde von Alice
 g.V().has("name", "Alice")
  .out("KENNT")
  .values("name")
@@ -223,7 +203,7 @@ g.V().has("name", "Alice")
  .dedup()
  .values("name")
 
-// Kuerzester Pfad
+// Erster gefundener Pfad
 g.V().has("name","Alice")
  .repeat(out().simplePath())
  .until(has("name","Charlie"))
@@ -237,13 +217,13 @@ g.V().has("name","Alice")
 -->
 {% include padding-id.html id=9 %}
 <h1>Neo4j</h1>
-        <ul class="w3-large">
-            <li>Nativer Graph Storage: Knoten- und Kanten-Record-Dateien</li>
-            <li>Abfragesprache: Cypher (OpenCypher-Standard)</li>
-            <li>Graph Data Science Library: 65+ Algorithmen</li>
-            <li>Neo4j AuraDB: vollständig verwalteter Cloud-Dienst</li>
-        </ul>
-        <img class="w3-image" src="/home/lv/adbkt/a/graph/graphdb/d05-neo4j-arch.svg">
+<ul class="w3-large">
+    <li>Nativer Graph Storage: Knoten- und Kanten-Record-Dateien</li>
+    <li>Abfragesprache: Cypher (OpenCypher-Standard)</li>
+    <li>Graph Data Science Library: 65+ Algorithmen</li>
+    <li>Neo4j AuraDB: vollständig verwalteter Cloud-Dienst</li>
+</ul>
+<img class="w3-image" src="/home/lv/adbkt/a/graph/graphdb/d05-neo4j-arch.svg">
 
 <div class="ic-gap"></div>
 
@@ -253,17 +233,11 @@ g.V().has("name","Alice")
 -->
 {% include padding-id.html id=10 %}
 <h1>Amazon Neptune</h1>
-        <ul class="w3-large">
-            <li>Verwalteter Graphdienst von AWS (seit 2018)</li>
-            <li>Unterstützt <strong>Property Graph</strong> (Gremlin, openCypher) <em>und</em> <strong>RDF</strong> (SPARQL)</li>
-            <li>Serverless-Option: automatische Skalierung</li>
-            <li>Multi-AZ-Replikation, bis zu 15 Read-Replicas</li>
-            <li>Neptune Analytics: In-Memory-Graphanalyse auf großen Graphen</li>
-            <li>Integriert mit S3, Lambda, SageMaker, Bedrock</li>
-            <li>Storage von Compute getrennt</li>
-            <li>Verteilter Storage: 6 Kopien über 3 AZs</li>
-            <li>Bulk-Loader direkt aus S3</li>
-        </ul>
+<ul class="w3-large">
+    <li>Verwalteter Graphdienst von AWS (seit 2018)</li>
+    <li>Unterstützt <strong>Property Graph</strong> (Gremlin, openCypher) <em>und</em> <strong>RDF</strong> (SPARQL)</li>
+    <li>Serverless-Option: automatische Skalierung</li>
+</ul>
 
 <div class="ic-gap"></div>
 
@@ -273,22 +247,20 @@ g.V().has("name","Alice")
 -->
 {% include padding-id.html id=11 %}
 <h1>Apache TinkerPop &amp; JanusGraph</h1>
-        <p class="w3-large ic-neg15">Apache TinkerPop</p>
-        <ul class="w3-large">
-            <li>Open-Source Graph-Computing-Framework</li>
-            <li>Definiert die <strong>Gremlin</strong>-Traversal-Sprache</li>
-            <li>Abstraktionsschicht für verschiedene Graph-Engines</li>
-            <li>TinkerGraph: In-Memory-Referenzimplementierung</li>
-        </ul>
-        <p class="w3-large ic-neg15">JanusGraph</p>
-        <ul class="w3-large">
-            <li>Verteilte Graphdatenbank (Linux Foundation)</li>
-            <li>TinkerPop-kompatibel (Gremlin-API)</li>
-            <li>Pluggable Storage Backends: <strong>HBase</strong>, <strong>Cassandra</strong>, <strong>BerkeleyDB</strong></li>
-            <li>Index-Backends: Elasticsearch, Solr, Lucene</li>
-            <li>Milliarden von Vertices und Edges skalierbar</li>
-        </ul>
-
+<p class="w3-large ic-neg15">Apache TinkerPop</p>
+<ul class="w3-large">
+    <li>Open-Source Graph-Computing-Framework</li>
+    <li>Definiert die <strong>Gremlin</strong>-Traversal-Sprache</li>
+    <li>Abstraktionsschicht für verschiedene Graph-Engines</li>
+    <li>TinkerGraph: In-Memory-Referenzimplementierung</li>
+</ul>
+<p class="w3-large ic-neg15">JanusGraph</p>
+<ul class="w3-large">
+    <li>Verteilte Graphdatenbank (Linux Foundation)</li>
+    <li>TinkerPop-kompatibel (Gremlin-API)</li>
+    <li>Pluggable Storage Backends: <strong>HBase</strong>, <strong>Cassandra</strong>, <strong>BerkeleyDB</strong></li>
+    <li>Index-Backends: Elasticsearch, Solr, Lucene</li>
+</ul>
 
 <div class="ic-gap"></div>
 
@@ -298,16 +270,14 @@ g.V().has("name","Alice")
 -->
 {% include padding-id.html id=12 %}
 <h1>TigerGraph</h1>
-        <ul class="w3-large">
-            <li>Native parallele Graphdatenbank für Echtzeit-Analytik (seit 2012)</li>
-            <li>Eigene Abfragesprache: <strong>GSQL</strong> (SQL-ähnlich, Turing-vollständig)</li>
-            <li>Stärke: tiefe Multi-Hop-Traversierungen auf sehr großen Graphen</li>
-            <li>MPP-Architektur (Massively Parallel Processing): Algorithmen auf Partitionen verteilt</li>
-            <li>Native Unterstützung für <strong>OLTP</strong> und <strong>OLAP</strong> gleichzeitig (HTAP)</li>
-            <li>TigerGraph Cloud: verwalteter SaaS-Dienst</li>
-        </ul>
-        <p class="w3-large ic-neg15">GSQL Beispiel</p>
-        <pre><code class="language-sql">// Freunde zweiten Grades
+<ul class="w3-large">
+    <li>Eigene Abfragesprache: <strong>GSQL</strong></li>
+    <li>MPP-Architektur (Massively Parallel Processing)</li>
+    <li>Native Unterstützung für <strong>OLTP</strong> und <strong>OLAP</strong> gleichzeitig (HTAP)</li>
+    <li>TigerGraph Cloud: verwalteter SaaS-Dienst</li>
+</ul>
+<p class="w3-large ic-neg15">GSQL Beispiel</p>
+<pre><code class="language-sql">// Freunde zweiten Grades
 CREATE QUERY fof(VERTEX<Person> src)
 FOR GRAPH SocialGraph {
   SetAccum<VERTEX> @@friends, @@fof;
@@ -334,22 +304,15 @@ FOR GRAPH SocialGraph {
 -->
 {% include padding-id.html id=13 %}
 <h1>Oracle</h1>
-        <ul class="w3-large">
-            <li>Implementiert <strong>SQL/PGQ</strong> (ISO SQL:2023)</li>
-            <li>Property Graphs direkt über relationale Tabellen und Views definiert</li>
-            <li>Kein separates Graphsystem – Graph als Sicht auf bestehende Daten</li>
-            <li><code>CREATE PROPERTY GRAPH</code>: deklariert Knoten- und Kantentabellen</li>
-            <li>Musterabfragen mit <code>GRAPH_TABLE</code> eingebettet in SQL</li>
-            <li>Vollständige ACID-Garantien, keine Datenmigration nötig</li>
-        </ul>
-        <p class="w3-large ic-neg15">Oracle Graph Server (PGX)</p>
-        <ul class="w3-large">
-            <li>Separater In-Memory-Graphanalytik-Server (PGQL-Abfragesprache)</li>
-            <li>60+ vorgefertigte Graph-Algorithmen (PageRank, Louvain, Betweenness …)</li>
-            <li>Integration mit Oracle ML, Python-Client, Jupyter Notebooks</li>
-            <li>Bulk-Load aus Oracle DB oder externe Formate (CSV, RDF)</li>
-        </ul>
-        <pre><code class="language-sql">-- Property Graph definieren (Oracle 23c)
+<ul class="w3-large">
+    <li>Implementiert <strong>SQL/PGQ</strong> (ISO SQL:2023)</li>
+    <li>Property Graphs direkt über relationale Tabellen und Views definiert</li>
+    <li>Kein separates Graphsystem – Graph als Sicht auf bestehende Daten</li>
+    <li><code>CREATE PROPERTY GRAPH</code>: deklariert Knoten- und Kantentabellen</li>
+    <li>Musterabfragen mit <code>GRAPH_TABLE</code> eingebettet in SQL</li>
+    <li>Vollständige ACID-Garantien, keine Datenmigration nötig</li>
+</ul>
+<pre><code class="language-sql">-- Property Graph definieren (Oracle 23c)
 CREATE PROPERTY GRAPH social_graph
   VERTEX TABLES (
     person
@@ -385,15 +348,13 @@ ORDER BY freund;</code></pre>
 -->
 {% include padding-id.html id=14 %}
 <h1>Azure Cosmos DB</h1>
-        <ul class="w3-large">
-            <li>Verwalteter Graphdienst von Microsoft Azure</li>
-            <li>Basiert auf <strong>Apache TinkerPop</strong> – Gremlin als Abfragesprache</li>
-            <li>Cosmos DB Multi-Modell: gleiche Daten auch als Dokument, Key-Value oder Tabelle abfragbar</li>
-            <li><strong>Globale Verteilung</strong>: Replikation in beliebig viele Azure-Regionen</li>
-            <li>Fünf Konsistenzmodelle wählbar (Strong, Bounded Staleness, Session, Consistent Prefix, Eventual)</li>
-            <li>Serverless und Provisioned Throughput (RU/s)</li>
-        </ul>
-        <pre><code class="language-python">// Verbindung (Python, Gremlin-Client)
+<ul class="w3-large">
+    <li>Verwalteter Graphdienst von Microsoft Azure</li>
+    <li>Basiert auf <strong>Apache TinkerPop</strong> – Gremlin als Abfragesprache</li>
+    <li>Cosmos DB Multi-Modell: gleiche Daten auch als Dokument, Key-Value oder Tabelle abfragbar</li>
+    <li>Serverless und Provisioned Throughput (RU/s)</li>
+</ul>
+<pre><code class="language-python">// Verbindung (Python, Gremlin-Client)
 from gremlin_python.driver import client
 
 c = client.Client(
@@ -426,16 +387,15 @@ c.submit(
 -->
 {% include padding-id.html id=15 %}
 <h1>DuckPGQ</h1>
-        <ul class="w3-large">
-            <li>Extension von DuckDB, implementiert <strong>SQL/PGQ</strong></li>
-            <li>Property-Graph-Abfragen direkt auf relationalen Tabellen</li>
-            <li>Kein separates Graphsystem nötig – Graphsicht über vorhandene Daten</li>
-            <li><code>CREATE PROPERTY GRAPH</code> definiert Knoten- und Kantentabellen</li>
-            <li><code>FROM GRAPH_TABLE(...)</code> eingebettet in normales SQL</li>
-            <li>Kombination mit DuckDB-Stärken: Spaltenformat, OLAP, In-Process</li>
-            <li>Analytische Workloads (kein OLTP), kleine bis mittlere Graphen</li>
-            <li>Data-Science-Workflows: Parquet/CSV direkt als Graph analysieren</li>
-        </ul>
+<ul class="w3-large">
+    <li>Extension von DuckDB, implementiert <strong>SQL/PGQ</strong></li>
+    <li>Property-Graph-Abfragen direkt auf relationalen Tabellen</li>
+    <li>Kein separates Graphsystem nötig – Graphsicht über vorhandene Daten</li>
+    <li><code>CREATE PROPERTY GRAPH</code> definiert Knoten- und Kantentabellen</li>
+    <li><code>FROM GRAPH_TABLE(...)</code> eingebettet in normales SQL</li>
+    <li>Analytische Workloads (kein OLTP), kleine bis mittlere Graphen</li>
+    <li>Data-Science-Workflows: Parquet/CSV direkt als Graph analysieren</li>
+</ul>
 <pre><code class="language-sql">CREATE TABLE Person AS 
 SELECT * FROM 'https://.../person.csv';
 
@@ -466,9 +426,12 @@ FROM GRAPH_TABLE(snb
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
-<h1>Graphdatenbanken vs. SQL</h1>
-        <p class="w3-large ic-neg15">Gleiche Abfrage im Vergleich</p>
-        <pre><code class="language-sql">-- SQL: Freunde zweiten Grades
+<h1>Beispiel in SQL und Cypher</h1>
+
+<p class="w3-large ic-neg15">Gleiche Abfrage im Vergleich</p>
+<div class="w3-row-padding">
+    <div class="w3-col m6">
+<pre><code class="language-sql">-- SQL: Freunde zweiten Grades
 SELECT DISTINCT f2.name
 FROM person p
 JOIN friendship f1
@@ -485,18 +448,17 @@ WHERE p.name = 'Alice'
     SELECT friend_id
     FROM friendship
     WHERE person_id = p.id)</code></pre>
-        <pre><code class="cypher">// Cypher: Freunde zweiten Grades
+    </div>
+    <div class="w3-col m6">
+<pre><code class="cypher">// Cypher: Freunde zweiten Grades
 MATCH (a:Person {name: "Alice"})
       -[:KENNT*2]->(fof)
 WHERE NOT (a)-[:KENNT]->(fof)
   AND fof &lt;&gt; a
 RETURN DISTINCT fof.name</code></pre>
-        <p class="w3-large ic-neg15">Wann Graphdatenbank?</p>
-        <ul class="w3-large">
-            <li>Viele und tiefe Beziehungs-Traversierungen</li>
-            <li>Schema dynamisch oder heterogen</li>
-            <li>Mustersuche in vernetzten Daten</li>
-            <li>Pfadprobleme (kürzester Weg, Erreichbarkeit)</li>
-        </ul>
+    </div>
+</div>
+
+
 <div class="ic-gap"></div>
 
