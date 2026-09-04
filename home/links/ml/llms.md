@@ -21,6 +21,10 @@ is_slide: 0
 
 # ai provider
 ## anthropic
+- Claude Code
+[(link)](bbhttps://code.claude.com/docs/de/overviewb)
+- Claude Code Tutorial 2026
+[(link)](https://www.wolfgegenlicht.de/claude-code-tutorial/)
 - Claude Code Unpacked
 [(link)](https://ccunpacked.dev/)
 - What Is Andrej Karpathy’s CLAUDE.md File?
@@ -29,8 +33,6 @@ is_slide: 0
 [(link)](https://github.com/rohanmistry231/Claude-OS)
 - If You’re Not Using These 20 Repos, Delete CLAUDE CODE
 [(link)](https://medium.com/@hii_mohit/if-youre-not-using-these-20-repos-delete-claude-code-eb859f5dda32)
-- I’m very impressed by Codex by OpenAI — you should try it
-[(link)](https://medium.com/realworld-ai-use-cases/im-very-impressed-by-codex-by-openai-you-should-try-it-1795ee95b468)
 - The Complete Guide to Claude Code: Understanding CLAUDE.md
 [(link)](https://ai.plainenglish.io/the-complete-guide-to-claude-code-understanding-claude-md-d3d592b9ed4e)
 - The 4 Lines Every CLAUDE.md Needs
@@ -42,6 +44,8 @@ is_slide: 0
 
 
 ## openai
+- I’m very impressed by Codex by OpenAI — you should try it
+[(link)](https://medium.com/realworld-ai-use-cases/im-very-impressed-by-codex-by-openai-you-should-try-it-1795ee95b468)
 
 
 
