@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 SQL Techniques for Designing Reliable Distributed Transactions Across Multiple Databases
+[(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-designing-reliable-distributed-transactions-across-multiple-databases-e6262e839226)
+
 - Read your writes: WAIT FOR in PostgreSQL 19
 [(link)](https://clickhouse.com/blog/postgresql-19-wait-for-read-your-writes)
 
