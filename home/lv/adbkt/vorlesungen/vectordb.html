@@ -125,34 +125,29 @@ n: 17
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Distanzmetriken</h1>
-<h2>Ähnlichkeiten / Distanzen</h2>
-        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d03-metrics.svg">
-        <p class="w3-large ic-neg15">Cosinus-Ähnlichkeit</p>
-        <ul class="w3-large">
-            <li>Misst den <strong>Winkel</strong> zwischen zwei Vektoren (0° = identisch)</li>
-            <li>Unabhängig von der Länge (Magnitude) der Vektoren</li>
-            <li>Wertebereich: −1 (entgegengesetzt) bis +1 (identisch)</li>
-            <li>Standard für Text-Embeddings</li>
-        </ul>
-        <p class="w3-large ic-neg15">Euklidischer Abstand (L2)</p>
-        <ul class="w3-large">
-            <li>Gerade Linie im hochdimensionalen Raum</li>
-            <li>Sensitiv gegenüber der Vektorgröße</li>
-            <li>Geeignet für normalisierte Vektoren und Bildsuche</li>
-        </ul>
-        <p class="w3-large ic-neg15">Dot Product (Skalarprodukt)</p>
-        <ul class="w3-large">
-            <li>Kombiniert Richtung und Magnitude</li>
-            <li>Bei normierten Vektoren identisch mit Cosinus</li>
-            <li>Sehr schnell berechenbar (SIMD-optimiert)</li>
-        </ul>
-<h2>Berechnung</h2>
-        <img class="w3-image" src="/home/lv/adbkt/a/vectordb/d320-100.png"><br>
-        <!--
-<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d311-100.png"><br>
-(<a href="https://towardsdatascience.com/similarity-search-knn-inverted-file-index-7cab80cc0e79">Quelle</a>)
--->
+<h1>Ähnlichkeiten / Distanzen</h1>
+<p class="w3-large ic-neg15">Cosinus-Ähnlichkeit</p>
+<ul class="w3-large">
+    <li>Misst den <strong>Winkel</strong> zwischen zwei Vektoren (0° = identisch)</li>
+    <li>Unabhängig von der Länge (Magnitude) der Vektoren</li>
+    <li>Wertebereich: −1 (entgegengesetzt) bis +1 (identisch)</li>
+    <li>Standard für Text-Embeddings</li>
+</ul>
+<p class="w3-large ic-neg15">Euklidischer Abstand (L2)</p>
+<ul class="w3-large">
+    <li>Gerade Linie im hochdimensionalen Raum</li>
+    <li>Sensitiv gegenüber der Vektorgröße</li>
+    <li>Geeignet für normalisierte Vektoren und Bildsuche</li>
+</ul>
+<p class="w3-large ic-neg15">Dot Product (Skalarprodukt)</p>
+<ul class="w3-large">
+    <li>Kombiniert Richtung und Magnitude</li>
+    <li>Bei normierten Vektoren identisch mit Cosinus</li>
+    <li>Sehr schnell berechenbar (SIMD-optimiert)</li>
+</ul>
+
+<p class="w3-large">Berechnung</p>
+<img class="w3-image" src="/home/lv/adbkt/a/vectordb/d320-100.png"><br>
 <div class="ic-gap"></div>
 
 

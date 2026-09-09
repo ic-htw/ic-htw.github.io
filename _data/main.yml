@@ -281,21 +281,21 @@ home: &r
                   - t:  Graph-Data-Science
                     ts:  Graph-Data-Science
                     url: /home/lv/adbkt/vorlesungen/graphds.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/vorlesungen/recsql.html
+                  - t: Vektordatenbanken
+                    ts: Vektordatenbanken
+                    url: /home/lv/adbkt/vorlesungen/vectordb.html
                   - t:  Geo-Datenverarbeitung
                     ts:  Geo-Datenverarbeitung
                     url: /home/lv/adbkt/vorlesungen/geo.html
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/vorlesungen/tsdb.html
+                  - t: Rekursives SQL
+                    ts: Rekursives SQL
+                    url: /home/lv/adbkt/vorlesungen/recsql.html
                   - t: Large Language Models
                     ts: LLMs
                     url: /home/lv/adbkt/vorlesungen/llms.html
-                  - t: Vektordatenbanken
-                    ts: Vektordatenbanken
-                    url: /home/lv/adbkt/vorlesungen/vectordb.html
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
