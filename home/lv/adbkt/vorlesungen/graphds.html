@@ -9,11 +9,7 @@ n: 15
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
-<h1>Graph Data Science</h1>
-<h2>Graph Data Science: Pipeline</h2>
-<img class="w3-image" src="/home/lv/adbkt/a/graph/gds/d01-gds-overview.svg">
-
-<h2>Neo4j Graph Data Science</h2>
+<h1>Neo4j Graph Data Science</h1>
 <p class="w3-large ic-neg15">Algorithmen-Ausprägungen</p>
 <ul class="w3-large">
     <li><strong>stream</strong> &ndash; Liefert ein Ergebnis wie eine normale Cypher Query</li>
@@ -143,8 +139,8 @@ RETURN nid;</code></pre>
 <div class="w3-row-padding">
     <div class="w3-col m6">
         <pre><code class="cypher">MATCH (n:Node {nid: 201})
-CALL gds.alpha.spanningTree.minimum.write('g', {
-   startNodeId: id(n),
+CALL gds.spanningTree.write('g', {
+   sourceNode: n,
    relationshipWeightProperty: 'w',
    writeProperty: 'Edge1',
    weightWriteProperty: 'w'
@@ -191,10 +187,10 @@ RETURN effectiveNodeCount;</code></pre>
 {% include padding-id.html id=8 %}
 <h1>Closeness Centrality &ndash; Solution</h1>
         <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p8_1.jpeg">
-        <pre><code class="cypher">CALL gds.alpha.closeness.stream('g')
-YIELD nodeId, centrality
+        <pre><code class="cypher">CALL gds.closeness.stream('g')
+YIELD nodeId, score
 RETURN gds.util.asNode(nodeId).nid AS nid,
-       centrality AS cc
+       score AS cc
 ORDER BY cc DESC;</code></pre>
         <img class="w3-image" src="/home/lv/adbkt/a/graph/gds/img_p8_2.jpeg">
 <div class="ic-gap"></div>
@@ -277,7 +273,7 @@ ORDER BY score DESC;</code></pre>
 -->
 {% include padding-id.html id=15 %}
 <h1>Strongly Connected Components &ndash; Solution</h1>
-        <pre><code class="cypher">CALL gds.alpha.scc.stream('g')
+        <pre><code class="cypher">CALL gds.scc.stream('g', {})
 YIELD nodeId, componentId
 RETURN gds.util.asNode(nodeId).nid AS nid,
        componentId AS cid
