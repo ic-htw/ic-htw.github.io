@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Databricks introduced a new database that could change everything (?)
+[(link)](https://medium.com/@vutrinh274/databricks-introduced-a-new-database-that-could-change-everything-99e24709846f)
+
+- I Explained Partial Derivatives to a Friend at Dinner. She Made Me Write It Down
+[(link)](bbhttps://medium.com/data-science-collective/partial-derivatives-explained-simply-26349407e685b)
+
 - 10 SQL Techniques for Designing Reliable Distributed Transactions Across Multiple Databases
 [(link)](https://medium.com/@Rohan_Dutt/10-sql-techniques-for-designing-reliable-distributed-transactions-across-multiple-databases-e6262e839226)
 
