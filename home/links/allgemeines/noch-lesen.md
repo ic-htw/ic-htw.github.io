@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- OpenClaw 2.0 Just Dropped and It Is a Massive Upgrade
+[(link)](https://medium.com/@pranithnaikpranit/2333df6bd397?sk=056a8014568236153b64aa16ead08040)
+
+- You Don’t Need a Server to Run Qwen3.8-Flash Next
+[(link)](https://medium.com/data-science-collective/you-dont-need-a-server-to-run-qwen3-8-flash-next-03e91724d196)
+
 - Databricks introduced a new database that could change everything (?)
 [(link)](https://medium.com/@vutrinh274/databricks-introduced-a-new-database-that-could-change-everything-99e24709846f)
 
