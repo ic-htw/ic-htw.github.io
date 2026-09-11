@@ -3,7 +3,7 @@ layout: default1
 nav: adbkt-vorlesungen
 title: Vektordatenbanken - ADBKT
 is_slide: 1
-n: 17
+n: 18
 ---
 <!--
     01 ******************************************************************
@@ -501,6 +501,44 @@ n: 17
     16 ******************************************************************
 -->
 {% include padding-id.html id=16 %}
+<h1>ReRanking</h1>
+<h2>Bei reiner Vektorsuche</h2>
+<ol class="w3-large">
+    <li>Retrieval (schnell, grob)</li>
+    <ul class="w3-large">
+        <li>Schnelle Vektorsuche nach semantischer Ähnlichkeit</li>
+        <li>Top 50-100 Kandidaten nach Vektorähnlichkeit nehmen</li>
+        <li>Embedding-Ähnlichkeit ungenau</li>
+    </ul>
+    <li>Reranking (langsam, präzise)</li>
+    <ul class="w3-large">
+        <li>Spezialisiertes Modell auf die Kandidaten anwenden</li>
+        <li>Nimmt inhaltliche Bewertung vor</li>
+        <li>Langsamer Prozess, aber höhere Qualität</li>
+        <li>Ermitteln der endgültigen Reihenfolge der Ergebnisse</li>
+    </ul>
+</ol>
+
+<h2>Bei hybrider Suche</h2>
+<ul class="w3-large">
+    <li>Hybride Suche = zwei parallele Kandidatenlisten</li>
+    <ul class="w3-large">
+        <li>Vektorsuche</li>
+        <li>Keyword-Suche</li>
+    </ul>
+    <li>Zwei unterschiedliche Score-Systeme</li>
+    <li>Reranking ersetzt Reciprocal Rank Fusion (RRF)</li>
+    <li>Reranking eleganter als RRF, da inhaltliche Bewertung</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    17 ******************************************************************
+-->
+{% include padding-id.html id=17 %}
 <h1>Vektordatenbanksysteme</h1>
 <h2>Pinecone</h2>
         <ul class="w3-large">
@@ -655,14 +693,12 @@ FROM docs
 ORDER BY dist
 LIMIT 5;</code></pre>
 
-
 <div class="ic-gap"></div>
 
-
 <!--
-    17 ******************************************************************
+    18 ******************************************************************
 -->
-{% include padding-id.html id=17 %}
+{% include padding-id.html id=18 %}
 <h1>LangChain: VectorStore-Integration</h1>
         <p class="w3-large ic-neg15">Dokumente indexieren</p>
         <pre><code class="python">from langchain_openai import OpenAIEmbeddings
@@ -709,6 +745,22 @@ rag_chain = create_retrieval_chain(retriever, qa_chain)
 result = rag_chain.invoke({"input": "Was ist ein Vektorindex?"})
 
 print(result["answer"])</code></pre>
-
 <div class="ic-gap"></div>
+
+
+<!--
+    19 ******************************************************************
+-->
+{% include padding-id.html id=19 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
+
+<!--
+    20 ******************************************************************
+-->
+{% include padding-id.html id=20 %}
+<h1>xxx</h1>
+<div class="ic-gap"></div>
+
 
