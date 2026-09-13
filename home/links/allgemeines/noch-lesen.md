@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- GPT-6 Astra vs Claude and the Open Models: What the Benchmarks Don’t Tell You
+[(link)](https://medium.com/@han.heloir/gpt-6-astra-vs-claude-and-the-open-models-what-the-benchmarks-dont-tell-you-7f5ed78c8885)
+
+- One Command Tells You What Local LLM Your Computer Can Run in 2026
+[(link)](https://medium.com/@anubhavgoyal101/one-command-tells-you-what-local-llm-your-computer-can-run-in-2026-2932a0611412)
+
+- I’m a Java Developer. Everyone Said I’d Be Replaced by AI. Here’s What Actually Happened.
+[(link)](https://medium.com/@sumanthpoola/im-a-java-developer-everyone-said-i-d-be-replaced-by-ai-here-s-what-actually-happened-276d214a7a1a)
+
 - OpenClaw 2.0 Just Dropped and It Is a Massive Upgrade
 [(link)](https://medium.com/@pranithnaikpranit/2333df6bd397?sk=056a8014568236153b64aa16ead08040)
 
