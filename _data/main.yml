@@ -290,12 +290,12 @@ home: &r
                   - t: Zeitreihendatenbanken
                     ts: Zeitreihendatenbanken
                     url: /home/lv/adbkt/vorlesungen/tsdb.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/vorlesungen/recsql.html
-                  - t: Large Language Models
-                    ts: LLMs
-                    url: /home/lv/adbkt/vorlesungen/llms.html
+                  # - t: Rekursives SQL
+                  #   ts: Rekursives SQL
+                  #   url: /home/lv/adbkt/vorlesungen/recsql.html
+                  # - t: Large Language Models
+                  #   ts: LLMs
+                  #   url: /home/lv/adbkt/vorlesungen/llms.html
               - t: Übungen
                 ts: Übungen
                 url: /home/lv/adbkt/uebungen/1-uebungen.html
@@ -303,67 +303,67 @@ home: &r
                   - t: Anforderungen an DB-Systeme
                     ts: Anforderungen an DB-Systeme
                     url: /home/lv/adbkt/uebungen/db-cases.html
-                  - t: Multi Version Concurrency Control 1
-                    ts: MVCC 1
-                    url: /home/lv/adbkt/uebungen/mvcc1.html
-                  - t: Multi Version Concurrency Control 2
-                    ts: MVCC 2
-                    url: /home/lv/adbkt/uebungen/mvcc2.html
-                  - t: Cassandra Replikation
-                    ts: Cassandra Replikation
-                    url: /home/lv/adbkt/uebungen/cas-repl.html
-                  - t:  Cassandra - TourDelight
-                    ts: Cassandra - TourDelight
-                    url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
-                  - t:  DynamoDB - Site Specific Crop Management
-                    ts: DynamoDB - SSCM
-                    url: /home/lv/adbkt/uebungen/sscm.html
-                  - t:  DynamoDB - TourDelight
-                    ts: DynamoDB - TourDelight
-                    url: /home/lv/adbkt/uebungen/tour-delight-dynamodb.html
-                  - t: Postgres JSON
-                    ts: Postgres JSON
-                    url: /home/lv/adbkt/uebungen/pg-json.html
-                  - t: GraphQL
-                    ts: GraphQL
-                    url: /home/lv/adbkt/uebungen/graphql.html
-                  - t: Cypher-Abfragen 1
-                    ts: Cypher-Abfragen 1
-                    url: /home/lv/adbkt/uebungen/cypher1.html
-                  - t:  Cypher-Abfragen 2
-                    ts: Cypher-Abfragen 2
-                    url: /home/lv/adbkt/uebungen/cypher2.html
-                  - t:  Graph-Data-Science
-                    ts: Graph-Data-Science
-                    url: /home/lv/adbkt/uebungen/gds.html
-                  - t: Graphdatenbanken - IT-Infrastruktur
-                    ts: Graphdatenbanken - IT-Infrastruktur
-                    url: /home/lv/adbkt/uebungen/it-infra.html
-                  - t: Graphdatenbanken - Zugriffskontrolle
-                    ts: Graphdatenbanken - Zugriffskontrolle
-                    url: /home/lv/adbkt/uebungen/auth.html
-                  - t: Rekursives SQL
-                    ts: Rekursives SQL
-                    url: /home/lv/adbkt/uebungen/recsql.html
-                  - t: pgRouting
-                    ts: pgRouting
-                    url: /home/lv/adbkt/uebungen/pgrouting.html
-                  - t: Geo-Abfragen
-                    ts: Geo-Abfragen
-                    url: /home/lv/adbkt/uebungen/geo-sql.html
-                  - t:  Zeitreihendatenbanken - Monitoring
-                    ts: Zeitreihendatenbanken - Monitoring
-                    url: /home/lv/adbkt/uebungen/monitoring.html
-                  - t:  Vektordatenbanken - RAG
-                    ts: Vektordatenbanken - RAG
-                    url: /home/lv/adbkt/uebungen/vectordb-rag.html
-                  - t: ER-Diagramm
-                    ts: ER-Diagramm
-                    url: /home/lv/adbkt/uebungen/er-dia.html
-                  - t: Fahrverbindung
-                    ts: Fahrverbindung
-                    url: /home/lv/adbkt/uebungen/sched.html
-              # - t: zzz
+              #     - t: Multi Version Concurrency Control 1
+              #       ts: MVCC 1
+              #       url: /home/lv/adbkt/uebungen/mvcc1.html
+              #     - t: Multi Version Concurrency Control 2
+              #       ts: MVCC 2
+              #       url: /home/lv/adbkt/uebungen/mvcc2.html
+              #     - t: Cassandra Replikation
+              #       ts: Cassandra Replikation
+              #       url: /home/lv/adbkt/uebungen/cas-repl.html
+              #     - t:  Cassandra - TourDelight
+              #       ts: Cassandra - TourDelight
+              #       url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
+              #     - t:  DynamoDB - Site Specific Crop Management
+              #       ts: DynamoDB - SSCM
+              #       url: /home/lv/adbkt/uebungen/sscm.html
+              #     - t:  DynamoDB - TourDelight
+              #       ts: DynamoDB - TourDelight
+              #       url: /home/lv/adbkt/uebungen/tour-delight-dynamodb.html
+              #     - t: Postgres JSON
+              #       ts: Postgres JSON
+              #       url: /home/lv/adbkt/uebungen/pg-json.html
+              #     - t: GraphQL
+              #       ts: GraphQL
+              #       url: /home/lv/adbkt/uebungen/graphql.html
+              #     - t: Cypher-Abfragen 1
+              #       ts: Cypher-Abfragen 1
+              #       url: /home/lv/adbkt/uebungen/cypher1.html
+              #     - t:  Cypher-Abfragen 2
+              #       ts: Cypher-Abfragen 2
+              #       url: /home/lv/adbkt/uebungen/cypher2.html
+              #     - t:  Graph-Data-Science
+              #       ts: Graph-Data-Science
+              #       url: /home/lv/adbkt/uebungen/gds.html
+              #     - t: Graphdatenbanken - IT-Infrastruktur
+              #       ts: Graphdatenbanken - IT-Infrastruktur
+              #       url: /home/lv/adbkt/uebungen/it-infra.html
+              #     - t: Graphdatenbanken - Zugriffskontrolle
+              #       ts: Graphdatenbanken - Zugriffskontrolle
+              #       url: /home/lv/adbkt/uebungen/auth.html
+              #     - t: Rekursives SQL
+              #       ts: Rekursives SQL
+              #       url: /home/lv/adbkt/uebungen/recsql.html
+              #     - t: pgRouting
+              #       ts: pgRouting
+              #       url: /home/lv/adbkt/uebungen/pgrouting.html
+              #     - t: Geo-Abfragen
+              #       ts: Geo-Abfragen
+              #       url: /home/lv/adbkt/uebungen/geo-sql.html
+              #     - t:  Zeitreihendatenbanken - Monitoring
+              #       ts: Zeitreihendatenbanken - Monitoring
+              #       url: /home/lv/adbkt/uebungen/monitoring.html
+              #     - t:  Vektordatenbanken - RAG
+              #       ts: Vektordatenbanken - RAG
+              #       url: /home/lv/adbkt/uebungen/vectordb-rag.html
+              #     - t: ER-Diagramm
+              #       ts: ER-Diagramm
+              #       url: /home/lv/adbkt/uebungen/er-dia.html
+              #     - t: Fahrverbindung
+              #       ts: Fahrverbindung
+              #       url: /home/lv/adbkt/uebungen/sched.html
+              # # - t: zzz
               #   ts: zzz
               #   url: /home/lv/adbkt/zzz/1-zzz.html
               #   sub:
