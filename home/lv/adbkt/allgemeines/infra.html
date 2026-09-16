@@ -36,6 +36,7 @@ n: 11
             <li>In der Navigationsleiste links auf "Networks" klicken</li>
             <li>Auf Button "Add network" klicken</li>
             <li>Name <code>adbkt</code> eintragen</li>
+            <li>Subnetz <code>172.28.0.0/16</code> eintragen</li>
         </ul>
 
 <h2>Stack anlegen</h2>
@@ -50,11 +51,72 @@ n: 11
 
 <div class="ic-gap"></div>
 
-
 <!--
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
+<h1>Ubuntu Toolchain (ubu-tc)</h1>
+<h2>Container erstellen</h2>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+
+services:
+  ubu-tc:
+    container_name: ubu-tc
+    image:  iclassen/ubu-tc
+    user: du
+    stdin_open: true 
+    tty: true
+    ports:
+      - "20022:22"
+      - 8888:8888
+    networks:
+      - adbkt
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - homedu:/home/du
+volumes:
+  homedu:</code></pre>
+
+<p class="w3-large ic-neg15">Passwort ändern</p>
+<ul class="w3-large">
+    <li>Terminal im Container öffnen</li>
+    <li><code class="language-plaintext">su / changeit</code></li>
+    <li><code class="language-plaintext">passwd</code></li>
+    <li><code class="language-plaintext">passwd du</code></li>
+</ul>
+
+<p class="w3-large ic-neg15">SSH-Dämon starten</p>
+<ul class="w3-large">
+    <li><code class="language-plaintext">service ssh start</code></li>
+</ul>
+
+<p class="w3-large ic-neg15">Mit SSH verbinden / Remote VS Code</p>
+<ul class="w3-large">
+  <li>In .ssh/config eintragen<br>
+  <pre><code class="language-plaintext"> Host ubu_tc_widb0xx
+  HostName widb0xxl.f4.htw-berlin.de
+  User du
+  Port 20022</code></pre></li>
+  <li><code class="language-plaintext">ssh ubu_tc_widb0xx</code></li>
+  <li>Remote VS Code öffnen</li>
+  <li>Einloggen über Public SSH-key 
+    <br>
+    <pre><code class="language-plaintext">cat id_ed25519.pub | ssh ubu_tc_widb0xx "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"</code></pre>
+  </li>
+</ul>
+
+
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    04 ******************************************************************
+-->
+{% include padding-id.html id=4 %}
 <h1>Postgres</h1>
 
 <h2>Container erstellen</h2>
