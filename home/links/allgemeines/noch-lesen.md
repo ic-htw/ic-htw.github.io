@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Tom Lane on the Architectural Decisions That Shaped 30 Years of Postgres
+[(link)](https://www.snowflake.com/en/blog/engineering/30-years-of-postgres-architecture-tom-lane/)
+
 - GPT-6 Astra vs Claude and the Open Models: What the Benchmarks Don’t Tell You
 [(link)](https://medium.com/@han.heloir/gpt-6-astra-vs-claude-and-the-open-models-what-the-benchmarks-dont-tell-you-7f5ed78c8885)
 
