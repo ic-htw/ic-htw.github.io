@@ -3,7 +3,7 @@ layout: default1
 nav: dsml-ml
 title: Cross-Validation in Machine Learning - DSML
 is_slide: 1
-n: 10
+n: 9
 ---
 <!--
     01 ******************************************************************
@@ -96,11 +96,6 @@ n: 10
     <li><strong>Significantly increases computational cost</strong>.</li>
 </ul>
 
-<h2>"Sweet Spot" (k=5 or k=10)</h2>
-<ul class="w3-large">
-    <li>Avoids excessive bias from small training sets.</li>
-    <li>Avoids high variance from overly fragmented test sets.</li>
-</ul>
 <div class="ic-gap"></div>
 
 
@@ -130,27 +125,6 @@ n: 10
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1>Advanced Cross-Validation: The Extreme Case</h1>
-<h2>Leave-One-Out (LOO) Cross-Validation</h2>
-<ul class="w3-large">
-    <li><strong>Definition</strong>: An extreme variation of K-Fold where <em>k</em> equals the total number of samples (<em>n</em>).</li>
-    <li>In each iteration, a <strong>single data point is the test set</strong>, and the remaining <em>n</em>-1 samples are for training.</li>
-    <li><strong>Key Advantage</strong>: Extremely <strong>low bias</strong> as the training set is nearly full-sized.</li>
-    <li><strong>Key Disadvantages</strong>:
-        <ul class="example-list">
-            <li><strong>Very high computational cost</strong>: requires training and evaluating the model <em>n</em> times.</li>
-            <li>Can lead to <strong>high variance</strong> because each test set is a single data point, making the performance score highly susceptible to outliers.</li>
-        </ul>
-    </li>
-    <li><strong>Primary Use Case</strong>: Small datasets.</li>
-</ul>
-<div class="ic-gap"></div>
-
-
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
 <h1>Critical Pitfall: Data Leakage</h1>
 <h2>Definition</h2>
 <ul class="w3-large">
@@ -183,9 +157,9 @@ n: 10
 
 
 <!--
-    08 ******************************************************************
+    07 ******************************************************************
 -->
-{% include padding-id.html id=8 %}
+{% include padding-id.html id=7 %}
 <h1>Cross-Validation for Time-Series Data</h1>
 <h2>Why Standard Cross-Validation Fails</h2>
 <ul class="w3-large">
@@ -205,9 +179,9 @@ n: 10
 
 
 <!--
-    09 ******************************************************************
+    08 ******************************************************************
 -->
-{% include padding-id.html id=9 %}
+{% include padding-id.html id=8 %}
 <h1>Walk-Forward Validation Approaches</h1>
 <h2>Expanding Window Approach</h2>
 <ul class="w3-large">
@@ -229,9 +203,9 @@ n: 10
 
 
 <!--
-    10 ******************************************************************
+    09 ******************************************************************
 -->
-{% include padding-id.html id=10 %}
+{% include padding-id.html id=9 %}
 <h1>Strategic Recommendations and Best Practices</h1>
 <h2>Decision-Making Framework</h2>
 <ol class="w3-large">

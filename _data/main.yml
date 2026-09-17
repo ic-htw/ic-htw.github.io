@@ -544,24 +544,24 @@ home: &r
                   - t: Introduction to Machine Learning
                     ts: Intro
                     url: /home/lv/dsml/ml/ml-intro.html
-                  - t: Common Machine Learning Algorithms
-                    ts: Common ML Algos
-                    url: /home/lv/dsml/ml/algos.html
                   - t: Applied ML
                     ts: Applied ML
                     url: /home/lv/dsml/ml/ml1.html
-                  - t: Categorical Feature Encoding
-                    ts: Categorical Feature Encoding
-                    url: /home/lv/dsml/ml/cat.html
-                  - t: Metrics in Machine Learning
-                    ts: Metrics
-                    url: /home/lv/dsml/ml/metrics.html
+                  - t: Common Machine Learning Algorithms
+                    ts: Common ML Algos
+                    url: /home/lv/dsml/ml/algos.html
                   - t: Tree-based Models
                     ts: Trees
                     url: /home/lv/dsml/ml/trees.html
                   - t: Cross-Validation in Machine Learning 
                     ts: Cross-Validation
                     url: /home/lv/dsml/ml/cv.html
+                  - t: Categorical Feature Encoding
+                    ts: Categorical Feature Encoding
+                    url: /home/lv/dsml/ml/cat.html
+                  - t: Metrics in Machine Learning
+                    ts: Metrics
+                    url: /home/lv/dsml/ml/metrics.html
               - t: SQL
                 ts: SQL
                 url: /home/lv/dsml/sql/1-sql.html
