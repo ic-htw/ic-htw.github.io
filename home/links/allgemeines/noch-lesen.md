@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- System Design Interview: How Would You Avoid Overselling Inventory During a Flash Sale?
+[(link)](https://codefarm0.medium.com/system-design-interview-how-would-you-avoid-overselling-inventory-during-a-flash-sale-1cf844eca0b9)
+
+- My Senior Engineer Deleted 3,000 Lines of AI-Generated Code on Friday. His Reason Was Better Than the Code.
+[(link)](https://medium.com/javarevisited/my-senior-engineer-deleted-3-000-lines-of-ai-generated-code-on-friday-6f1869c91f3d)
+
+- Stop Using UUID Everywhere: The Primary Key Decision That Actually Matters
+[(link)](https://medium.com/javarevisited/stop-using-uuid-everywhere-the-primary-key-decision-that-actually-matters-0d8fa78cf280)
+
 - Tom Lane on the Architectural Decisions That Shaped 30 Years of Postgres
 [(link)](https://www.snowflake.com/en/blog/engineering/30-years-of-postgres-architecture-tom-lane/)
 
