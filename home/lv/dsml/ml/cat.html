@@ -162,10 +162,14 @@ n: 9
     <li>Zip_Code_A, only has 1 customer, and that customer churned</li>
     <li>Zip_Code_A gets encoded as 100% churn rate</li>
     <li>Solution: blend the category's mean with the global mean</li>
-    <li>Smoothing Formula: (Category_Count * Category_Mean + Weight * Global_Mean) / (Category_Count + Weight)</li>
-    <li>Set Weight to e.g. 10</li>
-    <li>We want at least 10 samples before we fully trust the category's mean</li>
-    <li>Calculation: (1 * 1.0 + 10 * 0.2) / (1 + 10) = 0.27</li>
+    <li>Smoothing Formula: 
+        $$\frac{
+            (\text{Category_Count} \times \text{Category_Mean}) 
+            + (\text{Weight} \times \text{Global_Mean})}
+            {\text{Category_Count} + \text{Weight}}$$</li>
+    <li>Assuming Weight = 10 and Global_Mean = 0.2</li>
+    <li>Zip_Code_A gets encoded as:
+        $$\frac{1\times 1.0 + 10 \times 0.2}{1 + 10} = 0.27$$</li>
 </ul>
 
 
