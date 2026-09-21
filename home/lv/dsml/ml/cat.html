@@ -43,7 +43,7 @@ n: 9
 
 <p class="w3-large ic-neg15">Ordinal Data (Ordered)</p>
 <ul class="w3-large">
-    <li>Categories have meaningful sequence or hierarchy</li>
+    <li>Categories have meaningful order</li>
     <li> Low, Medium, High</li>
     <li>S, M, L, XL</li>
 </ul>
@@ -67,7 +67,7 @@ n: 9
 <ul class="w3-large">
     <li>Easy to implement</li>
     <li>Extremely memory efficient</li>
-    <li>Preserves order (great for Ordinal data)</li> 
+    <li>Preserves order (great for ordinal data)</li> 
 </ul>
 <p class="w3-large ic-neg15">Cons</p>
 <ul class="w3-large">
@@ -116,8 +116,28 @@ n: 9
 {% include padding-id.html id=5 %}
 <h1>Target / Mean Encoding</h1>
 <p class="w3-large ic-neg15">Replaces a category with the average value of the target variable for that category</p>
+
+<p class="w3-large ic-neg15">Example 1: Classification (Customer Churn)</p>
 <ul class="w3-large">
-    <li>If City="London" has a 60% churn rate, "London" is replaced with 0.60</li>
+    <li>Prediction whether a customer will churn (1 = Yes, 0 = No)</li>
+    <li>You have a categorical feature City</li>
+    <li>New York: 1,000 customers, 300 churned 30% churn rate</li>
+    <li>London: 500 customers, 50 churned: 10% churn rate</li>
+    <li>Tokyo: 200 customers, 80 churned: 40% churn rate</li>
+    <li>Encode the cities with their respective churn rates (mean of target values)</li>
+    <li>Tokyo has a higher churn rate than New York and London</li>
+    <li>Model learns that Tokyo is a higher-risk city for customer churn</li>
+</ul>
+
+<p class="w3-large ic-neg15">Example 2: Regression (House Prices)</p>
+<ul class="w3-large">
+    <li>Prediction of house prices</li>
+    <li>You have a categorical feature Neighborhood</li>
+    <li>Downtown: Average house price = $500,000</li>
+    <li>Suburbs: Average house price = $250,000</li>
+    <li>Rural: Average house price = $150,000</li>
+    <li>Replace the categories with the averages</li>
+    <li>Sensible value for this feature</li>
 </ul>
 
 <p class="w3-large ic-neg15">Pros</p>
@@ -134,6 +154,21 @@ n: 9
     <li>Can be sensitive to outliers in the target variable</li>
     <li>May not perform well with very small sample sizes</li>
 </ul>
+
+<p class="w3-large ic-neg15">The "Rare Category" Problem & Smoothing</p>
+<ul class="w3-large">
+    <li>Predicting Churn</li>
+    <li>You have a Zip_Code feature</li>
+    <li>Zip_Code_A, only has 1 customer, and that customer churned</li>
+    <li>Zip_Code_A gets encoded as 100% churn rate</li>
+    <li>Solution: blend the category's mean with the global mean</li>
+    <li>Smoothing Formula: (Category_Count * Category_Mean + Weight * Global_Mean) / (Category_Count + Weight)</li>
+    <li>Set Weight to e.g. 10</li>
+    <li>We want at least 10 samples before we fully trust the category's mean</li>
+    <li>Calculation: (1 * 1.0 + 10 * 0.2) / (1 + 10) = 0.27</li>
+</ul>
+
+
 
 <div class="ic-gap"></div>
 
@@ -194,7 +229,7 @@ n: 9
 
 <p class="w3-large ic-neg15">Cons</p>
 <ul class="w3-large">
-    <li> Irreversible (can't easily map back to original category)ns</li>
+    <li> Irreversible (can't easily map back to original category)</li>
     <li> Hash collisions</li>
 </ul>
 
@@ -229,7 +264,7 @@ n: 9
         <td>Label, Target, or no encoding </td>
     </tr>
     <tr>
-        <td>Linear / Distance-Based Models (LinReg, KNN</td>
+        <td>Linear / Distance-Based Models (LinReg, KNN)</td>
         <td>One-Hot, Target</td>
     </tr>
 </table>
