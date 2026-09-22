@@ -3,36 +3,30 @@ layout: default1
 nav: dsml-ml
 title: Common Machine Learning Algorithms - DSML
 is_slide: 1
-n: 9
+n: 11
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
 <h1>Linear Regression</h1>
-<p class="w3-large">Used for: Regression</p>
+<p class="w3-large">Used for Regression</p>
 
-<p class="w3-large ic-neg15">How it works:</p>
+<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
     <li> Fits a "best-fit" straight line (or hyperplane) through data points</li>
-    <li>Relationship between independent variables (X) and a continuous dependent variable (Y).</li>
+    <li>Creates a linear relationship between features (X) and a target (Y).</li>
 </ul>
 
-<p class="w3-large ic-neg15">Use Cases:</p>
+<p class="w3-large ic-neg15">Pros</p>
 <ul class="w3-large">
-    <li>Predicting house prices based on square footage and location</li>
-    <li>Forecasting future sales revenue based on ad spend</li>
-    <li>Estimating the impact of different factors on a continuous outcome</li>
+    <li>Simple, highly interpretable, fast to train</li>
 </ul>
 
-<p class="w3-large ic-neg15">Pros/Cons</p>
+<p class="w3-large ic-neg15">Cons</p>
 <ul class="w3-large">
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>Assumes linear relationships, sensitive to outliers</li>
 </ul>
-
 
 
 <div class="ic-gap"></div>
@@ -43,31 +37,26 @@ n: 9
 -->
 {% include padding-id.html id=2 %}
 <h1>Logistic Regression</h1>
-<p class="w3-large">Used for: Classification</p>
+<p class="w3-large">Used for Classification</p>
 
-<p class="w3-large ic-neg15">How it works:</p>
+<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>Despite the name, it is used for classification</li>
+    <li>It models the probability of a binary outcome using a logistic function</li>
+    <li>It can be extended to handle multi-class classification problems</li>
+    <li>It is a linear model, making it easy to interpret and implement</li>
 </ul>
 
-<p class="w3-large ic-neg15">Use Cases:</p>
+<p class="w3-large ic-neg15">Pros</p>
 <ul class="w3-large">
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>Outputs interpretable probabilities</li>
 </ul>
 
-<p class="w3-large ic-neg15">Pros/Cons</p>
+<p class="w3-large ic-neg15">Cons</p>
 <ul class="w3-large">
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
-    <li>xxxxxxxxxxxxxxxxxx</li>
+    <li>Prone to underfitting on complex, non-linear data.</li>
 </ul>
+
 <div class="ic-gap"></div>
 
 
@@ -75,26 +64,84 @@ n: 9
     03 ******************************************************************
 -->
 {% include padding-id.html id=3 %}
-<h1>Decision Trees & Random Forests</h1>
-<p class="w3-large"><strong>Used for: </strong>Classification & Regression</p>
-<div class="ic-gap"></div>
+<h1>Decision Trees</h1>
+<p class="w3-large">Used for Classification & Regression</p>
 
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Splits data into branches based on feature questions</li>
+    <li>E.g., "Is Age > 30?"</li>
+    <li>Greedy algorithm that makes locally optimal choices at each step</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Easy to read and interpret</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li>Performance can be poor with high-dimensional data</li>
+    <li>Prone to overfitting</li>
+</ul>
+
+<div class="ic-gap"></div>
 
 <!--
     04 ******************************************************************
 -->
 {% include padding-id.html id=4 %}
-<h1>Naive Bayes</h1>
-<p class="w3-large"><strong>Used for: </strong>Classification</p>
-<div class="ic-gap"></div>
+<h1>Random Forests</h1>
+<p class="w3-large">Used for Classification & Regression</p>
 
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Builds hundreds of slightly different decision trees</li>
+    <li>Averages their predictions for regression</li>
+    <li>Majority vote for classification</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Highly accurate</li>
+    <li>Handles non-linear data well</li>
+    <li>Requires little data preprocessing</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li>Random Forests are "black boxes"</li>
+    <li>Harder to interpret than a single tree</li>
+</ul>
+
+<div class="ic-gap"></div>
 
 <!--
     05 ******************************************************************
 -->
 {% include padding-id.html id=5 %}
-<h1>Support Vector Machines (SVM)</h1>
-<p class="w3-large"><strong>Used for: </strong>Classification & Regression</p>
+<h1>Naive Bayes</h1>
+<p class="w3-large">Used for Classification</p>
+
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Based on Bayes' Theorem</li>
+    <li>$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$</li>
+    <li>Calculates the probability of a data point belonging to a certain class</li>
+    <li>Assumes features are conditionally independent given the class</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Extremely fast</li>
+    <li>Works remarkably well with high-dimensional text data</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li> Independent features is rarely true in the real world</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 
@@ -102,8 +149,31 @@ n: 9
     06 ******************************************************************
 -->
 {% include padding-id.html id=6 %}
-<h1> k-Nearest Neighbors (k-NN)</h1>
-<p class="w3-large"><strong>Used for: </strong>Classification & Regression</p>
+<h1>Support Vector Machines (SVM)</h1>
+<p class="w3-large">Used for Classification & Regression</p>
+
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Separates different classes by finding the optimal hyperplane</li>
+    <li>Support vectors are the data points that are closest to the hyperplane</li>
+    <li>Maximizes the "margin" (distance) between the hyperplane and the support vectors</li>
+    <li>Kernel Trick: Transform data into higher dimensions</li>
+    <li>Uses the Kernel Trick to find linear separators for non-linear data</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Effective in high-dimensional spaces</li>
+    <li>Handles non-linear boundaries well with kernels</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li>Computationally heavy, only suitable for relatively small datasets</li>
+    <li>Requires careful tuning of parameters</li>
+    <li>Requires additional work for multiple classes</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 
@@ -111,8 +181,30 @@ n: 9
     07 ******************************************************************
 -->
 {% include padding-id.html id=7 %}
-<h1>Gradient Boosting (e.g., XGBoost, LightGBM)</h1>
-<p class="w3-large"><strong>Used for: </strong>Regression</p>
+<h1> k-Nearest Neighbors (k-NN)</h1>
+<p class="w3-large">Used for Classification & Regression</p>
+
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Doesn't build a model</li>
+    <li>Looks at the k nearest neighbors to make predictions</li>
+    <li>Averages the values of the k nearest neighbors for regression</li>
+    <li>Majority voting for classification</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Very intuitive</li>
+    <li>Simple to implement</li>
+    <li>Naturally handles multi-class problems</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li>Very slow during the prediction phase</li>
+    <li>highly sensitive to feature scaling and irrelevant features</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 
@@ -120,7 +212,28 @@ n: 9
     08 ******************************************************************
 -->
 {% include padding-id.html id=8 %}
-<h1>Comparison of Algorithms</h1>
+<h1>Gradient Boosting (e.g., XGBoost, LightGBM)</h1>
+<p class="w3-large">Used for Classification & Regression</p>
+
+<p class="w3-large ic-neg15">How it works</p>
+<ul class="w3-large">
+    <li>Builds decision trees sequentially</li>
+    <li>Each new tree is trained on errors made by the previous trees</li>
+    <li>Combines the predictions of all the trees to make the final prediction</li>
+</ul>
+
+<p class="w3-large ic-neg15">Pros</p>
+<ul class="w3-large">
+    <li>Often the most accurate algorithm for structured/tabular data</li>
+</ul>
+
+<p class="w3-large ic-neg15">Cons</p>
+<ul class="w3-large">
+    <li>Prone to overfitting</li>
+    <li>Requires careful hyperparameter tuning</li>
+    <li>Slower to train than Random Forests</li>
+</ul>
+
 <div class="ic-gap"></div>
 
 
@@ -128,7 +241,183 @@ n: 9
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
-<h1>How to Choose an Algorithm</h1>
+<h1>Comparison of Algorithms</h1>
+
+<ul class="w3-large">
+    <li>The following table provides a high-level comparison</li>
+    <li>The characteristics of each algorithm is very roughly described</li>
+    <li>Just to give a general idea of each algorithm's relative strengths and weaknesses</li>
+</ul>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Algorithm</th>
+        <th>Performance</th>
+        <th>Interpretability</th>
+        <th>Training Speed</th>
+    </tr>
+    <tr>
+        <td><strong>Linear Regression</strong></td>
+        <td>Lower</td>
+        <td>Higher</td>
+        <td>Faster</td>
+    </tr>
+    <tr>
+        <td><strong>Logistic Regression</strong></td>
+        <td>Lower</td>
+        <td>Higher</td>
+        <td>Faster</td>
+    </tr>
+    <tr>
+        <td><strong>Decision Trees</strong></td>
+        <td>Lower</td>
+        <td>Higher</td>
+        <td>Faster</td>
+    </tr>
+    <tr>
+        <td><strong>Random Forests</strong></td>
+        <td>Higher</td>
+        <td>Lower</td>
+        <td>Slower</td>
+    </tr>
+    <tr>
+        <td><strong>Naive Bayes</strong></td>
+        <td>Lower</td>
+        <td>Higher</td>
+        <td>Fast</td>
+    </tr>
+    <tr>
+        <td><strong>SVM</strong></td>
+        <td>Higher</td>
+        <td>Lower</td>
+        <td>Slower</td>
+    </tr>
+    <tr>
+        <td><strong>k-NN</strong></td>
+        <td>Lower</td>
+        <td>Higher</td>
+        <td>Slower</td>
+    </tr>
+    <tr>
+        <td><strong>Gradient Boosting</strong></td>
+        <td>Higher</td>
+        <td>Lower</td>
+        <td>Slower</td>
+    </tr>
+</table>
+
 <div class="ic-gap"></div>
 
 
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Quick Guide on Regression</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Algorithm</th>
+        <th>Consideration</th>
+    </tr>
+    <tr>
+        <td><strong>Linear Regression</strong></td>
+        <td>
+            data is roughly linear<br>
+            you need interpretability
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Decision Trees</strong></td>
+        <td>
+            you need interpretability<br>
+            your model should capture non-linear relationships<br>
+            you don't need top performannce
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Random Forests</strong></td>
+        <td>
+            you want strong general-purpose performance<br>
+            your model should be robust to outliers/noise<br> 
+            you don't want much tuning
+        </td>
+    </tr>
+    <tr>
+        <td><strong>SVM</strong></td>
+        <td>
+            small-to-medium dataset<br>
+            high-dimensional feature space<br>
+            you expect a smooth/non-linear relationship
+        </td>
+    </tr>
+    <tr>
+        <td><strong>k-NN</strong></td>
+        <td>
+            small dataset, low dimensionality<br>
+            the relationship is local/non-parametric (no assumed functional form)</td>
+    </tr>
+    <tr>
+        <td><strong>Gradient Boosting</strong></td>
+        <td>
+            you want the best possible pereformance on structured/tabular data<br>
+            you can afford careful tuning and longer training time
+        </td>
+    </tr>
+</table>
+
+
+<div class="ic-gap"></div>
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
+<h1>Quick Guide on Classification</h1>
+<table class="w3-table-all">
+    <tr>
+        <th>Algorithm</th>
+        <th>Consideration</th>
+    </tr>
+    <tr>
+        <td><strong>Logistic Regression</strong></td>
+        <td>
+            data is roughly linearly separable<br>
+            you need interpretability
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Decision Trees</strong></td>
+        <td>same considerations as for regression</td>
+    </tr>
+    <tr>
+        <td><strong>Random Forests</strong></td>
+        <td>same considerations as for regression</td>
+    </tr>
+    <tr>
+        <td><strong>Naive Bayes</strong></td>
+        <td>
+            features are roughly independent<br>
+            you're working with text<br>
+            you're working with text high-dimensional sparse data
+        </td>
+    </tr>
+    <tr>
+        <td><strong>SVM</strong></td>
+        <td>
+            you're working with text<br>
+            otherwise same considerations as for regression
+        </td>
+    </tr>
+    <tr>
+        <td><strong>k-NN</strong></td>
+        <td>same considerations as for regression</td>
+    </tr>
+    <tr>
+        <td><strong>Gradient Boosting</strong></td>
+        <td>same considerations as for regression</td>
+    </tr>
+</table>
+
+
+<div class="ic-gap"></div>
