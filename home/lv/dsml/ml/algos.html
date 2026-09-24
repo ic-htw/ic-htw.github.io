@@ -3,29 +3,16 @@ layout: default1
 nav: dsml-ml
 title: Common Machine Learning Algorithms - DSML
 is_slide: 1
-n: 11
+n: 13
 ---
 <!--
     01 ******************************************************************
 -->
 {% include padding-id.html id=1 %}
 <h1>Linear Regression</h1>
-<p class="w3-large">Used for Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
-    <li> Fits a "best-fit" straight line (or hyperplane) through data points</li>
-    <li>Creates a linear relationship between features (X) and a target (Y).</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
-    <li>Simple, highly interpretable, fast to train</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
-    <li>Assumes linear relationships, sensitive to outliers</li>
+    <li> Fits a "best" straight line (or hyperplane) through data points</li>
+    <li>Simple</li>
 </ul>
 
 
@@ -37,24 +24,10 @@ n: 11
 -->
 {% include padding-id.html id=2 %}
 <h1>Logistic Regression</h1>
-<p class="w3-large">Used for Classification</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
-    <li>Despite the name, it is used for classification</li>
-    <li>It models the probability of a binary outcome using a logistic function</li>
-    <li>It can be extended to handle multi-class classification problems</li>
-    <li>It is a linear model, making it easy to interpret and implement</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
-    <li>Outputs interpretable probabilities</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
-    <li>Prone to underfitting on complex, non-linear data.</li>
+    <li>Used for classification, despite its name</li>
+    <li>Models probability of classes (softmax)</li>
+    <li>Prone to underfitting on complex data.</li>
 </ul>
 
 <div class="ic-gap"></div>
@@ -65,22 +38,11 @@ n: 11
 -->
 {% include padding-id.html id=3 %}
 <h1>Decision Trees</h1>
-<p class="w3-large">Used for Classification & Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Can be used for Classification & Regression</li>
     <li>Splits data into branches based on feature questions</li>
     <li>E.g., "Is Age > 30?"</li>
-    <li>Greedy algorithm that makes locally optimal choices at each step</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
-    <li>Easy to read and interpret</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
+    <li>Greedy algorithm makes locally optimal choices at each step</li>
     <li>Performance can be poor with high-dimensional data</li>
     <li>Prone to overfitting</li>
 </ul>
@@ -92,26 +54,13 @@ n: 11
 -->
 {% include padding-id.html id=4 %}
 <h1>Random Forests</h1>
-<p class="w3-large">Used for Classification & Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Can be used for Classification & Regression</li>
     <li>Builds hundreds of slightly different decision trees</li>
     <li>Averages their predictions for regression</li>
     <li>Majority vote for classification</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
     <li>Highly accurate</li>
-    <li>Handles non-linear data well</li>
     <li>Requires little data preprocessing</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
-    <li>Random Forests are "black boxes"</li>
-    <li>Harder to interpret than a single tree</li>
 </ul>
 
 <div class="ic-gap"></div>
@@ -121,24 +70,15 @@ n: 11
 -->
 {% include padding-id.html id=5 %}
 <h1>Naive Bayes</h1>
-<p class="w3-large">Used for Classification</p>
 
 <p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Used for Classification</li>
     <li>Based on Bayes' Theorem</li>
     <li>$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$</li>
     <li>Calculates the probability of a data point belonging to a certain class</li>
     <li>Assumes features are conditionally independent given the class</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
-    <li>Extremely fast</li>
     <li>Works remarkably well with high-dimensional text data</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
     <li> Independent features is rarely true in the real world</li>
 </ul>
 
@@ -150,25 +90,14 @@ n: 11
 -->
 {% include padding-id.html id=6 %}
 <h1>Support Vector Machines (SVM)</h1>
-<p class="w3-large">Used for Classification & Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Can be used for Classification & Regression</li>
     <li>Separates different classes by finding the optimal hyperplane</li>
     <li>Support vectors are the data points that are closest to the hyperplane</li>
     <li>Maximizes the "margin" (distance) between the hyperplane and the support vectors</li>
     <li>Kernel Trick: Transform data into higher dimensions</li>
     <li>Uses the Kernel Trick to find linear separators for non-linear data</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
     <li>Effective in high-dimensional spaces</li>
-    <li>Handles non-linear boundaries well with kernels</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
     <li>Computationally heavy, only suitable for relatively small datasets</li>
     <li>Requires careful tuning of parameters</li>
     <li>Requires additional work for multiple classes</li>
@@ -182,25 +111,15 @@ n: 11
 -->
 {% include padding-id.html id=7 %}
 <h1> k-Nearest Neighbors (k-NN)</h1>
-<p class="w3-large">Used for Classification & Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Can be used for Classification & Regression</li>
     <li>Doesn't build a model</li>
     <li>Looks at the k nearest neighbors to make predictions</li>
     <li>Averages the values of the k nearest neighbors for regression</li>
     <li>Majority voting for classification</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
     <li>Very intuitive</li>
     <li>Simple to implement</li>
     <li>Naturally handles multi-class problems</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
     <li>Very slow during the prediction phase</li>
     <li>highly sensitive to feature scaling and irrelevant features</li>
 </ul>
@@ -213,22 +132,12 @@ n: 11
 -->
 {% include padding-id.html id=8 %}
 <h1>Gradient Boosting (e.g., XGBoost, LightGBM)</h1>
-<p class="w3-large">Used for Classification & Regression</p>
-
-<p class="w3-large ic-neg15">How it works</p>
 <ul class="w3-large">
+    <li>Can be used for Classification & Regression</li>
     <li>Builds decision trees sequentially</li>
     <li>Each new tree is trained on errors made by the previous trees</li>
     <li>Combines the predictions of all the trees to make the final prediction</li>
-</ul>
-
-<p class="w3-large ic-neg15">Pros</p>
-<ul class="w3-large">
     <li>Often the most accurate algorithm for structured/tabular data</li>
-</ul>
-
-<p class="w3-large ic-neg15">Cons</p>
-<ul class="w3-large">
     <li>Prone to overfitting</li>
     <li>Requires careful hyperparameter tuning</li>
     <li>Slower to train than Random Forests</li>
@@ -241,6 +150,121 @@ n: 11
     09 ******************************************************************
 -->
 {% include padding-id.html id=9 %}
+<h1>Linear vs. Non-Linear Models</h1>
+
+<table class="w3-table-all">
+    <tr>
+        <th>Concept</th>
+        <th>Linear</th>
+        <th>Nonlinear</th>
+    </tr>
+    <tr>
+        <td>Relationship</td>
+        <td>Straight/simple</td>
+        <td>Curved/complex</td>
+    </tr>
+    <tr>
+        <td>Feature effect</td>
+        <td>Generally constant</td>
+        <td>Can be more complex</td>
+    </tr>
+    <tr>
+        <td>Decision boundary</td>
+        <td>Hyperplane</td>
+        <td>Can be curved/complex</td>
+    </tr>
+    <tr>
+        <td>Can model interactions naturally?</td>
+        <td>Not without adding them</td>
+        <td>Often yes</td>
+    </tr>
+    <tr>
+        <td>Flexibility</td>
+        <td>Lower</td>
+        <td>Higher</td>
+    </tr>
+    <tr>
+        <td>Interpretability</td>
+        <td>Often easier</td>
+        <td>Often harder</td>
+    </tr>
+</table>
+
+<div class="ic-gap"></div>
+
+<!--
+    10 ******************************************************************
+-->
+{% include padding-id.html id=10 %}
+<h1>Sensitivity to outliers</h1>
+
+<p class="w3-large">How strongly an extreme observation can affect the model.</p>
+
+
+<table class="w3-table-all">
+    <tr>
+        <th>Model</th>
+        <th>Sensitivity</th>
+        <th>Reason</th>
+    </tr>
+    <tr>
+        <td><strong>Linear Regression</strong></td>
+        <td>High</td>
+        <td>Squared error gives extreme observations very large influence</td>
+    </tr>
+    <tr>
+        <td><strong>Logistic Regression</strong></td>
+        <td>Moderate</td>
+        <td>High-leverage observations can strongly affect coefficients</td>
+    </tr>
+    <tr>
+        <td><strong>Decision Trees</strong></td>
+        <td>Low</td>
+        <td>Splits are based on thresholds; individual extreme values often have limited effect</td>
+    </tr>
+    <tr>
+        <td><strong>Random Forests</strong></td>
+        <td>Low</td>
+        <td>Averaging many trees reduces the influence of individual unusual observations</td>
+    </tr>
+    <tr>
+        <td><strong>Naive Bayes</strong></td>
+        <td>Moderate–High</td>
+        <td>Depends heavily on the distribution assumption; extreme values can distort estimated distributions</td>
+    </tr>
+    <tr>
+        <td><strong>SVM</strong></td>
+        <td>Moderate–High</td>
+        <td>Points near/inside the margin are influential; feature scaling also matters</td>
+    </tr>
+    <tr>
+        <td><strong>k-NN</strong></td>
+        <td>High</td>
+        <td>Outliers can affect distances and therefore nearest-neighbor selection</td>
+    </tr>
+    <tr>
+        <td><strong>Gradient Boosting</strong></td>
+        <td>Moderate–High</td>
+        <td>Depends on the loss function; extreme observations can receive large residual/loss contributions</td>
+    </tr>
+</table>
+
+<p class="w3-large">Pragmatic summary</p>
+<ul class="w3-large">
+    <li>Most sensitive: Linear Regression, k-NN</li>
+    <li>Moderately sensitive: Logistic Regression, Naive Bayes, SVM, Gradient Boosting</li>
+    <li>More robust: Decision Trees, Random Forests</li>
+</ul>
+
+
+<div class="ic-gap"></div>
+
+
+
+<!--
+    11 ******************************************************************
+-->
+{% include padding-id.html id=11 %}
 <h1>Comparison of Algorithms</h1>
 
 <ul class="w3-large">
@@ -255,54 +279,63 @@ n: 11
         <th>Performance</th>
         <th>Interpretability</th>
         <th>Training Speed</th>
+        <th>Shape</th>
     </tr>
     <tr>
         <td><strong>Linear Regression</strong></td>
         <td>Lower</td>
         <td>Higher</td>
         <td>Faster</td>
+        <td>Linear</td>
     </tr>
     <tr>
         <td><strong>Logistic Regression</strong></td>
         <td>Lower</td>
         <td>Higher</td>
         <td>Faster</td>
+        <td>Linear</td>
     </tr>
     <tr>
         <td><strong>Decision Trees</strong></td>
         <td>Lower</td>
         <td>Higher</td>
         <td>Faster</td>
+        <td>Nonlinear</td>
     </tr>
     <tr>
         <td><strong>Random Forests</strong></td>
         <td>Higher</td>
         <td>Lower</td>
         <td>Slower</td>
+        <td>Nonlinear</td>
     </tr>
     <tr>
         <td><strong>Naive Bayes</strong></td>
         <td>Lower</td>
         <td>Higher</td>
         <td>Fast</td>
+        <td>Nonlinear</td>
     </tr>
     <tr>
         <td><strong>SVM</strong></td>
         <td>Higher</td>
         <td>Lower</td>
         <td>Slower</td>
+        <td>Nonlinear</td>
     </tr>
     <tr>
         <td><strong>k-NN</strong></td>
         <td>Lower</td>
         <td>Higher</td>
-        <td>Slower</td>
+        <td>n/a</td>
+        <td>Nonlinear</td>
     </tr>
     <tr>
         <td><strong>Gradient Boosting</strong></td>
         <td>Higher</td>
         <td>Lower</td>
         <td>Slower</td>
+        <td>Nonlinear</td>
     </tr>
 </table>
 
@@ -310,9 +343,9 @@ n: 11
 
 
 <!--
-    10 ******************************************************************
+    12 ******************************************************************
 -->
-{% include padding-id.html id=10 %}
+{% include padding-id.html id=12 %}
 <h1>Quick Guide on Regression</h1>
 <table class="w3-table-all">
     <tr>
@@ -370,9 +403,9 @@ n: 11
 
 
 <!--
-    11 ******************************************************************
+    13 ******************************************************************
 -->
-{% include padding-id.html id=11 %}
+{% include padding-id.html id=13 %}
 <h1>Quick Guide on Classification</h1>
 <table class="w3-table-all">
     <tr>
