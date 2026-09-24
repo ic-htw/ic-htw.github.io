@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Ten years of Postgres logical replication
+[(link)](https://tapoueh.org/blog/2026/09/ten-years-of-postgres-logical-replication/)
+
+- How to set-up Real-Time Anomaly Detection for dbt models
+[(link)](bhttps://medium.com/@hugolu87/how-to-set-up-real-time-anomaly-detection-for-dbt-models-c41e0e74aeedbb)
+
+- 11 Claude Code Techniques That Will Completely Change How You Build With AI
+[(link)](https://medium.com/@theexplainer/11-claude-code-techniques-that-will-completely-change-how-you-build-with-ai-f4ba70ba5e87)
+
 - System Design Interview: How Would You Avoid Overselling Inventory During a Flash Sale?
 [(link)](https://codefarm0.medium.com/system-design-interview-how-would-you-avoid-overselling-inventory-during-a-flash-sale-1cf844eca0b9)
 
