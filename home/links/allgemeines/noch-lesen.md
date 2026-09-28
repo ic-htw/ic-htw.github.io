@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Java 26 Is Here, and You Can’t Avoid It Anymore
+[(link)](https://medium.com/javarevisited/java-26-is-here-and-you-cant-avoid-it-anymore-c8a28814c85c)
+
+- Duckle 
+[(link)](https://duckle.org/)
+
 - Ten years of Postgres logical replication
 [(link)](https://tapoueh.org/blog/2026/09/ten-years-of-postgres-logical-replication/)
 
