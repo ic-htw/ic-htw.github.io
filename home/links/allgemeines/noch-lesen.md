@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Ways People Are Using Jev AI Right Now
+[(link)](https://medium.com/the-ai-studio/10-ways-people-are-using-jev-ai-right-now-c4350413baaa)
+
 - Java 26 Is Here, and You Can’t Avoid It Anymore
 [(link)](https://medium.com/javarevisited/java-26-is-here-and-you-cant-avoid-it-anymore-c8a28814c85c)
 
