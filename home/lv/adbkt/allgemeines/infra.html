@@ -3,7 +3,7 @@ layout: default1
 nav: adbkt-allgemeines
 title: Infrastruktur - ADBKT
 is_slide: 1
-n: 11
+n: 9
 ---
 <!--
     01 ******************************************************************
@@ -107,9 +107,6 @@ volumes:
   </li>
 </ul>
 
-
-
-
 <div class="ic-gap"></div>
 
 
@@ -119,139 +116,118 @@ volumes:
 {% include padding-id.html id=4 %}
 <h1>Postgres</h1>
 
-<h2>Container erstellen</h2>
+<h2>Postgres Compose</h2>
 <p class="w3-large">Achtung: Passwort eintragen.</p>
 <pre><code class="yaml">networks:
   adbkt:
     external: true
-    
+   
 services:
   pg:
     container_name: pg
     image: postgres:latest
-    ports:
-      - 5432:5432
+    restart: unless-stopped
+    # shm_size: 1g
     environment:
       POSTGRES_PASSWORD: #<-- hier Passwort eintragen
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - data:/var/lib/postgresql/data
+
     networks:
       - adbkt
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
       interval: 5s
       timeout: 5s
-      retries: 3</code></pre>
+      retries: 3
+      
+volumes:
+  data:</code></pre>
 
-<h2>Zugriff per DBeaver</h2>
+<h2>Postgres Container verwalten</h2>
 <ul class="w3-large">
-    <li>DBeaver Download (<a href="https://dbeaver.io/download/">link</a>)</li>
-    <li>Passwort wie vorher vergeben</li>
-    <li>Verbindungsdaten
-        <ul>
-            <li>user: <code>postgres</code></li>
-            <li>password: <em>(wie vergeben)</em></li>
-            <li>host: <code>aaa.f4.htw-berlin.de:5432</code></li>
-            <li>database: <code>postgres</code></li>
-        </ul>
-    </li>
+    <li>Compose-File-Verzeichnis: <code class="language-plaintext">/home/du/adbkt1/docker</code></li>
+    <li>Compose-File: <code class="language-plaintext">pg.yaml</code></li>
+    <li>Container erzeugen: <code class="language-plaintext">xupg</code></li>
+    <li>Container löschen: <code class="language-plaintext">xdpg</code></li>
+    <li>Container anzeigen: <code class="language-plaintext">dcls</code></li>
 </ul>
+
+
+
+<h2>PGConsole Compose</h2>
+<p class="w3-large">Achtung: Passwort eintragen.</p>
+<pre><code class="yaml">networks:
+  adbkt:
+    external: true
+   
+services:
+  pgconsole:
+    container_name: pgconsole
+    image: pgplex/pgconsole
+    ports:
+      - 9876:9876
+    networks:
+      - adbkt
+    configs:
+      - source: pgconsole_config
+        target: /etc/pgconsole.toml
+      
+configs:
+  pgconsole_config:
+    content: |
+      [[connections]]
+      id = "pg"
+      name = "pg"
+      host = "pg"
+      port = 5432
+      database = "postgres"
+      username = "postgres"
+      password = "" #<-- hier Passwort eintragen</code></pre>
+
+<h2>PGConsole Container verwalten</h2>
+<ul class="w3-large">
+    <li>Compose-File-Verzeichnis: <code class="language-plaintext">/home/du/adbkt1/docker</code></li>
+    <li>Compose-File: <code class="language-plaintext">pgconsole.yaml</code></li>
+    <li>Container erzeugen: <code class="language-plaintext">xuconsole</code></li>
+    <li>Container löschen: <code class="language-plaintext">xdconsole</code></li>
+    <li>Container anzeigen: <code class="language-plaintext">dcls</code></li>
+</ul>
+
+<h2>Auf PGConsole zugreifen</h2>
+<ul class="w3-large">
+    <li>URL: <code class="language-plaintext">http://aaa.f4.htw-berlin.de:9876</code></li>
+    <li>aaa durch den richtigen Hostnamen ersetzen</li>
+    <li><code class="language-sql">select table_name from information_schema.tables;</code></li>
+</ul>
+
+<h2>Per <code>psql</code> auf Postgres zugreifen</h2>
+<ul class="w3-large">
+  <li>In ubu-tc</li>
+    <li><code class="language-sql">psql -U postgres -h pg</code></li>
+    <li>Passwort aus Compose-File verwenden</li>
+    <li><code class="language-sql">select table_name from information_schema.tables;</code></li>
+</ul>
+
+
 
 <div class="ic-gap"></div>
 
 
 <!--
-    04 ******************************************************************
+    05 ******************************************************************
 -->
-{% include padding-id.html id=4 %}
+{% include padding-id.html id=5 %}
 <h1>Python</h1>
-
-<h2>Container erstellen</h2>
-<p class="w3-large">
-    Version für eine Gruppe, die aus einer Person besteht.
-    Sollten mehrere Personen in der Gruppe sein, müssen Namen und Ports angepasst werden, siehe weiter unten.
-</p>
-<pre><code class="yaml">networks:
-  adbkt:
-    external: true
-
-services:
-  py:
-    container_name: py
-    image: iclassen/ubu-py-uv:latest
-    entrypoint: ["/root/entrypoint.sh"]
-    user: root
-    ports:
-      - 10000:8888
-      - "20000:22"
-      - 30000:3000
-      - 40000:4000
-      - 50000:5000
-      - 60000:6000
-    networks:
-      - adbkt</code></pre>
-    
-<h2>Anpassungen für Gruppen mit mehreren Personen</h2>
-
-<p class="w3-large ic-neg15">Zweiergruppe:</p>
-<ul class="w3-large">
-    <li>Zwei Container <code>py1</code> und <code>py2</code></li>
-    <li>Eintrag <code>py</code> in <code>py1</code> bzw. <code>py2</code> im Docker-Compose-Code ändern</li>
-    <li>Portanpassungen entsprechend folgender Tabelle</li>
-</ul>
-
-<table class="w3-table-all">
-    <tr>
-        <th>Port</th>
-        <th>py1</th>
-        <th>py2</th>
-    </tr>
-    <tr>
-        <td>JupyterLab (8888)</td>
-        <td>10001:8888</td>
-        <td>10002:8888</td>
-    </tr>
-    <tr>
-        <td>SSH (22)</td>
-        <td>20001:22</td>
-        <td>20002:22</td>
-    </tr>
-    <tr>
-        <td>Port 3000</td>
-        <td>30001:3000</td>
-        <td>30002:3000</td>
-    </tr>
-    <tr>
-        <td>usw.</td>
-        <td>x0001:x000</td>
-        <td>x0002:x000</td>
-    </tr>
-</table>
-
-<p class="w3-large">
-    Entsprechend für Gruppen mit 3 Personen.
-</p>
-
-
-<h2>Auf JupyterLab zugreifen</h2>
-<ul class="w3-large">
-    <li>Host anpassen</li>
-    <li>Port ggf. anpassen: 10001, 10002, ...</li>
-</ul>
-
-<pre><code class="language-plaintext">http://aaa.f4.htw-berlin.de:10000/lab</code></pre>
-
-<h2>Bibliothek installieren</h2>
-<ul class="w3-large">
-    <li>Terminal in JupyterLab öffnen</li>
-    <li>Code kopieren (Paste mit CTRL-SHIFT-V)</li>
-</ul>
-
-<pre><code class="language-plaintext">uv pip install -U psycopg[binary,pool]</code></pre>
-
 <h2>Per Python auf Postgres zugreifen</h2>
 <ul class="w3-large">
-    <li>Neues Notebook anlegen</li>
-    <li>Achtung: Passwort eintragen</li>
-</ul>
+    <li>Python-File-Verzeichnis: <code class="language-plaintext">/home/du/adbkt1/python</code></li>
+    <li>Python-File: <code class="language-plaintext">pg-test.py</code></li>
+    <li>Umgebung aktivieren: <code class="language-plaintext">source /home/du/.py/bin/activate</code></li>
+    <li>in Python-Verzeichnis wechseln</li>
+    <li>Python-File ausführen: <code class="language-plaintext">python pg-test.py</code></li>
+  </ul>
 
 <pre><code class="python">import psycopg
 
@@ -261,7 +237,6 @@ conninfo = " ".join([
 "host='pg'",
 "port=5432",
 "dbname='postgres'"])
-print(conninfo)
 
 sql1 = "drop table if exists kv"
 sql2 = """
@@ -283,15 +258,31 @@ with psycopg.connect(conninfo) as conn:
 
 print(rs)</code></pre>
 
+<h2>Python Bibliotheken installieren</h2>
+<ul class="w3-large">
+  <li><code>uv pip install -U &lt;package-name&gt;</code></li>
+    <li>Achtung: Immer <code>uv</code> vor <code>pip</code> verwenden</li>
+</ul>
 
+<h2>JupyterLab starten</h2>
+<p class="w3-large">Nur notwendig wenn VS Code nicht verwendet wird</p>
+
+<ul class="w3-large">
+    <li>Server starten: <code>jupyter notebook --ip='*' --port=8888 --no-browser &</code></li>
+    <li>URL: <code class="language-plaintext">http://aaa.f4.htw-berlin.de:8888/lab</code></li>
+    <li>aaa durch den richtigen Hostnamen ersetzen</li>
+    <li>Token anzeigen: <code>jupyter notebook list</code></li>
+    <li>Ggfs Token eingeben</li>
+    <li>Server mit zweimal Ctrl-C beenden</li>
+</ul>
 
 <div class="ic-gap"></div>
 
 
 <!--
-    05 ******************************************************************
--->
-{% include padding-id.html id=5 %}
+    06 ******************************************************************
+--
+{% include padding-id.html id=6 %}
 <h1>Cassandra</h1>
 
 <h2>Container erstellen</h2>
@@ -370,10 +361,10 @@ cluster.shutdown()</code></pre>
 <div class="ic-gap"></div>
 
 
-<!--
-    06 ******************************************************************
--->
-{% include padding-id.html id=6 %}
+--
+    07 ******************************************************************
+--
+{% include padding-id.html id=7 %}
 <h1>Neo4j</h1>
 
 <h2>Container erstellen</h2>
@@ -416,10 +407,10 @@ services:
 <div class="ic-gap"></div>
 
 
-<!--
-    07 ******************************************************************
--->
-{% include padding-id.html id=7 %}
+--
+    08 ******************************************************************
+--
+{% include padding-id.html id=8 %}
 <h1>Neo4j - UBahn-Daten laden</h1>
 <p class="w3-large">Achtung: Passwort eintragen.</p>
 <pre><code class="python">import duckdb
@@ -495,10 +486,10 @@ with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
 <div class="ic-gap"></div>
 
 
-<!--
-    08 ******************************************************************
--->
-{% include padding-id.html id=8 %}
+--
+    09 ******************************************************************
+--
+{% include padding-id.html id=9 %}
 <h1>Neo4j - Graphprojektion</h1>
 <p class="w3-large">Anlegen:</p>
 <pre><code class="cypher">MATCH (ha:Haltestelle)<-[sa:ProjSegA]-(s:Segment)-[sb:ProjSegB]-(hb:Haltestelle)
@@ -518,71 +509,4 @@ RETURN
 
 <div class="ic-gap"></div>
 
-
-<!--
-    09 ******************************************************************
 -->
-{% include padding-id.html id=9 %}
-<h1>K6</h1>
-<pre><code class="yaml">networks:
-  adbkt:
-    external: true
-
-services:
-  k6:
-    container_name: k6
-    image:  iclassen/ubu-k6
-    networks:
-      - adbkt</code></pre>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    10 ******************************************************************
--->
-{% include padding-id.html id=10 %}
-<h1>InfluxDB</h1>
-<pre><code class="yaml">networks:
-  adbkt:
-    external: true
-
-services:
-  idb:
-    container_name: idb
-    image: influxdb:3-core
-    ports:
-      - 8181:8181
-    command:
-      - influxdb3
-      - serve
-      - --node-id=node0
-      - --object-store=file
-      - --data-dir=/var/lib/influxdb3/data
-      - --plugin-dir=/var/lib/influxdb3/plugins
-    networks:
-      - adbkt</code></pre>
-
-<div class="ic-gap"></div>
-
-
-<!--
-    11 ******************************************************************
--->
-{% include padding-id.html id=11 %}
-<h1>Grafana</h1>
-<pre><code class="yaml">networks:
-  adbkt:
-    external: true
-
-services:
-  grafana:
-    container_name: grafana
-    image:  grafana/grafana:12.1-ubuntu
-    ports:
-      - 3000:3000
-    networks:
-      - adbkt</code></pre>
-
-<div class="ic-gap"></div>
-
