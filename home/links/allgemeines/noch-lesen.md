@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Eigenvalues & Eigenvectors for People Who Hate Linear Algebra
+[(link)](https://pub.towardsai.net/eigenvalues-eigenvectors-for-people-who-hate-linear-algebra-11cf652fb12f)
+
+- Why Spatial Data Indexing (R-Trees) More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-spatial-data-indexing-r-trees-more-powerful-than-you-think-and-how-to-master-them-ffdc5845bcc2)
+
 - 10 Ways People Are Using Jev AI Right Now
 [(link)](https://medium.com/the-ai-studio/10-ways-people-are-using-jev-ai-right-now-c4350413baaa)
 
