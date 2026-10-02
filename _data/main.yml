@@ -303,7 +303,16 @@ home: &r
                   - t: Anforderungen an DB-Systeme
                     ts: Anforderungen an DB-Systeme
                     url: /home/lv/adbkt/uebungen/db-cases.html
-              #     - t: Multi Version Concurrency Control 1
+                  # - t: Ü1
+                  #   ts: Ü1
+                  #   url: /home/lv/adbkt/uebungen/transaktionen.html
+              #     - t:  Ü2
+              #       ts: Ü2
+              #       url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
+                  # - t: Ü3
+                  #   ts: Ü3
+                  #   url: /home/lv/adbkt/uebungen/konsistenz.html
+                  # - t: Multi Version Concurrency Control 1
               #       ts: MVCC 1
               #       url: /home/lv/adbkt/uebungen/mvcc1.html
               #     - t: Multi Version Concurrency Control 2
@@ -312,9 +321,6 @@ home: &r
               #     - t: Cassandra Replikation
               #       ts: Cassandra Replikation
               #       url: /home/lv/adbkt/uebungen/cas-repl.html
-              #     - t:  Cassandra - TourDelight
-              #       ts: Cassandra - TourDelight
-              #       url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
               #     - t:  DynamoDB - Site Specific Crop Management
               #       ts: DynamoDB - SSCM
               #       url: /home/lv/adbkt/uebungen/sscm.html

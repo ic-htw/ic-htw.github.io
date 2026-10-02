@@ -1,0 +1,39 @@
+---
+layout: default1
+nav: adbkt-uebungen
+title: Ü1 - ADBKT
+is_slide: 0
+---
+
+<h1>Ü1</h1>
+
+<p class="w3-large ic-neg15">
+    Technische Umsetzung von Szenarien aus der Vorlesung zu Transaktionen und 
+    Isolation Levels in PostgreSQL.
+</p>
+
+<p class="w3-large ic-neg15"><strong>Banküberweisung</strong></p>
+<ul class="w3-large">
+    <li>Schreiben sie ein Python-Programm, das eine Banküberweisung auf einer PostgreSQL-Datenbank simuliert</li>
+    <li>Implementieren sie eine Variante des Programms ohne Transaktionen</li>
+    <li>Lassen sie das Programm mehrere Ausführungen der Überweisungen gleichzeitig ausführen</li>
+    <li>Produzieren sie Inkonsistenzen in den Kontoständendurch Crashen des PostgreSQL-Server während der Ausführung</li>
+    <li>Implementieren sie eine Variante des Programms mit Transaktionen</li>
+    <li>Crashen sie den PostgreSQL-Server während der Ausführung und zeigen sie, dass keine Inkonsistenzen auftreten</li>
+    <li>Achten sie auf die Verwendung der richtigen Bibliothek durch die KI (psycopg und nicht psycopg2)</li>
+</ul>
+
+<p class="w3-large ic-neg15"><strong>Lost Update</strong></p>
+<ul class="w3-large">
+    <li>Schreiben sie ein Python-Programm, das ein Lost Update-Szenario simuliert</li>
+    <li>Ändern sie den Code so, dass kein Lost Update mehr auftritt</li>
+    <li>Hinweis: Verwenden sie die richtige Isolationsebene in PostgreSQL</li>
+</ul>
+
+<p class="w3-large ic-neg15"><strong>Write Skew</strong></p>
+<ul class="w3-large">
+    <li>Schreiben sie ein Python-Programm, das ein Write Skew-Szenario simuliert</li>
+    <li>Ändern sie den Code so, dass kein Write Skew mehr auftritt</li>
+    <li>Hinweis: Verwenden sie die richtige Isolationsebene in PostgreSQL</li>
+</ul>
+
