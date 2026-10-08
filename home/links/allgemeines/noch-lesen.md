@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Query plan rewriting in PostgreSQL
+[(link)](https://theconsensus.dev/p/2026/09/13/query-plan-rewriting-in-postgresql.html)
+
+- Embabel Agent Framework - git
+[(link)](https://github.com/embabel/embabel-agent)
+
 - Eigenvalues & Eigenvectors for People Who Hate Linear Algebra
 [(link)](https://pub.towardsai.net/eigenvalues-eigenvectors-for-people-who-hate-linear-algebra-11cf652fb12f)
 
