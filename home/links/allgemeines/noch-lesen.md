@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- What Google’s New SDLC Paper Got Right About AI-Assisted Software Development
+[(link)](https://levelup.gitconnected.com/what-googles-new-sdlc-paper-got-right-about-ai-assisted-software-development-9bcc97879498)
+
 - Query plan rewriting in PostgreSQL
 [(link)](https://theconsensus.dev/p/2026/09/13/query-plan-rewriting-in-postgresql.html)
 
