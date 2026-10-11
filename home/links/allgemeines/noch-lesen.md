@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Google Senior Manager Reveals the Brutal Reality of AI and Layoffs Tech Jobs
+[(link)](https://medium.com/@gaddamnaveen192/google-senior-manager-reveals-the-brutal-reality-of-ai-and-layoffs-tech-jobs-aa8597f17808)
+
+- Beyond CLAUDE.md: The 4 Files Anthropic Uses to Build an AI-Native SDLC
+[(link)](https://medium.com/ai-all-in/beyond-claude-md-the-4-files-anthropic-uses-to-build-an-ai-native-sdlc-ef4227caec7c)
+
+- Pattern #012: Funnel Analysis in SQL — How Many Users Actually Made It to the End?
+[(link)](https://blog.devgenius.io/pattern-012-funnel-analysis-in-sql-how-many-users-actually-made-it-to-the-end-b9b3d144f670)
+
 - What Google’s New SDLC Paper Got Right About AI-Assisted Software Development
 [(link)](https://levelup.gitconnected.com/what-googles-new-sdlc-paper-got-right-about-ai-assisted-software-development-9bcc97879498)
 
