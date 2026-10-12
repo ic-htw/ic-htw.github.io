@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- DataFusion Distributed - git
+[(link)](https://github.com/datafusion-contrib/datafusion-distributed)
+
+- DataFusion Distributed - doc
+[(link)](https://datafusion-contrib.github.io/datafusion-distributed/)
+
+- RAG vs OKF: Stop Choosing One. Why AI Agents Need Both
+[(link)](https://pub.towardsai.net/rag-vs-okf-stop-choosing-one-why-ai-agents-need-both-72caf114acef)
+
+- I Used CompletableFuture to Optimize My Code
+[(link)](https://towardsdev.com/i-used-completablefuture-to-optimize-my-code-and-the-interviewer-said-youre-planting-a-time-3a375fe83451?sk=19ab5aaf8e7caff5a0c42b17eac512cd)
+
+- Google Just Made the Biggest Comeback of the Year: Argon Takes #1
+[(link)](https://medium.com/the-ai-studio/google-just-made-a-huge-comeback-with-its-new-model-argon-189df97f2aff)
+
 - Google Senior Manager Reveals the Brutal Reality of AI and Layoffs Tech Jobs
 [(link)](https://medium.com/@gaddamnaveen192/google-senior-manager-reveals-the-brutal-reality-of-ai-and-layoffs-tech-jobs-aa8597f17808)
 
