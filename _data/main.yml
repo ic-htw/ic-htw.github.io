@@ -303,9 +303,9 @@ home: &r
                   - t: Anforderungen an DB-Systeme
                     ts: Anforderungen an DB-Systeme
                     url: /home/lv/adbkt/uebungen/db-cases.html
-                  # - t: Ü1
-                  #   ts: Ü1
-                  #   url: /home/lv/adbkt/uebungen/transaktionen.html
+                  - t: Ü1
+                    ts: Ü1
+                    url: /home/lv/adbkt/uebungen/transaktionen.html
               #     - t:  Ü2
               #       ts: Ü2
               #       url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
