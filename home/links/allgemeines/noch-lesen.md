@@ -25,6 +25,24 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why Instagram Avoids JOINs at Scale
+[(link)](https://towardsdev.com/why-instagram-avoids-joins-at-scale-system-design-deep-dive-on-denormalization-and-read-b66f4a9f2c91?sk=9a712642f60bfba3b3bff14490f7804e)
+
+- 10 Popular Architecture Practices That Do More Harm Than Good
+[(link)](https://medium.com/@vndpal/10-popular-architecture-practices-that-do-more-harm-than-good-8c1a278330e5?sk=06cfe76b874a5dc295068ac9343fbacc)
+
+- Client sends a deeply nested JSON with 10,000+ objects. Deserialization takes 800ms. What can you optimize ?
+[(link)](https://medium.com/@umeshcapg/client-sends-a-deeply-nested-json-with-10-000-objects-d4dca3efbcaf?sk=f6a93ef8867c4d701a4b8d4b56b59309)
+
+- 8 Programming Concepts That Look Useless Until Something Breaks
+[(link)](https://medium.com/skillstuff/8-programming-concepts-that-look-useless-until-something-breaks-a13554d2444f?sk=bbaf299008a305b73bbcbad177d89156)
+
+- When to Use Optimistic vs Pessimistic Locking
+[(link)](https://medium.com/@akovtun/when-to-use-optimistic-vs-pessimistic-locking-b0b187485fe9?sk=835c9ceb56ff541b8fe3945dcaee9763)
+
+- Announcing pg_vectorsearch: Scalable Open-Source Vector Search in PostgreSQL
+[(link)](https://www.tigerdata.com/blog/announcing-pg_vectorsearch-scalable-open-source-vector-search-postgresql)
+
 - DataFusion Distributed - git
 [(link)](https://github.com/datafusion-contrib/datafusion-distributed)
 
