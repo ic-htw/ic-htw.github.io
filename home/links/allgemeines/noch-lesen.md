@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Anthropic Just Revealed 12 New Rules for Prompting Claude Opus 5.5
+[(link)](https://blog.vijayasekhardeepak.com/anthropic-just-revealed-12-new-rules-for-prompting-claude-opus-5-5-e57c6275efe0)
+
 - Why Instagram Avoids JOINs at Scale
 [(link)](https://towardsdev.com/why-instagram-avoids-joins-at-scale-system-design-deep-dive-on-denormalization-and-read-b66f4a9f2c91?sk=9a712642f60bfba3b3bff14490f7804e)
 
