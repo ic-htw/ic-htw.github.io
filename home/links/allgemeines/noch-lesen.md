@@ -25,6 +25,33 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Text-to-SQL Evaluation Techniques to Eradicate Hallucinations in Semantic Layers
+[(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-evaluation-techniques-to-eradicate-hallucinations-in-semantic-layers-8168982349e9)
+
+- 10 SQL Patterns Every Data Engineer Should Know By Heart
+[(link)](https://medium.com/@diogofcul/10-sql-patterns-every-data-engineer-should-know-by-heart-76b7253e0b19)
+
+- What’s new in dbt v2 / dbt Fusion vs. dbt core? Everything explained
+[(link)](https://medium.com/@hugolu87/whats-new-in-dbt-v2-dbt-fusion-vs-dbt-core-everything-explained-7c41d9f6984d)
+
+- Why ASOF JOIN in SQL Is More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-asof-join-in-sql-is-more-powerful-than-you-think-and-how-to-master-it-602fc028af00)
+
+- The American DeepSeek Is Here, and It Just Beat Opus 5 on a Viral Test
+[(link)](https://medium.com/the-ai-studio/the-american-deepseek-is-here-and-it-just-beat-opus-5-on-a-viral-test-3588a89eb350)
+
+- Why Traditional ETL is Dead: The Rise of Agentic Data Engineering
+[(link)](https://medium.com/@seaflux/why-traditional-etl-is-dead-the-rise-of-agentic-data-engineering-34c4311f1d6c)
+
+- ponytail git
+[(link)](bbhttps://github.com/dietrichgebert/ponytailb)
+
+- Evaluating Jev vs OpenAI Decisions vs Scaledown on a Real Sports Problem
+[(link)](https://medium.com/realworld-ai-use-cases/evaluating-jev-vs-openai-decisions-vs-scaledown-on-a-real-sports-problem-c4778b65c22abbb)
+
+- Java Already Had HashMap… So Why Did They Create ConcurrentHashMap?
+[(link)](https://hiteshdhamshaniya-wvmagic.medium.com/java-already-had-hashmap-so-why-did-they-create-concurrenthashmap-82de75a4e2ca)
+
 - Anthropic Just Revealed 12 New Rules for Prompting Claude Opus 5.5
 [(link)](https://blog.vijayasekhardeepak.com/anthropic-just-revealed-12-new-rules-for-prompting-claude-opus-5-5-e57c6275efe0)
 
