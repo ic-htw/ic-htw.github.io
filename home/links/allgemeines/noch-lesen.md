@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Why is PostgreSQL's Numeric Type so Slow?
+[(link)](https://www.pgedge.com/blog/why-is-postgresql-s-numeric-type-so-slow)
+
+- DocumentDB 1.0 is here
+[(link)](https://documentdb.io/blogs/posts/documentdb-1-0/)
+
+- Why Geohash Joins in SQL Are More Powerful Than You Think
+[(link)](https://medium.com/@Rohan_Dutt/why-geohash-joins-in-sql-are-more-powerful-than-you-think-and-how-to-master-it-568bc2e49c93)
+
+- 10 Text-to-SQL Self-Correction Loops to Automatically Repair Broken Queries on the Fly
+[(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-self-correction-loops-to-automatically-repair-broken-queries-on-the-fly-f2d8be4e1242)
+
+- LangChain and LangGraph are DEAD? So what to USE!!
+[(link)](https://medium.com/@writertripathi/langchain-and-langgraph-are-dead-so-what-to-use-4a6033621fce)
+
 - 10 Text-to-SQL Evaluation Techniques to Eradicate Hallucinations in Semantic Layers
 [(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-evaluation-techniques-to-eradicate-hallucinations-in-semantic-layers-8168982349e9)
 
