@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The Death of Dashboards
+[(link)](https://medium.com/data-science-collective/the-death-of-dashboards-558ba0893926)
+
+- How 7 Simple Logging Principles Made Me a Better Senior Developer
+[(link)](https://medium.com/@vndpal/how-7-simple-logging-principles-made-me-a-better-senior-developer-246a627e2546?sk=03f8def5609531306b03186b5df6efb7)
+
+- Interview Question: How to Quickly Delete Millions of Records from a Table?
+[(link)](https://medium.com/@umeshcapg/interview-question-how-to-quickly-delete-millions-of-records-from-a-table-965a0c735752)
+
+- Obsidian Rebuilt Mermaid From Scratch. Pele Renders Diagrams 500x Faster.
+[(link)](https://medium.com/@vinayanand2/obsidian-rebuilt-mermaid-from-scratch-pele-renders-diagrams-500x-faster-e20c2280f555)
+
 - Why is PostgreSQL's Numeric Type so Slow?
 [(link)](https://www.pgedge.com/blog/why-is-postgresql-s-numeric-type-so-slow)
 
