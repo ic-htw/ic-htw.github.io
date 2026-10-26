@@ -309,9 +309,9 @@ home: &r
                   - t:  Ü2
                     ts: Ü2
                     url: /home/lv/adbkt/uebungen/tour-delight-cassandra.html
-                  # - t: Ü3
-                  #   ts: Ü3
-                  #   url: /home/lv/adbkt/uebungen/konsistenz.html
+                  - t: Ü3
+                    ts: Ü3
+                    url: /home/lv/adbkt/uebungen/konsistenz.html
                   # - t: Ü4
                   #   ts: Ü4
                   #   url: /home/lv/adbkt/uebungen/graphql.html
