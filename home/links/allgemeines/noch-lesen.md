@@ -25,6 +25,18 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Your Markdown Diagrams Could Look Like This: 12 Mermaid Tricks Worth Copying
+[(link)](https://medium.com/@yugenelee/your-markdown-diagrams-could-look-like-this-12-mermaid-tricks-worth-copying-bd7eac85e1dd)
+
+- Testcontainers 
+[(link)](https://testcontainers.com/)
+
+- Why Everyone Is Panicking About Kimi K3
+[(link)](https://medium.com/no-time/why-everyone-is-panicking-about-kimi-k3-c3235ea0a055)
+
+- Markdown Isn’t Just for Text: 10 Mermaid Diagrams You Can Copy
+[(link)](https://medium.com/@yugenelee/markdown-isnt-just-for-text-10-mermaid-diagrams-you-can-copy-fe8b7f6063db)
+
 - The Death of Dashboards
 [(link)](https://medium.com/data-science-collective/the-death-of-dashboards-558ba0893926)
 
