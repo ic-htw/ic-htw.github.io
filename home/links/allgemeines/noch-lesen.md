@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Markdown Tables Can Do More Than You Think: 10 Tricks Worth Copying
+[(link)](https://medium.com/@yugenelee/10-markdown-table-syntax-tips-youll-actually-use-f533dd6a2c9f)
+
+- China Just Responded to America’s Beam AI With 2 Powerful Open-Source Models
+[(link)](https://medium.com/the-ai-studio/china-just-responded-to-americas-beam-ai-with-2-powerful-open-source-models-5e158f417038)
+
+- Write a Book Using Jupyter in 10 minutes
+[(link)](https://levelup.gitconnected.com/write-a-book-using-jupyter-in-10-minutes-6da6fe916d77)
+
 - Your Markdown Diagrams Could Look Like This: 12 Mermaid Tricks Worth Copying
 [(link)](https://medium.com/@yugenelee/your-markdown-diagrams-could-look-like-this-12-mermaid-tricks-worth-copying-bd7eac85e1dd)
 
