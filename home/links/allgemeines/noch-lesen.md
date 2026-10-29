@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Announcing pg_vectorsearch: Scalable Open-Source Vector Search in PostgreSQL
+[(link)](https://www.tigerdata.com/blog/announcing-pg_vectorsearch-scalable-open-source-vector-search-postgresql)
+
 - Markdown Tables Can Do More Than You Think: 10 Tricks Worth Copying
 [(link)](https://medium.com/@yugenelee/10-markdown-table-syntax-tips-youll-actually-use-f533dd6a2c9f)
 
@@ -36,9 +39,6 @@ is_slide: 0
 
 - Your Markdown Diagrams Could Look Like This: 12 Mermaid Tricks Worth Copying
 [(link)](https://medium.com/@yugenelee/your-markdown-diagrams-could-look-like-this-12-mermaid-tricks-worth-copying-bd7eac85e1dd)
-
-- Testcontainers 
-[(link)](https://testcontainers.com/)
 
 - Why Everyone Is Panicking About Kimi K3
 [(link)](https://medium.com/no-time/why-everyone-is-panicking-about-kimi-k3-c3235ea0a055)

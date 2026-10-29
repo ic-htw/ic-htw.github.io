@@ -6,24 +6,30 @@ is_slide: 0
 ---
 
 # aaa
+- anydoc - git
+[(link)](https://github.com/firecrawl/anydoc)
+- bitlocker
+[(link)](https://it-learner.de/auch-unter-linux-laesst-sich-auf-einen-mit-bitlocker-verschluesselten-datentraeger-zugreifen/)
+- CatBoost
+[(link)](https://catboost.ai/)
 - csvbase
 [(link)](https://csvbase.com/)
 - fsspec 
 [(link)](https://pypi.org/project/fsspec/)
+- Google Dataset Search
+[(link)](https://datasetsearch.research.google.com/)
 - gdrive download -python
 [(link)](https://github.com/matthuisman/gdrivedl)
 - gdrive download - wget
 [(link)](https://www.matthuisman.nz/2019/01/download-google-drive-files-wget-curl.html)
 - Powershell
 [(link)](https://docs.microsoft.com/de-de/powershell/scripting/overview?view=powershell-7.2)
-- CatBoost
-[(link)](https://catboost.ai/)
 - Sythetic Data Vault
 [(link)](https://sdv.dev/)
-- Google Dataset Search
-[(link)](https://datasetsearch.research.google.com/)
-- bitlocker
-[(link)](https://it-learner.de/auch-unter-linux-laesst-sich-auf-einen-mit-bitlocker-verschluesselten-datentraeger-zugreifen/)
+- Testcontainers 
+[(link)](https://testcontainers.com/)
+- TTT Editor: Terminal Text Tool
+[(link)](https://github.com/eugenioenko/ttt)
 
 
 
