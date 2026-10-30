@@ -28,6 +28,8 @@ is_slide: 0
 [(link)](https://sdv.dev/)
 - Testcontainers 
 [(link)](https://testcontainers.com/)
+- ThinkRail
+[(link)](bhttps://thinkrail.ai/bb)
 - TTT Editor: Terminal Text Tool
 [(link)](https://github.com/eugenioenko/ttt)
 

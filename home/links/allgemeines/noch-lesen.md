@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Engineering Multi-Agent AI for a 100 GB Data Warehouse
+[(link)](https://levelup.gitconnected.com/engineering-multi-agent-ai-for-a-100-gb-data-warehouse-4ba1ae10374a)
+
+- Parazettel Articles
+[(link)](https://parazettel.com/articles/)
+
 - Announcing pg_vectorsearch: Scalable Open-Source Vector Search in PostgreSQL
 [(link)](https://www.tigerdata.com/blog/announcing-pg_vectorsearch-scalable-open-source-vector-search-postgresql)
 
