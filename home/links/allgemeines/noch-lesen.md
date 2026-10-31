@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- You Think AI Is Overhyped? Just Wait Until You See What Comes Next.
+[(link)](https://www.towardsdeeplearning.com/you-think-ai-is-overhyped-just-wait-until-you-see-what-comes-next-e581fc2e5a55?sk=b5c2924b1ed6e0b9f1b13617151a3af8)
+
+- A file format claims to be 100x faster than Parquet
+[(link)](https://vutr.substack.com/p/free-a-file-format-claims-to-be-100x?r=2rj6sg)
+
 - Engineering Multi-Agent AI for a 100 GB Data Warehouse
 [(link)](https://levelup.gitconnected.com/engineering-multi-agent-ai-for-a-100-gb-data-warehouse-4ba1ae10374a)
 
