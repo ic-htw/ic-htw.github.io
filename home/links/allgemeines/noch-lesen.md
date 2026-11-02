@@ -25,6 +25,12 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- The ultimate markdown cheat sheet for the AI era
+[(link)](https://medium.com/@yugenelee/the-ultimate-markdown-cheat-sheet-for-the-ai-era-15a8d12de439)
+
+- OpenClaw or Hermes? Choosing the Right AI Agent Stack in 2026
+[(link)](https://towardsdev.com/hermes-vs-openclaw-gateways-skills-migration-and-when-to-pick-each-919477e3893b)
+
 - You Think AI Is Overhyped? Just Wait Until You See What Comes Next.
 [(link)](https://www.towardsdeeplearning.com/you-think-ai-is-overhyped-just-wait-until-you-see-what-comes-next-e581fc2e5a55?sk=b5c2924b1ed6e0b9f1b13617151a3af8)
 
