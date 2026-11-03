@@ -25,21 +25,6 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- 10 Popular Code Review Practices That Are Actually Toxic
-[(link)](https://medium.com/@vndpal/10-popular-code-review-practices-that-are-actually-toxic-fc5ad8f0f8c6)
-
-- The Only Database Mental Model You Need
-[(link)](https://levelup.gitconnected.com/the-only-database-mental-model-you-need-and-where-to-actually-study-each-piece-aa07f1e0c0be?sk=376557a7af60b7639147fdc04661d005)
-
-- Nominal, Ordinal, Interval, Ratio, Explained With My Food Delivery Orders
-[(link)](https://pub.towardsai.net/levels-of-measurement-nominal-ordinal-interval-ratio-python-790514bc4401)
-
-- You’re Probably Underusing Markdown: 12 Tricks Worth Copying
-[(link)](bhttps://medium.com/@yugenelee/think-markdown-is-just-for-text-these-12-examples-might-change-your-mind-194eb51599c5bb)
-
-- How I Design Authentication Systems as a Senior Developer for Better Results
-[(link)](https://medium.com/javarevisited/how-i-design-authentication-systems-as-a-senior-developer-for-better-results-0cae4ac31247)
-
 - Before You Plan Your Site in Cursor or Claude Code, Do This With AI First.
 [(link)](https://medium.com/realworld-ai-use-cases/before-you-plan-your-site-in-cursor-or-claude-code-do-this-with-ai-first-d91de9d7cf2a)
 
