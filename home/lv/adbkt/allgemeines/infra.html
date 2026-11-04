@@ -3,7 +3,7 @@ layout: default1
 nav: adbkt-allgemeines
 title: Infrastruktur - ADBKT
 is_slide: 1
-n: 5
+n: 9
 ---
 <!--
     01 ******************************************************************
@@ -281,33 +281,12 @@ print(rs)</code></pre>
 
 <!--
     06 ******************************************************************
---
+-->
 {% include padding-id.html id=6 %}
 <h1>Cassandra</h1>
 
 <h2>Container erstellen</h2>
-<pre><code class="yaml">networks:
-  adbkt:
-    external: true
-
-services:
-  cas:
-    container_name: cas
-    image: cassandra:latest
-    ports:
-      - 9042:9042
-    environment:
-      - JVM_OPTS=-Xms1024M -Xmx1024M
-      - HEAP_NEWSIZE=1024M
-      - MAX_HEAP_SIZE=1024M
-    networks:
-      - adbkt
-    healthcheck:
-      test: ["CMD", "cqlsh", "-e", "describe keyspaces"]
-      interval: 20s
-      timeout: 10s
-      retries: 3
-      start_period: 60s</code></pre>
+<pre><code class="yaml">c:\work\github\aaa\konfig\docker\compose\cassandra3.yaml</code></pre>
 
 <h2>Keyspace erstellen</h2>
 <ul class="w3-large">
@@ -361,9 +340,9 @@ cluster.shutdown()</code></pre>
 <div class="ic-gap"></div>
 
 
---
+<!--
     07 ******************************************************************
---
+-->
 {% include padding-id.html id=7 %}
 <h1>Neo4j</h1>
 
@@ -407,9 +386,9 @@ services:
 <div class="ic-gap"></div>
 
 
---
+<!--
     08 ******************************************************************
---
+-->
 {% include padding-id.html id=8 %}
 <h1>Neo4j - UBahn-Daten laden</h1>
 <p class="w3-large">Achtung: Passwort eintragen.</p>
@@ -486,9 +465,9 @@ with GraphDatabase.driver(neo4j_host, auth=neo4j_auth) as driver:
 <div class="ic-gap"></div>
 
 
---
+<!--
     09 ******************************************************************
---
+-->
 {% include padding-id.html id=9 %}
 <h1>Neo4j - Graphprojektion</h1>
 <p class="w3-large">Anlegen:</p>
@@ -509,4 +488,3 @@ RETURN
 
 <div class="ic-gap"></div>
 
--->
