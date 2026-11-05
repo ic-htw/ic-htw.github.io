@@ -25,17 +25,20 @@ is_slide: 0
 [(link)](bbb)
 
 -->
-- Before You Plan Your Site in Cursor or Claude Code, Do This With AI First.
-[(link)](https://medium.com/realworld-ai-use-cases/before-you-plan-your-site-in-cursor-or-claude-code-do-this-with-ai-first-d91de9d7cf2a)
+- Postgres logical replication beyond one writer
+[(link)](https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/)
+
+- Benchmarking Vector search in six database engines
+[(link)](https://www.percona.com/blog/benchmarking-vector-search-in-six-database-engines/)
+
+- The Playbook for Reviewing AI Code Fast Enough to Ship
+[(link)](https://medium.com/ai-all-in/the-playbook-for-reviewing-ai-code-fast-enough-to-ship-6e18fb4ae539)
 
 - The ultimate markdown cheat sheet for the AI era
 [(link)](https://medium.com/@yugenelee/the-ultimate-markdown-cheat-sheet-for-the-ai-era-15a8d12de439)
 
 - OpenClaw or Hermes? Choosing the Right AI Agent Stack in 2026
 [(link)](https://towardsdev.com/hermes-vs-openclaw-gateways-skills-migration-and-when-to-pick-each-919477e3893b)
-
-- You Think AI Is Overhyped? Just Wait Until You See What Comes Next.
-[(link)](https://www.towardsdeeplearning.com/you-think-ai-is-overhyped-just-wait-until-you-see-what-comes-next-e581fc2e5a55?sk=b5c2924b1ed6e0b9f1b13617151a3af8)
 
 - A file format claims to be 100x faster than Parquet
 [(link)](https://vutr.substack.com/p/free-a-file-format-claims-to-be-100x?r=2rj6sg)
