@@ -25,6 +25,21 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Introducing YeSQL: Practical PostgreSQL, One Concept at a Time
+[(link)](https://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/)
+
+- Google Docs Just Learned Markdown. Here’s Why Your AI Workflow Changes Today.
+[(link)](https://medium.com/@vinayanand2/google-docs-just-learned-markdown-heres-why-your-ai-workflow-changes-today-cabdf48fd2f3)
+
+- Why HyperLogLog (HLL Cardinality Estimation) in SQL is More Powerful Than You Think (How to Master It)
+[(link)](https://medium.com/@Rohan_Dutt/why-hyperloglog-hll-cardinality-estimation-in-sql-is-more-powerful-than-you-think-how-to-master-2648033d6dc8)
+
+- 10 Crazy Things Claude Can Do That Most ChatGPT Users Don’t Know About
+[(link)](https://medium.com/codetodeploy/10-crazy-things-claude-can-do-that-most-chatgpt-users-dont-know-about-e8bd0ca0400f)
+
+- 7 Best Local LLMs for Coding in 2026 (Honest Comparison)
+[(link)](https://www.towardsdeeplearning.com/7-best-local-llms-for-coding-in-2026-honest-comparison-58b19b5cd078)
+
 - Postgres logical replication beyond one writer
 [(link)](https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/)
 
