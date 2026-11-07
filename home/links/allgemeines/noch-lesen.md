@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- 10 Text-to-SQL SELF CORRECTION Loops to Automatically Repair Broken Queries on the Fly
+[(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-self-correction-loops-to-automatically-repair-broken-queries-on-the-fly-4267c2f94dd9)
+
 - Introducing YeSQL: Practical PostgreSQL, One Concept at a Time
 [(link)](https://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/)
 
