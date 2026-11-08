@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Is Qwen Safe to Run on Your Machine? What the “Phone Home” Test Actually Found
+[(link)](https://medium.com/data-science-collective/is-qwen-safe-to-run-on-your-machine-what-the-phone-home-test-actually-found-e3b354e74925)
+
 - 10 Text-to-SQL SELF CORRECTION Loops to Automatically Repair Broken Queries on the Fly
 [(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-self-correction-loops-to-automatically-repair-broken-queries-on-the-fly-4267c2f94dd9)
 
