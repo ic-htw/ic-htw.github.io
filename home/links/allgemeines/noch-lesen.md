@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- They Wanted $79 a Month to Draw Rectangles, So I Built a Free Tool For Everyone
+[(link)](https://www.towardsdeeplearning.com/they-wanted-79-a-month-to-draw-rectangles-so-i-built-a-free-tool-for-everyone-224c8dc7a143)
+
+- NotebookLM 2.0 Explained: What’s New and Why It Matters
+[(link)](https://medium.com/no-time/notebooklm-2-0-explained-whats-new-and-why-it-matters-113990700d86)
+
+- What Is Hermes Agent and Why Is Everyone Talking About It?
+[(link)](https://medium.com/no-time/what-is-hermes-agent-and-why-is-everyone-talking-about-it-191802299d55)
+
 - Is Qwen Safe to Run on Your Machine? What the “Phone Home” Test Actually Found
 [(link)](https://medium.com/data-science-collective/is-qwen-safe-to-run-on-your-machine-what-the-phone-home-test-actually-found-e3b354e74925)
 
