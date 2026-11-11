@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Basic Claude Knowledge Everyone Should Have in 2026
+[(link)](https://medium.com/@pranithnaikpranit/a218ea8090f8?sk=e49406ad71113a31466e9a7ea185e3f8)
+
+- They Actually Pulled It Off! Kimi Just Beat the Frontier Giants
+[(link)](https://medium.com/@pranithnaikpranit/f2ed18cb3fd3?sk=881ac19cf174b270436da03861e5e8cd)
+
+- Someone Shrank Qwen-27B by 9x and It Kept 98% of Its Benchmark Scores
+[(link)](https://medium.com/@anubhavgoyal101/7c540dde7a2e?sk=4cff5d8bd533cf7e5ca0f44d450a6d2e)
+
 - They Wanted $79 a Month to Draw Rectangles, So I Built a Free Tool For Everyone
 [(link)](https://www.towardsdeeplearning.com/they-wanted-79-a-month-to-draw-rectangles-so-i-built-a-free-tool-for-everyone-224c8dc7a143)
 
