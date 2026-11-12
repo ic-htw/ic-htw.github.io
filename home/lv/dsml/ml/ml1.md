@@ -106,3 +106,7 @@ df.sample(5)
 - Train a random forest model [(link)](https://mlbook.explained.ai/first-taste.html#sec:3.2.2)
 - Exploring and Denoising Your Data Set [(link)](https://mlbook.explained.ai/prep.html)
 - Categorically Speaking [(link)](https://mlbook.explained.ai/catvars.html)
+
+## Data
+- mnist-10k-sample.parquet [(link)](https://drive.google.com/file/d/1CfdMmF2i7Zu5phG9hj0-BN1sH3TjTHOY/view?usp=sharing)
+- 640.csv [(link)](https://drive.google.com/file/d/1eXj8JgsfwDMd9eDgSRX18xkIQdXspttp/view?usp=drive_link)
