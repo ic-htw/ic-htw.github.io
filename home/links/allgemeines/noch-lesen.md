@@ -25,6 +25,15 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- After 10 Years, I Learned the Truth About SQL Scaling
+[(link)](https://medium.com/@vndpal/after-10-years-i-learned-the-truth-about-sql-scaling-d5cdbb16076a?sk=6697dc24d0564a7d9c332cf9da8cbcba)
+
+- Claude Haiku 5.5 Just Launched, Complete Review + 10 Use Cases
+[(link)](https://medium.com/@pranithnaikpranit/19b55dff28cb?sk=668bdeb0dcc302e159e2b9dfaf7b3f72)
+
+- OpenShell: Nvidia's Open-Source Answer to Rogue AI Agents at OpenAI and Anthropic
+[(link)](https://www.towardsdeeplearning.com/openshell-nvidias-open-source-answer-to-rogue-ai-agents-at-openai-and-anthropic-7aa19a8e8817?sk=697bc2eda52fb187b02af8d77cd5b6a5)
+
 - Basic Claude Knowledge Everyone Should Have in 2026
 [(link)](https://medium.com/@pranithnaikpranit/a218ea8090f8?sk=e49406ad71113a31466e9a7ea185e3f8)
 
