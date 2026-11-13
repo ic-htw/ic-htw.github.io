@@ -25,6 +25,9 @@ is_slide: 0
 [(link)](bbb)
 
 -->
+- Andrej Karpathy Got Sick of YouTube Slop, So He Built a HackerTube
+[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-got-sick-of-youtube-slop-so-he-built-a-hackertube-88b0c0e190d5?sk=b4d7ee04e1538f0fbae2c68614c57103)
+
 - After 10 Years, I Learned the Truth About SQL Scaling
 [(link)](https://medium.com/@vndpal/after-10-years-i-learned-the-truth-about-sql-scaling-d5cdbb16076a?sk=6697dc24d0564a7d9c332cf9da8cbcba)
 
