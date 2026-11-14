@@ -21,8 +21,12 @@ is_slide: 0
 
 # ai provider
 ## anthropic
+- 10 Crazy Things Claude Can Do That Most ChatGPT Users Don’t Know About
+[(link)](https://medium.com/codetodeploy/10-crazy-things-claude-can-do-that-most-chatgpt-users-dont-know-about-e8bd0ca0400f)
+- Basic Claude Knowledge Everyone Should Have in 2026
+[(link)](https://medium.com/@pranithnaikpranit/a218ea8090f8?sk=e49406ad71113a31466e9a7ea185e3f8)
 - Claude Code
-[(link)](bbhttps://code.claude.com/docs/de/overviewb)
+[(link)](https://code.claude.com/docs/de/overview)
 - Claude Code Tutorial 2026
 [(link)](https://www.wolfgegenlicht.de/claude-code-tutorial/)
 - Claude Code Unpacked
@@ -52,6 +56,8 @@ is_slide: 0
 
 
 # agents
+- OpenShell: Nvidia's Open-Source Answer to Rogue AI Agents at OpenAI and Anthropic
+[(link)](https://www.towardsdeeplearning.com/openshell-nvidias-open-source-answer-to-rogue-ai-agents-at-openai-and-anthropic-7aa19a8e8817?sk=697bc2eda52fb187b02af8d77cd5b6a5)
 - OpenAI Symphony vs Claude Managed Agents vs CrewAI: Which Agent Orchestration Pattern Wins
 [(link)](https://ai.gopubby.com/openai-symphony-vs-claude-managed-agents-vs-crewai-which-agent-orchestration-pattern-wins-43141fd7b944)
 - Creating an Advanced AI Agent From Scratch with Python in 2026: Part 1
@@ -107,6 +113,12 @@ is_slide: 0
 # crewai
 - CrewAI
 [(link)](https://docs.crewai.com/introduction)
+
+# hermes
+- What Is Hermes Agent and Why Is Everyone Talking About It?
+[(link)](https://medium.com/no-time/what-is-hermes-agent-and-why-is-everyone-talking-about-it-191802299d55)
+
+
 
 ## langgraph
 - LangGraph

@@ -8,76 +8,22 @@ is_slide: 0
 <!-- 
 - aaa
 [(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
-- aaa
-[(link)](bbb)
-
 -->
+
+- Same Qwen Model, 67% vs 92% on Hard Coding Problems. Only the Harness Changed.
+[(link)](https://medium.com/data-science-collective/same-qwen-model-67-vs-92-on-hard-coding-problems-only-the-harness-changed-cbe8aa168447)
+
 - Andrej Karpathy Got Sick of YouTube Slop, So He Built a HackerTube
 [(link)](https://www.towardsdeeplearning.com/andrej-karpathy-got-sick-of-youtube-slop-so-he-built-a-hackertube-88b0c0e190d5?sk=b4d7ee04e1538f0fbae2c68614c57103)
-
-- After 10 Years, I Learned the Truth About SQL Scaling
-[(link)](https://medium.com/@vndpal/after-10-years-i-learned-the-truth-about-sql-scaling-d5cdbb16076a?sk=6697dc24d0564a7d9c332cf9da8cbcba)
-
-- Claude Haiku 5.5 Just Launched, Complete Review + 10 Use Cases
-[(link)](https://medium.com/@pranithnaikpranit/19b55dff28cb?sk=668bdeb0dcc302e159e2b9dfaf7b3f72)
-
-- OpenShell: Nvidia's Open-Source Answer to Rogue AI Agents at OpenAI and Anthropic
-[(link)](https://www.towardsdeeplearning.com/openshell-nvidias-open-source-answer-to-rogue-ai-agents-at-openai-and-anthropic-7aa19a8e8817?sk=697bc2eda52fb187b02af8d77cd5b6a5)
-
-- Basic Claude Knowledge Everyone Should Have in 2026
-[(link)](https://medium.com/@pranithnaikpranit/a218ea8090f8?sk=e49406ad71113a31466e9a7ea185e3f8)
 
 - They Actually Pulled It Off! Kimi Just Beat the Frontier Giants
 [(link)](https://medium.com/@pranithnaikpranit/f2ed18cb3fd3?sk=881ac19cf174b270436da03861e5e8cd)
 
-- Someone Shrank Qwen-27B by 9x and It Kept 98% of Its Benchmark Scores
-[(link)](https://medium.com/@anubhavgoyal101/7c540dde7a2e?sk=4cff5d8bd533cf7e5ca0f44d450a6d2e)
-
-- They Wanted $79 a Month to Draw Rectangles, So I Built a Free Tool For Everyone
-[(link)](https://www.towardsdeeplearning.com/they-wanted-79-a-month-to-draw-rectangles-so-i-built-a-free-tool-for-everyone-224c8dc7a143)
-
-- NotebookLM 2.0 Explained: What’s New and Why It Matters
-[(link)](https://medium.com/no-time/notebooklm-2-0-explained-whats-new-and-why-it-matters-113990700d86)
-
-- What Is Hermes Agent and Why Is Everyone Talking About It?
-[(link)](https://medium.com/no-time/what-is-hermes-agent-and-why-is-everyone-talking-about-it-191802299d55)
-
-- Is Qwen Safe to Run on Your Machine? What the “Phone Home” Test Actually Found
-[(link)](https://medium.com/data-science-collective/is-qwen-safe-to-run-on-your-machine-what-the-phone-home-test-actually-found-e3b354e74925)
-
-- 10 Text-to-SQL SELF CORRECTION Loops to Automatically Repair Broken Queries on the Fly
-[(link)](https://medium.com/@Rohan_Dutt/10-text-to-sql-self-correction-loops-to-automatically-repair-broken-queries-on-the-fly-4267c2f94dd9)
-
-- Introducing YeSQL: Practical PostgreSQL, One Concept at a Time
-[(link)](https://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/)
-
-- Google Docs Just Learned Markdown. Here’s Why Your AI Workflow Changes Today.
-[(link)](https://medium.com/@vinayanand2/google-docs-just-learned-markdown-heres-why-your-ai-workflow-changes-today-cabdf48fd2f3)
-
 - Why HyperLogLog (HLL Cardinality Estimation) in SQL is More Powerful Than You Think (How to Master It)
 [(link)](https://medium.com/@Rohan_Dutt/why-hyperloglog-hll-cardinality-estimation-in-sql-is-more-powerful-than-you-think-how-to-master-2648033d6dc8)
 
-- 10 Crazy Things Claude Can Do That Most ChatGPT Users Don’t Know About
-[(link)](https://medium.com/codetodeploy/10-crazy-things-claude-can-do-that-most-chatgpt-users-dont-know-about-e8bd0ca0400f)
-
 - 7 Best Local LLMs for Coding in 2026 (Honest Comparison)
 [(link)](https://www.towardsdeeplearning.com/7-best-local-llms-for-coding-in-2026-honest-comparison-58b19b5cd078)
-
-- Postgres logical replication beyond one writer
-[(link)](https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/)
 
 - Benchmarking Vector search in six database engines
 [(link)](https://www.percona.com/blog/benchmarking-vector-search-in-six-database-engines/)

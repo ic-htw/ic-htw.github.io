@@ -24,12 +24,14 @@ is_slide: 0
 [(link)](https://www.matthuisman.nz/2019/01/download-google-drive-files-wget-curl.html)
 - Powershell
 [(link)](https://docs.microsoft.com/de-de/powershell/scripting/overview?view=powershell-7.2)
-- Sythetic Data Vault
-[(link)](https://sdv.dev/)
+- Scrapling -  Python Web Scraping framework
+[(link)](https://scrapling.readthedocs.io/en/latest/)
 - Testcontainers 
 [(link)](https://testcontainers.com/)
+- ThinkIdiot - Annotation Tool Bounding Boxex
+[(link)](https://thinkidiot.com/tools/annotate)
 - ThinkRail
-[(link)](bhttps://thinkrail.ai/bb)
+[(link)](https://thinkrail.ai/bb)
 - TTT Editor: Terminal Text Tool
 [(link)](https://github.com/eugenioenko/ttt)
 

@@ -263,6 +263,8 @@ is_slide: 0
 
 
 # replication
+- Postgres logical replication beyond one writer
+[(link)](https://tapoueh.org/blog/2026/11/postgres-logical-replication-beyond-one-writer/)
 - PostgreSQL Multi-Active Replication - Part 1: An Introduction
 [(link)](https://dimitrij-pankratz.medium.com/postgresql-multi-active-replication-part-1-an-introduction-ff7052eb9fd0)
 - How to replicate Postgres RDS functionality with a few scripts and a Cloudformation template
@@ -312,6 +314,10 @@ is_slide: 0
 
 
 # zzz
+- Introducing YeSQL: Practical PostgreSQL, One Concept at a Time
+[(link)](https://tapoueh.org/blog/2026/08/introducing-yesql-practical-postgresql-one-concept-at-a-time/)
+- After 10 Years, I Learned the Truth About SQL Scaling
+[(link)](https://medium.com/@vndpal/after-10-years-i-learned-the-truth-about-sql-scaling-d5cdbb16076a?sk=6697dc24d0564a7d9c332cf9da8cbcba)
 - From Christmas Outage to #1 App Store Ranking: An Aura Frames Postgres Scaling Retrospective
 [(link)](https://andyatkinson.com/postgresql-rds-scaling-aws-christmas-day-peak)
 - Postgres in the time of monster hardware
