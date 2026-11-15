@@ -10,6 +10,9 @@ is_slide: 0
 [(link)](bbb)
 -->
 
+- A 30MB Rust Browser Fixed the Worst Part of My AI News Pipeline
+[(link)](https://www.towardsdeeplearning.com/a-30mb-rust-browser-fixed-the-worst-part-of-my-ai-news-pipeline-1a7ec9c5881d)
+
 - Same Qwen Model, 67% vs 92% on Hard Coding Problems. Only the Harness Changed.
 [(link)](https://medium.com/data-science-collective/same-qwen-model-67-vs-92-on-hard-coding-problems-only-the-harness-changed-cbe8aa168447)
 
