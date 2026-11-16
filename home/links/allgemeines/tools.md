@@ -14,6 +14,8 @@ is_slide: 0
 [(link)](https://catboost.ai/)
 - csvbase
 [(link)](https://csvbase.com/)
+- Firefox Local Mode: Goodbye, localhost?
+[(link)](https://medium.com/@TusharKanjariya/firefox-local-mode-goodbye-localhost-fbde4762cc44?sk=c4eed3012395f5690286ea5eb5e4956c)
 - fsspec 
 [(link)](https://pypi.org/project/fsspec/)
 - Google Dataset Search
