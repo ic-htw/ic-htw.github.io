@@ -9,6 +9,17 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- kiri Docker
+[(link)](https://runkiri.com/)
+
+- Qwen 3.8 Max: The Greatest Open-Source Model of All Time Has Been Released
+[(link)](https://www.towardsdeeplearning.com/qwen-3-8-max-the-greatest-open-source-model-of-all-time-has-been-released-259840e8241f?sk=9e6be6cd07ea52bd46617970bb4fef4f)
+
+- I Vibe-Coded 23,000 Lines of Rust Without Knowing Rust — 7 Things That Actually Made It Work
+[(link)](https://medium.com/@tszhim_tech/i-vibe-coded-23-000-lines-of-rust-without-knowing-rust-7-things-that-actually-made-it-work-d4a4e63b4146)
+
+- Rust is amazing, as long as I’m not the one writing it
+[(link)](https://medium.com/@ttebify/why-is-rust-so-popular-javascript-developer-9bba4700b4ef?sk=f0a2f893f7ad1d30dc52f52c2fecc8a0)
 
 - A 30MB Rust Browser Fixed the Worst Part of My AI News Pipeline
 [(link)](https://www.towardsdeeplearning.com/a-30mb-rust-browser-fixed-the-worst-part-of-my-ai-news-pipeline-1a7ec9c5881d)
