@@ -9,6 +9,15 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- 6 Claude Tricks That Feel Almost Illegal to Know
+[(link)](https://pub.towardsai.net/6-claude-tricks-that-feel-almost-illegal-to-know-most-users-are-missing-these-d6ea5b4adc56?sk=6ea7319123fea1b364750de97b4cc110)
+
+- Coolify
+[(link)](https://coolify.io/)
+
+- RustFS Crushed MinIO in Benchmarks — Here’s Why It’s the Future of S3-Compatible Storag
+[(link)](https://medium.com/@ethan-carter/rustfs-crushed-minio-in-benchmarks-heres-why-it-s-the-future-of-s3-compatible-storag-5463ac412b35)
+
 - kiri Docker
 [(link)](https://runkiri.com/)
 
