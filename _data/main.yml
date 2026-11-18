@@ -748,6 +748,9 @@ home: &r
           - t: Ressourcen
             ts: Ressourcen
             url: /home/sonstiges/p/ressourcen.html         
+          - t: Fahradzählung
+            ts: Fahradzählung
+            url: /home/lv/dmdb/ab/ab-04.html
       - t: Links
         ts: Links
         url: /home/links/links.html
