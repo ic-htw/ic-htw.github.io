@@ -8,7 +8,10 @@ is_slide: 0
 # Geo-Abfragen
 
 ## Datenmodell
+### Schema: umobility
 ![Datenmodell](/home/lv/adbkt/a/shed/bubahn-modell.png)<br>
+
+### Schema: ugeobln
 ![Datenmodell](/home/lv/adbkt/a/geo/fig/bezirk.png)
 ![Datenmodell](/home/lv/adbkt/a/geo/fig/museum.png)
  
