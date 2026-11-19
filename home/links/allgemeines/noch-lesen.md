@@ -9,7 +9,7 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- MinIO Is Deprecated: Best Alternatives for S3-Compatible Storage
+- MinIO Is  Deprecated: Best Alternatives for S3-Compatible Storage
 [(link)](https://medium.com/u11d-tech-blog/minio-is-deprecated-best-alternatives-for-s3-compatible-storage-660f2ad9aebd)
 
 - AI Coding Has a New Rival: Build Apps Without Writing Code
