@@ -9,8 +9,14 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- 6 Claude Tricks That Feel Almost Illegal to Know
-[(link)](https://pub.towardsai.net/6-claude-tricks-that-feel-almost-illegal-to-know-most-users-are-missing-these-d6ea5b4adc56?sk=6ea7319123fea1b364750de97b4cc110)
+- MinIO Is Deprecated: Best Alternatives for S3-Compatible Storage
+[(link)](https://medium.com/u11d-tech-blog/minio-is-deprecated-best-alternatives-for-s3-compatible-storage-660f2ad9aebd)
+
+- AI Coding Has a New Rival: Build Apps Without Writing Code
+[(link)](https://medium.com/codetodeploy/ai-coding-has-a-new-rival-build-apps-without-writing-code-78f9e5d8f24f?sk=45c0b3a686d704bcb4eb3dc549585b8c)
+
+- The Friend Suggestion That Explains Graphs Theory Better Than books
+[(link)](https://medium.com/data-science-collective/graphs-trees-dags-explained-with-your-phone-5f9c33887430?sk=c054fe31cdd915e8b7462dc3e8dfc643)
 
 - Coolify
 [(link)](https://coolify.io/)

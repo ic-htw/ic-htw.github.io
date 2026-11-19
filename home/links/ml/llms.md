@@ -21,6 +21,10 @@ is_slide: 0
 
 # ai provider
 ## anthropic
+- Stop Using Claude Code Like a Chatbot. Use These 12 Patterns Instead
+[(link)](https://pub.towardsai.net/stop-using-claude-code-like-a-chatbot-use-these-12-patterns-instead-ff828a178f52?sk=85441ccfebd15878a600c1bfd7829d81)
+- 6 Claude Tricks That Feel Almost Illegal to Know
+[(link)](https://pub.towardsai.net/6-claude-tricks-that-feel-almost-illegal-to-know-most-users-are-missing-these-d6ea5b4adc56?sk=6ea7319123fea1b364750de97b4cc110)
 - 10 Crazy Things Claude Can Do That Most ChatGPT Users Don’t Know About
 [(link)](https://medium.com/codetodeploy/10-crazy-things-claude-can-do-that-most-chatgpt-users-dont-know-about-e8bd0ca0400f)
 - Basic Claude Knowledge Everyone Should Have in 2026

@@ -110,3 +110,7 @@ df.sample(5)
 ## Data
 - mnist-10k-sample.parquet [(link)](https://drive.google.com/file/d/1CfdMmF2i7Zu5phG9hj0-BN1sH3TjTHOY/view?usp=sharing)
 - 640.csv [(link)](https://drive.google.com/file/d/1eXj8JgsfwDMd9eDgSRX18xkIQdXspttp/view?usp=drive_link)
+
+## Notebooks
+- rent
+[(link)](https://colab.research.google.com/drive/14Bbui5FCSFewGu899v907Axo0LIMXiW8?usp=sharing)
