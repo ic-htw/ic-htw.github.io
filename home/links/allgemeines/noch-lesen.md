@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- What the f*** is a semantic layer?
+[(link)](https://vutr.substack.com/p/free-what-the-f-is-a-semantic-layer?r=2rj6sg)
+
+- 5 Tiny Linux Bash Scripts That Tell You More About the System Than 50 Commands
+[(link)](https://meetcyber.net/5-tiny-linux-bash-scripts-that-tell-you-more-about-the-system-than-50-commands-3f63617960ba?sk=142d01372b9fb2b5659d10d82fa7d0a0)
+
+- 8 Bash Automation Scripts That You Need To Know Right Now
+[(link)](https://meetcyber.net/8-bash-automation-scripts-that-you-need-to-know-right-now-18b6714db082?sk=89e46ad1cf1c15c2449784412e37ee89)
+
+- HTTP Has a New Query Method — And It Could Change How We Build APIs
+[(link)](https://medium.com/@gopi_ck/f2b227c8c8d2?sk=94c93aaa0df924269799f326b5bfd2c4)
+
 - MinIO Is  Deprecated: Best Alternatives for S3-Compatible Storage
 [(link)](https://medium.com/u11d-tech-blog/minio-is-deprecated-best-alternatives-for-s3-compatible-storage-660f2ad9aebd)
 
