@@ -321,9 +321,9 @@ home: &r
                   - t: Ü6
                     ts: Ü6
                     url: /home/lv/adbkt/uebungen/vectordb-rag.html
-                  # - t: Ü7
-                  #   ts: Ü7
-                  #   url: /home/lv/adbkt/uebungen/geo-ts.html
+                  - t: Ü7
+                    ts: Ü7
+                    url: /home/lv/adbkt/uebungen/geo-ts.html
                   # - t: Multi Version Concurrency Control 1
               #       ts: MVCC 1
               #       url: /home/lv/adbkt/uebungen/mvcc1.html
