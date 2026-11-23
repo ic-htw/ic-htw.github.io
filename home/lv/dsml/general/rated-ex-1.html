@@ -33,7 +33,7 @@ is_slide: 0
 <h2>Submission of solution</h2>
 <ul class="w3-large">
     <li>Link to the Colab file on one group member's gdrive</li>
-    <li>Provide screenshot of your result on Kaggle Leaderboard</li>
+    <li>Provide screenshots of your results on Kaggle Leaderboard</li>
 </ul>
 -->
 
@@ -48,7 +48,7 @@ drive.mount('/content/drive')</code></pre>
 <pre><code class="python">import pandas as pd
 import os
 
-kaggle_dir = f"/content/drive/My Drive/kaggle"
+kaggle_dir = f"/content/drive/My Drive/kaggle" # Replace with your gdrive path
 competition = "playground-series-TBD" # Replace TBD with your series name
 target_dir = f"{kaggle_dir}/{competition}"
 
@@ -81,14 +81,22 @@ df_test = pd.read_parquet(f"{target_dir}/test.parquet")
 df_submission = pd.read_parquet(f"{target_dir}/sample_submission.parquet")</code></pre>
 
 <h3>Explorative Data Analysis</h3>
-<p class="w3-large">Analyse data for feature engineering and insights.</p>
+<ul class="w3-large">
+    <li>Analyse data to get insights.</li>
+    <li>Provide useful visualizations.</li>
+</ul>
 
 <h3>Train Model</h3>
-<p class="w3-large">Split df_train into training and validation sets, then train your model. Use the validation set to tune hyperparameters and avoid overfitting.</p>
 
-
-<h3>Submit</h3>
-<p class="w3-large">Use df_test to generate predictions and save them in df_submission before submitting.</p>
-
-
+<ul class="w3-large">
+    <li>Train a first version of your model with default parameters and no feature engineering and preprocessing.</li>
+    <li>Submit the results to Kaggle. Make Screenshots of the result.</li>
+    <li>Improve your model by adding feature engineering and data preprocessing.</li>
+    <li>Submit the results to Kaggle. Make Screenshots of the result.</li>
+    <li>Tune the hyperparameters of your model using grid search and cross-validation.</li>
+    <li>Submit the results to Kaggle. Make Screenshots of the result.</li>
+    <li>Put Screenshots of the final results in the Colab notebook.</li>
+    <li>Cleanup your colab notebook such that it is easy to read.</li>
+    <li>Make sure, you understand all steps described in the notebook.</li>
+</ul>
 
