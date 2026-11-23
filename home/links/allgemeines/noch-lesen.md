@@ -9,6 +9,12 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Hugging Face PyBot: 1,000 Agents Built a Chatbot in Python Using Only If-Else Statements
+[(link)](https://www.towardsdeeplearning.com/hugging-face-pybot-1-000-agents-built-a-chatbot-in-python-using-only-if-else-statements-214f23cd3c78?sk=13f932c6f6709f2b18d9664cdc666235)
+
+- I spent 30 days tuning my Design.md, here’s what actually worked.
+[(link)](https://medium.com/design-bootcamp/i-used-design-md-for-30-days-with-claude-code-heres-what-actually-changed-9bf9d659ace8)
+
 - What the f*** is a semantic layer?
 [(link)](https://vutr.substack.com/p/free-what-the-f-is-a-semantic-layer?r=2rj6sg)
 
