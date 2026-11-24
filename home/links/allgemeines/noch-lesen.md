@@ -9,8 +9,11 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Hugging Face PyBot: 1,000 Agents Built a Chatbot in Python Using Only If-Else Statements
-[(link)](https://www.towardsdeeplearning.com/hugging-face-pybot-1-000-agents-built-a-chatbot-in-python-using-only-if-else-statements-214f23cd3c78?sk=13f932c6f6709f2b18d9664cdc666235)
+- Cube agentic analytics platform
+[(link)](https://docs.cube.dev/docs/introduction)
+
+- I Stopped Putting Secrets in .env Files
+[(link)](https://medium.com/@TusharKanjariya/i-stopped-putting-secrets-in-env-files-85f8dc389a28?sk=ffa78efc808fde82e7eba8ddeb8add2b)
 
 - I spent 30 days tuning my Design.md, here’s what actually worked.
 [(link)](https://medium.com/design-bootcamp/i-used-design-md-for-30-days-with-claude-code-heres-what-actually-changed-9bf9d659ace8)
@@ -27,9 +30,6 @@ is_slide: 0
 - HTTP Has a New Query Method — And It Could Change How We Build APIs
 [(link)](https://medium.com/@gopi_ck/f2b227c8c8d2?sk=94c93aaa0df924269799f326b5bfd2c4)
 
-- MinIO Is  Deprecated: Best Alternatives for S3-Compatible Storage
-[(link)](https://medium.com/u11d-tech-blog/minio-is-deprecated-best-alternatives-for-s3-compatible-storage-660f2ad9aebd)
-
 - AI Coding Has a New Rival: Build Apps Without Writing Code
 [(link)](https://medium.com/codetodeploy/ai-coding-has-a-new-rival-build-apps-without-writing-code-78f9e5d8f24f?sk=45c0b3a686d704bcb4eb3dc549585b8c)
 
@@ -39,14 +39,8 @@ is_slide: 0
 - Coolify
 [(link)](https://coolify.io/)
 
-- RustFS Crushed MinIO in Benchmarks — Here’s Why It’s the Future of S3-Compatible Storag
-[(link)](https://medium.com/@ethan-carter/rustfs-crushed-minio-in-benchmarks-heres-why-it-s-the-future-of-s3-compatible-storag-5463ac412b35)
-
 - kiri Docker
 [(link)](https://runkiri.com/)
-
-- Qwen 3.8 Max: The Greatest Open-Source Model of All Time Has Been Released
-[(link)](https://www.towardsdeeplearning.com/qwen-3-8-max-the-greatest-open-source-model-of-all-time-has-been-released-259840e8241f?sk=9e6be6cd07ea52bd46617970bb4fef4f)
 
 - I Vibe-Coded 23,000 Lines of Rust Without Knowing Rust — 7 Things That Actually Made It Work
 [(link)](https://medium.com/@tszhim_tech/i-vibe-coded-23-000-lines-of-rust-without-knowing-rust-7-things-that-actually-made-it-work-d4a4e63b4146)
@@ -57,20 +51,8 @@ is_slide: 0
 - A 30MB Rust Browser Fixed the Worst Part of My AI News Pipeline
 [(link)](https://www.towardsdeeplearning.com/a-30mb-rust-browser-fixed-the-worst-part-of-my-ai-news-pipeline-1a7ec9c5881d)
 
-- Same Qwen Model, 67% vs 92% on Hard Coding Problems. Only the Harness Changed.
-[(link)](https://medium.com/data-science-collective/same-qwen-model-67-vs-92-on-hard-coding-problems-only-the-harness-changed-cbe8aa168447)
-
-- Andrej Karpathy Got Sick of YouTube Slop, So He Built a HackerTube
-[(link)](https://www.towardsdeeplearning.com/andrej-karpathy-got-sick-of-youtube-slop-so-he-built-a-hackertube-88b0c0e190d5?sk=b4d7ee04e1538f0fbae2c68614c57103)
-
-- They Actually Pulled It Off! Kimi Just Beat the Frontier Giants
-[(link)](https://medium.com/@pranithnaikpranit/f2ed18cb3fd3?sk=881ac19cf174b270436da03861e5e8cd)
-
 - Why HyperLogLog (HLL Cardinality Estimation) in SQL is More Powerful Than You Think (How to Master It)
 [(link)](https://medium.com/@Rohan_Dutt/why-hyperloglog-hll-cardinality-estimation-in-sql-is-more-powerful-than-you-think-how-to-master-2648033d6dc8)
-
-- 7 Best Local LLMs for Coding in 2026 (Honest Comparison)
-[(link)](https://www.towardsdeeplearning.com/7-best-local-llms-for-coding-in-2026-honest-comparison-58b19b5cd078)
 
 - Benchmarking Vector search in six database engines
 [(link)](https://www.percona.com/blog/benchmarking-vector-search-in-six-database-engines/)
@@ -99,17 +81,11 @@ is_slide: 0
 - Markdown Tables Can Do More Than You Think: 10 Tricks Worth Copying
 [(link)](https://medium.com/@yugenelee/10-markdown-table-syntax-tips-youll-actually-use-f533dd6a2c9f)
 
-- China Just Responded to America’s Beam AI With 2 Powerful Open-Source Models
-[(link)](https://medium.com/the-ai-studio/china-just-responded-to-americas-beam-ai-with-2-powerful-open-source-models-5e158f417038)
-
 - Write a Book Using Jupyter in 10 minutes
 [(link)](https://levelup.gitconnected.com/write-a-book-using-jupyter-in-10-minutes-6da6fe916d77)
 
 - Your Markdown Diagrams Could Look Like This: 12 Mermaid Tricks Worth Copying
 [(link)](https://medium.com/@yugenelee/your-markdown-diagrams-could-look-like-this-12-mermaid-tricks-worth-copying-bd7eac85e1dd)
-
-- Why Everyone Is Panicking About Kimi K3
-[(link)](https://medium.com/no-time/why-everyone-is-panicking-about-kimi-k3-c3235ea0a055)
 
 - Markdown Isn’t Just for Text: 10 Mermaid Diagrams You Can Copy
 [(link)](https://medium.com/@yugenelee/markdown-isnt-just-for-text-10-mermaid-diagrams-you-can-copy-fe8b7f6063db)
