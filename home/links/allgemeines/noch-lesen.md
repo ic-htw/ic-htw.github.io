@@ -9,14 +9,14 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Replacing 300-Line Nested CTE Chains With Modular SQL Transformation Layers
+[(link)](https://medium.com/@Rohan_Dutt/replacing-300-line-nested-cte-chains-with-modular-sql-transformation-layers-910a84b47664)
+
 - Cube agentic analytics platform
 [(link)](https://docs.cube.dev/docs/introduction)
 
 - I Stopped Putting Secrets in .env Files
 [(link)](https://medium.com/@TusharKanjariya/i-stopped-putting-secrets-in-env-files-85f8dc389a28?sk=ffa78efc808fde82e7eba8ddeb8add2b)
-
-- I spent 30 days tuning my Design.md, here’s what actually worked.
-[(link)](https://medium.com/design-bootcamp/i-used-design-md-for-30-days-with-claude-code-heres-what-actually-changed-9bf9d659ace8)
 
 - What the f*** is a semantic layer?
 [(link)](https://vutr.substack.com/p/free-what-the-f-is-a-semantic-layer?r=2rj6sg)
@@ -26,9 +26,6 @@ is_slide: 0
 
 - 8 Bash Automation Scripts That You Need To Know Right Now
 [(link)](https://meetcyber.net/8-bash-automation-scripts-that-you-need-to-know-right-now-18b6714db082?sk=89e46ad1cf1c15c2449784412e37ee89)
-
-- HTTP Has a New Query Method — And It Could Change How We Build APIs
-[(link)](https://medium.com/@gopi_ck/f2b227c8c8d2?sk=94c93aaa0df924269799f326b5bfd2c4)
 
 - AI Coding Has a New Rival: Build Apps Without Writing Code
 [(link)](https://medium.com/codetodeploy/ai-coding-has-a-new-rival-build-apps-without-writing-code-78f9e5d8f24f?sk=45c0b3a686d704bcb4eb3dc549585b8c)
