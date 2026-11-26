@@ -12,8 +12,12 @@ is_slide: 0
 [(link)](https://it-learner.de/auch-unter-linux-laesst-sich-auf-einen-mit-bitlocker-verschluesselten-datentraeger-zugreifen/)
 - CatBoost
 [(link)](https://catboost.ai/)
+- Coolify
+[(link)](https://coolify.io/)
 - csvbase
 [(link)](https://csvbase.com/)
+- Cube agentic analytics platform
+[(link)](https://docs.cube.dev/docs/introduction)
 - Firefox Local Mode: Goodbye, localhost?
 [(link)](https://medium.com/@TusharKanjariya/firefox-local-mode-goodbye-localhost-fbde4762cc44?sk=c4eed3012395f5690286ea5eb5e4956c)
 - fsspec 
@@ -24,6 +28,10 @@ is_slide: 0
 [(link)](https://github.com/matthuisman/gdrivedl)
 - gdrive download - wget
 [(link)](https://www.matthuisman.nz/2019/01/download-google-drive-files-wget-curl.html)
+- kiri Docker
+[(link)](https://runkiri.com/)
+- Obscura - headless browser engine - in Rust
+[(link)](https://github.com/h4ckf0r0day/obscura)
 - Powershell
 [(link)](https://docs.microsoft.com/de-de/powershell/scripting/overview?view=powershell-7.2)
 - Scrapling -  Python Web Scraping framework

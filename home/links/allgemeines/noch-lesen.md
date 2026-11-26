@@ -9,47 +9,14 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
-- Replacing 300-Line Nested CTE Chains With Modular SQL Transformation Layers
-[(link)](https://medium.com/@Rohan_Dutt/replacing-300-line-nested-cte-chains-with-modular-sql-transformation-layers-910a84b47664)
+- Forget OpenCode. PI Agent Harness 10x Better
+[(link)](https://medium.com/data-science-collective/forget-opencode-pi-agent-harness-10x-better-9f6aa1439d2a?sk=a5d1c7a7336f914ee9ef897db80e8960)
 
-- Cube agentic analytics platform
-[(link)](https://docs.cube.dev/docs/introduction)
-
-- I Stopped Putting Secrets in .env Files
-[(link)](https://medium.com/@TusharKanjariya/i-stopped-putting-secrets-in-env-files-85f8dc389a28?sk=ffa78efc808fde82e7eba8ddeb8add2b)
-
-- What the f*** is a semantic layer?
-[(link)](https://vutr.substack.com/p/free-what-the-f-is-a-semantic-layer?r=2rj6sg)
-
-- 5 Tiny Linux Bash Scripts That Tell You More About the System Than 50 Commands
-[(link)](https://meetcyber.net/5-tiny-linux-bash-scripts-that-tell-you-more-about-the-system-than-50-commands-3f63617960ba?sk=142d01372b9fb2b5659d10d82fa7d0a0)
-
-- 8 Bash Automation Scripts That You Need To Know Right Now
-[(link)](https://meetcyber.net/8-bash-automation-scripts-that-you-need-to-know-right-now-18b6714db082?sk=89e46ad1cf1c15c2449784412e37ee89)
-
-- AI Coding Has a New Rival: Build Apps Without Writing Code
-[(link)](https://medium.com/codetodeploy/ai-coding-has-a-new-rival-build-apps-without-writing-code-78f9e5d8f24f?sk=45c0b3a686d704bcb4eb3dc549585b8c)
+- Minimalist Dev Setup 2026: Terminal, CLI Agent, and Git Hooks on Windows and Linux
+[(link)](https://towardsdev.com/minimalist-dev-setup-2026-terminal-cli-agent-and-git-hooks-on-windows-and-linux-c541bd6761ba?sk=3fb03118eb2ca72d49fb48d839eb23e5)
 
 - The Friend Suggestion That Explains Graphs Theory Better Than books
 [(link)](https://medium.com/data-science-collective/graphs-trees-dags-explained-with-your-phone-5f9c33887430?sk=c054fe31cdd915e8b7462dc3e8dfc643)
-
-- Coolify
-[(link)](https://coolify.io/)
-
-- kiri Docker
-[(link)](https://runkiri.com/)
-
-- I Vibe-Coded 23,000 Lines of Rust Without Knowing Rust — 7 Things That Actually Made It Work
-[(link)](https://medium.com/@tszhim_tech/i-vibe-coded-23-000-lines-of-rust-without-knowing-rust-7-things-that-actually-made-it-work-d4a4e63b4146)
-
-- Rust is amazing, as long as I’m not the one writing it
-[(link)](https://medium.com/@ttebify/why-is-rust-so-popular-javascript-developer-9bba4700b4ef?sk=f0a2f893f7ad1d30dc52f52c2fecc8a0)
-
-- A 30MB Rust Browser Fixed the Worst Part of My AI News Pipeline
-[(link)](https://www.towardsdeeplearning.com/a-30mb-rust-browser-fixed-the-worst-part-of-my-ai-news-pipeline-1a7ec9c5881d)
-
-- Why HyperLogLog (HLL Cardinality Estimation) in SQL is More Powerful Than You Think (How to Master It)
-[(link)](https://medium.com/@Rohan_Dutt/why-hyperloglog-hll-cardinality-estimation-in-sql-is-more-powerful-than-you-think-how-to-master-2648033d6dc8)
 
 - Benchmarking Vector search in six database engines
 [(link)](https://www.percona.com/blog/benchmarking-vector-search-in-six-database-engines/)

@@ -21,6 +21,10 @@ is_slide: 0
 
 # ai provider
 ## anthropic
+- After waterfall, agile, and DevOps — Anthropic’s AI-Native SDLC playbook
+[(link)](https://vateo.medium.com/after-waterfall-agile-and-devops-anthropics-ai-native-sdlc-playbook-0131a3a9156e)
+- Anthropic’s Latest Study Reveals How the Top 1% Use AI
+[(link)](https://medium.com/the-ai-studio/anthropics-latest-study-reveals-how-the-top-1-uses-ai-b557bf0c4a08)
 - Stop Using Claude Code Like a Chatbot. Use These 12 Patterns Instead
 [(link)](https://pub.towardsai.net/stop-using-claude-code-like-a-chatbot-use-these-12-patterns-instead-ff828a178f52?sk=85441ccfebd15878a600c1bfd7829d81)
 - 6 Claude Tricks That Feel Almost Illegal to Know
