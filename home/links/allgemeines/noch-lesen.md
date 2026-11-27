@@ -9,6 +9,18 @@ is_slide: 0
 - aaa
 [(link)](bbb)
 -->
+- Detecting the Unauthorized Devices Using the Linux Tools
+[(link)](https://meetcyber.net/detecting-the-unauthorized-devices-using-the-linux-tools-fa22073b87eb?sk=f312a356a32b15496f81880ccb2922ec)
+
+- How to Secure Your Linux Server The Blue Team Way
+[(link)](https://medium.com/@cyber-ninjaaa/how-to-secure-your-linux-server-the-blue-team-way-03f89ec1fcb2)
+
+- Qwen4-Max Has 2.4 Trillion Parameters and No Download. What Local Users Get Instead
+[(link)](https://medium.com/data-science-collective/qwen4-max-has-2-4-trillion-parameters-and-no-download-what-local-users-get-instead-29cfef54f021)
+
+- CVE-2026–6460 (CVSS 8.8): The PostgreSQL RCE Flaw That Hid for 22 Years and How to Patch It
+[(link)](https://medium.com/codex/cve-2026-6460-cvss-8-8-the-postgresql-rce-flaw-that-hid-for-22-years-and-how-to-patch-it-63d7b419a22c)
+
 - Forget OpenCode. PI Agent Harness 10x Better
 [(link)](https://medium.com/data-science-collective/forget-opencode-pi-agent-harness-10x-better-9f6aa1439d2a?sk=a5d1c7a7336f914ee9ef897db80e8960)
 
